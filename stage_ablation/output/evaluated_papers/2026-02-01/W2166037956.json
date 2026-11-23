@@ -1,0 +1,1590 @@
+{
+    "uri": "https://openalex.org/W2166037956",
+    "title": "Design and implementation of the infrastructure of HadGEM3: the next-generation Met Office climate modelling system",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2011,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5072582147",
+            "display_name": "Helene T. Hewitt",
+            "orcid": "https://orcid.org/0000-0001-7432-6001"
+        },
+        {
+            "id": "https://openalex.org/A5083742869",
+            "display_name": "Dan Copsey",
+            "orcid": "https://orcid.org/0000-0002-9706-9033"
+        },
+        {
+            "id": "https://openalex.org/A5029564843",
+            "display_name": "I. D. Culverwell",
+            "orcid": "https://orcid.org/0009-0009-7005-629X"
+        },
+        {
+            "id": "https://openalex.org/A5048131859",
+            "display_name": "Chris Harris",
+            "orcid": "https://orcid.org/0000-0001-8154-9449"
+        },
+        {
+            "id": "https://openalex.org/A5054108782",
+            "display_name": "Richard S. Hill",
+            "orcid": "https://orcid.org/0000-0002-4986-3355"
+        },
+        {
+            "id": "https://openalex.org/A5014998263",
+            "display_name": "Ann Keen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5019027347",
+            "display_name": "A. J. McLaren",
+            "orcid": "https://orcid.org/0009-0005-2195-1758"
+        },
+        {
+            "id": "https://openalex.org/A5018266574",
+            "display_name": "Elizabeth Hunke",
+            "orcid": "https://orcid.org/0000-0002-7033-6031"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-4-223-2011",
+    "abstract": "Abstract. This paper describes the development of a technically robust climate modelling system, HadGEM3, which couples the Met Office Unified Model atmosphere component, the NEMO ocean model and the Los Alamos sea ice model (CICE) using the OASIS coupler. Details of the coupling and technical solutions of the physical model (HadGEM3-AO) are documented, in addition to a description of the configurations of the individual submodels. The paper demonstrates that the implementation of the model has resulted in accurate conservation of heat and freshwater across the model components. The model performance in early versions of this climate model is briefly described to demonstrate that the results are scientifically credible. HadGEM3-AO is the basis for a number of modelling efforts outside of the Met Office, both within the UK and internationally. This documentation of the HadGEM3-AO system provides a detailed reference for developers of HadGEM3-based climate configurations.",
+    "field": "Climate model development",
+    "problem": "High-resolution climate models are impractical when using ocean and sea-ice components with a geographic North Pole, as grid convergence causes numerical instability that requires heavy filtering and artificial modifications, thus compromising the fidelity of simulations, particularly in the Arctic.",
+    "method": "This paper describes the technical development of the HadGEM3 climate modelling system, which couples the Met Office Unified Model atmosphere component, the NEMO ocean model, and the CICE sea ice model using the OASIS coupler to create a technically robust and conservative system.",
+    "task": "The task is to describe the technical development of the HadGEM3 climate modelling system, focusing on the infrastructure and coupling of its atmosphere (Unified Model), ocean (NEMO), and sea ice (CICE) components using the OASIS coupler.",
+    "model": [
+        "HadGEM3",
+        "UM",
+        "NEMO",
+        "CICE",
+        "HadGEM3-AO",
+        "HadGEM1",
+        "HadGEM2",
+        "QESM",
+        "HadGEM3-ES",
+        "HiGEM",
+        "HadCM3"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/documentation",
+            "display_name": "Documentation",
+            "score": 0.6677173376083374
+        },
+        {
+            "id": "https://openalex.org/keywords/component",
+            "display_name": "Component (thermodynamics)",
+            "score": 0.6062751412391663
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.6046310067176819
+        },
+        {
+            "id": "https://openalex.org/keywords/systems-engineering",
+            "display_name": "Systems engineering",
+            "score": 0.5244017839431763
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.5082523226737976
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.5014026165008545
+        },
+        {
+            "id": "https://openalex.org/keywords/atmosphere",
+            "display_name": "Atmosphere (unit)",
+            "score": 0.48945534229278564
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.4602239727973938
+        },
+        {
+            "id": "https://openalex.org/keywords/operations-research",
+            "display_name": "Operations research",
+            "score": 0.4154045581817627
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.38657844066619873
+        },
+        {
+            "id": "https://openalex.org/keywords/engineering",
+            "display_name": "Engineering",
+            "score": 0.2329966127872467
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.11644494533538818
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.1152113676071167
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.10179123282432556
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C56666940",
+            "wikidata": "https://www.wikidata.org/wiki/Q788790",
+            "display_name": "Documentation",
+            "level": 2,
+            "score": 0.6677173376083374
+        },
+        {
+            "id": "https://openalex.org/C168167062",
+            "wikidata": "https://www.wikidata.org/wiki/Q1117970",
+            "display_name": "Component (thermodynamics)",
+            "level": 2,
+            "score": 0.6062751412391663
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.6046310067176819
+        },
+        {
+            "id": "https://openalex.org/C201995342",
+            "wikidata": "https://www.wikidata.org/wiki/Q682496",
+            "display_name": "Systems engineering",
+            "level": 1,
+            "score": 0.5244017839431763
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5082523226737976
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.5014026165008545
+        },
+        {
+            "id": "https://openalex.org/C65440619",
+            "wikidata": "https://www.wikidata.org/wiki/Q177974",
+            "display_name": "Atmosphere (unit)",
+            "level": 2,
+            "score": 0.48945534229278564
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.4602239727973938
+        },
+        {
+            "id": "https://openalex.org/C42475967",
+            "wikidata": "https://www.wikidata.org/wiki/Q194292",
+            "display_name": "Operations research",
+            "level": 1,
+            "score": 0.4154045581817627
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.38657844066619873
+        },
+        {
+            "id": "https://openalex.org/C127413603",
+            "wikidata": "https://www.wikidata.org/wiki/Q11023",
+            "display_name": "Engineering",
+            "level": 0,
+            "score": 0.2329966127872467
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.11644494533538818
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.1152113676071167
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.10179123282432556
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C97355855",
+            "wikidata": "https://www.wikidata.org/wiki/Q11473",
+            "display_name": "Thermodynamics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C199360897",
+            "wikidata": "https://www.wikidata.org/wiki/Q9143",
+            "display_name": "Programming language",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper describes the technical design and implementation of the HadGEM3 climate modelling system, which couples the Unified Model atmosphere, NEMO ocean, and CICE sea ice components using the OASIS coupler to achieve accurate conservation of heat and freshwater.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Met Office Unified Model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. This paper describes the development of a technically robust climate modelling system, HadGEM3, which couples the Met Office Unified Model atmosphere component, the NEMO ocean model and the Los Alamos sea ice model (CICE) using the OASIS coupler. Details of the coupling and technical solutions of the physical model (HadGEM3-AO) are documented, in addition to a description of the configurations of the individual submodels. The paper demonstrates that the implementation of the model has resulted in accurate conservation of heat and freshwa- ter across the model components. The model performance in early versions of this climate model is briefly described to demonstrate that the results are scientifically credible. HadGEM3-AO is the basis for a number of modelling efforts outside of the Met Office, both within the UK and interna- tionally. This documentation of the HadGEM3-AO system provides a detailed reference for developers of HadGEM3- based climate configurations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "NEMO",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. This paper describes the development of a technically robust climate modelling system, HadGEM3, which couples the Met Office Unified Model atmosphere component, the NEMO ocean model and the Los Alamos sea ice model (CICE) using the OASIS coupler. Details of the coupling and technical solutions of the physical model (HadGEM3-AO) are documented, in addition to a description of the configurations of the individual submodels. The paper demonstrates that the implementation of the model has resulted in accurate conservation of heat and freshwa- ter across the model components. The model performance in early versions of this climate model is briefly described to demonstrate that the results are scientifically credible. HadGEM3-AO is the basis for a number of modelling efforts outside of the Met Office, both within the UK and interna- tionally. This documentation of the HadGEM3-AO system provides a detailed reference for developers of HadGEM3- based climate configurations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CICE",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. This paper describes the development of a technically robust climate modelling system, HadGEM3, which couples the Met Office Unified Model atmosphere component, the NEMO ocean model and the Los Alamos sea ice model (CICE) using the OASIS coupler. Details of the coupling and technical solutions of the physical model (HadGEM3-AO) are documented, in addition to a description of the configurations of the individual submodels. The paper demonstrates that the implementation of the model has resulted in accurate conservation of heat and freshwa- ter across the model components. The model performance in early versions of this climate model is briefly described to demonstrate that the results are scientifically credible. HadGEM3-AO is the basis for a number of modelling efforts outside of the Met Office, both within the UK and interna- tionally. This documentation of the HadGEM3-AO system provides a detailed reference for developers of HadGEM3- based climate configurations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "OASIS coupler",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Abstract. This paper describes the development of a technically robust climate modelling system, HadGEM3, which couples the Met Office Unified Model atmosphere component, the NEMO ocean model and the Los Alamos sea ice model (CICE) using the OASIS coupler. Details of the coupling and technical solutions of the physical model (HadGEM3-AO) are documented, in addition to a description of the configurations of the individual submodels. The paper demonstrates that the implementation of the model has resulted in accurate conservation of heat and freshwa- ter across the model components. The model performance in early versions of this climate model is briefly described to demonstrate that the results are scientifically credible. HadGEM3-AO is the basis for a number of modelling efforts outside of the Met Office, both within the UK and interna- tionally. This documentation of the HadGEM3-AO system provides a detailed reference for developers of HadGEM3- based climate configurations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "HadGEM1",
+            "target_entity_type": "Source",
+            "paragraph": "Previous Hadley Centre Global Environmental Models (HadGEM1, HadGEM2) have improved formulation and resolution in the Unified Model (UM) atmosphere component (HadGEM1, Johns et al., 2006) and increased complexity in the carbon cycle (HadGEM2, Collins et al., 2008). The focus of this paper is the technical development of the HadGEM3 climate model which is intended to be the next-generation climate model. Although HadGEM3 has been initially built at a resolution comparable to HadGEM1, the intention is that the model structure will form the basis for running models at significantly higher resolution as well as at lower resolution with increased complexity (as in the Quantifying Uncertainty in the Earth SysTem [QUEST] Model [QESM]). This will establish a HadGEM3 family of models which have the same underlying structure and physics. In this paper, we discuss only the physical model (hereafter referred to as HadGEM3- AO). In future, this will form the basis for the Earth System model (HadGEM3-ES).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "HadGEM2",
+            "target_entity_type": "Source",
+            "paragraph": "Previous Hadley Centre Global Environmental Models (HadGEM1, HadGEM2) have improved formulation and resolution in the Unified Model (UM) atmosphere component (HadGEM1, Johns et al., 2006) and increased complexity in the carbon cycle (HadGEM2, Collins et al., 2008). The focus of this paper is the technical development of the HadGEM3 climate model which is intended to be the next-generation climate model. Although HadGEM3 has been initially built at a resolution comparable to HadGEM1, the intention is that the model structure will form the basis for running models at significantly higher resolution as well as at lower resolution with increased complexity (as in the Quantifying Uncertainty in the Earth SysTem [QUEST] Model [QESM]). This will establish a HadGEM3 family of models which have the same underlying structure and physics. In this paper, we discuss only the physical model (hereafter referred to as HadGEM3- AO). In future, this will form the basis for the Earth System model (HadGEM3-ES).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "HadGEM3-ES",
+            "target_entity_type": "Source",
+            "paragraph": "In this paper, we discuss only the physical model (hereafter referred to as HadGEM3-AO). In future, this will form the basis for the Earth System model (HadGEM3-ES).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "tripolar grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The approach taken here in HadGEM3-AO is to introduce new ocean and sea ice components that are formulated with generalised orthogonal co-ordinates and are therefore able to employ a tripolar grid (e.g. Murray, 1996).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "OASIS3 coupler",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The HadGEM3 model uses the communication model OASIS3 (Valcke, 2006) to enable coupling between the UM atmosphere, NEMO ocean and CICE sea ice. The use of OASIS means that a number of different algorithms for coupling are available and we have been able to investigate their impact on conservation. In addition, the introduction of the new component models means that we have also been able to develop a hierarchy of models to aid diagnosis of coupled model errors; forced sea ice models and forced ocean-ice models are now available in addition to pre-existing AMIP style atmosphere models (i.e. atmosphere-only models with prescribed sea surface temperature (SST) fields).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Met Office Unified Model",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmosphere",
+            "target_entity_type": "Realm",
+            "paragraph": "HadGEM3-AO couples together three submodels (UM atmosphere, NEMO and CICE) to form the climate modelling system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocean",
+            "target_entity_type": "Realm",
+            "paragraph": "HadGEM3-AO couples together three submodels (UM atmosphere, NEMO and CICE) to form the climate modelling system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CICE",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "seaIce",
+            "target_entity_type": "Realm",
+            "paragraph": "HadGEM3-AO couples together three submodels (UM atmosphere, NEMO and CICE) to form the climate modelling system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Met Office Unified Model",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "semi-Lagrangian advection scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The HadGEM3-A r1.1 atmosphere submodel (Appendix A) is a particular configuration of the Met Office's Unified Model (UM; Davies et al., 2005). The UM employs a semi-Lagrangian advection scheme, complex parameterizations of a number of processes (including radiation, convection, boundary layer mixing and cloud microphysics) as well as aerosol effects and feedbacks\u00b2.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Met Office Unified Model",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "38 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The version of HadGEM3-A described in Sect. 5 has a horizontal resolution of 1.25\u00b0 latitude by 1.875\u00b0 longitude with 38 vertical levels.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Met Office Unified Model",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "regular grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "As the atmosphere submodel is run on a regular grid it suffers problems associated with the convergence of the meridians in polar regions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Met Office Unified Model",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "MOSES-II",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The land surface hydrology scheme used is the Met Office Surface Exchange Scheme (MOSES-II, Cox et al., 1999) which is the same as that used by HadGEM1 and HadGEM2 but with updated soil properties and soil hydraulics.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Met Office Unified Model",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "TRIP",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The river routing scheme used is the Total Runoff Integrating Pathways scheme (TRIP; Oki and Sud, 1998) also largely unchanged from HadGEM1 and HadGEM2. Both the land surface hydrology scheme and the river routing scheme run as subcomponents of the atmospheric model as they are included in the same executable and code base as the rest of the atmospheric code. Hence all future references to the coupling between the atmospheric model and the ocean and sea ice models include the land surface and rivers as part of the atmospheric model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Arakawa C grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "As for the atmosphere, the ocean submodel is discretised on a C grid (Arakawa and Lamb, 1977).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "ORCA1 grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The version of HadGEM3-O described in Sect. 5 employs the nominal 1 degree resolution horizontal grid \u201cORCA1\u201d (see Fig. 2 and Appendices B and C for further details) and 42 vertical levels.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "42 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The version of HadGEM3-O described in Sect. 5 employs the nominal 1 degree resolution horizontal grid \u201cORCA1\u201d (see Fig. 2 and Appendices B and C for further details) and 42 vertical levels.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CICE",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Arakawa B grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "One key difference between NEMO and CICE is that CICE employs a B grid whereas NEMO uses a C grid; while the tracer points of the NEMO and CICE grids align, the velocity points do not.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "First-order conservative interpolation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Under first-order conservative interpolation, which is used to remap all scalar fields from atmosphere to ocean in HadGEM3-AO, fluxes {fj} on a source grid g are mapped to fluxes {Fj} on a target grid G, according to the linear remapping (Jones, 1999):",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Second-order conservative interpolation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For ocean to atmosphere interpolation, we use second order conservative interpolation but trim the sea ice fraction to be between 0 and 1. The resulting weak non-conservation in this direction is not found to cause problems in practice.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Bilinear interpolation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The remapping of vector fields (wind stress and ocean/ice surface current) between regular and tripolar grids is handled by bilinear interpolation, as was the case for earlier Hadley Centre coupled models (Johns et al., 2006).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "OPA",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Although we largely use \u201cNEMO\u201d as a short-hand for the ocean component of HadGEM3-AO, formally NEMO is a framework of \u2018ocean related engines' including OPA (for ocean dynamics and thermodynamics), LIM (for sea ice dynamics and thermodynamics) and TOP (for biogeochemistry). HadGEM3-O only makes use of the OPA part \u2013 this is an ocean model originally based on OPA8.1 (Madec et al., 1998) but which has undergone continual development within the NEMO framework.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "z-coordinate",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Various vertical coordinates are available as options within NEMO (including z-, s- and s*-coordinates) but to date all HadGEM3-O configurations have used the z-coordinate option.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "42 z-levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "There are 42 z-levels, whose thicknesses vary smoothly from 10m at the surface to 300 m at depth.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Asselin time filter",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "NEMO has an Asselin time filter (Asselin, 1972) to control noise in its leapfrog timestepping scheme \u2013 again this differs from CICE where a forward timestep is used.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Gent-McWilliams scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The tracer diffusion is along isopycnals and there is a Gent-McWilliams (Gent and McWilliams, 1990) term applied in the advective formulation with the NEMO default of a spatially and temporally varying coefficient (calculated from the local growth rate of baroclinic instability).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Turbulent Kinetic Energy scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Surface boundary layer and interior vertical mixing of both tracers and momentum is treated consistently by a Turbulent Kinetic Energy (TKE) scheme (Gaspar et al., 1990; Blanke and Delecluse, 1993).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "double diffusive mixing",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The equation of state used is Jackett and Mc- Dougall (1995) and double diffusive mixing is activated with a maximum vertical mixing on salinity of 1 \u00d7 10\u22124 m\u00b2 s\u22121 and a heat-salt buoyancy flux ratio of 1.6.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CICE version 4.0",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "HadGEM3 r1.1 uses a revision (146) of CICE version 4.0 which allows a tripolar grid to be employed. We use essentially the same family of ORCA grids as the NEMO model (described more fully in Appendix C), although CICE uses an Arakawa B grid rather than a C grid and so the CICE velocity grid points are not coincident with the NEMO velocity points.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CICE version 4.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Semtner (1976) zero-layer thermodynamic model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "HadGEM3 uses the zero-layer thermodynamic model of Semtner (1976) to calculate the growth and melt of the sea ice, with one layer of snow and one layer of ice in the vertical.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CICE version 4.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "elastic viscous plastic scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The internal ice stress is calculated using the elastic viscous plastic (EVP) scheme (Hunke and Dukowicz, 2002), which assumes the ice has a viscous plastic rheology, and incorporates an elastic wave modification to improve the computational efficiency.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CICE version 4.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Rothrock (1975) formulation for ice strength",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "HadGEM3 r1.1 uses the Rothrock (1975) formulation for ice strength with the standard CICE value of 17 for the parameter Cf (ratio of total energy losses to potential energy change).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CICE version 4.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "incremental remapping scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The sea ice is advected using the CICE incremental remapping scheme (Lipscomb and Hunke, 2004).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CICE version 4.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "mechanical redistribution scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The mechanical redistribution (or ridging) scheme in CICE converts thinner ice to thicker ice and open water, and is applied after the advection of ice. When the ice is converging, enough ice ridges to ensure that the ice area does not exceed the grid-cell area. The scheme is based on work by Thorndike et al. (1975), Hibler (1980), Flato and Hibler (1995), and Rothrock (1975).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "HadGEM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Met Office Unified Model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NEMO",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CICE",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "OASIS",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "HadGEM3-AO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Met Office",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Hadley Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Los Alamos National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "HadGEM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "QESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM3-ES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HiGEM",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "tripolar grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "generalised orthogonal co-ordinates",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Pole",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "OASIS3",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "atmosphere-only models",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "sea surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HadCM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM3-AO r1.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "sea ice",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "heat",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "freshwater",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salt",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "momentum",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longwave",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "turbulent",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sensible heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rain",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface wind stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HadGEM3-A r1.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "semi-Lagrangian advection scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "radiation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "convection",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "boundary layer mixing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cloud microphysics",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "aerosol effects and feedbacks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "1.25\u00b0 latitude by 1.875\u00b0 longitude",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "38 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "regular grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Fourier filtering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "coastal tiling",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "MOSES-II",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "TRIP",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "OPA",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Arakawa C grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ORCA",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Mercator grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Siberia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "ORCA1",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1 degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "42 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Arakawa B grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Surface sea ice temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "conductive heat flux through the ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "single executable",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "OASIS4",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "24 h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "first-order conservative interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bilinear interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "second-order conservative interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "wind stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean/ice surface current",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean conservation error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "freshwater flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean heat content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heat flux error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "freshwater error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "top of atmosphere (TOA) flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "linear free surface",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "non-linear free surface",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "pre-industrial control experiments",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Inter-Tropical Convergence Zone",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "ITCZ",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic Oceans",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Japan",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "South Pacific Convergence Zone",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "SPCZ",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "equatorial Pacific cold tongue region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "SSTs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Indian Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "850 hPa horizontal wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Scatterometer",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "global mean SST bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Atlantic current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "freshwater transport",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heat transport",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice extent",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Canadian Archipelago",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "ice thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Antarctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "GloSea4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JULES",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "nonhydrostatic",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "fully compressible",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "height based",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "terrain following",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "30 min timestep",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "N96",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "39 km",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "low top",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "85 vertical level",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "high top",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "85 km",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "resolved stratosphere",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "N216",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.554\u00b0 latitude by 0.833\u00b0 longitude",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Mass flux scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "relative humidity based CAPE closure",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "vertical wind based CAPE closure",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Smoothed adaptive detrainment",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Diagnostic cloud scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Prognostic Cloud fraction and Prognostic Condensate scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "PC2",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Sulphates",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soot",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Biomass",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Dust",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Sea salt",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Biogenic",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Aerosols",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Edwards and Slingo (1996) radiation scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ozone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tropical Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Sahara",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Arabian Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "van Genuchten (1980)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Raymond (1988) filter",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "flow blocking parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "orographic gravity wave drag scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Lock at al. (2000)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "non-local stress formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "entrainment parametrization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "buddy",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Indonesia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "grid point storm",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "HadGEM3-O",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LIM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "TOP",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "z-coordinate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Asselin time filter",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "42 z-levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "partial steps",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "HadGEM3r1.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1 h timestep",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Eddy-induced (Gent-McWilliams) advection",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Turbulent Kinetic Energy (TKE) vertical mixing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "double diffusive mixing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "vector-form momentum advection",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "enstrophy conserving scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Jackett and McDougall (1995)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "dipolar grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1/3\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Arctic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Kennedy Channel",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Gulf of Ob",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North West Passage",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctic Peninsula",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "5 thickness categories",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Semtner (1976)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bitz and Lipscomb (1999)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "melt ponds",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "enthalpy",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice velocities",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "internal ice stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "elastic viscous plastic (EVP) scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Rothrock (1975)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CICE incremental remapping scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Thorndike et al. (1975)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Lipscomb et al. (2007)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AMIP",
+            "entity_type": "Experiment"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2022548072",
+        "https://openalex.org/W1570976541",
+        "https://openalex.org/W2088506714",
+        "https://openalex.org/W2069967992",
+        "https://openalex.org/W1966431154",
+        "https://openalex.org/W2054088207",
+        "https://openalex.org/W2176801461",
+        "https://openalex.org/W4253618060",
+        "https://openalex.org/W1515149511",
+        "https://openalex.org/W6636610786",
+        "https://openalex.org/W2131859951",
+        "https://openalex.org/W2133088826",
+        "https://openalex.org/W2067958565",
+        "https://openalex.org/W4244230914",
+        "https://openalex.org/W2079058580",
+        "https://openalex.org/W2158627601",
+        "https://openalex.org/W2013380149",
+        "https://openalex.org/W2175906253",
+        "https://openalex.org/W2067314866",
+        "https://openalex.org/W2012370611",
+        "https://openalex.org/W2068174768",
+        "https://openalex.org/W2024309416",
+        "https://openalex.org/W1971794483",
+        "https://openalex.org/W2162343095",
+        "https://openalex.org/W2044971647",
+        "https://openalex.org/W4233676618",
+        "https://openalex.org/W2000869494",
+        "https://openalex.org/W2132587316",
+        "https://openalex.org/W2004308553",
+        "https://openalex.org/W2165942933",
+        "https://openalex.org/W2026622898",
+        "https://openalex.org/W2104261455",
+        "https://openalex.org/W2035878135",
+        "https://openalex.org/W4241323698",
+        "https://openalex.org/W2173725642",
+        "https://openalex.org/W2013963087",
+        "https://openalex.org/W2010490117",
+        "https://openalex.org/W2006165291",
+        "https://openalex.org/W2125641947",
+        "https://openalex.org/W2119531124",
+        "https://openalex.org/W2117920489",
+        "https://openalex.org/W2042028973",
+        "https://openalex.org/W2033318187",
+        "https://openalex.org/W1967371674",
+        "https://openalex.org/W2162604832",
+        "https://openalex.org/W2126208974",
+        "https://openalex.org/W2090249381",
+        "https://openalex.org/W2053092636",
+        "https://openalex.org/W2092835074",
+        "https://openalex.org/W1993790343",
+        "https://openalex.org/W2153140543",
+        "https://openalex.org/W1734539395",
+        "https://openalex.org/W2177016926",
+        "https://openalex.org/W3149529702",
+        "https://openalex.org/W185391259",
+        "https://openalex.org/W2140155467",
+        "https://openalex.org/W2155654615"
+    ]
+}

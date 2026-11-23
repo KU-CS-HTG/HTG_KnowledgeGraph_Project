@@ -1,0 +1,2879 @@
+{
+    "uri": "https://openalex.org/W3006577277",
+    "title": "Brief communication: Evaluating Antarctic precipitation in ERA5 and CMIP6 against CloudSat observations",
+    "venue": {
+        "name": "\u0098The \u009ccryosphere",
+        "id": "https://openalex.org/S169796457",
+        "type": "journal"
+    },
+    "publication_year": 2020,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5062125664",
+            "display_name": "Marie-Laure Roussel",
+            "orcid": "https://orcid.org/0000-0002-8667-3729"
+        },
+        {
+            "id": "https://openalex.org/A5082807880",
+            "display_name": "Florentin Lemonnier",
+            "orcid": "https://orcid.org/0000-0002-3209-1256"
+        },
+        {
+            "id": "https://openalex.org/A5056367901",
+            "display_name": "Christophe Genthon",
+            "orcid": "https://orcid.org/0000-0002-3678-4447"
+        },
+        {
+            "id": "https://openalex.org/A5021631028",
+            "display_name": "Gerhard Krinner",
+            "orcid": "https://orcid.org/0000-0002-2959-5920"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/tc-14-2715-2020",
+    "abstract": "Abstract. CMIP5, CMIP6, and ERA5 Antarctic precipitation is evaluated against CloudSat data. At continental and regional scales, ERA5 and the median CMIP models are biased high, with insignificant improvement from CMIP5 to CMIP6. However, there are fewer positive outliers in CMIP6. AMIP configurations perform better than the coupled ones, and, surprisingly, relative errors in areas of complex topography are higher (up to 50 %) in the five higher-resolution models. The seasonal cycle is reproduced well by the median of the CMIP models, but not by ERA5. Progress from CMIP5 to CMIP6 being limited, there is still room for improvement.",
+    "field": "Antarctic climate model evaluation",
+    "problem": "Current climate models and reanalyses systematically overestimate Antarctic precipitation, with the latest model generation (CMIP6) showing limited improvement over its predecessors and persistent high biases, especially in high-altitude regions.",
+    "method": "This study evaluates Antarctic precipitation from CMIP5/CMIP6 models and ERA5 by comparing their annual and seasonal averages at continental and regional scales against a climatology derived from CloudSat satellite radar observations.",
+    "task": "The task is to evaluate Antarctic precipitation simulated by CMIP5, CMIP6 climate models, and ERA5 reanalysis by comparing them against observational data from the CloudSat satellite radar.",
+    "model": [
+        "ACCESS1-0",
+        "ACCESS1-3",
+        "BCC-CSM2-MR",
+        "BCC-ESM1",
+        "BNU-ESM",
+        "CAMS-CSM1-0",
+        "CCSM4",
+        "CESM1-BGC",
+        "CESM1-CAM5",
+        "CESM1-FASTCHEM",
+        "CESM1-WACCM",
+        "CESM2",
+        "CESM2-WACCM",
+        "CMCC-CM",
+        "CMCC-CM2-HR4",
+        "CMCC-CM2-VHR4",
+        "CMCC-CESM",
+        "CMCC-CMS",
+        "CNRM-CM5",
+        "CNRM-CM5-2",
+        "CNRM-CM6-1",
+        "CNRM-CM6-1-HR",
+        "CNRM-ESM2-1",
+        "CSIRO-Mk3-6-0",
+        "CSIRO-Mk3L-1-2",
+        "CanCM4",
+        "CanESM2",
+        "CanESM5",
+        "E3SM-1-0",
+        "EC-EARTH",
+        "EC-Earth3",
+        "EC-Earth3-Veg",
+        "ECMWF-IFS-HR",
+        "ECMWF-IFS-LR",
+        "ERA-Interim",
+        "ERA5",
+        "FGOALS-f3-H",
+        "FGOALS-f3-L",
+        "FGOALS-g2",
+        "FGOALS-g3",
+        "FGOALS-s2",
+        "FIO-ESM",
+        "GFDL-CM2p1",
+        "GFDL-CM3",
+        "GFDL-CM4",
+        "GFDL-CM4C192",
+        "GFDL-ESM2G",
+        "GFDL-ESM2M",
+        "GFDL-ESM4",
+        "GISS-E2-1-G",
+        "GISS-E2-1-H",
+        "GISS-E2-H",
+        "GISS-E2-H-CC",
+        "GISS-E2-R",
+        "GISS-E2-R-CC",
+        "HadCM3",
+        "HadGEM2-AO",
+        "HadGEM2-CC",
+        "HadGEM2-ES",
+        "HadGEM3-GC31-HM",
+        "HadGEM3-GC31-LL",
+        "HadGEM3-GC31-LM",
+        "HadGEM3-GC31-MM",
+        "IFS",
+        "INM-CM4-8",
+        "INM-CM5-0",
+        "INM-CM5-H",
+        "IPSL-CM5A-LR",
+        "IPSL-CM5A-MR",
+        "IPSL-CM5B-LR",
+        "IPSL-CM6A-ATM-HR",
+        "IPSL-CM6A-LR",
+        "MIROC-ES2L",
+        "MIROC-ESM",
+        "MIROC-ESM-CHEM",
+        "MIROC4h",
+        "MIROC5",
+        "MIROC6",
+        "MPI-ESM-LR",
+        "MPI-ESM-MR",
+        "MPI-ESM-P",
+        "MPI-ESM1-2-HR",
+        "MPI-ESM1-2-XR",
+        "MRI-AGCM3-2-H",
+        "MRI-AGCM3-2-S",
+        "MRI-CGCM3",
+        "MRI-ESM1",
+        "MRI-ESM2-0",
+        "NESM3",
+        "NICAM16-7S",
+        "NICAM16-8S",
+        "NorCPM1",
+        "NorESM1-M",
+        "NorESM1-ME",
+        "NorESM2-LM",
+        "SAM0-UNICON",
+        "UKESM1-0-LL",
+        "bcc-csm1-1",
+        "bcc-csm1-1-m",
+        "inmcm4"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.7456972599029541
+        },
+        {
+            "id": "https://openalex.org/keywords/coupled-model-intercomparison-project",
+            "display_name": "Coupled model intercomparison project",
+            "score": 0.7267223000526428
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.6108314394950867
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.5223309397697449
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.2936841547489166
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.2596127986907959
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.2265273928642273
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.21190056204795837
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.05013167858123779
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.7456972599029541
+        },
+        {
+            "id": "https://openalex.org/C25022447",
+            "wikidata": "https://www.wikidata.org/wiki/Q5178021",
+            "display_name": "Coupled model intercomparison project",
+            "level": 4,
+            "score": 0.7267223000526428
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.6108314394950867
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5223309397697449
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.2936841547489166
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.2596127986907959
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.2265273928642273
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.21190056204795837
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.05013167858123779
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, DJF)",
+            "result": "0.79"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, MAM)",
+            "result": "0.93"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, JJA)",
+            "result": "0.7"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, SON)",
+            "result": "0.68"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, Year)",
+            "result": "0.87"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, DJF)",
+            "result": "0.27"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, MAM)",
+            "result": "0.35"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, JJA)",
+            "result": "0.41"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, SON)",
+            "result": "0.36"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, Year)",
+            "result": "0.23"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, DJF)",
+            "result": "0.03"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, MAM)",
+            "result": "0.14"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, JJA)",
+            "result": "0.64"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, SON)",
+            "result": "0.13"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, Year)",
+            "result": "0.15"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, DJF)",
+            "result": "0.17"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, MAM)",
+            "result": "0.59"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, JJA)",
+            "result": "0.32"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, SON)",
+            "result": "0.25"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, Year)",
+            "result": "0.13"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, DJF)",
+            "result": "0.2"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, JJA)",
+            "result": "0.01"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, DJF)",
+            "result": "0.07"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, JJA)",
+            "result": "0.01"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, MAM)",
+            "result": "0.07"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, SON)",
+            "result": "0.01"
+        },
+        {
+            "model": "ERA5 2007-2010",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, DJF)",
+            "result": "0.94"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, MAM)",
+            "result": "0.19"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, JJA)",
+            "result": "0.05"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, SON)",
+            "result": "0.12"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, Year)",
+            "result": "0.11"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, DJF)",
+            "result": "0.13"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, MAM)",
+            "result": "0.03"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, JJA)",
+            "result": "0.2"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, SON)",
+            "result": "0.25"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, Year)",
+            "result": "0.07"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, JJA)",
+            "result": "0.38"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, SON)",
+            "result": "0.02"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, Year)",
+            "result": "0.02"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, DJF)",
+            "result": "0.13"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, MAM)",
+            "result": "0.27"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, JJA)",
+            "result": "0.06"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, SON)",
+            "result": "0.27"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, Year)",
+            "result": "0.03"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, DJF)",
+            "result": "0.01"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, DJF)",
+            "result": "0.08"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, MAM)",
+            "result": "0.01"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 1979-2018",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, DJF)",
+            "result": "0.08"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, MAM)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, SON)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, DJF)",
+            "result": "0.76"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, MAM)",
+            "result": "0.04"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, JJA)",
+            "result": "0.12"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, SON)",
+            "result": "0.32"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, Year)",
+            "result": "0.09"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, DJF)",
+            "result": "0.93"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, MAM)",
+            "result": "0.42"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, JJA)",
+            "result": "0.32"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, SON)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, Year)",
+            "result": "0.35"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, DJF)",
+            "result": "0.86"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, MAM)",
+            "result": "0.51"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, JJA)",
+            "result": "0.22"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, SON)",
+            "result": "0.57"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, Year)",
+            "result": "0.26"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, DJF)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, MAM)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, SON)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP5 amip 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, DJF)",
+            "result": "0.05"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, MAM)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, JJA)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, SON)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, DJF)",
+            "result": "0.33"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, MAM)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, JJA)",
+            "result": "0.09"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, SON)",
+            "result": "0.47"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, Year)",
+            "result": "0.04"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, DJF)",
+            "result": "0.21"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, MAM)",
+            "result": "0.08"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, JJA)",
+            "result": "0.34"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, Year)",
+            "result": "0.71"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, DJF)",
+            "result": "0.3"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, MAM)",
+            "result": "0.14"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, JJA)",
+            "result": "0.17"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, SON)",
+            "result": "0.82"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, Year)",
+            "result": "0.07"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, DJF)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, SON)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP5 historical 1979-2005",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, DJF)",
+            "result": "0.6"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, MAM)",
+            "result": "0.4"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, JJA)",
+            "result": "0.34"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, SON)",
+            "result": "0.33"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, Year)",
+            "result": "0.26"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, DJF)",
+            "result": "0.37"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, MAM)",
+            "result": "0.2"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, JJA)",
+            "result": "0.36"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, SON)",
+            "result": "0.42"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, Year)",
+            "result": "0.18"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, DJF)",
+            "result": "0.05"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, MAM)",
+            "result": "0.15"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, JJA)",
+            "result": "0.48"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, SON)",
+            "result": "0.35"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, Year)",
+            "result": "0.1"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, DJF)",
+            "result": "0.33"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, MAM)",
+            "result": "0.38"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, JJA)",
+            "result": "0.17"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, SON)",
+            "result": "0.44"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, Year)",
+            "result": "0.1"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, DJF)",
+            "result": "0.08"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, JJA)",
+            "result": "0.03"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, DJF)",
+            "result": "0.1"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, DJF)",
+            "result": "0.09"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, MAM)",
+            "result": "0.02"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, JJA)",
+            "result": "0.01"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, SON)",
+            "result": "0.05"
+        },
+        {
+            "model": "ERA5 10000 random draws",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, DJF)",
+            "result": "0.15"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, MAM)",
+            "result": "0.06"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, JJA)",
+            "result": "0.03"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, SON)",
+            "result": "0.08"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, Year)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, DJF)",
+            "result": "0.49"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, MAM)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, JJA)",
+            "result": "0.04"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, SON)",
+            "result": "0.07"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, Year)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, DJF)",
+            "result": "0.03"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, MAM)",
+            "result": "0.04"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, JJA)",
+            "result": "0.98"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, SON)",
+            "result": "0.43"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, Year)",
+            "result": "0.23"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, DJF)",
+            "result": "0.3"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, MAM)",
+            "result": "0.71"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, JJA)",
+            "result": "0.19"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, SON)",
+            "result": "0.79"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, Year)",
+            "result": "0.19"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, DJF)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, MAM)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 amip 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, DJF)",
+            "result": "0.07"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, MAM)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, JJA)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, SON)",
+            "result": "0.03"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, Year)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, DJF)",
+            "result": "0.3"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, MAM)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, JJA)",
+            "result": "0.05"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, SON)",
+            "result": "0.21"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, Year)",
+            "result": "0.03"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, DJF)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, MAM)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, JJA)",
+            "result": "0.49"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, SON)",
+            "result": "0.03"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, Year)",
+            "result": "0.36"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, DJF)",
+            "result": "0.06"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, MAM)",
+            "result": "0.06"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, JJA)",
+            "result": "0.03"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, SON)",
+            "result": "0.04"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, Year)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, DJF)",
+            "result": "0.01"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 historical 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, DJF)",
+            "result": "0.16"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, MAM)",
+            "result": "0.1"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, JJA)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, SON)",
+            "result": "0.09"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Ross, Year)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, DJF)",
+            "result": "0.19"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, MAM)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, JJA)",
+            "result": "0.16"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, SON)",
+            "result": "0.18"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Filchner, Year)",
+            "result": "0.04"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, JJA)",
+            "result": "0.91"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, SON)",
+            "result": "0.85"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Peninsula, Year)",
+            "result": "0.08"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, DJF)",
+            "result": "0.12"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, MAM)",
+            "result": "0.4"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, JJA)",
+            "result": "0.09"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, SON)",
+            "result": "0.37"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowEast, Year)",
+            "result": "0.05"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (LowWest, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, DJF)",
+            "result": "0.02"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (Plateau, Year)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, DJF)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, MAM)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, JJA)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, SON)",
+            "result": "0.0"
+        },
+        {
+            "model": "CMIP6 highresSST 1979-2014",
+            "observational_dataset": "CloudSat",
+            "evaluation_metric": "Welch t-test p-value (All, Year)",
+            "result": "0.0"
+        }
+    ],
+    "innovation": "This paper evaluates Antarctic precipitation from CMIP6 models and ERA5 reanalysis against CloudSat observations, finding they exhibit a persistent high bias and show insignificant improvement in mean precipitation rates compared to the preceding CMIP5 models.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Cloud Profiling Radar",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "snowfall rate",
+            "target_entity_type": "Variable",
+            "paragraph": "The instrument on the CloudSat satellite platform is a RADAR operating at 94GHz and looking at nadir. The Cloud Profiling Radar (CPR) measures the back-scattered signal of hydrometeors. Based on microphysical parameters (Wood et al., 2015) and the diffusion properties of the ice particles, the snowfall rate can be computed.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Cloud Profiling Radar",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "CloudSat satellite",
+            "target_entity_type": "Platform",
+            "paragraph": "The instrument on the CloudSat satellite platform is a RADAR operating at 94GHz and looking at nadir. The Cloud Profiling Radar (CPR) measures the back-scattered signal of hydrometeors.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Integrated Forecasting System (IFS) model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "ERA5 (Copernicus Climate Change Service, C3S) is the latest global reanalysis of the atmosphere made by the European Centre for Medium-Range Weather Forecasts (ECMWF) based on historical observation data since 1979 with the Integrated Forecasting System (IFS) model and its data assimilation system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "137 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Outputs from these reanalyses have high horizontal and vertical spatial resolutions (30 km, 137 vertical levels).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "ERA5",
+            "target_entity_type": "Source",
+            "paragraph": "Using new reanalyses and output of the most recent CMIP exercise, this work provides a brief update of the analysis by Palerme et al. (2017), which focused on CMIP5 and ERA-Interim.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "positive mean precipitation bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Interestingly, ERA5 similarly exhibits a positive mean precipitation bias of about 30 mm yr\u00af\u00b9 and is therefore not better, at least compared to the CloudSat climatology, than the CMIP5 and CMIP6 median models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "The Cryosphere",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "CloudSat",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "CloudSat",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Laboratoire de M\u00e9t\u00e9orologie Dynamique",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institut Pierre-Simon Laplace",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Sorbonne Universit\u00e9",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNRS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "\u00c9cole Normale Sup\u00e9rieure",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "PSL Research University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "\u00c9cole Polytechnique",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IPP",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Paris",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Institut des G\u00e9osciences de l'Environnement",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Univ. Grenoble Alpes",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Grenoble",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Antarctic precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "AMIP",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "amip",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "World Climate Research Programme",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "WCRP",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project Phase 6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project Phase 5",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "satellite radar",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ERA-Interim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Antarctic continent",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ice sheet mass balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global sea level",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "meltwater drainage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice discharge",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snowfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snowfall rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "European Geosciences Union",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "EGU",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Cloud Profiling Radar",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "CPR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "RADAR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "surface snowfall rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "atmospheric circulation model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "AGCM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "sea surface temperatures",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SSTs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "coupled ocean-atmosphere",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "highresSST-present",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HighResMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "RCP8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "CO2 emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Copernicus Climate Change Service",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "C3S",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Integrated Forecasting System",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "IFS",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "30 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "137 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Antarctic ice sheet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ice shelves",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Plateau",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East Antarctic Coast",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Peninsula",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Filchner-Ronne and Ross ice shelves",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "West Antarctic Ice Sheet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "mean precipitation trend",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "absolute differences",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "high bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Relative errors",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "LowWest",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Filchner",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ross",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East Antarctica",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "LowEast",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "positive biases",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "West Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "root-mean-square errors",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "atmospheric general circulation models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "atmosphere-only",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "ACCESS1-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ACCESS1-3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "bcc-csm1-1-m",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "bcc-csm1-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BNU-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CCSM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM1-CAM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC-CM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CSIRO-Mk3-6-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-EARTH",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FGOALS-g2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FGOALS-s2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-CM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-R",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "inmcm4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM5A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM5A-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM5B-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-CGCM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM1-M",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CanCM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CanESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM1-BGC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM1-FASTCHEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM1-WACCM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC-CESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC-CMS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CM5-2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CSIRO-Mk3L-1-2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FIO-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-CM2p1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM2G",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM2M",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-H-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-H",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-R-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadCM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2-AO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2-ES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ESM-CHEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC4h",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM-P",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-ESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM1-ME",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BCC-CSM2-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BCC-ESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CAMS-CSM1-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CanESM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM2-WACCM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CM6-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-ESM2-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "E3SM-1-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth3-Veg",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FGOALS-f3-L",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-CM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-1-G",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM3-GC31-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INM-CM5-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM6A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-ESM2-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NESM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorCPM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM2-LM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SAM0-UNICON",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UKESM1-0-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CM6-1-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FGOALS-g3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-1-H",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INM-CM4-8",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ES2L",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC-CM2-HR4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC-CM2-VHR4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECMWF-IFS-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECMWF-IFS-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FGOALS-f3-H",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-CM4C192",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM3-GC31-HM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM3-GC31-LM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM3-GC31-MM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INM-CM5-H",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM6A-ATM-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-XR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-AGCM3-2-H",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-AGCM3-2-S",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NICAM16-7S",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NICAM16-8S",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "rcp85",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "annual",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "p value",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SCAR READER",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "automatic weather station",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "AWS",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "manned station",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "inter-model standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Earth System Grid Federation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ESGF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "French Polar Institute IPEV",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNES",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNRS GDR EECLAT",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Working Group on Coupled Modelling",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "High Resolution Model Intercomparison Project",
+            "entity_type": "Activity"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1480409802",
+        "https://openalex.org/W2013486114",
+        "https://openalex.org/W2089729606",
+        "https://openalex.org/W2193503481",
+        "https://openalex.org/W2763575518",
+        "https://openalex.org/W2143141076",
+        "https://openalex.org/W2045904264",
+        "https://openalex.org/W2550337802",
+        "https://openalex.org/W2903534000",
+        "https://openalex.org/W2997670830",
+        "https://openalex.org/W1681521146",
+        "https://openalex.org/W2996572161",
+        "https://openalex.org/W2029734310",
+        "https://openalex.org/W2320670507",
+        "https://openalex.org/W2906381722",
+        "https://openalex.org/W2024966118",
+        "https://openalex.org/W2107057810",
+        "https://openalex.org/W1997327251",
+        "https://openalex.org/W3100532243",
+        "https://openalex.org/W2807924770",
+        "https://openalex.org/W3016062757",
+        "https://openalex.org/W3004654262"
+    ]
+}

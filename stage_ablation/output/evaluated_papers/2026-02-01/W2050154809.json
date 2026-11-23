@@ -1,0 +1,1984 @@
+{
+    "uri": "https://openalex.org/W2050154809",
+    "title": "Evaluation of global monitoring and forecasting systems at Mercator Oc\u00e9an",
+    "venue": {
+        "name": "Ocean science",
+        "id": "https://openalex.org/S152701455",
+        "type": "journal"
+    },
+    "publication_year": 2013,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5027985954",
+            "display_name": "Jean\u2010Michel Lellouche",
+            "orcid": "https://orcid.org/0000-0001-7610-9625"
+        },
+        {
+            "id": "https://openalex.org/A5050254216",
+            "display_name": "O. Le Galloudec",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5016009572",
+            "display_name": "Marie Dr\u00e9villon",
+            "orcid": "https://orcid.org/0000-0003-4586-8957"
+        },
+        {
+            "id": "https://openalex.org/A5007075286",
+            "display_name": "Charly R\u00e9gnier",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5075276337",
+            "display_name": "Eric Greiner",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5054335164",
+            "display_name": "Gilles Garric",
+            "orcid": "https://orcid.org/0000-0002-5385-710X"
+        },
+        {
+            "id": "https://openalex.org/A5102925022",
+            "display_name": "Nicolas Ferry",
+            "orcid": "https://orcid.org/0000-0003-2036-0508"
+        },
+        {
+            "id": "https://openalex.org/A5056734520",
+            "display_name": "Charles Desportes",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5110907513",
+            "display_name": "C.\u2010E. Testut",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5058943609",
+            "display_name": "Cl\u00e9ment Bricaud",
+            "orcid": "https://orcid.org/0000-0003-3677-414X"
+        },
+        {
+            "id": "https://openalex.org/A5108125657",
+            "display_name": "Romain Bourdall\u00e9-Badi\u00e9",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5108104449",
+            "display_name": "B. Tranchant",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5033962384",
+            "display_name": "Mounir Benkiran",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5025010372",
+            "display_name": "Yann Drillet",
+            "orcid": "https://orcid.org/0000-0002-6450-3809"
+        },
+        {
+            "id": "https://openalex.org/A5023224053",
+            "display_name": "A. Daudin",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5008430861",
+            "display_name": "C. De Nicola",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/os-9-57-2013",
+    "abstract": "Abstract. Since December 2010, the MyOcean global analysis and forecasting system has consisted of the Mercator Oc\u00e9an NEMO global 1/4\u00b0 configuration with a 1/12\u00b0 nested model over the Atlantic and the Mediterranean. The open boundary data for the nested configuration come from the global 1/4\u00b0 configuration at 20\u00b0 S and 80\u00b0 N. The data are assimilated by means of a reduced-order Kalman filter with a 3-D multivariate modal decomposition of the forecast error. It includes an adaptive-error estimate and a localization algorithm. A 3-D-Var scheme provides a correction for the slowly evolving large-scale biases in temperature and salinity. Altimeter data, satellite sea surface temperature and in situ temperature and salinity vertical profiles are jointly assimilated to estimate the initial conditions for numerical ocean forecasting. In addition to the quality control performed by data producers, the system carries out a proper quality control on temperature and salinity vertical profiles in order to minimise the risk of erroneous observed profiles being assimilated in the model. This paper describes the recent systems used by Mercator Oc\u00e9an and the validation procedure applied to current MyOcean systems as well as systems under development. The paper shows how refinements or adjustments to the system during the validation procedure affect its quality. Additionally, we show that quality checks (in situ, drifters) and data sources (satellite sea surface temperature) have as great an impact as the system design (model physics and assimilation parameters). The results of the scientific assessment are illustrated with diagnostics over the year 2010 mainly, assorted with time series over the 2007\u20132011 period. The validation procedure demonstrates the accuracy of MyOcean global products, whose quality is stable over time. All monitoring systems are close to altimetric observations with a forecast RMS difference of 7 cm. The update of the mean dynamic topography corrects local biases in the Indonesian Throughflow and in the western tropical Pacific. This improves also the subsurface currents at the Equator. The global systems give an accurate description of water masses almost everywhere. Between 0 and 500 m, departures from in situ observations rarely exceed 1 \u00b0C and 0.2 psu. The assimilation of an improved sea surface temperature product aims to better represent the sea ice concentration and the sea ice edge. The systems under development are still suffering from a drift which can only be detected by means of a 5-yr hindcast, preventing us from upgrading them in real time. This emphasizes the need to pursue research while building future systems for MyOcean2 forecasting.",
+    "field": "Operational oceanography",
+    "problem": "This paper addresses the challenge of evaluating and improving complex operational ocean forecasting systems by assessing how refinements to models, data sources, and quality control affect forecast accuracy and stability, highlighting persistent issues like model drift that prevent the deployment of upgraded systems in real time.",
+    "method": "This paper describes and applies a comprehensive validation procedure, using statistical metrics and physical process assessments, to evaluate the quality and demonstrate the accuracy of global ocean monitoring and forecasting systems and the impact of successive refinements.",
+    "task": "The task is to evaluate the global ocean monitoring and forecasting systems at Mercator Oc\u00e9an, describing recent updates and assessing their accuracy and quality against various observational data for the MyOcean project.",
+    "model": [
+        "NEMO",
+        "LIM2",
+        "CLIO",
+        "BIOMER"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/data-assimilation",
+            "display_name": "Data assimilation",
+            "score": 0.6320971846580505
+        },
+        {
+            "id": "https://openalex.org/keywords/global-forecast-system",
+            "display_name": "Global Forecast System",
+            "score": 0.580313503742218
+        },
+        {
+            "id": "https://openalex.org/keywords/temperature-salinity-diagrams",
+            "display_name": "Temperature salinity diagrams",
+            "score": 0.5592940449714661
+        },
+        {
+            "id": "https://openalex.org/keywords/kalman-filter",
+            "display_name": "Kalman filter",
+            "score": 0.513846218585968
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.5110255479812622
+        },
+        {
+            "id": "https://openalex.org/keywords/altimeter",
+            "display_name": "Altimeter",
+            "score": 0.5042053461074829
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.4963429570198059
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-surface-temperature",
+            "display_name": "Sea surface temperature",
+            "score": 0.4921519160270691
+        },
+        {
+            "id": "https://openalex.org/keywords/satellite",
+            "display_name": "Satellite",
+            "score": 0.48215004801750183
+        },
+        {
+            "id": "https://openalex.org/keywords/mercator-projection",
+            "display_name": "Mercator projection",
+            "score": 0.4802134931087494
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-surface-height",
+            "display_name": "Sea-surface height",
+            "score": 0.4508953094482422
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.431448757648468
+        },
+        {
+            "id": "https://openalex.org/keywords/numerical-weather-prediction",
+            "display_name": "Numerical weather prediction",
+            "score": 0.3665642738342285
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.3590317964553833
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.2682682275772095
+        },
+        {
+            "id": "https://openalex.org/keywords/salinity",
+            "display_name": "Salinity",
+            "score": 0.2551186680793762
+        },
+        {
+            "id": "https://openalex.org/keywords/geodesy",
+            "display_name": "Geodesy",
+            "score": 0.19674572348594666
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.17539095878601074
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.6320971846580505
+        },
+        {
+            "id": "https://openalex.org/C163109420",
+            "wikidata": "https://www.wikidata.org/wiki/Q287011",
+            "display_name": "Global Forecast System",
+            "level": 3,
+            "score": 0.580313503742218
+        },
+        {
+            "id": "https://openalex.org/C23715911",
+            "wikidata": "https://www.wikidata.org/wiki/Q7698340",
+            "display_name": "Temperature salinity diagrams",
+            "level": 3,
+            "score": 0.5592940449714661
+        },
+        {
+            "id": "https://openalex.org/C157286648",
+            "wikidata": "https://www.wikidata.org/wiki/Q846780",
+            "display_name": "Kalman filter",
+            "level": 2,
+            "score": 0.513846218585968
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.5110255479812622
+        },
+        {
+            "id": "https://openalex.org/C17534553",
+            "wikidata": "https://www.wikidata.org/wiki/Q216197",
+            "display_name": "Altimeter",
+            "level": 2,
+            "score": 0.5042053461074829
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.4963429570198059
+        },
+        {
+            "id": "https://openalex.org/C134097258",
+            "wikidata": "https://www.wikidata.org/wiki/Q1507383",
+            "display_name": "Sea surface temperature",
+            "level": 2,
+            "score": 0.4921519160270691
+        },
+        {
+            "id": "https://openalex.org/C19269812",
+            "wikidata": "https://www.wikidata.org/wiki/Q26540",
+            "display_name": "Satellite",
+            "level": 2,
+            "score": 0.48215004801750183
+        },
+        {
+            "id": "https://openalex.org/C36639349",
+            "wikidata": "https://www.wikidata.org/wiki/Q309372",
+            "display_name": "Mercator projection",
+            "level": 2,
+            "score": 0.4802134931087494
+        },
+        {
+            "id": "https://openalex.org/C142672198",
+            "wikidata": "https://www.wikidata.org/wiki/Q7076157",
+            "display_name": "Sea-surface height",
+            "level": 3,
+            "score": 0.4508953094482422
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.431448757648468
+        },
+        {
+            "id": "https://openalex.org/C147947694",
+            "wikidata": "https://www.wikidata.org/wiki/Q837552",
+            "display_name": "Numerical weather prediction",
+            "level": 2,
+            "score": 0.3665642738342285
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.3590317964553833
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.2682682275772095
+        },
+        {
+            "id": "https://openalex.org/C129513315",
+            "wikidata": "https://www.wikidata.org/wiki/Q179615",
+            "display_name": "Salinity",
+            "level": 2,
+            "score": 0.2551186680793762
+        },
+        {
+            "id": "https://openalex.org/C13280743",
+            "wikidata": "https://www.wikidata.org/wiki/Q131089",
+            "display_name": "Geodesy",
+            "level": 1,
+            "score": 0.19674572348594666
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.17539095878601074
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C146978453",
+            "wikidata": "https://www.wikidata.org/wiki/Q3798668",
+            "display_name": "Aerospace engineering",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C127413603",
+            "wikidata": "https://www.wikidata.org/wiki/Q11023",
+            "display_name": "Engineering",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "MyOcean Global Systems",
+            "observational_dataset": "NSIDC sea ice extent from SSM/I observations",
+            "evaluation_metric": "Time evolution of sea ice extent",
+            "result": "Not specified in table"
+        },
+        {
+            "model": "MyOcean Global Systems",
+            "observational_dataset": "MyOcean: on track AVISO SLA observations",
+            "evaluation_metric": "Error = observation minus model; Time evolution of RMS and mean error",
+            "result": "Not specified in table"
+        },
+        {
+            "model": "MyOcean Global Systems",
+            "observational_dataset": "\"RTG\" SST(\"AVHRR + AMSRE\" SST for HRZ)",
+            "evaluation_metric": "Error = observation minus model; Time evolution of RMS and mean error",
+            "result": "Not specified in table"
+        },
+        {
+            "model": "MyOcean Global Systems",
+            "observational_dataset": "MyOcean: CORIOLIS T(z) and S(z) profiles",
+            "evaluation_metric": "Error = model minus observation; Time evolution of RMS error on 0-500 m; Vertical profile of mean error.",
+            "result": "Not specified in table"
+        },
+        {
+            "model": "MyOcean Global Systems",
+            "observational_dataset": "GLOSS, BODC, Imedea, WOCE, OPPE, SONEL",
+            "evaluation_metric": "Error = model minus observation; Time series correlation and RMS error",
+            "result": "Not specified in table"
+        },
+        {
+            "model": "MyOcean Global Systems",
+            "observational_dataset": "SVP drifting buoys from CORIOLIS",
+            "evaluation_metric": "Error = model minus observation; Mean error and vector correlation",
+            "result": "Not specified in table"
+        },
+        {
+            "model": "MyOcean Global Systems",
+            "observational_dataset": "SVP drifting buoys from CORIOLIS",
+            "evaluation_metric": "Error = model minus observation; Mean error and vector correlation",
+            "result": "Not specified in table"
+        },
+        {
+            "model": "MyOcean Global Systems",
+            "observational_dataset": "CERSAT sea ice concentration",
+            "evaluation_metric": "Error = observation minus model; Time evolution of RMS and mean error",
+            "result": "Not specified in table"
+        }
+    ],
+    "innovation": "This paper presents a comprehensive evaluation of the MyOcean V2 global monitoring and forecasting systems, assessing their accuracy and stability and demonstrating that refinements in data sources, quality control, and assimilation parameters significantly impact the quality of the ocean analysis and forecast products.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "MyOcean global analysis and forecasting system",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Mercator Oc\u00e9an NEMO global 1/4\u00b0 configuration",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Since December 2010, the MyOcean global analysis and forecasting system has consisted of the Mercator Oc\u00e9an NEMO global 1/4\u00b0 configuration with a 1/12\u00b0 nested model over the Atlantic and the Mediterranean. The open boundary data for the nested configuration come from the global 1/4\u00b0 configuration at 20\u00b0 S and 80\u00b0 N.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MyOcean global analysis and forecasting system",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "1/12\u00b0 nested model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Since December 2010, the MyOcean global analysis and forecasting system has consisted of the Mercator Oc\u00e9an NEMO global 1/4\u00b0 configuration with a 1/12\u00b0 nested model over the Atlantic and the Mediterranean. The open boundary data for the nested configuration come from the global 1/4\u00b0 configuration at 20\u00b0 S and 80\u00b0 N.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MyOcean global analysis and forecasting system",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "reduced-order Kalman filter",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The data are assimilated by means of a reduced-order Kalman filter with a 3-D multivariate modal decomposition of the forecast error. It includes an adaptive-error estimate and a localization algorithm. A 3-D-Var scheme provides a correction for the slowly evolving large-scale biases in temperature and salinity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MyOcean global analysis and forecasting system",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "3-D multivariate modal decomposition of the forecast error",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The data are assimilated by means of a reduced-order Kalman filter with a 3-D multivariate modal decomposition of the forecast error. It includes an adaptive-error estimate and a localization algorithm. A 3-D-Var scheme provides a correction for the slowly evolving large-scale biases in temperature and salinity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MyOcean global analysis and forecasting system",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "adaptive-error estimate",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The data are assimilated by means of a reduced-order Kalman filter with a 3-D multivariate modal decomposition of the forecast error. It includes an adaptive-error estimate and a localization algorithm. A 3-D-Var scheme provides a correction for the slowly evolving large-scale biases in temperature and salinity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MyOcean global analysis and forecasting system",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "localization algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The data are assimilated by means of a reduced-order Kalman filter with a 3-D multivariate modal decomposition of the forecast error. It includes an adaptive-error estimate and a localization algorithm. A 3-D-Var scheme provides a correction for the slowly evolving large-scale biases in temperature and salinity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MyOcean global analysis and forecasting system",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "3-D-Var scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The data are assimilated by means of a reduced-order Kalman filter with a 3-D multivariate modal decomposition of the forecast error. It includes an adaptive-error estimate and a localization algorithm. A 3-D-Var scheme provides a correction for the slowly evolving large-scale biases in temperature and salinity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MyOcean global products",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "forecast RMS difference of 7 cm",
+            "target_entity_type": "Metric",
+            "paragraph": "All monitoring systems are close to altimetric observations with a forecast RMS difference of 7 cm.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mercator Oc\u00e9an monitoring and forecasting system",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "NEMO",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The Mercator Oc\u00e9an monitoring and forecasting system is based on the NEMO (Nucleus for European Modelling of the Ocean) ocean-modelling platform and on the SAM (Syst\u00e8me d'Assimilation Mercator) data assimilation system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mercator Oc\u00e9an monitoring and forecasting system",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "SAM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The Mercator Oc\u00e9an monitoring and forecasting system is based on the NEMO (Nucleus for European Modelling of the Ocean) ocean-modelling platform and on the SAM (Syst\u00e8me d'Assimilation Mercator) data assimilation system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IRG_DEV",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "IRG_V1V2",
+            "target_entity_type": "Source",
+            "paragraph": "For each diagnostic, the results of the MyOcean V2 system (current IRG_V1V2 and HRZ_V1V2) are compared with the results from the latest versions of the systems under development (IRG_DEV and HRZ_DEV) that will be available in MyOcean2 (see Fig. 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "HRZ_DEV",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "HRZ_V1V2",
+            "target_entity_type": "Source",
+            "paragraph": "For each diagnostic, the results of the MyOcean V2 system (current IRG_V1V2 and HRZ_V1V2) are compared with the results from the latest versions of the systems under development (IRG_DEV and HRZ_DEV) that will be available in MyOcean2 (see Fig. 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IRG",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "NEMO 3.1",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Since MyOcean V1, the IRG and HRZ systems have used version 3.1 of NEMO (Madec et al., 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HRZ",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "NEMO 3.1",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Since MyOcean V1, the IRG and HRZ systems have used version 3.1 of NEMO (Madec et al., 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IRG",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "tripolar ORCA grid type",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Both configurations are based on the tripolar ORCA grid type (Madec and Imbard, 1996) with, for the IRG system, a horizontal resolution of 27 km at the Equator, 21 km at Cape Hatteras (mid-latitudes) and 6 km toward the Ross and Weddell Seas.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HRZ",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "tripolar ORCA grid type",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Both configurations are based on the tripolar ORCA grid type (Madec and Imbard, 1996) with, for the IRG system, a horizontal resolution of 27 km at the Equator, 21 km at Cape Hatteras (mid-latitudes) and 6 km toward the Ross and Weddell Seas.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IRG",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "energy and enstrophy conserving scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "\"Partial cell\u201d parameterization was chosen for a better representation of the topographic floor (Barnier et al., 2006), and the momentum advection term is computed with the energy and enstrophy conserving scheme proposed by Arakawa and Lamb (1981).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HRZ",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "energy and enstrophy conserving scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "\"Partial cell\u201d parameterization was chosen for a better representation of the topographic floor (Barnier et al., 2006), and the momentum advection term is computed with the energy and enstrophy conserving scheme proposed by Arakawa and Lamb (1981).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IRG",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "total variance diminishing (TVD) advection scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The advection of the tracers (temperature and salinity) is computed with a total variance diminishing (TVD) advection scheme (L\u00e9vy et al., 2001; Cravatte et al., 2007).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HRZ",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "total variance diminishing (TVD) advection scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The advection of the tracers (temperature and salinity) is computed with a total variance diminishing (TVD) advection scheme (L\u00e9vy et al., 2001; Cravatte et al., 2007).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IRG",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LIM2_EVP ice model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Considering the physical model, the main improvements of the current systems (IRG_V1V2 and HRZ_V1V2) over the V0 systems concern the use of high frequency (3 h) atmospheric forcing including the diurnal cycle, the use of the CORE bulk formulation instead of the CLIO one (Goosse et al., 2001), and the use of the LIM2_EVP ice model (see Tables 1 and 2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HRZ",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LIM2_EVP ice model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Considering the physical model, the main improvements of the current systems (IRG_V1V2 and HRZ_V1V2) over the V0 systems concern the use of high frequency (3 h) atmospheric forcing including the diurnal cycle, the use of the CORE bulk formulation instead of the CLIO one (Goosse et al., 2001), and the use of the LIM2_EVP ice model (see Tables 1 and 2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IRG",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "CORE bulk formulae",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Momentum and heat turbulent surface fluxes are computed from CORE bulk formulae (Large and Yeager, 2009) using the usual set of atmospheric variables: surface air temperature at a height of 2 m, surface humidity at a height of 2 m, mean sea level pressure and wind at a height of 10m.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HRZ",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "CORE bulk formulae",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Momentum and heat turbulent surface fluxes are computed from CORE bulk formulae (Large and Yeager, 2009) using the usual set of atmospheric variables: surface air temperature at a height of 2 m, surface humidity at a height of 2 m, mean sea level pressure and wind at a height of 10m.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "singular evolutive extended Kalman filter (SEEK) formulation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The SAM data assimilation method relies on a reduced-order Kalman filter based on the singular evolutive extended Kalman filter (SEEK) formulation introduced by Pham et al. (1998).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IRG_V1V2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "IAU procedure",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The main data assimilation improvements of the current systems (IRG_V1V2 and HRZ_V1V2) with respect to the previous ones concern the insertion of the zonal and meridional velocity components into the control vector, the use of the IAU procedure, the insertion of new observational operators, the use of the CNES-CLS09 MDT, the introduction of 2-D and 3-D pseudo-observations and the use of a bias correction method (see Tables 1 and 2).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HRZ_V1V2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "IAU procedure",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The main data assimilation improvements of the current systems (IRG_V1V2 and HRZ_V1V2) with respect to the previous ones concern the insertion of the zonal and meridional velocity components into the control vector, the use of the IAU procedure, the insertion of new observational operators, the use of the CNES-CLS09 MDT, the introduction of 2-D and 3-D pseudo-observations and the use of a bias correction method (see Tables 1 and 2).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IRG_V1V2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "bias correction method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The main data assimilation improvements of the current systems (IRG_V1V2 and HRZ_V1V2) with respect to the previous ones concern the insertion of the zonal and meridional velocity components into the control vector, the use of the IAU procedure, the insertion of new observational operators, the use of the CNES-CLS09 MDT, the introduction of 2-D and 3-D pseudo-observations and the use of a bias correction method (see Tables 1 and 2).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HRZ_V1V2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "bias correction method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The main data assimilation improvements of the current systems (IRG_V1V2 and HRZ_V1V2) with respect to the previous ones concern the insertion of the zonal and meridional velocity components into the control vector, the use of the IAU procedure, the insertion of new observational operators, the use of the CNES-CLS09 MDT, the introduction of 2-D and 3-D pseudo-observations and the use of a bias correction method (see Tables 1 and 2).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MyOcean global system",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "CLASS1 metrics",
+            "target_entity_type": "Metric",
+            "paragraph": "The consistency between two-system solutions or between a system and observations can be checked by \u201ceyeball\u201d verification. This consists in comparing subjectively two instantaneous or time mean spatial maps of a given parameter. Coherent spatial structures or oceanic processes such as main currents, fronts and eddies are evaluated. This process is referred to as CLASS1 metrics.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MyOcean global system",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "CLASS2 metrics",
+            "target_entity_type": "Metric",
+            "paragraph": "The consistency over time is checked using CLASS2 metrics, which include comparisons of mooring time series and statistics between time series.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MyOcean global system",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "CLASS3",
+            "target_entity_type": "Metric",
+            "paragraph": "Space and/or time integrated values such as volume and heat transports, heat content and eddy kinetic energy are referred to as CLASS3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MyOcean global system",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "CLASS4 metrics",
+            "target_entity_type": "Metric",
+            "paragraph": "Finally, CLASS4 metrics give a measure of the real-time accuracy of systems, by calculating various statistics of the differences between all available oceanic observations (in situ or satellite) and their model equivalent at the time and location of the observation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IRG_DEV",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Murphy Skill Score",
+            "target_entity_type": "Metric",
+            "paragraph": "The IRG_DEV and HRZ_DEV systems improve the skill scores for all GODAE regions, compared with previous systems, even though some MSS are still negative, particularly in the North Atlantic and Antarctica.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HRZ_DEV",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Murphy Skill Score",
+            "target_entity_type": "Metric",
+            "paragraph": "The IRG_DEV and HRZ_DEV systems improve the skill scores for all GODAE regions, compared with previous systems, even though some MSS are still negative, particularly in the North Atlantic and Antarctica.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Atlantic Meridional Overturning Cell",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "North Atlantic",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The OVIDE repetitive section in the North Atlantic has been sampled every other year since 1997 (Lherminier et al., 2007). The North Atlantic is the place of formation of deep water flowing southward, that together with northward surface heat transport via the North Atlantic Drift forms the Atlantic Meridional Overturning Cell.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "El Ni\u00f1o-Southern Oscillation",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "tropical band",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The realism of tropical oceans is crucial for seasonal forecasting applications. The most significant ocean/atmosphere coupling signals are found in the tropical band, for instance the El Ni\u00f1o-Southern Oscillation (ENSO), whose atmospheric teleconnections are global.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Kelvin waves",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Pacific Ocean",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Consistent with Delcroix et al. (1991), the Kelvin waves cross the Pacific Ocean in approximately 2 to 3 months (their phase speed is O(3 ms\u22121)) and their amplitude is O(15 cm) or more.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Rossby waves",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Pacific",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Rossby waves are three times slower (taking 9 months to cross the Pacific at a speed of O(1 ms\u22121)) and their amplitude is weaker (O(10 cm)).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "tropical instability waves",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Pacific",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The tropical instability waves (TIW) can be diagnosed from SST (Chelton et al., 2000). These waves initiate at the interface between areas of warm and cold sea surface temperatures near the Equator and form a regular pattern of westward-propagating waves. Longitude-time diagrams at 3\u25e6 N show TIW mainly in the Pacific and Atlantic Oceans in the eastern parts of the basins (Fig. 23).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "tropical instability waves",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Atlantic Oceans",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The tropical instability waves (TIW) can be diagnosed from SST (Chelton et al., 2000). These waves initiate at the interface between areas of warm and cold sea surface temperatures near the Equator and form a regular pattern of westward-propagating waves. Longitude-time diagrams at 3\u25e6 N show TIW mainly in the Pacific and Atlantic Oceans in the eastern parts of the basins (Fig. 23).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Equatorial Undercurrent",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "equatorial Pacific",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "We looked more closely at another physical process, the equatorial Pacific current system. Figure 24 shows zonal velocity for equatorial longitude-depth sections and latitudedepth sections at 165\u25e6 E. We can see that the IRG_V1V2 EUC (Equatorial Undercurrent) does not penetrate west of 165\u25e6 E and deeper than 100 m.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Mercator Oc\u00e9an",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CLS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ifremer",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNES-CLS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "AVISO",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NCEP",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NOAA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CORIOLIS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IFREMER/CERSAT",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "M\u00e9t\u00e9o-France",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GMMC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "MyOcean",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "MyOcean2",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "GMES",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Marine Core Service",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "MERSEA",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "GODAE",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "OSTIA",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "GODAE Oceanview",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "DRAKKAR",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "NEMO",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "SAM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Syst\u00e8me d'Assimilation Mercator",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LIM2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "BIOMER",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "IRG_V0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IRG_V1V2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IRG_DEV",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HRZ_V0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HRZ_V1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HRZ_V1V2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HRZ_DEV",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PSY3V2R1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PSY3V3R1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PSY3V3R2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PSY2V3R1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PSY2V4R1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PSY2V4R2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PSY2V4R3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GLORYS2V1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNES-CLS09",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Levitus 2005",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CERSAT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NSIDC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GLOSS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BODC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Imedea",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WOCE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OPPE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SONEL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CORA3.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CORA3.2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WOA05",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WOA09",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "AVISO DUACS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1/4\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1/12\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "reduced-order Kalman filter",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "3-D multivariate modal decomposition of the forecast error",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "adaptive-error estimate",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "localization algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "3-D-Var scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "energy and enstrophy conserving scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "total variance diminishing (TVD) advection scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Laplacian lateral isopycnal diffusion on tracers",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "horizontal biharmonic viscosity for momentum",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "turbulent closure model (order 1.5)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "elastic-viscous-plastic rheology formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CORE bulk formulae",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "singular evolutive extended Kalman filter (SEEK) formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Ensemble Optimal Interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "incremental analysis update (IAU) method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "anisotropic Gaussian recursive filter",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Shapiro low-pass filter",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "background quality control",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "50 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "tripolar ORCA grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "50-level vertical discretization",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1 m resolution at the surface",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "22 levels within the upper 100 m",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "\"Partial cell\u201d parameterization",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "partial-slip condition",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Hanning low-pass filter",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice edge",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "subsurface currents",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zonal velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "meridional velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mean sea level pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "downward longwave radiative fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "shortwave radiative fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SLA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "T/S vertical profiles",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "barotropic height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "chlorophyll",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice drift",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface current U",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface current V",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "freshwater",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Kelvin waves",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Rossby waves",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tropical instability waves",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "RMS difference",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation scales",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CLASS1 metrics",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CLASS2 metrics",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CLASS3 metrics",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CLASS4 metrics",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "volume transports",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "heat transports",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "heat content",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "eddy kinetic energy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMS error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "vector correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "innovation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean differences",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMS differences",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "cold and salty subsurface bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "coastal biases",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "cold bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Sea ice extent",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean relative speed bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "sea level innovation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "sea level residual",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMS residual",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMS innovation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean innovation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Murphy Skill Score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SLA Murphy skill score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "linear trend",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "cumulative temperature trend",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "empirical orthogonal function (EOF) analysis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "warm biases",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "3-h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "24-h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "3-90 days band-pass",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "weekly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "quarterly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "yearly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "free run",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "pseudo-observations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "forecast",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "La Ni\u00f1a",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "El Ni\u00f1o-Southern Oscillation",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "ENSO",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Indonesian Throughflow",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Gulf Stream",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Kuroshio",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Agulhas current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Beaufort Gyre",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Transpolar Drift Stream",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Antarctic Circumpolar Current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "North Atlantic Drift",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "North Pacific Current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "North Equatorial Current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "South Equatorial Current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "North Brazil Current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Florida Current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "East African Coastal Current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Equatorial Pacific Countercurrent",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Atlantic Meridional Overturning Cell",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Equatorial Undercurrent",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "satellites",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Argo",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SeaWIFS",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "ships",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "buoys",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Argo array",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SSM/I",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Jason1",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Jason2",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "GOCE",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "TAO/TRITON array",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SSALTO/DUACS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Envisat altimeter",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "AVHRR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "AMSRE",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Acoustic Doppler Current Profiler",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ADCP",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mediterranean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "western tropical Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Equator",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Cape Hatteras",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ross Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Weddell Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mediterranean Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Celtic Seas",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Bay of Biscay",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Zapiola eddy",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropical basins",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropical Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indian Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "eastern part of the Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Laptev Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Barents Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Hudson Bay",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Caribbean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North and Baltic Seas",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Hawaii",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Okhotsk Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Iberian-Biscay-Ireland system",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North West Shelves system",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Tropical oceans",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropical Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Philippines",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific east of Australia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Indian",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Madagascar",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Pacific Gyre",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Tropical",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "Mediterranean",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "Indian",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "Tropical Atlantic",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "South Atlantic",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "North Pacific",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "Tropical Pacific",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "South Pacific",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "seaIce",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "atmos",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "United Kingdom",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Iceland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Oregon",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "British Columbia",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Tropical",
+            "entity_type": "ClimateZone"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1977998515",
+        "https://openalex.org/W2114687263",
+        "https://openalex.org/W2060405276",
+        "https://openalex.org/W2089106958",
+        "https://openalex.org/W1976524404",
+        "https://openalex.org/W2176801461",
+        "https://openalex.org/W2175066699",
+        "https://openalex.org/W2333767104",
+        "https://openalex.org/W2136163651",
+        "https://openalex.org/W2113706442",
+        "https://openalex.org/W2042526340",
+        "https://openalex.org/W2029558329",
+        "https://openalex.org/W1975579254",
+        "https://openalex.org/W2173589103",
+        "https://openalex.org/W1975850314",
+        "https://openalex.org/W2094297791",
+        "https://openalex.org/W1978648105",
+        "https://openalex.org/W2009412734",
+        "https://openalex.org/W4252309614",
+        "https://openalex.org/W2102944331",
+        "https://openalex.org/W2080265164",
+        "https://openalex.org/W2072844554",
+        "https://openalex.org/W1983349253",
+        "https://openalex.org/W1666018831",
+        "https://openalex.org/W2146892358",
+        "https://openalex.org/W2007873308",
+        "https://openalex.org/W2084461152",
+        "https://openalex.org/W2174785374",
+        "https://openalex.org/W2047893673",
+        "https://openalex.org/W2165474752",
+        "https://openalex.org/W2105594558",
+        "https://openalex.org/W2148161397",
+        "https://openalex.org/W1980805564",
+        "https://openalex.org/W4255436472",
+        "https://openalex.org/W1974772683",
+        "https://openalex.org/W1994295937",
+        "https://openalex.org/W2072449747",
+        "https://openalex.org/W2130649006",
+        "https://openalex.org/W2114363157",
+        "https://openalex.org/W2058187269",
+        "https://openalex.org/W2120312964",
+        "https://openalex.org/W2045935471",
+        "https://openalex.org/W2131070146",
+        "https://openalex.org/W1970016445",
+        "https://openalex.org/W2019770066",
+        "https://openalex.org/W2144878053",
+        "https://openalex.org/W2077257767",
+        "https://openalex.org/W1993331306",
+        "https://openalex.org/W2014677476",
+        "https://openalex.org/W2141861439",
+        "https://openalex.org/W2124931150",
+        "https://openalex.org/W2552982526",
+        "https://openalex.org/W2883478268",
+        "https://openalex.org/W4229811665"
+    ]
+}

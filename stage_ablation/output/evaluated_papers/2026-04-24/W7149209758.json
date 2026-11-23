@@ -1,0 +1,1118 @@
+{
+    "uri": "https://openalex.org/W7149209758",
+    "title": "MIRANDA: MId-feature RANk-adversarial Domain Adaptation toward climate change-robust ecological forecasting with deep learning",
+    "venue": {
+        "name": "ArXiv.org",
+        "id": "https://openalex.org/S4393918464",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5042426111",
+            "display_name": "Yuchang Jiang",
+            "orcid": "https://orcid.org/0000-0001-7293-1304"
+        },
+        {
+            "id": "https://openalex.org/A5132833123",
+            "display_name": "Jan Dirk Wegner",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5132884599",
+            "display_name": "Vivien Sainte Fare Garnot",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "Plant phenology modelling aims to predict the timing of seasonal phases, such as leaf-out or flowering, from meteorological time series. Reliable predictions are crucial for anticipating ecosystem responses to climate change. While phenology modelling has traditionally relied on mechanistic approaches, deep learning methods have recently been proposed as flexible, data-driven alternatives with often superior performance. However, mechanistic models tend to outperform deep networks when data distribution shifts are induced by climate change. Domain Adaptation (DA) techniques could help address this limitation. Yet, unlike standard DA settings, climate change induces a temporal continuum of domains and involves both a covariate and label shift, with warmer records and earlier start of spring. To tackle this challenge, we introduce Mid-feature Rank-adversarial Domain Adaptation (MIRANDA). Whereas conventional adversarial methods enforce domain invariance on final latent representations, an approach that does not explicitly address label shift, we apply adversarial regularization to intermediate features. Moreover, instead of a binary domain-classification objective, we employ a rank-based objective that enforces year-invariance in the learned meteorological representations. On a country-scale dataset spanning 70 years and comprising 67,800 phenological observations of 5 tree species, we demonstrate that, unlike conventional DA approaches, MIRANDA improves robustness to climatic distribution shifts and narrows the performance gap with mechanistic models.",
+    "field": "Domain adaptation for ecological forecasting",
+    "problem": "Deep learning phenology models perform poorly under climate change because existing domain adaptation techniques are ill-suited to handle the continuous temporal distribution shift involving both changes in climate data (covariate shift) and the timing of plant events (label shift).",
+    "method": "We propose a rank-adversarial domain adaptation method that applies a temporal ranking objective to intermediate features to learn year-invariant representations, thereby improving the robustness of deep learning models for phenology forecasting under climate change.",
+    "task": "The task is to predict plant phenological dates from meteorological time series, using a novel domain adaptation method to make deep learning models robust to the distribution shifts caused by climate change.",
+    "model": [
+        "CNRM-CM6-1"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/adversarial-system",
+            "display_name": "Adversarial system",
+            "score": 0.6553999781608582
+        },
+        {
+            "id": "https://openalex.org/keywords/domain-adaptation",
+            "display_name": "Domain adaptation",
+            "score": 0.5656999945640564
+        },
+        {
+            "id": "https://openalex.org/keywords/deep-learning",
+            "display_name": "Deep learning",
+            "score": 0.5649999976158142
+        },
+        {
+            "id": "https://openalex.org/keywords/robustness",
+            "display_name": "Robustness (evolution)",
+            "score": 0.5281999707221985
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.5159000158309937
+        },
+        {
+            "id": "https://openalex.org/keywords/phenology",
+            "display_name": "Phenology",
+            "score": 0.41269999742507935
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.40389999747276306
+        },
+        {
+            "id": "https://openalex.org/keywords/covariate",
+            "display_name": "Covariate",
+            "score": 0.38920000195503235
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C37736160",
+            "wikidata": "https://www.wikidata.org/wiki/Q1801315",
+            "display_name": "Adversarial system",
+            "level": 2,
+            "score": 0.6553999781608582
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.6233999729156494
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.6129999756813049
+        },
+        {
+            "id": "https://openalex.org/C2776434776",
+            "wikidata": "https://www.wikidata.org/wiki/Q19246213",
+            "display_name": "Domain adaptation",
+            "level": 3,
+            "score": 0.5656999945640564
+        },
+        {
+            "id": "https://openalex.org/C108583219",
+            "wikidata": "https://www.wikidata.org/wiki/Q197536",
+            "display_name": "Deep learning",
+            "level": 2,
+            "score": 0.5649999976158142
+        },
+        {
+            "id": "https://openalex.org/C63479239",
+            "wikidata": "https://www.wikidata.org/wiki/Q7353546",
+            "display_name": "Robustness (evolution)",
+            "level": 3,
+            "score": 0.5281999707221985
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.5159000158309937
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.4706000089645386
+        },
+        {
+            "id": "https://openalex.org/C51417038",
+            "wikidata": "https://www.wikidata.org/wiki/Q272737",
+            "display_name": "Phenology",
+            "level": 2,
+            "score": 0.41269999742507935
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.40389999747276306
+        },
+        {
+            "id": "https://openalex.org/C119043178",
+            "wikidata": "https://www.wikidata.org/wiki/Q320723",
+            "display_name": "Covariate",
+            "level": 2,
+            "score": 0.38920000195503235
+        },
+        {
+            "id": "https://openalex.org/C2776135515",
+            "wikidata": "https://www.wikidata.org/wiki/Q17143721",
+            "display_name": "Regularization (linguistics)",
+            "level": 2,
+            "score": 0.3668999969959259
+        },
+        {
+            "id": "https://openalex.org/C96240277",
+            "wikidata": "https://www.wikidata.org/wiki/Q5333237",
+            "display_name": "Ecological forecasting",
+            "level": 4,
+            "score": 0.3594000041484833
+        },
+        {
+            "id": "https://openalex.org/C36503486",
+            "wikidata": "https://www.wikidata.org/wiki/Q11235244",
+            "display_name": "Domain (mathematical analysis)",
+            "level": 2,
+            "score": 0.35440000891685486
+        },
+        {
+            "id": "https://openalex.org/C139807058",
+            "wikidata": "https://www.wikidata.org/wiki/Q352374",
+            "display_name": "Adaptation (eye)",
+            "level": 2,
+            "score": 0.3379000127315521
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.32839998602867126
+        },
+        {
+            "id": "https://openalex.org/C110872660",
+            "wikidata": "https://www.wikidata.org/wiki/Q37813",
+            "display_name": "Ecosystem",
+            "level": 2,
+            "score": 0.3240000009536743
+        },
+        {
+            "id": "https://openalex.org/C48372109",
+            "wikidata": "https://www.wikidata.org/wiki/Q3913",
+            "display_name": "Binary number",
+            "level": 2,
+            "score": 0.29010000824928284
+        },
+        {
+            "id": "https://openalex.org/C103215972",
+            "wikidata": "https://www.wikidata.org/wiki/Q5381340",
+            "display_name": "Environmental niche modelling",
+            "level": 4,
+            "score": 0.271699994802475
+        },
+        {
+            "id": "https://openalex.org/C2778851808",
+            "wikidata": "https://www.wikidata.org/wiki/Q260607",
+            "display_name": "Climate change adaptation",
+            "level": 3,
+            "score": 0.2646999955177307
+        },
+        {
+            "id": "https://openalex.org/C177606310",
+            "wikidata": "https://www.wikidata.org/wiki/Q5674297",
+            "display_name": "Adaptability",
+            "level": 2,
+            "score": 0.25600001215934753
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "PhenoFormer Vanilla [15]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.50 (0.01)"
+        },
+        {
+            "model": "PhenoFormer Vanilla [15]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "8.96"
+        },
+        {
+            "model": "PhenoFormer Vanilla [15]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "6.82"
+        },
+        {
+            "model": "PhenoFormer Vanilla [15]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.41 (0.02)"
+        },
+        {
+            "model": "PhenoFormer Vanilla [15]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "9.56"
+        },
+        {
+            "model": "PhenoFormer Vanilla [15]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "7.26"
+        },
+        {
+            "model": "PhenoFormer Vanilla [15]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "0.17 (0.02)"
+        },
+        {
+            "model": "PhenoFormer Vanilla [15]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "11.67"
+        },
+        {
+            "model": "PhenoFormer Vanilla [15]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "9.00"
+        },
+        {
+            "model": "+DANN [1]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.49 (0.01)"
+        },
+        {
+            "model": "+DANN [1]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "9.08"
+        },
+        {
+            "model": "+DANN [1]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "6.98"
+        },
+        {
+            "model": "+DANN [1]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.38 (0.06)"
+        },
+        {
+            "model": "+DANN [1]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "9.78"
+        },
+        {
+            "model": "+DANN [1]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "7.44"
+        },
+        {
+            "model": "+DANN [1]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "-0.20 (0.21)"
+        },
+        {
+            "model": "+DANN [1]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "14.03"
+        },
+        {
+            "model": "+DANN [1]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "11.32"
+        },
+        {
+            "model": "+ADDA [37]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.23 (0.15)"
+        },
+        {
+            "model": "+ADDA [37]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "11.14"
+        },
+        {
+            "model": "+ADDA [37]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "8.80"
+        },
+        {
+            "model": "+ADDA [37]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.12 (0.10)"
+        },
+        {
+            "model": "+ADDA [37]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "11.64"
+        },
+        {
+            "model": "+ADDA [37]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "9.18"
+        },
+        {
+            "model": "+ADDA [37]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "-0.61 (0.16)"
+        },
+        {
+            "model": "+ADDA [37]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "16.22"
+        },
+        {
+            "model": "+ADDA [37]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "13.33"
+        },
+        {
+            "model": "+CORAL [34, 35]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.51 (0.01)"
+        },
+        {
+            "model": "+CORAL [34, 35]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "8.93"
+        },
+        {
+            "model": "+CORAL [34, 35]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "6.79"
+        },
+        {
+            "model": "+CORAL [34, 35]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.42 (0.02)"
+        },
+        {
+            "model": "+CORAL [34, 35]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "9.50"
+        },
+        {
+            "model": "+CORAL [34, 35]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "7.22"
+        },
+        {
+            "model": "+CORAL [34, 35]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "-0.16 (0.15)"
+        },
+        {
+            "model": "+CORAL [34, 35]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "13.77"
+        },
+        {
+            "model": "+CORAL [34, 35]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "10.98"
+        },
+        {
+            "model": "+DANL [30]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.48 (0.02)"
+        },
+        {
+            "model": "+DANL [30]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "9.17"
+        },
+        {
+            "model": "+DANL [30]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "7.03"
+        },
+        {
+            "model": "+DANL [30]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.30 (0.03)"
+        },
+        {
+            "model": "+DANL [30]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "10.44"
+        },
+        {
+            "model": "+DANL [30]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "8.06"
+        },
+        {
+            "model": "+DANL [30]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "-0.01 (0.10)"
+        },
+        {
+            "model": "+DANL [30]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "12.90"
+        },
+        {
+            "model": "+DANL [30]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "10.24"
+        },
+        {
+            "model": "+AdaBN [22]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.49 (0.01)"
+        },
+        {
+            "model": "+AdaBN [22]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "9.05"
+        },
+        {
+            "model": "+AdaBN [22]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "6.89"
+        },
+        {
+            "model": "+AdaBN [22]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.40 (0.04)"
+        },
+        {
+            "model": "+AdaBN [22]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "9.64"
+        },
+        {
+            "model": "+AdaBN [22]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "7.34"
+        },
+        {
+            "model": "+AdaBN [22]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "-0.14 (0.09)"
+        },
+        {
+            "model": "+AdaBN [22]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "13.71"
+        },
+        {
+            "model": "+AdaBN [22]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "10.92"
+        },
+        {
+            "model": "MIRANDA (ours)",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.51 (0.01)"
+        },
+        {
+            "model": "MIRANDA (ours)",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "8.97"
+        },
+        {
+            "model": "MIRANDA (ours)",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "6.80"
+        },
+        {
+            "model": "MIRANDA (ours)",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.43 (0.02)"
+        },
+        {
+            "model": "MIRANDA (ours)",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "9.43"
+        },
+        {
+            "model": "MIRANDA (ours)",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "7.16"
+        },
+        {
+            "model": "MIRANDA (ours)",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "0.22 (0.04)"
+        },
+        {
+            "model": "MIRANDA (ours)",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "11.32"
+        },
+        {
+            "model": "MIRANDA (ours)",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "8.63"
+        },
+        {
+            "model": "M1 [4]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.51 (0.05)"
+        },
+        {
+            "model": "M1 [4]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "8.64"
+        },
+        {
+            "model": "M1 [4]",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "6.77"
+        },
+        {
+            "model": "M1 [4]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.45 (0.05)"
+        },
+        {
+            "model": "M1 [4]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "9.40"
+        },
+        {
+            "model": "M1 [4]",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "7.04"
+        },
+        {
+            "model": "M1 [4]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "0.25 (0.15)"
+        },
+        {
+            "model": "M1 [4]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "11.56"
+        },
+        {
+            "model": "M1 [4]",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "8.53"
+        },
+        {
+            "model": "PhenoFormer Vanilla",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.50"
+        },
+        {
+            "model": "PhenoFormer Vanilla",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "8.96"
+        },
+        {
+            "model": "PhenoFormer Vanilla",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "6.82"
+        },
+        {
+            "model": "PhenoFormer Vanilla",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.41"
+        },
+        {
+            "model": "PhenoFormer Vanilla",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "9.56"
+        },
+        {
+            "model": "PhenoFormer Vanilla",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "7.26"
+        },
+        {
+            "model": "PhenoFormer Vanilla",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "0.17"
+        },
+        {
+            "model": "PhenoFormer Vanilla",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "11.67"
+        },
+        {
+            "model": "PhenoFormer Vanilla",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "9.00"
+        },
+        {
+            "model": "mid-feat",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.51"
+        },
+        {
+            "model": "mid-feat",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "8.96"
+        },
+        {
+            "model": "mid-feat",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "6.82"
+        },
+        {
+            "model": "mid-feat",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.40"
+        },
+        {
+            "model": "mid-feat",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "9.59"
+        },
+        {
+            "model": "mid-feat",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "7.23"
+        },
+        {
+            "model": "mid-feat",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "0.12"
+        },
+        {
+            "model": "mid-feat",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "12.04"
+        },
+        {
+            "model": "mid-feat",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "9.38"
+        },
+        {
+            "model": "mid-feat L_rank",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.50"
+        },
+        {
+            "model": "mid-feat L_rank",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "8.97"
+        },
+        {
+            "model": "mid-feat L_rank",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "6.82"
+        },
+        {
+            "model": "mid-feat L_rank",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.42"
+        },
+        {
+            "model": "mid-feat L_rank",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "9.45"
+        },
+        {
+            "model": "mid-feat L_rank",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "7.18"
+        },
+        {
+            "model": "mid-feat L_rank",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "0.19"
+        },
+        {
+            "model": "mid-feat L_rank",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "11.54"
+        },
+        {
+            "model": "mid-feat L_rank",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "8.87"
+        },
+        {
+            "model": "mid-feat hLN",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.50"
+        },
+        {
+            "model": "mid-feat hLN",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "8.97"
+        },
+        {
+            "model": "mid-feat hLN",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "6.81"
+        },
+        {
+            "model": "mid-feat hLN",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.42"
+        },
+        {
+            "model": "mid-feat hLN",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "9.51"
+        },
+        {
+            "model": "mid-feat hLN",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "7.22"
+        },
+        {
+            "model": "mid-feat hLN",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "0.18"
+        },
+        {
+            "model": "mid-feat hLN",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "11.66"
+        },
+        {
+            "model": "mid-feat hLN",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "8.97"
+        },
+        {
+            "model": "MIRANDA",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "R2",
+            "result": "0.51"
+        },
+        {
+            "model": "MIRANDA",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "RMSE",
+            "result": "8.97"
+        },
+        {
+            "model": "MIRANDA",
+            "observational_dataset": "1. Chronological",
+            "evaluation_metric": "MAE",
+            "result": "6.80"
+        },
+        {
+            "model": "MIRANDA",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "R2",
+            "result": "0.43"
+        },
+        {
+            "model": "MIRANDA",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "RMSE",
+            "result": "9.43"
+        },
+        {
+            "model": "MIRANDA",
+            "observational_dataset": "2. Annual Temperature",
+            "evaluation_metric": "MAE",
+            "result": "7.16"
+        },
+        {
+            "model": "MIRANDA",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "R2",
+            "result": "0.22"
+        },
+        {
+            "model": "MIRANDA",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "RMSE",
+            "result": "11.32"
+        },
+        {
+            "model": "MIRANDA",
+            "observational_dataset": "3. Elevation",
+            "evaluation_metric": "MAE",
+            "result": "8.63"
+        }
+    ],
+    "innovation": "This paper introduces MIRANDA, a novel domain adaptation method that improves deep learning-based ecological forecasting under climate change by applying a rank-based adversarial objective to intermediate features to effectively handle the combined covariate and label shifts induced by a warming climate.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "CNRM-CM6-1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Figure 1. Climate change-robust machine learning. Deep learning models trained on historical climatic conditions face a distribution shift when applied to future climate projections. In this paper we consider models that predict plant phenological dates from meteorological time series and devise a domain adaptation method to enhance their robustness to such shifts. (Temperature data: CMIP6 CNRM-CM6-1 SSP2-4.5 [12, 38], phenological data: Swiss Phenology Network [13])",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PhenoFormer dataset",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "date of needle emergence",
+            "target_entity_type": "Variable",
+            "paragraph": "PhenoFormer dataset. We use the dataset introduced in [15], based on phenological records from the Swiss Phenology Network (SPN) [13]. The dataset comprises 67,800 observations collected from 175 sites across Switzerland over up to 70 years. We focus on a subset of five tree species that offers the longest record: horse chestnut, European beech, European larch, common spruce, and hazel. We predict the date of needle emergence for European larch and common spruce, and the date of leaf unfolding for the other species. Each sample includes daily meteorological time series with 365 data points for seven variables between day of year -100 and 265 of the year at hand. The meteorological variables cover temperature, precipitation, pressure, and day length.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PhenoFormer dataset",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "date of leaf unfolding",
+            "target_entity_type": "Variable",
+            "paragraph": "PhenoFormer dataset. We use the dataset introduced in [15], based on phenological records from the Swiss Phenology Network (SPN) [13]. The dataset comprises 67,800 observations collected from 175 sites across Switzerland over up to 70 years. We focus on a subset of five tree species that offers the longest record: horse chestnut, European beech, European larch, common spruce, and hazel. We predict the date of needle emergence for European larch and common spruce, and the date of leaf unfolding for the other species. Each sample includes daily meteorological time series with 365 data points for seven variables between day of year -100 and 265 of the year at hand. The meteorological variables cover temperature, precipitation, pressure, and day length.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PhenoFormer dataset",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "PhenoFormer dataset. We use the dataset introduced in [15], based on phenological records from the Swiss Phenology Network (SPN) [13]. The dataset comprises 67,800 observations collected from 175 sites across Switzerland over up to 70 years. We focus on a subset of five tree species that offers the longest record: horse chestnut, European beech, European larch, common spruce, and hazel. We predict the date of needle emergence for European larch and common spruce, and the date of leaf unfolding for the other species. Each sample includes daily meteorological time series with 365 data points for seven variables between day of year -100 and 265 of the year at hand. The meteorological variables cover temperature, precipitation, pressure, and day length.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PhenoFormer dataset",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "PhenoFormer dataset. We use the dataset introduced in [15], based on phenological records from the Swiss Phenology Network (SPN) [13]. The dataset comprises 67,800 observations collected from 175 sites across Switzerland over up to 70 years. We focus on a subset of five tree species that offers the longest record: horse chestnut, European beech, European larch, common spruce, and hazel. We predict the date of needle emergence for European larch and common spruce, and the date of leaf unfolding for the other species. Each sample includes daily meteorological time series with 365 data points for seven variables between day of year -100 and 265 of the year at hand. The meteorological variables cover temperature, precipitation, pressure, and day length.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PhenoFormer dataset",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "pressure",
+            "target_entity_type": "Variable",
+            "paragraph": "PhenoFormer dataset. We use the dataset introduced in [15], based on phenological records from the Swiss Phenology Network (SPN) [13]. The dataset comprises 67,800 observations collected from 175 sites across Switzerland over up to 70 years. We focus on a subset of five tree species that offers the longest record: horse chestnut, European beech, European larch, common spruce, and hazel. We predict the date of needle emergence for European larch and common spruce, and the date of leaf unfolding for the other species. Each sample includes daily meteorological time series with 365 data points for seven variables between day of year -100 and 265 of the year at hand. The meteorological variables cover temperature, precipitation, pressure, and day length.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PhenoFormer dataset",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "day length",
+            "target_entity_type": "Variable",
+            "paragraph": "PhenoFormer dataset. We use the dataset introduced in [15], based on phenological records from the Swiss Phenology Network (SPN) [13]. The dataset comprises 67,800 observations collected from 175 sites across Switzerland over up to 70 years. We focus on a subset of five tree species that offers the longest record: horse chestnut, European beech, European larch, common spruce, and hazel. We predict the date of needle emergence for European larch and common spruce, and the date of leaf unfolding for the other species. Each sample includes daily meteorological time series with 365 data points for seven variables between day of year -100 and 265 of the year at hand. The meteorological variables cover temperature, precipitation, pressure, and day length.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "SSP2-4.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "CNRM-CM6-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "M1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UZH",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "DM\u00b3L",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "MeteoSwiss",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "mean absolute error (MAE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean squared error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "coefficient of determination (R\u00b2)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean Squared Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "cosine similarity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "day length",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "leaf unfolding",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "needle emergence",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Temperature Anomaly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mean annual temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Switzerland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Zurich",
+            "entity_type": "City"
+        }
+    ],
+    "referenced_works": []
+}

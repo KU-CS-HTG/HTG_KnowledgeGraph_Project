@@ -1,0 +1,1563 @@
+{
+    "uri": "https://openalex.org/W1997156799",
+    "title": "Implementation of the Fast-JX Photolysis scheme (v6.4) into the UKCA component of the MetUM chemistry-climate model (v7.3)",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2013,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5107838711",
+            "display_name": "P. Telford",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5078321071",
+            "display_name": "Nathan Luke Abraham",
+            "orcid": "https://orcid.org/0000-0003-3750-3544"
+        },
+        {
+            "id": "https://openalex.org/A5042559521",
+            "display_name": "Alexander T. Archibald",
+            "orcid": "https://orcid.org/0000-0001-9302-4180"
+        },
+        {
+            "id": "https://openalex.org/A5010787142",
+            "display_name": "Peter Braesicke",
+            "orcid": "https://orcid.org/0000-0003-1423-0619"
+        },
+        {
+            "id": "https://openalex.org/A5078056281",
+            "display_name": "Mohit Dalvi",
+            "orcid": "https://orcid.org/0000-0003-1669-0811"
+        },
+        {
+            "id": "https://openalex.org/A5007117541",
+            "display_name": "Olaf Morgenstern",
+            "orcid": "https://orcid.org/0000-0002-9967-9740"
+        },
+        {
+            "id": "https://openalex.org/A5070540282",
+            "display_name": "Fiona M. O\u2019Connor",
+            "orcid": "https://orcid.org/0000-0003-2893-4828"
+        },
+        {
+            "id": "https://openalex.org/A5017417070",
+            "display_name": "N. A. D. Richards",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5028155745",
+            "display_name": "J. A. Pyle",
+            "orcid": "https://orcid.org/0000-0003-3629-9916"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-6-161-2013",
+    "abstract": "Abstract. Atmospheric chemistry is driven by photolytic reactions, making their modelling a crucial component of atmospheric models. We describe the implementation and validation of Fast-JX, a state of the art model of interactive photolysis, into the MetUM chemistry-climate model. This allows for interactive photolysis rates to be calculated in the troposphere and augments the calculation of the rates in the stratosphere by accounting for clouds and aerosols in addition to ozone. In order to demonstrate the effectiveness of this new photolysis scheme we employ new methods of validating the model, including techniques for sampling the model to compare to flight track and satellite data.",
+    "field": "Atmospheric chemistry modeling",
+    "problem": "The model's previous offline photolysis schemes relied on averaged conditions and did not respond to variations in optical depth from clouds and aerosols, limiting the ability to simulate the complete set of feedbacks that affect atmospheric composition.",
+    "method": "This paper describes the implementation and validation of the Fast-JX interactive photolysis scheme into the MetUM chemistry-climate model, allowing photolysis rates to be calculated interactively by accounting for clouds, aerosols, and ozone, thereby replacing a previous offline, climatological scheme.",
+    "task": "The task is to implement and validate the Fast-JX interactive photolysis scheme within the MetUM chemistry-climate model to improve the calculation of photolysis rates by accounting for factors like clouds and aerosols.",
+    "model": [
+        "MetUM",
+        "HadGEM3",
+        "HadGEM1a"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/stratosphere",
+            "display_name": "Stratosphere",
+            "score": 0.8376481533050537
+        },
+        {
+            "id": "https://openalex.org/keywords/troposphere",
+            "display_name": "Troposphere",
+            "score": 0.765845537185669
+        },
+        {
+            "id": "https://openalex.org/keywords/photodissociation",
+            "display_name": "Photodissociation",
+            "score": 0.7212265729904175
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-chemistry",
+            "display_name": "Atmospheric chemistry",
+            "score": 0.693484902381897
+        },
+        {
+            "id": "https://openalex.org/keywords/component",
+            "display_name": "Component (thermodynamics)",
+            "score": 0.6244617104530334
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.5258700847625732
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.4662448763847351
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.465787798166275
+        },
+        {
+            "id": "https://openalex.org/keywords/ozone-depletion",
+            "display_name": "Ozone depletion",
+            "score": 0.44815361499786377
+        },
+        {
+            "id": "https://openalex.org/keywords/ozone-layer",
+            "display_name": "Ozone layer",
+            "score": 0.44257625937461853
+        },
+        {
+            "id": "https://openalex.org/keywords/chemistry",
+            "display_name": "Chemistry",
+            "score": 0.4409288167953491
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.39646220207214355
+        },
+        {
+            "id": "https://openalex.org/keywords/ozone",
+            "display_name": "Ozone",
+            "score": 0.3923925459384918
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.35675519704818726
+        },
+        {
+            "id": "https://openalex.org/keywords/photochemistry",
+            "display_name": "Photochemistry",
+            "score": 0.2664564251899719
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.1879136860370636
+        },
+        {
+            "id": "https://openalex.org/keywords/thermodynamics",
+            "display_name": "Thermodynamics",
+            "score": 0.10556340217590332
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.10339611768722534
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.07858136296272278
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C163861444",
+            "wikidata": "https://www.wikidata.org/wiki/Q108376",
+            "display_name": "Stratosphere",
+            "level": 2,
+            "score": 0.8376481533050537
+        },
+        {
+            "id": "https://openalex.org/C9075549",
+            "wikidata": "https://www.wikidata.org/wiki/Q40631",
+            "display_name": "Troposphere",
+            "level": 2,
+            "score": 0.765845537185669
+        },
+        {
+            "id": "https://openalex.org/C54582936",
+            "wikidata": "https://www.wikidata.org/wiki/Q16814",
+            "display_name": "Photodissociation",
+            "level": 2,
+            "score": 0.7212265729904175
+        },
+        {
+            "id": "https://openalex.org/C49999975",
+            "wikidata": "https://www.wikidata.org/wiki/Q287919",
+            "display_name": "Atmospheric chemistry",
+            "level": 3,
+            "score": 0.693484902381897
+        },
+        {
+            "id": "https://openalex.org/C168167062",
+            "wikidata": "https://www.wikidata.org/wiki/Q1117970",
+            "display_name": "Component (thermodynamics)",
+            "level": 2,
+            "score": 0.6244617104530334
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.5258700847625732
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.4662448763847351
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.465787798166275
+        },
+        {
+            "id": "https://openalex.org/C141810719",
+            "wikidata": "https://www.wikidata.org/wiki/Q183140",
+            "display_name": "Ozone depletion",
+            "level": 3,
+            "score": 0.44815361499786377
+        },
+        {
+            "id": "https://openalex.org/C115719804",
+            "wikidata": "https://www.wikidata.org/wiki/Q79995",
+            "display_name": "Ozone layer",
+            "level": 3,
+            "score": 0.44257625937461853
+        },
+        {
+            "id": "https://openalex.org/C185592680",
+            "wikidata": "https://www.wikidata.org/wiki/Q2329",
+            "display_name": "Chemistry",
+            "level": 0,
+            "score": 0.4409288167953491
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.39646220207214355
+        },
+        {
+            "id": "https://openalex.org/C508106653",
+            "wikidata": "https://www.wikidata.org/wiki/Q36933",
+            "display_name": "Ozone",
+            "level": 2,
+            "score": 0.3923925459384918
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.35675519704818726
+        },
+        {
+            "id": "https://openalex.org/C75473681",
+            "wikidata": "https://www.wikidata.org/wiki/Q188651",
+            "display_name": "Photochemistry",
+            "level": 1,
+            "score": 0.2664564251899719
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.1879136860370636
+        },
+        {
+            "id": "https://openalex.org/C97355855",
+            "wikidata": "https://www.wikidata.org/wiki/Q11473",
+            "display_name": "Thermodynamics",
+            "level": 1,
+            "score": 0.10556340217590332
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.10339611768722534
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.07858136296272278
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Bias in potential temperature (\u03b8) at level 6",
+            "result": "+0.5 K"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "RMSE in potential temperature (\u03b8) at level 6",
+            "result": "2.7 K"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over time (TC) in potential temperature (\u03b8) at level 6",
+            "result": "0.75"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over space (SC) in potential temperature (\u03b8) at level 6",
+            "result": "0.98"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Bias in potential temperature (\u03b8) at level 16",
+            "result": "+0.1 K"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "RMSE in potential temperature (\u03b8) at level 16",
+            "result": "0.5 K"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over time (TC) in potential temperature (\u03b8) at level 16",
+            "result": "0.97"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over space (SC) in potential temperature (\u03b8) at level 16",
+            "result": "1.00"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Bias in potential temperature (\u03b8) at level 29",
+            "result": "+0.1 K"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "RMSE in potential temperature (\u03b8) at level 29",
+            "result": "0.6 K"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over time (TC) in potential temperature (\u03b8) at level 29",
+            "result": "0.99"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over space (SC) in potential temperature (\u03b8) at level 29",
+            "result": "1.00"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Bias in potential temperature (\u03b8) at level 35",
+            "result": "+0.2 K"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "RMSE in potential temperature (\u03b8) at level 35",
+            "result": "1.0 K"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over time (TC) in potential temperature (\u03b8) at level 35",
+            "result": "0.98"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over space (SC) in potential temperature (\u03b8) at level 35",
+            "result": "1.00"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Bias in zonal wind (u) at level 6",
+            "result": "+0.01 ms-1"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "RMSE in zonal wind (u) at level 6",
+            "result": "3.37 ms-1"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over time (TC) in zonal wind (u) at level 6",
+            "result": "0.79"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over space (SC) in zonal wind (u) at level 6",
+            "result": "0.91"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Bias in zonal wind (u) at level 16",
+            "result": "-0.01 ms-1"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "RMSE in zonal wind (u) at level 16",
+            "result": "1.45 ms-1"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over time (TC) in zonal wind (u) at level 16",
+            "result": "0.96"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over space (SC) in zonal wind (u) at level 16",
+            "result": "0.99"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Bias in zonal wind (u) at level 29",
+            "result": "-0.13 ms-1"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "RMSE in zonal wind (u) at level 29",
+            "result": "1.17 ms-1"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over time (TC) in zonal wind (u) at level 29",
+            "result": "0.97"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over space (SC) in zonal wind (u) at level 29",
+            "result": "1.00"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Bias in zonal wind (u) at level 35",
+            "result": "-0.22 ms-1"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "RMSE in zonal wind (u) at level 35",
+            "result": "1.37 ms-1"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over time (TC) in zonal wind (u) at level 35",
+            "result": "0.97"
+        },
+        {
+            "model": "UKCA/MetUM (nudged to ERA-Interim)",
+            "observational_dataset": "ERA-Interim analyses",
+            "evaluation_metric": "Correlation over space (SC) in zonal wind (u) at level 35",
+            "result": "1.00"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of O3 -> O2 + O(1D)",
+            "result": "-48 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of O3 -> O2 + O(1D)",
+            "result": "0.83"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of O3 -> O2 + O(1D)",
+            "result": "55 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of O3 -> O2 + O(1D)",
+            "result": "0 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of O3 -> O2 + O(1D)",
+            "result": "0.91"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of O3 -> O2 + O(1D)",
+            "result": "15 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of NO2 -> NO + O(3P)",
+            "result": "-20 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of NO2 -> NO + O(3P)",
+            "result": "0.65"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of NO2 -> NO + O(3P)",
+            "result": "31 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of NO2 -> NO + O(3P)",
+            "result": "2 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of NO2 -> NO + O(3P)",
+            "result": "0.85"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of NO2 -> NO + O(3P)",
+            "result": "18 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of CH3CHO -> CH3OO + HO2 + CO",
+            "result": "115 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of CH3CHO -> CH3OO + HO2 + CO",
+            "result": "0.19"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of CH3CHO -> CH3OO + HO2 + CO",
+            "result": "135 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of CH3CHO -> CH3OO + HO2 + CO",
+            "result": "-13 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of CH3CHO -> CH3OO + HO2 + CO",
+            "result": "0.85"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of CH3CHO -> CH3OO + HO2 + CO",
+            "result": "44 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of CH3ONO2 -> HO2 + HCHO + NO2",
+            "result": "-19 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of CH3ONO2 -> HO2 + HCHO + NO2",
+            "result": "-0.03"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of CH3ONO2 -> HO2 + HCHO + NO2",
+            "result": "46 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of CH3ONO2 -> HO2 + HCHO + NO2",
+            "result": "-1 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of CH3ONO2 -> HO2 + HCHO + NO2",
+            "result": "0.88"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of CH3ONO2 -> HO2 + HCHO + NO2",
+            "result": "17 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of H2O2 -> OH + OH",
+            "result": "-24 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of H2O2 -> OH + OH",
+            "result": "0.70"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of H2O2 -> OH + OH",
+            "result": "34 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of H2O2 -> OH + OH",
+            "result": "-2 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of H2O2 -> OH + OH",
+            "result": "0.88"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of H2O2 -> OH + OH",
+            "result": "16 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of HCHO -> HO2 + HO2 + CO",
+            "result": "-35 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of HCHO -> HO2 + HO2 + CO",
+            "result": "0.82"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of HCHO -> HO2 + HO2 + CO",
+            "result": "41 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of HCHO -> HO2 + HO2 + CO",
+            "result": "4 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of HCHO -> HO2 + HO2 + CO",
+            "result": "0.92"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of HCHO -> HO2 + HO2 + CO",
+            "result": "15 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of HCHO -> H2 + CO",
+            "result": "-31 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of HCHO -> H2 + CO",
+            "result": "0.81"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of HCHO -> H2 + CO",
+            "result": "39 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of HCHO -> H2 + CO",
+            "result": "-4 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of HCHO -> H2 + CO",
+            "result": "0.91"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of HCHO -> H2 + CO",
+            "result": "16 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of HONO -> OH + NO",
+            "result": "-21 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of HONO -> OH + NO",
+            "result": "0.66"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of HONO -> OH + NO",
+            "result": "33 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of HONO -> OH + NO",
+            "result": "-23 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of HONO -> OH + NO",
+            "result": "0.83"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of HONO -> OH + NO",
+            "result": "30 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of HO2NO2 -> HO2 + NO2",
+            "result": "-22 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of HO2NO2 -> HO2 + NO2",
+            "result": "0.77"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of HO2NO2 -> HO2 + NO2",
+            "result": "31 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of HO2NO2 -> HO2 + NO2",
+            "result": "0 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of HO2NO2 -> HO2 + NO2",
+            "result": "0.88"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of HO2NO2 -> HO2 + NO2",
+            "result": "15 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of PAN -> CH3CO3 + NO2",
+            "result": "-87 %"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of PAN -> CH3CO3 + NO2",
+            "result": "0.47"
+        },
+        {
+            "model": "UKCA/MetUM (Offline photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of PAN -> CH3CO3 + NO2",
+            "result": "92 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Bias in photolysis rate of PAN -> CH3CO3 + NO2",
+            "result": "12 %"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "Correlation in photolysis rate of PAN -> CH3CO3 + NO2",
+            "result": "0.82"
+        },
+        {
+            "model": "UKCA/MetUM (Interactive photolysis)",
+            "observational_dataset": "INTEX data",
+            "evaluation_metric": "RMSD in photolysis rate of PAN -> CH3CO3 + NO2",
+            "result": "23 %"
+        }
+    ],
+    "innovation": "This paper describes the implementation of the Fast-JX interactive photolysis scheme into the MetUM chemistry-climate model, demonstrating significantly improved modeled photolysis rates compared to the previous offline scheme when validated against observational data.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "MetUM v7.3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "UKCA",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Implementation of the Fast-JX Photolysis scheme (v6.4) into the UKCA component of the MetUM chemistry-climate model (v7.3)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "UKCA",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The UKCA module is a component of the UK Met Office\u2019s Unified Model (MetUM).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM chemistry-climate model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Fast-JX",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Abstract. Atmospheric chemistry is driven by photolytic re- actions, making their modelling a crucial component of at- mospheric models. We describe the implementation and val- idation of Fast-JX, a state of the art model of interactive pho- tolysis, into the MetUM chemistry-climate model. This al- lows for interactive photolysis rates to be calculated in the troposphere and augments the calculation of the rates in the stratosphere by accounting for clouds and aerosols in addi- tion to ozone. In order to demonstrate the effectiveness of this new photolysis scheme we employ new methods of validat- ing the model, including techniques for sampling the model to compare to flight track and satellite data.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "HadGEM3",
+            "target_entity_type": "Source",
+            "paragraph": "The UKCA chemistry module is part of the Met Office\u2019s Unified Model (MetUM). We employ a version of the model based on the HadGEM3 configuration (Hewitt et al., 2011), but with the following configuration:",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UMv6.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "UMv7.3",
+            "target_entity_type": "Source",
+            "paragraph": "This contrasts to the previous version of the model, which had a slight low bias (see Fig. 2 in Voulgarakis et al., 2011). This increase is be- 4The discrete nature of the model, which has a dynamical time step of 20 min, means that even with this sampling technique we do not take values from the exact same time as the measurements. 5The previous version of the model was UMv6.1, similar to that used in Morgenstern et al. (2009), as opposed to the version (UMv7.3) used in the paper which is similar to that used in Hewitt et al. (2011)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UKCA",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmosChem",
+            "target_entity_type": "Realm",
+            "paragraph": "The UKCA module is a component of the UK Met Office\u2019s Unified Model (MetUM). A number of model configurations have been established and tested; one with stratospheric chemistry (Morgenstern et al., 2009), one with tropospheric chemistry (O\u2019Connor et al., 2009; O\u2019Connor et al., 2013; Telford et al., 2010) and one with the GLOMAPmode aerosol scheme (Mann et al., 2010). There are also whole atmosphere chemistry schemes that have been developed from the tropospheric and stratospheric chemistries (Archibald et al., 2012; Morgenstern et al., 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Mainz isoprene mechanism",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The tropospheric version of the model employs a medium-sized chemistry scheme that simulates the Ox, HOx and NOx chemical cycles and the oxidation of CO, ethane, propane, and isoprene (Telford et al., 2010). The Mainz isoprene mechanism (P\u00f6schl et al., 2000) is used to parameterise isoprene oxidation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Bellouin et al. (2007) aerosol model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The model uses the aerosol model of Bellouin et al. (2007) using emissions from 2000.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "parameterisation of Price and Rind (1994)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We include, on average, 5Tgyr\u00af\u00b9 of N from lightning emissions, distributed according to the parameterisation of Price and Rind (1994).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "empirical model of Yienger and Levy II (1995)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Finally we include 5.6 Tgyr\u00af\u00b9 of N from natural soil emissions distributed according to the empirical model of Yienger and Levy II (1995).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "approaches of Giannakopoulos et al. (1999)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Dry deposition and wet deposition are parameterised using the approaches of Giannakopoulos et al. (1999).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "horizontal resolution of 3.75\u00b0 \u00d7 2.5\u00b0",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The UKCA chemistry module is part of the Met Office\u2019s Unified Model (MetUM). We employ a version of the model based on the HadGEM3 configuration (Hewitt et al., 2011), but with the following configuration:\n\u2013 a horizontal resolution of 3.75\u00b0 \u00d7 2.5\u00b0 in longitude and latitude.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "60 hybrid height levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The UKCA chemistry module is part of the Met Office\u2019s Unified Model (MetUM). We employ a version of the model based on the HadGEM3 configuration (Hewitt et al., 2011), but with the following configuration:\n\u2013 60 hybrid height levels in the vertical, from the surface up to a height of 84 km.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "model top at 84 km",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The UKCA chemistry module is part of the Met Office\u2019s Unified Model (MetUM). We employ a version of the model based on the HadGEM3 configuration (Hewitt et al., 2011), but with the following configuration:\n\u2013 60 hybrid height levels in the vertical, from the surface up to a height of 84 km.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "nudged",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Although we make some comparisons in an idealised atmosphere based on the one defined by the CCMVal model intercomparison (Chipperfield et al., 2010), the main evaluation here is carried out using a \u201cnudged\u201d tropospheric model simulation from 2004 through to 2008. The technique of nudging constrains the model to meteorological reanalyses, allowing the model to reproduce the observed weather (Telford et al., 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "hindcast",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Even so, from these results, we conclude that the model nudged towards the ERA-Interim analyses can be used as a hindcast of the period 2004 to 2008.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "bias",
+            "target_entity_type": "Metric",
+            "paragraph": "We make a quantitative assessment of the offline and interactive photolysis schemes by comparing biases, correlations and root mean square differences (RMSD) between the model and the observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "We make a quantitative assessment of the offline and interactive photolysis schemes by comparing biases, correlations and root mean square differences (RMSD) between the model and the observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square differences (RMSD)",
+            "target_entity_type": "Metric",
+            "paragraph": "We make a quantitative assessment of the offline and interactive photolysis schemes by comparing biases, correlations and root mean square differences (RMSD) between the model and the observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 1. Quantitative assessment of model performance in October 2005 with ERA-Interim nudging using the statistical assessments of Telford et al. (2008) for potential temperature (\u03b8) and zonal wind (u). This calculates the model mean on four representative model levels and determines the root mean squared error (RMSE) and correlations over time (TC) and space (SC) with respect to the ERAInterim analyses on these same levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TES",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "ozone",
+            "target_entity_type": "Variable",
+            "paragraph": "After demonstrating that the photolysis rates look reasonable we investigate their effects on the tracer distributions, comparing model simulations, with the offline and interactive photolysis schemes, and measurements. The large spatial and temporal scales of satellite observations make them ideal to be employed in this capacity. We compare to observations of ozone and carbon monoxide from the TES satellite instrument.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TES",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "carbon monoxide",
+            "target_entity_type": "Variable",
+            "paragraph": "After demonstrating that the photolysis rates look reasonable we investigate their effects on the tracer distributions, comparing model simulations, with the offline and interactive photolysis schemes, and measurements. The large spatial and temporal scales of satellite observations make them ideal to be employed in this capacity. We compare to observations of ozone and carbon monoxide from the TES satellite instrument.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TES",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Aura satellite",
+            "target_entity_type": "Platform",
+            "paragraph": "The Tropospheric Emission Spectrometer (TES) is an infrared Fourier transform spectrometer (Beer et al., 2001) onboard NASA\u2019s Aura satellite, which was launched in 2004.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "spectral radiometers",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "actinic flux",
+            "target_entity_type": "Variable",
+            "paragraph": "The observations we choose to use are from the INTEX-A flight campaign, conducted over North America and the Atlantic in the summer of 2004 (Singh et al., 2006). On these flights the actinic flux was measured in different wavelength regions using spectral radiometers and photolysis rates were obtained by multiplying by cross sections from Sander et al. (2003).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "spectral radiometers",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "aircraft",
+            "target_entity_type": "Platform",
+            "paragraph": "The observations we choose to use are from the INTEX-A flight campaign, conducted over North America and the Atlantic in the summer of 2004 (Singh et al., 2006). On these flights the actinic flux was measured in different wavelength regions using spectral radiometers and photolysis rates were obtained by multiplying by cross sections from Sander et al. (2003).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UKCA",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "ozone",
+            "target_entity_type": "Variable",
+            "paragraph": "The tropospheric version of the model employs a medium-sized chemistry scheme that simulates the Ox, HOx and NOx chemical cycles and the oxidation of CO, ethane, propane, and isoprene (Telford et al., 2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UKCA",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "carbon monoxide",
+            "target_entity_type": "Variable",
+            "paragraph": "The tropospheric version of the model employs a medium-sized chemistry scheme that simulates the Ox, HOx and NOx chemical cycles and the oxidation of CO, ethane, propane, and isoprene (Telford et al., 2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Fast-JX photolysis scheme (v6.4)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "UKCA",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "MetUM chemistry-climate model (v7.3)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCAS Climate, University of Cambridge",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Centre for Atmospheric Science, Department of Chemistry, University of Cambridge",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Met Office Hadley Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Institute of Water and Atmospheric Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute for Climate and Atmospheric Science, School of Earth and Environment, University of Leeds",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "interactive photolysis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Rayleigh scattering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GLOMAP-mode aerosol scheme",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CCMVal",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "nudged",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "HadGEM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "3.75\u00b0 \u00d7 2.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "60 hybrid height levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "height of 84 km",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ERA-Interim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA-40",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mainz isoprene mechanism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Cambridge 2-D model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Dry deposition",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "wet deposition",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "parameterisation of Price and Rind (1994)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "empirical model of Yienger and Levy II (1995)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "heterogeneous processes on polar stratospheric clouds (PSCs)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "HadGEM1a",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Offline photolysis schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two-stream method of Hough (1988)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "look up table approach of Lary and Pyle (1991)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fast-J",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fast-J2",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fast-JX",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "parameterisation of Slingo (1989)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "non spherical parameterisation of Edwards et al. (2007)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "simple approach of Briegleb (1992)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "approach of Fitzgerald (1975)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "PHOTOCOMP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "INTEX",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "TES",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "biases",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlations",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean square differences (RMSD)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ozone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "carbon monoxide",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "OH",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total ozone column",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "root mean squared error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlations over time (TC)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlations over space (SC)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "cloud optical depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ISCCP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "International Satellite Cloud Climatology Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "NOAA",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "INTEX-A",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "spectral radiometers",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "actinic flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "18 wavelength bins",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Tropospheric Emission Spectrometer",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Aura",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "averaging kernels",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ozonesondes",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "LIDAR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "methane lifetime",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "O3-CO correlations",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "global burden of OH",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CH4 lifetime",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "REF-B0",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "unconstrained by nudging",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "TOMS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SBUV",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "GOME",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "OMI",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SHADOZ",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "variable solar constant",
+            "entity_type": "PhysicalFeature"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2085945959",
+        "https://openalex.org/W2012736328",
+        "https://openalex.org/W2111212139",
+        "https://openalex.org/W2043634783",
+        "https://openalex.org/W2098405759",
+        "https://openalex.org/W2170102990",
+        "https://openalex.org/W1981517155",
+        "https://openalex.org/W2169934617",
+        "https://openalex.org/W2121745948",
+        "https://openalex.org/W4244230914",
+        "https://openalex.org/W2054489697",
+        "https://openalex.org/W2065439635",
+        "https://openalex.org/W2079616679",
+        "https://openalex.org/W2022387218",
+        "https://openalex.org/W2067209936",
+        "https://openalex.org/W2166037956",
+        "https://openalex.org/W1964842562",
+        "https://openalex.org/W2157240349",
+        "https://openalex.org/W2384268",
+        "https://openalex.org/W4238478832",
+        "https://openalex.org/W2106963750",
+        "https://openalex.org/W2012196264",
+        "https://openalex.org/W4250974321",
+        "https://openalex.org/W2038165320",
+        "https://openalex.org/W2008618015",
+        "https://openalex.org/W2019475742",
+        "https://openalex.org/W2126139831",
+        "https://openalex.org/W2071673797",
+        "https://openalex.org/W2094289808",
+        "https://openalex.org/W2097345801",
+        "https://openalex.org/W2145318668",
+        "https://openalex.org/W2004883983",
+        "https://openalex.org/W4254864381",
+        "https://openalex.org/W1537455772",
+        "https://openalex.org/W2112442849",
+        "https://openalex.org/W1992364289",
+        "https://openalex.org/W2092533914",
+        "https://openalex.org/W2044642305",
+        "https://openalex.org/W4250286475",
+        "https://openalex.org/W2119942282",
+        "https://openalex.org/W1529898429",
+        "https://openalex.org/W2016827531",
+        "https://openalex.org/W2006165291",
+        "https://openalex.org/W2007253292",
+        "https://openalex.org/W1980119753",
+        "https://openalex.org/W2045470555",
+        "https://openalex.org/W2154133470",
+        "https://openalex.org/W1994522006",
+        "https://openalex.org/W2114765556",
+        "https://openalex.org/W1990900389",
+        "https://openalex.org/W2082665463",
+        "https://openalex.org/W2111266914",
+        "https://openalex.org/W1967977143",
+        "https://openalex.org/W2091327235",
+        "https://openalex.org/W2107892991",
+        "https://openalex.org/W2162785215",
+        "https://openalex.org/W2125925840",
+        "https://openalex.org/W2072410985",
+        "https://openalex.org/W2148490890",
+        "https://openalex.org/W1979559580",
+        "https://openalex.org/W1486027341",
+        "https://openalex.org/W2082678423",
+        "https://openalex.org/W1967579008",
+        "https://openalex.org/W3016800520",
+        "https://openalex.org/W2126424805",
+        "https://openalex.org/W382540626",
+        "https://openalex.org/W1981221094",
+        "https://openalex.org/W1608669614",
+        "https://openalex.org/W2007936903",
+        "https://openalex.org/W2155654615"
+    ]
+}

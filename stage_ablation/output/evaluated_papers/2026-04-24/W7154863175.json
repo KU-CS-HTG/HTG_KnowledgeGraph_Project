@@ -1,0 +1,1535 @@
+{
+    "uri": "https://openalex.org/W7154863175",
+    "title": "Long-term prediction of sea ice concentration with convolutional long short-term memory",
+    "venue": {
+        "name": "Earth Science Informatics",
+        "id": "https://openalex.org/S198914822",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5094260492",
+            "display_name": "\u00d6zg\u00fcr Boran Ak",
+            "orcid": "https://orcid.org/0000-0002-2523-7640"
+        },
+        {
+            "id": "https://openalex.org/A5094260493",
+            "display_name": "Ertan Kuru\u00f6z",
+            "orcid": "https://orcid.org/0000-0002-9628-7418"
+        },
+        {
+            "id": "https://openalex.org/A5128857506",
+            "display_name": "Ecenur \u00d6zdemir",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5133948628",
+            "display_name": "Ay\u00e7a AK",
+            "orcid": "https://orcid.org/0000-0002-3429-4962"
+        }
+    ],
+    "doi": "https://doi.org/10.1007/s12145-026-02125-7",
+    "abstract": "Estimation of sea ice concentration (SIC) is not only important for the Earth\u2019s temperature and water balance, but also for the protection of human activities such as ship navigation, oil and gas exploration, and fishing in polar regions. The decrease in SIC directly affects global climate change. Knowing in advance how sea ice will change over time is important in terms of taking the necessary precautions and preventing undesirable situations. In this study, a convolutional long short-term memory (ConvLSTM) model is designed to predict SIC, surface albedo (SAL), and fractional cloud cover (CF) of the South and North Poles for different seasons and months in 2030 and 2040. The model is trained using 46 years of satellite observation data and generates 16-year predictions of SIC, SAL, and CF using a sliding-window strategy. The results indicate a substantial contraction of sea ice concentration in both hemispheres toward 2030 and 2040, consistent with observed historical trends. The proposed framework utilizes artificial intelligence and perceptual metrics to learn spatiotemporal patterns in SIC, SAL, and CF. Therefore, produced outputs should be interpreted as a data-driven scenario extension of satellite observations rather than a deterministic climate prediction. The best model achieved a Structural Similarity Index Measure (SSIM) of 0.9682, a Deep Image Structure and Texture Similarity (DISTS) score of 0.0662, and a Mean Absolute Error (MAE) of 0.0426 in the validation phase for single-year prediction. When predicting the year 2024 using data from 1986 to 2008, the model achieved an SSIM of 0.9239, a DISTS score of 0.1087, and an MAE of 0.0623.",
+    "field": "Artificial intelligence for sea ice prediction",
+    "problem": "Existing models for sea ice concentration (SIC) prediction often focus on short-term forecasts and rely on large multi-source datasets, which is challenging for long-horizon prediction due to the complex interactions between oceanic, atmospheric, and cryospheric processes.",
+    "method": "We propose a convolutional long short-term memory (ConvLSTM) model, trained on 46 years of satellite data, to predict long-term sea ice concentration, surface albedo, and fractional cloud cover for the polar regions in 2030 and 2040.",
+    "task": "The task is to predict long-term sea ice concentration, surface albedo, and fractional cloud cover for the polar regions in 2030 and 2040 using a convolutional long short-term memory (ConvLSTM) model trained on 46 years of historical satellite data.",
+    "model": [
+        "ConvLSTM"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/sea-ice",
+            "display_name": "Sea ice",
+            "score": 0.6611999869346619
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-ice-concentration",
+            "display_name": "Sea ice concentration",
+            "score": 0.6280999779701233
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-surface-temperature",
+            "display_name": "Sea surface temperature",
+            "score": 0.46399998664855957
+        },
+        {
+            "id": "https://openalex.org/keywords/arctic-ice-pack",
+            "display_name": "Arctic ice pack",
+            "score": 0.46230000257492065
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.44130000472068787
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-ice-thickness",
+            "display_name": "Sea ice thickness",
+            "score": 0.39879998564720154
+        },
+        {
+            "id": "https://openalex.org/keywords/polar",
+            "display_name": "Polar",
+            "score": 0.39410001039505005
+        },
+        {
+            "id": "https://openalex.org/keywords/convolutional-neural-network",
+            "display_name": "Convolutional neural network",
+            "score": 0.37220001220703125
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C136894858",
+            "wikidata": "https://www.wikidata.org/wiki/Q213926",
+            "display_name": "Sea ice",
+            "level": 2,
+            "score": 0.6611999869346619
+        },
+        {
+            "id": "https://openalex.org/C194520297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7440064",
+            "display_name": "Sea ice concentration",
+            "level": 5,
+            "score": 0.6280999779701233
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5730999708175659
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5264000296592712
+        },
+        {
+            "id": "https://openalex.org/C134097258",
+            "wikidata": "https://www.wikidata.org/wiki/Q1507383",
+            "display_name": "Sea surface temperature",
+            "level": 2,
+            "score": 0.46399998664855957
+        },
+        {
+            "id": "https://openalex.org/C161798024",
+            "wikidata": "https://www.wikidata.org/wiki/Q3651008",
+            "display_name": "Arctic ice pack",
+            "level": 3,
+            "score": 0.46230000257492065
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.44130000472068787
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4244999885559082
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.4104999899864197
+        },
+        {
+            "id": "https://openalex.org/C149767477",
+            "wikidata": "https://www.wikidata.org/wiki/Q7440066",
+            "display_name": "Sea ice thickness",
+            "level": 4,
+            "score": 0.39879998564720154
+        },
+        {
+            "id": "https://openalex.org/C29705727",
+            "wikidata": "https://www.wikidata.org/wiki/Q294562",
+            "display_name": "Polar",
+            "level": 2,
+            "score": 0.39410001039505005
+        },
+        {
+            "id": "https://openalex.org/C81363708",
+            "wikidata": "https://www.wikidata.org/wiki/Q17084460",
+            "display_name": "Convolutional neural network",
+            "level": 2,
+            "score": 0.37220001220703125
+        },
+        {
+            "id": "https://openalex.org/C19269812",
+            "wikidata": "https://www.wikidata.org/wiki/Q26540",
+            "display_name": "Satellite",
+            "level": 2,
+            "score": 0.37130001187324524
+        },
+        {
+            "id": "https://openalex.org/C103278499",
+            "wikidata": "https://www.wikidata.org/wiki/Q254465",
+            "display_name": "Similarity (geometry)",
+            "level": 3,
+            "score": 0.36340001225471497
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.3578999936580658
+        },
+        {
+            "id": "https://openalex.org/C195886398",
+            "wikidata": "https://www.wikidata.org/wiki/Q2110050",
+            "display_name": "Albedo (alchemy)",
+            "level": 3,
+            "score": 0.3456999957561493
+        },
+        {
+            "id": "https://openalex.org/C206887242",
+            "wikidata": "https://www.wikidata.org/wiki/Q830457",
+            "display_name": "Cloud cover",
+            "level": 3,
+            "score": 0.3402999937534332
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.325300008058548
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.3240000009536743
+        },
+        {
+            "id": "https://openalex.org/C2776120014",
+            "wikidata": "https://www.wikidata.org/wiki/Q12119193",
+            "display_name": "Ice cloud",
+            "level": 3,
+            "score": 0.31869998574256897
+        },
+        {
+            "id": "https://openalex.org/C170061395",
+            "wikidata": "https://www.wikidata.org/wiki/Q5468164",
+            "display_name": "Forecast skill",
+            "level": 2,
+            "score": 0.31709998846054077
+        },
+        {
+            "id": "https://openalex.org/C197435368",
+            "wikidata": "https://www.wikidata.org/wiki/Q493109",
+            "display_name": "Cryosphere",
+            "level": 3,
+            "score": 0.3124000132083893
+        },
+        {
+            "id": "https://openalex.org/C2780148112",
+            "wikidata": "https://www.wikidata.org/wiki/Q1432581",
+            "display_name": "Proxy (statistics)",
+            "level": 2,
+            "score": 0.26570001244544983
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.2603999972343445
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.26010000705718994
+        },
+        {
+            "id": "https://openalex.org/C199491958",
+            "wikidata": "https://www.wikidata.org/wiki/Q737514",
+            "display_name": "Global change",
+            "level": 3,
+            "score": 0.257999986410141
+        },
+        {
+            "id": "https://openalex.org/C100970517",
+            "wikidata": "https://www.wikidata.org/wiki/Q52107",
+            "display_name": "Physical geography",
+            "level": 1,
+            "score": 0.2574000060558319
+        },
+        {
+            "id": "https://openalex.org/C2778102629",
+            "wikidata": "https://www.wikidata.org/wiki/Q725252",
+            "display_name": "Satellite imagery",
+            "level": 2,
+            "score": 0.25619998574256897
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Attention Adam SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.0426"
+        },
+        {
+            "model": "Attention Adam SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.0061"
+        },
+        {
+            "model": "Attention Adam SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "0.4202"
+        },
+        {
+            "model": "Attention Adam SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.0662"
+        },
+        {
+            "model": "Attention Adam SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9682"
+        },
+        {
+            "model": "Residual Adam SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.0443"
+        },
+        {
+            "model": "Residual Adam SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.0046"
+        },
+        {
+            "model": "Residual Adam SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "0.2756"
+        },
+        {
+            "model": "Residual Adam SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.0464"
+        },
+        {
+            "model": "Residual Adam SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9788"
+        },
+        {
+            "model": "Attention SGD SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.0671"
+        },
+        {
+            "model": "Attention SGD SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.0127"
+        },
+        {
+            "model": "Attention SGD SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "0.8377"
+        },
+        {
+            "model": "Attention SGD SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.1121"
+        },
+        {
+            "model": "Attention SGD SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9391"
+        },
+        {
+            "model": "Residual SGD SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.0535"
+        },
+        {
+            "model": "Residual SGD SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.0081"
+        },
+        {
+            "model": "Residual SGD SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "0.5236"
+        },
+        {
+            "model": "Residual SGD SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.0807"
+        },
+        {
+            "model": "Residual SGD SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9593"
+        },
+        {
+            "model": "Attention Adam DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.0574"
+        },
+        {
+            "model": "Attention Adam DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.0095"
+        },
+        {
+            "model": "Attention Adam DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "0.5397"
+        },
+        {
+            "model": "Attention Adam DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.0893"
+        },
+        {
+            "model": "Attention Adam DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9489"
+        },
+        {
+            "model": "Residual Adam DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.0339"
+        },
+        {
+            "model": "Residual Adam DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.0025"
+        },
+        {
+            "model": "Residual Adam DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "0.2436"
+        },
+        {
+            "model": "Residual Adam DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.0358"
+        },
+        {
+            "model": "Residual Adam DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9860"
+        },
+        {
+            "model": "Attention SGD DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.0781"
+        },
+        {
+            "model": "Attention SGD DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.0161"
+        },
+        {
+            "model": "Attention SGD DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "1.1429"
+        },
+        {
+            "model": "Attention SGD DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.1297"
+        },
+        {
+            "model": "Attention SGD DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9226"
+        },
+        {
+            "model": "Residual SGD DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.0686"
+        },
+        {
+            "model": "Residual SGD DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.0127"
+        },
+        {
+            "model": "Residual SGD DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "0.7378"
+        },
+        {
+            "model": "Residual SGD DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.1099"
+        },
+        {
+            "model": "Residual SGD DISTS",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9355"
+        },
+        {
+            "model": "Attention Adam MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.054"
+        },
+        {
+            "model": "Attention Adam MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.0108"
+        },
+        {
+            "model": "Attention Adam MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "0.4969"
+        },
+        {
+            "model": "Attention Adam MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.1070"
+        },
+        {
+            "model": "Attention Adam MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9379"
+        },
+        {
+            "model": "Residual Adam MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.0308"
+        },
+        {
+            "model": "Residual Adam MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.0035"
+        },
+        {
+            "model": "Residual Adam MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "0.3295"
+        },
+        {
+            "model": "Residual Adam MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.0445"
+        },
+        {
+            "model": "Residual Adam MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9797"
+        },
+        {
+            "model": "Attention SGD MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.0647"
+        },
+        {
+            "model": "Attention SGD MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.0158"
+        },
+        {
+            "model": "Attention SGD MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "1.1229"
+        },
+        {
+            "model": "Attention SGD MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.1461"
+        },
+        {
+            "model": "Attention SGD MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9209"
+        },
+        {
+            "model": "Residual SGD MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MAE",
+            "result": "0.0522"
+        },
+        {
+            "model": "Residual SGD MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid MSE",
+            "result": "0.1120"
+        },
+        {
+            "model": "Residual SGD MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid OFE",
+            "result": "0.6385"
+        },
+        {
+            "model": "Residual SGD MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid DISTS",
+            "result": "0.1185"
+        },
+        {
+            "model": "Residual SGD MAE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid SSIM",
+            "result": "0.9343"
+        },
+        {
+            "model": "cross-validated attention model trained with Adam and SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid. MAE",
+            "result": "0.052"
+        },
+        {
+            "model": "cross-validated attention model trained with Adam and SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid. MSE",
+            "result": "0.0087"
+        },
+        {
+            "model": "cross-validated attention model trained with Adam and SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid. OFE",
+            "result": "0.4297"
+        },
+        {
+            "model": "cross-validated attention model trained with Adam and SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid. DISTS",
+            "result": "0.0725"
+        },
+        {
+            "model": "cross-validated attention model trained with Adam and SSIM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Valid. SSIM",
+            "result": "0.9553"
+        },
+        {
+            "model": "Attention Adam SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.0623"
+        },
+        {
+            "model": "Attention Adam SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0157"
+        },
+        {
+            "model": "Attention Adam SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "0.7385"
+        },
+        {
+            "model": "Attention Adam SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.1087"
+        },
+        {
+            "model": "Attention Adam SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.9239"
+        },
+        {
+            "model": "Residual Adam SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.1106"
+        },
+        {
+            "model": "Residual Adam SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0348"
+        },
+        {
+            "model": "Residual Adam SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "1.8827"
+        },
+        {
+            "model": "Residual Adam SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.1518"
+        },
+        {
+            "model": "Residual Adam SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.8546"
+        },
+        {
+            "model": "Attention SGD SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.0822"
+        },
+        {
+            "model": "Attention SGD SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0175"
+        },
+        {
+            "model": "Attention SGD SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "1.0244"
+        },
+        {
+            "model": "Attention SGD SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.1465"
+        },
+        {
+            "model": "Attention SGD SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.9126"
+        },
+        {
+            "model": "Residual SGD SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.0972"
+        },
+        {
+            "model": "Residual SGD SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0242"
+        },
+        {
+            "model": "Residual SGD SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "1.1423"
+        },
+        {
+            "model": "Residual SGD SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.1604"
+        },
+        {
+            "model": "Residual SGD SSIM",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.8889"
+        },
+        {
+            "model": "Attention Adam DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.0803"
+        },
+        {
+            "model": "Attention Adam DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0215"
+        },
+        {
+            "model": "Attention Adam DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "0.8349"
+        },
+        {
+            "model": "Attention Adam DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.1410"
+        },
+        {
+            "model": "Attention Adam DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.9005"
+        },
+        {
+            "model": "Residual Adam DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.1214"
+        },
+        {
+            "model": "Residual Adam DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0335"
+        },
+        {
+            "model": "Residual Adam DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "1.3145"
+        },
+        {
+            "model": "Residual Adam DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.1476"
+        },
+        {
+            "model": "Residual Adam DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.8572"
+        },
+        {
+            "model": "Attention SGD DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.0982"
+        },
+        {
+            "model": "Attention SGD DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0226"
+        },
+        {
+            "model": "Attention SGD DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "1.2259"
+        },
+        {
+            "model": "Attention SGD DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.1708"
+        },
+        {
+            "model": "Attention SGD DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.8897"
+        },
+        {
+            "model": "Residual SGD DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.1029"
+        },
+        {
+            "model": "Residual SGD DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0225"
+        },
+        {
+            "model": "Residual SGD DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "1.6275"
+        },
+        {
+            "model": "Residual SGD DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.1687"
+        },
+        {
+            "model": "Residual SGD DISTS",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.8803"
+        },
+        {
+            "model": "Attention Adam MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.0816"
+        },
+        {
+            "model": "Attention Adam MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0287"
+        },
+        {
+            "model": "Attention Adam MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "0.9467"
+        },
+        {
+            "model": "Attention Adam MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.1612"
+        },
+        {
+            "model": "Attention Adam MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.8632"
+        },
+        {
+            "model": "Residual Adam MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.1132"
+        },
+        {
+            "model": "Residual Adam MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0369"
+        },
+        {
+            "model": "Residual Adam MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "1.0655"
+        },
+        {
+            "model": "Residual Adam MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.2201"
+        },
+        {
+            "model": "Residual Adam MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.8030"
+        },
+        {
+            "model": "Attention SGD MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.0846"
+        },
+        {
+            "model": "Attention SGD MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0228"
+        },
+        {
+            "model": "Attention SGD MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "1.4746"
+        },
+        {
+            "model": "Attention SGD MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.1807"
+        },
+        {
+            "model": "Attention SGD MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.8882"
+        },
+        {
+            "model": "Residual SGD MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MAE",
+            "result": "0.0824"
+        },
+        {
+            "model": "Residual SGD MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "MSE",
+            "result": "0.0226"
+        },
+        {
+            "model": "Residual SGD MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "OFE",
+            "result": "1.4487"
+        },
+        {
+            "model": "Residual SGD MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "DISTS",
+            "result": "0.1837"
+        },
+        {
+            "model": "Residual SGD MAE",
+            "observational_dataset": "data from 1986 to 2008 for 2024 prediction",
+            "evaluation_metric": "SSIM",
+            "result": "0.8911"
+        }
+    ],
+    "innovation": "This paper presents a convolutional long short-term memory (ConvLSTM) framework for long-term, simultaneous prediction of sea ice concentration (SIC), surface albedo (SAL), and fractional cloud cover (CF) in polar regions for 2030 and 2040, using a 46-year satellite record.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ConvLSTM model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "sea ice concentration (SIC)",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, a convolutional long short-term memory (ConvLSTM) model is designed to predict SIC, surface albedo (SAL), and fractional cloud cover (CF) of the South and North Poles for different seasons and months in 2030 and 2040. The model is trained using 46 years of satellite observation data and generates 16-year predictions of SIC, SAL, and CF using a sliding-window strategy.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ConvLSTM model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface albedo (SAL)",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, a convolutional long short-term memory (ConvLSTM) model is designed to predict SIC, surface albedo (SAL), and fractional cloud cover (CF) of the South and North Poles for different seasons and months in 2030 and 2040. The model is trained using 46 years of satellite observation data and generates 16-year predictions of SIC, SAL, and CF using a sliding-window strategy.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ConvLSTM model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "fractional cloud cover (CF)",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, a convolutional long short-term memory (ConvLSTM) model is designed to predict SIC, surface albedo (SAL), and fractional cloud cover (CF) of the South and North Poles for different seasons and months in 2030 and 2040. The model is trained using 46 years of satellite observation data and generates 16-year predictions of SIC, SAL, and CF using a sliding-window strategy.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ConvLSTM model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Structural Similarity Index Measure (SSIM)",
+            "target_entity_type": "Metric",
+            "paragraph": "The best model achieved a Structural Similarity Index Measure (SSIM) of 0.9682, a Deep Image Structure and Texture Similarity (DISTS) score of 0.0662, and a Mean Absolute Error (MAE) of 0.0426 in the validation phase for single-year prediction. When predicting the year 2024 using data from 1986 to 2008, the model achieved an SSIM of 0.9239, a DISTS score of 0.1087, and an MAE of 0.0623.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ConvLSTM model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Deep Image Structure and Texture Similarity (DISTS)",
+            "target_entity_type": "Metric",
+            "paragraph": "The best model achieved a Structural Similarity Index Measure (SSIM) of 0.9682, a Deep Image Structure and Texture Similarity (DISTS) score of 0.0662, and a Mean Absolute Error (MAE) of 0.0426 in the validation phase for single-year prediction. When predicting the year 2024 using data from 1986 to 2008, the model achieved an SSIM of 0.9239, a DISTS score of 0.1087, and an MAE of 0.0623.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ConvLSTM model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error (MAE)",
+            "target_entity_type": "Metric",
+            "paragraph": "The best model achieved a Structural Similarity Index Measure (SSIM) of 0.9682, a Deep Image Structure and Texture Similarity (DISTS) score of 0.0662, and a Mean Absolute Error (MAE) of 0.0426 in the validation phase for single-year prediction. When predicting the year 2024 using data from 1986 to 2008, the model achieved an SSIM of 0.9239, a DISTS score of 0.1087, and an MAE of 0.0623.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ConvLSTM model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Optical Flow Error (OFE)",
+            "target_entity_type": "Metric",
+            "paragraph": "The study integrates perceptual image-quality metrics (Structural Similarity Index Measure (SSIM), Deep Image Structure and Texture Similarity (DISTS), and Optical Flow Error (OFE)) alongside conventional Mean Absolute Error (MAE) and Mean Squared Error (MSE), providing a more comprehensive evaluation of spatiotemporal prediction performance.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ConvLSTM model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Squared Error (MSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "The study integrates perceptual image-quality metrics (Structural Similarity Index Measure (SSIM), Deep Image Structure and Texture Similarity (DISTS), and Optical Flow Error (OFE)) alongside conventional Mean Absolute Error (MAE) and Mean Squared Error (MSE), providing a more comprehensive evaluation of spatiotemporal prediction performance.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Advanced Very High-Resolution Radiometer (AVHRR)",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "surface albedo (SAL)",
+            "target_entity_type": "Variable",
+            "paragraph": "The SAL is the integral of the light reflected from a single direction towards all viewing directions in the bow and azimuth planes. The spectral dependence of the surface reflectance is ignored here. Full (black sky) albedo is a broadband surface reflectance. For the Advanced Very High-Resolution Radiometer (AVHRR), it is defined in the wavelength range 0.25-2.5 \u00b5m. It is obtained by integrating the spectrally directional hemispherical reflection over the investigated waveband. AVHRR channels 1 and 2 (0.58-0.68 \u00b5m and 0.725-1 \u00b5m) are used as radiation sources for SAL product generation. The data conditioning stage of satellite data for use with SAL is performed by the Polar Processing System software package. The package converts the observed satellite",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ConvLSTM model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "convolution kernel size of 4x4",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The convolution kernel size in the model is 4\u00d74. This study compares the performance of these two architectures as well as Stochastic Gradient Descent (SGD) and Adaptive Moment Estimation (Adam) optimizers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ConvLSTM model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "image size of 200x200",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "During the pre-processing stage, the obtained images were converted to grayscale, reducing the channel dimensionality from three to one while preserving the essential spatial information. The size of the images was reduced to 200\u00d7200 due to the difficulty of training at high resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "convolutional long short-term memory",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ConvLSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "sea ice concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SIC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SAL",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fractional cloud cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CF",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "South Pole",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Pole",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Structural Similarity Index Measure",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SSIM",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Deep Image Structure and Texture Similarity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "DISTS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean Absolute Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Marmara University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tsunami",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "storm",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "heavy rain",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "seaIce",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "atmos",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "recurrent neural network",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Gated Recurrent Unit",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "long short-term memory",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "deep neural network",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Convolutional Neural Networks",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "National Snow and Ice Data Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NSIDC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts Reanalysis v5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "flood",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Improved Sparrow Search Algorithm CNN-LSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ice cover thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "bidirectional LSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "encoder-decoder pyramid extended ConvLSTM network",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "spatial down-sampling",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "recursive multi-step iteration strategy",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "transposed convolution layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Optical Flow Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "OFE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean Squared Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Recurrent Neural Network",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RNN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "sigmoid activation function",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "hyperbolic tangent activation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "pooling layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "transposed convolution",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Recurrent All-Pairs Field Transforms",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RAFT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "4D correlation layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "recurrent update module",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "per-pixel feature encoder",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3D convolution layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "residual connections",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "attention blocks",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Stochastic Gradient Descent",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "SGD",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Adaptive Moment Estimation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Adam",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "transpose 3D convolution layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "200 x 200",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "European Organization for Meteorological Satellites",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "EUMETSAT",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "OSI SAF",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CM SAF",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "mon",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "NASA Team algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Advanced Very High-Resolution Radiometer",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "AVHRR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "top-of-atmosphere reflection",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud mask",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "satellite",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Polar",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "daytime-only satellite observations",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "early stopping",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1-SSIM loss function",
+            "entity_type": "PhysicalFeature"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2944124417",
+        "https://openalex.org/W2953521532",
+        "https://openalex.org/W2965187616",
+        "https://openalex.org/W2998691889",
+        "https://openalex.org/W3109908659",
+        "https://openalex.org/W3110020064",
+        "https://openalex.org/W3139464355",
+        "https://openalex.org/W3191525634",
+        "https://openalex.org/W4200233520",
+        "https://openalex.org/W4214628131",
+        "https://openalex.org/W4224229612",
+        "https://openalex.org/W4281662967",
+        "https://openalex.org/W4283022657",
+        "https://openalex.org/W4386711422",
+        "https://openalex.org/W4394798754",
+        "https://openalex.org/W4397049600",
+        "https://openalex.org/W4399436630",
+        "https://openalex.org/W4413174772"
+    ]
+}

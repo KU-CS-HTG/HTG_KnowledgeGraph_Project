@@ -1,0 +1,1124 @@
+{
+    "uri": "https://openalex.org/W7154103502",
+    "title": "Phenological modeling for ecological double-cropping of grapes with rain and pest resilience strategies based on MobileNet developed by Augmented Dream Optimizer",
+    "venue": {
+        "name": "Frontiers in Plant Science",
+        "id": "https://openalex.org/S2493613807",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5103069296",
+            "display_name": "Xinling Gan",
+            "orcid": "https://orcid.org/0000-0001-6684-4343"
+        }
+    ],
+    "doi": "https://doi.org/10.3389/fpls.2026.1779481",
+    "abstract": "Double-cropping grape systems offer enhanced land productivity but face significant challenges from climate variability, particularly rain stress and pest outbreaks during critical phenological stages. Accurate phenological prediction is essential to synchronize management practices with crop development and improve ecological resilience. This study presents a novel deep learning framework that integrates MobileNet with an augmented version of Dream Optimizer [Augmented Dream Optimizer (ADO)] to model grape phenology using satellite-derived time series of Normalized Difference Vegetation Index (NDVI), Enhanced Vegetation Index (EVI), and rainfall from the CropHarvest dataset. The model transforms temporal data into pseudo-images for efficient spatiotemporal feature extraction, achieving 93% classification accuracy and a 6.1-day mean absolute error in stage prediction. ADO enhances convergence and generalization by optimizing key hyperparameters through a hybrid metaheuristic search. The system further identifies high-risk periods for rain damage and pest infestation, enabling proactive interventions. The model statistically significantly outperforms machine learning and deep learning baselines (p&amp;lt; 0.01) across three different agroecological zones [Mediterranean (California, USA, and southern Europe), subtropical (South Australia), and temperate (central Europe)] through spatially stratified fivefold cross-validation on 3,000 held-out test samples of the CropHarvest dataset. This work demonstrates the potential of optimized lightweight neural networks in sustainable viticulture, providing a scalable tool for precision management in climate-resilient double-cropping systems.",
+    "field": "Precision agriculture",
+    "problem": "Accurately predicting grape phenology in double-cropping systems is challenging due to climate variability, as existing models often lack the ability to handle non-linear complexities and integrate predictions with the associated ecological risks of rain stress and pest outbreaks.",
+    "method": "The paper proposes a deep learning framework that integrates MobileNet with an Augmented Dream Optimizer to model grape phenology and predict rain and pest risks using satellite-derived time series of vegetation indices and rainfall.",
+    "task": "The task is to develop a deep learning framework using MobileNet and an Augmented Dream Optimizer to model grape phenology and identify high-risk periods for rain damage and pest infestation in double-cropping systems using satellite data.",
+    "model": [
+        "ERA5"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/phenology",
+            "display_name": "Phenology",
+            "score": 0.5803999900817871
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.3855000138282776
+        },
+        {
+            "id": "https://openalex.org/keywords/agroecology",
+            "display_name": "Agroecology",
+            "score": 0.36899998784065247
+        },
+        {
+            "id": "https://openalex.org/keywords/vegetation",
+            "display_name": "Vegetation (pathology)",
+            "score": 0.349700003862381
+        },
+        {
+            "id": "https://openalex.org/keywords/flexibility",
+            "display_name": "Flexibility (engineering)",
+            "score": 0.33820000290870667
+        },
+        {
+            "id": "https://openalex.org/keywords/leaf-area-index",
+            "display_name": "Leaf area index",
+            "score": 0.3253999948501587
+        },
+        {
+            "id": "https://openalex.org/keywords/benchmark",
+            "display_name": "Benchmark (surveying)",
+            "score": 0.321399986743927
+        },
+        {
+            "id": "https://openalex.org/keywords/ecosystem-model",
+            "display_name": "Ecosystem model",
+            "score": 0.2930999994277954
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.29260000586509705
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C51417038",
+            "wikidata": "https://www.wikidata.org/wiki/Q272737",
+            "display_name": "Phenology",
+            "level": 2,
+            "score": 0.5803999900817871
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5468999743461609
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.4788999855518341
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3855000138282776
+        },
+        {
+            "id": "https://openalex.org/C156663261",
+            "wikidata": "https://www.wikidata.org/wiki/Q396338",
+            "display_name": "Agroecology",
+            "level": 3,
+            "score": 0.36899998784065247
+        },
+        {
+            "id": "https://openalex.org/C2776133958",
+            "wikidata": "https://www.wikidata.org/wiki/Q7918366",
+            "display_name": "Vegetation (pathology)",
+            "level": 2,
+            "score": 0.349700003862381
+        },
+        {
+            "id": "https://openalex.org/C2780598303",
+            "wikidata": "https://www.wikidata.org/wiki/Q65921492",
+            "display_name": "Flexibility (engineering)",
+            "level": 2,
+            "score": 0.33820000290870667
+        },
+        {
+            "id": "https://openalex.org/C25989453",
+            "wikidata": "https://www.wikidata.org/wiki/Q446746",
+            "display_name": "Leaf area index",
+            "level": 2,
+            "score": 0.3253999948501587
+        },
+        {
+            "id": "https://openalex.org/C185798385",
+            "wikidata": "https://www.wikidata.org/wiki/Q1161707",
+            "display_name": "Benchmark (surveying)",
+            "level": 2,
+            "score": 0.321399986743927
+        },
+        {
+            "id": "https://openalex.org/C64107356",
+            "wikidata": "https://www.wikidata.org/wiki/Q295046",
+            "display_name": "Ecosystem model",
+            "level": 3,
+            "score": 0.2930999994277954
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.29260000586509705
+        },
+        {
+            "id": "https://openalex.org/C2779585090",
+            "wikidata": "https://www.wikidata.org/wiki/Q3457762",
+            "display_name": "Resilience (materials science)",
+            "level": 2,
+            "score": 0.2890999913215637
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.2867000102996826
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.2847999930381775
+        },
+        {
+            "id": "https://openalex.org/C12725497",
+            "wikidata": "https://www.wikidata.org/wiki/Q810247",
+            "display_name": "Baseline (sea)",
+            "level": 2,
+            "score": 0.27900001406669617
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.27619999647140503
+        },
+        {
+            "id": "https://openalex.org/C50644808",
+            "wikidata": "https://www.wikidata.org/wiki/Q192776",
+            "display_name": "Artificial neural network",
+            "level": 2,
+            "score": 0.27570000290870667
+        },
+        {
+            "id": "https://openalex.org/C139945424",
+            "wikidata": "https://www.wikidata.org/wiki/Q1940696",
+            "display_name": "Mean squared error",
+            "level": 2,
+            "score": 0.27250000834465027
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.27149999141693115
+        },
+        {
+            "id": "https://openalex.org/C126042441",
+            "wikidata": "https://www.wikidata.org/wiki/Q1324888",
+            "display_name": "Frame (networking)",
+            "level": 2,
+            "score": 0.26919999718666077
+        },
+        {
+            "id": "https://openalex.org/C2777382242",
+            "wikidata": "https://www.wikidata.org/wiki/Q6017816",
+            "display_name": "Index (typography)",
+            "level": 2,
+            "score": 0.26910001039505005
+        },
+        {
+            "id": "https://openalex.org/C188442384",
+            "wikidata": "https://www.wikidata.org/wiki/Q3079197",
+            "display_name": "Temperate forest",
+            "level": 3,
+            "score": 0.2662000060081482
+        },
+        {
+            "id": "https://openalex.org/C1549246",
+            "wikidata": "https://www.wikidata.org/wiki/Q718775",
+            "display_name": "Normalized Difference Vegetation Index",
+            "level": 3,
+            "score": 0.2630000114440918
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.2621000111103058
+        },
+        {
+            "id": "https://openalex.org/C57493831",
+            "wikidata": "https://www.wikidata.org/wiki/Q3134666",
+            "display_name": "Projection (relational algebra)",
+            "level": 2,
+            "score": 0.26190000772476196
+        },
+        {
+            "id": "https://openalex.org/C8642999",
+            "wikidata": "https://www.wikidata.org/wiki/Q4171168",
+            "display_name": "Hyperparameter",
+            "level": 2,
+            "score": 0.2596000134944916
+        },
+        {
+            "id": "https://openalex.org/C169258074",
+            "wikidata": "https://www.wikidata.org/wiki/Q245748",
+            "display_name": "Random forest",
+            "level": 2,
+            "score": 0.25850000977516174
+        },
+        {
+            "id": "https://openalex.org/C88463610",
+            "wikidata": "https://www.wikidata.org/wiki/Q194118",
+            "display_name": "Agricultural engineering",
+            "level": 1,
+            "score": 0.25189998745918274
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "RF",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "Accuracy (%)",
+            "result": "78.2 \u00b1 1.3"
+        },
+        {
+            "model": "RF",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "F1-score",
+            "result": "0.75 \u00b1 0.02"
+        },
+        {
+            "model": "RF",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "MAE (days)",
+            "result": "12.3 \u00b1 0.9"
+        },
+        {
+            "model": "RF",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "Training time (min)",
+            "result": "2 \u00b1 0.1"
+        },
+        {
+            "model": "LSTM",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "Accuracy (%)",
+            "result": "82.3 \u00b1 1.1"
+        },
+        {
+            "model": "LSTM",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "F1-score",
+            "result": "0.79 \u00b1 0.02"
+        },
+        {
+            "model": "LSTM",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "MAE (days)",
+            "result": "10.1 \u00b1 0.8"
+        },
+        {
+            "model": "LSTM",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "Training time (min)",
+            "result": "45 \u00b1 3"
+        },
+        {
+            "model": "CNN",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "Accuracy (%)",
+            "result": "84.1 \u00b1 1.0"
+        },
+        {
+            "model": "CNN",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "F1-score",
+            "result": "0.81 \u00b1 0.02"
+        },
+        {
+            "model": "CNN",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "MAE (days)",
+            "result": "9.5 \u00b1 0.7"
+        },
+        {
+            "model": "CNN",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "Training time (min)",
+            "result": "144 \u00b1 8"
+        },
+        {
+            "model": "MobileNet",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "Accuracy (%)",
+            "result": "87.2 \u00b1 0.9"
+        },
+        {
+            "model": "MobileNet",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "F1-score",
+            "result": "0.84 \u00b1 0.01"
+        },
+        {
+            "model": "MobileNet",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "MAE (days)",
+            "result": "8.2 \u00b1 0.6"
+        },
+        {
+            "model": "MobileNet",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "Training time (min)",
+            "result": "90 \u00b1 5"
+        },
+        {
+            "model": "Proposed",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "Accuracy (%)",
+            "result": "93.0 \u00b1 0.8"
+        },
+        {
+            "model": "Proposed",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "F1-score",
+            "result": "0.91 \u00b1 0.01"
+        },
+        {
+            "model": "Proposed",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "MAE (days)",
+            "result": "6.1 \u00b1 0.5"
+        },
+        {
+            "model": "Proposed",
+            "observational_dataset": "CropHarvest",
+            "evaluation_metric": "Training time (min)",
+            "result": "96 \u00b1 6"
+        }
+    ],
+    "innovation": "This paper presents a novel deep learning framework, integrating MobileNet with an Augmented Dream Optimizer, to accurately model grape phenology from satellite data and predict high-risk windows for rain and pest damage, enhancing resilience in ecological double-cropping systems.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "phenological modeling framework",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "93% classification accuracy",
+            "target_entity_type": "Metric",
+            "paragraph": "The model transforms temporal data into pseudo-images for efficient spatiotemporal feature extraction, achieving 93% classification accuracy and a 6.1-day mean absolute error in stage prediction.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "phenological modeling framework",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "6.1-day mean absolute error",
+            "target_entity_type": "Metric",
+            "paragraph": "The model transforms temporal data into pseudo-images for efficient spatiotemporal feature extraction, achieving 93% classification accuracy and a 6.1-day mean absolute error in stage prediction.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5 climatology module",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "In particular, the information on temperature and relative humidity was obtained using the ERA5 climatology module embedded in the CropHarvest dataset structure. Each data point, as recorded in the CropHarvest repository, contains not only satellite-based vegetation indices but also related climatological variables in the ERA5 reanalysis product, such as daily mean temperature (T), relative humidity (RH), and precipitation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5 climatology module",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "relative humidity",
+            "target_entity_type": "Variable",
+            "paragraph": "In particular, the information on temperature and relative humidity was obtained using the ERA5 climatology module embedded in the CropHarvest dataset structure. Each data point, as recorded in the CropHarvest repository, contains not only satellite-based vegetation indices but also related climatological variables in the ERA5 reanalysis product, such as daily mean temperature (T), relative humidity (RH), and precipitation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "phenological modeling framework",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "F1-score of 0.91",
+            "target_entity_type": "Metric",
+            "paragraph": "The integration of MobileNet with the ADO demonstrates a significant advancement in the accuracy and ecological relevance of phenological modeling for double-cropping grape systems. Using satellite-derived time series from the CropHarvest dataset, the proposed framework successfully captures the temporal dynamics of key phenological stages\u2014budburst, flowering, veraison, and harvest\u2014while simultaneously identifying critical risk windows associated with rainfall and pest pressure. The model outperforms conventional machine learning and deep learning baselines in both classification accuracy and temporal precision, achieving a 93% overall accuracy and an F1-score of 0.91, with a mean absolute error of only 6.1 days in phenological timing prediction.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "phenological modeling framework",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "phenological stage",
+            "target_entity_type": "Variable",
+            "paragraph": "The processed inputs are then fed into a customized MobileNetV2 architecture, which is trained to classify key phenological stages\u2014budburst, flowering, veraison, and harvest\u2014 based on learned spatiotemporal patterns.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Moderate Resolution Imaging Spectroradiometer (MODIS)",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "vegetation indices",
+            "target_entity_type": "Variable",
+            "paragraph": "To select the temporal resolution to use, three factors were considered to select biweekly (26 intervals per growing season) as the temporal resolution: 1) the inherent temporal resolution of the Moderate Resolution Imaging Spectroradiometer (MODIS)-derived vegetation indices in the CropHarvest dataset, i.e., biweekly (composited at 16-day intervals to reduce cloud contamination); 2) the length of grapevine phenological stages, with the key ones being flowering (7\u201314 days); and 3) the preliminary experiments on the performance of the model with the three temporal resolutions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "rain damage events",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "California",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "By aligning predicted phenology with environmental data, the system flagged 87% of historically recorded rain damage events and 82% of pest outbreaks within \u00b15 days of actual occurrence. These alerts were validated against regional agricultural reports from California, South Australia, and southern Europe, confirming the model\u2019s operational utility.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "rain damage events",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "South Australia",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "By aligning predicted phenology with environmental data, the system flagged 87% of historically recorded rain damage events and 82% of pest outbreaks within \u00b15 days of actual occurrence. These alerts were validated against regional agricultural reports from California, South Australia, and southern Europe, confirming the model\u2019s operational utility.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "rain damage events",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "southern Europe",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "By aligning predicted phenology with environmental data, the system flagged 87% of historically recorded rain damage events and 82% of pest outbreaks within \u00b15 days of actual occurrence. These alerts were validated against regional agricultural reports from California, South Australia, and southern Europe, confirming the model\u2019s operational utility.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "pest outbreaks",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "California",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "By aligning predicted phenology with environmental data, the system flagged 87% of historically recorded rain damage events and 82% of pest outbreaks within \u00b15 days of actual occurrence. These alerts were validated against regional agricultural reports from California, South Australia, and southern Europe, confirming the model\u2019s operational utility.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "pest outbreaks",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "South Australia",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "By aligning predicted phenology with environmental data, the system flagged 87% of historically recorded rain damage events and 82% of pest outbreaks within \u00b15 days of actual occurrence. These alerts were validated against regional agricultural reports from California, South Australia, and southern Europe, confirming the model\u2019s operational utility.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "pest outbreaks",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "southern Europe",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "By aligning predicted phenology with environmental data, the system flagged 87% of historically recorded rain damage events and 82% of pest outbreaks within \u00b15 days of actual occurrence. These alerts were validated against regional agricultural reports from California, South Australia, and southern Europe, confirming the model\u2019s operational utility.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "California",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "MobileNet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Augmented Dream Optimizer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Dream Optimizer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Normalized Difference Vegetation Index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Enhanced Vegetation Index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "South Australia",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "mean absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "classification accuracy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CropHarvest",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mediterranean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "central Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "southern Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "recurrent neural networks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "convolutional neural networks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SSD ResNet50",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "F1-score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SE-ResNet18",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "VGG16",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ResNet18",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "dew point",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO2 concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Area Under the Receiver Operating Characteristic curve",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Long Short-Term Memory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Sentinel-1",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SAR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Grapevine Sugar Ripeness",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Bordeaux",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "chill unit models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "thermal time models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "UniPhen",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Grapevine Flowering Veraison",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Champagne",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "growing degree days",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Marlborough",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Biweekly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Validation accuracy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MobileNetV2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "longitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2D pseudo-images",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "min-max normalization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cubic spline interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Locally Estimated Scatterplot Smoothing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "linear interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "daily mean temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "weekly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Xception",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Inverted Residual",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ShuffleNet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Separable Depthwise Convolution",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "global mean pooling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "weighted cross-entropy loss",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "softmax",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "focal loss",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cross-entropy loss",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Forgetting and supplementing technique",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Dream Optimization Algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Memory strategy",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Dream-sharing strategy",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Exploitation phase",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "batch size",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "learning rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "kernel size",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dropout rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "number of epochs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Particle Swarm Optimization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Napa and Sonoma valleys",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Training time",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Italy",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "standard CNN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Random Forest",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Rheingau",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Riverina region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ribera del Duero",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Spain",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Bordeaux region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Tuscany",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Barossa Valley",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Adam",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "depthwise separable convolutions",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SHapley Additive exPlanations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "permutation importance",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Permutation importance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SHAP value",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "rain stress",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "pest infestation",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "warm-humid conditions",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "temporal attention analysis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "feature contribution analysis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SGD",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RMSProp",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "26 \u00d7 3",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "13 x 3",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "South Australian Research and Development Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Napa and Sonoma counties",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "European and Mediterranean Plant Protection Organization",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of California Integrated Pest Management Program",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Barossa Valley and Riverina regions",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "True-positive rate",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "False-positive rate",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Precision",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "True positives",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "False positives",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "False negatives",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Total documented events",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Number of dimensions to forget in exploration stage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Maximum training epochs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mapping from error rate to weight (exponential used)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Cognitive and social acceleration factors",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Weight balancing DO and PSO components",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "5-fold stratified cross-validation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Probability of using dream-sharing vs forgetting in exploration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Inertia weight for velocity update",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Initial learning rate for ADO",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "26 x 3 x 1",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Pre-trained on ImageNet",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Dynamic weighted categorical cross-entropy",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Number of samples per batch",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Based on per-class error rate (false negatives)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Conv2D: 3x3 kernel, stride 1, padding='same', 32 filters",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Dropout probability in final layers",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Size of convolutional kernels in first layer",
+            "entity_type": "Variable"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2072093516",
+        "https://openalex.org/W2126250722",
+        "https://openalex.org/W2142567289",
+        "https://openalex.org/W2981869810",
+        "https://openalex.org/W3034644754",
+        "https://openalex.org/W3134801456",
+        "https://openalex.org/W4225571529",
+        "https://openalex.org/W4311235021",
+        "https://openalex.org/W4311522735",
+        "https://openalex.org/W4319316802",
+        "https://openalex.org/W4381800352",
+        "https://openalex.org/W4387361730",
+        "https://openalex.org/W4389190778",
+        "https://openalex.org/W4389703549",
+        "https://openalex.org/W4396761649",
+        "https://openalex.org/W4402664374",
+        "https://openalex.org/W4412018549",
+        "https://openalex.org/W4414305516",
+        "https://openalex.org/W4414522732",
+        "https://openalex.org/W4415769897",
+        "https://openalex.org/W7103752554",
+        "https://openalex.org/W7116428753",
+        "https://openalex.org/W7124461192"
+    ]
+}

@@ -1,0 +1,897 @@
+{
+    "uri": "https://openalex.org/W7153317352",
+    "title": "Integrating IMDAA Regional Reanalysis and Machine Learning for Enhanced Detection of Extreme Precipitation Over Complex Himalayan Terrain",
+    "venue": {
+        "name": "Earth Systems and Environment",
+        "id": "https://openalex.org/S4210191187",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5133323778",
+            "display_name": "Aayushi Tandon",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5133382970",
+            "display_name": "Kanhu Charan Pattnayak",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5133384204",
+            "display_name": "Amit Awasthi",
+            "orcid": "https://orcid.org/0000-0001-8811-2338"
+        }
+    ],
+    "doi": "https://doi.org/10.1007/s41748-026-01117-3",
+    "abstract": "The ecologically fragile Himalayan region faces escalating vulnerability to extreme precipitation events driven by orographic-atmospheric interactions. However, forecasting these events remains a formidable challenge, as traditional global models often fail to capture mesoscale convective extremes due to coarse spatial resolutions. North India serves as a crucial agricultural \u201cbreadbasket,\u201d yet its hydrological integrity is increasingly compromised by elevation-dependent warming. Accurate detection of these shifting precipitation regimes is essential for developing a foundational diagnostic framework for decision-support systems and mitigating disasters like cloudbursts and flash floods. This study evaluates the high-resolution (12 km) Indian Monsoon Data Assimilation and Analysis reanalysis dataset (1979\u20132022) combined with machine learning classifiers. These models were designed to categorize daily accumulated rainfall into percentile-based groups - specifically moderate, heavy, and extreme - for targeted detection of high-impact events. Beyond a statistically significant increasing trend of + 3.0 mm/decade in annual precipitation across the Himalayan foothills, the study found that ensemble based learning (RF) demonstrated clear superiority over geometric classifiers (SVM) in achieving significant overall accuracy of 81.6% in predicting tail-end distributions. RF achieved a precision of 0.80 for 'Extreme' events with a high degree of specificity, suggesting its potential for reducing false-alarm rates in complex orographic zones. These findings establish the superiority of ensemble-based learning over geometric classifiers for meteorological applications in complex terrain. The Random Forest based framework offers a reliable, cost-effective tool for operational forecasting, bridging the gap between coarse global models and local observational scarcity to support disaster mitigation strategies in North India. The graphical abstract illustrates the study\u2019s integrated machine learning framework designed to resolve mesoscale extreme precipitation events over the complex orography of North India. The workflow is divided into three distinct phases namely Data & Study Area (Left Panel), Methodological Framework (Center Panel) and, Scientific Insights & Results (Right Panel). The framework begins with utilizing high-resolution (12 km) Indian Monsoon Data Assimilation and Analysis (IMDAA) reanalysis dataset (1979\u20132022). This section highlights the study domain, encompassing the physiographically diverse North Indian states, and incorporates elevation to account for the critical orographic-atmospheric interactions unique to the Western Himalayas. The central component details the dual-pronged analytical approach. First, an observational analysis characterizes spatiotemporal precipitation regimes, identifying a regional intensification trend of + 3.0 mm/decade. Second, the study employs supervised machine learning models, benchmarking the geometric approach of support vector machines (SVM) against the ensemble-based random forest (RF) algorithm to classify precipitation events. The final section presents the comparative performance evaluation. The maps demonstrate that Random Forest achieves superior spatial robustness, expanding high-reliability coverage to 74.4% of the domain compared to SVM\u2019s limited coverage. Histograms confirm RF\u2019s higher mean accuracy (81.6%) versus SVM (80.9%). The Receiver Operating Characteristic curves highlight the critical finding that while SVM fails to detect minority \u201cExtreme\u201d class events, Random Forest maintains high precision (0.80) and perfect specificity, making it the superior tool for a foundational diagnostic framework for decision-support systems. Quantified an increasing annual precipitation trend of + 3.0 mm/decade in the Himalayan foothills using 12-km reanalysis data. Demonstrated superior skill of Random Forest (81.6% accuracy) over Support Vector Machines in capturing mesoscale convective extremes. Identified significant spatial variability in extreme events across ~ 6,500 grid points using a diagnostic-predictive system. Established a classification system utilizing atmospheric predictors to categorize daily precipitationinto percentile-based intensity groups.",
+    "field": "Machine learning for extreme weather prediction",
+    "problem": "Traditional global models fail to capture mesoscale convective extremes over complex Himalayan terrain due to coarse spatial resolutions, making the accurate forecasting of high-impact precipitation events a formidable challenge.",
+    "method": "This paper proposes a machine learning framework that uses high-resolution IMDAA reanalysis data to categorize daily rainfall into percentile-based intensity groups for improved detection of extreme precipitation events over complex Himalayan terrain.",
+    "task": "The task is to evaluate and compare machine learning classifiers for detecting extreme precipitation events over the complex Himalayan terrain using high-resolution IMDAA regional reanalysis data.",
+    "model": [
+        "IMDAA",
+        "ERA5"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/terrain",
+            "display_name": "Terrain",
+            "score": 0.6079000234603882
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.5310999751091003
+        },
+        {
+            "id": "https://openalex.org/keywords/random-forest",
+            "display_name": "Random forest",
+            "score": 0.47699999809265137
+        },
+        {
+            "id": "https://openalex.org/keywords/orographic-lift",
+            "display_name": "Orographic lift",
+            "score": 0.4603999853134155
+        },
+        {
+            "id": "https://openalex.org/keywords/extreme-weather",
+            "display_name": "Extreme weather",
+            "score": 0.45879998803138733
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.3912999927997589
+        },
+        {
+            "id": "https://openalex.org/keywords/flash-flood",
+            "display_name": "Flash flood",
+            "score": 0.3912999927997589
+        },
+        {
+            "id": "https://openalex.org/keywords/monsoon",
+            "display_name": "Monsoon",
+            "score": 0.36550000309944153
+        },
+        {
+            "id": "https://openalex.org/keywords/mesoscale-meteorology",
+            "display_name": "Mesoscale meteorology",
+            "score": 0.3488999903202057
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C161840515",
+            "wikidata": "https://www.wikidata.org/wiki/Q186131",
+            "display_name": "Terrain",
+            "level": 2,
+            "score": 0.6079000234603882
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.552299976348877
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.5310999751091003
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.48840001225471497
+        },
+        {
+            "id": "https://openalex.org/C169258074",
+            "wikidata": "https://www.wikidata.org/wiki/Q245748",
+            "display_name": "Random forest",
+            "level": 2,
+            "score": 0.47699999809265137
+        },
+        {
+            "id": "https://openalex.org/C134295995",
+            "wikidata": "https://www.wikidata.org/wiki/Q1506685",
+            "display_name": "Orographic lift",
+            "level": 3,
+            "score": 0.4603999853134155
+        },
+        {
+            "id": "https://openalex.org/C205537798",
+            "wikidata": "https://www.wikidata.org/wiki/Q1277161",
+            "display_name": "Extreme weather",
+            "level": 3,
+            "score": 0.45879998803138733
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.4388999938964844
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.438400000333786
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.43059998750686646
+        },
+        {
+            "id": "https://openalex.org/C120417685",
+            "wikidata": "https://www.wikidata.org/wiki/Q860333",
+            "display_name": "Flash flood",
+            "level": 3,
+            "score": 0.3912999927997589
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3912999927997589
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.38499999046325684
+        },
+        {
+            "id": "https://openalex.org/C136996986",
+            "wikidata": "https://www.wikidata.org/wiki/Q42967",
+            "display_name": "Monsoon",
+            "level": 2,
+            "score": 0.36550000309944153
+        },
+        {
+            "id": "https://openalex.org/C40382383",
+            "wikidata": "https://www.wikidata.org/wiki/Q2399824",
+            "display_name": "Mesoscale meteorology",
+            "level": 2,
+            "score": 0.3488999903202057
+        },
+        {
+            "id": "https://openalex.org/C554190296",
+            "wikidata": "https://www.wikidata.org/wiki/Q47528",
+            "display_name": "Radar",
+            "level": 2,
+            "score": 0.34529998898506165
+        },
+        {
+            "id": "https://openalex.org/C133204551",
+            "wikidata": "https://www.wikidata.org/wiki/Q838305",
+            "display_name": "Weather Research and Forecasting Model",
+            "level": 2,
+            "score": 0.3402000069618225
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.33160001039505005
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.32850000262260437
+        },
+        {
+            "id": "https://openalex.org/C29141058",
+            "wikidata": "https://www.wikidata.org/wiki/Q8092",
+            "display_name": "Tropical cyclone",
+            "level": 2,
+            "score": 0.3089999854564667
+        },
+        {
+            "id": "https://openalex.org/C94124525",
+            "wikidata": "https://www.wikidata.org/wiki/Q912550",
+            "display_name": "Categorization",
+            "level": 2,
+            "score": 0.2913999855518341
+        },
+        {
+            "id": "https://openalex.org/C12267149",
+            "wikidata": "https://www.wikidata.org/wiki/Q282453",
+            "display_name": "Support vector machine",
+            "level": 2,
+            "score": 0.27570000290870667
+        },
+        {
+            "id": "https://openalex.org/C95713431",
+            "wikidata": "https://www.wikidata.org/wiki/Q631425",
+            "display_name": "Vulnerability (computing)",
+            "level": 2,
+            "score": 0.27079999446868896
+        },
+        {
+            "id": "https://openalex.org/C75398719",
+            "wikidata": "https://www.wikidata.org/wiki/Q7268938",
+            "display_name": "Quantitative precipitation estimation",
+            "level": 3,
+            "score": 0.26969999074935913
+        },
+        {
+            "id": "https://openalex.org/C45804977",
+            "wikidata": "https://www.wikidata.org/wiki/Q7239673",
+            "display_name": "Predictive modelling",
+            "level": 2,
+            "score": 0.2685999870300293
+        },
+        {
+            "id": "https://openalex.org/C9770341",
+            "wikidata": "https://www.wikidata.org/wiki/Q1938983",
+            "display_name": "Geospatial analysis",
+            "level": 2,
+            "score": 0.26499998569488525
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.2630999982357025
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.25839999318122864
+        },
+        {
+            "id": "https://openalex.org/C100725284",
+            "wikidata": "https://www.wikidata.org/wiki/Q1045317",
+            "display_name": "Hydrometeorology",
+            "level": 3,
+            "score": 0.25699999928474426
+        },
+        {
+            "id": "https://openalex.org/C45942800",
+            "wikidata": "https://www.wikidata.org/wiki/Q245652",
+            "display_name": "Ensemble learning",
+            "level": 2,
+            "score": 0.25540000200271606
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Random Forest (RF)",
+            "observational_dataset": "IMDAA reanalysis dataset",
+            "evaluation_metric": "Accuracy, Precision, Recall (Sensitivity), F1 Score, Specificity, Receiver Operating Characteristic (ROC), Area Under the Curve (AUC)",
+            "result": "Quantitative results for the model are not provided in the tables."
+        },
+        {
+            "model": "Support Vector Machine (SVM)",
+            "observational_dataset": "IMDAA reanalysis dataset",
+            "evaluation_metric": "Accuracy, Precision, Recall (Sensitivity), F1 Score, Specificity, Receiver Operating Characteristic (ROC), Area Under the Curve (AUC)",
+            "result": "Quantitative results for the model are not provided in the tables."
+        }
+    ],
+    "innovation": "This paper integrates high-resolution IMDAA reanalysis with machine learning, demonstrating that an ensemble-based Random Forest classifier significantly outperforms Support Vector Machines in accurately detecting rare, extreme precipitation events across the complex Himalayan terrain, establishing a robust diagnostic framework for disaster mitigation.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Indian Monsoon Data Assimilation and Analysis",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "4D-Var data assimilation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The Indian Monsoon Data Assimilation and Analysis (IMDAA) reanalysis, with its 12-km resolution and 4D-Var assimilation of local observation networks, has emerged as a superior alternative, showing significantly higher cor- relations (r~0.56) with observed cloudburst events com- pared to global counterparts (Lohan et al. 2025; Rani et al. 2021a; Tandon et al. 2026).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Indian Monsoon Data Assimilation and Analysis",
+            "source_entity_type": "Source",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "reanalysis",
+            "target_entity_type": "SourceType",
+            "paragraph": "The primary dataset utilized was the Indian Monsoon Data Assimilation and Analysis (IMDAA) reanalysis, chosen for its high spatial resolution of 0.12\u00b0 \u00d7 0.12\u00b0 (~12 km) and temporal consistency spanning from 1979 to the present (Ashrit et al. 2020; Koteshwaramma et al. 2025; Rani et al. 2021b).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Extreme Precipitation",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Himalayan region",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The ecologically fragile Himalayan region faces escalating vulnerability to extreme precipitation events driven by oro- graphic-atmospheric interactions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Extreme Precipitation",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "North India",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "This study evaluates the high-resolution (12 km) Indian Monsoon Data Assimilation and Analysis reanalysis dataset (1979\u20132022) combined with machine learning classifiers. These models were designed to categorize daily accumulated rainfall into percentile-based groups - specifically moderate, heavy, and extreme - for targeted detection of high-impact events. Beyond a statistically significant increasing trend of +3.0 mm/decade in annual precipitation across the Himalayan foothills, the study found that ensemble based learning (RF) demonstrated clear superiority over geometric classifiers (SVM) in achieving significant overall accuracy of 81.6% in predicting tail-end distributions. RF achieved a precision of 0.80 for 'Extreme' events with a high degree of specificity, suggesting its potential for reducing false-alarm rates in complex orographic zones. These findings establish the superiority of ensemble-based learning over geometric classifiers for meteorological applications in complex terrain. The Random Forest based framework offers a reliable, cost-effective tool for operational forecasting, bridging the gap between coarse global models and local observational scarcity to support disaster mitigation strategies in North India.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Extreme Precipitation",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Jammu & Kashmir",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Fig. 4 Temporal variations in extreme precipitation from 1979-2022 for Delhi, Himachal Pradesh (HP), Punjab (PN), Rajasthan (RJ), Haryana (HR), Jammu & Kashmir (JK), Uttarakhand (UK), and Uttar Pradesh (UP). Each panel shows the year-to-year variability in maxi- mum daily precipitation amounts for the respective region",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Extreme Precipitation",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Himachal Pradesh",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Fig. 4 Temporal variations in extreme precipitation from 1979-2022 for Delhi, Himachal Pradesh (HP), Punjab (PN), Rajasthan (RJ), Haryana (HR), Jammu & Kashmir (JK), Uttarakhand (UK), and Uttar Pradesh (UP). Each panel shows the year-to-year variability in maxi- mum daily precipitation amounts for the respective region",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Extreme Precipitation",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Uttarakhand",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Fig. 4 Temporal variations in extreme precipitation from 1979-2022 for Delhi, Himachal Pradesh (HP), Punjab (PN), Rajasthan (RJ), Haryana (HR), Jammu & Kashmir (JK), Uttarakhand (UK), and Uttar Pradesh (UP). Each panel shows the year-to-year variability in maxi- mum daily precipitation amounts for the respective region",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Extreme Precipitation",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Punjab",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Fig. 4 Temporal variations in extreme precipitation from 1979-2022 for Delhi, Himachal Pradesh (HP), Punjab (PN), Rajasthan (RJ), Haryana (HR), Jammu & Kashmir (JK), Uttarakhand (UK), and Uttar Pradesh (UP). Each panel shows the year-to-year variability in maxi- mum daily precipitation amounts for the respective region",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Extreme Precipitation",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Haryana",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Fig. 4 Temporal variations in extreme precipitation from 1979-2022 for Delhi, Himachal Pradesh (HP), Punjab (PN), Rajasthan (RJ), Haryana (HR), Jammu & Kashmir (JK), Uttarakhand (UK), and Uttar Pradesh (UP). Each panel shows the year-to-year variability in maxi- mum daily precipitation amounts for the respective region",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Extreme Precipitation",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Rajasthan",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Fig. 4 Temporal variations in extreme precipitation from 1979-2022 for Delhi, Himachal Pradesh (HP), Punjab (PN), Rajasthan (RJ), Haryana (HR), Jammu & Kashmir (JK), Uttarakhand (UK), and Uttar Pradesh (UP). Each panel shows the year-to-year variability in maxi- mum daily precipitation amounts for the respective region",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Extreme Precipitation",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Uttar Pradesh",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Fig. 4 Temporal variations in extreme precipitation from 1979-2022 for Delhi, Himachal Pradesh (HP), Punjab (PN), Rajasthan (RJ), Haryana (HR), Jammu & Kashmir (JK), Uttarakhand (UK), and Uttar Pradesh (UP). Each panel shows the year-to-year variability in maxi- mum daily precipitation amounts for the respective region",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Extreme Precipitation",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Delhi",
+            "target_entity_type": "City",
+            "paragraph": "Fig. 4 Temporal variations in extreme precipitation from 1979-2022 for Delhi, Himachal Pradesh (HP), Punjab (PN), Rajasthan (RJ), Haryana (HR), Jammu & Kashmir (JK), Uttarakhand (UK), and Uttar Pradesh (UP). Each panel shows the year-to-year variability in maxi- mum daily precipitation amounts for the respective region",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "snow droughts",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Indus and Ganga basins",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Recent assessments from 2025 indicate an alarming rise in \"snow droughts\" across the Indus and Ganga basins, where pre- cipitation at mid-elevations (3,000\u20136,000 m) is increasingly falling as liquid rain rather than snow, fundamentally alter- ing the region's run-off mechanics (Singh et al. 2025).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Western Disturbances",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Northwest India",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The agricultural productivity of Northwest India, specifically in states like Punjab, Haryana, and Uttar Pradesh, is highly dependent on the interplay between the Indian Summer Monsoon (ISM) and Western Disturbances (WDs) (Mukherjee et al. 2019; Yadav et al. 2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Cloudbursts",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Himalayan region",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Despite the urgency, forecasting these extremes remains a formidable challenge. Traditional General Circulation Models (GCMs) and even standard global reanalysis prod- ucts like ERA5 often fail to capture the localized, mesoscale convective systems responsible for Himalayan cloudbursts (Chakraborty et al. 2019; Saini and Attada 2025; Saman- tray and Gouda 2024; Tandon et al. 2025a, b, c).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Cloudbursts",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Western Himalayas",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The \u226595th percentile (Extreme) is chosen to isolate rare, high-intensity events that are physically linked to rapid orographic lifting and mesoscale convective systems, which are the primary drivers of hydro-meteorological disasters like cloudbursts in the Western Himalayas.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Flash Floods",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Himalayan region",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Accurate detection of these shifting precipitation regimes is essential for developing a foundational diagnostic framework for decision-support systems and mitigating disasters like cloudbursts and flash floods. This study evaluates the high-resolution (12 km) Indian Monsoon Data Assimilation and Analysis reanalysis dataset (1979\u20132022) combined with machine learning classifiers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glacial Lake Outburst Flood",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Uttarakhand",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "The catastrophic 2013 Kedarnath disaster, triggered by a cloudburst and subsequent Glacial Lake Outburst Flood (GLOF) that released over 375 mm of rainfall in 24 hours, exemplified the devastating potential of compound extreme events in this topography (Patel et al. 2022).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Himalayan region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "IMDAA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "12 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Indian Monsoon Data Assimilation and Analysis",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Random Forest",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Support Vector Machines",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "accuracy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "precision",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "specificity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "North India",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Department of Applied Sciences, School of Advanced Engineering, UPES, Dehradun, India",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Hadley Centre for Climate, Met Office, Exeter, UK",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "National Centre For Medium Range Weather Forecasting",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Western Himalayas",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Recall",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Receiver Operating Characteristic",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Himalayan foothills",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Hindu Kush Himalaya",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "snow droughts",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Indus and Ganga basins",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Punjab",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Haryana",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Uttar Pradesh",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Indian Summer Monsoon",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Western Disturbances",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "cloudburst",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Glacial Lake Outburst Flood",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Indo-Gangetic plains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "convection and microphysics parameterizations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "4D-Var",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "convective parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "stochastic entrainment",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Jammu & Kashmir",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Himachal Pradesh",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Uttarakhand",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Rajasthan",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Delhi",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Himalayan Orogen",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indo-Gangetic Alluvial Plains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Himalayas",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Bay of Bengal",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Arabian Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Max Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Min Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface Pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Relative Humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Solar Radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wind Speed (Gust)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "0.12\u00b0 \u00d7 0.12\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "4D-Var data assimilation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Mann-Kendall (MK) test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Sen's Slope estimator",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "p-value",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Accuracy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Precision",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "F1 Score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Specificity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Area Under the Curve",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bagging",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Radial Basis Function (RBF)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Annual Maximum Daily Precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "annual precipitation accumulation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Indian subcontinent",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indian Ocean",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "True Positive Rate",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "False Positive Rate",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "El Ni\u00f1o-Southern Oscillation",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Indian Ocean Dipole",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "flash floods",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Area Under the Precision-Recall Curve",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "outgoing longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "TRMM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1672852929",
+        "https://openalex.org/W1821153150",
+        "https://openalex.org/W1982518595",
+        "https://openalex.org/W1985488086",
+        "https://openalex.org/W2010589603",
+        "https://openalex.org/W2055308682",
+        "https://openalex.org/W2069498114",
+        "https://openalex.org/W2101490545",
+        "https://openalex.org/W2132424470",
+        "https://openalex.org/W2145088822",
+        "https://openalex.org/W2261059368",
+        "https://openalex.org/W2529239031",
+        "https://openalex.org/W2766381676",
+        "https://openalex.org/W2795819040",
+        "https://openalex.org/W2911964244",
+        "https://openalex.org/W2912709174",
+        "https://openalex.org/W2915316104",
+        "https://openalex.org/W2999003120",
+        "https://openalex.org/W3146879173",
+        "https://openalex.org/W3162352642",
+        "https://openalex.org/W3163022682",
+        "https://openalex.org/W3203572629",
+        "https://openalex.org/W4210455988",
+        "https://openalex.org/W4213290404",
+        "https://openalex.org/W4226323522",
+        "https://openalex.org/W4322763496",
+        "https://openalex.org/W4367551197",
+        "https://openalex.org/W4387029677",
+        "https://openalex.org/W4391877466",
+        "https://openalex.org/W4396735238",
+        "https://openalex.org/W4398204086",
+        "https://openalex.org/W4400311079",
+        "https://openalex.org/W4401179946",
+        "https://openalex.org/W4401720378",
+        "https://openalex.org/W4406230003",
+        "https://openalex.org/W4406334334",
+        "https://openalex.org/W4406899400",
+        "https://openalex.org/W4408472174",
+        "https://openalex.org/W4413101449",
+        "https://openalex.org/W4415194878",
+        "https://openalex.org/W4415299756",
+        "https://openalex.org/W4415515750",
+        "https://openalex.org/W7127053095"
+    ]
+}

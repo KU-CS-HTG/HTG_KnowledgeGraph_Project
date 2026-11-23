@@ -1,0 +1,1176 @@
+{
+    "uri": "https://openalex.org/W2754310675",
+    "title": "The sea ice model component of HadGEM3-GC3.1",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2018,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5088002256",
+            "display_name": "Jeff Ridley",
+            "orcid": "https://orcid.org/0000-0002-2612-9924"
+        },
+        {
+            "id": "https://openalex.org/A5089357421",
+            "display_name": "Ed Blockley",
+            "orcid": "https://orcid.org/0000-0002-0489-4238"
+        },
+        {
+            "id": "https://openalex.org/A5014998263",
+            "display_name": "Ann Keen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5110524991",
+            "display_name": "Jamie Rae",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5000430909",
+            "display_name": "Alex West",
+            "orcid": "https://orcid.org/0000-0002-9818-6848"
+        },
+        {
+            "id": "https://openalex.org/A5058432419",
+            "display_name": "David Schr\u00f6eder",
+            "orcid": "https://orcid.org/0000-0003-2351-4306"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-11-713-2018",
+    "abstract": "Abstract. A new sea ice configuration, GSI8.1, is implemented in the Met Office global coupled configuration HadGEM3-GC3.1 which will be used for all CMIP6 (Coupled Model Intercomparison Project Phase 6) simulations. The inclusion of multi-layer thermodynamics has required a semi-implicit coupling scheme between atmosphere and sea ice to ensure the stability of the solver. Here we describe the sea ice model component and show that the Arctic thickness and extent compare well with observationally based data.",
+    "field": "Sea ice modeling",
+    "problem": "Implementing advanced multi-layer sea ice thermodynamics creates solver instabilities, as the standard coupling scheme incorrectly distributes atmospheric energy fluxes to the higher-resolution ice grid when ice fractions change, leading to unphysical results and convergence failures.",
+    "method": "A semi-implicit coupling scheme is implemented between the atmosphere and sea ice models to ensure the stability of the new multi-layer thermodynamics solver by apportioning atmospheric energy fluxes based on the underlying sea ice area.",
+    "task": "The task is to describe and evaluate the new sea ice model component, GSI8.1, which has been implemented in the Met Office global coupled model HadGEM3-GC3.1 for CMIP6 simulations.",
+    "model": [
+        "HadGEM3-GC3.1",
+        "GC3.1",
+        "GSI8.1",
+        "NEMO",
+        "MetUM",
+        "JULES",
+        "OASIS-MCT",
+        "GC2",
+        "GSI6",
+        "CICE",
+        "CCSM3",
+        "HadGEM3-GC2.0",
+        "HadGEM3"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/component",
+            "display_name": "Component (thermodynamics)",
+            "score": 0.6729679703712463
+        },
+        {
+            "id": "https://openalex.org/keywords/solver",
+            "display_name": "Solver",
+            "score": 0.6361994743347168
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-ice",
+            "display_name": "Sea ice",
+            "score": 0.6218674778938293
+        },
+        {
+            "id": "https://openalex.org/keywords/coupling",
+            "display_name": "Coupling (piping)",
+            "score": 0.5403753519058228
+        },
+        {
+            "id": "https://openalex.org/keywords/the-arctic",
+            "display_name": "The arctic",
+            "score": 0.5182373523712158
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.49547016620635986
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.4936583936214447
+        },
+        {
+            "id": "https://openalex.org/keywords/stability",
+            "display_name": "Stability (learning theory)",
+            "score": 0.4720148742198944
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4586368501186371
+        },
+        {
+            "id": "https://openalex.org/keywords/phase",
+            "display_name": "Phase (matter)",
+            "score": 0.4579957127571106
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.4560723900794983
+        },
+        {
+            "id": "https://openalex.org/keywords/atmosphere",
+            "display_name": "Atmosphere (unit)",
+            "score": 0.43978893756866455
+        },
+        {
+            "id": "https://openalex.org/keywords/arctic",
+            "display_name": "Arctic",
+            "score": 0.41281214356422424
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-model",
+            "display_name": "Atmospheric model",
+            "score": 0.41274186968803406
+        },
+        {
+            "id": "https://openalex.org/keywords/coupled-model-intercomparison-project",
+            "display_name": "Coupled model intercomparison project",
+            "score": 0.41197720170021057
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.35973066091537476
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.2888219356536865
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.2726016640663147
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.21008437871932983
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.16290616989135742
+        },
+        {
+            "id": "https://openalex.org/keywords/materials-science",
+            "display_name": "Materials science",
+            "score": 0.13379725813865662
+        },
+        {
+            "id": "https://openalex.org/keywords/thermodynamics",
+            "display_name": "Thermodynamics",
+            "score": 0.12850603461265564
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.10915607213973999
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C168167062",
+            "wikidata": "https://www.wikidata.org/wiki/Q1117970",
+            "display_name": "Component (thermodynamics)",
+            "level": 2,
+            "score": 0.6729679703712463
+        },
+        {
+            "id": "https://openalex.org/C2778770139",
+            "wikidata": "https://www.wikidata.org/wiki/Q1966904",
+            "display_name": "Solver",
+            "level": 2,
+            "score": 0.6361994743347168
+        },
+        {
+            "id": "https://openalex.org/C136894858",
+            "wikidata": "https://www.wikidata.org/wiki/Q213926",
+            "display_name": "Sea ice",
+            "level": 2,
+            "score": 0.6218674778938293
+        },
+        {
+            "id": "https://openalex.org/C131584629",
+            "wikidata": "https://www.wikidata.org/wiki/Q4308705",
+            "display_name": "Coupling (piping)",
+            "level": 2,
+            "score": 0.5403753519058228
+        },
+        {
+            "id": "https://openalex.org/C3018378255",
+            "wikidata": "https://www.wikidata.org/wiki/Q25322",
+            "display_name": "The arctic",
+            "level": 2,
+            "score": 0.5182373523712158
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.49547016620635986
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.4936583936214447
+        },
+        {
+            "id": "https://openalex.org/C112972136",
+            "wikidata": "https://www.wikidata.org/wiki/Q7595718",
+            "display_name": "Stability (learning theory)",
+            "level": 2,
+            "score": 0.4720148742198944
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4586368501186371
+        },
+        {
+            "id": "https://openalex.org/C44280652",
+            "wikidata": "https://www.wikidata.org/wiki/Q104837",
+            "display_name": "Phase (matter)",
+            "level": 2,
+            "score": 0.4579957127571106
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4560723900794983
+        },
+        {
+            "id": "https://openalex.org/C65440619",
+            "wikidata": "https://www.wikidata.org/wiki/Q177974",
+            "display_name": "Atmosphere (unit)",
+            "level": 2,
+            "score": 0.43978893756866455
+        },
+        {
+            "id": "https://openalex.org/C518008717",
+            "wikidata": "https://www.wikidata.org/wiki/Q25322",
+            "display_name": "Arctic",
+            "level": 2,
+            "score": 0.41281214356422424
+        },
+        {
+            "id": "https://openalex.org/C118365302",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric model",
+            "level": 2,
+            "score": 0.41274186968803406
+        },
+        {
+            "id": "https://openalex.org/C25022447",
+            "wikidata": "https://www.wikidata.org/wiki/Q5178021",
+            "display_name": "Coupled model intercomparison project",
+            "level": 4,
+            "score": 0.41197720170021057
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.35973066091537476
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.2888219356536865
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.2726016640663147
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.21008437871932983
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.16290616989135742
+        },
+        {
+            "id": "https://openalex.org/C192562407",
+            "wikidata": "https://www.wikidata.org/wiki/Q228736",
+            "display_name": "Materials science",
+            "level": 0,
+            "score": 0.13379725813865662
+        },
+        {
+            "id": "https://openalex.org/C97355855",
+            "wikidata": "https://www.wikidata.org/wiki/Q11473",
+            "display_name": "Thermodynamics",
+            "level": 1,
+            "score": 0.12850603461265564
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.10915607213973999
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C62520636",
+            "wikidata": "https://www.wikidata.org/wiki/Q944",
+            "display_name": "Quantum mechanics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C191897082",
+            "wikidata": "https://www.wikidata.org/wiki/Q11467",
+            "display_name": "Metallurgy",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C199360897",
+            "wikidata": "https://www.wikidata.org/wiki/Q9143",
+            "display_name": "Programming language",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "HadGEM3-GC3.1",
+            "observational_dataset": "ICESat (2003-2008)",
+            "evaluation_metric": "Antarctic ice volume (summer minimum)",
+            "result": "2735 km\u00b3"
+        },
+        {
+            "model": "HadGEM3-GC3.1",
+            "observational_dataset": "ICESat (2003-2008)",
+            "evaluation_metric": "Antarctic ice volume (winter maximum)",
+            "result": "17087 km\u00b3"
+        }
+    ],
+    "innovation": "This paper describes the new GSI8.1 sea ice component of the HadGEM3-GC3.1 climate model, which incorporates multi-layer thermodynamics and a novel semi-implicit coupling scheme to improve solver stability and produce more realistic simulations of Arctic sea ice thickness and extent.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "HadGEM3-GC3.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "GSI8.1",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. A new sea ice configuration, GSI8.1, is implemented in the Met Office global coupled configuration HadGEM3-GC3.1 which will be used for all CMIP6 (Coupled Model Intercomparison Project Phase 6) simulations. The inclusion of multi-layer thermodynamics has required a semi-implicit coupling scheme between atmosphere and sea ice to ensure the stability of the solver. Here we describe the sea ice model component and show that the Arctic thickness and extent compare well with observationally based data.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3-GC3.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "GA7.1",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "HadGEM3-GC3.1 is the global coupled model configuration to be submitted for physical model simulations to CMIP6 (Coupled Model Intercomparison Project Phase 6) by the Met Office Hadley Centre (Williams et al., 2017). It is comprised of global atmosphere, GA7.1, and land surface GL7.0 components (Walters et al., 2017), coupled to global ocean GO6 (Storkey et al., 2018) and global sea ice GSI8.1 components.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3-GC3.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "GL7.0",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "HadGEM3-GC3.1 is the global coupled model configuration to be submitted for physical model simulations to CMIP6 (Coupled Model Intercomparison Project Phase 6) by the Met Office Hadley Centre (Williams et al., 2017). It is comprised of global atmosphere, GA7.1, and land surface GL7.0 components (Walters et al., 2017), coupled to global ocean GO6 (Storkey et al., 2018) and global sea ice GSI8.1 components.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3-GC3.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "GO6",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "HadGEM3-GC3.1 is the global coupled model configuration to be submitted for physical model simulations to CMIP6 (Coupled Model Intercomparison Project Phase 6) by the Met Office Hadley Centre (Williams et al., 2017). It is comprised of global atmosphere, GA7.1, and land surface GL7.0 components (Walters et al., 2017), coupled to global ocean GO6 (Storkey et al., 2018) and global sea ice GSI8.1 components.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GO6",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "NEMO",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This paper describes the global sea ice component (GSI8.1) which is embedded in the NEMO (Nucleus for European Modelling of the Ocean; Madec, 2008) ocean configuration (GO6) and uses a tripolar grid, while the atmosphere model (GA7.1), a configuration of the Met Office Unified Model (MetUM), and land surface (GL7.0), a configuration of JULES (Joint UK Land Environment Simulator; Best et al., 2011), use a staggered latitude-longitude grid.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GA7.1",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "MetUM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This paper describes the global sea ice component (GSI8.1) which is embedded in the NEMO (Nucleus for European Modelling of the Ocean; Madec, 2008) ocean configuration (GO6) and uses a tripolar grid, while the atmosphere model (GA7.1), a configuration of the Met Office Unified Model (MetUM), and land surface (GL7.0), a configuration of JULES (Joint UK Land Environment Simulator; Best et al., 2011), use a staggered latitude-longitude grid.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GL7.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "JULES",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This paper describes the global sea ice component (GSI8.1) which is embedded in the NEMO (Nucleus for European Modelling of the Ocean; Madec, 2008) ocean configuration (GO6) and uses a tripolar grid, while the atmosphere model (GA7.1), a configuration of the Met Office Unified Model (MetUM), and land surface (GL7.0), a configuration of JULES (Joint UK Land Environment Simulator; Best et al., 2011), use a staggered latitude-longitude grid.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3-GC3.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "OASIS-MCT coupler",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The OASIS-MCT coupler used within GC3.1 does not have the functionality to regrid variables with time-varying weights.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3-GC2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "HadGEM3-GC3.1",
+            "target_entity_type": "Source",
+            "paragraph": "Relative to its predecessor GC2, GC3.1 has new modal aerosol and multi-layer snow schemes, a newly introduced multi-layer sea ice scheme (described below), and a number of parameterization changes in all the model components, including a set relating cloud and radiation and revision to the numerics of convection (Williams et al., 2017).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GSI6",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "GSI8.1",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The GSI8.1 global sea ice configuration builds on the previous version used in HadGEM3-GC2.0, GSI6 (Rae et al., 2015), and is based on version 5.1.2 of the Los Alamos sea ice model CICE (Hunke et al., 2015).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GSI8.1",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CICE 5.1.2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The GSI8.1 global sea ice configuration builds on the previous version used in HadGEM3-GC2.0, GSI6 (Rae et al., 2015), and is based on version 5.1.2 of the Los Alamos sea ice model CICE (Hunke et al., 2015).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CICE",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "five thickness categories",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "At each model grid point the sub-grid-scale ITD is modelled by dividing the ice pack into five thickness categories, with an additional ice-free category for open-water areas.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GSI8.1",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "multi-layer thermodynamics",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "GSI8.1 is the first sea ice configuration of the Met Office model to use multi-layer thermodynamics. Previously, the sea ice model used the zero-layer formulation described in the appendix to Semtner (1976), in which surface temperature reacts instantaneously to surface forcing and conduction within the ice is uniform.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GSI8.1",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "CICE topographic melt pond formulation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "This configuration includes the impact of surface melt ponds on albedo as an addition to the CCSM3 albedo scheme. The melt pond area fraction, fp(n), and depth, hp(n), for ice in thickness category n, are calculated with the CICE topographic melt pond formulation (Flocco et al., 2010, 2012; Hunke et al., 2015).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GSI8.1",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "four vertical ice layers",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In the new formulation, the sea ice has a heat capacity, which depends on the temperature and salinity, and hence conduction can vary in the vertical. The ice is divided into four vertical layers, each with its own temperature and prescribed salinity (a fixed salinity profile); an additional snow layer is permissible on top of the ice (Fig. 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CICE",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "elastic-viscous-plastic rheology",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The standard elastic-viscous-plastic rheology (EVP) for ice dynamics in CICE is used here (Hunke et al., 2015).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "C-grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "However, NEMO is on a C-grid and CICE on a B-grid. This is dealt with though simple interpolation from CICE to NEMO as described in Hewitt et al. (2011).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CICE",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "B-grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "However, NEMO is on a C-grid and CICE on a B-grid. This is dealt with though simple interpolation from CICE to NEMO as described in Hewitt et al. (2011).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CryoSat-2",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "sea ice thickness",
+            "target_entity_type": "Variable",
+            "paragraph": "The evaluation data is CryoSat-2 satellite thickness (Tilling et al., 2016) inferred from freeboard measurements from 2011 to 2015 along with the 1990\u20132010 mean thickness from Pan-Arctic Ice Ocean Modelling and Assimilation System sea ice reanalysis (PIOMAS; Zhang and Rothrock, 2003; Schweiger et al., 2011), inferred through the assimilation of observed sea ice fraction.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CryoSat-2",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "satellite",
+            "target_entity_type": "Platform",
+            "paragraph": "The evaluation data is CryoSat-2 satellite thickness (Tilling et al., 2016) inferred from freeboard measurements from 2011 to 2015 along with the 1990\u20132010 mean thickness from Pan-Arctic Ice Ocean Modelling and Assimilation System sea ice reanalysis (PIOMAS; Zhang and Rothrock, 2003; Schweiger et al., 2011), inferred through the assimilation of observed sea ice fraction.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "ICESat",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "satellite",
+            "target_entity_type": "Platform",
+            "paragraph": "Unfortunately there are few observational means to assess this, and so here we use the PIOMAS model as a reference in the Arctic and satellite estimates from ICESat (Ice, Cloud, and land Elevation Satellite) for the Antarctic (Kurtz and Markus, 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CICE",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "four ice layers",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Table B1. C pre-processor (CPP) keys used to build the GSI8.1 CICE component of HadGEM3-GC3.1. CPP key Purpose NICECAT = 5; NICELYR = 4; NSNWLYR = 1 Five thickness categories, four ice layers, one snow layer",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "HadGEM3-GC3.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GSI8.1",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "multi-layer thermodynamics",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "semi-implicit coupling scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ice thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice extent",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Met Office",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Reading",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Exeter",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Reading",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "UK",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "GA7.1",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "GL7.0",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "GO6",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NEMO",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "tripolar grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "MetUM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "JULES",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "staggered latitude-longitude grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "OASIS-MCT coupler",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "N96",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "135 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ORCA1",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "N216",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "60 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1/4\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ORCA025",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "N512",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "25 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1/12\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ORCA12",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "GC3.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "modal aerosol scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "multi-layer snow scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "multi-layer sea ice scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "HadGEM3-GC2.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GSI6",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CICE",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ice thickness distribution",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "five thickness categories",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "zero-layer thermodynamics",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "melt pond",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "snow depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "melt pond fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "melt pond depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "Met Office Hadley Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CCSM3 albedo scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CCSM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "topographic melt pond formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "surface skin temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Bitz and Lipscomb (1999)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CICE5.1.2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "heat capacity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "four vertical layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "one snow layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "semi-implicit coupling",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "elastic-viscous-plastic rheology (EVP)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "C-grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "B-grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "transport/advection algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ridging scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "present-day control",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "GC2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CryoSat-2",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "freeboard",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PIOMAS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "equilibrium simulation",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "HadISST1.2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ice concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Antarctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "sea ice volume",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ICESat",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Canadian Archipelago",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "east Greenland coast",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "western Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Greenland and Norwegian seas",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Labrador Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Greenland and Irminger seas",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Bering-Chukchi",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Barents",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ice, Cloud, and land Elevation Satellite",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "NEMO v3.6",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "STFC-CEDA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "remap",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "EVP rheology",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Rothrock (1975) formulation for ice strength",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Multilayer thermodynamics",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "albedo of bare ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "albedo of cold snow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Emissivity of sea ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "albedo of melt ponds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Roughness length",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Thermal conductivity of fresh ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Thermal conductivity of snow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Density of snow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ice-ocean drag coefficient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "OASIS coupler",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Ice area fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Snow thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Top-layer ice temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Top-layer effective conductivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "X component of sea ice velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Y component of sea ice velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "X component of wind stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Y component of wind stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Rainfall rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Snowfall rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ice sublimation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ice top melting",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ice conductive flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NCAR",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Community Climate System Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Los Alamos National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institut Pierre-Simon Laplace (IPSL)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CERFACS",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2147654971",
+        "https://openalex.org/W2054088207",
+        "https://openalex.org/W1999238341",
+        "https://openalex.org/W1613849817",
+        "https://openalex.org/W2166037956",
+        "https://openalex.org/W2038631500",
+        "https://openalex.org/W2026397871",
+        "https://openalex.org/W2172253502",
+        "https://openalex.org/W2006165291",
+        "https://openalex.org/W2019314030",
+        "https://openalex.org/W2117920489",
+        "https://openalex.org/W4233990317",
+        "https://openalex.org/W2295914118",
+        "https://openalex.org/W4233944844",
+        "https://openalex.org/W2303915963",
+        "https://openalex.org/W2160836964",
+        "https://openalex.org/W2780318220",
+        "https://openalex.org/W2102140204",
+        "https://openalex.org/W2571125268"
+    ]
+}

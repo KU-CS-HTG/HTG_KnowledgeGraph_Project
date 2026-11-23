@@ -1,0 +1,1025 @@
+{
+    "uri": "https://openalex.org/W2553745644",
+    "title": "A 4D-Var inversion system based on the icosahedral grid model (NICAM-TM 4D-Var v1.0) \u2013 Part\u00a02: Optimization scheme and identical twin experiment of atmospheric CO <sub>2</sub> inversion",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2017,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5080002210",
+            "display_name": "Yosuke Niwa",
+            "orcid": "https://orcid.org/0000-0002-7600-9816"
+        },
+        {
+            "id": "https://openalex.org/A5026610088",
+            "display_name": "Yosuke Fujii",
+            "orcid": "https://orcid.org/0000-0002-9230-3134"
+        },
+        {
+            "id": "https://openalex.org/A5103743763",
+            "display_name": "Yousuke Sawa",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5035779714",
+            "display_name": "Yosuke Iida",
+            "orcid": "https://orcid.org/0000-0001-5711-1375"
+        },
+        {
+            "id": "https://openalex.org/A5101926797",
+            "display_name": "Akihiko Ito",
+            "orcid": "https://orcid.org/0000-0001-5265-0791"
+        },
+        {
+            "id": "https://openalex.org/A5002954365",
+            "display_name": "Masaki Satoh",
+            "orcid": "https://orcid.org/0000-0003-3580-8897"
+        },
+        {
+            "id": "https://openalex.org/A5045014716",
+            "display_name": "Ryoichi Imasu",
+            "orcid": "https://orcid.org/0000-0002-0182-4015"
+        },
+        {
+            "id": "https://openalex.org/A5057954573",
+            "display_name": "Kazuhiro Tsuboi",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5073312174",
+            "display_name": "Hidekazu Matsueda",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5051165484",
+            "display_name": "Nobuko Saigusa",
+            "orcid": "https://orcid.org/0000-0003-2456-5279"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-10-2201-2017",
+    "abstract": "Abstract. A four-dimensional variational method (4D-Var) is a popular technique for source/sink inversions of atmospheric constituents, but it is not without problems. Using an icosahedral grid transport model and the 4D-Var method, a new atmospheric greenhouse gas (GHG) inversion system has been developed. The system combines offline forward and adjoint models with a quasi-Newton optimization scheme. The new approach is then used to conduct identical twin experiments to investigate optimal system settings for an atmospheric CO2 inversion problem, and to demonstrate the validity of the new inversion system. In this paper, the inversion problem is simplified by assuming the prior flux errors to be reasonably well known and by designing the prior error correlations with a simple function as a first step. It is found that a system of forward and adjoint models with smaller model errors but with nonlinearity has comparable optimization performance to that of another system that conserves linearity with an exact adjoint relationship. Furthermore, the effectiveness of the prior error correlations is demonstrated, as the global error is reduced by about 15 % by adding prior error correlations that are simply designed when 65 weekly flask sampling observations at ground-based stations are used. With the optimal setting, the new inversion system successfully reproduces the spatiotemporal variations of the surface fluxes, from regional (such as biomass burning) to global scales. The optimization algorithm introduced in the new system does not require decomposition of a matrix that establishes the correlation among the prior flux errors. This enables us to design the prior error covariance matrix more freely.",
+    "field": "Atmospheric CO2 inversion modeling",
+    "problem": "Existing 4D-Var inversion methods are challenged by the computational infeasibility of inverting or decomposing the large prior error covariance matrix, which is necessary for introducing spatiotemporal error correlations to improve flux estimations but becomes difficult for complex, high-resolution models.",
+    "method": "This paper proposes a 4D-Var inversion system, combining an icosahedral grid transport model (NICAM-TM) with a quasi-Newton optimization scheme (POpULar), to estimate spatiotemporal variations of atmospheric CO2 surface fluxes from observational data.",
+    "task": "The task is to develop and test a new 4D-Var inversion system for estimating atmospheric CO2 surface fluxes, validating its optimization scheme and performance through an identical twin experiment.",
+    "model": [
+        "NICAM",
+        "NICAM-TM"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/inversion",
+            "display_name": "Inversion (geology)",
+            "score": 0.7823432087898254
+        },
+        {
+            "id": "https://openalex.org/keywords/nonlinear-system",
+            "display_name": "Nonlinear system",
+            "score": 0.5508690476417542
+        },
+        {
+            "id": "https://openalex.org/keywords/grid",
+            "display_name": "Grid",
+            "score": 0.5411026477813721
+        },
+        {
+            "id": "https://openalex.org/keywords/applied-mathematics",
+            "display_name": "Applied mathematics",
+            "score": 0.41521745920181274
+        },
+        {
+            "id": "https://openalex.org/keywords/algorithm",
+            "display_name": "Algorithm",
+            "score": 0.4140191376209259
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.3895653784275055
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.370572566986084
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematical-optimization",
+            "display_name": "Mathematical optimization",
+            "score": 0.3575780391693115
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.25171995162963867
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.09952002763748169
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C1893757",
+            "wikidata": "https://www.wikidata.org/wiki/Q3653001",
+            "display_name": "Inversion (geology)",
+            "level": 3,
+            "score": 0.7823432087898254
+        },
+        {
+            "id": "https://openalex.org/C158622935",
+            "wikidata": "https://www.wikidata.org/wiki/Q660848",
+            "display_name": "Nonlinear system",
+            "level": 2,
+            "score": 0.5508690476417542
+        },
+        {
+            "id": "https://openalex.org/C187691185",
+            "wikidata": "https://www.wikidata.org/wiki/Q2020720",
+            "display_name": "Grid",
+            "level": 2,
+            "score": 0.5411026477813721
+        },
+        {
+            "id": "https://openalex.org/C28826006",
+            "wikidata": "https://www.wikidata.org/wiki/Q33521",
+            "display_name": "Applied mathematics",
+            "level": 1,
+            "score": 0.41521745920181274
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.4140191376209259
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.3895653784275055
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.370572566986084
+        },
+        {
+            "id": "https://openalex.org/C126255220",
+            "wikidata": "https://www.wikidata.org/wiki/Q141495",
+            "display_name": "Mathematical optimization",
+            "level": 1,
+            "score": 0.3575780391693115
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.25171995162963867
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.09952002763748169
+        },
+        {
+            "id": "https://openalex.org/C2524010",
+            "wikidata": "https://www.wikidata.org/wiki/Q8087",
+            "display_name": "Geometry",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C151730666",
+            "wikidata": "https://www.wikidata.org/wiki/Q7205",
+            "display_name": "Paleontology",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C109007969",
+            "wikidata": "https://www.wikidata.org/wiki/Q749565",
+            "display_name": "Structural basin",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C62520636",
+            "wikidata": "https://www.wikidata.org/wiki/Q944",
+            "display_name": "Quantum mechanics",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "LINEAR model with DR89 optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Land (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "4.09"
+        },
+        {
+            "model": "LINEAR model with DR89 optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Ocean (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "0.25"
+        },
+        {
+            "model": "LINEAR model with DR89 optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Global (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "4.10"
+        },
+        {
+            "model": "NONLINEAR model with DR89 optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Land (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "6.69"
+        },
+        {
+            "model": "NONLINEAR model with DR89 optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Ocean (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "0.36"
+        },
+        {
+            "model": "NONLINEAR model with DR89 optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Global (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "6.70"
+        },
+        {
+            "model": "LINEAR model with POPULar optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Land (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "4.09"
+        },
+        {
+            "model": "LINEAR model with POPULar optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Ocean (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "0.25"
+        },
+        {
+            "model": "LINEAR model with POPULar optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Global (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "4.10"
+        },
+        {
+            "model": "NONLINEAR model with POPULar optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Land (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "4.06"
+        },
+        {
+            "model": "NONLINEAR model with POPULar optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Ocean (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "0.24"
+        },
+        {
+            "model": "NONLINEAR model with POPULar optimization and diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Global (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "4.07"
+        },
+        {
+            "model": "LINEAR model with DR89 optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Land (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "3.29"
+        },
+        {
+            "model": "LINEAR model with DR89 optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Ocean (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "0.20"
+        },
+        {
+            "model": "LINEAR model with DR89 optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Global (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "3.30"
+        },
+        {
+            "model": "NONLINEAR model with DR89 optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Land (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "3.37"
+        },
+        {
+            "model": "NONLINEAR model with DR89 optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Ocean (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "0.20"
+        },
+        {
+            "model": "NONLINEAR model with DR89 optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Global (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "3.37"
+        },
+        {
+            "model": "LINEAR model with POPULar optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Land (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "3.29"
+        },
+        {
+            "model": "LINEAR model with POPULar optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Ocean (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "0.20"
+        },
+        {
+            "model": "LINEAR model with POPULar optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Global (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "3.30"
+        },
+        {
+            "model": "NONLINEAR model with POPULar optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Land (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "3.20"
+        },
+        {
+            "model": "NONLINEAR model with POPULar optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Ocean (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "0.20"
+        },
+        {
+            "model": "NONLINEAR model with POPULar optimization and off-diagonal prior error covariance",
+            "observational_dataset": "Sensitivity test data",
+            "evaluation_metric": "GRMSE Global (10\u207b\u2077 mol m\u207b\u00b2 s\u207b\u00b9)",
+            "result": "3.21"
+        }
+    ],
+    "innovation": "This paper presents a new 4D-Var inversion system for atmospheric CO2 that combines an icosahedral grid model with a novel optimization scheme (POpULar), which simplifies the inclusion of prior error correlations to significantly improve surface flux estimations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "NICAM-TM 4D-Var v1.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "NICAM-TM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In developing our 4D-Var inversion system, we have introduced unique numerical techniques that have not been used in previous 4D-Var inversions of GHGs; these techniques use an icosahedral grid transport model based on the Non-hydrostatic Icosahedral Atmospheric Model (NICAM; Tomita and Satoh, 2004; Satoh et al., 2008, 2014), along with an efficient optimization scheme of Preconditioned Optimiz- ing Utility for Large-dimensional analyses (POpULar; Fujii and Kamachi, 2003; Fujii, 2005). NICAM is one of the most advanced general circulation models (GCMs), with its dynamical frame structured with quasi-homogenous grids that are made by recursively dividing an icosahedron, which is completely different from the regular latitude-longitude grid models used so far. For the new inversion system, we have employed the NICAM-based Transport Model (NICAMTM), naming our inversion system as NICAM-TM 4D-Var. The previous accompanying paper of Niwa et al. (2017) derived and evaluated the offline forward and adjoint models of NICAM-TM. This paper describes the entire NICAM-TM 4D-Var system, including the optimization scheme POpULar.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM 4D-Var v1.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "offline forward and adjoint models",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. A four-dimensional variational method (4D-Var) is a popular technique for source/sink inversions of atmospheric constituents, but it is not without problems. Using an icosahedral grid transport model and the 4D-Var method, a new atmospheric greenhouse gas (GHG) inversion system has been developed. The system combines offline forward and adjoint models with a quasi-Newton optimization scheme. The new approach is then used to conduct identical twin experiments to investigate optimal system settings for an atmospheric CO2 inversion problem, and to demonstrate the validity of the new inversion system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM 4D-Var v1.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "quasi-Newton optimization scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Abstract. A four-dimensional variational method (4D-Var) is a popular technique for source/sink inversions of atmospheric constituents, but it is not without problems. Using an icosahedral grid transport model and the 4D-Var method, a new atmospheric greenhouse gas (GHG) inversion system has been developed. The system combines offline forward and adjoint models with a quasi-Newton optimization scheme. The new approach is then used to conduct identical twin experiments to investigate optimal system settings for an atmospheric CO2 inversion problem, and to demonstrate the validity of the new inversion system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM 4D-Var v1.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "POpULar",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In developing our 4D-Var inversion system, we have introduced unique numerical techniques that have not been used in previous 4D-Var inversions of GHGs; these techniques use an icosahedral grid transport model based on the Non-hydrostatic Icosahedral Atmospheric Model (NICAM; Tomita and Satoh, 2004; Satoh et al., 2008, 2014), along with an efficient optimization scheme of Preconditioned Optimiz- ing Utility for Large-dimensional analyses (POpULar; Fujii and Kamachi, 2003; Fujii, 2005).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "NICAM-TM 4D-Var v1.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "icosahedral grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "A 4D-Var inversion system based on the icosahedral grid model (NICAM-TM 4D-Var v1.0) \u2013 Part 2: Optimization scheme and identical twin experiment of atmospheric CO2 inversion",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM 4D-Var v1.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "identical twin experiment",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Abstract. A four-dimensional variational method (4D-Var) is a popular technique for source/sink inversions of atmospheric constituents, but it is not without problems. Using an icosahedral grid transport model and the 4D-Var method, a new atmospheric greenhouse gas (GHG) inversion system has been developed. The system combines offline forward and adjoint models with a quasi-Newton optimization scheme. The new approach is then used to conduct identical twin experiments to investigate optimal system settings for an atmospheric CO2 inversion problem, and to demonstrate the validity of the new inversion system. In this paper, the inversion problem is simplified by assuming the prior flux errors to be reasonably well known and by designing the prior error correlations with a simple function as a first step. It is found that a system of forward and adjoint models with smaller model errors but with nonlinearity has comparable optimization performance to that of another system that conserves linearity with an exact adjoint relationship. Furthermore, the effectiveness of the prior error correlations is demonstrated, as the global error is reduced by about 15 % by adding prior error correlations that are simply designed when 65 weekly flask sampling observations at ground-based stations are used. With the optimal setting, the new inversion system successfully reproduces the spatiotemporal variations of the surface fluxes, from regional (such as biomass burning) to global scales. The optimization algorithm introduced",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "discrete adjoint model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "As described in Niwa et al. (2017), NICAM-TM has two types of adjoint models: one is a discrete adjoint model and the other is a continuous one. The discrete adjoint model ensures model linearity and maintains an exact adjoint relationship with its corresponding forward model, while the continuous adjoint model is nonlinear and consequently loses the exact adjoint relationship but has less model errors.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "continuous adjoint model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "As described in Niwa et al. (2017), NICAM-TM has two types of adjoint models: one is a discrete adjoint model and the other is a continuous one. The discrete adjoint model ensures model linearity and maintains an exact adjoint relationship with its corresponding forward model, while the continuous adjoint model is nonlinear and consequently loses the exact adjoint relationship but has less model errors.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "glevel-5 horizontal resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The horizontal resolution is set at glevel-5 (\u201c5\u201d denotes the number of division from the original icosahedron; see Fig. 1 of Niwa et al., 2017), whose grid interval is about 240 km, and the number of vertical model layers is 40.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "grid interval of about 240 km",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The horizontal resolution is set at glevel-5 (\u201c5\u201d denotes the number of division from the original icosahedron; see Fig. 1 of Niwa et al., 2017), whose grid interval is about 240 km, and the number of vertical model layers is 40.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "40 vertical model layers",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The horizontal resolution is set at glevel-5 (\u201c5\u201d denotes the number of division from the original icosahedron; see Fig. 1 of Niwa et al., 2017), whose grid interval is about 240 km, and the number of vertical model layers is 40.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "nonlinear flux limiter (Thuburn, 1996)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "As described in Niwa et al. (2017), NICAM-TM has the option of running either in the discrete or continuous adjoint mode. The linearity of the discrete adjoint is ensured and the perfect adjoint relationship is achieved with the forward model in which the nonlinear flux limiter (Thuburn, 1996) in the advection calculation is turned off. In contrast, the continuous adjoint has the same nonlinear flux limiter as that of the forward model calculation to maintain the monotonicity of the advection adjoint, but this fails to achieve the perfect adjoint relationship with the forward model.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM 4D-Var v1.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "After the assimilation, we evaluate how close the posterior fluxes approach the true fluxes by using root mean square error (RMSE) measures described below. On the global scale, we use",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NICAM-TM 4D-Var v1.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "global root mean square error (GRMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "After the assimilation, we evaluate how close the posterior fluxes approach the true fluxes by using root mean square error (RMSE) measures described below. On the global scale, we use GRMSE",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Forward NICAM-TM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "atmospheric CO2 concentration",
+            "target_entity_type": "Variable",
+            "paragraph": "ii. the forward NICAM-TM is run to calculate atmospheric concentration fields of a target atmospheric constituent forced by prior flux data, ... The identical twin experiment is designed for an atmospheric CO2 inversion.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "biomass burnings",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "southeast Asia",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Figure 8. The same as Fig. 7 but focused on regional flux anomalies due to biomass burnings for southeast Asia in March (a\u2013c), South America in September (d\u2013f), and Africa in September (g\u2013i). Gray triangles denote locations of the observational sites.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "biomass burnings",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "South America",
+            "target_entity_type": "Continent",
+            "paragraph": "Figure 8. The same as Fig. 7 but focused on regional flux anomalies due to biomass burnings for southeast Asia in March (a\u2013c), South America in September (d\u2013f), and Africa in September (g\u2013i). Gray triangles denote locations of the observational sites.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "biomass burnings",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Africa",
+            "target_entity_type": "Continent",
+            "paragraph": "Figure 8. The same as Fig. 7 but focused on regional flux anomalies due to biomass burnings for southeast Asia in March (a\u2013c), South America in September (d\u2013f), and Africa in September (g\u2013i). Gray triangles denote locations of the observational sites.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "large biomass burnings",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Amazon",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "In 2010, large biomass burnings occurred under a severe dry condition in the Amazon (Lewis et al., 2011). Compared to the prior fluxes that have moderate spatial variations, the posterior fluxes show large sources in those areas that are comparable to the true flux patterns, though the posterior source peaks are underestimated in Thailand and the Amazon, and are shifted from the coast to the inland area in southern Africa.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "severe dry condition",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Amazon",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "In 2010, large biomass burnings occurred under a severe dry condition in the Amazon (Lewis et al., 2011). Compared to the prior fluxes that have moderate spatial variations, the posterior fluxes show large sources in those areas that are comparable to the true flux patterns, though the posterior source peaks are underestimated in Thailand and the Amazon, and are shifted from the coast to the inland area in southern Africa.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "4D-Var",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NICAM-TM 4D-Var v1.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "quasi-Newton optimization scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "icosahedral grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Meteorological Research Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Japan Meteorological Agency",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Institute for Environmental Studies",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "The University of Tokyo",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Japan Agency for Marine-Earth Science and Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "surface fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Bayesian algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CH4",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GHGs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "synthesis inversion method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Green's function matrix",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "identical twin experiment",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "NICAM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "POpULar",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NICAM-TM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "eigenvalue decomposition",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "discrete adjoint model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "continuous adjoint model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Bayes' theorem",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "initial concentrations",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mass fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperatures",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "turbulent coefficients",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cumulus base mass fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "horizontal winds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "online NICAM",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "forward NICAM-TM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "adjoint NICAM-TM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "finite volume method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "JCDAS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "6-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "20 min",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1- to 3-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "glevel-5",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "240 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "40",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "nonlinear flux limiter",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "DR89",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "linear conjugate gradient method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "quasi-Newton method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "preconditioning of Lorenc (1988)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Broyden\u2013Fletcher-Goldfarb\u2013Shanno formula",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "L-BFGS",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "weekly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "CASA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFED v3.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Takahashi et al. (2009)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "VISIT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Iida et al. (2015)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CDIAC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "net ecosystem production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "biomass burning emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "process-based ecosystem model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "net biome production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea-air exchange",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Gaussian function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "500 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1000 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "root mean square error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GRMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "sensitivity tests",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "LINEAR",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "NONLINEAR",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "cost function",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Minamitorishima",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "western North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "root mean square difference",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "x2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Drought",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Amazon",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "conjugate gradient method",
+            "entity_type": "PhysicalScheme"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W4297959519",
+        "https://openalex.org/W2124421428",
+        "https://openalex.org/W2163311341",
+        "https://openalex.org/W2110713114",
+        "https://openalex.org/W2063196965",
+        "https://openalex.org/W1505655419",
+        "https://openalex.org/W2038246200",
+        "https://openalex.org/W1974959374",
+        "https://openalex.org/W2151522428",
+        "https://openalex.org/W2131648183",
+        "https://openalex.org/W2121745948",
+        "https://openalex.org/W2037416330",
+        "https://openalex.org/W1567803238",
+        "https://openalex.org/W2045660412",
+        "https://openalex.org/W4249515445",
+        "https://openalex.org/W2021689129",
+        "https://openalex.org/W2020005999",
+        "https://openalex.org/W2115628083",
+        "https://openalex.org/W818282164",
+        "https://openalex.org/W2147862212",
+        "https://openalex.org/W2058184863",
+        "https://openalex.org/W1989120577",
+        "https://openalex.org/W2147648900",
+        "https://openalex.org/W2127864546",
+        "https://openalex.org/W2011560911",
+        "https://openalex.org/W2051434435",
+        "https://openalex.org/W1991867732",
+        "https://openalex.org/W2145749368",
+        "https://openalex.org/W2028718228",
+        "https://openalex.org/W1493509693",
+        "https://openalex.org/W2151489250",
+        "https://openalex.org/W2165991579",
+        "https://openalex.org/W2018415126",
+        "https://openalex.org/W2047344797",
+        "https://openalex.org/W2531636479",
+        "https://openalex.org/W2051669046",
+        "https://openalex.org/W1992652001",
+        "https://openalex.org/W2135354012",
+        "https://openalex.org/W2130686417",
+        "https://openalex.org/W2072413429",
+        "https://openalex.org/W4244928423",
+        "https://openalex.org/W2376013310",
+        "https://openalex.org/W1972400898",
+        "https://openalex.org/W2035908552",
+        "https://openalex.org/W2162206658",
+        "https://openalex.org/W2164522518",
+        "https://openalex.org/W2035079355",
+        "https://openalex.org/W2089672344",
+        "https://openalex.org/W1966717343",
+        "https://openalex.org/W2063534846",
+        "https://openalex.org/W1512208174",
+        "https://openalex.org/W2092913351",
+        "https://openalex.org/W2043535418",
+        "https://openalex.org/W2078641739",
+        "https://openalex.org/W1840582594",
+        "https://openalex.org/W2134927874",
+        "https://openalex.org/W2092140572",
+        "https://openalex.org/W2171442423",
+        "https://openalex.org/W2034132605",
+        "https://openalex.org/W2043183307",
+        "https://openalex.org/W2133248532",
+        "https://openalex.org/W2917992537",
+        "https://openalex.org/W2463548428"
+    ]
+}

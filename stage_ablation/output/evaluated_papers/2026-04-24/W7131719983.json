@@ -1,0 +1,1247 @@
+{
+    "uri": "https://openalex.org/W7131719983",
+    "title": "GlaUnTI: A hybrid physics\u2013machine learning model enables transferable glacier surface mass balance estimation",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5126939105",
+            "display_name": "Konstantin A. Maslov",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5088179237",
+            "display_name": "Thomas Schellenberger",
+            "orcid": "https://orcid.org/0000-0002-2501-3700"
+        },
+        {
+            "id": "https://openalex.org/A5029035818",
+            "display_name": "Claudio Persello",
+            "orcid": "https://orcid.org/0000-0003-3742-5398"
+        },
+        {
+            "id": "https://openalex.org/A5121063160",
+            "display_name": "Alfred Stein",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2026-515",
+    "abstract": "Abstract. Glacier surface mass balance (SMB) is a key climate indicator and a central driver of glacier change. Direct SMB observations remain sparse and unevenly distributed. Hence, transferable SMB models are essential for large-scale assessments and projections. Here, we propose the GLAcier-UNiversal Temperature Index model (GlaUnTI) for this purpose. This hybrid physics\u2013machine learning model modifies a fully differentiable temperature index (TI) SMB model by introducing a shallow convolutional neural corrector. It learns spatially and temporally varying adjustments to a small set of physically interpretable TI parameters, using glacier geometry and aggregated climate information. We calibrate four models\u2014a basic TI model, a purely data-driven recurrent neural network with no physical inductive bias and two GlaUnTI variants, with and without glacier facies maps as predictors\u2014using a dataset of 65 European glaciers spanning 1995\u20132024 and covering the Alps, Scandinavia, Iceland, Svalbard and the Pyrenees. Their performance is evaluated on a spatially independent test subset of 13 glaciers across heterogeneous regions. The evaluation uses 793/756/314 (annual/winter/summer) point SMB measurements and 312/235/233 glacier-wide SMB estimates. On the test glaciers, the baseline TI model achieves annual point-level performance with r=0.854 and an RMSE equal to 1.707 m w.e. With GlaUnTI, r increases to 0.940 and the RMSE reduces to 1.068 m w.e. At the glacier-wide scale, the baseline TI model attains an r equal to 0.606 and an RMSE of 0.805 m w.e. With GlaUnTI, r increases to 0.700 and the RMSE reduces to 0.627 m w.e. Including glacier facies maps from the end of the ablation season to the corrector yields moderate benefits in glacier-wide summer (11.0 %) and annual (12.2 %) SMB estimates. We found that the purely data-driven baseline model overall shows the weakest spatial transferability. Also, end-to-end differentiability enables efficient gradient-based calibration, transfer learning, inverse optimisation of effective forcing perturbations, formal model explainability and propagation of forcing-driven aleatoric uncertainty through long SMB trajectories. These results demonstrate that parameter-corrected hybrid models improve SMB transferability across diverse climate regimes while preserving a physically grounded structure, suitable for integration into broader glacier evolution workflows and for informing climate-related policies.",
+    "field": "Hybrid modeling of glacier mass balance",
+    "problem": "Sparse and unevenly distributed glacier surface mass balance (SMB) observations limit the transferability of both physics-based models, which need glacier-specific calibration, and purely data-driven models, which struggle to generalize to new glaciers and climate regimes.",
+    "method": "We propose a hybrid physics-machine learning model that modifies a differentiable temperature index model by introducing a shallow convolutional neural corrector to learn adjustments to its physical parameters, improving transferable glacier surface mass balance estimation.",
+    "task": "The task is to develop a transferable hybrid physics-machine learning model for estimating glacier surface mass balance across diverse climate regimes where direct observations are sparse.",
+    "model": [
+        "GlaUnTI",
+        "TI",
+        "XGBoost",
+        "ERA5-Land",
+        "ERA5",
+        "GRU",
+        "OGGM",
+        "GloGEM",
+        "PyGEM",
+        "CryoGrid",
+        "IGM",
+        "ODINN",
+        "EURO-CORDEX",
+        "CMIP6",
+        "CLM"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/glacier",
+            "display_name": "Glacier",
+            "score": 0.7335000038146973
+        },
+        {
+            "id": "https://openalex.org/keywords/mean-squared-error",
+            "display_name": "Mean squared error",
+            "score": 0.7200000286102295
+        },
+        {
+            "id": "https://openalex.org/keywords/glacier-mass-balance",
+            "display_name": "Glacier mass balance",
+            "score": 0.48820000886917114
+        },
+        {
+            "id": "https://openalex.org/keywords/artificial-neural-network",
+            "display_name": "Artificial neural network",
+            "score": 0.41190001368522644
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.3425999879837036
+        },
+        {
+            "id": "https://openalex.org/keywords/surface",
+            "display_name": "Surface (topology)",
+            "score": 0.33160001039505005
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C100834320",
+            "wikidata": "https://www.wikidata.org/wiki/Q35666",
+            "display_name": "Glacier",
+            "level": 2,
+            "score": 0.7335000038146973
+        },
+        {
+            "id": "https://openalex.org/C139945424",
+            "wikidata": "https://www.wikidata.org/wiki/Q1940696",
+            "display_name": "Mean squared error",
+            "level": 2,
+            "score": 0.7200000286102295
+        },
+        {
+            "id": "https://openalex.org/C127045886",
+            "wikidata": "https://www.wikidata.org/wiki/Q3528741",
+            "display_name": "Glacier mass balance",
+            "level": 3,
+            "score": 0.48820000886917114
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.4471000134944916
+        },
+        {
+            "id": "https://openalex.org/C50644808",
+            "wikidata": "https://www.wikidata.org/wiki/Q192776",
+            "display_name": "Artificial neural network",
+            "level": 2,
+            "score": 0.41190001368522644
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.3425999879837036
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.33660000562667847
+        },
+        {
+            "id": "https://openalex.org/C2776799497",
+            "wikidata": "https://www.wikidata.org/wiki/Q484298",
+            "display_name": "Surface (topology)",
+            "level": 2,
+            "score": 0.33160001039505005
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3264999985694885
+        },
+        {
+            "id": "https://openalex.org/C12725497",
+            "wikidata": "https://www.wikidata.org/wiki/Q810247",
+            "display_name": "Baseline (sea)",
+            "level": 2,
+            "score": 0.2955000102519989
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.2872999906539917
+        },
+        {
+            "id": "https://openalex.org/C193091731",
+            "wikidata": "https://www.wikidata.org/wiki/Q3428388",
+            "display_name": "Accumulation zone",
+            "level": 5,
+            "score": 0.2809000015258789
+        },
+        {
+            "id": "https://openalex.org/C37054046",
+            "wikidata": "https://www.wikidata.org/wiki/Q641888",
+            "display_name": "Elevation (ballistics)",
+            "level": 2,
+            "score": 0.26170000433921814
+        },
+        {
+            "id": "https://openalex.org/C169511391",
+            "wikidata": "https://www.wikidata.org/wiki/Q7800892",
+            "display_name": "Tidewater glacier cycle",
+            "level": 5,
+            "score": 0.25870001316070557
+        },
+        {
+            "id": "https://openalex.org/C2776401178",
+            "wikidata": "https://www.wikidata.org/wiki/Q12050496",
+            "display_name": "Feature (linguistics)",
+            "level": 2,
+            "score": 0.2540999948978424
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "r",
+            "result": "0.854"
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "bias",
+            "result": "0.298 m w.e."
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "RMSE",
+            "result": "1.707 m w.e."
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "r",
+            "result": "0.841"
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "bias",
+            "result": "0.894 m w.e."
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "RMSE",
+            "result": "1.551 m w.e."
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "r",
+            "result": "0.786"
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "bias",
+            "result": "-0.086 m w.e."
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "RMSE",
+            "result": "0.869 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "r",
+            "result": "0.829"
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "bias",
+            "result": "0.365 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "RMSE",
+            "result": "2.032 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "r",
+            "result": "0.753"
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "bias",
+            "result": "0.849 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "RMSE",
+            "result": "2.012 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "r",
+            "result": "0.703"
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "bias",
+            "result": "-0.281 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "RMSE",
+            "result": "0.793 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "r",
+            "result": "0.933"
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "bias",
+            "result": "0.074 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "RMSE",
+            "result": "1.095 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "r",
+            "result": "0.908"
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "bias",
+            "result": "0.260 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "RMSE",
+            "result": "1.049 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "r",
+            "result": "0.873"
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "bias",
+            "result": "-0.107 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "RMSE",
+            "result": "0.651 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "r",
+            "result": "0.940"
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "bias",
+            "result": "0.009 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level annual SMB measurements (n = 793)",
+            "evaluation_metric": "RMSE",
+            "result": "1.068 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "r",
+            "result": "0.928"
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "bias",
+            "result": "0.208 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level summer SMB measurements (n = 314)",
+            "evaluation_metric": "RMSE",
+            "result": "0.911 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "r",
+            "result": "0.870"
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "bias",
+            "result": "-0.128 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Point-level winter SMB measurements (n = 756)",
+            "evaluation_metric": "RMSE",
+            "result": "0.682 m w.e."
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "r",
+            "result": "0.606"
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "bias",
+            "result": "0.084 m w.e."
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "RMSE",
+            "result": "0.805 m w.e."
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "r",
+            "result": "0.768"
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "bias",
+            "result": "0.480 m w.e."
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "RMSE",
+            "result": "0.801 m w.e."
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "r",
+            "result": "0.515"
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "bias",
+            "result": "-0.340 m w.e."
+        },
+        {
+            "model": "Basic autodiff-friendly TI (Section 4.1)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "RMSE",
+            "result": "0.592 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "r",
+            "result": "0.340"
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "bias",
+            "result": "-0.003 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "RMSE",
+            "result": "0.930 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "r",
+            "result": "0.520"
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "bias",
+            "result": "0.087 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "RMSE",
+            "result": "0.752 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "r",
+            "result": "-0.107"
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "bias",
+            "result": "-0.096 m w.e."
+        },
+        {
+            "model": "The GRU, purely data-driven (Section 4.2)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "RMSE",
+            "result": "0.904 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "r",
+            "result": "0.684"
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "bias",
+            "result": "0.110 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "RMSE",
+            "result": "0.651 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "r",
+            "result": "0.797"
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "bias",
+            "result": "0.388 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "RMSE",
+            "result": "0.681 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "r",
+            "result": "0.604"
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "bias",
+            "result": "-0.279 m w.e."
+        },
+        {
+            "model": "GlaUnTI without glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "RMSE",
+            "result": "0.528 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "r",
+            "result": "0.700"
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "bias",
+            "result": "-0.005 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide annual SMB estimates (n = 312)",
+            "evaluation_metric": "RMSE",
+            "result": "0.627 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "r",
+            "result": "0.802"
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "bias",
+            "result": "0.310 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide summer SMB estimates (n = 233)",
+            "evaluation_metric": "RMSE",
+            "result": "0.638 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "r",
+            "result": "0.637"
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "bias",
+            "result": "-0.298 m w.e."
+        },
+        {
+            "model": "GlaUnTI with glacier facies (Section 4.3)",
+            "observational_dataset": "Glacier-wide winter SMB estimates (n = 235)",
+            "evaluation_metric": "RMSE",
+            "result": "0.526 m w.e."
+        }
+    ],
+    "innovation": "This paper proposes GlaUnTI, a hybrid physics-machine learning model that couples a physical temperature index model with a convolutional neural corrector to enable more accurate and transferable estimations of glacier surface mass balance across diverse climate regimes.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "GlaUnTI",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "TI SMB model",
+            "target_entity_type": "Source",
+            "paragraph": "Here, we propose the GLAcier-UNiversal Temperature Index model (GlaUnTI) for this purpose. This hybrid physics-machine learning model modifies a fully differentiable temperature index (TI) SMB model by introducing a shallow convolutional neural corrector.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GlaUnTI",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "shallow convolutional neural corrector",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Here, we propose the GLAcier-UNiversal Temperature Index model (GlaUnTI) for this purpose. This hybrid physics-machine learning model modifies a fully differentiable temperature index (TI) SMB model by introducing a shallow convolutional neural corrector.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GlaUnTI",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "r",
+            "target_entity_type": "Metric",
+            "paragraph": "On the test glaciers, the baseline TI model achieves annual point-level performance with r = 0.854 and an RMSE equal to 1.707 m w.e. With GlaUnTI, r increases to 0.940 and the RMSE reduces to 1.068 m w.e. At the glacier-wide scale, the baseline TI model attains an r equal to 0.606 and an RMSE of 0.805 m w.e. With GlaUnTI, r increases to 0.700 and the RMSE reduces to 0.627 m w.e.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GlaUnTI",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "On the test glaciers, the baseline TI model achieves annual point-level performance with r = 0.854 and an RMSE equal to 1.707 m w.e. With GlaUnTI, r increases to 0.940 and the RMSE reduces to 1.068 m w.e. At the glacier-wide scale, the baseline TI model attains an r equal to 0.606 and an RMSE of 0.805 m w.e. With GlaUnTI, r increases to 0.700 and the RMSE reduces to 0.627 m w.e.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TI model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "r",
+            "target_entity_type": "Metric",
+            "paragraph": "On the test glaciers, the baseline TI model achieves annual point-level performance with r = 0.854 and an RMSE equal to 1.707 m w.e.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TI model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "On the test glaciers, the baseline TI model achieves annual point-level performance with r = 0.854 and an RMSE equal to 1.707 m w.e.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TI model (Model A)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "two-DDF",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We implemented a common two-DDF TI model (Model A), where the daily SMB for each cell is given as: SMBcell ijd = \u03b21Psolid ijd \u2212 \u03b22(T+,snow ijd + \u03baT+,ice ijd ), where Psolid ijd is the solid precipitation, T+,snow ijd is the positive temperature attributed to snow melt, T+,ice ijd is the positive temperature attributed to bare ice melt, \u03b21 is the precipitation sensitivity parameter, \u03b22 is the DDF for snow, and \u03ba stands for the DDF for ice relative to snow.",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TI model (Model A)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "sigmoid function",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We model solid precipitation as a smooth function of near-surface air temperature, representing the snow-to-rain transition using a sigmoid function:",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TI model (Model A)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "snow depletion curve",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The FSC itself is based on a snow depletion curve of the form: FSCijd = (SWEijd\u22121)\u03c4FSC,s / ((SWEijd\u22121)\u03c4FSC,s + (\u03c4FSC,c)\u03c4FSC,s ),",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GRU model (Model B)",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "16 hidden state dimension",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "We fix the hidden state dimension to 16, resulting in 961 trainable parameters compared to 7 in the TI model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GRU model (Model B)",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "961 trainable parameters",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "We fix the hidden state dimension to 16, resulting in 961 trainable parameters compared to 7 in the TI model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GlaUnTI (Model D)",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "GlaUnTI (Model C)",
+            "target_entity_type": "Source",
+            "paragraph": "We distinguish two variants of the GlaUnTI model. The first one (Model C) is the model where all glacier facies predictors are replaced with a placeholder (\u22121 for each grid cell and facies channel), i.e. only the initial guess, glacier geometry and climate aggregates influence the correction terms. The second one (Model D) is where the actual values of GF are fed to the model where available, and the placeholder is used elsewhere, allowing for separate evaluation of the added value of glacier facies maps. Both variants have frozen TI parameters from trained Model A. The initial parameters of Model C are random, while those of Model D are initialised from trained Model C.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "GLAcier-UNiversal Temperature Index model (GlaUnTI)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "University of Twente",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Oslo",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Glacier surface mass balance (SMB)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature index (TI) model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "convolutional neural corrector",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "recurrent neural network",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "glacier geometry",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "glacier facies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Scandinavia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Iceland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Svalbard",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pyrenees",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "annual",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "winter",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "summer",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "r",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "temperature index (TI) models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "precipitation-based accumulation schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "energy balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "near-surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "shortwave and longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sensible and latent heat fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "degree day factors (DDFs)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bayesian inference",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ensemble-based data assimilation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "XGBoost",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "neural network",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "physics-informed neural network",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "universal differential equations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "physics-guided neural networks",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "auto-differentiable TI model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "deep learning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "shallow fully convolutional network",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "point SMB measurements",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "glacier-wide SMB estimates",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "gridded elevation products",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "reanalysis-based climate forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "European Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "High Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "surface elevations",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "glacier outlines",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "World Glacier Monitoring Service (WGMS)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Glacier Monitoring Switzerland (GLAMOS)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Norwegian Water Resources and Energy Directorate",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CRYOBS-CLIM (GLACIOCLIM)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Iceland Glacier Web Portal",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "100 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Randolph Glacier Inventory 7.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RGI Consortium",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Global Land Ice Measurements from Space database (GLIMS)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GLIMS Consortium",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Landsat",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Sentinel-2",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "GlaViTU",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ICEmapper",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "5 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ERA5-Land",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "near-surface (2 m) temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "glacier surface air temperature (T)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "constant lapse rate correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "gated recurrent unit (GRU)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "loss function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Adam",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Pearson's correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "OGGM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GloGEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PyGEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CryoGrid",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "French Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Switzerland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Norway",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "firn retention capacity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "debris cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "transient snowline altitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "bare ice exposure duration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SAR melt intensity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "differentiable",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Instructed Glacier Model (IGM)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Open global glacier model + DIfferential equation Neural Networks (ODINN.jl)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GPU-driven",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "autodiff-friendly TI backbone",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "End-to-end differentiability",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "transfer learning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "inverse optimisation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "first-order propagation of forcing uncertainty",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "gradient-based inverse modelling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "integrated gradients",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Swiss Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "delta method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "E-OBS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Copernicus GLO-30 DEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "random Fourier features",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bayesian ridge regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "kernel regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bayesian optimisation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RGI7.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Research Council of Norway",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Washington",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Universit\u00e9 Marie & Louis Pasteur",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNRS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "French Polar Institute IPEV",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Adam Mickiewicz University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Universit\u00e9 Grenoble Alpes",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "UERRA",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Copernicus Climate Change Service",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ECA&D project",
+            "entity_type": "Project"
+        }
+    ],
+    "referenced_works": []
+}

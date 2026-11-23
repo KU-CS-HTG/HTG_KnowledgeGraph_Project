@@ -1,0 +1,1165 @@
+{
+    "uri": "https://openalex.org/W7140283813",
+    "title": "New classes of climate model emulators to improve paleoclimate reconstructions",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": null,
+            "display_name": "Auguste Gaudin",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Myriam Khodri",
+            "orcid": "https://orcid.org/0000-0003-1941-1646"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2026-1337",
+    "abstract": "Abstract. Reconstructing spatial climate variability from proxy records requires forward models \u201cemulators\u201d that capture the dynamical structure of the climate system while remaining computationally efficient. Traditional emulators based on Empirical Orthogonal Functions and Linear Inverse Models (LIMs) face inherent limitations due to linearity and variance-based dimensionality reduction. Here we develop and evaluate a hierarchy of CMIP-class climate model emulators that integrate autoencoder-based dimensionality reduction with nonlinear prediction architectures, including Reservoir Computing (RC) and Recurrent Neural Networks (RNNs). Using a comprehensive experimental protocol applied to the IPSL-CM6A-LR model and 52 CMIP6s models, we show that combining autoencoder and RC (AERCn) provides the most robust performance across time scales and dynamical regimes when data are plentiful. The AERCn configuration captures nonlinear features of ENSO and Atlantic Multidecadal Variability, maintains high spatial reconstruction skill, and generalizes across distinct climate model structures. When training data are scarce, a multimodel pre-trained AERNN provides a data-efficient and competitive alternative. These properties make the proposed architectures particularly well suited for integration into Particle Filters and Ensemble Kalman Filter PDA frameworks. Our results highlight the importance of predictability-oriented dimensionality reduction and nonlinear dynamical memory for emulator design, and they provide a scalable path toward improved reconstructions of climate variability over the Common Era.",
+    "field": "Paleoclimate model emulation",
+    "problem": "Traditional climate emulators for paleoclimate reconstruction, based on Linear Inverse Models and Empirical Orthogonal Functions, are limited by linearity and variance-based dimensionality reduction, hindering their ability to efficiently capture complex climate dynamics and memory effects necessary for accurate reconstructions.",
+    "method": "The authors propose new climate model emulators that combine autoencoder-based dimensionality reduction with nonlinear prediction architectures, like Reservoir Computing and Recurrent Neural Networks, to improve the skill of paleoclimate reconstructions by better capturing complex climate dynamics.",
+    "task": "The task is to develop and evaluate a hierarchy of climate model emulators, integrating autoencoder-based dimensionality reduction with nonlinear prediction architectures, to improve reconstructions of past climate variability.",
+    "model": [
+        "IPSL-CM6A-LR",
+        "TaiESM1",
+        "AWI-CM-1-1-MR",
+        "AWI-ESM-1-1-LR",
+        "BCC-CSM2-MR",
+        "BCC-ESM1",
+        "CAMS-CSM1-0",
+        "CAS-ESM2-0",
+        "FGOALS-f3-L",
+        "IITM-ESM",
+        "CanESM5",
+        "CanESM5-CanOE",
+        "CMCC-CM2-SR5",
+        "CMCC-ESM2",
+        "CNRM-CM6-1",
+        "CNRM-CM6-1-HR",
+        "CNRM-ESM2-1",
+        "ACCESS-CM2",
+        "ACCESS-ESM1-5",
+        "E3SM-1-0",
+        "E3SM-1-1",
+        "EC-Earth3-AerChem",
+        "EC-Earth3-CC",
+        "EC-Earth3-Veg-LR",
+        "FIO-ESM-2-0",
+        "MPI-ESM-1-2-HAM",
+        "INM-CM4-8",
+        "INM-CM5-0",
+        "MIROC-ES2L",
+        "MIROC6",
+        "HadGEM3-GC31-LL",
+        "HadGEM3-GC31-MM",
+        "UKESM1-0-LL",
+        "ICON-ESM-LR",
+        "MPI-ESM1-2-HR",
+        "MPI-ESM1-2-LR",
+        "MRI-ESM2-0",
+        "GISS-E2-1-G",
+        "GISS-E2-1-G-CC",
+        "GISS-E2-1-H",
+        "GISS-E2-2-H",
+        "CESM2",
+        "CESM2-FV2",
+        "CESM2-WACCM",
+        "CESM2-WACCM-FV2",
+        "NorESM2-LM",
+        "NorESM2-MM",
+        "KACE-1-0-G",
+        "GFDL-CM4",
+        "GFDL-ESM4",
+        "NESM3",
+        "SAM0-UNICON",
+        "CIESM",
+        "MCM-UA-1-0"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5993000268936157
+        },
+        {
+            "id": "https://openalex.org/keywords/autoencoder",
+            "display_name": "Autoencoder",
+            "score": 0.5354999899864197
+        },
+        {
+            "id": "https://openalex.org/keywords/nonlinear-system",
+            "display_name": "Nonlinear system",
+            "score": 0.48980000615119934
+        },
+        {
+            "id": "https://openalex.org/keywords/curse-of-dimensionality",
+            "display_name": "Curse of dimensionality",
+            "score": 0.4544000029563904
+        },
+        {
+            "id": "https://openalex.org/keywords/dimensionality-reduction",
+            "display_name": "Dimensionality reduction",
+            "score": 0.4447000026702881
+        },
+        {
+            "id": "https://openalex.org/keywords/kalman-filter",
+            "display_name": "Kalman filter",
+            "score": 0.4104999899864197
+        },
+        {
+            "id": "https://openalex.org/keywords/earth-system-science",
+            "display_name": "Earth system science",
+            "score": 0.385699987411499
+        },
+        {
+            "id": "https://openalex.org/keywords/scalability",
+            "display_name": "Scalability",
+            "score": 0.3831000030040741
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5993000268936157
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5963000059127808
+        },
+        {
+            "id": "https://openalex.org/C101738243",
+            "wikidata": "https://www.wikidata.org/wiki/Q786435",
+            "display_name": "Autoencoder",
+            "level": 3,
+            "score": 0.5354999899864197
+        },
+        {
+            "id": "https://openalex.org/C158622935",
+            "wikidata": "https://www.wikidata.org/wiki/Q660848",
+            "display_name": "Nonlinear system",
+            "level": 2,
+            "score": 0.48980000615119934
+        },
+        {
+            "id": "https://openalex.org/C111030470",
+            "wikidata": "https://www.wikidata.org/wiki/Q1430460",
+            "display_name": "Curse of dimensionality",
+            "level": 2,
+            "score": 0.4544000029563904
+        },
+        {
+            "id": "https://openalex.org/C70518039",
+            "wikidata": "https://www.wikidata.org/wiki/Q16000077",
+            "display_name": "Dimensionality reduction",
+            "level": 2,
+            "score": 0.4447000026702881
+        },
+        {
+            "id": "https://openalex.org/C157286648",
+            "wikidata": "https://www.wikidata.org/wiki/Q846780",
+            "display_name": "Kalman filter",
+            "level": 2,
+            "score": 0.4104999899864197
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.385699987411499
+        },
+        {
+            "id": "https://openalex.org/C48044578",
+            "wikidata": "https://www.wikidata.org/wiki/Q727490",
+            "display_name": "Scalability",
+            "level": 2,
+            "score": 0.3831000030040741
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.3774999976158142
+        },
+        {
+            "id": "https://openalex.org/C79334102",
+            "wikidata": "https://www.wikidata.org/wiki/Q3072268",
+            "display_name": "Ensemble Kalman filter",
+            "level": 4,
+            "score": 0.3589000105857849
+        },
+        {
+            "id": "https://openalex.org/C50644808",
+            "wikidata": "https://www.wikidata.org/wiki/Q192776",
+            "display_name": "Artificial neural network",
+            "level": 2,
+            "score": 0.35370001196861267
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.34529998898506165
+        },
+        {
+            "id": "https://openalex.org/C52421305",
+            "wikidata": "https://www.wikidata.org/wiki/Q1151499",
+            "display_name": "Particle filter",
+            "level": 3,
+            "score": 0.3425999879837036
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.3346000015735626
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.31119999289512634
+        },
+        {
+            "id": "https://openalex.org/C106131492",
+            "wikidata": "https://www.wikidata.org/wiki/Q3072260",
+            "display_name": "Filter (signal processing)",
+            "level": 2,
+            "score": 0.3086000084877014
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.3061999976634979
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.3009999990463257
+        },
+        {
+            "id": "https://openalex.org/C79379906",
+            "wikidata": "https://www.wikidata.org/wiki/Q3174497",
+            "display_name": "Dynamical systems theory",
+            "level": 2,
+            "score": 0.29679998755455017
+        },
+        {
+            "id": "https://openalex.org/C197115733",
+            "wikidata": "https://www.wikidata.org/wiki/Q1003136",
+            "display_name": "Forcing (mathematics)",
+            "level": 2,
+            "score": 0.29679998755455017
+        },
+        {
+            "id": "https://openalex.org/C33683781",
+            "wikidata": "https://www.wikidata.org/wiki/Q191069",
+            "display_name": "Paleoclimatology",
+            "level": 3,
+            "score": 0.2890999913215637
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.2888000011444092
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.28139999508857727
+        },
+        {
+            "id": "https://openalex.org/C124101348",
+            "wikidata": "https://www.wikidata.org/wiki/Q172491",
+            "display_name": "Data mining",
+            "level": 1,
+            "score": 0.26840001344680786
+        },
+        {
+            "id": "https://openalex.org/C163175372",
+            "wikidata": "https://www.wikidata.org/wiki/Q3339222",
+            "display_name": "Linear model",
+            "level": 2,
+            "score": 0.267300009727478
+        },
+        {
+            "id": "https://openalex.org/C135252773",
+            "wikidata": "https://www.wikidata.org/wiki/Q1567213",
+            "display_name": "Inverse problem",
+            "level": 2,
+            "score": 0.2590999901294708
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper develops new climate model emulators that integrate autoencoder-based dimensionality reduction with nonlinear prediction architectures, such as Reservoir Computing and Recurrent Neural Networks, to improve upon traditional linear methods for paleoclimate reconstructions.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LMDZ",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The model couples the LMDZ atmospheric component (Hourdin et al., 2020) with the Nucleus for European Modelling of the Ocean (NEMO) version 3.6 (Madec and the NEMO Team, 2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "NEMO version 3.6",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The model couples the LMDZ atmospheric component (Hourdin et al., 2020) with the Nucleus for European Modelling of the Ocean (NEMO) version 3.6 (Madec and the NEMO Team, 2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDZ",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmos",
+            "target_entity_type": "Realm",
+            "paragraph": "The model couples the LMDZ atmospheric component (Hourdin et al., 2020) with the Nucleus for European Modelling of the Ocean (NEMO) version 3.6 (Madec and the NEMO Team, 2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO version 3.6",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocean",
+            "target_entity_type": "Realm",
+            "paragraph": "The model couples the LMDZ atmospheric component (Hourdin et al., 2020) with the Nucleus for European Modelling of the Ocean (NEMO) version 3.6 (Madec and the NEMO Team, 2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "quasi-isotropic and tripolar ocean grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The ocean grid is quasi-isotropic and tripolar, with a nominal 1\u00ba resolution refined to 1/3\u00b0 in the equatorial Pacific and 75 vertical levels. Vertical spacing ranges from ~1 m near the surface to ~200 m at depth (Boucher et al., 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "75 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The ocean grid is quasi-isotropic and tripolar, with a nominal 1\u00ba resolution refined to 1/3\u00b0 in the equatorial Pacific and 75 vertical levels. Vertical spacing ranges from ~1 m near the surface to ~200 m at depth (Boucher et al., 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "ENSO seasonality representation",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "IPSL-CM6A-LR reproduces ENSO seasonality reasonably well, though El Ni\u00f1o warm anomalies extend too far west.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "AMV teleconnection representation",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "IPSL-CM6A-LR's Pacific expression of the AMV teleconnection is realistic, yet tropical Atlantic variability is somewhat weaker than observed.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Atlantic Multidecadal Variability",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "North Atlantic",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "two indices representing major modes of variability: the Atlantic Multidecadal Variability (AMV; sea surface temperature averaged over 0\u00b0-60\u00b0 N, 75\u00b0 W-7.5\u00b0 W; Ting et al., 2009) and the Ni\u00f1o 3.4 indices (sea surface temperature averaged over 5\u00b0 S-5\u00b0 N, 170\u00b0 W-120\u00b0 W; McPhaden et al., 2006).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ENSO",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "tropical Pacific",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "More specifically, in order to quantify the degree to which RC adapts to model-specific nonlinear behavior, we use an ENSO nonlinearity indicator denoted a, defined as the quadratic coefficient in the relationship between the first two principal components (PC1, PC2) of DJF SST anomalies over the tropical Pacific (10\u00b0 S\u201310\u00b0 N, 80\u00b0 W-120\u00b0 E) (Karamperidou et al., 2016):",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Root Mean Square Error",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 2: Forecast skill at a lead time of one year over IPSL-CM6A-LR past2k simulations (500\u20131800 CE). Correlation and RMSE between emulator predictions and target anomalies are reported for spatially averaged local scores and selected climate indices (Ni\u00f1o3.4, AMV, GMST, NH, SH). Best scores for each metric are highlighted in bold.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Pearson correlation coefficient",
+            "target_entity_type": "Metric",
+            "paragraph": "Emulator performance in terms of deterministic prediction at one-year lead-time is then assessed based on two metrics: the Root Mean Square Error (RMSE) and the Pearson correlation coefficient (hereafter correlation or r).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Continuous Ranked Probability Score",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 11 displays the distribution of CRPS values computed during extreme ENSO years, defined as years in which the Ni\u00f1o 3.4 index exceeds \u00b11 standard deviation. For each extreme year, CRPS is calculated for the Ni\u00f1o-3.4 index (panels a\u2013b) and for GMST (panels c-d). Results are shown separately for IPSL-CM6A-LR (a, c) and MIROC6 (b, d).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIROC6",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Continuous Ranked Probability Score",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 11 displays the distribution of CRPS values computed during extreme ENSO years, defined as years in which the Ni\u00f1o 3.4 index exceeds \u00b11 standard deviation. For each extreme year, CRPS is calculated for the Ni\u00f1o-3.4 index (panels a\u2013b) and for GMST (panels c-d). Results are shown separately for IPSL-CM6A-LR (a, c) and MIROC6 (b, d).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "strong multidecadal variability in the North Atlantic",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "For instance, the IPSL-CM6A-LR model is known to exhibit a strong multidecadal variability in the North Atlantic (Boucher et al., 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "relatively linear behavior and a low \u03b1 coefficient",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "We focus on two CMIP6 models with markedly different degrees of tropical Pacific nonlinearity: IPSL-CM6A-LR, which exhibits relatively linear behavior and a low a coefficient, and MIROC6, which displays a substantially larger a coefficient, indicative of stronger nonlinear dynamics and closer agreement with observations (Figure 5 and Fig. A11; Zhao and Sun, 2022).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIROC6",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "stronger nonlinear dynamics and a substantially larger a coefficient",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "We focus on two CMIP6 models with markedly different degrees of tropical Pacific nonlinearity: IPSL-CM6A-LR, which exhibits relatively linear behavior and a low a coefficient, and MIROC6, which MIROC6 displays a substantially larger a coefficient, indicative of stronger nonlinear dynamics and closer agreement with observations (Figure 5 and Fig. A11; Zhao and Sun, 2022).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "LOCEAN-IPSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Sorbonne-Universit\u00e9",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNRS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IRD",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "UPMC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "MNHN",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Paris",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Empirical Orthogonal Functions",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Linear Inverse Models",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "autoencoder",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Reservoir Computing",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Recurrent Neural Networks",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "IPSL-CM6A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ENSO",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Atlantic Multidecadal Variability",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Common Era",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ensemble Kalman Filters",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Particle Filters",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Principal Component Analysis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "General Circulation Models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "AMV",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "ENSO asymmetry",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "ENSO skewness",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "near-surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tas",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "143.144 grid",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "single dense layer with linear activations",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Echo State Network",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Gated Recurrent Unit",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GRU layer with a hidden state dimension of 200",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Dropout layer (20%)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "dense layer with linear activation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "annual surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "past2k",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "10-members ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "Institut Pierre-Simon Laplace",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "LMDZ",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Nucleus for European Modelling of the Ocean",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NEMO",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NEMO version 3.6",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "quasi-isotropic and tripolar",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "nominal 1\u00b0 resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1/3\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "75 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "tropical Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "PMIP4",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "past2k-SSI",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "piControl",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "143.144 latitude-longitude grid",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Annual",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "DJF",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "seasonal",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "historical ensemble members",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "global mean surface temperature",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GMST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ni\u00f1o 3.4",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ENSO nonlinearity indicator",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "tropical Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "coefficient of determination",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "R\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Root Mean Square Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pearson correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "r",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Persistence",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Continuous Ranked Probability Score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CRPS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "extratropics",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "high latitudes in the Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "western Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "eastern Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "central and eastern tropical Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "volcanic eruptions",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "aerosol optical depth",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCAR/CESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI/MRI-ESM2-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC/MIROC6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MOHC/UKESM1-0-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NASA-GISS/GISS-E2-1-G",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-M/MPI-ESM1-2-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INM/INM-CM5-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CERFACS/CNRM-ESM2-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NASA-GISS/GISS-E2-1-H",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-M/MPI-ESM1-2-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CSIRO/ACCESS-ESM1-5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CCCma/CanESM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC/CMCC-CM2-SR5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CERFACS/CNRM-CM6-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL/IPSL-CM6A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Skill gains",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CMIP-multi-model ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "extreme ENSO events",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "MIROC6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "extreme El Ni\u00f1o",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "extreme La Ni\u00f1a",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "100-member ensemble forecasts",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "rank histograms",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "extreme ENSO years",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "target inclusion rates",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "AS-RCEC/TaiESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "AWI/AWI-CM-1-1-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "AWI/AWI-ESM-1-1-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BCC/BCC-CSM2-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BCC/BCC-ESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CAMS/CAMS-CSM1-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CAS/CAS-ESM2-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CAS/FGOALS-f3-L",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CCCR-IITM/IITM-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CCCma/CanESM5-CanOE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC/CMCC-ESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CERFACS/CNRM-CM6-1-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CSIRO-ARCCSS/ACCESS-CM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "E3SM-Project/E3SM-1-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "E3SM-Project/E3SM-1-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth-Consortium/EC-Earth3-AerChem",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth-Consortium/EC-Earth3-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth-Consortium/EC-Earth3-Veg-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FIO-QLNM/FIO-ESM-2-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HAMMOZ-Consortium/MPI-ESM-1-2-HAM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INM/INM-CM4-8",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC/MIROC-ES2L",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MOHC/HadGEM3-GC31-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MOHC/HadGEM3-GC31-MM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-M/ICON-ESM-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NASA-GISS/GISS-E2-1-G-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NASA-GISS/GISS-E2-2-H",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCAR/CESM2-FV2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCAR/CESM2-WACCM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCAR/CESM2-WACCM-FV2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCC/NorESM2-LM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCC/NorESM2-MM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NIMS-KMA/KACE-1-0-G",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NOAA-GFDL/GFDL-CM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NOAA-GFDL/GFDL-ESM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NUIST/NESM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SNU/SAM0-UNICON",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "THU/CIESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UA/MCM-UA-1-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TGCC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GENCI",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ESPRI",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "\u00c9cole Polytechnique",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNES",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "French National Research Agency",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": []
+}

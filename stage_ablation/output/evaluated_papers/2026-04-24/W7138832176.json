@@ -1,0 +1,803 @@
+{
+    "uri": "https://openalex.org/W7138832176",
+    "title": "Improving Surface Soil Moisture Simulation in FGOALS-g3 Over Southeastern China: The Role of Soil Texture",
+    "venue": {
+        "name": "SOLA",
+        "id": "https://openalex.org/S4210176785",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5101735670",
+            "display_name": "Kun Xia",
+            "orcid": "https://orcid.org/0000-0002-5667-4042"
+        },
+        {
+            "id": "https://openalex.org/A5130158889",
+            "display_name": "Ye Pu",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5100301214",
+            "display_name": "Li Lijuan",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.1007/s44393-026-00016-0",
+    "abstract": "Accurate soil moisture simulation is essential for understanding regional hydroclimate variability and improving climate predictions. This study evaluates the performance of FGOALS-g3 under the Atmospheric Model Intercomparison Project (AMIP) configuration in simulating surface soil moisture (SSM) over southeastern China during 1980\u20132014. Compared to the ERA5 and ESA-CCI reference datasets, the model exhibits a consistent dry bias across spatial distribution, seasonal cycle, and interannual variability. Replacing the model\u2019s default soil texture with the Global Soil Dataset for Earth System Modeling (GSDE) significantly reduces this bias. The improvement stems from a shift toward finer soil texture, characterized by a 41.25% reduction in sand content, which enhance soil water retention through increasing soil water suction and decreasing hydraulic conductivity. However, the efficacy of this approach is region-specific and cannot be generalized to other areas such as Northeast China. Furthermore, despite SSM improvement, a dry bias remains. Our findings demonstrate that merely refining soil texture data is inadequate. This limitation arises primarily from a spurious strong land-atmosphere coupling regime, blocking the translation of improved land surface states into better precipitation simulation. Therefore, achieving realistic hydroclimate simulations requires prioritizing the correction of this coupling bias.",
+    "field": "Land-atmosphere interaction",
+    "problem": "The FGOALS-g3 climate model exhibits a persistent dry bias in surface soil moisture simulations over southeastern China, a problem stemming from inaccurate default soil texture data and a fundamentally flawed representation of the land-atmosphere coupling regime which blocks further improvement.",
+    "method": "This study proposes replacing a climate model's default soil texture data with the Global Soil Dataset for Earth System Modeling (GSDE) to reduce the significant dry bias in surface soil moisture simulations over southeastern China.",
+    "task": "The task is to improve surface soil moisture simulations from the FGOALS-g3 climate model over southeastern China by replacing its default soil texture data with an improved dataset to reduce a persistent dry bias.",
+    "model": [
+        "FGOALS-g3",
+        "BCC-CSM2-MR",
+        "CAS-LSM",
+        "CLM4.5",
+        "Noah-MP"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/soil-texture",
+            "display_name": "Soil texture",
+            "score": 0.6485999822616577
+        },
+        {
+            "id": "https://openalex.org/keywords/water-content",
+            "display_name": "Water content",
+            "score": 0.6157000064849854
+        },
+        {
+            "id": "https://openalex.org/keywords/spurious-relationship",
+            "display_name": "Spurious relationship",
+            "score": 0.5490000247955322
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.5475000143051147
+        },
+        {
+            "id": "https://openalex.org/keywords/soil-water",
+            "display_name": "Soil water",
+            "score": 0.4212999939918518
+        },
+        {
+            "id": "https://openalex.org/keywords/hydrology",
+            "display_name": "Hydrology (agriculture)",
+            "score": 0.3869999945163727
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.35690000653266907
+        },
+        {
+            "id": "https://openalex.org/keywords/moisture",
+            "display_name": "Moisture",
+            "score": 0.35089999437332153
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.7782999873161316
+        },
+        {
+            "id": "https://openalex.org/C175963888",
+            "wikidata": "https://www.wikidata.org/wiki/Q5026010",
+            "display_name": "Soil texture",
+            "level": 3,
+            "score": 0.6485999822616577
+        },
+        {
+            "id": "https://openalex.org/C24939127",
+            "wikidata": "https://www.wikidata.org/wiki/Q373499",
+            "display_name": "Water content",
+            "level": 2,
+            "score": 0.6157000064849854
+        },
+        {
+            "id": "https://openalex.org/C159390177",
+            "wikidata": "https://www.wikidata.org/wiki/Q9161265",
+            "display_name": "Soil science",
+            "level": 1,
+            "score": 0.5703999996185303
+        },
+        {
+            "id": "https://openalex.org/C97256817",
+            "wikidata": "https://www.wikidata.org/wiki/Q1462316",
+            "display_name": "Spurious relationship",
+            "level": 2,
+            "score": 0.5490000247955322
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.5475000143051147
+        },
+        {
+            "id": "https://openalex.org/C159750122",
+            "wikidata": "https://www.wikidata.org/wiki/Q96621023",
+            "display_name": "Soil water",
+            "level": 2,
+            "score": 0.4212999939918518
+        },
+        {
+            "id": "https://openalex.org/C76886044",
+            "wikidata": "https://www.wikidata.org/wiki/Q2883300",
+            "display_name": "Hydrology (agriculture)",
+            "level": 2,
+            "score": 0.3869999945163727
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.35690000653266907
+        },
+        {
+            "id": "https://openalex.org/C176864760",
+            "wikidata": "https://www.wikidata.org/wiki/Q217651",
+            "display_name": "Moisture",
+            "level": 2,
+            "score": 0.35089999437332153
+        },
+        {
+            "id": "https://openalex.org/C164285268",
+            "wikidata": "https://www.wikidata.org/wiki/Q7159349",
+            "display_name": "Pedotransfer function",
+            "level": 4,
+            "score": 0.3343000113964081
+        },
+        {
+            "id": "https://openalex.org/C2781195486",
+            "wikidata": "https://www.wikidata.org/wiki/Q289436",
+            "display_name": "Texture (cosmology)",
+            "level": 3,
+            "score": 0.33160001039505005
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3199000060558319
+        },
+        {
+            "id": "https://openalex.org/C131584629",
+            "wikidata": "https://www.wikidata.org/wiki/Q4308705",
+            "display_name": "Coupling (piping)",
+            "level": 2,
+            "score": 0.29760000109672546
+        },
+        {
+            "id": "https://openalex.org/C160934017",
+            "wikidata": "https://www.wikidata.org/wiki/Q10926413",
+            "display_name": "Soil type",
+            "level": 3,
+            "score": 0.29179999232292175
+        },
+        {
+            "id": "https://openalex.org/C94747663",
+            "wikidata": "https://www.wikidata.org/wiki/Q7574086",
+            "display_name": "Spatial variability",
+            "level": 2,
+            "score": 0.287200003862381
+        },
+        {
+            "id": "https://openalex.org/C108215451",
+            "wikidata": "https://www.wikidata.org/wiki/Q7263963",
+            "display_name": "Simulation modeling",
+            "level": 2,
+            "score": 0.27889999747276306
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.27630001306533813
+        },
+        {
+            "id": "https://openalex.org/C8625798",
+            "wikidata": "https://www.wikidata.org/wiki/Q752112",
+            "display_name": "Surface water",
+            "level": 2,
+            "score": 0.2743000090122223
+        },
+        {
+            "id": "https://openalex.org/C156634047",
+            "wikidata": "https://www.wikidata.org/wiki/Q878214",
+            "display_name": "Soil horizon",
+            "level": 3,
+            "score": 0.2727000117301941
+        },
+        {
+            "id": "https://openalex.org/C50477045",
+            "wikidata": "https://www.wikidata.org/wiki/Q1444790",
+            "display_name": "Surface runoff",
+            "level": 2,
+            "score": 0.2711000144481659
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.2671999931335449
+        },
+        {
+            "id": "https://openalex.org/C197046000",
+            "wikidata": "https://www.wikidata.org/wiki/Q7561",
+            "display_name": "Snow",
+            "level": 2,
+            "score": 0.260699987411499
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "\u03a8 (mm)",
+            "result": "-165.96"
+        },
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "ksat(mm/s)",
+            "result": "6.25-10-3"
+        },
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "B",
+            "result": "6.61"
+        },
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "\u03b8sat(mm\u00b3/mm\u00b3)",
+            "result": "0.42"
+        },
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "\u03b80-5(mm\u00b3/mm\u00b3)",
+            "result": "0.23"
+        },
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "\u03b8fc(mm\u00b3/mm\u00b3)",
+            "result": "0.25"
+        },
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "\u03b8wilt(mm\u00b3/mm\u00b3)",
+            "result": "0.13"
+        },
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "LH (W/m\u00b2)",
+            "result": "45.08"
+        },
+        {
+            "model": "withGSDE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "\u03a8 (mm)",
+            "result": "-313.90"
+        },
+        {
+            "model": "withGSDE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "ksat(mm/s)",
+            "result": "2.80-10-3"
+        },
+        {
+            "model": "withGSDE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "B",
+            "result": "6.90"
+        },
+        {
+            "model": "withGSDE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "\u03b8sat(mm\u00b3/mm\u00b3)",
+            "result": "0.45"
+        },
+        {
+            "model": "withGSDE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "\u03b80-5(mm\u00b3/mm\u00b3)",
+            "result": "0.27"
+        },
+        {
+            "model": "withGSDE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "\u03b8fc(mm\u00b3/mm\u00b3)",
+            "result": "0.28"
+        },
+        {
+            "model": "withGSDE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "\u03b8wilt(mm\u00b3/mm\u00b3)",
+            "result": "0.17"
+        },
+        {
+            "model": "withGSDE",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "LH (W/m\u00b2)",
+            "result": "49.38"
+        }
+    ],
+    "innovation": "This study demonstrates that while refining soil texture data reduces the dry soil moisture bias in the FGOALS-g3 model over southeastern China, a spurious strong land-atmosphere coupling regime acts as a key bottleneck, preventing this improvement from translating into better precipitation simulations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "FGOALS-g3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CAS-LSM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The Flexible Global Ocean-Atmosphere-Land System Model, Grid-Point Version 3 (FGOALS-g3) is an important Chinese model contributing to the Coupled Model Intercomparison Project Phase 6 (CMIP6) (Li et al. 2020b). The model employs the Chinese Academy of Sciences Land Surface Model (CAS-LSM) as its land component (Xie et al. 2018), which was developed from the Community Land Model version 4.5 (CLM4.5).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAS-LSM",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "land",
+            "target_entity_type": "Realm",
+            "paragraph": "The model employs the Chinese Academy of Sciences Land Surface Model (CAS-LSM) as its land component (Xie et al. 2018), which was developed from the Community Land Model version 4.5 (CLM4.5).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAS-LSM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "soil moisture",
+            "target_entity_type": "Variable",
+            "paragraph": "When run in offline mode, the standalone CAS-LSM has exhibited a dry bias in soil moisture simulations for the southern China region (Jia et al. 2021).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-g3",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "2\u00b0 horizontal resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The FGOALS-g3 model (2\u00b0 horizontal resolution) is employed in this study.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-g3",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "ten soil layers",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The model's default soil texture data are derived from the IGBP Global Soil Data Task dataset (IGBP 2000), and feature ten soil layers, identical to the vertical configuration of CAS-LSM.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-g3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "AMIP configuration",
+            "target_entity_type": "SimulationType",
+            "paragraph": "This study evaluates the performance of FGOALS-g3 under the Atmospheric Model Intercomparison Project (AMIP) configuration in simulating surface soil moisture (SSM) over southeastern China during 1980-2014.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-g3",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "pedotransfer functions",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Within the FGOALS-g3, mineral soil texture is prescribed as a percentage of sand and clay content and translated into soil hydraulic properties using the pedotransfer functions outlined in Supplementary 1.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-g3",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "dry bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Compared to the ERA5 and ESA-CCI reference datasets, the model exhibits a consistent dry bias across spatial distribution, seasonal cycle, and interannual variability.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "East Asian summer monsoon",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "southern China",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Zeng and Yuan (2018) demonstrated that southern China is a key zone for soil moisture-atmosphere interaction in August, linked to the subseasonal variations of the East Asian summer monsoon.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "East Asian subtropical summer monsoon",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "southeastern China",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Furthermore, Ning and Zhang (2023) found that on the interannual timescale, the start date of the East Asian subtropical summer monsoon is significantly correlated with premonsoon soil moisture anomalies in southeastern China.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "FGOALS-g3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Atmospheric Model Intercomparison Project",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "AMIP",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Surface soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Southeastern China",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Soil Texture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ESA-CCI",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Soil Dataset for Earth System Modeling",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GSDE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "sand content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hydraulic conductivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Northeast China",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Dry bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "southern China",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Huang-Huai River Basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East Asian summer monsoon",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East Asian subtropical summer monsoon",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "BCC-CSM2-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Flexible Global Ocean-Atmosphere-Land System Model, Grid-Point Version 3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project Phase 6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Chinese Academy of Sciences Land Surface Model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CAS-LSM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Community Land Model version 4.5",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CLM4.5",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "2\u00b0 horizontal resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "flux coupler",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "pedotransfer functions",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "IGBP Global Soil Data Task dataset",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ten soil layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "HadISST",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "sea surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice concentrations",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar irradiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "greenhouse gases",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosols",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "30\u201d horizontal resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Student's t-test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ESA-CCI v06.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "four vertical layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "CN05.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "FLUXCOM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.50\u00b0 resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "DOLCE v2.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "2\u00b0x2\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "spatial correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean square error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "arid northwestern China",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "soil water potential",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "saturated hydraulic conductivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "clay content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Terrestrial Coupling Index",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "TCI",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "land-atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Dolce",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Tibetan Plateau",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil water retention",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "boundary-layer development",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "moist convection",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "convective triggering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AMIP-style",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1556835117",
+        "https://openalex.org/W1786856418",
+        "https://openalex.org/W1984083988",
+        "https://openalex.org/W2038861263",
+        "https://openalex.org/W2069387170",
+        "https://openalex.org/W2140863338",
+        "https://openalex.org/W2157980636",
+        "https://openalex.org/W2193503481",
+        "https://openalex.org/W2338719555",
+        "https://openalex.org/W2550203596",
+        "https://openalex.org/W2589351175",
+        "https://openalex.org/W2605248447",
+        "https://openalex.org/W2773050709",
+        "https://openalex.org/W2800088658",
+        "https://openalex.org/W2808813827",
+        "https://openalex.org/W2809787560",
+        "https://openalex.org/W2904321320",
+        "https://openalex.org/W2926448297",
+        "https://openalex.org/W2955593755",
+        "https://openalex.org/W3008454333",
+        "https://openalex.org/W3010613543",
+        "https://openalex.org/W3021378189",
+        "https://openalex.org/W3025949386",
+        "https://openalex.org/W3100469892",
+        "https://openalex.org/W3109175003",
+        "https://openalex.org/W3142866912",
+        "https://openalex.org/W3200342391",
+        "https://openalex.org/W3205234074",
+        "https://openalex.org/W3212433036",
+        "https://openalex.org/W4296700088",
+        "https://openalex.org/W4322766745",
+        "https://openalex.org/W4361012843",
+        "https://openalex.org/W4396519587",
+        "https://openalex.org/W4402537939",
+        "https://openalex.org/W4408579825",
+        "https://openalex.org/W4414931899"
+    ]
+}

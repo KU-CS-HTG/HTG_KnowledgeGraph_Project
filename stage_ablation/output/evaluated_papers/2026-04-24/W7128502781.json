@@ -1,0 +1,1227 @@
+{
+    "uri": "https://openalex.org/W7128502781",
+    "title": "The representation of climate impacts in the FRIDAv2.1 Integrated Assessment Model",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5011802035",
+            "display_name": "Christopher Wells",
+            "orcid": "https://orcid.org/0000-0003-1958-0984"
+        },
+        {
+            "id": "https://openalex.org/A5073970020",
+            "display_name": "B Blanz",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5028774436",
+            "display_name": "Lennart Ramme",
+            "orcid": "https://orcid.org/0000-0002-8307-2493"
+        },
+        {
+            "id": "https://openalex.org/A5069780035",
+            "display_name": "Jannes Breier",
+            "orcid": "https://orcid.org/0000-0002-9055-6904"
+        },
+        {
+            "id": "https://openalex.org/A5068505259",
+            "display_name": "Beniamino Callegari",
+            "orcid": "https://orcid.org/0000-0001-5513-7299"
+        },
+        {
+            "id": "https://openalex.org/A5118653696",
+            "display_name": "Adakudlu Muralidhar",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5059785309",
+            "display_name": "Jefferson K. Rajah",
+            "orcid": "https://orcid.org/0000-0001-8365-0428"
+        },
+        {
+            "id": "https://openalex.org/A5018532363",
+            "display_name": "Andreas Nicolaidis Lindqvist",
+            "orcid": "https://orcid.org/0000-0002-6323-1397"
+        },
+        {
+            "id": "https://openalex.org/A5051944441",
+            "display_name": "Axel Eriksson",
+            "orcid": "https://orcid.org/0000-0002-6458-8232"
+        },
+        {
+            "id": "https://openalex.org/A5051711857",
+            "display_name": "William Schoenberg",
+            "orcid": "https://orcid.org/0000-0003-3529-1066"
+        },
+        {
+            "id": "https://openalex.org/A5125584345",
+            "display_name": "Alexandre C. K\u00f6berle",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Lan Wang-Erlandsson",
+            "orcid": "https://orcid.org/0000-0002-7739-5069"
+        },
+        {
+            "id": "https://openalex.org/A5125542875",
+            "display_name": "Cecilie Mauritzen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5125582031",
+            "display_name": "Martin B. Grimeland",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5125594853",
+            "display_name": "Chris. L. Smith",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-19-1229-2026",
+    "abstract": "Abstract. Feedbacks from the climate to other components of the coupled human-Earth system are expected to strongly influence the co-evolution of human society and its environment. Representing these feedback loops between climate and society, via the Earth system's response to human activities and the subsequent effect back onto social systems, is essential in order to fully explore the dynamics of the coupled system. However, focus on these feedbacks has traditionally been limited, or excluded, in prior Integrated Assessment Models (IAMs) and IAM-based modelling protocols. This limits the understanding of the effects of climate change and the response of the overall system to future emissions scenarios and policies. The new IAM Feedback-based knowledge Repository for IntegrateD Assessments version 2.1 (FRIDAv2.1), documented and explored within this paper collection, seeks to address this by internalising the feedbacks between subcomponents of the human-Earth system. Within this new IAM, these connections are therefore a key part of the structure, and are documented and discussed here. FRIDA represents these climate-to-society feedbacks, conceptualised as climate impacts, through global impact functions. Where possible, they are based on estimates from existing literature, reframed as functions of global climate variables to facilitate their representation within FRIDA. Other impact channels, with insufficient background literature to inform their structure and parameter values, are incorporated via the internal calibration of the IAM. Since the systematic representation of climate damages within an IAM is a relatively novel endeavour, the approach is constrained by literature limitations and necessary simplifications. In addition, the high level of abstraction of the FRIDA model imposes limits on the set of impacts which can reasonably be implemented, and the level of process detail amongst those included. Nevertheless, FRIDA's endogenous representation of climate feedbacks to human and natural systems enables valuable insights and intuition building on an underexplored topic. The general nature of the climate damage functions aggregated and documented here allows for their incorporation within other models and frameworks.",
+    "field": "Integrated assessment modeling of climate impacts",
+    "problem": "Prior Integrated Assessment Models (IAMs) have traditionally limited or excluded feedback loops from climate impacts back onto social systems, hindering a complete understanding of the coupled human-Earth system's dynamics and its response to future emissions scenarios and policies.",
+    "method": "The paper details a method for representing climate impacts within an Integrated Assessment Model by implementing a set of process-based global impact functions, derived from literature, to internalize feedbacks and better explore the dynamics of the coupled human-Earth system.",
+    "task": "The task is to document the methodology for selecting and implementing various climate impact channels as feedback loops within the FRIDAv2.1 Integrated Assessment Model, using global impact functions derived from existing literature or internal calibration.",
+    "model": [
+        "FRIDA",
+        "FRISIA",
+        "FUND",
+        "FaIR",
+        "CIRA",
+        "IPSL-CM5A-LR",
+        "HadGEM2-ES",
+        "GFDL-ESM2M",
+        "MIROC-ESM-CHEM",
+        "MIROC5",
+        "NorESM1",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR",
+        "MPI-ESM1-2-HR",
+        "MRI-ESM2-0",
+        "UKESM1-0-LL",
+        "GCAM-fusion"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/representation",
+            "display_name": "Representation (politics)",
+            "score": 0.711899995803833
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.599399983882904
+        },
+        {
+            "id": "https://openalex.org/keywords/abstraction",
+            "display_name": "Abstraction",
+            "score": 0.54830002784729
+        },
+        {
+            "id": "https://openalex.org/keywords/earth-system-science",
+            "display_name": "Earth system science",
+            "score": 0.5189999938011169
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4986000061035156
+        },
+        {
+            "id": "https://openalex.org/keywords/damages",
+            "display_name": "Damages",
+            "score": 0.47769999504089355
+        },
+        {
+            "id": "https://openalex.org/keywords/impact-assessment",
+            "display_name": "Impact assessment",
+            "score": 0.41179999709129333
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-system",
+            "display_name": "Climate system",
+            "score": 0.40849998593330383
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2776359362",
+            "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+            "display_name": "Representation (politics)",
+            "level": 3,
+            "score": 0.711899995803833
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.599399983882904
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5598000288009644
+        },
+        {
+            "id": "https://openalex.org/C124304363",
+            "wikidata": "https://www.wikidata.org/wiki/Q673661",
+            "display_name": "Abstraction",
+            "level": 2,
+            "score": 0.54830002784729
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.5189999938011169
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4986000061035156
+        },
+        {
+            "id": "https://openalex.org/C2777381055",
+            "wikidata": "https://www.wikidata.org/wiki/Q308922",
+            "display_name": "Damages",
+            "level": 2,
+            "score": 0.47769999504089355
+        },
+        {
+            "id": "https://openalex.org/C111874474",
+            "wikidata": "https://www.wikidata.org/wiki/Q6005872",
+            "display_name": "Impact assessment",
+            "level": 2,
+            "score": 0.41179999709129333
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.40849998593330383
+        },
+        {
+            "id": "https://openalex.org/C182306322",
+            "wikidata": "https://www.wikidata.org/wiki/Q1779371",
+            "display_name": "Order (exchange)",
+            "level": 2,
+            "score": 0.39559999108314514
+        },
+        {
+            "id": "https://openalex.org/C26517878",
+            "wikidata": "https://www.wikidata.org/wiki/Q228039",
+            "display_name": "Key (lock)",
+            "level": 2,
+            "score": 0.3808000087738037
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.35670000314712524
+        },
+        {
+            "id": "https://openalex.org/C2988944679",
+            "wikidata": "https://www.wikidata.org/wiki/Q7937",
+            "display_name": "Global climate",
+            "level": 3,
+            "score": 0.35589998960494995
+        },
+        {
+            "id": "https://openalex.org/C192209626",
+            "wikidata": "https://www.wikidata.org/wiki/Q190909",
+            "display_name": "Focus (optics)",
+            "level": 2,
+            "score": 0.35109999775886536
+        },
+        {
+            "id": "https://openalex.org/C107826830",
+            "wikidata": "https://www.wikidata.org/wiki/Q929380",
+            "display_name": "Environmental resource management",
+            "level": 1,
+            "score": 0.3456999957561493
+        },
+        {
+            "id": "https://openalex.org/C2986440788",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climate science",
+            "level": 3,
+            "score": 0.3093000054359436
+        },
+        {
+            "id": "https://openalex.org/C112930515",
+            "wikidata": "https://www.wikidata.org/wiki/Q4389547",
+            "display_name": "Risk analysis (engineering)",
+            "level": 1,
+            "score": 0.3005000054836273
+        },
+        {
+            "id": "https://openalex.org/C165838908",
+            "wikidata": "https://www.wikidata.org/wiki/Q736777",
+            "display_name": "Calibration",
+            "level": 2,
+            "score": 0.2985999882221222
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.29440000653266907
+        },
+        {
+            "id": "https://openalex.org/C539667460",
+            "wikidata": "https://www.wikidata.org/wiki/Q2414942",
+            "display_name": "Management science",
+            "level": 1,
+            "score": 0.28209999203681946
+        },
+        {
+            "id": "https://openalex.org/C2522767166",
+            "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+            "display_name": "Data science",
+            "level": 1,
+            "score": 0.2815000116825104
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.2533000111579895
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper details the representation of climate impacts in the FRIDAv2.1 Integrated Assessment Model, which innovatively internalizes feedbacks between climate and society through a suite of distinct, process-based global impact functions, departing from traditional single-damage approaches.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Climate",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "FRIDA is composed of seven interconnected top-level modules (Climate, Energy, Behavioural Change, Resources, Demographics, Economy, and Land Use & Agriculture) \u2013 each representing the internal system components and their feedbacks (see Fig. 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Energy",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "FRIDA is composed of seven interconnected top-level modules (Climate, Energy, Behavioural Change, Resources, Demographics, Economy, and Land Use & Agriculture) \u2013 each representing the internal system components and their feedbacks (see Fig. 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Behavioural Change",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "FRIDA is composed of seven interconnected top-level modules (Climate, Energy, Behavioural Change, Resources, Demographics, Economy, and Land Use & Agriculture) \u2013 each representing the internal system components and their feedbacks (see Fig. 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Resources",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "FRIDA is composed of seven interconnected top-level modules (Climate, Energy, Behavioural Change, Resources, Demographics, Economy, and Land Use & Agriculture) \u2013 each representing the internal system components and their feedbacks (see Fig. 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Demographics",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "FRIDA is composed of seven interconnected top-level modules (Climate, Energy, Behavioural Change, Resources, Demographics, Economy, and Land Use & Agriculture) \u2013 each representing the internal system components and their feedbacks (see Fig. 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Economy",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "FRIDA is composed of seven interconnected top-level modules (Climate, Energy, Behavioural Change, Resources, Demographics, Economy, and Land Use & Agriculture) \u2013 each representing the internal system components and their feedbacks (see Fig. 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Land Use & Agriculture",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "FRIDA is composed of seven interconnected top-level modules (Climate, Energy, Behavioural Change, Resources, Demographics, Economy, and Land Use & Agriculture) \u2013 each representing the internal system components and their feedbacks (see Fig. 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Climate",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "global mean surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Climate damages in FRIDA are driven by a combination of three climate outputs: global mean surface temperature (GMST), Sea Level Rise (SLR), and atmospheric CO2 concentrations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Climate",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Sea Level Rise",
+            "target_entity_type": "Variable",
+            "paragraph": "Climate damages in FRIDA are driven by a combination of three climate outputs: global mean surface temperature (GMST), Sea Level Rise (SLR), and atmospheric CO2 concentrations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Climate",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "atmospheric CO2 concentrations",
+            "target_entity_type": "Variable",
+            "paragraph": "Climate damages in FRIDA are driven by a combination of three climate outputs: global mean surface temperature (GMST), Sea Level Rise (SLR), and atmospheric CO2 concentrations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "FRISIA",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The novel process-based SLR model in FRIDA, termed FRISIA, is documented in Ramme et al. (2025).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "power law damage function",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The effect of climate change on the efficiency of hydro- and thermo-electric power plants is represented in FRIDA, based on a literature estimate (Sect. 2.1.1). However, no suitable literature to represent the global effect of climate change on energy systems infrastructure was identified. This impact channel was therefore incorporated via an internally calibrated parameter (see Schoenberg et al., 2025a), with damages on energy infrastructure represented as a power law function of global temperature anomaly. This functional form was chosen based on its prevalence in IAM literature (F\u00fcssel, 2010; Nordhaus, 2014).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "logistic function",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Similarly to how FRIDA calculates the increasing exposure of coastal assets, it also calculates the increasing exposure of the coastal population to SLR-driven storm surge damages using a logistic function (Ramme et al 2025).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "linear function for evapotranspiration",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In FRIDA the impact of increasing surface temperatures on water lost to evapotranspiration during irrigation is represented on a per irrigated hectare per year basis. This is modelled using a calibrated, shallow linear function based on the GMST anomaly.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "FaIR",
+            "target_entity_type": "Source",
+            "paragraph": "Additionally, the deterministic climate response in FRIDAv2.1 could be developed to include a stochastic component, drawing on the representation used in the FaIR model (Smith et al., 2024), upon which the Climate module of FRIDA is substantially based (Wells et al., 2025).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "global scale",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The FRIDAv2.1 model operates at the global scale, with no regionality.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "no regionality",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The FRIDAv2.1 model operates at the global scale, with no regionality.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "no stochastic internal variability",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "There is currently no stochastic internal variability within the climate system in FRIDA, meaning that for a given set of climate parameters, the same deterministic climate trajectory follows from the same set of emissions, though this will be explored in future development (Sect. 3.1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "FRIDAv2.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Integrated Assessment Model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "University of Leeds",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Hamburg",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Max-Planck-Institute for Meteorology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Potsdam Institute for Climate Impact Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Kristiania University of Applied Sciences",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Norwegian Meteorological Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Bergen",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "RISE Research Institutes of Sweden",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Stockholm Resilience Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Stockholm University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Lund University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "isee systems inc.",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Universidade de Lisboa",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Leibnitz Association",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "The Royal Swedish Academy of Sciences",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "International Institute for Applied Systems Analysis (IIASA)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "FRIDA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Climate",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Energy",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Behavioural Change",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Resources",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Demographics",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Economy",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Land Use & Agriculture",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Gross Domestic Product",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Climate module",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Sea Level Rise",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO2 Concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Crop Yield",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mortality",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Labour Productivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Inter-Sectoral Impacts Model Intercomparison Project (ISIMIP)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project Phase 5 (CMIP5)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP7",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP7",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Earth System Model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Shared Socioeconomic Pathways (SSPs)",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "FRISIA",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "FRISIA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "global mean surface temperature (GMST)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric CO2 concentrations",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "storm surge",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Hydropower energy efficiency",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Thermoelectric energy efficiency",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Cooling Degree Days (CDD)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Heating Degree Days (HDD)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Damage rate of capital",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Historical record-breaking extremes exposure per person per year",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Average lifetime of concrete",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Cold impact on mortality",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Hot impact on mortality",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Productivity of low-exposure labour",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Productivity of high-exposure labour",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Scaling factor on default loan failure rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Climate-driven component of government consumption",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hydrological model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "RCP2.6",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "RCP8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "storms",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "SSP",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Hydrofluorocarbons (HFCs)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heatwaves",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "coastal zone",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "storm-surge flooding",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "wet bulb globe temperature (WBGT)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heat stroke",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "GRACE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "computable general equilibrium model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "flooding",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Flood",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "hurricanes",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "wildfires",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Wildfire",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "droughts",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "fires",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "FaIR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Marine Ice Cliff Instability",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NPP",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "forest biomass",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean CO2 uptake",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "anthropogenic effective radiative forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CIRA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ScenarioMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "SSP5 baseline scenario",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "Thermoelectric",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Hydroelectric",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Energy Infrastructure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Extremes Exposure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Concrete Lifetime",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Indirect Economic Effects",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Government Spending",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "absolute temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature anomaly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "IPSL-CM5A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2-ES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM2M",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ESM-CHEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SSP1-2.6",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP3-7.0",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP5-8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "GFDL-ESM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM6A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-ESM2-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UKESM1-0-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ssp126",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ssp370",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ssp585",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP126",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP245",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP370",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP585",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "CARAIB",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EPIC-TAMU",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GEPIC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JULES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LPJ-GUESS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LPJmL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "pDSSAT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PEPIC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PROMET",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadCRUT",
+            "entity_type": "Source"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1487177596",
+        "https://openalex.org/W1698528106",
+        "https://openalex.org/W1945520497",
+        "https://openalex.org/W1964308073",
+        "https://openalex.org/W1992178493",
+        "https://openalex.org/W1995156023",
+        "https://openalex.org/W2003696872",
+        "https://openalex.org/W2063566866",
+        "https://openalex.org/W2064523162",
+        "https://openalex.org/W2071858358",
+        "https://openalex.org/W2074038697",
+        "https://openalex.org/W2079561510",
+        "https://openalex.org/W2088135986",
+        "https://openalex.org/W2106517438",
+        "https://openalex.org/W2124884294",
+        "https://openalex.org/W2130536546",
+        "https://openalex.org/W2138317394",
+        "https://openalex.org/W2149437635",
+        "https://openalex.org/W2152670735",
+        "https://openalex.org/W2163235518",
+        "https://openalex.org/W2165124144",
+        "https://openalex.org/W2222859736",
+        "https://openalex.org/W2330376899",
+        "https://openalex.org/W2518277604",
+        "https://openalex.org/W2523027065",
+        "https://openalex.org/W2527634340",
+        "https://openalex.org/W2537682884",
+        "https://openalex.org/W2601229544",
+        "https://openalex.org/W2606009337",
+        "https://openalex.org/W2729020886",
+        "https://openalex.org/W2734683486",
+        "https://openalex.org/W2743735602",
+        "https://openalex.org/W2747319455",
+        "https://openalex.org/W2765825213",
+        "https://openalex.org/W2769369823",
+        "https://openalex.org/W2777536078",
+        "https://openalex.org/W2782444107",
+        "https://openalex.org/W2796687316",
+        "https://openalex.org/W2890993024",
+        "https://openalex.org/W2922231923",
+        "https://openalex.org/W2944377824",
+        "https://openalex.org/W2950990727",
+        "https://openalex.org/W2953540816",
+        "https://openalex.org/W2965643578",
+        "https://openalex.org/W2970509049",
+        "https://openalex.org/W2976090524",
+        "https://openalex.org/W2978678234",
+        "https://openalex.org/W2982202141",
+        "https://openalex.org/W2988044096",
+        "https://openalex.org/W3000065091",
+        "https://openalex.org/W3000483927",
+        "https://openalex.org/W3001446396",
+        "https://openalex.org/W3005656389",
+        "https://openalex.org/W3007232928",
+        "https://openalex.org/W3016979159",
+        "https://openalex.org/W3022235791",
+        "https://openalex.org/W3047455708",
+        "https://openalex.org/W3088133186",
+        "https://openalex.org/W3101886888",
+        "https://openalex.org/W3111351115",
+        "https://openalex.org/W3118977708",
+        "https://openalex.org/W3120044900",
+        "https://openalex.org/W3122099166",
+        "https://openalex.org/W3124146236",
+        "https://openalex.org/W3133457638",
+        "https://openalex.org/W3167785258",
+        "https://openalex.org/W3178522666",
+        "https://openalex.org/W3182033540",
+        "https://openalex.org/W3187422713",
+        "https://openalex.org/W3189373747",
+        "https://openalex.org/W3194509436",
+        "https://openalex.org/W3196453955",
+        "https://openalex.org/W3196495719",
+        "https://openalex.org/W3205673351",
+        "https://openalex.org/W3206035590",
+        "https://openalex.org/W3212467924",
+        "https://openalex.org/W4205583000",
+        "https://openalex.org/W4207036464",
+        "https://openalex.org/W4213197433",
+        "https://openalex.org/W4214636661",
+        "https://openalex.org/W4254778491",
+        "https://openalex.org/W4283641177",
+        "https://openalex.org/W4285600456",
+        "https://openalex.org/W4293104227",
+        "https://openalex.org/W4294052458",
+        "https://openalex.org/W4294309580",
+        "https://openalex.org/W4295088938",
+        "https://openalex.org/W4304099131",
+        "https://openalex.org/W4306642119",
+        "https://openalex.org/W4309565773",
+        "https://openalex.org/W4310124293",
+        "https://openalex.org/W4312082377",
+        "https://openalex.org/W4312192954",
+        "https://openalex.org/W4321209184",
+        "https://openalex.org/W4362466947",
+        "https://openalex.org/W4362665161",
+        "https://openalex.org/W4365511512",
+        "https://openalex.org/W4377287078",
+        "https://openalex.org/W4382358495",
+        "https://openalex.org/W4382363579",
+        "https://openalex.org/W4384206254",
+        "https://openalex.org/W4384561516",
+        "https://openalex.org/W4385723702",
+        "https://openalex.org/W4386706488",
+        "https://openalex.org/W4387167601",
+        "https://openalex.org/W4388658761",
+        "https://openalex.org/W4388893522",
+        "https://openalex.org/W4389648886",
+        "https://openalex.org/W4390602147",
+        "https://openalex.org/W4390605700",
+        "https://openalex.org/W4390619474",
+        "https://openalex.org/W4390769617",
+        "https://openalex.org/W4392201695",
+        "https://openalex.org/W4392359877",
+        "https://openalex.org/W4392516019",
+        "https://openalex.org/W4392713665",
+        "https://openalex.org/W4393138782",
+        "https://openalex.org/W4394753960",
+        "https://openalex.org/W4394891960",
+        "https://openalex.org/W4394892452",
+        "https://openalex.org/W4399146084",
+        "https://openalex.org/W4399375141",
+        "https://openalex.org/W4399802653",
+        "https://openalex.org/W4399916427",
+        "https://openalex.org/W4403094226",
+        "https://openalex.org/W4403586852",
+        "https://openalex.org/W4404939969",
+        "https://openalex.org/W4404977806",
+        "https://openalex.org/W4406959556",
+        "https://openalex.org/W4408464578",
+        "https://openalex.org/W4414248834",
+        "https://openalex.org/W4414443881",
+        "https://openalex.org/W4415686955",
+        "https://openalex.org/W4415847497",
+        "https://openalex.org/W4416971683",
+        "https://openalex.org/W4417311652"
+    ]
+}

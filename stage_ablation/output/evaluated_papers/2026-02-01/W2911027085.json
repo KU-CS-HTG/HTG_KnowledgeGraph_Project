@@ -1,0 +1,1022 @@
+{
+    "uri": "https://openalex.org/W2911027085",
+    "title": "Representation of fire, land-use change and vegetation dynamics in the Joint UK Land Environment Simulator vn4.9 (JULES)",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2019,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5048325232",
+            "display_name": "Chantelle Burton",
+            "orcid": "https://orcid.org/0000-0003-0201-5727"
+        },
+        {
+            "id": "https://openalex.org/A5026340579",
+            "display_name": "Richard Betts",
+            "orcid": "https://orcid.org/0000-0002-4929-0307"
+        },
+        {
+            "id": "https://openalex.org/A5075156863",
+            "display_name": "Manoel Cardoso",
+            "orcid": "https://orcid.org/0000-0003-2447-6882"
+        },
+        {
+            "id": "https://openalex.org/A5009824835",
+            "display_name": "Ted R. Feldpausch",
+            "orcid": "https://orcid.org/0000-0002-6631-7962"
+        },
+        {
+            "id": "https://openalex.org/A5016623900",
+            "display_name": "Anna Harper",
+            "orcid": "https://orcid.org/0000-0001-7294-6039"
+        },
+        {
+            "id": "https://openalex.org/A5025928838",
+            "display_name": "Chris Jones",
+            "orcid": "https://orcid.org/0000-0002-7141-9285"
+        },
+        {
+            "id": "https://openalex.org/A5054815734",
+            "display_name": "Douglas I. Kelley",
+            "orcid": "https://orcid.org/0000-0003-1413-4969"
+        },
+        {
+            "id": "https://openalex.org/A5067434733",
+            "display_name": "Eddy Robertson",
+            "orcid": "https://orcid.org/0000-0002-1292-1873"
+        },
+        {
+            "id": "https://openalex.org/A5109531822",
+            "display_name": "Andy Wiltshire",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-12-179-2019",
+    "abstract": "Abstract. Disturbance of vegetation is a critical component of land cover, but is generally poorly constrained in land surface and carbon cycle models. In particular, land-use change and fire can be treated as large-scale disturbances without full representation of their underlying complexities and interactions. Here we describe developments to the land surface model JULES (Joint UK Land Environment Simulator) to represent land-use change and fire as distinct processes which interact with simulated vegetation dynamics. We couple the fire model INFERNO (INteractive Fire and Emission algoRithm for Natural envirOnments) to dynamic vegetation within JULES and use the HYDE (History Database of the Global Environment) land cover dataset to analyse the impact of land-use change on the simulation of present day vegetation. We evaluate the inclusion of land use and fire disturbance against standard benchmarks. Using the Manhattan metric, results show improved simulation of vegetation cover across all observed datasets. Overall, disturbance improves the simulation of vegetation cover by 35 % compared to vegetation continuous field (VCF) observations from MODIS and 13 % compared to the Climate Change Initiative (CCI) from the ESA. Biases in grass extent are reduced from \u221266 % to 13 %. Total woody cover improves by 55 % compared to VCF and 20 % compared to CCI from a reduction in forest extent in the tropics, although simulated tree cover is now too sparse in some areas. Explicitly modelling fire and land use generally decreases tree and shrub cover and increases grasses. The results show that the disturbances provide important contributions to the realistic modelling of vegetation on a global scale, although in some areas fire and land use together result in too much disturbance. This work provides a substantial contribution towards representing the full complexity and interactions between land-use change and fire that could be used in Earth system models.",
+    "field": "Land surface modeling",
+    "problem": "Existing land surface models poorly constrain vegetation disturbance by treating fire and land-use change as a single, large-scale process, failing to capture their distinct complexities and their interactions with vegetation dynamics.",
+    "method": "To improve vegetation simulation, this paper proposes a method for the JULES land surface model that explicitly represents fire and land-use change as distinct, interacting disturbances by coupling the INFERNO fire model and incorporating the HYDE land-use change dataset.",
+    "task": "The task is to represent fire and land-use change as distinct, interacting processes within the JULES land surface model and to evaluate their combined impact on the simulation of global vegetation dynamics against observational data.",
+    "model": [
+        "JULES",
+        "INFERNO",
+        "HadGEM3",
+        "UKESM1",
+        "TRIFFID"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/vegetation",
+            "display_name": "Vegetation (pathology)",
+            "score": 0.752076268196106
+        },
+        {
+            "id": "https://openalex.org/keywords/disturbance",
+            "display_name": "Disturbance (geology)",
+            "score": 0.6830915212631226
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.6326302289962769
+        },
+        {
+            "id": "https://openalex.org/keywords/land-cover",
+            "display_name": "Land cover",
+            "score": 0.616787314414978
+        },
+        {
+            "id": "https://openalex.org/keywords/shrub",
+            "display_name": "Shrub",
+            "score": 0.5303740501403809
+        },
+        {
+            "id": "https://openalex.org/keywords/land-use",
+            "display_name": "Land use",
+            "score": 0.45716843008995056
+        },
+        {
+            "id": "https://openalex.org/keywords/scale",
+            "display_name": "Scale (ratio)",
+            "score": 0.44804370403289795
+        },
+        {
+            "id": "https://openalex.org/keywords/tree",
+            "display_name": "Tree (set theory)",
+            "score": 0.41467106342315674
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.3709526062011719
+        },
+        {
+            "id": "https://openalex.org/keywords/physical-geography",
+            "display_name": "Physical geography",
+            "score": 0.34332412481307983
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.19288727641105652
+        },
+        {
+            "id": "https://openalex.org/keywords/ecology",
+            "display_name": "Ecology",
+            "score": 0.1919250786304474
+        },
+        {
+            "id": "https://openalex.org/keywords/cartography",
+            "display_name": "Cartography",
+            "score": 0.10498952865600586
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.07908886671066284
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2776133958",
+            "wikidata": "https://www.wikidata.org/wiki/Q7918366",
+            "display_name": "Vegetation (pathology)",
+            "level": 2,
+            "score": 0.752076268196106
+        },
+        {
+            "id": "https://openalex.org/C2777601987",
+            "wikidata": "https://www.wikidata.org/wiki/Q5283581",
+            "display_name": "Disturbance (geology)",
+            "level": 2,
+            "score": 0.6830915212631226
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6326302289962769
+        },
+        {
+            "id": "https://openalex.org/C2780648208",
+            "wikidata": "https://www.wikidata.org/wiki/Q3001793",
+            "display_name": "Land cover",
+            "level": 3,
+            "score": 0.616787314414978
+        },
+        {
+            "id": "https://openalex.org/C2778091200",
+            "wikidata": "https://www.wikidata.org/wiki/Q42295",
+            "display_name": "Shrub",
+            "level": 2,
+            "score": 0.5303740501403809
+        },
+        {
+            "id": "https://openalex.org/C4792198",
+            "wikidata": "https://www.wikidata.org/wiki/Q1165944",
+            "display_name": "Land use",
+            "level": 2,
+            "score": 0.45716843008995056
+        },
+        {
+            "id": "https://openalex.org/C2778755073",
+            "wikidata": "https://www.wikidata.org/wiki/Q10858537",
+            "display_name": "Scale (ratio)",
+            "level": 2,
+            "score": 0.44804370403289795
+        },
+        {
+            "id": "https://openalex.org/C113174947",
+            "wikidata": "https://www.wikidata.org/wiki/Q2859736",
+            "display_name": "Tree (set theory)",
+            "level": 2,
+            "score": 0.41467106342315674
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.3709526062011719
+        },
+        {
+            "id": "https://openalex.org/C100970517",
+            "wikidata": "https://www.wikidata.org/wiki/Q52107",
+            "display_name": "Physical geography",
+            "level": 1,
+            "score": 0.34332412481307983
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.19288727641105652
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.1919250786304474
+        },
+        {
+            "id": "https://openalex.org/C58640448",
+            "wikidata": "https://www.wikidata.org/wiki/Q42515",
+            "display_name": "Cartography",
+            "level": 1,
+            "score": 0.10498952865600586
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.07908886671066284
+        },
+        {
+            "id": "https://openalex.org/C151730666",
+            "wikidata": "https://www.wikidata.org/wiki/Q7205",
+            "display_name": "Paleontology",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C71924100",
+            "wikidata": "https://www.wikidata.org/wiki/Q11190",
+            "display_name": "Medicine",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C134306372",
+            "wikidata": "https://www.wikidata.org/wiki/Q7754",
+            "display_name": "Mathematical analysis",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C142724271",
+            "wikidata": "https://www.wikidata.org/wiki/Q7208",
+            "display_name": "Pathology",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "JULES (S2: Control)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Vegetation cover)",
+            "result": "0.78"
+        },
+        {
+            "model": "JULES (S3: Land use only)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Vegetation cover)",
+            "result": "0.60"
+        },
+        {
+            "model": "JULES (SF2: Fire only)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Vegetation cover)",
+            "result": "0.54"
+        },
+        {
+            "model": "JULES (SF3: Land use and fire)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Vegetation cover)",
+            "result": "0.51"
+        },
+        {
+            "model": "JULES (S2: Control)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Vegetation cover)",
+            "result": "0.72"
+        },
+        {
+            "model": "JULES (S3: Land use only)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Vegetation cover)",
+            "result": "0.60"
+        },
+        {
+            "model": "JULES (SF2: Fire only)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Vegetation cover)",
+            "result": "0.64"
+        },
+        {
+            "model": "JULES (SF3: Land use and fire)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Vegetation cover)",
+            "result": "0.63"
+        },
+        {
+            "model": "JULES (S2: Control)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Tree cover)",
+            "result": "0.35"
+        },
+        {
+            "model": "JULES (S3: Land use only)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Tree cover)",
+            "result": "0.28"
+        },
+        {
+            "model": "JULES (SF2: Fire only)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Tree cover)",
+            "result": "0.30"
+        },
+        {
+            "model": "JULES (SF3: Land use and fire)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Tree cover)",
+            "result": "0.30"
+        },
+        {
+            "model": "JULES (S2: Control)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Wood cover)",
+            "result": "0.64"
+        },
+        {
+            "model": "JULES (S3: Land use only)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Wood cover)",
+            "result": "0.43"
+        },
+        {
+            "model": "JULES (SF2: Fire only)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Wood cover)",
+            "result": "0.33"
+        },
+        {
+            "model": "JULES (SF3: Land use and fire)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Wood cover)",
+            "result": "0.29"
+        },
+        {
+            "model": "JULES (S2: Control)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Wood cover)",
+            "result": "0.45"
+        },
+        {
+            "model": "JULES (S3: Land use only)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Wood cover)",
+            "result": "0.31"
+        },
+        {
+            "model": "JULES (SF2: Fire only)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Wood cover)",
+            "result": "0.35"
+        },
+        {
+            "model": "JULES (SF3: Land use and fire)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Wood cover)",
+            "result": "0.36"
+        },
+        {
+            "model": "JULES (S2: Control)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Grass cover)",
+            "result": "0.64"
+        },
+        {
+            "model": "JULES (S3: Land use only)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Grass cover)",
+            "result": "0.48"
+        },
+        {
+            "model": "JULES (SF2: Fire only)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Grass cover)",
+            "result": "0.43"
+        },
+        {
+            "model": "JULES (SF3: Land use and fire)",
+            "observational_dataset": "VCF",
+            "evaluation_metric": "Manhattan metric (Grass cover)",
+            "result": "0.42"
+        },
+        {
+            "model": "JULES (S2: Control)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Grass cover)",
+            "result": "0.43"
+        },
+        {
+            "model": "JULES (S3: Land use only)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Grass cover)",
+            "result": "0.33"
+        },
+        {
+            "model": "JULES (SF2: Fire only)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Grass cover)",
+            "result": "0.40"
+        },
+        {
+            "model": "JULES (SF3: Land use and fire)",
+            "observational_dataset": "CCI",
+            "evaluation_metric": "Manhattan metric (Grass cover)",
+            "result": "0.42"
+        }
+    ],
+    "innovation": "This paper introduces developments to the JULES land surface model to represent fire and land-use change as distinct, interacting processes, which improves the simulation of global vegetation cover by decreasing woody vegetation and increasing grasses, bringing the model closer to observations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "INFERNO",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Here we describe developments to the land surface model JULES (Joint UK Land Environment Simulator) to represent land-use change and fire as distinct processes which interact with simulated vegetation dynamics. We couple the fire model INFERNO (INteractive Fire and Emission algoRithm for Natural environments) to dynamic vegetation within JULES and use the HYDE (History Database of the Global Environment) land cover dataset to analyse the impact of land-use change on the simulation of present day vegetation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "TRIFFID",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Within JULES a dynamic global vegetation model (DGVM) called TRIFFID (Top-down Representation of Interactive Foliage and Flora Including Dynamics) is used to represent the carbon cycle and the distribution of different plant functional types (PFTs) (Clark et al., 2011; Cox et al., 2000; Cox, 2001).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TRIFFID",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "distribution of different plant functional types",
+            "target_entity_type": "Variable",
+            "paragraph": "Within JULES a dynamic global vegetation model (DGVM) called TRIFFID (Top-down Representation of Interactive Foliage and Flora Including Dynamics) is used to represent the carbon cycle and the distribution of different plant functional types (PFTs) (Clark et al., 2011; Cox et al., 2000; Cox, 2001).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "vegetation cover",
+            "target_entity_type": "Variable",
+            "paragraph": "Using the Manhattan metric, results show improved simulation of vegetation cover across all observed datasets. Overall, disturbance improves the simulation of vegetation cover by 35 % compared to vegetation continuous field (VCF) observations from MODIS and 13 % compared to the Climate Change Initiative (CCI) from the ESA.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "land",
+            "target_entity_type": "Realm",
+            "paragraph": "JULES (Joint UK Land Environment Simulator) is a land surface model (LSM) which simulates surface fluxes of water, energy and carbon, along with the state of terrestrial hydrology, vegetation and carbon stores (Clark et al., 2011; Best et al., 2011).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES vn4.9",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "N96 resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "This was then re-gridded for use in JULES at N96 resolution (1.25\u25e6 latitude \u00d7 1.875\u25e6 longitude) and implemented from 1860\u20132015 as annual land-use change as outlined above.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Manhattan metric",
+            "target_entity_type": "Metric",
+            "paragraph": "Simulated vegetation fractions are compared against vegetation continuous fields (VCFs) from MODIS (2002\u20132012), as recommended for FireMIP analysis (Rabin et al., 2017), and ESA CCI reference observations using the Manhattan metric (MM)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "normalised mean error",
+            "target_entity_type": "Metric",
+            "paragraph": "For benchmarking the performance of our model configurations, we use the protocol used by FireMIP (Rabin et al., 2017) based on the benchmarking system outlined in Kelley et al. (2013). Annual average burnt area was assessed using the normalised mean error (NME) metric, which sums the difference between the model (mod) and observations (obs) over all cells (i) weighted by cell area (Ai) and normalised by the average distance from the mean of observations, obs.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "vegetation continuous field",
+            "target_entity_type": "Variable",
+            "paragraph": "Simulated vegetation fractions are compared against vegetation continuous fields (VCFs) from MODIS (2002\u20132012), as recommended for FireMIP analysis (Rabin et al., 2017), and ESA CCI reference observations using the Manhattan metric (MM)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "fire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Africa",
+            "target_entity_type": "Continent",
+            "paragraph": "INFERNO accurately simulates the areas of high fire occurrence found in GFED4.1s, especially over Africa, northern Australia, South America and SE Asia, although the model also shows high fire occurrence over India, which is not seen in the observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "fire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Australia",
+            "target_entity_type": "Continent",
+            "paragraph": "INFERNO accurately simulates the areas of high fire occurrence found in GFED4.1s, especially over Africa, northern Australia, South America and SE Asia, although the model also shows high fire occurrence over India, which is not seen in the observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "fire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "South America",
+            "target_entity_type": "Continent",
+            "paragraph": "INFERNO accurately simulates the areas of high fire occurrence found in GFED4.1s, especially over Africa, northern Australia, South America and SE Asia, although the model also shows high fire occurrence over India, which is not seen in the observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "fire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Asia",
+            "target_entity_type": "Continent",
+            "paragraph": "INFERNO accurately simulates the areas of high fire occurrence found in GFED4.1s, especially over Africa, northern Australia, South America and SE Asia, although the model also shows high fire occurrence over India, which is not seen in the observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "fire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "India",
+            "target_entity_type": "Country",
+            "paragraph": "INFERNO accurately simulates the areas of high fire occurrence found in GFED4.1s, especially over Africa, northern Australia, South America and SE Asia, although the model also shows high fire occurrence over India, which is not seen in the observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "fire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Wildfire",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Disturbance of vegetation is a critical component of land cover, but is generally poorly constrained in land surface and carbon cycle models. In particular, land-use change and fire can be treated as large-scale disturbances without full representation of their underlying complexities and interactions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "four soil carbon pools",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The carbon cycle in JULES does not explicitly represent a litter carbon store; however, the model includes four soil carbon pools and we use two of these pools as proxies for flammable litter.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "five PFTs",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The configuration used here has five PFTs; the two tree PFTs outcompete the shrub PFT, the shrub PFT outcompetes the two grass PFTs, and the taller of the two tree-grass PFTs outcompetes the shorter tree-grass PFT.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "JULES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "land surface model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "TRIFFID",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "INFERNO",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "dynamic global vegetation model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "five PFTs",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "N96",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1.25\u00b0 latitude \u00d7 1.875\u00b0 longitude",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "half-degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Met Office Hadley Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Exeter",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Brazilian Institute for Space Research (INPE)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Centre for Ecology and Hydrology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "TRENDY",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Global Carbon Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "FireMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "UKESM",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "HadGEM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UKESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Earth system model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Manhattan metric",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "normalised mean error (NME)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "vegetation cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ESA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "HYDE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "stand-alone LSM",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "fire",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Wildfire",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Amazonia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Cerrado",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "S2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "S3",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SF2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SF3",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "CRU-NCEP7",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HYDE 3.2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "transient",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "GFED4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MCD45",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFED4s",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ESA CCI",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "annual",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "10-day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "VCF",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "GFED 4.1s",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "tree cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "grass cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "shrub cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "woody cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "bare soil",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Amazon",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Congo",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "drought",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Temperate",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Boreal",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Tropical",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Brazil",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "interactive fire",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "JULES",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "UK Earth System Modelling Project",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "ENVISAT-MERIS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ENVISAT",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "MERIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1988126207",
+        "https://openalex.org/W2732607881",
+        "https://openalex.org/W2049878511",
+        "https://openalex.org/W2135234976",
+        "https://openalex.org/W2792647196",
+        "https://openalex.org/W2037321678",
+        "https://openalex.org/W2581750035",
+        "https://openalex.org/W2004527217",
+        "https://openalex.org/W2147654971",
+        "https://openalex.org/W2107060263",
+        "https://openalex.org/W2023304967",
+        "https://openalex.org/W2166496551",
+        "https://openalex.org/W2110659496",
+        "https://openalex.org/W2110660663",
+        "https://openalex.org/W2796933745",
+        "https://openalex.org/W1908974379",
+        "https://openalex.org/W2111066874",
+        "https://openalex.org/W2170219310",
+        "https://openalex.org/W2201246548",
+        "https://openalex.org/W2097896815",
+        "https://openalex.org/W1991355610",
+        "https://openalex.org/W2179151429",
+        "https://openalex.org/W2099478714",
+        "https://openalex.org/W2160252043",
+        "https://openalex.org/W2345509419",
+        "https://openalex.org/W2170908720",
+        "https://openalex.org/W2154710695",
+        "https://openalex.org/W2301696792",
+        "https://openalex.org/W2285969471",
+        "https://openalex.org/W2782116042",
+        "https://openalex.org/W2754618888",
+        "https://openalex.org/W2170086526",
+        "https://openalex.org/W2108940449",
+        "https://openalex.org/W4252281785",
+        "https://openalex.org/W2110534701",
+        "https://openalex.org/W2010689314",
+        "https://openalex.org/W2101796779",
+        "https://openalex.org/W1895518694",
+        "https://openalex.org/W2568476190",
+        "https://openalex.org/W1970595520",
+        "https://openalex.org/W2419889963",
+        "https://openalex.org/W2148018662",
+        "https://openalex.org/W2916961622",
+        "https://openalex.org/W2161143965",
+        "https://openalex.org/W2159908182",
+        "https://openalex.org/W2284128175",
+        "https://openalex.org/W2002348990",
+        "https://openalex.org/W2566857028",
+        "https://openalex.org/W2002434717",
+        "https://openalex.org/W2170177520",
+        "https://openalex.org/W1657442206",
+        "https://openalex.org/W2890569313",
+        "https://openalex.org/W2596816404",
+        "https://openalex.org/W2606687499",
+        "https://openalex.org/W2131491776",
+        "https://openalex.org/W2481892733",
+        "https://openalex.org/W4248816068",
+        "https://openalex.org/W1984118990",
+        "https://openalex.org/W2035962295",
+        "https://openalex.org/W2003678652",
+        "https://openalex.org/W2043882198",
+        "https://openalex.org/W2573821892",
+        "https://openalex.org/W2662533946",
+        "https://openalex.org/W2484114084"
+    ]
+}

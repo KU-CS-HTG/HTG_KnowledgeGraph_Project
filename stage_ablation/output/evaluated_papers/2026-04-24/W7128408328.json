@@ -1,0 +1,815 @@
+{
+    "uri": "https://openalex.org/W7128408328",
+    "title": "Toward generative machine learning for boosting ensembles of climate simulations",
+    "venue": {
+        "name": "ArXiv.org",
+        "id": "https://openalex.org/S4393918464",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5021709985",
+            "display_name": "Parsa Gooya",
+            "orcid": "https://orcid.org/0000-0003-2539-263X"
+        },
+        {
+            "id": "https://openalex.org/A5025502249",
+            "display_name": "Reinel Sospedra\u2010Alfonso",
+            "orcid": "https://orcid.org/0000-0002-4472-5607"
+        },
+        {
+            "id": "https://openalex.org/A5062121963",
+            "display_name": "Johannes Exenberger",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "Accurately quantifying uncertainty in predictions and projections arising from irreducible internal climate variability is critical for informed decision making. Such uncertainty is typically assessed using ensembles produced with physics based climate models. However, computational constraints impose a trade off between generating the large ensembles required for robust uncertainty estimation and increasing model resolution to better capture fine scale dynamics. Generative machine learning offers a promising pathway to alleviate these constraints. We develop a conditional Variational Autoencoder (cVAE) trained on a limited sample of climate simulations to generate arbitrary large ensembles. The approach is applied to output from monthly CMIP6 historical and future scenario experiments produced with the Canadian Centre for Climate Modelling and Analysis' (CCCma's) Earth system model CanESM5. We show that the cVAE model learns the underlying distribution of the data and generates physically consistent samples that reproduce realistic low and high moment statistics, including extremes. Compared with more sophisticated generative architectures, cVAEs offer a mathematically transparent, interpretable, and computationally efficient framework. Their simplicity lead to some limitations, such as overly smooth outputs, spectral bias, and underdispersion, that we discuss along with strategies to mitigate them. Specifically, we show that incorporating output noise improves the representation of climate relevant multiscale variability, and we propose a simple method to achieve this. Finally, we show that cVAE-enhanced ensembles capture realistic global teleconnection patterns, even under climate conditions absent from the training data.",
+    "field": "Generative machine learning for climate science",
+    "problem": "Computational constraints of physics-based climate models impose a trade-off between generating large ensembles required for robust uncertainty estimation and increasing model resolution to better capture fine-scale dynamics.",
+    "method": "We propose a framework using a conditional variational autoencoder to generate large ensembles of climate data from a limited training sample, learning the underlying data distribution to create physically consistent samples with extremes beyond the original data.",
+    "task": "The task is to use a conditional variational autoencoder, a generative machine learning model, to generate large ensembles of climate simulation data from a very limited training sample, thereby boosting the number of available simulations for robust uncertainty and extreme event analysis.",
+    "model": [
+        "CanESM5"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/autoencoder",
+            "display_name": "Autoencoder",
+            "score": 0.5867000222206116
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4968999922275543
+        },
+        {
+            "id": "https://openalex.org/keywords/uncertainty-quantification",
+            "display_name": "Uncertainty quantification",
+            "score": 0.49070000648498535
+        },
+        {
+            "id": "https://openalex.org/keywords/generative-grammar",
+            "display_name": "Generative grammar",
+            "score": 0.43389999866485596
+        },
+        {
+            "id": "https://openalex.org/keywords/generative-model",
+            "display_name": "Generative model",
+            "score": 0.4259999990463257
+        },
+        {
+            "id": "https://openalex.org/keywords/representation",
+            "display_name": "Representation (politics)",
+            "score": 0.4009000062942505
+        },
+        {
+            "id": "https://openalex.org/keywords/probability-distribution",
+            "display_name": "Probability distribution",
+            "score": 0.3546000123023987
+        },
+        {
+            "id": "https://openalex.org/keywords/scale",
+            "display_name": "Scale (ratio)",
+            "score": 0.34869998693466187
+        },
+        {
+            "id": "https://openalex.org/keywords/boosting",
+            "display_name": "Boosting (machine learning)",
+            "score": 0.3483999967575073
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.6363999843597412
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.6281999945640564
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.6173999905586243
+        },
+        {
+            "id": "https://openalex.org/C101738243",
+            "wikidata": "https://www.wikidata.org/wiki/Q786435",
+            "display_name": "Autoencoder",
+            "level": 3,
+            "score": 0.5867000222206116
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4968999922275543
+        },
+        {
+            "id": "https://openalex.org/C32230216",
+            "wikidata": "https://www.wikidata.org/wiki/Q7882499",
+            "display_name": "Uncertainty quantification",
+            "level": 2,
+            "score": 0.49070000648498535
+        },
+        {
+            "id": "https://openalex.org/C39890363",
+            "wikidata": "https://www.wikidata.org/wiki/Q36108",
+            "display_name": "Generative grammar",
+            "level": 2,
+            "score": 0.43389999866485596
+        },
+        {
+            "id": "https://openalex.org/C167966045",
+            "wikidata": "https://www.wikidata.org/wiki/Q5532625",
+            "display_name": "Generative model",
+            "level": 3,
+            "score": 0.4259999990463257
+        },
+        {
+            "id": "https://openalex.org/C2776359362",
+            "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+            "display_name": "Representation (politics)",
+            "level": 3,
+            "score": 0.4009000062942505
+        },
+        {
+            "id": "https://openalex.org/C149441793",
+            "wikidata": "https://www.wikidata.org/wiki/Q200726",
+            "display_name": "Probability distribution",
+            "level": 2,
+            "score": 0.3546000123023987
+        },
+        {
+            "id": "https://openalex.org/C2778755073",
+            "wikidata": "https://www.wikidata.org/wiki/Q10858537",
+            "display_name": "Scale (ratio)",
+            "level": 2,
+            "score": 0.34869998693466187
+        },
+        {
+            "id": "https://openalex.org/C46686674",
+            "wikidata": "https://www.wikidata.org/wiki/Q466303",
+            "display_name": "Boosting (machine learning)",
+            "level": 2,
+            "score": 0.3483999967575073
+        },
+        {
+            "id": "https://openalex.org/C99498987",
+            "wikidata": "https://www.wikidata.org/wiki/Q2210247",
+            "display_name": "Noise (video)",
+            "level": 3,
+            "score": 0.3391999900341034
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.32829999923706055
+        },
+        {
+            "id": "https://openalex.org/C2986440788",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climate science",
+            "level": 3,
+            "score": 0.3253999948501587
+        },
+        {
+            "id": "https://openalex.org/C2776372474",
+            "wikidata": "https://www.wikidata.org/wiki/Q508291",
+            "display_name": "Simplicity",
+            "level": 2,
+            "score": 0.32350000739097595
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.3230000138282776
+        },
+        {
+            "id": "https://openalex.org/C63479239",
+            "wikidata": "https://www.wikidata.org/wiki/Q7353546",
+            "display_name": "Robustness (evolution)",
+            "level": 3,
+            "score": 0.30379998683929443
+        },
+        {
+            "id": "https://openalex.org/C43555835",
+            "wikidata": "https://www.wikidata.org/wiki/Q2300258",
+            "display_name": "Conditional probability distribution",
+            "level": 2,
+            "score": 0.2915000021457672
+        },
+        {
+            "id": "https://openalex.org/C165216359",
+            "wikidata": "https://www.wikidata.org/wiki/Q670653",
+            "display_name": "Marginal distribution",
+            "level": 3,
+            "score": 0.2867000102996826
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.28450000286102295
+        },
+        {
+            "id": "https://openalex.org/C2779343474",
+            "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+            "display_name": "Context (archaeology)",
+            "level": 2,
+            "score": 0.2822999954223633
+        },
+        {
+            "id": "https://openalex.org/C2780586882",
+            "wikidata": "https://www.wikidata.org/wiki/Q7520643",
+            "display_name": "Simple (philosophy)",
+            "level": 2,
+            "score": 0.2816999852657318
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.26829999685287476
+        },
+        {
+            "id": "https://openalex.org/C59404180",
+            "wikidata": "https://www.wikidata.org/wiki/Q17013334",
+            "display_name": "Feature learning",
+            "level": 2,
+            "score": 0.26570001244544983
+        },
+        {
+            "id": "https://openalex.org/C18653775",
+            "wikidata": "https://www.wikidata.org/wiki/Q1333358",
+            "display_name": "Joint probability distribution",
+            "level": 2,
+            "score": 0.26269999146461487
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.259799987077713
+        },
+        {
+            "id": "https://openalex.org/C2780440489",
+            "wikidata": "https://www.wikidata.org/wiki/Q5227278",
+            "display_name": "Data-driven",
+            "level": 2,
+            "score": 0.2590999901294708
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.25529998540878296
+        },
+        {
+            "id": "https://openalex.org/C51632099",
+            "wikidata": "https://www.wikidata.org/wiki/Q3985153",
+            "display_name": "Training set",
+            "level": 2,
+            "score": 0.25290000438690186
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a framework using a conditional variational autoencoder to generate large ensembles of climate simulations from a single training sample, which learns the underlying data distribution and produces realistic extremes and variability beyond the original data.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "near-surface air temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "We employ monthly values of near-surface air temperature (TAS) spanning 75 years (1951-2025), produced with the Canadian Earth System Model version 5 (CanESM5) (Swart et al., 2019a) under CMIP6's historical and SSP2-4.5 scenario forcing (Eyring et al., 2016). The raw CanESM5 ensemble has 25 realizations of approximately 2.8\u00b0 spatial resolution (64\u00d7128 in lat\u00d7lon), generated from different initial conditions that are produced from 50-year intervals of a piControl simulation. This would capture a range of realizable internal variability of the model's climate. From the 25-member ensemble, we select a single ensemble member for training, grossly under-sampling CanESM5's climate and its extreme events. The goal is to boost the ensemble size of our extremely lim-",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "SAMPLED_AT_FREQUENCY",
+            "target_entity_instance": "monthly",
+            "target_entity_type": "Frequency",
+            "paragraph": "We employ monthly values of near-surface air temperature (TAS) spanning 75 years (1951-2025), produced with the Canadian Earth System Model version 5 (CanESM5) (Swart et al., 2019a) under CMIP6's historical and SSP2-4.5 scenario forcing (Eyring et al., 2016). The raw CanESM5 ensemble has 25 realizations of approximately 2.8\u00b0 spatial resolution (64\u00d7128 in lat\u00d7lon), generated from different initial conditions that are produced from 50-year intervals of a piControl simulation. This would capture a range of realizable internal variability of the model's climate. From the 25-member ensemble, we select a single ensemble member for training, grossly under-sampling CanESM5's climate and its extreme events. The goal is to boost the ensemble size of our extremely lim-",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "We employ monthly values of near-surface air temperature (TAS) spanning 75 years (1951-2025), produced with the Canadian Earth System Model version 5 (CanESM5) (Swart et al., 2019a) under CMIP6's historical and SSP2-4.5 scenario forcing (Eyring et al., 2016). The raw CanESM5 ensemble has 25 realizations of approximately 2.8\u00b0 spatial resolution (64\u00d7128 in lat\u00d7lon), generated from different initial conditions that are produced from 50-year intervals of a piControl simulation. This would capture a range of realizable internal variability of the model's climate. From the 25-member ensemble, we select a single ensemble member for training, grossly under-sampling CanESM5's climate and its extreme events. The goal is to boost the ensemble size of our extremely lim-",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "We employ monthly values of near-surface air temperature (TAS) spanning 75 years (1951-2025), produced with the Canadian Earth System Model version 5 (CanESM5) (Swart et al., 2019a) under CMIP6's historical and SSP2-4.5 scenario forcing (Eyring et al., 2016). The raw CanESM5 ensemble has 25 realizations of approximately 2.8\u00b0 spatial resolution (64\u00d7128 in lat\u00d7lon), generated from different initial conditions that are produced from 50-year intervals of a piControl simulation. This would capture a range of realizable internal variability of the model's climate. From the 25-member ensemble, we select a single ensemble member for training, grossly under-sampling CanESM5's climate and its extreme events. The goal is to boost the ensemble size of our extremely lim-",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "piControl",
+            "target_entity_type": "Experiment",
+            "paragraph": "We employ monthly values of near-surface air temperature (TAS) spanning 75 years (1951-2025), produced with the Canadian Earth System Model version 5 (CanESM5) (Swart et al., 2019a) under CMIP6's historical and SSP2-4.5 scenario forcing (Eyring et al., 2016). The raw CanESM5 ensemble has 25 realizations of approximately 2.8\u00b0 spatial resolution (64\u00d7128 in lat\u00d7lon), generated from different initial conditions that are produced from 50-year intervals of a piControl simulation. This would capture a range of realizable internal variability of the model's climate. From the 25-member ensemble, we select a single ensemble member for training, grossly under-sampling CanESM5's climate and its extreme events. The goal is to boost the ensemble size of our extremely lim-",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "BELONGS_TO_MIP_ERA",
+            "target_entity_instance": "CMIP6",
+            "target_entity_type": "MIPEra",
+            "paragraph": "We employ monthly values of near-surface air temperature (TAS) spanning 75 years (1951-2025), produced with the Canadian Earth System Model version 5 (CanESM5) (Swart et al., 2019a) under CMIP6's historical and SSP2-4.5 scenario forcing (Eyring et al., 2016). The raw CanESM5 ensemble has 25 realizations of approximately 2.8\u00b0 spatial resolution (64\u00d7128 in lat\u00d7lon), generated from different initial conditions that are produced from 50-year intervals of a piControl simulation. This would capture a range of realizable internal variability of the model's climate. From the 25-member ensemble, we select a single ensemble member for training, grossly under-sampling CanESM5's climate and its extreme events. The goal is to boost the ensemble size of our extremely lim-",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "2.8\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "The raw CanESM5 ensemble has 25 realizations of approximately 2.8\u00b0 spatial resolution (64\u00d7128 in lat\u00d7lon), generated from different initial conditions that are produced from 50-year intervals of a piControl simulation. This would capture a range of realizable internal variability of the model's climate.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "64x128",
+            "target_entity_type": "Resolution",
+            "paragraph": "The raw CanESM5 ensemble has 25 realizations of approximately 2.8\u00b0 spatial resolution (64\u00d7128 in lat\u00d7lon), generated from different initial conditions that are produced from 50-year intervals of a piControl simulation. This would capture a range of realizable internal variability of the model's climate.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "El Ni\u00f1o",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "tropical Pacific",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "For example, strong El Ni\u00f1o episodes, which are characterized by high temperatures in the tropical Pacific, tend to warm western Canada and Alaska, Southeast Asia, Southeast Africa, parts of Australia, and tropical regions of South America, and cool the southern United States and eastern portions of the extratopics in South America. If such patterns are well represented in the CanESM5 raw ensemble, then a physically meaningful generated ensemble trained on CanESM5 data must also represent those patterns.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "El Ni\u00f1o",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Canada",
+            "target_entity_type": "Country",
+            "paragraph": "For example, strong El Ni\u00f1o episodes, which are characterized by high temperatures in the tropical Pacific, tend to warm western Canada and Alaska, Southeast Asia, Southeast Africa, parts of Australia, and tropical regions of South America, and cool the southern United States and eastern portions of the extratopics in South America. If such patterns are well represented in the CanESM5 raw ensemble, then a physically meaningful generated ensemble trained on CanESM5 data must also represent those patterns.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "El Ni\u00f1o",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Alaska",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "For example, strong El Ni\u00f1o episodes, which are characterized by high temperatures in the tropical Pacific, tend to warm western Canada and Alaska, Southeast Asia, Southeast Africa, parts of Australia, and tropical regions of South America, and cool the southern United States and eastern portions of the extratopics in South America. If such patterns are well represented in the CanESM5 raw ensemble, then a physically meaningful generated ensemble trained on CanESM5 data must also represent those patterns.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "El Ni\u00f1o",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Southeast Asia",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "For example, strong El Ni\u00f1o episodes, which are characterized by high temperatures in the tropical Pacific, tend to warm western Canada and Alaska, Southeast Asia, Southeast Africa, parts of Australia, and tropical regions of South America, and cool the southern United States and eastern portions of the extratopics in South America. If such patterns are well represented in the CanESM5 raw ensemble, then a physically meaningful generated ensemble trained on CanESM5 data must also represent those patterns.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "El Ni\u00f1o",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Southeast Africa",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "For example, strong El Ni\u00f1o episodes, which are characterized by high temperatures in the tropical Pacific, tend to warm western Canada and Alaska, Southeast Asia, Southeast Africa, parts of Australia, and tropical regions of South America, and cool the southern United States and eastern portions of the extratopics in South America. If such patterns are well represented in the CanESM5 raw ensemble, then a physically meaningful generated ensemble trained on CanESM5 data must also represent those patterns.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "El Ni\u00f1o",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Australia",
+            "target_entity_type": "Continent",
+            "paragraph": "For example, strong El Ni\u00f1o episodes, which are characterized by high temperatures in the tropical Pacific, tend to warm western Canada and Alaska, Southeast Asia, Southeast Africa, parts of Australia, and tropical regions of South America, and cool the southern United States and eastern portions of the extratopics in South America. If such patterns are well represented in the CanESM5 raw ensemble, then a physically meaningful generated ensemble trained on CanESM5 data must also represent those patterns.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "El Ni\u00f1o",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "South America",
+            "target_entity_type": "Continent",
+            "paragraph": "For example, strong El Ni\u00f1o episodes, which are characterized by high temperatures in the tropical Pacific, tend to warm western Canada and Alaska, Southeast Asia, Southeast Africa, parts of Australia, and tropical regions of South America, and cool the southern United States and eastern portions of the extratopics in South America. If such patterns are well represented in the CanESM5 raw ensemble, then a physically meaningful generated ensemble trained on CanESM5 data must also represent those patterns.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "El Ni\u00f1o",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "southern United States",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "For example, strong El Ni\u00f1o episodes, which are characterized by high temperatures in the tropical Pacific, tend to warm western Canada and Alaska, Southeast Asia, Southeast Africa, parts of Australia, and tropical regions of South America, and cool the southern United States and eastern portions of the extratopics in South America. If such patterns are well represented in the CanESM5 raw ensemble, then a physically meaningful generated ensemble trained on CanESM5 data must also represent those patterns.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ENSO",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Vancouver",
+            "target_entity_type": "City",
+            "paragraph": "As we will see in the next section, Vancouver is within the ENSO teleconnection region known for El Ni\u00f1o-induced warming.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ENSO",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "tropical Pacific",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "For VAE, the model underestimates the variability of the population, as indicated by the relatively shallow slope of the QQ curve (Fig. 1a). This muted variability is most pronounced on land and in the extratropical oceans (Figs. 1d,e), but it is also underestimated in the tropical Pacific, implying a relatively weak representation of ENSO in the VAE ensemble.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 1: a) QQ plots of TAS anomalies relative to the seasonal climatology pooling all grid cells and times. b, c) Spectral power for DJF and JJA mean TAS anomalies averaged over years and realizations. d, e, f) standard deviation of TAS fields per grid cell across all times and realizations for different datasets. The numbers in the title of the panels are RMSE (pattern correlation) relative to the population on panel (d). All panels cover 1980-2020 period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "pattern correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 1: a) QQ plots of TAS anomalies relative to the seasonal climatology pooling all grid cells and times. b, c) Spectral power for DJF and JJA mean TAS anomalies averaged over years and realizations. d, e, f) standard deviation of TAS fields per grid cell across all times and realizations for different datasets. The numbers in the title of the panels are RMSE (pattern correlation) relative to the population on panel (d). All panels cover 1980-2020 period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "skewness",
+            "target_entity_type": "Metric",
+            "paragraph": "To further assess the ability of the boosted ensemble to represent the TAS distribution in the population, particularly potential asymmetries and non-Gaussain behavior, Figs. 3a-d show measures of the third and fourth moments of the TAS distribution in the form of skewness and excess kurtosis.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "excess kurtosis",
+            "target_entity_type": "Metric",
+            "paragraph": "To further assess the ability of the boosted ensemble to represent the TAS distribution in the population, particularly potential asymmetries and non-Gaussain behavior, Figs. 3a-d show measures of the third and fourth moments of the TAS distribution in the form of skewness and excess kurtosis.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Canadian Centre for Climate Modeling and Analysis",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Environment and Climate Change Canada",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Vienna University of Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute of Software Technology and Artificial Intelligence, Graz University of Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "spectral bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "loss of variability",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CanESM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CCCma",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "underdispersion",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "El Ni\u00f1o-Southern Oscillation",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "ENSO",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "seasonal-to-decadal (S2D) predictions",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "long-term projections",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "near-surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TAS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Kullback-Leibler divergence",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "log-likelihood",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean Square Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP2-4.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "2.8\u00b0 spatial resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "64x128",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "piControl",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "25-member ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "climate projections",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "24-member ensembles",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "reconstruction errors",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "quantile-quantile (QQ) plots",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "radially averaged power density",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RAPSD",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "probability density functions",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "PDFs",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Vancouver",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "London",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Hong Kong",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Los Angeles",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "pattern correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "skewness",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "excess kurtosis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Labrador Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ni\u00f1o3.4 index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ni\u00f1o 3.4 region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "El Ni\u00f1o",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "tropical Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Alaska",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southeast Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southeast Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "southern United States",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "La Ni\u00f1a",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "spectral loss",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CMIP",
+            "entity_type": "Activity"
+        }
+    ],
+    "referenced_works": []
+}

@@ -1,0 +1,1121 @@
+{
+    "uri": "https://openalex.org/W7140400755",
+    "title": "Deep learning representation of the aerosol size distribution",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5009740524",
+            "display_name": "Donifan Barahona",
+            "orcid": "https://orcid.org/0000-0001-5786-1344"
+        },
+        {
+            "id": "https://openalex.org/A5130645073",
+            "display_name": "Katherine H. Breen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5018250434",
+            "display_name": "Karoline Block",
+            "orcid": "https://orcid.org/0000-0002-4458-2327"
+        },
+        {
+            "id": "https://openalex.org/A5062939908",
+            "display_name": "Anton Darmenov",
+            "orcid": "https://orcid.org/0000-0003-4993-8078"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-19-2437-2026",
+    "abstract": "Abstract. Aerosols influence Earth's radiative balance via the scattering and absorbing of solar radiation, affect cloud formation, and play important roles on precipitation, ocean seeding and human health. Accurate modeling of these effects requires knowledge of the chemical composition and size distribution of aerosol particles present in the atmosphere. Computationally intensive applications like remote sensing and weather forecasting commonly use simplified representations of aerosol microphysics, prescribing the aerosol size distribution (ASD), introducing uncertainty in climate predictions and aerosol retrievals. In this work, we develop a neural network model, MAMnet, to predict the ASD and mixing state for seven lognormal modes based on the bulk aerosol mass and the meteorological state. MAMnet is designed to operate with outputs from single-moment, mass-based aerosol schemes, making it compatible with existing models. We demonstrate that MAMnet can accurately reproduce the output of a two-moment modal aerosol scheme, and also agrees well with field measurements when driven by reanalysis data. Our model paves the way to improve the representation of aerosols in atmospheric models while maintaining the versatility and efficiency required in large scale applications.",
+    "field": "Atmospheric aerosol modeling",
+    "problem": "Atmospheric models face a trade-off: computationally efficient bulk schemes inaccurately prescribe aerosol size distributions (ASDs), introducing uncertainty, while more physically consistent but computationally expensive methods are impractical for large-scale applications like weather forecasting.",
+    "method": "We develop a neural network model, MAMnet, to predict the aerosol size distribution and mixing state for seven lognormal modes based on the bulk aerosol mass and meteorological state from computationally efficient, mass-based aerosol schemes.",
+    "task": "The task is to develop a neural network model that predicts the aerosol size distribution and mixing state from bulk aerosol mass and meteorological data, improving aerosol representation in large-scale atmospheric models while maintaining computational efficiency.",
+    "model": [
+        "MAMnet",
+        "MERRA-2",
+        "GOCART",
+        "MAM7",
+        "GEOS",
+        "GiOcean",
+        "CAMS",
+        "GEOS-S2S"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/aerosol",
+            "display_name": "Aerosol",
+            "score": 0.9266999959945679
+        },
+        {
+            "id": "https://openalex.org/keywords/radiative-transfer",
+            "display_name": "Radiative transfer",
+            "score": 0.54830002784729
+        },
+        {
+            "id": "https://openalex.org/keywords/representation",
+            "display_name": "Representation (politics)",
+            "score": 0.39809998869895935
+        },
+        {
+            "id": "https://openalex.org/keywords/deep-learning",
+            "display_name": "Deep learning",
+            "score": 0.3747999966144562
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.31929999589920044
+        },
+        {
+            "id": "https://openalex.org/keywords/log-normal-distribution",
+            "display_name": "Log-normal distribution",
+            "score": 0.3125
+        },
+        {
+            "id": "https://openalex.org/keywords/scattering",
+            "display_name": "Scattering",
+            "score": 0.31209999322891235
+        },
+        {
+            "id": "https://openalex.org/keywords/artificial-neural-network",
+            "display_name": "Artificial neural network",
+            "score": 0.30889999866485596
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2779345167",
+            "wikidata": "https://www.wikidata.org/wiki/Q104541",
+            "display_name": "Aerosol",
+            "level": 2,
+            "score": 0.9266999959945679
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5748999714851379
+        },
+        {
+            "id": "https://openalex.org/C74902906",
+            "wikidata": "https://www.wikidata.org/wiki/Q1190858",
+            "display_name": "Radiative transfer",
+            "level": 2,
+            "score": 0.54830002784729
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.511900007724762
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.4731000065803528
+        },
+        {
+            "id": "https://openalex.org/C2776359362",
+            "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+            "display_name": "Representation (politics)",
+            "level": 3,
+            "score": 0.39809998869895935
+        },
+        {
+            "id": "https://openalex.org/C108583219",
+            "wikidata": "https://www.wikidata.org/wiki/Q197536",
+            "display_name": "Deep learning",
+            "level": 2,
+            "score": 0.3747999966144562
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.3549000024795532
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.3328000009059906
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.31929999589920044
+        },
+        {
+            "id": "https://openalex.org/C151620405",
+            "wikidata": "https://www.wikidata.org/wiki/Q826116",
+            "display_name": "Log-normal distribution",
+            "level": 2,
+            "score": 0.3125
+        },
+        {
+            "id": "https://openalex.org/C191486275",
+            "wikidata": "https://www.wikidata.org/wiki/Q210028",
+            "display_name": "Scattering",
+            "level": 2,
+            "score": 0.31209999322891235
+        },
+        {
+            "id": "https://openalex.org/C50644808",
+            "wikidata": "https://www.wikidata.org/wiki/Q192776",
+            "display_name": "Artificial neural network",
+            "level": 2,
+            "score": 0.30889999866485596
+        },
+        {
+            "id": "https://openalex.org/C7337166",
+            "wikidata": "https://www.wikidata.org/wiki/Q1292280",
+            "display_name": "Earth's energy budget",
+            "level": 3,
+            "score": 0.2971000075340271
+        },
+        {
+            "id": "https://openalex.org/C138777275",
+            "wikidata": "https://www.wikidata.org/wiki/Q6884054",
+            "display_name": "Mixing (physics)",
+            "level": 2,
+            "score": 0.2770000100135803
+        },
+        {
+            "id": "https://openalex.org/C110121322",
+            "wikidata": "https://www.wikidata.org/wiki/Q865811",
+            "display_name": "Distribution (mathematics)",
+            "level": 2,
+            "score": 0.2694999873638153
+        },
+        {
+            "id": "https://openalex.org/C9652623",
+            "wikidata": "https://www.wikidata.org/wiki/Q190109",
+            "display_name": "Field (mathematics)",
+            "level": 2,
+            "score": 0.2660999894142151
+        },
+        {
+            "id": "https://openalex.org/C79974875",
+            "wikidata": "https://www.wikidata.org/wiki/Q483639",
+            "display_name": "Cloud computing",
+            "level": 2,
+            "score": 0.26440000534057617
+        },
+        {
+            "id": "https://openalex.org/C21001229",
+            "wikidata": "https://www.wikidata.org/wiki/Q182868",
+            "display_name": "Weather forecasting",
+            "level": 2,
+            "score": 0.26030001044273376
+        },
+        {
+            "id": "https://openalex.org/C62279395",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric models",
+            "level": 3,
+            "score": 0.2547999918460846
+        },
+        {
+            "id": "https://openalex.org/C118365302",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric model",
+            "level": 2,
+            "score": 0.25279998779296875
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper introduces MAMnet, a neural network model that predicts the aerosol size distribution and mixing state from bulk aerosol mass, thereby improving aerosol representation in computationally efficient atmospheric models without the cost of more complex schemes.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "GEOS",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "GOCART",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The NASA Goddard Earth Observing System (GEOS) implements two aerosol schemes to interactively calculate the evolution of aerosol and gaseous tracers. Both include parameterized representation of aerosol formation, growth, aging and wet removal, and differ in their treatment of the ASD and mixing state. GOCART (Chin et al., 2000; Colarco et al., 2010a) is used operationally on weather forecast and data assimilation applications.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GEOS",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "MAM7",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The NASA Goddard Earth Observing System (GEOS) also implements the MAM7 model (Liu et al., 2012), as an alternative aerosol scheme for research applications.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAMnet",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "7 hidden layers",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Figure 1. Neural network development workflow. Blue arrows represent the training steps, while red arrows correspond to the inference process. During training, the \"mapping\" step aggregates aerosol species across modes from the MAM7 output to construct the input XMAM. The MAM7 output is then used to calculate the MAMnet loss (calculated as the minimum mean square difference between the model prediction and the MAM7 fields). During inference, input from MERRA-2 is used to predict the aerosol size distribution and mixing state. MAMnet consists of a single input layer (black), seven hidden layers (orange), and one output layer (green). T and AIRD represent the temperature and air density, respectively. Ns is the number of samples.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAMnet",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "256 nodes per hidden layer",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Figure 1. Neural network development workflow. Blue arrows represent the training steps, while red arrows correspond to the inference process. During training, the \"mapping\" step aggregates aerosol species across modes from the MAM7 output to construct the input XMAM. The MAM7 output is then used to calculate the MAMnet loss (calculated as the minimum mean square difference between the model prediction and the MAM7 fields). During inference, input from MERRA-2 is used to predict the aerosol size distribution and mixing state. MAMnet consists of a single input layer (black), seven hidden layers (orange), and one output layer (green). T and AIRD represent the temperature and air density, respectively. Ns is the number of samples. The diagram shows [NS, 7] and '7 hidden layers/256 nodes'.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAMnet",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "aerosol size distribution",
+            "target_entity_type": "Variable",
+            "paragraph": "In this work, we develop a neural network model, MAMnet, to predict the ASD and mixing state for seven lognormal modes based on the bulk aerosol mass and the meteorological state.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GEOS",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "72 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The AGCM configuration of GEOS, running MAM7 (referred to as \"GEOS+MAM7\"), was used to develop a robust dataset to train the neural network. We ran a 5-year simulation (2001-2006) at 1\u00b0 horizontal resolution and 72 vertical levels (from the surface to 0.01 hPa), with diurnal, instantaneous outputs at UTC 09:00:00 and 21:00:00.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GEOS",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "model top at 0.01 hPa",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The AGCM configuration of GEOS, running MAM7 (referred to as \"GEOS+MAM7\"), was used to develop a robust dataset to train the neural network. We ran a 5-year simulation (2001-2006) at 1\u00b0 horizontal resolution and 72 vertical levels (from the surface to 0.01 hPa), with diurnal, instantaneous outputs at UTC 09:00:00 and 21:00:00.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MERRA-2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "GOCART",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In MERRA-2 aerosol fields are described using GOCART. Aerosols are interactive and radiatively active, hence MERRA-2 has a representation of the aerosol direct effect.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAM7",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "aerosol mass concentration",
+            "target_entity_type": "Variable",
+            "paragraph": "MAM7 is a modal aerosol scheme that predicts the mass and number concentration of Aitken (AIT), accumulation (ACC), primary carbon (PCM), fine dust (FDU) and sea salt (FSS), and coarse dust (CDU) and sea salt (CSS) aerosol modes.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAM7",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "aerosol number concentration",
+            "target_entity_type": "Variable",
+            "paragraph": "MAM7 is a modal aerosol scheme that predicts the mass and number concentration of Aitken (AIT), accumulation (ACC), primary carbon (PCM), fine dust (FDU) and sea salt (FSS), and coarse dust (CDU) and sea salt (CSS) aerosol modes.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAMnet",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Multilayer Perceptron architecture",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Various levels of complexity were tested for the MAMnet architecture, including Multilayer Perceptrons (MLPs) and Convolutional Neural Networks (CNNs) (Bengio et al., 2017). ... Testing of both architectures showed that the MLP configuration exhibited superior performance and was easier to optimize. The final architecture is shown in Fig. 1.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAMnet",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Fountoukis and Nenes (2005) method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "To calculate NCCN from MAMnet we folllowed the method of Fountoukis and Nenes (2005) to estimate NCCN from the derived 7-modal size distribution and modal composition and the MERRA-2 fields as inputs.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CALIOP",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "NCCN",
+            "target_entity_type": "Variable",
+            "paragraph": "For example, Choudhury and Tesche (2022) estimated NCCN from spaceborne CALIOP (Cloud-Aerosol Lidar with Orthogonal Polarization) lidar measurements using pre-computed conversion factors.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GiOcean",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "GEOS-S2S",
+            "target_entity_type": "Source",
+            "paragraph": "Similarly, The GiOcean atmosphere-ocean-aerosol reanalysis (Song et al., 2025), derived from the NASA GEOS-S2S system (Molod et al., 2020), incorporates a more advanced model framework.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAMnet",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Pearson's spatial correlation coefficient",
+            "target_entity_type": "Metric",
+            "paragraph": "We assessed whether MAMnet reproduces the spatial distribution of aerosol variables in GEOS+MAM7 using the the mean Pearson's spatial correlation coefficient (R).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAMnet",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean log-bias",
+            "target_entity_type": "Metric",
+            "paragraph": "We also calculated the mean log-bias, i.e., MLB = (sum(log10(predicted) - log10(target)))/Nsamples",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "MAMnet",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Adam optimization algorithm",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The MAMnet model was trained using the Keras library with Tensorflow backend (Chollet, 2015). Optimization was carried out with the Adam algorithm (Kingma and Ba, 2014) using the minimum mean square error (MSE) as the loss function, with no additional constraints.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "MAMnet",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "minimum mean square error",
+            "target_entity_type": "Metric",
+            "paragraph": "The MAMnet model was trained using the Keras library with Tensorflow backend (Chollet, 2015). Optimization was carried out with the Adam algorithm (Kingma and Ba, 2014) using the minimum mean square error (MSE) as the loss function, with no additional constraints.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GEOS",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "single moment microphysics scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Cloud microphysics in the operational version of GEOS uses a single moment microphysics scheme for short-term weather forecast (Molod et al., 2015), and a two-moment cloud scheme in subseasonal and seasonal prediction (Barahona et al., 2014; Molod et al., 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GEOS",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "two-moment cloud scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Cloud microphysics in the operational version of GEOS uses a single moment microphysics scheme for short-term weather forecast (Molod et al., 2015), and a two-moment cloud scheme in subseasonal and seasonal prediction (Barahona et al., 2014; Molod et al., 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "MAMnet",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NASA, Goddard Space Flight Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Greenbelt",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "MD",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Morgan State University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Baltimore",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Leipzig Institute for Meteorology, Faculty of Physics and Earth Sciences, University of Leipzig",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Leipzig",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "aerosol size distribution (ASD)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "bulk aerosol mass",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "meteorological state",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud condensation nuclei (CCN)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud droplet number concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol-cloud radiative forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mass concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MERRA-2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Goddard Chemistry, Aerosol, Radiation, and Transport model (GOCART)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "bulk aerosol scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "modal aerosol schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Modal Aerosol Module (MAM7)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "binned approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "particle-by-particle basis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Global Earth Observing System (GEOS)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "total mass of aerosol species",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GEOS-AGCM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "sea-ice",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "chemistry",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "single moment microphysics scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two-moment cloud scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "mass-based aerosol model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "modal aerosol scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "hygroscopicity parameter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Sulfates",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ammonium",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Sea salt",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Secondary organic matter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Primary Organic Matter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Black carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Dust",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol number concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1\u00b0 horizontal resolution",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "72 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "model top at 0.01 hPa",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "diurnal",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "instantaneous",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "replay technique",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "six hours",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Accumulation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Aitken",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Coarse dust",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Coarse sea salt",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fine dust",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fine sea salt",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Primary carbon matter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "geometric standard deviation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "7 hidden layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "256 nodes",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "12h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "total mass mixing ratios",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "modal aerosol dry diameter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Multilayer Perceptrons (MLPs)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Convolutional Neural Networks (CNNs)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Western Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "European Supersites for Atmospheric Aerosol Research (EUSAAR) project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "German Ultrafine Aerosol Network (GUAN)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "cumulative number concentrations",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "N30",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "N50",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "N100",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "N250",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud condensation nuclei, NCCN",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "method of Fountoukis and Nenes (2005)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Aspvreten",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Birkenes",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Pallas",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Preila",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SMEAR II",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Vavihill",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "B\u00f6sel",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "K-Puszta",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Melpitz",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Kosetice",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Hohenpeissenberg",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Waldhof",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Cabauw",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Harwell",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Mace Head",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Finokalia",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "JRC-Ispra",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Zeppelin",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Puy de D\u00f4me",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Schauninsland",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Zugzpitze",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Jungfraujoch",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "BEO Moussala",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Monte Cimone",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "CALIOP (Cloud-Aerosol Lidar with Orthogonal Polarization)",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Copernicus Atmosphere Monitoring Service (CAMS) reanalysis",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GEOS-S2S",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GiOcean",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "two-moment cloud microphysics",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Global Aerosol Synthesis and Science Project (GASSP)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "mean Pearson's spatial correlation coefficient (R)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean log-bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Shapley values",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "kernel explainer method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MAMnet-MERRA2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CALIOP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CAMS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "the Americas",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "CCN at 0.2% supersaturation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aircraft",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Keras library",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Tensorflow",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Adam algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "minimum mean square error (MSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Keras Tuner",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "convergence loss (Lconv)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "transfer learning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NN",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "NASA High-End Computing (HEC) Program",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA Center for Climate Simulation (NCCS)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Aeronautics and Space Administration",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W108417620",
+        "https://openalex.org/W1941659294",
+        "https://openalex.org/W1981392581",
+        "https://openalex.org/W1994699491",
+        "https://openalex.org/W1995452063",
+        "https://openalex.org/W1998682809",
+        "https://openalex.org/W2001981020",
+        "https://openalex.org/W2016052027",
+        "https://openalex.org/W2018024014",
+        "https://openalex.org/W2021206942",
+        "https://openalex.org/W2026138156",
+        "https://openalex.org/W2034700612",
+        "https://openalex.org/W2035161396",
+        "https://openalex.org/W2047167353",
+        "https://openalex.org/W2056595406",
+        "https://openalex.org/W2059584473",
+        "https://openalex.org/W2059756703",
+        "https://openalex.org/W2062311963",
+        "https://openalex.org/W2064383835",
+        "https://openalex.org/W2065482137",
+        "https://openalex.org/W2068842930",
+        "https://openalex.org/W2070460795",
+        "https://openalex.org/W2075489374",
+        "https://openalex.org/W2076363573",
+        "https://openalex.org/W2078517784",
+        "https://openalex.org/W2094690852",
+        "https://openalex.org/W2100196359",
+        "https://openalex.org/W2103336769",
+        "https://openalex.org/W2105579968",
+        "https://openalex.org/W2108896901",
+        "https://openalex.org/W2109358553",
+        "https://openalex.org/W2109522893",
+        "https://openalex.org/W2117708687",
+        "https://openalex.org/W2118184331",
+        "https://openalex.org/W2127568247",
+        "https://openalex.org/W2130871986",
+        "https://openalex.org/W2131917406",
+        "https://openalex.org/W2145265567",
+        "https://openalex.org/W2145318668",
+        "https://openalex.org/W2145346731",
+        "https://openalex.org/W2169258810",
+        "https://openalex.org/W2176202464",
+        "https://openalex.org/W2183391550",
+        "https://openalex.org/W2405493398",
+        "https://openalex.org/W2581832031",
+        "https://openalex.org/W2593435690",
+        "https://openalex.org/W2607030186",
+        "https://openalex.org/W2611772571",
+        "https://openalex.org/W2626032231",
+        "https://openalex.org/W2766431679",
+        "https://openalex.org/W2767106145",
+        "https://openalex.org/W2780618101",
+        "https://openalex.org/W2800150285",
+        "https://openalex.org/W2885863643",
+        "https://openalex.org/W2888437874",
+        "https://openalex.org/W2900933286",
+        "https://openalex.org/W2912548815",
+        "https://openalex.org/W2923077877",
+        "https://openalex.org/W2930756996",
+        "https://openalex.org/W2974527409",
+        "https://openalex.org/W2994648189",
+        "https://openalex.org/W2999615587",
+        "https://openalex.org/W3004272685",
+        "https://openalex.org/W3005261989",
+        "https://openalex.org/W3006363463",
+        "https://openalex.org/W3042893675",
+        "https://openalex.org/W3046126751",
+        "https://openalex.org/W3081960887",
+        "https://openalex.org/W3125935968",
+        "https://openalex.org/W3133373857",
+        "https://openalex.org/W3146613606",
+        "https://openalex.org/W4224217024",
+        "https://openalex.org/W4226190193",
+        "https://openalex.org/W4245549879",
+        "https://openalex.org/W4312716706",
+        "https://openalex.org/W4380589383",
+        "https://openalex.org/W4383040977",
+        "https://openalex.org/W4385723314",
+        "https://openalex.org/W4386432953",
+        "https://openalex.org/W4386485167",
+        "https://openalex.org/W4387438410",
+        "https://openalex.org/W4387502517",
+        "https://openalex.org/W4388130760",
+        "https://openalex.org/W4391027927",
+        "https://openalex.org/W4401442116",
+        "https://openalex.org/W4404718508",
+        "https://openalex.org/W4409152912",
+        "https://openalex.org/W4416299907",
+        "https://openalex.org/W6967313746"
+    ]
+}

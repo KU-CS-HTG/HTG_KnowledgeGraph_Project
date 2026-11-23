@@ -1,0 +1,630 @@
+{
+    "uri": "https://openalex.org/W4404569053",
+    "title": "Spatio-temporal jump model for urban thermal comfort monitoring",
+    "venue": {
+        "name": "Stochastic Environmental Research and Risk Assessment",
+        "id": "https://openalex.org/S81024170",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5019405932",
+            "display_name": "Federico P. Cortese",
+            "orcid": "https://orcid.org/0000-0002-6931-3924"
+        },
+        {
+            "id": "https://openalex.org/A5059143303",
+            "display_name": "Antonio Pievatolo",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.1007/s00477-026-03221-2",
+    "abstract": "Thermal comfort is essential for well-being in urban spaces, especially as cities face increasing heat from urbanization and climate change. Existing thermal comfort models usually overlook temporal dynamics alongside spatial dependencies. We address this problem by introducing a spatio-temporal jump model that clusters data with persistence across both spatial and temporal dimensions. This framework enhances interpretability, minimizes abrupt state changes, and easily handles missing data. We validate our approach through extensive simulations, demonstrating its accuracy in recovering the true underlying partition. When applied to hourly environmental data gathered from a set of weather stations located across the city of Singapore, our proposal identifies meaningful thermal comfort regimes, demonstrating its effectiveness in dynamic urban settings and suitability for real-world monitoring. Our model accurately predicts thermal preference feedback, demonstrating the potential of an unsupervised approach to reliably capture users comfort without the need for extensive surveys.",
+    "field": "Urban thermal comfort modeling",
+    "problem": "Existing thermal comfort models often overlook temporal dynamics and spatial dependencies, while supervised approaches require extensive labeled survey data, making them less suitable for real-world monitoring where data is often missing and unlabeled.",
+    "method": "We propose a spatio-temporal jump model that clusters environmental data with persistence across spatial and temporal dimensions to identify meaningful thermal comfort regimes in urban areas, while effectively handling missing and mixed-type data.",
+    "task": "The task is to introduce a spatio-temporal jump model that clusters environmental data from urban weather stations to identify and monitor thermal comfort regimes, addressing the limitations of existing models that overlook spatio-temporal dynamics.",
+    "model": [
+        "UTCI",
+        "PET",
+        "ST-JM",
+        "SOLWEIG"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/jump",
+            "display_name": "Jump",
+            "score": 0.7651854157447815
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.48345431685447693
+        },
+        {
+            "id": "https://openalex.org/keywords/thermal-comfort",
+            "display_name": "Thermal comfort",
+            "score": 0.467239648103714
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.4305158257484436
+        },
+        {
+            "id": "https://openalex.org/keywords/architectural-engineering",
+            "display_name": "Architectural engineering",
+            "score": 0.39169108867645264
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.3600519001483917
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.3146316409111023
+        },
+        {
+            "id": "https://openalex.org/keywords/engineering",
+            "display_name": "Engineering",
+            "score": 0.21196573972702026
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.09409430623054504
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2780695682",
+            "wikidata": "https://www.wikidata.org/wiki/Q4005959",
+            "display_name": "Jump",
+            "level": 2,
+            "score": 0.7651854157447815
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.48345431685447693
+        },
+        {
+            "id": "https://openalex.org/C133913538",
+            "wikidata": "https://www.wikidata.org/wiki/Q774514",
+            "display_name": "Thermal comfort",
+            "level": 2,
+            "score": 0.467239648103714
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.4305158257484436
+        },
+        {
+            "id": "https://openalex.org/C170154142",
+            "wikidata": "https://www.wikidata.org/wiki/Q150737",
+            "display_name": "Architectural engineering",
+            "level": 1,
+            "score": 0.39169108867645264
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.3600519001483917
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3146316409111023
+        },
+        {
+            "id": "https://openalex.org/C127413603",
+            "wikidata": "https://www.wikidata.org/wiki/Q11023",
+            "display_name": "Engineering",
+            "level": 0,
+            "score": 0.21196573972702026
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.09409430623054504
+        },
+        {
+            "id": "https://openalex.org/C62520636",
+            "wikidata": "https://www.wikidata.org/wiki/Q944",
+            "display_name": "Quantum mechanics",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences (P=10, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.90 (0.08)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences (P=10, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.85 (0.08)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences (P=10, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.92 (0.06)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences (P=10, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.88 (0.06)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences (P=10, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.89 (0.04)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences (P=10, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.85 (0.03)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences (P=10, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.92 (0.03)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences (P=10, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.88 (0.03)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences (P=20, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.96 (0.05)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences (P=20, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.94 (0.05)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences (P=20, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.96 (0.05)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences (P=20, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.94 (0.06)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences (P=20, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.95 (0.02)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences (P=20, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.94 (0.03)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences (P=20, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.96 (0.02)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences (P=20, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.94 (0.03)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=10, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.83 (0.09)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=10, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.80 (0.08)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=10, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.89 (0.07)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=10, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.85 (0.07)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=10, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.84 (0.04)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=10, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.79 (0.04)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=10, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.89 (0.03)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=10, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.85 (0.03)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=20, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.90 (0.07)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=20, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.89 (0.07)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=20, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.95 (0.05)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=20, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.92 (0.05)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=20, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.90 (0.03)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=20, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.88 (0.03)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=20, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.93 (0.03)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 5% missing data (P=20, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.91 (0.02)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=10, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.68 (0.09)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=10, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.63 (0.10)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=10, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.77 (0.08)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=10, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.62 (0.16)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=10, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.68 (0.05)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=10, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.63 (0.05)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=10, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.72 (0.12)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=10, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.41 (0.14)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=20, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.74 (0.09)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=20, M=10, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.73 (0.09)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=20, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.83 (0.07)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=20, M=50, T=10)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.74 (0.17)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=20, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.74 (0.04)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=20, M=10, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.71 (0.06)"
+        },
+        {
+            "model": "ST-JM",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=20, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.83 (0.08)"
+        },
+        {
+            "model": "k-prot",
+            "observational_dataset": "Simulated latent sequences with 20% missing data (P=20, M=50, T=50)",
+            "evaluation_metric": "Balanced Accuracy (BAC)",
+            "result": "0.38 (0.14)"
+        }
+    ],
+    "innovation": "This paper introduces a novel spatio-temporal jump model for clustering urban environmental data, a framework that handles missing values and identifies meaningful thermal comfort regimes by incorporating persistence across both spatial and temporal dimensions.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "spatio-temporal jump model (ST-JM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Balanced Accuracy",
+            "target_entity_type": "Metric",
+            "paragraph": "For the ST-JM model, we evaluate \u03bb and \u03b3 values on a grid from 0 to 0.25, with increments of 0.05 for each simulated dataset. The optimal hyperparameters are selected based on maximizing the balanced accuracy (BAC) between true and estimated state sequences, which is defined as...",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "k-prototype algorithm",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Balanced Accuracy",
+            "target_entity_type": "Metric",
+            "paragraph": "We compare our proposed method to the k-prototype (k-prot) algorithm by Huang (1998), which can be seen as a special case of ST-JM with \u03bb = 0 and \u03b3 = 0, that is, a standard k-means algorithm extended to handle mixed-type data. For more details on this method, see Szepannek et al. (2024).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "spatio-temporal jump model (ST-JM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "accuracy",
+            "target_entity_type": "Metric",
+            "paragraph": "We test predictive ability of the ST-JM comparing our clustering with thermal comfort feedbacks collected from users at different locations and times. This dataset consists of 54 responses to the question, \u201cThermally, what do you prefer now?\u201d with options \"Warmer\", \"No change\", and \"Cooler\u201d. Each feedback is matched with the median cluster from the closest weather station within a 4.92 km radius of the user's location at the time of feedback submission. We select this distance as the minimum required to ensure that every feedback has at least one corresponding weather station cluster for comparison. The model achieves an accuracy of 74%, which is an impressive outcome considering that no physiological variables were used and no personal information on respondents, such as age, sex, and body mass index is available.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "k-prototype model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "accuracy",
+            "target_entity_type": "Metric",
+            "paragraph": "For comparison, we also fitted a k-prototype model on the same dataset and evaluated against the reported feedbacks, obtaining an accuracy of 54%.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "UTCI",
+            "target_entity_type": "Variable",
+            "paragraph": "We also include UTCI (\u00b0C) data obtained from the \u201cthermal comfort indices derived from ERA5 reanalysis\u201d database (Napoli et al. 2020).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOLWEIG model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "UTCI",
+            "target_entity_type": "Variable",
+            "paragraph": "The latter limitation could be addressed by using the SOLWEIG model (Lindberg et al. 2008) to provide spatially detailed UTCI estimates and incorporate variables such as Sky View Factor (SVF) and Green View Factor (GVF).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Department of Economics, Management, and Quantitative Methods, University of Milan",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute for Applied Mathematics and Information Technologies \"E. Magenes\", National Research Council",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Milan",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Italy",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Singapore",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "weather stations",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Thermal comfort",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heatwaves",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Universal Thermal Climate Index (UTCI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mean radiant temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Physiological Equivalent Temperature (PET)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Balanced Accuracy (BAC)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Tropical",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "SOLWEIG model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Sky View Factor (SVF)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Green View Factor (GVF)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CNR-ITC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Universit\u00e0 degli Studi di Milano",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "RAISE \"Robotics and AI for Socio-economic Empowerment\"",
+            "entity_type": "Project"
+        }
+    ],
+    "referenced_works": []
+}

@@ -1,0 +1,2176 @@
+{
+    "uri": "https://openalex.org/W1855709777",
+    "title": "ECCO version 4: an integrated framework for non-linear inverse modeling and global ocean state estimation",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2015,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5076297431",
+            "display_name": "Ga\u00ebl Forget",
+            "orcid": "https://orcid.org/0000-0002-4234-056X"
+        },
+        {
+            "id": "https://openalex.org/A5068231709",
+            "display_name": "Jean\u2010Michel Campin",
+            "orcid": "https://orcid.org/0000-0003-2989-8195"
+        },
+        {
+            "id": "https://openalex.org/A5058612077",
+            "display_name": "Patrick Heimbach",
+            "orcid": "https://orcid.org/0000-0003-3925-6161"
+        },
+        {
+            "id": "https://openalex.org/A5009795502",
+            "display_name": "Chris Hill",
+            "orcid": "https://orcid.org/0000-0003-3417-9056"
+        },
+        {
+            "id": "https://openalex.org/A5088615873",
+            "display_name": "Rui M. Ponte",
+            "orcid": "https://orcid.org/0000-0001-7206-6461"
+        },
+        {
+            "id": "https://openalex.org/A5052621071",
+            "display_name": "Carl Wunsch",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-8-3071-2015",
+    "abstract": "Abstract. This paper presents the ECCO v4 non-linear inverse modeling framework and its baseline solution for the evolving ocean state over the period 1992\u20132011. Both components are publicly available and subjected to regular, automated regression tests. The modeling framework includes sets of global conformal grids, a global model setup, implementations of data constraints and control parameters, an interface to algorithmic differentiation, as well as a grid-independent, fully capable Matlab toolbox. The baseline ECCO v4 solution is a dynamically consistent ocean state estimate without unidentified sources of heat and buoyancy, which any interested user will be able to reproduce accurately. The solution is an acceptable fit to most data and has been found to be physically plausible in many respects, as documented here and in related publications. Users are being provided with capabilities to assess model\u2013data misfits for themselves. The synergy between modeling and data synthesis is asserted through the joint presentation of the modeling framework and the state estimate. In particular, the inverse estimate of parameterized physics was instrumental in improving the fit to the observed hydrography, and becomes an integral part of the ocean model setup available for general use. More generally, a first assessment of the relative importance of external, parametric and structural model errors is presented. Parametric and external model uncertainties appear to be of comparable importance and dominate over structural model uncertainty. The results generally underline the importance of including turbulent transport parameters in the inverse problem.",
+    "field": "Global ocean state estimation",
+    "problem": "Creating dynamically consistent global ocean state estimates is challenging due to various model errors and the difficulty of synthesizing complex models with vast observational data, resulting in solutions that may lack physical plausibility, have poor data fits, or are not easily reproducible by the scientific community.",
+    "method": "This paper presents a non-linear inverse modeling framework (ECCO v4) that uses a global ocean circulation model and its adjoint to produce a dynamically consistent ocean state estimate by adjusting control parameters to optimally fit a wide range of observations from 1992 to 2011.",
+    "task": "The task is to present the ECCO v4 non-linear inverse modeling framework and its baseline solution, which provides a dynamically consistent estimate of the evolving global ocean state from 1992 to 2011 by combining a numerical model with observational data.",
+    "model": [
+        "MITgcm"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.6257530450820923
+        },
+        {
+            "id": "https://openalex.org/keywords/initialization",
+            "display_name": "Initialization",
+            "score": 0.5365296602249146
+        },
+        {
+            "id": "https://openalex.org/keywords/parametric-statistics",
+            "display_name": "Parametric statistics",
+            "score": 0.5220972299575806
+        },
+        {
+            "id": "https://openalex.org/keywords/parameterized-complexity",
+            "display_name": "Parameterized complexity",
+            "score": 0.4832056760787964
+        },
+        {
+            "id": "https://openalex.org/keywords/grid",
+            "display_name": "Grid",
+            "score": 0.47808265686035156
+        },
+        {
+            "id": "https://openalex.org/keywords/toolbox",
+            "display_name": "Toolbox",
+            "score": 0.4377674162387848
+        },
+        {
+            "id": "https://openalex.org/keywords/consistency",
+            "display_name": "Consistency (knowledge bases)",
+            "score": 0.4335820972919464
+        },
+        {
+            "id": "https://openalex.org/keywords/inverse",
+            "display_name": "Inverse",
+            "score": 0.4287243187427521
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematical-optimization",
+            "display_name": "Mathematical optimization",
+            "score": 0.391781747341156
+        },
+        {
+            "id": "https://openalex.org/keywords/algorithm",
+            "display_name": "Algorithm",
+            "score": 0.3578907251358032
+        },
+        {
+            "id": "https://openalex.org/keywords/data-mining",
+            "display_name": "Data mining",
+            "score": 0.3285422921180725
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.18458876013755798
+        },
+        {
+            "id": "https://openalex.org/keywords/statistics",
+            "display_name": "Statistics",
+            "score": 0.1454656720161438
+        },
+        {
+            "id": "https://openalex.org/keywords/artificial-intelligence",
+            "display_name": "Artificial intelligence",
+            "score": 0.1011728048324585
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.6257530450820923
+        },
+        {
+            "id": "https://openalex.org/C114466953",
+            "wikidata": "https://www.wikidata.org/wiki/Q6034165",
+            "display_name": "Initialization",
+            "level": 2,
+            "score": 0.5365296602249146
+        },
+        {
+            "id": "https://openalex.org/C117251300",
+            "wikidata": "https://www.wikidata.org/wiki/Q1849855",
+            "display_name": "Parametric statistics",
+            "level": 2,
+            "score": 0.5220972299575806
+        },
+        {
+            "id": "https://openalex.org/C165464430",
+            "wikidata": "https://www.wikidata.org/wiki/Q1570441",
+            "display_name": "Parameterized complexity",
+            "level": 2,
+            "score": 0.4832056760787964
+        },
+        {
+            "id": "https://openalex.org/C187691185",
+            "wikidata": "https://www.wikidata.org/wiki/Q2020720",
+            "display_name": "Grid",
+            "level": 2,
+            "score": 0.47808265686035156
+        },
+        {
+            "id": "https://openalex.org/C2777655017",
+            "wikidata": "https://www.wikidata.org/wiki/Q1501161",
+            "display_name": "Toolbox",
+            "level": 2,
+            "score": 0.4377674162387848
+        },
+        {
+            "id": "https://openalex.org/C2776436953",
+            "wikidata": "https://www.wikidata.org/wiki/Q5163215",
+            "display_name": "Consistency (knowledge bases)",
+            "level": 2,
+            "score": 0.4335820972919464
+        },
+        {
+            "id": "https://openalex.org/C207467116",
+            "wikidata": "https://www.wikidata.org/wiki/Q4385666",
+            "display_name": "Inverse",
+            "level": 2,
+            "score": 0.4287243187427521
+        },
+        {
+            "id": "https://openalex.org/C126255220",
+            "wikidata": "https://www.wikidata.org/wiki/Q141495",
+            "display_name": "Mathematical optimization",
+            "level": 1,
+            "score": 0.391781747341156
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.3578907251358032
+        },
+        {
+            "id": "https://openalex.org/C124101348",
+            "wikidata": "https://www.wikidata.org/wiki/Q172491",
+            "display_name": "Data mining",
+            "level": 1,
+            "score": 0.3285422921180725
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.18458876013755798
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.1454656720161438
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.1011728048324585
+        },
+        {
+            "id": "https://openalex.org/C199360897",
+            "wikidata": "https://www.wikidata.org/wiki/Q9143",
+            "display_name": "Programming language",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C2524010",
+            "wikidata": "https://www.wikidata.org/wiki/Q8087",
+            "display_name": "Geometry",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Computer update",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-6"
+        },
+        {
+            "model": "Computer update",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-6"
+        },
+        {
+            "model": "Computer update",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-7"
+        },
+        {
+            "model": "Computer update",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-6"
+        },
+        {
+            "model": "Computer update",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-5"
+        },
+        {
+            "model": "Computer update",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-6"
+        },
+        {
+            "model": "Computer update",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-7"
+        },
+        {
+            "model": "Model update (65 g)",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-7"
+        },
+        {
+            "model": "Model update (65 g)",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-6"
+        },
+        {
+            "model": "Model update (65 g)",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-6"
+        },
+        {
+            "model": "Model update (65 g)",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-5"
+        },
+        {
+            "model": "Model update (65 g)",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-6"
+        },
+        {
+            "model": "Model update (65 g)",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-4"
+        },
+        {
+            "model": "Model update (65 g)",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-4"
+        },
+        {
+            "model": "24 proc. clusters",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-6"
+        },
+        {
+            "model": "24 proc. clusters",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-8"
+        },
+        {
+            "model": "24 proc. clusters",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-6"
+        },
+        {
+            "model": "24 proc. clusters",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-5"
+        },
+        {
+            "model": "24 proc. clusters",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-5"
+        },
+        {
+            "model": "24 proc. clusters",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-4"
+        },
+        {
+            "model": "24 proc. clusters",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-5"
+        },
+        {
+            "model": "Explicit vert. DST-3",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Explicit vert. DST-3",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-2"
+        },
+        {
+            "model": "Explicit vert. DST-3",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Explicit vert. DST-3",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-2"
+        },
+        {
+            "model": "Explicit vert. DST-3",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Explicit vert. DST-3",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Explicit vert. DST-3",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-2"
+        },
+        {
+            "model": "Third-order upwind",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-4"
+        },
+        {
+            "model": "Third-order upwind",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Third-order upwind",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Third-order upwind",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Third-order upwind",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-4"
+        },
+        {
+            "model": "Third-order upwind",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-4"
+        },
+        {
+            "model": "Third-order upwind",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Flux-limited DST-3",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "3"
+        },
+        {
+            "model": "Flux-limited DST-3",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "6"
+        },
+        {
+            "model": "Flux-limited DST-3",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "1"
+        },
+        {
+            "model": "Flux-limited DST-3",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-2"
+        },
+        {
+            "model": "Flux-limited DST-3",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Flux-limited DST-3",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-2"
+        },
+        {
+            "model": "Flux-limited DST-3",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "13"
+        },
+        {
+            "model": "C-D scheme",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "40"
+        },
+        {
+            "model": "C-D scheme",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "52"
+        },
+        {
+            "model": "C-D scheme",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "17"
+        },
+        {
+            "model": "C-D scheme",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, %)",
+            "result": "7"
+        },
+        {
+            "model": "C-D scheme",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, %)",
+            "result": "2"
+        },
+        {
+            "model": "C-D scheme",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "25"
+        },
+        {
+            "model": "C-D scheme",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "64"
+        },
+        {
+            "model": "Added viscosity",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "6"
+        },
+        {
+            "model": "Added viscosity",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "7"
+        },
+        {
+            "model": "Added viscosity",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "2"
+        },
+        {
+            "model": "Added viscosity",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, %)",
+            "result": "6"
+        },
+        {
+            "model": "Added viscosity",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-2"
+        },
+        {
+            "model": "Added viscosity",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "3"
+        },
+        {
+            "model": "Added viscosity",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "6"
+        },
+        {
+            "model": "Added bottom visc.",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "4"
+        },
+        {
+            "model": "Added bottom visc.",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "5"
+        },
+        {
+            "model": "Added bottom visc.",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "1"
+        },
+        {
+            "model": "Added bottom visc.",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, %)",
+            "result": "6"
+        },
+        {
+            "model": "Added bottom visc.",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-2"
+        },
+        {
+            "model": "Added bottom visc.",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "2"
+        },
+        {
+            "model": "Added bottom visc.",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "3"
+        },
+        {
+            "model": "KPP instead of GGL",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "4"
+        },
+        {
+            "model": "KPP instead of GGL",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "11"
+        },
+        {
+            "model": "KPP instead of GGL",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "7"
+        },
+        {
+            "model": "KPP instead of GGL",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, %)",
+            "result": "10"
+        },
+        {
+            "model": "KPP instead of GGL",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, %)",
+            "result": "11"
+        },
+        {
+            "model": "KPP instead of GGL",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "4"
+        },
+        {
+            "model": "KPP instead of GGL",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "3"
+        },
+        {
+            "model": "Added geo. heating",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Added geo. heating",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Added geo. heating",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Added geo. heating",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Added geo. heating",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-4"
+        },
+        {
+            "model": "Added geo. heating",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Added geo. heating",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "All controls",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "369"
+        },
+        {
+            "model": "All controls",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "1027"
+        },
+        {
+            "model": "All controls",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "160"
+        },
+        {
+            "model": "All controls",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, %)",
+            "result": "56"
+        },
+        {
+            "model": "All controls",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, %)",
+            "result": "17"
+        },
+        {
+            "model": "All controls",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "242"
+        },
+        {
+            "model": "All controls",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "313"
+        },
+        {
+            "model": "Internal parameters",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "212"
+        },
+        {
+            "model": "Internal parameters",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "317"
+        },
+        {
+            "model": "Internal parameters",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "56"
+        },
+        {
+            "model": "Internal parameters",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, %)",
+            "result": "15"
+        },
+        {
+            "model": "Internal parameters",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, %)",
+            "result": "12"
+        },
+        {
+            "model": "Internal parameters",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "72"
+        },
+        {
+            "model": "Internal parameters",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "163"
+        },
+        {
+            "model": "External forcing fields",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "63"
+        },
+        {
+            "model": "External forcing fields",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "437"
+        },
+        {
+            "model": "External forcing fields",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "87"
+        },
+        {
+            "model": "External forcing fields",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, %)",
+            "result": "27"
+        },
+        {
+            "model": "External forcing fields",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, %)",
+            "result": "17"
+        },
+        {
+            "model": "External forcing fields",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "117"
+        },
+        {
+            "model": "External forcing fields",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "112"
+        },
+        {
+            "model": "GM intensity",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "121"
+        },
+        {
+            "model": "GM intensity",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "136"
+        },
+        {
+            "model": "GM intensity",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "31"
+        },
+        {
+            "model": "GM intensity",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, %)",
+            "result": "6"
+        },
+        {
+            "model": "GM intensity",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, %)",
+            "result": "14"
+        },
+        {
+            "model": "GM intensity",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "44"
+        },
+        {
+            "model": "GM intensity",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "116"
+        },
+        {
+            "model": "Isopycnal mixing",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "44"
+        },
+        {
+            "model": "Isopycnal mixing",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "66"
+        },
+        {
+            "model": "Isopycnal mixing",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "6"
+        },
+        {
+            "model": "Isopycnal mixing",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-2"
+        },
+        {
+            "model": "Isopycnal mixing",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, %)",
+            "result": "3"
+        },
+        {
+            "model": "Isopycnal mixing",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "9"
+        },
+        {
+            "model": "Isopycnal mixing",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "17"
+        },
+        {
+            "model": "Diapycnal mixing",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "23"
+        },
+        {
+            "model": "Diapycnal mixing",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "44"
+        },
+        {
+            "model": "Diapycnal mixing",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "13"
+        },
+        {
+            "model": "Diapycnal mixing",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, %)",
+            "result": "4"
+        },
+        {
+            "model": "Diapycnal mixing",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-2"
+        },
+        {
+            "model": "Diapycnal mixing",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "6"
+        },
+        {
+            "model": "Diapycnal mixing",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "6"
+        },
+        {
+            "model": "Freshwater flux",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "14"
+        },
+        {
+            "model": "Freshwater flux",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "182"
+        },
+        {
+            "model": "Freshwater flux",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-3"
+        },
+        {
+            "model": "Freshwater flux",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, %)",
+            "result": "12"
+        },
+        {
+            "model": "Freshwater flux",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, %)",
+            "result": "3"
+        },
+        {
+            "model": "Freshwater flux",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "40"
+        },
+        {
+            "model": "Freshwater flux",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "43"
+        },
+        {
+            "model": "Wind stress",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "13"
+        },
+        {
+            "model": "Wind stress",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "22"
+        },
+        {
+            "model": "Wind stress",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "11"
+        },
+        {
+            "model": "Wind stress",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-4"
+        },
+        {
+            "model": "Wind stress",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, power of 10)",
+            "result": "-2"
+        },
+        {
+            "model": "Wind stress",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "32"
+        },
+        {
+            "model": "Wind stress",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "26"
+        },
+        {
+            "model": "Buoyancy flux",
+            "observational_dataset": "2008-2010 Argo T",
+            "evaluation_metric": "jT (Normalized departure of squared model-data distance, %)",
+            "result": "9"
+        },
+        {
+            "model": "Buoyancy flux",
+            "observational_dataset": "2008-2010 Argo S",
+            "evaluation_metric": "jS (Normalized departure of squared model-data distance, %)",
+            "result": "30"
+        },
+        {
+            "model": "Buoyancy flux",
+            "observational_dataset": "1992-2011 Reynolds SST",
+            "evaluation_metric": "jTs (Normalized departure of squared model-data distance, %)",
+            "result": "69"
+        },
+        {
+            "model": "Buoyancy flux",
+            "observational_dataset": "1992-2011 climatological SSS",
+            "evaluation_metric": "jSs (Normalized departure of squared model-data distance, %)",
+            "result": "5"
+        },
+        {
+            "model": "Buoyancy flux",
+            "observational_dataset": "1992-2011 ice-cover fraction",
+            "evaluation_metric": "jIs (Normalized departure of squared model-data distance, %)",
+            "result": "13"
+        },
+        {
+            "model": "Buoyancy flux",
+            "observational_dataset": "1992-2011 large-scale SLA",
+            "evaluation_metric": "jHa (Normalized departure of squared model-data distance, %)",
+            "result": "9"
+        },
+        {
+            "model": "Buoyancy flux",
+            "observational_dataset": "1992-2011 MDT",
+            "evaluation_metric": "jHm (Normalized departure of squared model-data distance, %)",
+            "result": "16"
+        }
+    ],
+    "innovation": "This paper presents ECCO version 4, a publicly available, integrated framework for non-linear inverse modeling, and its baseline global ocean state estimate for 1992\u20132011, which improves fits to hydrographic data by adjusting turbulent transport parameters.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ECCO version 4",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "MITgcm",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The MITgcm, as configured in ECCO v4, solves the hydrostatic, Boussinesq equations (Marshall et al., 1997) using the z* rescaled height vertical coordinate (Adcroft and Campin, 2004) and the vector-invariant form of the momentum equation (Adcroft et al., 2004a). This latter choice yields a discretized momentum equation without metric terms, which simplifies the handling of elaborate grids such as LLC90 (Sect. 2). This section summarizes the model equations, settings, and new MITgcm features (MITgcm Group, 2002; Adcroft et al., 2004b) used in ECCO v4.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO version 4",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "LLC90 grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The model configuration presented below is the ECCO v4 setup used in state estimation (Sects. 4 and 5) and based on the LLC90 grid (Sect. 2). Variants of the ECCO v4 setup are also used in un-optimized model simulations (Danabasoglu et al., 2014; Marshall et al., 2014).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO version 4",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Lat-Lon-Cap grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "These considerations led to the design of the Lat-Lon-Cap grid (LLC; right panel in Fig. 1) such that 1. the grid reverts to a simple LL sector between 70\u25e6 S and 57\u25e6 N; 2. grid vertices are located over land; and 3. grid heterogeneities remain acceptable at 1/48\u25e6 resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO version 4",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "non-linear free surface",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ECCO v4 uses a non-linear free surface combined with real freshwater flux forcing and the z* coordinate. This approach allows one to include material exchanges through the free surface in a physically intuitive way (Campin et al., 2008) and to achieve exact tracer conservation, both locally and globally (Campin et al., 2004).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO version 4",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "z* rescaled height vertical coordinate",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The MITgcm, as configured in ECCO v4, solves the hydrostatic, Boussinesq equations (Marshall et al., 1997) using the z* rescaled height vertical coordinate (Adcroft and Campin, 2004) and the vector-invariant form of the momentum equation (Adcroft et al., 2004a).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MITgcm",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "cubed-sphere grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The cubed-sphere grid (CS; center panel in Fig. 1) has been successfully used in various MITgcm calculations (e.g., Menemenlis et al., 2005; Marshall et al., 2007b) resolving the Arctic. The CS grid is a conformal mapping of a sphere to a cube surface, such that each face contains one-sixth of the earth gridded (Ran\u010di\u0107 et al., 1996; Purser and Ran\u010di\u0107, 1998).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO version 4",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "bulk formulae of Large and Yeager (2004)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Upward buoyancy, and radiative and mass fluxes (latent, sensible and radiative contributions to F\u03b8; evaporation as part of F) through the free surface are computed using the bulk formulae of Large and Yeager (2004), and 6-hourly ERAInterim re-analysis fields (Dee et al., 2011) for the nearsurface atmospheric state (temperature, humidity, downward radiation, precipitation).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO version 4",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Adams-Bashforth 3 time-stepping",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In summary, the staggered time-step approach is used, along with Adams-Bashforth 3 (AB-3) time-stepping for momentum advection and the Coriolis term, third-order Direct Space Time tracer advection (DST-3; a multi-dimensional scheme), and third-order implicit tracer vertical advection (unconditionally stable). These options improve the model stability, allowing for a longer time step.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO version 4",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "third-order Direct Space Time tracer advection",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In summary, the staggered time-step approach is used, along with Adams-Bashforth 3 (AB-3) time-stepping for momentum advection and the Coriolis term, third-order Direct Space Time tracer advection (DST-3; a multi-dimensional scheme), and third-order implicit tracer vertical advection (unconditionally stable). These options improve the model stability, allowing for a longer time step.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO version 4",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "GGL mixed-layer turbulence closure",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Diffusion includes diapycnal and isopycnal components, the GGL mixed-layer turbulence closure (Gaspar et al., 1990), and simple convective adjustment. The latter (GGL and convective adjustment) are used instead of the KPP vertical mixing scheme (Large et al., 1994) that was used in earlier ECCO configurations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO version 4",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "simple convective adjustment",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Diffusion includes diapycnal and isopycnal components, the GGL mixed-layer turbulence closure (Gaspar et al., 1990), and simple convective adjustment.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO version 4",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "sea-ice model (Losch et al., 2010)",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "When sea ice is present, buoyancy and mass fluxes are recomputed based upon the thermodynamic balance of a fully interactive sea-ice model (Losch et al., 2010).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "sea-ice model (Losch et al., 2010)",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "seaIce",
+            "target_entity_type": "Realm",
+            "paragraph": "When sea ice is present, buoyancy and mass fluxes are recomputed based upon the thermodynamic balance of a fully interactive sea-ice model (Losch et al., 2010). In this model as configured in ECCO v4, sea ice carries 0\u25e6C and 4 g kg\u22121 salinity, while snow carries 0 \u25e6C and zero salinity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO v2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "ECCO v3",
+            "target_entity_type": "Source",
+            "paragraph": "Figure 9. Mean squared distance to in situ observations (Table 5; Sect. 4; Appendix D) for various solutions, for temperature (left; jT) and salinity (right; jS), as a function of year. In each panel the red curve shows the ECCO v4 state estimate. Also shown in top panels: ECCO v2 (Wunsch and Heimbach, 2007, 1992\u20132004) and ECCO v3 (Wunsch and Heimbach, 2009, 1992\u20132007); middle panels: JPL-ECCO (Fukumori, 2002, 1992\u2013present) and GECCO2 (K\u00f6hl, 2014, 1948\u20132011); bottom panels: three ECCO2 eddying solutions using different forcing fields (courtesy of H. Zhang).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECCO v3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "ECCO version 4",
+            "target_entity_type": "Source",
+            "paragraph": "Amongst earlier ECCO estimates, the ECCO v3 solution comes the closest to the observed hydrography, with typical values of 3. The contrasts in jT and jS amongst solutions reflect largescale misfits as illustrated in Fig. 10. This is equally true for ECCO2 eddying solutions (bottom panels) and for coarser model solutions (top and middle panels). Such broad misfit patterns typically denote spurious model drifts and biases, which are common symptoms of model deficiencies (Stammer, 2005; Ferreira et al., 2005). Similarities in misfit patterns amongst ECCO2 eddying solutions (using a common model setup, under different sets of forcing), for example, suggest internal ocean model deficiencies. So do similarities in misfit patterns (aside from differences in amplitudes) amongst the four adjoint optimized solutions of comparable resolution that use different adjusted forcing fields (ECCO v2, v3, v4 and GECCO2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Argo",
+            "source_entity_type": "Platform",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "potential temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 5. In situ data to which the state estimate has been constrained. XBT, CTD, and ITP stand for expendable bathythermograph, conductivity-temperature-depth sensors, and ice-tethered profilers, respectively. SEaOS is data collected by Southern Ocean elephant seals. The CLIMODE field campaign focused on the North Atlantic subtropical gyre (Marshall et al., 2009). A grand total of 1 911 983 T profiles (or 1 239 247 S profiles) were used. Note however that only CTD profiles extend below 2000 m (26 285 for T, 26 220 for S).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Argo",
+            "source_entity_type": "Platform",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "salinity",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 5. In situ data to which the state estimate has been constrained. XBT, CTD, and ITP stand for expendable bathythermograph, conductivity-temperature-depth sensors, and ice-tethered profilers, respectively. SEaOS is data collected by Southern Ocean elephant seals. The CLIMODE field campaign focused on the North Atlantic subtropical gyre (Marshall et al., 2009). A grand total of 1 911 983 T profiles (or 1 239 247 S profiles) were used. Note however that only CTD profiles extend below 2000 m (26 285 for T, 26 220 for S).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CTD",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "potential temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 5. In situ data to which the state estimate has been constrained. XBT, CTD, and ITP stand for expendable bathythermograph, conductivity-temperature-depth sensors, and ice-tethered profilers, respectively. SEaOS is data collected by Southern Ocean elephant seals. The CLIMODE field campaign focused on the North Atlantic subtropical gyre (Marshall et al., 2009). A grand total of 1 911 983 T profiles (or 1 239 247 S profiles) were used. Note however that only CTD profiles extend below 2000 m (26 285 for T, 26 220 for S).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CTD",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "salinity",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 5. In situ data to which the state estimate has been constrained. XBT, CTD, and ITP stand for expendable bathythermograph, conductivity-temperature-depth sensors, and ice-tethered profilers, respectively. SEaOS is data collected by Southern Ocean elephant seals. The CLIMODE field campaign focused on the North Atlantic subtropical gyre (Marshall et al., 2009). A grand total of 1 911 983 T profiles (or 1 239 247 S profiles) were used. Note however that only CTD profiles extend below 2000 m (26 285 for T, 26 220 for S).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "along-track altimetry",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "sea level anomaly",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 6. Gridded data to which the state estimate has been constrained. T, S, SST, SLA, MDT, and ICF, respectively, stand for potential temperature, sea surface temperature, sea surface salinity, sea level anomaly, mean dynamic topography, and ice cover fraction. SLA Daily bin average of along-track altimetry 1992\u20132011 7.7 \u00d7 107 Scharroo et al. (2004)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "ECCO",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "SEaOS",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CLIMODE",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ECCO version 4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECCO v4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MITgcm",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA-Interim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "DNSC08",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EGM2008 geoid model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OCCA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WOA 2005",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PHC 3.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCEP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Argo",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IFREMER",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NODC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WOA09",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECCO v2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECCO v3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JPL-ECCO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GECCO2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CS510-78",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CS510-92",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CS510-95",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OGCM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "global conformal grids",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "latitude-longitude grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "cubed-sphere grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Lat-Lon-Cap grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "LLC90 grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "LLC4320",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "hydrostatic, Boussinesq equations",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "z* rescaled height vertical coordinate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "vector-invariant form of the momentum equation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "z* coordinate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "non-linear free surface",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "linear free-surface method",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Arakawa C grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Boussinesq approximation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "coastal wetting/drying mechanism",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "non-synchronous time step",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "algorithmic differentiation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "thermal-wind shear",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "continuity equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "diapycnal diffusion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "horizontal diffusion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "parameterized advective eddy transports",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Gent and Mcwilliams, 1990",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Lagrange multipliers",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "adjoint method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "subgrid-scale (SGS) processes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bolus velocity parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Jackett and McDougall (1995) equation of state",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "staggered time-step approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Adams-Bashforth 3 (AB-3) time-stepping",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "third-order Direct Space Time tracer advection (DST-3)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "third-order implicit tracer vertical advection",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Goldsbrough-Stommel circulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "third-order DST scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "implicit third-order upwind scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "explicit third-order upwind scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Flux-limited advection schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Flux-limited DST-3",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "C-D scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "isopycnal diffusion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GGL mixed-layer turbulence closure",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "simple convective adjustment",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "KPP vertical mixing scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "harmonic vertical viscosity",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "harmonic horizontal viscosity",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "quadratic bottom drag",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bulk formulae of Large and Yeager (2004)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "fully interactive sea-ice model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Newtonian relaxation of surface salinity",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "diffusion-based smoother",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "covariance modeling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "method of Weaver and Courtier (2001)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "pseudo-sea-ice adjoint",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Weaver and Courtier (2001) spatial correlation model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Gaspar et al. (1990) parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Nguyen et al. (2009) parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Losch et al. (2010) parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Redi (1982) component",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two-dimensional conformal mapping algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "conjugate-gradient method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "direction-splitting method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "method of Forget and Wunsch (2007)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Duffy et al. (1999) parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Massachusetts Institute of Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "The University of Texas at Austin",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Atmospheric and Environmental Research, Inc.",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Harvard University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "squared model-data distance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "jT",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "jS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "jTs",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "jSs",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "jIs",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "jHa",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "jHm",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mH",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mT",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "tV",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "tT",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "tS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "cosensitivity index",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "signal-to-noise ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "controllability index C",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "1/48\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "2 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "6-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "bi-weekly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "potential temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea level anomaly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mean dynamic topography",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice-cover fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "horizontal velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vertical velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "planetary vorticity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative vorticity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "horizontal kinetic energy",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "density anomaly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pressure anomaly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Quadratic bottom drag",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ocean albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ice albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Snow albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Maximum ice concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "free surface height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net freshwater input",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salt flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "background diapycnal diffusivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "isopycnal diffusivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GM intensity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "downward shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric temperature at 2 m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "specific humidity at 2 m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "downward longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Zonal wind stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Meridional wind stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Laplacian horizontal viscosity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice plus snow weight",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global steric sea level correction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Freshwater flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wind stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Buoyancy flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Initial condition for temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Initial condition for salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "expendable bathythermograph",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "conductivity-temperature-depth sensors",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ice-tethered profilers",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "XBT",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "CTD",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ITP",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Argo profiling floats",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "elephant seals",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "MA",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "TX",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Cambridge",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Austin",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Lexington",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Pole",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ross and Weddell ice shelves",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Atlantic subtropical gyre",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2125370488",
+        "https://openalex.org/W2139013563",
+        "https://openalex.org/W2169043969",
+        "https://openalex.org/W1967502643",
+        "https://openalex.org/W1952139873",
+        "https://openalex.org/W2114687263",
+        "https://openalex.org/W2166605690",
+        "https://openalex.org/W2146023959",
+        "https://openalex.org/W2061829017",
+        "https://openalex.org/W2105491144",
+        "https://openalex.org/W2139485295",
+        "https://openalex.org/W2165265087",
+        "https://openalex.org/W2021118805",
+        "https://openalex.org/W6892184217",
+        "https://openalex.org/W2068029317",
+        "https://openalex.org/W2015533427",
+        "https://openalex.org/W2121745948",
+        "https://openalex.org/W2067993240",
+        "https://openalex.org/W1533016475",
+        "https://openalex.org/W2141242599",
+        "https://openalex.org/W2136446284",
+        "https://openalex.org/W2160403039",
+        "https://openalex.org/W2022272472",
+        "https://openalex.org/W1987205608",
+        "https://openalex.org/W2109619141",
+        "https://openalex.org/W647020902",
+        "https://openalex.org/W2130283783",
+        "https://openalex.org/W2073868691",
+        "https://openalex.org/W2071383417",
+        "https://openalex.org/W2124843675",
+        "https://openalex.org/W2291819991",
+        "https://openalex.org/W2162345517",
+        "https://openalex.org/W2116828119",
+        "https://openalex.org/W2060989835",
+        "https://openalex.org/W2158627601",
+        "https://openalex.org/W2013380149",
+        "https://openalex.org/W1996852196",
+        "https://openalex.org/W2116960696",
+        "https://openalex.org/W2140200418",
+        "https://openalex.org/W2020527870",
+        "https://openalex.org/W2478429860",
+        "https://openalex.org/W2074153798",
+        "https://openalex.org/W2031604650",
+        "https://openalex.org/W2031070741",
+        "https://openalex.org/W1787035062",
+        "https://openalex.org/W2082585997",
+        "https://openalex.org/W2128084945",
+        "https://openalex.org/W2041969761",
+        "https://openalex.org/W1971800650",
+        "https://openalex.org/W2178966421",
+        "https://openalex.org/W2111070619",
+        "https://openalex.org/W1986704620",
+        "https://openalex.org/W2116814884",
+        "https://openalex.org/W2017644515",
+        "https://openalex.org/W2013490897",
+        "https://openalex.org/W2024309416",
+        "https://openalex.org/W1972204382",
+        "https://openalex.org/W1972283993",
+        "https://openalex.org/W2122060174",
+        "https://openalex.org/W2051903490",
+        "https://openalex.org/W2041527543",
+        "https://openalex.org/W2090313762",
+        "https://openalex.org/W2060187150",
+        "https://openalex.org/W1963549306",
+        "https://openalex.org/W2105076478",
+        "https://openalex.org/W1982637878",
+        "https://openalex.org/W2044554439",
+        "https://openalex.org/W2014035535",
+        "https://openalex.org/W2067357096",
+        "https://openalex.org/W2099679431",
+        "https://openalex.org/W2111976683",
+        "https://openalex.org/W2057313876",
+        "https://openalex.org/W2101085035",
+        "https://openalex.org/W2007311403",
+        "https://openalex.org/W2048356720",
+        "https://openalex.org/W2126618299",
+        "https://openalex.org/W2158295511",
+        "https://openalex.org/W2127946544",
+        "https://openalex.org/W2132479132",
+        "https://openalex.org/W2036285304",
+        "https://openalex.org/W1992975372",
+        "https://openalex.org/W2097790278",
+        "https://openalex.org/W4213280129",
+        "https://openalex.org/W2506155917",
+        "https://openalex.org/W2138176285",
+        "https://openalex.org/W2152289058",
+        "https://openalex.org/W2053987409",
+        "https://openalex.org/W2088022276",
+        "https://openalex.org/W2033876549",
+        "https://openalex.org/W2116695301",
+        "https://openalex.org/W4242000963",
+        "https://openalex.org/W2057697653",
+        "https://openalex.org/W2108251558",
+        "https://openalex.org/W2118725377",
+        "https://openalex.org/W2052097857",
+        "https://openalex.org/W2176202464",
+        "https://openalex.org/W2094278027",
+        "https://openalex.org/W2144878053",
+        "https://openalex.org/W4241964993",
+        "https://openalex.org/W2125896045",
+        "https://openalex.org/W2052676632",
+        "https://openalex.org/W2100986500",
+        "https://openalex.org/W197797489",
+        "https://openalex.org/W2153778794",
+        "https://openalex.org/W1966717343",
+        "https://openalex.org/W2047321122",
+        "https://openalex.org/W2179821283",
+        "https://openalex.org/W4250089003",
+        "https://openalex.org/W1998920780",
+        "https://openalex.org/W2160378703",
+        "https://openalex.org/W2043421018",
+        "https://openalex.org/W2097150043",
+        "https://openalex.org/W2180854635",
+        "https://openalex.org/W2048534771",
+        "https://openalex.org/W2032904810",
+        "https://openalex.org/W2117056456",
+        "https://openalex.org/W4247610667",
+        "https://openalex.org/W2156189924",
+        "https://openalex.org/W2073782689",
+        "https://openalex.org/W3144800891",
+        "https://openalex.org/W2114466308",
+        "https://openalex.org/W2152025353",
+        "https://openalex.org/W2124838643",
+        "https://openalex.org/W2017755281",
+        "https://openalex.org/W2130354633",
+        "https://openalex.org/W2009193789",
+        "https://openalex.org/W2109961832",
+        "https://openalex.org/W2004595181",
+        "https://openalex.org/W2135486411",
+        "https://openalex.org/W1481246557",
+        "https://openalex.org/W1500745827",
+        "https://openalex.org/W1585773866",
+        "https://openalex.org/W2013791816",
+        "https://openalex.org/W2163649185",
+        "https://openalex.org/W1892595315",
+        "https://openalex.org/W2093924138",
+        "https://openalex.org/W2549415782",
+        "https://openalex.org/W2275293296",
+        "https://openalex.org/W2154324307",
+        "https://openalex.org/W3010856131",
+        "https://openalex.org/W2112666473"
+    ]
+}

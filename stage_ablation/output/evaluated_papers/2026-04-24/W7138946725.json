@@ -1,0 +1,1188 @@
+{
+    "uri": "https://openalex.org/W7138946725",
+    "title": "Global dynamic precipitation isoscapes over three-quarters of a century",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5015386231",
+            "display_name": "Ikuya Adachi",
+            "orcid": "https://orcid.org/0009-0004-9130-7610"
+        },
+        {
+            "id": "https://openalex.org/A5129909489",
+            "display_name": "Tsutomu Yamanaka",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/essd-2026-52",
+    "abstract": "Abstract. Stable precipitation isotopes are widely used as tracers in water cycling and material transport. However, observational networks (e.g., the Global Network of Isotopes in Precipitation, or GNIP) are sparse in space and time, constraining analyses and applications in data-poor regions. To bridge this gap, static isoscapes, which interpolate monthly observations to long-term annual or climatological monthly means, have been developed and applied across disciplines. In recent years, growing interest in event-scale processes and isotope-enabled hydrological modeling has increased the need for higher-frequency information. In this study, a global precipitation isoscape using an offline isotope circulation model (ICM) forced by JRA-3Q on a 1.25\u00b0 grid covering \u221280\u00b0 to 80\u00b0 of latitude is produced. The deliverables include daily values, precipitation-weighted monthly values, and climatological monthly means for 1948\u20132023; the daily and monthly time series cover September 1947 to March 2024. GNIP-based validation demonstrates high skill for climatology. When all the station\u2013month pairs are analyzed in a single regression, R2 equals 0.86 for \u03b418O and 0.87 for \u03b42H, with root-mean-square errors (RMSEs) of 2.02 \u2030 and 16.0 \u2030, respectively. At the monthly scale, unweighted averaging of station-level metrics yields R2 values of 0.47 and 0.48, with RMSEs of 2.62 \u2030 and 19.9 \u2030, respectively. Daily performance was quantified from same-day regional means in East Asia and from 21 GNIP stations not used in the correction; R\u00b2 is typically between 0.3 and 0.6, and the RMSE is between 2 and 4 \u2030 for \u03b418O. By comparison, d-excess exhibits lower global skill, likely reflecting sensitivity to uncertainties in the forcing and to model simplifications. In contrast to observation-interpolated static isoscapes, this reanalysis-driven dataset delivers seamless coverage, including data-sparse regions, with explicitly characterized error properties. The data are distributed as NetCDF/CSV (daily, monthly) and GeoTIFF (climatology) and support applications from isotope-enabled hydrology and source attribution to climate-impact assessments and global water-resource analyses.",
+    "field": "Isotope hydrology",
+    "problem": "Observational networks for precipitation isotopes are spatially and temporally sparse, and existing static isoscapes provide only long-term monthly means, failing to meet the growing need for higher-frequency data required for event-scale hydrological modeling.",
+    "method": "This study generates a global precipitation isoscape dataset by running a reanalysis-driven isotope circulation model and applying an annual-mean bias correction derived from GNIP station observations to improve accuracy and reduce systematic offsets.",
+    "task": "The task is to produce a global, high-resolution dataset of precipitation isotopes from 1948\u20132023 using an offline isotope circulation model to address the spatial and temporal scarcity of observational data.",
+    "model": [
+        "ICM",
+        "SWING2",
+        "isoGSM"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.7032999992370605
+        },
+        {
+            "id": "https://openalex.org/keywords/forcing",
+            "display_name": "Forcing (mathematics)",
+            "score": 0.6301000118255615
+        },
+        {
+            "id": "https://openalex.org/keywords/latitude",
+            "display_name": "Latitude",
+            "score": 0.4733999967575073
+        },
+        {
+            "id": "https://openalex.org/keywords/general-circulation-model",
+            "display_name": "General Circulation Model",
+            "score": 0.40059998631477356
+        },
+        {
+            "id": "https://openalex.org/keywords/stable-isotope-ratio",
+            "display_name": "Stable isotope ratio",
+            "score": 0.39649999141693115
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.35109999775886536
+        },
+        {
+            "id": "https://openalex.org/keywords/water-cycle",
+            "display_name": "Water cycle",
+            "score": 0.3147999942302704
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.7645000219345093
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.7032999992370605
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.6654999852180481
+        },
+        {
+            "id": "https://openalex.org/C197115733",
+            "wikidata": "https://www.wikidata.org/wiki/Q1003136",
+            "display_name": "Forcing (mathematics)",
+            "level": 2,
+            "score": 0.6301000118255615
+        },
+        {
+            "id": "https://openalex.org/C122523270",
+            "wikidata": "https://www.wikidata.org/wiki/Q34027",
+            "display_name": "Latitude",
+            "level": 2,
+            "score": 0.4733999967575073
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.40059998631477356
+        },
+        {
+            "id": "https://openalex.org/C22117777",
+            "wikidata": "https://www.wikidata.org/wiki/Q17148629",
+            "display_name": "Stable isotope ratio",
+            "level": 2,
+            "score": 0.39649999141693115
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.35839998722076416
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.35109999775886536
+        },
+        {
+            "id": "https://openalex.org/C133830359",
+            "wikidata": "https://www.wikidata.org/wiki/Q81041",
+            "display_name": "Water cycle",
+            "level": 2,
+            "score": 0.3147999942302704
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.29490000009536743
+        },
+        {
+            "id": "https://openalex.org/C12997251",
+            "wikidata": "https://www.wikidata.org/wiki/Q567560",
+            "display_name": "Anomaly (physics)",
+            "level": 2,
+            "score": 0.2928999960422516
+        },
+        {
+            "id": "https://openalex.org/C160467669",
+            "wikidata": "https://www.wikidata.org/wiki/Q505772",
+            "display_name": "Cru",
+            "level": 3,
+            "score": 0.28290000557899475
+        },
+        {
+            "id": "https://openalex.org/C50660011",
+            "wikidata": "https://www.wikidata.org/wiki/Q42530",
+            "display_name": "Tropics",
+            "level": 2,
+            "score": 0.2775999903678894
+        },
+        {
+            "id": "https://openalex.org/C51865526",
+            "wikidata": "https://www.wikidata.org/wiki/Q5379962",
+            "display_name": "Ensemble average",
+            "level": 2,
+            "score": 0.26989999413490295
+        },
+        {
+            "id": "https://openalex.org/C143742823",
+            "wikidata": "https://www.wikidata.org/wiki/Q5513004",
+            "display_name": "GCM transcription factors",
+            "level": 4,
+            "score": 0.26809999346733093
+        },
+        {
+            "id": "https://openalex.org/C25022447",
+            "wikidata": "https://www.wikidata.org/wiki/Q5178021",
+            "display_name": "Coupled model intercomparison project",
+            "level": 4,
+            "score": 0.266400009393692
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Calgary",
+            "result": "0.94"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Calgary",
+            "result": "8.23"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Calgary",
+            "result": "0.94"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Calgary",
+            "result": "1.95"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Ottawa",
+            "result": "0.91"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Ottawa",
+            "result": "1.78"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Ottawa",
+            "result": "0.91"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Ottawa",
+            "result": "1.21"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Bad Salzuflen",
+            "result": "0.84"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Bad Salzuflen",
+            "result": "1.94"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Bad Salzuflen",
+            "result": "0.84"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Bad Salzuflen",
+            "result": "0.75"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Vienna",
+            "result": "0.94"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Vienna",
+            "result": "3.10"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Vienna",
+            "result": "0.94"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Vienna",
+            "result": "1.06"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Manaus",
+            "result": "0.93"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Manaus",
+            "result": "1.00"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Manaus",
+            "result": "0.93"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Manaus",
+            "result": "1.20"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Entebbe",
+            "result": "0.74"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Entebbe",
+            "result": "2.36"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Entebbe",
+            "result": "0.74"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Entebbe",
+            "result": "1.12"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Colombo",
+            "result": "0.28"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Colombo",
+            "result": "1.59"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Colombo",
+            "result": "0.28"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Colombo",
+            "result": "1.86"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Bangkok",
+            "result": "0.97"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Bangkok",
+            "result": "0.99"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Bangkok",
+            "result": "0.97"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Bangkok",
+            "result": "0.59"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Ushuaia",
+            "result": "0.86"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Ushuaia",
+            "result": "4.10"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Ushuaia",
+            "result": "0.86"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Ushuaia",
+            "result": "2.12"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Bahia Blanca",
+            "result": "0.70"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Bahia Blanca",
+            "result": "1.69"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Bahia Blanca",
+            "result": "0.70"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Bahia Blanca",
+            "result": "1.30"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Cape town",
+            "result": "0.78"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Cape town",
+            "result": "0.56"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Cape town",
+            "result": "0.78"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Cape town",
+            "result": "0.61"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Melbourne",
+            "result": "0.84"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Melbourne",
+            "result": "1.59"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological R\u00b2 for \u03b4\u00b9\u2078O at Melbourne",
+            "result": "0.84"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Climatological RMSE (\u2030) for \u03b4\u00b9\u2078O at Melbourne",
+            "result": "0.58"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Calgary",
+            "result": "0.58"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Calgary",
+            "result": "8.98"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Calgary",
+            "result": "0.58"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Calgary",
+            "result": "3.81"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Ottawa",
+            "result": "0.74"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Ottawa",
+            "result": "2.72"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Ottawa",
+            "result": "0.74"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Ottawa",
+            "result": "2.30"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Bad Salzuflen",
+            "result": "0.53"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Bad Salzuflen",
+            "result": "2.38"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Bad Salzuflen",
+            "result": "0.53"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Bad Salzuflen",
+            "result": "1.66"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Vienna",
+            "result": "0.72"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Vienna",
+            "result": "3.72"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Vienna",
+            "result": "0.72"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Vienna",
+            "result": "2.12"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Manaus",
+            "result": "0.58"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Manaus",
+            "result": "1.68"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Manaus",
+            "result": "0.58"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Manaus",
+            "result": "1.72"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Entebbe",
+            "result": "0.24"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Entebbe",
+            "result": "2.92"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Entebbe",
+            "result": "0.24"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Entebbe",
+            "result": "2.09"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Colombo",
+            "result": "0.33"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Colombo",
+            "result": "1.89"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Colombo",
+            "result": "0.33"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Colombo",
+            "result": "2.66"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Bangkok",
+            "result": "0.54"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Bangkok",
+            "result": "1.99"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Bangkok",
+            "result": "0.54"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Bangkok",
+            "result": "2.03"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Ushuaia",
+            "result": "0.28"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Ushuaia",
+            "result": "4.45"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Ushuaia",
+            "result": "0.28"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Ushuaia",
+            "result": "2.65"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Bahia Blanca",
+            "result": "0.39"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Bahia Blanca",
+            "result": "2.62"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Bahia Blanca",
+            "result": "0.39"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Bahia Blanca",
+            "result": "2.42"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Cape town",
+            "result": "0.40"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Cape town",
+            "result": "1.39"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Cape town",
+            "result": "0.40"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Cape town",
+            "result": "1.39"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Melbourne",
+            "result": "0.22"
+        },
+        {
+            "model": "ICM (uncorrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Melbourne",
+            "result": "2.25"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly R\u00b2 for \u03b4\u00b9\u2078O at Melbourne",
+            "result": "0.22"
+        },
+        {
+            "model": "ICM (corrected)",
+            "observational_dataset": "GNIP",
+            "evaluation_metric": "Monthly RMSE (\u2030) for \u03b4\u00b9\u2078O at Melbourne",
+            "result": "1.83"
+        }
+    ],
+    "innovation": "This paper presents a reanalysis-driven global dataset of daily and monthly precipitation isotopes from 1947-2024, providing seamless coverage to overcome the spatiotemporal sparseness of observational data and enable studies of high-frequency hydrological and climate processes.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "isotope circulation model (ICM)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "\u03b4\u00b9\u2078O",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, a global precipitation isoscape using an offline isotope circulation model (ICM) is produced. The deliverables include daily values, precipitation-weighted monthly values, and climatological monthly means for 1948\u20132023. The resulting dataset (\u03b4\u00b9\u2078O, \u03b4\u00b2H, and d-excess) is designed to support a wide range of isotope-enabled studies from regional to global scales and across timescales from day-to-day variability to seasonal changes.",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "isotope circulation model (ICM)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "\u03b4\u00b2H",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, a global precipitation isoscape using an offline isotope circulation model (ICM) is produced. The deliverables include daily values, precipitation-weighted monthly values, and climatological monthly means for 1948\u20132023. The resulting dataset (\u03b4\u00b9\u2078O, \u03b4\u00b2H, and d-excess) is designed to support a wide range of isotope-enabled studies from regional to global scales and across timescales from day-to-day variability to seasonal changes.",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "isotope circulation model (ICM)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "d-excess",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, a global precipitation isoscape using an offline isotope circulation model (ICM) is produced. The deliverables include daily values, precipitation-weighted monthly values, and climatological monthly means for 1948\u20132023. The resulting dataset (\u03b4\u00b9\u2078O, \u03b4\u00b2H, and d-excess) is designed to support a wide range of isotope-enabled studies from regional to global scales and across timescales from day-to-day variability to seasonal changes.",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "isotope circulation model (ICM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1.25\u00b0 grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this study, a global precipitation isoscape using an offline isotope circulation model (ICM) forced by JRA-3Q on a 1.25\u00b0 grid covering \u201380\u00b0 to 80\u00b0 of latitude is produced. ... The spatial domain covers the globe except for high latitudes poleward of 80\u00b0 in both hemispheres on a 1.25\u00b0 \u00d7 1.25\u00b0 longitude-latitude grid (WGS 84; longitudes \u2212180\u00b0 to 180\u00b0).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "isotope circulation model (ICM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "coverage from -80\u00b0 to 80\u00b0 latitude",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this study, a global precipitation isoscape using an offline isotope circulation model (ICM) forced by JRA-3Q on a 1.25\u00b0 grid covering \u201380\u00b0 to 80\u00b0 of latitude is produced. ... In this study, a global dataset of precipitation isotopic compositions computed with the isotope circulation model (ICM) and corrected for systematic biases is provided. The archive includes daily values, precipitation-weighted monthly values, and climatological monthly means on a 1.25\u00b0 grid from 80\u00b0 S to 80\u00b0 N for September 1947\u2013March 2024.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "isotope circulation model (ICM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R\u00b2",
+            "target_entity_type": "Metric",
+            "paragraph": "When all the station-month pairs are analyzed in a single regression, R\u00b2 equals 0.86 for \u03b4\u00b9\u2078O and 0.87 for \u03b4\u00b2H, with root-mean-square errors (RMSEs) of 2.02\u2030 and 16.0\u2030, respectively. At the monthly scale, unweighted averaging of station-level metrics yields R\u00b2 values of 0.47 and 0.48, with RMSEs of 2.62\u2030 and 19.9\u2030, respectively. Daily performance was quantified from same-day regional means in East Asia and from 21 GNIP stations not used in the correction; R\u00b2 is typically between 0.3 and 0.6, and the RMSE is between 2 and 4\u2030 for \u03b4\u00b9\u2078O.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "isotope circulation model (ICM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "When all the station-month pairs are analyzed in a single regression, R\u00b2 equals 0.86 for \u03b4\u00b9\u2078O and 0.87 for \u03b4\u00b2H, with root-mean-square errors (RMSEs) of 2.02\u2030 and 16.0\u2030, respectively. At the monthly scale, unweighted averaging of station-level metrics yields R\u00b2 values of 0.47 and 0.48, with RMSEs of 2.62\u2030 and 19.9\u2030, respectively. Daily performance was quantified from same-day regional means in East Asia and from 21 GNIP stations not used in the correction; R\u00b2 is typically between 0.3 and 0.6, and the RMSE is between 2 and 4\u2030 for \u03b4\u00b9\u2078O.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "isotope circulation model (ICM)",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "ICM (Yoshimura et al., 2003)",
+            "target_entity_type": "Source",
+            "paragraph": "In response, Adachi and Yamanaka (2025a) refined the isotope circulation model (ICM; developed by Yoshimura et al., 2003) and evaluated its ability to reproduce day-to-day variability across three mid-latitude East Asian regions... The ICM is based on the framework originally proposed by Yoshimura et al. (2003) and incorporates isotopic variability associated with surface evaporation and subcloud raindrop evaporation.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "isotope circulation model (ICM)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "inverse-distance-weighting (IDW) interpolation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Because GNIP stations are spatially sparse, we generated a global correction map via inverse-distance-weighting (IDW) interpolation in ArcGIS. We then applied this map to the ICM outputs (daily, monthly, and climatological) to obtain annually bias-corrected precipitation isoscapes.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "monsoon rainy-season",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "East Asia",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "In response, Adachi and Yamanaka (2025a) refined the isotope circulation model (ICM; developed by Yoshimura et al., 2003) and evaluated its ability to reproduce day-to-day variability across three mid-latitude East Asian regions during June\u2013September, the hydrologically active period defined by the monsoon rainy-season climatology (Wang and LinHo, 2002).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "monsoon",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Bangkok",
+            "target_entity_type": "City",
+            "paragraph": "In Bangkok (Fig. 8h), where the monsoon imposes sharp wet-dry transitions (Wang and LinHo, 2002), the model attains R\u00b2 = 0.97, with an RMSE = 0.59\u2030. The phase is accurate, and the amplitude is well captured after correction.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "typhoon season",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Tokyo region",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "At 35\u00b0N, 140\u00b0E (Tokyo region), a representative time series exhibits a climatological annual cycle (Fig. 5a\u2013c) with relatively enriched winter values and depleted values during the June\u2013July rainy season and the September\u2013October typhoon season.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GNIP",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "\u03b4\u00b9\u2078O",
+            "target_entity_type": "Variable",
+            "paragraph": "observational networks (e.g., the Global Network of Isotopes in Precipitation, or GNIP) are sparse in space and time, constraining analyses and applications in data-poor regions. To bridge this gap, static isoscapes, which interpolate monthly observations to long-term annual or climatological monthly means, have been developed and applied across disciplines... Using GNIP observations as the reference, we calculated the difference between the observed GNIP values and the ICM output and used that difference as the correction term. GNIP stations were included if they provided at least two isotope-precipitation pairs per month to avoid corrections dominated by singular events and to estimate representative mean corrections. The GNIP stations used for corrections are shown in Fig. 2. In total, 481 stations for \u03b4\u00b9\u2078O, 441 for \u03b4\u00b2H, and 435 for d-excess met the criterion.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GNIP",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "\u03b4\u00b2H",
+            "target_entity_type": "Variable",
+            "paragraph": "observational networks (e.g., the Global Network of Isotopes in Precipitation, or GNIP) are sparse in space and time, constraining analyses and applications in data-poor regions. To bridge this gap, static isoscapes, which interpolate monthly observations to long-term annual or climatological monthly means, have been developed and applied across disciplines... Using GNIP observations as the reference, we calculated the difference between the observed GNIP values and the ICM output and used that difference as the correction term. GNIP stations were included if they provided at least two isotope-precipitation pairs per month to avoid corrections dominated by singular events and to estimate representative mean corrections. The GNIP stations used for corrections are shown in Fig. 2. In total, 481 stations for \u03b4\u00b9\u2078O, 441 for \u03b4\u00b2H, and 435 for d-excess met the criterion.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GNIP",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "d-excess",
+            "target_entity_type": "Variable",
+            "paragraph": "observational networks (e.g., the Global Network of Isotopes in Precipitation, or GNIP) are sparse in space and time, constraining analyses and applications in data-poor regions. To bridge this gap, static isoscapes, which interpolate monthly observations to long-term annual or climatological monthly means, have been developed and applied across disciplines... Using GNIP observations as the reference, we calculated the difference between the observed GNIP values and the ICM output and used that difference as the correction term. GNIP stations were included if they provided at least two isotope-precipitation pairs per month to avoid corrections dominated by singular events and to estimate representative mean corrections. The GNIP stations used for corrections are shown in Fig. 2. In total, 481 stations for \u03b4\u00b9\u2078O, 441 for \u03b4\u00b2H, and 435 for d-excess met the criterion.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "isotope circulation model (ICM)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JRA-3Q",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Network of Isotopes in Precipitation (GNIP)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SWING2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "static global isoscape (Bowen et al., 2005)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "isoGSM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "nudged isotope-enabled GCMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "isotope-enabled general circulation models (isoGCMs)",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "offline ICM",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "surface evaporation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "subcloud raindrop evaporation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "single-layer formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "grid covering \u201380\u00b0 to 80\u00b0 of latitude",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1.25\u00b0 \u00d7 1.25\u00b0 longitude-latitude grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "single-layer model structure",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "subgrid variability",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "R\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "University of Tsukuba",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "\u03b4\u00b9\u2078O",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "\u03b4\u00b2H",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "d-excess",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Stable precipitation isotopes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "climatological monthly means",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "annual",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "precipitation-weighted monthly values",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "typhoon",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "East Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Kanto Plain",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North China Plain",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mongolian Plateau",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Himalaya\u2013Tibet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Andes",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "European Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Japan",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Ottawa",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Bad Salzuflen",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Vienna",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Calgary",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Bangkok",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Entebbe",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Colombo",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Tokyo",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Manaus",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Ushuaia",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Bahia Blanca",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Cape town",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Melbourne",
+            "entity_type": "City"
+        }
+    ],
+    "referenced_works": []
+}

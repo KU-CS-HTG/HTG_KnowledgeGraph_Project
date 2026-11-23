@@ -1,0 +1,938 @@
+{
+    "uri": "https://openalex.org/W7140078421",
+    "title": "Modeling Extreme Rainfall Events Using Stationary and Non-stationary Peaks-Over-Threshold Frameworks in EVT",
+    "venue": {
+        "name": "American Journal of Mathematical and Computer Modelling",
+        "id": "https://openalex.org/S4210204160",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5130388115",
+            "display_name": "Simion Mbumbu",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5110296800",
+            "display_name": "Anthony Waititu",
+            "orcid": "https://orcid.org/0000-0003-0268-2968"
+        },
+        {
+            "id": "https://openalex.org/A5123333609",
+            "display_name": "Herbert Imboga",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5062457538",
+            "display_name": "Susan Mwelu",
+            "orcid": "https://orcid.org/0009-0005-9570-9112"
+        }
+    ],
+    "doi": "https://doi.org/10.11648/j.ajmcm.20261101.16",
+    "abstract": "Kenya has in recent years experienced a surge in extreme rainfall events, which continue to pose serious risks to human life, infrastructure, and the wider economy. This study aimed to develop a non-stationary Generalized Pareto Distribution(GPD). Its performance was compared with the classical stationary Peaks-Over-Threshold (POT) model to improve the modeling and prediction of extreme rainfall events. Accurately modeling these extremes is therefore essential to support sound risk assessment and informed decision-making. An Extreme Value Theory(EVT)\u2013based threshold exceedance framework was used to model rainfall extremes, contrasting stationary and non-stationary Generalized Pareto formulations. Under the non-stationary framework, key environmental covariates were incorporated. These included Sea Surface Temperature (SST), Atmospheric Moisture Content (AMC), and Impervious Surface Percentage (ISP). These covariates account for ocean-driven climate variability, atmospheric moisture availability, and land-surface modifications influencing local atmospheric moisture, respectively. The findings indicate that the most suitable model was one in which the shape parameter varied with SST and the scale parameter with AMC. This model yielded lower information criterion values, reflecting a superior fit. This preference was further supported by a likelihood-ratio test, which indicated significance at p &amp;lt; 0.05. The model enabled the estimation of return levels and the assessment of rainfall-related risks in Kenya. By accounting for climatic and land-surface drivers, the study offers a stronger basis for risk assessment and delivers guidance for urban planning, policymaking, and strategies for disaster preparedness.",
+    "field": "Statistical modeling of climate extremes",
+    "problem": "Classical stationary models for extreme rainfall underestimate risk by assuming constant parameters, failing to incorporate the influence of changing environmental covariates, such as sea surface temperature, which are critical in a non-stationary climate.",
+    "method": "This study develops a non-stationary Generalized Pareto Distribution model where scale and shape parameters vary with Sea Surface Temperature and Atmospheric Moisture Content to improve the modeling and prediction of extreme rainfall events in Kenya.",
+    "task": "The task is to improve the modeling of extreme rainfall events in Kenya by developing a non-stationary Generalized Pareto Distribution model incorporating environmental covariates and comparing its performance against a classical stationary Peaks-Over-Threshold model.",
+    "model": [
+        "GPD",
+        "POT",
+        "EVT",
+        "GEV",
+        "BM",
+        "ERA5",
+        "GAMLSS"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/generalized-pareto-distribution",
+            "display_name": "Generalized Pareto distribution",
+            "score": 0.8310999870300293
+        },
+        {
+            "id": "https://openalex.org/keywords/impervious-surface",
+            "display_name": "Impervious surface",
+            "score": 0.6427000164985657
+        },
+        {
+            "id": "https://openalex.org/keywords/extreme-value-theory",
+            "display_name": "Extreme value theory",
+            "score": 0.6039000153541565
+        },
+        {
+            "id": "https://openalex.org/keywords/scale",
+            "display_name": "Scale (ratio)",
+            "score": 0.4966999888420105
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4864000082015991
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-surface-temperature",
+            "display_name": "Sea surface temperature",
+            "score": 0.4154999852180481
+        },
+        {
+            "id": "https://openalex.org/keywords/covariate",
+            "display_name": "Covariate",
+            "score": 0.3905999958515167
+        },
+        {
+            "id": "https://openalex.org/keywords/generalized-additive-model",
+            "display_name": "Generalized additive model",
+            "score": 0.3882000148296356
+        },
+        {
+            "id": "https://openalex.org/keywords/extreme-weather",
+            "display_name": "Extreme weather",
+            "score": 0.3774000108242035
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C133514767",
+            "wikidata": "https://www.wikidata.org/wiki/Q5532448",
+            "display_name": "Generalized Pareto distribution",
+            "level": 3,
+            "score": 0.8310999870300293
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6797999739646912
+        },
+        {
+            "id": "https://openalex.org/C2668921",
+            "wikidata": "https://www.wikidata.org/wiki/Q1434713",
+            "display_name": "Impervious surface",
+            "level": 2,
+            "score": 0.6427000164985657
+        },
+        {
+            "id": "https://openalex.org/C147581598",
+            "wikidata": "https://www.wikidata.org/wiki/Q729429",
+            "display_name": "Extreme value theory",
+            "level": 2,
+            "score": 0.6039000153541565
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5120999813079834
+        },
+        {
+            "id": "https://openalex.org/C2778755073",
+            "wikidata": "https://www.wikidata.org/wiki/Q10858537",
+            "display_name": "Scale (ratio)",
+            "level": 2,
+            "score": 0.4966999888420105
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4864000082015991
+        },
+        {
+            "id": "https://openalex.org/C134097258",
+            "wikidata": "https://www.wikidata.org/wiki/Q1507383",
+            "display_name": "Sea surface temperature",
+            "level": 2,
+            "score": 0.4154999852180481
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.41179999709129333
+        },
+        {
+            "id": "https://openalex.org/C119043178",
+            "wikidata": "https://www.wikidata.org/wiki/Q320723",
+            "display_name": "Covariate",
+            "level": 2,
+            "score": 0.3905999958515167
+        },
+        {
+            "id": "https://openalex.org/C194648359",
+            "wikidata": "https://www.wikidata.org/wiki/Q3318054",
+            "display_name": "Generalized additive model",
+            "level": 2,
+            "score": 0.3882000148296356
+        },
+        {
+            "id": "https://openalex.org/C205537798",
+            "wikidata": "https://www.wikidata.org/wiki/Q1277161",
+            "display_name": "Extreme weather",
+            "level": 3,
+            "score": 0.3774000108242035
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3560999929904938
+        },
+        {
+            "id": "https://openalex.org/C169707849",
+            "wikidata": "https://www.wikidata.org/wiki/Q1617240",
+            "display_name": "Generalized extreme value distribution",
+            "level": 3,
+            "score": 0.33820000290870667
+        },
+        {
+            "id": "https://openalex.org/C118365302",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric model",
+            "level": 2,
+            "score": 0.3319000005722046
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.3305000066757202
+        },
+        {
+            "id": "https://openalex.org/C149782125",
+            "wikidata": "https://www.wikidata.org/wiki/Q160039",
+            "display_name": "Econometrics",
+            "level": 1,
+            "score": 0.32109999656677246
+        },
+        {
+            "id": "https://openalex.org/C2993643576",
+            "wikidata": "https://www.wikidata.org/wiki/Q1277161",
+            "display_name": "Climate extremes",
+            "level": 3,
+            "score": 0.30000001192092896
+        },
+        {
+            "id": "https://openalex.org/C114289077",
+            "wikidata": "https://www.wikidata.org/wiki/Q3284399",
+            "display_name": "Statistical model",
+            "level": 2,
+            "score": 0.2962999939918518
+        },
+        {
+            "id": "https://openalex.org/C137635306",
+            "wikidata": "https://www.wikidata.org/wiki/Q182667",
+            "display_name": "Pareto principle",
+            "level": 2,
+            "score": 0.2953000068664551
+        },
+        {
+            "id": "https://openalex.org/C2993190167",
+            "wikidata": "https://www.wikidata.org/wiki/Q215864",
+            "display_name": "Extreme heat",
+            "level": 3,
+            "score": 0.2750000059604645
+        },
+        {
+            "id": "https://openalex.org/C12174686",
+            "wikidata": "https://www.wikidata.org/wiki/Q1058438",
+            "display_name": "Risk assessment",
+            "level": 2,
+            "score": 0.2728999853134155
+        },
+        {
+            "id": "https://openalex.org/C2779662365",
+            "wikidata": "https://www.wikidata.org/wiki/Q5416694",
+            "display_name": "Event (particle physics)",
+            "level": 2,
+            "score": 0.26739999651908875
+        },
+        {
+            "id": "https://openalex.org/C176864760",
+            "wikidata": "https://www.wikidata.org/wiki/Q217651",
+            "display_name": "Moisture",
+            "level": 2,
+            "score": 0.26489999890327454
+        },
+        {
+            "id": "https://openalex.org/C96250715",
+            "wikidata": "https://www.wikidata.org/wiki/Q965330",
+            "display_name": "Estimation",
+            "level": 2,
+            "score": 0.2551000118255615
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.25360000133514404
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Stationary GPD (0.92 quantile threshold)",
+            "observational_dataset": "Rainfall exceedances above the 0.92 quantile threshold",
+            "evaluation_metric": "AIC",
+            "result": "597.39"
+        },
+        {
+            "model": "Stationary GPD (0.92 quantile threshold)",
+            "observational_dataset": "Rainfall exceedances above the 0.92 quantile threshold",
+            "evaluation_metric": "BIC",
+            "result": "601.68"
+        },
+        {
+            "model": "Stationary GPD (0.92 quantile threshold)",
+            "observational_dataset": "Rainfall exceedances above the 0.92 quantile threshold",
+            "evaluation_metric": "Neg. log-likelihood",
+            "result": "296.69"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z2, \u03be ~ z1)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "NegLogLik",
+            "result": "284.671"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z2, \u03be ~ z1)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "AIC",
+            "result": "577.341"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z2, \u03be ~ z1)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "BIC",
+            "result": "585.914"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z1 + z2, \u03be ~ z1)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "NegLogLik",
+            "result": "284.085"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z1 + z2, \u03be ~ z1)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "AIC",
+            "result": "578.170"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z1 + z2, \u03be ~ z1)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "BIC",
+            "result": "588.886"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z1 + z2, \u03be ~ z3)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "NegLogLik",
+            "result": "286.046"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z1 + z2, \u03be ~ z3)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "AIC",
+            "result": "582.092"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z1 + z2, \u03be ~ z3)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "BIC",
+            "result": "592.807"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z1 + z2, \u03be ~ z2)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "NegLogLik",
+            "result": "286.193"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z1 + z2, \u03be ~ z2)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "AIC",
+            "result": "582.385"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z1 + z2, \u03be ~ z2)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "BIC",
+            "result": "593.101"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z2, \u03be ~ z3)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "NegLogLik",
+            "result": "289.628"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z2, \u03be ~ z3)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "AIC",
+            "result": "587.255"
+        },
+        {
+            "model": "Non-stationary GPD (\u03c3 ~ z2, \u03be ~ z3)",
+            "observational_dataset": "threshold exceedances",
+            "evaluation_metric": "BIC",
+            "result": "595.828"
+        }
+    ],
+    "innovation": "This paper develops a non-stationary Peaks-Over-Threshold model for extreme rainfall in Kenya, demonstrating that incorporating Sea Surface Temperature and Atmospheric Moisture Content as covariates provides a more accurate framework for risk assessment than traditional stationary models.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "extreme rainfall events",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Kenya",
+            "target_entity_type": "Country",
+            "paragraph": "Abstract: Kenya has in recent years experienced a surge in extreme rainfall events, which continue to pose serious risks to human life, infrastructure, and the wider economy.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "extreme rainfall events",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "East Africa",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "In East Africa, including Kenya, these trends have contributed to a higher frequency of extreme rainfall events, posing substantial risks to human life, infrastructure, and agriculture.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "floods",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Europe",
+            "target_entity_type": "Continent",
+            "paragraph": "Severe rainfall events in recent decades have caused substantial global impacts. For example, floods in Europe in 2021 resulted in nearly 243 fatalities [15], Pakistan in 2022 saw over 1400 deaths [6], and in Africa, 2024 floods affected 27 countries, claiming approximately 2,500 lives [3].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "floods",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Pakistan",
+            "target_entity_type": "Country",
+            "paragraph": "Severe rainfall events in recent decades have caused substantial global impacts. For example, floods in Europe in 2021 resulted in nearly 243 fatalities [15], Pakistan in 2022 saw over 1400 deaths [6], and in Africa, 2024 floods affected 27 countries, claiming approximately 2,500 lives [3].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "floods",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Africa",
+            "target_entity_type": "Continent",
+            "paragraph": "Severe rainfall events in recent decades have caused substantial global impacts. For example, floods in Europe in 2021 resulted in nearly 243 fatalities [15], Pakistan in 2022 saw over 1400 deaths [6], and in Africa, 2024 floods affected 27 countries, claiming approximately 2,500 lives [3].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "torrential rains",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Kenya",
+            "target_entity_type": "Country",
+            "paragraph": "In Kenya, torrential rains in April-May 2024 caused a dam burst in Mai Mahiu, killing over 40 people and damaging homes, roads, and farmland [1].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "torrential rains",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Mai Mahiu",
+            "target_entity_type": "City",
+            "paragraph": "In Kenya, torrential rains in April-May 2024 caused a dam burst in Mai Mahiu, killing over 40 people and damaging homes, roads, and farmland [1].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Kenya",
+            "target_entity_type": "Country",
+            "paragraph": "For instance, Mulwa et al. developed a hybrid Extreme Value Theory-Copula-XGBoost framework to model compound drought and heatwave extremes in Kenya, demonstrating the relevance of Extreme Value Theory (EVT) in capturing complex tail behavior in climate variables [25].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heatwave",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Kenya",
+            "target_entity_type": "Country",
+            "paragraph": "For instance, Mulwa et al. developed a hybrid Extreme Value Theory-Copula-XGBoost framework to model compound drought and heatwave extremes in Kenya, demonstrating the relevance of Extreme Value Theory (EVT) in capturing complex tail behavior in climate variables [25].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "high-impact rainfall",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "East Africa",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Kyojo et al. and Onwuegbuche et al. applied EVT to analyze high-impact rainfall in East Africa, focusing on Tanzania and Kenya, respectively [22, 27].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "high-impact rainfall",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Tanzania",
+            "target_entity_type": "Country",
+            "paragraph": "Kyojo et al. and Onwuegbuche et al. applied EVT to analyze high-impact rainfall in East Africa, focusing on Tanzania and Kenya, respectively [22, 27].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "high-impact rainfall",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Kenya",
+            "target_entity_type": "Country",
+            "paragraph": "Kyojo et al. and Onwuegbuche et al. applied EVT to analyze high-impact rainfall in East Africa, focusing on Tanzania and Kenya, respectively [22, 27].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "peak floods",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Mozambique",
+            "target_entity_type": "Country",
+            "paragraph": "Maposa et al. evaluated non-stationary GEV models for peak floods in Mozambique's lower Limpopo River basin.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "peak floods",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "lower Limpopo River basin",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Maposa et al. evaluated non-stationary GEV models for peak floods in Mozambique's lower Limpopo River basin.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "El Ni\u00f1o-Southern Oscillation",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "East Africa",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "SST (1960-2024) was sourced from National Oceanic and Atmospheric Administration (NOAA), with variations, particularly through El Ni\u00f1o-Southern Oscillation (ENSO) events, influencing East African rainfall patterns.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Rainfall",
+            "target_entity_type": "Variable",
+            "paragraph": "Rainfall data used in this study were obtained from TerraClimate (1960-1980) and the Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) dataset (1981-2024).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHIRPS",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Rainfall",
+            "target_entity_type": "Variable",
+            "paragraph": "Rainfall data used in this study were obtained from TerraClimate (1960-1980) and the Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) dataset (1981-2024).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Atmospheric Moisture Content",
+            "target_entity_type": "Variable",
+            "paragraph": "The second covariate, AMC (1960-2024) from the ECMWF Reanalysis 5th Generation (ERA5) dataset, reflects the amount of water vapor available in the atmosphere.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GHSL",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Impervious Surface Percentage",
+            "target_entity_type": "Variable",
+            "paragraph": "ISP, calculated using the Global Human Settlement Layer (GHSL) in Quantum Geographic Information System (QGIS), serves as a proxy for land-use change and human influence.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Jomo Kenyatta University of Agriculture and Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Kenya",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Generalized Pareto Distribution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Peaks-Over-Threshold",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Extreme Value Theory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Sea Surface Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Atmospheric Moisture Content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Impervious Surface Percentage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "likelihood-ratio test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Return Levels",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Extreme Rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "East Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "floods",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "floods",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Pakistan",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "torrential rains",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "dam burst",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Mai Mahiu",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "drought",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "heatwave",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Ethiopia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Tanzania",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Block Maxima",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Generalized Extreme Value",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Iberian Peninsula",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Flood",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Spain",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Poisson-GPD model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Akaike Information Criterion",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Root Mean Square Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Nash-Sutcliffe Efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Bangladesh",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Chattogram",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Dhaka",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Hanjiang River Basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Generalized Additive Models for Location, Scale, and Shape",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "South Africa",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Limpopo River basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mozambique",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "TerraClimate",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Climate Hazards Group InfraRed Precipitation with Station data",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "National Oceanic and Atmospheric Administration",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "El Ni\u00f1o-Southern Oscillation",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "ECMWF Reanalysis 5th Generation",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Global Human Settlement Layer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Kolmogorov-Smirnov test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mann-Kendall test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "annual",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "seasonal",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "March-May",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "October-December",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Maximum Likelihood Estimation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Bayesian Information Criterion",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Likelihood Ratio Test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "quantile regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Shapiro-Wilk test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Wilcoxon signed-rank test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Spearman correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Negative Log-Likelihood",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Runs test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Return Period",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Probability",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Iran",
+            "entity_type": "Country"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1500657154",
+        "https://openalex.org/W1989439529",
+        "https://openalex.org/W2019199024",
+        "https://openalex.org/W2036983007",
+        "https://openalex.org/W2055340620",
+        "https://openalex.org/W2114927293",
+        "https://openalex.org/W2125897751",
+        "https://openalex.org/W2159689047",
+        "https://openalex.org/W2349952878",
+        "https://openalex.org/W2487397231",
+        "https://openalex.org/W2808063502",
+        "https://openalex.org/W2809351581",
+        "https://openalex.org/W2921898421",
+        "https://openalex.org/W2954477736",
+        "https://openalex.org/W2964460232",
+        "https://openalex.org/W3160988651",
+        "https://openalex.org/W3203308601",
+        "https://openalex.org/W4236154753",
+        "https://openalex.org/W4361009153",
+        "https://openalex.org/W4385813997",
+        "https://openalex.org/W4388101985",
+        "https://openalex.org/W4388296979",
+        "https://openalex.org/W4391337219",
+        "https://openalex.org/W4400974608",
+        "https://openalex.org/W4401767827",
+        "https://openalex.org/W4406874913",
+        "https://openalex.org/W4409243405",
+        "https://openalex.org/W4409375498",
+        "https://openalex.org/W4412069459",
+        "https://openalex.org/W7124739335"
+    ]
+}

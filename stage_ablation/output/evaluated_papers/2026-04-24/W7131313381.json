@@ -1,0 +1,2565 @@
+{
+    "uri": "https://openalex.org/W7131313381",
+    "title": "A bias-corrected &amp; downscaled massive ensemble to diagnose uncertainty in climate impact projections",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5024337011",
+            "display_name": "Kevin Schwarzwald",
+            "orcid": "https://orcid.org/0000-0001-8309-7124"
+        },
+        {
+            "id": "https://openalex.org/A5126692140",
+            "display_name": "Nathan Lenssen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126700208",
+            "display_name": "Radley Horton",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126701097",
+            "display_name": "Gernot Wagner",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.31223/x5tx9k",
+    "abstract": "Projections of climate change and climate impacts requires bias-corrected, downscaled output from ensembles of earth system models (ESMs). Potential impacts are uncertain due to modeling differences between ESMs, internal variability stemming from the chaos of the earth system, and differences in the historical reference datasets used to bias-corrected and downscale ESM output. Here, we introduce the Bias-Corrected and Downscaled Massive Ensemble (BCD-ME), a set of over 1,400 projections of daily mean and maximum temperature. The BCD-ME samples model and internal uncertainty with up to 86 runs from 12 Large Ensembles and uncertainty in the reference dataset by using 4 different reanalysis products to bias-correct and downscale output. Output is organized by Global Warming Levels (GWL), accounting for differences between forcing scenarios and ESM climate sensitivities. The ensemble contains 20-year daily time series for each GWL on a uniform 1-degree grid, bias-corrected using Quantile Delta Mapping, and statistics of 20-year time series for each GWL on a uniform 0.25-degree grid, downscaled using Quantile-Preserving Localized Analog Downscaling. The BCD-ME is stored in Analysis-Ready, Cloud-Optimized (ARCO) Zarr stores, enabling efficient computation of the 97 TB (uncompressed) dataset.",
+    "field": "Climate impact projections",
+    "problem": "Existing climate projection datasets for impact studies often fail to adequately sample key uncertainties, particularly internal climate variability and the choice of historical reference data used for bias-correction, hindering robust impact assessments.",
+    "method": "The paper introduces the Bias-Corrected and Downscaled Massive Ensemble, a large dataset of temperature projections created by bias-correcting and downscaling numerous climate model runs using multiple reanalysis products to systematically sample model, internal, and observational uncertainty.",
+    "task": "The task is to create a massive, bias-corrected, and downscaled ensemble of daily temperature projections that samples model, internal variability, and observational uncertainty to help diagnose uncertainty in climate impact studies.",
+    "model": [
+        "ACCESS-ESM1-5",
+        "CESM2-WACCM",
+        "CNRM-CM6-1",
+        "CNRM-ESM2-1",
+        "CanESM5",
+        "EC-Earth3",
+        "EC-Earth3-Veg",
+        "FGOALS-g3",
+        "IPSL-CM6A-LR",
+        "MIROC6",
+        "MPI-ESM1-2-LR",
+        "MRI-ESM2-0"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/forcing",
+            "display_name": "Forcing (mathematics)",
+            "score": 0.6601999998092651
+        },
+        {
+            "id": "https://openalex.org/keywords/quantile",
+            "display_name": "Quantile",
+            "score": 0.6557000279426575
+        },
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.6491000056266785
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.48809999227523804
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4677000045776367
+        },
+        {
+            "id": "https://openalex.org/keywords/series",
+            "display_name": "Series (stratigraphy)",
+            "score": 0.46129998564720154
+        },
+        {
+            "id": "https://openalex.org/keywords/set",
+            "display_name": "Set (abstract data type)",
+            "score": 0.40450000762939453
+        },
+        {
+            "id": "https://openalex.org/keywords/computation",
+            "display_name": "Computation",
+            "score": 0.3971000015735626
+        },
+        {
+            "id": "https://openalex.org/keywords/ensemble-forecasting",
+            "display_name": "Ensemble forecasting",
+            "score": 0.3747999966144562
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C197115733",
+            "wikidata": "https://www.wikidata.org/wiki/Q1003136",
+            "display_name": "Forcing (mathematics)",
+            "level": 2,
+            "score": 0.6601999998092651
+        },
+        {
+            "id": "https://openalex.org/C118671147",
+            "wikidata": "https://www.wikidata.org/wiki/Q578714",
+            "display_name": "Quantile",
+            "level": 2,
+            "score": 0.6557000279426575
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.6491000056266785
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6280999779701233
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5982999801635742
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.48809999227523804
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4677000045776367
+        },
+        {
+            "id": "https://openalex.org/C143724316",
+            "wikidata": "https://www.wikidata.org/wiki/Q312468",
+            "display_name": "Series (stratigraphy)",
+            "level": 2,
+            "score": 0.46129998564720154
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4537999927997589
+        },
+        {
+            "id": "https://openalex.org/C177264268",
+            "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+            "display_name": "Set (abstract data type)",
+            "level": 2,
+            "score": 0.40450000762939453
+        },
+        {
+            "id": "https://openalex.org/C45374587",
+            "wikidata": "https://www.wikidata.org/wiki/Q12525525",
+            "display_name": "Computation",
+            "level": 2,
+            "score": 0.3971000015735626
+        },
+        {
+            "id": "https://openalex.org/C119898033",
+            "wikidata": "https://www.wikidata.org/wiki/Q3433888",
+            "display_name": "Ensemble forecasting",
+            "level": 2,
+            "score": 0.3747999966144562
+        },
+        {
+            "id": "https://openalex.org/C51865526",
+            "wikidata": "https://www.wikidata.org/wiki/Q5379962",
+            "display_name": "Ensemble average",
+            "level": 2,
+            "score": 0.3619000017642975
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.35910001397132874
+        },
+        {
+            "id": "https://openalex.org/C151406439",
+            "wikidata": "https://www.wikidata.org/wiki/Q186588",
+            "display_name": "Time series",
+            "level": 2,
+            "score": 0.35740000009536743
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.3353999853134155
+        },
+        {
+            "id": "https://openalex.org/C99578197",
+            "wikidata": "https://www.wikidata.org/wiki/Q1463606",
+            "display_name": "Radiative forcing",
+            "level": 3,
+            "score": 0.3353999853134155
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.32659998536109924
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.31630000472068787
+        },
+        {
+            "id": "https://openalex.org/C149782125",
+            "wikidata": "https://www.wikidata.org/wiki/Q160039",
+            "display_name": "Econometrics",
+            "level": 1,
+            "score": 0.3091999888420105
+        },
+        {
+            "id": "https://openalex.org/C2993643576",
+            "wikidata": "https://www.wikidata.org/wiki/Q1277161",
+            "display_name": "Climate extremes",
+            "level": 3,
+            "score": 0.30300000309944153
+        },
+        {
+            "id": "https://openalex.org/C2781468064",
+            "wikidata": "https://www.wikidata.org/wiki/Q1267117",
+            "display_name": "Lead time",
+            "level": 2,
+            "score": 0.2948000133037567
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.29409998655319214
+        },
+        {
+            "id": "https://openalex.org/C47665787",
+            "wikidata": "https://www.wikidata.org/wiki/Q7834266",
+            "display_name": "Transient climate simulation",
+            "level": 4,
+            "score": 0.29120001196861267
+        },
+        {
+            "id": "https://openalex.org/C111874474",
+            "wikidata": "https://www.wikidata.org/wiki/Q6005872",
+            "display_name": "Impact assessment",
+            "level": 2,
+            "score": 0.27889999747276306
+        },
+        {
+            "id": "https://openalex.org/C177803969",
+            "wikidata": "https://www.wikidata.org/wiki/Q29205",
+            "display_name": "Uncertainty analysis",
+            "level": 2,
+            "score": 0.26489999890327454
+        },
+        {
+            "id": "https://openalex.org/C149441793",
+            "wikidata": "https://www.wikidata.org/wiki/Q200726",
+            "display_name": "Probability distribution",
+            "level": 2,
+            "score": 0.2603999972343445
+        },
+        {
+            "id": "https://openalex.org/C58489278",
+            "wikidata": "https://www.wikidata.org/wiki/Q1172284",
+            "display_name": "Data set",
+            "level": 2,
+            "score": 0.25369998812675476
+        },
+        {
+            "id": "https://openalex.org/C143742823",
+            "wikidata": "https://www.wikidata.org/wiki/Q5513004",
+            "display_name": "GCM transcription factors",
+            "level": 4,
+            "score": 0.25110000371932983
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "24"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "24"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "24"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "24"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "5"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "5"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "5"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "8"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "8"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "8"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "7"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "7"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "4"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "3"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "18"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "18"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "18"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "18"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "15"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "12"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "6"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "41"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "41"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "31"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "26"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "13"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "7"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "5"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "86"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "86"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "86"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "86"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "86"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "86"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "79"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "35"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "35"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "35"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "35"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "32"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "15"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "10"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "13"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "13"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "13"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "13"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "13"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "9"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "6"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "10"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "10"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "10"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "7"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "3"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "0"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "0"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "28"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "28"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "28"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "28"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "28"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "18"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "17"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "60"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "34"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "34"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "31"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "28"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "0"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "0"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "30"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "30"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "30"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "20"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "16"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "6"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "0"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.0",
+            "result": "12"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 1.5",
+            "result": "8"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.0",
+            "result": "8"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 2.5",
+            "result": "8"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.0",
+            "result": "7"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 3.5",
+            "result": "2"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tas at GWL 4.0",
+            "result": "0"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "6"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "6"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "6"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "6"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "6"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "6"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "6"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "0"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "0"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "0"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "0"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "0"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "0"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "0"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "5"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "5"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "5"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "3"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "2"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "2"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "1"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "5"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "5"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "3"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "3"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "2"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "1"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "1"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "30"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "30"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "30"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "30"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "30"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "30"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "27"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "22"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "22"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "22"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "22"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "19"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "8"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "3"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "10"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "10"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "10"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "10"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "10"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "5"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "2"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "7"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "7"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "7"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "4"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "0"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "0"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "0"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "22"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "22"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "22"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "22"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "22"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "12"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "11"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "37"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "25"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "25"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "22"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "19"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "0"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "0"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "30"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "30"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "30"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "20"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "16"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "6"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "0"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.0",
+            "result": "16"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 1.5",
+            "result": "16"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.0",
+            "result": "16"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 2.5",
+            "result": "14"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.0",
+            "result": "11"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 3.5",
+            "result": "6"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "N/A in table",
+            "evaluation_metric": "Number of runs for tasmax at GWL 4.0",
+            "result": "0"
+        }
+    ],
+    "innovation": "This paper introduces the Bias-Corrected and Downscaled Massive Ensemble (BCD-ME), a large dataset of over 1,400 temperature projections that systematically samples uncertainty from climate models, internal variability, and four different historical reanalysis products to enable robust quantification of uncertainty in future climate impacts.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "daily mean temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Here, we introduce the Bias-Corrected and Downscaled Massive Ensemble (BCD-ME), a set of over 1,400 projections of daily mean and maximum temperature. The BCD-ME samples model and internal uncertainty with up to 86 runs from 12 Large Ensembles and uncertainty in the reference dataset by using 4 different reanalysis products to bias-correct and downscale output.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "maximum temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Here, we introduce the Bias-Corrected and Downscaled Massive Ensemble (BCD-ME), a set of over 1,400 projections of daily mean and maximum temperature. The BCD-ME samples model and internal uncertainty with up to 86 runs from 12 Large Ensembles and uncertainty in the reference dataset by using 4 different reanalysis products to bias-correct and downscale output.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "1\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "The ensemble contains 20-year daily time series for each GWL on a uniform 1\u00b0 grid, bias-corrected using Quantile Delta Mapping, and statistics of 20-year time series for each GWL on a uniform 0.25\u00b0 grid, downscaled using Quantile-Preserving Localized Analog Downscaling.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.25\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "The ensemble contains 20-year daily time series for each GWL on a uniform 1\u00b0 grid, bias-corrected using Quantile Delta Mapping, and statistics of 20-year time series for each GWL on a uniform 0.25\u00b0 grid, downscaled using Quantile-Preserving Localized Analog Downscaling.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEX-GDDP",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "NASA",
+            "target_entity_type": "Institute",
+            "paragraph": "Existing publicly-available products aimed at impacts research, such as NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP, Thrasher et al. (2022)), the Inter-Sectoral Impact Model Intercomparison Project (ISIMIP, Frieler et al. (2024), or the Global Downscaled Projections for Climate Impact Research (GDPCIR, Gergel et al. (2024)) provide bias-corrected and downscaled climate projections, but do not sample internal variability (only one ensemble member per ESM is provided).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.25\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "Reanalysis Resolution Publisher Citation\nERA5 0.25\u00b0 European Centre for Medium-Range Weather Forecasting (ECMWF) (Hersbach et al., 2020)\nTable 1: Reanalysis products used as historical \u201cground truths\" for bias-correction and downscaling",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "European Centre for Medium-Range Weather Forecasting (ECMWF)",
+            "target_entity_type": "Institute",
+            "paragraph": "Reanalysis Resolution Publisher Citation\nERA5 0.25\u00b0 European Centre for Medium-Range Weather Forecasting (ECMWF) (Hersbach et al., 2020)\nTable 1: Reanalysis products used as historical \u201cground truths\" for bias-correction and downscaling",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MERRA2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.5\u00b0 x 0.625\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "Reanalysis Resolution Publisher Citation\nMERRA2 0.5\u00b0 x 0.625\u00b0 National Aeronautics and Space Administration (NASA) (Bosilovich et al., 2015)\nTable 1: Reanalysis products used as historical \u201cground truths\" for bias-correction and downscaling",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MERRA2",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "National Aeronautics and Space Administration (NASA)",
+            "target_entity_type": "Institute",
+            "paragraph": "Reanalysis Resolution Publisher Citation\nMERRA2 0.5\u00b0 x 0.625\u00b0 National Aeronautics and Space Administration (NASA) (Bosilovich et al., 2015)\nTable 1: Reanalysis products used as historical \u201cground truths\" for bias-correction and downscaling",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JRA-3Q",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.375\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "Reanalysis Resolution Publisher Citation\nJRA-3Q 0.375\u00b0 Japan Meteorological Agency (JMA) (Kosaka et al., 2024)\nTable 1: Reanalysis products used as historical \u201cground truths\" for bias-correction and downscaling",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JRA-3Q",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Japan Meteorological Agency (JMA)",
+            "target_entity_type": "Institute",
+            "paragraph": "Reanalysis Resolution Publisher Citation\nJRA-3Q 0.375\u00b0 Japan Meteorological Agency (JMA) (Kosaka et al., 2024)\nTable 1: Reanalysis products used as historical \u201cground truths\" for bias-correction and downscaling",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GMFD",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.25\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "Reanalysis Resolution Publisher Citation\nGMFD 0.25\u00b0 Princeton Hydrology Group (Sheffield et al., 2006)\nTable 1: Reanalysis products used as historical \u201cground truths\" for bias-correction and downscaling",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GMFD",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Princeton Hydrology Group",
+            "target_entity_type": "Institute",
+            "paragraph": "Reanalysis Resolution Publisher Citation\nGMFD 0.25\u00b0 Princeton Hydrology Group (Sheffield et al., 2006)\nTable 1: Reanalysis products used as historical \u201cground truths\" for bias-correction and downscaling",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "tas",
+            "target_entity_type": "Variable",
+            "paragraph": "The BCD-ME time series collection provides bias-corrected time series 2m daily temperature (tas) and 2m maximum daily temperature (tasmax) for all locations from 56\u00b0S to 86\u00b0N (land-only for GMFD- based ensemble members), spanning all permanently inhabited regions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "tasmax",
+            "target_entity_type": "Variable",
+            "paragraph": "The BCD-ME time series collection provides bias-corrected time series 2m daily temperature (tas) and 2m maximum daily temperature (tasmax) for all locations from 56\u00b0S to 86\u00b0N (land-only for GMFD- based ensemble members), spanning all permanently inhabited regions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Quantile Delta Mapping (QDM)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Here, we use the Quantile Delta Mapping (QDM) (Cannon et al., 2015) method (Step 2 in Figure 1). QDM uses a \u201cdelta method\u201d approach, adding changes between present and future time periods from an ESM to a time series taken from a reference data product. QDM allows for different change factors for each quantile of an ESM's distribution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Quantile-Preserving Localized-Analog Downscaling (QPLAD)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Here, we implement Quantile- Preserving Localized-Analog Downscaling (QPLAD) for statistically downscaling the ESM output to a finer resolution reanalysis grid, following Gergel et al. (2024) (Step 3 in Figure 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "tasbinC",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 3: Description of saved variables in the 1\u00ba bias-corrected and 0.25\u00b0 bias-corrected and downscaled BCD-ME products.\nMetric Units Description Notes\ntasbinC days/year Mean days per year in Celsius bins 1-deg bins from -21.5 to 51.5\u00b0C",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "tasbinF",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 3: Description of saved variables in the 1\u00ba bias-corrected and 0.25\u00b0 bias-corrected and downscaled BCD-ME products.\nMetric Units Description Notes\ntasbinF days/year Mean days per year in Fahrenheit bins 5-deg bins from -5 to 130 F",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "tassumpoly",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 3: Description of saved variables in the 1\u00ba bias-corrected and 0.25\u00b0 bias-corrected and downscaled BCD-ME products.\nMetric Units Description Notes\ntassumpoly \u00b0C for k \u2208 (1,2,3,4) Mean annual sums of polynomial mean temperature",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "tasmaxbinC",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 3: Description of saved variables in the 1\u00ba bias-corrected and 0.25\u00b0 bias-corrected and downscaled BCD-ME products.\nMetric Units Description Notes\ntasmaxbinC days/year Mean days per year in Celsius bins 1-deg bins from -21.5 to 51.5\u00b0C",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "tasmaxbinF",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 3: Description of saved variables in the 1\u00ba bias-corrected and 0.25\u00b0 bias-corrected and downscaled BCD-ME products.\nMetric Units Description Notes\ntasmaxbinF days/year Mean days per year in Fahrenheit bins 5-deg bins from -5 to 130 F",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bias-Corrected and Downscaled Massive Ensemble (BCD-ME)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "tasmaxsumpoly",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 3: Description of saved variables in the 1\u00ba bias-corrected and 0.25\u00b0 bias-corrected and downscaled BCD-ME products.\nMetric Units Description Notes\ntasmaxsumpoly | \u00b0C for k \u2208 (1,2, 3, 4) Mean annual sums of polynomial max temperature",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACCESS-ESM1-5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nACCESS-ESM1-5 SSP2-4.5 (Ziehn et al., 2019a)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACCESS-ESM1-5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nACCESS-ESM1-5 SSP5-8.5 (Ziehn et al., 2019b)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM2-WACCM",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCESM2-WACCM SSP2-4.5 (Danabasoglu, 2019a)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM2-WACCM",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP3-7.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCESM2-WACCM SSP3-7.0 (Danabasoglu, 2019b)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM2-WACCM",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCESM2-WACCM SSP5-8.5 (Danabasoglu, 2019c)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM6-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCNRM-CM6-1 SSP2-4.5 (Voldoire, 2019a)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM6-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP3-7.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCNRM-CM6-1 SSP3-7.0 (Voldoire, 2019b)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM6-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCNRM-CM6-1 SSP5-8.5 (Voldoire, 2019c)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM2-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP1-1.9",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCNRM-ESM2-1 SSP1-1.9 (Voldoire, 2019d)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM2-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP1-2.6",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCNRM-ESM2-1 SSP1-2.6 (Voldoire, 2019e)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM2-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCNRM-ESM2-1 SSP2-4.5 (Voldoire, 2019f)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM2-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP3-7.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCNRM-ESM2-1 SSP3-7.0 (Voldoire, 2019g)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM2-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP4-3.4",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCNRM-ESM2-1 SSP4-3.4 (Voldoire, 2019h)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM2-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP4-6.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCNRM-ESM2-1 SSP4-6.0 (Voldoire, 2019i)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM2-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-3.4-OS",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCNRM-ESM2-1 SSP5-3.4-OS (Voldoire, 2019j)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM2-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCNRM-ESM2-1 SSP5-8.5 (Voldoire, 2019k)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCanESM5 SSP2-4.5 (Swart et al., 2019a)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP3-7.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCanESM5 SSP3-7.0 (Swart et al., 2019b)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nCanESM5 SSP5-8.5 (Swart et al., 2019c)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nEC-Earth3 SSP2-4.5 (EC-Earth Consortium (EC-Earth), 2019a)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP3-7.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nEC-Earth3 SSP3-7.0 (EC-Earth Consortium (EC-Earth), 2019b)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nEC-Earth3 SSP5-8.5 (EC-Earth Consortium (EC-Earth), 2019c)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-Veg",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nEC-Earth3-Veg SSP2-4.5 (EC-Earth Consortium (EC-Earth), 2019d)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-Veg",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP3-7.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nEC-Earth3-Veg SSP3-7.0 (EC-Earth Consortium (EC-Earth), 2019e)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-Veg",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nEC-Earth3-Veg SSP5-8.5 (EC-Earth Consortium (EC-Earth), 2019f)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-g3",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nFGOALS-g3 SSP2-4.5 (Li, 2019a)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-g3",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP3-7.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nFGOALS-g3 SSP3-7.0 (Li, 2019b)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-g3",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nFGOALS-g3 SSP5-8.5 (Li, 2019c)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nIPSL-CM6A-LR SSP2-4.5 (Boucher et al., 2019a)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP3-7.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nIPSL-CM6A-LR SSP3-7.0 (Boucher et al., 2019b)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nIPSL-CM6A-LR SSP5-8.5 (Boucher et al., 2019c)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIROC6",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nMIROC6 SSP2-4.5 (Shiogama et al., 2019a)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIROC6",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP3-7.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nMIROC6 SSP3-7.0 (Shiogama et al., 2019b)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIROC6",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nMIROC6 SSP5-8.5 (Shiogama et al., 2019c)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM1-2-LR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nMPI-ESM1-2-LR SSP2-4.5 (Wieners et al., 2019a)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM1-2-LR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP3-7.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nMPI-ESM1-2-LR SSP3-7.0 (Wieners et al., 2019b)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM1-2-LR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nMPI-ESM1-2-LR SSP5-8.5 (Wieners et al., 2019c)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MRI-ESM2-0",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nMRI-ESM2-0 SSP2-4.5 (Yukimoto et al., 2019a)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MRI-ESM2-0",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP3-7.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nMRI-ESM2-0 SSP3-7.0 (Yukimoto et al., 2019b)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MRI-ESM2-0",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Table 4: ESM citation information by ESM and scenario, following best practices for citing CMIP simulations.\nModel Experiment\nMRI-ESM2-0 SSP5-8.5 (Yukimoto et al., 2019c)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Bias-Corrected and Downscaled Massive Ensemble",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BCD-ME",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Columbia Climate School",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Lamont-Doherty Earth Observatory of Columbia University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Colorado School of Mines",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NSF National Center for Atmospheric Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Columbia Business School",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "daily mean temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily maximum temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Large Ensembles",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "Global Warming Levels",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GWL",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "1 degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Quantile Delta Mapping",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "0.25 degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Quantile-Preserving Localized Analog Downscaling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "NEX-GDDP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ISIMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "GDPCIR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GARD-LENS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LOCA2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "near-surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global land",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MERRA2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JRA-3Q",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GMFD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasting",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Aeronautics and Space Administration",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Japan Meteorological Agency",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "JMA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Princeton Hydrology Group",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "tas",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tasmax",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "Large Ensemble MIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ScenarioMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Shared Socioeconomic Pathway",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "SSP",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "ACCESS-ESM1-5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM2-WACCM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CM6-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-ESM2-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CanESM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FGOALS-g3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth3-Veg",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM6A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-ESM2-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GWL 0.61",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GWL 1.0",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GWL 1.5",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GWL 2.0",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GWL 2.5",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GWL 3.0",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GWL 3.5",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GWL 4.0",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "HadCRUT5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "r1i1p1f1",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "ssp245",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "tasbinC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tasbinF",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tassumpoly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tasmaxbinC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tasmaxbinF",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tasmaxsumpoly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NSF NCAR GEX",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ssp585",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ssp370",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "E. Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Central Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Western Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "S. Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "N. Eastern Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Madagascar",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Sahara",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Caribbean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "S. E. Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "S. Central America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South American Monsoon",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "W. Siberia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "E. Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "N. South America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "E. Southern Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "S. South America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Russian Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Greenland/Iceland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "N. Australia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "N. Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "E. C. Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mediterranean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "N. Central America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "S. W. South America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "W. Southern Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "New Zealand",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Kolmogorov-Smirnov test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "p-value",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "r12i1p2f1",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "r3i1p1f1",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "r1i1p1f2",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "Global mean diff",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "variance due to internal variability",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "variance due to model uncertainty",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "variance due to reanalysis uncertainty",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "number of days / year with mean temperatures above 30 \u00b0C",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "annual sum of daily temperatures",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ssp119",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ssp126",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ssp434",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ssp460",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ssp534-over",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "NASA GES-DISC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Science Foundation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "EC-Earth Consortium",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": []
+}

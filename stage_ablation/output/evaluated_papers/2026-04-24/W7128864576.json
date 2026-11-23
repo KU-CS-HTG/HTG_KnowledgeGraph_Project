@@ -1,0 +1,1929 @@
+{
+    "uri": "https://openalex.org/W7128864576",
+    "title": "Hierarchical Testing of a Hybrid Machine Learning-Physics Global Atmosphere Model",
+    "venue": {
+        "name": "arXiv (Cornell University)",
+        "id": "https://openalex.org/S4306400194",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5060872585",
+            "display_name": "Z. Chen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5125951689",
+            "display_name": "L. Ruby Leung",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5125987307",
+            "display_name": "Wenyu Zhou",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5125942975",
+            "display_name": "Jian Lu",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5037500781",
+            "display_name": "Sandro W. Lubis",
+            "orcid": "https://orcid.org/0000-0001-6615-9880"
+        },
+        {
+            "id": "https://openalex.org/A5125897038",
+            "display_name": "Ye Liu",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5122025575",
+            "display_name": "Chuan-Chieh Chang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5125913195",
+            "display_name": "Bryce E. Harrop",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5125922654",
+            "display_name": "Ya  Ping Wang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5103127676",
+            "display_name": "M. M. Yang",
+            "orcid": "https://orcid.org/0009-0001-4236-4609"
+        },
+        {
+            "id": "https://openalex.org/A5007632206",
+            "display_name": "Gan Zhang",
+            "orcid": "https://orcid.org/0000-0002-7323-3409"
+        },
+        {
+            "id": "https://openalex.org/A5125950116",
+            "display_name": "Yun Qian",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "Machine learning (ML)-based models have demonstrated high skill and computational efficiency, often outperforming conventional physics-based models in weather and subseasonal predictions. While prior studies have assessed their fidelity in capturing synoptic-scale atmospheric dynamics, their performance across timescales and under out-of-distribution forcing, such as +3K or +4K uniform-warming forcings, and the sources of biases remain elusive, to establish the model reliability for Earth science. Here, we design three sets of experiments targeting synoptic-scale phenomena, interannual variability, and out-of-distribution uniform-warming forcings. We evaluate the Neural General Circulation Model (NeuralGCM), a hybrid model integrating a dynamical core with ML-based component, against observations and physics-based Earth system models (ESMs). At the synoptic scale, NeuralGCM captures the evolution and propagation of extratropical cyclones with performance comparable to ESMs. At the interannual scale, when forced by El Ni\u00f1o-Southern Oscillation sea surface temperature (SST) anomalies, NeuralGCM successfully reproduces associated teleconnection patterns but exhibits deficiencies in capturing nonlinear response. Under out-of-distribution uniform-warming forcings, NeuralGCM simulates similar responses in global-average temperature and precipitation and reproduces large-scale tropospheric circulation features similar to those in ESMs. Notable weaknesses include overestimating the tracks and spatial extent of extratropical cyclones, biases in the teleconnected wave train triggered by tropical SST anomalies, and differences in upper-level warming and stratospheric circulation responses to SST warming compared to physics-based ESMs. The causes of these weaknesses were explored.",
+    "field": "Machine learning for climate modeling",
+    "problem": "While machine learning models excel at weather forecasting, their reliability for long-term climate simulation is uncertain because their performance across multiple timescales and under novel, out-of-distribution warming scenarios remains largely unexplored.",
+    "method": "This study proposes a hierarchical testing framework using a suite of idealized experiments across synoptic, interannual, and long-term warming timescales to evaluate a hybrid machine learning-physics global atmosphere model against observations and physics-based models.",
+    "task": "The task is to evaluate a hybrid machine learning-physics global atmosphere model, NeuralGCM, across multiple timescales and under out-of-distribution warming scenarios using a series of idealized experiments against observations and physics-based models.",
+    "model": [
+        "NeuralGCM",
+        "Pangu-Weather",
+        "Pangu",
+        "FourCastNet",
+        "GraphCast",
+        "ACE2",
+        "CNRM-CM6-1",
+        "CNRM-ESM2-1",
+        "IPSL-CM6A-LR",
+        "MRI-ESM2-0",
+        "GISS-E2-1-G",
+        "MIROC6",
+        "MPI-ESM1-2-HR",
+        "MPI-ESM1-2-LR"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/extratropical-cyclone",
+            "display_name": "Extratropical cyclone",
+            "score": 0.8217999935150146
+        },
+        {
+            "id": "https://openalex.org/keywords/teleconnection",
+            "display_name": "Teleconnection",
+            "score": 0.663100004196167
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-surface-temperature",
+            "display_name": "Sea surface temperature",
+            "score": 0.5943999886512756
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-model",
+            "display_name": "Atmospheric model",
+            "score": 0.49869999289512634
+        },
+        {
+            "id": "https://openalex.org/keywords/general-circulation-model",
+            "display_name": "General Circulation Model",
+            "score": 0.45179998874664307
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4507000148296356
+        },
+        {
+            "id": "https://openalex.org/keywords/atmosphere",
+            "display_name": "Atmosphere (unit)",
+            "score": 0.4377000033855438
+        },
+        {
+            "id": "https://openalex.org/keywords/polar-vortex",
+            "display_name": "Polar vortex",
+            "score": 0.41339999437332153
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.40299999713897705
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C72319357",
+            "wikidata": "https://www.wikidata.org/wiki/Q1063457",
+            "display_name": "Extratropical cyclone",
+            "level": 2,
+            "score": 0.8217999935150146
+        },
+        {
+            "id": "https://openalex.org/C123576220",
+            "wikidata": "https://www.wikidata.org/wiki/Q3982797",
+            "display_name": "Teleconnection",
+            "level": 3,
+            "score": 0.663100004196167
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6577000021934509
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.6517000198364258
+        },
+        {
+            "id": "https://openalex.org/C134097258",
+            "wikidata": "https://www.wikidata.org/wiki/Q1507383",
+            "display_name": "Sea surface temperature",
+            "level": 2,
+            "score": 0.5943999886512756
+        },
+        {
+            "id": "https://openalex.org/C118365302",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric model",
+            "level": 2,
+            "score": 0.49869999289512634
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.45179998874664307
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4507000148296356
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4410000145435333
+        },
+        {
+            "id": "https://openalex.org/C65440619",
+            "wikidata": "https://www.wikidata.org/wiki/Q177974",
+            "display_name": "Atmosphere (unit)",
+            "level": 2,
+            "score": 0.4377000033855438
+        },
+        {
+            "id": "https://openalex.org/C125405218",
+            "wikidata": "https://www.wikidata.org/wiki/Q1197111",
+            "display_name": "Polar vortex",
+            "level": 3,
+            "score": 0.41339999437332153
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.40299999713897705
+        },
+        {
+            "id": "https://openalex.org/C150284090",
+            "wikidata": "https://www.wikidata.org/wiki/Q2615451",
+            "display_name": "Atmospheric circulation",
+            "level": 2,
+            "score": 0.40130001306533813
+        },
+        {
+            "id": "https://openalex.org/C9075549",
+            "wikidata": "https://www.wikidata.org/wiki/Q40631",
+            "display_name": "Troposphere",
+            "level": 2,
+            "score": 0.38600000739097595
+        },
+        {
+            "id": "https://openalex.org/C147947694",
+            "wikidata": "https://www.wikidata.org/wiki/Q837552",
+            "display_name": "Numerical weather prediction",
+            "level": 2,
+            "score": 0.3783999979496002
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.35659998655319214
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.32030001282691956
+        },
+        {
+            "id": "https://openalex.org/C62279395",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric models",
+            "level": 3,
+            "score": 0.31949999928474426
+        },
+        {
+            "id": "https://openalex.org/C145151356",
+            "wikidata": "https://www.wikidata.org/wiki/Q1053589",
+            "display_name": "Rossby wave",
+            "level": 2,
+            "score": 0.3160000145435333
+        },
+        {
+            "id": "https://openalex.org/C170061395",
+            "wikidata": "https://www.wikidata.org/wiki/Q5468164",
+            "display_name": "Forecast skill",
+            "level": 2,
+            "score": 0.2989000082015991
+        },
+        {
+            "id": "https://openalex.org/C607359",
+            "wikidata": "https://www.wikidata.org/wiki/Q845339",
+            "display_name": "Atmospheric temperature",
+            "level": 2,
+            "score": 0.287200003862381
+        },
+        {
+            "id": "https://openalex.org/C2777093003",
+            "wikidata": "https://www.wikidata.org/wiki/Q6508345",
+            "display_name": "Lead (geology)",
+            "level": 2,
+            "score": 0.2838999927043915
+        },
+        {
+            "id": "https://openalex.org/C117381296",
+            "wikidata": "https://www.wikidata.org/wiki/Q1170041",
+            "display_name": "Madden\u2013Julian oscillation",
+            "level": 3,
+            "score": 0.2824000120162964
+        },
+        {
+            "id": "https://openalex.org/C2778439541",
+            "wikidata": "https://www.wikidata.org/wiki/Q7106412",
+            "display_name": "Oscillation (cell signaling)",
+            "level": 2,
+            "score": 0.2800999879837036
+        },
+        {
+            "id": "https://openalex.org/C197115733",
+            "wikidata": "https://www.wikidata.org/wiki/Q1003136",
+            "display_name": "Forcing (mathematics)",
+            "level": 2,
+            "score": 0.2757999897003174
+        },
+        {
+            "id": "https://openalex.org/C163861444",
+            "wikidata": "https://www.wikidata.org/wiki/Q108376",
+            "display_name": "Stratosphere",
+            "level": 2,
+            "score": 0.2621999979019165
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.25060001015663147
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "NeuralGCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg1000",
+            "result": "0.80"
+        },
+        {
+            "model": "NeuralGCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta1000",
+            "result": "0.70"
+        },
+        {
+            "model": "NeuralGCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg1000",
+            "result": "0.70"
+        },
+        {
+            "model": "NeuralGCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta1000",
+            "result": "0.70"
+        },
+        {
+            "model": "NeuralGCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg500",
+            "result": "0.75"
+        },
+        {
+            "model": "NeuralGCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta500",
+            "result": "0.70"
+        },
+        {
+            "model": "NeuralGCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg500",
+            "result": "0.65"
+        },
+        {
+            "model": "NeuralGCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta500",
+            "result": "0.65"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg1000",
+            "result": "0.65"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta1000",
+            "result": "0.42"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg1000",
+            "result": "0.82"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta1000",
+            "result": "1.00"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg500",
+            "result": "0.62"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta500",
+            "result": "0.42"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg500",
+            "result": "0.81"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta500",
+            "result": "1.00"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg1000",
+            "result": "0.60"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta1000",
+            "result": "0.40"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg1000",
+            "result": "0.90"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta1000",
+            "result": "1.10"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg500",
+            "result": "0.58"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta500",
+            "result": "0.40"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg500",
+            "result": "0.88"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta500",
+            "result": "1.05"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg1000",
+            "result": "0.52"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta1000",
+            "result": "0.30"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg1000",
+            "result": "1.05"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta1000",
+            "result": "1.28"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg500",
+            "result": "0.48"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta500",
+            "result": "0.31"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg500",
+            "result": "1.00"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta500",
+            "result": "1.20"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg1000",
+            "result": "0.78"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta1000",
+            "result": "0.58"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg1000",
+            "result": "0.68"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta1000",
+            "result": "0.80"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg500",
+            "result": "0.72"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta500",
+            "result": "0.57"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg500",
+            "result": "0.70"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta500",
+            "result": "0.80"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg1000",
+            "result": "0.49"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta1000",
+            "result": "0.30"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg1000",
+            "result": "1.00"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta1000",
+            "result": "1.20"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg500",
+            "result": "0.42"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta500",
+            "result": "0.28"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg500",
+            "result": "1.02"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta500",
+            "result": "1.18"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg1000",
+            "result": "0.72"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta1000",
+            "result": "0.51"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg1000",
+            "result": "0.78"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta1000",
+            "result": "0.90"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg500",
+            "result": "0.69"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta500",
+            "result": "0.52"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg500",
+            "result": "0.72"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta500",
+            "result": "0.82"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg1000",
+            "result": "0.78"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta1000",
+            "result": "0.61"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg1000",
+            "result": "0.67"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta1000",
+            "result": "0.78"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg500",
+            "result": "0.75"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta500",
+            "result": "0.62"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg500",
+            "result": "0.66"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta500",
+            "result": "0.75"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg1000",
+            "result": "0.71"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta1000",
+            "result": "0.52"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg1000",
+            "result": "0.74"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta1000",
+            "result": "0.90"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of zg500",
+            "result": "0.69"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "PCC of ta500",
+            "result": "0.53"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of zg500",
+            "result": "0.71"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "NRMSE of ta500",
+            "result": "0.82"
+        }
+    ],
+    "innovation": "This paper presents a hierarchical evaluation of the hybrid machine learning-physics model NeuralGCM, using idealized tests across multiple timescales to assess its skill in simulating key atmospheric phenomena and responses to out-of-distribution warming scenarios compared to traditional physics-based models.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ML-based components",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "NeuralGCM is a hybrid ML-based model that integrates a differentiable atmospheric dynamical core with ML-based components (Kochkov et al., 2024; Yuval et al., 2026). We use the stochastic version of NeuralGCM trained on ERA5 atmospheric fields and Integrated Multi-satellitE Retrievals for Global Precipitation Measurement (IMERG) version 7 precipitation from 2001 to 2018, with 2.8\u00b0 spatial resolution and 37 vertical \u03c3-levels (Yuval et al., 2026).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "differentiable atmospheric dynamical core",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "NeuralGCM is a hybrid ML-based model that integrates a differentiable atmospheric dynamical core with ML-based components (Kochkov et al., 2024; Yuval et al., 2026). We use the stochastic version of NeuralGCM trained on ERA5 atmospheric fields and Integrated Multi-satellitE Retrievals for Global Precipitation Measurement (IMERG) version 7 precipitation from 2001 to 2018, with 2.8\u00b0 spatial resolution and 37 vertical \u03c3-levels (Yuval et al., 2026).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "2.8\u00b0 horizontal resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Here we use the stochastic version of NeuralGCM at 2.8\u00b0 horizontal resolution, with 37 vertical pressure levels and 1-hour time step.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "37 vertical pressure levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Here we use the stochastic version of NeuralGCM at 2.8\u00b0 horizontal resolution, with 37 vertical pressure levels and 1-hour time step.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1-hour time step",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Here we use the stochastic version of NeuralGCM at 2.8\u00b0 horizontal resolution, with 37 vertical pressure levels and 1-hour time step.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "spatial resolution of 0.25\u00b0\u00d7 0.25\u00b0",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "To evaluate large-scale circulation patterns, we use ERA5, the fifth-generation global reanalysis produced by the European Centre for Medium-Range Weather Forecasts, which originally has a spatial resolution of 0.25\u00b0\u00d7 0.25\u00b0 and 137 vertical levels from the surface to 80 km, spanning from 1950 to the present (Hersbach et al., 2019).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "137 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "To evaluate large-scale circulation patterns, we use ERA5, the fifth-generation global reanalysis produced by the European Centre for Medium-Range Weather Forecasts, which originally has a spatial resolution of 0.25\u00b0\u00d7 0.25\u00b0 and 137 vertical levels from the surface to 80 km, spanning from 1950 to the present (Hersbach et al., 2019).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "ERA5",
+            "target_entity_type": "Source",
+            "paragraph": "Unlike recent emulators trained directly on idealized CO2-forcing ensemble simulations (e.g., Clark et al., 2024), NeuralGCM was trained exclusively on ERA5 reanalysis (2001-2018), yet it successfully reproduces key aspects of the uniform-warming responses seen in physics-based models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "IMERG version 7",
+            "target_entity_type": "Source",
+            "paragraph": "We use the stochastic version of NeuralGCM trained on ERA5 atmospheric fields and Integrated Multi-satellitE Retrievals for Global Precipitation Measurement (IMERG) version 7 precipitation from 2001 to 2018, with 2.8\u00b0 spatial resolution and 37 vertical \u03c3-levels (Yuval et al., 2026).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "pattern correlation coefficients (PCCs)",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated using pattern correlation coefficients (PCCs) and normalized root-mean-square errors (NRMSEs) between NeuralGCM and observation/physics-based models. The NRMSEs have been normalized by the spatial standard deviation of the observations or physics-based models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "normalized root-mean-square errors (NRMSEs)",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated using pattern correlation coefficients (PCCs) and normalized root-mean-square errors (NRMSEs) between NeuralGCM and observation/physics-based models. The NRMSEs have been normalized by the spatial standard deviation of the observations or physics-based models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "extratropical cyclone",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "western North Pacific",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "packets over the western North Pacific (38\u00b0N\u201342\u00b0N, 148\u00b0E\u2013152\u00b0E) during boreal winter (December-February, DJF) from 1979 to 2020. To avoid duplication, any cyclones forming within 24 hours and within the same domain (38\u00b0N\u201342\u00b0N, 148\u00b0E\u2013152\u00b0E) after an initial detection are removed. This yields 526 ETC cases in the observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ENSO",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Pacific-North America (PNA) region",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "A Rossby wave train emanates from the warm SSTA and propagates into the Pacific-North America (PNA) region, producing an anticyclonic anomaly over the subtropical eastern Pacific, followed by cyclonic and anticyclonic anomalies over the northeastern Pacific and northeastern North America (Fig. 5A).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ENSO",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "northeastern North America",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "A Rossby wave train emanates from the warm SSTA and propagates into the Pacific-North America (PNA) region, producing an anticyclonic anomaly over the subtropical eastern Pacific, followed by cyclonic and anticyclonic anomalies over the northeastern Pacific and northeastern North America (Fig. 5A).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "Under out-of-distribution uniform-warming forcings, NeuralGCM simulates similar responses in global-average temperature and precipitation and reproduces large-scale tropospheric circulation features similar to those in ESMs.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "geopotential height",
+            "target_entity_type": "Variable",
+            "paragraph": "Figure 2. Composite of anomalous 500-hPa geopotential height (zg500, colored contours; units: m) and air temperature (ta500, shading; units: K) during boreal winter on (A, B) day 0, (C, D) day 1, (E, F) day 2, and (G, H) day 3 after the formation of extratropical cyclones (ETCs) in (A, C, E, G) observations and (B, D, F, H) NeuralGCM simulations. Anomalies are computed as deviations from the long-term monthly mean of ERA5. The composite is based on 526 ETC cases in observations. The quantities in the top-right corner represent the pattern correlation coefficients (PCCs) and normalized root-mean-square errors (RMSEs) of anomalous zg500 between observations and NeuralGCM simulations over the North Pacific (black dashed box). RMSEs were normalized by the spatial standard deviation over the North Pacific in observations (black dashed boxes).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "air temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Figure 2. Composite of anomalous 500-hPa geopotential height (zg500, colored contours; units: m) and air temperature (ta500, shading; units: K) during boreal winter on (A, B) day 0, (C, D) day 1, (E, F) day 2, and (G, H) day 3 after the formation of extratropical cyclones (ETCs) in (A, C, E, G) observations and (B, D, F, H) NeuralGCM simulations. Anomalies are computed as deviations from the long-term monthly mean of ERA5. The composite is based on 526 ETC cases in observations. The quantities in the top-right corner represent the pattern correlation coefficients (PCCs) and normalized root-mean-square errors (RMSEs) of anomalous zg500 between observations and NeuralGCM simulations over the North Pacific (black dashed box). RMSEs were normalized by the spatial standard deviation over the North Pacific in observations (black dashed boxes).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "neural network parameterization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "It should be noted that stochastic version of NeuralGCM generates space-time correlated Gaussian random fields by random seeds, which both perturb the initial conditions and introduce stochasticity into the neural network parameterization (Kochkov et al., 2024; Zhang et al., 2025).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NeuralGCM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "loss function only extends to 30 hPa",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Although 11 of NeuralGCM's 37 vertical levels lie above 100 hPa, its loss function only extends to 30 hPa, and only four stratospheric levels (100, 70, 50, 30 hPa) are directly constrained during training (Kochkov et al., 2024).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Hierarchical Testing of a Hybrid Machine Learning-Physics Global Atmosphere Model",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "NeuralGCM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Pacific Northwest National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Ocean University of China",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Chinese Academy of Sciences",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Illinois Urbana-Champaign",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "extratropical cyclones",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "ENSO",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Washington",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Illinois",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Richland",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Qingdao",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Beijing",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Urbana",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Champaign",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Neural General Circulation Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "hybrid model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "dynamical core",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ML-based component",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Earth system models",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "synoptic-scale phenomena",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "uniform-warming forcings",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "El Ni\u00f1o-Southern Oscillation",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "sea surface temperature (SST) anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "biases",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "differentiable solver",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "jet streams",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "blocking",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "tropical atmospheric circulation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Pangu-Weather",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FourCastNet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GraphCast",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "tropical cyclogenesis",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "geostrophic balance",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "inner-core structure of tropical cyclones",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ACE2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ENSO teleconnection patterns",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "long-term climate simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "out-of-distribution forcings",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "hybrid physics-ML systems",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "weather forecasting",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "tropical cyclones",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "tropical waves propagation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "extratropical eddy-mean flow interaction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heatwave",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "SSP3-7.0",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "uniform SST-warming experiment",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ensemble simulations",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "2.8\u00b0 horizontal resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "37 vertical pressure levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1-hour time step",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "HadISST v1.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERSST v5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Precipitation Climatology Project version 2.2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GPCP v2.2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "sea ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "large-scale circulation patterns",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "0.25\u00b0\u00d7 0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "137 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "surface to 80 km",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Atmospheric Model Intercomparison Project",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "AMIP",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "AMIP-P4K",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "geopotential height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vertical velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "horizontal winds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "2.5\u00b0\u00d72.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "bilinear interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "first-order conservative interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "2.8\u00b0\u00d72.8\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "differentiable atmospheric dynamical core",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ML-based components",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "stochastic version of NeuralGCM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Integrated Multi-satellitE Retrievals for Global Precipitation Measurement",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IMERG",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "2.8\u00b0 spatial resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "37 vertical \u03c3-levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "sea-ice concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "deterministic",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "ensemble forecasts",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "1.4\u00b0\u00d71.4\u00b0 horizontal resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "~58 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "global-mean surface pressure",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "pattern correlation coefficients",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "normalized root-mean-square errors",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "AMIP simulations",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "extratropical cyclonic (ETC)",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "ENSO-like SST anomaly (SSTA)",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "uniform SST warming",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Extratropical Cyclone (ETC) Experiments",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "1000-hPa geostrophic relative vorticity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "6-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "western North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "free-running",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "AMIP transient simulations",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "NeuralGCM AMIP runs",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ENSO-like SST Anomalies (SSTA) Experiments",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "El Ni\u00f1o",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "La Ni\u00f1a",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Ni\u00f1o3.4 SSTA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Uniform Warming Experiments",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "long-term SST-uniform-warming runs",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "AMIP-PxK",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "36-year AMIP-PxK",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "one-year AMIP",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "one-year AMIP-PxK",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "large-ensemble simulations",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "20 ensemble members",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "AMIP-P1K",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "AMIP-P2K",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "AMIP-P3K",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "neural network parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "space-time correlated Gaussian random fields",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ETC genesis",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "anomalous geopotential height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zg500",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zg1000",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ta500",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ta1000",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wave packet",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "central North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "horizontal temperature gradient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PCCs",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "NRMSEs",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "westerly wind at 200 hPa",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ua200",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "potential vorticity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "anomalous meridional wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "V300",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "upper-level circulation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "central-to-eastern North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "out-of-sample skill",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "upper-level PV gradient",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "CNRM-CM6-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-ESM2-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM6A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-ESM2-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-1-G",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "AMIP transient runs",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "atmos",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Matsuno-Gill framework",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Rossby wave train",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Pacific-North America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Aleutian Low",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "upper-level anticyclonic circulation anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "200-hPa geopotential height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zg200",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "climatological gross moist stability",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "critical convection threshold",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface net radiative flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pr",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ENSO-induced teleconnections",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "tropical convection",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PNA teleconnection",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "ENSO phases",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "ENSO Nonlinearity",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "long-term uniform warming",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "upper-tropospheric amplification",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "upper troposphere and lower stratosphere",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "UTLS",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "moist-adiabatic lapse rate changes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "-dyT",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zonal-mean profiles of air temperature responses",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "meridional temperature gradient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "westerly jet",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "peak zonal wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "meridional jet shift",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "subtropical jets",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tropical stratospheric easterlies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zonal wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zonal-mean meridional streamfunction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "subtropical expansions",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "tropical weakening",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "ua",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MSF",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "eddy momentum flux convergence",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "EMFC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "E-P Flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "transformed Eulerian mean (TEM) framework",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "residual circulation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "potential temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "streamfunction of residual circulation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "TEM zonal-mean thermodynamic equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "potential temperature tendency",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "diabatic heating",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "adiabatic heating",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vertical advection of potential temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "horizontal advections",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "upward residual circulation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "downward residual circulation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "total diabatic heating",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "residual streamfunction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Eliassen-Palm (E-P) flux",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "eddy heat fluxes convergence",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Hadley cell",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "meridional eddy heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "middle-atmosphere circulation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ML parameterization scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "troposphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "PV gradients",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PNA teleconnection",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation sensitivities",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "middle atmosphere",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "vertical resolution",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "37 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "stratospheric levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "loss function",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "westerly jet shifts",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stratospheric circulation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vertical heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "spatial resolution",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "equatorial convection",
+            "entity_type": "Variable"
+        }
+    ],
+    "referenced_works": []
+}

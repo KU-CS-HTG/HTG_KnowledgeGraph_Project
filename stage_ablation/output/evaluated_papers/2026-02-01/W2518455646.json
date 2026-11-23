@@ -1,0 +1,770 @@
+{
+    "uri": "https://openalex.org/W2518455646",
+    "title": "A network-based detection scheme for the jet stream core",
+    "venue": {
+        "name": "Earth System Dynamics",
+        "id": "https://openalex.org/S163739988",
+        "type": "journal"
+    },
+    "publication_year": 2017,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5108367301",
+            "display_name": "Sonja Molnos",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5045527505",
+            "display_name": "Tarek Mamdouh",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5066019084",
+            "display_name": "Stefan Petri",
+            "orcid": "https://orcid.org/0000-0002-4379-4643"
+        },
+        {
+            "id": "https://openalex.org/A5003606398",
+            "display_name": "Thomas Nocke",
+            "orcid": "https://orcid.org/0000-0001-9811-197X"
+        },
+        {
+            "id": "https://openalex.org/A5082234726",
+            "display_name": "Tino Weinkauf",
+            "orcid": "https://orcid.org/0000-0002-1498-9062"
+        },
+        {
+            "id": "https://openalex.org/A5070824558",
+            "display_name": "Dim Coumou",
+            "orcid": "https://orcid.org/0000-0003-2155-8495"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/esd-8-75-2017",
+    "abstract": "Abstract. The polar and subtropical jet streams are strong upper-level winds with a crucial influence on weather throughout the Northern Hemisphere midlatitudes. In particular, the polar jet is located between cold arctic air to the north and warmer subtropical air to the south. Strongly meandering states therefore often lead to extreme surface weather. Some algorithms exist which can detect the 2-D (latitude and longitude) jets' core around the hemisphere, but all of them use a minimal threshold to determine the subtropical and polar jet stream. This is particularly problematic for the polar jet stream, whose wind velocities can change rapidly from very weak to very high values and vice versa. We develop a network-based scheme using Dijkstra's shortest-path algorithm to detect the polar and subtropical jet stream core. This algorithm not only considers the commonly used wind strength for core detection but also takes wind direction and climatological latitudinal position into account. Furthermore, it distinguishes between polar and subtropical jet, and between separate and merged jet states. The parameter values of the detection scheme are optimized using simulated annealing and a skill function that accounts for the zonal-mean jet stream position (Rikus, 2015). After the successful optimization process, we apply our scheme to reanalysis data covering 1979\u20132015 and calculate seasonal-mean probabilistic maps and trends in wind strength and position of jet streams. We present longitudinally defined probability distributions of the positions for both jets for all on the Northern Hemisphere seasons. This shows that winter is characterized by two well-separated jets over Europe and Asia (ca. 20\u00b0 W to 140\u00b0 E). In contrast, summer normally has a single merged jet over the western hemisphere but can have both merged and separated jet states in the eastern hemisphere. With this algorithm it is possible to investigate the position of the jets' cores around the hemisphere and it is therefore very suitable to analyze jet stream patterns in observations and models, enabling more advanced model-validation.",
+    "field": "Jet stream detection",
+    "problem": "Existing jet stream detection algorithms rely on a minimal wind speed threshold, which is problematic for the highly variable polar jet and often fails to distinguish between the separate polar, subtropical, and merged jet stream states.",
+    "method": "We propose a network-based detection scheme using Dijkstra's shortest-path algorithm to identify the polar and subtropical jet stream cores based on a cost function combining wind speed, wind direction, and climatological latitudinal position.",
+    "task": "The task is to develop and apply a network-based detection scheme using Dijkstra's algorithm to identify the cores of the polar and subtropical jet streams by considering wind strength, direction, and climatological position, thus overcoming the limitations of threshold-based methods.",
+    "model": [
+        "CMIP5",
+        "ERA-Interim",
+        "NCEP/NCAR"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/jet-stream",
+            "display_name": "Jet stream",
+            "score": 0.9028197526931763
+        },
+        {
+            "id": "https://openalex.org/keywords/latitude",
+            "display_name": "Latitude",
+            "score": 0.5707463026046753
+        },
+        {
+            "id": "https://openalex.org/keywords/northern-hemisphere",
+            "display_name": "Northern Hemisphere",
+            "score": 0.5653835535049438
+        },
+        {
+            "id": "https://openalex.org/keywords/jet",
+            "display_name": "Jet (fluid)",
+            "score": 0.5558840036392212
+        },
+        {
+            "id": "https://openalex.org/keywords/polar",
+            "display_name": "Polar",
+            "score": 0.545769214630127
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.48836180567741394
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.484004944562912
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.46719643473625183
+        },
+        {
+            "id": "https://openalex.org/keywords/middle-latitudes",
+            "display_name": "Middle latitudes",
+            "score": 0.4636330306529999
+        },
+        {
+            "id": "https://openalex.org/keywords/subtropics",
+            "display_name": "Subtropics",
+            "score": 0.4199501574039459
+        },
+        {
+            "id": "https://openalex.org/keywords/southern-hemisphere",
+            "display_name": "Southern Hemisphere",
+            "score": 0.4169726073741913
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.3863629400730133
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.38102230429649353
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.2695970833301544
+        },
+        {
+            "id": "https://openalex.org/keywords/geodesy",
+            "display_name": "Geodesy",
+            "score": 0.1838165819644928
+        },
+        {
+            "id": "https://openalex.org/keywords/mechanics",
+            "display_name": "Mechanics",
+            "score": 0.10381770133972168
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C162164538",
+            "wikidata": "https://www.wikidata.org/wiki/Q202325",
+            "display_name": "Jet stream",
+            "level": 3,
+            "score": 0.9028197526931763
+        },
+        {
+            "id": "https://openalex.org/C122523270",
+            "wikidata": "https://www.wikidata.org/wiki/Q34027",
+            "display_name": "Latitude",
+            "level": 2,
+            "score": 0.5707463026046753
+        },
+        {
+            "id": "https://openalex.org/C2778835443",
+            "wikidata": "https://www.wikidata.org/wiki/Q39061",
+            "display_name": "Northern Hemisphere",
+            "level": 2,
+            "score": 0.5653835535049438
+        },
+        {
+            "id": "https://openalex.org/C119947313",
+            "wikidata": "https://www.wikidata.org/wiki/Q5596635",
+            "display_name": "Jet (fluid)",
+            "level": 2,
+            "score": 0.5558840036392212
+        },
+        {
+            "id": "https://openalex.org/C29705727",
+            "wikidata": "https://www.wikidata.org/wiki/Q294562",
+            "display_name": "Polar",
+            "level": 2,
+            "score": 0.545769214630127
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.48836180567741394
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.484004944562912
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.46719643473625183
+        },
+        {
+            "id": "https://openalex.org/C18101618",
+            "wikidata": "https://www.wikidata.org/wiki/Q9346670",
+            "display_name": "Middle latitudes",
+            "level": 2,
+            "score": 0.4636330306529999
+        },
+        {
+            "id": "https://openalex.org/C14168384",
+            "wikidata": "https://www.wikidata.org/wiki/Q16305538",
+            "display_name": "Subtropics",
+            "level": 2,
+            "score": 0.4199501574039459
+        },
+        {
+            "id": "https://openalex.org/C2777252438",
+            "wikidata": "https://www.wikidata.org/wiki/Q41228",
+            "display_name": "Southern Hemisphere",
+            "level": 2,
+            "score": 0.4169726073741913
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.3863629400730133
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.38102230429649353
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.2695970833301544
+        },
+        {
+            "id": "https://openalex.org/C13280743",
+            "wikidata": "https://www.wikidata.org/wiki/Q131089",
+            "display_name": "Geodesy",
+            "level": 1,
+            "score": 0.1838165819644928
+        },
+        {
+            "id": "https://openalex.org/C57879066",
+            "wikidata": "https://www.wikidata.org/wiki/Q41217",
+            "display_name": "Mechanics",
+            "level": 1,
+            "score": 0.10381770133972168
+        },
+        {
+            "id": "https://openalex.org/C1276947",
+            "wikidata": "https://www.wikidata.org/wiki/Q333",
+            "display_name": "Astronomy",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C505870484",
+            "wikidata": "https://www.wikidata.org/wiki/Q180538",
+            "display_name": "Fishery",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Subtropical jet stream latitude trend (DJF)",
+            "result": "0.282 \u00b0 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Subtropical jet stream velocity trend (DJF)",
+            "result": "-0.021 m s\u207b\u00b9 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Polar jet stream latitude trend (DJF)",
+            "result": "-0.670 \u00b0 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Polar jet stream velocity trend (DJF)",
+            "result": "0.061 m s\u207b\u00b9 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Subtropical jet stream latitude trend (MAM)",
+            "result": "0.244 \u00b0 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Subtropical jet stream velocity trend (MAM)",
+            "result": "-0.454 m s\u207b\u00b9 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Polar jet stream latitude trend (MAM)",
+            "result": "0.004 \u00b0 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Polar jet stream velocity trend (MAM)",
+            "result": "-0.143 m s\u207b\u00b9 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Subtropical jet stream latitude trend (JJA)",
+            "result": "0.139 \u00b0 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Subtropical jet stream velocity trend (JJA)",
+            "result": "-0.259 m s\u207b\u00b9 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Polar jet stream latitude trend (JJA)",
+            "result": "-0.189 \u00b0 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Polar jet stream velocity trend (JJA)",
+            "result": "-0.147 m s\u207b\u00b9 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Subtropical jet stream latitude trend (SON)",
+            "result": "-0.183 \u00b0 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Subtropical jet stream velocity trend (SON)",
+            "result": "-0.263 m s\u207b\u00b9 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Polar jet stream latitude trend (SON)",
+            "result": "0.049 \u00b0 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Polar jet stream velocity trend (SON)",
+            "result": "-0.157 m s\u207b\u00b9 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Subtropical jet stream latitude trend (Annual)",
+            "result": "0.178 \u00b0 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Subtropical jet stream velocity trend (Annual)",
+            "result": "-0.321 m s\u207b\u00b9 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Polar jet stream latitude trend (Annual)",
+            "result": "-0.198 \u00b0 decade\u207b\u00b9"
+        },
+        {
+            "model": "Dijkstra jet detection scheme",
+            "observational_dataset": "ERA-Interim",
+            "evaluation_metric": "Polar jet stream velocity trend (Annual)",
+            "result": "-0.085 m s\u207b\u00b9 decade\u207b\u00b9"
+        }
+    ],
+    "innovation": "This paper introduces a network-based detection scheme using Dijkstra\u2019s algorithm to identify jet stream cores by combining wind speed, direction, and climatological position, which enables the distinction between polar, subtropical, separated, and merged jet states without a fixed velocity threshold.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "meridional and zonal wind velocity components",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, we used ERA-Interim data (Dee et al., 2011) from the European Centre for Medium-Range Weather Forecasts (ECMWF). The ECMWF provides meridional and zonal wind velocity components with a 0.75 latitude-longitude grid resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "0.75 latitude-longitude grid resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this study, we used ERA-Interim data (Dee et al., 2011) from the European Centre for Medium-Range Weather Forecasts (ECMWF). The ECMWF provides meridional and zonal wind velocity components with a 0.75 latitude-longitude grid resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "11 vertical layers from 500 to 150 mb",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "We chose 11 vertical layers of the upper troposphere stretching from 500 to 150 mb and for four 6-hourly time steps per day (00:00, 06:00, 12:00, 18:00 UTC) for the years 1979\u20132014.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "troposphere",
+            "target_entity_type": "Realm",
+            "paragraph": "We chose 11 vertical layers of the upper troposphere stretching from 500 to 150 mb and for four 6-hourly time steps per day (00:00, 06:00, 12:00, 18:00 UTC) for the years 1979\u20132014.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "extreme surface weather",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Northern Hemisphere midlatitudes",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Abstract. The polar and subtropical jet streams are strong upper-level winds with a crucial influence on weather throughout the Northern Hemisphere midlatitudes. In particular, the polar jet is located between cold arctic air to the north and warmer subtropical air to the south. Strongly meandering states therefore often lead to extreme surface weather.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "persistent heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Northern Hemisphere midlatitudes",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Petoukhov et al. (2013) proposed a mechanism that could provoke such weather extremes in the Northern Hemisphere midlatitudes. Quasi-stationary Rossby waves in summer are linked to persistent heat waves and severe floods (Kornhuber et al., 2016; Petoukhov et al., 2013, 2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "severe floods",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Northern Hemisphere midlatitudes",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Petoukhov et al. (2013) proposed a mechanism that could provoke such weather extremes in the Northern Hemisphere midlatitudes. Quasi-stationary Rossby waves in summer are linked to persistent heat waves and severe floods (Kornhuber et al., 2016; Petoukhov et al., 2013, 2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "midlatitude cold spells",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "midlatitudes",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Likewise in winter, strongly meandering jets, driven by either anomalous tropical (Palmer, 2014; Trenberth et al., 2014) or extratropical (Peings and Magnusdottir, 2014) sea-surface temperatures or stratospheric variability (Cohen et al., 2014; Kretschmer et al., 2016), can lead to midlatitude cold spells.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Quasi-stationary Rossby waves",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Northern Hemisphere midlatitudes",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Petoukhov et al. (2013) proposed a mechanism that could provoke such weather extremes in the Northern Hemisphere midlatitudes. Quasi-stationary Rossby waves in summer are linked to persistent heat waves and severe floods (Kornhuber et al., 2016; Petoukhov et al., 2013, 2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Potsdam Institute for Climate Impact Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Potsdam",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Max Planck Institute for Informatics",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "KTH Royal Institute of Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "VU University Amsterdam",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Potsdam",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Saarbr\u00fccken",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Stockholm",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Sweden",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Amsterdam",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Netherlands",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Dijkstra's shortest-path algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "simulated annealing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "zonally averaged zonal wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "mass flux weighted monthly mean wind speeds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vertically averaged horizontal wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "geostrophic streamline of maximum daily averaged velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ERA-Interim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "meridional and zonal wind velocity components",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "0.75 latitude-longitude grid resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "11 vertical layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "upper troposphere stretching from 500 to 150 mb",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "6-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "wind velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "North and Central America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Dijkstra algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Rikus' algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "zonal and meridional wind speeds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Rikus' scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "zonal-mean zonal wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "eastern Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Eurasia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Dijkstra jet detection scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Monte Carlo analysis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "linear trends in mean jet stream latitude",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "linear trends in mean wind velocity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "NCEP/NCAR data set",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "east Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Balkan",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "NCAR",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NCEP",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2137127825",
+        "https://openalex.org/W2145325243",
+        "https://openalex.org/W2141442289",
+        "https://openalex.org/W1994085875",
+        "https://openalex.org/W2054656160",
+        "https://openalex.org/W2121745948",
+        "https://openalex.org/W2523512702",
+        "https://openalex.org/W2169528473",
+        "https://openalex.org/W2074620447",
+        "https://openalex.org/W1972830726",
+        "https://openalex.org/W1853433777",
+        "https://openalex.org/W2155397260",
+        "https://openalex.org/W2022306346",
+        "https://openalex.org/W2074149271",
+        "https://openalex.org/W2548854674",
+        "https://openalex.org/W2288320689",
+        "https://openalex.org/W2180531213",
+        "https://openalex.org/W2189956445",
+        "https://openalex.org/W2034503836",
+        "https://openalex.org/W2165308627",
+        "https://openalex.org/W2014474968",
+        "https://openalex.org/W2115813868",
+        "https://openalex.org/W1660284424",
+        "https://openalex.org/W2061154725",
+        "https://openalex.org/W2412351982",
+        "https://openalex.org/W1974281082",
+        "https://openalex.org/W2092728295",
+        "https://openalex.org/W2024383241",
+        "https://openalex.org/W2332499760",
+        "https://openalex.org/W2162387511",
+        "https://openalex.org/W2340415151",
+        "https://openalex.org/W2091538529",
+        "https://openalex.org/W2139316370",
+        "https://openalex.org/W2055130292",
+        "https://openalex.org/W1485600237",
+        "https://openalex.org/W3122507959",
+        "https://openalex.org/W2150565490",
+        "https://openalex.org/W2495218933"
+    ]
+}

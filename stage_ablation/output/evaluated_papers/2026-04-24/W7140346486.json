@@ -1,0 +1,686 @@
+{
+    "uri": "https://openalex.org/W7140346486",
+    "title": "Constructing efficient score functions for rare event simulation in high-dimensional ocean-climate models",
+    "venue": {
+        "name": "arXiv (Cornell University)",
+        "id": "https://openalex.org/S4306400194",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5130426050",
+            "display_name": "Lucas Esclapez",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5130568603",
+            "display_name": "Val\u00e9rian Jacques-Dumas",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5037577390",
+            "display_name": "Reyk B\u00f6rner",
+            "orcid": "https://orcid.org/0000-0003-4593-7721"
+        },
+        {
+            "id": "https://openalex.org/A5077972500",
+            "display_name": "Laurent Soucasse",
+            "orcid": "https://orcid.org/0000-0002-5422-8794"
+        },
+        {
+            "id": "https://openalex.org/A5130599590",
+            "display_name": "Henk A. Dijkstra",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "Calculating transition probabilities between different states of multistable climate tipping systems is computationally challenging in high-dimensional models. Targeted algorithms, such as the Trajectory-Adaptive Multilevel Splitting (TAMS) method, require an adequate score function to be successful, i.e., to provide an estimate of a transition probability with an acceptable variance when only a relatively small ensemble of model trajectories can be computed. Here, we present a data-driven method to derive a score function based on projecting the model dynamics in a reduced state space. Using a spatially two-dimensional partial differential equation model of the Atlantic Meridional Overturning Circulation, we show that this score function performs better than currently available ones. Using the new score function, transition probabilities can be determined with low variance, even in the case of small noise amplitudes. Besides purely noise-induced transitions, we also consider the scenario of combined stochastic and time-dependent deterministic forcing, presenting a strategy to efficiently simulate AMOC tipping events in global ocean and climate models subject to transient climate change.",
+    "field": "Rare event simulation in climate science",
+    "problem": "Calculating tipping probabilities in high-dimensional climate models is computationally challenging because the performance of rare-event simulation algorithms, such as TAMS, critically depends on an efficient score function which is difficult to design.",
+    "method": "We present a data-driven method to construct efficient score functions for rare event simulations by projecting model dynamics into a reduced state space and reconstructing the mean transition pathway.",
+    "task": "The task is to develop and evaluate a data-driven score function for rare event simulation algorithms to efficiently calculate the probability of an AMOC collapse in a high-dimensional ocean-climate model.",
+    "model": [
+        "POP"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/rare-events",
+            "display_name": "Rare events",
+            "score": 0.6571000218391418
+        },
+        {
+            "id": "https://openalex.org/keywords/variance",
+            "display_name": "Variance (accounting)",
+            "score": 0.5284000039100647
+        },
+        {
+            "id": "https://openalex.org/keywords/function",
+            "display_name": "Function (biology)",
+            "score": 0.5228999853134155
+        },
+        {
+            "id": "https://openalex.org/keywords/event",
+            "display_name": "Event (particle physics)",
+            "score": 0.45750001072883606
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4560999870300293
+        },
+        {
+            "id": "https://openalex.org/keywords/transient",
+            "display_name": "Transient (computer programming)",
+            "score": 0.45489999651908875
+        },
+        {
+            "id": "https://openalex.org/keywords/noise",
+            "display_name": "Noise (video)",
+            "score": 0.4433000087738037
+        },
+        {
+            "id": "https://openalex.org/keywords/score",
+            "display_name": "Score",
+            "score": 0.43479999899864197
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2777317252",
+            "wikidata": "https://www.wikidata.org/wiki/Q18393516",
+            "display_name": "Rare events",
+            "level": 2,
+            "score": 0.6571000218391418
+        },
+        {
+            "id": "https://openalex.org/C196083921",
+            "wikidata": "https://www.wikidata.org/wiki/Q7915758",
+            "display_name": "Variance (accounting)",
+            "level": 2,
+            "score": 0.5284000039100647
+        },
+        {
+            "id": "https://openalex.org/C14036430",
+            "wikidata": "https://www.wikidata.org/wiki/Q3736076",
+            "display_name": "Function (biology)",
+            "level": 2,
+            "score": 0.5228999853134155
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.46239998936653137
+        },
+        {
+            "id": "https://openalex.org/C2779662365",
+            "wikidata": "https://www.wikidata.org/wiki/Q5416694",
+            "display_name": "Event (particle physics)",
+            "level": 2,
+            "score": 0.45750001072883606
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4560999870300293
+        },
+        {
+            "id": "https://openalex.org/C2780799671",
+            "wikidata": "https://www.wikidata.org/wiki/Q17087362",
+            "display_name": "Transient (computer programming)",
+            "level": 2,
+            "score": 0.45489999651908875
+        },
+        {
+            "id": "https://openalex.org/C99498987",
+            "wikidata": "https://www.wikidata.org/wiki/Q2210247",
+            "display_name": "Noise (video)",
+            "level": 3,
+            "score": 0.4433000087738037
+        },
+        {
+            "id": "https://openalex.org/C65660741",
+            "wikidata": "https://www.wikidata.org/wiki/Q3952743",
+            "display_name": "Score",
+            "level": 2,
+            "score": 0.43479999899864197
+        },
+        {
+            "id": "https://openalex.org/C149782125",
+            "wikidata": "https://www.wikidata.org/wiki/Q160039",
+            "display_name": "Econometrics",
+            "level": 1,
+            "score": 0.3919999897480011
+        },
+        {
+            "id": "https://openalex.org/C126255220",
+            "wikidata": "https://www.wikidata.org/wiki/Q141495",
+            "display_name": "Mathematical optimization",
+            "level": 1,
+            "score": 0.35030001401901245
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.3379000127315521
+        },
+        {
+            "id": "https://openalex.org/C119898033",
+            "wikidata": "https://www.wikidata.org/wiki/Q3433888",
+            "display_name": "Ensemble forecasting",
+            "level": 2,
+            "score": 0.30869999527931213
+        },
+        {
+            "id": "https://openalex.org/C93226319",
+            "wikidata": "https://www.wikidata.org/wiki/Q193137",
+            "display_name": "Differential (mechanical device)",
+            "level": 2,
+            "score": 0.29510000348091125
+        },
+        {
+            "id": "https://openalex.org/C51955184",
+            "wikidata": "https://www.wikidata.org/wiki/Q1545585",
+            "display_name": "Stochastic differential equation",
+            "level": 2,
+            "score": 0.29319998621940613
+        },
+        {
+            "id": "https://openalex.org/C28826006",
+            "wikidata": "https://www.wikidata.org/wiki/Q33521",
+            "display_name": "Applied mathematics",
+            "level": 1,
+            "score": 0.29170000553131104
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.28859999775886536
+        },
+        {
+            "id": "https://openalex.org/C127491075",
+            "wikidata": "https://www.wikidata.org/wiki/Q7617825",
+            "display_name": "Stochastic modelling",
+            "level": 2,
+            "score": 0.2678999900817871
+        },
+        {
+            "id": "https://openalex.org/C32230216",
+            "wikidata": "https://www.wikidata.org/wiki/Q7882499",
+            "display_name": "Uncertainty quantification",
+            "level": 2,
+            "score": 0.26739999651908875
+        },
+        {
+            "id": "https://openalex.org/C121864883",
+            "wikidata": "https://www.wikidata.org/wiki/Q677916",
+            "display_name": "Statistical physics",
+            "level": 1,
+            "score": 0.2667999863624573
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.2646999955177307
+        },
+        {
+            "id": "https://openalex.org/C18785705",
+            "wikidata": "https://www.wikidata.org/wiki/Q1931373",
+            "display_name": "Scenario analysis",
+            "level": 2,
+            "score": 0.25760000944137573
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.2522999942302704
+        },
+        {
+            "id": "https://openalex.org/C48103436",
+            "wikidata": "https://www.wikidata.org/wiki/Q599031",
+            "display_name": "State (computer science)",
+            "level": 2,
+            "score": 0.25189998745918274
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a data-driven method to construct efficient score functions for rare event simulations by projecting high-dimensional ocean-climate model dynamics onto a reduced state space, significantly improving the estimation of Atlantic Meridional Overturning Circulation (AMOC) tipping probabilities.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Boussinesq model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "10^4 degrees of freedom",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this paper, we test the application of TAMS, combined with a score function improvement loop, on a simplified yet high-dimensional ocean model. Our goal is to estimate, as efficiently and accurately as possible, the probability that the onset of an AMOC collapse occurs before a given time due to the combined effect of transient forcing and noise. As a prototype model, we use a spatially resolved latitude-depth Boussinesq model of the AMOC, formulated as a stochastic partial differential equation (SPDE) (Soons, Grafke, and Dijkstra 2025) with around 104 degrees of freedom. This model has the advantage capturing spatio-temporal dynamics at a much lower cost compared to ESMs, facilitating the comparison of different score functions and parameter sensitivities. Furthermore, important dynamical features, such as the most probable path of a purely noise-induced transition (the so-called instanton) are known for this model (Soons, Grafke, and Dijkstra 2025). Starting from an initial score function informed by the instanton, we design an iterative data-driven scheme based on a projection of the dynamics in a reduced state space. The scheme only uses trajectories generated by the algorithm in\nEspecially in high-dimensional models, the choice of the score function is crucial to limit the computational cost of TAMS and ensure the reliability of the probability estimator. Here, we addressed the problem of score function design in a latitude-depth Boussinesq model of the thermohaline circulation (Dijkstra and Molemaker 1997, Soons, Grafke, and Dijkstra 2025) with ~ 104 degrees of freedom. We considered spatially correlated but temporally white sur- face freshwater noise, both in stationary forcing conditions and combined with time-dependent deterministic freshwater forcing. TAMS is well suited for both settings, as it is agnostic to the nature of the imposed forcing. We presented a novel data-driven score function and tested its performance against two previously proposed candidates.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Boussinesq model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "stochastic partial differential equation (SPDE)",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this paper, we test the application of TAMS, combined with a score function improvement loop, on a simplified yet high-dimensional ocean model. Our goal is to estimate, as efficiently and accurately as possible, the probability that the onset of an AMOC collapse occurs before a given time due to the combined effect of transient forcing and noise. As a prototype model, we use a spatially resolved latitude-depth Boussinesq model of the AMOC, formulated as a stochastic partial differential equation (SPDE) (Soons, Grafke, and Dijkstra 2025) with around 104 degrees of freedom. This model has the advantage capturing spatio-temporal dynamics at a much lower cost compared to ESMs, facilitating the comparison of different score functions and parameter sensitivities. Furthermore, important dynamical features, such as the most probable path of a purely noise-induced transition (the so-called instanton) are known for this model (Soons, Grafke, and Dijkstra 2025). Starting from an initial score function informed by the instanton, we design an iterative data-driven scheme based on a projection of the dynamics in a reduced state space. The scheme only uses trajectories generated by the algorithm in",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Boussinesq model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "2D rectangular domain",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In a 2D rectangular domain, i.e., (x,z) \u2208 [0, A = 5] \u00d7 [0, 1] (latitude-depth), the governing equations for vorticity w, stream function & and two tracers (salinity S and temperature T) are:",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Boussinesq model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "41 \u00d7 81 grid resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Simulations are performed using the pyTAMS package (Esclapez 2025), a Python imple- mentation of the TAMS algorithm amendable to high-dimensional dynamical systems. The 2D Boussinesq model is readily available in pyTAMS. A 41 \u00d7 81 grid resolution is employed, similar to (Soons, Grafke, and Dijkstra 2025), with fixed step size of \u2206t = 0.01, such that a trajectory run until Ta = 40 comprises 4000 time steps. The resulting memory requirements (considering a double precision representation of the four state variables) amounts to ~ 0.4 GiB per trajectory. To mitigate the memory bottleneck of appying TAMS to such a model, pyTAMS only tracks a single, constantly updated state per trajectory, and trajectories are subsampled before being written to disk. In practice, we record the noise increments at every step but store the model state only every fifty steps. This subsampling leads to a small increase in the computational cost, since part of a trajectory may need to be recomputed during the selection/mutation process, but reduces both the memory requirement and the time spent on input-output operations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Boussinesq model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "four state variables",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Simulations are performed using the pyTAMS package (Esclapez 2025), a Python imple- mentation of the TAMS algorithm amendable to high-dimensional dynamical systems. The 2D Boussinesq model is readily available in pyTAMS. A 41 \u00d7 81 grid resolution is employed, similar to (Soons, Grafke, and Dijkstra 2025), with fixed step size of \u2206t = 0.01, such that a trajectory run until Ta = 40 comprises 4000 time steps. The resulting memory requirements (considering a double precision representation of the four state variables) amounts to ~ 0.4 GiB per trajectory. To mitigate the memory bottleneck of appying TAMS to such a model, pyTAMS only tracks a single, constantly updated state per trajectory, and trajectories are subsampled before being written to disk. In practice, we record the noise increments at every step but store the model state only every fifty steps. This subsampling leads to a small increase in the computational cost, since part of a trajectory may need to be recomputed during the selection/mutation process, but reduces both the memory requirement and the time spent on input-output operations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Boussinesq model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "vorticity",
+            "target_entity_type": "Variable",
+            "paragraph": "In a 2D rectangular domain, i.e., (x,z) \u2208 [0, A = 5] \u00d7 [0, 1] (latitude-depth), the governing equations for vorticity w, stream function & and two tracers (salinity S and temperature T) are:",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Boussinesq model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "stream function",
+            "target_entity_type": "Variable",
+            "paragraph": "In a 2D rectangular domain, i.e., (x,z) \u2208 [0, A = 5] \u00d7 [0, 1] (latitude-depth), the governing equations for vorticity w, stream function & and two tracers (salinity S and temperature T) are:",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Boussinesq model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "salinity",
+            "target_entity_type": "Variable",
+            "paragraph": "In a 2D rectangular domain, i.e., (x,z) \u2208 [0, A = 5] \u00d7 [0, 1] (latitude-depth), the governing equations for vorticity w, stream function & and two tracers (salinity S and temperature T) are:",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Boussinesq model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "In a 2D rectangular domain, i.e., (x,z) \u2208 [0, A = 5] \u00d7 [0, 1] (latitude-depth), the governing equations for vorticity w, stream function & and two tracers (salinity S and temperature T) are:",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "AMOC collapse",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Europe",
+            "target_entity_type": "Continent",
+            "paragraph": "An AMOC collapse (transition from on to off) would have far-reaching consequences on the global climate: among others, significant cooling and modification of weather patterns over Europe (Jackson et al. 2015, van Westen, Kliphuis, and Dijkstra 2024), shifts in the hydrological cycle (Bellomo and Mehling 2024), sea-level rise over the US East coast (Little, Piecuch, and Ponte 2017) and a southward shift of the Intertropical Convergence Zone (Orihuela-Pinto, England, and Taschetto 2022).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "AMOC collapse",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "US East coast",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "An AMOC collapse (transition from on to off) would have far-reaching consequences on the global climate: among others, significant cooling and modification of weather patterns over Europe (Jackson et al. 2015, van Westen, Kliphuis, and Dijkstra 2024), shifts in the hydrological cycle (Bellomo and Mehling 2024), sea-level rise over the US East coast (Little, Piecuch, and Ponte 2017) and a southward shift of the Intertropical Convergence Zone (Orihuela-Pinto, England, and Taschetto 2022).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Institute for Marine and Atmospheric research Utrecht",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Utrecht University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Netherlands eScience Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IMEC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Centre for Complex Systems Studies",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Utrecht",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Netherlands",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Amsterdam",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Leuven",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Belgium",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Atlantic Meridional Overturning Circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "AMOC",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "AMOC collapse",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "AMOC tipping events",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "US East coast",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Intertropical Convergence Zone",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "direct numerical simulation",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "intense cyclones",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "extreme heatwaves",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "rainfall events",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "committor function",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Boussinesq model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "stochastic partial differential equation model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "10^4 degrees of freedom",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Boussinesq approximation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "thermohaline circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "OGCM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "vorticity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stream function",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2D rectangular domain",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "latitude-depth",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Prandtl number",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Rayleigh number",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Lewis number",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "AMOC strength",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "bistable regime",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Monte Carlo simulation",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "stochastic differential equation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "advection-diffusion-forcing operators",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "variance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "relative error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "L2-norm",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "6642",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "quasi-equilibrium experiment",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "deterministic simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "pyTAMS",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "2D Boussinesq model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "41 x 81",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "double precision",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "autonomous forcing",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "time-dependent forcing",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "hosing amplitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "noise amplitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "work-normalised relative error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "number of sampled transitions",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "latitude-depth Boussinesq model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "stationary forcing",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "time-dependent deterministic freshwater forcing",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Parallel Ocean Program",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "POP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "European Research Council",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ClimTip",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "European Union's Horizon Europe",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IMAU",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Dutch National Supercomputer Snellius",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "2D Langevin dynamics",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "triple-well potential",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "trace of the system Jacobian",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Atlantic Ocean",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": []
+}

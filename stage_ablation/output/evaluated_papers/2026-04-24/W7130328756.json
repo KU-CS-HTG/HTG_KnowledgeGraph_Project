@@ -1,0 +1,796 @@
+{
+    "uri": "https://openalex.org/W7130328756",
+    "title": "Informing low-order models of climate tipping elements using outputs from higher-complexity Earth system models",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5067415123",
+            "display_name": "Nils Bochow",
+            "orcid": "https://orcid.org/0000-0003-4578-5780"
+        },
+        {
+            "id": "https://openalex.org/A5084329139",
+            "display_name": "Jonathan Kr\u00f6nke",
+            "orcid": "https://orcid.org/0000-0002-7252-8379"
+        },
+        {
+            "id": "https://openalex.org/A5060985888",
+            "display_name": "Julius Garbe",
+            "orcid": "https://orcid.org/0000-0003-3140-3307"
+        },
+        {
+            "id": "https://openalex.org/A5122909083",
+            "display_name": "Nico Wunderling",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2026-614",
+    "abstract": "Abstract. Crossing climate tipping points poses a rising risk under continued global warming. Yet quantitative tipping risk assessments often rely on idealised system dynamics and do not take into account Earth system model (ESM) processes. Here, we present a process-informed, updatable framework that links systematic stability assessments from comprehensive models to transparent low-order dynamical systems for three high-impact climate tipping elements (TEs): the Greenland Ice Sheet (GrIS), the West Antarctic Ice Sheet (WAIS) and the Atlantic Meridional Overturning Circulation (AMOC). We assemble TE experiments from Earth system and Earth system component models, fit element-specific dynamical systems with saddle-node bifurcations that map external forcing to state transitions, and run idealised instantaneous-forcing experiments to show the application of our framework. A simple, modular update protocol allows tipping thresholds and timescales to be revised as new simulations from ESMs become available without refitting the full framework. Applied to current ESM simulations, our emulators reproduce multistability of the GrIS and WAIS and a freshwater-forced weakening of the AMOC, yielding decision-relevant transient and equilibrium behaviour consistent with the underlying ESMs. Our approach provides a transparent bridge between comprehensive simulations and simple dynamical systems, and can be extended to additional climate tipping elements as suitable experiments become available.",
+    "field": "Climate tipping element modeling",
+    "problem": "Quantitative tipping risk assessments often rely on idealized system dynamics and fail to incorporate processes from complex Earth System Models (ESMs), lacking a transparent framework to link comprehensive simulations with simple, decision-relevant low-order models.",
+    "method": "We propose a process-informed framework that fits low-order dynamical systems with saddle-node bifurcations to outputs from comprehensive Earth system models to emulate the tipping thresholds and transient behavior of climate tipping elements.",
+    "task": "The task is to create low-order models for three climate tipping elements (GrIS, WAIS, and AMOC) by fitting their dynamics to outputs from higher-complexity Earth system models, thereby emulating their tipping thresholds and transient behavior.",
+    "model": [
+        "Yelmo",
+        "PISM",
+        "SICOPOLIS",
+        "POP",
+        "Veros",
+        "CLIMBER-X",
+        "CESM",
+        "POP2",
+        "REMBO",
+        "SURFER",
+        "cGENIE",
+        "CMIP6"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/earth-system-science",
+            "display_name": "Earth system science",
+            "score": 0.7712000012397766
+        },
+        {
+            "id": "https://openalex.org/keywords/tipping-point",
+            "display_name": "Tipping point (physics)",
+            "score": 0.7354000210762024
+        },
+        {
+            "id": "https://openalex.org/keywords/forcing",
+            "display_name": "Forcing (mathematics)",
+            "score": 0.6446999907493591
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-system",
+            "display_name": "Climate system",
+            "score": 0.5971999764442444
+        },
+        {
+            "id": "https://openalex.org/keywords/multistability",
+            "display_name": "Multistability",
+            "score": 0.5422000288963318
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.43560001254081726
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.4235999882221222
+        },
+        {
+            "id": "https://openalex.org/keywords/current",
+            "display_name": "Current (fluid)",
+            "score": 0.40880000591278076
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.7712000012397766
+        },
+        {
+            "id": "https://openalex.org/C114725131",
+            "wikidata": "https://www.wikidata.org/wiki/Q190837",
+            "display_name": "Tipping point (physics)",
+            "level": 2,
+            "score": 0.7354000210762024
+        },
+        {
+            "id": "https://openalex.org/C197115733",
+            "wikidata": "https://www.wikidata.org/wiki/Q1003136",
+            "display_name": "Forcing (mathematics)",
+            "level": 2,
+            "score": 0.6446999907493591
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.5971999764442444
+        },
+        {
+            "id": "https://openalex.org/C2776966350",
+            "wikidata": "https://www.wikidata.org/wiki/Q6935096",
+            "display_name": "Multistability",
+            "level": 3,
+            "score": 0.5422000288963318
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.490200012922287
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.45509999990463257
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.43560001254081726
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.4235999882221222
+        },
+        {
+            "id": "https://openalex.org/C148043351",
+            "wikidata": "https://www.wikidata.org/wiki/Q4456944",
+            "display_name": "Current (fluid)",
+            "level": 2,
+            "score": 0.40880000591278076
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.37880000472068787
+        },
+        {
+            "id": "https://openalex.org/C2780799671",
+            "wikidata": "https://www.wikidata.org/wiki/Q17087362",
+            "display_name": "Transient (computer programming)",
+            "level": 2,
+            "score": 0.3686000108718872
+        },
+        {
+            "id": "https://openalex.org/C123750103",
+            "wikidata": "https://www.wikidata.org/wiki/Q12599",
+            "display_name": "Ice sheet",
+            "level": 2,
+            "score": 0.3450999855995178
+        },
+        {
+            "id": "https://openalex.org/C77405623",
+            "wikidata": "https://www.wikidata.org/wiki/Q598451",
+            "display_name": "System dynamics",
+            "level": 2,
+            "score": 0.33090001344680786
+        },
+        {
+            "id": "https://openalex.org/C99578197",
+            "wikidata": "https://www.wikidata.org/wiki/Q1463606",
+            "display_name": "Radiative forcing",
+            "level": 3,
+            "score": 0.3301999866962433
+        },
+        {
+            "id": "https://openalex.org/C2777093003",
+            "wikidata": "https://www.wikidata.org/wiki/Q6508345",
+            "display_name": "Lead (geology)",
+            "level": 2,
+            "score": 0.32989999651908875
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.32749998569488525
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.32330000400543213
+        },
+        {
+            "id": "https://openalex.org/C112972136",
+            "wikidata": "https://www.wikidata.org/wiki/Q7595718",
+            "display_name": "Stability (learning theory)",
+            "level": 2,
+            "score": 0.31450000405311584
+        },
+        {
+            "id": "https://openalex.org/C79379906",
+            "wikidata": "https://www.wikidata.org/wiki/Q3174497",
+            "display_name": "Dynamical systems theory",
+            "level": 2,
+            "score": 0.29829999804496765
+        },
+        {
+            "id": "https://openalex.org/C101468663",
+            "wikidata": "https://www.wikidata.org/wiki/Q1620158",
+            "display_name": "Modular design",
+            "level": 2,
+            "score": 0.2946999967098236
+        },
+        {
+            "id": "https://openalex.org/C2780586882",
+            "wikidata": "https://www.wikidata.org/wiki/Q7520643",
+            "display_name": "Simple (philosophy)",
+            "level": 2,
+            "score": 0.26489999890327454
+        },
+        {
+            "id": "https://openalex.org/C13662910",
+            "wikidata": "https://www.wikidata.org/wiki/Q193139",
+            "display_name": "Trajectory",
+            "level": 2,
+            "score": 0.25679999589920044
+        },
+        {
+            "id": "https://openalex.org/C128370203",
+            "wikidata": "https://www.wikidata.org/wiki/Q26841",
+            "display_name": "Anthropocene",
+            "level": 2,
+            "score": 0.2515999972820282
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper introduces a process-informed, updatable framework that creates low-order dynamical models for three major climate tipping elements (GrIS, WAIS, and AMOC) by calibrating them with outputs from higher-complexity Earth system models to assess tipping thresholds and transient behavior.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Atlantic Meridional Overturning Circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Atlantic ocean",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Moreover, these three tipping elements are coupled via the Atlantic ocean, primarily through ocean heat transport, sea-level changes and changes in atmospheric patterns (Li et al., 2023; Sinet et al., 2025; Testorf et al., 2026).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Yelmo",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "REMBO",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Here, two of the three model setups used incorporate a coupling between the ice sheet and the atmosphere. One setup employs a simple regional climate model (Yelmo\u2013REMBO), while another is linked to a fast Earth system model (SICOPOLIS\u2013CLIMBER-X) that explicitly includes atmosphere-ice sheet feedbacks.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CLIMBER-X",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "SICOPOLIS",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Here, we utilise the results from three independent ice sheet models to fit a dynamical system to the GrIS. Specifically, we use the simulations by Bochow et al. (2023) derived from the ice sheet models Yelmo (Robinson et al., 2020) and PISM (Winkelmann et al., 2011) and the simulations by H\u00f6ning et al. (2023), utilizing the fast Earth system model CLIMBER-X (Willeit et al., 2022, 2023) coupled to the ice sheet model SICOPOLIS (Greve, 1997).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CLIMBER-X",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "atmosphere-ice sheet feedbacks",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Here, two of the three model setups used incorporate a coupling between the ice sheet and the atmosphere. One setup employs a simple regional climate model (Yelmo\u2013REMBO), while another is linked to a fast Earth system model (SICOPOLIS\u2013CLIMBER-X) that explicitly includes atmosphere-ice sheet feedbacks.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Yelmo",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "critical threshold of 1.80\u00b0C",
+            "target_entity_type": "Metric",
+            "paragraph": "The fitted critical thresholds are 1.80\u00b0C (Yelmo), 2.27\u00b0C (PISM) as well as 1.00\u00b0C for SICOPOLIS (1st threshold) and 1.99\u00b0C for SICOPOLIS (2nd threshold) GMT warming above pre-industrial levels for the first and second transition, respectively (Tab. 2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "critical threshold of 2.27\u00b0C",
+            "target_entity_type": "Metric",
+            "paragraph": "The fitted critical thresholds are 1.80\u00b0C (Yelmo), 2.27\u00b0C (PISM) as well as 1.00\u00b0C for SICOPOLIS (1st threshold) and 1.99\u00b0C for SICOPOLIS (2nd threshold) GMT warming above pre-industrial levels for the first and second transition, respectively (Tab. 2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CLIMBER-X",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "critical threshold of 1.00\u00b0C (SICOPOLIS 1st threshold)",
+            "target_entity_type": "Metric",
+            "paragraph": "The fitted critical thresholds are 1.80\u00b0C (Yelmo), 2.27\u00b0C (PISM) as well as 1.00\u00b0C for SICOPOLIS (1st threshold) and 1.99\u00b0C for SICOPOLIS (2nd threshold) GMT warming above pre-industrial levels for the first and second transition, respectively (Tab. 2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CLIMBER-X",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "critical threshold of 1.99\u00b0C (SICOPOLIS 2nd threshold)",
+            "target_entity_type": "Metric",
+            "paragraph": "The fitted critical thresholds are 1.80\u00b0C (Yelmo), 2.27\u00b0C (PISM) as well as 1.00\u00b0C for SICOPOLIS (1st threshold) and 1.99\u00b0C for SICOPOLIS (2nd threshold) GMT warming above pre-industrial levels for the first and second transition, respectively (Tab. 2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PISM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "critical threshold of 0.76\u00b0C (WAIS 1st threshold)",
+            "target_entity_type": "Metric",
+            "paragraph": "The derived critical thresholds for WAIS loss are 0.76\u00b0C (WAIS (1st threshold)) and 1.03\u00b0C (WAIS (2nd threshold)), while the thresholds for regrowth are -0.03\u00b0C (WAIS (1st threshold)) and 0.26\u00b0C (WAIS (2nd threshold)).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "critical threshold of 1.03\u00b0C (WAIS 2nd threshold)",
+            "target_entity_type": "Metric",
+            "paragraph": "The derived critical thresholds for WAIS loss are 0.76\u00b0C (WAIS (1st threshold)) and 1.03\u00b0C (WAIS (2nd threshold)), while the thresholds for regrowth are -0.03\u00b0C (WAIS (1st threshold)) and 0.26\u00b0C (WAIS (2nd threshold)).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM version 1.0.5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "POP2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "van Westen and Dijkstra (2023) use the coupled Community Earth System Model (CESM) version 1.0.5 (Hurrell et al., 2013) with a horizontal resolution of 1\u00b0 for the LANL Parallel Ocean Program version 2 (POP2) ocean model (Smith et al., 2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Veros",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "freshwater threshold of 0.21 Sv",
+            "target_entity_type": "Metric",
+            "paragraph": "Similarly, the fitted freshwater thresholds vary between 0.21 Sv (Veros) (Lohmann and Ditlevsen, 2021), 0.50Sv (POP2) (van Westen and Dijkstra, 2023) and 0.11 Sv (POP-HR) (van Westen et al., 2025).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM version 1.0.5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "freshwater threshold of 0.50 Sv (POP2)",
+            "target_entity_type": "Metric",
+            "paragraph": "Similarly, the fitted freshwater thresholds vary between 0.21 Sv (Veros) (Lohmann and Ditlevsen, 2021), 0.50Sv (POP2) (van Westen and Dijkstra, 2023) and 0.11 Sv (POP-HR) (van Westen et al., 2025).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Veros",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "present-day equilibrium AMOC strength of 8 Sv",
+            "target_entity_type": "Metric",
+            "paragraph": "The simulations utilizing the Veros ocean model Lohmann and Ditlevsen (2021) simulate a present-day equilibrium AMOC strength of 8 Sv (Fig. 9), while for the POP2 and POP-HR simulations, it is between 17 and 20 Sv (Fig. 7 & 8).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM version 1.0.5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "present-day equilibrium AMOC strength between 17 and 20 Sv",
+            "target_entity_type": "Metric",
+            "paragraph": "The simulations utilizing the Veros ocean model Lohmann and Ditlevsen (2021) simulate a present-day equilibrium AMOC strength of 8 Sv (Fig. 9), while for the POP2 and POP-HR simulations, it is between 17 and 20 Sv (Fig. 7 & 8).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM version 1.0.5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1\u00b0 horizontal resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "van Westen and Dijkstra (2023) use the coupled Community Earth System Model (CESM) version 1.0.5 (Hurrell et al., 2013) with a horizontal resolution of 1\u00b0 for the LANL Parallel Ocean Program version 2 (POP2) ocean model (Smith et al., 2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Potsdam Institute for Climate Impact Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Goethe University Frankfurt",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Senckenberg Research Institute and Natural History Museum",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Greenland Ice Sheet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "GrIS",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "West Antarctic Ice Sheet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "WAIS",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic Meridional Overturning Circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "AMOC",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Amazon rainforest",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South American monsoon system",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Earth system model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "low-order dynamical systems",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Potsdam",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Frankfurt am Main",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "global mean temperature (GMT) anomaly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SURFER",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "cGENIE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "intermediate-complexity models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Tipping Points Modelling Intercomparison Project",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "TIPMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Climate Tipping Points",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "ClimTip",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "ice-sheet models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "ocean models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "CORDIS",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Exploring Tipping Points and Their Impacts Using Earth System Models",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "TIPESM",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "European Commission",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "freshwater fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "saddle-node bifurcations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Yelmo",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Parallel Ice Sheet Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PISM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Simulation Code for Polythermal Ice Sheets",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SICOPOLIS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Parallel Ocean Program",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "POP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Veros",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "equilibrium",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "quasi-equilibrium",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Atlantic ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ice volume",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "AMOC strength",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "freshwater forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CLIMBER-X",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "transient",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "local summer temperature anomaly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global mean temperature anomaly above pre-industrial",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea-level rise",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "West Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ross ice shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ross Sea region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Amundsen Sea region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Community Earth System Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "POP2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "POP-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "northern Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Yelmo\u2013REMBO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SICOPOLIS\u2013CLIMBER-X",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Antarctic Ice Sheet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "AIS",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East Antarctic Ice Sheet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "stand-alone ice sheet simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "critical threshold",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "hysteresis width",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "SSP5-8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP2-4.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP1-2.6",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "melt-elevation feedback",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "glacial isostatic adjustment",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "total ice volume",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea-level relevant ice volume",
+            "entity_type": "Variable"
+        }
+    ],
+    "referenced_works": []
+}

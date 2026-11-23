@@ -1,0 +1,2408 @@
+{
+    "uri": "https://openalex.org/W7140077685",
+    "title": "Comparing climate time series \u2013 Part 6: Testing equality of autoregressive parameters without assuming equality of noise variances",
+    "venue": {
+        "name": "Advances in statistical climatology, meteorology and oceanography",
+        "id": "https://openalex.org/S4210199883",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5045680211",
+            "display_name": "Timothy DelSole",
+            "orcid": "https://orcid.org/0000-0003-2041-3024"
+        },
+        {
+            "id": "https://openalex.org/A5026827452",
+            "display_name": "Michael K. Tippett",
+            "orcid": "https://orcid.org/0000-0002-7790-5364"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/ascmo-12-73-2026",
+    "abstract": "Abstract. A critical question in climate science is whether climate model simulations are statistically consistent with observations. If simulations and observations are treated as realizations of Vector Autoregressive (VAR) models, then deciding that simulations and observations came from the same process is equivalent to deciding that the parameters of the respective VAR models are equal. This framework has been developed in parts 1\u20135 of this series of papers, including extensions to account for annual cycles and radiative forcing. However, the associated tests have been derived under the restriction of equal noise covariances. Previous studies have only allowed unequal noise variances in univariate settings. This paper presents a general test of parameter equality that applies to multivariate models, incorporates external forcing, and does not assume equal noise covariances. Monte Carlo experiments indicate that the test statistic is well approximated by a chi-squared distribution for large degrees of freedom, but that this distribution underestimates upper quantiles when the degrees of freedom are small. This bias can be partially compensated by adopting a more stringent significance level (e.g., using a 1 % level to achieve a nominal 5 % Type I error rate). Applying the method to monthly 2 m-temperature from an observational data set and climate model simulations aggregated over five regional domains reveals that most climate models tested differ significantly from the observational data set, both in their transfer coefficients for radiative forcing and in their AR coefficients, indicating differences in the representation of both internal and forced variability.",
+    "field": "Statistical climatology",
+    "problem": "Existing statistical methods for comparing multivariate climate time series are limited by the restrictive assumption of equal noise covariances, which prevents the independent testing of parameters governing memory or the response to external forcing.",
+    "method": "The paper proposes an iterative likelihood ratio test to compare parameters of multivariate autoregressive models from two time series without assuming their noise covariances are equal, enabling more targeted hypothesis tests about forced and internal climate variability.",
+    "task": "The task is to develop a statistical test to compare autoregressive model parameters between two multivariate climate time series, such as a model and observations, without the restrictive assumption that their noise variances are equal.",
+    "model": [
+        "ACCESS-CM2",
+        "ACCESS-ESM1-5",
+        "AWI-CM-1-1-MR",
+        "BCC-CSM2-MR",
+        "BCC-ESM1",
+        "CAMS-CSM1-0",
+        "CESM2",
+        "CESM2-FV2",
+        "CESM2-WACCM",
+        "CESM2-WACCM-FV2",
+        "CMIP6",
+        "CNRM-CM6-1",
+        "CNRM-ESM2-1",
+        "CanESM5",
+        "CanESM5-1",
+        "EC-Earth3",
+        "EC-Earth3-Veg",
+        "ERA5",
+        "FGOALS-f3-L",
+        "FGOALS-g3",
+        "GFDL-CM4",
+        "GFDL-ESM4",
+        "GISS-E2-1-G",
+        "GISS-E2-1-G-CC",
+        "GISS-E2-1-H",
+        "HadGEM3-GC31-LL",
+        "HadGEM3-GC31-MM",
+        "INM-CM4-8",
+        "INM-CM5-0",
+        "IPSL-CM6A-LR",
+        "MCM-UA-1-0",
+        "MIROC-ES2L",
+        "MIROC6",
+        "MPI-ESM1-2-HR",
+        "MPI-ESM1-2-LR",
+        "MRI-ESM2-0",
+        "NESM3",
+        "NorCPM1",
+        "NorESM2-LM",
+        "SAMO-UNICON",
+        "SPEAR",
+        "UKESM1-0-LL"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/quantile",
+            "display_name": "Quantile",
+            "score": 0.6955999732017517
+        },
+        {
+            "id": "https://openalex.org/keywords/autoregressive-model",
+            "display_name": "Autoregressive model",
+            "score": 0.6657000184059143
+        },
+        {
+            "id": "https://openalex.org/keywords/degrees-of-freedom",
+            "display_name": "Degrees of freedom (physics and chemistry)",
+            "score": 0.5770000219345093
+        },
+        {
+            "id": "https://openalex.org/keywords/univariate",
+            "display_name": "Univariate",
+            "score": 0.560699999332428
+        },
+        {
+            "id": "https://openalex.org/keywords/noise",
+            "display_name": "Noise (video)",
+            "score": 0.5367000102996826
+        },
+        {
+            "id": "https://openalex.org/keywords/series",
+            "display_name": "Series (stratigraphy)",
+            "score": 0.5364999771118164
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.44589999318122864
+        },
+        {
+            "id": "https://openalex.org/keywords/representation",
+            "display_name": "Representation (politics)",
+            "score": 0.399399995803833
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C118671147",
+            "wikidata": "https://www.wikidata.org/wiki/Q578714",
+            "display_name": "Quantile",
+            "level": 2,
+            "score": 0.6955999732017517
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.6765999794006348
+        },
+        {
+            "id": "https://openalex.org/C159877910",
+            "wikidata": "https://www.wikidata.org/wiki/Q2202883",
+            "display_name": "Autoregressive model",
+            "level": 2,
+            "score": 0.6657000184059143
+        },
+        {
+            "id": "https://openalex.org/C208081375",
+            "wikidata": "https://www.wikidata.org/wiki/Q274502",
+            "display_name": "Degrees of freedom (physics and chemistry)",
+            "level": 2,
+            "score": 0.5770000219345093
+        },
+        {
+            "id": "https://openalex.org/C199163554",
+            "wikidata": "https://www.wikidata.org/wiki/Q1681619",
+            "display_name": "Univariate",
+            "level": 3,
+            "score": 0.560699999332428
+        },
+        {
+            "id": "https://openalex.org/C99498987",
+            "wikidata": "https://www.wikidata.org/wiki/Q2210247",
+            "display_name": "Noise (video)",
+            "level": 3,
+            "score": 0.5367000102996826
+        },
+        {
+            "id": "https://openalex.org/C143724316",
+            "wikidata": "https://www.wikidata.org/wiki/Q312468",
+            "display_name": "Series (stratigraphy)",
+            "level": 2,
+            "score": 0.5364999771118164
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.49459999799728394
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.44589999318122864
+        },
+        {
+            "id": "https://openalex.org/C149782125",
+            "wikidata": "https://www.wikidata.org/wiki/Q160039",
+            "display_name": "Econometrics",
+            "level": 1,
+            "score": 0.4074999988079071
+        },
+        {
+            "id": "https://openalex.org/C28826006",
+            "wikidata": "https://www.wikidata.org/wiki/Q33521",
+            "display_name": "Applied mathematics",
+            "level": 1,
+            "score": 0.4009000062942505
+        },
+        {
+            "id": "https://openalex.org/C2776359362",
+            "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+            "display_name": "Representation (politics)",
+            "level": 3,
+            "score": 0.399399995803833
+        },
+        {
+            "id": "https://openalex.org/C89128539",
+            "wikidata": "https://www.wikidata.org/wiki/Q1949963",
+            "display_name": "Statistic",
+            "level": 2,
+            "score": 0.3944000005722046
+        },
+        {
+            "id": "https://openalex.org/C19499675",
+            "wikidata": "https://www.wikidata.org/wiki/Q232207",
+            "display_name": "Monte Carlo method",
+            "level": 2,
+            "score": 0.39079999923706055
+        },
+        {
+            "id": "https://openalex.org/C169857963",
+            "wikidata": "https://www.wikidata.org/wiki/Q1461038",
+            "display_name": "Test statistic",
+            "level": 3,
+            "score": 0.38589999079704285
+        },
+        {
+            "id": "https://openalex.org/C177264268",
+            "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+            "display_name": "Set (abstract data type)",
+            "level": 2,
+            "score": 0.3635999858379364
+        },
+        {
+            "id": "https://openalex.org/C197115733",
+            "wikidata": "https://www.wikidata.org/wiki/Q1003136",
+            "display_name": "Forcing (mathematics)",
+            "level": 2,
+            "score": 0.3614000082015991
+        },
+        {
+            "id": "https://openalex.org/C110121322",
+            "wikidata": "https://www.wikidata.org/wiki/Q865811",
+            "display_name": "Distribution (mathematics)",
+            "level": 2,
+            "score": 0.35030001401901245
+        },
+        {
+            "id": "https://openalex.org/C151406439",
+            "wikidata": "https://www.wikidata.org/wiki/Q186588",
+            "display_name": "Time series",
+            "level": 2,
+            "score": 0.31060001254081726
+        },
+        {
+            "id": "https://openalex.org/C161584116",
+            "wikidata": "https://www.wikidata.org/wiki/Q1952580",
+            "display_name": "Multivariate statistics",
+            "level": 2,
+            "score": 0.30790001153945923
+        },
+        {
+            "id": "https://openalex.org/C87007009",
+            "wikidata": "https://www.wikidata.org/wiki/Q210832",
+            "display_name": "Statistical hypothesis testing",
+            "level": 2,
+            "score": 0.27230000495910645
+        },
+        {
+            "id": "https://openalex.org/C58489278",
+            "wikidata": "https://www.wikidata.org/wiki/Q1172284",
+            "display_name": "Data set",
+            "level": 2,
+            "score": 0.267300009727478
+        },
+        {
+            "id": "https://openalex.org/C99578197",
+            "wikidata": "https://www.wikidata.org/wiki/Q1463606",
+            "display_name": "Radiative forcing",
+            "level": 3,
+            "score": 0.25920000672340393
+        },
+        {
+            "id": "https://openalex.org/C112633086",
+            "wikidata": "https://www.wikidata.org/wiki/Q381287",
+            "display_name": "White noise",
+            "level": 2,
+            "score": 0.25609999895095825
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "HadGEM3-GC31-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "24"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "25"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "26"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "27"
+        },
+        {
+            "model": "NESM3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "28"
+        },
+        {
+            "model": "HadGEM3-GC31-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "29"
+        },
+        {
+            "model": "INM-CM4-8",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "30"
+        },
+        {
+            "model": "NESM3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "30"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "31"
+        },
+        {
+            "model": "MIROC-ES2L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "32"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "32"
+        },
+        {
+            "model": "GISS-E2-1-G-CC",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "32"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "33"
+        },
+        {
+            "model": "MCM-UA-1-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "33"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "34"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "34"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "34"
+        },
+        {
+            "model": "AWI-CM-1-1-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "35"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "35"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "35"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "35"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "36"
+        },
+        {
+            "model": "FGOALS-f3-L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "37"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "37"
+        },
+        {
+            "model": "CESM2-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "37"
+        },
+        {
+            "model": "SPEAR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "37"
+        },
+        {
+            "model": "ACCESS-CM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "38"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "38"
+        },
+        {
+            "model": "CESM2-WACCM-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "38"
+        },
+        {
+            "model": "FGOALS-f3-L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "38"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "39"
+        },
+        {
+            "model": "CanESM5-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "39"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "40"
+        },
+        {
+            "model": "AWI-CM-1-1-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "40"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "41"
+        },
+        {
+            "model": "SPEAR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "41"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "41"
+        },
+        {
+            "model": "FGOALS-f3-L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "42"
+        },
+        {
+            "model": "ACCESS-CM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "43"
+        },
+        {
+            "model": "CanESM5-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "43"
+        },
+        {
+            "model": "NorCPM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "44"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "44"
+        },
+        {
+            "model": "ACCESS-CM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "45"
+        },
+        {
+            "model": "CanESM5-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "46"
+        },
+        {
+            "model": "BCC-CSM2-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "46"
+        },
+        {
+            "model": "CESM2-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "47"
+        },
+        {
+            "model": "GFDL-CM4",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "48"
+        },
+        {
+            "model": "CESM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "49"
+        },
+        {
+            "model": "NorCPM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "49"
+        },
+        {
+            "model": "AWI-CM-1-1-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "50"
+        },
+        {
+            "model": "CESM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "51"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "53"
+        },
+        {
+            "model": "BCC-ESM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "53"
+        },
+        {
+            "model": "CAMS-CSM1-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "33"
+        },
+        {
+            "model": "BCC-CSM2-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "34"
+        },
+        {
+            "model": "HadGEM3-GC31-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "34"
+        },
+        {
+            "model": "BCC-CSM2-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "35"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "35"
+        },
+        {
+            "model": "BCC-ESM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "36"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "36"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "37"
+        },
+        {
+            "model": "GISS-E2-1-H",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "37"
+        },
+        {
+            "model": "INM-CM5-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "38"
+        },
+        {
+            "model": "MIROC-ES2L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "38"
+        },
+        {
+            "model": "HadGEM3-GC31-MM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "39"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "39"
+        },
+        {
+            "model": "GISS-E2-1-H",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "40"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "41"
+        },
+        {
+            "model": "CAMS-CSM1-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "42"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "43"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "44"
+        },
+        {
+            "model": "UKESM1-0-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "45"
+        },
+        {
+            "model": "GISS-E2-1-H",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "46"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "47"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "48"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "49"
+        },
+        {
+            "model": "SPEAR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "50"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "51"
+        },
+        {
+            "model": "HadGEM3-GC31-MM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "52"
+        },
+        {
+            "model": "UKESM1-0-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "53"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "54"
+        },
+        {
+            "model": "MIROC-ES2L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "55"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "56"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "57"
+        },
+        {
+            "model": "NESM3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "58"
+        },
+        {
+            "model": "CESM2-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "59"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "60"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "61"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "62"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "63"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "64"
+        },
+        {
+            "model": "SAMO-UNICON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "65"
+        },
+        {
+            "model": "INM-CM5-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "67"
+        },
+        {
+            "model": "UKESM1-0-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "68"
+        },
+        {
+            "model": "CESM2-WACCM-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "69"
+        },
+        {
+            "model": "BCC-ESM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "70"
+        },
+        {
+            "model": "GFDL-ESM4",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "71"
+        },
+        {
+            "model": "HadGEM3-GC31-MM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "72"
+        },
+        {
+            "model": "CESM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "73"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "74"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "75"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "76"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "77"
+        },
+        {
+            "model": "INM-CM5-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "78"
+        },
+        {
+            "model": "NorCPM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "79"
+        },
+        {
+            "model": "CESM2-WACCM-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "80"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (transfer coefficients)",
+            "result": "82"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "30"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "35"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "38"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "40"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "42"
+        },
+        {
+            "model": "ACCESS-CM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "45"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "47"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "50"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "52"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "55"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "57"
+        },
+        {
+            "model": "HadGEM3-GC31-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "60"
+        },
+        {
+            "model": "NESM3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "62"
+        },
+        {
+            "model": "BCC-ESM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "65"
+        },
+        {
+            "model": "NESM3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "68"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "72"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "75"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "78"
+        },
+        {
+            "model": "MPI-ESM1-2-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "82"
+        },
+        {
+            "model": "MPI-ESM1-2-HR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "85"
+        },
+        {
+            "model": "INM-CM5-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "88"
+        },
+        {
+            "model": "UKESM1-0-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "91"
+        },
+        {
+            "model": "HadGEM3-GC31-MM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "94"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "96"
+        },
+        {
+            "model": "UKESM1-0-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "98"
+        },
+        {
+            "model": "IPSL-CM6A-LR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "101"
+        },
+        {
+            "model": "HadGEM3-GC31-MM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "103"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "105"
+        },
+        {
+            "model": "HadGEM3-GC31-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "108"
+        },
+        {
+            "model": "CanESM5-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "110"
+        },
+        {
+            "model": "HadGEM3-GC31-MM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "113"
+        },
+        {
+            "model": "CanESM5-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "115"
+        },
+        {
+            "model": "UKESM1-0-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "117"
+        },
+        {
+            "model": "AWI-CM-1-1-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "120"
+        },
+        {
+            "model": "AWI-CM-1-1-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "122"
+        },
+        {
+            "model": "SPEAR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "125"
+        },
+        {
+            "model": "INM-CM4-8",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "128"
+        },
+        {
+            "model": "CanESM5-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "131"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "135"
+        },
+        {
+            "model": "CanESM5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "138"
+        },
+        {
+            "model": "AWI-CM-1-1-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "142"
+        },
+        {
+            "model": "INM-CM5-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "145"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "149"
+        },
+        {
+            "model": "SPEAR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "152"
+        },
+        {
+            "model": "MCM-UA-1-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "155"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "159"
+        },
+        {
+            "model": "INM-CM5-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "163"
+        },
+        {
+            "model": "GFDL-CM4",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "167"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "172"
+        },
+        {
+            "model": "SPEAR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "176"
+        },
+        {
+            "model": "GFDL-ESM4",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "180"
+        },
+        {
+            "model": "CNRM-ESM2-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "185"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "190"
+        },
+        {
+            "model": "FGOALS-f3-L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "38"
+        },
+        {
+            "model": "FGOALS-f3-L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "41"
+        },
+        {
+            "model": "BCC-CSM2-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "44"
+        },
+        {
+            "model": "FGOALS-f3-L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "47"
+        },
+        {
+            "model": "GISS-E2-1-H",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "51"
+        },
+        {
+            "model": "CESM2-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "54"
+        },
+        {
+            "model": "CESM2-WACCM-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "58"
+        },
+        {
+            "model": "BCC-CSM2-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "61"
+        },
+        {
+            "model": "CESM2-WACCM-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "65"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "69"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "73"
+        },
+        {
+            "model": "CESM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "77"
+        },
+        {
+            "model": "MIROC-ES2L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "81"
+        },
+        {
+            "model": "ACCESS-CM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "84"
+        },
+        {
+            "model": "CESM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "88"
+        },
+        {
+            "model": "CESM2-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "91"
+        },
+        {
+            "model": "FGOALS-g3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "94"
+        },
+        {
+            "model": "CESM2-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "98"
+        },
+        {
+            "model": "CESM2-WACCM-FV2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "101"
+        },
+        {
+            "model": "NorCPM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "104"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "107"
+        },
+        {
+            "model": "MIROC-ES2L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "110"
+        },
+        {
+            "model": "SAMO-UNICON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "113"
+        },
+        {
+            "model": "ACCESS-CM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "116"
+        },
+        {
+            "model": "MIROC-ES2L",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "119"
+        },
+        {
+            "model": "NorCPM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "123"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "126"
+        },
+        {
+            "model": "GISS-E2-1-H",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "130"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "134"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "138"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "142"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "146"
+        },
+        {
+            "model": "CESM2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "150"
+        },
+        {
+            "model": "GISS-E2-1-G-CC",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "154"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "159"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "163"
+        },
+        {
+            "model": "GISS-E2-1-H",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "168"
+        },
+        {
+            "model": "CESM2-WACCM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "173"
+        },
+        {
+            "model": "NorCPM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "178"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "183"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "188"
+        },
+        {
+            "model": "GISS-E2-1-G",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "193"
+        },
+        {
+            "model": "BCC-CSM2-MR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "198"
+        },
+        {
+            "model": "MIROC6",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "204"
+        },
+        {
+            "model": "BCC-ESM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "210"
+        },
+        {
+            "model": "NESM3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "215"
+        },
+        {
+            "model": "CAMS-CSM1-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "221"
+        },
+        {
+            "model": "EC-Earth3",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "226"
+        },
+        {
+            "model": "EC-Earth3-Veg",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "232"
+        },
+        {
+            "model": "ACCESS-ESM1-5",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "238"
+        },
+        {
+            "model": "HadGEM3-GC31-LL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "245"
+        },
+        {
+            "model": "CAMS-CSM1-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "252"
+        },
+        {
+            "model": "BCC-ESM1",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "260"
+        },
+        {
+            "model": "MRI-ESM2-0",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "deviance (AR coefficients)",
+            "result": "270"
+        }
+    ],
+    "innovation": "This paper presents a statistical test for comparing autoregressive parameters in multivariate, externally forced climate time series without the restrictive assumption of equal noise covariances, enabling more targeted comparisons of internal and forced variability between models and observations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "SPEAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "NOAA Geophysical Fluid Dynamics Laboratory",
+            "target_entity_type": "Institute",
+            "paragraph": "We also have included the SPEAR model from the Geophysical Fluid Dynamics Laboratory (Delworth et al., 2020).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "AWI-CM-1-1-MR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Alfred Wegener Institute, Germany",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "BCC-CSM2-MR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Beijing Climate Center, China Meteorological Administration, China",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "BCC-ESM1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Beijing Climate Center, China Meteorological Administration, China",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAMS-CSM1-0",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Chinese Academy of Meteorological Sciences, China",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-g3",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Institute of Atmospheric Physics, Chinese Academy of Sciences, China",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Canadian Centre for Climate Modelling and Analysis, Canada",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM5-1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Canadian Centre for Climate Modelling and Analysis, Canada",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM6-1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "CNRM/CERFACS, France",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM2-1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "CNRM/CERFACS, France",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACCESS-ESM1-5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "CSIRO-ARCCSS, Australia",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "EC-Earth Consortium",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "INM-CM5-0",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Institute of Numerical Mathematics, Russia",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Institut Pierre-Simon Laplace, France",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIROC6",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "JAMSTEC, AORI (University of Tokyo), NIES, Japan",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3-GC31-LL",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Met Office Hadley Centre, UK",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UKESM1-0-LL",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Met Office Hadley Centre, UK",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM1-2-HR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Max Planck Institute for Meteorology, Germany",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM1-2-LR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Max Planck Institute for Meteorology, Germany",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MRI-ESM2-0",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Meteorological Research Institute, Japan",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GISS-E2-1-G",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "NASA Goddard Institute for Space Studies, USA",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM2",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "National Center for Atmospheric Research (NCAR), USA",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorCPM1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Norwegian Climate Prediction Model Consortium, Norway",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2-LM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Norwegian Climate Centre, Norway",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-CM4",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "NOAA Geophysical Fluid Dynamics Laboratory, USA",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NESM3",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Nanjing University of Information Science and Technology, China",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAMO-UNICON",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Seoul National University, South Korea",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MCM-UA-1-0",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "University of Arizona, USA",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. List of CMIP6 models and their modeling institutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "2m air temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "For observational data, we use monthly 2m air temperature from the ERA5 reanalysis (Hersbach et al., 2020).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "SAMPLED_AT_FREQUENCY",
+            "target_entity_instance": "monthly",
+            "target_entity_type": "Frequency",
+            "paragraph": "For observational data, we use monthly 2m air temperature from the ERA5 reanalysis (Hersbach et al., 2020).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "historical",
+            "source_entity_type": "Experiment",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "CMIP6",
+            "target_entity_type": "Project",
+            "paragraph": "For simulations, we use monthly 2 m air temperature from historical simulations conducted as part of the Coupled Model Intercomparison Project Phase 6 (CMIP6; Eyring et al., 2016).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "historical",
+            "source_entity_type": "Experiment",
+            "relation": "USES_FORCING",
+            "target_entity_instance": "natural forcing",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "These simulations cover the 165-year period 1850\u20132014 and are driven by radiative forcing from natural and anthropogenic sources, with magnitudes constrained by historical observations.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "historical",
+            "source_entity_type": "Experiment",
+            "relation": "USES_FORCING",
+            "target_entity_instance": "anthropogenic forcing",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "These simulations cover the 165-year period 1850\u20132014 and are driven by radiative forcing from natural and anthropogenic sources, with magnitudes constrained by historical observations.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SPEAR",
+            "source_entity_type": "Source",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "CMIP6",
+            "target_entity_type": "Project",
+            "paragraph": "For simulations, we use monthly 2 m air temperature from historical simulations conducted as part of the Coupled Model Intercomparison Project Phase 6 (CMIP6; Eyring et al., 2016). We also have included the SPEAR model from the Geophysical Fluid Dynamics Laboratory (Delworth et al., 2020).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "SPEAR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "For simulations, we use monthly 2 m air temperature from historical simulations conducted as part of the Coupled Model Intercomparison Project Phase 6 (CMIP6; Eyring et al., 2016). We also have included the SPEAR model from the Geophysical Fluid Dynamics Laboratory (Delworth et al., 2020).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SPEAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "2m air temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "For simulations, we use monthly 2 m air temperature from historical simulations conducted as part of the Coupled Model Intercomparison Project Phase 6 (CMIP6; Eyring et al., 2016). We also have included the SPEAR model from the Geophysical Fluid Dynamics Laboratory (Delworth et al., 2020).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "2m-temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "George Mason University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Columbia University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "2 m air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SPEAR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Geophysical Fluid Dynamics Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project Phase 6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropical",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "Mutual Information Criterion (MIC)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "AWI-CM-1-1-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Alfred Wegener Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "BCC-CSM2-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Beijing Climate Center, China Meteorological Administration",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "BCC-ESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CAMS-CSM1-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Chinese Academy of Meteorological Sciences",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "FGOALS-g3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Institute of Atmospheric Physics, Chinese Academy of Sciences",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CanESM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Canadian Centre for Climate Modelling and Analysis",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "CanESM5-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CM6-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM/CERFACS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "CNRM-ESM2-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ACCESS-ESM1-5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CSIRO-ARCCSS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "EC-Earth3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth Consortium",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "INM-CM5-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Institute of Numerical Mathematics",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Russia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "IPSL-CM6A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Institut Pierre-Simon Laplace",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "MIROC6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JAMSTEC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "AORI (University of Tokyo)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NIES",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Japan",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "HadGEM3-GC31-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Met Office Hadley Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "UK",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "UKESM1-0-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Max Planck Institute for Meteorology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-ESM2-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Meteorological Research Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GISS-E2-1-G",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NASA Goddard Institute for Space Studies",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "National Center for Atmospheric Research (NCAR)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NorCPM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Norwegian Climate Prediction Model Consortium",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Norway",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "NorESM2-LM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Norwegian Climate Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GFDL-CM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NOAA Geophysical Fluid Dynamics Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NESM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Nanjing University of Information Science and Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "SAMO-UNICON",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Seoul National University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "South Korea",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "MCM-UA-1-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "University of Arizona",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "deviance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Type I error rate",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "deviance statistic",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CESM2-WACCM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INM-CM4-8",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth3-Veg",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ES2L",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-1-G-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FGOALS-f3-L",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM2-FV2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ACCESS-CM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM2-WACCM-FV2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-1-H",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM3-GC31-MM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "National Oceanic and Atmospheric Administration",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2008442345",
+        "https://openalex.org/W2040566538",
+        "https://openalex.org/W2057453615",
+        "https://openalex.org/W2066150114",
+        "https://openalex.org/W2087892850",
+        "https://openalex.org/W2140028040",
+        "https://openalex.org/W2443985281",
+        "https://openalex.org/W2608212601",
+        "https://openalex.org/W2947626232",
+        "https://openalex.org/W2959969038",
+        "https://openalex.org/W3004342312",
+        "https://openalex.org/W3014759824",
+        "https://openalex.org/W3025949386",
+        "https://openalex.org/W3093051233",
+        "https://openalex.org/W3159430659",
+        "https://openalex.org/W4200054317",
+        "https://openalex.org/W4241683532",
+        "https://openalex.org/W4255655703",
+        "https://openalex.org/W4280592547",
+        "https://openalex.org/W4292963524",
+        "https://openalex.org/W4298142329",
+        "https://openalex.org/W4390932852"
+    ]
+}

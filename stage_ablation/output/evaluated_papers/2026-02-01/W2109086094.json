@@ -1,0 +1,790 @@
+{
+    "uri": "https://openalex.org/W2109086094",
+    "title": "Do we (need to) care about canopy radiation schemes in DGVMs? Caveats and potential impacts",
+    "venue": {
+        "name": "Biogeosciences",
+        "id": "https://openalex.org/S13442111",
+        "type": "journal"
+    },
+    "publication_year": 2014,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5039131287",
+            "display_name": "Alexander Loew",
+            "orcid": "https://orcid.org/0000-0002-2636-3438"
+        },
+        {
+            "id": "https://openalex.org/A5022848706",
+            "display_name": "Peter M. van Bodegom",
+            "orcid": "https://orcid.org/0000-0003-0771-4500"
+        },
+        {
+            "id": "https://openalex.org/A5111653637",
+            "display_name": "J. Widlowski",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5000066757",
+            "display_name": "Juliane Otto",
+            "orcid": "https://orcid.org/0000-0003-2602-4302"
+        },
+        {
+            "id": "https://openalex.org/A5020101667",
+            "display_name": "Tristan Quaife",
+            "orcid": "https://orcid.org/0000-0001-6896-4613"
+        },
+        {
+            "id": "https://openalex.org/A5087754708",
+            "display_name": "B. Pinty",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5058658807",
+            "display_name": "Thomas Raddatz",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/bg-11-1873-2014",
+    "abstract": "Abstract. Dynamic global vegetation models (DGVMs) are an essential part of current state-of-the-art Earth system models. In recent years, the complexity of DGVMs has increased by incorporating new important processes like, e.g., nutrient cycling and land cover dynamics, while biogeophysical processes like surface radiation have not been developed much further. Canopy radiation models are however very important for the estimation of absorption and reflected fluxes and are essential for a proper estimation of surface carbon, energy and water fluxes. The present study provides an overview of current implementations of canopy radiation schemes in a couple of state-of-the-art DGVMs and assesses their accuracy in simulating canopy absorption and reflection for a variety of different surface conditions. Systematic deviations in surface albedo and fractions of absorbed photosynthetic active radiation (faPAR) are identified and potential impacts are assessed. The results show clear deviations for both, absorbed and reflected, surface solar radiation fluxes. FaPAR is typically underestimated, which results in an underestimation of gross primary productivity (GPP) for the investigated cases. The deviation can be as large as 25% in extreme cases. Deviations in surface albedo range between \u22120.15 \u2264 \u0394\u03b1 \u2264 0.36, with a slight positive bias on the order of \u0394\u03b1 \u2248 0.04. Potential radiative forcing caused by albedo deviations is estimated at \u22121.25 \u2264 RF \u2264 \u22120.8 (W m\u22122), caused by neglect of the diurnal cycle of surface albedo. The present study is the first one that provides an assessment of canopy RT schemes in different currently used DGVMs together with an assessment of the potential impact of the identified deviations. The paper illustrates that there is a general need to improve the canopy radiation schemes in DGVMs and provides different perspectives for their improvement.",
+    "field": "Dynamic global vegetation modeling",
+    "problem": "Dynamic global vegetation models (DGVMs) often use overly simplified and inconsistent canopy radiation schemes, leading to systematic biases in estimating surface albedo and absorbed radiation (faPAR), which in turn affects simulations of surface carbon, energy, and water fluxes.",
+    "method": "The paper proposes using consistent one-dimensional, two-stream based canopy radiative transfer schemes for both faPAR and surface albedo calculations to minimize biases and obtain physically consistent estimates of absorbed and reflected radiation fluxes in dynamic global vegetation models.",
+    "task": "The task is to assess the accuracy of canopy radiation schemes in state-of-the-art dynamic global vegetation models (DGVMs) by identifying systematic deviations in simulated surface albedo and absorbed radiation and evaluating the potential impacts of these deviations on carbon and energy fluxes.",
+    "model": [
+        "JULES",
+        "MOSES",
+        "TRIFFID",
+        "JSBACH",
+        "ECHAM6",
+        "MPI-ESM",
+        "ORCHIDEE",
+        "IPSL",
+        "ACTS",
+        "GORT",
+        "ISBA"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/albedo",
+            "display_name": "Albedo (alchemy)",
+            "score": 0.7821333408355713
+        },
+        {
+            "id": "https://openalex.org/keywords/canopy",
+            "display_name": "Canopy",
+            "score": 0.670772135257721
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.6059561371803284
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.5442256927490234
+        },
+        {
+            "id": "https://openalex.org/keywords/photosynthetically-active-radiation",
+            "display_name": "Photosynthetically active radiation",
+            "score": 0.49546658992767334
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.30462580919265747
+        },
+        {
+            "id": "https://openalex.org/keywords/photosynthesis",
+            "display_name": "Photosynthesis",
+            "score": 0.24490106105804443
+        },
+        {
+            "id": "https://openalex.org/keywords/ecology",
+            "display_name": "Ecology",
+            "score": 0.1557430624961853
+        },
+        {
+            "id": "https://openalex.org/keywords/botany",
+            "display_name": "Botany",
+            "score": 0.11366742849349976
+        },
+        {
+            "id": "https://openalex.org/keywords/biology",
+            "display_name": "Biology",
+            "score": 0.0980159342288971
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C195886398",
+            "wikidata": "https://www.wikidata.org/wiki/Q2110050",
+            "display_name": "Albedo (alchemy)",
+            "level": 3,
+            "score": 0.7821333408355713
+        },
+        {
+            "id": "https://openalex.org/C101000010",
+            "wikidata": "https://www.wikidata.org/wiki/Q5033434",
+            "display_name": "Canopy",
+            "level": 2,
+            "score": 0.670772135257721
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6059561371803284
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.5442256927490234
+        },
+        {
+            "id": "https://openalex.org/C131366478",
+            "wikidata": "https://www.wikidata.org/wiki/Q900892",
+            "display_name": "Photosynthetically active radiation",
+            "level": 3,
+            "score": 0.49546658992767334
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.30462580919265747
+        },
+        {
+            "id": "https://openalex.org/C183688256",
+            "wikidata": "https://www.wikidata.org/wiki/Q11982",
+            "display_name": "Photosynthesis",
+            "level": 2,
+            "score": 0.24490106105804443
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.1557430624961853
+        },
+        {
+            "id": "https://openalex.org/C59822182",
+            "wikidata": "https://www.wikidata.org/wiki/Q441",
+            "display_name": "Botany",
+            "level": 1,
+            "score": 0.11366742849349976
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0980159342288971
+        },
+        {
+            "id": "https://openalex.org/C142362112",
+            "wikidata": "https://www.wikidata.org/wiki/Q735",
+            "display_name": "Art",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C554144382",
+            "wikidata": "https://www.wikidata.org/wiki/Q213156",
+            "display_name": "Performance art",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C52119013",
+            "wikidata": "https://www.wikidata.org/wiki/Q50637",
+            "display_name": "Art history",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper provides the first systematic assessment of canopy radiation schemes in dynamic global vegetation models, quantifying significant biases in albedo and radiation absorption and evaluating their potential impacts on climate forcing and carbon cycle simulations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "TRIFFID",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In addition, JULES allows for a coupling with a general circulation model (GCM) and provides optional modules that allow longer term processes such as succession of plant functional types to be taken into account. These allow it to be used to simulate the response of the land surface to changing climatic conditions. In particular this includes the TRIFFID (Top-down Representation of Interactive Foliage and Flora Including Dynamics) dynamic vegetation model (Cox, 2001).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "two-stream approximation proposed by Sellers (1985)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The canopy radiative transfer scheme in JULES is based on the two-stream approximation proposed by Sellers (1985), which translates into consistent calculations of surface albedo and canopy absorption.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "20 layer model",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "JULES uses a number of layers, as defined by the user, with equally distributed LAI density to simulate the canopy radiative transfer for the direct and diffuse flux components. Here an n = 20 layer model has been used, which is the default for JULES.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "fluxes of heat",
+            "target_entity_type": "Variable",
+            "paragraph": "JULES is the Joint UK Land Environment Simulator, a land surface model designed to predict the fluxes of heat, water and carbon between the land surface and the atmosphere.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "fluxes of water",
+            "target_entity_type": "Variable",
+            "paragraph": "JULES is the Joint UK Land Environment Simulator, a land surface model designed to predict the fluxes of heat, water and carbon between the land surface and the atmosphere.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "fluxes of carbon",
+            "target_entity_type": "Variable",
+            "paragraph": "JULES is the Joint UK Land Environment Simulator, a land surface model designed to predict the fluxes of heat, water and carbon between the land surface and the atmosphere.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "JSBACH",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The DGVM JSBACH (Raddatz et al., 2007; Brovkin et al., 2009; Reick et al., 2013) is implicitly coupled to ECHAM6, the atmospheric component of the Max Planck Institute for Meteorology Earth System model (Stevens et al., 2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ECHAM6",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The DGVM JSBACH (Raddatz et al., 2007; Brovkin et al., 2009; Reick et al., 2013) is implicitly coupled to ECHAM6, the atmospheric component of the Max Planck Institute for Meteorology Earth System model (Stevens et al., 2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JSBACH",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "1-D two-stream approximation based on Sellers (1985)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "FaPAR is calculated in JSBACH using the 1-D two-stream approximation based on Sellers (1985), similar to JULES.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JSBACH",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "3 canopy layers",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The faPAR is calculated for direct and diffuse radiation components separately using n = 3 canopy layers with equally distributed leaf densities.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JSBACH",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "land surface water fluxes",
+            "target_entity_type": "Variable",
+            "paragraph": "The DGVM JSBACH (Raddatz et al., 2007; Brovkin et al., 2009; Reick et al., 2013) is implicitly coupled to ECHAM6, the atmospheric component of the Max Planck Institute for Meteorology Earth System model (Stevens et al., 2013). It simulates all relevant land surface water, energy and carbon fluxes.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JSBACH",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "land surface energy fluxes",
+            "target_entity_type": "Variable",
+            "paragraph": "The DGVM JSBACH (Raddatz et al., 2007; Brovkin et al., 2009; Reick et al., 2013) is implicitly coupled to ECHAM6, the atmospheric component of the Max Planck Institute for Meteorology Earth System model (Stevens et al., 2013). It simulates all relevant land surface water, energy and carbon fluxes.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JSBACH",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "land surface carbon fluxes",
+            "target_entity_type": "Variable",
+            "paragraph": "The DGVM JSBACH (Raddatz et al., 2007; Brovkin et al., 2009; Reick et al., 2013) is implicitly coupled to ECHAM6, the atmospheric component of the Max Planck Institute for Meteorology Earth System model (Stevens et al., 2013). It simulates all relevant land surface water, energy and carbon fluxes.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL Earth system model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ORCHIDEE",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "ORCHIDEE is used as the land surface scheme of the IPSL Earth system model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ORCHIDEE",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Beer's law",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The light absorbed by the canopy is calculated by means of Beer's law assuming a constant extinction coefficient (G(0) = 0.5) for all PFTs and assuming an exponential profile of leaf area index (A*) within the vertical canopy profile.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ORCHIDEE",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "20 different canopy layers",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The vertical distribution of LAI is calculated using n = 20 different canopy layers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ORCHIDEE",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "energy fluxes of soil and vegetation",
+            "target_entity_type": "Variable",
+            "paragraph": "ORCHIDEE (ORganizing Carbon and Hydrology In Dynamic EcosystEms) is a land surface model that simulates the energy and water fluxes of soil and vegetation, the terrestrial carbon cycle, and the vegetation composition and distribution (Krinner, 2005).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ORCHIDEE",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "water fluxes of soil and vegetation",
+            "target_entity_type": "Variable",
+            "paragraph": "ORCHIDEE (ORganizing Carbon and Hydrology In Dynamic EcosystEms) is a land surface model that simulates the energy and water fluxes of soil and vegetation, the terrestrial carbon cycle, and the vegetation composition and distribution (Krinner, 2005).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ORCHIDEE",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "terrestrial carbon cycle",
+            "target_entity_type": "Variable",
+            "paragraph": "ORCHIDEE (ORganizing Carbon and Hydrology In Dynamic EcosystEms) is a land surface model that simulates the energy and water fluxes of soil and vegetation, the terrestrial carbon cycle, and the vegetation composition and distribution (Krinner, 2005).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "leaf albedo",
+            "target_entity_type": "Variable",
+            "paragraph": "A PFT-specific leaf albedo (ale) as well as the soil background albedo was derived from MODIS observations (Otto et al., 2011).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "soil background albedo",
+            "target_entity_type": "Variable",
+            "paragraph": "A PFT-specific leaf albedo (ale) as well as the soil background albedo was derived from MODIS observations (Otto et al., 2011).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "vegetation",
+            "target_entity_type": "Variable",
+            "paragraph": "The global radiative forcing RFtot was calculated for each day (T = 24h) and two different PFT distributions (tree, grass) as derived from MODIS vegetation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Dynamic global vegetation model (DGVM)",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Earth system model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "canopy radiation schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "surface albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fraction of absorbed photosynthetic active radiation (faPAR)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "gross primary productivity (GPP)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "radiative forcing",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "canopy RT schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Land surface model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "two-stream approximation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Radiative Transfer Model Intercomparison Initiative (RAMI)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "1-D model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "JULES",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Met Office Surface Exchange Scheme (MOSES)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "UK Met Office Unified Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TRIFFID",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "two-stream approximation proposed by Sellers (1985)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RAMI4PILPS",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "JSBACH",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ECHAM6",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "MPI-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "leaf albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "sky-view factor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "single scattering albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vegetation fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ORCHIDEE",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "IPSL Earth system model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Beer's law",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "leaf area index (LAI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Monte Carlo",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "net photosynthesis",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Farquhar scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "surface radiation budget",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "planetary albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "black-sky albedo (BSA)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "white sky albedo (WSA)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "canopy transmission",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GPP absolute difference",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "albedo bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "radiative forcing sensitivity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ISCCP-FD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA-40",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JRA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CERES EBAF2.6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "C4MIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "CMIP3",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "Max Planck Institute for Meteorology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "VU University Amsterdam",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Commission, Joint Research Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Laboratoire des Sciences du Climat et l'Environnement (LSCE)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Reading",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2145422581",
+        "https://openalex.org/W2052648234",
+        "https://openalex.org/W2147654971",
+        "https://openalex.org/W2153140543",
+        "https://openalex.org/W1984655491",
+        "https://openalex.org/W1816963106",
+        "https://openalex.org/W2132735076",
+        "https://openalex.org/W2057110560",
+        "https://openalex.org/W1633350048",
+        "https://openalex.org/W1881782617",
+        "https://openalex.org/W2003574229",
+        "https://openalex.org/W2167288834",
+        "https://openalex.org/W2097896815",
+        "https://openalex.org/W2000180131",
+        "https://openalex.org/W4230807983",
+        "https://openalex.org/W2092379586",
+        "https://openalex.org/W2025401351",
+        "https://openalex.org/W2149725827",
+        "https://openalex.org/W1990376608",
+        "https://openalex.org/W2151328940",
+        "https://openalex.org/W2071885758",
+        "https://openalex.org/W1996478169",
+        "https://openalex.org/W2080808068",
+        "https://openalex.org/W2159292481",
+        "https://openalex.org/W2088820143",
+        "https://openalex.org/W1488349871",
+        "https://openalex.org/W2032082343",
+        "https://openalex.org/W1995713342",
+        "https://openalex.org/W2018909556",
+        "https://openalex.org/W4238691261",
+        "https://openalex.org/W2162584119",
+        "https://openalex.org/W1608661376",
+        "https://openalex.org/W2043149863",
+        "https://openalex.org/W2123855284",
+        "https://openalex.org/W2118325498",
+        "https://openalex.org/W2084041670",
+        "https://openalex.org/W2079417861",
+        "https://openalex.org/W2153275362",
+        "https://openalex.org/W2104043570",
+        "https://openalex.org/W2062217294",
+        "https://openalex.org/W1994224472",
+        "https://openalex.org/W2022617609",
+        "https://openalex.org/W2153243519",
+        "https://openalex.org/W2153858070",
+        "https://openalex.org/W1990352961",
+        "https://openalex.org/W2051028021",
+        "https://openalex.org/W2145111617",
+        "https://openalex.org/W2054616028",
+        "https://openalex.org/W2016045787",
+        "https://openalex.org/W1976312778",
+        "https://openalex.org/W2054102182",
+        "https://openalex.org/W1623772631",
+        "https://openalex.org/W2005217310",
+        "https://openalex.org/W2130108233",
+        "https://openalex.org/W1790776195",
+        "https://openalex.org/W2031663264",
+        "https://openalex.org/W1941608869",
+        "https://openalex.org/W2057952408",
+        "https://openalex.org/W2034499914",
+        "https://openalex.org/W2151896708",
+        "https://openalex.org/W2092722122",
+        "https://openalex.org/W2157366717",
+        "https://openalex.org/W1966715855",
+        "https://openalex.org/W1995449833",
+        "https://openalex.org/W1871061449",
+        "https://openalex.org/W1718036133",
+        "https://openalex.org/W2024966118",
+        "https://openalex.org/W2141748334",
+        "https://openalex.org/W2057387551",
+        "https://openalex.org/W2129740894",
+        "https://openalex.org/W2123763752",
+        "https://openalex.org/W2137379946",
+        "https://openalex.org/W2113389258",
+        "https://openalex.org/W1976911681",
+        "https://openalex.org/W2032911287",
+        "https://openalex.org/W2124924503",
+        "https://openalex.org/W2064055825",
+        "https://openalex.org/W2132328937",
+        "https://openalex.org/W1968632946",
+        "https://openalex.org/W1744313060",
+        "https://openalex.org/W2078974732",
+        "https://openalex.org/W2010190272",
+        "https://openalex.org/W2105306246",
+        "https://openalex.org/W78459708",
+        "https://openalex.org/W2038929235",
+        "https://openalex.org/W2105702968"
+    ]
+}

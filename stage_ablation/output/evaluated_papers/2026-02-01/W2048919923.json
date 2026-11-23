@@ -1,0 +1,2339 @@
+{
+    "uri": "https://openalex.org/W2048919923",
+    "title": "MEDUSA-2.0: an intermediate complexity biogeochemical model of the marine carbon cycle for climate change and ocean acidification studies",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2013,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5045001492",
+            "display_name": "Andrew Yool",
+            "orcid": "https://orcid.org/0000-0002-9879-2776"
+        },
+        {
+            "id": "https://openalex.org/A5001245849",
+            "display_name": "Ekaterina Popova",
+            "orcid": "https://orcid.org/0000-0002-2012-708X"
+        },
+        {
+            "id": "https://openalex.org/A5020580182",
+            "display_name": "Thomas R. Anderson",
+            "orcid": "https://orcid.org/0000-0002-7408-1566"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-6-1767-2013",
+    "abstract": "Abstract. MEDUSA-1.0 (Model of Ecosystem Dynamics, nutrient Utilisation, Sequestration and Acidification) was developed as an \"intermediate complexity\" plankton ecosystem model to study the biogeochemical response, and especially that of the so-called \"biological pump\", to anthropogenically driven change in the World Ocean (Yool et al., 2011). The base currency in this model was nitrogen from which fluxes of organic carbon, including export to the deep ocean, were calculated by invoking fixed C:N ratios in phytoplankton, zooplankton and detritus. However, due to anthropogenic activity, the atmospheric concentration of carbon dioxide (CO2) has significantly increased above its natural, inter-glacial background. As such, simulating and predicting the carbon cycle in the ocean in its entirety, including ventilation of CO2 with the atmosphere and the resulting impact of ocean acidification on marine ecosystems, requires that both organic and inorganic carbon be afforded a more complete representation in the model specification. Here, we introduce MEDUSA-2.0, an expanded successor model which includes additional state variables for dissolved inorganic carbon, alkalinity, dissolved oxygen and detritus carbon (permitting variable C:N in exported organic matter), as well as a simple benthic formulation and extended parameterizations of phytoplankton growth, calcification and detritus remineralisation. A full description of MEDUSA-2.0, including its additional functionality, is provided and a multi-decadal spin-up simulation (1860\u20132005) is performed. The biogeochemical performance of the model is evaluated using a diverse range of observational data, and MEDUSA-2.0 is assessed relative to comparable models using output from the Coupled Model Intercomparison Project (CMIP5).",
+    "field": "Marine biogeochemical modeling",
+    "problem": "Previous nitrogen-based plankton models using fixed C:N ratios cannot fully simulate the entire ocean carbon cycle, particularly CO2 ventilation and ocean acidification, necessitating a more complete representation of both organic and inorganic carbon.",
+    "method": "The paper introduces MEDUSA-2.0, an expanded biogeochemical model that adds state variables for the carbon, alkalinity, and oxygen cycles, enabling more complete simulations of the marine carbon cycle to study climate change and ocean acidification.",
+    "task": "The task is to describe and evaluate MEDUSA-2.0, an expanded marine biogeochemical model that incorporates carbon and oxygen cycles for studying the impacts of climate change and ocean acidification.",
+    "model": [
+        "MEDUSA-2.0",
+        "MEDUSA-1.0",
+        "CMIP5",
+        "HadGEM2-ES",
+        "NEMO",
+        "LIM2",
+        "HadGEM1",
+        "HadGEM2-CC",
+        "GFDL-ESM2M",
+        "NorESM1",
+        "MPI-ESM1",
+        "CNRM-CM5",
+        "GISS-E2",
+        "IPSL-CM5A",
+        "IPSL-CM5B",
+        "GENIE"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/biogeochemical-cycle",
+            "display_name": "Biogeochemical cycle",
+            "score": 0.7839057445526123
+        },
+        {
+            "id": "https://openalex.org/keywords/biological-pump",
+            "display_name": "Biological pump",
+            "score": 0.6930146217346191
+        },
+        {
+            "id": "https://openalex.org/keywords/phytoplankton",
+            "display_name": "Phytoplankton",
+            "score": 0.6537467241287231
+        },
+        {
+            "id": "https://openalex.org/keywords/detritus",
+            "display_name": "Detritus",
+            "score": 0.6526324152946472
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.6513193249702454
+        },
+        {
+            "id": "https://openalex.org/keywords/ocean-acidification",
+            "display_name": "Ocean acidification",
+            "score": 0.6241494417190552
+        },
+        {
+            "id": "https://openalex.org/keywords/carbon-cycle",
+            "display_name": "Carbon cycle",
+            "score": 0.6067298650741577
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.5225074887275696
+        },
+        {
+            "id": "https://openalex.org/keywords/biogeochemistry",
+            "display_name": "Biogeochemistry",
+            "score": 0.5212752819061279
+        },
+        {
+            "id": "https://openalex.org/keywords/dissolved-organic-carbon",
+            "display_name": "Dissolved organic carbon",
+            "score": 0.4891875088214874
+        },
+        {
+            "id": "https://openalex.org/keywords/benthic-zone",
+            "display_name": "Benthic zone",
+            "score": 0.47117382287979126
+        },
+        {
+            "id": "https://openalex.org/keywords/total-inorganic-carbon",
+            "display_name": "Total inorganic carbon",
+            "score": 0.4484885334968567
+        },
+        {
+            "id": "https://openalex.org/keywords/zooplankton",
+            "display_name": "Zooplankton",
+            "score": 0.4344298839569092
+        },
+        {
+            "id": "https://openalex.org/keywords/plankton",
+            "display_name": "Plankton",
+            "score": 0.4289758801460266
+        },
+        {
+            "id": "https://openalex.org/keywords/carbon-sequestration",
+            "display_name": "Carbon sequestration",
+            "score": 0.4261529743671417
+        },
+        {
+            "id": "https://openalex.org/keywords/ecosystem",
+            "display_name": "Ecosystem",
+            "score": 0.40991613268852234
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-chemistry",
+            "display_name": "Environmental chemistry",
+            "score": 0.3213889002799988
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.2966315746307373
+        },
+        {
+            "id": "https://openalex.org/keywords/ecology",
+            "display_name": "Ecology",
+            "score": 0.28217726945877075
+        },
+        {
+            "id": "https://openalex.org/keywords/chemistry",
+            "display_name": "Chemistry",
+            "score": 0.2758042812347412
+        },
+        {
+            "id": "https://openalex.org/keywords/carbon-dioxide",
+            "display_name": "Carbon dioxide",
+            "score": 0.25690826773643494
+        },
+        {
+            "id": "https://openalex.org/keywords/nutrient",
+            "display_name": "Nutrient",
+            "score": 0.2525314688682556
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.13210800290107727
+        },
+        {
+            "id": "https://openalex.org/keywords/biology",
+            "display_name": "Biology",
+            "score": 0.11009812355041504
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C71915725",
+            "wikidata": "https://www.wikidata.org/wiki/Q846303",
+            "display_name": "Biogeochemical cycle",
+            "level": 2,
+            "score": 0.7839057445526123
+        },
+        {
+            "id": "https://openalex.org/C200479807",
+            "wikidata": "https://www.wikidata.org/wiki/Q3180251",
+            "display_name": "Biological pump",
+            "level": 4,
+            "score": 0.6930146217346191
+        },
+        {
+            "id": "https://openalex.org/C2780892065",
+            "wikidata": "https://www.wikidata.org/wiki/Q184755",
+            "display_name": "Phytoplankton",
+            "level": 3,
+            "score": 0.6537467241287231
+        },
+        {
+            "id": "https://openalex.org/C63376196",
+            "wikidata": "https://www.wikidata.org/wiki/Q736879",
+            "display_name": "Detritus",
+            "level": 2,
+            "score": 0.6526324152946472
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6513193249702454
+        },
+        {
+            "id": "https://openalex.org/C19829342",
+            "wikidata": "https://www.wikidata.org/wiki/Q855711",
+            "display_name": "Ocean acidification",
+            "level": 3,
+            "score": 0.6241494417190552
+        },
+        {
+            "id": "https://openalex.org/C6939412",
+            "wikidata": "https://www.wikidata.org/wiki/Q167751",
+            "display_name": "Carbon cycle",
+            "level": 3,
+            "score": 0.6067298650741577
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.5225074887275696
+        },
+        {
+            "id": "https://openalex.org/C130309983",
+            "wikidata": "https://www.wikidata.org/wiki/Q864379",
+            "display_name": "Biogeochemistry",
+            "level": 2,
+            "score": 0.5212752819061279
+        },
+        {
+            "id": "https://openalex.org/C36574619",
+            "wikidata": "https://www.wikidata.org/wiki/Q449096",
+            "display_name": "Dissolved organic carbon",
+            "level": 2,
+            "score": 0.4891875088214874
+        },
+        {
+            "id": "https://openalex.org/C83042747",
+            "wikidata": "https://www.wikidata.org/wiki/Q686881",
+            "display_name": "Benthic zone",
+            "level": 2,
+            "score": 0.47117382287979126
+        },
+        {
+            "id": "https://openalex.org/C145597803",
+            "wikidata": "https://www.wikidata.org/wiki/Q97704244",
+            "display_name": "Total inorganic carbon",
+            "level": 3,
+            "score": 0.4484885334968567
+        },
+        {
+            "id": "https://openalex.org/C158836135",
+            "wikidata": "https://www.wikidata.org/wiki/Q842627",
+            "display_name": "Zooplankton",
+            "level": 2,
+            "score": 0.4344298839569092
+        },
+        {
+            "id": "https://openalex.org/C108469399",
+            "wikidata": "https://www.wikidata.org/wiki/Q25367",
+            "display_name": "Plankton",
+            "level": 2,
+            "score": 0.4289758801460266
+        },
+        {
+            "id": "https://openalex.org/C22884784",
+            "wikidata": "https://www.wikidata.org/wiki/Q15305550",
+            "display_name": "Carbon sequestration",
+            "level": 3,
+            "score": 0.4261529743671417
+        },
+        {
+            "id": "https://openalex.org/C110872660",
+            "wikidata": "https://www.wikidata.org/wiki/Q37813",
+            "display_name": "Ecosystem",
+            "level": 2,
+            "score": 0.40991613268852234
+        },
+        {
+            "id": "https://openalex.org/C107872376",
+            "wikidata": "https://www.wikidata.org/wiki/Q321355",
+            "display_name": "Environmental chemistry",
+            "level": 1,
+            "score": 0.3213889002799988
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.2966315746307373
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.28217726945877075
+        },
+        {
+            "id": "https://openalex.org/C185592680",
+            "wikidata": "https://www.wikidata.org/wiki/Q2329",
+            "display_name": "Chemistry",
+            "level": 0,
+            "score": 0.2758042812347412
+        },
+        {
+            "id": "https://openalex.org/C530467964",
+            "wikidata": "https://www.wikidata.org/wiki/Q1997",
+            "display_name": "Carbon dioxide",
+            "level": 2,
+            "score": 0.25690826773643494
+        },
+        {
+            "id": "https://openalex.org/C142796444",
+            "wikidata": "https://www.wikidata.org/wiki/Q181394",
+            "display_name": "Nutrient",
+            "level": 2,
+            "score": 0.2525314688682556
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.13210800290107727
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.11009812355041504
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "HadGEM2-CC",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Number of state variables",
+            "result": "13"
+        },
+        {
+            "model": "HadGEM2-ES",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Number of state variables",
+            "result": "13"
+        },
+        {
+            "model": "GFDL-ESM2M",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Number of state variables",
+            "result": "30"
+        },
+        {
+            "model": "NorESM1",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Number of state variables",
+            "result": "18"
+        },
+        {
+            "model": "MPI-ESM1",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Number of state variables",
+            "result": "17"
+        },
+        {
+            "model": "CNRM-CM5",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Number of state variables",
+            "result": "18"
+        },
+        {
+            "model": "GISS-E2",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Number of state variables",
+            "result": "14"
+        },
+        {
+            "model": "IPSL-CM5A",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Number of state variables",
+            "result": "18"
+        },
+        {
+            "model": "IPSL-CM5B",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Number of state variables",
+            "result": "18"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (World) in mmol/m^3",
+            "result": "0.2589"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (World) in mmol/m^3",
+            "result": "0.2484"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (Atlantic) in mmol/m^3",
+            "result": "0.2449"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (Atlantic) in mmol/m^3",
+            "result": "0.1931"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (Pacific) in mmol/m^3",
+            "result": "0.2821"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (Pacific) in mmol/m^3",
+            "result": "0.3024"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (Indian) in mmol/m^3",
+            "result": "0.2796"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (Indian) in mmol/m^3",
+            "result": "0.2061"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (Southern) in mmol/m^3",
+            "result": "0.2228"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (Southern) in mmol/m^3",
+            "result": "0.2403"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (Arctic) in mmol/m^3",
+            "result": "0.1363"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pn concentration (Arctic) in mmol/m^3",
+            "result": "0.1632"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (World) in mmol/m^3",
+            "result": "0.1100"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (World) in mmol/m^3",
+            "result": "0.1017"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (Atlantic) in mmol/m^3",
+            "result": "0.1076"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (Atlantic) in mmol/m^3",
+            "result": "0.0886"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (Pacific) in mmol/m^3",
+            "result": "0.1027"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (Pacific) in mmol/m^3",
+            "result": "0.1051"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (Indian) in mmol/m^3",
+            "result": "0.1276"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (Indian) in mmol/m^3",
+            "result": "0.0780"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (Southern) in mmol/m^3",
+            "result": "0.1261"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (Southern) in mmol/m^3",
+            "result": "0.1346"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (Arctic) in mmol/m^3",
+            "result": "0.0646"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Pd concentration (Arctic) in mmol/m^3",
+            "result": "0.1104"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (World) in mmol/m^3",
+            "result": "0.1391"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (World) in mmol/m^3",
+            "result": "0.1361"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (Atlantic) in mmol/m^3",
+            "result": "0.1269"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (Atlantic) in mmol/m^3",
+            "result": "0.0929"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (Pacific) in mmol/m^3",
+            "result": "0.1523"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (Pacific) in mmol/m^3",
+            "result": "0.1715"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (Indian) in mmol/m^3",
+            "result": "0.1567"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (Indian) in mmol/m^3",
+            "result": "0.1064"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (Southern) in mmol/m^3",
+            "result": "0.1170"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (Southern) in mmol/m^3",
+            "result": "0.1372"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (Arctic) in mmol/m^3",
+            "result": "0.0767"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Z\u03bc concentration (Arctic) in mmol/m^3",
+            "result": "0.1069"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (World) in mmol/m^3",
+            "result": "0.1643"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (World) in mmol/m^3",
+            "result": "0.1691"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (Atlantic) in mmol/m^3",
+            "result": "0.1575"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (Atlantic) in mmol/m^3",
+            "result": "0.1320"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (Pacific) in mmol/m^3",
+            "result": "0.1928"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (Pacific) in mmol/m^3",
+            "result": "0.2233"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (Indian) in mmol/m^3",
+            "result": "0.1869"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (Indian) in mmol/m^3",
+            "result": "0.1108"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (Southern) in mmol/m^3",
+            "result": "0.0984"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (Southern) in mmol/m^3",
+            "result": "0.1461"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (Arctic) in mmol/m^3",
+            "result": "0.0440"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Zm concentration (Arctic) in mmol/m^3",
+            "result": "0.1082"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (World) in mmol/m^3",
+            "result": "6.0084"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (World) in mmol/m^3",
+            "result": "6.5577"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (Atlantic) in mmol/m^3",
+            "result": "2.0798"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (Atlantic) in mmol/m^3",
+            "result": "1.7054"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (Pacific) in mmol/m^3",
+            "result": "2.3835"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (Pacific) in mmol/m^3",
+            "result": "4.1569"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (Indian) in mmol/m^3",
+            "result": "2.3214"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (Indian) in mmol/m^3",
+            "result": "1.5622"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (Southern) in mmol/m^3",
+            "result": "26.4194"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (Southern) in mmol/m^3",
+            "result": "25.8858"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (Arctic) in mmol/m^3",
+            "result": "2.3620"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface DIN concentration (Arctic) in mmol/m^3",
+            "result": "4.3875"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (World) in mmol/m^3",
+            "result": "10.6727"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (World) in mmol/m^3",
+            "result": "11.2299"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (Atlantic) in mmol/m^3",
+            "result": "1.3420"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (Atlantic) in mmol/m^3",
+            "result": "2.5587"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (Pacific) in mmol/m^3",
+            "result": "1.8965"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (Pacific) in mmol/m^3",
+            "result": "1.3104"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (Indian) in mmol/m^3",
+            "result": "2.2839"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (Indian) in mmol/m^3",
+            "result": "2.6514"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (Southern) in mmol/m^3",
+            "result": "57.4320"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (Southern) in mmol/m^3",
+            "result": "62.0107"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (Arctic) in mmol/m^3",
+            "result": "9.5829"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Si concentration (Arctic) in mmol/m^3",
+            "result": "2.8387"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (World) in umol/m^3",
+            "result": "0.5059"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (World) in umol/m^3",
+            "result": "0.5354"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (Atlantic) in umol/m^3",
+            "result": "0.7179"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (Atlantic) in umol/m^3",
+            "result": "0.9454"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (Pacific) in umol/m^3",
+            "result": "0.3759"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (Pacific) in umol/m^3",
+            "result": "0.2791"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (Indian) in umol/m^3",
+            "result": "0.6497"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (Indian) in umol/m^3",
+            "result": "0.7427"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (Southern) in umol/m^3",
+            "result": "0.3732"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (Southern) in umol/m^3",
+            "result": "0.3599"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (Arctic) in umol/m^3",
+            "result": "0.7301"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) surface Fe concentration (Arctic) in umol/m^3",
+            "result": "0.9050"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (World) in PgC",
+            "result": "0.8413"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (World) in PgC",
+            "result": "0.7968"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (Atlantic) in PgC",
+            "result": "0.1909"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (Atlantic) in PgC",
+            "result": "0.1636"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (Pacific) in PgC",
+            "result": "0.3402"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (Pacific) in PgC",
+            "result": "0.3472"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (Indian) in PgC",
+            "result": "0.1619"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (Indian) in PgC",
+            "result": "0.1311"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (Southern) in PgC",
+            "result": "0.1397"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (Southern) in PgC",
+            "result": "0.1444"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (Arctic) in PgC",
+            "result": "0.0085"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Phytoplankton (Pn+Pd) biomass (Arctic) in PgC",
+            "result": "0.0104"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (World) in PgC/yr",
+            "result": "45.3024"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (World) in PgC/yr",
+            "result": "41.6278"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (Atlantic) in PgC/yr",
+            "result": "9.8854"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (Atlantic) in PgC/yr",
+            "result": "7.9429"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (Pacific) in PgC/yr",
+            "result": "20.6498"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (Pacific) in PgC/yr",
+            "result": "21.0785"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (Indian) in PgC/yr",
+            "result": "9.1584"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (Indian) in PgC/yr",
+            "result": "5.9938"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (Southern) in PgC/yr",
+            "result": "5.2567"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (Southern) in PgC/yr",
+            "result": "6.0846"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (Arctic) in PgC/yr",
+            "result": "0.3521"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Total Primary Production (TPP) (Arctic) in PgC/yr",
+            "result": "0.5235"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (World) in %",
+            "result": "16.2971"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (World) in %",
+            "result": "15.8900"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (Atlantic) in %",
+            "result": "16.7576"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (Atlantic) in %",
+            "result": "18.7965"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (Pacific) in %",
+            "result": "14.1766"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (Pacific) in %",
+            "result": "13.0309"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (Indian) in %",
+            "result": "16.4800"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (Indian) in %",
+            "result": "14.4124"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (Southern) in %",
+            "result": "23.1119"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (Southern) in %",
+            "result": "22.5187"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (Arctic) in %",
+            "result": "21.2283"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Pd fraction (Arctic) in %",
+            "result": "26.9237"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (World) in %",
+            "result": "73.4297"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (World) in %",
+            "result": "67.3252"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (Atlantic) in %",
+            "result": "66.8833"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (Atlantic) in %",
+            "result": "58.7899"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (Pacific) in %",
+            "result": "74.4158"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (Pacific) in %",
+            "result": "67.9296"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (Indian) in %",
+            "result": "69.6741"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (Indian) in %",
+            "result": "58.2734"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (Southern) in %",
+            "result": "89.6516"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (Southern) in %",
+            "result": "85.8437"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (Arctic) in %",
+            "result": "54.8974"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) ML fraction (Arctic) in %",
+            "result": "60.8860"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (World) in Tmol Si/yr",
+            "result": "221.1951"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (World) in Tmol Si/yr",
+            "result": "193.9731"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (Atlantic) in Tmol Si/yr",
+            "result": "39.7958"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (Atlantic) in Tmol Si/yr",
+            "result": "34.3463"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (Pacific) in Tmol Si/yr",
+            "result": "76.6536"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (Pacific) in Tmol Si/yr",
+            "result": "66.7915"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (Indian) in Tmol Si/yr",
+            "result": "42.5510"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (Indian) in Tmol Si/yr",
+            "result": "24.3439"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (Southern) in Tmol Si/yr",
+            "result": "59.6807"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (Southern) in Tmol Si/yr",
+            "result": "67.0384"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (Arctic) in Tmol Si/yr",
+            "result": "2.5142"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Opal production (Arctic) in Tmol Si/yr",
+            "result": "1.4530"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (World) in PgC/yr",
+            "result": "0.5952"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (World) in PgC/yr",
+            "result": "0.4092"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (Atlantic) in PgC/yr",
+            "result": "0.1222"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (Atlantic) in PgC/yr",
+            "result": "0.0860"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (Pacific) in PgC/yr",
+            "result": "0.3032"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (Pacific) in PgC/yr",
+            "result": "0.2248"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (Indian) in PgC/yr",
+            "result": "0.1269"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (Indian) in PgC/yr",
+            "result": "0.0553"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (Southern) in PgC/yr",
+            "result": "0.0411"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (Southern) in PgC/yr",
+            "result": "0.0399"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (Arctic) in PgC/yr",
+            "result": "0.0018"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) CaCO3 export (Arctic) in PgC/yr",
+            "result": "0.0031"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (World) in %",
+            "result": "7.5702"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (World) in %",
+            "result": "6.4065"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (Atlantic) in %",
+            "result": "7.0905"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (Atlantic) in %",
+            "result": "6.5353"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (Pacific) in %",
+            "result": "8.1046"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (Pacific) in %",
+            "result": "6.6294"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (Indian) in %",
+            "result": "8.1189"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (Indian) in %",
+            "result": "7.5332"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (Southern) in %",
+            "result": "5.2348"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (Southern) in %",
+            "result": "4.6307"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (Arctic) in %",
+            "result": "3.6604"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Rain ratio (Arctic) in %",
+            "result": "3.7528"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (World) in PgC/yr",
+            "result": "8.1505"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (World) in PgC/yr",
+            "result": "8.1274"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (Atlantic) in PgC/yr",
+            "result": "1.7183"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (Atlantic) in PgC/yr",
+            "result": "1.5883"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (Pacific) in PgC/yr",
+            "result": "3.6140"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (Pacific) in PgC/yr",
+            "result": "3.9629"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (Indian) in PgC/yr",
+            "result": "1.5491"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (Indian) in PgC/yr",
+            "result": "1.0937"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (Southern) in PgC/yr",
+            "result": "1.2007"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (Southern) in PgC/yr",
+            "result": "1.3828"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (Arctic) in PgC/yr",
+            "result": "0.0683"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 100m (Arctic) in PgC/yr",
+            "result": "0.0996"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (World) in PgC/yr",
+            "result": "0.4312"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (World) in PgC/yr",
+            "result": "0.3575"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (Atlantic) in PgC/yr",
+            "result": "0.0739"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (Atlantic) in PgC/yr",
+            "result": "0.0676"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (Pacific) in PgC/yr",
+            "result": "0.2075"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (Pacific) in PgC/yr",
+            "result": "0.1754"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (Indian) in PgC/yr",
+            "result": "0.0909"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (Indian) in PgC/yr",
+            "result": "0.0492"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (Southern) in PgC/yr",
+            "result": "0.0580"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (Southern) in PgC/yr",
+            "result": "0.0638"
+        },
+        {
+            "model": "MEDUSA-1.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (Arctic) in PgC/yr",
+            "result": "0.0008"
+        },
+        {
+            "model": "MEDUSA-2.0",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Mean annual (2000-2004) Detritus flux at 1000m (Arctic) in PgC/yr",
+            "result": "0.0014"
+        }
+    ],
+    "innovation": "This paper introduces MEDUSA-2.0, an expanded biogeochemical model that adds carbon, alkalinity, and oxygen cycles, a benthic submodel, and extended parameterizations to its predecessor, enabling more complete simulations of the marine carbon cycle for climate change and ocean acidification studies.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "MEDUSA-1.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "MEDUSA-2.0",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Previously, we introduced an \u201cintermediate complexity\" plankton model, MEDUSA-1.0: Model of Ecosystem Dynamics, nutrient Utilisation, Sequestration and Acidification (Yool et al., 2011). This model expanded beyond the traditional nutrient-phytoplankton-zooplankton-detritus (NPZD) models by having multiple currencies (N, Si and Fe) and by separating plankton into \"small\" and \"large\" size classes, yet incorporated sufficiently few tracers to be readily tractable in global ocean general circulation models. A multi-decadal spin-up simulation was undertaken and results presented for global nutrient fields, primary production, distributions of phytoplankton types and export of detritus. Here, we introduce MEDUSA-2.0, an expanded successor model which represents dissolved inorganic carbon (DIC) and pCO2 in the ocean, thereby allowing the calculation of air-sea CO2 fluxes as well as an explicit representation of ocean acidification and its impact on ecosystem processes. The new model includes additional state variables for dissolved inorganic carbon, alkalinity, dissolved oxygen and detritus carbon (permitting variable C: N in exported organic matter), as well as a simple benthic formulation and extended parameterizations of phytoplankton growth and detritus remineralisation. A full description of the additional functionality of MEDUSA-2.0 is provided. A multi-decadal spin-up simulation is described (1860\u20132005), and this is used to provide a means of evaluating the performance of MEDUSA-2.0.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MEDUSA-2.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "dissolved inorganic carbon",
+            "target_entity_type": "Variable",
+            "paragraph": "Here, we introduce MEDUSA-2.0, an expanded successor model which includes additional state variables for dissolved inorganic carbon, alkalinity, dissolved oxygen and detritus carbon (permitting variable C: N in exported organic matter), as well as a simple benthic formulation and extended parameterizations of phytoplankton growth, calcification and detritus remineralisation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MEDUSA-2.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "alkalinity",
+            "target_entity_type": "Variable",
+            "paragraph": "Here, we introduce MEDUSA-2.0, an expanded successor model which includes additional state variables for dissolved inorganic carbon, alkalinity, dissolved oxygen and detritus carbon (permitting variable C: N in exported organic matter), as well as a simple benthic formulation and extended parameterizations of phytoplankton growth, calcification and detritus remineralisation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MEDUSA-2.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "dissolved oxygen",
+            "target_entity_type": "Variable",
+            "paragraph": "Here, we introduce MEDUSA-2.0, an expanded successor model which includes additional state variables for dissolved inorganic carbon, alkalinity, dissolved oxygen and detritus carbon (permitting variable C: N in exported organic matter), as well as a simple benthic formulation and extended parameterizations of phytoplankton growth, calcification and detritus remineralisation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MEDUSA-2.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "detrital carbon",
+            "target_entity_type": "Variable",
+            "paragraph": "In order to incorporate the carbon and oxygen cycles, MEDUSA-2.0 adds a further 4 state variables to the existing framework. These include total dissolved inorganic carbon (DIC), total alkalinity (TA) and dissolved oxygen. The final additional state variable is detrital carbon for the slow-sinking component of non-living particulate organic carbon (POC).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MEDUSA-2.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocnBgchem",
+            "target_entity_type": "Realm",
+            "paragraph": "MEDUSA-2.0: an intermediate complexity biogeochemical model of the marine carbon cycle for climate change and ocean acidification studies",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MEDUSA-2.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocean",
+            "target_entity_type": "Realm",
+            "paragraph": "MEDUSA-2.0: an intermediate complexity biogeochemical model of the marine carbon cycle for climate change and ocean acidification studies",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "OPA9",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The underlying physical model used in this simulation is version 3.2 of NEMO (Madec, 2008). This is comprised of an ocean general circulation model, OPA9 (Madec et al., 1998; Madec, 2008), coupled with a sea-ice model, Louvain-la-Neuve Ice Model version 2 (LIM2; Timmermann et al., 2005).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LIM2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The underlying physical model used in this simulation is version 3.2 of NEMO (Madec, 2008). This is comprised of an ocean general circulation model, OPA9 (Madec et al., 1998; Madec, 2008), coupled with a sea-ice model, Louvain-la-Neuve Ice Model version 2 (LIM2; Timmermann et al., 2005).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1\u00b0 x 1\u00b0 horizontal resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "This physical framework is configured at approximately 1\u00b0 \u00d7 1\u00b0 horizontal resolution (292 \u00d7 362 grid points), with a focusing of resolution around the equator to improve the representation of equatorial upwelling.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "64 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Vertical space is divided into 64 levels, which increase in thickness with depth, from approximately 6m at the surface to 250m at 6000 m.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "partial level thicknesses",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "To improve the representation of deep water circulation, partial level thicknesses are used in the specification of bottom topography.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "turbulent kinetic energy (TKE) scheme of Gaspar et al. (1990)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Vertical mixing is parameterized using the turbulent kinetic energy (TKE) scheme of Gaspar et al. (1990), with modifications by Madec (2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "viscous-plastic ice rheology",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The sea-ice submodel used here, LIM2, is based upon viscous-plastic ice rheology (Hibler, 1979) and three layer (two layers of sea ice, one layer of snow) thermodynamics (Semtner, 1976), with a number of updated physical processes (see Timmermann et al., 2005; and references therein).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "three layer thermodynamics",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The sea-ice submodel used here, LIM2, is based upon viscous-plastic ice rheology (Hibler, 1979) and three layer (two layers of sea ice, one layer of snow) thermodynamics (Semtner, 1976), with a number of updated physical processes (see Timmermann et al., 2005; and references therein).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Antarctic Circumpolar Current",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Southern Ocean",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "An examination of the large-scale circulation of the run finds that the Antarctic Circumpolar Current (ACC) is significantly stronger (220 Sv) in this simulation compared to that used with MEDUSA-1.0 (160 Sv), and toward the high end of other models (CMIP5 range of 90\u2013264 Sv; Meijers et al., 2012). This is associated with stronger Antarctic Bottom Water (AABW) formation around Antarctica, and leads to enhanced ventilation of the deep Atlantic and Pacific basins.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "MEDUSA-2.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MEDUSA-1.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2-ES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM2M",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM5A",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM5B",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NEMO",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NEMO version 3.2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "OPA9",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LIM2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LOBSTER",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Diat-HadOCC",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "TOPAZ2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "HAMOCC 5.1",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "HAMOCC 5.2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "PISCES",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NOBM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "National Oceanography Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Southampton",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "UK Meteorological Office",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Met Office Hadley Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Instituto Nacional de Pesquisas Espaciais",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Geophysical Fluid Dynamics Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Norwegian Climate Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Max Planck Institute for Meteorology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Centre National de Recherches Meteorologiques",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Centre Europeen de Recherche et Formation Avancees en Calcul Scientifique",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA Goddard Institute for Space Studies",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institut Pierre-Simon Laplace",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "1860-2005",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "BGC",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "AJKKH",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "dissolved inorganic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "alkalinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dissolved oxygen",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "detritus carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "nitrogen",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "silicon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "iron",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "chlorophyll",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "primary production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "carbon export",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "calcium carbonate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pCO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pH",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "biogenic opal",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air-sea CO2 flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Non-diatom phytoplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Diatom phytoplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Microzooplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mesozooplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Slow-sinking detritus",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fast-sinking detritus",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Silicic acid",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DIN",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "spin-up simulation",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "hindcast",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "forecast",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "coupled ocean-atmosphere",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ocnBgchem",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "1\u00b0 x 1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "6-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Liebig \"law of the minimum\" functionality",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ballast hypothesis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Martin et al. (1987) parameterization of remineralisation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Henson et al. (2011) parameterization of remineralisation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "turbulent kinetic energy (TKE) scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "viscous-plastic ice rheology",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "three layer thermodynamics for sea ice",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Michaelis-Menten terms for nutrient limitation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "hyperbolic function for density-dependent losses",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "carbonate chemistry module",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "light attenuation submodel",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "64 levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "focusing of resolution around the equator",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "partial level thicknesses",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "benthic formulation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "simple benthic submodel",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "total oceanic primary production",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "relative variability",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "total opal production",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Total CaCO3 export",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "net air-sea flux",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SeaWiFS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Antarctic Circumpolar Current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "ACC",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "World Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Arctic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indian Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Caribbean Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mediterranean Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Malay Archipelago",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Crozet Archipelago",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Patagonian Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Sea",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2011414855",
+        "https://openalex.org/W2030080456",
+        "https://openalex.org/W2060024984",
+        "https://openalex.org/W2076999219",
+        "https://openalex.org/W2123939393",
+        "https://openalex.org/W1965431589",
+        "https://openalex.org/W2171453504",
+        "https://openalex.org/W1533417007",
+        "https://openalex.org/W2114687263",
+        "https://openalex.org/W2051663919",
+        "https://openalex.org/W2053022429",
+        "https://openalex.org/W1996276446",
+        "https://openalex.org/W1990728179",
+        "https://openalex.org/W1973095441",
+        "https://openalex.org/W1999250331",
+        "https://openalex.org/W2090970809",
+        "https://openalex.org/W2139469418",
+        "https://openalex.org/W2160037973",
+        "https://openalex.org/W2061738582",
+        "https://openalex.org/W1979645334",
+        "https://openalex.org/W2152514946",
+        "https://openalex.org/W2060012482",
+        "https://openalex.org/W2108084128",
+        "https://openalex.org/W2102282545",
+        "https://openalex.org/W4252317510",
+        "https://openalex.org/W2000793063",
+        "https://openalex.org/W2173001546",
+        "https://openalex.org/W2170153270",
+        "https://openalex.org/W1489297152",
+        "https://openalex.org/W4241840196",
+        "https://openalex.org/W2098527552",
+        "https://openalex.org/W2056329779",
+        "https://openalex.org/W2095948591",
+        "https://openalex.org/W2098759916",
+        "https://openalex.org/W105429224",
+        "https://openalex.org/W2077769416",
+        "https://openalex.org/W2077950261",
+        "https://openalex.org/W1973912466",
+        "https://openalex.org/W2059729107",
+        "https://openalex.org/W2009412734",
+        "https://openalex.org/W2169561522",
+        "https://openalex.org/W2158524992",
+        "https://openalex.org/W2137449336",
+        "https://openalex.org/W2158627601",
+        "https://openalex.org/W2021758461",
+        "https://openalex.org/W1972837245",
+        "https://openalex.org/W2006345395",
+        "https://openalex.org/W2001913069",
+        "https://openalex.org/W2024661133",
+        "https://openalex.org/W2170703294",
+        "https://openalex.org/W1827123037",
+        "https://openalex.org/W2124754794",
+        "https://openalex.org/W2175906253",
+        "https://openalex.org/W2073307266",
+        "https://openalex.org/W2022633352",
+        "https://openalex.org/W1989707569",
+        "https://openalex.org/W1971794483",
+        "https://openalex.org/W2110534701",
+        "https://openalex.org/W1609491364",
+        "https://openalex.org/W1546014299",
+        "https://openalex.org/W2098530244",
+        "https://openalex.org/W2133847149",
+        "https://openalex.org/W2120708105",
+        "https://openalex.org/W2148461002",
+        "https://openalex.org/W2000168871",
+        "https://openalex.org/W2162051751",
+        "https://openalex.org/W2123289934",
+        "https://openalex.org/W1884540967",
+        "https://openalex.org/W2153085302",
+        "https://openalex.org/W2013278565",
+        "https://openalex.org/W2044360478",
+        "https://openalex.org/W2022536458",
+        "https://openalex.org/W2143128704",
+        "https://openalex.org/W2010217093",
+        "https://openalex.org/W1576875669",
+        "https://openalex.org/W1952466949",
+        "https://openalex.org/W2025707754",
+        "https://openalex.org/W2148343249",
+        "https://openalex.org/W2135476338",
+        "https://openalex.org/W2116864971",
+        "https://openalex.org/W2007101051",
+        "https://openalex.org/W2113297575",
+        "https://openalex.org/W2220821452",
+        "https://openalex.org/W1637123222",
+        "https://openalex.org/W2141205177",
+        "https://openalex.org/W2168989760",
+        "https://openalex.org/W2130649006",
+        "https://openalex.org/W2114363157",
+        "https://openalex.org/W1970266024",
+        "https://openalex.org/W2121220372",
+        "https://openalex.org/W1992799148",
+        "https://openalex.org/W2141754303",
+        "https://openalex.org/W1636092099",
+        "https://openalex.org/W1971945883",
+        "https://openalex.org/W2039580629",
+        "https://openalex.org/W2087528182",
+        "https://openalex.org/W2168062665",
+        "https://openalex.org/W2029238235",
+        "https://openalex.org/W2005987598",
+        "https://openalex.org/W2117920489",
+        "https://openalex.org/W2090589937",
+        "https://openalex.org/W2069739033",
+        "https://openalex.org/W2065947563",
+        "https://openalex.org/W1508752157",
+        "https://openalex.org/W2063534846",
+        "https://openalex.org/W1835608147",
+        "https://openalex.org/W2043440900",
+        "https://openalex.org/W2024966118",
+        "https://openalex.org/W2111578148",
+        "https://openalex.org/W2041885277",
+        "https://openalex.org/W1984396114",
+        "https://openalex.org/W1652686173",
+        "https://openalex.org/W2107883857",
+        "https://openalex.org/W2121131753",
+        "https://openalex.org/W1815022930",
+        "https://openalex.org/W2035240561",
+        "https://openalex.org/W2152839585",
+        "https://openalex.org/W2029627734",
+        "https://openalex.org/W2076030098",
+        "https://openalex.org/W2046360891",
+        "https://openalex.org/W1994601620",
+        "https://openalex.org/W1977892071",
+        "https://openalex.org/W2060097988",
+        "https://openalex.org/W1532009414",
+        "https://openalex.org/W115029397",
+        "https://openalex.org/W2110669521",
+        "https://openalex.org/W3003598665",
+        "https://openalex.org/W2106012723",
+        "https://openalex.org/W185391259",
+        "https://openalex.org/W2139314206",
+        "https://openalex.org/W4285719527",
+        "https://openalex.org/W1488946387"
+    ]
+}

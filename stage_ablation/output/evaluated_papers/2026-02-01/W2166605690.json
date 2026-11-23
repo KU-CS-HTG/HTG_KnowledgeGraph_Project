@@ -1,0 +1,791 @@
+{
+    "uri": "https://openalex.org/W2166605690",
+    "title": "divand-1.0: <i>n</i> -dimensional variational data analysis for ocean observations",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2014,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5077564057",
+            "display_name": "Alexander Barth",
+            "orcid": "https://orcid.org/0000-0003-2952-5997"
+        },
+        {
+            "id": "https://openalex.org/A5073505507",
+            "display_name": "Jean-Marie Beckers",
+            "orcid": "https://orcid.org/0000-0002-7045-2470"
+        },
+        {
+            "id": "https://openalex.org/A5051189394",
+            "display_name": "Charles Troupin",
+            "orcid": "https://orcid.org/0000-0002-0265-1021"
+        },
+        {
+            "id": "https://openalex.org/A5014694051",
+            "display_name": "A\u00efda Alvera Azcarate",
+            "orcid": "https://orcid.org/0000-0002-0484-4791"
+        },
+        {
+            "id": "https://openalex.org/A5075772201",
+            "display_name": "Luc Vandenbulcke",
+            "orcid": "https://orcid.org/0000-0001-9870-6199"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-7-225-2014",
+    "abstract": "Abstract. A tool for multidimensional variational analysis (divand) is presented. It allows the interpolation and analysis of observations on curvilinear orthogonal grids in an arbitrary high dimensional space by minimizing a cost function. This cost function penalizes the deviation from the observations, the deviation from a first guess and abruptly varying fields based on a given correlation length (potentially varying in space and time). Additional constraints can be added to this cost function such as an advection constraint which forces the analysed field to align with the ocean current. The method decouples naturally disconnected areas based on topography and topology. This is useful in oceanography where disconnected water masses often have different physical properties. Individual elements of the a priori and a posteriori error covariance matrix can also be computed, in particular expected error variances of the analysis. A multidimensional approach (as opposed to stacking two-dimensional analysis) has the benefit of providing a smooth analysis in all dimensions, although the computational cost is increased. Primal (problem solved in the grid space) and dual formulations (problem solved in the observational space) are implemented using either direct solvers (based on Cholesky factorization) or iterative solvers (conjugate gradient method). In most applications the primal formulation with the direct solver is the fastest, especially if an a posteriori error estimate is needed. However, for correlated observation errors the dual formulation with an iterative solver is more efficient. The method is tested by using pseudo-observations from a global model. The distribution of the observations is based on the position of the Argo floats. The benefit of the three-dimensional analysis (longitude, latitude and time) compared to two-dimensional analysis (longitude and latitude) and the role of the advection constraint are highlighted. The tool divand is free software, and is distributed under the terms of the General Public Licence (GPL) (http://modb.oce.ulg.ac.be/mediawiki/index.php/divand).",
+    "field": "Oceanographic data analysis",
+    "problem": "Assembling multidimensional oceanographic fields from stacked two-dimensional analyses of sparse data often introduces spurious variations, which this paper addresses by developing a true n-dimensional variational analysis tool that provides a smooth analysis in all dimensions.",
+    "method": "The paper presents a tool for multidimensional variational analysis (`divand`) that interpolates and analyzes sparse ocean observations by minimizing a cost function penalizing deviations from observations and a background field, promoting smoothness, and allowing for physical constraints like advection.",
+    "task": "The task is to interpolate and analyze sparse ocean observations onto gridded fields using an n-dimensional variational analysis method that minimizes a cost function to ensure smoothness and incorporate physical constraints.",
+    "model": [
+        "ORCA2"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/solver",
+            "display_name": "Solver",
+            "score": 0.6722736954689026
+        },
+        {
+            "id": "https://openalex.org/keywords/conjugate-gradient-method",
+            "display_name": "Conjugate gradient method",
+            "score": 0.499866247177124
+        },
+        {
+            "id": "https://openalex.org/keywords/interpolation",
+            "display_name": "Interpolation (computer graphics)",
+            "score": 0.49612292647361755
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.4744366705417633
+        },
+        {
+            "id": "https://openalex.org/keywords/cholesky-decomposition",
+            "display_name": "Cholesky decomposition",
+            "score": 0.4736786186695099
+        },
+        {
+            "id": "https://openalex.org/keywords/applied-mathematics",
+            "display_name": "Applied mathematics",
+            "score": 0.45493704080581665
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematical-optimization",
+            "display_name": "Mathematical optimization",
+            "score": 0.44791021943092346
+        },
+        {
+            "id": "https://openalex.org/keywords/a-priori-and-a-posteriori",
+            "display_name": "A priori and a posteriori",
+            "score": 0.44118908047676086
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.3637177348136902
+        },
+        {
+            "id": "https://openalex.org/keywords/algorithm",
+            "display_name": "Algorithm",
+            "score": 0.32807016372680664
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.14825493097305298
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2778770139",
+            "wikidata": "https://www.wikidata.org/wiki/Q1966904",
+            "display_name": "Solver",
+            "level": 2,
+            "score": 0.6722736954689026
+        },
+        {
+            "id": "https://openalex.org/C81184566",
+            "wikidata": "https://www.wikidata.org/wiki/Q1191895",
+            "display_name": "Conjugate gradient method",
+            "level": 2,
+            "score": 0.499866247177124
+        },
+        {
+            "id": "https://openalex.org/C137800194",
+            "wikidata": "https://www.wikidata.org/wiki/Q11713455",
+            "display_name": "Interpolation (computer graphics)",
+            "level": 3,
+            "score": 0.49612292647361755
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.4744366705417633
+        },
+        {
+            "id": "https://openalex.org/C34727166",
+            "wikidata": "https://www.wikidata.org/wiki/Q515375",
+            "display_name": "Cholesky decomposition",
+            "level": 3,
+            "score": 0.4736786186695099
+        },
+        {
+            "id": "https://openalex.org/C28826006",
+            "wikidata": "https://www.wikidata.org/wiki/Q33521",
+            "display_name": "Applied mathematics",
+            "level": 1,
+            "score": 0.45493704080581665
+        },
+        {
+            "id": "https://openalex.org/C126255220",
+            "wikidata": "https://www.wikidata.org/wiki/Q141495",
+            "display_name": "Mathematical optimization",
+            "level": 1,
+            "score": 0.44791021943092346
+        },
+        {
+            "id": "https://openalex.org/C75553542",
+            "wikidata": "https://www.wikidata.org/wiki/Q178161",
+            "display_name": "A priori and a posteriori",
+            "level": 2,
+            "score": 0.44118908047676086
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.3637177348136902
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.32807016372680664
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.14825493097305298
+        },
+        {
+            "id": "https://openalex.org/C138885662",
+            "wikidata": "https://www.wikidata.org/wiki/Q5891",
+            "display_name": "Philosophy",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C62520636",
+            "wikidata": "https://www.wikidata.org/wiki/Q944",
+            "display_name": "Quantum mechanics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C121684516",
+            "wikidata": "https://www.wikidata.org/wiki/Q7600677",
+            "display_name": "Computer graphics (images)",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C111472728",
+            "wikidata": "https://www.wikidata.org/wiki/Q9471",
+            "display_name": "Epistemology",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C158693339",
+            "wikidata": "https://www.wikidata.org/wiki/Q190524",
+            "display_name": "Eigenvalues and eigenvectors",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C502989409",
+            "wikidata": "https://www.wikidata.org/wiki/Q11425",
+            "display_name": "Animation",
+            "level": 2,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents `divand-1.0`, a tool for n-dimensional variational analysis that interpolates sparse ocean observations, providing a smoother and more accurate gridded field than stacked two-dimensional analyses by incorporating physical constraints like advection.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "DIVA",
+            "target_entity_type": "Source",
+            "paragraph": "The variational inverse method (Brasseur and Haus, 1991) implemented in the tool DIVA computes the minimum of the cost function in two dimensions using a triangular finite-element mesh (Brasseur et al., 1996; Brankart and Brasseur, 1996, 1998; Troupin et al., 2012). A web interface has also been developed for this tool (Barth et al., 2010). We present an extension to n-dimensions which is called divand. To simplify the testing and implementation in an arbitrarily high dimensional space, a regular curvilinear mesh is used for the tool divand.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "variational analysis",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Abstract. A tool for multidimensional variational analysis (divand) is presented. It allows the interpolation and analysis of observations on curvilinear orthogonal grids in an arbitrary high dimensional space by minimizing a cost function. This cost function penalizes the deviation from the observations, the deviation from a first guess and abruptly varying fields based on a given correlation length (potentially varying in space and time).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "norm splines",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "As DIVA (Data-Interpolating Variational Analysis), the n-dimensional tool divand also uses norm splines to define the background error covariance in combination with a direct solver which does not require preconditioning.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "advection constraint",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Additional constraints can be added to this cost function such as an advection constraint which forces the analysed field to align with the ocean current.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "direct solvers (based on Cholesky factorization)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Primal (problem solved in the grid space) and dual formulations (problem solved in the observational space) are implemented using either direct solvers (based on Cholesky factorization) or iterative solvers (conjugate gradient method).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "iterative solvers (conjugate gradient method)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Primal (problem solved in the grid space) and dual formulations (problem solved in the observational space) are implemented using either direct solvers (based on Cholesky factorization) or iterative solvers (conjugate gradient method).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "regular curvilinear mesh",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "We present an extension to n-dimensions which is called divand. To simplify the testing and implementation in an arbitrarily high dimensional space, a regular curvilinear mesh is used for the tool divand.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMS difference",
+            "target_entity_type": "Metric",
+            "paragraph": "The analysis is compared to a monthly model climatology for the year 2007 and the RMS (root mean squared) difference is calculated. This approach is similar to twin experiments used to test data assimilation schemes (e.g. Nerger et al., 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean square skill score",
+            "target_entity_type": "Metric",
+            "paragraph": "This experiment serves as the baseline for other experiments and improvements which will be expressed as using the mean square skill score using this experiment as a reference.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Nelder-Mead algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The 2-D analysis with advection constraint has thus in total three parameters: signal-to-noise ratio, spatial correlation and strength of the advection constraint. These parameters are optimized by the Nelder-Mead algorithm (Nelder and Mead, 1965) by minimizing the RMS difference between the analysis and the reference climatology.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "3-D analysis",
+            "target_entity_type": "SimulationType",
+            "paragraph": "The central question of this test case is to assess the benefit of a 3-D analysis (longitude, latitude and time) compared to a 2-D analysis (longitude and latitude).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "divand",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "2-D analysis",
+            "target_entity_type": "SimulationType",
+            "paragraph": "The central question of this test case is to assess the benefit of a 3-D analysis (longitude, latitude and time) compared to a 2-D analysis (longitude and latitude).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ORCA2",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The interpolation was tested using pseudo-observations of temperature coming from a global ocean model. The results of the year 2007 from the ORCA2 model (Mathiot et al., 2011) with a spatial varying resolution (generally close to 2\u25e6 resolution) are used.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ORCA2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "spatial varying resolution (generally close to 2\u00b0 resolution)",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The interpolation was tested using pseudo-observations of temperature coming from a global ocean model. The results of the year 2007 from the ORCA2 model (Mathiot et al., 2011) with a spatial varying resolution (generally close to 2\u25e6 resolution) are used.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DIVA",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "triangular finite-element mesh",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The variational inverse method (Brasseur and Haus, 1991) implemented in the tool DIVA computes the minimum of the cost function in two dimensions using a triangular finite-element mesh (Brasseur et al., 1996; Brankart and Brasseur, 1996, 1998; Troupin et al., 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DIVA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "skyline method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In the case of DIVA the skyline method (Dhatt and Touzot, 1984) is used, while divand uses the supernodal sparse Cholesky factorization (Chen et al., 2008; Davis and Hager, 2009).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "divand",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GHER, University of Li\u00e8ge",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IMEDEA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "seamod.ro/Jailoo srl",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CIIMAR, University of Porto",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Li\u00e8ge",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Porto",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Copernicus Publications",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Geosciences Union",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "multidimensional variational analysis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Cholesky factorization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "conjugate gradient method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "advection constraint",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Argo",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "error variances of the analysis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "sea-surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "optical surface properties of the ocean",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "optimal interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "kriging",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "variational analysis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "smoothing norm splines",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "diffusion equations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "recursive filter",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DIVA",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "supernodal sparse Cholesky factorization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "skyline method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "triangular finite-element mesh",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "regular curvilinear mesh",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "sparse matrix",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "spline norm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fourier transform",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Hankel transform",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "implicit diffusion operator",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Mat\u00e9rn family of spatial correlations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "coordinate stretching",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "auto-regressive functions",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "diffusion operator",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "primal formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "direct solver",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CHOLMOD",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "modified incomplete Cholesky decomposition",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "signal-to-noise ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "condition number",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "dual formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Sherman\u2013Morrison-Woodbury formula",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Physical-Space Statistical Analysis System",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Run time",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ORCA2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RMS difference",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "2\u00b0 resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "RMS error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean square skill score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "2-D",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "2-D, advection",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "3-D",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "3-D, fractional time",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "3-D, fractional time, advection",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Gulf Stream",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Nelder-Mead algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "skill score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SeaDataNet",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "EMODnet Chemistry",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "PREDANTAR",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "National Fund for Scientific Research, Belgium (F.R.S.-FNRS)",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2035331188",
+        "https://openalex.org/W2162421869",
+        "https://openalex.org/W2128309924",
+        "https://openalex.org/W2036842360",
+        "https://openalex.org/W2094623066",
+        "https://openalex.org/W1981220107",
+        "https://openalex.org/W2057051257",
+        "https://openalex.org/W2176051287",
+        "https://openalex.org/W2074624217",
+        "https://openalex.org/W2076922642",
+        "https://openalex.org/W2050393255",
+        "https://openalex.org/W2062924075",
+        "https://openalex.org/W2050721295",
+        "https://openalex.org/W2131033628",
+        "https://openalex.org/W2054190917",
+        "https://openalex.org/W2043444576",
+        "https://openalex.org/W2089024363",
+        "https://openalex.org/W2082993115",
+        "https://openalex.org/W2087253170",
+        "https://openalex.org/W2048712177",
+        "https://openalex.org/W2139004160",
+        "https://openalex.org/W2104355414",
+        "https://openalex.org/W1992685094",
+        "https://openalex.org/W6737840292",
+        "https://openalex.org/W1982355466",
+        "https://openalex.org/W1986637952",
+        "https://openalex.org/W2037416330",
+        "https://openalex.org/W2015112542",
+        "https://openalex.org/W4255777770",
+        "https://openalex.org/W2038810091",
+        "https://openalex.org/W2098930828",
+        "https://openalex.org/W6602568893",
+        "https://openalex.org/W2038982405",
+        "https://openalex.org/W2136178461",
+        "https://openalex.org/W2010024096",
+        "https://openalex.org/W1982901957",
+        "https://openalex.org/W1977985357",
+        "https://openalex.org/W1974421439",
+        "https://openalex.org/W2008693787",
+        "https://openalex.org/W2132581678",
+        "https://openalex.org/W4249997036",
+        "https://openalex.org/W2606231213",
+        "https://openalex.org/W4253789021",
+        "https://openalex.org/W2144525542",
+        "https://openalex.org/W2056684301",
+        "https://openalex.org/W4254115559",
+        "https://openalex.org/W2077597776",
+        "https://openalex.org/W2032770751",
+        "https://openalex.org/W2003191279",
+        "https://openalex.org/W2093262471",
+        "https://openalex.org/W2097790278",
+        "https://openalex.org/W2108740382",
+        "https://openalex.org/W2171074980",
+        "https://openalex.org/W2063785696",
+        "https://openalex.org/W2004889365",
+        "https://openalex.org/W4249145583",
+        "https://openalex.org/W4248369730",
+        "https://openalex.org/W4242703496",
+        "https://openalex.org/W2006165291",
+        "https://openalex.org/W2005470575",
+        "https://openalex.org/W2063583042",
+        "https://openalex.org/W1964564126",
+        "https://openalex.org/W1965615649",
+        "https://openalex.org/W4230788045",
+        "https://openalex.org/W4298876635",
+        "https://openalex.org/W2172960773",
+        "https://openalex.org/W4247610667",
+        "https://openalex.org/W2000849814",
+        "https://openalex.org/W2134052312",
+        "https://openalex.org/W4299688215",
+        "https://openalex.org/W1565997145",
+        "https://openalex.org/W2022025303",
+        "https://openalex.org/W2066352855",
+        "https://openalex.org/W1522319528",
+        "https://openalex.org/W1989575957",
+        "https://openalex.org/W2995136929",
+        "https://openalex.org/W1987902628",
+        "https://openalex.org/W2041863660",
+        "https://openalex.org/W2030774493",
+        "https://openalex.org/W2049387919",
+        "https://openalex.org/W2146766088",
+        "https://openalex.org/W2068607837",
+        "https://openalex.org/W2798909945",
+        "https://openalex.org/W2016519559",
+        "https://openalex.org/W4285719527",
+        "https://openalex.org/W158136800",
+        "https://openalex.org/W602904263",
+        "https://openalex.org/W2051917325",
+        "https://openalex.org/W2042624383",
+        "https://openalex.org/W2006174038",
+        "https://openalex.org/W2163649185",
+        "https://openalex.org/W1981745143",
+        "https://openalex.org/W2138513194",
+        "https://openalex.org/W2139737873"
+    ]
+}

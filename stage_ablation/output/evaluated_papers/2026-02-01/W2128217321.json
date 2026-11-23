@@ -1,0 +1,1118 @@
+{
+    "uri": "https://openalex.org/W2128217321",
+    "title": "The ACOS CO <sub>2</sub> retrieval algorithm \u2013 Part 1: Description and validation against synthetic observations",
+    "venue": {
+        "name": "Atmospheric measurement techniques",
+        "id": "https://openalex.org/S70769875",
+        "type": "journal"
+    },
+    "publication_year": 2012,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5089387502",
+            "display_name": "C. O\u2019Dell",
+            "orcid": "https://orcid.org/0000-0002-0271-8433"
+        },
+        {
+            "id": "https://openalex.org/A5111621184",
+            "display_name": "B. J. Connor",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5108575081",
+            "display_name": "Hartmut B\u00f6sch",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5046112013",
+            "display_name": "Diane M. O\u2019Brien",
+            "orcid": "https://orcid.org/0000-0001-5807-9661"
+        },
+        {
+            "id": "https://openalex.org/A5055655717",
+            "display_name": "Christian Frankenberg",
+            "orcid": "https://orcid.org/0000-0002-0546-5857"
+        },
+        {
+            "id": "https://openalex.org/A5041844450",
+            "display_name": "Rebecca Casta\u00f1o",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5036598547",
+            "display_name": "M. Christi",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5027119949",
+            "display_name": "D. Eldering",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5033188970",
+            "display_name": "B. Fisher",
+            "orcid": "https://orcid.org/0000-0003-4816-5923"
+        },
+        {
+            "id": "https://openalex.org/A5010065774",
+            "display_name": "M. R. Gunson",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5017089596",
+            "display_name": "James McDuffie",
+            "orcid": "https://orcid.org/0000-0002-9408-5695"
+        },
+        {
+            "id": "https://openalex.org/A5086402941",
+            "display_name": "Charles E. Miller",
+            "orcid": "https://orcid.org/0000-0002-9380-4838"
+        },
+        {
+            "id": "https://openalex.org/A5027503115",
+            "display_name": "Vijay Natraj",
+            "orcid": "https://orcid.org/0000-0003-3154-9429"
+        },
+        {
+            "id": "https://openalex.org/A5056291851",
+            "display_name": "Fabiano Oyafuso",
+            "orcid": "https://orcid.org/0000-0002-8862-8737"
+        },
+        {
+            "id": "https://openalex.org/A5009517329",
+            "display_name": "I. N. Polonsky",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5103247350",
+            "display_name": "Mike Smyth",
+            "orcid": "https://orcid.org/0000-0003-2943-6425"
+        },
+        {
+            "id": "https://openalex.org/A5068149765",
+            "display_name": "Thomas E. Taylor",
+            "orcid": "https://orcid.org/0000-0002-1650-4882"
+        },
+        {
+            "id": "https://openalex.org/A5052069613",
+            "display_name": "Geoffrey C. Toon",
+            "orcid": "https://orcid.org/0000-0003-4174-7541"
+        },
+        {
+            "id": "https://openalex.org/A5063041820",
+            "display_name": "P. O. Wennberg",
+            "orcid": "https://orcid.org/0000-0002-6126-3854"
+        },
+        {
+            "id": "https://openalex.org/A5020681167",
+            "display_name": "Debra Wunch",
+            "orcid": "https://orcid.org/0000-0002-4924-0377"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/amt-5-99-2012",
+    "abstract": "Abstract. This work describes the NASA Atmospheric CO2 Observations from Space (ACOS) XCO2 retrieval algorithm, and its performance on highly realistic, simulated observations. These tests, restricted to observations over land, are used to evaluate retrieval errors in the face of realistic clouds and aerosols, polarized non-Lambertian surfaces, imperfect meteorology, and uncorrelated instrument noise. We find that post-retrieval filters are essential to eliminate the poorest retrievals, which arise primarily due to imperfect cloud screening. The remaining retrievals have RMS errors of approximately 1 ppm. Modeled instrument noise, based on the Greenhouse Gases Observing SATellite (GOSAT) in-flight performance, accounts for less than half the total error in these retrievals. A small fraction of unfiltered clouds, particularly thin cirrus, lead to a small positive bias of ~0.3 ppm. Overall, systematic errors due to imperfect characterization of clouds and aerosols dominate the error budget, while errors due to other simplifying assumptions, in particular those related to the prior meteorological fields, appear small.",
+    "field": "Atmospheric CO2 remote sensing",
+    "problem": "The paper addresses the challenge of accurately retrieving atmospheric CO\u2082 from satellite observations, where performance is significantly affected by systematic errors arising from imperfect characterization of clouds, aerosols, and surface properties, as well as inaccurate meteorological data used in the retrieval process.",
+    "method": "This paper describes the ACOS retrieval algorithm, which uses an optimal estimation approach to determine column-averaged CO2 by optimizing forward model parameters, including clouds and aerosols, to generate simulated spectra that best match observed near-infrared satellite measurements.",
+    "task": "The task is to describe the ACOS XCO2 retrieval algorithm and evaluate its performance and errors by testing it against highly realistic, simulated satellite observations over land.",
+    "model": [
+        "LMDz",
+        "ECMWF",
+        "PCTM",
+        "NCEP"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/cirrus",
+            "display_name": "Cirrus",
+            "score": 0.8830702304840088
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.6002583503723145
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.5314230918884277
+        },
+        {
+            "id": "https://openalex.org/keywords/satellite",
+            "display_name": "Satellite",
+            "score": 0.5182614326477051
+        },
+        {
+            "id": "https://openalex.org/keywords/uncorrelated",
+            "display_name": "Uncorrelated",
+            "score": 0.505634069442749
+        },
+        {
+            "id": "https://openalex.org/keywords/cloud-fraction",
+            "display_name": "Cloud fraction",
+            "score": 0.49937915802001953
+        },
+        {
+            "id": "https://openalex.org/keywords/remote-sensing",
+            "display_name": "Remote sensing",
+            "score": 0.4818781316280365
+        },
+        {
+            "id": "https://openalex.org/keywords/noise",
+            "display_name": "Noise (video)",
+            "score": 0.44974544644355774
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.3930259644985199
+        },
+        {
+            "id": "https://openalex.org/keywords/algorithm",
+            "display_name": "Algorithm",
+            "score": 0.36385589838027954
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.3361409902572632
+        },
+        {
+            "id": "https://openalex.org/keywords/cloud-computing",
+            "display_name": "Cloud computing",
+            "score": 0.2832285165786743
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.231864333152771
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.21709510684013367
+        },
+        {
+            "id": "https://openalex.org/keywords/statistics",
+            "display_name": "Statistics",
+            "score": 0.1923736333847046
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2781448682",
+            "wikidata": "https://www.wikidata.org/wiki/Q1093125",
+            "display_name": "Cirrus",
+            "level": 2,
+            "score": 0.8830702304840088
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6002583503723145
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.5314230918884277
+        },
+        {
+            "id": "https://openalex.org/C19269812",
+            "wikidata": "https://www.wikidata.org/wiki/Q26540",
+            "display_name": "Satellite",
+            "level": 2,
+            "score": 0.5182614326477051
+        },
+        {
+            "id": "https://openalex.org/C169345407",
+            "wikidata": "https://www.wikidata.org/wiki/Q8216221",
+            "display_name": "Uncorrelated",
+            "level": 2,
+            "score": 0.505634069442749
+        },
+        {
+            "id": "https://openalex.org/C23302255",
+            "wikidata": "https://www.wikidata.org/wiki/Q5135703",
+            "display_name": "Cloud fraction",
+            "level": 4,
+            "score": 0.49937915802001953
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.4818781316280365
+        },
+        {
+            "id": "https://openalex.org/C99498987",
+            "wikidata": "https://www.wikidata.org/wiki/Q2210247",
+            "display_name": "Noise (video)",
+            "level": 3,
+            "score": 0.44974544644355774
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.3930259644985199
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.36385589838027954
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.3361409902572632
+        },
+        {
+            "id": "https://openalex.org/C79974875",
+            "wikidata": "https://www.wikidata.org/wiki/Q483639",
+            "display_name": "Cloud computing",
+            "level": 2,
+            "score": 0.2832285165786743
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.231864333152771
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.21709510684013367
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.1923736333847046
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C206887242",
+            "wikidata": "https://www.wikidata.org/wiki/Q830457",
+            "display_name": "Cloud cover",
+            "level": 3,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C1276947",
+            "wikidata": "https://www.wikidata.org/wiki/Q333",
+            "display_name": "Astronomy",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C111919701",
+            "wikidata": "https://www.wikidata.org/wiki/Q9135",
+            "display_name": "Operating system",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C115961682",
+            "wikidata": "https://www.wikidata.org/wiki/Q860623",
+            "display_name": "Image (mathematics)",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper describes the ACOS XCO\u2082 retrieval algorithm and validates its performance using highly realistic, simulated observations to quantify retrieval errors from clouds, aerosols, and other sources, demonstrating that post-retrieval filters are essential for achieving an accuracy of approximately 1 ppm.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ACOS CO2 retrieval algorithm",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "OCO XCO2 retrieval algorithm",
+            "target_entity_type": "Source",
+            "paragraph": "After the launch failure of the first OCO mission, the OCO team was invited to join the GOSAT team in analyzing GOSAT observations, under the auspices of the NASA Atmospheric CO2 Observations from Space (ACOS) task. Since 2009, the XCO2 retrieval algorithm originally developed for OCO has been modified to allow GOSAT retrievals. An early version of the OCO XCO2 retrieval algorithm first motivated the simultaneous use of the three NIR spectral bands identified above (Kuang et al., 2002). The algorithm development continued, and was later described in B\u00f6sch et al. (2006, hereafter B06) and Connor et al. (2008, hereafter C08).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACOS CO2 retrieval algorithm",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "forward model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The forward model takes as input the state vector described above, as well as other parameters that describe the viewing geometry and instrument details, and simulates spectra in the three NIR bands as would be produced by GOSAT or OCO-2. It also produces radiance Jacobians, which are derivatives of the radiances with respect to all the state vector parameters. These derivatives are necessary for the inverse model (Sect. 2.3). The forward model was originally described in B06 and consists of a solar model, atmospheric model, surface model, radiative transfer model, and instrument model. We now describe each of these, primarily focusing on the differences from B06.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACOS CO2 retrieval algorithm",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "inverse model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The inverse model used in the ACOS retrieval was previously described in C08. In brief, the modified Levenberg-Marquardt method of Fletcher (1971) is used to minimize the cost function given in Eq. (3). The updated state vector is calculated for each iteration as",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "forward model",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "solar model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The forward model takes as input the state vector described above, as well as other parameters that describe the viewing geometry and instrument details, and simulates spectra in the three NIR bands as would be produced by GOSAT or OCO-2. It also produces radiance Jacobians, which are derivatives of the radiances with respect to all the state vector parameters. These derivatives are necessary for the inverse model (Sect. 2.3). The forward model was originally described in B06 and consists of a solar model, atmospheric model, surface model, radiative transfer model, and instrument model. We now describe each of these, primarily focusing on the differences from B06.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "forward model",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "atmospheric model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The forward model takes as input the state vector described above, as well as other parameters that describe the viewing geometry and instrument details, and simulates spectra in the three NIR bands as would be produced by GOSAT or OCO-2. It also produces radiance Jacobians, which are derivatives of the radiances with respect to all the state vector parameters. These derivatives are necessary for the inverse model (Sect. 2.3). The forward model was originally described in B06 and consists of a solar model, atmospheric model, surface model, radiative transfer model, and instrument model. We now describe each of these, primarily focusing on the differences from B06.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "forward model",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "surface model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The forward model takes as input the state vector described above, as well as other parameters that describe the viewing geometry and instrument details, and simulates spectra in the three NIR bands as would be produced by GOSAT or OCO-2. It also produces radiance Jacobians, which are derivatives of the radiances with respect to all the state vector parameters. These derivatives are necessary for the inverse model (Sect. 2.3). The forward model was originally described in B06 and consists of a solar model, atmospheric model, surface model, radiative transfer model, and instrument model. We now describe each of these, primarily focusing on the differences from B06.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "forward model",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "radiative transfer model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The forward model takes as input the state vector described above, as well as other parameters that describe the viewing geometry and instrument details, and simulates spectra in the three NIR bands as would be produced by GOSAT or OCO-2. It also produces radiance Jacobians, which are derivatives of the radiances with respect to all the state vector parameters. These derivatives are necessary for the inverse model (Sect. 2.3). The forward model was originally described in B06 and consists of a solar model, atmospheric model, surface model, radiative transfer model, and instrument model. We now describe each of these, primarily focusing on the differences from B06.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "forward model",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "instrument model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The forward model takes as input the state vector described above, as well as other parameters that describe the viewing geometry and instrument details, and simulates spectra in the three NIR bands as would be produced by GOSAT or OCO-2. It also produces radiance Jacobians, which are derivatives of the radiances with respect to all the state vector parameters. These derivatives are necessary for the inverse model (Sect. 2.3). The forward model was originally described in B06 and consists of a solar model, atmospheric model, surface model, radiative transfer model, and instrument model. We now describe each of these, primarily focusing on the differences from B06.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACOS CO2 retrieval algorithm",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Levenberg-Marquardt method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The inverse model used in the ACOS retrieval was previously described in C08. In brief, the modified Levenberg-Marquardt method of Fletcher (1971) is used to minimize the cost function given in Eq. (3).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACOS CO2 retrieval algorithm",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "20 atmospheric pressure levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Carbon dioxide is retrieved as a vertical profile of dry-air mole fraction defined on a prescribed set of twenty atmospheric pressure levels. These fixed levels are spaced nearly equally in pressure, with the highest pressure at 1050 hPa to ensure all real surface pressures fall within this prescribed set (Fig. A1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACOS CO2 retrieval algorithm",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMS errors",
+            "target_entity_type": "Metric",
+            "paragraph": "Abstract. This work describes the NASA Atmospheric CO2 Observations from Space (ACOS) XCO2 retrieval algorithm, and its performance on highly realistic, simulated observations. These tests, restricted to observations over land, are used to evaluate retrieval errors in the face of realistic clouds and aerosols, polarized non-Lambertian surfaces, imperfect meteorology, and uncorrelated instrument noise. We find that post-retrieval filters are essential to eliminate the poorest retrievals, which arise primarily due to imperfect cloud screening. The remaining retrievals have RMS errors of approximately 1 ppm. Modeled instrument noise, based on the Greenhouse Gases Observing SATellite (GOSAT) in-flight performance, accounts for less than half the total error in these retrievals.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACOS CO2 retrieval algorithm",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Abstract. This work describes the NASA Atmospheric CO2 Observations from Space (ACOS) XCO2 retrieval algorithm, and its performance on highly realistic, simulated observations. These tests, restricted to observations over land, are used to evaluate retrieval errors in the face of realistic clouds and aerosols, polarized non-Lambertian surfaces, imperfect meteorology, and uncorrelated instrument noise. We find that post-retrieval filters are essential to eliminate the poorest retrievals, which arise primarily due to imperfect cloud screening. The remaining retrievals have RMS errors of approximately 1 ppm. Modeled instrument noise, based on the Greenhouse Gases Observing SATellite (GOSAT) in-flight performance, accounts for less than half the total error in these retrievals. A small fraction of unfiltered clouds, particularly thin cirrus, lead to a small positive bias of ~0.3 ppm. Overall, systematic errors due to imperfect characterization of clouds and aerosols dominate the error budget, while errors due to other simplifying assumptions, in particular those related to the prior meteorological fields, appear small.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACOS CO2 retrieval algorithm",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "a posteriori error",
+            "target_entity_type": "Metric",
+            "paragraph": "For those retrievals that converge, several additional quantities are calculated, including XCO2, its a posteriori error, and its vertical averaging kernel.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "atmospheric model",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Rayleigh scattering",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The atmospheric model also includes scattering processes. Rayleigh scattering is parameterized according to the model of Bodhaine et al. (1999), in which the Rayleigh optical depth is a simple function of wavelength and atmospheric number density.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "surface model",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Lambertian surface",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Because we reject soundings with significant scattering, our retrieval assumes a purely Lambertian surface, with an albedo that varies linearly with wavelength across each of the three near-infrared bands.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "radiative transfer model",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Low Streams Interpolation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Because most soundings include some atmospheric scattering, a fully-polarimetric vector calculation of radiative transfer would be desirable to calculate the Stokes vector at each monochromatic wavelength. However, at 0.01 cm\u22121 resolution, this would lead to tens of thousands of computationally expensive radiative transfer calculations per forward model run. We therefore adopt an approximate approach called \u201cLow Streams Interpolation\u201d (LSI), which is described fully in O'Dell (2010) and references therein.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "radiative transfer model",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "LIDORT scalar multiple-scattering model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Monochromatic radiative transfer calculations are made using a combination of a fast single-scattering model (Nakajima and Tanaka, 1988), the LIDORT scalar multiple-scattering model (Spurr et al., 2001), and a second-order-of-scattering polarization model called 2OS (Natraj and Spurr, 2007).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "radiative transfer model",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "2OS",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Monochromatic radiative transfer calculations are made using a combination of a fast single-scattering model (Nakajima and Tanaka, 1988), the LIDORT scalar multiple-scattering model (Spurr et al., 2001), and a second-order-of-scattering polarization model called 2OS (Natraj and Spurr, 2007).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TANSO-FTS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "CO2",
+            "target_entity_type": "Variable",
+            "paragraph": "Both OCO-2 and the Thermal And Near infrared Sensor for carbon Observations \u2013 Fourier Transform Spectrometer (TANSO-FTS) instrument aboard GOSAT infer carbon dioxide concentration via high-resolution measurements of reflected sunlight.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TANSO-FTS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "O2",
+            "target_entity_type": "Variable",
+            "paragraph": "These instruments monitor radiation in three NIR bands: one at 0.76 \u00b5m containing significant O2 absorption (the so-called O2 A band), one at 1.6 \u00b5m containing weak CO2 absorption, and one near 2.1 \u00b5m containing strong CO2 absorption.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TANSO-FTS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "GOSAT",
+            "target_entity_type": "Platform",
+            "paragraph": "Both OCO-2 and the Thermal And Near infrared Sensor for carbon Observations \u2013 Fourier Transform Spectrometer (TANSO-FTS) instrument aboard GOSAT infer carbon dioxide concentration via high-resolution measurements of reflected sunlight.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAI",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "GOSAT",
+            "target_entity_type": "Platform",
+            "paragraph": "While GOSAT contains the Cloud and Aerosol Imager (CAI) for detecting cloudy scenes, OCO-2 will not.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SCIAMACHY",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "CO2",
+            "target_entity_type": "Variable",
+            "paragraph": "The SCanning Imaging Absorption SpectroMeter for Atmospheric CartograpHY (SCIAMACHY) instrument has made near-infrared (NIR) based measurements of CO2 since 2003 (Schneising et al., 2011; Buchwitz et al., 2007).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "OCO-2",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "CO2",
+            "target_entity_type": "Variable",
+            "paragraph": "A new era of space-based CO2 monitoring is at hand with the appearance of dedicated CO2 instruments such as the Greenhouse gases Observing SATellite (GOSAT) (Kuze et al., 2009; Yokota et al., 2009), which successfully launched in 2009, and the second Orbiting Carbon Observatory (OCO-2) with a launch anticipated in late 2014.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GOSAT",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "CO2",
+            "target_entity_type": "Variable",
+            "paragraph": "A new era of space-based CO2 monitoring is at hand with the appearance of dedicated CO2 instruments such as the Greenhouse gases Observing SATellite (GOSAT) (Kuze et al., 2009; Yokota et al., 2009), which successfully launched in 2009, and the second Orbiting Carbon Observatory (OCO-2) with a launch anticipated in late 2014.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CALIOP",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "cloud",
+            "target_entity_type": "Variable",
+            "paragraph": "Profiles of cloud and aerosol come from the Cloud-Aerosol Lidar with Orthogonal Polarisation (CALIOP) Level 2 cloud and aerosol layer products, version 3 (Vaughan et al., 2004; Kim et al., 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CALIOP",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "aerosol",
+            "target_entity_type": "Variable",
+            "paragraph": "Profiles of cloud and aerosol come from the Cloud-Aerosol Lidar with Orthogonal Polarisation (CALIOP) Level 2 cloud and aerosol layer products, version 3 (Vaughan et al., 2004; Kim et al., 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "ACOS",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "GOSAT",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "RMS error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SCIAMACHY",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "OCO-2",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "OCO",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "TANSO-FTS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "XCO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TCCON",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ACOS CO2 retrieval algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CAI",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "optimal estimation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "20 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "LMDz",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GLOBALVIEW-CO2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface Pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Temperature Offset",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Water Vapor Scale Factor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Aerosol Profiles",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Albedo Slope",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wind Speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Dispersion Offset",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Lambertian surface model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Kahn aerosol model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Gamma distribution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Baum ice cloud model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "empirical solar line list",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SOLSPEC",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "High-resolution spectral grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "non-Voigt line shapes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "line mixing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "collision-induced absorption",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "HITRAN-2008",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Bodhaine Rayleigh scattering model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Low Streams Interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "LIDORT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "2OS polarization model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "instrument Mueller matrix",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Levenberg-Marquardt method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "a posteriori error",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vertical averaging kernel",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pressure weighting function",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ACOS cloud screening algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CloudSat",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "OCO Simulator",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PCTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "MODIS MCD43B1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "POLDER",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "IGBP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CALIOP",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "CALIPSO",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Mie theory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "clear-sky",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "all-sky",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "aerosol optical depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NCEP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "averaging kernel",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "XCO2 Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "clear-sky simulation",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "root-mean-squared (RMS) error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "reduced x2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "air mass",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NCEP1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "a posteriori XCO2 error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "smoothing error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "interference errors",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "forward model error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ACOS B2.8 XCO2 retrieval algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RMS XCO2 error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "column averaging kernel",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Colorado State University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "BC Consulting, Ltd.",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Leicester",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Jet Propulsion Laboratory, California Institute of Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "California Institute of Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasting",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Japan Aerospace Exploration Agency",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "US National Centers for Environmental Prediction",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "clear-sky, noiseless, Clear retrieval, Truth (ECMWF) Prior Meteorology",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "clear-sky, noiseless, Standard retrieval, Truth (ECMWF) Prior Meteorology",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "clear-sky, with noise, Standard retrieval, Truth (ECMWF) Prior Meteorology",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "all-sky, with noise, Clear retrieval, Truth (ECMWF) Prior Meteorology",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "all-sky, with noise, Standard retrieval, Truth (ECMWF) Prior Meteorology",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "all-sky, with noise, Standard retrieval, NCEP Prior Meteorology",
+            "entity_type": "Experiment"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2135585583",
+        "https://openalex.org/W2107317960",
+        "https://openalex.org/W2062093293",
+        "https://openalex.org/W2118339035",
+        "https://openalex.org/W2135260575",
+        "https://openalex.org/W2179103847",
+        "https://openalex.org/W1995967604",
+        "https://openalex.org/W2069021376",
+        "https://openalex.org/W2026586745",
+        "https://openalex.org/W2094104262",
+        "https://openalex.org/W2167397599",
+        "https://openalex.org/W2157234197",
+        "https://openalex.org/W1540471798",
+        "https://openalex.org/W2103671538",
+        "https://openalex.org/W1980646850",
+        "https://openalex.org/W1974959374",
+        "https://openalex.org/W2020690595",
+        "https://openalex.org/W1630629781",
+        "https://openalex.org/W2106471857",
+        "https://openalex.org/W3176510132",
+        "https://openalex.org/W1974105424",
+        "https://openalex.org/W1782715256",
+        "https://openalex.org/W2151328940",
+        "https://openalex.org/W2042112467",
+        "https://openalex.org/W2034732467",
+        "https://openalex.org/W2134245825",
+        "https://openalex.org/W1994157009",
+        "https://openalex.org/W1982339703",
+        "https://openalex.org/W2173251738",
+        "https://openalex.org/W2149818876",
+        "https://openalex.org/W2137404558",
+        "https://openalex.org/W2137032029",
+        "https://openalex.org/W1973452231",
+        "https://openalex.org/W1994426843",
+        "https://openalex.org/W2009163215",
+        "https://openalex.org/W1547591757",
+        "https://openalex.org/W2101871444",
+        "https://openalex.org/W2032398489",
+        "https://openalex.org/W1973129450",
+        "https://openalex.org/W2071248564",
+        "https://openalex.org/W1997998239",
+        "https://openalex.org/W2127765149",
+        "https://openalex.org/W2058802602",
+        "https://openalex.org/W1994907956",
+        "https://openalex.org/W1979358249",
+        "https://openalex.org/W1971687595",
+        "https://openalex.org/W2178235182",
+        "https://openalex.org/W2050553313",
+        "https://openalex.org/W2132329529",
+        "https://openalex.org/W2050230452",
+        "https://openalex.org/W1672771901",
+        "https://openalex.org/W1980119753",
+        "https://openalex.org/W4205182410",
+        "https://openalex.org/W2074283311",
+        "https://openalex.org/W2138448722",
+        "https://openalex.org/W2022937528",
+        "https://openalex.org/W2155046225",
+        "https://openalex.org/W2041242327",
+        "https://openalex.org/W6610901300",
+        "https://openalex.org/W2048897977",
+        "https://openalex.org/W2138504084",
+        "https://openalex.org/W2110465139",
+        "https://openalex.org/W1990194058",
+        "https://openalex.org/W1965446559",
+        "https://openalex.org/W2160798477",
+        "https://openalex.org/W1495485596",
+        "https://openalex.org/W2133151341",
+        "https://openalex.org/W3017316871",
+        "https://openalex.org/W2981870366",
+        "https://openalex.org/W4240733927",
+        "https://openalex.org/W1674795780"
+    ]
+}

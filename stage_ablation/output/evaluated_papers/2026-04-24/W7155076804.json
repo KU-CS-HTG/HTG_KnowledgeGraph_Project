@@ -1,0 +1,712 @@
+{
+    "uri": "https://openalex.org/W7155076804",
+    "title": "Evaluating model uncertainty in critical threshold estimations from time series data: application to the Atlantic meridional Overturning Circulation",
+    "venue": {
+        "name": "Frontiers in Climate",
+        "id": "https://openalex.org/S4210213052",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5079496642",
+            "display_name": "Alessandro Cotronei",
+            "orcid": "https://orcid.org/0000-0002-5495-6863"
+        },
+        {
+            "id": "https://openalex.org/A5088786732",
+            "display_name": "Eirik Myrvoll-Nilsen",
+            "orcid": "https://orcid.org/0000-0002-1643-5661"
+        },
+        {
+            "id": "https://openalex.org/A5134095691",
+            "display_name": "Martin Rypdal",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.3389/fclim.2026.1761461",
+    "abstract": "Analysis of tipping points (rapid, large-scale, and potentially irreversible transitions in Earth system components) is crucial for assessing the resilience of the Earth's subsystems and anticipating risks associated with climate change. Predicting tipping points from time-series data requires accounting for variability, system-specific factors, and high-quality data, which are often limited. Existing approaches, while useful, depend on strong assumptions that may reduce predictive accuracy. In this study, we focus on the model used to approximate system behavior, and argue that modeling assumptions can significantly alter estimates of critical thresholds, and including assessments of whether a system will reach a critical transition at all. We show that, in the case of the Atlantic Meridional Overturning Circulation (AMOC), assuming different polynomial degrees in simple model approximations can lead to entirely different estimates of the critical threshold, or even that no threshold exists. This effect is particularly exacerbated by the interannual variability of the AMOC fingerprints used. These considerations highlight the need for more advanced techniques and increased robustness in model selection and underlying assumptions when interpreting estimates of critical transitions.",
+    "field": "Climate tipping points",
+    "problem": "Existing methods for estimating critical thresholds from time-series data depend on strong modeling assumptions that significantly alter predictions, a problem exacerbated by the limited and variable data available for systems like the Atlantic Meridional Overturning Circulation.",
+    "method": "This study evaluates model uncertainty in tipping point estimations by comparing how different polynomial models, detrending strategies, and filtering techniques applied to AMOC time-series data lead to widely divergent estimates of the critical threshold, highlighting the significant impact of underlying modeling assumptions.",
+    "task": "The task is to evaluate how model uncertainty, particularly the choice of polynomial degree, significantly alters critical threshold estimations for the Atlantic Meridional Overturning Circulation (AMOC) tipping point when analyzing time-series data.",
+    "model": [
+        "CESM",
+        "Cessi",
+        "CCSM3",
+        "CESM1(CAM5)",
+        "CCSM4",
+        "NEMO"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/robustness",
+            "display_name": "Robustness (evolution)",
+            "score": 0.5972999930381775
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-system",
+            "display_name": "Climate system",
+            "score": 0.5884000062942505
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.4253999888896942
+        },
+        {
+            "id": "https://openalex.org/keywords/series",
+            "display_name": "Series (stratigraphy)",
+            "score": 0.4077000021934509
+        },
+        {
+            "id": "https://openalex.org/keywords/resilience",
+            "display_name": "Resilience (materials science)",
+            "score": 0.38909998536109924
+        },
+        {
+            "id": "https://openalex.org/keywords/time-series",
+            "display_name": "Time series",
+            "score": 0.3440999984741211
+        },
+        {
+            "id": "https://openalex.org/keywords/tipping-point",
+            "display_name": "Tipping point (physics)",
+            "score": 0.3434000015258789
+        },
+        {
+            "id": "https://openalex.org/keywords/focus",
+            "display_name": "Focus (optics)",
+            "score": 0.3425000011920929
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C63479239",
+            "wikidata": "https://www.wikidata.org/wiki/Q7353546",
+            "display_name": "Robustness (evolution)",
+            "level": 3,
+            "score": 0.5972999930381775
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.5884000062942505
+        },
+        {
+            "id": "https://openalex.org/C149782125",
+            "wikidata": "https://www.wikidata.org/wiki/Q160039",
+            "display_name": "Econometrics",
+            "level": 1,
+            "score": 0.5464000105857849
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5048999786376953
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.4253999888896942
+        },
+        {
+            "id": "https://openalex.org/C143724316",
+            "wikidata": "https://www.wikidata.org/wiki/Q312468",
+            "display_name": "Series (stratigraphy)",
+            "level": 2,
+            "score": 0.4077000021934509
+        },
+        {
+            "id": "https://openalex.org/C2779585090",
+            "wikidata": "https://www.wikidata.org/wiki/Q3457762",
+            "display_name": "Resilience (materials science)",
+            "level": 2,
+            "score": 0.38909998536109924
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.37059998512268066
+        },
+        {
+            "id": "https://openalex.org/C151406439",
+            "wikidata": "https://www.wikidata.org/wiki/Q186588",
+            "display_name": "Time series",
+            "level": 2,
+            "score": 0.3440999984741211
+        },
+        {
+            "id": "https://openalex.org/C114725131",
+            "wikidata": "https://www.wikidata.org/wiki/Q190837",
+            "display_name": "Tipping point (physics)",
+            "level": 2,
+            "score": 0.3434000015258789
+        },
+        {
+            "id": "https://openalex.org/C192209626",
+            "wikidata": "https://www.wikidata.org/wiki/Q190909",
+            "display_name": "Focus (optics)",
+            "level": 2,
+            "score": 0.3425000011920929
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3296999931335449
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.32919999957084656
+        },
+        {
+            "id": "https://openalex.org/C96250715",
+            "wikidata": "https://www.wikidata.org/wiki/Q965330",
+            "display_name": "Estimation",
+            "level": 2,
+            "score": 0.3287000060081482
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.3124000132083893
+        },
+        {
+            "id": "https://openalex.org/C2777093003",
+            "wikidata": "https://www.wikidata.org/wiki/Q6508345",
+            "display_name": "Lead (geology)",
+            "level": 2,
+            "score": 0.31130000948905945
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.296099990606308
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.28870001435279846
+        },
+        {
+            "id": "https://openalex.org/C69131732",
+            "wikidata": "https://www.wikidata.org/wiki/Q2956049",
+            "display_name": "Abrupt climate change",
+            "level": 5,
+            "score": 0.2883000075817108
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.28679999709129333
+        },
+        {
+            "id": "https://openalex.org/C137176749",
+            "wikidata": "https://www.wikidata.org/wiki/Q4105337",
+            "display_name": "Psychological resilience",
+            "level": 2,
+            "score": 0.2838999927043915
+        },
+        {
+            "id": "https://openalex.org/C90119067",
+            "wikidata": "https://www.wikidata.org/wiki/Q43260",
+            "display_name": "Polynomial",
+            "level": 2,
+            "score": 0.27730000019073486
+        },
+        {
+            "id": "https://openalex.org/C81917197",
+            "wikidata": "https://www.wikidata.org/wiki/Q628760",
+            "display_name": "Selection (genetic algorithm)",
+            "level": 2,
+            "score": 0.2720000147819519
+        },
+        {
+            "id": "https://openalex.org/C78091846",
+            "wikidata": "https://www.wikidata.org/wiki/Q463223",
+            "display_name": "Thermohaline circulation",
+            "level": 2,
+            "score": 0.2685999870300293
+        },
+        {
+            "id": "https://openalex.org/C47822265",
+            "wikidata": "https://www.wikidata.org/wiki/Q854457",
+            "display_name": "Complex system",
+            "level": 2,
+            "score": 0.26179999113082886
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.25859999656677246
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Deg1",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "\u03c4 [y]",
+            "result": "0.00"
+        },
+        {
+            "model": "Deg1",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "A [K\u207b\u00b9y\u207b\u00b9]",
+            "result": "2.44"
+        },
+        {
+            "model": "Deg1",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "C",
+            "result": "N/A"
+        },
+        {
+            "model": "Deg1",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "m [K]",
+            "result": "0.92"
+        },
+        {
+            "model": "Deg1",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "\u03bb\u2080 [K\u207b\u00b9y\u207b\u00b3]",
+            "result": "0.00"
+        },
+        {
+            "model": "Deg1",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "tc [y]",
+            "result": "N/A"
+        },
+        {
+            "model": "Deg1",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "RMSE",
+            "result": "0.2387"
+        },
+        {
+            "model": "Deg2",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "\u03c4 [y]",
+            "result": "140.56"
+        },
+        {
+            "model": "Deg2",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "A [K\u207b\u00b9y\u207b\u00b9]",
+            "result": "0.86"
+        },
+        {
+            "model": "Deg2",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "C",
+            "result": "N/A"
+        },
+        {
+            "model": "Deg2",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "m [K]",
+            "result": "-1.54"
+        },
+        {
+            "model": "Deg2",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "\u03bb\u2080 [K\u207b\u00b9y\u207b\u00b3]",
+            "result": "-2.73"
+        },
+        {
+            "model": "Deg2",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "tc [y]",
+            "result": "2064.56"
+        },
+        {
+            "model": "Deg2",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "RMSE",
+            "result": "0.2413"
+        },
+        {
+            "model": "Deg3",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "\u03c4 [y]",
+            "result": "95.76"
+        },
+        {
+            "model": "Deg3",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "A [K\u207b\u00b9y\u207b\u00b9]",
+            "result": "0.67"
+        },
+        {
+            "model": "Deg3",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "C",
+            "result": "1.61"
+        },
+        {
+            "model": "Deg3",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "m [K]",
+            "result": "-0.60"
+        },
+        {
+            "model": "Deg3",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "\u03bb\u2080 [K\u207b\u00b9y\u207b\u00b3]",
+            "result": "-1.78"
+        },
+        {
+            "model": "Deg3",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "tc [y]",
+            "result": "N/A"
+        },
+        {
+            "model": "Deg3",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "RMSE",
+            "result": "0.2434"
+        },
+        {
+            "model": "Deg3B",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "\u03c4 [y]",
+            "result": "105.22"
+        },
+        {
+            "model": "Deg3B",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "A [K\u207b\u00b9y\u207b\u00b9]",
+            "result": "0.34"
+        },
+        {
+            "model": "Deg3B",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "C",
+            "result": "N/A"
+        },
+        {
+            "model": "Deg3B",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "m [K]",
+            "result": "-1.48"
+        },
+        {
+            "model": "Deg3B",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "\u03bb\u2080 [K\u207b\u00b9y\u207b\u00b3]",
+            "result": "-1.76"
+        },
+        {
+            "model": "Deg3B",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "tc [y]",
+            "result": "2029.22"
+        },
+        {
+            "model": "Deg3B",
+            "observational_dataset": "SPG SST",
+            "evaluation_metric": "RMSE",
+            "result": "0.2477"
+        }
+    ],
+    "innovation": "This paper demonstrates that critical threshold estimations for the Atlantic Meridional Overturning Circulation (AMOC) are highly sensitive to underlying model assumptions, such as the choice of polynomial degree, which can lead to entirely different predictions about the existence and timing of a tipping point.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Atlantic Meridional Overturning Circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Atlantic",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "In this study, we focus on the Atlantic Meridional Overturning Circulation (AMOC), which is a suspected tipping element in the Earth system (Armstrong McKay et al., 2022). The AM\u041e\u0421 is part of a vast system of ocean currents that functions like a conveyor belt for heat (Barry, 2014). It is primarily driven by variations in temperature and salinity, which influence the density of seawater (Stommel, 1961; Cessi, 1994; Barry, 2014). Warm, salty water flows northward along the surface of the Atlantic, where it gradually cools, becomes denser, and sinks to deeper layers. This deep water then travels southward before rising again in lower latitudes, completing the circulation cycle (Barry, 2014; Rahmstorf, 2024).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Atlantic Meridional Overturning Circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "North Atlantic",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The AMOC plays a key role in distributing heat and salt throughout the Atlantic Ocean, exporting freshwater and importing salt in the process. This exchange helps maintain the density gradients that drive the circulation. However, when excess freshwater enters the North Atlantic-such as from melting ice or increased precipitation-it can disrupt this balance, reducing surface water density and weakening the overturning.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "AMOC water transport",
+            "target_entity_type": "Variable",
+            "paragraph": "We also use a model realization from van Westen et al. (2024). This dataset corresponds to CESM model output representing the AMOC water transport at 26\u00b0N (in Sverdrups). Linearly increasing freshwater is added to the North Atlantic over a period of 2,200 years. In this experiment, tipping behavior is observed after 1,758 years of simulation but shows no easily detectable statistical indicators of tipping close to the critical threshold (van Westen et al., 2024).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "AMOC2 data",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Subpolar Gyre Sea Surface Temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The results presented in Ditlevsen and Ditlevsen (2023) predict with high confidence an abrupt transition for the AMOC in the time span between the years 2037 and 2109. This result is obtained by analyzing the Subpolar Gyre Sea Surface Temperature (SPG SST), which is considered a representative proxy or fingerprint for the AMOC. Fingerprints of AMOC strength are commonly used because direct measurements are limited in temporal and spatial coverage. These fingerprints are derived from patterns of cooling in the subpolar Atlantic combined with warming in the Gulf Stream region (Caesar et al., 2018), which are considered representative of the underlying AMOC dynamics, including slower water transport. In particular, we use the same dataset as Ditlevsen and Ditlevsen (2023), which spans from 1870 to 2021. The datasets analyzed for this study can be found in the Copenhagen university repository https://erda. ku.dk/archives/afce4e1c3ac6f0db61c27cb45c2e9b14/published- archive.html), AMOC2 data. See Ditlevsen and Ditlevsen (2023) for further information.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "coupled",
+            "target_entity_type": "SimulationType",
+            "paragraph": "In studying the stability of the AMOC, different modeling approaches have been proposed. These approaches range from conceptual models with few degrees of freedom to high-resolution coupled climate models. While models with lower complexity predict tipping behavior of the AMOC (Stommel, 1961; Cessi, 1994; Rahmstorf et al., 2005), models with higher complexity, such as fully coupled models, show more heterogeneous results. Many models exhibit approximately linear behavior where a decline of the AMOC is followed by a recovery in strength (Bryan et al., 2006; Meehl et al., 2013; Jackson et al., 2023), but also permanent changes involving a tipping point have been found (Westen et al., 2024).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Atlantic meridional Overturning Circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "AMOC",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "saddle-node bifurcation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "lag-1 autocorrelation AC(1)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "maximum likelihood estimation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Gaussian noise",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Subpolar Gyre Sea Surface Temperature (SPG SST)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "AMOC water transport at 26\u00b0N",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "subpolar Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Gulf Stream",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "low-pass filters",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "high-pass filters",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fourier transform",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Taylor expansion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Cessi model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "freshwater influx",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Euler-Maruyama method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AC(1) extrapolation method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "fluctuation dissipation theorem",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "variance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "autocorrelation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Brownian motion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SST anomaly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mean-square error (MSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Nelder-Mead algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mesoscale eddies",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "AR(1) extrapolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "UiT The Arctic University of Norway",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Research Council of Norway",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Copenhagen university",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CCSM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NEMO",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CESM1(CAM5)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CCSM4",
+            "entity_type": "Source"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W648631323",
+        "https://openalex.org/W1545410837",
+        "https://openalex.org/W1883925947",
+        "https://openalex.org/W1966512215",
+        "https://openalex.org/W1986472186",
+        "https://openalex.org/W1988173043",
+        "https://openalex.org/W1996140761",
+        "https://openalex.org/W2024330627",
+        "https://openalex.org/W2053907825",
+        "https://openalex.org/W2059679306",
+        "https://openalex.org/W2062507138",
+        "https://openalex.org/W2066613834",
+        "https://openalex.org/W2073141004",
+        "https://openalex.org/W2100106837",
+        "https://openalex.org/W2116199452",
+        "https://openalex.org/W2134761831",
+        "https://openalex.org/W2136498527",
+        "https://openalex.org/W2143222716",
+        "https://openalex.org/W2143992733",
+        "https://openalex.org/W2162233069",
+        "https://openalex.org/W2163065403",
+        "https://openalex.org/W2170330538",
+        "https://openalex.org/W2461209488",
+        "https://openalex.org/W2794728810",
+        "https://openalex.org/W2947719719",
+        "https://openalex.org/W2999155848",
+        "https://openalex.org/W3003549353",
+        "https://openalex.org/W3114937093",
+        "https://openalex.org/W3133320275",
+        "https://openalex.org/W3189047435",
+        "https://openalex.org/W4282982470",
+        "https://openalex.org/W4295088938",
+        "https://openalex.org/W4300059230",
+        "https://openalex.org/W4320880726",
+        "https://openalex.org/W4362666513",
+        "https://openalex.org/W4385259015",
+        "https://openalex.org/W4388292137",
+        "https://openalex.org/W4388406150",
+        "https://openalex.org/W4389606430",
+        "https://openalex.org/W4389790968",
+        "https://openalex.org/W4391677593",
+        "https://openalex.org/W4392659832",
+        "https://openalex.org/W4399654992",
+        "https://openalex.org/W4401246303",
+        "https://openalex.org/W4401407613",
+        "https://openalex.org/W4402319694",
+        "https://openalex.org/W4409952789"
+    ]
+}

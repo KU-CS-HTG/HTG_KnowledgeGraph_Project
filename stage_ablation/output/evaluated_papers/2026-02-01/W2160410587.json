@@ -1,0 +1,1414 @@
+{
+    "uri": "https://openalex.org/W2160410587",
+    "title": "Towards multi-resolution global climate modeling with ECHAM6\u2013FESOM. Part I: model formulation and mean climate",
+    "venue": {
+        "name": "Climate Dynamics",
+        "id": "https://openalex.org/S93478396",
+        "type": "journal"
+    },
+    "publication_year": 2014,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5026361318",
+            "display_name": "Dmitry Sidorenko",
+            "orcid": "https://orcid.org/0000-0001-8579-6068"
+        },
+        {
+            "id": "https://openalex.org/A5007268175",
+            "display_name": "Thomas Rackow",
+            "orcid": "https://orcid.org/0000-0002-5468-575X"
+        },
+        {
+            "id": "https://openalex.org/A5013282968",
+            "display_name": "Thomas Jung",
+            "orcid": "https://orcid.org/0000-0002-2651-1293"
+        },
+        {
+            "id": "https://openalex.org/A5065818863",
+            "display_name": "Tido Semmler",
+            "orcid": "https://orcid.org/0000-0002-2254-4901"
+        },
+        {
+            "id": "https://openalex.org/A5070432542",
+            "display_name": "Dirk Barbi",
+            "orcid": "https://orcid.org/0000-0002-5053-1788"
+        },
+        {
+            "id": "https://openalex.org/A5052372893",
+            "display_name": "Sergey Danilov",
+            "orcid": "https://orcid.org/0000-0001-8098-182X"
+        },
+        {
+            "id": "https://openalex.org/A5041262498",
+            "display_name": "Klaus Dethloff",
+            "orcid": "https://orcid.org/0000-0003-4162-148X"
+        },
+        {
+            "id": "https://openalex.org/A5083270382",
+            "display_name": "Wolfgang Dorn",
+            "orcid": "https://orcid.org/0000-0002-2071-9472"
+        },
+        {
+            "id": "https://openalex.org/A5034249141",
+            "display_name": "Kerstin Fieg",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5046572786",
+            "display_name": "Helge Goessling",
+            "orcid": "https://orcid.org/0000-0001-9018-1383"
+        },
+        {
+            "id": "https://openalex.org/A5068456758",
+            "display_name": "D\u00f6rthe Handorf",
+            "orcid": "https://orcid.org/0000-0002-3305-6882"
+        },
+        {
+            "id": "https://openalex.org/A5017421291",
+            "display_name": "Sven Harig",
+            "orcid": "https://orcid.org/0000-0001-6948-7409"
+        },
+        {
+            "id": "https://openalex.org/A5112758751",
+            "display_name": "W. Hiller",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5029916954",
+            "display_name": "Stephan Juricke",
+            "orcid": "https://orcid.org/0000-0003-4614-2509"
+        },
+        {
+            "id": "https://openalex.org/A5009150889",
+            "display_name": "Martin L\u00f6sch",
+            "orcid": "https://orcid.org/0000-0002-3824-5244"
+        },
+        {
+            "id": "https://openalex.org/A5071116655",
+            "display_name": "Jens Schr\u00f6ter",
+            "orcid": "https://orcid.org/0000-0002-9240-5798"
+        },
+        {
+            "id": "https://openalex.org/A5008806593",
+            "display_name": "Dmitry Sein",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5018714768",
+            "display_name": "Qiang Wang",
+            "orcid": "https://orcid.org/0000-0002-2704-5394"
+        }
+    ],
+    "doi": "https://doi.org/10.1007/s00382-014-2290-6",
+    "abstract": "A new climate model has been developed that employs a multi-resolution dynamical core for the sea ice-ocean component. In principle, the multi-resolution approach allows one to use enhanced horizontal resolution in dynamically active regions while keeping a coarse-resolution setup otherwise. The coupled model consists of the atmospheric model ECHAM6 and the finite element sea ice-ocean model (FESOM). In this study only moderate refinement of the unstructured ocean grid is applied and the resolution varies from about 25 km in the northern North Atlantic and in the tropics to about 150 km in parts of the open ocean; the results serve as a benchmark upon which future versions that exploit the potential of variable resolution can be built. Details of the formulation of the model are given and its performance in simulating observed aspects of the mean climate is described. Overall, it is found that ECHAM6\u2013FESOM realistically simulates many aspects of the observed climate. More specifically it is found that ECHAM6\u2013FESOM performs at least as well as some of the most sophisticated climate models participating in the fifth phase of the Coupled Model Intercomparison Project. ECHAM6\u2013FESOM shares substantial shortcomings with other climate models when it comes to simulating the North Atlantic circulation.",
+    "field": "Climate modeling",
+    "problem": "Existing climate models use regular grids that are computationally prohibitive at the high resolutions needed to explicitly simulate important small-scale processes, forcing a trade-off between global accuracy and cost and leading to significant model errors in representing key climate phenomena.",
+    "method": "The paper proposes a new climate model, ECHAM6-FESOM, which couples an atmospheric model with a multi-resolution sea-ice-ocean model using an unstructured grid to enhance horizontal resolution in dynamically active regions while maintaining a coarse resolution elsewhere, improving computational efficiency.",
+    "task": "The task is to describe the formulation of the new multi-resolution climate model ECHAM6-FESOM and to evaluate its performance in simulating the observed mean climate by comparing it with observational data and other established climate models.",
+    "model": [
+        "ECHAM6-FESOM",
+        "ECHAM6",
+        "FESOM",
+        "MPI-ESM-LR",
+        "MPIOM",
+        "ECHAM5",
+        "CCSM4",
+        "HadGEM2",
+        "MIROC-ESM",
+        "EC-EARTH",
+        "GFDL-CM3",
+        "CCSM3",
+        "CM2.0",
+        "CM2.5",
+        "CM2.1"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.766289234161377
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.7196207046508789
+        },
+        {
+            "id": "https://openalex.org/keywords/coupled-model-intercomparison-project",
+            "display_name": "Coupled model intercomparison project",
+            "score": 0.6758755445480347
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.5386073589324951
+        },
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.5218745470046997
+        },
+        {
+            "id": "https://openalex.org/keywords/horizontal-resolution",
+            "display_name": "Horizontal resolution",
+            "score": 0.5124388337135315
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-model",
+            "display_name": "Atmospheric model",
+            "score": 0.4623177647590637
+        },
+        {
+            "id": "https://openalex.org/keywords/resolution",
+            "display_name": "Resolution (logic)",
+            "score": 0.4507772624492645
+        },
+        {
+            "id": "https://openalex.org/keywords/general-circulation-model",
+            "display_name": "General Circulation Model",
+            "score": 0.44976574182510376
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.44674596190452576
+        },
+        {
+            "id": "https://openalex.org/keywords/benchmark",
+            "display_name": "Benchmark (surveying)",
+            "score": 0.43753620982170105
+        },
+        {
+            "id": "https://openalex.org/keywords/grid",
+            "display_name": "Grid",
+            "score": 0.4273337125778198
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.40684014558792114
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.2974426746368408
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.26062482595443726
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.162562757730484
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.1491902768611908
+        },
+        {
+            "id": "https://openalex.org/keywords/geodesy",
+            "display_name": "Geodesy",
+            "score": 0.09564545750617981
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.766289234161377
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.7196207046508789
+        },
+        {
+            "id": "https://openalex.org/C25022447",
+            "wikidata": "https://www.wikidata.org/wiki/Q5178021",
+            "display_name": "Coupled model intercomparison project",
+            "level": 4,
+            "score": 0.6758755445480347
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5386073589324951
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.5218745470046997
+        },
+        {
+            "id": "https://openalex.org/C2984089914",
+            "wikidata": "https://www.wikidata.org/wiki/Q305896",
+            "display_name": "Horizontal resolution",
+            "level": 2,
+            "score": 0.5124388337135315
+        },
+        {
+            "id": "https://openalex.org/C118365302",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric model",
+            "level": 2,
+            "score": 0.4623177647590637
+        },
+        {
+            "id": "https://openalex.org/C138268822",
+            "wikidata": "https://www.wikidata.org/wiki/Q1051925",
+            "display_name": "Resolution (logic)",
+            "level": 2,
+            "score": 0.4507772624492645
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.44976574182510376
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.44674596190452576
+        },
+        {
+            "id": "https://openalex.org/C185798385",
+            "wikidata": "https://www.wikidata.org/wiki/Q1161707",
+            "display_name": "Benchmark (surveying)",
+            "level": 2,
+            "score": 0.43753620982170105
+        },
+        {
+            "id": "https://openalex.org/C187691185",
+            "wikidata": "https://www.wikidata.org/wiki/Q2020720",
+            "display_name": "Grid",
+            "level": 2,
+            "score": 0.4273337125778198
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.40684014558792114
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.2974426746368408
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.26062482595443726
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.162562757730484
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.1491902768611908
+        },
+        {
+            "id": "https://openalex.org/C13280743",
+            "wikidata": "https://www.wikidata.org/wiki/Q131089",
+            "display_name": "Geodesy",
+            "level": 1,
+            "score": 0.09564545750617981
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "ECHAM6-FESOM",
+            "observational_dataset": "Modified set of observational data (summarized in Sect. 2.5), normalized by the mean absolute error averaged over five CMIP5 models (MPI-ESM-LR, HadGEM2, CCSM4, GFDL-CM3, and MIROC-ESM)",
+            "evaluation_metric": "Modified performance index (PI) for region 60-90\u00b0S",
+            "result": "0.93"
+        },
+        {
+            "model": "ECHAM6-FESOM",
+            "observational_dataset": "Modified set of observational data (summarized in Sect. 2.5), normalized by the mean absolute error averaged over five CMIP5 models (MPI-ESM-LR, HadGEM2, CCSM4, GFDL-CM3, and MIROC-ESM)",
+            "evaluation_metric": "Modified performance index (PI) for region 30-60\u00b0S",
+            "result": "0.86"
+        },
+        {
+            "model": "ECHAM6-FESOM",
+            "observational_dataset": "Modified set of observational data (summarized in Sect. 2.5), normalized by the mean absolute error averaged over five CMIP5 models (MPI-ESM-LR, HadGEM2, CCSM4, GFDL-CM3, and MIROC-ESM)",
+            "evaluation_metric": "Modified performance index (PI) for region 30\u00b0N-30\u00b0S",
+            "result": "0.84"
+        },
+        {
+            "model": "ECHAM6-FESOM",
+            "observational_dataset": "Modified set of observational data (summarized in Sect. 2.5), normalized by the mean absolute error averaged over five CMIP5 models (MPI-ESM-LR, HadGEM2, CCSM4, GFDL-CM3, and MIROC-ESM)",
+            "evaluation_metric": "Modified performance index (PI) for region 30-60\u00b0N",
+            "result": "0.79"
+        },
+        {
+            "model": "ECHAM6-FESOM",
+            "observational_dataset": "Modified set of observational data (summarized in Sect. 2.5), normalized by the mean absolute error averaged over five CMIP5 models (MPI-ESM-LR, HadGEM2, CCSM4, GFDL-CM3, and MIROC-ESM)",
+            "evaluation_metric": "Modified performance index (PI) for region 60-90\u00b0N",
+            "result": "0.90"
+        },
+        {
+            "model": "MPI-ESM-LR",
+            "observational_dataset": "Modified set of observational data (summarized in Sect. 2.5), normalized by the mean absolute error averaged over five CMIP5 models (MPI-ESM-LR, HadGEM2, CCSM4, GFDL-CM3, and MIROC-ESM)",
+            "evaluation_metric": "Modified performance index (PI) for region 60-90\u00b0S",
+            "result": "0.97"
+        },
+        {
+            "model": "MPI-ESM-LR",
+            "observational_dataset": "Modified set of observational data (summarized in Sect. 2.5), normalized by the mean absolute error averaged over five CMIP5 models (MPI-ESM-LR, HadGEM2, CCSM4, GFDL-CM3, and MIROC-ESM)",
+            "evaluation_metric": "Modified performance index (PI) for region 30-60\u00b0S",
+            "result": "0.88"
+        },
+        {
+            "model": "MPI-ESM-LR",
+            "observational_dataset": "Modified set of observational data (summarized in Sect. 2.5), normalized by the mean absolute error averaged over five CMIP5 models (MPI-ESM-LR, HadGEM2, CCSM4, GFDL-CM3, and MIROC-ESM)",
+            "evaluation_metric": "Modified performance index (PI) for region 30\u00b0N-30\u00b0S",
+            "result": "0.90"
+        },
+        {
+            "model": "MPI-ESM-LR",
+            "observational_dataset": "Modified set of observational data (summarized in Sect. 2.5), normalized by the mean absolute error averaged over five CMIP5 models (MPI-ESM-LR, HadGEM2, CCSM4, GFDL-CM3, and MIROC-ESM)",
+            "evaluation_metric": "Modified performance index (PI) for region 30-60\u00b0N",
+            "result": "0.87"
+        },
+        {
+            "model": "MPI-ESM-LR",
+            "observational_dataset": "Modified set of observational data (summarized in Sect. 2.5), normalized by the mean absolute error averaged over five CMIP5 models (MPI-ESM-LR, HadGEM2, CCSM4, GFDL-CM3, and MIROC-ESM)",
+            "evaluation_metric": "Modified performance index (PI) for region 60-90\u00b0N",
+            "result": "0.93"
+        }
+    ],
+    "innovation": "This paper introduces the ECHAM6-FESOM climate model, which for the first time couples an atmospheric model with a sea ice-ocean component (FESOM) using a multi-resolution, unstructured grid, and provides a benchmark evaluation of its performance in simulating the mean climate.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ECHAM6",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract A new climate model has been developed that employs a multi-resolution dynamical core for the sea ice-ocean component. In principle, the multi-resolution approach allows one to use enhanced horizontal resolution in dynamically active regions while keeping a coarse-resolution setup otherwise. The coupled model consists of the atmospheric model ECHAM6 and the finite element sea ice-ocean model (FESOM).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "FESOM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract A new climate model has been developed that employs a multi-resolution dynamical core for the sea ice-ocean component. In principle, the multi-resolution approach allows one to use enhanced horizontal resolution in dynamically active regions while keeping a coarse-resolution setup otherwise. The coupled model consists of the atmospheric model ECHAM6 and the finite element sea ice-ocean model (FESOM).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "JSBACH",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "ECHAM6 includes the land surface model JSBACH (Stevens et al. 2013) and a hydrological discharge model (Hagemann and D\u00fcmenil 1997).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmosphere",
+            "target_entity_type": "Realm",
+            "paragraph": "The atmospheric general circulation model ECHAM6 is the latest release of the ECHAM model developed at the Max-Planck-Institute for Meteorology (MPI) in Hamburg (Stevens et al. 2013). In the late 1980s, the first ECHAM model branched off from the then operational ECMWF (European Center for Medium-Range Weather Forecasts) model (Simmons et al. 1989) and has since then been further developed in Hamburg-hence the name ECHAM (Stevens et al. 2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FESOM",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "seaIce",
+            "target_entity_type": "Realm",
+            "paragraph": "The sea ice-ocean component in the coupled system is represented by FESOM, which allows one to simulate ocean and sea-ice dynamics on unstructured meshes with variable resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FESOM",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocean",
+            "target_entity_type": "Realm",
+            "paragraph": "The sea ice-ocean component in the coupled system is represented by FESOM, which allows one to simulate ocean and sea-ice dynamics on unstructured meshes with variable resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FESOM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "unstructured mesh",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The sea ice-ocean component in the coupled system is represented by FESOM, which allows one to simulate ocean and sea-ice dynamics on unstructured meshes with variable resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FESOM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "variable resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this study only moderate refinement of the unstructured ocean grid is applied and the resolution varies from about 25 km in the northern North Atlantic and in the tropics to about 150 km in parts of the open ocean; the results serve as a benchmark upon which future versions that exploit the potential of variable resolution can be built.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FESOM",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "PP scheme by Pacanowski and Philander (1981)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Although the latest version of FESOM (Wang et al. 2013) employs the K-Profile Parameterization (KPP) for vertical mixing (Large et al. 1994), we used the PP scheme by Pacanowski and Philander (1981) in this work. The reason is that by the time the coupled simulations were started, the performance of the KPP scheme in FESOM was not completely tested for long integrations in a global setting.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FESOM",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "GM parameterization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We use the GM parameterization for the stirring due to eddy-induced velocity (Gent and McWilliams 1990; Gent et al. 1995; Griffies 1998), and biharmonic viscosity.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FESOM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "47 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The 3-dimensional mesh is formed by vertically extending the surface grid using 47 unevenly spaced z-levels and the ocean bottom is represented with shaved cells.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FESOM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "shaved cells",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The 3-dimensional mesh is formed by vertically extending the surface grid using 47 unevenly spaced z-levels and the ocean bottom is represented with shaved cells.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "spectral dynamical core",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ECHAM6 is a spectral atmospheric model. There are several configurations available differing in the spectral truncation, vertical discretization, time step, and settings for key resolution dependent parameters (Stevens et al. 2013).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T63 horizontal resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The T63L47 configuration is used here and has also been employed in MPI-ESM-LR (Max-Planck-Institute Earth System Model Low Resolution; Giorgetta et al. 2013) and uses total wavenumbers up to 63, which corresponds to about 1.85 \u00d7 1.85 degrees horizontal resolution; the atmosphere comprises 47 levels and has its top at 0.01 hPa (approx. 80 km).",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "47 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The T63L47 configuration is used here and has also been employed in MPI-ESM-LR (Max-Planck-Institute Earth System Model Low Resolution; Giorgetta et al. 2013) and uses total wavenumbers up to 63, which corresponds to about 1.85 \u00d7 1.85 degrees horizontal resolution; the atmosphere comprises 47 levels and has its top at 0.01 hPa (approx. 80 km).",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "model top at 0.01 hPa",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The T63L47 configuration is used here and has also been employed in MPI-ESM-LR (Max-Planck-Institute Earth System Model Low Resolution; Giorgetta et al. 2013) and uses total wavenumbers up to 63, which corresponds to about 1.85 \u00d7 1.85 degrees horizontal resolution; the atmosphere comprises 47 levels and has its top at 0.01 hPa (approx. 80 km).",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "OASIS3-MCT coupler",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In the current setup, ECHAM6-FESOM employs the OASIS3-MCT coupler (Valcke et al. 2013) together with an intermediate regular exchange grid.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "coupled simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "The coupled model consists of the atmospheric model ECHAM6 and the finite element sea ice-ocean model (FESOM).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "control simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "The simulation presented here was run under constant radiative conditions of the year 1990 and is similar to the control simulations performed with the GFDL climate model (e.g. Delworth et al. 2006, 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "climate model bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Overall, it is found that ECHAM6\u2013FESOM realistically simulates many aspects of the observed climate. More specifically it is found that ECHAM6-FESOM performs at least as well as some of the most sophisticated climate models participating in the fifth phase of the Coupled Model Intercomparison Project. ECHAM6\u2013FESOM shares substantial shortcomings with other climate models when it comes to simulating the North Atlantic circulation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "ECMWF model",
+            "target_entity_type": "Source",
+            "paragraph": "In the late 1980s, the first ECHAM model branched off from the then operational ECMWF (European Center for Medium-Range Weather Forecasts) model (Simmons et al. 1989) and has since then been further developed in Hamburg-hence the name ECHAM (Stevens et al. 2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "performance index",
+            "target_entity_type": "Metric",
+            "paragraph": "The modified PIs for ECHAM6-FESOM are shown in Table 1. PIs for MPI-ESM-LR, which uses the same atmospheric component as ECHAM6\u2013FESOM, are also shown in order to allow for an assessment of the overall impact FESOM has on the climate of the coupled system. According to the PIs, ECHAM6\u2013FESOM performs slightly better than the average over the five CMIP5 models. ECHAM6-FESOM also performs well compared to MPI-ESM-LR. Again it must be kept in mind though that slight differences in the PIs can occur because of the different forcing in our ECHAM6-FESOM simulation (constant greenhouse gas forcing of 1990) compared to the historical CMIP5 simulations. In summary, the objective performance indices presented in Table 1 indicate that ECHAM6-FESOM can compete with other state-of-the-art climate models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "AMOC",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "North Atlantic",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Another model deficiency is seen in the Labrador Sea, which is intermittently covered by sea ice extending into the northwestern North Atlantic. The presence of sea ice in the Labrador Sea is associated with reduced convection and deep water formation. The latter is known to affect the amplitude and variability of the North Atlantic meridional overturning circulation (AMOC) (e.g. Eden and Willebrand 2001; Eden and Jung 2001).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Gulf Stream",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "North Atlantic",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The bias, related to the Gulf stream separation zone and the position of Gulf Stream and North Atlantic Current, does not penetrate deeper than about 1000 m. It is most pronounced in the coupled mode indicating once again that the model drift may be explained by the atmospheric forcing, driving the coupled ocean towards a different climatological state.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACC",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Drake Passage",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The strength of the ACC as derived from the Drake Passage transport is about 160 Sv in ECHAM6\u2013FESOM. This is consistent with the observational estimate of 134 Sv and a provided uncertainty of 11-20 % (Cunningham et al. 2003).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "sea ice extent",
+            "target_entity_type": "Variable",
+            "paragraph": "ECHAM6-FESOM simulates a mean Arctic sea ice extent of 14.56 \u00d7 106 km\u00b2 in March and 6.14 \u00d7 106 km\u00b2 in September. These values are lower than observational estimates of 15.7 \u00d7 106 km\u00b2 in March and 7.0 \u00d7 106 km\u00b2 in September (available online from the NASA Earth Observatory website, Fetterer et al. 2002).",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "sea ice thickness",
+            "target_entity_type": "Variable",
+            "paragraph": "Generally, the sea ice thickness and concentration patterns in ECHAM6-FESOM in the Northern and Southern hemispheres (Fig. 13) are similar to reanalysis and observational estimates (Zhang and Rothrock 2005; Fetterer et al. 2002).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "sea ice concentration",
+            "target_entity_type": "Variable",
+            "paragraph": "Generally, the sea ice thickness and concentration patterns in ECHAM6-FESOM in the Northern and Southern hemispheres (Fig. 13) are similar to reanalysis and observational estimates (Zhang and Rothrock 2005; Fetterer et al. 2002).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "mixed layer depth",
+            "target_entity_type": "Variable",
+            "paragraph": "The mixed layer depth (MLD) as simulated by ECHAM6-FESOM is shown in Fig. 14a. There are three main centers of deep convection: the northeastern North Atlantic, the Greenland Sea, and the eastern part of the Weddell Sea; deep convection in the Labrador Sea as inferred from MLD is much less pronounced.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "barotropic streamfunction",
+            "target_entity_type": "Variable",
+            "paragraph": "The large scale ocean circulation is now assessed in terms of barotropic and AMOC streamfunctions (Figs. 15, 16).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6-FESOM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "meridional heat transports",
+            "target_entity_type": "Variable",
+            "paragraph": "The annual mean meridional heat transports (MHT) simulated by ECHAM6\u2013FESOM (Fig. 17) are largely consistent with observational estimates.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "ECHAM6\u2013FESOM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECHAM6",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "FESOM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "multi-resolution dynamical core",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "unstructured mesh",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "finite elements",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "25 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "150 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Climate model bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "Alfred Wegener Institute (AWI), Helmholtz Centre for Polar and Marine Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "German Climate Computing Center (DKRZ)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "North Atlantic meridional overturning circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "spectral atmospheric model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Max-Planck-Institute for Meteorology (MPI)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Center for Medium-Range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECHAM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "MPIOM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Atmospheric Model Intercomparison Project",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "amip",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "CMIP3",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "MPI-ESM-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "T63L47 configuration",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1.85 x 1.85 degrees",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "47 levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "model top at 0.01 hPa",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "JSBACH",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "hydrological discharge model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "T63 grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "180 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "spherical coordinate system",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "47 unevenly spaced z-levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "shaved cells",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "K-Profile Parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "PP scheme by Pacanowski and Philander (1981)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GM parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "biharmonic viscosity",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "thermodynamic sea ice scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "sea ice albedo and melt pond scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "linear free surface",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "virtual salinity flux",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "OASIS3-MCT",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "6 h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "sea surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snowfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sublimation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heat flux over the ocean",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heat flux over ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "river runoff and calving",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "control simulations",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "GFDL climate model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CORE-II",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "30 min",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "10 min",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "uncoupled ocean spin-up run",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "ERA-40",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "2-m temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "10-m wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "500-hPa geopotential height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "300-hPa u-component",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GPCP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMAP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "total cloud cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "GOCCP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "top-of-the-atmosphere (TOA) outgoing longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CERES",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "PHC Climatology",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ocean temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice extent",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean transports",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "historical simulations",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "systematic errors",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "biases",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CCSM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-EARTH",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "total precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Intertropical Convergence Zone (ITCZ)",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Gulf Stream",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Antarctic Circumpolar Current (ACC)",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "outgoing longwave radiation (OLR)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "10-m wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "500-hPa geopotential height (Z500)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Euro-Atlantic blocking",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "North Atlantic Current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "performance indices (PI)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "error variance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Modified performance index (PI)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GFDL-CM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "mean absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "oceanic potential temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "drift",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "cold bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "potential temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface temperature (SST)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CCSM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Sea surface salinity (SSS)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Gulf Stream separation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Ice thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "North Atlantic meridional overturning circulation (AMOC)",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Mixed layer depth (MLD)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric blocking",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Barotropic streamfunction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "barotropic and AMOC streamfunctions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Atlantic subtropical gyre",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "subpolar gyre",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "South Atlantic subtropical gyre",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Kuroshio subtropical gyre",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Atlantic meridional overturning circulation (AMOC)",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Antarctic bottom water",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Mean meridional heat transports (MHT)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Equatorial Undercurrent (EUC)",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "South Equatorial Current (SEC)",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "North Equatorial Countercurrent (NECC)",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "ENSO",
+            "entity_type": "Teleconnection"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2022548072",
+        "https://openalex.org/W2073285330",
+        "https://openalex.org/W1498742657",
+        "https://openalex.org/W1971207437",
+        "https://openalex.org/W4252317510",
+        "https://openalex.org/W2142576103",
+        "https://openalex.org/W1964913251",
+        "https://openalex.org/W2015533427",
+        "https://openalex.org/W2006969537",
+        "https://openalex.org/W2063048405",
+        "https://openalex.org/W2003164867",
+        "https://openalex.org/W1991467573",
+        "https://openalex.org/W1976069398",
+        "https://openalex.org/W2050799234",
+        "https://openalex.org/W2058385387",
+        "https://openalex.org/W2177998282",
+        "https://openalex.org/W2119814080",
+        "https://openalex.org/W2099551720",
+        "https://openalex.org/W2176990229",
+        "https://openalex.org/W1997499217",
+        "https://openalex.org/W1985217958",
+        "https://openalex.org/W2013380149",
+        "https://openalex.org/W2175269597",
+        "https://openalex.org/W1544875105",
+        "https://openalex.org/W2173901252",
+        "https://openalex.org/W1964016826",
+        "https://openalex.org/W2027509738",
+        "https://openalex.org/W2070010285",
+        "https://openalex.org/W1996653992",
+        "https://openalex.org/W1964551106",
+        "https://openalex.org/W2072844010",
+        "https://openalex.org/W2072844554",
+        "https://openalex.org/W2007543027",
+        "https://openalex.org/W2031171270",
+        "https://openalex.org/W1979914007",
+        "https://openalex.org/W2120381746",
+        "https://openalex.org/W2169739307",
+        "https://openalex.org/W2015759017",
+        "https://openalex.org/W1725273891",
+        "https://openalex.org/W2005938683",
+        "https://openalex.org/W2141526687",
+        "https://openalex.org/W2136340025",
+        "https://openalex.org/W1963549306",
+        "https://openalex.org/W2084461152",
+        "https://openalex.org/W2158626702",
+        "https://openalex.org/W2079417861",
+        "https://openalex.org/W2087638916",
+        "https://openalex.org/W2090781508",
+        "https://openalex.org/W2062217294",
+        "https://openalex.org/W2065926050",
+        "https://openalex.org/W2010232103",
+        "https://openalex.org/W2031127053",
+        "https://openalex.org/W1999733221",
+        "https://openalex.org/W2161493930",
+        "https://openalex.org/W2159443068",
+        "https://openalex.org/W2151219339",
+        "https://openalex.org/W2020699102",
+        "https://openalex.org/W2003362896",
+        "https://openalex.org/W1530808387",
+        "https://openalex.org/W1504033443",
+        "https://openalex.org/W2147169375",
+        "https://openalex.org/W2019360491",
+        "https://openalex.org/W2037058631",
+        "https://openalex.org/W2033468135",
+        "https://openalex.org/W2071534173",
+        "https://openalex.org/W2179821283",
+        "https://openalex.org/W2007040778",
+        "https://openalex.org/W2000914204",
+        "https://openalex.org/W1718036133",
+        "https://openalex.org/W2128803685",
+        "https://openalex.org/W2024966118",
+        "https://openalex.org/W2059236835",
+        "https://openalex.org/W2138315301",
+        "https://openalex.org/W2039691098",
+        "https://openalex.org/W2044555187",
+        "https://openalex.org/W2033989015",
+        "https://openalex.org/W2090249381",
+        "https://openalex.org/W2079827920",
+        "https://openalex.org/W2157509927",
+        "https://openalex.org/W2063899295",
+        "https://openalex.org/W1969628295",
+        "https://openalex.org/W2066305270",
+        "https://openalex.org/W2104869860",
+        "https://openalex.org/W2090350654",
+        "https://openalex.org/W2176427201",
+        "https://openalex.org/W2174443773",
+        "https://openalex.org/W1977368867",
+        "https://openalex.org/W2008768311",
+        "https://openalex.org/W2282402261",
+        "https://openalex.org/W2139314206",
+        "https://openalex.org/W1978942923",
+        "https://openalex.org/W1983126642",
+        "https://openalex.org/W2416535814",
+        "https://openalex.org/W2939474406",
+        "https://openalex.org/W2015738893",
+        "https://openalex.org/W1993775374"
+    ]
+}

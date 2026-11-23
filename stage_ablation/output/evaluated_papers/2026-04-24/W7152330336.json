@@ -1,0 +1,870 @@
+{
+    "uri": "https://openalex.org/W7152330336",
+    "title": "Generative Unsupervised Downscaling of Climate Models via Domain Alignment: Application to Wind Fields",
+    "venue": {
+        "name": "arXiv (Cornell University)",
+        "id": "https://openalex.org/S4306400194",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5066713811",
+            "display_name": "Julie Keisler",
+            "orcid": "https://orcid.org/0000-0002-7931-2132"
+        },
+        {
+            "id": "https://openalex.org/A5133237088",
+            "display_name": "Boutheina Oueslati",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5133216666",
+            "display_name": "Anastase Charantonis",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5075118391",
+            "display_name": "Yannig Goude",
+            "orcid": "https://orcid.org/0000-0003-2028-5536"
+        },
+        {
+            "id": "https://openalex.org/A5108074013",
+            "display_name": "Claire E. Monteleoni",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "General Circulation Models (GCMs) are widely used for future climate projections, but their coarse spatial resolution and systematic biases limit their direct use for impact studies. This limitation is particularly critical for wind-related applications, such as wind energy, which require spatially coherent, multivariate, and physically plausible near-surface wind fields. Classical statistical downscaling and bias correction methods partly address this issue. Still, they struggle to preserve spatial structure, inter-variable consistency, and robustness under climate change, especially in high-dimensional settings. Recent advances in generative machine learning offer new opportunities for downscaling and bias correction, eliminating the need for explicitly paired low- and high-resolution datasets. However, many existing approaches remain difficult to interpret and challenging to deploy in operational climate impact studies. In this work, we apply SerpentFlow, an interpretable, generative, domain alignment framework, to the multivariate downscaling and bias correction of wind variables from GCM outputs. This is a method that generates low-resolution/high-resolution training data pairs by separating large-scale spatial patterns from small-scale variability. Large-scale components are aligned across climate model and observational domains. Conditional fine-scale variability is then learned using a flow-matching generative model. We apply the approach to multiple wind variables downscaling, including average and maximal wind speed, zonal and meridional components, and compare it with widely used multivariate bias correction methods. Results show improved spatial coherence, inter-variable consistency, and robustness under future climate conditions, highlighting the potential of interpretable generative models for wind and energy applications.",
+    "field": "Generative downscaling of climate models",
+    "problem": "Existing downscaling and bias correction methods for coarse General Circulation Models struggle to preserve spatial structure, inter-variable consistency, and robustness under climate change, while newer generative approaches often lack the physical interpretability required for operational use.",
+    "method": "We apply SerpentFlow, a generative domain alignment framework, for unsupervised multivariate downscaling and bias correction of wind variables by aligning large-scale spatial patterns between GCMs and observations and using a flow-matching model to learn conditional fine-scale variability.",
+    "task": "The task is to apply a generative, unsupervised domain alignment framework for the multivariate downscaling and bias correction of wind variables from coarse General Circulation Model outputs to produce spatially coherent, high-resolution wind fields for energy applications.",
+    "model": [
+        "ACCESS-ESM1.5",
+        "CNRM-CM6-1",
+        "CNRM-Aladin"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.9467999935150146
+        },
+        {
+            "id": "https://openalex.org/keywords/robustness",
+            "display_name": "Robustness (evolution)",
+            "score": 0.6715999841690063
+        },
+        {
+            "id": "https://openalex.org/keywords/multivariate-statistics",
+            "display_name": "Multivariate statistics",
+            "score": 0.43220001459121704
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.4309000074863434
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.429500013589859
+        },
+        {
+            "id": "https://openalex.org/keywords/wind-speed",
+            "display_name": "Wind speed",
+            "score": 0.3993000090122223
+        },
+        {
+            "id": "https://openalex.org/keywords/spatial-ecology",
+            "display_name": "Spatial ecology",
+            "score": 0.38100001215934753
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.9467999935150146
+        },
+        {
+            "id": "https://openalex.org/C63479239",
+            "wikidata": "https://www.wikidata.org/wiki/Q7353546",
+            "display_name": "Robustness (evolution)",
+            "level": 3,
+            "score": 0.6715999841690063
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5461999773979187
+        },
+        {
+            "id": "https://openalex.org/C161584116",
+            "wikidata": "https://www.wikidata.org/wiki/Q1952580",
+            "display_name": "Multivariate statistics",
+            "level": 2,
+            "score": 0.43220001459121704
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.4309000074863434
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.429500013589859
+        },
+        {
+            "id": "https://openalex.org/C161067210",
+            "wikidata": "https://www.wikidata.org/wiki/Q1464943",
+            "display_name": "Wind speed",
+            "level": 2,
+            "score": 0.3993000090122223
+        },
+        {
+            "id": "https://openalex.org/C158709400",
+            "wikidata": "https://www.wikidata.org/wiki/Q3578586",
+            "display_name": "Spatial ecology",
+            "level": 2,
+            "score": 0.38100001215934753
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.37299999594688416
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.36730000376701355
+        },
+        {
+            "id": "https://openalex.org/C39890363",
+            "wikidata": "https://www.wikidata.org/wiki/Q36108",
+            "display_name": "Generative grammar",
+            "level": 2,
+            "score": 0.35199999809265137
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.3513999879360199
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.34459999203681946
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.34150001406669617
+        },
+        {
+            "id": "https://openalex.org/C78600449",
+            "wikidata": "https://www.wikidata.org/wiki/Q43302",
+            "display_name": "Wind power",
+            "level": 2,
+            "score": 0.29910001158714294
+        },
+        {
+            "id": "https://openalex.org/C114289077",
+            "wikidata": "https://www.wikidata.org/wiki/Q3284399",
+            "display_name": "Statistical model",
+            "level": 2,
+            "score": 0.2955999970436096
+        },
+        {
+            "id": "https://openalex.org/C36503486",
+            "wikidata": "https://www.wikidata.org/wiki/Q11235244",
+            "display_name": "Domain (mathematical analysis)",
+            "level": 2,
+            "score": 0.2865000069141388
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.2849000096321106
+        },
+        {
+            "id": "https://openalex.org/C167966045",
+            "wikidata": "https://www.wikidata.org/wiki/Q5532625",
+            "display_name": "Generative model",
+            "level": 3,
+            "score": 0.27469998598098755
+        },
+        {
+            "id": "https://openalex.org/C12267149",
+            "wikidata": "https://www.wikidata.org/wiki/Q282453",
+            "display_name": "Support vector machine",
+            "level": 2,
+            "score": 0.26350000500679016
+        },
+        {
+            "id": "https://openalex.org/C124101348",
+            "wikidata": "https://www.wikidata.org/wiki/Q172491",
+            "display_name": "Data mining",
+            "level": 1,
+            "score": 0.2630999982357025
+        },
+        {
+            "id": "https://openalex.org/C153083717",
+            "wikidata": "https://www.wikidata.org/wiki/Q6535263",
+            "display_name": "Leverage (statistics)",
+            "level": 2,
+            "score": 0.2587999999523163
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Distance to CDF",
+            "result": "0.062"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Spatial mean",
+            "result": "0.639"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Spatial standard deviation",
+            "result": "0.452"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Inter variables correlation",
+            "result": "0.128"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Spatial spearman correlation",
+            "result": "30929"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Spatial Variogram (mountains)",
+            "result": "0.305"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Spatial spectrum",
+            "result": "0.719"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Extreme frequency",
+            "result": "0.052"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Extreme intensity",
+            "result": "0.349"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Distance to CDF (sfcWind variable only)",
+            "result": "0.061"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Spatial Variogram (mountains) (sfcWind variable only)",
+            "result": "0.206"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Spatial spectrum (sfcWind variable only)",
+            "result": "0.761"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Extreme frequency (sfcWind variable only)",
+            "result": "0.061"
+        },
+        {
+            "model": "ACCESS Earth System Model",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Extreme intensity (sfcWind variable only)",
+            "result": "0.333"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "SAFRAN",
+            "evaluation_metric": "Distance to CDF",
+            "result": "0.212"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "SAFRAN",
+            "evaluation_metric": "Spatial mean",
+            "result": "1.147"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "SAFRAN",
+            "evaluation_metric": "Spatial standard deviation",
+            "result": "0.532"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "SAFRAN",
+            "evaluation_metric": "Spatial spearman correlation",
+            "result": "0.245"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "SAFRAN",
+            "evaluation_metric": "Extreme frequency",
+            "result": "0.070"
+        },
+        {
+            "model": "CNRM-CM6-1",
+            "observational_dataset": "SAFRAN",
+            "evaluation_metric": "Extreme intensity",
+            "result": "0.603"
+        }
+    ],
+    "innovation": "This paper applies SerpentFlow, an interpretable, generative framework, to the multivariate downscaling and bias correction of wind variables from climate models, demonstrating improved spatial coherence, inter-variable consistency, and robustness compared to established methods.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ACCESS Earth System Model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "wind speed",
+            "target_entity_type": "Variable",
+            "paragraph": "We evaluate SerpentFlow and baseline methods over the French territory using outputs from the ACCESS Earth System Model [Ziehn et al., 2020] (1.9\u00b0 \u00d7 1.2\u00b0, 145 km \u00d7 130 km) under the SSP2-4.5 scenario. ACCESS is a participating model in the Coupled Model Intercomparison Project Phase 6 (CMIP6, O'Neill et al. [2016]), an international framework designed to coordinate and standardize climate model experiments. Our analysis focuses on four near-surface wind variables: wind speed (sfcWind), maximum wind speed (sfcWindMax), and the zonal (uas) and meridional (vas) components.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACCESS Earth System Model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "maximum wind speed",
+            "target_entity_type": "Variable",
+            "paragraph": "We evaluate SerpentFlow and baseline methods over the French territory using outputs from the ACCESS Earth System Model [Ziehn et al., 2020] (1.9\u00b0 \u00d7 1.2\u00b0, 145 km \u00d7 130 km) under the SSP2-4.5 scenario. ACCESS is a participating model in the Coupled Model Intercomparison Project Phase 6 (CMIP6, O'Neill et al. [2016]), an international framework designed to coordinate and standardize climate model experiments. Our analysis focuses on four near-surface wind variables: wind speed (sfcWind), maximum wind speed (sfcWindMax), and the zonal (uas) and meridional (vas) components.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACCESS Earth System Model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "zonal components",
+            "target_entity_type": "Variable",
+            "paragraph": "We evaluate SerpentFlow and baseline methods over the French territory using outputs from the ACCESS Earth System Model [Ziehn et al., 2020] (1.9\u00b0 \u00d7 1.2\u00b0, 145 km \u00d7 130 km) under the SSP2-4.5 scenario. ACCESS is a participating model in the Coupled Model Intercomparison Project Phase 6 (CMIP6, O'Neill et al. [2016]), an international framework designed to coordinate and standardize climate model experiments. Our analysis focuses on four near-surface wind variables: wind speed (sfcWind), maximum wind speed (sfcWindMax), and the zonal (uas) and meridional (vas) components.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACCESS Earth System Model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "meridional components",
+            "target_entity_type": "Variable",
+            "paragraph": "We evaluate SerpentFlow and baseline methods over the French territory using outputs from the ACCESS Earth System Model [Ziehn et al., 2020] (1.9\u00b0 \u00d7 1.2\u00b0, 145 km \u00d7 130 km) under the SSP2-4.5 scenario. ACCESS is a participating model in the Coupled Model Intercomparison Project Phase 6 (CMIP6, O'Neill et al. [2016]), an international framework designed to coordinate and standardize climate model experiments. Our analysis focuses on four near-surface wind variables: wind speed (sfcWind), maximum wind speed (sfcWindMax), and the zonal (uas) and meridional (vas) components.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "wind speed",
+            "target_entity_type": "Variable",
+            "paragraph": "Our analysis focuses on four near-surface wind variables: wind speed (sfcWind), maximum wind speed (sfcWindMax), and the zonal (uas) and meridional (vas) components. ERA5 (Hersbach et al. [2020], 0.25\u00b0 \u00d7 0.25\u00b0, 25 km) reanalyses, averaged at a daily temporal resolution, serve as the observational reference.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "maximum wind speed",
+            "target_entity_type": "Variable",
+            "paragraph": "Our analysis focuses on four near-surface wind variables: wind speed (sfcWind), maximum wind speed (sfcWindMax), and the zonal (uas) and meridional (vas) components. ERA5 (Hersbach et al. [2020], 0.25\u00b0 \u00d7 0.25\u00b0, 25 km) reanalyses, averaged at a daily temporal resolution, serve as the observational reference.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "zonal components",
+            "target_entity_type": "Variable",
+            "paragraph": "Our analysis focuses on four near-surface wind variables: wind speed (sfcWind), maximum wind speed (sfcWindMax), and the zonal (uas) and meridional (vas) components. ERA5 (Hersbach et al. [2020], 0.25\u00b0 \u00d7 0.25\u00b0, 25 km) reanalyses, averaged at a daily temporal resolution, serve as the observational reference.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "meridional components",
+            "target_entity_type": "Variable",
+            "paragraph": "Our analysis focuses on four near-surface wind variables: wind speed (sfcWind), maximum wind speed (sfcWindMax), and the zonal (uas) and meridional (vas) components. ERA5 (Hersbach et al. [2020], 0.25\u00b0 \u00d7 0.25\u00b0, 25 km) reanalyses, averaged at a daily temporal resolution, serve as the observational reference.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM6-1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "near-surface wind speed",
+            "target_entity_type": "Variable",
+            "paragraph": "To further illustrate SerpentFlow's flexibility, we applied it to a univariate downscaling task for near-surface wind speed, using outputs from the CNRM-CM6-1 climate model [Voldoire et al., 2019] under the SSP3-7.0 scenario (1.4\u00b0 x 1.4\u00b0, 130 km) and the high-resolution SAFRAN reanalysis (Vidal et al. [2010], 8 km), at daily temporal resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN reanalysis",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "near-surface wind speed",
+            "target_entity_type": "Variable",
+            "paragraph": "To further illustrate SerpentFlow's flexibility, we applied it to a univariate downscaling task for near-surface wind speed, using outputs from the CNRM-CM6-1 climate model [Voldoire et al., 2019] under the SSP3-7.0 scenario (1.4\u00b0 x 1.4\u00b0, 130 km) and the high-resolution SAFRAN reanalysis (Vidal et al. [2010], 8 km), at daily temporal resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "General Circulation Models (GCMs)",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "wind fields",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "average wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "maximal wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zonal components",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "meridional components",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "spatial coherence",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "inter-variable consistency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "robustness under future climate conditions",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "flow-matching generative model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "INRIA Paris",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "EDF R&D",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Universit\u00e9 Paris-Saclay",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Colorado Boulder",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Gaussian filtering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fourier cutoffs",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Flow Matching",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "ACCESS Earth System Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1.9\u00b0 \u00d7 1.2\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "145 km \u00d7 130 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "SSP2-4.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sfcWind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "maximum wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sfcWindMax",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "uas",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vas",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.25\u00b0 \u00d7 0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "25 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "UNet",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Fourier-based frequency bands",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "10 ensemble members",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "ensemble mean",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "distributional similarity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "extreme-event metrics",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "inter-variable relationships",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spatial correlations",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spatial spectrum",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "extreme-value distributions",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Inter variables correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Spatial standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Spatial mean",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Distance to CDF",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Extreme intensity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Extreme frequency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Spatial Variogram (mountains)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Spatial spearman correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Inter-annual variability",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Temporal correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "\u0394 mean (annual)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "\u0394 mean (seasonal)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CNRM-CM6-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SSP3-7.0",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "1.4\u00b0 x 1.4\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "130 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "SAFRAN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "8 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Gaussian-blur-based decomposition",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "land-only observations",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "CNRM-Aladin",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "12.5 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "near-surface wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "distributional metrics",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "extreme local quantiles",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "near-surface wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mean difference",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Standard deviation difference",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Inter-variable temporal correlation consistency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "temporal Pearson correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Spatial Spearman correlation error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Spatial power spectrum metric",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Orographic variogram metric",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Kolmogorov-Smirnov statistic",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Annual anomaly deviations",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Temporal correlation with GCM",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Full-period relative climate change signal",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Seasonal relative climate change signal",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Continuous Ranked Probability Score (CRPS)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spread-skill ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "rank histograms",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "reliability diagrams",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Brittany",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mediterranean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pyrenees",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Corsica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mediterranean coast",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "English coast",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Spain",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "northwestern France",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": []
+}

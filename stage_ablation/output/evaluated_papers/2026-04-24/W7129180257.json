@@ -1,0 +1,1109 @@
+{
+    "uri": "https://openalex.org/W7129180257",
+    "title": "MAUNet-Light: A Concise MAUNet Architecture for Bias Correction and Downscaling of Precipitation Estimates",
+    "venue": {
+        "name": "arXiv (Cornell University)",
+        "id": "https://openalex.org/S4306400194",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5040855905",
+            "display_name": "Sumanta Chandra Mishra Sharma",
+            "orcid": "https://orcid.org/0000-0002-7075-5404"
+        },
+        {
+            "id": "https://openalex.org/A5101316827",
+            "display_name": "Adway Mitra",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126119503",
+            "display_name": "Auroop Ratan Ganguly",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "Satellite-derived data products and climate model simulations of geophysical variables like precipitation, often exhibit systematic biases compared to in-situ measurements. Bias correction and spatial downscaling are fundamental components to develop operational weather forecast systems, as they seek to improve the consistency between coarse-resolution climate model simulations or satellite-based estimates and ground-based observations. In recent years, deep learning-based models have been increasingly replaced traditional statistical methods to generate high-resolution, bias free projections of climate variables. For example, Max-Average U-Net (MAUNet) architecture has been demonstrated for its ability to downscale precipitation estimates. The versatility and adaptability of these neural models make them highly effective across a range of applications, though this often come at the cost of high computational and memory requirements. The aim of this research is to develop light-weight neural network architectures for both bias correction and downscaling of precipitation, for which the teacher-student based learning paradigm is explored. This research demonstrates the adaptability of MAUNet to the task of bias correction, and further introduces a compact, lightweight neural network architecture termed MAUNet-Light.The proposed MAUNet-Light model is developed by transferring knowledge from the trained MAUNet, and it is designed to perform both downscaling and bias correction with reduced computational requirements without any significant loss in accuracy compared to state-of-the-art.",
+    "field": "Climate informatics",
+    "problem": "Existing deep learning models for precipitation bias correction and downscaling are effective but often have high computational and memory requirements, which limits their practicality and deployment in resource-constrained environments.",
+    "method": "The paper proposes MAUNet-Light, a compact neural network for precipitation bias correction and downscaling, developed by transferring knowledge from a larger pre-trained model through a teacher-student learning framework with subsequent ground-truth recalibration to reduce computational requirements without significant accuracy loss.",
+    "task": "The task is to develop a computationally efficient, lightweight neural network, MAUNet-Light, for the bias correction and downscaling of precipitation estimates with reduced computational requirements compared to state-of-the-art models.",
+    "model": [
+        "MAUNet",
+        "MAUNet-Light",
+        "TRMM",
+        "IMERG",
+        "EDSR",
+        "SRDRN",
+        "QM",
+        "QDM"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.9452999830245972
+        },
+        {
+            "id": "https://openalex.org/keywords/artificial-neural-network",
+            "display_name": "Artificial neural network",
+            "score": 0.6323000192642212
+        },
+        {
+            "id": "https://openalex.org/keywords/consistency",
+            "display_name": "Consistency (knowledge bases)",
+            "score": 0.6061999797821045
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5769000053405762
+        },
+        {
+            "id": "https://openalex.org/keywords/adaptability",
+            "display_name": "Adaptability",
+            "score": 0.5645999908447266
+        },
+        {
+            "id": "https://openalex.org/keywords/range",
+            "display_name": "Range (aeronautics)",
+            "score": 0.48829999566078186
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.46959999203681946
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.9452999830245972
+        },
+        {
+            "id": "https://openalex.org/C50644808",
+            "wikidata": "https://www.wikidata.org/wiki/Q192776",
+            "display_name": "Artificial neural network",
+            "level": 2,
+            "score": 0.6323000192642212
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.6313999891281128
+        },
+        {
+            "id": "https://openalex.org/C2776436953",
+            "wikidata": "https://www.wikidata.org/wiki/Q5163215",
+            "display_name": "Consistency (knowledge bases)",
+            "level": 2,
+            "score": 0.6061999797821045
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5769000053405762
+        },
+        {
+            "id": "https://openalex.org/C177606310",
+            "wikidata": "https://www.wikidata.org/wiki/Q5674297",
+            "display_name": "Adaptability",
+            "level": 2,
+            "score": 0.5645999908447266
+        },
+        {
+            "id": "https://openalex.org/C204323151",
+            "wikidata": "https://www.wikidata.org/wiki/Q905424",
+            "display_name": "Range (aeronautics)",
+            "level": 2,
+            "score": 0.48829999566078186
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.46959999203681946
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.4269999861717224
+        },
+        {
+            "id": "https://openalex.org/C2780451532",
+            "wikidata": "https://www.wikidata.org/wiki/Q759676",
+            "display_name": "Task (project management)",
+            "level": 2,
+            "score": 0.42559999227523804
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.4050999879837036
+        },
+        {
+            "id": "https://openalex.org/C108583219",
+            "wikidata": "https://www.wikidata.org/wiki/Q197536",
+            "display_name": "Deep learning",
+            "level": 2,
+            "score": 0.37130001187324524
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.37040001153945923
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3684999942779541
+        },
+        {
+            "id": "https://openalex.org/C123657996",
+            "wikidata": "https://www.wikidata.org/wiki/Q12271",
+            "display_name": "Architecture",
+            "level": 2,
+            "score": 0.362199991941452
+        },
+        {
+            "id": "https://openalex.org/C114289077",
+            "wikidata": "https://www.wikidata.org/wiki/Q3284399",
+            "display_name": "Statistical model",
+            "level": 2,
+            "score": 0.35260000824928284
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.32580000162124634
+        },
+        {
+            "id": "https://openalex.org/C193415008",
+            "wikidata": "https://www.wikidata.org/wiki/Q639681",
+            "display_name": "Network architecture",
+            "level": 2,
+            "score": 0.29660001397132874
+        },
+        {
+            "id": "https://openalex.org/C21001229",
+            "wikidata": "https://www.wikidata.org/wiki/Q182868",
+            "display_name": "Weather forecasting",
+            "level": 2,
+            "score": 0.28780001401901245
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.28279998898506165
+        },
+        {
+            "id": "https://openalex.org/C124101348",
+            "wikidata": "https://www.wikidata.org/wiki/Q172491",
+            "display_name": "Data mining",
+            "level": 1,
+            "score": 0.27880001068115234
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.2621999979019165
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Bilinear Interpolation",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "RMSE",
+            "result": "13.6167"
+        },
+        {
+            "model": "Bilinear Interpolation",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "PSNR",
+            "result": "35.6124"
+        },
+        {
+            "model": "Bilinear Interpolation",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "MSSIM",
+            "result": "0.8435"
+        },
+        {
+            "model": "Bilinear Interpolation",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "Corr. Coef.",
+            "result": "0.6230"
+        },
+        {
+            "model": "Bicubic Interpolation",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "RMSE",
+            "result": "14.6210"
+        },
+        {
+            "model": "Bicubic Interpolation",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "PSNR",
+            "result": "34.9943"
+        },
+        {
+            "model": "Bicubic Interpolation",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "MSSIM",
+            "result": "0.8296"
+        },
+        {
+            "model": "Bicubic Interpolation",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "Corr. Coef.",
+            "result": "0.6137"
+        },
+        {
+            "model": "EDSR",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "RMSE",
+            "result": "11.8247"
+        },
+        {
+            "model": "EDSR",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "PSNR",
+            "result": "36.8381"
+        },
+        {
+            "model": "EDSR",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "MSSIM",
+            "result": "0.8646"
+        },
+        {
+            "model": "EDSR",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "Corr. Coef.",
+            "result": "0.6997"
+        },
+        {
+            "model": "SRDRN",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "RMSE",
+            "result": "11.3761"
+        },
+        {
+            "model": "SRDRN",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "PSNR",
+            "result": "37.1740"
+        },
+        {
+            "model": "SRDRN",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "MSSIM",
+            "result": "0.8779"
+        },
+        {
+            "model": "SRDRN",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "Corr. Coef.",
+            "result": "0.7315"
+        },
+        {
+            "model": "MAUNet",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "RMSE",
+            "result": "11.1947"
+        },
+        {
+            "model": "MAUNet",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "PSNR",
+            "result": "37.3137"
+        },
+        {
+            "model": "MAUNet",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "MSSIM",
+            "result": "0.8752"
+        },
+        {
+            "model": "MAUNet",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "Corr. Coef.",
+            "result": "0.7322"
+        },
+        {
+            "model": "MAUNet_Light_GT",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "RMSE",
+            "result": "11.5365"
+        },
+        {
+            "model": "MAUNet_Light_GT",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "PSNR",
+            "result": "37.0524"
+        },
+        {
+            "model": "MAUNet_Light_GT",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "MSSIM",
+            "result": "0.8665"
+        },
+        {
+            "model": "MAUNet_Light_GT",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "Corr. Coef.",
+            "result": "0.7107"
+        },
+        {
+            "model": "MAUNet_Light_MP",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "RMSE",
+            "result": "11.4515"
+        },
+        {
+            "model": "MAUNet_Light_MP",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "PSNR",
+            "result": "37.1167"
+        },
+        {
+            "model": "MAUNet_Light_MP",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "MSSIM",
+            "result": "0.8717"
+        },
+        {
+            "model": "MAUNet_Light_MP",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "Corr. Coef.",
+            "result": "0.7197"
+        },
+        {
+            "model": "MAUNet_Light_KR",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "RMSE",
+            "result": "11.4286"
+        },
+        {
+            "model": "MAUNet_Light_KR",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "PSNR",
+            "result": "37.1341"
+        },
+        {
+            "model": "MAUNet_Light_KR",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "MSSIM",
+            "result": "0.8725"
+        },
+        {
+            "model": "MAUNet_Light_KR",
+            "observational_dataset": "IMD gridded rainfall dataset (0.25\u00b0 x 0.25\u00b0)",
+            "evaluation_metric": "Corr. Coef.",
+            "result": "0.7199"
+        },
+        {
+            "model": "Bias Data",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean Corr. Coeff.",
+            "result": "0.5751"
+        },
+        {
+            "model": "Bias Data",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean RMSE",
+            "result": "12.7848"
+        },
+        {
+            "model": "QM",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean Corr. Coeff.",
+            "result": "0.5655"
+        },
+        {
+            "model": "QM",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean RMSE",
+            "result": "12.6847"
+        },
+        {
+            "model": "QDM",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean Corr. Coeff.",
+            "result": "0.5654"
+        },
+        {
+            "model": "QDM",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean RMSE",
+            "result": "12.6121"
+        },
+        {
+            "model": "SRDRN",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean Corr. Coeff.",
+            "result": "0.6230"
+        },
+        {
+            "model": "SRDRN",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean RMSE",
+            "result": "10.7530"
+        },
+        {
+            "model": "MAUNet",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean Corr. Coeff.",
+            "result": "0.6400"
+        },
+        {
+            "model": "MAUNet",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean RMSE",
+            "result": "10.4645"
+        },
+        {
+            "model": "MAUNet_Light_GT",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean Corr. Coeff.",
+            "result": "0.6337"
+        },
+        {
+            "model": "MAUNet_Light_GT",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean RMSE",
+            "result": "10.5602"
+        },
+        {
+            "model": "MAUNet_Light_MP",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean Corr. Coeff.",
+            "result": "0.6348"
+        },
+        {
+            "model": "MAUNet_Light_MP",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean RMSE",
+            "result": "10.5626"
+        },
+        {
+            "model": "MAUNet_Light_KR",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean Corr. Coeff.",
+            "result": "0.6378"
+        },
+        {
+            "model": "MAUNet_Light_KR",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Mean RMSE",
+            "result": "10.5199"
+        },
+        {
+            "model": "MAUNet",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "F1-score (extreme rainfall detection)",
+            "result": "0.524"
+        },
+        {
+            "model": "MAUNet",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Accuracy (extreme rainfall detection)",
+            "result": "0.914"
+        },
+        {
+            "model": "SRDRN",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "F1-score (extreme rainfall detection)",
+            "result": "0.505"
+        },
+        {
+            "model": "SRDRN",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Accuracy (extreme rainfall detection)",
+            "result": "0.911"
+        },
+        {
+            "model": "MAUNet_Light_KR",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "F1-score (extreme rainfall detection)",
+            "result": "0.525"
+        },
+        {
+            "model": "MAUNet_Light_KR",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Accuracy (extreme rainfall detection)",
+            "result": "0.913"
+        },
+        {
+            "model": "MAUNet_Light_GT",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "F1-score (extreme rainfall detection)",
+            "result": "0.524"
+        },
+        {
+            "model": "MAUNet_Light_GT",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Accuracy (extreme rainfall detection)",
+            "result": "0.912"
+        },
+        {
+            "model": "MAUNet_Light_MP",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "F1-score (extreme rainfall detection)",
+            "result": "0.514"
+        },
+        {
+            "model": "MAUNet_Light_MP",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Accuracy (extreme rainfall detection)",
+            "result": "0.914"
+        },
+        {
+            "model": "QDM",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "F1-score (extreme rainfall detection)",
+            "result": "0.498"
+        },
+        {
+            "model": "QDM",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Accuracy (extreme rainfall detection)",
+            "result": "0.897"
+        },
+        {
+            "model": "QM",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "F1-score (extreme rainfall detection)",
+            "result": "0.499"
+        },
+        {
+            "model": "QM",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Accuracy (extreme rainfall detection)",
+            "result": "0.897"
+        },
+        {
+            "model": "BiasData",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "F1-score (extreme rainfall detection)",
+            "result": "0.500"
+        },
+        {
+            "model": "BiasData",
+            "observational_dataset": "IMD gridded rainfall dataset",
+            "evaluation_metric": "Accuracy (extreme rainfall detection)",
+            "result": "0.892"
+        }
+    ],
+    "innovation": "This paper introduces MAUNet-Light, a computationally efficient and lightweight neural network for precipitation bias correction and downscaling, developed using a teacher-student framework to achieve high accuracy with significantly fewer parameters than its predecessor.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "MAUNet-Light",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "MAUNet",
+            "target_entity_type": "Source",
+            "paragraph": "The MAUNet-Light architecture presented in Fig. 2 is a compressed version of MAUNet. This model is prepared by considering a single Max-Average Unit and a single Upsampler Unit along with other relevant layers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAUNet",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Max-Average Unit",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "MAUNet contains two Max-Average Units (MAU) and two Upsampler Units (USU) along with other layers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAUNet",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Upsampler Unit",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "MAUNet contains two Max-Average Units (MAU) and two Upsampler Units (USU) along with other layers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAUNet-Light",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Max-Average Unit",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The MAUNet-Light architecture presented in Fig. 2 is a compressed version of MAUNet. This model is prepared by considering a single Max-Average Unit and a single Upsampler Unit along with other relevant layers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAUNet-Light",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Upsampler Unit",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The MAUNet-Light architecture presented in Fig. 2 is a compressed version of MAUNet. This model is prepared by considering a single Max-Average Unit and a single Upsampler Unit along with other relevant layers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAUNet",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Bias Correction",
+            "target_entity_type": "Metric",
+            "paragraph": "This research demonstrates the adaptability of MAUNet to the task of bias correction, and further introduces a compact, lightweight neural network architecture termed MAUNet-Light.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "MAUNet",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Downscaling",
+            "target_entity_type": "Metric",
+            "paragraph": "In our previous research, we introduced the MAUNet model based on Max-Average Pooling for downscaling gridded precipitation data to higher resolutions [26].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "MAUNet-Light",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Bias Correction",
+            "target_entity_type": "Metric",
+            "paragraph": "The proposed MAUNet-Light model is developed by transferring knowledge from the trained MAUNet, and it is designed to perform both downscaling and bias correction with reduced computational requirements without any significant loss in accuracy compared to state-of-the-art.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "MAUNet-Light",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Downscaling",
+            "target_entity_type": "Metric",
+            "paragraph": "The proposed MAUNet-Light model is developed by transferring knowledge from the trained MAUNet, and it is designed to perform both downscaling and bias correction with reduced computational requirements without any significant loss in accuracy compared to state-of-the-art.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TRMM_3B42_Daily",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "This research utilizes the TRMM_3B42_Daily rainfall dataset [27] and IMD gridded rainfall dataset [28] to carry out the bias correction task. The TRMM_3B42_Daily dataset is produced by NASA GES DISC from the research-quality 3-hourly TRMM Multi-Satellite Precipitation Analysis (TMPA_3B42).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IMD gridded rainfall dataset",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "Experimental results show that MAUNet-Light effectively corrects systematic biases in satellite-based TRMM precipitation estimates by calibrating them against ground-based gridded precipitation data from the India Meteorological Department (IMD).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Indian Summer Monsoon Rainfall",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "India",
+            "target_entity_type": "Country",
+            "paragraph": "In addition, the model is evaluated for precipitation downscaling of Indian Summer Monsoon Rainfall and is found to perform effectively for this task as well.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAUNet",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Number of Parameters: 85697",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The table shows that the number of parameters required for MAUNet-Light is approximately 60% of the number of parameters needed for MAUNet. Additionally, MAUNet-Light is more efficient than MAUNet in terms of memory requirements and floating point operations. TABLE I COMPARISON OF MAUNET AND MAUNET-LIGHT Model Number of Parameters Memory Space Occupied by Parameters FLOPS MAUNet 85697 334.75KB 1.3437G MAUNet_Light 52529 205.19KB 1.1273G",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAUNet-Light",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Number of Parameters: 52529",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The table shows that the number of parameters required for MAUNet-Light is approximately 60% of the number of parameters needed for MAUNet. Additionally, MAUNet-Light is more efficient than MAUNet in terms of memory requirements and floating point operations. TABLE I COMPARISON OF MAUNET AND MAUNET-LIGHT Model Number of Parameters Memory Space Occupied by Parameters FLOPS MAUNet 85697 334.75KB 1.3437G MAUNet_Light 52529 205.19KB 1.1273G",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "MAUNet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAUNet-Light",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TRMM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IMD gridded rainfall dataset",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TRMM_3B42_Daily",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TMPA_3B42",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAUNet(D)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EDSR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SRDRN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAUNet_Light_GT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAUNet_Light_MP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAUNet_Light_KR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IMERG",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Tropical Rainfall Measuring Mission (TRMM)",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "GPM",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Indian Institute of Technology Kharagpur",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Northeastern University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "India Meteorological Department (IMD)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA GES DISC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Ministry of Education, Government of India",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "U.S. DOD",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Boston",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Portland",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "MA",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "ME",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "mainland of India",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "eastern India",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "western India",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "central India",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.25\u00b0 x 0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1\u00b0\u00d7 1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1 day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "3-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "systematic biases",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean square error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "PSNR",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MSSIM",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pearson's correlation coefficient (R)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Number of Parameters",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Memory Space Occupied by Parameters",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "FLOPS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Kullback-Leibler (KL) divergence",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "consecutive dry days (CDD)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "number of heavy precipitation days",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "annual maximum daily precipitation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "F1-score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "accuracy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Bilinear Interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bicubic Interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "retrieval algorithms",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Quantile Mapping (QM)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Quantile Delta Mapping (QDM)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Max-Average Units (MAU)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Upsampler Units (USU)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "skip connections",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Conv2D",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Dropout",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "MaxPooling2D",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "AvgPooling2D",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Conv2DTranspose",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Concatenate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "flood",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "drought",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Indian Summer Monsoon Rainfall",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Indian Monsoon Mission",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Flood",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Drought",
+            "entity_type": "NaturalHazardType"
+        }
+    ],
+    "referenced_works": []
+}

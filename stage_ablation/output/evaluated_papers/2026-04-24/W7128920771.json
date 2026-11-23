@@ -1,0 +1,769 @@
+{
+    "uri": "https://openalex.org/W7128920771",
+    "title": "Global spatiotemporal analysis of interactions between urban heat islands and extreme heat waves",
+    "venue": {
+        "name": "Scientific Reports",
+        "id": "https://openalex.org/S196734849",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5126032670",
+            "display_name": "Johnny Guo",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5057888657",
+            "display_name": "XUHUI LEE",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5016977546",
+            "display_name": "Keer Zhang",
+            "orcid": "https://orcid.org/0000-0001-9966-7566"
+        }
+    ],
+    "doi": "https://doi.org/10.1038/s41598-026-37372-7",
+    "abstract": "Extreme heat waves (HWs), defined here as periods when daily maximum temperature exceeds the 98th percentile for three or more consecutive days, pose a significant threat to public health. The extreme heat risk is particularly relevant to urban residents due to the urban heat island (UHI) effect and its synergistic interactions with HWs in some cities. Previous research on the interactions between UHI and HWs has focused on a single city or region, and both positive and negative interactions have been reported. The global patterns of interactions between UHI and HWs across various climate backgrounds, as well as their underlying mechanisms, remain unclear. Here, we simulate the global urban heat island intensity (UHII) from 1985 to 2013 using the Community Land Model (CLM). By conducting a global-scale analysis of interactions between UHII and HWs, we diagnose their spatial and diurnal patterns across different regions and climate zones. To identify and explain the key contributors to the UHI-HW interactions, we employ machine learning models (CatBoost) and the SHapley Additive exPlanations (SHAP) framework to quantify the contributions of local energy flux, climate background, and land surface characteristics. UHI-HW interaction is quantified as the difference between UHII during heatwave (HW) days and non-heatwave (NHW) periods. We find that the UHI-HW interaction, which peaks at 6 AM local solar time (LT), is more positive at night than during the day. We identify net longwave radiation as a strong indicator of the interaction, while humidity emerges as a key driver, alongside contributions from sensible heat flux and wind speed. However, the influence of these factors varies across different K\u00f6ppen-Geiger climate zones. Our study provides new insights into the complex interaction between UHIs and heat waves, with implications for urban climate adaptation strategies in a warming world. The machine learning-based approach offers a novel method for attributing the spatial variability in UHI heat wave interactions to specific biophysical variables.",
+    "field": "Urban climatology",
+    "problem": "Previous research on urban heat island and heat wave interactions is geographically limited to specific regions with conflicting results, leaving the global patterns and underlying mechanisms across diverse climate zones unclear.",
+    "method": "This study simulates global urban heat island intensity using the Community Land Model and employs a machine learning model with the SHAP framework to quantify the contributions of biophysical drivers to the interactions between urban heat islands and extreme heat waves.",
+    "task": "The task is to conduct a global spatiotemporal analysis of the interactions between urban heat islands and extreme heat waves, identifying and quantifying the key biophysical drivers of these interactions using machine learning models.",
+    "model": [
+        "CLM",
+        "CESM2",
+        "CLM5"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/urban-heat-island",
+            "display_name": "Urban heat island",
+            "score": 0.8256000280380249
+        },
+        {
+            "id": "https://openalex.org/keywords/heat-wave",
+            "display_name": "Heat wave",
+            "score": 0.6273999810218811
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4350000023841858
+        },
+        {
+            "id": "https://openalex.org/keywords/global-warming",
+            "display_name": "Global warming",
+            "score": 0.4250999987125397
+        },
+        {
+            "id": "https://openalex.org/keywords/urban-climate",
+            "display_name": "Urban climate",
+            "score": 0.4219000041484833
+        },
+        {
+            "id": "https://openalex.org/keywords/extreme-weather",
+            "display_name": "Extreme weather",
+            "score": 0.392300009727478
+        },
+        {
+            "id": "https://openalex.org/keywords/wind-speed",
+            "display_name": "Wind speed",
+            "score": 0.3910999894142151
+        },
+        {
+            "id": "https://openalex.org/keywords/extreme-heat",
+            "display_name": "Extreme heat",
+            "score": 0.388700008392334
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C54005896",
+            "wikidata": "https://www.wikidata.org/wiki/Q215712",
+            "display_name": "Urban heat island",
+            "level": 2,
+            "score": 0.8256000280380249
+        },
+        {
+            "id": "https://openalex.org/C2993220731",
+            "wikidata": "https://www.wikidata.org/wiki/Q215864",
+            "display_name": "Heat wave",
+            "level": 3,
+            "score": 0.6273999810218811
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5989999771118164
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5924000144004822
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4350000023841858
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.43140000104904175
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.4250999987125397
+        },
+        {
+            "id": "https://openalex.org/C158049464",
+            "wikidata": "https://www.wikidata.org/wiki/Q1075337",
+            "display_name": "Urban climate",
+            "level": 3,
+            "score": 0.4219000041484833
+        },
+        {
+            "id": "https://openalex.org/C205537798",
+            "wikidata": "https://www.wikidata.org/wiki/Q1277161",
+            "display_name": "Extreme weather",
+            "level": 3,
+            "score": 0.392300009727478
+        },
+        {
+            "id": "https://openalex.org/C161067210",
+            "wikidata": "https://www.wikidata.org/wiki/Q1464943",
+            "display_name": "Wind speed",
+            "level": 2,
+            "score": 0.3910999894142151
+        },
+        {
+            "id": "https://openalex.org/C2993190167",
+            "wikidata": "https://www.wikidata.org/wiki/Q215864",
+            "display_name": "Extreme heat",
+            "level": 3,
+            "score": 0.388700008392334
+        },
+        {
+            "id": "https://openalex.org/C122048520",
+            "wikidata": "https://www.wikidata.org/wiki/Q2913954",
+            "display_name": "Percentile",
+            "level": 2,
+            "score": 0.37770000100135803
+        },
+        {
+            "id": "https://openalex.org/C2779155178",
+            "wikidata": "https://www.wikidata.org/wiki/Q1082861",
+            "display_name": "Longwave",
+            "level": 3,
+            "score": 0.36230000853538513
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.35920000076293945
+        },
+        {
+            "id": "https://openalex.org/C151420433",
+            "wikidata": "https://www.wikidata.org/wiki/Q180600",
+            "display_name": "Humidity",
+            "level": 2,
+            "score": 0.35749998688697815
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3569999933242798
+        },
+        {
+            "id": "https://openalex.org/C59242433",
+            "wikidata": "https://www.wikidata.org/wiki/Q1480581",
+            "display_name": "Sensible heat",
+            "level": 2,
+            "score": 0.3221000134944916
+        },
+        {
+            "id": "https://openalex.org/C2780723968",
+            "wikidata": "https://www.wikidata.org/wiki/Q2999493",
+            "display_name": "Outgoing longwave radiation",
+            "level": 3,
+            "score": 0.2957000136375427
+        },
+        {
+            "id": "https://openalex.org/C145151356",
+            "wikidata": "https://www.wikidata.org/wiki/Q1053589",
+            "display_name": "Rossby wave",
+            "level": 2,
+            "score": 0.28519999980926514
+        },
+        {
+            "id": "https://openalex.org/C93038891",
+            "wikidata": "https://www.wikidata.org/wiki/Q1061524",
+            "display_name": "Intensity (physics)",
+            "level": 2,
+            "score": 0.27959999442100525
+        },
+        {
+            "id": "https://openalex.org/C42683663",
+            "wikidata": "https://www.wikidata.org/wiki/Q3517834",
+            "display_name": "Mean radiant temperature",
+            "level": 3,
+            "score": 0.2770000100135803
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.2720000147819519
+        },
+        {
+            "id": "https://openalex.org/C159188206",
+            "wikidata": "https://www.wikidata.org/wiki/Q1478382",
+            "display_name": "Heat flux",
+            "level": 3,
+            "score": 0.26030001044273376
+        },
+        {
+            "id": "https://openalex.org/C2780648208",
+            "wikidata": "https://www.wikidata.org/wiki/Q3001793",
+            "display_name": "Land cover",
+            "level": 3,
+            "score": 0.25519999861717224
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a global analysis of urban heat island-heat wave interactions, employing a novel machine learning framework to quantify and attribute the synergy to specific biophysical drivers, such as humidity and net longwave radiation, across different climate zones.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "CESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CLM5",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "We use the Community Land Model version 5 (CLM5), the land component of the Community Earth System Model version 2 (CESM2)15, to simulate the global climate for urban and rural lands.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "0.9\u00b0 latitude \u00d7 1.25\u00b0 longitude resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "We ran the simulation with a 0.9\u00b0 latitude \u00d7 1.25\u00b0 longitude resolution from 1985 to 2013, driven by atmospheric forcing from the Global Soil Wetness Project Phase 3 Version 1, which is bias-corrected17.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CLM5",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "land",
+            "target_entity_type": "Realm",
+            "paragraph": "We use the Community Land Model version 5 (CLM5), the land component of the Community Earth System Model version 2 (CESM2)15, to simulate the global climate for urban and rural lands. CLM employs a sub-grid approach to represent land surface heterogeneity, partitioning each grid cell into up to five distinct land units: glacier, lake, urban, vegetated, and crop.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "US Corn Belt",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Negative or near-neutral interactions are widespread across global coastal areas; major humid mid-latitude agricultural zones, such as the US Corn Belt and Western and Central Europe; and low-latitude tropical regions, including the Southeast Asia, and southern Mexico.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Western and Central Europe",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Negative or near-neutral interactions are widespread across global coastal areas; major humid mid-latitude agricultural zones, such as the US Corn Belt and Western and Central Europe; and low-latitude tropical regions, including the Southeast Asia, and southern Mexico.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Southeast Asia",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Negative or near-neutral interactions are widespread across global coastal areas; major humid mid-latitude agricultural zones, such as the US Corn Belt and Western and Central Europe; and low-latitude tropical regions, including the Southeast Asia, and southern Mexico.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "southern Mexico",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Negative or near-neutral interactions are widespread across global coastal areas; major humid mid-latitude agricultural zones, such as the US Corn Belt and Western and Central Europe; and low-latitude tropical regions, including the Southeast Asia, and southern Mexico.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Indo-Gangetic and North China Plains",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "In contrast, distinct positive synergies are clustered within the Indo-Gangetic and North China Plains.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "northern India",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "At night, the interaction is much stronger and the spatial pattern is more uniform, with the most pronounced hotspot (0.8 \u00b0C) over northern India.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Mexico",
+            "target_entity_type": "Country",
+            "paragraph": "While the Indian subcontinent shows strong positive UHI-HW synergy, Mexico and Central America display negative interactions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Central America",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "While the Indian subcontinent shows strong positive UHI-HW synergy, Mexico and Central America display negative interactions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Indian subcontinent",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "While the Indian subcontinent shows strong positive UHI-HW synergy, Mexico and Central America display negative interactions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Beijing",
+            "target_entity_type": "City",
+            "paragraph": "Li et al. demonstrated that in Beijing, wind speed variations play a critical role, enhancing the UHI during heat waves by altering advective cooling.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Singapore",
+            "target_entity_type": "Country",
+            "paragraph": "Chew et al.28 found no significant heatwave-UHI synergy in tropical Singapore.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "US Corn Belt",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "Continental",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "For example, a distinct negative interaction over the US Corn Belt matches the boundaries of the Dfa (Humid continental) climate zone.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Root Mean Square Error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance was evaluated using 10-fold cross-validation, achieving a Root Mean Square Error (RMSE) of 0.0987 \u00b1 0.0007\u00b0C and R2 = 0.96, demonstrating robust predictive capability.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance was evaluated using 10-fold cross-validation, achieving a Root Mean Square Error (RMSE) of 0.0987 \u00b1 0.0007\u00b0C and R2 = 0.96, demonstrating robust predictive capability.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Community Earth System Model version 2 (CESM2)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Community Land Model version 5 (CLM5)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "single-layer urban street canyon",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CLM 5.0 Satellite Phenology mode",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "static 2015 urban land cover",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Constant urban properties",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Root Mean Square Error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "R\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "AUHI",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "School of the Environment, Yale University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "High Meadows Environmental Institute, Princeton University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Choate Rosemary Hall",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Yale University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Princeton University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "2-m air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily maximum temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "urban heat island intensity (UHI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "UHI difference (AUHI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "specific humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sensible heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "10-m wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net all-wave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "anthropogenic heat",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ground heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heat storage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil moisture in the top 10 cm",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "anthropogenic heat from air conditioning",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "upward longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface emissivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "skin temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "0.9\u00b0 latitude \u00d7 1.25\u00b0 longitude",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "heat wave",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Tropical",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Dry",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Temperate",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Continental",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Polar",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Mexico",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Singapore",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Cyprus",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Beijing",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Singapore",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Nicosia",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "US Corn Belt",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Western and Central Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southeast Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indo-Gangetic and North China Plains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northern India",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Western Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northeast China",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southeastern United States",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indian subcontinent",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Central America",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1789493322",
+        "https://openalex.org/W1964805252",
+        "https://openalex.org/W2006695707",
+        "https://openalex.org/W2132479022",
+        "https://openalex.org/W2513415914",
+        "https://openalex.org/W2803588082",
+        "https://openalex.org/W2889137505",
+        "https://openalex.org/W2961742015",
+        "https://openalex.org/W2980324102",
+        "https://openalex.org/W2981104727",
+        "https://openalex.org/W2989019186",
+        "https://openalex.org/W2996981612",
+        "https://openalex.org/W2998885490",
+        "https://openalex.org/W2998983520",
+        "https://openalex.org/W3008039765",
+        "https://openalex.org/W3023516657",
+        "https://openalex.org/W3113060150",
+        "https://openalex.org/W3164212919",
+        "https://openalex.org/W3171801815",
+        "https://openalex.org/W3204965035",
+        "https://openalex.org/W4281639492",
+        "https://openalex.org/W4365814823",
+        "https://openalex.org/W4367049076",
+        "https://openalex.org/W4385759575",
+        "https://openalex.org/W4386432333",
+        "https://openalex.org/W4387331974",
+        "https://openalex.org/W4387879092",
+        "https://openalex.org/W4393396569",
+        "https://openalex.org/W4399176766",
+        "https://openalex.org/W4404092264"
+    ]
+}

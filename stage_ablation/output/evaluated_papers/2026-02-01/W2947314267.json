@@ -1,0 +1,1110 @@
+{
+    "uri": "https://openalex.org/W2947314267",
+    "title": "LSCE-FFNN-v1: a two-step neural network model for the reconstruction of surface ocean <i>p</i> CO <sub>2</sub> over the global ocean",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2019,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5090386033",
+            "display_name": "Anna Denvil-Sommer",
+            "orcid": "https://orcid.org/0000-0002-9124-2827"
+        },
+        {
+            "id": "https://openalex.org/A5036188589",
+            "display_name": "Marion Gehlen",
+            "orcid": "https://orcid.org/0000-0002-9688-0692"
+        },
+        {
+            "id": "https://openalex.org/A5072990918",
+            "display_name": "Mathieu Vrac",
+            "orcid": "https://orcid.org/0000-0002-6176-0439"
+        },
+        {
+            "id": "https://openalex.org/A5089741631",
+            "display_name": "Carlos Mej\u00eda",
+            "orcid": "https://orcid.org/0000-0002-8996-7546"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-12-2091-2019",
+    "abstract": "Abstract. A new feed-forward neural network (FFNN) model is presented to reconstruct surface ocean partial pressure of carbon dioxide (pCO2) over the global ocean. The model consists of two steps: (1) the reconstruction of pCO2 climatology, and (2) the reconstruction of pCO2 anomalies with respect to the climatology. For the first step, a gridded climatology was used as the target, along with sea surface salinity (SSS), sea surface temperature (SST), sea surface height (SSH), chlorophyll a (Chl a), mixed layer depth (MLD), as well as latitude and longitude as predictors. For the second step, data from the Surface Ocean CO2 Atlas (SOCAT) provided the target. The same set of predictors was used during step (2) augmented by their anomalies. During each step, the FFNN model reconstructs the nonlinear relationships between pCO2 and the ocean predictors. It provides monthly surface ocean pCO2 distributions on a 1\u2218\u00d71\u2218 grid for the period from 2001 to 2016. Global ocean pCO2 was reconstructed with satisfying accuracy compared with independent observational data from SOCAT. However, errors were larger in regions with poor data coverage (e.g., the Indian Ocean, the Southern Ocean and the subpolar Pacific). The model captured the strong interannual variability of surface ocean pCO2 with reasonable skill over the equatorial Pacific associated with ENSO (the El Ni\u00f1o\u2013Southern Oscillation). Our model was compared to three pCO2 mapping methods that participated in the Surface Ocean pCO2 Mapping intercomparison (SOCOM) initiative. We found a good agreement in seasonal and interannual variability between the models over the global ocean. However, important differences still exist at the regional scale, especially in the Southern Hemisphere and, in particular, in the southern Pacific and the Indian Ocean, as these regions suffer from poor data coverage. Large regional uncertainties in reconstructed surface ocean pCO2 and sea\u2013air CO2 fluxes have a strong influence on global estimates of CO2 fluxes and trends.",
+    "field": "Ocean carbon cycle modeling",
+    "problem": "Reconstructing global surface ocean pCO2 is challenged by sparse and unevenly distributed observational data, causing data-driven methods to generate large errors and artificial variability when filling spatial and temporal gaps in under-sampled regions.",
+    "method": "This paper presents a two-step feed-forward neural network model to reconstruct global surface ocean pCO2, first by reconstructing a monthly pCO2 climatology and then by reconstructing pCO2 anomalies relative to that climatology using observational data and various ocean predictors.",
+    "task": "The task is to reconstruct the monthly surface ocean partial pressure of carbon dioxide (pCO\u2082) over the global ocean for the period 2001-2016 using a two-step feed-forward neural network model.",
+    "model": [
+        "LSCE-FFNN",
+        "Jena-MLS13",
+        "JMA-MLR",
+        "ETH-SOMFFN"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.5985305905342102
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-surface-temperature",
+            "display_name": "Sea surface temperature",
+            "score": 0.5926836133003235
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.4905058741569519
+        },
+        {
+            "id": "https://openalex.org/keywords/thermocline",
+            "display_name": "Thermocline",
+            "score": 0.4821731448173523
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.47766077518463135
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-surface-height",
+            "display_name": "Sea-surface height",
+            "score": 0.46569809317588806
+        },
+        {
+            "id": "https://openalex.org/keywords/ocean-observations",
+            "display_name": "Ocean observations",
+            "score": 0.46088099479675293
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.32167720794677734
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5985305905342102
+        },
+        {
+            "id": "https://openalex.org/C134097258",
+            "wikidata": "https://www.wikidata.org/wiki/Q1507383",
+            "display_name": "Sea surface temperature",
+            "level": 2,
+            "score": 0.5926836133003235
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.4905058741569519
+        },
+        {
+            "id": "https://openalex.org/C105824904",
+            "wikidata": "https://www.wikidata.org/wiki/Q849599",
+            "display_name": "Thermocline",
+            "level": 2,
+            "score": 0.4821731448173523
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.47766077518463135
+        },
+        {
+            "id": "https://openalex.org/C142672198",
+            "wikidata": "https://www.wikidata.org/wiki/Q7076157",
+            "display_name": "Sea-surface height",
+            "level": 3,
+            "score": 0.46569809317588806
+        },
+        {
+            "id": "https://openalex.org/C2776248883",
+            "wikidata": "https://www.wikidata.org/wiki/Q17154087",
+            "display_name": "Ocean observations",
+            "level": 2,
+            "score": 0.46088099479675293
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.32167720794677734
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "FFNN Global",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "17.97"
+        },
+        {
+            "model": "FFNN Global",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.76"
+        },
+        {
+            "model": "FFNN Global",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "11.52"
+        },
+        {
+            "model": "LSCE-FFNN (Arctic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "22.05"
+        },
+        {
+            "model": "LSCE-FFNN (Arctic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.54"
+        },
+        {
+            "model": "LSCE-FFNN (Arctic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "17.1"
+        },
+        {
+            "model": "LSCE-FFNN (Subpolar Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "22.99"
+        },
+        {
+            "model": "LSCE-FFNN (Subpolar Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.76"
+        },
+        {
+            "model": "LSCE-FFNN (Subpolar Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "15.04"
+        },
+        {
+            "model": "LSCE-FFNN (Subpolar Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "34.77"
+        },
+        {
+            "model": "LSCE-FFNN (Subpolar Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.65"
+        },
+        {
+            "model": "LSCE-FFNN (Subpolar Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "23.12"
+        },
+        {
+            "model": "LSCE-FFNN (Subtropical Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "17.28"
+        },
+        {
+            "model": "LSCE-FFNN (Subtropical Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.69"
+        },
+        {
+            "model": "LSCE-FFNN (Subtropical Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "11.27"
+        },
+        {
+            "model": "LSCE-FFNN (Subtropical Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "15.86"
+        },
+        {
+            "model": "LSCE-FFNN (Subtropical Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.77"
+        },
+        {
+            "model": "LSCE-FFNN (Subtropical Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "9.9"
+        },
+        {
+            "model": "LSCE-FFNN (Equatorial Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "17.27"
+        },
+        {
+            "model": "LSCE-FFNN (Equatorial Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.57"
+        },
+        {
+            "model": "LSCE-FFNN (Equatorial Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "11.44"
+        },
+        {
+            "model": "LSCE-FFNN (Equatorial Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "15.73"
+        },
+        {
+            "model": "LSCE-FFNN (Equatorial Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.79"
+        },
+        {
+            "model": "LSCE-FFNN (Equatorial Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "10.33"
+        },
+        {
+            "model": "LSCE-FFNN (South Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "17.81"
+        },
+        {
+            "model": "LSCE-FFNN (South Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.63"
+        },
+        {
+            "model": "LSCE-FFNN (South Atlantic)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "12.28"
+        },
+        {
+            "model": "LSCE-FFNN (South Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "13.52"
+        },
+        {
+            "model": "LSCE-FFNN (South Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.63"
+        },
+        {
+            "model": "LSCE-FFNN (South Pacific)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "9.36"
+        },
+        {
+            "model": "LSCE-FFNN (Indian Ocean)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "17.25"
+        },
+        {
+            "model": "LSCE-FFNN (Indian Ocean)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.62"
+        },
+        {
+            "model": "LSCE-FFNN (Indian Ocean)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "11.6"
+        },
+        {
+            "model": "LSCE-FFNN (Southern Ocean)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "RMSE (\u00b5atm)",
+            "result": "17.4"
+        },
+        {
+            "model": "LSCE-FFNN (Southern Ocean)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "r2",
+            "result": "0.58"
+        },
+        {
+            "model": "LSCE-FFNN (Southern Ocean)",
+            "observational_dataset": "SOCAT v5",
+            "evaluation_metric": "MAE (\u00b5atm)",
+            "result": "11.92"
+        },
+        {
+            "model": "LSCE-FFNN (Arctic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.001"
+        },
+        {
+            "model": "ETH-SOMFFN (Arctic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.001"
+        },
+        {
+            "model": "Jena-MLS13 (Arctic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.001"
+        },
+        {
+            "model": "JMA-MLR (Arctic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.001"
+        },
+        {
+            "model": "LSCE-FFNN (Subpolar Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.15 (-0.15)"
+        },
+        {
+            "model": "ETH-SOMFFN (Subpolar Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.14 (-0.12)"
+        },
+        {
+            "model": "Jena-MLS13 (Subpolar Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.15 (-0.15)"
+        },
+        {
+            "model": "JMA-MLR (Subpolar Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.16 (-0.15)"
+        },
+        {
+            "model": "LSCE-FFNN (Subtropical Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.21 (-0.19)"
+        },
+        {
+            "model": "ETH-SOMFFN (Subtropical Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.21 (-0.19)"
+        },
+        {
+            "model": "Jena-MLS13 (Subtropical Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.2 (-0.18)"
+        },
+        {
+            "model": "JMA-MLR (Subtropical Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.21 (-0.2)"
+        },
+        {
+            "model": "LSCE-FFNN (Equatorial Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "0.085 (0.09)"
+        },
+        {
+            "model": "ETH-SOMFFN (Equatorial Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "0.085 (0.095)"
+        },
+        {
+            "model": "Jena-MLS13 (Equatorial Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "0.08 (0.082)"
+        },
+        {
+            "model": "JMA-MLR (Equatorial Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "0.1 (0.11)"
+        },
+        {
+            "model": "LSCE-FFNN (South Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.17 (-0.16)"
+        },
+        {
+            "model": "ETH-SOMFFN (South Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.18 (-0.16)"
+        },
+        {
+            "model": "Jena-MLS13 (South Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.18 (-0.17)"
+        },
+        {
+            "model": "JMA-MLR (South Atlantic)",
+            "observational_dataset": "Schuster et al. (2013)",
+            "evaluation_metric": "Mean sea-air CO2 flux (PgCyr-1)",
+            "result": "-0.23 (-0.22)"
+        }
+    ],
+    "innovation": "This paper introduces a novel two-step feed-forward neural network model (LSCE-FFNN-v1) that first reconstructs pCO2 climatology and then its anomalies, improving global surface ocean pCO2 estimates, particularly in data-poor regions.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "LSCE-FFNN-v1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "pCO2",
+            "target_entity_type": "Variable",
+            "paragraph": "A new feed-forward neural network (FFNN) model is presented to reconstruct surface ocean partial pressure of carbon dioxide (pCO2) over the global ocean. The model consists of two steps: (1) the reconstruction of pCO2 climatology, and (2) the reconstruction of pCO2 anomalies with respect to the climatology.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSCE-FFNN-v1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "sea-air CO2 flux",
+            "target_entity_type": "Variable",
+            "paragraph": "The sea-air CO2 flux, f, was calculated following R\u00f6denbeck et al. (2015) as f = kpL (pCO2 \u2013 pCOatm), where k is the piston velocity estimated according to Wanninkhof (1992): k = \u0393u\u00b2 (ScCO2/ScRef)\u22120.5 The global scaling factor \u0393 was chosen as in R\u00f6denbeck et al. (2014) with the global mean CO2 piston velocity equaling 16.5 cmh\u22121. Sc corresponds to the Schmidt number estimated according to Wanninkhof (1992). The wind speed was computed from 6-hourly NCEP wind speed data (Kalnay et al., 1996). p is seawater density in Eq. (5) and L is the temperature-dependent solubility (Weiss, 1974). pCO2 corresponds to the surface ocean pCO2 output of the mapping method. pCOatm was derived from the atmospheric CO2 mixing ratio fields provided by the Jena inversion s76_v4.1 (http://www.bgc-jena.mpg.de/CarboScope/).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "ENSO",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "equatorial Pacific",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The model captured the strong interannual variability of surface ocean pCO2 with reasonable skill over the equatorial Pacific associated with ENSO (the El Ni\u00f1o-Southern Oscillation).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSCE-FFNN-v1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1\u00b0 \u00d7 1\u00b0 grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "It provides monthly surface ocean pCO2 distributions on a 1\u00b0 \u00d7 1\u00b0 grid for the period from 2001 to 2016.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSCE-FFNN-v1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "feed-forward neural network",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Our model relies on a two-step approach based on feed-forward neural networks (LSCE-FFNN).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LSCE-FFNN-v1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "hyperbolic tangent activation function",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Based on a series of tests and their statistical results (RMSE, correlation and bias) a hyperbolic tangent was chosen as an activation function for neurons in hidden layers, and a linear function was chosen for the output layer.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSCE-FFNN-v1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "RMSprop optimization algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "As an optimization algorithm, the mini-batch gradient descent or \"RMSprop\" was used (adaptive learning rates for each weight, Chollet, 2015; Hinton et al., 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LSCE-FFNN-v1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "At the global scale, the analysis yielded a RMSE of ~ 17.97 \u00b5atm, whereas the MAE was 11.52 \u00b5atm and the r2 was 0.76. These results were comparable to those obtained by Landsch\u00fctzer et al. (2013) for the assessment of a surface ocean pCO2 reconstruction based on an alternative neural network-based approach. The RMSE between the SOCAT data and the pCO2 climatology from Takahashi et al. (2009) equalled 41.87 \u00b5atm, which was larger than errors computed for the regional comparison between FFNN and SOCAT (Table 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSCE-FFNN-v1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "At the global scale, the analysis yielded a RMSE of ~ 17.97 \u00b5atm, whereas the MAE was 11.52 \u00b5atm and the r2 was 0.76.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSCE-FFNN-v1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "r2",
+            "target_entity_type": "Metric",
+            "paragraph": "At the global scale, the analysis yielded a RMSE of ~ 17.97 \u00b5atm, whereas the MAE was 11.52 \u00b5atm and the r2 was 0.76.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSCE-FFNN-v1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "relative interannual variability mismatch",
+            "target_entity_type": "Metric",
+            "paragraph": "We followed the protocol and diagnostics proposed in R\u00f6denbeck et al. (2015) for the comparison of each of the respective mapping methods with one another, with respect to observations. The following diagnostics were computed: (1) the relative interannual variability (IAV) mismatch Riav (in percent), and (2) the amplitude of interannual variations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Antarctic Circumpolar Current",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Southern Ocean",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "LSCE-FFNN computed negative trends over most of the Atlantic basin, the Indian Ocean and south of 40\u00b0 S, which contrasts with decreasing fluxes over the Pacific and locally in the Antarctic Circumpolar Current. At first order, this broad regional pattern is found in all models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSCE-FFNN-v1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "transient",
+            "target_entity_type": "SimulationType",
+            "paragraph": "The model was applied over the period from 2001 to 2016. Validation with independent data at the global scale indicated a RMSE of 17.57 \u00b5atm, an r\u00b2 of ~0.76 and an absolute bias of 11.52 \u00b5atm.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "LSCE-FFNN-v1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "pCO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "chlorophyll a",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mixed layer depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1\u00b0 \u00d7 1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Indian Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "subpolar Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ENSO",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "El Ni\u00f1o-Southern Oscillation",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Surface Ocean pCO2 Mapping intercomparison",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "SOCOM",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "global ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "sea-air CO2 fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO2 fugacity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "feed-forward neural networks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "4\u00b0 \u00d7 5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "atmospheric CO2 mole fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dissolved inorganic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NCEP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ARMOR3D L4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Copernicus Marine Environment Monitoring Service",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMEMS",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "0.25\u00b0 \u00d7 0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "GlobColour project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Estimating the Circulation and Climate of the Ocean",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ECCO2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Jena CO2 inversion s76_v4.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "5\u00b0 \u00d7 5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "6h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "OSTIA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.05\u00b0 \u00d7 0.05\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "hyperbolic tangent",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "linear function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RMSprop",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "five layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "three hidden layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "LSCE-FFNN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "piston velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wanninkhof (1992)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Schmidt number",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "seawater density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature-dependent solubility",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "r2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Gulf Stream",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Kuroshio currents",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Pacific subpolar ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "equatorial Atlantic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Subpolar Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Subpolar Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Subtropical Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Subtropical Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Equatorial Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "subtropical North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Jena-MLS oc_v1.5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JMA-MLR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ETH-SOMFFN v2016",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ice fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative interannual variability (IAV) mismatch",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Equatorial East Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "El Ni\u00f1o",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "La Ni\u00f1a",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "SST anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "North Atlantic permanently stratified biome",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Jena-MLS13",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "statistical interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "linear regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two-step approach",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "self-organizing maps",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AtlantOS",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CoCliServ",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "EUPHEME",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Laboratoire des Sciences du Climat et de l'Environnement",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "LSCE",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institut Pierre Simon Laplace",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IPSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNRS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CEA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "UVSQ",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Univ. Paris-Saclay",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Sorbonne Universit\u00e9",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IRD",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "MNHN",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Gif Sur Yvette",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Paris",
+            "entity_type": "City"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2141212940",
+        "https://openalex.org/W2163256366",
+        "https://openalex.org/W2395026888",
+        "https://openalex.org/W4388297464",
+        "https://openalex.org/W2890208157",
+        "https://openalex.org/W1978648105",
+        "https://openalex.org/W2041070969",
+        "https://openalex.org/W1895270763",
+        "https://openalex.org/W1999891478",
+        "https://openalex.org/W2051460181",
+        "https://openalex.org/W1964959873",
+        "https://openalex.org/W2042299448",
+        "https://openalex.org/W818282164",
+        "https://openalex.org/W2015958358",
+        "https://openalex.org/W2173251738",
+        "https://openalex.org/W1560203581",
+        "https://openalex.org/W2165811161",
+        "https://openalex.org/W2101767284",
+        "https://openalex.org/W2565250687",
+        "https://openalex.org/W2589458956",
+        "https://openalex.org/W4232534658",
+        "https://openalex.org/W2073339546",
+        "https://openalex.org/W1685359561",
+        "https://openalex.org/W2915841000",
+        "https://openalex.org/W2045329005",
+        "https://openalex.org/W1993935086",
+        "https://openalex.org/W1574154139",
+        "https://openalex.org/W2130686417",
+        "https://openalex.org/W2108096416",
+        "https://openalex.org/W1905022141",
+        "https://openalex.org/W2146731512",
+        "https://openalex.org/W2757255383",
+        "https://openalex.org/W1498436455",
+        "https://openalex.org/W2320294270",
+        "https://openalex.org/W2135542541",
+        "https://openalex.org/W1969184914",
+        "https://openalex.org/W2063534846",
+        "https://openalex.org/W2097542185",
+        "https://openalex.org/W2094300388",
+        "https://openalex.org/W2018516735",
+        "https://openalex.org/W2117220290",
+        "https://openalex.org/W2112598430",
+        "https://openalex.org/W1554663460",
+        "https://openalex.org/W2463548428"
+    ]
+}

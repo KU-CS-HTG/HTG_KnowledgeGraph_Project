@@ -1,0 +1,1763 @@
+{
+    "uri": "https://openalex.org/W2139791975",
+    "title": "Inconsistent strategies to spin up models in CMIP5: implications for ocean biogeochemical model performance assessment",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2016,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5019912667",
+            "display_name": "Roland S\u00e9f\u00e9rian",
+            "orcid": "https://orcid.org/0000-0002-2571-2114"
+        },
+        {
+            "id": "https://openalex.org/A5036188589",
+            "display_name": "Marion Gehlen",
+            "orcid": "https://orcid.org/0000-0002-9688-0692"
+        },
+        {
+            "id": "https://openalex.org/A5079839995",
+            "display_name": "Laurent Bopp",
+            "orcid": "https://orcid.org/0000-0003-4732-4953"
+        },
+        {
+            "id": "https://openalex.org/A5046729658",
+            "display_name": "Laure Resplandy",
+            "orcid": "https://orcid.org/0000-0002-1212-3943"
+        },
+        {
+            "id": "https://openalex.org/A5001036805",
+            "display_name": "James C. Orr",
+            "orcid": "https://orcid.org/0000-0002-8707-7080"
+        },
+        {
+            "id": "https://openalex.org/A5025296788",
+            "display_name": "Olivier Marti",
+            "orcid": "https://orcid.org/0000-0002-8246-5578"
+        },
+        {
+            "id": "https://openalex.org/A5056337476",
+            "display_name": "John P. Dunne",
+            "orcid": "https://orcid.org/0000-0002-8794-0489"
+        },
+        {
+            "id": "https://openalex.org/A5054091795",
+            "display_name": "James R. Christian",
+            "orcid": "https://orcid.org/0000-0003-2448-6589"
+        },
+        {
+            "id": "https://openalex.org/A5019762083",
+            "display_name": "Scott C. Doney",
+            "orcid": "https://orcid.org/0000-0002-3683-2437"
+        },
+        {
+            "id": "https://openalex.org/A5039577948",
+            "display_name": "Tatiana Ilyina",
+            "orcid": "https://orcid.org/0000-0002-3475-4842"
+        },
+        {
+            "id": "https://openalex.org/A5064965983",
+            "display_name": "Keith Lindsay",
+            "orcid": "https://orcid.org/0000-0002-3672-1665"
+        },
+        {
+            "id": "https://openalex.org/A5048634777",
+            "display_name": "Paul R. Halloran",
+            "orcid": "https://orcid.org/0000-0002-9227-0678"
+        },
+        {
+            "id": "https://openalex.org/A5050524996",
+            "display_name": "Christoph Heinze",
+            "orcid": "https://orcid.org/0000-0003-4074-8390"
+        },
+        {
+            "id": "https://openalex.org/A5077512301",
+            "display_name": "Joachim Segschneider",
+            "orcid": "https://orcid.org/0000-0003-0468-4107"
+        },
+        {
+            "id": "https://openalex.org/A5063959948",
+            "display_name": "Jerry Tjiputra",
+            "orcid": "https://orcid.org/0000-0002-4600-2453"
+        },
+        {
+            "id": "https://openalex.org/A5082507120",
+            "display_name": "Olivier Aumont",
+            "orcid": "https://orcid.org/0000-0003-3954-506X"
+        },
+        {
+            "id": "https://openalex.org/A5046171176",
+            "display_name": "Anastasia Romanou",
+            "orcid": "https://orcid.org/0000-0001-5241-4772"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-9-1827-2016",
+    "abstract": "Abstract. During the fifth phase of the Coupled Model Intercomparison Project (CMIP5) substantial efforts were made to systematically assess the skill of Earth system models. One goal was to check how realistically representative marine biogeochemical tracer distributions could be reproduced by models. In routine assessments model historical hindcasts were compared with available modern biogeochemical observations. However, these assessments considered neither how close modeled biogeochemical reservoirs were to equilibrium nor the sensitivity of model performance to initial conditions or to the spin-up protocols. Here, we explore how the large diversity in spin-up protocols used for marine biogeochemistry in CMIP5 Earth system models (ESMs) contributes to model-to-model differences in the simulated fields. We take advantage of a 500-year spin-up simulation of IPSL-CM5A-LR to quantify the influence of the spin-up protocol on model ability to reproduce relevant data fields. Amplification of biases in selected biogeochemical fields (O2, NO3, Alk-DIC) is assessed as a function of spin-up duration. We demonstrate that a relationship between spin-up duration and assessment metrics emerges from our model results and holds when confronted with a larger ensemble of CMIP5 models. This shows that drift has implications for performance assessment in addition to possibly aliasing estimates of climate change impact. Our study suggests that differences in spin-up protocols could explain a substantial part of model disparities, constituting a source of model-to-model uncertainty. This requires more attention in future model intercomparison exercises in order to provide quantitatively more correct ESM results on marine biogeochemistry and carbon cycle feedbacks.",
+    "field": "Earth system modeling",
+    "problem": "Assessments of Earth system models often neglect how diverse spin-up protocols introduce model drift, creating a significant, unquantified source of inter-model uncertainty that complicates performance evaluation and the interpretation of climate projections.",
+    "method": "We propose a penalization approach to more objectively assess model performance by incorporating an incremental, drift-induced error into standard skill-score metrics, thereby accounting for biases introduced by inconsistent spin-up strategies among models.",
+    "task": "The task is to assess how the diversity of spin-up protocols for marine biogeochemistry in CMIP5 Earth system models contributes to model-to-model differences and affects the evaluation of model performance.",
+    "model": [
+        "IPSL-CM5A-LR",
+        "BCC-CSM1-1",
+        "BCC-CSM1-1-m",
+        "CanESM2",
+        "CESM1-BGC",
+        "CMCC-CESM",
+        "CNRM-CM5",
+        "CNRM-CM5-2",
+        "CNRM-ESM1",
+        "GFDL-ESM2G",
+        "GFDL-ESM2M",
+        "GISS-E2-H-CC",
+        "GISS-E2-R-CC",
+        "HadGEM2-CC",
+        "HadGEM2-ES",
+        "INMCM4",
+        "IPSL-CM5A-MR",
+        "IPSL-CM5B-LR",
+        "MIROC-ESM",
+        "MIROC-ESM-CHEM",
+        "MPI-ESM-LR",
+        "MPI-ESM-MR",
+        "MRI-ESM1",
+        "NorESM1-ME"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/coupled-model-intercomparison-project",
+            "display_name": "Coupled model intercomparison project",
+            "score": 0.9188368320465088
+        },
+        {
+            "id": "https://openalex.org/keywords/biogeochemical-cycle",
+            "display_name": "Biogeochemical cycle",
+            "score": 0.8464769124984741
+        },
+        {
+            "id": "https://openalex.org/keywords/earth-system-science",
+            "display_name": "Earth system science",
+            "score": 0.5446256399154663
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.5249005556106567
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5124204754829407
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.4883963465690613
+        },
+        {
+            "id": "https://openalex.org/keywords/biogeochemistry",
+            "display_name": "Biogeochemistry",
+            "score": 0.48729026317596436
+        },
+        {
+            "id": "https://openalex.org/keywords/sensitivity",
+            "display_name": "Sensitivity (control systems)",
+            "score": 0.41768965125083923
+        },
+        {
+            "id": "https://openalex.org/keywords/spin-up",
+            "display_name": "Spin-up",
+            "score": 0.4121597111225128
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.3796348571777344
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.34335508942604065
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.2054888904094696
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.11382552981376648
+        },
+        {
+            "id": "https://openalex.org/keywords/ecology",
+            "display_name": "Ecology",
+            "score": 0.10788121819496155
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C25022447",
+            "wikidata": "https://www.wikidata.org/wiki/Q5178021",
+            "display_name": "Coupled model intercomparison project",
+            "level": 4,
+            "score": 0.9188368320465088
+        },
+        {
+            "id": "https://openalex.org/C71915725",
+            "wikidata": "https://www.wikidata.org/wiki/Q846303",
+            "display_name": "Biogeochemical cycle",
+            "level": 2,
+            "score": 0.8464769124984741
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.5446256399154663
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5249005556106567
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5124204754829407
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.4883963465690613
+        },
+        {
+            "id": "https://openalex.org/C130309983",
+            "wikidata": "https://www.wikidata.org/wiki/Q864379",
+            "display_name": "Biogeochemistry",
+            "level": 2,
+            "score": 0.48729026317596436
+        },
+        {
+            "id": "https://openalex.org/C21200559",
+            "wikidata": "https://www.wikidata.org/wiki/Q7451068",
+            "display_name": "Sensitivity (control systems)",
+            "level": 2,
+            "score": 0.41768965125083923
+        },
+        {
+            "id": "https://openalex.org/C14455589",
+            "wikidata": "https://www.wikidata.org/wiki/Q7577352",
+            "display_name": "Spin-up",
+            "level": 2,
+            "score": 0.4121597111225128
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3796348571777344
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.34335508942604065
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.2054888904094696
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.11382552981376648
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.10788121819496155
+        },
+        {
+            "id": "https://openalex.org/C24326235",
+            "wikidata": "https://www.wikidata.org/wiki/Q126095",
+            "display_name": "Electronic engineering",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C111919701",
+            "wikidata": "https://www.wikidata.org/wiki/Q9135",
+            "display_name": "Operating system",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C127413603",
+            "wikidata": "https://www.wikidata.org/wiki/Q11023",
+            "display_name": "Engineering",
+            "level": 0,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "Mean drift for O2 at surface in % ky-1",
+            "result": "-0.2"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSE drift for O2 at surface in % ky-1",
+            "result": "2.6"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSEmax drift for O2 at surface in % ky-1",
+            "result": "55.8"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "Mean drift for O2 at 150 m in % ky-1",
+            "result": "3.4"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSE drift for O2 at 150 m in % ky-1",
+            "result": "39.0"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSEmax drift for O2 at 150 m in % ky-1",
+            "result": "31.5"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "Mean drift for O2 at 2000 m in % ky-1",
+            "result": "-30.4"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSE drift for O2 at 2000 m in % ky-1",
+            "result": "144.3"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSEmax drift for O2 at 2000 m in % ky-1",
+            "result": "-40.1"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "Mean drift for NO3 at surface in % ky-1",
+            "result": "-0.1"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSE drift for NO3 at surface in % ky-1",
+            "result": "-0.1"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSEmax drift for NO3 at surface in % ky-1",
+            "result": "34.2"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "Mean drift for NO3 at 150 m in % ky-1",
+            "result": "-15.9"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSE drift for NO3 at 150 m in % ky-1",
+            "result": "33.4"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSEmax drift for NO3 at 150 m in % ky-1",
+            "result": "55.2"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "Mean drift for NO3 at 2000 m in % ky-1",
+            "result": "2"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSE drift for NO3 at 2000 m in % ky-1",
+            "result": "51.8"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSEmax drift for NO3 at 2000 m in % ky-1",
+            "result": "-34.8"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "Mean drift for Alk-DIC at surface in % ky-1",
+            "result": "1.6"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSE drift for Alk-DIC at surface in % ky-1",
+            "result": "-0.1"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSEmax drift for Alk-DIC at surface in % ky-1",
+            "result": "-0.1"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "Mean drift for Alk-DIC at 150 m in % ky-1",
+            "result": "6.1"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSE drift for Alk-DIC at 150 m in % ky-1",
+            "result": "27.9"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSEmax drift for Alk-DIC at 150 m in % ky-1",
+            "result": "24.7"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "Mean drift for Alk-DIC at 2000 m in % ky-1",
+            "result": "-69.6"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSE drift for Alk-DIC at 2000 m in % ky-1",
+            "result": "281.8"
+        },
+        {
+            "model": "IPSL-CM5A-LR",
+            "observational_dataset": "WOA2013 and GLODAP",
+            "evaluation_metric": "RMSEmax drift for Alk-DIC at 2000 m in % ky-1",
+            "result": "47.5"
+        }
+    ],
+    "innovation": "This paper demonstrates that inconsistent spin-up protocols in CMIP5 models are a major source of model drift, which significantly affects performance assessments and explains a substantial part of the model-to-model disparities in ocean biogeochemical simulations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "IPSL-CM5A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LMDZ",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This study exploits in particular results from one simula- tion performed with IPSL-CM5A-LR (Dufresne et al., 2013), considered here to be representative of the likely behavior of other CMIP5 Earth system models. Like other current gen- eration of ESMS, IPSL-CM5A-LR combines the major com- ponents of the climate system (Chap. 9, Table 9.1 of IPCC, 2013). The atmosphere is represented by the atmospheric general circulation model LMDZ (Hourdin et al., 2006) with a horizontal resolution of 3.75\u00b0 x 1.87\u00b0 and 39 levels. The land surface is simulated with ORCHIDEE (Krinner et al., 2005). The oceanic component is NEMOv3.2 in its ORCA2 global configuration (Madec, 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ORCHIDEE",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This study exploits in particular results from one simula- tion performed with IPSL-CM5A-LR (Dufresne et al., 2013), considered here to be representative of the likely behavior of other CMIP5 Earth system models. Like other current gen- eration of ESMS, IPSL-CM5A-LR combines the major com- ponents of the climate system (Chap. 9, Table 9.1 of IPCC, 2013). The atmosphere is represented by the atmospheric general circulation model LMDZ (Hourdin et al., 2006) with a horizontal resolution of 3.75\u00b0 x 1.87\u00b0 and 39 levels. The land surface is simulated with ORCHIDEE (Krinner et al., 2005). The oceanic component is NEMOv3.2 in its ORCA2 global configuration (Madec, 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "NEMOv3.2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This study exploits in particular results from one simula- tion performed with IPSL-CM5A-LR (Dufresne et al., 2013), considered here to be representative of the likely behavior of other CMIP5 Earth system models. Like other current gen- eration of ESMS, IPSL-CM5A-LR combines the major com- ponents of the climate system (Chap. 9, Table 9.1 of IPCC, 2013). The atmosphere is represented by the atmospheric general circulation model LMDZ (Hourdin et al., 2006) with a horizontal resolution of 3.75\u00b0 x 1.87\u00b0 and 39 levels. The land surface is simulated with ORCHIDEE (Krinner et al., 2005). The oceanic component is NEMOv3.2 in its ORCA2 global configuration (Madec, 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMOv3.2",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LIM2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The oceanic component is NEMOv3.2 in its ORCA2 global configuration (Madec, 2008). It has a horizontal res- olution of about 2\u00b0 with enhanced resolution at the equa- tor (0.5\u00b0) and 31 levels. NEMOv3.2 includes the sea-ice model LIM2 (Fichefet and Maqueda, 1997), and the marine biogeochemistry model PISCES (Aumont and Bopp, 2006).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMOv3.2",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "PISCES",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The oceanic component is NEMOv3.2 in its ORCA2 global configuration (Madec, 2008). It has a horizontal res- olution of about 2\u00b0 with enhanced resolution at the equa- tor (0.5\u00b0) and 31 levels. NEMOv3.2 includes the sea-ice model LIM2 (Fichefet and Maqueda, 1997), and the marine biogeochemistry model PISCES (Aumont and Bopp, 2006).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "oxygen",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES simulates the biogeochemical cycles of oxygen, car- bon and the main nutrients with 24 state variables. The model simulates dissolved inorganic carbon and total alkalin- ity (carbonate alkalinity + borate + water) and the distribu- tions of macronutrients (nitrate and ammonium, phosphate, and silicate) and the micronutrient iron.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "carbon",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES simulates the biogeochemical cycles of oxygen, car- bon and the main nutrients with 24 state variables. The model simulates dissolved inorganic carbon and total alkalin- ity (carbonate alkalinity + borate + water) and the distribu- tions of macronutrients (nitrate and ammonium, phosphate, and silicate) and the micronutrient iron.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "dissolved inorganic carbon",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES simulates the biogeochemical cycles of oxygen, car- bon and the main nutrients with 24 state variables. The model simulates dissolved inorganic carbon and total alkalin- ity (carbonate alkalinity + borate + water) and the distribu- tions of macronutrients (nitrate and ammonium, phosphate, and silicate) and the micronutrient iron.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "total alkalinity",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES simulates the biogeochemical cycles of oxygen, car- bon and the main nutrients with 24 state variables. The model simulates dissolved inorganic carbon and total alkalin- ity (carbonate alkalinity + borate + water) and the distribu- tions of macronutrients (nitrate and ammonium, phosphate, and silicate) and the micronutrient iron.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "nitrate",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES simulates the biogeochemical cycles of oxygen, car- bon and the main nutrients with 24 state variables. The model simulates dissolved inorganic carbon and total alkalin- ity (carbonate alkalinity + borate + water) and the distribu- tions of macronutrients (nitrate and ammonium, phosphate, and silicate) and the micronutrient iron.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "ammonium",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES simulates the biogeochemical cycles of oxygen, car- bon and the main nutrients with 24 state variables. The model simulates dissolved inorganic carbon and total alkalin- ity (carbonate alkalinity + borate + water) and the distribu- tions of macronutrients (nitrate and ammonium, phosphate, and silicate) and the micronutrient iron.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "phosphate",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES simulates the biogeochemical cycles of oxygen, car- bon and the main nutrients with 24 state variables. The model simulates dissolved inorganic carbon and total alkalin- ity (carbonate alkalinity + borate + water) and the distribu- tions of macronutrients (nitrate and ammonium, phosphate, and silicate) and the micronutrient iron.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "silicate",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES simulates the biogeochemical cycles of oxygen, car- bon and the main nutrients with 24 state variables. The model simulates dissolved inorganic carbon and total alkalin- ity (carbonate alkalinity + borate + water) and the distribu- tions of macronutrients (nitrate and ammonium, phosphate, and silicate) and the micronutrient iron.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "iron",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES simulates the biogeochemical cycles of oxygen, car- bon and the main nutrients with 24 state variables. The model simulates dissolved inorganic carbon and total alkalin- ity (carbonate alkalinity + borate + water) and the distribu- tions of macronutrients (nitrate and ammonium, phosphate, and silicate) and the micronutrient iron.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDZ",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmos",
+            "target_entity_type": "Realm",
+            "paragraph": "The atmosphere is represented by the atmospheric general circulation model LMDZ (Hourdin et al., 2006) with a horizontal resolution of 3.75\u00b0 x 1.87\u00b0 and 39 levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ORCHIDEE",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "land",
+            "target_entity_type": "Realm",
+            "paragraph": "The land surface is simulated with ORCHIDEE (Krinner et al., 2005).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMOv3.2",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocean",
+            "target_entity_type": "Realm",
+            "paragraph": "The oceanic component is NEMOv3.2 in its ORCA2 global configuration (Madec, 2008). It has a horizontal res- olution of about 2\u00b0 with enhanced resolution at the equa- tor (0.5\u00b0) and 31 levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIM2",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "seaIce",
+            "target_entity_type": "Realm",
+            "paragraph": "NEMOv3.2 includes the sea-ice model LIM2 (Fichefet and Maqueda, 1997), and the marine biogeochemistry model PISCES (Aumont and Bopp, 2006).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocnBgchem",
+            "target_entity_type": "Realm",
+            "paragraph": "NEMOv3.2 includes the sea-ice model LIM2 (Fichefet and Maqueda, 1997), and the marine biogeochemistry model PISCES (Aumont and Bopp, 2006).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-LR",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Wanninkhof (1992) formulation for air-sea exchange",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For carbon and oxygen pools, air-sea exchange follows the Wanninkhof (1992) formulation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "LMDZ: 3.75\u00b0 x 1.87\u00b0 horizontal resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The atmosphere is represented by the atmospheric general circulation model LMDZ (Hourdin et al., 2006) with a horizontal resolution of 3.75\u00b0 x 1.87\u00b0 and 39 levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "LMDZ: 39 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The atmosphere is represented by the atmospheric general circulation model LMDZ (Hourdin et al., 2006) with a horizontal resolution of 3.75\u00b0 x 1.87\u00b0 and 39 levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "NEMOv3.2: ~2\u00b0 horizontal resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The oceanic component is NEMOv3.2 in its ORCA2 global configuration (Madec, 2008). It has a horizontal res- olution of about 2\u00b0 with enhanced resolution at the equa- tor (0.5\u00b0) and 31 levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "NEMOv3.2: 0.5\u00b0 equatorial resolution enhancement",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The oceanic component is NEMOv3.2 in its ORCA2 global configuration (Madec, 2008). It has a horizontal res- olution of about 2\u00b0 with enhanced resolution at the equa- tor (0.5\u00b0) and 31 levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "NEMOv3.2: 31 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The oceanic component is NEMOv3.2 in its ORCA2 global configuration (Madec, 2008). It has a horizontal res- olution of about 2\u00b0 with enhanced resolution at the equa- tor (0.5\u00b0) and 31 levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "coupled simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "The core simulation used within this study is a 500-year long coupled preindustrial run. It uses the same atmospheric, land surface and ocean configurations as IPSL-CM5A-LR (Dufresne et al., 2013) for which the marine biogeochem- istry has been extensively evaluated (see, e.g., S\u00e9f\u00e9rian et al., 2013, for modern-state evaluation).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 3 shows the temporal evolution of globally averaged concentration (in solid lines) and globally averaged root-mean squared error (RMSE in dashed lines) for dissolved oxygen (O2), nitrate (NO3) and difference between alkalinity and dissolved inorganic carbon (Alk-DIC) as simulated by IPSL-CM5A-LR. Globally averaged concentration and RMSE are given at surface (a, b, c), 150m (d, e, f), and 2000 m (g, h, i) for these three biogeochemical fields. Their values are indicated on the left-side and right-side y axis, respectively. Hatching represents the \u00b1\u03c3 observational uncertainty due to optimal interpolation of in situ concentrations around the observed globally averaged concentration.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CanESM2",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CanESM1",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Summary of spin-up strategy, sources of initial conditions, offline/online durations and references used to equilibrate ocean biogeochemistry in CMIP5 ESMs. The so-called direct and sequential strategies inform whether the spin-up of the ocean biogeochemical model is run directly in online/coupled mode or first in offline (ocean biogeochemistry only) and then in online/coupled mode. DIC* refers to the observation-derived estimates of preindustrial dissolved inorganic carbon concentration using the AC* method. w/acc. and forced w/obs. indicate the strategy using \"acceleration\" and observed atmospheric forcings during the spin-up, respectively. [Table shows CanESM2 initial conditions from CanESM1]",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM1",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CNRM-CM5",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Summary of spin-up strategy, sources of initial conditions, offline/online durations and references used to equilibrate ocean biogeochemistry in CMIP5 ESMs. The so-called direct and sequential strategies inform whether the spin-up of the ocean biogeochemical model is run directly in online/coupled mode or first in offline (ocean biogeochemistry only) and then in online/coupled mode. DIC* refers to the observation-derived estimates of preindustrial dissolved inorganic carbon concentration using the AC* method. w/acc. and forced w/obs. indicate the strategy using \"acceleration\" and observed atmospheric forcings during the spin-up, respectively. [Table shows CNRM-ESM1 initial conditions from CNRM-CM5]",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5B-LR",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "IPSL-CM5A-LR",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Summary of spin-up strategy, sources of initial conditions, offline/online durations and references used to equilibrate ocean biogeochemistry in CMIP5 ESMs. The so-called direct and sequential strategies inform whether the spin-up of the ocean biogeochemical model is run directly in online/coupled mode or first in offline (ocean biogeochemistry only) and then in online/coupled mode. DIC* refers to the observation-derived estimates of preindustrial dissolved inorganic carbon concentration using the AC* method. w/acc. and forced w/obs. indicate the strategy using \"acceleration\" and observed atmospheric forcings during the spin-up, respectively. [Table shows IPSL-CM5B-LR initial conditions from IPSL-CM5A-LR]",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM1-BGC",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-CESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5-2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM2G",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM2M",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2-CC",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2-ES",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-MR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5B-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-MR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM1-ME",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean squared error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "In the following, we investigate the influence of model drift on skill score assessment metrics that are routinely used to benchmark model performance. For this purpose, we use the ensemble-mean O2 RMSE as a metric to assess the distance between the biogeochemical observations and model results. For this purpose, we compute O2 RMSE from each ensemble member of the CMIP5 models averaged from 1986 to 2005 with respect to WOA2013 observations. The model-data dis- tance is then determined for each CMIP5 model using the mean across the available ensemble members.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project (CMIP5)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "IPSL-CM5A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "O2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NO3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Alk-DIC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "spin-up",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "historical hindcasts",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ESMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root-mean-squared errors",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "HAMOCC3",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "GEOTRACES",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "MAREDAT",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "stand-alone",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Ocean Carbon Model Intercomparison Project phase 2",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "OCMIP-2",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "sea-air carbon flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "oxygen minimum zone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CMCC-CESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "offline simulation",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "online simulation",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "CanESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-ESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-ESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM2M",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM2G",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-H-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-R-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM1-ME",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "BCC-CSM1-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BCC-CSM1-1-m",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM1-BGC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CM5-2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2-ES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INMCM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM5A-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM5B-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ESM-CHEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Sequential",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Direct",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "dissolved inorganic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "OCMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CCSM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNRM",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "HadCM3LC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HAMOCC",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LMDZ",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "3.75\u00b0 x 1.87\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "39 levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ORCHIDEE",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NEMOv3.2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ORCA2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "2\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "31 levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "LIM2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "PISCES",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "oxygen",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "nitrate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ammonium",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "phosphate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "silicate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "iron",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total alkalinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "nanophytoplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "diatoms",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "microzooplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mesozooplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dissolved organic matter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Takahashi et al. (1985) stoichiometric C : N : P-\u0394\u039f2 ratios",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "calcite",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Maier-Reimer (1993) calcite simulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Moore et al. (2002) calcite simulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "carbonate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "bicarbonate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "borate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "protons",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hydroxide ions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wanninkhof (1992) formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "coupled preindustrial run",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dissolved nitrate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "preindustrial dissolved inorganic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "piControl",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spatial correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "carbonate ion concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocnBgchem",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "R2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "global mean sea surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "drift",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ocean heat content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "meridional overturning circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "ocean carbon flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mean",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSEmax",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "total alkalinity minus DIC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Southern Hemisphere oceans",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "relaxation time",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ensemble-mean O2 RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ARMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SSS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "large-scale ocean circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "MAREMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Marine Ecosystem Model Intercomparison Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "net primary production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "preindustrial control simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "ESMValTool",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "soil carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "peat formation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "CMIP7",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "Atlantic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Pacific Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "CNRM",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "M\u00e9t\u00e9o-France",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNRS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "LSCE/IPSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CEA/Saclay",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Scripps Institution of Oceanography, UCSD",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Geophysical Fluid Dynamics Laboratory, NOAA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Fisheries and Oceans Canada",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Canadian Centre for Climate Modelling and Analysis",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Woods Hole Oceanographic Institution",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Max Planck Institute for Meteorology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Center for Atmospheric Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Exeter",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Bergen",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Uni Research Climate",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Bjerknes Centre for Climate Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Kiel",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Sorbonne Universit\u00e9s (UPMC, Univ Paris 06)-CNRS-IRD-MNHN, LOCEAN-IPSL Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Columbia University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA-Goddard Institute for Space Studies",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2334886717",
+        "https://openalex.org/W2149884823",
+        "https://openalex.org/W2044081505",
+        "https://openalex.org/W2062393229",
+        "https://openalex.org/W1600968722",
+        "https://openalex.org/W2086925429",
+        "https://openalex.org/W2163256366",
+        "https://openalex.org/W1995028697",
+        "https://openalex.org/W2017870133",
+        "https://openalex.org/W1742651515",
+        "https://openalex.org/W2141707502",
+        "https://openalex.org/W2052533555",
+        "https://openalex.org/W2177291244",
+        "https://openalex.org/W2107066561",
+        "https://openalex.org/W2132303790",
+        "https://openalex.org/W2133168052",
+        "https://openalex.org/W2140618833",
+        "https://openalex.org/W2058648791",
+        "https://openalex.org/W2139314206",
+        "https://openalex.org/W2050648603",
+        "https://openalex.org/W2099849999",
+        "https://openalex.org/W2081007647",
+        "https://openalex.org/W2156666706",
+        "https://openalex.org/W2023457446",
+        "https://openalex.org/W2170153270",
+        "https://openalex.org/W1717270090",
+        "https://openalex.org/W1990376608",
+        "https://openalex.org/W2110669521",
+        "https://openalex.org/W2076339132",
+        "https://openalex.org/W1957506591",
+        "https://openalex.org/W2009412734",
+        "https://openalex.org/W1987205608",
+        "https://openalex.org/W2151328940",
+        "https://openalex.org/W2048217351",
+        "https://openalex.org/W2115717916",
+        "https://openalex.org/W2113039267",
+        "https://openalex.org/W1974010481",
+        "https://openalex.org/W2081395300",
+        "https://openalex.org/W4391464088",
+        "https://openalex.org/W1589815855",
+        "https://openalex.org/W2110293632",
+        "https://openalex.org/W2155033464",
+        "https://openalex.org/W2018459257",
+        "https://openalex.org/W2164219271",
+        "https://openalex.org/W2073772431",
+        "https://openalex.org/W2143767024",
+        "https://openalex.org/W2044119708",
+        "https://openalex.org/W2212303776",
+        "https://openalex.org/W2094368610",
+        "https://openalex.org/W1989707569",
+        "https://openalex.org/W2119825275",
+        "https://openalex.org/W2052809541",
+        "https://openalex.org/W1601823087",
+        "https://openalex.org/W2131829457",
+        "https://openalex.org/W1997834612",
+        "https://openalex.org/W2078918778",
+        "https://openalex.org/W1609491364",
+        "https://openalex.org/W2169007801",
+        "https://openalex.org/W2001444731",
+        "https://openalex.org/W1902889365",
+        "https://openalex.org/W1796961055",
+        "https://openalex.org/W2124790556",
+        "https://openalex.org/W2146219797",
+        "https://openalex.org/W2123855284",
+        "https://openalex.org/W2151726483",
+        "https://openalex.org/W2050368832",
+        "https://openalex.org/W2154981955",
+        "https://openalex.org/W2087486717",
+        "https://openalex.org/W2050963486",
+        "https://openalex.org/W1722892735",
+        "https://openalex.org/W2171578450",
+        "https://openalex.org/W2114106408",
+        "https://openalex.org/W2000753477",
+        "https://openalex.org/W1979186030",
+        "https://openalex.org/W1837986572",
+        "https://openalex.org/W2151094192",
+        "https://openalex.org/W1981617612",
+        "https://openalex.org/W1930555864",
+        "https://openalex.org/W1970329847",
+        "https://openalex.org/W2030472866",
+        "https://openalex.org/W1992579369",
+        "https://openalex.org/W2167967580",
+        "https://openalex.org/W1859438061",
+        "https://openalex.org/W2025707754",
+        "https://openalex.org/W2148343249",
+        "https://openalex.org/W1998294265",
+        "https://openalex.org/W2162914346",
+        "https://openalex.org/W1565770889",
+        "https://openalex.org/W2066380855",
+        "https://openalex.org/W2032511533",
+        "https://openalex.org/W2076384710",
+        "https://openalex.org/W2096077615",
+        "https://openalex.org/W1977822434",
+        "https://openalex.org/W2130341490",
+        "https://openalex.org/W6659882655",
+        "https://openalex.org/W2127044769",
+        "https://openalex.org/W2076457157",
+        "https://openalex.org/W2007899445",
+        "https://openalex.org/W1932664664",
+        "https://openalex.org/W2133391051",
+        "https://openalex.org/W2159065373",
+        "https://openalex.org/W2915621040",
+        "https://openalex.org/W2004136638",
+        "https://openalex.org/W1982140334",
+        "https://openalex.org/W1992174596",
+        "https://openalex.org/W2065947563",
+        "https://openalex.org/W1979074586",
+        "https://openalex.org/W2140659444",
+        "https://openalex.org/W2101111422",
+        "https://openalex.org/W4391334045",
+        "https://openalex.org/W2159411284",
+        "https://openalex.org/W2030098873",
+        "https://openalex.org/W2034735472",
+        "https://openalex.org/W1984544857",
+        "https://openalex.org/W2126542184",
+        "https://openalex.org/W2029596959",
+        "https://openalex.org/W1855007063",
+        "https://openalex.org/W1988021198",
+        "https://openalex.org/W2046848592",
+        "https://openalex.org/W2022620052",
+        "https://openalex.org/W2094300388",
+        "https://openalex.org/W2141384827",
+        "https://openalex.org/W2066305270",
+        "https://openalex.org/W2071062728",
+        "https://openalex.org/W1885115366",
+        "https://openalex.org/W2114466308",
+        "https://openalex.org/W2141291137",
+        "https://openalex.org/W2076030098",
+        "https://openalex.org/W2048919923",
+        "https://openalex.org/W2986738873",
+        "https://openalex.org/W2051380851",
+        "https://openalex.org/W1557379516",
+        "https://openalex.org/W2123495234",
+        "https://openalex.org/W1982831135"
+    ]
+}

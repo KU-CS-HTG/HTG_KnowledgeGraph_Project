@@ -1,0 +1,801 @@
+{
+    "uri": "https://openalex.org/W2131372757",
+    "title": "Towards global empirical upscaling of FLUXNET eddy covariance observations: validation of a model tree ensemble approach using a biosphere model",
+    "venue": {
+        "name": "Biogeosciences",
+        "id": "https://openalex.org/S13442111",
+        "type": "journal"
+    },
+    "publication_year": 2009,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5088518218",
+            "display_name": "Martin Jung",
+            "orcid": "https://orcid.org/0000-0002-7588-1004"
+        },
+        {
+            "id": "https://openalex.org/A5071721504",
+            "display_name": "Markus Reichstein",
+            "orcid": "https://orcid.org/0000-0001-5736-1112"
+        },
+        {
+            "id": "https://openalex.org/A5080572301",
+            "display_name": "Alberte Bondeau",
+            "orcid": "https://orcid.org/0000-0002-8729-5061"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/bg-6-2001-2009",
+    "abstract": "Abstract. Global, spatially and temporally explicit estimates of carbon and water fluxes derived from empirical up-scaling eddy covariance measurements would constitute a new and possibly powerful data stream to study the variability of the global terrestrial carbon and water cycle. This paper introduces and validates a machine learning approach dedicated to the upscaling of observations from the current global network of eddy covariance towers (FLUXNET). We present a new model TRee Induction ALgorithm (TRIAL) that performs hierarchical stratification of the data set into units where particular multiple regressions for a target variable hold. We propose an ensemble approach (Evolving tRees with RandOm gRowth, ERROR) where the base learning algorithm is perturbed in order to gain a diverse sequence of different model trees which evolves over time. We evaluate the efficiency of the model tree ensemble (MTE) approach using an artificial data set derived from the Lund-Potsdam-Jena managed Land (LPJmL) biosphere model. We aim at reproducing global monthly gross primary production as simulated by LPJmL from 1998\u20132005 using only locations and months where high quality FLUXNET data exist for the training of the model trees. The model trees are trained with the LPJmL land cover and meteorological input data, climate data, and the fraction of absorbed photosynthetic active radiation simulated by LPJmL. Given that we know the \"true result\" in the form of global LPJmL simulations we can effectively study the performance of the MTE upscaling and associated problems of extrapolation capacity. We show that MTE is able to explain 92% of the variability of the global LPJmL GPP simulations. The mean spatial pattern and the seasonal variability of GPP that constitute the largest sources of variance are very well reproduced (96% and 94% of variance explained respectively) while the monthly interannual anomalies which occupy much less variance are less well matched (41% of variance explained). We demonstrate the substantially improved accuracy of MTE over individual model trees in particular for the monthly anomalies and for situations of extrapolation. We estimate that roughly one fifth of the domain is subject to extrapolation while MTE is still able to reproduce 73% of the LPJmL GPP variability here. This paper presents for the first time a benchmark for a global FLUXNET upscaling approach that will be employed in future studies. Although the real world FLUXNET upscaling is more complicated than for a noise free and reduced complexity biosphere model as presented here, our results show that an empirical upscaling from the current FLUXNET network with MTE is feasible and able to extract global patterns of carbon flux variability.",
+    "field": "Empirical upscaling of ecosystem fluxes",
+    "problem": "Generating global carbon flux maps by upscaling sparse and geographically biased FLUXNET data is challenging because it requires extensive extrapolation to unsampled environments, making it difficult to validate the accuracy and uncertainty of the resulting estimates.",
+    "method": "We propose a model tree ensemble machine learning approach to empirically upscale sparse eddy covariance flux measurements from the FLUXNET network for producing global, spatially and temporally explicit maps of terrestrial carbon and water fluxes.",
+    "task": "The task is to validate a machine learning approach for upscaling point-based carbon flux observations to a global scale by testing its ability to reproduce the outputs of a global biosphere model using only data from the model at actual observation sites.",
+    "model": [
+        "LPJmL",
+        "LPJ",
+        "BIOME3"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/fluxnet",
+            "display_name": "FluxNet",
+            "score": 0.8738821148872375
+        },
+        {
+            "id": "https://openalex.org/keywords/biosphere",
+            "display_name": "Biosphere",
+            "score": 0.7078257203102112
+        },
+        {
+            "id": "https://openalex.org/keywords/eddy-covariance",
+            "display_name": "Eddy covariance",
+            "score": 0.6584406495094299
+        },
+        {
+            "id": "https://openalex.org/keywords/extrapolation",
+            "display_name": "Extrapolation",
+            "score": 0.5622532367706299
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.4741505980491638
+        },
+        {
+            "id": "https://openalex.org/keywords/covariance",
+            "display_name": "Covariance",
+            "score": 0.46441975235939026
+        },
+        {
+            "id": "https://openalex.org/keywords/data-assimilation",
+            "display_name": "Data assimilation",
+            "score": 0.4597288966178894
+        },
+        {
+            "id": "https://openalex.org/keywords/tree",
+            "display_name": "Tree (set theory)",
+            "score": 0.43803852796554565
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.41022250056266785
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.31242185831069946
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.2735458016395569
+        },
+        {
+            "id": "https://openalex.org/keywords/statistics",
+            "display_name": "Statistics",
+            "score": 0.17606383562088013
+        },
+        {
+            "id": "https://openalex.org/keywords/ecosystem",
+            "display_name": "Ecosystem",
+            "score": 0.1336875557899475
+        },
+        {
+            "id": "https://openalex.org/keywords/ecology",
+            "display_name": "Ecology",
+            "score": 0.09832456707954407
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.09697270393371582
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2780797852",
+            "wikidata": "https://www.wikidata.org/wiki/Q5463009",
+            "display_name": "FluxNet",
+            "level": 4,
+            "score": 0.8738821148872375
+        },
+        {
+            "id": "https://openalex.org/C107218244",
+            "wikidata": "https://www.wikidata.org/wiki/Q42762",
+            "display_name": "Biosphere",
+            "level": 2,
+            "score": 0.7078257203102112
+        },
+        {
+            "id": "https://openalex.org/C35187779",
+            "wikidata": "https://www.wikidata.org/wiki/Q5336709",
+            "display_name": "Eddy covariance",
+            "level": 3,
+            "score": 0.6584406495094299
+        },
+        {
+            "id": "https://openalex.org/C132459708",
+            "wikidata": "https://www.wikidata.org/wiki/Q744069",
+            "display_name": "Extrapolation",
+            "level": 2,
+            "score": 0.5622532367706299
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.4741505980491638
+        },
+        {
+            "id": "https://openalex.org/C178650346",
+            "wikidata": "https://www.wikidata.org/wiki/Q201984",
+            "display_name": "Covariance",
+            "level": 2,
+            "score": 0.46441975235939026
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.4597288966178894
+        },
+        {
+            "id": "https://openalex.org/C113174947",
+            "wikidata": "https://www.wikidata.org/wiki/Q2859736",
+            "display_name": "Tree (set theory)",
+            "level": 2,
+            "score": 0.43803852796554565
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.41022250056266785
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.31242185831069946
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.2735458016395569
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.17606383562088013
+        },
+        {
+            "id": "https://openalex.org/C110872660",
+            "wikidata": "https://www.wikidata.org/wiki/Q37813",
+            "display_name": "Ecosystem",
+            "level": 2,
+            "score": 0.1336875557899475
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.09832456707954407
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.09697270393371582
+        },
+        {
+            "id": "https://openalex.org/C134306372",
+            "wikidata": "https://www.wikidata.org/wiki/Q7754",
+            "display_name": "Mathematical analysis",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper introduces a novel model tree ensemble (MTE) approach for upscaling FLUXNET observations, validating its performance and extrapolation capacity in a benchmark experiment using a global biosphere model as surrogate truth.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "LPJmL",
+            "source_entity_type": "Source",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "dynamic global vegetation model",
+            "target_entity_type": "SourceType",
+            "paragraph": "LPJ is a dynamic global vegetation model (DGVM) and originates from the BIOME model family (Haxeltine and Prentice, 1996; Prentice et al., 1992). It simulates the distribution of plant functional types, and cycling of water and carbon on a quasi-daily time-step. LPJ has been used in numerous studies on responses and feedbacks of the biosphere in the Earth System (e.g. Brovkin et al., 2004; Lucht et al., 2002; Schaphoff et al., 2006; Sitch et al., 2005), and is probably the most extensively evaluated biosphere model to date. The version of LPJ used here has been adapted to account for a realistic treatment of croplands and grasslands using a crop functional type (CFT) approach (LPJmL, Bondeau et al., 2007).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LPJmL",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "GPP",
+            "target_entity_type": "Variable",
+            "paragraph": "We evaluate the efficiency of the model tree ensemble (MTE) approach using an artificial data set derived from the Lund-Potsdam-Jena managed Land (LPJmL) biosphere model. We aim at reproducing global monthly gross primary production as simulated by LPJmL from 1998-2005 using only locations and months where high quality FLUXNET data exist for the training of the model trees.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LPJmL",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "FAPAR",
+            "target_entity_type": "Variable",
+            "paragraph": "The FAPAR simulated by LPJmL is used as an input for the model tree training because remotely sensed FAPAR constitutes one of the most important information when upscaling carbon fluxes from eddy covariance sites (Jung et al., 2008; Sims et al., 2006).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LPJmL",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.5\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "The model runs at a spatial resolution of 0.5\u00b0, using global data sets of climate, soil type, and land use.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LPJ",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "BIOME model family",
+            "target_entity_type": "Source",
+            "paragraph": "LPJ is a dynamic global vegetation model (DGVM) and originates from the BIOME model family (Haxeltine and Prentice, 1996; Prentice et al., 1992).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LPJmL",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "transient",
+            "target_entity_type": "SimulationType",
+            "paragraph": "The model is then run dynamically for the period 1901\u20132005, responding to CO2, climate, and land use change.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LPJmL",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "equilibrium",
+            "target_entity_type": "SimulationType",
+            "paragraph": "A spinup run of 1000 years is first performed by recycling the first 30 years of the climate data in order to generate equilibrium of carbon pools and distribution of the natural plant functional types (PFTs).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "eddy covariance towers",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "CO2",
+            "target_entity_type": "Variable",
+            "paragraph": "The establishment of a global database of eddy covariance measurements of CO2, H2O and energy, the FLUXNET database (www.fluxdata.org), offers unprecedented opportunities to study the variability of the terrestrial carbon and water cycles.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "eddy covariance towers",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "H2O",
+            "target_entity_type": "Variable",
+            "paragraph": "The establishment of a global database of eddy covariance measurements of CO2, H2O and energy, the FLUXNET database (www.fluxdata.org), offers unprecedented opportunities to study the variability of the terrestrial carbon and water cycles.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "eddy covariance towers",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "energy",
+            "target_entity_type": "Variable",
+            "paragraph": "The establishment of a global database of eddy covariance measurements of CO2, H2O and energy, the FLUXNET database (www.fluxdata.org), offers unprecedented opportunities to study the variability of the terrestrial carbon and water cycles.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "eddy covariance towers",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "NEE",
+            "target_entity_type": "Variable",
+            "paragraph": "Recently, Lasslop et al., in review applied an extended light response curve method for separating measured NEE into GPP and TER using primarily day time NEE data, which complements the standard FLUXNET GPP data from the Reichstein et al., 2005 algorithm that is based on estimating TER using night-time NEE data.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "El Nino Southern Oscillation",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "global",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "This dominant pattern of interannual variability seems to largely represent the carbon cycle response to the El Nino Southern Oscillation (ENSO) climate phenomenon (Jones et al., 2001; Knorr et al., 2007; Qian et al., 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LPJmL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2",
+            "target_entity_type": "Metric",
+            "paragraph": "Performance statistics of the deterministic tree, best tree, and ensemble of 5% of the best trees in Table 2 shows that (1) the model tree(s) are able to accurately reproduce (R2>0.96) the LPJmL GPP in the training data set and (2) that the ERROR algorithm was able to generate a number of hybrid model trees that are superior over the deterministic tree in terms of the fit of the training samples.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LPJmL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "We report two standard statistical measures to assess the quality of the upscaling: the root mean squared error (RMSE), and the coefficient of determination. For the latter we do not compute the squared Pearson correlation coefficient but follow the definition that is also known as modelling efficiency to measure the deviation from the 1:1 line. RMSE=(SSE/n)0.5... Whenever we refer to the \"true\" RMSE or R2 we calculate the measures between the model tree based GPP and LPJmL GPP (truth) over the full modelling domain.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LPJmL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "explained variance",
+            "target_entity_type": "Metric",
+            "paragraph": "The very high accuracy of 92% of explained variance of the global multi-year GPP of LPJmL by the model tree ensemble is surprising given that with the training data set less than 0.1% of the domain was sampled, and even in a geographically clumped way.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "FLUXNET",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "AmeriFlux",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Lund-Potsdam-Jena managed Land",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LPJmL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CRU TS2.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CRU-PIK",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "biosphere model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "dynamic global vegetation model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "DGVM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "BIOME",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Max Planck Institute for Biogeochemistry",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Potsdam Institute for Climate Impact Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "PIK",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Climatic Research Unit",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CRU",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "annual",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "0.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "gross primary production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GPP",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "carbon fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "water fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net ecosystem exchange",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NEE",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total ecosystem respiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TER",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "FAPAR",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fraction of absorbed photosynthetic active radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vapour pressure deficit",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land use",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil properties",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "root mean squared error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "coefficient of determination",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "R\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "modelling efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "principal component analysis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "PCA",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Bayesian Information Criterion",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "BIC",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Akaike's Information Criterion",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "AIC",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "machine learning approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "model tree ensemble",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MTE",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TRee Induction ALgorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TRIAL",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Evolving tRees with RandOm gRowth",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ERROR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "multiple linear regressions",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ensemble methods",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "US",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Indonesia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Jena",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Potsdam",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "northern hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "southern hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "mid-latitudes of the northern hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tundra",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "boreal",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropical regions",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "northern Amazon forest areas",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "boreal Siberia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "El Nino Southern Oscillation",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "ENSO",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "flux tower",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "terrestrial",
+            "entity_type": "Realm"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2142635246",
+        "https://openalex.org/W1986528915",
+        "https://openalex.org/W2145814228",
+        "https://openalex.org/W4212883601",
+        "https://openalex.org/W2911964244",
+        "https://openalex.org/W2028651545",
+        "https://openalex.org/W2158196600",
+        "https://openalex.org/W2124892836",
+        "https://openalex.org/W1605688901",
+        "https://openalex.org/W2056132907",
+        "https://openalex.org/W2135293965",
+        "https://openalex.org/W2086075858",
+        "https://openalex.org/W2113242816",
+        "https://openalex.org/W2096485891",
+        "https://openalex.org/W2162754732",
+        "https://openalex.org/W2156142545",
+        "https://openalex.org/W2113913867",
+        "https://openalex.org/W2051808767",
+        "https://openalex.org/W2101913496",
+        "https://openalex.org/W2123095840",
+        "https://openalex.org/W1532554355",
+        "https://openalex.org/W2100600375",
+        "https://openalex.org/W1997878053",
+        "https://openalex.org/W2072871667",
+        "https://openalex.org/W2154326182",
+        "https://openalex.org/W2107170260",
+        "https://openalex.org/W1985949400",
+        "https://openalex.org/W2036197592",
+        "https://openalex.org/W2128342866",
+        "https://openalex.org/W2610419677",
+        "https://openalex.org/W2182526330",
+        "https://openalex.org/W2004817980",
+        "https://openalex.org/W2162302470",
+        "https://openalex.org/W2124437404",
+        "https://openalex.org/W2098618837",
+        "https://openalex.org/W2000422165",
+        "https://openalex.org/W2168175751",
+        "https://openalex.org/W2120638923",
+        "https://openalex.org/W2108888657",
+        "https://openalex.org/W2134289299",
+        "https://openalex.org/W1497569129",
+        "https://openalex.org/W2105227663",
+        "https://openalex.org/W2073939915",
+        "https://openalex.org/W2136229519",
+        "https://openalex.org/W2142967622",
+        "https://openalex.org/W2165551322",
+        "https://openalex.org/W148291325",
+        "https://openalex.org/W3085162807",
+        "https://openalex.org/W2034384341",
+        "https://openalex.org/W2112076978",
+        "https://openalex.org/W2509512661",
+        "https://openalex.org/W2912934387"
+    ]
+}

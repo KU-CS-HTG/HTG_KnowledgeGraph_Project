@@ -1,0 +1,835 @@
+{
+    "uri": "https://openalex.org/W2102950893",
+    "title": "Improved routines to model the ocean carbonate system: mocsy 2.0",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2015,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5001036805",
+            "display_name": "James C. Orr",
+            "orcid": "https://orcid.org/0000-0002-8707-7080"
+        },
+        {
+            "id": "https://openalex.org/A5030479563",
+            "display_name": "Jean-Marie Epitalon",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-8-485-2015",
+    "abstract": "Abstract. Modelers compute ocean carbonate chemistry often based on code from the Ocean Carbon Cycle Model Intercomparison Project (OCMIP), last revised in 2005. Here we offer improved publicly available Fortran 95 routines to model the ocean carbonate system (mocsy 2.0). Both codes take as input dissolved inorganic carbon CT and total alkalinity AT, tracers that are conservative with respect to mixing and changes in temperature and salinity. Both use the same thermodynamic equilibria to compute surface-ocean pCO2 and simulate air\u2013sea CO2 fluxes, but mocsy 2.0 uses a faster and safer algorithm (SolveSAPHE) to solve the alkalinity-pH equation, applicable even under extreme conditions. The OCMIP code computes only surface pCO2, while mocsy computes all other carbonate system variables throughout the water column. It also avoids three common model approximations: that density is constant, that modeled potential temperature is equal to in situ temperature, and that depth is equal to pressure. Errors from these approximations grow with depth, e.g., reaching 3% or more for pCO2, H+, and \u03a9A at 5000 m. The mocsy package uses the equilibrium constants recommended for best practices. It also offers two new options: (1) a recently reassessed total boron concentration BT that is 4% larger and (2) new K1 and K2 formulations designed to include low-salinity waters. Although these options enhance surface pCO2 by up to 7 \u03bcatm, individually, they should be avoided until (1) best-practice equations for K1 and K2 are reevaluated with the new BT and (2) formulations of K1 and K2 for low salinities are adjusted to be consistent among pH scales. The common modeling practice of neglecting alkalinity contributions from inorganic P and Si leads to substantial biases that could easily be avoided. With standard options for best practices, mocsy agrees with results from the CO2SYS package within 0.005% for the three inorganic carbon species (concentrations differ by less than 0.01 \u03bcmol kg\u22121). Yet by default, mocsy's deep-water fCO2 and pCO2 are many times larger than those from older packages, because they include pressure corrections for K0 and the fugacity coefficient.",
+    "field": "Ocean carbonate system modeling",
+    "problem": "Existing ocean carbonate models rely on outdated code and common simplifying approximations\u2014such as constant density and equating depth with pressure\u2014that introduce significant, depth-dependent errors in variables crucial for studying ocean acidification.",
+    "method": "The paper proposes improved Fortran 95 routines (mocsy 2.0) to model the ocean carbonate system, which use a faster, safer algorithm and recommended constants to compute all carbonate variables from alkalinity and dissolved inorganic carbon while avoiding common error-prone model approximations.",
+    "task": "The task is to present improved and publicly available Fortran routines (mocsy 2.0) to more accurately and efficiently model the ocean carbonate system, addressing common approximations and limitations in older code used by ocean carbon cycle models.",
+    "model": [
+        "mocsy",
+        "OCMIP",
+        "SolveSAPHE",
+        "CO2SYS",
+        "NEMO-PISCES",
+        "seacarb",
+        "csys",
+        "CO2SYS-MATLAB"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/alkalinity",
+            "display_name": "Alkalinity",
+            "score": 0.922257661819458
+        },
+        {
+            "id": "https://openalex.org/keywords/salinity",
+            "display_name": "Salinity",
+            "score": 0.6714226007461548
+        },
+        {
+            "id": "https://openalex.org/keywords/carbonate",
+            "display_name": "Carbonate",
+            "score": 0.6712896227836609
+        },
+        {
+            "id": "https://openalex.org/keywords/fortran",
+            "display_name": "Fortran",
+            "score": 0.6640270948410034
+        },
+        {
+            "id": "https://openalex.org/keywords/temperature-salinity-diagrams",
+            "display_name": "Temperature salinity diagrams",
+            "score": 0.5750632882118225
+        },
+        {
+            "id": "https://openalex.org/keywords/carbon-fibers",
+            "display_name": "Carbon fibers",
+            "score": 0.49822282791137695
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.4437426030635834
+        },
+        {
+            "id": "https://openalex.org/keywords/algorithm",
+            "display_name": "Algorithm",
+            "score": 0.3803720474243164
+        },
+        {
+            "id": "https://openalex.org/keywords/chemistry",
+            "display_name": "Chemistry",
+            "score": 0.31723952293395996
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.3036220967769623
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.29608869552612305
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.24750807881355286
+        },
+        {
+            "id": "https://openalex.org/keywords/organic-chemistry",
+            "display_name": "Organic chemistry",
+            "score": 0.07999131083488464
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C45812177",
+            "wikidata": "https://www.wikidata.org/wiki/Q432016",
+            "display_name": "Alkalinity",
+            "level": 2,
+            "score": 0.922257661819458
+        },
+        {
+            "id": "https://openalex.org/C129513315",
+            "wikidata": "https://www.wikidata.org/wiki/Q179615",
+            "display_name": "Salinity",
+            "level": 2,
+            "score": 0.6714226007461548
+        },
+        {
+            "id": "https://openalex.org/C2780659211",
+            "wikidata": "https://www.wikidata.org/wiki/Q181699",
+            "display_name": "Carbonate",
+            "level": 2,
+            "score": 0.6712896227836609
+        },
+        {
+            "id": "https://openalex.org/C2778241615",
+            "wikidata": "https://www.wikidata.org/wiki/Q83303",
+            "display_name": "Fortran",
+            "level": 2,
+            "score": 0.6640270948410034
+        },
+        {
+            "id": "https://openalex.org/C23715911",
+            "wikidata": "https://www.wikidata.org/wiki/Q7698340",
+            "display_name": "Temperature salinity diagrams",
+            "level": 3,
+            "score": 0.5750632882118225
+        },
+        {
+            "id": "https://openalex.org/C140205800",
+            "wikidata": "https://www.wikidata.org/wiki/Q5860",
+            "display_name": "Carbon fibers",
+            "level": 3,
+            "score": 0.49822282791137695
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.4437426030635834
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.3803720474243164
+        },
+        {
+            "id": "https://openalex.org/C185592680",
+            "wikidata": "https://www.wikidata.org/wiki/Q2329",
+            "display_name": "Chemistry",
+            "level": 0,
+            "score": 0.31723952293395996
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.3036220967769623
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.29608869552612305
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.24750807881355286
+        },
+        {
+            "id": "https://openalex.org/C178790620",
+            "wikidata": "https://www.wikidata.org/wiki/Q11351",
+            "display_name": "Organic chemistry",
+            "level": 1,
+            "score": 0.07999131083488464
+        },
+        {
+            "id": "https://openalex.org/C104779481",
+            "wikidata": "https://www.wikidata.org/wiki/Q50707",
+            "display_name": "Composite number",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C111919701",
+            "wikidata": "https://www.wikidata.org/wiki/Q9135",
+            "display_name": "Operating system",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents mocsy 2.0, an improved Fortran 95 package for modeling the ocean carbonate system that uses a faster algorithm, avoids common physical approximations found in models, and includes full pressure corrections for calculating subsurface carbonate variables, unlike its widely used predecessors.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "SolveSAPHE",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Abstract. Modelers compute ocean carbonate chemistry often based on code from the Ocean Carbon Cycle Model Intercomparison Project (OCMIP), last revised in 2005. Here we offer improved publicly available Fortran 95 routines to model the ocean carbonate system (mocsy 2.0). Both codes take as input dissolved inorganic carbon Cr and total alkalinity Ar, tracers that are conservative with respect to mixing and changes in temperature and salinity. Both use the same thermodynamic equilibria to compute surface-ocean pCO2 and simulate air-sea CO2 fluxes, but mocsy 2.0 uses a faster and safer algorithm (SolveSAPHE) to solve the alkalinity-pH equation, applicable even under extreme conditions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Avoids constant density approximation",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The OCMIP code computes only surface pCO2, while mocsy computes all other carbonate system variables throughout the water column. It also avoids three common model approximations: that density is constant, that modeled potential temperature is equal to in situ temperature, and that depth is equal to pressure.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Avoids potential temperature is equal to in situ temperature approximation",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The OCMIP code computes only surface pCO2, while mocsy computes all other carbonate system variables throughout the water column. It also avoids three common model approximations: that density is constant, that modeled potential temperature is equal to in situ temperature, and that depth is equal to pressure.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Avoids depth is equal to pressure approximation",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The OCMIP code computes only surface pCO2, while mocsy computes all other carbonate system variables throughout the water column. It also avoids three common model approximations: that density is constant, that modeled potential temperature is equal to in situ temperature, and that depth is equal to pressure.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "pCO2",
+            "target_entity_type": "Variable",
+            "paragraph": "The OCMIP code computes only surface pCO2, while mocsy computes all other carbonate system variables throughout the water column.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "pressure corrections for Ko",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Yet by default, mocsy's deep-water f CO2 and pCO2 are many times larger than those from older pack- ages, because they include pressure corrections for Ko and the fugacity coefficient.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "pressure corrections for the fugacity coefficient",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Yet by default, mocsy's deep-water f CO2 and pCO2 are many times larger than those from older pack- ages, because they include pressure corrections for Ko and the fugacity coefficient.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "OCMIP2",
+            "target_entity_type": "Source",
+            "paragraph": "A precursor to mocsy was developed in 2004 and used to project future ocean acidification from simulated CT and AT in the OCMIP2 models (Orr et al., 2005). That precursor code was never released publicly and should not be confused with the preexisting OCMIP2 or OCMIP3 code, which only computes surface pCO2. Its development began by combining the Fortran code for equilibrium constants from OCMIP2 and an iterative algorithm to solve for pH (Maier-Reimer, 1993; Aumont and Bopp, 2006).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 1.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "mocsy 2.0",
+            "target_entity_type": "Source",
+            "paragraph": "Since 2005, this precursor code has continued to be improved. The first public version was denoted as mocsy 1.0 (Orr and Epitalon, 2014). Here along with a revised version of that discussion paper, we provide an improved version of the code, mocsy 2.0.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Weiss (1974) formulation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For its basic calculations, mocsy adopts the recommendations of Dickson et al. (2007). These include (1) the Weiss (1974) formulation describing the solubility of CO2 in seawater (K0); (2) the Lueker et al. (2000) formulations for first and second dissociation constants of carbonic acid (K\u2081 and K2), refits of measurements from Mehrbach et al. (1973) on the NBS scale to the total pH scale; (3) the Millero (1995) formulations for equilibrium constants of boric acid (KB), phosphoric acid (K1P, K2P, K3p), silicic acid (Ksi), and water (Kw), which mocsy converts from the seawater scale to the total scale; (4) the Dickson (1990) formulation for the equilibrium constant for the dissociation of bisulfate (Ks) on the free scale (see above); (5) the Perez and Fraga (1987) formulation for the equilibrium constant for hydrogen fluoride HF (KF) on the total scale; and (6) the Mucci (1983) formulations for the CaCO3 solubility products for aragonite and calcite (KA and Kc).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Lueker et al. (2000) formulations",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For its basic calculations, mocsy adopts the recommendations of Dickson et al. (2007). These include (1) the Weiss (1974) formulation describing the solubility of CO2 in seawater (K0); (2) the Lueker et al. (2000) formulations for first and second dissociation constants of carbonic acid (K\u2081 and K2), refits of measurements from Mehrbach et al. (1973) on the NBS scale to the total pH scale; (3) the Millero (1995) formulations for equilibrium constants of boric acid (KB), phosphoric acid (K1P, K2P, K3p), silicic acid (Ksi), and water (Kw), which mocsy converts from the seawater scale to the total scale; (4) the Dickson (1990) formulation for the equilibrium constant for the dissociation of bisulfate (Ks) on the free scale (see above); (5) the Perez and Fraga (1987) formulation for the equilibrium constant for hydrogen fluoride HF (KF) on the total scale; and (6) the Mucci (1983) formulations for the CaCO3 solubility products for aragonite and calcite (KA and Kc).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Millero (1995) formulations",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For its basic calculations, mocsy adopts the recommendations of Dickson et al. (2007). These include (1) the Weiss (1974) formulation describing the solubility of CO2 in seawater (K0); (2) the Lueker et al. (2000) formulations for first and second dissociation constants of carbonic acid (K\u2081 and K2), refits of measurements from Mehrbach et al. (1973) on the NBS scale to the total pH scale; (3) the Millero (1995) formulations for equilibrium constants of boric acid (KB), phosphoric acid (K1P, K2P, K3p), silicic acid (Ksi), and water (Kw), which mocsy converts from the seawater scale to the total scale; (4) the Dickson (1990) formulation for the equilibrium constant for the dissociation of bisulfate (Ks) on the free scale (see above); (5) the Perez and Fraga (1987) formulation for the equilibrium constant for hydrogen fluoride HF (KF) on the total scale; and (6) the Mucci (1983) formulations for the CaCO3 solubility products for aragonite and calcite (KA and Kc).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Dickson (1990) formulation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For its basic calculations, mocsy adopts the recommendations of Dickson et al. (2007). These include (1) the Weiss (1974) formulation describing the solubility of CO2 in seawater (K0); (2) the Lueker et al. (2000) formulations for first and second dissociation constants of carbonic acid (K\u2081 and K2), refits of measurements from Mehrbach et al. (1973) on the NBS scale to the total pH scale; (3) the Millero (1995) formulations for equilibrium constants of boric acid (KB), phosphoric acid (K1P, K2P, K3p), silicic acid (Ksi), and water (Kw), which mocsy converts from the seawater scale to the total scale; (4) the Dickson (1990) formulation for the equilibrium constant for the dissociation of bisulfate (Ks) on the free scale (see above); (5) the Perez and Fraga (1987) formulation for the equilibrium constant for hydrogen fluoride HF (KF) on the total scale; and (6) the Mucci (1983) formulations for the CaCO3 solubility products for aragonite and calcite (KA and Kc).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Perez and Fraga (1987) formulation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "equilibrium constant for the dissociation of bisulfate (Ks) on the free scale (see above); (5) the Perez and Fraga (1987) formulation for the equilibrium constant for hydrogen fluoride HF (KF) on the total scale; and (6) the Mucci (1983) formulations for the CaCO3 solubility products for aragonite and calcite (KA and Kc).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Mucci (1983) formulations",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "equilibrium constant for the dissociation of bisulfate (Ks) on the free scale (see above); (5) the Perez and Fraga (1987) formulation for the equilibrium constant for hydrogen fluoride HF (KF) on the total scale; and (6) the Mucci (1983) formulations for the CaCO3 solubility products for aragonite and calcite (KA and Kc).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "SolveSAPHE package v1.0.1",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In mocsy 2.0, to solve the total alkalinity-pH equation, we have replaced the classic fixed-point iterative carbonate alkalinity scheme (ICAC) in mocsy 1.0 with a new, universally convergent algorithm from Munhoven (2013). We now call a cubic initialization routine followed by the standard safe- guarded solver routine solve_at_general, both from Munhoven's SolveSAPHE package v1.0.1.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 1.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "ICAC",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In mocsy 2.0, to solve the total alkalinity-pH equation, we have replaced the classic fixed-point iterative carbonate alkalinity scheme (ICAC) in mocsy 1.0 with a new, universally convergent algorithm from Munhoven (2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 2.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "numerical centered-finite-difference solution",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "To do so, mocsy 2.0 replaces the analytical formula for Rf from Frankignoulle (1994) that was used in mocsy 1.0 with a numerical centered-finite-difference solution to compute the derivative.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "mocsy 1.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Frankignoulle (1994) analytical formula",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "To do so, mocsy 2.0 replaces the analytical formula for Rf from Frankignoulle (1994) that was used in mocsy 1.0 with a numerical centered-finite-difference solution to compute the derivative.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "seacarb",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "seacarb 3.0.6",
+            "target_entity_type": "Source",
+            "paragraph": "The same pressure corrections were recently included in a second package, seacarb 3.0.6, and its results compare well with mocsy 2.0 (Orr et al., 2015, Tables 9 and 10).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Improved routines to model the ocean carbonate system: mocsy 2.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "mocsy 2.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "mocsy 1.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "seacarb",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "seacarb 3.0.6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CO2SYS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CO2SYS\u2013MATLAB",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OCMIP model code",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NEMO-PISCES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GLODAP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "World Ocean Atlas 2009",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GLODAP-WOA2009",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NEMO",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "PISCES",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "SolveSAPHE",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "iterative carbonate alkalinity scheme (ICAC)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Newton-Raphson method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "numerical centered-finite-difference solution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Weiss (1974) formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Lueker et al. (2000) formulations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Millero (1995) formulations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Dickson (1990) formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Perez and Fraga (1987) formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Mucci (1983) formulations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Frankignoulle (1994) analytical formula for Rf",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Lee et al. (2010) formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Uppstr\u00f6m (1974) formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Millero (2010) formulations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Dickson and Riley (1979) formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "fixed Redfield ratio",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Ocean Carbon Cycle Model Intercomparison Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "OCMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "OCMIP2",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "OCMIP3",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "NOCES",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CARBOOCEAN",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "MACROES",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CARBOCHANGE",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "MedSeA",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "LSCE/IPSL, Laboratoire des Sciences du Climat et de l'Environnement, CEA-CNRS-UVSQ",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Geoscientific Programming Services",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Copernicus Publications",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Geosciences Union",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "dissolved inorganic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total alkalinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pCO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air-sea CO2 fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pH",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "H+",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aragonite saturation state",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "calcite saturation state",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total boron concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "first and second dissociation constants of carbonic acid",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fugacity coefficient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "f CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total dissolved inorganic phosphorus",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total dissolved inorganic silicon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "potential temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Revelle factor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO2 solubility",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "borate alkalinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "carbonate alkalinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "water alkalinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aragonite saturation horizon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "interhemispheric north-to-south oceanic transport of carbon",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Arabian Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mediterranean Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "deep Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ob estuary",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indian Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "1\u00b0 x 1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2163256366",
+        "https://openalex.org/W2014051843",
+        "https://openalex.org/W1640419052",
+        "https://openalex.org/W2060012482",
+        "https://openalex.org/W2058648791",
+        "https://openalex.org/W2070050109",
+        "https://openalex.org/W1174483205",
+        "https://openalex.org/W1978169584",
+        "https://openalex.org/W6607093360",
+        "https://openalex.org/W2162013661",
+        "https://openalex.org/W1717270090",
+        "https://openalex.org/W2143564173",
+        "https://openalex.org/W2037099726",
+        "https://openalex.org/W1609491364",
+        "https://openalex.org/W1970231993",
+        "https://openalex.org/W1986635986",
+        "https://openalex.org/W2000753477",
+        "https://openalex.org/W2125776675",
+        "https://openalex.org/W2006113617",
+        "https://openalex.org/W2081006552",
+        "https://openalex.org/W2049078437",
+        "https://openalex.org/W2000244338",
+        "https://openalex.org/W2330059339",
+        "https://openalex.org/W1500380523",
+        "https://openalex.org/W2172060545",
+        "https://openalex.org/W3105117577",
+        "https://openalex.org/W2917331655",
+        "https://openalex.org/W2113297575",
+        "https://openalex.org/W4254135029",
+        "https://openalex.org/W2120961536",
+        "https://openalex.org/W2044833114",
+        "https://openalex.org/W2093912806",
+        "https://openalex.org/W2065611479",
+        "https://openalex.org/W2081071095",
+        "https://openalex.org/W2055180988",
+        "https://openalex.org/W4237778896",
+        "https://openalex.org/W2018516735",
+        "https://openalex.org/W2067841165",
+        "https://openalex.org/W2802403280",
+        "https://openalex.org/W4285719527",
+        "https://openalex.org/W344835664",
+        "https://openalex.org/W1501374473"
+    ]
+}

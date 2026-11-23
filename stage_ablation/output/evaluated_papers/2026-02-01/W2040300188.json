@@ -1,0 +1,913 @@
+{
+    "uri": "https://openalex.org/W2040300188",
+    "title": "Filling the gaps in meteorological continuous data measured at FLUXNET sites with ERA-Interim reanalysis",
+    "venue": {
+        "name": "Earth system science data",
+        "id": "https://openalex.org/S106909380",
+        "type": "journal"
+    },
+    "publication_year": 2015,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5055893241",
+            "display_name": "Nicolas Vuichard",
+            "orcid": "https://orcid.org/0000-0002-3397-7948"
+        },
+        {
+            "id": "https://openalex.org/A5057296333",
+            "display_name": "Dario Papale",
+            "orcid": "https://orcid.org/0000-0001-5170-8648"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/essd-7-157-2015",
+    "abstract": "Abstract. Exchanges of carbon, water and energy between the land surface and the atmosphere are monitored by eddy covariance technique at the ecosystem level. Currently, the FLUXNET database contains more than 500 registered sites, and up to 250 of them share data (free fair-use data set). Many modelling groups use the FLUXNET data set for evaluating ecosystem models' performance, but this requires uninterrupted time series for the meteorological variables used as input. Because original in situ data often contain gaps, from very short (few hours) up to relatively long (some months) ones, we develop a new and robust method for filling the gaps in meteorological data measured at site level. Our approach has the benefit of making use of continuous data available globally (ERA-Interim) and a high temporal resolution spanning from 1989 to today. These data are, however, not measured at site level, and for this reason a method to downscale and correct the ERA-Interim data is needed. We apply this method to the level 4 data (L4) from the La Thuile collection, freely available after registration under a fair-use policy. The performance of the developed method varies across sites and is also function of the meteorological variable. On average over all sites, applying the bias correction method to the ERA-Interim data reduced the mismatch with the in situ data by 10 to 36 %, depending on the meteorological variable considered. In comparison to the internal variability of the in situ data, the root mean square error (RMSE) between the in situ data and the unbiased ERA-I (ERA-Interim) data remains relatively large (on average over all sites, from 27 to 76 % of the standard deviation of in situ data, depending on the meteorological variable considered). The performance of the method remains poor for the wind speed field, in particular regarding its capacity to conserve a standard deviation similar to the one measured at FLUXNET stations. The ERA-Interim reanalysis data de-biased at FLUXNET sites can be downloaded from the PANGAEA data centre (http://doi.pangaea.de/10.1594/PANGAEA.838234).",
+    "field": "Biometeorology",
+    "problem": "The use of FLUXNET data to evaluate ecosystem models is hindered by gaps in in-situ meteorological measurements, while continuous global reanalysis data is not site-specific and has biases that must be downscaled and corrected before it can be used for gap-filling.",
+    "method": "We propose a method using linear regression to downscale and bias-correct continuous ERA-Interim reanalysis data for filling gaps in meteorological time series measured at FLUXNET sites.",
+    "task": "The task is to develop and evaluate a robust method for filling gaps in meteorological data measured at FLUXNET sites by downscaling and bias-correcting continuous global ERA-Interim reanalysis data to create uninterrupted time series for ecosystem models.",
+    "model": [
+        "ERA-Interim",
+        "ORCHIDEE",
+        "CLM",
+        "CTESSEL",
+        "CHTESSEL",
+        "JULES",
+        "SAFRAN",
+        "REMO",
+        "ERA15",
+        "ERA-Interim/Land"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/fluxnet",
+            "display_name": "FluxNet",
+            "score": 0.9683759212493896
+        },
+        {
+            "id": "https://openalex.org/keywords/interim",
+            "display_name": "Interim",
+            "score": 0.780021071434021
+        },
+        {
+            "id": "https://openalex.org/keywords/eddy-covariance",
+            "display_name": "Eddy covariance",
+            "score": 0.6840789318084717
+        },
+        {
+            "id": "https://openalex.org/keywords/data-set",
+            "display_name": "Data set",
+            "score": 0.5981324911117554
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.5765643119812012
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.464072048664093
+        },
+        {
+            "id": "https://openalex.org/keywords/mean-squared-error",
+            "display_name": "Mean squared error",
+            "score": 0.45155489444732666
+        },
+        {
+            "id": "https://openalex.org/keywords/data-assimilation",
+            "display_name": "Data assimilation",
+            "score": 0.43235689401626587
+        },
+        {
+            "id": "https://openalex.org/keywords/variable",
+            "display_name": "Variable (mathematics)",
+            "score": 0.4212521016597748
+        },
+        {
+            "id": "https://openalex.org/keywords/remote-sensing",
+            "display_name": "Remote sensing",
+            "score": 0.4184546172618866
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.34279173612594604
+        },
+        {
+            "id": "https://openalex.org/keywords/statistics",
+            "display_name": "Statistics",
+            "score": 0.24190348386764526
+        },
+        {
+            "id": "https://openalex.org/keywords/ecosystem",
+            "display_name": "Ecosystem",
+            "score": 0.1831064224243164
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.1771281659603119
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.17419269680976868
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2780797852",
+            "wikidata": "https://www.wikidata.org/wiki/Q5463009",
+            "display_name": "FluxNet",
+            "level": 4,
+            "score": 0.9683759212493896
+        },
+        {
+            "id": "https://openalex.org/C2776957806",
+            "wikidata": "https://www.wikidata.org/wiki/Q4895105",
+            "display_name": "Interim",
+            "level": 2,
+            "score": 0.780021071434021
+        },
+        {
+            "id": "https://openalex.org/C35187779",
+            "wikidata": "https://www.wikidata.org/wiki/Q5336709",
+            "display_name": "Eddy covariance",
+            "level": 3,
+            "score": 0.6840789318084717
+        },
+        {
+            "id": "https://openalex.org/C58489278",
+            "wikidata": "https://www.wikidata.org/wiki/Q1172284",
+            "display_name": "Data set",
+            "level": 2,
+            "score": 0.5981324911117554
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5765643119812012
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.464072048664093
+        },
+        {
+            "id": "https://openalex.org/C139945424",
+            "wikidata": "https://www.wikidata.org/wiki/Q1940696",
+            "display_name": "Mean squared error",
+            "level": 2,
+            "score": 0.45155489444732666
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.43235689401626587
+        },
+        {
+            "id": "https://openalex.org/C182365436",
+            "wikidata": "https://www.wikidata.org/wiki/Q50701",
+            "display_name": "Variable (mathematics)",
+            "level": 2,
+            "score": 0.4212521016597748
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.4184546172618866
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.34279173612594604
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.24190348386764526
+        },
+        {
+            "id": "https://openalex.org/C110872660",
+            "wikidata": "https://www.wikidata.org/wiki/Q37813",
+            "display_name": "Ecosystem",
+            "level": 2,
+            "score": 0.1831064224243164
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.1771281659603119
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.17419269680976868
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C166957645",
+            "wikidata": "https://www.wikidata.org/wiki/Q23498",
+            "display_name": "Archaeology",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C134306372",
+            "wikidata": "https://www.wikidata.org/wiki/Q7754",
+            "display_name": "Mathematical analysis",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper develops a robust method to fill gaps in meteorological data from FLUXNET sites by downscaling and applying a site-specific bias correction to the global ERA-Interim reanalysis dataset, providing a continuous time series for ecosystem modeling.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square error",
+            "target_entity_type": "Metric",
+            "paragraph": "In comparison to the internal variability of the in situ data, the root mean square error (RMSE) between the in situ data and the unbiased ERA-I (ERA-Interim) data remains relatively large (on average over all sites, from 27 to 76 % of the standard deviation of in situ data, depending on the meteorological variable considered).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "error_reduction",
+            "target_entity_type": "Metric",
+            "paragraph": "The error reduction enables to know how the bias correction applied to the ERA-I data contributes to improving the fit to the in situ data. An error reduction of 50 % means that the bias correction cancels 50 % of the initial model-data mismatch.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "relative_error",
+            "target_entity_type": "Metric",
+            "paragraph": "The relative error shows how the root mean square error between the in situ data and the unbiased ERA-I data compares with the standard deviation of the in situ data. It helps to compare the error to the internal variability of the in situ data.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "standard deviation",
+            "target_entity_type": "Metric",
+            "paragraph": "We also evaluate how the standard deviation of the ERA-Interim products before and after correction differs from the one of the FLUXNET data set by calculating normalized standard deviations (SD(E)/SD(FE) and SD(Ed)/SD(FE), respectively) in order to evaluate how much the data variability is maintained.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "Lastly, we specifically evaluate the diurnal cycle interpolated from the 3-hourly de-biased meteorological fields of the ERA-I data set. To this end, two new time series have been constructed from F and Ed by removing their daily mean values. The correlation between these two \u201canomaly\u201d time series is calculated at each site, as is the standard deviation of the time series inferred from the ERA-I data set, normalized to the standard deviation of the one inferred from the FLUXNET data set.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "normalized standard deviation",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 2 represents the normalized standard deviation (NSD) of the ERA-I products (Ta, VPD, WS, Rg and LWin) before and after the bias correction, and, consequently, it gives insights into how the de-biasing procedure impacts the internal variability of the meteorological fields",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "regular grid (0.7\u00b0)",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The ERA-Interim (ERA-I) is the latest reanalysis (Dee et al., 2011) from the European Centre for Medium-range Weather Forecast (ECMWF). It is available from 1989 to the present, on a regular grid (0.7\u00b0), at a 3-hourly time resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "3-hourly time resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The ERA-Interim (ERA-I) is the latest reanalysis (Dee et al., 2011) from the European Centre for Medium-range Weather Forecast (ECMWF). It is available from 1989 to the present, on a regular grid (0.7\u00b0), at a 3-hourly time resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECMWF ERA15",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1x1 degree grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Krinner et al. (2005) used the ECMWF ERA15 1\u00d71 degree reanalysis for gapfilling the incoming short-wave radiation and weather stations nearby the FLUXNET sites for the other meteorological fields needed for running the ORCHIDEE model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "FLUXNET",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ERA-Interim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Laboratoire des Sciences du Climat et de l'Environnement, LSCE/IPSL \u2013 UMR CEA/CNRS/UVSQ 8212",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Department for Innovation in Biological, Agro-food and Forest systems (DIBAF), University of Tuscia",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Euro-Mediterranean Center on Climate Change (CMCC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "root mean square error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "PANGAEA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Euroflux",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "AmeriFlux",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "AsiaFlux",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "OzFlux",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Integrated Carbon Observation System (ICOS)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "National Ecological Observatory Network (NEON)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "carbon dioxide",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "water vapour",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "energy flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "insolation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "photosynthetic capacity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "canopy structure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ecosystem functional type",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Organising Carbon and Hydrology In Dynamic Ecosystems (ORCHIDEE)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "sensible heat",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latent heat",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net ecosystem exchange (NEE)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "community land model (CLM)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "gross primary productivity (GPP)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Carbon Tiled ECMWF Scheme for Surface Exchanges over Land (CTESSEL)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Carbon Hydrology Tiled ECMWF Scheme for Surface Exchanges over Land (CHT-ESSEL)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "total ecosystem respiration (TER)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Joint UK Land Environment Simulator (JULES)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SAFRAN (Syst\u00e8me d'Analyse Fournissant des Renseignements Atmosph\u00e9riques \u00e0 la Neige)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "REMO (Regional Model)",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "ECMWF ERA15",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1x1 degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "incoming short-wave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Global Precipitation Climatology Project (GPCP)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "La Thuile collection",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vapour pressure deficit",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "incoming longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Half-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "European Centre for Medium-range Weather Forecast (ECMWF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "0.7\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "3-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "temperature at 2 m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface solar radiation downwards",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dew point temperature at 2 m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "U and V components of the wind speed at 10 m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface thermal radiation downwards",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vapour pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "saturation vapour pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Magnus-Tetens relationship",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "linear regression",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Global Soil Wetness Project (GSWP)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "error reduction",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "relative error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "normalized standard deviations",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "AT-Neu",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "IT-LMa",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "IT-Col",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "IT-Pia",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "ES-ES1",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "ES-ES2",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "RU-Ha2",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "CA-NS3",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "BW-Ghg",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "BW-Ghm",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "BR-Sa3",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "ID-Pag",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "US-Wi7",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "US-Wi8",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "NL-Haa",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "US-Wi4",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "US-Wi5",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "CA-NS1-7",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SK-Tat",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "US-SP1",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "AU-How",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "AU-Tum",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "AU-Wac",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "CZ-BK1",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "atmospheric pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "turbulent fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latent and sensible heat fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "US Department of Energy, Biological and Environmental Research, Terrestrial Carbon Program",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "AfriFlux",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CarboAfrica",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CarboEuropeIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CarboItaly",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CarboMont",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ChinaFlux",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Fluxnet-Canada",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CFCAS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NSERC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "BIOCAP",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Environment Canada",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NRCan",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GreenGrass",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "KoFlux",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "LBA",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "NECC",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "TCOS-Siberia",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "USCCC",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "FAO-GTOS-TCO",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ILEAPS",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Max Planck Institute for Biogeochemistry",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Science Foundation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Universit\u00e9 Laval",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "US Department of Energy",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Berkeley Water Center, Lawrence Berkeley National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Microsoft Research eScience",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Oak Ridge National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of California - Berkeley",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Virginia",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GeoCarbon EU project",
+            "entity_type": "Project"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2022548072",
+        "https://openalex.org/W1984721312",
+        "https://openalex.org/W2015218468",
+        "https://openalex.org/W2117324426",
+        "https://openalex.org/W2096409528",
+        "https://openalex.org/W2338049369",
+        "https://openalex.org/W2104642399",
+        "https://openalex.org/W2111997682",
+        "https://openalex.org/W2052648234",
+        "https://openalex.org/W2159386641",
+        "https://openalex.org/W1513503123",
+        "https://openalex.org/W2121745948",
+        "https://openalex.org/W2073219262",
+        "https://openalex.org/W2093073000",
+        "https://openalex.org/W2017376952",
+        "https://openalex.org/W2119895530",
+        "https://openalex.org/W1979723077",
+        "https://openalex.org/W2123855284",
+        "https://openalex.org/W2034634405",
+        "https://openalex.org/W2084659566",
+        "https://openalex.org/W2069937280",
+        "https://openalex.org/W2209265260",
+        "https://openalex.org/W2132406085",
+        "https://openalex.org/W2019751319",
+        "https://openalex.org/W2152512881",
+        "https://openalex.org/W2108506605",
+        "https://openalex.org/W2013527739",
+        "https://openalex.org/W2096309448"
+    ]
+}

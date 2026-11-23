@@ -1,0 +1,679 @@
+{
+    "uri": "https://openalex.org/W7131072623",
+    "title": "A foundation-model GeoAI framework for continuous heat and health risk mapping",
+    "venue": {
+        "name": "Frontiers in Environmental Science",
+        "id": "https://openalex.org/S2596204836",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5012141634",
+            "display_name": "Daniel P. Johnson",
+            "orcid": "https://orcid.org/0000-0002-9949-7584"
+        }
+    ],
+    "doi": "https://doi.org/10.3389/fenvs.2026.1770260",
+    "abstract": "Introduction Urban heat represents one of the most critical and inequitable manifestations of climate change, with mounting impacts on human health, energy systems, and urban sustainability. Bridging the gap between observation and inference requires scalable approaches that enable all-weather, continuous urban heat mapping at decision-relevant resolutions. Methods This study introduces a multimodal Geospatial Artificial Intelligence (GeoAI) pipeline that fuses atmospheric reanalysis and Earth observation to generate hourly, super-resolved land-surface temperature (LST) estimates for urban heat and health-risk assessment. The pipeline integrates three complementary foundation models\u2014Prithvi-WxC, Prithvi-EO, and Granite-LST\u2014to capture interactions between atmospheric dynamics and surface morphology. The system is implemented over Indianapolis, Indiana. Results The pipeline produces continuous temperature fields at 10\u201330 m resolution with sub-2 \u00b0C error, reproducing realistic diurnal heat-island dynamics across the Indianapolis study area. The fused model captures fine-scale thermal heterogeneity driven by impervious surface fraction, vegetation cover, and building morphology, resolving intra-urban temperature gradients that single-source products miss. Hourly temporal continuity enables characterization of heat exposure timing and duration, including nocturnal heat retention in historically underserved neighborhoods. Discussion Beyond technical performance, the framework demonstrates how foundation-model fusion can bridge environmental monitoring and health analytics, offering a scalable tool for exposure mapping, early-warning systems, and equitable climate adaptation. This work establishes a reproducible blueprint for AI-enabled urban climate twins, advancing the integration of environmental intelligence into public health resilience planning.",
+    "field": "Geospatial Artificial Intelligence",
+    "problem": "Current urban heat monitoring is constrained by the spatial-temporal trade-offs of satellite data and fragmented, city-specific models, preventing the generation of continuous, high-resolution temperature fields required for effective health risk assessment.",
+    "method": "This study introduces a multimodal GeoAI pipeline that fuses atmospheric reanalysis and Earth observation using three complementary foundation models to generate hourly, super-resolved land-surface temperature estimates for urban heat-risk assessment.",
+    "task": "The task is to develop a multimodal GeoAI framework using foundation models to fuse atmospheric and satellite data for generating continuous, high-resolution, hourly land-surface temperature maps for urban heat and health risk assessment.",
+    "model": [
+        "Prithvi-WxC",
+        "Prithvi-EO",
+        "Granite-LST",
+        "SatCLIP"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/urban-heat-island",
+            "display_name": "Urban heat island",
+            "score": 0.6413000226020813
+        },
+        {
+            "id": "https://openalex.org/keywords/microclimate",
+            "display_name": "Microclimate",
+            "score": 0.47040000557899475
+        },
+        {
+            "id": "https://openalex.org/keywords/terrain",
+            "display_name": "Terrain",
+            "score": 0.46650001406669617
+        },
+        {
+            "id": "https://openalex.org/keywords/geospatial-analysis",
+            "display_name": "Geospatial analysis",
+            "score": 0.4634000062942505
+        },
+        {
+            "id": "https://openalex.org/keywords/pipeline",
+            "display_name": "Pipeline (software)",
+            "score": 0.37959998846054077
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.37299999594688416
+        },
+        {
+            "id": "https://openalex.org/keywords/resilience",
+            "display_name": "Resilience (materials science)",
+            "score": 0.35589998960494995
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.34769999980926514
+        },
+        {
+            "id": "https://openalex.org/keywords/scalability",
+            "display_name": "Scalability",
+            "score": 0.33169999718666077
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C54005896",
+            "wikidata": "https://www.wikidata.org/wiki/Q215712",
+            "display_name": "Urban heat island",
+            "level": 2,
+            "score": 0.6413000226020813
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5918999910354614
+        },
+        {
+            "id": "https://openalex.org/C32957820",
+            "wikidata": "https://www.wikidata.org/wiki/Q215108",
+            "display_name": "Microclimate",
+            "level": 2,
+            "score": 0.47040000557899475
+        },
+        {
+            "id": "https://openalex.org/C161840515",
+            "wikidata": "https://www.wikidata.org/wiki/Q186131",
+            "display_name": "Terrain",
+            "level": 2,
+            "score": 0.46650001406669617
+        },
+        {
+            "id": "https://openalex.org/C9770341",
+            "wikidata": "https://www.wikidata.org/wiki/Q1938983",
+            "display_name": "Geospatial analysis",
+            "level": 2,
+            "score": 0.4634000062942505
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.45980000495910645
+        },
+        {
+            "id": "https://openalex.org/C43521106",
+            "wikidata": "https://www.wikidata.org/wiki/Q2165493",
+            "display_name": "Pipeline (software)",
+            "level": 2,
+            "score": 0.37959998846054077
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.37299999594688416
+        },
+        {
+            "id": "https://openalex.org/C2779585090",
+            "wikidata": "https://www.wikidata.org/wiki/Q3457762",
+            "display_name": "Resilience (materials science)",
+            "level": 2,
+            "score": 0.35589998960494995
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3555999994277954
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.34769999980926514
+        },
+        {
+            "id": "https://openalex.org/C48044578",
+            "wikidata": "https://www.wikidata.org/wiki/Q727490",
+            "display_name": "Scalability",
+            "level": 2,
+            "score": 0.33169999718666077
+        },
+        {
+            "id": "https://openalex.org/C18762648",
+            "wikidata": "https://www.wikidata.org/wiki/Q42213",
+            "display_name": "Work (physics)",
+            "level": 2,
+            "score": 0.3310000002384186
+        },
+        {
+            "id": "https://openalex.org/C174348530",
+            "wikidata": "https://www.wikidata.org/wiki/Q188635",
+            "display_name": "Bridging (networking)",
+            "level": 2,
+            "score": 0.3208000063896179
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.32010000944137573
+        },
+        {
+            "id": "https://openalex.org/C107826830",
+            "wikidata": "https://www.wikidata.org/wiki/Q929380",
+            "display_name": "Environmental resource management",
+            "level": 1,
+            "score": 0.3163999915122986
+        },
+        {
+            "id": "https://openalex.org/C155911762",
+            "wikidata": "https://www.wikidata.org/wiki/Q422321",
+            "display_name": "Blueprint",
+            "level": 2,
+            "score": 0.30880001187324524
+        },
+        {
+            "id": "https://openalex.org/C2776214188",
+            "wikidata": "https://www.wikidata.org/wiki/Q408386",
+            "display_name": "Inference",
+            "level": 2,
+            "score": 0.29010000824928284
+        },
+        {
+            "id": "https://openalex.org/C33954974",
+            "wikidata": "https://www.wikidata.org/wiki/Q486494",
+            "display_name": "Sensor fusion",
+            "level": 2,
+            "score": 0.28850001096725464
+        },
+        {
+            "id": "https://openalex.org/C2668921",
+            "wikidata": "https://www.wikidata.org/wiki/Q1434713",
+            "display_name": "Impervious surface",
+            "level": 2,
+            "score": 0.27619999647140503
+        },
+        {
+            "id": "https://openalex.org/C2780039742",
+            "wikidata": "https://www.wikidata.org/wiki/Q7900159",
+            "display_name": "Urban resilience",
+            "level": 3,
+            "score": 0.27570000290870667
+        },
+        {
+            "id": "https://openalex.org/C2778368411",
+            "wikidata": "https://www.wikidata.org/wiki/Q24662",
+            "display_name": "Retrofitting",
+            "level": 2,
+            "score": 0.27459999918937683
+        },
+        {
+            "id": "https://openalex.org/C50897621",
+            "wikidata": "https://www.wikidata.org/wiki/Q2665508",
+            "display_name": "Hybrid system",
+            "level": 2,
+            "score": 0.2721000015735626
+        },
+        {
+            "id": "https://openalex.org/C539469273",
+            "wikidata": "https://www.wikidata.org/wiki/Q1749732",
+            "display_name": "Environmental monitoring",
+            "level": 2,
+            "score": 0.2651999890804291
+        },
+        {
+            "id": "https://openalex.org/C9652623",
+            "wikidata": "https://www.wikidata.org/wiki/Q190109",
+            "display_name": "Field (mathematics)",
+            "level": 2,
+            "score": 0.26339998841285706
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.26249998807907104
+        },
+        {
+            "id": "https://openalex.org/C2777489503",
+            "wikidata": "https://www.wikidata.org/wiki/Q7698936",
+            "display_name": "Temporal scales",
+            "level": 2,
+            "score": 0.25690001249313354
+        },
+        {
+            "id": "https://openalex.org/C2776902269",
+            "wikidata": "https://www.wikidata.org/wiki/Q5165493",
+            "display_name": "Continuous monitoring",
+            "level": 2,
+            "score": 0.25119999051094055
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "PrithviWxC-PrithviEO-GraniteLST",
+            "observational_dataset": "four weather ground stations",
+            "evaluation_metric": "RMSE",
+            "result": "1.6 \u00b0C-1.9 \u00b0C"
+        },
+        {
+            "model": "PrithviWxC-PrithviEO-GraniteLST",
+            "observational_dataset": "four weather ground stations",
+            "evaluation_metric": "mean bias",
+            "result": "-0.4 \u00b0C"
+        }
+    ],
+    "innovation": "This paper presents a multimodal GeoAI framework that integrates three foundation models to fuse atmospheric and Earth observation data, generating continuous, hourly, super-resolved land-surface temperature maps for urban heat and health risk assessment.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "PrithviWxC-PrithviEO-GraniteLST GeoAI pipeline",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "sub-2 \u00b0C error",
+            "target_entity_type": "Metric",
+            "paragraph": "Results: The pipeline produces continuous temperature fields at 10-30 m resolution with sub-2 \u00b0C error, reproducing realistic diurnal heat-island dynamics across the Indianapolis study area.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "extreme heat",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Indianapolis",
+            "target_entity_type": "City",
+            "paragraph": "Indianapolis, Indiana, represents an archetypal mid-sized U.S. city facing an intensifying threat from extreme heat under climate change.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "urban heat islands",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Indianapolis",
+            "target_entity_type": "City",
+            "paragraph": "Results: The pipeline produces continuous temperature fields at 10\u201330 m resolution with sub-2 \u00b0C error, reproducing realistic diurnal heat-island dynamics across the Indianapolis study area.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heatwaves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Indianapolis",
+            "target_entity_type": "City",
+            "paragraph": "The region experiences increasing frequency and duration of heatwaves, with urban heat islands producing intra-city temperature differences exceeding 5 \u00b0C between dense commercial cores and vegetated suburbs (Liang and Weng, 2008). These spatial and temporal variations in surface temperature strongly influence local exposure patterns and contribute to health disparities observed in emergency-department visits and heat-related hospitalizations (Beeharry et al., 2025; Ho et al., 2024). Despite abundant meteorological and remote-sensing data, the ability to monitor heat exposure continuously at high spatial and temporal resolution remains limited. Satellite sensors such as MODIS and Landsat offer complementary strengths (temporal coverage versus spatial fidelity), but their combined cadence yields at most a few clear-sky observations per week. This gap constrains epidemiological studies and real-time decision support. To help address this limitation, the PrithviWxC-PrithviEO-GraniteLST GeoAI pipeline was implemented, which fuses foundation-model representations of atmospheric and surface conditions to generate hourly, super-resolved LST estimates for the Indianapolis region.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Prithvi-WxC",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "1. Prithvi-WxC (Schmude et al., 2024) (Weather x Climate Foundation Model): Provides hourly (variable temporal resolution) latent representations of atmospheric state variables, temperature, humidity, wind, and radiation, derived from reanalysis and numerical weather prediction fields.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Prithvi-WxC",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "humidity",
+            "target_entity_type": "Variable",
+            "paragraph": "1. Prithvi-WxC (Schmude et al., 2024) (Weather x Climate Foundation Model): Provides hourly (variable temporal resolution) latent representations of atmospheric state variables, temperature, humidity, wind, and radiation, derived from reanalysis and numerical weather prediction fields.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Prithvi-WxC",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "wind",
+            "target_entity_type": "Variable",
+            "paragraph": "1. Prithvi-WxC (Schmude et al., 2024) (Weather x Climate Foundation Model): Provides hourly (variable temporal resolution) latent representations of atmospheric state variables, temperature, humidity, wind, and radiation, derived from reanalysis and numerical weather prediction fields.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Prithvi-WxC",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "radiation",
+            "target_entity_type": "Variable",
+            "paragraph": "1. Prithvi-WxC (Schmude et al., 2024) (Weather x Climate Foundation Model): Provides hourly (variable temporal resolution) latent representations of atmospheric state variables, temperature, humidity, wind, and radiation, derived from reanalysis and numerical weather prediction fields.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Prithvi-EO",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "spatial texture",
+            "target_entity_type": "Variable",
+            "paragraph": "2. Prithvi-EO (Szwarcman et al., 2025) (Earth Observation Foundation Model): Encodes spatial texture, surface composition, and urban morphology from Harmonized Landsat-Sentinel (HLS) and ancillary layers such as imperviousness, NDVI, and canopy height.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Prithvi-EO",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface composition",
+            "target_entity_type": "Variable",
+            "paragraph": "2. Prithvi-EO (Szwarcman et al., 2025) (Earth Observation Foundation Model): Encodes spatial texture, surface composition, and urban morphology from Harmonized Landsat-Sentinel (HLS) and ancillary layers such as imperviousness, NDVI, and canopy height.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Prithvi-EO",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "urban morphology",
+            "target_entity_type": "Variable",
+            "paragraph": "2. Prithvi-EO (Szwarcman et al., 2025) (Earth Observation Foundation Model): Encodes spatial texture, surface composition, and urban morphology from Harmonized Landsat-Sentinel (HLS) and ancillary layers such as imperviousness, NDVI, and canopy height.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Prithvi-EO",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "imperviousness",
+            "target_entity_type": "Variable",
+            "paragraph": "2. Prithvi-EO (Szwarcman et al., 2025) (Earth Observation Foundation Model): Encodes spatial texture, surface composition, and urban morphology from Harmonized Landsat-Sentinel (HLS) and ancillary layers such as imperviousness, NDVI, and canopy height.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Prithvi-EO",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "NDVI",
+            "target_entity_type": "Variable",
+            "paragraph": "2. Prithvi-EO (Szwarcman et al., 2025) (Earth Observation Foundation Model): Encodes spatial texture, surface composition, and urban morphology from Harmonized Landsat-Sentinel (HLS) and ancillary layers such as imperviousness, NDVI, and canopy height.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Prithvi-EO",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "canopy height",
+            "target_entity_type": "Variable",
+            "paragraph": "2. Prithvi-EO (Szwarcman et al., 2025) (Earth Observation Foundation Model): Encodes spatial texture, surface composition, and urban morphology from Harmonized Landsat-Sentinel (HLS) and ancillary layers such as imperviousness, NDVI, and canopy height.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Granite-LST",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "land-surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "3. Granite-LST (Bhamjee et al., 2024): an Earth observation foundation model trained on urban heat island data, serves as the downstream predictor, converting integrated latent features into continuous LST fields at sub-kilometer resolution. Outputs can be subsequently super-resolved to \u224810 m using a lightweight U-Net upsampling head.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PrithviWxC-PrithviEO-GraniteLST pipeline",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "Validation against four weather ground stations yielded RMSE = 1.6 \u00b0C-1.9 \u00b0C and mean bias = -0.4 \u00b0C, confirming quantitative agreement with surface observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PrithviWxC-PrithviEO-GraniteLST pipeline",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Validation against four weather ground stations yielded RMSE = 1.6 \u00b0C-1.9 \u00b0C and mean bias = -0.4 \u00b0C, confirming quantitative agreement with surface observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Indiana University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Indianapolis",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Prithvi-WxC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Prithvi-EO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Granite-LST",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "land-surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "urban heat island",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "heatwave",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Landsat",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "satellite",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Indiana",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Moran's I",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "LISA",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "LST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SatCLIP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Prithvi-EO-2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NDVI",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "canopy height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "imperviousness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "U-Net",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ERA5-Land",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "2-m air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1 \u00d7 1 convolutions",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "learned gating mechanism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ASTER",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "30 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "10-30 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "sub-2 \u00b0C error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2055460878",
+        "https://openalex.org/W2094595976",
+        "https://openalex.org/W2118898434",
+        "https://openalex.org/W2160539507",
+        "https://openalex.org/W3141145833",
+        "https://openalex.org/W3196047744",
+        "https://openalex.org/W4247110653",
+        "https://openalex.org/W4386307162",
+        "https://openalex.org/W4386618572",
+        "https://openalex.org/W4389820633",
+        "https://openalex.org/W4392953605",
+        "https://openalex.org/W4401703721",
+        "https://openalex.org/W4402259475",
+        "https://openalex.org/W4403775115",
+        "https://openalex.org/W4404809811",
+        "https://openalex.org/W4405075202",
+        "https://openalex.org/W4405532701",
+        "https://openalex.org/W4408304886",
+        "https://openalex.org/W4410226822",
+        "https://openalex.org/W4412529524",
+        "https://openalex.org/W4413779773",
+        "https://openalex.org/W4414065378",
+        "https://openalex.org/W4414547178"
+    ]
+}

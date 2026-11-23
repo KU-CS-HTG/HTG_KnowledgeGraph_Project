@@ -1,0 +1,733 @@
+{
+    "uri": "https://openalex.org/W2169971095",
+    "title": "The Potsdam Parallel Ice Sheet Model (PISM-PIK) \u2013 Part 1: Model description",
+    "venue": {
+        "name": "\u0098The \u009ccryosphere",
+        "id": "https://openalex.org/S169796457",
+        "type": "journal"
+    },
+    "publication_year": 2011,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5031563368",
+            "display_name": "Ricarda Winkelmann",
+            "orcid": "https://orcid.org/0000-0003-1248-3217"
+        },
+        {
+            "id": "https://openalex.org/A5059497091",
+            "display_name": "Maria A. Martin",
+            "orcid": "https://orcid.org/0000-0002-1443-0891"
+        },
+        {
+            "id": "https://openalex.org/A5083674229",
+            "display_name": "Marianne Haseloff",
+            "orcid": "https://orcid.org/0000-0002-6576-5384"
+        },
+        {
+            "id": "https://openalex.org/A5035561950",
+            "display_name": "Torsten Albrecht",
+            "orcid": "https://orcid.org/0000-0001-7459-2860"
+        },
+        {
+            "id": "https://openalex.org/A5012302552",
+            "display_name": "Ed Bueler",
+            "orcid": "https://orcid.org/0000-0001-8232-4145"
+        },
+        {
+            "id": "https://openalex.org/A5067097475",
+            "display_name": "C. Khroulev",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5041611398",
+            "display_name": "Anders Levermann",
+            "orcid": "https://orcid.org/0000-0003-4432-4704"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/tc-5-715-2011",
+    "abstract": "Abstract. We present the Potsdam Parallel Ice Sheet Model (PISM-PIK), developed at the Potsdam Institute for Climate Impact Research to be used for simulations of large-scale ice sheet-shelf systems. It is derived from the Parallel Ice Sheet Model (Bueler and Brown, 2009). Velocities are calculated by superposition of two shallow stress balance approximations within the entire ice covered region: the shallow ice approximation (SIA) is dominant in grounded regions and accounts for shear deformation parallel to the geoid. The plug-flow type shallow shelf approximation (SSA) dominates the velocity field in ice shelf regions and serves as a basal sliding velocity in grounded regions. Ice streams can be identified diagnostically as regions with a significant contribution of membrane stresses to the local momentum balance. All lateral boundaries in PISM-PIK are free to evolve, including the grounding line and ice fronts. Ice shelf margins in particular are modeled using Neumann boundary conditions for the SSA equations, reflecting a hydrostatic stress imbalance along the vertical calving face. The ice front position is modeled using a subgrid-scale representation of calving front motion (Albrecht et al., 2011) and a physically-motivated calving law based on horizontal spreading rates. The model is tested in experiments from the Marine Ice Sheet Model Intercomparison Project (MISMIP). A dynamic equilibrium simulation of Antarctica under present-day conditions is presented in Martin et al. (2011).",
+    "field": "Ice sheet modeling",
+    "problem": "Existing large-scale ice sheet models struggle to consistently simulate the coupled dynamics of grounded ice and floating shelves, facing challenges with abrupt flow transitions at the grounding line and a physical representation of ice shelf calving, which are crucial for sea-level rise projections.",
+    "method": "The Potsdam Parallel Ice Sheet Model (PISM-PIK) is proposed to simulate large-scale ice sheet-shelf systems by superposing velocities from the shallow ice (SIA) and shallow shelf (SSA) approximations, and incorporates a physical calving law and subgrid-scale treatment for evolving ice fronts.",
+    "task": "The task is to present the Potsdam Parallel Ice Sheet Model (PISM-PIK), a numerical model designed for large-scale simulations of coupled ice sheet-shelf systems by describing its physical approximations, numerical schemes, and treatment of ice dynamics at boundaries like the grounding line and calving front.",
+    "model": [
+        "PISM-PIK",
+        "PISM"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.7697304487228394
+        },
+        {
+            "id": "https://openalex.org/keywords/ice-sheet",
+            "display_name": "Ice sheet",
+            "score": 0.6402031779289246
+        },
+        {
+            "id": "https://openalex.org/keywords/ice-shelf",
+            "display_name": "Ice shelf",
+            "score": 0.6155149340629578
+        },
+        {
+            "id": "https://openalex.org/keywords/ice-stream",
+            "display_name": "Ice stream",
+            "score": 0.59046471118927
+        },
+        {
+            "id": "https://openalex.org/keywords/ice-sheet-model",
+            "display_name": "Ice-sheet model",
+            "score": 0.5040906667709351
+        },
+        {
+            "id": "https://openalex.org/keywords/geodesy",
+            "display_name": "Geodesy",
+            "score": 0.44630664587020874
+        },
+        {
+            "id": "https://openalex.org/keywords/pressure-ridge",
+            "display_name": "Pressure ridge",
+            "score": 0.4324910044670105
+        },
+        {
+            "id": "https://openalex.org/keywords/ice-tongue",
+            "display_name": "Ice tongue",
+            "score": 0.42752110958099365
+        },
+        {
+            "id": "https://openalex.org/keywords/hydrostatic-equilibrium",
+            "display_name": "Hydrostatic equilibrium",
+            "score": 0.4183090925216675
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.3719496726989746
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-ice",
+            "display_name": "Sea ice",
+            "score": 0.3694710433483124
+        },
+        {
+            "id": "https://openalex.org/keywords/geophysics",
+            "display_name": "Geophysics",
+            "score": 0.35639679431915283
+        },
+        {
+            "id": "https://openalex.org/keywords/geomorphology",
+            "display_name": "Geomorphology",
+            "score": 0.35471200942993164
+        },
+        {
+            "id": "https://openalex.org/keywords/cryosphere",
+            "display_name": "Cryosphere",
+            "score": 0.19528484344482422
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.14639514684677124
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.7697304487228394
+        },
+        {
+            "id": "https://openalex.org/C123750103",
+            "wikidata": "https://www.wikidata.org/wiki/Q12599",
+            "display_name": "Ice sheet",
+            "level": 2,
+            "score": 0.6402031779289246
+        },
+        {
+            "id": "https://openalex.org/C87547467",
+            "wikidata": "https://www.wikidata.org/wiki/Q46966",
+            "display_name": "Ice shelf",
+            "level": 4,
+            "score": 0.6155149340629578
+        },
+        {
+            "id": "https://openalex.org/C81820708",
+            "wikidata": "https://www.wikidata.org/wiki/Q2540532",
+            "display_name": "Ice stream",
+            "level": 4,
+            "score": 0.59046471118927
+        },
+        {
+            "id": "https://openalex.org/C134543767",
+            "wikidata": "https://www.wikidata.org/wiki/Q1319627",
+            "display_name": "Ice-sheet model",
+            "level": 5,
+            "score": 0.5040906667709351
+        },
+        {
+            "id": "https://openalex.org/C13280743",
+            "wikidata": "https://www.wikidata.org/wiki/Q131089",
+            "display_name": "Geodesy",
+            "level": 1,
+            "score": 0.44630664587020874
+        },
+        {
+            "id": "https://openalex.org/C1721004",
+            "wikidata": "https://www.wikidata.org/wiki/Q3134007",
+            "display_name": "Pressure ridge",
+            "level": 5,
+            "score": 0.4324910044670105
+        },
+        {
+            "id": "https://openalex.org/C24474704",
+            "wikidata": "https://www.wikidata.org/wiki/Q2406037",
+            "display_name": "Ice tongue",
+            "level": 5,
+            "score": 0.42752110958099365
+        },
+        {
+            "id": "https://openalex.org/C134853933",
+            "wikidata": "https://www.wikidata.org/wiki/Q208641",
+            "display_name": "Hydrostatic equilibrium",
+            "level": 2,
+            "score": 0.4183090925216675
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.3719496726989746
+        },
+        {
+            "id": "https://openalex.org/C136894858",
+            "wikidata": "https://www.wikidata.org/wiki/Q213926",
+            "display_name": "Sea ice",
+            "level": 2,
+            "score": 0.3694710433483124
+        },
+        {
+            "id": "https://openalex.org/C8058405",
+            "wikidata": "https://www.wikidata.org/wiki/Q46255",
+            "display_name": "Geophysics",
+            "level": 1,
+            "score": 0.35639679431915283
+        },
+        {
+            "id": "https://openalex.org/C114793014",
+            "wikidata": "https://www.wikidata.org/wiki/Q52109",
+            "display_name": "Geomorphology",
+            "level": 1,
+            "score": 0.35471200942993164
+        },
+        {
+            "id": "https://openalex.org/C197435368",
+            "wikidata": "https://www.wikidata.org/wiki/Q493109",
+            "display_name": "Cryosphere",
+            "level": 3,
+            "score": 0.19528484344482422
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.14639514684677124
+        },
+        {
+            "id": "https://openalex.org/C62520636",
+            "wikidata": "https://www.wikidata.org/wiki/Q944",
+            "display_name": "Quantum mechanics",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents the Potsdam Parallel Ice Sheet Model (PISM-PIK), which modifies its parent model by directly superposing shallow ice and shelf velocity approximations and incorporating new physically-based treatments for ice-shelf dynamics, including a novel calving law and a subgrid-scale scheme for calving front motion.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Parallel Ice Sheet Model",
+            "target_entity_type": "Source",
+            "paragraph": "We present the Potsdam Parallel Ice Sheet Model (PISM-PIK), developed at the Potsdam Institute for Climate Impact Research to be used for simulations of large-scale ice sheet-shelf systems. It is derived from the Parallel Ice Sheet Model (Bueler and Brown, 2009).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Parallel Ice Sheet Model (PISM)",
+            "target_entity_type": "Source",
+            "paragraph": "PISM-PIK is based on the Parallel Ice Sheet Model (PISM; Bueler and Brown, 2009), which is a three-dimensional thermodynamically-coupled shallow model using a finite-difference discretization.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "shallow ice approximation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Velocities are calculated by superposition of two shallow stress balance approximations within the entire ice covered region: the shallow ice approximation (SIA) is dominant in grounded regions and accounts for shear deformation parallel to the geoid.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "shallow shelf approximation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Velocities are calculated by superposition of two shallow stress balance approximations within the entire ice covered region: the shallow ice approximation (SIA) is dominant in grounded regions and accounts for shear deformation parallel to the geoid. The plug-flow type shallow shelf approximation (SSA) dominates the velocity field in ice shelf regions and serves as a basal sliding velocity in grounded regions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "subgrid-scale representation of calving front motion",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The ice front position is modeled using a subgrid-scale representation of calving front motion (Albrecht et al., 2011) and a physically-motivated calving law based on horizontal spreading rates.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "calving law based on horizontal spreading rates",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The ice front position is modeled using a subgrid-scale representation of calving front motion (Albrecht et al., 2011) and a physically-motivated calving law based on horizontal spreading rates.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Neumann boundary conditions",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Ice shelf margins in particular are modeled using Neumann boundary conditions for the SSA equations, reflecting a hydrostatic stress imbalance along the vertical calving face.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "dynamic equilibrium simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "A dynamic equilibrium simulation of Antarctica under present-day conditions is presented in Martin et al. (2011).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Parallel Ice Sheet Model (PISM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "finite-difference discretization",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "PISM-PIK is based on the Parallel Ice Sheet Model (PISM; Bueler and Brown, 2009), which is a three-dimensional thermodynamically-coupled shallow model using a finite-difference discretization.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "finite-difference discretization",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "PISM-PIK is based on the Parallel Ice Sheet Model (PISM; Bueler and Brown, 2009), which is a three-dimensional thermodynamically-coupled shallow model using a finite-difference discretization.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "plastic till model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Stream-like flow is modeled by the SSA stress balance and a plastic till model for basal mechanics (Schoof, 2006a).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "rectangular grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Each of the model equations is numerically discretized, using a finite difference approach on a rectangular grid.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Potsdam Parallel Ice Sheet Model (PISM-PIK)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Earth System Analysis, Potsdam Institute for Climate Impact Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Potsdam University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Humboldt-University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Alaska, Fairbanks",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Geophysical Institute, University of Alaska, Fairbanks",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Potsdam",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Berlin",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Fairbanks",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "PISM-PIK",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Potsdam Institute for Climate Impact Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Parallel Ice Sheet Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "shallow ice approximation (SIA)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "shallow shelf approximation (SSA)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Neumann boundary conditions",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "subgrid-scale representation of calving front motion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "calving law based on horizontal spreading rates",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Marine Ice Sheet Model Intercomparison Project (MISMIP)",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "dynamic equilibrium",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Flowline models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Three-dimensional models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "complete Stokes stress balance",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "higher order models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "SIA-only models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "hybrid model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "PISM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "three-dimensional thermodynamically-coupled shallow model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "finite-difference discretization",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "plastic till model for basal mechanics",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bed elevation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface mass balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "geothermal flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "basal melt rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "calving rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface elevation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rectangular grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "PISM, version stable0.2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mohr-Coulomb model for saturated till",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Lambert Glacier",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Amery Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Blatter-Pattyn type models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "hybrid solvers",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "SIA/SSA hybrid scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MISMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "mass continuity scheme for SIA fluxes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "staggered grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "mass-conserving upwind finite difference scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "calving front stress boundary condition",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "subgrid parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Eigen Calving law",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MISMIP experiment 1",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "MISMIP experiment 2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "three-dimensional model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "flow-line",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "periodic boundary conditions",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "12 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "6 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "3 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "large-scale marine ice sheet model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "ISM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "equilibrium",
+            "entity_type": "SimulationType"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2007414044",
+        "https://openalex.org/W1975963243",
+        "https://openalex.org/W2096914912",
+        "https://openalex.org/W1578281258",
+        "https://openalex.org/W2057660933",
+        "https://openalex.org/W1985717720",
+        "https://openalex.org/W1982391274",
+        "https://openalex.org/W2004244703",
+        "https://openalex.org/W2128132125",
+        "https://openalex.org/W1558742170",
+        "https://openalex.org/W2083380591",
+        "https://openalex.org/W77212025",
+        "https://openalex.org/W2126611807",
+        "https://openalex.org/W2104275055",
+        "https://openalex.org/W2104467800",
+        "https://openalex.org/W2068935346",
+        "https://openalex.org/W1915193232",
+        "https://openalex.org/W4232232293",
+        "https://openalex.org/W1996198887",
+        "https://openalex.org/W1990660626",
+        "https://openalex.org/W1989177281",
+        "https://openalex.org/W3041747254",
+        "https://openalex.org/W1964467133",
+        "https://openalex.org/W2145016426",
+        "https://openalex.org/W3152993254",
+        "https://openalex.org/W2034693675",
+        "https://openalex.org/W1984806906",
+        "https://openalex.org/W4251825859",
+        "https://openalex.org/W81594258",
+        "https://openalex.org/W42325346",
+        "https://openalex.org/W124842943",
+        "https://openalex.org/W28136723",
+        "https://openalex.org/W2066295842",
+        "https://openalex.org/W2056753208",
+        "https://openalex.org/W2036509505",
+        "https://openalex.org/W2022590706",
+        "https://openalex.org/W2028676830",
+        "https://openalex.org/W2088042851",
+        "https://openalex.org/W2129034749",
+        "https://openalex.org/W2046172844",
+        "https://openalex.org/W2171873838",
+        "https://openalex.org/W2106355577",
+        "https://openalex.org/W2113476442",
+        "https://openalex.org/W2107244340",
+        "https://openalex.org/W1971799755",
+        "https://openalex.org/W2074272083",
+        "https://openalex.org/W4230234249",
+        "https://openalex.org/W2094160803",
+        "https://openalex.org/W1647748162",
+        "https://openalex.org/W1645293914",
+        "https://openalex.org/W2070611029",
+        "https://openalex.org/W1668781233",
+        "https://openalex.org/W2011034246",
+        "https://openalex.org/W88898610",
+        "https://openalex.org/W1990062406",
+        "https://openalex.org/W1577090651"
+    ]
+}

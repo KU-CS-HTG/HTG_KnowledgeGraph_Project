@@ -1,0 +1,1414 @@
+{
+    "uri": "https://openalex.org/W7129228346",
+    "title": "FRIDA-Clim v1.0.1: a simple climate model with process-based carbon cycle used in the integrated assessment model FRIDAv2.1",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5011802035",
+            "display_name": "Christopher Wells",
+            "orcid": "https://orcid.org/0000-0003-1958-0984"
+        },
+        {
+            "id": "https://openalex.org/A5028774436",
+            "display_name": "Lennart Ramme",
+            "orcid": "https://orcid.org/0000-0002-8307-2493"
+        },
+        {
+            "id": null,
+            "display_name": "Chris Smith",
+            "orcid": "https://orcid.org/0000-0003-0599-4633"
+        },
+        {
+            "id": "https://openalex.org/A5069780035",
+            "display_name": "Jannes Breier",
+            "orcid": "https://orcid.org/0000-0002-9055-6904"
+        },
+        {
+            "id": "https://openalex.org/A5118653696",
+            "display_name": "Adakudlu Muralidhar",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Chao Li",
+            "orcid": "https://orcid.org/0000-0003-2556-0891"
+        },
+        {
+            "id": "https://openalex.org/A5025083282",
+            "display_name": "Ada Gjermundsen",
+            "orcid": "https://orcid.org/0000-0002-2053-4689"
+        },
+        {
+            "id": "https://openalex.org/A5051711857",
+            "display_name": "William Schoenberg",
+            "orcid": "https://orcid.org/0000-0003-3529-1066"
+        },
+        {
+            "id": "https://openalex.org/A5073970020",
+            "display_name": "B Blanz",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126271109",
+            "display_name": "Cecilie Mauritzen",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-19-1429-2026",
+    "abstract": "Abstract. The new global Feedback-based knowledge Repository for IntegrateD Assessments version 2.1 (FRIDAv2.1) Integrated Assessment Model (IAM) seeks to study the dynamics of the coupled human-Earth system. Connecting anthropogenic emissions to the resultant climate response is one part of the two-way feedback within this system, with the resultant climate impacts the other. This paper documents both the Climate Module within FRIDAv2.1, and the modified version separately simulated as a standalone simple climate model termed FRIDA-Clim version 1.0.1. This approach, based loosely on the existing FaIR simple climate model, simulates the key radiative forcings and the resultant temperature response, with process-based representations of the carbon cycle across the ocean, land, and atmosphere. When connected within the FRIDA IAM, it features deep connections to the other modules, being affected by processes such as water use for irrigation and land use change. In both uses, i.e. with the climate response interactively connected to the upstream human drivers and downstream climate impacts within the FRIDA IAM (coupled) and when ran separately as FRIDA-Clim driven by exogenous forcings (uncoupled), its climate drivers are simplified as compared to FaIR. This is to allow for this reduced set of key drivers to be interactively simulated within FRIDA, tightly coupling the evolution of the social and climate systems within the full model. Both the Climate Module and FRIDA-Clim are fully calibrated to accurately reproduce observations of key climate variables, with a systematic exploration of the uncertainty in the climate response. Together with the rest of the FRIDA model, this module is used to incorporate climate change systematically in the FRIDA System Dynamics IAM. As a standalone climate model, FRIDA-Clim comprises a simple climate model, enabling fast calculation of the global climate response to forcing; to explore this, the response of the model to both idealised CO2 emissions experiments and plausible future scenarios is also presented here. This setup will allow FRIDA-Clim to contribute to inter-model simple climate modelling initiatives, helping to explore the structural uncertainty in this modelling domain.",
+    "field": "Integrated assessment modelling",
+    "problem": "Existing simple climate models are not optimized for tight, interactive coupling within Integrated Assessment Models, hindering the study of feedbacks between human and climate systems; this necessitates a new model with simplified drivers and a process-based carbon cycle to enable this dynamic integration.",
+    "method": "We propose a simple climate model, FRIDA-Clim, that integrates a process-based land and ocean carbon cycle with a radiative forcing and temperature response framework based on the FaIR model to simulate the global climate response to anthropogenic and natural forcings.",
+    "task": "The task is to document FRIDA-Clim, a new simple climate model with a process-based carbon cycle, and its application as both a standalone model and as an integrated climate module within the FRIDAv2.1 Integrated Assessment Model.",
+    "model": [
+        "FRIDA-Clim",
+        "FRIDAv2.1",
+        "FaIR",
+        "DICE",
+        "LPJmL",
+        "LOSCAR",
+        "iLOSCAR",
+        "MPI-ESM1.2-LR",
+        "CICERO"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.690500020980835
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.6832000017166138
+        },
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.534500002861023
+        },
+        {
+            "id": "https://openalex.org/keywords/set",
+            "display_name": "Set (abstract data type)",
+            "score": 0.4991999864578247
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-commitment",
+            "display_name": "Climate commitment",
+            "score": 0.491100013256073
+        },
+        {
+            "id": "https://openalex.org/keywords/transient-climate-simulation",
+            "display_name": "Transient climate simulation",
+            "score": 0.4657000005245209
+        },
+        {
+            "id": "https://openalex.org/keywords/key",
+            "display_name": "Key (lock)",
+            "score": 0.4634000062942505
+        },
+        {
+            "id": "https://openalex.org/keywords/carbon-cycle",
+            "display_name": "Carbon cycle",
+            "score": 0.4401000142097473
+        },
+        {
+            "id": "https://openalex.org/keywords/simple",
+            "display_name": "Simple (philosophy)",
+            "score": 0.43939998745918274
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.690500020980835
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.6832000017166138
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6549999713897705
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.534500002861023
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5307000279426575
+        },
+        {
+            "id": "https://openalex.org/C177264268",
+            "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+            "display_name": "Set (abstract data type)",
+            "level": 2,
+            "score": 0.4991999864578247
+        },
+        {
+            "id": "https://openalex.org/C48999079",
+            "wikidata": "https://www.wikidata.org/wiki/Q5133511",
+            "display_name": "Climate commitment",
+            "level": 5,
+            "score": 0.491100013256073
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.4812000095844269
+        },
+        {
+            "id": "https://openalex.org/C47665787",
+            "wikidata": "https://www.wikidata.org/wiki/Q7834266",
+            "display_name": "Transient climate simulation",
+            "level": 4,
+            "score": 0.4657000005245209
+        },
+        {
+            "id": "https://openalex.org/C26517878",
+            "wikidata": "https://www.wikidata.org/wiki/Q228039",
+            "display_name": "Key (lock)",
+            "level": 2,
+            "score": 0.4634000062942505
+        },
+        {
+            "id": "https://openalex.org/C6939412",
+            "wikidata": "https://www.wikidata.org/wiki/Q167751",
+            "display_name": "Carbon cycle",
+            "level": 3,
+            "score": 0.4401000142097473
+        },
+        {
+            "id": "https://openalex.org/C2780586882",
+            "wikidata": "https://www.wikidata.org/wiki/Q7520643",
+            "display_name": "Simple (philosophy)",
+            "level": 2,
+            "score": 0.43939998745918274
+        },
+        {
+            "id": "https://openalex.org/C99578197",
+            "wikidata": "https://www.wikidata.org/wiki/Q1463606",
+            "display_name": "Radiative forcing",
+            "level": 3,
+            "score": 0.4284000098705292
+        },
+        {
+            "id": "https://openalex.org/C191172861",
+            "wikidata": "https://www.wikidata.org/wiki/Q7899321",
+            "display_name": "Upstream (networking)",
+            "level": 2,
+            "score": 0.4259999990463257
+        },
+        {
+            "id": "https://openalex.org/C54464151",
+            "wikidata": "https://www.wikidata.org/wiki/Q521783",
+            "display_name": "Climate sensitivity",
+            "level": 4,
+            "score": 0.4165000021457672
+        },
+        {
+            "id": "https://openalex.org/C133830359",
+            "wikidata": "https://www.wikidata.org/wiki/Q81041",
+            "display_name": "Water cycle",
+            "level": 2,
+            "score": 0.4146000146865845
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3993000090122223
+        },
+        {
+            "id": "https://openalex.org/C47737302",
+            "wikidata": "https://www.wikidata.org/wiki/Q167336",
+            "display_name": "Greenhouse gas",
+            "level": 2,
+            "score": 0.39629998803138733
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.37869998812675476
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.36469998955726624
+        },
+        {
+            "id": "https://openalex.org/C131584629",
+            "wikidata": "https://www.wikidata.org/wiki/Q4308705",
+            "display_name": "Coupling (piping)",
+            "level": 2,
+            "score": 0.34369999170303345
+        },
+        {
+            "id": "https://openalex.org/C55173820",
+            "wikidata": "https://www.wikidata.org/wiki/Q5604174",
+            "display_name": "Climate state",
+            "level": 5,
+            "score": 0.3400999903678894
+        },
+        {
+            "id": "https://openalex.org/C107826830",
+            "wikidata": "https://www.wikidata.org/wiki/Q929380",
+            "display_name": "Environmental resource management",
+            "level": 1,
+            "score": 0.3176000118255615
+        },
+        {
+            "id": "https://openalex.org/C2988944679",
+            "wikidata": "https://www.wikidata.org/wiki/Q7937",
+            "display_name": "Global climate",
+            "level": 3,
+            "score": 0.30979999899864197
+        },
+        {
+            "id": "https://openalex.org/C2776207758",
+            "wikidata": "https://www.wikidata.org/wiki/Q5303302",
+            "display_name": "Downstream (manufacturing)",
+            "level": 2,
+            "score": 0.29260000586509705
+        },
+        {
+            "id": "https://openalex.org/C118365302",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric model",
+            "level": 2,
+            "score": 0.29249998927116394
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.29030001163482666
+        },
+        {
+            "id": "https://openalex.org/C108215451",
+            "wikidata": "https://www.wikidata.org/wiki/Q7263963",
+            "display_name": "Simulation modeling",
+            "level": 2,
+            "score": 0.287200003862381
+        },
+        {
+            "id": "https://openalex.org/C74902906",
+            "wikidata": "https://www.wikidata.org/wiki/Q1190858",
+            "display_name": "Radiative transfer",
+            "level": 2,
+            "score": 0.26170000433921814
+        },
+        {
+            "id": "https://openalex.org/C2994001127",
+            "wikidata": "https://www.wikidata.org/wiki/Q267474",
+            "display_name": "Climate zones",
+            "level": 2,
+            "score": 0.25270000100135803
+        },
+        {
+            "id": "https://openalex.org/C4792198",
+            "wikidata": "https://www.wikidata.org/wiki/Q1165944",
+            "display_name": "Land use",
+            "level": 2,
+            "score": 0.25049999356269836
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "FRIDA",
+            "observational_dataset": "HFC134a-equivalent emissions estimated from concentrations based on Indicators of Global Climate Change (IGCC; Smith et al., 2024a) with radiative properties from (Hodnebrog et al., 2020) (see Sect. 2.2.7).",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "Global Carbon Project, v2024, v1.0 (Friedlingstein et al., 2025) - Fossil excluding carbonation, minus cement.",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "Global Carbon Project, v2024, v1.0 (Friedlingstein et al., 2025) - cement",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "Global Carbon Project, v2024, v1.0 (Friedlingstein et al., 2025) - land-use change",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "Community Emissions Data System (CEDS) v2024_07_08 (Hoesly et al., 2024) \u2013 all categories.",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "GFED (van Marle et al., 2017) historical average, i.e. constant.",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "PRIMAP-hist v2.6 \"no_rounding\" (G\u00fctschow et al., 2024) - categories 1 (Energy) and 2 (Industrial Processes and Product Use).",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "PRIMAP-hist v2.6 \"no_rounding\" (G\u00fctschow et al., 2024) - categories 4 (Waste) and 5 (Other).",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "PRIMAP-hist v2.6 \"no_rounding\" (G\u00fctschow et al., 2024) - category 3 (Agriculture, Forestry and Other Land Use) plus GFED BB4CMIP (van Marle et al., 2017) historically-averaged.",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "CEDS v2024_07_08 (Hoesly et al., 2024) - categories 1, 2, 7A.",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "CEDS v2024_07_08 (Hoesly et al., 2024) \u2013 categories 5, 6, 7BC.",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "CEDS v2024_07_08 (Hoesly et al., 2024) \u2013 category 3, plus GFED (van Marle et al., 2017) historical average.",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "(Forster et al., 2025)",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        },
+        {
+            "model": "FRIDA",
+            "observational_dataset": "(Ghimire et al., 2014)",
+            "evaluation_metric": "Not specified in the table",
+            "result": "Not specified in the table"
+        }
+    ],
+    "innovation": "This paper presents FRIDA-Clim v1.0.1, a new simple climate model that incorporates a process-based carbon cycle for the ocean and land into a simplified radiative forcing framework, designed for standalone use and for integration into the FRIDA v2.1 integrated assessment model.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "FaIR",
+            "target_entity_type": "Source",
+            "paragraph": "This approach [FRIDA-Clim v1.0.1], based loosely on the existing FaIR simple climate model, simulates the key radiative forcings and the resultant temperature response, with process-based representations of the carbon cycle across the ocean, land, and atmosphere. When connected within the FRIDA IAM, it features deep connections to the other modules, being affected by processes such as water use for irrigation and land use change. In both uses, i.e. with the climate response interactively connected to the upstream human drivers and downstream climate impacts within the FRIDA IAM (coupled) and when ran separately as FRIDA-Clim driven by exogenous forcings (uncoupled), its climate drivers are simplified as compared to FaIR. This is to allow for this reduced set of key drivers to be interactively simulated within FRIDA, tightly coupling the evolution of the social and climate systems within the full model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Climate Module",
+            "source_entity_type": "SourceComponent",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "FaIR",
+            "target_entity_type": "Source",
+            "paragraph": "This paper documents the Climate Module of FRIDAv2.1, which has at its core components from the Finite-amplitude Impulse Response (FaIR) SCM (Leach et al., 2021), but features an entirely new ocean and land carbon cycle imple- mentation, a simplification of the number and representation of climate drivers, a representation of the dynamics of sea level rise (SLR), and a full recalibration.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "LPJmL",
+            "target_entity_type": "Source",
+            "paragraph": "The land carbon cycle in part reflects a simplified representation of the Lund-Potsdam-Jena managed Land (LPJmL) model (Schaphoff et al., 2018).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "LOSCAR",
+            "target_entity_type": "Source",
+            "paragraph": "The ocean carbon and chemistry representation is based on the carbon cycle model of Lenton (2000) and the Long-term Ocean- atmosphere-Sediment CArbon cycle Reservoir (LOSCAR) model (Li et al., 2024; Zeebe, 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ocean carbon cycle",
+            "source_entity_type": "SourceComponent",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "carbon cycle model of Lenton (2000)",
+            "target_entity_type": "Source",
+            "paragraph": "In both FRIDA-Clim and the FRIDAv2.1 Climate Module, the ocean carbon cycle is modelled in a process-based manner using a four-box model of carbon in the ocean (Fig. 3), based on the model proposed by Lenton (2000), with the ocean advection scheme and carbonate chemistry formulation based on those from the updated \"interactive LOSCAR\u201d (iLOSCAR) model (Li et al., 2024; Zeebe, 2012).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ocean carbon cycle",
+            "source_entity_type": "SourceComponent",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "iLOSCAR",
+            "target_entity_type": "Source",
+            "paragraph": "In both FRIDA-Clim and the FRIDAv2.1 Climate Module, the ocean carbon cycle is modelled in a process-based manner using a four-box model of carbon in the ocean (Fig. 3), based on the model proposed by Lenton (2000), with the ocean advection scheme and carbonate chemistry formulation based on those from the updated \"interactive LOSCAR\u201d (iLOSCAR) model (Li et al., 2024; Zeebe, 2012).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LOSCAR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "iLOSCAR",
+            "target_entity_type": "Source",
+            "paragraph": "In both FRIDA-Clim and the FRIDAv2.1 Climate Module, the ocean carbon cycle is modelled in a process-based manner using a four-box model of carbon in the ocean (Fig. 3), based on the model proposed by Lenton (2000), with the ocean advection scheme and carbonate chemistry formulation based on those from the updated \"interactive LOSCAR\u201d (iLOSCAR) model (Li et al., 2024; Zeebe, 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDAv2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Climate Module",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The new global Feedback-based knowledge Repository for Integrated Assessments version 2.1 (FRI-DAv2.1) Integrated Assessment Model (IAM) seeks to study the dynamics of the coupled human-Earth system. Connecting anthropogenic emissions to the resultant climate response is one part of the two-way feedback within this system, with the resultant climate impacts the other. This paper documents both the Climate Module within FRIDAv2.1, and the modified version separately simulated as a standalone simple climate model termed FRIDA-Clim version 1.0.1.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ocean carbon cycle",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The inclusion of a process-based land carbon cycle necessi-tates the inclusion of a separate ocean carbon cycle model as well, because the implementation in FaIR does not con-tain ocean carbon. In both FRIDA-Clim and the FRIDAv2.1 Climate Module, the ocean carbon cycle is modelled in a process-based manner using a four-box model of carbon in the ocean (Fig. 3), based on the model proposed by Lenton (2000), with the ocean advection scheme and carbonate chemistry formulation based on those from the updated \u201cinteractive LOSCAR\u201d (iLOSCAR) model (Li et al., 2024; Zeebe, 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "land carbon cycle",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The land carbon cycle represents the domain with the largest differences in approaches between the standalone FRIDA-Clim SCM and the Climate Module coupled within the FRIDA IAM, due to the complex coupling of human and climate processes within the land system. The representation in FRIDA-Clim is based on that in the LPJmL model (Schaphoff et al., 2018), with substantial modifications.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "three-layer energy balance model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Once the total radiative forcing is calculated, as the sum of the 12 forcings detailed above, this energy imbalance is input to a three-layer energy balance model (EBM) representation of the Earth system, following the approach in FaIR (Cummins et al., 2020). This representation is identical between FRIDA-Clim and FRIDAv2.1\u2019s Climate Module.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "four-box model of carbon in the ocean",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In both FRIDA-Clim and the FRIDAv2.1 Climate Module, the ocean carbon cycle is modelled in a process-based manner using a four-box model of carbon in the ocean (Fig. 3), based on the model proposed by Lenton (2000), with the ocean advection scheme and carbonate chemistry formulation based on those from the updated \"interactive LOSCAR\u201d (iLOSCAR) model (Li et al., 2024; Zeebe, 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "one-box atmospheric decay",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Due to the complex and heterogenous chemical processes, CH4, unlike CO2, is not tracked through the Earth system in FRIDA; instead, FRIDA-Clim and FRIDA's climate module retain the one-box atmospheric decay of FaIR (Smith et al., 2024b). In this representation, emissions of CH4 accumulate in the atmosphere, and decay with a variable lifetime.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean-square error",
+            "target_entity_type": "Metric",
+            "paragraph": "The first constraint excludes all runs which have a mean root-mean-square error (RMSE) over the period 1850\u20132022 greater than 0.16 K (the approximate uncertainty in present- day observations) for temperature when compared to observations, as applied in FaIR's calibration.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Equilibrium Climate Sensitivity",
+            "target_entity_type": "Metric",
+            "paragraph": "In the second constraint step, the distributions of key climate quantities were constrained to closely match observational and IPCC AR6-assessed ranges. This was applied simultaneously to total aerosol forcing (averaged 2005\u20132014), Equilibrium Climate Sensitivity (ECS), Transient Climate Response (TCR), Ocean Heat Content (OHC; 1971\u20132020 change), CO2 concentration (2022), and GMST anomaly (2003\u20132022 relative to 1850\u20131900).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Transient Climate Response",
+            "target_entity_type": "Metric",
+            "paragraph": "In the second constraint step, the distributions of key climate quantities were constrained to closely match observational and IPCC AR6-assessed ranges. This was applied simultaneously to total aerosol forcing (averaged 2005\u20132014), Equilibrium Climate Sensitivity (ECS), Transient Climate Response (TCR), Ocean Heat Content (OHC; 1971\u20132020 change), CO2 concentration (2022), and GMST anomaly (2003\u20132022 relative to 1850\u20131900).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Transient Climate Response to Emissions",
+            "target_entity_type": "Metric",
+            "paragraph": "Several important metrics can be calculated from these experiments (Sanderson et al., 2025): the Transient Climate Response to Emissions (TCRE), rendered here as the metric T100yr as the temperature response under 1000 GtC reached after 100 years of constant emissions; the Zero Emissions Commitment at year x (ZECx), given by the temperature change upon cessation of emissions for x years; the time from peak warming (t-PW), the difference between the year of peak warming and the year of net zero emissions upon reversal of emissions; and the warming after the same level of cumulative emissions (TNZ (Net Zero), TRO, TR1000; see Fig. 5 for details on this metric).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FRIDA-Clim v1.0.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Zero Emissions Commitment",
+            "target_entity_type": "Metric",
+            "paragraph": "Several important metrics can be calculated from these experiments (Sanderson et al., 2025): the Transient Climate Response to Emissions (TCRE), rendered here as the metric T100yr as the temperature response under 1000 GtC reached after 100 years of constant emissions; the Zero Emissions Commitment at year x (ZECx), given by the temperature change upon cessation of emissions for x years; the time from peak warming (t-PW), the difference between the year of peak warming and the year of net zero emissions upon reversal of emissions; and the warming after the same level of cumulative emissions (TNZ (Net Zero), TRO, TR1000; see Fig. 5 for details on this metric).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "land carbon cycle",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "terrestrial carbon balance",
+            "target_entity_type": "Variable",
+            "paragraph": "The terrestrial carbon balance (TCB) tracks the overall change of carbon on land, via the processes described above (plus a small constant annual peatland carbon sink of 0.3 GtCyr\u22121 (Gallego-Sala et al., 2018; Loisel et al., 2021)).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "land carbon cycle",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "land carbon sink",
+            "target_entity_type": "Variable",
+            "paragraph": "For analysis and calibration purposes, the TCB is separated into a natural component (\u201cland carbon sink\u201d), responding to the changing climate, and a human component (\"food and land-use (FLU) emissions\u201d), driven by food production and land-use changes.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Energy Balance Model",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "global mean surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The first layer can concretely be associated with the Earth's surface and ocean mixed layer, as this response is calibrated to reproduce the historically observed global mean surface temperature (GMST; see Sect. 3); the two lower layers conceptually represent the intermediate and deep oceans respectively, though the lack of calibration data renders the exact association ambiguous.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "land carbon cycle",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "land",
+            "target_entity_type": "Realm",
+            "paragraph": "The land carbon cycle represents the domain with the largest differences in approaches between the standalone FRIDA-Clim SCM and the Climate Module coupled within the FRIDA IAM, due to the complex coupling of human and climate processes within the land system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ocean carbon cycle",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocean",
+            "target_entity_type": "Realm",
+            "paragraph": "The inclusion of a process-based land carbon cycle necessi-tates the inclusion of a separate ocean carbon cycle model as well, because the implementation in FaIR does not con-tain ocean carbon. In both FRIDA-Clim and the FRIDAv2.1 Climate Module, the ocean carbon cycle is modelled in a process-based manner using a four-box model of carbon in the ocean (Fig. 3)...",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "FRIDA-Clim v1.0.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FRIDAv2.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FaIR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "University of Leeds",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Max-Planck-Institute for Meteorology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "International Institute for Applied Systems Analysis (IIASA)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Potsdam Institute for Climate Impact Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Max Planck Institute of Geoanthropology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Humboldt Universit\u00e4t zu Berlin",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Norwegian Meteorological Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Oslo",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "System Dynamics Group, University of Bergen",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "isee systems inc.",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Hamburg",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "simple climate models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "integrated assessment model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "anthropogenic emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "radiative forcings",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature response",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO2 emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Reduced Complexity Model Intercomparison Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "RCMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Earth System Models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "DICE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "sea level rise",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "LPJmL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LOSCAR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Climate Module",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "global mean surface temperature anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CH4",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "N2O",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HFCs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "H2O",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stratospheric ozone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "effective radiative forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NOx",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "VOCs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "regression relationships",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "black carbon (BC) deposition on snow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ozone forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CH4 lifetime",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Energy Balance Model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CO2 concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "one-box atmospheric decay",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CH4 concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "N2O concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GMST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol forcings",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stratospheric H2O forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Montreal gases forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "volcanic forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HFC forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CEDS v2024_07_08",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFED",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PRIMAP-hist v2.6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFED BB4CMIP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HFC Emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SO2 Emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "N2O Emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CH4 Emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Irrigation H2O Emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Land Albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol-radiation interactions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol-cloud interactions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "linear relationship",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "logarithmic relationship",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "three-layer energy balance model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "HFC134a-eq",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "efficacy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Land Use and Agriculture module",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "net primary production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "forest biomass",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "above-ground biomass",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "quadratic relationship",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two carbon stocks for each land use type",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "iLOSCAR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "four-box model of carbon in the ocean",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ocean advection scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "carbonate chemistry formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "terrestrial carbon balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land carbon sink",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "food and land-use (FLU) emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indian Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "MPI-ESM1.2-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "alkalinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "thermal expansion of the ocean",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean heat content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Air-sea CO2 Flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NPP",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ECS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "TCR",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "OHC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Aerosol ERF",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LUH",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FAO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HYDE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PRIMAP-hist",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "standalone",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "root-mean-square error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Equilibrium Climate Sensitivity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Transient Climate Response",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "aerosol forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ocean Heat Content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GMST anomaly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "IPCC AR6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "prior ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "posterior ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "flat10MIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "flat10-zec",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Transient Climate Response to Emissions",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "T100yr",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Zero Emissions Commitment at year x",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "t-PW",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "TNZ (Net Zero)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "TRO",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "TR1000",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ZEC50",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ZEC100",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ZEC300",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "flat10",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "flat10-cdr",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "flat10-nz",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "shared socioeconomic pathway (SSP) scenarios",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "ssp119",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ssp245",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ssp534-over",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ssp585",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ZECx",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric CO2 concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CICERO SCM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Carbon fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ScenarioMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "abrupt-4xCO2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Deutsches Klimarechenzentrum (DKRZ)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "E3SM-GCAM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1.2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "landIce",
+            "entity_type": "Realm"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1698528106",
+        "https://openalex.org/W2052479643",
+        "https://openalex.org/W2075167675",
+        "https://openalex.org/W2098886914",
+        "https://openalex.org/W2108920378",
+        "https://openalex.org/W2133484165",
+        "https://openalex.org/W2137077767",
+        "https://openalex.org/W2141192242",
+        "https://openalex.org/W2143564173",
+        "https://openalex.org/W2160637085",
+        "https://openalex.org/W2193503481",
+        "https://openalex.org/W2200389028",
+        "https://openalex.org/W2337225114",
+        "https://openalex.org/W2528605288",
+        "https://openalex.org/W2531205202",
+        "https://openalex.org/W2576759496",
+        "https://openalex.org/W2594741346",
+        "https://openalex.org/W2603774376",
+        "https://openalex.org/W2620470372",
+        "https://openalex.org/W2727987495",
+        "https://openalex.org/W2740480223",
+        "https://openalex.org/W2754728072",
+        "https://openalex.org/W2766028998",
+        "https://openalex.org/W2780388729",
+        "https://openalex.org/W2887558848",
+        "https://openalex.org/W2890232832",
+        "https://openalex.org/W2890993024",
+        "https://openalex.org/W3012045934",
+        "https://openalex.org/W3016282791",
+        "https://openalex.org/W3016657562",
+        "https://openalex.org/W3030338545",
+        "https://openalex.org/W3041088561",
+        "https://openalex.org/W3048501727",
+        "https://openalex.org/W3087743853",
+        "https://openalex.org/W3089791345",
+        "https://openalex.org/W3095066576",
+        "https://openalex.org/W3121823787",
+        "https://openalex.org/W3125385902",
+        "https://openalex.org/W3128570900",
+        "https://openalex.org/W3134831531",
+        "https://openalex.org/W3165052556",
+        "https://openalex.org/W4200063518",
+        "https://openalex.org/W4200272959",
+        "https://openalex.org/W4220706707",
+        "https://openalex.org/W4225657759",
+        "https://openalex.org/W4232697261",
+        "https://openalex.org/W4233146532",
+        "https://openalex.org/W4295088938",
+        "https://openalex.org/W4309565773",
+        "https://openalex.org/W4312018175",
+        "https://openalex.org/W4381845996",
+        "https://openalex.org/W4382358634",
+        "https://openalex.org/W4382358731",
+        "https://openalex.org/W4385229620",
+        "https://openalex.org/W4385623329",
+        "https://openalex.org/W4392641214",
+        "https://openalex.org/W4396851817",
+        "https://openalex.org/W4404502578",
+        "https://openalex.org/W4404977806",
+        "https://openalex.org/W4408460092",
+        "https://openalex.org/W4410090232",
+        "https://openalex.org/W4411491351",
+        "https://openalex.org/W4414026120",
+        "https://openalex.org/W4415686955",
+        "https://openalex.org/W4416457624",
+        "https://openalex.org/W4417311652",
+        "https://openalex.org/W7118905482"
+    ]
+}

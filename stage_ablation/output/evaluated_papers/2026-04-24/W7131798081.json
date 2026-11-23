@@ -1,0 +1,878 @@
+{
+    "uri": "https://openalex.org/W7131798081",
+    "title": "Comprehensive Inter-comparison of Generative AI Models for Super-Resolution Precipitation Downscaling Across Hydroclimatic Regimes",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5126974149",
+            "display_name": "Shivam Singh",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126978018",
+            "display_name": "Simon Michael Papalexiou",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5035389417",
+            "display_name": "Hebatallah Abdelmoaty",
+            "orcid": "https://orcid.org/0000-0002-2288-691X"
+        },
+        {
+            "id": "https://openalex.org/A5058953400",
+            "display_name": "Tom Hartvigsen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5048694535",
+            "display_name": "Antonios Mamalakis",
+            "orcid": "https://orcid.org/0000-0002-1731-7595"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2026-861",
+    "abstract": "Abstract. High-resolution precipitation information is essential for hydrologic modeling, flood forecasting, and climate-risk assessment, yet global weather and climate models operate at spatial resolutions too coarse to resolve storm structure, intermittency, and extremes. Deep-learning-based statistical downscaling provides a computationally efficient alternative to dynamical downscaling, but deterministic convolutional neural networks often yield overly smooth predictions and underestimate fine-scale variability and extreme events. Generative deep-learning models, including generative adversarial networks and diffusion models, offer a promising alternative by enabling stochastic downscaling and explicit representation of uncertainty. This study presents a systematic, hydrologically oriented comparison of three representative deep-learning frameworks for precipitation super-resolution: a convolutional U-NET, a conditional Wasserstein GAN (WGAN), and a conditional denoising diffusion probabilistic model (DDPM). Using a perfect-model experimental design based on ERA5-Land precipitation over distinct hydroclimatic regions of the United States, we evaluate performance under 8-times (8\u00d7) and 16-times (16\u00d7) downscaling tasks within a unified training and evaluation framework. Models are evaluated using diagnostics that examine precipitation distributions, wet\u2013dry occurrence, extremes, spatial structure, storm morphology, mass consistency, ensemble variability, and computational cost. All three models preserve aggregate rainfall mass despite the absence of explicit physical constraints. Differences arise primarily at fine spatial scales and in the representation of extremes, spatial dependence, and uncertainty. U-NET provides stable and computationally efficient predictions but smooths small-scale variability. WGAN improves fine-scale structure and heavy-tail behavior at the expense of increased noise. The DDPM yields physically coherent ensemble members and an explicit representation of uncertainty, at a substantially higher computational cost.",
+    "field": "Precipitation downscaling",
+    "problem": "Deterministic deep-learning downscaling methods for coarse-resolution precipitation often produce overly smooth predictions that underestimate fine-scale variability and extreme events, which are critical for hydrologic modeling and risk assessment.",
+    "method": "This study presents a systematic comparison of three deep-learning models (U-NET, WGAN, and DDPM) for precipitation super-resolution, evaluating their performance using a unified framework and comprehensive, hydrologically-oriented diagnostics to assess their relative strengths for representing extremes and spatial structure.",
+    "task": "The task is to systematically compare three deep-learning models (U-NET, WGAN, and DDPM) for super-resolution precipitation downscaling, evaluating their performance on metrics like spatial structure, extremes, and computational cost across different hydroclimatic regimes.",
+    "model": [
+        "U-NET",
+        "WGAN",
+        "DDPM",
+        "ERA5-Land"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.9082000255584717
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.5932000279426575
+        },
+        {
+            "id": "https://openalex.org/keywords/representation",
+            "display_name": "Representation (politics)",
+            "score": 0.5633999705314636
+        },
+        {
+            "id": "https://openalex.org/keywords/storm",
+            "display_name": "Storm",
+            "score": 0.5285000205039978
+        },
+        {
+            "id": "https://openalex.org/keywords/probabilistic-logic",
+            "display_name": "Probabilistic logic",
+            "score": 0.4553999900817871
+        },
+        {
+            "id": "https://openalex.org/keywords/flood-myth",
+            "display_name": "Flood myth",
+            "score": 0.4465999901294708
+        },
+        {
+            "id": "https://openalex.org/keywords/quantitative-precipitation-estimation",
+            "display_name": "Quantitative precipitation estimation",
+            "score": 0.40290001034736633
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4009999930858612
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.9082000255584717
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.5932000279426575
+        },
+        {
+            "id": "https://openalex.org/C2776359362",
+            "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+            "display_name": "Representation (politics)",
+            "level": 3,
+            "score": 0.5633999705314636
+        },
+        {
+            "id": "https://openalex.org/C105306849",
+            "wikidata": "https://www.wikidata.org/wiki/Q81054",
+            "display_name": "Storm",
+            "level": 2,
+            "score": 0.5285000205039978
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5091000199317932
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5020999908447266
+        },
+        {
+            "id": "https://openalex.org/C49937458",
+            "wikidata": "https://www.wikidata.org/wiki/Q2599292",
+            "display_name": "Probabilistic logic",
+            "level": 2,
+            "score": 0.4553999900817871
+        },
+        {
+            "id": "https://openalex.org/C74256435",
+            "wikidata": "https://www.wikidata.org/wiki/Q134052",
+            "display_name": "Flood myth",
+            "level": 2,
+            "score": 0.4465999901294708
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.42559999227523804
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.4196000099182129
+        },
+        {
+            "id": "https://openalex.org/C75398719",
+            "wikidata": "https://www.wikidata.org/wiki/Q7268938",
+            "display_name": "Quantitative precipitation estimation",
+            "level": 3,
+            "score": 0.40290001034736633
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4009999930858612
+        },
+        {
+            "id": "https://openalex.org/C158709400",
+            "wikidata": "https://www.wikidata.org/wiki/Q3578586",
+            "display_name": "Spatial ecology",
+            "level": 2,
+            "score": 0.35580000281333923
+        },
+        {
+            "id": "https://openalex.org/C94747663",
+            "wikidata": "https://www.wikidata.org/wiki/Q7574086",
+            "display_name": "Spatial variability",
+            "level": 2,
+            "score": 0.29490000009536743
+        },
+        {
+            "id": "https://openalex.org/C39890363",
+            "wikidata": "https://www.wikidata.org/wiki/Q36108",
+            "display_name": "Generative grammar",
+            "level": 2,
+            "score": 0.2930999994277954
+        },
+        {
+            "id": "https://openalex.org/C114289077",
+            "wikidata": "https://www.wikidata.org/wiki/Q3284399",
+            "display_name": "Statistical model",
+            "level": 2,
+            "score": 0.2912999987602234
+        },
+        {
+            "id": "https://openalex.org/C167966045",
+            "wikidata": "https://www.wikidata.org/wiki/Q5532625",
+            "display_name": "Generative model",
+            "level": 3,
+            "score": 0.290800005197525
+        },
+        {
+            "id": "https://openalex.org/C183195422",
+            "wikidata": "https://www.wikidata.org/wiki/Q3409303",
+            "display_name": "Flood forecasting",
+            "level": 3,
+            "score": 0.2888999879360199
+        },
+        {
+            "id": "https://openalex.org/C45374587",
+            "wikidata": "https://www.wikidata.org/wiki/Q12525525",
+            "display_name": "Computation",
+            "level": 2,
+            "score": 0.27799999713897705
+        },
+        {
+            "id": "https://openalex.org/C2777489503",
+            "wikidata": "https://www.wikidata.org/wiki/Q7698936",
+            "display_name": "Temporal scales",
+            "level": 2,
+            "score": 0.2777999937534332
+        },
+        {
+            "id": "https://openalex.org/C32230216",
+            "wikidata": "https://www.wikidata.org/wiki/Q7882499",
+            "display_name": "Uncertainty quantification",
+            "level": 2,
+            "score": 0.27410000562667847
+        },
+        {
+            "id": "https://openalex.org/C122282355",
+            "wikidata": "https://www.wikidata.org/wiki/Q7246855",
+            "display_name": "Probabilistic forecasting",
+            "level": 3,
+            "score": 0.2694999873638153
+        },
+        {
+            "id": "https://openalex.org/C4679612",
+            "wikidata": "https://www.wikidata.org/wiki/Q866298",
+            "display_name": "Aggregate (composite)",
+            "level": 2,
+            "score": 0.2669000029563904
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.26330000162124634
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.2605000138282776
+        },
+        {
+            "id": "https://openalex.org/C176217482",
+            "wikidata": "https://www.wikidata.org/wiki/Q860554",
+            "display_name": "Metric (unit)",
+            "level": 2,
+            "score": 0.2596000134944916
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "U-NET",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Training time",
+            "result": "~16 min"
+        },
+        {
+            "model": "U-NET",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Inference time",
+            "result": "~1.33 sec"
+        },
+        {
+            "model": "U-NET",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Per-Sample Time",
+            "result": "~0.0001sec"
+        },
+        {
+            "model": "WGAN (Generator)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Training time",
+            "result": "~1h 12min"
+        },
+        {
+            "model": "WGAN (Generator)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Inference time",
+            "result": "~1.32 sec"
+        },
+        {
+            "model": "WGAN (Generator)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Per-Sample Time",
+            "result": "~0.0001sec"
+        },
+        {
+            "model": "DDPM (T=500)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Training time",
+            "result": "~2h 29min"
+        },
+        {
+            "model": "DDPM (T=500)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Inference time",
+            "result": "~1h 42 min"
+        },
+        {
+            "model": "DDPM (T=500)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Per-Sample Time",
+            "result": "~0.5 sec"
+        },
+        {
+            "model": "DDPM (T=100)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Training time",
+            "result": "~2h 23min"
+        },
+        {
+            "model": "DDPM (T=100)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Inference time",
+            "result": "~20 min 53 sec"
+        },
+        {
+            "model": "DDPM (T=100)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Per-Sample Time",
+            "result": "~0.1 sec"
+        },
+        {
+            "model": "DDPM (T=50)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Training time",
+            "result": "~2h 21min"
+        },
+        {
+            "model": "DDPM (T=50)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Inference time",
+            "result": "~10 min 30 sec"
+        },
+        {
+            "model": "DDPM (T=50)",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Per-Sample Time",
+            "result": "~0.05 sec"
+        }
+    ],
+    "innovation": "This paper presents a comprehensive inter-comparison of three deep-learning frameworks (U-NET, WGAN, and DDPM) for precipitation super-resolution, systematically evaluating their performance on hydrologically relevant diagnostics to clarify their relative strengths, limitations, and computational trade-offs under a unified experimental design.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ERA5-Land",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "We use precipitation fields from the ERA5-Land reanalysis dataset (Mu\u00f1oz-Sabater et al., 2021), which provides hourly accumulated precipitation at 0.1\u00b0 (~9 km) spatial resolution over global land surfaces. Hourly precipitation is aggregated to daily totals and extracted over the contiguous United States (CONUS) for the period 1980-2014. This 35-year record is sufficiently long to sample a wide range of storm types, hydroclimatic variability, and interannual fluctuations. ERA5-Land is selected because it provides physically consistent land-surface precipitation estimates that are widely used in hydrologic modeling and downscaling evaluation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5-Land",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.1\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "We use precipitation fields from the ERA5-Land reanalysis dataset (Mu\u00f1oz-Sabater et al., 2021), which provides hourly accumulated precipitation at 0.1\u00b0 (~9 km) spatial resolution over global land surfaces.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5-Land",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "~9 km",
+            "target_entity_type": "Resolution",
+            "paragraph": "We use precipitation fields from the ERA5-Land reanalysis dataset (Mu\u00f1oz-Sabater et al., 2021), which provides hourly accumulated precipitation at 0.1\u00b0 (~9 km) spatial resolution over global land surfaces.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5-Land",
+            "source_entity_type": "Source",
+            "relation": "SAMPLED_AT_FREQUENCY",
+            "target_entity_instance": "hourly",
+            "target_entity_type": "Frequency",
+            "paragraph": "We use precipitation fields from the ERA5-Land reanalysis dataset (Mu\u00f1oz-Sabater et al., 2021), which provides hourly accumulated precipitation at 0.1\u00b0 (~9 km) spatial resolution over global land surfaces.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "synoptic-scale cyclones",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Northeast",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "To assess model behavior across distinct precipitation climatologies, we define three non-overlapping 128 \u00d7 128 grid domains (~1150 \u00d7 1150 km at mid-latitudes) representing major U.S. hydroclimatic regimes (Figure 1): (i) Central Plains (30.2\u00b0N\u221243.0\u00b0N, 105.4\u00b0W-92.6\u00b0W), dominated by warm-season convective precipitation; (ii) Pacific Northwest (36.6\u00b0N-49.4\u00b0N, 121.8\u00b0W-109.0\u00b0W), characterized by wintertime orographic enhancement and strong seasonal contrast; and (iii) Northeast (36.6\u00b0N-49.4\u00b0N, 90.4\u00b0W-77.6\u00b0W), influenced by synoptic-scale cyclones and frontal systems.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "frontal systems",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Northeast",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "To assess model behavior across distinct precipitation climatologies, we define three non-overlapping 128 \u00d7 128 grid domains (~1150 \u00d7 1150 km at mid-latitudes) representing major U.S. hydroclimatic regimes (Figure 1): (i) Central Plains (30.2\u00b0N\u221243.0\u00b0N, 105.4\u00b0W-92.6\u00b0W), dominated by warm-season convective precipitation; (ii) Pacific Northwest (36.6\u00b0N-49.4\u00b0N, 121.8\u00b0W-109.0\u00b0W), characterized by wintertime orographic enhancement and strong seasonal contrast; and (iii) Northeast (36.6\u00b0N-49.4\u00b0N, 90.4\u00b0W-77.6\u00b0W), influenced by synoptic-scale cyclones and frontal systems.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5-Land",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Copernicus Climate Change Service (C3S)",
+            "target_entity_type": "Institute",
+            "paragraph": "ERA5-Land precipitation data used in this study are publicly available from the Copernicus Climate Change Service (C3S) Climate Data Store. ERA5-Land provides global land-surface variables at approximately 9-km spatial resolution and hourly temporal resolution. The data can be accessed through the C3S Climate Data Store (https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land?tab=download) (Mu\u00f1oz Sabater, 2019). All preprocessing steps applied in this study are described in the Methods section.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "convolutional U-NET",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "U-NET",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "conditional Wasserstein GAN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WGAN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "conditional denoising diffusion probabilistic model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "DDPM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5-Land",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "regional climate models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "generator",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "critic",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Denoising UNET",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "U-NET",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ReLU activations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Adam optimizer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Leaky ReLU activations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "linear activation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cosine noise schedule",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AdamW optimizer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Forward Diffusion Process",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Backward Diffusion Process",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "encoder-decoder structure",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "skip connections",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "encoder",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "bottleneck",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "decoder",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3 \u00d7 3 convolutional layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "2 x 2 max-pooling layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "transposed convolution up-sampling",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "sinusoidal time embeddings",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Feature-wise Linear Modulation (FiLM)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "multilayer perceptron",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "bilinear interpolation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "log (1 + x) transformation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "min-max normalization",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "precipitation distributions",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "wet-dry occurrence",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "extremes",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spatial structure",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "storm morphology",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mass consistency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ensemble variability",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "computational cost",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spatial dependence",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "uncertainty",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "extreme precipitation behavior",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "rainfall mass consistency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean-squared error (MSE) loss",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Wasserstein critic loss",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "gradient penalty",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "noise-prediction loss",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "distributional consistency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mass Conservation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spatial organization",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "binary precipitation detection skill",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Quantile-Quantile (Q-Q) Analysis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Exceedance Probability",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Probability of Zero Precipitation (Po)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Higher-Order Statistical Moments",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "variance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "skewness",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "kurtosis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Cumulative Mean Rainfall Depth",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Lagged Spatial Autocorrelation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pearson correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Fraction Skill Score (FSS)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Radial Power Spectrum",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Structural Similarity Index (SSIM)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ROC Curve",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Area Under the Curve (AUC)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "training times",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "inference times",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Per-Sample Time",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "training and validation losses",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "critic loss",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "generator loss",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Second Moment",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Copernicus Climate Change Service (C3S) Climate Data Store",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hourly accumulated precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "~100-200 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "~10 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "~9 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "~72 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "~144 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "128 \u00d7 128",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "16 \u00d7 16",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "8 \u00d7 8",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "10-member ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Central Plains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific Northwest",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northeast",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "contiguous United States",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "storm",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "cyclones",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "flood",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Flood",
+            "entity_type": "NaturalHazardType"
+        }
+    ],
+    "referenced_works": []
+}

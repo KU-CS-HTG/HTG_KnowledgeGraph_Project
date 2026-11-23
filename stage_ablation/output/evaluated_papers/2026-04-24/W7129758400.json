@@ -1,0 +1,1002 @@
+{
+    "uri": "https://openalex.org/W7129758400",
+    "title": "Data-driven Approaches based on Cross-scale Dense Convolutional Network for Detecting Climate Change Effects on Crop Yield and Farming Patterns",
+    "venue": {
+        "name": "International journal of intelligent engineering and systems",
+        "id": "https://openalex.org/S2764379787",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [],
+    "doi": "https://doi.org/10.22266/ijies2026.0331.47",
+    "abstract": "Climate stress is reshaping crop productivity in the Himalayan region, yet decision support is often fragmented: climate forecasting, vulnerability mapping, and agricultural-growth attribution are usually treated as separate tasks.This paper presents an end-to-end framework that (i) standardizes exposure, sensitivity, and adaptivecapacity indicators to quantify vulnerability across 22 districts in Jammu & Kashmir and Ladakh, (ii) augments multichannel climate records using a GAN, and (iii) forecasts key climate drivers (precipitation, temperature extremes, and relative humidity) with a Cross-Scale Dense Convolutional Network trained via ADMM-based updates.Unlike prior studies that apply forecasting or vulnerability scoring in isolation, the same pipeline links district-wise vulnerability indices, climate projections, and Ricardian growth estimation to deliver actionable rankings and factor sensitivities.Beyond combining components, the proposed framework couples GAN-augmented multichannel climate forecasting with an ADMM-stabilized CSDC-Net and then propagates the same forecasts into vulnerability ranking and Ricardian factor-sensitivity (growth attribution), producing district-wise, policy-actionable insights rather than standalone prediction scores.Experiments combine 42 socioeconomic/agronomic indicators with NASA POWER exposure variables and derived climate-change indicators.The proposed CSDC-Net-ADMM achieves an overall accuracy of R = 0.892 with low prediction errors (RMSE = 0.185, MAE = 0.170), outperforming common deep baselines such as LSTM, RNN, and 1D-CNN.The vulnerability assessment reveals marked spatial disparities, identifying higher-risk districts (e.g., Budgam and Bandipora) and lower-risk districts (e.g., Kargil and Rajouri).The integrated analysis further indicates that rising minimum temperature and shrinking landholdings reduce agricultural productivity, whereas improved literacy and credit access strengthen adaptive capacity and help mitigate vulnerability.These outputs support climate-resilient planning by prioritizing interventions, allocation, and early warning of yield risks at district scale.",
+    "field": "Climate change and agriculture",
+    "problem": "Existing approaches for assessing climate change's agricultural impact are fragmented, suffering from data scarcity, weak modeling of variable dependencies, and a disconnect between climate forecasts and actionable, district-wise policy outputs, which hinders integrated planning and decision support.",
+    "method": "The paper proposes an end-to-end framework using a GAN-augmented Cross-Scale Dense Convolutional Network to forecast climate drivers and integrate these predictions into vulnerability and Ricardian analyses, providing actionable insights for district-level agricultural planning.",
+    "task": "The task is to develop an end-to-end framework using a GAN and a Cross-Scale Dense Convolutional Network to forecast climate drivers, assess agricultural vulnerability, and analyze crop yield impacts in the Himalayan region to support climate-resilient planning.",
+    "model": [
+        "CSDC-Net-ADMM",
+        "CSDC-Net",
+        "LSTM",
+        "1D-CNN",
+        "RNN",
+        "Informer",
+        "N-BEATS",
+        "ADMM-LSTM",
+        "GAN-augmented LSTM",
+        "DCGAN",
+        "PatchGAN"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.6315000057220459
+        },
+        {
+            "id": "https://openalex.org/keywords/agriculture",
+            "display_name": "Agriculture",
+            "score": 0.5376999974250793
+        },
+        {
+            "id": "https://openalex.org/keywords/yield",
+            "display_name": "Yield (engineering)",
+            "score": 0.5188999772071838
+        },
+        {
+            "id": "https://openalex.org/keywords/crop-yield",
+            "display_name": "Crop yield",
+            "score": 0.430400013923645
+        },
+        {
+            "id": "https://openalex.org/keywords/crop-production",
+            "display_name": "Crop production",
+            "score": 0.33570000529289246
+        },
+        {
+            "id": "https://openalex.org/keywords/crop",
+            "display_name": "Crop",
+            "score": 0.31139999628067017
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.6388999819755554
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.6315000057220459
+        },
+        {
+            "id": "https://openalex.org/C118518473",
+            "wikidata": "https://www.wikidata.org/wiki/Q11451",
+            "display_name": "Agriculture",
+            "level": 2,
+            "score": 0.5376999974250793
+        },
+        {
+            "id": "https://openalex.org/C134121241",
+            "wikidata": "https://www.wikidata.org/wiki/Q899301",
+            "display_name": "Yield (engineering)",
+            "level": 2,
+            "score": 0.5188999772071838
+        },
+        {
+            "id": "https://openalex.org/C88463610",
+            "wikidata": "https://www.wikidata.org/wiki/Q194118",
+            "display_name": "Agricultural engineering",
+            "level": 1,
+            "score": 0.4375
+        },
+        {
+            "id": "https://openalex.org/C126343540",
+            "wikidata": "https://www.wikidata.org/wiki/Q889514",
+            "display_name": "Crop yield",
+            "level": 2,
+            "score": 0.430400013923645
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.40290001034736633
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.3483999967575073
+        },
+        {
+            "id": "https://openalex.org/C2989409935",
+            "wikidata": "https://www.wikidata.org/wiki/Q11451",
+            "display_name": "Crop production",
+            "level": 3,
+            "score": 0.33570000529289246
+        },
+        {
+            "id": "https://openalex.org/C137580998",
+            "wikidata": "https://www.wikidata.org/wiki/Q235352",
+            "display_name": "Crop",
+            "level": 2,
+            "score": 0.31139999628067017
+        },
+        {
+            "id": "https://openalex.org/C2988270110",
+            "wikidata": "https://www.wikidata.org/wiki/Q17080711",
+            "display_name": "Crop management",
+            "level": 3,
+            "score": 0.30149999260902405
+        },
+        {
+            "id": "https://openalex.org/C39820584",
+            "wikidata": "https://www.wikidata.org/wiki/Q125928",
+            "display_name": "Climate pattern",
+            "level": 3,
+            "score": 0.25949999690055847
+        },
+        {
+            "id": "https://openalex.org/C128383755",
+            "wikidata": "https://www.wikidata.org/wiki/Q3816336",
+            "display_name": "Agricultural productivity",
+            "level": 3,
+            "score": 0.25279998779296875
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "CSDC-NET-ADDM",
+            "observational_dataset": "NASA POWER Climate Data and Digest of Statistics (Jammu and Kashmir)",
+            "evaluation_metric": "RMSE, MAE, R^2",
+            "result": "PPT RMSE: 0.185, RH RMSE: 2.100, T_avg RMSE: 0.320, T_max RMSE: 0.230, T_min RMSE: 0.750, PPT MAE: 0.170, RH MAE: 1.980, T_avg MAE: 0.280, T_max MAE: 0.210, T_min MAE: 0.710, PPT R^2: 0.92, RH R^2: 0.82, Avg R^2 (all vars): 0.892"
+        },
+        {
+            "model": "CSDC-NET",
+            "observational_dataset": "NASA POWER Climate Data and Digest of Statistics (Jammu and Kashmir)",
+            "evaluation_metric": "RMSE, MAE",
+            "result": "PPT RMSE: 0.210, RH RMSE: 2.305, T_avg RMSE: 0.350, T_max RMSE: 0.270, T_min RMSE: 0.810, PPT MAE: 0.190, RH MAE: 2.150, T_avg MAE: 0.310, T_max MAE: 0.250, T_min MAE: 0.770"
+        },
+        {
+            "model": "LSTM",
+            "observational_dataset": "NASA POWER Climate Data and Digest of Statistics (Jammu and Kashmir)",
+            "evaluation_metric": "RMSE, MAE, R^2",
+            "result": "PPT RMSE: 0.293, RH RMSE: 2.602, T_avg RMSE: 0.414, T_max RMSE: 0.293, T_min RMSE: 0.974, PPT MAE: 0.231, RH MAE: 2.129, T_avg MAE: 0.324, T_max MAE: 0.240, T_min MAE: 0.771, PPT R^2: 0.85, RH R^2: 0.74, Avg R^2 (all vars): 0.78"
+        },
+        {
+            "model": "1D-CNN",
+            "observational_dataset": "NASA POWER Climate Data and Digest of Statistics (Jammu and Kashmir)",
+            "evaluation_metric": "RMSE, MAE, R^2",
+            "result": "PPT RMSE: 0.275, RH RMSE: 2.480, T_avg RMSE: 0.385, T_max RMSE: 0.260, T_min RMSE: 0.900, PPT MAE: 0.210, RH MAE: 2.100, T_avg MAE: 0.300, T_max MAE: 0.230, T_min MAE: 0.750, PPT R^2: 0.86, RH R^2: 0.75, Avg R^2 (all vars): 0.79"
+        },
+        {
+            "model": "RNN",
+            "observational_dataset": "NASA POWER Climate Data and Digest of Statistics (Jammu and Kashmir)",
+            "evaluation_metric": "RMSE, MAE, R^2",
+            "result": "PPT RMSE: 0.300, RH RMSE: 2.600, T_avg RMSE: 0.410, T_max RMSE: 0.280, T_min RMSE: 0.920, PPT MAE: 0.220, RH MAE: 2.200, T_avg MAE: 0.320, T_max MAE: 0.235, T_min MAE: 0.780, PPT R^2: 0.83, RH R^2: 0.73, Avg R^2 (all vars): 0.77"
+        },
+        {
+            "model": "Informer (season-aware)",
+            "observational_dataset": "NASA POWER Climate Data and Digest of Statistics (Jammu and Kashmir)",
+            "evaluation_metric": "RMSE, MAE, R^2",
+            "result": "PPT RMSE: 0.255, PPT MAE: 0.200, PPT R^2: 0.88, RH RMSE: 2.310, RH MAE: 1.980, RH R^2: 0.77, Avg R^2 (all vars): 0.82"
+        },
+        {
+            "model": "N-BEATS/N-BEATSX",
+            "observational_dataset": "NASA POWER Climate Data and Digest of Statistics (Jammu and Kashmir)",
+            "evaluation_metric": "RMSE, MAE, R^2",
+            "result": "PPT RMSE: 0.240, PPT MAE: 0.195, PPT R^2: 0.89, RH RMSE: 2.200, RH MAE: 1.940, RH R^2: 0.79, Avg R^2 (all vars): 0.84"
+        },
+        {
+            "model": "ADMM-LSTM",
+            "observational_dataset": "NASA POWER Climate Data and Digest of Statistics (Jammu and Kashmir)",
+            "evaluation_metric": "RMSE, MAE, R^2",
+            "result": "PPT RMSE: 0.235, PPT MAE: 0.185, PPT R^2: 0.90, RH RMSE: 2.150, RH MAE: 1.980, RH R^2: 0.80, Avg R^2 (all vars): 0.85"
+        },
+        {
+            "model": "GAN-augmented LSTM",
+            "observational_dataset": "NASA POWER Climate Data and Digest of Statistics (Jammu and Kashmir)",
+            "evaluation_metric": "RMSE, MAE, R^2",
+            "result": "PPT RMSE: 0.225, PPT MAE: 0.180, PPT R^2: 0.91, RH RMSE: 2.120, RH MAE: 1.970, RH R^2: 0.81, Avg R^2 (all vars): 0.86"
+        }
+    ],
+    "innovation": "This paper presents an end-to-end framework that integrates GAN-augmented climate forecasting with a Cross-Scale Dense Convolutional Network to directly link climate projections with district-level vulnerability assessment and agricultural growth analysis, providing unified, policy-actionable insights for the Himalayan region.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "CSDC-Net-ADMM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R\u00b2 = 0.892",
+            "target_entity_type": "Metric",
+            "paragraph": "The proposed CSDC-Net-ADMM achieves an overall accuracy of R\u00b2 = 0.892 with low prediction errors (RMSE = 0.185, MAE = 0.170), outperforming common deep baselines such as LSTM, RNN, and 1D-CNN.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CSDC-Net-ADMM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE = 0.185",
+            "target_entity_type": "Metric",
+            "paragraph": "The proposed CSDC-Net-ADMM achieves an overall accuracy of R\u00b2 = 0.892 with low prediction errors (RMSE = 0.185, MAE = 0.170), outperforming common deep baselines such as LSTM, RNN, and 1D-CNN.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CSDC-Net-ADMM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE = 0.170",
+            "target_entity_type": "Metric",
+            "paragraph": "The proposed CSDC-Net-ADMM achieves an overall accuracy of R\u00b2 = 0.892 with low prediction errors (RMSE = 0.185, MAE = 0.170), outperforming common deep baselines such as LSTM, RNN, and 1D-CNN.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Cross-Scale Dense Convolutional Network",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "This paper presents an end-to-end framework that (i) standardizes exposure, sensitivity, and adaptive-capacity indicators to quantify vulnerability across 22 districts in Jammu & Kashmir and Ladakh, (ii) augments multichannel climate records using a GAN, and (iii) forecasts key climate drivers (precipitation, temperature extremes, and relative humidity) with a Cross-Scale Dense Convolutional Network trained via ADMM-based updates.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Cross-Scale Dense Convolutional Network",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature extremes",
+            "target_entity_type": "Variable",
+            "paragraph": "This paper presents an end-to-end framework that (i) standardizes exposure, sensitivity, and adaptive-capacity indicators to quantify vulnerability across 22 districts in Jammu & Kashmir and Ladakh, (ii) augments multichannel climate records using a GAN, and (iii) forecasts key climate drivers (precipitation, temperature extremes, and relative humidity) with a Cross-Scale Dense Convolutional Network trained via ADMM-based updates.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Cross-Scale Dense Convolutional Network",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "relative humidity",
+            "target_entity_type": "Variable",
+            "paragraph": "This paper presents an end-to-end framework that (i) standardizes exposure, sensitivity, and adaptive-capacity indicators to quantify vulnerability across 22 districts in Jammu & Kashmir and Ladakh, (ii) augments multichannel climate records using a GAN, and (iii) forecasts key climate drivers (precipitation, temperature extremes, and relative humidity) with a Cross-Scale Dense Convolutional Network trained via ADMM-based updates.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Climate stress",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Himalayan region",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Climate stress is reshaping crop productivity in the Himalayan region, yet decision support is often fragmented: climate forecasting, vulnerability mapping, and agricultural-growth attribution are usually treated as separate tasks.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Climate stress",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Jammu & Kashmir",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "This paper presents an end-to-end framework that (i) standardizes exposure, sensitivity, and adaptive-capacity indicators to quantify vulnerability across 22 districts in Jammu & Kashmir and Ladakh, (ii) augments multichannel climate records using a GAN, and (iii) forecasts key climate drivers (precipitation, temperature extremes, and relative humidity) with a Cross-Scale Dense Convolutional Network trained via ADMM-based updates.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Climate stress",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Ladakh",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "This paper presents an end-to-end framework that (i) standardizes exposure, sensitivity, and adaptive-capacity indicators to quantify vulnerability across 22 districts in Jammu & Kashmir and Ladakh, (ii) augments multichannel climate records using a GAN, and (iii) forecasts key climate drivers (precipitation, temperature extremes, and relative humidity) with a Cross-Scale Dense Convolutional Network trained via ADMM-based updates.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "vulnerability",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Budgam",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "The vulnerability assessment reveals marked spatial disparities, identifying higher-risk districts (e.g., Budgam and Bandipora) and lower-risk districts (e.g., Kargil and Rajouri).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "vulnerability",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Bandipora",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "The vulnerability assessment reveals marked spatial disparities, identifying higher-risk districts (e.g., Budgam and Bandipora) and lower-risk districts (e.g., Kargil and Rajouri).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CSDC-NET-ADDM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE for PPT is 0.185",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 4. Comparative tabulation of RMSE and MAE among predicted values besides target values in each classical",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE for PPT is 0.293",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 4. Comparative tabulation of RMSE and MAE among predicted values besides target values in each classical",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "1D-CNN",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE for RH is 2.100",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 4. Comparative tabulation of RMSE and MAE among predicted values besides target values in each classical",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "RNN",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE for T_min is 0.780",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 4. Comparative tabulation of RMSE and MAE among predicted values besides target values in each classical",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "agrarian growth classical",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R\u00b2 = 0.892",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 5. Approximations of coefficients pertinent to agrarian growth classical distinct in Eq. (7) ... R\u00b2 = 0.892 (indicating improved model fit)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CSDC-Net-ADMM-GAN",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "PPT R^2 = 0.92",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 6. comparison data with state-of-the-art methods",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GAN-augmented LSTM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "PPT R^2 = 0.91",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 6. comparison data with state-of-the-art methods",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ADMM-LSTM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RH R^2 = 0.80",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 6. comparison data with state-of-the-art methods",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Informer (season-aware)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Avg (R^2) (all vars) = 0.82",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 6. comparison data with state-of-the-art methods",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Cross-Scale Dense Convolutional Network",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Generative Adversarial Network",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ADMM-based updates",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Ricardian growth estimation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Himalayan region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Jammu & Kashmir",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Ladakh",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature extremes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NASA POWER",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CSDC-Net-ADMM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "R\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "LSTM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "RNN",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "1D-CNN",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Budgam",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Bandipora",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Kargil",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Rajouri",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "minimum temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "crop yield",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Bi-GRU",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "time-series CNNs",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Ricardian approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GAN-based data augmentation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CSDC-NET",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ADMM hyper parameter optimization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Anantnag",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Jammu",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Kathua",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Baramulla",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Kishtwar",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Poonch",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Ganderbal",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Kulgam",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Ramban",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Kupwara",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Reasi",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Pulwama",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Samba",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Shopian",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Udhampur",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Srinagar",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Doda",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Leh",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Pakistan",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Green Normalized Difference Vegetation Index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Normalized Difference Vegetation Index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Enhanced Vegetation Index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soil Adjusted Vegetation Index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Malaysia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "support vector machines",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "normalized google distance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Bidirectional Gated Recurrent Unit",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Time Series CNN",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "accuracy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "precision",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "recall",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "IoT sensors",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Spain",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Andalusia",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Jaen",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Yearly precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Yearly maximum temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Annual minimum temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Yearly average temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Annual relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Regular land holding size",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Culturable waste land",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Gross irrigated area",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Net irrigated area",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Population density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Illiteracy rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Net sown area",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Forest area",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Cropping intensity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Livestock density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Literacy rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Rural literacy degree",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Average land holding",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Public investment in agriculture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Agricultural credit",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Himalayan Mountains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Tibet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mediterranean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "moving-average approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "annual",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "modified Ricardian model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ordinary least squares",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "recurrent neural networks",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "DCGAN",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "patch GAN",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "convolutional filters",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "fully connected layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "skip connection",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Patch GAN discriminator",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "1D convolutional layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "multi-scale convolution kernel",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Leaky Relu activation function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Dense net",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "bottleneck layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "transition layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Soft max classifier",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Average Pooling",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "adaptive stochastic gradient descent method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Alternating Direction Method of Multipliers",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Peaceman-Rachford splitting method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "augmented Lagrangian splitting method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Loss",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Vulnerability Score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CSDC-Net-ADMM-GAN",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "GAN-augmented LSTM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ADMM-LSTM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Informer",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "N-BEATS",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Correlation Matrix",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "95% confidence interval",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "paired t-test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Wilcoxon signed-rank test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "effect size (Cohen's d)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "p-values",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Informer (season-aware)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "N-BEATS/N-BEATSX",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ADMM-style regularization/constraint optimization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Mean\u00b1SD",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GAN-LSTM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Exposure score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Sensitivity score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Adaptive capacity score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Coefficient of determination",
+            "entity_type": "Metric"
+        }
+    ],
+    "referenced_works": []
+}

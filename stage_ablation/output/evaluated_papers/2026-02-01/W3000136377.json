@@ -1,0 +1,1948 @@
+{
+    "uri": "https://openalex.org/W3000136377",
+    "title": "Ocean biogeochemistry in the Norwegian Earth System Model version 2 (NorESM2)",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2020,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5063959948",
+            "display_name": "Jerry Tjiputra",
+            "orcid": "https://orcid.org/0000-0002-4600-2453"
+        },
+        {
+            "id": "https://openalex.org/A5026788850",
+            "display_name": "J\u00f6rg Schwinger",
+            "orcid": "https://orcid.org/0000-0002-7525-6882"
+        },
+        {
+            "id": "https://openalex.org/A5088945731",
+            "display_name": "Mats Bentsen",
+            "orcid": "https://orcid.org/0000-0001-5441-4063"
+        },
+        {
+            "id": "https://openalex.org/A5031401548",
+            "display_name": "Anne L. Mor\u00e9e",
+            "orcid": "https://orcid.org/0000-0002-0283-5947"
+        },
+        {
+            "id": "https://openalex.org/A5080687396",
+            "display_name": "Shuang Gao",
+            "orcid": "https://orcid.org/0000-0001-7716-5717"
+        },
+        {
+            "id": "https://openalex.org/A5001382204",
+            "display_name": "Ingo Bethke",
+            "orcid": "https://orcid.org/0000-0002-6836-9838"
+        },
+        {
+            "id": "https://openalex.org/A5050524996",
+            "display_name": "Christoph Heinze",
+            "orcid": "https://orcid.org/0000-0003-4074-8390"
+        },
+        {
+            "id": "https://openalex.org/A5083300947",
+            "display_name": "Nadine Goris",
+            "orcid": "https://orcid.org/0000-0002-0087-6534"
+        },
+        {
+            "id": "https://openalex.org/A5011902328",
+            "display_name": "Alok Gupta",
+            "orcid": "https://orcid.org/0000-0002-1033-486X"
+        },
+        {
+            "id": "https://openalex.org/A5100532957",
+            "display_name": "Yanchun He",
+            "orcid": "https://orcid.org/0000-0002-5932-3627"
+        },
+        {
+            "id": "https://openalex.org/A5090047254",
+            "display_name": "Dirk Olivi\u00e9",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5039808142",
+            "display_name": "\u00d8yvind Seland",
+            "orcid": "https://orcid.org/0000-0001-6804-5879"
+        },
+        {
+            "id": "https://openalex.org/A5052244847",
+            "display_name": "Michael Schulz",
+            "orcid": "https://orcid.org/0000-0003-4493-4158"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-13-2393-2020",
+    "abstract": "Abstract. The ocean carbon cycle is a key player in the climate system through its role in regulating the atmospheric carbon dioxide concentration and other processes that alter the Earth's radiative balance. In the second version of the Norwegian Earth System Model (NorESM2), the oceanic carbon cycle component has gone through numerous updates that include, amongst others, improved process representations, increased interactions with the atmosphere, and additional new tracers. Oceanic dimethyl sulfide (DMS) is now prognostically simulated and its fluxes are directly coupled with the atmospheric component, leading to a direct feedback to the climate. Atmospheric nitrogen deposition and additional riverine inputs of other biogeochemical tracers have recently been included in the model. The implementation of new tracers such as \u201cpreformed\u201d and \u201cnatural\u201d tracers enables a separation of physical from biogeochemical drivers as well as of internal from external forcings and hence a better diagnostic of the simulated biogeochemical variability. Carbon isotope tracers have been implemented and will be relevant for studying long-term past climate changes. Here, we describe these new model implementations and present an evaluation of the model's performance in simulating the observed climatological states of water-column biogeochemistry and in simulating transient evolution over the historical period. Compared to its predecessor NorESM1, the new model's performance has improved considerably in many aspects. In the interior, the observed spatial patterns of nutrients, oxygen, and carbon chemistry are better reproduced, reducing the overall model biases. A new set of ecosystem parameters and improved mixed layer dynamics improve the representation of upper-ocean processes (biological production and air\u2013sea CO2 fluxes) at seasonal timescale. Transient warming and air\u2013sea CO2 fluxes over the historical period are also in good agreement with observation-based estimates. NorESM2 participates in the Coupled Model Intercomparison Project phase 6 (CMIP6) through DECK (Diagnostic, Evaluation and Characterization of Klima) and several endorsed MIP simulations.",
+    "field": "Ocean biogeochemistry modeling",
+    "problem": "The predecessor model, NorESM1, exhibited significant biases in simulating key ocean biogeochemical states and processes, including inaccurate nutrient and oxygen distributions, unrealistic biological production, and flawed seasonal CO\u2082 fluxes, which limited its fidelity in representing the ocean carbon cycle and its associated climate feedbacks.",
+    "method": "This paper describes the development of NorESM2, an Earth System Model with an updated ocean biogeochemistry component that includes improved process representations, new biogeochemical tracers, and enhanced atmospheric interactions to reduce model biases and better simulate the ocean carbon cycle.",
+    "task": "The task is to describe updates to the ocean biogeochemistry component of the Norwegian Earth System Model version 2 (NorESM2) and evaluate its performance in simulating biogeochemical states and historical evolution against observations and its predecessor model.",
+    "model": [
+        "NorESM2",
+        "NorESM1",
+        "NorESM1-ME",
+        "NorESM2-LM",
+        "NorESM2-MM",
+        "NorESM-OC1.2",
+        "NorESM2-OC"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/biogeochemical-cycle",
+            "display_name": "Biogeochemical cycle",
+            "score": 0.8758362531661987
+        },
+        {
+            "id": "https://openalex.org/keywords/biogeochemistry",
+            "display_name": "Biogeochemistry",
+            "score": 0.8191593885421753
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.6439129114151001
+        },
+        {
+            "id": "https://openalex.org/keywords/earth-system-science",
+            "display_name": "Earth system science",
+            "score": 0.554119884967804
+        },
+        {
+            "id": "https://openalex.org/keywords/carbon-cycle",
+            "display_name": "Carbon cycle",
+            "score": 0.5369954109191895
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.46696144342422485
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.45738524198532104
+        },
+        {
+            "id": "https://openalex.org/keywords/radiative-forcing",
+            "display_name": "Radiative forcing",
+            "score": 0.4385470747947693
+        },
+        {
+            "id": "https://openalex.org/keywords/earth-science",
+            "display_name": "Earth science",
+            "score": 0.3877059519290924
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.36699730157852173
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.3362976610660553
+        },
+        {
+            "id": "https://openalex.org/keywords/ecosystem",
+            "display_name": "Ecosystem",
+            "score": 0.30598118901252747
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.2921135127544403
+        },
+        {
+            "id": "https://openalex.org/keywords/chemistry",
+            "display_name": "Chemistry",
+            "score": 0.23115545511245728
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.19596782326698303
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-chemistry",
+            "display_name": "Environmental chemistry",
+            "score": 0.12556669116020203
+        },
+        {
+            "id": "https://openalex.org/keywords/ecology",
+            "display_name": "Ecology",
+            "score": 0.12066912651062012
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C71915725",
+            "wikidata": "https://www.wikidata.org/wiki/Q846303",
+            "display_name": "Biogeochemical cycle",
+            "level": 2,
+            "score": 0.8758362531661987
+        },
+        {
+            "id": "https://openalex.org/C130309983",
+            "wikidata": "https://www.wikidata.org/wiki/Q864379",
+            "display_name": "Biogeochemistry",
+            "level": 2,
+            "score": 0.8191593885421753
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6439129114151001
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.554119884967804
+        },
+        {
+            "id": "https://openalex.org/C6939412",
+            "wikidata": "https://www.wikidata.org/wiki/Q167751",
+            "display_name": "Carbon cycle",
+            "level": 3,
+            "score": 0.5369954109191895
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.46696144342422485
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.45738524198532104
+        },
+        {
+            "id": "https://openalex.org/C99578197",
+            "wikidata": "https://www.wikidata.org/wiki/Q1463606",
+            "display_name": "Radiative forcing",
+            "level": 3,
+            "score": 0.4385470747947693
+        },
+        {
+            "id": "https://openalex.org/C1965285",
+            "wikidata": "https://www.wikidata.org/wiki/Q8008",
+            "display_name": "Earth science",
+            "level": 1,
+            "score": 0.3877059519290924
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.36699730157852173
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3362976610660553
+        },
+        {
+            "id": "https://openalex.org/C110872660",
+            "wikidata": "https://www.wikidata.org/wiki/Q37813",
+            "display_name": "Ecosystem",
+            "level": 2,
+            "score": 0.30598118901252747
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.2921135127544403
+        },
+        {
+            "id": "https://openalex.org/C185592680",
+            "wikidata": "https://www.wikidata.org/wiki/Q2329",
+            "display_name": "Chemistry",
+            "level": 0,
+            "score": 0.23115545511245728
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.19596782326698303
+        },
+        {
+            "id": "https://openalex.org/C107872376",
+            "wikidata": "https://www.wikidata.org/wiki/Q321355",
+            "display_name": "Environmental chemistry",
+            "level": 1,
+            "score": 0.12556669116020203
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.12066912651062012
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "NorESM1-ME",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Primary production",
+            "result": "39.86 Pg C yr-1"
+        },
+        {
+            "model": "NorESM1-ME",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "POC export",
+            "result": "7.90 Pg C yr-1"
+        },
+        {
+            "model": "NorESM1-ME",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "CaCO3 export",
+            "result": "0.49 Pg C yr-1"
+        },
+        {
+            "model": "NorESM1-ME",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Opal export",
+            "result": "105.93 Tmol Si yr-1"
+        },
+        {
+            "model": "NorESM1-ME",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "f ratio",
+            "result": "0.20"
+        },
+        {
+            "model": "NorESM1-ME",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "CaCO3-to-POC ratio",
+            "result": "0.06"
+        },
+        {
+            "model": "NorESM1-ME",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Teff-1km",
+            "result": "0.06"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Primary production",
+            "result": "33.27 Pg C yr-1"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "POC export",
+            "result": "4.94 Pg C yr-1"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "CaCO3 export",
+            "result": "0.66 Pg C yr-1"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Opal export",
+            "result": "76.89 Tmol Si yr-1"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "f ratio",
+            "result": "0.15"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "CaCO3-to-POC ratio",
+            "result": "0.13"
+        },
+        {
+            "model": "NorESM2-LM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Teff-1km",
+            "result": "0.24"
+        },
+        {
+            "model": "NorESM2-MM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Primary production",
+            "result": "35.29 Pg C yr-1"
+        },
+        {
+            "model": "NorESM2-MM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "POC export",
+            "result": "5.39 Pg C yr-1"
+        },
+        {
+            "model": "NorESM2-MM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "CaCO3 export",
+            "result": "0.74 Pg C yr-1"
+        },
+        {
+            "model": "NorESM2-MM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Opal export",
+            "result": "81.38 Tmol Si yr-1"
+        },
+        {
+            "model": "NorESM2-MM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "f ratio",
+            "result": "0.15"
+        },
+        {
+            "model": "NorESM2-MM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "CaCO3-to-POC ratio",
+            "result": "0.14"
+        },
+        {
+            "model": "NorESM2-MM",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "Teff-1km",
+            "result": "0.24"
+        }
+    ],
+    "innovation": "This paper describes the extensive updates to the ocean biogeochemistry component of the Norwegian Earth System Model version 2 (NorESM2), which improve process representations and add new tracers, resulting in a more accurate simulation of key ocean variables compared to its predecessor.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "NorESM1-ME",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "NorESM2",
+            "target_entity_type": "Source",
+            "paragraph": "Abstract. The ocean carbon cycle is a key player in the climate system through its role in regulating the atmospheric carbon dioxide concentration and other processes that alter the Earth's radiative balance. In the second version of the Norwegian Earth System Model (NorESM2), the oceanic carbon cycle component has gone through numerous updates that include, amongst others, improved process representa- tions, increased interactions with the atmosphere, and addi- tional new tracers. Oceanic dimethyl sulfide (DMS) is now prognostically simulated and its fluxes are directly coupled with the atmospheric component, leading to a direct feed- back to the climate. Atmospheric nitrogen deposition and ad- ditional riverine inputs of other biogeochemical tracers have recently been included in the model. The implementation of new tracers such as \u201cpreformed\u201d and \u201cnatural\u201d tracers en- ables a separation of physical from biogeochemical drivers as well as of internal from external forcings and hence a bet- ter diagnostic of the simulated biogeochemical variability. Carbon isotope tracers have been implemented and will be relevant for studying long-term past climate changes. Here, we describe these new model implementations and present an evaluation of the model's performance in simulating the observed climatological states of water-column biogeochem- istry and in simulating transient evolution over the histori- cal period. Compared to its predecessor NorESM1, the new model's performance has improved considerably in many as- pects. In the interior, the observed spatial patterns of nutri- ents, oxygen, and carbon chemistry are better reproduced, reducing the overall model biases. A new set of ecosystem parameters and improved mixed layer dynamics improve the representation of upper-ocean processes (biological produc- tion and air-sea CO2 fluxes) at seasonal timescale. Transient warming and air-sea CO2 fluxes over the historical period are also in good agreement with observation-based estimates. NorESM2 participates in the Coupled Model Intercompar- ison Project phase 6 (CMIP6) through DECK (Diagnostic, Evaluation and Characterization of Klima) and several en- dorsed MIP simulations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "BLOM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "MM share the same ocean physical ocean model (BLOM) and the same biogeochemical component (iHAMOCC) with a horizontal resolution of approximately 1\u00b0. The ocean model adopts 53 isopycnal layers with two non-isopycnic surface layers, which represent (1) the top 10m of depth and (2) the rest of the surface mixed layer. A more detailed description of the ocean physical component is provided in Bentsen et al. (2020). The ocean biogeochemistry performs similarly in both model versions. Unless explicitly specified, our analysis refers to the results from NorESM2-MM (here- after referred to as NorESM2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "iHAMOCC",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "MM share the same ocean physical ocean model (BLOM) and the same biogeochemical component (iHAMOCC) with a horizontal resolution of approximately 1\u00b0. The ocean model adopts 53 isopycnal layers with two non-isopycnic surface layers, which represent (1) the top 10m of depth and (2) the rest of the surface mixed layer. A more detailed description of the ocean physical component is provided in Bentsen et al. (2020). The ocean biogeochemistry performs similarly in both model versions. Unless explicitly specified, our analysis refers to the results from NorESM2-MM (here- after referred to as NorESM2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "iHAMOCC",
+            "source_entity_type": "SourceComponent",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "HAMOCC5.1",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In this paper, we present improvements in the ocean bio- geochemical component of the Norwegian Earth System Model (NorESM). This component is based on the Hamburg Oceanic Carbon Cycle model (HAMOCC5.1), which was originally developed by Maier-Reimer (1993) and has gone through several development iterations (e.g. Six and Maier- Reimer, 1996; Maier-Reimer et al., 2005). At the Bjerknes Centre for Climate Research in Norway, the model has been branched off, further developed (Assmann et al., 2010; Tjipu- tra et al., 2010, 2013; Schwinger et al., 2016), and coupled to the Bergen Layered (isopycnic coordinate) Ocean Model (BLOM-iHAMOCC). Within the CMIP5 experiments, we identified several shortcomings in the previous model ver- sion of NorESM (NorESM1-ME, hereafter referred to as NorESM1). Here, we discuss several developments relative to the NorESM1 version (described in Tjiputra et al., 2013) in the current model version (NorESM2, Seland et al., 2020a), which contributes to CMIP6.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Wanninkhof (2014) formulation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In NorESM2, the air-sea gas exchange of CO2, O2, N2, N2O, DMS, CFC-11, CFC-12, and SF6 is computed prognostically according to the updated formulation of Wanninkhof (2014). Here, the air-sea flux F of gas X is computed as a function of surface wind speed U, Schmidt number Sc, gas solubility Ko, and the partial pressure difference of gas X based on a bulk formulation:",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "WLIN scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In NorESM2, we have developed two additional particle flux parameterizations that can be selected. They are referred to as the WLIN and AGG schemes. The WLIN scheme is similar to the standard scheme but the sinking speed is a linear function of depth: wpoc = min(wmin + az, Wmax). Here, we use wmin = 1md-1, wmax = 60 m d\u00af\u00b9, and a = 60/2400 m d\u00ae1m~1. When wmin and wmax are set to zero and infinity, respectively, this scheme is equivalent to the widely used Martin curve formulation (Martin et al., 1987). The AGG scheme implements a prognostic sinking speed calculated according to a size distribution of sinking particles. The total concentration of particulate matter, formulated as a function of phytoplankton and detritus, forms sinking aggregates with an explicitly computed size distribution that follows a power-law formula (Kriest and Evans, 1999; Kri- est, 2002): n(d) = Ad\u00ae\u03b2, l<d<\u221e. (5) Here, d represents the particle diameter, and A and B represent parameters of the size distribution. The minimum particle diameter l is set to 0.002 cm. The sinking speed of aggregates is computed according to the diameter of each aggregate. More details of the implementation of the AGG formulation are described in Schwinger et al. (2016). Based on the performance of the different schemes, we have set WLIN to be the default scheme and it is used in all experiments presented here. More details on the differences in the simulated interior biogeochemistry using the different particle export schemes are available in Schwinger et al. (2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "tripolar grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In NorESM2, the ocean-ice model adopts a tripolar grid instead of the bipolar grid of NorESM1. The tripolar grid was chosen because it is more isotropic at northern high latitudes and is therefore more efficient with respect to time integration (longer time step) (Guo et al., 2019). Compared to NorESM1, NorESM2 has enabled a higher-frequency ocean coupling to resolve the diurnal cycle in the flux and state exchange between the ocean and atmosphere (i.e. hourly instead of daily atmosphere-ocean coupling). We also applied a full leapfrog time stepping in both the physical and ocean biogeochemical models to improve the conservation of biogeochemical tracers (Schwinger et al., 2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "bipolar grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In NorESM2, the ocean-ice model adopts a tripolar grid instead of the bipolar grid of NorESM1. The tripolar grid was chosen because it is more isotropic at northern high latitudes and is therefore more efficient with respect to time integration (longer time step) (Guo et al., 2019). Compared to NorESM1, NorESM2 has enabled a higher-frequency ocean coupling to resolve the diurnal cycle in the flux and state exchange between the ocean and atmosphere (i.e. hourly instead of daily atmosphere-ocean coupling). We also applied a full leapfrog time stepping in both the physical and ocean biogeochemical models to improve the conservation of biogeochemical tracers (Schwinger et al., 2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "hourly atmosphere-ocean coupling",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In NorESM2, the ocean-ice model adopts a tripolar grid instead of the bipolar grid of NorESM1. The tripolar grid was chosen because it is more isotropic at northern high latitudes and is therefore more efficient with respect to time integration (longer time step) (Guo et al., 2019). Compared to NorESM1, NorESM2 has enabled a higher-frequency ocean coupling to resolve the diurnal cycle in the flux and state exchange between the ocean and atmosphere (i.e. hourly instead of daily atmosphere-ocean coupling). We also applied a full leapfrog time stepping in both the physical and ocean biogeochemical models to improve the conservation of biogeochemical tracers (Schwinger et al., 2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "daily atmosphere-ocean coupling",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In NorESM2, the ocean-ice model adopts a tripolar grid instead of the bipolar grid of NorESM1. The tripolar grid was chosen because it is more isotropic at northern high latitudes and is therefore more efficient with respect to time integration (longer time step) (Guo et al., 2019). Compared to NorESM1, NorESM2 has enabled a higher-frequency ocean coupling to resolve the diurnal cycle in the flux and state exchange between the ocean and atmosphere (i.e. hourly instead of daily atmosphere-ocean coupling). We also applied a full leapfrog time stepping in both the physical and ocean biogeochemical models to improve the conservation of biogeochemical tracers (Schwinger et al., 2016).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "53 isopycnal layers",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "MM share the same ocean physical ocean model (BLOM) and the same biogeochemical component (iHAMOCC) with a horizontal resolution of approximately 1\u00b0. The ocean model adopts 53 isopycnal layers with two non-isopycnic surface layers, which represent (1) the top 10m of depth and (2) the rest of the surface mixed layer. A more detailed description of the ocean physical component is provided in Bentsen et al. (2020). The ocean biogeochemistry performs similarly in both model versions. Unless explicitly specified, our analysis refers to the results from NorESM2-MM (here- after referred to as NorESM2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2-MM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1\u00b0 resolution",
+            "target_entity_type": "Resolution",
+            "paragraph": "There are several configuration options for NorESM2. For CMIP6, two configurations will mostly be used, differing only in the horizontal resolution of the atmospheric and land models with otherwise identical model components. They are named NorESM2-LM and NorESM2-MM and have an atmosphere-land resolution of approximately 2\u00b0 and 1\u00b0, respectively. In addition, both versions have a different parameter tuning in the atmospheric component, necessary to achieve a top-of-atmosphere radiative balance under pre- industrial conditions. Both NorESM2-LM and NorESM2-",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2-LM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "2\u00b0 resolution",
+            "target_entity_type": "Resolution",
+            "paragraph": "There are several configuration options for NorESM2. For CMIP6, two configurations will mostly be used, differing only in the horizontal resolution of the atmospheric and land models with otherwise identical model components. They are named NorESM2-LM and NorESM2-MM and have an atmosphere-land resolution of approximately 2\u00b0 and 1\u00b0, respectively. In addition, both versions have a different parameter tuning in the atmospheric component, necessary to achieve a top-of-atmosphere radiative balance under pre- industrial conditions. Both NorESM2-LM and NorESM2-",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "transient",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Abstract. The ocean carbon cycle is a key player in the climate system through its role in regulating the atmospheric carbon dioxide concentration and other processes that alter the Earth's radiative balance. In the second version of the Norwegian Earth System Model (NorESM2), the oceanic carbon cycle component has gone through numerous updates that include, amongst others, improved process representa- tions, increased interactions with the atmosphere, and addi- tional new tracers. Oceanic dimethyl sulfide (DMS) is now prognostically simulated and its fluxes are directly coupled with the atmospheric component, leading to a direct feed- back to the climate. Atmospheric nitrogen deposition and ad- ditional riverine inputs of other biogeochemical tracers have recently been included in the model. The implementation of new tracers such as \u201cpreformed\u201d and \u201cnatural\u201d tracers en- ables a separation of physical from biogeochemical drivers as well as of internal from external forcings and hence a bet- ter diagnostic of the simulated biogeochemical variability. Carbon isotope tracers have been implemented and will be relevant for studying long-term past climate changes. Here, we describe these new model implementations and present an evaluation of the model's performance in simulating the observed climatological states of water-column biogeochem- istry and in simulating transient evolution over the histori- cal period. Compared to its predecessor NorESM1, the new model's performance has improved considerably in many as- pects. In the interior, the observed spatial patterns of nutri- ents, oxygen, and carbon chemistry are better reproduced, reducing the overall model biases. A new set of ecosystem parameters and improved mixed layer dynamics improve the representation of upper-ocean processes (biological produc- tion and air-sea CO2 fluxes) at seasonal timescale. Transient warming and air-sea CO2 fluxes over the historical period are also in good agreement with observation-based estimates. NorESM2 participates in the Coupled Model Intercompar- ison Project phase 6 (CMIP6) through DECK (Diagnostic, Evaluation and Characterization of Klima) and several en- dorsed MIP simulations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2-OC",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "stand-alone",
+            "target_entity_type": "SimulationType",
+            "paragraph": "For the newly implemented carbon isotopes, a considerably longer spin-up is required. Therefore, the carbon isotope tracers were not activated in our fully coupled simulations. Instead, simulations with carbon isotopes switched on have been performed using the ocean carbon cycle stand-alone configuration of NorESM2. Additionally, a lower-resolution ocean grid (using a similar tripolar grid as described above but with a nominally 2\u00b0 resolution) has been used. This configuration avoids the high computational cost of running a long spin-up in a fully coupled configuration. The atmospheric forcing of the spin-up is the CORE normal-year forcing (Large and Yeager, 2004), which represents a climatological mean year with a smooth transition between the end and start of the year. Atmospheric CO2, 13CO2, and 14CO2 concentrations are kept track of with a box atmosphere (i.e. assuming 100% instant mixing), which is updated each time step according to the modelled air-sea CO2 fluxes using a conversion factor of 2.13 ppm Pg C-1. These simplified prognostic atmospheric fields are simulated from the start of the spin-up (and the subsequent start of the carbon isotope simulation). As mentioned above, we have not implemented the carbon isotopes in the sediment compartment of the model. Therefore, the sediment module of iHAMOCC was switched off for the carbon isotope simulations presented here. Otherwise, the setup of the ocean carbon cycle stand-alone configuration is as described in Schwinger et al. (2016). The model spin-up was run for 5000 years, the first 1000 years of which were run without carbon isotopes. At year 1000 (4000), after the largest transient changes in biogeochemical tracers have flattened out, we initialized the 13C (14C) tracers as described above. At the end of year 5000, the model reaches a quasi-equilibrium state, which approximately corresponds to the pre-industrial state. Here, we evaluate the simulated carbon isotope simulations against the pre- industrial estimates of the respective tracers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 2b shows that, except for the surface layer, the NRMSE of most of the NorESM2 variables' mean climatology is either noticeably improved or relatively similar to that of NorESM1. At 500m of depth, all variables but salinity have lower RMSE values.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "NRMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 2b shows that, except for the surface layer, the NRMSE of most of the NorESM2 variables' mean climatology is either noticeably improved or relatively similar to that of NorESM1. At 500m of depth, all variables but salinity have lower RMSE values. For many of the biogeochemical tracers (phosphate, nitrate, oxygen, and DIC), NorESM2 shows better agreement with data throughout the water column. Similarly, the respective spatial correlations with the observations are considerably improved for most variables, especially for nitrate, DIC, and alkalinity (Fig. 2a). For surface seasonality, NorESM2 performs fairly compara- ble to NorESM1, with improvements in all seasonal met- rics (NRMSE and spatial pattern) for surface salinity and net primary production. NorESM2 simulates slightly larger NRMSE in its surface nutrients (phosphate, nitrate, and sili- cate) for both their annual and seasonal average values relative to NorESM1. This is attributed to the anomalously high concentration in the Arctic Ocean and parts of the Southern Ocean (just north of the Antarctic Circumpolar Current). More details on the performance of each specific variable are discussed in the following subsections.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "spatial correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 2b shows that, except for the surface layer, the NRMSE of most of the NorESM2 variables' mean climatology is either noticeably improved or relatively similar to that of NorESM1. At 500m of depth, all variables but salinity have lower RMSE values. For many of the biogeochemical tracers (phosphate, nitrate, oxygen, and DIC), NorESM2 shows better agreement with data throughout the water column. Similarly, the respective spatial correlations with the observations are considerably improved for most variables, especially for nitrate, DIC, and alkalinity (Fig. 2a). For surface seasonality, NorESM2 performs fairly compara- ble to NorESM1, with improvements in all seasonal met- rics (NRMSE and spatial pattern) for surface salinity and net primary production. NorESM2 simulates slightly larger NRMSE in its surface nutrients (phosphate, nitrate, and sili- cate) for both their annual and seasonal average values relative to NorESM1. This is attributed to the anomalously high concentration in the Arctic Ocean and parts of the Southern Ocean (just north of the Antarctic Circumpolar Current). More details on the performance of each specific variable are discussed in the following subsections.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "iHAMOCC",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "dissolved inorganic carbon",
+            "target_entity_type": "Variable",
+            "paragraph": "Increasing atmospheric CO2 and associated climate change will alter both the natural and anthropogenic components of ocean inorganic carbon chemistry. Disentangling the future dynamical responses of these components separately is therefore necessary to identify which processes (e.g. biological and physical, among others) regulate the simulated changes in ocean carbon storage today and in the future. In NorESM1, only a single dissolved inorganic carbon (i.e. total DIC) tracer was implemented, and there is no suitably accurate method to separate between the driving mechanisms of its changes. In NorESM2, we have introduced a new \"natural\" DIC tracer, which simulates changes in the natural component of DIC (i.e. it only interacts with a fixed pre-industrial CO2 concentration during the air-sea gas exchange).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "iHAMOCC",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "dimethyl sulfide",
+            "target_entity_type": "Variable",
+            "paragraph": "NorESM2 prognostically simulates the DMS concentration according to the formulation of Kloster et al. (2006), as follows:...",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "iHAMOCC",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "13C",
+            "target_entity_type": "Variable",
+            "paragraph": "The 13C and 14C carbon isotope tracers have now been implemented in NorESM2. Naturally occurring stable carbon isotopes (12C, 13C, and 14C) and their relative abundances provide valuable information about both past and present cli- mate.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "iHAMOCC",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "14C",
+            "target_entity_type": "Variable",
+            "paragraph": "The 13C and 14C carbon isotope tracers have now been implemented in NorESM2. Naturally occurring stable carbon isotopes (12C, 13C, and 14C) and their relative abundances provide valuable information about both past and present cli- mate.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "BLOM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Atlantic Meridional Overturning Circulation",
+            "target_entity_type": "Variable",
+            "paragraph": "As a result of these improvements, NorESM2 simulates a more reasonable AMOC strength of approximately 21 Sv, which is within the range of the observational estimates of 17.9\u00b13.3 Sv (Srokosz et al., 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Atlantic Meridional Overturning Circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Atlantic Ocean",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The simulated Atlantic Meridional Overturning Circulation (AMOC) strength in NorESM1 is on the strong side (30.8 Sv at_26.5\u00b0 N; 1 Sv = 106 m\u00b3 s\u00af\u00b9) compared to observation- based estimates and other CMIP5 models (Bentsen et al., 2013). The vigorous AMOC leads to an Atlantic Ocean that is too warm and saline at depth. Lack of upper-ocean stratifi- cation at high latitudes is thought to contribute to this AMOC bias.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Antarctic Bottom Water",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Pacific basins",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "NorESM2 simulates a warm bias for both pre-industrial conditions and the contemporary surface ocean (Fig. 3d), where a warm bias as high as 5\u00b0C is simulated in some regions of the Southern Ocean. Cold biases are simulated in parts of the north and equatorial Pacific, North Atlantic subpolar gyre, and the Arctic Ocean. The climatological mean temperatures are broadly similar between the two NorESM versions, with NorESM2 having fewer spatial correlations at 1 and 1.5 km depths (Fig. 2a, b). At depths below 2km, with the exception of the North Pacific, NorESM2 simulates fewer biases (Fig. 3e, f, h, i). This improvement is related to the more accurately simulated Antarctic Bottom Water (AABW; see also Supplement Fig. S1) in both the Pacific and Atlantic basins, as also depicted in Fig. 3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Antarctic Bottom Water",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Atlantic basins",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "NorESM2 simulates a warm bias for both pre-industrial conditions and the contemporary surface ocean (Fig. 3d), where a warm bias as high as 5\u00b0C is simulated in some regions of the Southern Ocean. Cold biases are simulated in parts of the north and equatorial Pacific, North Atlantic subpolar gyre, and the Arctic Ocean. The climatological mean temperatures are broadly similar between the two NorESM versions, with NorESM2 having fewer spatial correlations at 1 and 1.5 km depths (Fig. 2a, b). At depths below 2km, with the exception of the North Pacific, NorESM2 simulates fewer biases (Fig. 3e, f, h, i). This improvement is related to the more accurately simulated Antarctic Bottom Water (AABW; see also Supplement Fig. S1) in both the Pacific and Atlantic basins, as also depicted in Fig. 3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "North Atlantic Deep Water",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "North Atlantic",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "While NorESM1 simulates an AMOC strength that is too strong (roughly 31 Sv at 26\u00b0 N), NorESM2 has a more reasonable strength of approximately 21 Sv. Nevertheless, the warm bias of 1\u20132 \u00b0C in the North Atlantic Deep Water (NADW) remains when compared to observations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Geoscientific Model Development",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Norwegian Earth System Model version 2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NORCE Norwegian Research Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Bjerknes Centre for Climate Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Geophysical Institute, University of Bergen",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute of Marine Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Nansen Environmental and Remote Sensing Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Norwegian Meteorological Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Bergen",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Oslo",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Norway",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "ocean carbon cycle",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "carbon dioxide",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dimethyl sulfide",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DMS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "nitrogen deposition",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "nutrients",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "oxygen",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "biological production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air-sea CO2 fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NorESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project phase 6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "DECK",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Diagnostic, Evaluation and Characterization of Klima",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "heat",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Hamburg Oceanic Carbon Cycle model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "HAMOCC5.1",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Bergen Layered (isopycnic coordinate) Ocean Model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "BLOM-iHAMOCC",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "NorESM1-ME",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "sulfur",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pCO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "particulate organic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "POC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dissolved inorganic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DIC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "phosphate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "alkalinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "riverine input of nutrients",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "atmospheric nitrogen deposition",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "nitrogen fixation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "13C",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "14C",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "iron",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air-sea gas exchange parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "tripolar grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "bipolar grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "hourly atmosphere-ocean coupling",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "daily atmosphere-ocean coupling",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "full leapfrog time stepping",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NorESM2-LM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM2-MM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "2\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "BLOM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "iHAMOCC",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "53 isopycnal layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "two non-isopycnic surface layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Atlantic Meridional Overturning Circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "AMOC",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "eddy-induced transport",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Gent and McWilliams, 1990",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "parameterized re-stratification by mesoscale eddies",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fox-Kemper et al., 2008",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "mixed layer depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MLD",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "k-e turbulence model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DMS concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Kloster et al. (2006)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "opal",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CaCO3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "silicate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "incoming shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "riverine input",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Global-NEWS model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "dissolved organic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DOC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "inorganic nitrogen",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "phosphorus",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "particulate nitrogen",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "particulate phosphorus",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dissolved silicate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ALK",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fe",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Global-NEWS2 model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "atmospheric nitrogen deposition",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "nitrate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2.5\u00b0 \u00d7 1.9\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "particle export",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "WLIN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AGG",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Martin curve formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "nitrogen fixation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Kriest and Oschlies (2015)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "air-sea gas exchange",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "O2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "N2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "N2O",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CFC-11",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CFC-12",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SF6",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wanninkhof (2014)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "dissolved iron",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ligands",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "primary production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PP",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "zooplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "phytoplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dissolved organic matter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DOM",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NorESM-OC1.2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PO4",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Si",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "detritus",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tropical Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "preformed dissolved oxygen",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "preformed phosphate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "preformed alkalinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "preformed dissolved inorganic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total oxygen utilization",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "TOU",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "apparent oxygen utilization",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "AOU",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "O2 disequilibrium",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "saturated oxygen",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ocean Model Intercomparison Project",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "OMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "pre-industrial",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "anthropogenic DIC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "12C",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "\u03b413C",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "\u039414C",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "NorESM2-OC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ocean carbon cycle stand-alone configuration",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "air-sea gas exchange fractionation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "biological fractionation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Laws et al. (1997)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "phytoplankton growth rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aqueous CO2 concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fully coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "pre-industrial control",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "piControl",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "transient historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "esm-piControl-spinup",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "esm-piControl",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "esm-hist",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "emission-driven",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "prescribed CO2",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "prognostic CO2",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "stand-alone",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "spatial correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "normalized RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net primary production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Arctic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctic Circumpolar Current",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "North Atlantic subpolar gyre",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mediterranean Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctic Bottom Water",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "AABW",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "North Atlantic Deep Water",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "NADW",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Indian Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Benguela current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Weddell Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Moderate Resolution Imaging Spectroradiometer",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "sinking velocity that increases linearly with depth",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "oxygen minimum zone",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "OMZ",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Pacific OMZ",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "North Pacific Intermediate Water",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "NPP",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HNLC",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "high-nutrient low-chlorophyll",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "subarctic North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "eastern equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "central equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "western equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "eastern tropical Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "export production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "transfer efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Teff-1km",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "equatorial Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Primary production",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "POC export",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CaCO3 export",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Opal export",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "f ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CaCO3-to-POC ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "DMS production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DMS fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "carbonate ion",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "buffer capacity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PIC : POC export ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "normalized bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Kuroshio current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Labrador Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "transient",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Global Carbon Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "GCP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Intergovernmental Panel for Climate Change",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IPCC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "anthropogenic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mid-latitude SH",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "SOC",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "polar SOC",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "cumulative carbon uptake",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "coupled ESM",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Annual uptake",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Accumulated uptake",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Antarctic Intermediate Water",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "AAIW",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "ocnBgchem",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "surface temperature anomaly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean CO2 uptake",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric CO2 trend",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Surface CO2 Atlas",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "SOCAT",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Global Ocean Data Analysis Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "GLODAP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "methane",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CH4",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "nitrous oxide",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "biogenic volatile organic compound",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "BVOC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dust",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "halocarbons",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmosChem",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Bergen Layered Ocean Model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "isopycnic-based Hamburg Oceanic Carbon Cycle",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Earth System Grid Federation",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ESGF",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "World Ocean Atlas",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Global Ocean Data Analysis Project version 2",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "NorESM1-M",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "C4MIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "HAMOCC",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CESM1",
+            "entity_type": "Source"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2086925429",
+        "https://openalex.org/W2055267425",
+        "https://openalex.org/W2130434897",
+        "https://openalex.org/W2298919510",
+        "https://openalex.org/W2051663919",
+        "https://openalex.org/W2078844631",
+        "https://openalex.org/W6907691596",
+        "https://openalex.org/W2163973246",
+        "https://openalex.org/W2147383958",
+        "https://openalex.org/W2141707502",
+        "https://openalex.org/W2090970809",
+        "https://openalex.org/W2012592445",
+        "https://openalex.org/W2108755430",
+        "https://openalex.org/W1970531860",
+        "https://openalex.org/W2051906346",
+        "https://openalex.org/W4242216524",
+        "https://openalex.org/W1964806567",
+        "https://openalex.org/W1971816088",
+        "https://openalex.org/W1651989547",
+        "https://openalex.org/W2030283646",
+        "https://openalex.org/W2133168052",
+        "https://openalex.org/W4244060961",
+        "https://openalex.org/W1873518248",
+        "https://openalex.org/W1611443029",
+        "https://openalex.org/W2029110889",
+        "https://openalex.org/W2069197937",
+        "https://openalex.org/W1489297152",
+        "https://openalex.org/W2164144714",
+        "https://openalex.org/W2588800589",
+        "https://openalex.org/W2808920014",
+        "https://openalex.org/W2193503481",
+        "https://openalex.org/W2443985281",
+        "https://openalex.org/W2890249340",
+        "https://openalex.org/W752682158",
+        "https://openalex.org/W2170684449",
+        "https://openalex.org/W2151328940",
+        "https://openalex.org/W2049171398",
+        "https://openalex.org/W4391464088",
+        "https://openalex.org/W2013380149",
+        "https://openalex.org/W2594769687",
+        "https://openalex.org/W2152496864",
+        "https://openalex.org/W2788614508",
+        "https://openalex.org/W2028225973",
+        "https://openalex.org/W2158078601",
+        "https://openalex.org/W2922127343",
+        "https://openalex.org/W2889947630",
+        "https://openalex.org/W1990292775",
+        "https://openalex.org/W2097585159",
+        "https://openalex.org/W2591991872",
+        "https://openalex.org/W2958844902",
+        "https://openalex.org/W2007777958",
+        "https://openalex.org/W2065092714",
+        "https://openalex.org/W1989707569",
+        "https://openalex.org/W2112666432",
+        "https://openalex.org/W2151863454",
+        "https://openalex.org/W2080852376",
+        "https://openalex.org/W2516442054",
+        "https://openalex.org/W2038914664",
+        "https://openalex.org/W82692694",
+        "https://openalex.org/W2200566037",
+        "https://openalex.org/W2904971778",
+        "https://openalex.org/W1609491364",
+        "https://openalex.org/W2045129899",
+        "https://openalex.org/W1874213015",
+        "https://openalex.org/W1995803832",
+        "https://openalex.org/W2031104298",
+        "https://openalex.org/W4299680546",
+        "https://openalex.org/W2146219797",
+        "https://openalex.org/W2607050424",
+        "https://openalex.org/W2157203601",
+        "https://openalex.org/W2101767284",
+        "https://openalex.org/W6890051042",
+        "https://openalex.org/W2785656274",
+        "https://openalex.org/W2254857365",
+        "https://openalex.org/W2115642787",
+        "https://openalex.org/W2154754282",
+        "https://openalex.org/W2969271562",
+        "https://openalex.org/W2915336810",
+        "https://openalex.org/W2792972033",
+        "https://openalex.org/W2042189564",
+        "https://openalex.org/W1884540967",
+        "https://openalex.org/W2000753477",
+        "https://openalex.org/W2013278565",
+        "https://openalex.org/W2035265108",
+        "https://openalex.org/W2162662946",
+        "https://openalex.org/W2734696605",
+        "https://openalex.org/W2788950435",
+        "https://openalex.org/W2031027346",
+        "https://openalex.org/W2130860314",
+        "https://openalex.org/W2517809012",
+        "https://openalex.org/W2494159654",
+        "https://openalex.org/W2168989760",
+        "https://openalex.org/W2084349604",
+        "https://openalex.org/W2031481912",
+        "https://openalex.org/W2073028651",
+        "https://openalex.org/W2039992531",
+        "https://openalex.org/W2170959375",
+        "https://openalex.org/W4300562728",
+        "https://openalex.org/W1832809507",
+        "https://openalex.org/W2052727776",
+        "https://openalex.org/W2127044769",
+        "https://openalex.org/W2308173593",
+        "https://openalex.org/W2588479819",
+        "https://openalex.org/W2139791975",
+        "https://openalex.org/W2117137037",
+        "https://openalex.org/W3004855069",
+        "https://openalex.org/W6893689775",
+        "https://openalex.org/W2027478681",
+        "https://openalex.org/W2036750632",
+        "https://openalex.org/W2143167281",
+        "https://openalex.org/W2026736655",
+        "https://openalex.org/W1651357934",
+        "https://openalex.org/W1978614767",
+        "https://openalex.org/W2735578458",
+        "https://openalex.org/W1484330003",
+        "https://openalex.org/W2061671956",
+        "https://openalex.org/W2150480886",
+        "https://openalex.org/W1770074162",
+        "https://openalex.org/W2228781294",
+        "https://openalex.org/W2063534846",
+        "https://openalex.org/W1562159777",
+        "https://openalex.org/W2126482859",
+        "https://openalex.org/W2114653148",
+        "https://openalex.org/W2126542184",
+        "https://openalex.org/W2029596959",
+        "https://openalex.org/W2799895525",
+        "https://openalex.org/W2114462220",
+        "https://openalex.org/W1600897084",
+        "https://openalex.org/W2077072904",
+        "https://openalex.org/W2480481978",
+        "https://openalex.org/W2076901722",
+        "https://openalex.org/W2067841165",
+        "https://openalex.org/W2071062728",
+        "https://openalex.org/W2121131753",
+        "https://openalex.org/W2141947981",
+        "https://openalex.org/W2144971607",
+        "https://openalex.org/W1995131959",
+        "https://openalex.org/W1983297768",
+        "https://openalex.org/W2789272273",
+        "https://openalex.org/W4250353118",
+        "https://openalex.org/W2778585615",
+        "https://openalex.org/W753376925",
+        "https://openalex.org/W2123495234",
+        "https://openalex.org/W2986738873",
+        "https://openalex.org/W2143252417"
+    ]
+}

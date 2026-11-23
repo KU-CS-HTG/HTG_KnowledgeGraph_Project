@@ -1,0 +1,1486 @@
+{
+    "uri": "https://openalex.org/W2114631056",
+    "title": "PISCES-v2: an ocean biogeochemical model for carbon and ecosystem studies",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2015,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5082507120",
+            "display_name": "Olivier Aumont",
+            "orcid": "https://orcid.org/0000-0003-3954-506X"
+        },
+        {
+            "id": "https://openalex.org/A5090864732",
+            "display_name": "Christian \u00c9th\u00e9",
+            "orcid": "https://orcid.org/0000-0003-1815-377X"
+        },
+        {
+            "id": "https://openalex.org/A5049870717",
+            "display_name": "Alessandro Tagliabue",
+            "orcid": "https://orcid.org/0000-0002-3572-3634"
+        },
+        {
+            "id": "https://openalex.org/A5079839995",
+            "display_name": "Laurent Bopp",
+            "orcid": "https://orcid.org/0000-0003-4732-4953"
+        },
+        {
+            "id": "https://openalex.org/A5036188589",
+            "display_name": "Marion Gehlen",
+            "orcid": "https://orcid.org/0000-0002-9688-0692"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-8-2465-2015",
+    "abstract": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod\u2013quota formalism. On the one hand, stoichiometry of C / N / P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and satellite-derived data. Finally, some of the new functionalities of PISCES-v2 are tested in a series of sensitivity experiments.",
+    "field": "Ocean biogeochemical modeling",
+    "problem": "The documentation for the widely-used PISCES ocean biogeochemical model became obsolete as the model evolved with numerous undocumented changes to its code and parameterizations, thus requiring a full, updated description of the current version (PISCES-v2) presented in this paper.",
+    "method": "This paper presents PISCES-v2, an ocean biogeochemical model that simulates lower trophic levels (phytoplankton, zooplankton) and the biogeochemical cycles of carbon and major nutrients (P, N, Fe, Si) using a mixed Monod-quota formalism with 24 prognostic variables.",
+    "task": "The task is to describe and evaluate PISCES-v2, an ocean biogeochemical model that simulates marine ecosystems and the biogeochemical cycles of carbon and main nutrients, by presenting its formulation, updates, and comparing simulation results against observational and satellite-derived data.",
+    "model": [
+        "PISCES-v2",
+        "NEMO",
+        "ROMS",
+        "P3ZD",
+        "HAMOCC5",
+        "HAMOCC3.1",
+        "LSG",
+        "OPA",
+        "IPSL",
+        "CNRM",
+        "ORCA2-LIM",
+        "OPA9",
+        "LIM2"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/biogeochemical-cycle",
+            "display_name": "Biogeochemical cycle",
+            "score": 0.9069247245788574
+        },
+        {
+            "id": "https://openalex.org/keywords/phytoplankton",
+            "display_name": "Phytoplankton",
+            "score": 0.8510034084320068
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.6603659987449646
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.6218600869178772
+        },
+        {
+            "id": "https://openalex.org/keywords/trophic-level",
+            "display_name": "Trophic level",
+            "score": 0.6174569725990295
+        },
+        {
+            "id": "https://openalex.org/keywords/biogeochemistry",
+            "display_name": "Biogeochemistry",
+            "score": 0.5969302654266357
+        },
+        {
+            "id": "https://openalex.org/keywords/pelagic-zone",
+            "display_name": "Pelagic zone",
+            "score": 0.5886242985725403
+        },
+        {
+            "id": "https://openalex.org/keywords/ecosystem",
+            "display_name": "Ecosystem",
+            "score": 0.5818050503730774
+        },
+        {
+            "id": "https://openalex.org/keywords/ecosystem-model",
+            "display_name": "Ecosystem model",
+            "score": 0.5352540612220764
+        },
+        {
+            "id": "https://openalex.org/keywords/marine-ecosystem",
+            "display_name": "Marine ecosystem",
+            "score": 0.5218005180358887
+        },
+        {
+            "id": "https://openalex.org/keywords/zooplankton",
+            "display_name": "Zooplankton",
+            "score": 0.5204013586044312
+        },
+        {
+            "id": "https://openalex.org/keywords/carbon-cycle",
+            "display_name": "Carbon cycle",
+            "score": 0.4857409596443176
+        },
+        {
+            "id": "https://openalex.org/keywords/ecology",
+            "display_name": "Ecology",
+            "score": 0.34287509322166443
+        },
+        {
+            "id": "https://openalex.org/keywords/chemistry",
+            "display_name": "Chemistry",
+            "score": 0.2984123229980469
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-chemistry",
+            "display_name": "Environmental chemistry",
+            "score": 0.2833334803581238
+        },
+        {
+            "id": "https://openalex.org/keywords/nutrient",
+            "display_name": "Nutrient",
+            "score": 0.2740684151649475
+        },
+        {
+            "id": "https://openalex.org/keywords/biology",
+            "display_name": "Biology",
+            "score": 0.1536632478237152
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.15288743376731873
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C71915725",
+            "wikidata": "https://www.wikidata.org/wiki/Q846303",
+            "display_name": "Biogeochemical cycle",
+            "level": 2,
+            "score": 0.9069247245788574
+        },
+        {
+            "id": "https://openalex.org/C2780892065",
+            "wikidata": "https://www.wikidata.org/wiki/Q184755",
+            "display_name": "Phytoplankton",
+            "level": 3,
+            "score": 0.8510034084320068
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.6603659987449646
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6218600869178772
+        },
+        {
+            "id": "https://openalex.org/C72958200",
+            "wikidata": "https://www.wikidata.org/wiki/Q1053008",
+            "display_name": "Trophic level",
+            "level": 2,
+            "score": 0.6174569725990295
+        },
+        {
+            "id": "https://openalex.org/C130309983",
+            "wikidata": "https://www.wikidata.org/wiki/Q864379",
+            "display_name": "Biogeochemistry",
+            "level": 2,
+            "score": 0.5969302654266357
+        },
+        {
+            "id": "https://openalex.org/C77942228",
+            "wikidata": "https://www.wikidata.org/wiki/Q191468",
+            "display_name": "Pelagic zone",
+            "level": 2,
+            "score": 0.5886242985725403
+        },
+        {
+            "id": "https://openalex.org/C110872660",
+            "wikidata": "https://www.wikidata.org/wiki/Q37813",
+            "display_name": "Ecosystem",
+            "level": 2,
+            "score": 0.5818050503730774
+        },
+        {
+            "id": "https://openalex.org/C64107356",
+            "wikidata": "https://www.wikidata.org/wiki/Q295046",
+            "display_name": "Ecosystem model",
+            "level": 3,
+            "score": 0.5352540612220764
+        },
+        {
+            "id": "https://openalex.org/C151152651",
+            "wikidata": "https://www.wikidata.org/wiki/Q3304561",
+            "display_name": "Marine ecosystem",
+            "level": 3,
+            "score": 0.5218005180358887
+        },
+        {
+            "id": "https://openalex.org/C158836135",
+            "wikidata": "https://www.wikidata.org/wiki/Q842627",
+            "display_name": "Zooplankton",
+            "level": 2,
+            "score": 0.5204013586044312
+        },
+        {
+            "id": "https://openalex.org/C6939412",
+            "wikidata": "https://www.wikidata.org/wiki/Q167751",
+            "display_name": "Carbon cycle",
+            "level": 3,
+            "score": 0.4857409596443176
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.34287509322166443
+        },
+        {
+            "id": "https://openalex.org/C185592680",
+            "wikidata": "https://www.wikidata.org/wiki/Q2329",
+            "display_name": "Chemistry",
+            "level": 0,
+            "score": 0.2984123229980469
+        },
+        {
+            "id": "https://openalex.org/C107872376",
+            "wikidata": "https://www.wikidata.org/wiki/Q321355",
+            "display_name": "Environmental chemistry",
+            "level": 1,
+            "score": 0.2833334803581238
+        },
+        {
+            "id": "https://openalex.org/C142796444",
+            "wikidata": "https://www.wikidata.org/wiki/Q181394",
+            "display_name": "Nutrient",
+            "level": 2,
+            "score": 0.2740684151649475
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.1536632478237152
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.15288743376731873
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a comprehensive description and evaluation of PISCES-v2, an updated ocean biogeochemical model for carbon and ecosystem studies that simulates lower trophic levels and nutrient cycles using a mixed Monod-quota formalism with 24 prognostic variables.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "mixed Monod-quota formalism",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod-quota formalism. On the one hand, stoichiometry of C/N/P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "PISCES-v2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod-quota formalism. On the one hand, stoichiometry of C/N/P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ROMS",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "PISCES-v2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod-quota formalism. On the one hand, stoichiometry of C/N/P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "24 prognostic variables",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod-quota formalism. On the one hand, stoichiometry of C/N/P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "phytoplankton compartments (diatoms and nanophytoplankton)",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod-quota formalism. On the one hand, stoichiometry of C/N/P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "zooplankton size classes (microzooplankton and mesozooplankton)",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod-quota formalism. On the one hand, stoichiometry of C/N/P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "carbonate chemistry",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod-quota formalism. On the one hand, stoichiometry of C/N/P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "regional configurations",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod-quota formalism. On the one hand, stoichiometry of C/N/P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "global configurations",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod-quota formalism. On the one hand, stoichiometry of C/N/P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "short-term (seasonal, interannual) analyses",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod-quota formalism. On the one hand, stoichiometry of C/N/P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "long-term (climate change, paleoceanography) analyses",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Abstract. PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si). The model is intended to be used for both regional and global configurations at high or low spatial resolutions as well as for short-term (seasonal, interannual) and long-term (climate change, paleoceanography) analyses. There are 24 prognostic variables (tracers) including two phytoplankton compartments (diatoms and nanophytoplankton), two zooplankton size classes (microzooplankton and mesozooplankton) and a description of the carbonate chemistry. Formulations in PISCES-v2 are based on a mixed Monod-quota formalism. On the one hand, stoichiometry of C/N/P is fixed and growth rate of phytoplankton is limited by the external availability in N, P and Si. On the other hand, the iron and silicon quotas are variable and the growth rate of phytoplankton is limited by the internal availability in Fe. Various parameterizations can be activated in PISCES-v2, setting, for instance, the complexity of iron chemistry or the description of particulate organic materials. So far, PISCES-v2 has been coupled to the Nucleus for European Modelling of the Ocean (NEMO) and Regional Ocean Modeling System (ROMS) systems. A full description of PISCES-v2 and of its optional functionalities is provided here. The results of a quasi-steady-state simulation are presented and evaluated against diverse observational and",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "HAMOCC5",
+            "target_entity_type": "Source",
+            "paragraph": "This model was called HAMOCC5 (Aumont et al., 2003), as it was based on HAMOCC3.1 (Six and MaierReimer, 1996) and used in the LSG model (Maier-Reimer et al., 1993). When this code was embedded in the ocean model Ocean PArall\u00e9lis\u00e9 (OPA) (Madec et al., 1998), it required some major changes and improvements, partly because of the much finer vertical resolution. In addition to the numerical schemes, these changes were mostly an improved treatment of the optics and the separation of the particulate organic matter into two different size classes. All these changes and the major recodings it required led us to adopt a new name for the model: PISCES. This name can be translated as fishes from Latin.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "P3ZD model",
+            "target_entity_type": "Source",
+            "paragraph": "Historically, the development of PISCES started in 1997 with the release of the P3ZD model which was a simple Nutrient-Phytoplankton-Zooplankton-Detritus (NPZD) model with semi-labile dissolved organic matter (DOM) (Aumont, 1998; Aumont et al., 2002). Phytoplankton growth rate was only limited by one nutrient (effectively phosphate) and many shortcomings were apparent in this model, especially in the high nutrient-low chlorophyll (HNLC) regions. This served to justify the development, beginning in 1999, of a more complex model that includes three limiting nutrients (Fe, Si, P), two phytoplankton and two zooplankton size classes. This model was called HAMOCC5 (Aumont et al., 2003), as it was based on HAMOCC3.1 (Six and MaierReimer, 1996) and used in the LSG model (Maier-Reimer et al., 1993).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES is currently embedded into two modeling systems: NEMO (Madec, 2008) and ROMS_AGRIF (Penven et al., 2006; Debreu et al., 2011). It can be downloaded from their respective web sites: http://www.nemo-ocean.eu for the NEMO ocean mod- eling framework; http://www.romsagrif.org for the ROMS_AGRIF mod- eling framework. However, PISCES-v2 is currently available only in the NEMO modeling system. The implementation of this updated version of PISCES in the ROMS_AGRIF modeling system is currently underway and should be finished and available by the end of 2015.",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "PISCES-v2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "NEMO",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "PISCES-v2",
+            "target_entity_type": "Source",
+            "paragraph": "As a consequence of these changes, the user should be warned that results produced with PISCES-v1 cannot be reproduced by PISCES-v2. Furthermore, in the rest of this work, PISCES will designate PISCES-v2.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "two-compartment model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "a. Two different schemes for the description of partic- ulate organic matter can be chosen: the traditional two-compartment model or the Kriest model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Kriest model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "a. Two different schemes for the description of partic- ulate organic matter can be chosen: the traditional two-compartment model or the Kriest model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocean",
+            "target_entity_type": "Realm",
+            "paragraph": "PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "phytoplankton",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "microzooplankton",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "mesozooplankton",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "carbon",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "P",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "N",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Fe",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Si",
+            "target_entity_type": "Variable",
+            "paragraph": "PISCES-v2 (Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2) is a biogeochemical model which simulates the lower trophic levels of marine ecosystems (phytoplankton, microzooplankton and mesozooplankton) and the biogeochemical cycles of carbon and of the main nutrients (P, N, Fe, and Si).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "dissolved inorganic carbon",
+            "target_entity_type": "Variable",
+            "paragraph": "In addition to the ecosystem model, PISCES also simulates dissolved inorganic carbon, total alkalinity and dissolved oxygen. The latter tracer is also used to define the regions where oxic or anoxic degradation processes take place.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "total alkalinity",
+            "target_entity_type": "Variable",
+            "paragraph": "In addition to the ecosystem model, PISCES also simulates dissolved inorganic carbon, total alkalinity and dissolved oxygen. The latter tracer is also used to define the regions where oxic or anoxic degradation processes take place.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "dissolved oxygen",
+            "target_entity_type": "Variable",
+            "paragraph": "In addition to the ecosystem model, PISCES also simulates dissolved inorganic carbon, total alkalinity and dissolved oxygen. The latter tracer is also used to define the regions where oxic or anoxic degradation processes take place.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PISCES-v2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "photo-adaptive model of Geider et al. (1997)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Chlorophyll biomass IChl (where I denotes P or D, typical units are \u00b5g Chl L\u22121 or mgChlm\u22123) for both phytoplankton groups is parameterized using the photo-adaptive model of Geider et al. (1997):",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "PISCES-v2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Pelagic Interactions Scheme for Carbon and Ecosystem Studies volume 2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NEMO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ROMS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "biogeochemical model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "mixed Monod-quota formalism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "phytoplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "microzooplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mesozooplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "P",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "N",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fe",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Si",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "diatoms",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "nanophytoplankton",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "particulate organic materials",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "quasi-steady-state simulation",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Laboratoire d'Oc\u00e9anographie et de Climatologie: Exp\u00e9rimentation et Approches Num\u00e9riques, IPSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institut Pierre et Simon Laplace",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Liverpool",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Laboratoire des Sciences du Climat et de l'Environement, IPSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Paris",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Liverpool",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "UK",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Gif-sur-Yvette",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "PISCES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Monod model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "quota model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "P3ZD model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NPZD model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "HAMOCC5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HAMOCC3.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LSG model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OPA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Peru upwelling",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indian Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ROMS_AGRIF",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CEntre National de Recherche en M\u00e9t\u00e9orologie",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "PISCES-v1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Kriest model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "nitrate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ammonium",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "phosphate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "silicate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "iron",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "chlorophyll",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "silicon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dissolved inorganic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total alkalinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dissolved oxygen",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "photosynthetic available radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "quota approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "photo-adaptive model of Geider et al. (1997)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Michaelis-Menten parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "flux feeding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "fecal pellets",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Kriest and Evans (1999)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "POC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GOC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Martin et al. (1987)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Kriest model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Ridgwell et al. (2002)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Tagliabue and Arrigo (2006)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Zondervan (2007)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Wanninkhof (1992)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "OCMIP",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "GLOBAL-NEWS2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Erosion Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Middelburg et al. (1996)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Tagliabue et al. (2010)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Heinze et al. (1999)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Dunne et al. (2007)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Archer (1996)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ORCA2-LIM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OPA9",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LIM2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "2\u00b0 by 2\u00b0cos \u03a6",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "30 vertical layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "10 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "500 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "partial step thicknesses",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Gent and McWilliams (1990)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "turbulent kinetic energy (TKE) scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NCEP/NCAR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "weekly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "ERS",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "TAO",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "WOA01",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "primary production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MAREDAT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "nitrogen fixation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "denitrification",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GLOBCOLOUR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "equatorial Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Arabian Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "eastern subarctic Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "subtropical North Atlantic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Sahara desert",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "World Ocean Atlas 2009",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GLODAP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NO3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SiO3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "North Atlantic deep waters",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Antarctic bottom waters",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "O2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DIC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "alkalinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ross Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Weddell Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Bay of Bengal",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Gulf of Guinea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Taylor diagrams",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Geider et al. (1997)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SeaWiFS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "subarctic gyre of the North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Liebig's law of the minimum",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "South Pacific Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "APECOSM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "DMS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "N2O",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "oxygen minimum zones",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "deep Atlantic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "subarctic Pacific Ocean",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1981194034",
+        "https://openalex.org/W2055121584",
+        "https://openalex.org/W2141515878",
+        "https://openalex.org/W2030080456",
+        "https://openalex.org/W2103590190",
+        "https://openalex.org/W2124657938",
+        "https://openalex.org/W2147175640",
+        "https://openalex.org/W2064402331",
+        "https://openalex.org/W2000761320",
+        "https://openalex.org/W2165303900",
+        "https://openalex.org/W2105979299",
+        "https://openalex.org/W1965431589",
+        "https://openalex.org/W2130261412",
+        "https://openalex.org/W2031095070",
+        "https://openalex.org/W2163256366",
+        "https://openalex.org/W1966663771",
+        "https://openalex.org/W1742651515",
+        "https://openalex.org/W2142334351",
+        "https://openalex.org/W2055079323",
+        "https://openalex.org/W1839308546",
+        "https://openalex.org/W2039096918",
+        "https://openalex.org/W2114687263",
+        "https://openalex.org/W2051663919",
+        "https://openalex.org/W2127721506",
+        "https://openalex.org/W2139577180",
+        "https://openalex.org/W1980272765",
+        "https://openalex.org/W2065716465",
+        "https://openalex.org/W2102337248",
+        "https://openalex.org/W2065647650",
+        "https://openalex.org/W2122943628",
+        "https://openalex.org/W2042376721",
+        "https://openalex.org/W2059331050",
+        "https://openalex.org/W2141707502",
+        "https://openalex.org/W2090970809",
+        "https://openalex.org/W2101376733",
+        "https://openalex.org/W2139469418",
+        "https://openalex.org/W2165028864",
+        "https://openalex.org/W2070018081",
+        "https://openalex.org/W2017370637",
+        "https://openalex.org/W2102015008",
+        "https://openalex.org/W2074468873",
+        "https://openalex.org/W2100820351",
+        "https://openalex.org/W2099290206",
+        "https://openalex.org/W4231239155",
+        "https://openalex.org/W2117915170",
+        "https://openalex.org/W2318647377",
+        "https://openalex.org/W2093875157",
+        "https://openalex.org/W2028276939",
+        "https://openalex.org/W1972632372",
+        "https://openalex.org/W2142616441",
+        "https://openalex.org/W1980353050",
+        "https://openalex.org/W4229998963",
+        "https://openalex.org/W2060555665",
+        "https://openalex.org/W2122911960",
+        "https://openalex.org/W1927225475",
+        "https://openalex.org/W2007193033",
+        "https://openalex.org/W2069197937",
+        "https://openalex.org/W2061413830",
+        "https://openalex.org/W2000793063",
+        "https://openalex.org/W2005466850",
+        "https://openalex.org/W2089198067",
+        "https://openalex.org/W2165094734",
+        "https://openalex.org/W1986756417",
+        "https://openalex.org/W2023457446",
+        "https://openalex.org/W2604841670",
+        "https://openalex.org/W1984285357",
+        "https://openalex.org/W1708196213",
+        "https://openalex.org/W1489297152",
+        "https://openalex.org/W2036287736",
+        "https://openalex.org/W2122312755",
+        "https://openalex.org/W2098527552",
+        "https://openalex.org/W2140315654",
+        "https://openalex.org/W2054047115",
+        "https://openalex.org/W2081271743",
+        "https://openalex.org/W2067961116",
+        "https://openalex.org/W2064684529",
+        "https://openalex.org/W2078114051",
+        "https://openalex.org/W1969354398",
+        "https://openalex.org/W2106615398",
+        "https://openalex.org/W2077769416",
+        "https://openalex.org/W1582607627",
+        "https://openalex.org/W2057692213",
+        "https://openalex.org/W2091234359",
+        "https://openalex.org/W2171260584",
+        "https://openalex.org/W2162637555",
+        "https://openalex.org/W1979705183",
+        "https://openalex.org/W2149352713",
+        "https://openalex.org/W1992082686",
+        "https://openalex.org/W2158627601",
+        "https://openalex.org/W6967103839",
+        "https://openalex.org/W2021758461",
+        "https://openalex.org/W2161217444",
+        "https://openalex.org/W2046452125",
+        "https://openalex.org/W2013380149",
+        "https://openalex.org/W2035551420",
+        "https://openalex.org/W1974184821",
+        "https://openalex.org/W2052727955",
+        "https://openalex.org/W2155804531",
+        "https://openalex.org/W2067096533",
+        "https://openalex.org/W2025906715",
+        "https://openalex.org/W1964016826",
+        "https://openalex.org/W2123027865",
+        "https://openalex.org/W2172013062",
+        "https://openalex.org/W2099958332",
+        "https://openalex.org/W2081322914",
+        "https://openalex.org/W2080745257",
+        "https://openalex.org/W2073772431",
+        "https://openalex.org/W2102599107",
+        "https://openalex.org/W2013849888",
+        "https://openalex.org/W2163330578",
+        "https://openalex.org/W1988653532",
+        "https://openalex.org/W2008389514",
+        "https://openalex.org/W2005191905",
+        "https://openalex.org/W2152217949",
+        "https://openalex.org/W2020613781",
+        "https://openalex.org/W2089650688",
+        "https://openalex.org/W1968078387",
+        "https://openalex.org/W1983026648",
+        "https://openalex.org/W2092939446",
+        "https://openalex.org/W2170312901",
+        "https://openalex.org/W1985520778",
+        "https://openalex.org/W1601823087",
+        "https://openalex.org/W2037471737",
+        "https://openalex.org/W2173251738",
+        "https://openalex.org/W2098035940",
+        "https://openalex.org/W2008019625",
+        "https://openalex.org/W1609491364",
+        "https://openalex.org/W2098530244",
+        "https://openalex.org/W1618956639",
+        "https://openalex.org/W2109050306",
+        "https://openalex.org/W2111913751",
+        "https://openalex.org/W1994721059",
+        "https://openalex.org/W1995803832",
+        "https://openalex.org/W2031104298",
+        "https://openalex.org/W2065031830",
+        "https://openalex.org/W2102761435",
+        "https://openalex.org/W2049659906",
+        "https://openalex.org/W2123037670",
+        "https://openalex.org/W2042154984",
+        "https://openalex.org/W1986899346",
+        "https://openalex.org/W2085529060",
+        "https://openalex.org/W2103309372",
+        "https://openalex.org/W2072653423",
+        "https://openalex.org/W2049045981",
+        "https://openalex.org/W2000168871",
+        "https://openalex.org/W2123289934",
+        "https://openalex.org/W2140740045",
+        "https://openalex.org/W2167221370",
+        "https://openalex.org/W2159414529",
+        "https://openalex.org/W2092341931",
+        "https://openalex.org/W2093463708",
+        "https://openalex.org/W2005759440",
+        "https://openalex.org/W2114106408",
+        "https://openalex.org/W2140328263",
+        "https://openalex.org/W2085165374",
+        "https://openalex.org/W2138460152",
+        "https://openalex.org/W1965326454",
+        "https://openalex.org/W2013278565",
+        "https://openalex.org/W2006073566",
+        "https://openalex.org/W2044360478",
+        "https://openalex.org/W1776406998",
+        "https://openalex.org/W2041866529",
+        "https://openalex.org/W2137561156",
+        "https://openalex.org/W2162662946",
+        "https://openalex.org/W1645950804",
+        "https://openalex.org/W1991426575",
+        "https://openalex.org/W2134878076",
+        "https://openalex.org/W2008755116",
+        "https://openalex.org/W1968400976",
+        "https://openalex.org/W1983087121",
+        "https://openalex.org/W2143128704",
+        "https://openalex.org/W1973048833",
+        "https://openalex.org/W2055090088",
+        "https://openalex.org/W2019476144",
+        "https://openalex.org/W2028722328",
+        "https://openalex.org/W2025707754",
+        "https://openalex.org/W2148343249",
+        "https://openalex.org/W2025767291",
+        "https://openalex.org/W2155005486",
+        "https://openalex.org/W2040649777",
+        "https://openalex.org/W4205200082",
+        "https://openalex.org/W2065225032",
+        "https://openalex.org/W2026865113",
+        "https://openalex.org/W2154494747",
+        "https://openalex.org/W1976614100",
+        "https://openalex.org/W2148609516",
+        "https://openalex.org/W2164996628",
+        "https://openalex.org/W2113297575",
+        "https://openalex.org/W2055113945",
+        "https://openalex.org/W1637123222",
+        "https://openalex.org/W2168989760",
+        "https://openalex.org/W2130649006",
+        "https://openalex.org/W2069479869",
+        "https://openalex.org/W2076096830",
+        "https://openalex.org/W2104436430",
+        "https://openalex.org/W2026987957",
+        "https://openalex.org/W2063295522",
+        "https://openalex.org/W2012408932",
+        "https://openalex.org/W2101270983",
+        "https://openalex.org/W2016107453",
+        "https://openalex.org/W2101187690",
+        "https://openalex.org/W1984686761",
+        "https://openalex.org/W1988571109",
+        "https://openalex.org/W2047177845",
+        "https://openalex.org/W2026105287",
+        "https://openalex.org/W1815395140",
+        "https://openalex.org/W2045470555",
+        "https://openalex.org/W2168062665",
+        "https://openalex.org/W1989441631",
+        "https://openalex.org/W1589071595",
+        "https://openalex.org/W1979946377",
+        "https://openalex.org/W2007899445",
+        "https://openalex.org/W1977541820",
+        "https://openalex.org/W2026736655",
+        "https://openalex.org/W2075405323",
+        "https://openalex.org/W2158216204",
+        "https://openalex.org/W2090589937",
+        "https://openalex.org/W2096463447",
+        "https://openalex.org/W2120393286",
+        "https://openalex.org/W2057296759",
+        "https://openalex.org/W1993766013",
+        "https://openalex.org/W2089750045",
+        "https://openalex.org/W2065947563",
+        "https://openalex.org/W1998300386",
+        "https://openalex.org/W2074707589",
+        "https://openalex.org/W1980773918",
+        "https://openalex.org/W1502045764",
+        "https://openalex.org/W2060418378",
+        "https://openalex.org/W4391334045",
+        "https://openalex.org/W1508752157",
+        "https://openalex.org/W6929755934",
+        "https://openalex.org/W2042626509",
+        "https://openalex.org/W2171660899",
+        "https://openalex.org/W2030098873",
+        "https://openalex.org/W1522127495",
+        "https://openalex.org/W1985479415",
+        "https://openalex.org/W2090739656",
+        "https://openalex.org/W2047220929",
+        "https://openalex.org/W2111578148",
+        "https://openalex.org/W2110815694",
+        "https://openalex.org/W2121910425",
+        "https://openalex.org/W1980423451",
+        "https://openalex.org/W2170943289",
+        "https://openalex.org/W2170831368",
+        "https://openalex.org/W2038720636",
+        "https://openalex.org/W1860322032",
+        "https://openalex.org/W1850052883",
+        "https://openalex.org/W2136994058",
+        "https://openalex.org/W4392184206",
+        "https://openalex.org/W2094300388",
+        "https://openalex.org/W1968028266",
+        "https://openalex.org/W1994975574",
+        "https://openalex.org/W2165732094",
+        "https://openalex.org/W2176956584",
+        "https://openalex.org/W2152839585",
+        "https://openalex.org/W2079578955",
+        "https://openalex.org/W2046360891",
+        "https://openalex.org/W2048919923",
+        "https://openalex.org/W2021667037",
+        "https://openalex.org/W2011885195",
+        "https://openalex.org/W2015742960",
+        "https://openalex.org/W202825624",
+        "https://openalex.org/W2122227689",
+        "https://openalex.org/W2508765924",
+        "https://openalex.org/W2913912387",
+        "https://openalex.org/W1973063800",
+        "https://openalex.org/W1975790343",
+        "https://openalex.org/W1482486111",
+        "https://openalex.org/W2166963788",
+        "https://openalex.org/W1624806571",
+        "https://openalex.org/W2051380851",
+        "https://openalex.org/W3122007751",
+        "https://openalex.org/W3125812623",
+        "https://openalex.org/W2149644473",
+        "https://openalex.org/W2281504379",
+        "https://openalex.org/W3047616274",
+        "https://openalex.org/W4285719527",
+        "https://openalex.org/W2595933734",
+        "https://openalex.org/W2106012723"
+    ]
+}

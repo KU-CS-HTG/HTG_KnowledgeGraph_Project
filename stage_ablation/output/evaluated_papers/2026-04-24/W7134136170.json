@@ -1,0 +1,922 @@
+{
+    "uri": "https://openalex.org/W7134136170",
+    "title": "Machine Learning-Based Reconstructions of Historical Daily and Monthly Runoff for the Laurentian Great Lakes",
+    "venue": {
+        "name": "Scientific Data",
+        "id": "https://openalex.org/S2607323502",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5128307518",
+            "display_name": "Rohini S. Gupta",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5082546117",
+            "display_name": "Sungwook Wi",
+            "orcid": "https://orcid.org/0000-0002-2805-3599"
+        },
+        {
+            "id": "https://openalex.org/A5023805749",
+            "display_name": "Scott Steinschneider",
+            "orcid": "https://orcid.org/0000-0002-8882-1908"
+        }
+    ],
+    "doi": "https://doi.org/10.1038/s41597-026-07000-0",
+    "abstract": "High-quality regional streamflow datasets are necessary to support local water resources planning and management in the Great Lakes basin. However, the region's observed streamflow records are limited by the availability of surface water gauges, which go in and out of service over time. In this paper, we present a continuous reconstruction of daily streamflow from 1951-2013 at 656 gauged locations throughout the Great Lakes basin. This dataset is created using a novel regional Long Short-Term Memory (LSTM) model that integrates local climate data, physical catchment characteristics, and runoff observations from nearby gauged sites. We also use this model to estimate monthly runoff into Lakes Superior, Michigan-Huron, St. Clair, Erie, and Ontario. The daily reconstruction product will equip water managers with information to support local water resources analyses, while the monthly runoff product can help improve historical water balance estimation across the Great Lakes and provide critical context for lake level shifts under a changing climate.",
+    "field": "Hydrological modeling",
+    "problem": "Observed streamflow records in the Great Lakes basin are limited by inconsistent gauge availability, while existing reconstruction models struggle with poor accuracy and limited spatiotemporal scale, hindering effective water resource management.",
+    "method": "The authors propose a regional Long Short-Term Memory (LSTM) model to reconstruct historical runoff in the Great Lakes basin by integrating local climate data, physical catchment characteristics, and streamflow observations from nearby donor gauges to fill gaps in historical records.",
+    "task": "The task is to create a continuous reconstruction of historical daily and monthly runoff for the Laurentian Great Lakes from 1951-2013 using a Long Short-Term Memory (LSTM) machine learning model to address gaps in observed streamflow records.",
+    "model": [
+        "LSTM",
+        "WATFLOOD",
+        "SWAT",
+        "NWM",
+        "LSTMclim",
+        "LSTMClim+Dnr",
+        "GLM-HMD",
+        "AHPS",
+        "GLSHFS",
+        "L2SWBM",
+        "WCPS",
+        "GEM-Hydro"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/surface-runoff",
+            "display_name": "Surface runoff",
+            "score": 0.6862999796867371
+        },
+        {
+            "id": "https://openalex.org/keywords/hydrology",
+            "display_name": "Hydrology (agriculture)",
+            "score": 0.5232999920845032
+        },
+        {
+            "id": "https://openalex.org/keywords/paleolimnology",
+            "display_name": "Paleolimnology",
+            "score": 0.22370000183582306
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.2199999988079071
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C50477045",
+            "wikidata": "https://www.wikidata.org/wiki/Q1444790",
+            "display_name": "Surface runoff",
+            "level": 2,
+            "score": 0.6862999796867371
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5810999870300293
+        },
+        {
+            "id": "https://openalex.org/C76886044",
+            "wikidata": "https://www.wikidata.org/wiki/Q2883300",
+            "display_name": "Hydrology (agriculture)",
+            "level": 2,
+            "score": 0.5232999920845032
+        },
+        {
+            "id": "https://openalex.org/C100970517",
+            "wikidata": "https://www.wikidata.org/wiki/Q52107",
+            "display_name": "Physical geography",
+            "level": 1,
+            "score": 0.3765000104904175
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.367000013589859
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.2962999939918518
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.2556999921798706
+        },
+        {
+            "id": "https://openalex.org/C116539479",
+            "wikidata": "https://www.wikidata.org/wiki/Q1550690",
+            "display_name": "Paleolimnology",
+            "level": 3,
+            "score": 0.22370000183582306
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.2199999988079071
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.21310000121593475
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a novel machine learning model that integrates local climate data and streamflow from nearby gauges to create a continuous reconstruction of historical daily and monthly runoff for the Laurentian Great Lakes from 1951-2013.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "LSTM model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "daily streamflow",
+            "target_entity_type": "Variable",
+            "paragraph": "In this paper, we present a continuous reconstruction of daily streamflow from 1951-2013 at 656 gauged locations throughout the Great Lakes basin. This dataset is created using a novel regional Long Short-Term Memory (LSTM) model that integrates local climate data, physical catchment characteristics, and runoff observations from nearby gauged sites.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTM model",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "monthly runoff",
+            "target_entity_type": "Variable",
+            "paragraph": "We also use this model to estimate monthly runoff into Lakes Superior, Michigan-Huron, St. Clair, Erie, and Ontario.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Livneh et al. dataset",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "daily precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "Meteorologic forcing data come from Livneh et al.42, a gridded observational dataset (1/16\u00b0 resolution, or ~ 6 km) that spans the entire Great Lakes basin. This dataset provides daily precipitation and minimum and maximum temperature from 1950-2013, derived from nearly 20,000 stations within the Global Historical Climatology Network and WSC.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Livneh et al. dataset",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "minimum and maximum temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Meteorologic forcing data come from Livneh et al.42, a gridded observational dataset (1/16\u00b0 resolution, or ~ 6 km) that spans the entire Great Lakes basin. This dataset provides daily precipitation and minimum and maximum temperature from 1950-2013, derived from nearly 20,000 stations within the Global Historical Climatology Network and WSC.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMClim+Dnr",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "daily runoff dataset",
+            "target_entity_type": "Variable",
+            "paragraph": "For the final reconstruction, models are trained on all available data within each subperiod to produce a daily runoff dataset at the 656 gauges across the region. These outputs are then aggregated and combined with additional predictions at ungauged catchments to create monthly runoff estimates for 128 basins draining directly into the Great Lakes.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMClim+Dnr",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "monthly runoff estimates",
+            "target_entity_type": "Variable",
+            "paragraph": "For the final reconstruction, models are trained on all available data within each subperiod to produce a daily runoff dataset at the 656 gauges across the region. These outputs are then aggregated and combined with additional predictions at ungauged catchments to create monthly runoff estimates for 128 basins draining directly into the Great Lakes. These are subsequently combined to create a monthly lake-wide runoff product for the five lake systems: Superior, Michigan-Huron, St. Clair, Erie, and Ontario (Step 3 in Figure 2).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMClim+Dnr",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Multi-Layer Perceptron",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The LSTMClim+Dnr model uses additional streamflow inputs provided from five donor gauges that are selected using a Multi-Layer Perceptron (MLP). The MLP is used to estimate the Spearman's rank correlation for daily streamflow between pairs of streamflow gauges to identify donor gauges that are strongly correlated to target sites.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMclim",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Rectified Linear Unit (ReLU) activation function",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The architecture for both models is based on a comprehensive cross-validation conducted in Wi et al.40. Based on the results from this cross-validation, each model is optimized with an input sequence of one year, one LSTM layer with 256 neurons, a mini-batch size of 64, learning rate of 0.0005, drop-out rate of 0.4, 30 epochs, a Rectified Linear Unit (ReLU) activation function, and M = 5 donor gauges.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LSTMClim+Dnr",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Rectified Linear Unit (ReLU) activation function",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The architecture for both models is based on a comprehensive cross-validation conducted in Wi et al.40. Based on the results from this cross-validation, each model is optimized with an input sequence of one year, one LSTM layer with 256 neurons, a mini-batch size of 64, learning rate of 0.0005, drop-out rate of 0.4, 30 epochs, a Rectified Linear Unit (ReLU) activation function, and M = 5 donor gauges.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LSTMclim",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "one LSTM layer with 256 neurons",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The architecture for both models is based on a comprehensive cross-validation conducted in Wi et al.40. Based on the results from this cross-validation, each model is optimized with an input sequence of one year, one LSTM layer with 256 neurons, a mini-batch size of 64, learning rate of 0.0005, drop-out rate of 0.4, 30 epochs, a Rectified Linear Unit (ReLU) activation function, and M = 5 donor gauges.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMClim+Dnr",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "one LSTM layer with 256 neurons",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The architecture for both models is based on a comprehensive cross-validation conducted in Wi et al.40. Based on the results from this cross-validation, each model is optimized with an input sequence of one year, one LSTM layer with 256 neurons, a mini-batch size of 64, learning rate of 0.0005, drop-out rate of 0.4, 30 epochs, a Rectified Linear Unit (ReLU) activation function, and M = 5 donor gauges.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMclim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean-squared error",
+            "target_entity_type": "Metric",
+            "paragraph": "The models are trained by minimizing the mean-squared error (MSE) across training watersheds",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMClim+Dnr",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean-squared error",
+            "target_entity_type": "Metric",
+            "paragraph": "The models are trained by minimizing the mean-squared error (MSE) across training watersheds",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMclim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Nash Sutcliffe Efficiency",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated across the testing interval at training sites (out-of-sample in time) and across both training and testing intervals at testing sites (out-of-sample in space). Performance is assessed using several metrics: Nash Sutcliffe Efficiency (NSE), Kling-Gupta Efficiency44 (KGE); absolute percent bias (PBIAS); peak flow bias for the top 2% of flow values45 (FHV); and low flow bias for the bottom 30% of flows45 (FLV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMClim+Dnr",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Nash Sutcliffe Efficiency",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated across the testing interval at training sites (out-of-sample in time) and across both training and testing intervals at testing sites (out-of-sample in space). Performance is assessed using several metrics: Nash Sutcliffe Efficiency (NSE), Kling-Gupta Efficiency44 (KGE); absolute percent bias (PBIAS); peak flow bias for the top 2% of flow values45 (FHV); and low flow bias for the bottom 30% of flows45 (FLV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMclim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Kling-Gupta Efficiency",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated across the testing interval at training sites (out-of-sample in time) and across both training and testing intervals at testing sites (out-of-sample in space). Performance is assessed using several metrics: Nash Sutcliffe Efficiency (NSE), Kling-Gupta Efficiency44 (KGE); absolute percent bias (PBIAS); peak flow bias for the top 2% of flow values45 (FHV); and low flow bias for the bottom 30% of flows45 (FLV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMClim+Dnr",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Kling-Gupta Efficiency",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated across the testing interval at training sites (out-of-sample in time) and across both training and testing intervals at testing sites (out-of-sample in space). Performance is assessed using several metrics: Nash Sutcliffe Efficiency (NSE), Kling-Gupta Efficiency44 (KGE); absolute percent bias (PBIAS); peak flow bias for the top 2% of flow values45 (FHV); and low flow bias for the bottom 30% of flows45 (FLV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMclim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "absolute percent bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated across the testing interval at training sites (out-of-sample in time) and across both training and testing intervals at testing sites (out-of-sample in space). Performance is assessed using several metrics: Nash Sutcliffe Efficiency (NSE), Kling-Gupta Efficiency44 (KGE); absolute percent bias (PBIAS); peak flow bias for the top 2% of flow values45 (FHV); and low flow bias for the bottom 30% of flows45 (FLV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMClim+Dnr",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "absolute percent bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated across the testing interval at training sites (out-of-sample in time) and across both training and testing intervals at testing sites (out-of-sample in space). Performance is assessed using several metrics: Nash Sutcliffe Efficiency (NSE), Kling-Gupta Efficiency44 (KGE); absolute percent bias (PBIAS); peak flow bias for the top 2% of flow values45 (FHV); and low flow bias for the bottom 30% of flows45 (FLV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMclim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "peak flow bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated across the testing interval at training sites (out-of-sample in time) and across both training and testing intervals at testing sites (out-of-sample in space). Performance is assessed using several metrics: Nash Sutcliffe Efficiency (NSE), Kling-Gupta Efficiency44 (KGE); absolute percent bias (PBIAS); peak flow bias for the top 2% of flow values45 (FHV); and low flow bias for the bottom 30% of flows45 (FLV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMClim+Dnr",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "peak flow bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated across the testing interval at training sites (out-of-sample in time) and across both training and testing intervals at testing sites (out-of-sample in space). Performance is assessed using several metrics: Nash Sutcliffe Efficiency (NSE), Kling-Gupta Efficiency44 (KGE); absolute percent bias (PBIAS); peak flow bias for the top 2% of flow values45 (FHV); and low flow bias for the bottom 30% of flows45 (FLV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMclim",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "low flow bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated across the testing interval at training sites (out-of-sample in time) and across both training and testing intervals at testing sites (out-of-sample in space). Performance is assessed using several metrics: Nash Sutcliffe Efficiency (NSE), Kling-Gupta Efficiency44 (KGE); absolute percent bias (PBIAS); peak flow bias for the top 2% of flow values45 (FHV); and low flow bias for the bottom 30% of flows45 (FLV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTMClim+Dnr",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "low flow bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated across the testing interval at training sites (out-of-sample in time) and across both training and testing intervals at testing sites (out-of-sample in space). Performance is assessed using several metrics: Nash Sutcliffe Efficiency (NSE), Kling-Gupta Efficiency44 (KGE); absolute percent bias (PBIAS); peak flow bias for the top 2% of flow values45 (FHV); and low flow bias for the bottom 30% of flows45 (FLV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "AHPS",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Large Basin Runoff Model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For comparison, we include other monthly runoff products that span the same period: GLM- HMD estimates derived from area-ratio interpolation of USGS and WSC streamflow gages; and the AHPS and GLSHFS datasets from the U.S. Army Corp of Engineers, which use the conceptual Large Basin Runoff Model to generate runoff estimates (see Table S1 for land-to-lake area ratios)19. NOAA\u2019s National Water Model runoff estimates are included as an additional benchmark when available after 1979 (further comparison at a daily time scale is included in Figure S4).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GLSHFS",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Large Basin Runoff Model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For comparison, we include other monthly runoff products that span the same period: GLM- HMD estimates derived from area-ratio interpolation of USGS and WSC streamflow gages; and the AHPS and GLSHFS datasets from the U.S. Army Corp of Engineers, which use the conceptual Large Basin Runoff Model to generate runoff estimates (see Table S1 for land-to-lake area ratios)19. NOAA\u2019s National Water Model runoff estimates are included as an additional benchmark when available after 1979 (further comparison at a daily time scale is included in Figure S4).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Machine Learning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Laurentian Great Lakes",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Cornell University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "streamflow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Great Lakes basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Long Short-Term Memory (LSTM)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Lake Superior",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Michigan-Huron",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "St. Clair",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Erie",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ontario",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "lake level",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "over-lake precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "over-lake evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Nash Sutcliffe efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Kling-Gupta efficiencies",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GLM-HMD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Advanced Hydrologic Prediction Service (AHPS)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Great Lakes Seasonal Hydrological Forecasting System (GLSHFS)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Large Basin Runoff Model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "WATFLOOD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SWAT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NOAA's National Water Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "deep learning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "entity-aware LSTM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "U.S. Geological Survey (USGS)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Water Survey of Canada (WSC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "streamflow gauges",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Livneh et al.",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1/16\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "6 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "minimum and maximum temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "long-term mean temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "long-term mean precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aridity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fraction of precipitation falling as snow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HydroSHEDS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Soil Dataset for Earth System Models",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "North American Land Change Monitoring System",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mean daily precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mean daily potential evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ratio of mean PET to mean precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mean of daily maximum and daily minimum temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fraction of precipitation falling on days with mean daily temperatures below 0\u00b0C",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fraction of high-precipitation days",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Average duration of high-precipitation events",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fraction of dry days",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Average duration of dry periods",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Catchment mean elevation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Standard deviation of catchment elevation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Catchment mean slope",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Standard deviation of catchment slope",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Catchment area",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fraction of land covered by \u201cTemperate-or-sub-polar-needleleaf-forest\u201d",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fraction of land covered by \u201cWetland\u201d",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fraction of land covered by \u201cCropland\u201d",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fraction of land covered by \u201cBarren-Lands\u201d",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fraction of land covered by \u201cUrban-and-Built-up\u201d",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fraction of land covered by \u201cWater\u201d",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soil bulk density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soil clay content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soil gravel content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soil organic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soil sand content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soil silt content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LSTMClim+Dnr",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LSTMclim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Multi-Layer Perceptron (MLP)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spearman's rank correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "quantile mapping",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "mean-squared error (MSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "one LSTM layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "256 neurons",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "mini-batch size of 64",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "learning rate of 0.0005",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "drop-out rate of 0.4",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "30 epochs",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Rectified Linear Unit (ReLU) activation function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Nash Sutcliffe Efficiency (NSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Kling-Gupta Efficiency (KGE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "absolute percent bias (PBIAS)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "peak flow bias (FHV)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "low flow bias (FLV)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "NOAA's Great Lakes Environmental Research Laboratory (GLERL)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GAGES-II",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Canada's Reference Hydrometric Basin Network (RHBN)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "lower Huron",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "upper Erie",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ontario basins",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "western Michigan",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "U.S. Army Corp of Engineers",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "2.5th/97.5th percentile credible interval",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Large Lakes Statistical Water Balance Model (L2SWBM)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WCPS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NWM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Monte Carlo dropout",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bayesian LSTMs",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "quantile-regression LSTMs",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "mixture-density LSTMs",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "U.S. National Science Foundation (NSF)",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W93907503",
+        "https://openalex.org/W202865214",
+        "https://openalex.org/W1124213845",
+        "https://openalex.org/W1490376162",
+        "https://openalex.org/W1554257907",
+        "https://openalex.org/W2039070965",
+        "https://openalex.org/W2044064243",
+        "https://openalex.org/W2050407742",
+        "https://openalex.org/W2064675550",
+        "https://openalex.org/W2097097645",
+        "https://openalex.org/W2097402578",
+        "https://openalex.org/W2138763184",
+        "https://openalex.org/W2165201237",
+        "https://openalex.org/W2169744906",
+        "https://openalex.org/W2343130473",
+        "https://openalex.org/W2473559460",
+        "https://openalex.org/W2769232279",
+        "https://openalex.org/W2800819102",
+        "https://openalex.org/W2892275081",
+        "https://openalex.org/W2903673589",
+        "https://openalex.org/W2963255299",
+        "https://openalex.org/W3113271689",
+        "https://openalex.org/W3131720060",
+        "https://openalex.org/W3197307613",
+        "https://openalex.org/W4220683755",
+        "https://openalex.org/W4281726888",
+        "https://openalex.org/W4285014963",
+        "https://openalex.org/W4317036307",
+        "https://openalex.org/W4365447452",
+        "https://openalex.org/W4382626568",
+        "https://openalex.org/W4387816498",
+        "https://openalex.org/W4394742547",
+        "https://openalex.org/W4402491539",
+        "https://openalex.org/W4404484879",
+        "https://openalex.org/W4405306611",
+        "https://openalex.org/W4406693740",
+        "https://openalex.org/W4411540133",
+        "https://openalex.org/W4414768364",
+        "https://openalex.org/W6944641793",
+        "https://openalex.org/W7126099612"
+    ]
+}

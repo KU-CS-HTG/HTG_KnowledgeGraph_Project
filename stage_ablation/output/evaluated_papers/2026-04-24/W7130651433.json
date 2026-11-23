@@ -1,0 +1,956 @@
+{
+    "uri": "https://openalex.org/W7130651433",
+    "title": "High climatological cloud cover limits its response to aerosols in ICON-HAM",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5019963960",
+            "display_name": "Yichen Jia",
+            "orcid": "https://orcid.org/0000-0002-9488-0250"
+        },
+        {
+            "id": "https://openalex.org/A5042303149",
+            "display_name": "Hendrik Andersen",
+            "orcid": "https://orcid.org/0000-0003-2983-8838"
+        },
+        {
+            "id": "https://openalex.org/A5126465917",
+            "display_name": "David Neubauer",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126486089",
+            "display_name": "Ulrike Lohmann",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5090587954",
+            "display_name": "Corinna Hoose",
+            "orcid": "https://orcid.org/0000-0003-2827-5789"
+        },
+        {
+            "id": "https://openalex.org/A5074135576",
+            "display_name": "Jan \u010cerm\u00e1k",
+            "orcid": "https://orcid.org/0000-0002-4240-595X"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2026-569",
+    "abstract": "Abstract. Marine low-level clouds substantially cool the climate and are sensitive to aerosols. Observations suggest strong cooling from cloud fraction (CF) adjustments, yet global climate models (GCMs) may underestimate this process. We apply explainable machine-learning with SHapley Additive exPlanations (SHAP) to the ICOsahedral Nonhydrostatic atmosphere model coupled with the Hamburg Aerosol Module (ICON-HAM) to quantify CF sensitivity to cloud droplet number concentration (Nd). We analyze six experiments combining two cloud cover parameterizations, an RH-only scheme (CC\u2013RH) and a cloud-water-dependent scheme (CC\u2013RH\u2013LWC), with three prescribed lower bounds for Nd (Nd,min = 10, 40, 100 cm-3). The lnNd\u2013CF relationships in ICON\u2013HAM are more nonlinear than in satellite observations and exhibit saturation. We quantify sensitivities using piecewise linear regression (PLR) separating low- and high-Nd regimes. Sensitivities are stronger in the low-Nd regime, while inter-scheme and inter-Nd,min differences are negligible at high Nd. Unexpectedly, CC-RH-LWC shows weaker sensitivity than CC-RH at high Nd,min, despite explicit CF\u2013cloud water coupling. We attribute this to a \"headroom effect'': higher Nd,min suppresses autoconversion and enhances liquid water path in both schemes, but CC-RH-LWC converts this into higher mean CF, limiting headroom for aerosol-induced CF increases. These findings are robust across three PLR breakpoint strategies. Our results demonstrate that GCM CF responses are state-dependent and strongly influenced by model configuration choices, which can pre-saturate cloud cover responses and mask true CF adjustment magnitudes. We suggest that model\u2013observation comparisons should account for baseline mean CF to avoid misinterpretation.",
+    "field": "Aerosol-cloud interactions",
+    "problem": "Global climate models may underestimate the cooling from cloud fraction adjustments to aerosols, a process observations suggest is significant, because internal model configuration choices can inadvertently pre-saturate the cloud cover response and limit its sensitivity.",
+    "method": "This study applies an explainable machine learning framework, combining SHAP and piecewise linear regression, to ICON-HAM model simulations to quantify the nonlinear sensitivity of cloud fraction to aerosols under different cloud parameterization schemes and prescribed aerosol lower bounds.",
+    "task": "The task is to quantify the sensitivity of marine low-cloud fraction to aerosols within the ICON-HAM climate model, investigating how different cloud cover schemes and prescribed minimum aerosol concentrations jointly shape the cloud response using an explainable machine learning framework.",
+    "model": [
+        "ICON-HAM",
+        "ICON",
+        "HAM",
+        "ECHAM",
+        "CMIP5",
+        "CMIP6",
+        "ECHAM6.3",
+        "ECHAM4",
+        "ECHAM5",
+        "ECHAM6.3-HAM2.3",
+        "CAM-Oslo",
+        "MPI-ESM1.2"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/cloud-cover",
+            "display_name": "Cloud cover",
+            "score": 0.7014999985694885
+        },
+        {
+            "id": "https://openalex.org/keywords/cloud-fraction",
+            "display_name": "Cloud fraction",
+            "score": 0.5360999703407288
+        },
+        {
+            "id": "https://openalex.org/keywords/limiting",
+            "display_name": "Limiting",
+            "score": 0.47099998593330383
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.45669999718666077
+        },
+        {
+            "id": "https://openalex.org/keywords/cloud-computing",
+            "display_name": "Cloud computing",
+            "score": 0.4553000032901764
+        },
+        {
+            "id": "https://openalex.org/keywords/sensitivity",
+            "display_name": "Sensitivity (control systems)",
+            "score": 0.44440001249313354
+        },
+        {
+            "id": "https://openalex.org/keywords/satellite",
+            "display_name": "Satellite",
+            "score": 0.4440000057220459
+        },
+        {
+            "id": "https://openalex.org/keywords/atmosphere",
+            "display_name": "Atmosphere (unit)",
+            "score": 0.3955000042915344
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-sensitivity",
+            "display_name": "Climate sensitivity",
+            "score": 0.39329999685287476
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C206887242",
+            "wikidata": "https://www.wikidata.org/wiki/Q830457",
+            "display_name": "Cloud cover",
+            "level": 3,
+            "score": 0.7014999985694885
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6362000107765198
+        },
+        {
+            "id": "https://openalex.org/C23302255",
+            "wikidata": "https://www.wikidata.org/wiki/Q5135703",
+            "display_name": "Cloud fraction",
+            "level": 4,
+            "score": 0.5360999703407288
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.5145000219345093
+        },
+        {
+            "id": "https://openalex.org/C188198153",
+            "wikidata": "https://www.wikidata.org/wiki/Q1613840",
+            "display_name": "Limiting",
+            "level": 2,
+            "score": 0.47099998593330383
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.45669999718666077
+        },
+        {
+            "id": "https://openalex.org/C79974875",
+            "wikidata": "https://www.wikidata.org/wiki/Q483639",
+            "display_name": "Cloud computing",
+            "level": 2,
+            "score": 0.4553000032901764
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.45010000467300415
+        },
+        {
+            "id": "https://openalex.org/C21200559",
+            "wikidata": "https://www.wikidata.org/wiki/Q7451068",
+            "display_name": "Sensitivity (control systems)",
+            "level": 2,
+            "score": 0.44440001249313354
+        },
+        {
+            "id": "https://openalex.org/C19269812",
+            "wikidata": "https://www.wikidata.org/wiki/Q26540",
+            "display_name": "Satellite",
+            "level": 2,
+            "score": 0.4440000057220459
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.4352000057697296
+        },
+        {
+            "id": "https://openalex.org/C65440619",
+            "wikidata": "https://www.wikidata.org/wiki/Q177974",
+            "display_name": "Atmosphere (unit)",
+            "level": 2,
+            "score": 0.3955000042915344
+        },
+        {
+            "id": "https://openalex.org/C54464151",
+            "wikidata": "https://www.wikidata.org/wiki/Q521783",
+            "display_name": "Climate sensitivity",
+            "level": 4,
+            "score": 0.39329999685287476
+        },
+        {
+            "id": "https://openalex.org/C2779345167",
+            "wikidata": "https://www.wikidata.org/wiki/Q104541",
+            "display_name": "Aerosol",
+            "level": 2,
+            "score": 0.3573000133037567
+        },
+        {
+            "id": "https://openalex.org/C2778516841",
+            "wikidata": "https://www.wikidata.org/wiki/Q6557487",
+            "display_name": "Liquid water path",
+            "level": 3,
+            "score": 0.33629998564720154
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.33469998836517334
+        },
+        {
+            "id": "https://openalex.org/C118365302",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric model",
+            "level": 2,
+            "score": 0.33390000462532043
+        },
+        {
+            "id": "https://openalex.org/C62279395",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric models",
+            "level": 3,
+            "score": 0.3093000054359436
+        },
+        {
+            "id": "https://openalex.org/C199194280",
+            "wikidata": "https://www.wikidata.org/wiki/Q3268898",
+            "display_name": "Cloud top",
+            "level": 3,
+            "score": 0.3073999881744385
+        },
+        {
+            "id": "https://openalex.org/C17095337",
+            "wikidata": "https://www.wikidata.org/wiki/Q2375229",
+            "display_name": "Piecewise linear function",
+            "level": 2,
+            "score": 0.2989000082015991
+        },
+        {
+            "id": "https://openalex.org/C158622935",
+            "wikidata": "https://www.wikidata.org/wiki/Q660848",
+            "display_name": "Nonlinear system",
+            "level": 2,
+            "score": 0.29829999804496765
+        },
+        {
+            "id": "https://openalex.org/C48921125",
+            "wikidata": "https://www.wikidata.org/wiki/Q10861030",
+            "display_name": "Linear regression",
+            "level": 2,
+            "score": 0.2897000014781952
+        },
+        {
+            "id": "https://openalex.org/C2780428219",
+            "wikidata": "https://www.wikidata.org/wiki/Q16952335",
+            "display_name": "Cover (algebra)",
+            "level": 2,
+            "score": 0.2824000120162964
+        },
+        {
+            "id": "https://openalex.org/C12725497",
+            "wikidata": "https://www.wikidata.org/wiki/Q810247",
+            "display_name": "Baseline (sea)",
+            "level": 2,
+            "score": 0.28209999203681946
+        },
+        {
+            "id": "https://openalex.org/C2994030904",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Atmospheric dynamics",
+            "level": 3,
+            "score": 0.2766000032424927
+        },
+        {
+            "id": "https://openalex.org/C107218244",
+            "wikidata": "https://www.wikidata.org/wiki/Q42762",
+            "display_name": "Biosphere",
+            "level": 2,
+            "score": 0.27230000495910645
+        },
+        {
+            "id": "https://openalex.org/C163175372",
+            "wikidata": "https://www.wikidata.org/wiki/Q3339222",
+            "display_name": "Linear model",
+            "level": 2,
+            "score": 0.25060001015663147
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper uses explainable machine learning on ICON-HAM simulations to reveal a \"headroom effect,\" where high baseline cloud cover, driven by model configuration, pre-saturates and limits the cloud fraction's response to further aerosol increases, explaining why physically-coupled schemes can show unexpectedly weak sensitivity.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ICON",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The host model in this study is the ICON atmospheric model (Giorgetta et al., 2018), coupled with HAM to obtain a global atmosphere-aerosol model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "HAM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The host model in this study is the ICON atmospheric model (Giorgetta et al., 2018), coupled with HAM to obtain a global atmosphere-aerosol model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON2.6.4-HAM2.3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ICON version 2.6.4",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The overall coupled model configuration largely follows that described in Salzmann et al. (2022), although we use a more recently developed ICON version 2.6.4 combined with the same HAM version 2.3 as in their study. Hereafter, without explicit notation, ICON-HAM refers to ICON2.6.4-HAM2.3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON2.6.4-HAM2.3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "HAM version 2.3",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The overall coupled model configuration largely follows that described in Salzmann et al. (2022), although we use a more recently developed ICON version 2.6.4 combined with the same HAM version 2.3 as in their study. Hereafter, without explicit notation, ICON-HAM refers to ICON2.6.4-HAM2.3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmos",
+            "target_entity_type": "Realm",
+            "paragraph": "The host model in this study is the ICON atmospheric model (Giorgetta et al., 2018), coupled with HAM to obtain a global atmosphere-aerosol model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "aerosol",
+            "target_entity_type": "Realm",
+            "paragraph": "The host model in this study is the ICON atmospheric model (Giorgetta et al., 2018), coupled with HAM to obtain a global atmosphere-aerosol model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "CC-RH",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We analyze six experiments combining two cloud cover parameterizations, an RH-only scheme (CC-RH) and a cloud-water-dependent scheme (CC-RH-LWC), with three prescribed lower bounds for Na (Nd,min = 10, 40, 100 cm-3).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "CC-RH-LWC",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We analyze six experiments combining two cloud cover parameterizations, an RH-only scheme (CC-RH) and a cloud-water-dependent scheme (CC-RH-LWC), with three prescribed lower bounds for Na (Nd,min = 10, 40, 100 cm-3).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "autoconversion parameterization scheme of Khairoutdinov and Kogan (2000)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "All experiments use the autoconversion parameterization scheme of Khairoutdinov and Kogan (2000), derived from bin-resolving microphysics in large-eddy simulations (LES) of marine stratocumulus. Although originally developed for LES applications, it has been adopted in many GCMs. In what follows, this scheme is referred to as KK2000.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6.3",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "CC-RH",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "CC-RH follows the implementation in the ECHAM6.3 general circulation model as described by Mauritsen et al. (2019), and is also the default configuration in ICON-HAM.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "nonhydrostatic, compressible atmosphere",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The ICON dynamical core provides a nonhydrostatic, compressible atmosphere on an icosahedral grid.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "icosahedral grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The ICON dynamical core provides a nonhydrostatic, compressible atmosphere on an icosahedral grid.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "R02B04 horizontal grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this study, the ICON-HAM model uses an R02B04 horizontal grid, corresponding to a grid spacing of approximately 160 km between neighbouring grid points, with 47 vertical levels using a hybrid sigma-height coordinate system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "grid spacing of approximately 160 km",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this study, the ICON-HAM model uses an R02B04 horizontal grid, corresponding to a grid spacing of approximately 160 km between neighbouring grid points, with 47 vertical levels using a hybrid sigma-height coordinate system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "47 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this study, the ICON-HAM model uses an R02B04 horizontal grid, corresponding to a grid spacing of approximately 160 km between neighbouring grid points, with 47 vertical levels using a hybrid sigma-height coordinate system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "hybrid sigma-height coordinate system",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this study, the ICON-HAM model uses an R02B04 horizontal grid, corresponding to a grid spacing of approximately 160 km between neighbouring grid points, with 47 vertical levels using a hybrid sigma-height coordinate system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "prescribed lower bounds for cloud droplet number concentration",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "We conduct six simulations that pair two different cloud cover parameterization schemes with three different prescribed lower bounds for cloud droplet number concentration (Nd,min).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM4",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "prescribed Nd,min value of 40 cm-3",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ECHAM4 and ECHAM5 have used a Nd,min value of 40 cm-3 (Lohmann et al., 1999, 2007), and ECHAM6.3-HAM2.3 added an additional option of 10 cm-3 (Neubauer et al., 2019).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "prescribed Nd,min value of 40 cm-3",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ECHAM4 and ECHAM5 have used a Nd,min value of 40 cm-3 (Lohmann et al., 1999, 2007), and ECHAM6.3-HAM2.3 added an additional option of 10 cm-3 (Neubauer et al., 2019).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6.3-HAM2.3",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "prescribed Nd,min of 10 cm-3",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ECHAM4 and ECHAM5 have used a Nd,min value of 40 cm-3 (Lohmann et al., 1999, 2007), and ECHAM6.3-HAM2.3 added an additional option of 10 cm-3 (Neubauer et al., 2019).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON-HAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "AMIP",
+            "target_entity_type": "SimulationType",
+            "paragraph": "All simulations in this study follow the AMIP protocols, with sea-surface temperatures (SST) and sea ice prescribed from observations (Taylor et al., 2000).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "cloud droplet number concentration (Nd)",
+            "target_entity_type": "Variable",
+            "paragraph": "Unlike our observational study (J24), where Na was derived specifically for satellite retrievals from cloud droplet effective radius and cloud optical depth, here we use the model's instantaneous cloud-top, in-cloud Na diagnostic.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "cloud fraction (CF)",
+            "target_entity_type": "Variable",
+            "paragraph": "A central aspect of this study involves comparing two parameterizations for fractional cloud cover that fundamentally differ in whether cloud water directly controls cloud cover. Throughout this study, we refer to these schemes as CC-RH, which depends only on grid-mean RH, and CC-RH-LWC, which additionally depends on the total cloud water content.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "ICON-HAM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Hamburg Aerosol Module",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ICON",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "cloud droplet number concentration (Nd)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud fraction (CF)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "RH-only scheme (CC-RH)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cloud-water-dependent scheme (CC-RH-LWC)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "liquid water path",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "autocoversion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Institute of Meteorology and Climate Research Atmospheric Trace Gases and Remote Sensing (IMKASF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Karlsruhe Institute of Technology (KIT)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute of Photogrammetry and Remote Sensing",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute for Atmospheric and Climate Science, ETH Zurich",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute of Meteorology and Climate Research Troposphere Research (IMKTRO)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GeoSphere Austria",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Karlsruhe",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Zurich",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Switzerland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Vienna",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Austria",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "CF adjustment",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "top-of-atmosphere (TOA) radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud droplet effective radii",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LWP adjustments",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "autoconversion parameterizations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Holuhraun volcanic eruption",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "AMIP",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ICON atmosphere model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "cloud water content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative humidity (RH)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ICON2.6.4-HAM2.3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "nonhydrostatic",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "compressible atmosphere",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "icosahedral grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "R02B04 horizontal grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "160 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "47 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "hybrid sigma-height coordinate system",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ECHAM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "sea-surface temperatures (SST)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud cover parameterization schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ECHAM6.3",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Sundqvist et al., 1989",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ECHAM4",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Xu and Randall (1996)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "COUPL-CC",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Khairoutdinov and Kogan (2000)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "KK2000",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ECHAM5",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ECHAM6.3-HAM2.3",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "cloud-top temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud optical depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "boundary-layer height (BLH)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Convective available potential energy (CAPE)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MODIS Terra",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Terra",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "La Ni\u00f1a",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "El Ni\u00f1o",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "ENSO",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "precipitation rate at the surface (PR)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "grid-mean RH",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sedimentation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud-top entrainment",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "drizzle",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Southern Hemispheric midlatitudes",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "PI-PD paired simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "preindustrial",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "present-day",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "COUPL",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ICON-HAM version 2.6.4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Specific humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Vertical velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Zonal (eastward) wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Meridional (northward) wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Eastward and northward wind component at 10 m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Vertically integrated water vapour",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Large-scale precipitation flux (water)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Sensible heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Estimated inversion strength (calculated)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Natural logarithm of cloud droplet number concentration",
+            "entity_type": "Variable"
+        }
+    ],
+    "referenced_works": []
+}

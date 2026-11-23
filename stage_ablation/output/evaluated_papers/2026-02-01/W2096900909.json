@@ -1,0 +1,779 @@
+{
+    "uri": "https://openalex.org/W2096900909",
+    "title": "HEMCO v1.0: a versatile, ESMF-compliant component for calculating emissions in atmospheric models",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2014,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5060061506",
+            "display_name": "Christoph A. Keller",
+            "orcid": "https://orcid.org/0000-0002-0552-4298"
+        },
+        {
+            "id": "https://openalex.org/A5090300664",
+            "display_name": "M. S. Long",
+            "orcid": "https://orcid.org/0000-0002-1561-6604"
+        },
+        {
+            "id": "https://openalex.org/A5059243092",
+            "display_name": "Robert M. Yantosca",
+            "orcid": "https://orcid.org/0000-0003-3781-1870"
+        },
+        {
+            "id": "https://openalex.org/A5067149151",
+            "display_name": "A. M. Da Silva",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5041365196",
+            "display_name": "Steven Pawson",
+            "orcid": "https://orcid.org/0000-0003-0200-717X"
+        },
+        {
+            "id": "https://openalex.org/A5011740304",
+            "display_name": "Daniel J. Jacob",
+            "orcid": "https://orcid.org/0000-0002-6373-3100"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-7-1409-2014",
+    "abstract": "Abstract. We describe the Harvard\u2013NASA Emission Component version 1.0 (HEMCO), a stand-alone software component for computing emissions in global atmospheric models. HEMCO determines emissions from different sources, regions, and species on a user-defined grid and can combine, overlay, and update a set of data inventories and scale factors, as specified by the user through the HEMCO configuration file. New emission inventories at any spatial and temporal resolution are readily added to HEMCO and can be accessed by the user without any preprocessing of the data files or modification of the source code. Emissions that depend on dynamic source types and local environmental variables such as wind speed or surface temperature are calculated in separate HEMCO extensions. HEMCO is fully compliant with the Earth System Modeling Framework (ESMF) environment. It is highly portable and can be deployed in a new model environment with only few adjustments at the top-level interface. So far, we have implemented HEMCO in the NASA Goddard Earth Observing System (GEOS-5) Earth system model (ESM) and in the GEOS-Chem chemical transport model (CTM). By providing a widely applicable framework for specifying constituent emissions, HEMCO is designed to ease sensitivity studies and model comparisons, as well as inverse modeling in which emissions are adjusted iteratively. The HEMCO code, extensions, and the full set of emissions data files used in GEOS-Chem are available at http://wiki.geos-chem.org/HEMCO.",
+    "field": "Atmospheric emissions modeling",
+    "problem": "The timely incorporation of new and updated emission inventories into atmospheric models is often a laborious and complex programming task, hindering model development and crucial sensitivity studies.",
+    "method": "The paper presents the Harvard-NASA Emission Component (HEMCO), a versatile, ESMF-compliant software component that computes emissions for atmospheric models by automatically combining, overlaying, and updating various data inventories and scale factors based on a user-defined configuration file without modifying source code.",
+    "task": "The task is to develop HEMCO, a versatile, ESMF-compliant software component that automates the calculation of emissions for atmospheric models by combining user-specified data inventories and scale factors.",
+    "model": [
+        "GEOS-5",
+        "GEOS-Chem",
+        "WRF-Chem"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/component",
+            "display_name": "Component (thermodynamics)",
+            "score": 0.7081203460693359
+        },
+        {
+            "id": "https://openalex.org/keywords/interface",
+            "display_name": "Interface (matter)",
+            "score": 0.5798609256744385
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.5622720122337341
+        },
+        {
+            "id": "https://openalex.org/keywords/set",
+            "display_name": "Set (abstract data type)",
+            "score": 0.5420255661010742
+        },
+        {
+            "id": "https://openalex.org/keywords/preprocessor",
+            "display_name": "Preprocessor",
+            "score": 0.5319944024085999
+        },
+        {
+            "id": "https://openalex.org/keywords/grid",
+            "display_name": "Grid",
+            "score": 0.5140253305435181
+        },
+        {
+            "id": "https://openalex.org/keywords/source-code",
+            "display_name": "Source code",
+            "score": 0.475486159324646
+        },
+        {
+            "id": "https://openalex.org/keywords/software",
+            "display_name": "Software",
+            "score": 0.46793338656425476
+        },
+        {
+            "id": "https://openalex.org/keywords/graphical-user-interface",
+            "display_name": "Graphical user interface",
+            "score": 0.42163556814193726
+        },
+        {
+            "id": "https://openalex.org/keywords/data-set",
+            "display_name": "Data set",
+            "score": 0.41304242610931396
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.39025795459747314
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.37532785534858704
+        },
+        {
+            "id": "https://openalex.org/keywords/computational-science",
+            "display_name": "Computational science",
+            "score": 0.340162992477417
+        },
+        {
+            "id": "https://openalex.org/keywords/parallel-computing",
+            "display_name": "Parallel computing",
+            "score": 0.10957831144332886
+        },
+        {
+            "id": "https://openalex.org/keywords/operating-system",
+            "display_name": "Operating system",
+            "score": 0.09452620148658752
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.09329530596733093
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C168167062",
+            "wikidata": "https://www.wikidata.org/wiki/Q1117970",
+            "display_name": "Component (thermodynamics)",
+            "level": 2,
+            "score": 0.7081203460693359
+        },
+        {
+            "id": "https://openalex.org/C113843644",
+            "wikidata": "https://www.wikidata.org/wiki/Q901882",
+            "display_name": "Interface (matter)",
+            "level": 4,
+            "score": 0.5798609256744385
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5622720122337341
+        },
+        {
+            "id": "https://openalex.org/C177264268",
+            "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+            "display_name": "Set (abstract data type)",
+            "level": 2,
+            "score": 0.5420255661010742
+        },
+        {
+            "id": "https://openalex.org/C34736171",
+            "wikidata": "https://www.wikidata.org/wiki/Q918333",
+            "display_name": "Preprocessor",
+            "level": 2,
+            "score": 0.5319944024085999
+        },
+        {
+            "id": "https://openalex.org/C187691185",
+            "wikidata": "https://www.wikidata.org/wiki/Q2020720",
+            "display_name": "Grid",
+            "level": 2,
+            "score": 0.5140253305435181
+        },
+        {
+            "id": "https://openalex.org/C43126263",
+            "wikidata": "https://www.wikidata.org/wiki/Q128751",
+            "display_name": "Source code",
+            "level": 2,
+            "score": 0.475486159324646
+        },
+        {
+            "id": "https://openalex.org/C2777904410",
+            "wikidata": "https://www.wikidata.org/wiki/Q7397",
+            "display_name": "Software",
+            "level": 2,
+            "score": 0.46793338656425476
+        },
+        {
+            "id": "https://openalex.org/C37789001",
+            "wikidata": "https://www.wikidata.org/wiki/Q782543",
+            "display_name": "Graphical user interface",
+            "level": 2,
+            "score": 0.42163556814193726
+        },
+        {
+            "id": "https://openalex.org/C58489278",
+            "wikidata": "https://www.wikidata.org/wiki/Q1172284",
+            "display_name": "Data set",
+            "level": 2,
+            "score": 0.41304242610931396
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.39025795459747314
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.37532785534858704
+        },
+        {
+            "id": "https://openalex.org/C459310",
+            "wikidata": "https://www.wikidata.org/wiki/Q117801",
+            "display_name": "Computational science",
+            "level": 1,
+            "score": 0.340162992477417
+        },
+        {
+            "id": "https://openalex.org/C173608175",
+            "wikidata": "https://www.wikidata.org/wiki/Q232661",
+            "display_name": "Parallel computing",
+            "level": 1,
+            "score": 0.10957831144332886
+        },
+        {
+            "id": "https://openalex.org/C111919701",
+            "wikidata": "https://www.wikidata.org/wiki/Q9135",
+            "display_name": "Operating system",
+            "level": 1,
+            "score": 0.09452620148658752
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.09329530596733093
+        },
+        {
+            "id": "https://openalex.org/C13280743",
+            "wikidata": "https://www.wikidata.org/wiki/Q131089",
+            "display_name": "Geodesy",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C129307140",
+            "wikidata": "https://www.wikidata.org/wiki/Q6795880",
+            "display_name": "Maximum bubble pressure method",
+            "level": 3,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C157915830",
+            "wikidata": "https://www.wikidata.org/wiki/Q2928001",
+            "display_name": "Bubble",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C97355855",
+            "wikidata": "https://www.wikidata.org/wiki/Q11473",
+            "display_name": "Thermodynamics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C199360897",
+            "wikidata": "https://www.wikidata.org/wiki/Q9143",
+            "display_name": "Programming language",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents HEMCO v1.0, a versatile, ESMF-compliant software component that automates the calculation of atmospheric emissions by enabling users to combine, overlay, and update diverse emission inventories and scale factors through a configuration file without modifying the model's source code.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "GEOS-5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "HEMCO v1.0",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "So far, we have implemented HEMCO in the NASA Goddard Earth Observing System (GEOS-5) Earth system model (ESM) and in the GEOS-Chem chemical transport model (CTM).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GEOS-Chem",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "HEMCO v1.0",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "So far, we have implemented HEMCO in the NASA Goddard Earth Observing System (GEOS-5) Earth system model (ESM) and in the GEOS-Chem chemical transport model (CTM).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HEMCO v1.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "HEMCO extensions",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Emissions that depend on dynamic source types and local environmental variables such as wind speed or surface temperature are calculated in separate HEMCO extensions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HEMCO Biogenic VOCS extension",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Biogenic VOCS",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 1. Sample emission inventories currently in the HEMCO library... Extensions Coverage Speciesa ... Global Biogenic VOCS",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HEMCO Mineral dust aerosols extension",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Mineral dust aerosols",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 1. Sample emission inventories currently in the HEMCO library... Extensions Coverage Speciesa ... Global Mineral dust aerosolsb",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HEMCO v1.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmosChem",
+            "target_entity_type": "Realm",
+            "paragraph": "Accurate representation of emissions is essential in global models of atmospheric composition. Models typically rely on gridded emission inventory data, covering global or regional domains, which are often multiplied with scale factors to adjust for different species and temporal variability (Lamarque et al., 2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HEMCO Biogenic VOCS extension",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "MEGAN",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Table 1. Sample emission inventories currently in the HEMCO library. The horizontal resolution of the extensions is determined by the meteorological input data. Extensions... Biogenic VOCS... MEGAN (Guenther et al., 2012)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HEMCO Mineral dust aerosols extension",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Zender et al. (2003)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Examples are wind dependence of dust emissions (Zender et al., 2003), or the temperature and light dependence of biogenic volatile organic carbon (VOC) emissions (Guenther et al., 2012).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HEMCO Ship NOx, O3, HNO3 extension",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "PARANOX",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Table 1. Sample emission inventories currently in the HEMCO library. The horizontal resolution of the extensions is determined by the meteorological input data. Extensions... Ship NOx, O3, HNO3... PARANOX (Vinken et al., 2011)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HEMCO v1.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "ESMF-compliant",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "HEMCO is fully compliant with the Earth System Modeling Framework (ESMF) environment. It is highly portable and can be deployed in a new model environment with only few adjustments at the top-level interface.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HEMCO v1.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "FORTRAN 90",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The HEMCO code, written in FORTRAN 90, along with its current extensions and library of open-source emission inventory databases is available at http://wiki.geos-chem.org/HEMCO.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "HEMCO v1.0",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Earth System Modeling Framework",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ESMF",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GEOS-5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ESM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "GEOS-Chem",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CTM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Harvard University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA Goddard Space Flight Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Global Modeling and Assimilation Office",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Copernicus Publications",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Geosciences Union",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "3-D",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "molecular weight",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "rectilinear grids",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "curvilinear grids",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "NOx",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "EDGAR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "EMEP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ICOADS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.1\u00b0 x 0.1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "CO",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "0.5\u00b0 x 0.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "VOCs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "RETRO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1\u00b0 x 1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "NH3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GEIA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "BC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2\u00b0 x 2.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "C2H6",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CHBr3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CH2Br2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GFED-3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ARCTAS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "AEIC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.25\u00b0 x 0.3125\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "US",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "EPA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "CAC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mexico",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "BRAVO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "East Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "MEGAN",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Biogenic VOCs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mineral dust aerosols",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea salt aerosols",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DMS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "C3H6O",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PARANOX",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "O3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HNO3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Lightning NOx",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soil and fertilizer NOx",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Modeling Analysis and Prediction Program Layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "MAPL",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "unstructured grids",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "dust emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "biogenic volatile organic carbon (VOC) emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "erodibility",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mass fractions per surface type",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "gridded components",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "coupler components",
+            "entity_type": "PhysicalFeature"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2139452943",
+        "https://openalex.org/W2138017294",
+        "https://openalex.org/W1522177459",
+        "https://openalex.org/W2072019789",
+        "https://openalex.org/W2065866939",
+        "https://openalex.org/W2166286846",
+        "https://openalex.org/W1616087035",
+        "https://openalex.org/W2082562995",
+        "https://openalex.org/W2955601895",
+        "https://openalex.org/W2128217437",
+        "https://openalex.org/W2059027591",
+        "https://openalex.org/W2015071544",
+        "https://openalex.org/W2113658035",
+        "https://openalex.org/W1992281871",
+        "https://openalex.org/W2106963750",
+        "https://openalex.org/W2088156480",
+        "https://openalex.org/W2152349500",
+        "https://openalex.org/W2140869764",
+        "https://openalex.org/W1862105058",
+        "https://openalex.org/W2149932227",
+        "https://openalex.org/W2115412415",
+        "https://openalex.org/W1573385217",
+        "https://openalex.org/W2169825433",
+        "https://openalex.org/W2144812030",
+        "https://openalex.org/W2102948292",
+        "https://openalex.org/W2134927874",
+        "https://openalex.org/W1987098847",
+        "https://openalex.org/W2163171091",
+        "https://openalex.org/W2097202844",
+        "https://openalex.org/W2014001974",
+        "https://openalex.org/W2021221584",
+        "https://openalex.org/W2103747864",
+        "https://openalex.org/W2104350102",
+        "https://openalex.org/W2155699713",
+        "https://openalex.org/W2140805694",
+        "https://openalex.org/W2972056435",
+        "https://openalex.org/W1567803238",
+        "https://openalex.org/W331564654",
+        "https://openalex.org/W2049978020",
+        "https://openalex.org/W926327749"
+    ]
+}

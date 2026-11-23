@@ -1,0 +1,1465 @@
+{
+    "uri": "https://openalex.org/W7131287977",
+    "title": "A Deep Learning Approach for Lake Ice Cover Forecasting",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5121002952",
+            "display_name": "Samuel  J. Johnston",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5036414748",
+            "display_name": "Justin Murfitt",
+            "orcid": "https://orcid.org/0000-0002-7388-0964"
+        },
+        {
+            "id": "https://openalex.org/A5069727604",
+            "display_name": "Claude Duguay",
+            "orcid": "https://orcid.org/0000-0002-1044-5850"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2025-5576",
+    "abstract": "Abstract. Lakes cover a significant proportion of the high-latitude landscape and exert a strong influence on local weather and climate. Their seasonal lake ice cover (LIC) further impacts lake-atmosphere interactions, while also providing key socioeconomic services for northern communities. Climate change is impacting LIC and its thickness, two thematic products of Lakes as an Essential Climate Variable (ECV). Accurate prediction of LIC improves numerical weather prediction (e.g. lake-effect snowfall and thermal moderation) and is crucial for anticipating the impacts of climate change in lake-rich regions of the Northern Hemisphere. This paper introduces LIF-DL (Lake Ice Forecasting using Deep Learning), a novel data-driven model for forecasting LIC extent across entire lake surfaces. LIF-DL uses Spatial-Temporal Transformer Networks (STTN) to capture relationships between lake conditions (ice and open water), lake depth and atmospheric forcings. The study focuses on five large Canadian lakes with pronounced ice phenology: Great Slave Lake, Great Bear Lake, Lake Winnipeg, Lake Athabasca, and Reindeer Lake. Data sources included ice cover observations from the Interactive Multi-Sensor Snow and Ice Monitoring System (IMS), atmospheric reanalysis from the European Centre for Medium-Range Weather Forecasts (ECMWF) 5th generation of European ReAnalysis (ERA5 and ERA5-Land), and Canadian Ice Service (CIS) records for external validation. To benchmark the proposed approach against a traditional physics-based model, the widely used Freshwater Lake (FLake) model embedded in ERA5 and ERA5-Land was employed. LIF-DL was trained to produce one-week forecasts using data from 2004\u20132017 and then deployed auto-regressively to predict ice cover during the 2018\u20132022 holdout period. Forecasts were evaluated against IMS and CIS observations and compared with those from FLake. Across all evaluations\u2014phenology timing, ice cover fraction, and spatial patterning\u2014LIF-DL consistently outperformed FLake. Freeze-up and break-up events were predicted within 3\u20139 days of observations (versus 5\u201322 days for FLake), and ice cover fraction (range 0\u20131) root mean squared errors were reduced (0.06\u20130.16 versus 0.1\u20130.2). A key advantage of LIF-DL was its capacity to represent spatial dependencies across lake surfaces, producing coherent freeze-up and break-up dynamics and realistic spatial clustering of early and late ice timing compared to the fragmented patterns of FLake. These improvements reduced extreme timing biases\u2014from as much as 30 days to only 4\u20136 days\u2014particularly for large, deep lakes. Variable importance analysis indicated sensitivity to physically meaningful drivers, including air temperature, accumulated degree days, solar radiation, and lake depth, suggesting that LIF-DL learned relevant physical processes rather than statistical artifacts. Finally, the model maintained stable performance when iteratively forecasting over a four-year period, demonstrating robustness under varying atmospheric conditions. The demonstrated accuracy, robustness, and physical interpretability of LIF-DL highlight the potential of deep learning for advancing lake ice modelling. Future research should focus on integrating physical constraints to develop hybrid physics-machine learning frameworks, improving model interpretability, and expanding to new predictive variables such as ice thickness and snow cover. Leveraging emerging high-resolution satellite datasets will further enhance spatial fidelity and enable application to smaller lakes. Ultimately, spatiotemporal deep learning represents a transformative step toward next-generation, spatially resolved lake ice forecasts that can improve weather and climate prediction, inform northern transportation planning, and support climate change adaptation in lake-rich regions of the Northern Hemisphere.",
+    "field": "Lake ice forecasting",
+    "problem": "Traditional physics-based lake ice models rely on one-dimensional equations, which neglect horizontal spatial interactions, limiting their capacity to accurately model the complex spatial patterns of ice formation and melt across large lake surfaces.",
+    "method": "This paper introduces LIF-DL, a deep learning model using Spatial-Temporal Transformer Networks to forecast lake ice cover extent by capturing spatial-temporal relationships between lake conditions, lake depth, and atmospheric forcings across entire lake surfaces.",
+    "task": "The task is to develop a novel deep learning model (LIF-DL) to forecast lake ice cover extent across large lake surfaces and benchmark its performance against a traditional physics-based model (FLake).",
+    "model": [
+        "LIF-DL",
+        "FLake",
+        "CLIMo",
+        "STTN",
+        "IFS",
+        "Climogrid",
+        "COSMO"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.5327000021934509
+        },
+        {
+            "id": "https://openalex.org/keywords/snow",
+            "display_name": "Snow",
+            "score": 0.46540001034736633
+        },
+        {
+            "id": "https://openalex.org/keywords/cryosphere",
+            "display_name": "Cryosphere",
+            "score": 0.4406000077724457
+        },
+        {
+            "id": "https://openalex.org/keywords/thematic-map",
+            "display_name": "Thematic map",
+            "score": 0.42730000615119934
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.42250001430511475
+        },
+        {
+            "id": "https://openalex.org/keywords/land-cover",
+            "display_name": "Land cover",
+            "score": 0.4007999897003174
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-ice",
+            "display_name": "Sea ice",
+            "score": 0.39989998936653137
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.6057000160217285
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5371000170707703
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.5327000021934509
+        },
+        {
+            "id": "https://openalex.org/C197046000",
+            "wikidata": "https://www.wikidata.org/wiki/Q7561",
+            "display_name": "Snow",
+            "level": 2,
+            "score": 0.46540001034736633
+        },
+        {
+            "id": "https://openalex.org/C197435368",
+            "wikidata": "https://www.wikidata.org/wiki/Q493109",
+            "display_name": "Cryosphere",
+            "level": 3,
+            "score": 0.4406000077724457
+        },
+        {
+            "id": "https://openalex.org/C93692415",
+            "wikidata": "https://www.wikidata.org/wiki/Q1502030",
+            "display_name": "Thematic map",
+            "level": 2,
+            "score": 0.42730000615119934
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.42250001430511475
+        },
+        {
+            "id": "https://openalex.org/C2780648208",
+            "wikidata": "https://www.wikidata.org/wiki/Q3001793",
+            "display_name": "Land cover",
+            "level": 3,
+            "score": 0.4007999897003174
+        },
+        {
+            "id": "https://openalex.org/C136894858",
+            "wikidata": "https://www.wikidata.org/wiki/Q213926",
+            "display_name": "Sea ice",
+            "level": 2,
+            "score": 0.39989998936653137
+        },
+        {
+            "id": "https://openalex.org/C161798024",
+            "wikidata": "https://www.wikidata.org/wiki/Q3651008",
+            "display_name": "Arctic ice pack",
+            "level": 3,
+            "score": 0.3894999921321869
+        },
+        {
+            "id": "https://openalex.org/C2983043445",
+            "wikidata": "https://www.wikidata.org/wiki/Q7561",
+            "display_name": "Snow cover",
+            "level": 3,
+            "score": 0.38589999079704285
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3594000041484833
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.33970001339912415
+        },
+        {
+            "id": "https://openalex.org/C100970517",
+            "wikidata": "https://www.wikidata.org/wiki/Q52107",
+            "display_name": "Physical geography",
+            "level": 1,
+            "score": 0.3244999945163727
+        },
+        {
+            "id": "https://openalex.org/C2983363897",
+            "wikidata": "https://www.wikidata.org/wiki/Q845339",
+            "display_name": "Air temperature",
+            "level": 2,
+            "score": 0.32019999623298645
+        },
+        {
+            "id": "https://openalex.org/C147947694",
+            "wikidata": "https://www.wikidata.org/wiki/Q837552",
+            "display_name": "Numerical weather prediction",
+            "level": 2,
+            "score": 0.29409998655319214
+        },
+        {
+            "id": "https://openalex.org/C607359",
+            "wikidata": "https://www.wikidata.org/wiki/Q845339",
+            "display_name": "Atmospheric temperature",
+            "level": 2,
+            "score": 0.28450000286102295
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "LIF-DL (Great Bear Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.02"
+        },
+        {
+            "model": "LIF-DL (Great Bear Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.06"
+        },
+        {
+            "model": "LIF-DL (Great Bear Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "0.41"
+        },
+        {
+            "model": "FLake (Great Bear Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.07"
+        },
+        {
+            "model": "FLake (Great Bear Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.18"
+        },
+        {
+            "model": "FLake (Great Bear Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "1.70"
+        },
+        {
+            "model": "LIF-DL (Great Bear Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.00"
+        },
+        {
+            "model": "LIF-DL (Great Bear Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.10"
+        },
+        {
+            "model": "LIF-DL (Great Bear Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "0.60"
+        },
+        {
+            "model": "FLake (Great Bear Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.10"
+        },
+        {
+            "model": "FLake (Great Bear Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.20"
+        },
+        {
+            "model": "FLake (Great Bear Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "1.70"
+        },
+        {
+            "model": "LIF-DL (Great Slave Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.03"
+        },
+        {
+            "model": "LIF-DL (Great Slave Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.09"
+        },
+        {
+            "model": "LIF-DL (Great Slave Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "0.51"
+        },
+        {
+            "model": "FLake (Great Slave Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.05"
+        },
+        {
+            "model": "FLake (Great Slave Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.12"
+        },
+        {
+            "model": "FLake (Great Slave Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "0.96"
+        },
+        {
+            "model": "LIF-DL (Great Slave Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.00"
+        },
+        {
+            "model": "LIF-DL (Great Slave Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.10"
+        },
+        {
+            "model": "LIF-DL (Great Slave Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "0.90"
+        },
+        {
+            "model": "FLake (Great Slave Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.10"
+        },
+        {
+            "model": "FLake (Great Slave Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.10"
+        },
+        {
+            "model": "FLake (Great Slave Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "1.60"
+        },
+        {
+            "model": "LIF-DL (Lake Athabasca)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.03"
+        },
+        {
+            "model": "LIF-DL (Lake Athabasca)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.10"
+        },
+        {
+            "model": "LIF-DL (Lake Athabasca)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "0.54"
+        },
+        {
+            "model": "FLake (Lake Athabasca)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.06"
+        },
+        {
+            "model": "FLake (Lake Athabasca)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.17"
+        },
+        {
+            "model": "FLake (Lake Athabasca)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "1.19"
+        },
+        {
+            "model": "LIF-DL (Lake Athabasca)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.00"
+        },
+        {
+            "model": "LIF-DL (Lake Athabasca)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.10"
+        },
+        {
+            "model": "LIF-DL (Lake Athabasca)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "0.80"
+        },
+        {
+            "model": "FLake (Lake Athabasca)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.10"
+        },
+        {
+            "model": "FLake (Lake Athabasca)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.20"
+        },
+        {
+            "model": "FLake (Lake Athabasca)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "1.80"
+        },
+        {
+            "model": "LIF-DL (Reindeer Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.03"
+        },
+        {
+            "model": "LIF-DL (Reindeer Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.12"
+        },
+        {
+            "model": "LIF-DL (Reindeer Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "0.47"
+        },
+        {
+            "model": "FLake (Reindeer Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.04"
+        },
+        {
+            "model": "FLake (Reindeer Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.15"
+        },
+        {
+            "model": "FLake (Reindeer Lake)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "0.61"
+        },
+        {
+            "model": "LIF-DL (Reindeer Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.00"
+        },
+        {
+            "model": "LIF-DL (Reindeer Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.10"
+        },
+        {
+            "model": "LIF-DL (Reindeer Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "0.90"
+        },
+        {
+            "model": "FLake (Reindeer Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.00"
+        },
+        {
+            "model": "FLake (Reindeer Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.10"
+        },
+        {
+            "model": "FLake (Reindeer Lake)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "1.20"
+        },
+        {
+            "model": "LIF-DL (Lake Winnipeg)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.04"
+        },
+        {
+            "model": "LIF-DL (Lake Winnipeg)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.16"
+        },
+        {
+            "model": "LIF-DL (Lake Winnipeg)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "1.04"
+        },
+        {
+            "model": "FLake (Lake Winnipeg)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.04"
+        },
+        {
+            "model": "FLake (Lake Winnipeg)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.12"
+        },
+        {
+            "model": "FLake (Lake Winnipeg)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "0.91"
+        },
+        {
+            "model": "LIF-DL (Lake Winnipeg)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.00"
+        },
+        {
+            "model": "LIF-DL (Lake Winnipeg)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.10"
+        },
+        {
+            "model": "LIF-DL (Lake Winnipeg)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "1.10"
+        },
+        {
+            "model": "FLake (Lake Winnipeg)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.00"
+        },
+        {
+            "model": "FLake (Lake Winnipeg)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.10"
+        },
+        {
+            "model": "FLake (Lake Winnipeg)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "1.20"
+        },
+        {
+            "model": "LIF-DL (Average)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.03"
+        },
+        {
+            "model": "LIF-DL (Average)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.10"
+        },
+        {
+            "model": "LIF-DL (Average)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "0.59"
+        },
+        {
+            "model": "FLake (Average)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MAE",
+            "result": "0.05"
+        },
+        {
+            "model": "FLake (Average)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "RMSE",
+            "result": "0.15"
+        },
+        {
+            "model": "FLake (Average)",
+            "observational_dataset": "IMS",
+            "evaluation_metric": "MASE",
+            "result": "1.07"
+        },
+        {
+            "model": "LIF-DL (Average)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.00"
+        },
+        {
+            "model": "LIF-DL (Average)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.10"
+        },
+        {
+            "model": "LIF-DL (Average)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "0.90"
+        },
+        {
+            "model": "FLake (Average)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MAE",
+            "result": "0.10"
+        },
+        {
+            "model": "FLake (Average)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "RMSE",
+            "result": "0.20"
+        },
+        {
+            "model": "FLake (Average)",
+            "observational_dataset": "CIS",
+            "evaluation_metric": "MASE",
+            "result": "1.50"
+        }
+    ],
+    "innovation": "This paper introduces LIF-DL, a novel spatial-temporal deep learning model for forecasting lake ice cover, which outperforms traditional physics-based models by capturing spatial dependencies across entire lake surfaces to produce more accurate and realistic forecasts of freeze-up and break-up dynamics.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ERA5-Land",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "ERA5",
+            "target_entity_type": "Source",
+            "paragraph": "Atmospheric forcing variables were drawn from the European Centre for Medium Range Weather Forecasting (ECMWF) Reanalysis v5 (ERA5) (Hersbach et al., 2020), and ERA5-Land (Mu\u00f1oz-Sabater et al., 2021). ERA5 is a global atmospheric reanalysis dataset comprising decades of data on a large number of atmospheric, land and oceanic climate variables at roughly 31km resolution (Hersbach et al., 2020). To improve spatial resolution further, ERA5-Land provides a replay of the ERA5 Earth surface variables at approximately 9 km grid spacing (Mu\u00f1oz-Sabater et al., 2021).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIF-DL",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Spatial-Temporal Transformer Networks",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This paper introduces LIF-DL (Lake Ice Forecasting using Deep Learning), a novel data-driven model for forecasting LIC extent across entire lake surfaces. LIF-DL uses Spatial-Temporal Transformer Networks (STTN) to capture relationships between lake conditions (ice and open water), lake depth and atmospheric forcings.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIF-DL",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Convolutional Neural Networks",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "LIF-DL is an encoder-decoder model that compresses the input data while simultaneously extracting relevant information in the encoder step, performs operations within the resultant latent space, and finally applies a decoder step to transform the latent representation into meaningful predictions at the original dimensionality. The encoders and decoders are built using Convolutional Neural Networks (CNNs), which are well adapted for handling spatial data and are widely used for this purpose (Alzubaidi et al., 2021; Haupt et al., 2022).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Convolutional Neural Networks",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "ice cover predictions",
+            "target_entity_type": "Variable",
+            "paragraph": "After this combination, data are passed through a configurable number of additional STTN blocks, as done in Zeng et al. (2020) and, finally, decoded via CNNs to produce a sequence of ice cover predictions in the original dimension size.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FLake",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "two-layer parametric representation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "FLake models lakes more wholly, predicting the vertical temperature structure and mixing conditions in lakes using a two-layer parametric representation. It further includes a module for simulating the formation and melting of ice (Mironov, 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "31km resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ERA5 is a global atmospheric reanalysis dataset comprising decades of data on a large number of atmospheric, land and oceanic climate variables at roughly 31km resolution (Hersbach et al., 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5-Land",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "9 km grid spacing",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "To improve spatial resolution further, ERA5-Land provides a replay of the ERA5 Earth surface variables at approximately 9 km grid spacing (Mu\u00f1oz-Sabater et al., 2021).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IMS",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "4 km grid spacing",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "It is available in a polar stereographic projection (EPSG:3411), centred at the north pole, and at three grid spacings (24 km, 4 km, 1 km). The temporal availability of the data is shorter for finer spatial resolutions. To balance data availability with grid size, the 4 km NetCDF product was selected, spanning the temporal range from February 24th, 2004, to December 31st, 2022.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IMS",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "polar stereographic projection (EPSG:3411)",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "It is available in a polar stereographic projection (EPSG:3411), centred at the north pole, and at three grid spacings (24 km, 4 km, 1 km).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIF-DL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Overall Accuracy",
+            "target_entity_type": "Metric",
+            "paragraph": "Overall spatiotemporal forecast accuracy for LIF-DL and FLake was evaluated against IMS observations over the testing period. Model performance was quantified using overall accuracy (OA), F1-score, and Intersection over Union (IoU), all calculated from pixel-level counts of true positives, false positives, false negatives, and true negatives.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FLake",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Overall Accuracy",
+            "target_entity_type": "Metric",
+            "paragraph": "Overall spatiotemporal forecast accuracy for LIF-DL and FLake was evaluated against IMS observations over the testing period. Model performance was quantified using overall accuracy (OA), F1-score, and Intersection over Union (IoU), all calculated from pixel-level counts of true positives, false positives, false negatives, and true negatives.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIF-DL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "F1-score",
+            "target_entity_type": "Metric",
+            "paragraph": "Overall spatiotemporal forecast accuracy for LIF-DL and FLake was evaluated against IMS observations over the testing period. Model performance was quantified using overall accuracy (OA), F1-score, and Intersection over Union (IoU), all calculated from pixel-level counts of true positives, false positives, false negatives, and true negatives.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FLake",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "F1-score",
+            "target_entity_type": "Metric",
+            "paragraph": "Overall spatiotemporal forecast accuracy for LIF-DL and FLake was evaluated against IMS observations over the testing period. Model performance was quantified using overall accuracy (OA), F1-score, and Intersection over Union (IoU), all calculated from pixel-level counts of true positives, false positives, false negatives, and true negatives.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIF-DL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Intersection over Union",
+            "target_entity_type": "Metric",
+            "paragraph": "Overall spatiotemporal forecast accuracy for LIF-DL and FLake was evaluated against IMS observations over the testing period. Model performance was quantified using overall accuracy (OA), F1-score, and Intersection over Union (IoU), all calculated from pixel-level counts of true positives, false positives, false negatives, and true negatives.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FLake",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Intersection over Union",
+            "target_entity_type": "Metric",
+            "paragraph": "Overall spatiotemporal forecast accuracy for LIF-DL and FLake was evaluated against IMS observations over the testing period. Model performance was quantified using overall accuracy (OA), F1-score, and Intersection over Union (IoU), all calculated from pixel-level counts of true positives, false positives, false negatives, and true negatives.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIF-DL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Structural Similarity Index Measure",
+            "target_entity_type": "Metric",
+            "paragraph": "Evaluation was then conducted using the SSIM, Kendall Tau-b correlation, and Local Moran's I statistic, to compare the normalized timing anomalies of FUS and BUS between the IMS observations and the LIF-DL and FLake predictions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FLake",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Structural Similarity Index Measure",
+            "target_entity_type": "Metric",
+            "paragraph": "Evaluation was then conducted using the SSIM, Kendall Tau-b correlation, and Local Moran's I statistic, to compare the normalized timing anomalies of FUS and BUS between the IMS observations and the LIF-DL and FLake predictions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIF-DL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Kendall Tau-b correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "Evaluation was then conducted using the SSIM, Kendall Tau-b correlation, and Local Moran's I statistic, to compare the normalized timing anomalies of FUS and BUS between the IMS observations and the LIF-DL and FLake predictions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FLake",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Kendall Tau-b correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "Evaluation was then conducted using the SSIM, Kendall Tau-b correlation, and Local Moran's I statistic, to compare the normalized timing anomalies of FUS and BUS between the IMS observations and the LIF-DL and FLake predictions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIF-DL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Local Moran's I",
+            "target_entity_type": "Metric",
+            "paragraph": "Evaluation was then conducted using the SSIM, Kendall Tau-b correlation, and Local Moran's I statistic, to compare the normalized timing anomalies of FUS and BUS between the IMS observations and the LIF-DL and FLake predictions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FLake",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Local Moran's I",
+            "target_entity_type": "Metric",
+            "paragraph": "Evaluation was then conducted using the SSIM, Kendall Tau-b correlation, and Local Moran's I statistic, to compare the normalized timing anomalies of FUS and BUS between the IMS observations and the LIF-DL and FLake predictions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIF-DL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The metrics used were the Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and seasonal Mean Absolute Scaled Error (MASE).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "FLake",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The metrics used were the Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and seasonal Mean Absolute Scaled Error (MASE).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LIF-DL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Root Mean Squared Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The metrics used were the Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and seasonal Mean Absolute Scaled Error (MASE).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FLake",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Root Mean Squared Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The metrics used were the Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and seasonal Mean Absolute Scaled Error (MASE).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIF-DL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Scaled Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The metrics used were the Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and seasonal Mean Absolute Scaled Error (MASE).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FLake",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Scaled Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The metrics used were the Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and seasonal Mean Absolute Scaled Error (MASE).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "synthetic aperture radar",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "ice cover",
+            "target_entity_type": "Variable",
+            "paragraph": "The Canadian Ice Service (CIS) weekly ice cover product was obtained for independent validation of LIF-DL predictions of ice cover. CIS ice cover records are produced by ice analysts via visual interpretation of synthetic aperture radar (SAR) and optical satellite imagery (Hoekstra et al., 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "optical satellite imagery",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "ice cover",
+            "target_entity_type": "Variable",
+            "paragraph": "The Canadian Ice Service (CIS) weekly ice cover product was obtained for independent validation of LIF-DL predictions of ice cover. CIS ice cover records are produced by ice analysts via visual interpretation of synthetic aperture radar (SAR) and optical satellite imagery (Hoekstra et al., 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "LIF-DL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Spatial-Temporal Transformer Networks (STTN)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Freshwater Lake (FLake)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Interactive Multi-Sensor Snow and Ice Monitoring System (IMS)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5-Land",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Canadian Ice Service (CIS)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "H2O Geomatics Inc.",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Waterloo",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "lake ice cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "accumulated degree days",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "lake depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "root mean squared errors",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Great Slave Lake",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Great Bear Lake",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Lake Winnipeg",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Lake Athabasca",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Reindeer Lake",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "snow cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "lake ice phenology",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "freeze-up",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "break-up",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "duration of lake ice cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Canadian Lake Ice Model (CLIMo)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ice composition",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vertical temperature structure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mixing conditions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "two-layer parametric representation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Subarctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "one-dimensional equations",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "lake-temperature profiles",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "lake ice cover extent",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "National Snow and Ice Data Center (NSIDC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "U.S. National Ice Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "24 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "4 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "polar stereographic projection (EPSG:3411)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "weekly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "satellite",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "synthetic aperture radar (SAR)",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "optical satellite imagery",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "snowfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "liquid precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "lake morphometry",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Accumulated Freezing Degree Days (AFDD)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Accumulated Thawing Degree Days (ATDD)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Global Lake DataBase (GLDB)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "31km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "9 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "~1 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Integrated Forecasting System",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "lake state",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2-m air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Temperature at 2 m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface solar radiation downwards",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Relative humidity at 2 m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wind speed at 10 m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Total precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Total Cloud Cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "128x128 pixels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "nearest neighbour interpolation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "North Arm of Great Slave Lake",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "one-hot encoding",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "one-week",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "autoregressively",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "encoder-decoder model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Convolutional Neural Networks (CNNs)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "sequence-to-sequence model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spatial-Temporal Transformer Networks (STTN)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "attention mechanism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "multi-head",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "2D convolutions",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "CNN Encoder",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "STTN",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CNN Decoder",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Adam optimizer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "masked binary cross-entropy loss",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "dropout",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Variable importance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "overall accuracy (OA)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "F1-score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Intersection over Union (IoU)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "freeze-up start (FUS)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "break-up start (BUS)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Structural Similarity Index Measure (SSIM)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Kendall Tau-b correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Local Moran's I statistic",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean Absolute Error (MAE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Root Mean Squared Error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "seasonal Mean Absolute Scaled Error (MASE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ice cover fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmos",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Johnny Hoe River",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "McVicar Arm of Great Bear Lake",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mackenzie",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Slave",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Winnipeg River",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "timing anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ESA CCI Lakes lake ice cover product",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Copernicus Climate Change Service",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Environment and Climate Change Canada",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Natural Sciences and Engineering Research Council of Canada",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Digital Research Alliance of Canada",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": []
+}

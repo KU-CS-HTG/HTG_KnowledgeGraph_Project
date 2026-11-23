@@ -1,0 +1,1349 @@
+{
+    "uri": "https://openalex.org/W2158930033",
+    "title": "Improvement, calibration and validation of a distributed hydrological model over France",
+    "venue": {
+        "name": "Hydrology and earth system sciences",
+        "id": "https://openalex.org/S93121129",
+        "type": "journal"
+    },
+    "publication_year": 2009,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5053499463",
+            "display_name": "Pere Quintana\u2010Segu\u00ed",
+            "orcid": "https://orcid.org/0000-0002-7107-9671"
+        },
+        {
+            "id": "https://openalex.org/A5101952855",
+            "display_name": "\u00c9ric Martin",
+            "orcid": "https://orcid.org/0000-0002-1491-9590"
+        },
+        {
+            "id": "https://openalex.org/A5045743180",
+            "display_name": "Florence Habets",
+            "orcid": "https://orcid.org/0000-0003-1950-0921"
+        },
+        {
+            "id": "https://openalex.org/A5061830803",
+            "display_name": "J. Noilhan",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/hess-13-163-2009",
+    "abstract": "Abstract. The hydrometeorological model SAFRAN-ISBA-MODCOU (SIM) computes water and energy budgets on the land surface and riverflows and the level of several aquifers at the scale of France. SIM is composed of a meteorological analysis system (SAFRAN), a land surface model (ISBA), and a hydrogeological model (MODCOU). In this study, an exponential profile of hydraulic conductivity at saturation is introduced to the model and its impact analysed. It is also studied how calibration modifies the performance of the model. A very simple method of calibration is implemented and applied to the parameters of hydraulic conductivity and subgrid runoff. The study shows that a better description of the hydraulic conductivity of the soil is important to simulate more realistic discharges. It also shows that the calibrated model is more robust than the original SIM. In fact, the calibration mainly affects the processes related to the dynamics of the flow (drainage and runoff), and the rest of relevant processes (like evaporation) remain stable. It is also proven that it is only worth introducing the new empirical parameterization of hydraulic conductivity if it is accompanied by a calibration of its parameters, otherwise the simulations can be degraded. In conclusion, it is shown that the new parameterization is necessary to obtain good simulations. Calibration is a tool that must be used to improve the performance of distributed models like SIM that have some empirical parameters.",
+    "field": "Distributed hydrological modeling",
+    "problem": "The distributed hydrological model SIM produces unrealistic river discharges due to a poor description of soil water dynamics, requiring improved parameterizations of hydraulic conductivity and a robust calibration strategy to determine the values of new empirical parameters.",
+    "method": "To improve unrealistic discharge simulations, this study introduces an exponential profile of hydraulic conductivity and implements a semi-distributed calibration of its parameters and the subgrid runoff parameter at the basin scale using observed river discharges.",
+    "task": "The task is to improve, calibrate, and validate the SAFRAN-ISBA-MODCOU (SIM) distributed hydrological model for France by introducing an exponential profile for hydraulic conductivity to produce more realistic discharge simulations.",
+    "model": [
+        "SIM",
+        "SAFRAN",
+        "ISBA",
+        "MODCOU",
+        "Arpge",
+        "ECMWF",
+        "VIC",
+        "Nanjing",
+        "TOPMODEL"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/hydraulic-conductivity",
+            "display_name": "Hydraulic conductivity",
+            "score": 0.7807581424713135
+        },
+        {
+            "id": "https://openalex.org/keywords/calibration",
+            "display_name": "Calibration",
+            "score": 0.7475407123565674
+        },
+        {
+            "id": "https://openalex.org/keywords/hydrometeorology",
+            "display_name": "Hydrometeorology",
+            "score": 0.6972424387931824
+        },
+        {
+            "id": "https://openalex.org/keywords/surface-runoff",
+            "display_name": "Surface runoff",
+            "score": 0.6711776256561279
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.5349339842796326
+        },
+        {
+            "id": "https://openalex.org/keywords/hydrology",
+            "display_name": "Hydrology (agriculture)",
+            "score": 0.48022183775901794
+        },
+        {
+            "id": "https://openalex.org/keywords/hydrogeology",
+            "display_name": "Hydrogeology",
+            "score": 0.46686697006225586
+        },
+        {
+            "id": "https://openalex.org/keywords/soil-science",
+            "display_name": "Soil science",
+            "score": 0.44428715109825134
+        },
+        {
+            "id": "https://openalex.org/keywords/empirical-modelling",
+            "display_name": "Empirical modelling",
+            "score": 0.41867905855178833
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.28104013204574585
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.2589442729949951
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.23044806718826294
+        },
+        {
+            "id": "https://openalex.org/keywords/geotechnical-engineering",
+            "display_name": "Geotechnical engineering",
+            "score": 0.22223526239395142
+        },
+        {
+            "id": "https://openalex.org/keywords/simulation",
+            "display_name": "Simulation",
+            "score": 0.1874154508113861
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.12728822231292725
+        },
+        {
+            "id": "https://openalex.org/keywords/soil-water",
+            "display_name": "Soil water",
+            "score": 0.12726083397865295
+        },
+        {
+            "id": "https://openalex.org/keywords/statistics",
+            "display_name": "Statistics",
+            "score": 0.119842529296875
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.09375429153442383
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.07791897654533386
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C63184880",
+            "wikidata": "https://www.wikidata.org/wiki/Q2783041",
+            "display_name": "Hydraulic conductivity",
+            "level": 3,
+            "score": 0.7807581424713135
+        },
+        {
+            "id": "https://openalex.org/C165838908",
+            "wikidata": "https://www.wikidata.org/wiki/Q736777",
+            "display_name": "Calibration",
+            "level": 2,
+            "score": 0.7475407123565674
+        },
+        {
+            "id": "https://openalex.org/C100725284",
+            "wikidata": "https://www.wikidata.org/wiki/Q1045317",
+            "display_name": "Hydrometeorology",
+            "level": 3,
+            "score": 0.6972424387931824
+        },
+        {
+            "id": "https://openalex.org/C50477045",
+            "wikidata": "https://www.wikidata.org/wiki/Q1444790",
+            "display_name": "Surface runoff",
+            "level": 2,
+            "score": 0.6711776256561279
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5349339842796326
+        },
+        {
+            "id": "https://openalex.org/C76886044",
+            "wikidata": "https://www.wikidata.org/wiki/Q2883300",
+            "display_name": "Hydrology (agriculture)",
+            "level": 2,
+            "score": 0.48022183775901794
+        },
+        {
+            "id": "https://openalex.org/C33556824",
+            "wikidata": "https://www.wikidata.org/wiki/Q179509",
+            "display_name": "Hydrogeology",
+            "level": 2,
+            "score": 0.46686697006225586
+        },
+        {
+            "id": "https://openalex.org/C159390177",
+            "wikidata": "https://www.wikidata.org/wiki/Q9161265",
+            "display_name": "Soil science",
+            "level": 1,
+            "score": 0.44428715109825134
+        },
+        {
+            "id": "https://openalex.org/C133199616",
+            "wikidata": "https://www.wikidata.org/wiki/Q25386885",
+            "display_name": "Empirical modelling",
+            "level": 2,
+            "score": 0.41867905855178833
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.28104013204574585
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.2589442729949951
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.23044806718826294
+        },
+        {
+            "id": "https://openalex.org/C187320778",
+            "wikidata": "https://www.wikidata.org/wiki/Q1349130",
+            "display_name": "Geotechnical engineering",
+            "level": 1,
+            "score": 0.22223526239395142
+        },
+        {
+            "id": "https://openalex.org/C44154836",
+            "wikidata": "https://www.wikidata.org/wiki/Q45045",
+            "display_name": "Simulation",
+            "level": 1,
+            "score": 0.1874154508113861
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.12728822231292725
+        },
+        {
+            "id": "https://openalex.org/C159750122",
+            "wikidata": "https://www.wikidata.org/wiki/Q96621023",
+            "display_name": "Soil water",
+            "level": 2,
+            "score": 0.12726083397865295
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.119842529296875
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.09375429153442383
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.07791897654533386
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "REF",
+            "observational_dataset": "152 selected stations",
+            "evaluation_metric": "Efficiency (percentage of stations by category)",
+            "result": "Very Good: 0, Good: 10, Fair: 35, Poor: 54"
+        },
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "152 selected stations",
+            "evaluation_metric": "Efficiency (percentage of stations by category)",
+            "result": "Very Good: 1, Good: 16, Fair: 25, Poor: 59"
+        },
+        {
+            "model": "FDC-FRANCE",
+            "observational_dataset": "152 selected stations",
+            "evaluation_metric": "Efficiency (percentage of stations by category)",
+            "result": "Very Good: 2, Good: 25, Fair: 34, Poor: 39"
+        },
+        {
+            "model": "FDC-BASIN",
+            "observational_dataset": "152 selected stations",
+            "evaluation_metric": "Efficiency (percentage of stations by category)",
+            "result": "Very Good: 5, Good: 45, Fair: 32, Poor: 18"
+        },
+        {
+            "model": "FDCB-BASIN",
+            "observational_dataset": "152 selected stations",
+            "evaluation_metric": "Efficiency (percentage of stations by category)",
+            "result": "Very Good: 7, Good: 49, Fair: 28, Poor: 16"
+        },
+        {
+            "model": "REF",
+            "observational_dataset": "152 selected stations",
+            "evaluation_metric": "Water Balance (percentage of stations by category)",
+            "result": "Very Good: 36, Good: 20, Fair: 26, Poor: 18"
+        },
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "152 selected stations",
+            "evaluation_metric": "Water Balance (percentage of stations by category)",
+            "result": "Very Good: 36, Good: 22, Fair: 26, Poor: 17"
+        },
+        {
+            "model": "FDC-FRANCE",
+            "observational_dataset": "152 selected stations",
+            "evaluation_metric": "Water Balance (percentage of stations by category)",
+            "result": "Very Good: 24, Good: 27, Fair: 30, Poor: 19"
+        },
+        {
+            "model": "FDC-BASIN",
+            "observational_dataset": "152 selected stations",
+            "evaluation_metric": "Water Balance (percentage of stations by category)",
+            "result": "Very Good: 39, Good: 20, Fair: 27, Poor: 14"
+        },
+        {
+            "model": "FDCB-BASIN",
+            "observational_dataset": "152 selected stations",
+            "evaluation_metric": "Water Balance (percentage of stations by category)",
+            "result": "Very Good: 38, Good: 22, Fair: 26, Poor: 15"
+        },
+        {
+            "model": "REF",
+            "observational_dataset": "406 non-selected stations",
+            "evaluation_metric": "Efficiency (percentage of stations by category)",
+            "result": "Very Good: 0, Good: 2, Fair: 14, Poor: 84"
+        },
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "406 non-selected stations",
+            "evaluation_metric": "Efficiency (percentage of stations by category)",
+            "result": "Very Good: 0, Good: 5, Fair: 13, Poor: 81"
+        },
+        {
+            "model": "FDC-FRANCE",
+            "observational_dataset": "406 non-selected stations",
+            "evaluation_metric": "Efficiency (percentage of stations by category)",
+            "result": "Very Good: 0, Good: 7, Fair: 15, Poor: 77"
+        },
+        {
+            "model": "FDC-BASIN",
+            "observational_dataset": "406 non-selected stations",
+            "evaluation_metric": "Efficiency (percentage of stations by category)",
+            "result": "Very Good: 0, Good: 14, Fair: 19, Poor: 66"
+        },
+        {
+            "model": "FDCB-BASIN",
+            "observational_dataset": "406 non-selected stations",
+            "evaluation_metric": "Efficiency (percentage of stations by category)",
+            "result": "Very Good: 0, Good: 14, Fair: 19, Poor: 66"
+        },
+        {
+            "model": "REF",
+            "observational_dataset": "406 non-selected stations",
+            "evaluation_metric": "Water Balance (percentage of stations by category)",
+            "result": "Very Good: 24, Good: 14, Fair: 25, Poor: 38"
+        },
+        {
+            "model": "DEFAULT",
+            "observational_dataset": "406 non-selected stations",
+            "evaluation_metric": "Water Balance (percentage of stations by category)",
+            "result": "Very Good: 20, Good: 15, Fair: 27, Poor: 37"
+        },
+        {
+            "model": "FDC-FRANCE",
+            "observational_dataset": "406 non-selected stations",
+            "evaluation_metric": "Water Balance (percentage of stations by category)",
+            "result": "Very Good: 19, Good: 18, Fair: 25, Poor: 38"
+        },
+        {
+            "model": "FDC-BASIN",
+            "observational_dataset": "406 non-selected stations",
+            "evaluation_metric": "Water Balance (percentage of stations by category)",
+            "result": "Very Good: 24, Good: 18, Fair: 24, Poor: 35"
+        },
+        {
+            "model": "FDCB-BASIN",
+            "observational_dataset": "406 non-selected stations",
+            "evaluation_metric": "Water Balance (percentage of stations by category)",
+            "result": "Very Good: 23, Good: 19, Fair: 22, Poor: 36"
+        }
+    ],
+    "innovation": "This paper introduces and calibrates an exponential profile of hydraulic conductivity within the SAFRAN-ISBA-MODCOU (SIM) hydrological model, leading to more robust and realistic simulations of river discharges over France.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "SAFRAN",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. The hydrometeorological model SAFRAN-ISBA-MODCOU (SIM) computes water and energy budgets on the land surface and riverflows and the level of several aquifers at the scale of France. SIM is composed of a meteorological analysis system (SAFRAN), a land surface model (ISBA), and a hydrogeological model (MODCOU).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ISBA",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. The hydrometeorological model SAFRAN-ISBA-MODCOU (SIM) computes water and energy budgets on the land surface and riverflows and the level of several aquifers at the scale of France. SIM is composed of a meteorological analysis system (SAFRAN), a land surface model (ISBA), and a hydrogeological model (MODCOU).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "MODCOU",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. The hydrometeorological model SAFRAN-ISBA-MODCOU (SIM) computes water and energy budgets on the land surface and riverflows and the level of several aquifers at the scale of France. SIM is composed of a meteorological analysis system (SAFRAN), a land surface model (ISBA), and a hydrogeological model (MODCOU).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "water budgets",
+            "target_entity_type": "Variable",
+            "paragraph": "Abstract. The hydrometeorological model SAFRAN-ISBA-MODCOU (SIM) computes water and energy budgets on the land surface and riverflows and the level of several aquifers at the scale of France.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "energy budgets",
+            "target_entity_type": "Variable",
+            "paragraph": "Abstract. The hydrometeorological model SAFRAN-ISBA-MODCOU (SIM) computes water and energy budgets on the land surface and riverflows and the level of several aquifers at the scale of France.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "riverflows",
+            "target_entity_type": "Variable",
+            "paragraph": "Abstract. The hydrometeorological model SAFRAN-ISBA-MODCOU (SIM) computes water and energy budgets on the land surface and riverflows and the level of several aquifers at the scale of France.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "level of several aquifers",
+            "target_entity_type": "Variable",
+            "paragraph": "Abstract. The hydrometeorological model SAFRAN-ISBA-MODCOU (SIM) computes water and energy budgets on the land surface and riverflows and the level of several aquifers at the scale of France.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "soil wetness index",
+            "target_entity_type": "Variable",
+            "paragraph": "The SIM, model, which is used operationally at M\u00e9t\u00e9o-France, for example, to monitor the soil wetness index for the whole country, is the result of the coupling of the ISBA (Noilhan and Planton, 1989; Boone et al., 1999) land surface scheme with the hydrogeological model MODCOU (Ledoux et al., 1989).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "8 km resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "SAFRAN (Durand et al., 1993; Quintana-Segu\u00ed et al., 2008) is the first element of the SIM suite. It is used to produce the analysis of near surface atmospheric parameters at a resolution of 8 km.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "near surface atmospheric parameters",
+            "target_entity_type": "Variable",
+            "paragraph": "SAFRAN (Durand et al., 1993; Quintana-Segu\u00ed et al., 2008) is the first element of the SIM suite. It is used to produce the analysis of near surface atmospheric parameters at a resolution of 8 km.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "radiative transfer scheme (Ritter and Geleyn, 1992)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For incoming solar radiation and downward infrared radiation, SAFRAN uses a radiative transfer scheme (Ritter and Geleyn, 1992).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ISBA",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "two layer force-restore method (Deardorff, 1977)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "There are several versions of ISBA, ranging from a two layer force-restore method (Deardorff, 1977), to a more detailed diffusion version (Boone, 2000; Habets et al., 2003).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ISBA",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "diffusion version (Boone, 2000; Habets et al., 2003)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "There are several versions of ISBA, ranging from a two layer force-restore method (Deardorff, 1977), to a more detailed diffusion version (Boone, 2000; Habets et al., 2003).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "3-layer snow scheme of Boone and Etchevers (2001)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "SIM is implemented using the three layered force-restore version (Boone et al., 1999) with the 3-layer snow scheme of Boone and Etchevers (2001).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ISBA",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "three layered force-restore version",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "SIM is implemented using the three layered force-restore version (Boone et al., 1999) with the 3-layer snow scheme of Boone and Etchevers (2001).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODCOU",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "river discharge",
+            "target_entity_type": "Variable",
+            "paragraph": "Then it calculates the interaction between the aquifer and the river and finally it routes the surface water to the rivers and within the river using an isochronistic algorithm. It calculates river discharge with a time step of three hours.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODCOU",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "isochronistic algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Then it calculates the interaction between the aquifer and the river and finally it routes the surface water to the rivers and within the river using an isochronistic algorithm. It calculates river discharge with a time step of three hours.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ISBA",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "deep soil layer",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The initial version of ISBA divided the soil in two layers: a thin superficial layer, which acted as a reservoir for evapo- ration from the soil surface, and a single subsurface layer to model the mean water content for the root and the subroot zones. Boone et al. (1999) divided the subsurface layer in a plant root-extration layer and a subroot layer. The new layer would dampen the amplitude of drainage pulses and increase the time lag between infiltration and drainage, making the base flow time series more realistic.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ISBA",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "saturation excess mechanism",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "ISBA simulates surface runoff through the saturation excess mechanism (also known as Dune mechanism), therefore, runoff is only produced when precipitation occurs over a saturated soil.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ISBA",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Variable Infiltration Capacity (VIC) scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "To solve this problem, a subgrid variability of runoff was introduced by Habets et al. (1999b) following the approach of the Variable Infiltration Capacity (VIC) scheme, described in Wood et al. (1992) and D\u00fcmenil and Todini (1992) and inspired from the Nanjing model (Zhao, 1992).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "ISBA",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "exponential profile of hydraulic conductivity",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "To solve this problem, Decharme et al. (2006) introduced an exponential profile of hydraulic conductivity to a version of ISBA which used the TOPMODEL approach for runoff (following the work of Montaldo and Albertson, 2001 and Chen and Kumar, 2001) and applied it to the Rh\u00f4ne basin at different resolutions, showing promising results. In this study, this same parameterization was introduced to the SIM suite and, therefore, extended to the whole of France.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "SIM-KSAT",
+            "target_entity_type": "Source",
+            "paragraph": "From now on ISBA-KSAT or SIM-KSAT will refer to the modified versions of the model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ISBA",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "ISBA-KSAT",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "From now on ISBA-KSAT or SIM-KSAT will refer to the modified versions of the model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Nash-Sultcliff (NS) efficiency",
+            "target_entity_type": "Metric",
+            "paragraph": "For calibration purposes, the quality of the simulation was evaluated using a function built using the Nash-Sultcliff (NS) efficiency (Nash and Sutcliffe, 1970) and the overall water balance at the daily time step, which are independent from each other (Weglarczyk, 1998).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN-ISBA-MODCOU (SIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "overall water balance",
+            "target_entity_type": "Metric",
+            "paragraph": "For calibration purposes, the quality of the simulation was evaluated using a function built using the Nash-Sultcliff (NS) efficiency (Nash and Sutcliffe, 1970) and the overall water balance at the daily time step, which are independent from each other (Weglarczyk, 1998).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ISBA",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "land",
+            "target_entity_type": "Realm",
+            "paragraph": "ISBA (Interactions Sol Biosph\u00e8re Atmosph\u00e8re) (Noilhan and Planton, 1989; Boone et al., 1999) is a soil-vegetation-atmosphere transfer (SVAT) scheme. It is used to simulate the exchanges in heat, mass and momentum between the continental surface (including vegetation and snow) and the atmosphere.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ISBA",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmos",
+            "target_entity_type": "Realm",
+            "paragraph": "ISBA (Interactions Sol Biosph\u00e8re Atmosph\u00e8re) (Noilhan and Planton, 1989; Boone et al., 1999) is a soil-vegetation-atmosphere transfer (SVAT) scheme. It is used to simulate the exchanges in heat, mass and momentum between the continental surface (including vegetation and snow) and the atmosphere.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAFRAN",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmos",
+            "target_entity_type": "Realm",
+            "paragraph": "SAFRAN (Durand et al., 1993; Quintana-Segu\u00ed et al., 2008) is the first element of the SIM suite. It is used to produce the analysis of near surface atmospheric parameters at a resolution of 8 km.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODCOU",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "land",
+            "target_entity_type": "Realm",
+            "paragraph": "The hydrogeological model MODCOU calculates the temporal and spatial evolution of the aquifer at several layers, using the diffusivity equation (Ledoux et al., 1989).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "CNRM-GAME (M\u00e9t\u00e9o-France CNRS)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "UMR Sisyphe (Universit\u00e9 Pierre et Marie Curie CNRS)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Toulouse",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Fontainebleau",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "SAFRAN-ISBA-MODCOU",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SIM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SAFRAN",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ISBA",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "MODCOU",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "water budgets",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "energy budgets",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "riverflows",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "level of several aquifers",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "exponential profile of hydraulic conductivity",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "hydraulic conductivity at saturation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "subgrid runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "drainage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil wetness index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "8 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Arpge",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "M\u00e9t\u00e9o-France",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "optimal interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "incoming solar radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "downward infrared radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "radiative transfer scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SVAT",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "three layered force-restore version",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3-layer snow scheme",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "soil water content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "infiltration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evaporation over bare ground",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "transpiration of the vegetation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "diffusion",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil water content at field capacity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "force-restore method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "soil water content at the wilting point",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil water content at saturation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "diffusivity equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "isochronistic algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "river discharge",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "three hours",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1 day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "The Seine",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "the Rh\u00f4ne",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "3 layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1 layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "two layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "thin superficial layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "single subsurface layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "plant root-extration layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "subroot layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "root depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total soil depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "saturation excess mechanism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Dune mechanism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "64 km\u00b2",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Variable Infiltration Capacity (VIC) scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Nanjing model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "soil moisture capacity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil wetness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stream flows",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Gardon at St-Jean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "268 km\u00b2",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "La Garonne a Lamagistere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "32526km\u00b2",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "TOPMODEL approach for runoff",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Rh\u00f4ne basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "force-restore parameters",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Sa\u00f4ne basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ISBA-KSAT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SIM-KSAT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "subgrid drainage scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "one dimensional",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Herault river basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Montpellier",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "spinup",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "sensitivity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "evapotranspiration of the vegetation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "water content of the root zone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "annual mean",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "mm month-1",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "subgrid runoff scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Daily river discharge",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Huveaune at Aubagne",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "245 km\u00b2",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Loire at Montjean-sur-Loire",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "110356km\u00b2",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Huveaune",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Argens",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Rh\u00f4ne at Beaucaire",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Durance",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "calibration",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "validation",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Nash-Sultcliff (NS) efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "overall water balance (WB)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "daily time step",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "DEFAULT",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "FDC-FRANCE",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "FDC-BASIN",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "FDCB-BASIN",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "piezometry",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Seine basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Water Balance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "REF",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "total water budget",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "soil water content of the deepest layer",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Loire basins",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Adour",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Garonne basins",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "recharge flux to the aquifers",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "root mean square error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "H\u00e9rault at Gignac",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "piezometric levels",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Denmark",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Scandinavian basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "VIC",
+            "entity_type": "Source"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2018648266",
+        "https://openalex.org/W2081346522",
+        "https://openalex.org/W2033221642",
+        "https://openalex.org/W2176749892",
+        "https://openalex.org/W1517700949",
+        "https://openalex.org/W2177480759",
+        "https://openalex.org/W2087105362",
+        "https://openalex.org/W2066705669",
+        "https://openalex.org/W2167431102",
+        "https://openalex.org/W2156729231",
+        "https://openalex.org/W2365331582",
+        "https://openalex.org/W4230074352",
+        "https://openalex.org/W2113010650",
+        "https://openalex.org/W2078724298",
+        "https://openalex.org/W2087115791",
+        "https://openalex.org/W2073801246",
+        "https://openalex.org/W2119505534",
+        "https://openalex.org/W2012328721",
+        "https://openalex.org/W2145635192",
+        "https://openalex.org/W2070086504",
+        "https://openalex.org/W204377992",
+        "https://openalex.org/W2080663696",
+        "https://openalex.org/W2147347671",
+        "https://openalex.org/W2133883843",
+        "https://openalex.org/W2066637819",
+        "https://openalex.org/W2033904036",
+        "https://openalex.org/W2148624549",
+        "https://openalex.org/W2039363399",
+        "https://openalex.org/W2069313066",
+        "https://openalex.org/W2105754627",
+        "https://openalex.org/W2066771937",
+        "https://openalex.org/W2051811265",
+        "https://openalex.org/W1979282872",
+        "https://openalex.org/W1979939918",
+        "https://openalex.org/W1985145200",
+        "https://openalex.org/W1780141124",
+        "https://openalex.org/W1987880744",
+        "https://openalex.org/W2062346564",
+        "https://openalex.org/W2105529717",
+        "https://openalex.org/W1972770267",
+        "https://openalex.org/W189896722",
+        "https://openalex.org/W2072716818",
+        "https://openalex.org/W1981646498",
+        "https://openalex.org/W2076714162",
+        "https://openalex.org/W34726448",
+        "https://openalex.org/W2139273826",
+        "https://openalex.org/W2212328787",
+        "https://openalex.org/W2063779180"
+    ]
+}

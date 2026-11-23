@@ -1,0 +1,872 @@
+{
+    "uri": "https://openalex.org/W2883930437",
+    "title": "Parameterizing cloud top effective radii from satellite retrieved values, accounting for vertical photon transport: quantification and correction of the resulting bias in droplet concentration and liquid water path retrievals",
+    "venue": {
+        "name": "Atmospheric measurement techniques",
+        "id": "https://openalex.org/S70769875",
+        "type": "journal"
+    },
+    "publication_year": 2018,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5028113214",
+            "display_name": "Daniel P. Grosvenor",
+            "orcid": "https://orcid.org/0000-0002-4919-7751"
+        },
+        {
+            "id": "https://openalex.org/A5046358756",
+            "display_name": "Odran Sourdeval",
+            "orcid": "https://orcid.org/0000-0002-2822-5303"
+        },
+        {
+            "id": "https://openalex.org/A5021955604",
+            "display_name": "Robert Wood",
+            "orcid": "https://orcid.org/0000-0002-1401-3828"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/amt-11-4273-2018",
+    "abstract": "Abstract. Droplet concentration (Nd) and liquid water path (LWP) retrievals from passive satellite retrievals of cloud optical depth (\u03c4) and effective radius (re) usually assume the model of an idealized cloud in which the liquid water content (LWC) increases linearly between cloud base and cloud top (i.e. at a fixed fraction of the adiabatic LWC). Generally it is assumed that the retrieved re value is that at the top of the cloud. In reality, barring re retrieval biases due to cloud heterogeneity, the retrieved re is representative of smaller values that occur lower down in the cloud due to the vertical penetration of photons at the shortwave-infrared wavelengths used to retrieve re. This inconsistency will cause an overestimate of Nd and an underestimate of LWP (referred to here as the \u201cpenetration depth bias\u201d), which this paper quantifies via a parameterization of the cloud top re as a function of the retrieved re and \u03c4. Here we estimate the relative re underestimate for a range of idealized modelled adiabatic clouds using bispectral retrievals and plane-parallel radiative transfer. We find a tight relationship between gre=recloud top/reretrieved and \u03c4 and that a 1-D relationship approximates the modelled data well. Using this relationship we find that gre values and hence Nd and LWP biases are higher for the 2.1 \u00b5m channel re retrieval (re2.1) compared to the 3.7 \u00b5m one (re3.7). The theoretical bias in the retrieved Nd is very large for optically thin clouds, but rapidly reduces as cloud thickness increases. However, it remains above 20 % for \u03c4&lt;19.8 and \u03c4&lt;7.7 for re2.1 and re3.7, respectively. We also provide a parameterization of penetration depth in terms of the optical depth below cloud top (d\u03c4) for which the retrieved re is likely to be representative. The magnitude of the Nd and LWP biases for climatological data sets is estimated globally using 1 year of daily MODIS (MODerate Imaging Spectroradiometer) data. Screening criteria are applied that are consistent with those required to help ensure accurate Nd and LWP retrievals. The results show that the SE Atlantic, SE Pacific and Californian stratocumulus regions produce fairly large overestimates due to the penetration depth bias with mean biases of 32\u201335 % for re2.1 and 15\u201317 % for re3.7. For the other stratocumulus regions examined the errors are smaller (24\u201328 % for re2.1 and 10\u201312 % for re3.7). Significant time variability in the percentage errors is also found with regional mean standard deviations of 19\u201337 % of the regional mean percentage error for re2.1 and 32\u201356 % for re3.7. This shows that it is important to apply a daily correction to Nd for the penetration depth error rather than a time\u2013mean correction when examining daily data. We also examine the seasonal variation of the bias and find that the biases in the SE Atlantic, SE Pacific and Californian stratocumulus regions exhibit the most seasonality, with the largest errors occurring in the December, January and February (DJF) season. LWP biases are smaller in magnitude than those for Nd (\u22128 to \u221211 % for re2.1 and \u22123.6 to \u22126.1 % for re3.7). In reality, and especially for more heterogeneous clouds, the vertical penetration error will be combined with a number of other errors that affect both the re and \u03c4, which are potentially larger and may compensate or enhance the bias due to vertical penetration depth. Therefore caution is required when applying the bias corrections; we suggest that they are only used for more homogeneous clouds.",
+    "field": "Satellite retrieval of cloud properties",
+    "problem": "Satellite retrievals of droplet concentration and liquid water path are biased because they incorrectly assume the retrieved droplet effective radius is from the cloud top, whereas photon penetration into the cloud means the retrieved value is actually representative of a level lower down.",
+    "method": "The paper proposes a parameterization of the cloud top effective radius as a function of the satellite-retrieved effective radius and optical depth to correct for the \"penetration depth bias\" in droplet concentration and liquid water path retrievals.",
+    "task": "The task is to quantify and correct the \"penetration depth bias\" in satellite retrievals of cloud droplet concentration and liquid water path by parameterizing the true cloud-top effective radius as a function of retrieved effective radius and cloud optical depth.",
+    "model": [
+        "LMDZ",
+        "ECHAM4"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/liquid-water-content",
+            "display_name": "Liquid water content",
+            "score": 0.7652356624603271
+        },
+        {
+            "id": "https://openalex.org/keywords/effective-radius",
+            "display_name": "Effective radius",
+            "score": 0.74425208568573
+        },
+        {
+            "id": "https://openalex.org/keywords/liquid-water-path",
+            "display_name": "Liquid water path",
+            "score": 0.686108410358429
+        },
+        {
+            "id": "https://openalex.org/keywords/shortwave",
+            "display_name": "Shortwave",
+            "score": 0.5738313794136047
+        },
+        {
+            "id": "https://openalex.org/keywords/adiabatic-process",
+            "display_name": "Adiabatic process",
+            "score": 0.565876305103302
+        },
+        {
+            "id": "https://openalex.org/keywords/emissivity",
+            "display_name": "Emissivity",
+            "score": 0.5534873604774475
+        },
+        {
+            "id": "https://openalex.org/keywords/radiative-transfer",
+            "display_name": "Radiative transfer",
+            "score": 0.5491932034492493
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.5472714900970459
+        },
+        {
+            "id": "https://openalex.org/keywords/cloud-fraction",
+            "display_name": "Cloud fraction",
+            "score": 0.5229200124740601
+        },
+        {
+            "id": "https://openalex.org/keywords/wavelength",
+            "display_name": "Wavelength",
+            "score": 0.4751279950141907
+        },
+        {
+            "id": "https://openalex.org/keywords/computational-physics",
+            "display_name": "Computational physics",
+            "score": 0.4484821856021881
+        },
+        {
+            "id": "https://openalex.org/keywords/satellite",
+            "display_name": "Satellite",
+            "score": 0.43593060970306396
+        },
+        {
+            "id": "https://openalex.org/keywords/cloud-base",
+            "display_name": "Cloud base",
+            "score": 0.42554113268852234
+        },
+        {
+            "id": "https://openalex.org/keywords/cloud-computing",
+            "display_name": "Cloud computing",
+            "score": 0.42059123516082764
+        },
+        {
+            "id": "https://openalex.org/keywords/optical-depth",
+            "display_name": "Optical depth",
+            "score": 0.4148011803627014
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.4045044779777527
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.32776498794555664
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.275715708732605
+        },
+        {
+            "id": "https://openalex.org/keywords/cloud-cover",
+            "display_name": "Cloud cover",
+            "score": 0.2571805715560913
+        },
+        {
+            "id": "https://openalex.org/keywords/optics",
+            "display_name": "Optics",
+            "score": 0.2065066695213318
+        },
+        {
+            "id": "https://openalex.org/keywords/astrophysics",
+            "display_name": "Astrophysics",
+            "score": 0.15217626094818115
+        },
+        {
+            "id": "https://openalex.org/keywords/aerosol",
+            "display_name": "Aerosol",
+            "score": 0.11533364653587341
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.11168557405471802
+        },
+        {
+            "id": "https://openalex.org/keywords/thermodynamics",
+            "display_name": "Thermodynamics",
+            "score": 0.09819510579109192
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C85502700",
+            "wikidata": "https://www.wikidata.org/wiki/Q2995540",
+            "display_name": "Liquid water content",
+            "level": 3,
+            "score": 0.7652356624603271
+        },
+        {
+            "id": "https://openalex.org/C2779406902",
+            "wikidata": "https://www.wikidata.org/wiki/Q1295998",
+            "display_name": "Effective radius",
+            "level": 3,
+            "score": 0.74425208568573
+        },
+        {
+            "id": "https://openalex.org/C2778516841",
+            "wikidata": "https://www.wikidata.org/wiki/Q6557487",
+            "display_name": "Liquid water path",
+            "level": 3,
+            "score": 0.686108410358429
+        },
+        {
+            "id": "https://openalex.org/C2776272892",
+            "wikidata": "https://www.wikidata.org/wiki/Q7502249",
+            "display_name": "Shortwave",
+            "level": 3,
+            "score": 0.5738313794136047
+        },
+        {
+            "id": "https://openalex.org/C109663097",
+            "wikidata": "https://www.wikidata.org/wiki/Q182453",
+            "display_name": "Adiabatic process",
+            "level": 2,
+            "score": 0.565876305103302
+        },
+        {
+            "id": "https://openalex.org/C163651212",
+            "wikidata": "https://www.wikidata.org/wiki/Q899670",
+            "display_name": "Emissivity",
+            "level": 2,
+            "score": 0.5534873604774475
+        },
+        {
+            "id": "https://openalex.org/C74902906",
+            "wikidata": "https://www.wikidata.org/wiki/Q1190858",
+            "display_name": "Radiative transfer",
+            "level": 2,
+            "score": 0.5491932034492493
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5472714900970459
+        },
+        {
+            "id": "https://openalex.org/C23302255",
+            "wikidata": "https://www.wikidata.org/wiki/Q5135703",
+            "display_name": "Cloud fraction",
+            "level": 4,
+            "score": 0.5229200124740601
+        },
+        {
+            "id": "https://openalex.org/C6260449",
+            "wikidata": "https://www.wikidata.org/wiki/Q41364",
+            "display_name": "Wavelength",
+            "level": 2,
+            "score": 0.4751279950141907
+        },
+        {
+            "id": "https://openalex.org/C30475298",
+            "wikidata": "https://www.wikidata.org/wiki/Q909554",
+            "display_name": "Computational physics",
+            "level": 1,
+            "score": 0.4484821856021881
+        },
+        {
+            "id": "https://openalex.org/C19269812",
+            "wikidata": "https://www.wikidata.org/wiki/Q26540",
+            "display_name": "Satellite",
+            "level": 2,
+            "score": 0.43593060970306396
+        },
+        {
+            "id": "https://openalex.org/C174548603",
+            "wikidata": "https://www.wikidata.org/wiki/Q1781211",
+            "display_name": "Cloud base",
+            "level": 3,
+            "score": 0.42554113268852234
+        },
+        {
+            "id": "https://openalex.org/C79974875",
+            "wikidata": "https://www.wikidata.org/wiki/Q483639",
+            "display_name": "Cloud computing",
+            "level": 2,
+            "score": 0.42059123516082764
+        },
+        {
+            "id": "https://openalex.org/C27896171",
+            "wikidata": "https://www.wikidata.org/wiki/Q890809",
+            "display_name": "Optical depth",
+            "level": 3,
+            "score": 0.4148011803627014
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.4045044779777527
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.32776498794555664
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.275715708732605
+        },
+        {
+            "id": "https://openalex.org/C206887242",
+            "wikidata": "https://www.wikidata.org/wiki/Q830457",
+            "display_name": "Cloud cover",
+            "level": 3,
+            "score": 0.2571805715560913
+        },
+        {
+            "id": "https://openalex.org/C120665830",
+            "wikidata": "https://www.wikidata.org/wiki/Q14620",
+            "display_name": "Optics",
+            "level": 1,
+            "score": 0.2065066695213318
+        },
+        {
+            "id": "https://openalex.org/C44870925",
+            "wikidata": "https://www.wikidata.org/wiki/Q37547",
+            "display_name": "Astrophysics",
+            "level": 1,
+            "score": 0.15217626094818115
+        },
+        {
+            "id": "https://openalex.org/C2779345167",
+            "wikidata": "https://www.wikidata.org/wiki/Q104541",
+            "display_name": "Aerosol",
+            "level": 2,
+            "score": 0.11533364653587341
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.11168557405471802
+        },
+        {
+            "id": "https://openalex.org/C97355855",
+            "wikidata": "https://www.wikidata.org/wiki/Q11473",
+            "display_name": "Thermodynamics",
+            "level": 1,
+            "score": 0.09819510579109192
+        },
+        {
+            "id": "https://openalex.org/C111919701",
+            "wikidata": "https://www.wikidata.org/wiki/Q9135",
+            "display_name": "Operating system",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C1276947",
+            "wikidata": "https://www.wikidata.org/wiki/Q333",
+            "display_name": "Astronomy",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C98444146",
+            "wikidata": "https://www.wikidata.org/wiki/Q318",
+            "display_name": "Galaxy",
+            "level": 2,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper quantifies the \"penetration depth bias\" in satellite cloud retrievals and introduces a parameterization to correct the resulting overestimation of droplet concentration and underestimation of liquid water path by relating retrieved effective radius and optical depth to their true cloud top values.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Droplet concentration",
+            "target_entity_type": "Variable",
+            "paragraph": "Abstract. Droplet concentration (Nd) and liquid water path (LWP) retrievals from passive satellite retrievals of cloud optical depth (\u03c4) and effective radius (re) usually assume the model of an idealized cloud in which the liquid water content (LWC) increases linearly between cloud base and cloud top (i.e. at a fixed fraction of the adiabatic LWC). Generally it is assumed that the retrieved re value is that at the top of the cloud. In reality, barring re retrieval biases due to cloud heterogeneity, the retrieved re is representative of smaller values that occur lower down in the cloud due to the vertical penetration of photons at the shortwave-infrared wavelengths used to retrieve re. This inconsistency will cause an overestimate of Nd and an underestimate of LWP (referred to here as the \"penetration depth bias\"), which this paper quantifies via a parameterization of the cloud top re as a function of the retrieved re and \u03c4. Here we estimate the relative re underes- timate for a range of idealized modelled adiabatic clouds us- ing bispectral retrievals and plane-parallel radiative transfer. We find a tight relationship between gre = re cloud top/retrieved and \u03c4 and that a 1-D relationship approximates the modelled data well. Using this relationship we find that gre values and hence Na and LWP biases are higher for the 2.1 \u00b5m chan- nel re retrieval (re2.1) compared to the 3.7 \u00b5m one (re3.7). The theoretical bias in the retrieved Nd is very large for optically thin clouds, but rapidly reduces as cloud thickness increases. However, it remains above 20 % for \u03c4 < 19.8 and \u03c4 < 7.7 for re2.1 and re3.7, respectively. We also provide a parameteriza- tion of penetration depth in terms of the optical depth below cloud top (dt) for which the retrieved re is likely to be repre- sentative. The magnitude of the Nd and LWP biases for clima- tological data sets is estimated globally using 1 year of daily MODIS (MODerate Imaging Spectroradiometer) data. Screening criteria are applied that are consistent with those required to help ensure accurate Nd and LWP retrievals. The results show that the SE Atlantic, SE Pacific and Californian stratocumulus regions produce fairly large overestimates due to the penetration depth bias with mean biases of 32\u201335 % for re2.1 and 15\u201317 % for re3.7. For the other stratocumulus regions examined the errors are smaller (24\u201328 % for re2.1 and 10\u201312 % for re3.7). Significant time variability in the percent- age errors is also found with regional mean standard devia- tions of 19\u201337 % of the regional mean percentage error for re2.1 and 32\u201356 % for re3.7. This shows that it is important to apply a daily correction to Nd for the penetration depth er- ror rather than a time-mean correction when examining daily data. We also examine the seasonal variation of the bias and find that the biases in the SE Atlantic, SE Pacific and Cal- ifornian stratocumulus regions exhibit the most seasonality, with the largest errors occurring in the December, January and February (DJF) season. LWP biases are smaller in mag- nitude than those for Nd (\u22128 to \u221211 % for re2.1 and \u22123.6 to \u22126.1 % for re3.7).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "liquid water path",
+            "target_entity_type": "Variable",
+            "paragraph": "Abstract. Droplet concentration (Nd) and liquid water path (LWP) retrievals from passive satellite retrievals of cloud optical depth (\u03c4) and effective radius (re) usually assume the model of an idealized cloud in which the liquid water content (LWC) increases linearly between cloud base and cloud top (i.e. at a fixed fraction of the adiabatic LWC). Generally it is assumed that the retrieved re value is that at the top of the cloud. In reality, barring re retrieval biases due to cloud heterogeneity, the retrieved re is representative of smaller values that occur lower down in the cloud due to the vertical penetration of photons at the shortwave-infrared wavelengths used to retrieve re. This inconsistency will cause an overestimate of Nd and an underestimate of LWP (referred to here as the \"penetration depth bias\"), which this paper quantifies via a parameterization of the cloud top re as a function of the retrieved re and \u03c4. Here we estimate the relative re underes- timate for a range of idealized modelled adiabatic clouds us- ing bispectral retrievals and plane-parallel radiative transfer. We find a tight relationship between gre = re cloud top/retrieved and \u03c4 and that a 1-D relationship approximates the modelled data well. Using this relationship we find that gre values and hence Na and LWP biases are higher for the 2.1 \u00b5m chan- nel re retrieval (re2.1) compared to the 3.7 \u00b5m one (re3.7). The theoretical bias in the retrieved Nd is very large for optically thin clouds, but rapidly reduces as cloud thickness increases. However, it remains above 20 % for \u03c4 < 19.8 and \u03c4 < 7.7 for re2.1 and re3.7, respectively. We also provide a parameteriza- tion of penetration depth in terms of the optical depth below cloud top (dt) for which the retrieved re is likely to be repre- sentative. The magnitude of the Nd and LWP biases for clima- tological data sets is estimated globally using 1 year of daily MODIS (MODerate Imaging Spectroradiometer) data. Screening criteria are applied that are consistent with those required to help ensure accurate Nd and LWP retrievals. The results show that the SE Atlantic, SE Pacific and Californian stratocumulus regions produce fairly large overestimates due to the penetration depth bias with mean biases of 32\u201335 % for re2.1 and 15\u201317 % for re3.7. For the other stratocumulus re- gions examined the errors are smaller (24\u201328 % for re2.1 and 10\u201312 % for re3.7). Significant time variability in the percent- age errors is also found with regional mean standard devia- tions of 19\u201337 % of the regional mean percentage error for re2.1 and 32\u201356 % for re3.7. This shows that it is important to apply a daily correction to Nd for the penetration depth er- ror rather than a time-mean correction when examining daily data. We also examine the seasonal variation of the bias and find that the biases in the SE Atlantic, SE Pacific and Cal- ifornian stratocumulus regions exhibit the most seasonality, with the largest errors occurring in the December, January and February (DJF) season. LWP biases are smaller in mag- nitude than those for Nd (\u22128 to \u221211 % for re2.1 and \u22123.6 to \u22126.1 % for re3.7).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "cloud optical depth",
+            "target_entity_type": "Variable",
+            "paragraph": "Abstract. Droplet concentration (Nd) and liquid water path (LWP) retrievals from passive satellite retrievals of cloud optical depth (\u03c4) and effective radius (re) usually assume the model of an idealized cloud in which the liquid water content (LWC) increases linearly between cloud base and cloud top (i.e. at a fixed fraction of the adiabatic LWC). Generally it is assumed that the retrieved re value is that at the top of the cloud. In reality, barring re retrieval biases due to cloud heterogeneity, the retrieved re is representative of smaller values that occur lower down in the cloud due to the vertical penetration of photons at the shortwave-infrared wavelengths used to retrieve re. This inconsistency will cause an overestimate of Nd and an underestimate of LWP (referred to here as the \"penetration depth bias\"), which this paper quantifies via a parameterization of the cloud top re as a function of the retrieved re and \u03c4. Here we estimate the relative re underes- timate for a range of idealized modelled adiabatic clouds us- ing bispectral retrievals and plane-parallel radiative transfer. We find a tight relationship between gre = re cloud top/retrieved and \u03c4 and that a 1-D relationship approximates the modelled data well. Using this relationship we find that gre values and hence Na and LWP biases are higher for the 2.1 \u00b5m chan- nel re retrieval (re2.1) compared to the 3.7 \u00b5m one (re3.7). The theoretical bias in the retrieved Nd is very large for optically thin clouds, but rapidly reduces as cloud thickness increases. However, it remains above 20 % for \u03c4 < 19.8 and \u03c4 < 7.7 for re2.1 and re3.7, respectively. We also provide a parameteriza- tion of penetration depth in terms of the optical depth below cloud top (dt) for which the retrieved re is likely to be repre- sentative. The magnitude of the Nd and LWP biases for clima- tological data sets is estimated globally using 1 year of daily MODIS (MODerate Imaging Spectroradiometer) data. Screening criteria are applied that are consistent with those required to help ensure accurate Nd and LWP retrievals. The results show that the SE Atlantic, SE Pacific and Californian stratocumulus regions produce fairly large overestimates due to the penetration depth bias with mean biases of 32\u201335 % for re2.1 and 15\u201317 % for re3.7. For the other stratocumulus re- gions examined the errors are smaller (24\u201328 % for re2.1 and 10\u201312 % for re3.7). Significant time variability in the percent- age errors is also found with regional mean standard devia- tions of 19\u201337 % of the regional mean percentage error for re2.1 and 32\u201356 % for re3.7. This shows that it is important to apply a daily correction to Nd for the penetration depth er- ror rather than a time-mean correction when examining daily data. We also examine the seasonal variation of the bias and find that the biases in the SE Atlantic, SE Pacific and Cal- ifornian stratocumulus regions exhibit the most seasonality, with the largest errors occurring in the December, January and February (DJF) season. LWP biases are smaller in mag- nitude than those for Nd (\u22128 to \u221211 % for re2.1 and \u22123.6 to \u22126.1 % for re3.7).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "effective radius",
+            "target_entity_type": "Variable",
+            "paragraph": "Abstract. Droplet concentration (Nd) and liquid water path (LWP) retrievals from passive satellite retrievals of cloud optical depth (\u03c4) and effective radius (re) usually assume the model of an idealized cloud in which the liquid water content (LWC) increases linearly between cloud base and cloud top (i.e. at a fixed fraction of the adiabatic LWC). Generally it is assumed that the retrieved re value is that at the top of the cloud. In reality, barring re retrieval biases due to cloud heterogeneity, the retrieved re is representative of smaller values that occur lower down in the cloud due to the vertical penetration of photons at the shortwave-infrared wavelengths used to retrieve re. This inconsistency will cause an overestimate of Nd and an underestimate of LWP (referred to here as the \"penetration depth bias\"), which this paper quantifies via a parameterization of the cloud top re as a function of the retrieved re and \u03c4. Here we estimate the relative re underes- timate for a range of idealized modelled adiabatic clouds us- ing bispectral retrievals and plane-parallel radiative transfer. We find a tight relationship between gre = re cloud top/retrieved and \u03c4 and that a 1-D relationship approximates the modelled data well. Using this relationship we find that gre values and hence Na and LWP biases are higher for the 2.1 \u00b5m chan- nel re retrieval (re2.1) compared to the 3.7 \u00b5m one (re3.7). The theoretical bias in the retrieved Nd is very large for optically thin clouds, but rapidly reduces as cloud thickness increases. However, it remains above 20 % for \u03c4 < 19.8 and \u03c4 < 7.7 for re2.1 and re3.7, respectively. We also provide a parameteriza- tion of penetration depth in terms of the optical depth below cloud top (dt) for which the retrieved re is likely to be repre- sentative. The magnitude of the Nd and LWP biases for clima- tological data sets is estimated globally using 1 year of daily MODIS (MODerate Imaging Spectroradiometer) data. Screening criteria are applied that are consistent with those required to help ensure accurate Nd and LWP retrievals. The results show that the SE Atlantic, SE Pacific and Californian stratocumulus regions produce fairly large overestimates due to the penetration depth bias with mean biases of 32\u201335 % for re2.1 and 15\u201317 % for re3.7. For the other stratocumulus re- gions examined the errors are smaller (24\u201328 % for re2.1 and 10\u201312 % for re3.7). Significant time variability in the percent- age errors is also found with regional mean standard devia- tions of 19\u201337 % of the regional mean percentage error for re2.1 and 32\u201356 % for re3.7. This shows that it is important to apply a daily correction to Nd for the penetration depth er- ror rather than a time-mean correction when examining daily data. We also examine the seasonal variation of the bias and find that the biases in the SE Atlantic, SE Pacific and Cal- ifornian stratocumulus regions exhibit the most seasonality, with the largest errors occurring in the December, January and February (DJF) season. LWP biases are smaller in mag- nitude than those for Nd (\u22128 to \u221211 % for re2.1 and \u22123.6 to \u22126.1 % for re3.7).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Aqua",
+            "target_entity_type": "Platform",
+            "paragraph": "For the MODIS data we use 1 year (2008) of MODIS Aqua data and follow a similar methodology to that used in Grosvenor and Wood (2014) in order to create a data set akin to the MODIS Level-3 (L3) product (King et al., 1997; Oreopoulos, 2005). We processed MODIS Collection 5.1 joint Level-2 (L2) swaths into 1\u00b0 \u00d7 1\u00b0 grid boxes. Joint L2 swaths are subsampled versions of the full L2 swaths (sampling every fifth 1 km pixel) that also contains fewer parameters. We process the data from L2 to L3 in order to allow the filtering out of data at high SZAs and to provide both re2.1 and re3.7 retrievals.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "11 \u00b5m radiance",
+            "target_entity_type": "Variable",
+            "paragraph": "The MODIS re3.7 retrieval requires a correction to account for the contribution to the observed radiance from thermal emission, which is based on the observed 11 \u00b5m radiance (Platnick and Valero, 1995; King et al., 2015; Platnick et al., 2017). We account for this in our retrievals by removing the thermal contribution during the RT calculation instead of via the 11 \u00b5m radiance, which should produce a consistent end result. The RT calculations were performed assuming a black surface, a clear atmosphere (i.e. gaseous absorption is neglected), using a solar zenith angle (SZA) of 20\u00b0 and a nadir viewing angle.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "cloud top temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The mean 1\u00b0 \u00d7 1\u00b0 cloud top height (CTH) is restricted to values lower than 3.2 km. This is done to avoid both deeper clouds for which Na retrievals are likely to be problematic due to the increased likelihood of a breakdown of the assumptions required to estimate Nd, such as a constant fraction of the adiabatic value for LWC and vertically constant Na, and increased retrieval issues due to cloud heterogeneity. CTH is calculated from the MODIS 1\u00b0 \u00d7 1\u00b0 mean cloud top temperature (CTT) and the sea surface temperature (SST) using the method of Zuidema et al. (2009). SST data were obtained from version 2 of the NOAA Optimum Interpolation (OI) Sea Surface Temperature data set (NOAA_OI_SST_V2) that provides weekly SST data at 1\u00b0 \u00d7 1\u00b0 resolution. This was interpolated to daily data on the assumption that SST does not vary significantly over sub-weekly timescales.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SMMR",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Nimbus-7",
+            "target_entity_type": "Platform",
+            "paragraph": "1\u00b0 x 1\u00b0 grid boxes were rejected if the maximum sea-ice areal coverage over a moving 2-week window exceeded 0.001%. The sea-ice data used were the daily 1\u00b0 \u00d7 1\u00b0 version of the \"Sea Ice Concentrations from Nimbus-7 SMMR and DMSP SSM/I-SSMIS Passive Microwave Data, Version 1\" data set (Cavalieri et al., 1996).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SSM/I-SSMIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "DMSP",
+            "target_entity_type": "Platform",
+            "paragraph": "1\u00b0 x 1\u00b0 grid boxes were rejected if the maximum sea-ice areal coverage over a moving 2-week window exceeded 0.001%. The sea-ice data used were the daily 1\u00b0 \u00d7 1\u00b0 version of the \"Sea Ice Concentrations from Nimbus-7 SMMR and DMSP SSM/I-SSMIS Passive Microwave Data, Version 1\" data set (Cavalieri et al., 1996).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SMMR",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Sea Ice Concentrations",
+            "target_entity_type": "Variable",
+            "paragraph": "1\u00b0 x 1\u00b0 grid boxes were rejected if the maximum sea-ice areal coverage over a moving 2-week window exceeded 0.001%. The sea-ice data used were the daily 1\u00b0 \u00d7 1\u00b0 version of the \"Sea Ice Concentrations from Nimbus-7 SMMR and DMSP SSM/I-SSMIS Passive Microwave Data, Version 1\" data set (Cavalieri et al., 1996).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SSM/I-SSMIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Sea Ice Concentrations",
+            "target_entity_type": "Variable",
+            "paragraph": "1\u00b0 x 1\u00b0 grid boxes were rejected if the maximum sea-ice areal coverage over a moving 2-week window exceeded 0.001%. The sea-ice data used were the daily 1\u00b0 \u00d7 1\u00b0 version of the \"Sea Ice Concentrations from Nimbus-7 SMMR and DMSP SSM/I-SSMIS Passive Microwave Data, Version 1\" data set (Cavalieri et al., 1996).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "University of Leeds",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Centre for Atmospheric Science (NCAS)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Universit\u00e4t Leipzig",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Washington",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NOAA/OAR/ESRL PSD",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NERC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Federal Ministry for Education and Research in Germany (BMBF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "HD(CP)2 (High Definition Clouds and Precipitation for Climate Prediction)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "DISORT (Discrete Ordinates Radiative Transfer Program)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS Level-3 (L3) product",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS Collection 5.1 joint Level-2 (L2) swaths",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NOAA Optimum Interpolation (OI) Sea Surface Temperature data set",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NOAA_OI_SST_V2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Sea Ice Concentrations from Nimbus-7 SMMR and DMSP SSM/I-SSMIS Passive Microwave Data, Version 1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS Level-2 data (Collection 5)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LAADS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Nakajima and King (1990) bispectral method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "percentage error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "relative error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "maximum absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "maximum absolute difference",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Ho parameter",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "vertical penetration depth error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Droplet concentration (Nd)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "liquid water path (LWP)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud optical depth (\u03c4)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "effective radius (re)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "liquid water content (LWC)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "extinction coefficient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "droplet radius",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "droplet size number distribution",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "density of liquid water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "volume radius",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "reflectances",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar zenith angle (SZA)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "optical depth below cloud top (dt)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "re2.1",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "re3.7",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud top height (CTH)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud top temperature (CTT)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface temperature (SST)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea-ice areal coverage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "liquid water condensation rate (cw)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "reflectance (R0.86)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1\u00b0 \u00d7 1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "250 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "MODIS (MODerate Imaging Spectroradiometer)",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SMMR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SSM/I-SSMIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Aqua",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Nimbus-7",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "DMSP",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "S. America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "California",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Alaska",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "SE Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "SE Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Californian stratocumulus regions",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "southern Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Baja Peninsula",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Bering Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "SW coast of Alaska",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Barents Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Scandinavia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "NW Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East China Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southeast Pacific stratocumulus region",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2125765412",
+        "https://openalex.org/W2043267560",
+        "https://openalex.org/W1985962850",
+        "https://openalex.org/W2064943738",
+        "https://openalex.org/W2091803649",
+        "https://openalex.org/W1993932152",
+        "https://openalex.org/W2569996388",
+        "https://openalex.org/W2082620501",
+        "https://openalex.org/W2018942029",
+        "https://openalex.org/W2097686021",
+        "https://openalex.org/W2077908651",
+        "https://openalex.org/W2147396223",
+        "https://openalex.org/W2121296543",
+        "https://openalex.org/W2115943908",
+        "https://openalex.org/W6892229859",
+        "https://openalex.org/W2013153340",
+        "https://openalex.org/W2011649082",
+        "https://openalex.org/W1542482827",
+        "https://openalex.org/W2110863354",
+        "https://openalex.org/W2098643429",
+        "https://openalex.org/W2802938233",
+        "https://openalex.org/W2073104244",
+        "https://openalex.org/W2031894925",
+        "https://openalex.org/W2119952368",
+        "https://openalex.org/W2018856987",
+        "https://openalex.org/W2014476121",
+        "https://openalex.org/W2162571710",
+        "https://openalex.org/W2061243739",
+        "https://openalex.org/W2172676685",
+        "https://openalex.org/W2141087366",
+        "https://openalex.org/W2052626216",
+        "https://openalex.org/W2112043465",
+        "https://openalex.org/W1597062659",
+        "https://openalex.org/W2062469398",
+        "https://openalex.org/W2141926895",
+        "https://openalex.org/W2149890601",
+        "https://openalex.org/W2002764378",
+        "https://openalex.org/W2069461995",
+        "https://openalex.org/W2171294535",
+        "https://openalex.org/W1837528964",
+        "https://openalex.org/W1988656709",
+        "https://openalex.org/W2011759969",
+        "https://openalex.org/W2040938507",
+        "https://openalex.org/W2011293781",
+        "https://openalex.org/W2098821440",
+        "https://openalex.org/W1492559467",
+        "https://openalex.org/W2169898942",
+        "https://openalex.org/W2095659929",
+        "https://openalex.org/W2085777094",
+        "https://openalex.org/W2005147869",
+        "https://openalex.org/W2540743583",
+        "https://openalex.org/W2159443068",
+        "https://openalex.org/W2148221736",
+        "https://openalex.org/W2176202464",
+        "https://openalex.org/W2172221168",
+        "https://openalex.org/W2008771271",
+        "https://openalex.org/W2153359350",
+        "https://openalex.org/W2502849322",
+        "https://openalex.org/W2070259289",
+        "https://openalex.org/W2162945727",
+        "https://openalex.org/W2129945131",
+        "https://openalex.org/W2130145853",
+        "https://openalex.org/W1975196041",
+        "https://openalex.org/W3083094549",
+        "https://openalex.org/W2177994541",
+        "https://openalex.org/W2080062877",
+        "https://openalex.org/W4211083409",
+        "https://openalex.org/W2016776120",
+        "https://openalex.org/W2101104463",
+        "https://openalex.org/W2397780788",
+        "https://openalex.org/W1572065632",
+        "https://openalex.org/W2141019221",
+        "https://openalex.org/W1485876394"
+    ]
+}

@@ -1,0 +1,641 @@
+{
+    "uri": "https://openalex.org/W2119886760",
+    "title": "A factorial snowpack model (FSM 1.0)",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2015,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5003718432",
+            "display_name": "Richard Essery",
+            "orcid": "https://orcid.org/0000-0003-1756-9095"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-8-3867-2015",
+    "abstract": "Abstract. A model for the coupled mass and energy balances of snow on the ground requires representations of absorption of solar radiation by snow, heat conduction in snow, compaction of snow, transfer of heat to snow from the air and retention and refreezing of meltwater in snow. Many such models exist, but it has proven hard to relate their relative performances to the complexity of their process representations. This paper describes the systematic development of an open-source snowpack model with two levels of representation for each of the five processes mentioned above, allowing factorial experimental designs with 32 different model configurations. The model is demonstrated using driving and evaluation data recorded over one winter at an alpine site.",
+    "field": "Snowpack modeling",
+    "problem": "It is difficult to systematically relate the performance of existing snowpack models to the complexity of their individual process representations, which hinders understanding of model behavior and the identification of a 'best' model structure.",
+    "method": "This paper proposes a factorial snowpack model with two selectable levels of complexity for five key physical processes, allowing for systematic experiments with 32 configurations to investigate how different process representations and their combinations affect model performance.",
+    "task": "The task is to develop and demonstrate a factorial snowpack model with multiple configurations to systematically evaluate how different representations of key physical processes, alone and in combination, affect simulations of snowpack mass and energy balances.",
+    "model": [
+        "FSM",
+        "CLASS",
+        "CLM",
+        "HTESSEL",
+        "ISBA",
+        "JULES",
+        "MOSES",
+        "ORCHIDEE",
+        "Crocus",
+        "SNOWPACK",
+        "SNTHERM"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/snowpack",
+            "display_name": "Snowpack",
+            "score": 0.9441401958465576
+        },
+        {
+            "id": "https://openalex.org/keywords/snow",
+            "display_name": "Snow",
+            "score": 0.8772932291030884
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.5670160055160522
+        },
+        {
+            "id": "https://openalex.org/keywords/compaction",
+            "display_name": "Compaction",
+            "score": 0.5536825060844421
+        },
+        {
+            "id": "https://openalex.org/keywords/meltwater",
+            "display_name": "Meltwater",
+            "score": 0.5236282348632812
+        },
+        {
+            "id": "https://openalex.org/keywords/snowmelt",
+            "display_name": "Snowmelt",
+            "score": 0.43304747343063354
+        },
+        {
+            "id": "https://openalex.org/keywords/energy-balance",
+            "display_name": "Energy balance",
+            "score": 0.41884294152259827
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.4108867049217224
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.35853666067123413
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.26129448413848877
+        },
+        {
+            "id": "https://openalex.org/keywords/geotechnical-engineering",
+            "display_name": "Geotechnical engineering",
+            "score": 0.0917930006980896
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.08897462487220764
+        },
+        {
+            "id": "https://openalex.org/keywords/thermodynamics",
+            "display_name": "Thermodynamics",
+            "score": 0.07983735203742981
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.07977008819580078
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2778877292",
+            "wikidata": "https://www.wikidata.org/wiki/Q18575846",
+            "display_name": "Snowpack",
+            "level": 3,
+            "score": 0.9441401958465576
+        },
+        {
+            "id": "https://openalex.org/C197046000",
+            "wikidata": "https://www.wikidata.org/wiki/Q7561",
+            "display_name": "Snow",
+            "level": 2,
+            "score": 0.8772932291030884
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5670160055160522
+        },
+        {
+            "id": "https://openalex.org/C196715460",
+            "wikidata": "https://www.wikidata.org/wiki/Q1414356",
+            "display_name": "Compaction",
+            "level": 2,
+            "score": 0.5536825060844421
+        },
+        {
+            "id": "https://openalex.org/C207318512",
+            "wikidata": "https://www.wikidata.org/wiki/Q360925",
+            "display_name": "Meltwater",
+            "level": 3,
+            "score": 0.5236282348632812
+        },
+        {
+            "id": "https://openalex.org/C64649846",
+            "wikidata": "https://www.wikidata.org/wiki/Q1754697",
+            "display_name": "Snowmelt",
+            "level": 3,
+            "score": 0.43304747343063354
+        },
+        {
+            "id": "https://openalex.org/C2777423268",
+            "wikidata": "https://www.wikidata.org/wiki/Q3663116",
+            "display_name": "Energy balance",
+            "level": 2,
+            "score": 0.41884294152259827
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4108867049217224
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.35853666067123413
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.26129448413848877
+        },
+        {
+            "id": "https://openalex.org/C187320778",
+            "wikidata": "https://www.wikidata.org/wiki/Q1349130",
+            "display_name": "Geotechnical engineering",
+            "level": 1,
+            "score": 0.0917930006980896
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.08897462487220764
+        },
+        {
+            "id": "https://openalex.org/C97355855",
+            "wikidata": "https://www.wikidata.org/wiki/Q11473",
+            "display_name": "Thermodynamics",
+            "level": 1,
+            "score": 0.07983735203742981
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.07977008819580078
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents the Factorial Snowpack Model (FSM 1.0), an open-source model with selectable complexity levels for five key processes, enabling systematic factorial experiments with 32 different configurations to evaluate how process representations and their interactions affect performance.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "FSM 1.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "prognostic parametrization for snow albedo",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The five parametrizations that can be switched on or off in FSM are three prognostic equations for the albedo, density and liquid water content of snow, and two diagnostic equations for the dependence of thermal conductivity on snow density and the dependence of turbulent fluxes on atmospheric stability. ... If the prognostic parametrization for snow albedo as is switched on, decreasing albedo as snow ages and increasing albedo as fresh snow falls are parametrized by das/dt = (1/\u03c4\u03b1)(amin \u2212 as) + (Sf/Sa)(amax \u2212 as)",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FSM 1.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "prognostic snow density parametrization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The five parametrizations that can be switched on or off in FSM are three prognostic equations for the albedo, density and liquid water content of snow, and two diagnostic equations for the dependence of thermal conductivity on snow density and the dependence of turbulent fluxes on atmospheric stability. ... Snow density is set to a constant value p0 if the prognostic density parametrization is switched off. If the parametrization is switched on, the density of fresh snow is given by parameter pf and the rate of density increase is parametrized by \u2202\u03c1/\u2202t = (1/\u03c4\u03c1)(\u03c1max \u2212 \u03c1)",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FSM 1.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "bucket storage parametrization for liquid water",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The five parametrizations that can be switched on or off in FSM are three prognostic equations for the albedo, density and liquid water content of snow, and two diagnostic equations for the dependence of thermal conductivity on snow density and the dependence of turbulent fluxes on atmospheric stability. ... A very simple bucket storage parametrization is used for liquid water in snow.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FSM 1.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "diagnostic equation for thermal conductivity dependence on snow density",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The five parametrizations that can be switched on or off in FSM are three prognostic equations for the albedo, density and liquid water content of snow, and two diagnostic equations for the dependence of thermal conductivity on snow density and the dependence of turbulent fluxes on atmospheric stability. ... Thermal conductivity is calculated as \u03bb(\u03c1) = \u03bbice(\u03c1/\u03c1ice)^b\u03bb if the conductivity parametrization is switched on",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FSM 1.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "diagnostic equation for turbulent flux dependence on atmospheric stability",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The five parametrizations that can be switched on or off in FSM are three prognostic equations for the albedo, density and liquid water content of snow, and two diagnostic equations for the dependence of thermal conductivity on snow density and the dependence of turbulent fluxes on atmospheric stability. ... If the adjustment of turbulent fluxes for atmospheric stability is switched on, the stability factor in Eq. (22) is fH (RiB) = [1+3bhRi\u00df(1+bhRi\u00df)1/2]\u22121 for Ri\u00df \u2265 0 and 1 \u2212 3bhRi\u00df[1 +c(\u2212Ri\u00df)1/2]\u22121 for Ri\u00df < 0, from Louis et al. (1982), as shown in Fig. 3d. The stability factor is set to 1 if the stability adjustment is switched off.",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FSM 1.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "32 different model configurations",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "This paper describes the systematic development of an open-source snowpack model with two levels of representation for each of the five processes mentioned above, allowing factorial experimental designs with 32 different model configurations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FSM 1.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "three-layer snowpack model",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The number and thicknesses (Ah) of the layers depends on the depth of the snow: one layer is used if the depth is less than 0.2 m, two layers with a 0.1 m top layer if the depth is between 0.2 and 0.5 m, and three layers with thicknesses 0.1, 0.2 and h\u22120.3 m at the base if the depth exceeds 0.5 m.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "FSM 1.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "University of Edinburgh",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Edinburgh",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "UK",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "global climate models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "multi-layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "snow physics models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "snow albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "liquid water content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fresh snow density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "thermal conductivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "CLASS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CLM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HTESSEL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ISBA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JULES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MOSES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ORCHIDEE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "land surface models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Crocus",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SNOWPACK",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SNTHERM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ice mass",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "liquid water mass",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "internal energy",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vapour flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heat fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "three-layer snowpack model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snowfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sublimation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "runoff at the base of the snowpack",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "turbulent sensible heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "turbulent latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "incoming shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "incoming long-wave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "prognostic albedo parametrization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "prognostic density parametrization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "prognostic liquid water content parametrization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "thermal conductivity parametrization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "turbulent flux stability adjustment",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "diagnostic albedo parametrization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow cover fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "four-layer soil model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "specific humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface air pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric stability adjustment",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bucket storage parametrization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "tridiagonal matrix equation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "M\u00e9t\u00e9o-France",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Col de Porte",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "snow mass",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1701-member ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "prognostic snow albedo parametrization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "prognostic snow density parametrization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "prognostic liquid water parametrization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SnowMIP2",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "SnowMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "SNTHERM.89",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CRREL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Community Land Model (CLM)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NCAR",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "PILPS 2(d)",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "SURFEX v7.2",
+            "entity_type": "SourceComponent"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1484996118",
+        "https://openalex.org/W2147654971",
+        "https://openalex.org/W2033221642",
+        "https://openalex.org/W2327289495",
+        "https://openalex.org/W1929945801",
+        "https://openalex.org/W2131859951",
+        "https://openalex.org/W1550627816",
+        "https://openalex.org/W1543410778",
+        "https://openalex.org/W2135150319",
+        "https://openalex.org/W2091134076",
+        "https://openalex.org/W2021436787",
+        "https://openalex.org/W2002432061",
+        "https://openalex.org/W2088851796",
+        "https://openalex.org/W1640485625",
+        "https://openalex.org/W2032734940",
+        "https://openalex.org/W2123950892",
+        "https://openalex.org/W1988562560",
+        "https://openalex.org/W1983851279",
+        "https://openalex.org/W2118092919",
+        "https://openalex.org/W1880282105",
+        "https://openalex.org/W2169754272",
+        "https://openalex.org/W2159780131",
+        "https://openalex.org/W2093065735",
+        "https://openalex.org/W2098235774",
+        "https://openalex.org/W1491005719",
+        "https://openalex.org/W2150320478",
+        "https://openalex.org/W1499472888",
+        "https://openalex.org/W1244545783"
+    ]
+}

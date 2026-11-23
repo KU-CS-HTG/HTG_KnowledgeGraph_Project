@@ -1,0 +1,1031 @@
+{
+    "uri": "https://openalex.org/W7152331310",
+    "title": "Physics-Constrained Adaptive Flow Matching for Climate Downscaling",
+    "venue": {
+        "name": "arXiv (Cornell University)",
+        "id": "https://openalex.org/S4306400194",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5049592657",
+            "display_name": "Kevin Debeire",
+            "orcid": "https://orcid.org/0000-0001-6006-8750"
+        },
+        {
+            "id": "https://openalex.org/A5087653323",
+            "display_name": "Ayta\u00e7 Pa\u00e7al",
+            "orcid": "https://orcid.org/0000-0002-1324-2389"
+        },
+        {
+            "id": "https://openalex.org/A5133180710",
+            "display_name": "Pierre Gentine",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5120591465",
+            "display_name": "Luis Medrano-Navarro",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5047248117",
+            "display_name": "Nils Thuerey",
+            "orcid": "https://orcid.org/0000-0001-6647-8910"
+        },
+        {
+            "id": "https://openalex.org/A5133154984",
+            "display_name": "Veronika Eyring",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "Regional climate information at kilometer scales is essential for assessing the impacts of climate change, but generating it with global climate models is too expensive due to their high computational costs. Machine learning models offer a fast alternative, yet they often violate basic physical laws and degrade when applied to climates outside of their training distribution. We present Physics-Constrained Adaptive Flow Matching (PC-AFM), a generative downscaling model that addresses both problems. Building on the Adaptive Flow Matching (AFM) model of Fotiadis et al. (2025) as our baseline, we add soft conservation constraints that keep the downscaled output consistent with the large-scale input for precipitation and humidity, and use gradient surgery via the ConFIG algorithm to prevent these constraints from interfering with the generative objective. We train the model on Central Europe climate data, evaluate it on a 10-time downscaling task (63km to 6.3km) over six variables (near-surface temperature, precipitation, specific humidity, surface pressure, and horizontal wind components) across a comprehensive set of metrics including bias, ensemble skill scores, power spectra, and conservation error, and test the generalization on two held-out climate regions. Within the training distribution, PC-AFM reduces conservation errors and improves ensemble calibration while matching the baseline on standard skill metrics. Outside the training distribution, where unconstrained models develop large systematic errors by extrapolating learned statistics, PC-AFM halves precipitation wet bias, reduces conservation error and improves extreme-quantile accuracy, all without any information about the target climate at inference time. These results indicate that physical consistency is a practical requirement for deploying generative downscaling models in real-world applications.",
+    "field": "Climate downscaling",
+    "problem": "Machine learning downscaling models offer a fast alternative to computationally expensive climate models, but they often violate basic physical laws and degrade in performance when applied to climate regions outside of their training distribution.",
+    "method": "We propose a generative downscaling framework, Physics-Constrained Adaptive Flow Matching, that uses soft conservation constraints and gradient surgery to enforce physical consistency and improve generalization to unseen climate regions.",
+    "task": "The task is to perform 10x climate downscaling (63 km to 6.3 km) for six variables using a physics-constrained generative model designed to ensure physical consistency and improve generalization to new climate regions.",
+    "model": [
+        "ICON"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.9071000218391418
+        },
+        {
+            "id": "https://openalex.org/keywords/consistency",
+            "display_name": "Consistency (knowledge bases)",
+            "score": 0.5202999711036682
+        },
+        {
+            "id": "https://openalex.org/keywords/matching",
+            "display_name": "Matching (statistics)",
+            "score": 0.5195000171661377
+        },
+        {
+            "id": "https://openalex.org/keywords/baseline",
+            "display_name": "Baseline (sea)",
+            "score": 0.5069000124931335
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5002999901771545
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.46959999203681946
+        },
+        {
+            "id": "https://openalex.org/keywords/set",
+            "display_name": "Set (abstract data type)",
+            "score": 0.4081000089645386
+        },
+        {
+            "id": "https://openalex.org/keywords/generalization",
+            "display_name": "Generalization",
+            "score": 0.39419999718666077
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.9071000218391418
+        },
+        {
+            "id": "https://openalex.org/C2776436953",
+            "wikidata": "https://www.wikidata.org/wiki/Q5163215",
+            "display_name": "Consistency (knowledge bases)",
+            "level": 2,
+            "score": 0.5202999711036682
+        },
+        {
+            "id": "https://openalex.org/C165064840",
+            "wikidata": "https://www.wikidata.org/wiki/Q1321061",
+            "display_name": "Matching (statistics)",
+            "level": 2,
+            "score": 0.5195000171661377
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5085999965667725
+        },
+        {
+            "id": "https://openalex.org/C12725497",
+            "wikidata": "https://www.wikidata.org/wiki/Q810247",
+            "display_name": "Baseline (sea)",
+            "level": 2,
+            "score": 0.5069000124931335
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5002999901771545
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.46959999203681946
+        },
+        {
+            "id": "https://openalex.org/C177264268",
+            "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+            "display_name": "Set (abstract data type)",
+            "level": 2,
+            "score": 0.4081000089645386
+        },
+        {
+            "id": "https://openalex.org/C177148314",
+            "wikidata": "https://www.wikidata.org/wiki/Q170084",
+            "display_name": "Generalization",
+            "level": 2,
+            "score": 0.39419999718666077
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.38280001282691956
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3605000078678131
+        },
+        {
+            "id": "https://openalex.org/C2780451532",
+            "wikidata": "https://www.wikidata.org/wiki/Q759676",
+            "display_name": "Task (project management)",
+            "level": 2,
+            "score": 0.3562000095844269
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.34470000863075256
+        },
+        {
+            "id": "https://openalex.org/C40675005",
+            "wikidata": "https://www.wikidata.org/wiki/Q170196",
+            "display_name": "Hydropower",
+            "level": 2,
+            "score": 0.32989999651908875
+        },
+        {
+            "id": "https://openalex.org/C165838908",
+            "wikidata": "https://www.wikidata.org/wiki/Q736777",
+            "display_name": "Calibration",
+            "level": 2,
+            "score": 0.3278000056743622
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.319599986076355
+        },
+        {
+            "id": "https://openalex.org/C38349280",
+            "wikidata": "https://www.wikidata.org/wiki/Q1434290",
+            "display_name": "Flow (mathematics)",
+            "level": 2,
+            "score": 0.31940001249313354
+        },
+        {
+            "id": "https://openalex.org/C124101348",
+            "wikidata": "https://www.wikidata.org/wiki/Q172491",
+            "display_name": "Data mining",
+            "level": 1,
+            "score": 0.30889999866485596
+        },
+        {
+            "id": "https://openalex.org/C167966045",
+            "wikidata": "https://www.wikidata.org/wiki/Q5532625",
+            "display_name": "Generative model",
+            "level": 3,
+            "score": 0.29589998722076416
+        },
+        {
+            "id": "https://openalex.org/C2776214188",
+            "wikidata": "https://www.wikidata.org/wiki/Q408386",
+            "display_name": "Inference",
+            "level": 2,
+            "score": 0.2939999997615814
+        },
+        {
+            "id": "https://openalex.org/C185798385",
+            "wikidata": "https://www.wikidata.org/wiki/Q1161707",
+            "display_name": "Benchmark (surveying)",
+            "level": 2,
+            "score": 0.27129998803138733
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.2712000012397766
+        },
+        {
+            "id": "https://openalex.org/C48044578",
+            "wikidata": "https://www.wikidata.org/wiki/Q727490",
+            "display_name": "Scalability",
+            "level": 2,
+            "score": 0.2711000144481659
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.2540000081062317
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper introduces Physics-Constrained Adaptive Flow Matching (PC-AFM), a generative downscaling model that integrates soft conservation constraints and gradient surgery to produce physically consistent climate data, improving performance and generalization compared to unconstrained models, especially for unseen climate regions.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "AFM",
+            "target_entity_type": "Source",
+            "paragraph": "Building on the Adaptive Flow Matching (AFM) model of Fotiadis et al. (2025) as our baseline, we add soft conservation constraints that keep the downscaled output consistent with the large-scale input for precipitation and humidity, and use gradient surgery via the ConFIG algorithm to prevent these constraints from interfering with the generative objective.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "deterministic encoder E\u03c8",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "PC-AFM builds directly on the adaptive flow matching (AFM) architecture of Fotiadis et al. (2025), also known as CorrDiff++. The AFM model consists of two components: a deterministic encoder E\u03c8 that maps the coarse input to a structured high-resolution initialization, and a stochastic denoiser D\u03b8 that refines this initialization along a learned probability path to produce high-resolution ensemble members. We adopt the encoder-denoiser architecture and generative training objective of Fotiadis et al. (2025) without modification, with one exception: we disable positional embeddings in both networks to enable geographic generalization (Section 3.1).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "stochastic denoiser D\u03b8",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "PC-AFM builds directly on the adaptive flow matching (AFM) architecture of Fotiadis et al. (2025), also known as CorrDiff++. The AFM model consists of two components: a deterministic encoder E\u03c8 that maps the coarse input to a structured high-resolution initialization, and a stochastic denoiser D\u03b8 that refines this initialization along a learned probability path to produce high-resolution ensemble members. We adopt the encoder-denoiser architecture and generative training objective of Fotiadis et al. (2025) without modification, with one exception: we disable positional embeddings in both networks to enable geographic generalization (Section 3.1).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "physics-constrained conservation losses",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In this work, we introduce Physics-Constrained Adpative Flow Matching (PC-AFM), which extends the AFM architecture of Fotiadis et al. (2025) with soft conservation losses and ConFIG gradient surgery to produce physically consistent downscaled fields. Our specific contributions are: (i) the introduction of physics-constrained conservation losses penalizing deviations between the coarsened prediction and the coarse-scale input for precipitation and specific humidity, evaluated in physical space with cosine-latitude weighting;",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "ConFIG gradient surgery",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In this work, we introduce Physics-Constrained Adpative Flow Matching (PC-AFM), which extends the AFM architecture of Fotiadis et al. (2025) with soft conservation losses and ConFIG gradient surgery to produce physically consistent downscaled fields. Our specific contributions are: (i) the introduction of physics-constrained conservation losses penalizing deviations between the coarsened prediction and the coarse-scale input for precipitation and specific humidity, evaluated in physical space with cosine-latitude weighting; (ii) a ConFIG gradient surgery to resolve conflicts between the generative and conservation objectives;",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "noise-level-dependent loss weighting and warmup schedule",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In this work, we introduce Physics-Constrained Adpative Flow Matching (PC-AFM), which extends the AFM architecture of Fotiadis et al. (2025) with soft conservation losses and ConFIG gradient surgery to produce physically consistent downscaled fields. Our specific contributions are: (i) the introduction of physics-constrained conservation losses penalizing deviations between the coarsened prediction and the coarse-scale input for precipitation and specific humidity, evaluated in physical space with cosine-latitude weighting; (ii) a ConFIG gradient surgery to resolve conflicts between the generative and conservation objectives; (iii) a noise-level-dependent loss weighting and warmup schedule to stabilize multi-objective training; and (iv) comprehensive evaluation on the nextGEMS cycle 3 simulations, downscaling six variables by 10\u00d7 with an ESMValTool-based diagnostic suite (Earth System Model Evaluation Tool, Righi et al. (2020); Eyring et al. (2019)) over the training domain (Central Europe) and two withheld climate regions (Iberia and Northern Europe).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "no positional embeddings",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "One architectural difference from Fotiadis et al. (2025) is that we disable positional embeddings in both the encoder and denoiser. Positional embeddings learned on a fixed training domain encode location-specific spatial structure that does not transfer to held-out regions. By removing them, the model is forced to rely solely on the physical input fields and static invariants (orography, land-sea mask, latitude) to infer spatial context.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "12 ensemble members",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "At inference time, we generate Nens = 12 independent ensemble members per input time step.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "uas",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 1. Input and output variables. The input comprises 37 channels: 10 surface fields, 24 pressure-level fields, and 3 static invariants. The output comprises 6 surface variables.\nOutput fields (6 variables)\nuas, vas 10 m wind components [m s-1]",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "vas",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 1. Input and output variables. The input comprises 37 channels: 10 surface fields, 24 pressure-level fields, and 3 static invariants. The output comprises 6 surface variables.\nOutput fields (6 variables)\nuas, vas 10 m wind components [m s-1]",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "tas",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 1. Input and output variables. The input comprises 37 channels: 10 surface fields, 24 pressure-level fields, and 3 static invariants. The output comprises 6 surface variables.\nOutput fields (6 variables)\ntas 2 m temperature [K]",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "pr",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 1. Input and output variables. The input comprises 37 channels: 10 surface fields, 24 pressure-level fields, and 3 static invariants. The output comprises 6 surface variables.\nOutput fields (6 variables)\npr Precipitation flux [kg m-2 s-1]",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "huss",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 1. Input and output variables. The input comprises 37 channels: 10 surface fields, 24 pressure-level fields, and 3 static invariants. The output comprises 6 surface variables.\nOutput fields (6 variables)\nhuss Specific humidity, lowest model level [kg kg-1]",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "ps",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 1. Input and output variables. The input comprises 37 channels: 10 surface fields, 24 pressure-level fields, and 3 static invariants. The output comprises 6 surface variables.\nOutput fields (6 variables)\nps Surface pressure [Pa]",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Bias and Continuous Ranked Probability Score (CRPS): the time-mean pointwise bias is T 1 HR HR Biasi,j = (xt,i,j \u2212 xt,i,j ), T t=1 where xHR denotes the ensemble-mean prediction at time step t. Persistent positive or negative bias indicates that the model systematically over- or underestimates the climatological mean of a variable.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Continuous Ranked Probability Score",
+            "target_entity_type": "Metric",
+            "paragraph": "Bias and Continuous Ranked Probability Score (CRPS): the time-mean pointwise bias is... The continuous ranked probability score (Gneiting & Raftery, 2007) evaluates the full predictive distribution against the verification value and jointly rewards calibration and sharpness",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Relative Average Log Spectral Distance",
+            "target_entity_type": "Metric",
+            "paragraph": "Relative Average Log Spectral Distance (RALSD): the RALSD quantifies spectral fidelity by comparing radially averaged power spectral densities Sref(k) and Spred(k) at discrete wavenumber k (Schillinger et al., 2025), where Spred(k) is computed from the spectrum of each ensemble member and averaged across members before entering the formula:",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Conservation error",
+            "target_entity_type": "Metric",
+            "paragraph": "Conservation error (CE): the CE measures cross-scale consistency as the timemean absolute difference between the coarsened ensemble-mean prediction and the coarsened reference at each coarse grid cell (i, j), using the operator C[\u00b7] defined in Equation 1:",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Log-PDF distance",
+            "target_entity_type": "Metric",
+            "paragraph": "Log-PDF distance: let pref and ppred denote the normalized marginal histograms of the reference and ensemble-mean prediction, pooled over all grid points and time steps in the test period. The log-probability density function (log-PDF) distance is the rootmean-square deviation between their log10-transformed bin values.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Ensemble Miscalibration",
+            "target_entity_type": "Metric",
+            "paragraph": "Ensemble Miscalibration (MCB): the MCB is derived from the rank histogram (globally pooled): for each reference value, we record the rank of xHR within the sorted ensemble of M = 12 members. A perfectly calibrated ensemble produces a uniform rank histogram. MCB quantifies the deviation from uniformity (Schillinger et al., 2025):",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PC-AFM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Quantile Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "Quantile Mean Absolute Error (MAE): following Lopez-Gomez et al. (2025), we assess distributional accuracy for impact-relevant compound variables through seasonal quantile diagnostics.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "ICON",
+            "source_entity_type": "Source",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "nextGEMS",
+            "target_entity_type": "Project",
+            "paragraph": "We use cycle 3 simulations from the ICON model within the nextGEMS project (Hohenegger et al., 2023; Stevens et al., 2019), which provides 5.5 years of global climate simulation at approximately 6.3 km horizontal resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ICON",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "6.3 km",
+            "target_entity_type": "Resolution",
+            "paragraph": "We use cycle 3 simulations from the ICON model within the nextGEMS project (Hohenegger et al., 2023; Stevens et al., 2019), which provides 5.5 years of global climate simulation at approximately 6.3 km horizontal resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Iberian Peninsula and Northern Morocco",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "Dry",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "To assess generalization beyond the training distribution, we evaluate this generalization on two geographically and climatologically distinct regions that do not overlap with the Central Europe training domain: (i) the Iberian Peninsula and Northern Morocco (15\u00b0W-3\u00b0E, 24-42\u00b0N, semi-arid Mediterranean to arid) and (ii) Northern Europe (24-42\u00b0E, 52-70\u00b0N humid subarctic to temperate maritime).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Iberian Peninsula and Northern Morocco",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "Temperate",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "To assess generalization beyond the training distribution, we evaluate this generalization on two geographically and climatologically distinct regions that do not overlap with the Central Europe training domain: (i) the Iberian Peninsula and Northern Morocco (15\u00b0W-3\u00b0E, 24-42\u00b0N, semi-arid Mediterranean to arid) and (ii) Northern Europe (24-42\u00b0E, 52-70\u00b0N humid subarctic to temperate maritime).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Northern Europe",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "Continental",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "To assess generalization beyond the training distribution, we evaluate this generalization on two geographically and climatologically distinct regions that do not overlap with the Central Europe training domain: (i) the Iberian Peninsula and Northern Morocco (15\u00b0W-3\u00b0E, 24-42\u00b0N, semi-arid Mediterranean to arid) and (ii) Northern Europe (24-42\u00b0E, 52-70\u00b0N humid subarctic to temperate maritime).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Northern Europe",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "Temperate",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "To assess generalization beyond the training distribution, we evaluate this generalization on two geographically and climatologically distinct regions that do not overlap with the Central Europe training domain: (i) the Iberian Peninsula and Northern Morocco (15\u00b0W-3\u00b0E, 24-42\u00b0N, semi-arid Mediterranean to arid) and (ii) Northern Europe (24-42\u00b0E, 52-70\u00b0N humid subarctic to temperate maritime).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Deutsches Zentrum f\u00fcr Luft- und Raumfahrt (DLR)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Technical University of Munich",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Columbia University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Bremen",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "NY",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Oberpfaffenhofen",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "New York",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Bremen",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "kilometer scales",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "63 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "6.3 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "near-surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "specific humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "horizontal wind components",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ensemble skill scores",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "power spectra",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "conservation error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ensemble calibration",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "precipitation wet bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "extreme-quantile accuracy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Central Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "50 to 100 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "nextGEMS",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Mean Squared Error (MSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Iberian Peninsula",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Scandinavia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ConFIG (Conflict-Free Gradient) algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Northern Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ICON",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "3-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Central Europe",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "Iberian Peninsula and Northern Morocco",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "Northern Morocco",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "semi-arid",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "arid",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Northern Europe",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "humid subarctic",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "temperate",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "tas",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "uas",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vas",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pr",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "huss",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ps",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rlds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rlus",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rsds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rsus",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ta",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ua",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "va",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zg",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hus",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air_pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "elev_mean (orography)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "lsm_mean (land-sea mask)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "10 m wind components",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2 m temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Specific humidity, lowest model level",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pressure levels (850, 700, 500, 300, 200 hPa)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "disabled positional embeddings",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Iberian Peninsula",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "Euler integration",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "12 ensemble members",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "SongUNet",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "channel multipliers [1, 2, 2, 4, 4]",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ConFIG gradient operator",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cosine-latitude-weighted coarsening operator",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Continuous Ranked Probability Score (CRPS)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "relative bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Relative Average Log Spectral Distance (RALSD)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "radially averaged power spectral densities",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Conservation error (CE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Log-PDF distance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Ensemble Miscalibration (MCB)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "rank histogram",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Quantile Mean Absolute Error (MAE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "wet-bulb globe temperature (WBGT)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heat stress",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Flood",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "wind",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "wet bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "noise-level downweighting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cross-scale conservation error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spectral-aware loss terms",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "wavelet-based constraints",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "multi-level constraints",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "thermodynamic constraints",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "temporal conditioning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "autoregressive generation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "energy balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface wind divergence",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relaxed soft constraint with uncertainty-aware weighting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "explicit correction step",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "European Research Council (ERC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Deutsche Forschungsgemeinschaft (DFG, German Research Foundation)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Science Foundation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Deutsches Klimarechenzentrum (DKRZ)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Hamburg",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        }
+    ],
+    "referenced_works": []
+}

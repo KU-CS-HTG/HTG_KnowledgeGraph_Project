@@ -1,0 +1,1342 @@
+{
+    "uri": "https://openalex.org/W7129750901",
+    "title": "PIXAL: A Physics-Informed Explainable Machine Learning Architecture for Greenland Ice Albedo Modeling",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5041888925",
+            "display_name": "Raf Antwerpen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126264695",
+            "display_name": "Marco Tedesco",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126252708",
+            "display_name": "Pierre Gentine",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5067882952",
+            "display_name": "Willem Jan van de Berg",
+            "orcid": "https://orcid.org/0000-0002-8232-2040"
+        },
+        {
+            "id": "https://openalex.org/A5123222624",
+            "display_name": "Xavier Fettweis",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2025-6143",
+    "abstract": "Abstract. The Greenland ice sheet (GrIS) is a major contributor to global sea level rise. A significant portion of the GrIS\u2019 contribution can be attributed to increased ice surface melting, which is strongly controlled by ice albedo, a property that regulates the amount of absorbed solar radiation that leads to surface melting. Yet, we lack a comprehensive understanding of the complex and nonlinear relationships ice albedo has with its environment and is, therefore, often simplified or crudely parameterized in climate models. However, an accurate representation of future ice albedo evolution is essential for reducing uncertainties in sea level rise projections. This study presents PIXAL, a physics-informed explainable machine learning architecture that significantly outperforms the Mod\u00e8le Atmosph\u00e9rique R\u00e9gional (MAR), a state-of-the-art regional climate model, in modeling ice albedo on the southwestern GrIS. PIXAL is based on an Extreme Gradient Boosting (XGBoost) model and is trained on a suite of modeled topographic, atmospheric, radiative, and glaciologic variables from MAR to capture the complex and nonlinear relationships with ice albedo observations obtained from the Moderate Resolution Imaging Spectroradiometer (MODIS). Performance metrics show that PIXAL achieves an R2 of 0.563, a structural similarity index measure (SSIM) of 0.620, a mean squared error (MSE) of 0.005, and a mean absolute percentage error (MAPE) of 14.699 %, compared to MAR\u2019s R2 of 0.062, SSIM of 0.112, MSE of 0.032, and MAPE of 46.202 %. Explainable artificial intelligence analysis reveals that topographic features, specifically ice sheet surface height and slope, are the most important drivers of ice albedo variability due to their relationships with ice exposure duration and the effectiveness in accumulating meltwater and light-absorbing constituents (LACs) on flat ice surfaces. Near-surface air temperature and runoff further significantly impact ice albedo variability by affecting the ice metamorphic state and accumulation of meltwater and LACs. These findings highlight that understanding the complex physical processes underlying ice albedo variability is essential for accurate climate modeling and sea level rise predictions. PIXAL represents a crucial advancement in ice albedo modeling and paves the way for improved representation of ice sheets in Earth system models.",
+    "field": "Greenland ice albedo modeling",
+    "problem": "Existing climate models use simplified or crude parameterizations for Greenland ice albedo, failing to capture its complex, nonlinear relationships with environmental drivers and thus creating uncertainty in sea level rise projections.",
+    "method": "This paper proposes a physics-informed, explainable machine learning architecture (PIXAL), based on an XGBoost model trained on climate model variables and satellite observations, to accurately model and predict Greenland ice albedo and identify its key environmental drivers.",
+    "task": "The task is to develop a physics-informed, explainable machine learning architecture (PIXAL) to accurately model and predict ice albedo for the southwestern Greenland Ice Sheet, improving upon existing regional climate models.",
+    "model": [
+        "MAR",
+        "XGBoost",
+        "SNICAR",
+        "E3SM",
+        "RACMO",
+        "PIXAL",
+        "RF",
+        "PySR"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/albedo",
+            "display_name": "Albedo (alchemy)",
+            "score": 0.737500011920929
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-ice",
+            "display_name": "Sea ice",
+            "score": 0.5205000042915344
+        },
+        {
+            "id": "https://openalex.org/keywords/ice-sheet",
+            "display_name": "Ice sheet",
+            "score": 0.5156000256538391
+        },
+        {
+            "id": "https://openalex.org/keywords/cryosphere",
+            "display_name": "Cryosphere",
+            "score": 0.4196999967098236
+        },
+        {
+            "id": "https://openalex.org/keywords/greenland-ice-sheet",
+            "display_name": "Greenland ice sheet",
+            "score": 0.4083000123500824
+        },
+        {
+            "id": "https://openalex.org/keywords/spectroradiometer",
+            "display_name": "Spectroradiometer",
+            "score": 0.4023999869823456
+        },
+        {
+            "id": "https://openalex.org/keywords/mean-squared-error",
+            "display_name": "Mean squared error",
+            "score": 0.3962000012397766
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.37599998712539673
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C195886398",
+            "wikidata": "https://www.wikidata.org/wiki/Q2110050",
+            "display_name": "Albedo (alchemy)",
+            "level": 3,
+            "score": 0.737500011920929
+        },
+        {
+            "id": "https://openalex.org/C136894858",
+            "wikidata": "https://www.wikidata.org/wiki/Q213926",
+            "display_name": "Sea ice",
+            "level": 2,
+            "score": 0.5205000042915344
+        },
+        {
+            "id": "https://openalex.org/C123750103",
+            "wikidata": "https://www.wikidata.org/wiki/Q12599",
+            "display_name": "Ice sheet",
+            "level": 2,
+            "score": 0.5156000256538391
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.504800021648407
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.460999995470047
+        },
+        {
+            "id": "https://openalex.org/C197435368",
+            "wikidata": "https://www.wikidata.org/wiki/Q493109",
+            "display_name": "Cryosphere",
+            "level": 3,
+            "score": 0.4196999967098236
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.41510000824928284
+        },
+        {
+            "id": "https://openalex.org/C2780021526",
+            "wikidata": "https://www.wikidata.org/wiki/Q1542432",
+            "display_name": "Greenland ice sheet",
+            "level": 3,
+            "score": 0.4083000123500824
+        },
+        {
+            "id": "https://openalex.org/C130066347",
+            "wikidata": "https://www.wikidata.org/wiki/Q680509",
+            "display_name": "Spectroradiometer",
+            "level": 3,
+            "score": 0.4023999869823456
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3982999920845032
+        },
+        {
+            "id": "https://openalex.org/C139945424",
+            "wikidata": "https://www.wikidata.org/wiki/Q1940696",
+            "display_name": "Mean squared error",
+            "level": 2,
+            "score": 0.3962000012397766
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.37599998712539673
+        },
+        {
+            "id": "https://openalex.org/C194520297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7440064",
+            "display_name": "Sea ice concentration",
+            "level": 5,
+            "score": 0.3732999861240387
+        },
+        {
+            "id": "https://openalex.org/C2777007095",
+            "wikidata": "https://www.wikidata.org/wiki/Q676840",
+            "display_name": "Moderate-resolution imaging spectroradiometer",
+            "level": 3,
+            "score": 0.3675000071525574
+        },
+        {
+            "id": "https://openalex.org/C197046000",
+            "wikidata": "https://www.wikidata.org/wiki/Q7561",
+            "display_name": "Snow",
+            "level": 2,
+            "score": 0.35040000081062317
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.33469998836517334
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.32690000534057617
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.32359999418258667
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3188999891281128
+        },
+        {
+            "id": "https://openalex.org/C127045886",
+            "wikidata": "https://www.wikidata.org/wiki/Q3528741",
+            "display_name": "Glacier mass balance",
+            "level": 3,
+            "score": 0.3059999942779541
+        },
+        {
+            "id": "https://openalex.org/C161798024",
+            "wikidata": "https://www.wikidata.org/wiki/Q3651008",
+            "display_name": "Arctic ice pack",
+            "level": 3,
+            "score": 0.2818000018596649
+        },
+        {
+            "id": "https://openalex.org/C134097258",
+            "wikidata": "https://www.wikidata.org/wiki/Q1507383",
+            "display_name": "Sea surface temperature",
+            "level": 2,
+            "score": 0.27790001034736633
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.27230000495910645
+        },
+        {
+            "id": "https://openalex.org/C100970517",
+            "wikidata": "https://www.wikidata.org/wiki/Q52107",
+            "display_name": "Physical geography",
+            "level": 1,
+            "score": 0.2632000148296356
+        },
+        {
+            "id": "https://openalex.org/C134543767",
+            "wikidata": "https://www.wikidata.org/wiki/Q1319627",
+            "display_name": "Ice-sheet model",
+            "level": 5,
+            "score": 0.258899986743927
+        },
+        {
+            "id": "https://openalex.org/C150217764",
+            "wikidata": "https://www.wikidata.org/wiki/Q6803607",
+            "display_name": "Mean absolute percentage error",
+            "level": 3,
+            "score": 0.25780001282691956
+        },
+        {
+            "id": "https://openalex.org/C81820708",
+            "wikidata": "https://www.wikidata.org/wiki/Q2540532",
+            "display_name": "Ice stream",
+            "level": 4,
+            "score": 0.25769999623298645
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.2563000023365021
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "MAR",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "SSIM",
+            "result": "0.112"
+        },
+        {
+            "model": "MAR",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "R\u00b2",
+            "result": "0.062"
+        },
+        {
+            "model": "MAR",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MAPE",
+            "result": "46.202%"
+        },
+        {
+            "model": "MAR",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MSE",
+            "result": "0.032"
+        },
+        {
+            "model": "MAR updated equation",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "SSIM",
+            "result": "0.103"
+        },
+        {
+            "model": "MAR updated equation",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "R\u00b2",
+            "result": "0.092"
+        },
+        {
+            "model": "MAR updated equation",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MAPE",
+            "result": "22.385%"
+        },
+        {
+            "model": "MAR updated equation",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MSE",
+            "result": "0.009"
+        },
+        {
+            "model": "Linear regression",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "SSIM",
+            "result": "0.285"
+        },
+        {
+            "model": "Linear regression",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "R\u00b2",
+            "result": "0.202"
+        },
+        {
+            "model": "Linear regression",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MAPE",
+            "result": "20.309%"
+        },
+        {
+            "model": "Linear regression",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MSE",
+            "result": "0.008"
+        },
+        {
+            "model": "PySR",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "SSIM",
+            "result": "0.3"
+        },
+        {
+            "model": "PySR",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "R\u00b2",
+            "result": "0.25"
+        },
+        {
+            "model": "PySR",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MAPE",
+            "result": "25%"
+        },
+        {
+            "model": "PySR",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MSE",
+            "result": "0.015"
+        },
+        {
+            "model": "RF",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "SSIM",
+            "result": "0.55"
+        },
+        {
+            "model": "RF",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "R\u00b2",
+            "result": "0.5"
+        },
+        {
+            "model": "RF",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MAPE",
+            "result": "16%"
+        },
+        {
+            "model": "RF",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MSE",
+            "result": "0.006"
+        },
+        {
+            "model": "XGBoost",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "SSIM",
+            "result": "0.620"
+        },
+        {
+            "model": "XGBoost",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "R\u00b2",
+            "result": "0.563"
+        },
+        {
+            "model": "XGBoost",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MAPE",
+            "result": "14.699%"
+        },
+        {
+            "model": "XGBoost",
+            "observational_dataset": "MODIS-derived albedo",
+            "evaluation_metric": "MSE",
+            "result": "0.005"
+        }
+    ],
+    "innovation": "This paper presents PIXAL, a physics-informed explainable machine learning architecture that significantly outperforms a state-of-the-art climate model in simulating Greenland ice albedo and identifies topographic features like surface height and slope as the primary drivers of its variability.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "PIXAL",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "XGBoost",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This study presents PIXAL, a physics-informed explainable machine learning architecture that significantly outperforms the Mod\u00e8le Atmosph\u00e9rique R\u00e9gional (MAR), a state-of-the-art regional climate model, in modeling ice albedo on the southwestern GrIS. PIXAL is based on an eXtreme Gradient Boosting (XGBoost) model and is trained on a suite of modeled topographic, atmospheric, radiative, and glaciologic variables from MAR to capture the complex and nonlinear relationships with ice albedo observations obtained from the Moderate Resolution Imaging Spectroradiometer (MODIS).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "SISVAT",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "We use the Mod\u00e8le Atmosph\u00e9rique R\u00e9gional (MAR) v3.12, an RCM developed to simulate the coupled surface-atmosphere system over polar regions (Fettweis et al., 2017; Gall\u00e9e, 1997; Lefebre et al., 2003; Ridder and Schayes, 1997). We run MAR over the GrIS and force the lateral boundaries and ocean surface with 6-h ERA5 reanalysis output (Hersbach et al., 2020), from the European Centre for Medium-Range Weather Forecasts (ECMWF). The atmosphere component of MAR is described by (Gall\u00e9e and Schayes, 1994) and the surface component is represented by the Soil Ice Snow Vegetation Atmosphere Transfer (SISVAT) scheme (Ridder and Schayes, 1997).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SISVAT",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Crocus snow model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The atmosphere component of MAR is described by (Gall\u00e9e and Schayes, 1994) and the surface component is represented by the Soil Ice Snow Vegetation Atmosphere Transfer (SISVAT) scheme (Ridder and Schayes, 1997). The SISVAT scheme includes the Crocus snow model (Brun et al., 1992), which simulates a predefined number of snow, ice, or firn layers with variable thickness and allows energy and mass transport between each layer.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "E3SM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "SNICAR",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "SNICAR is currently used in the Energy Exascale Earth System Model (E3SM) and has improved ice albedo and surface melt estimates (Whicker-Clarke et al., 2024).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Ice albedo calculation as a function of runoff",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Ice albedo (\u03b1) is calculated as a function of the model-predicted runoff from melt and rainwater accumulated over the preceding day as: \u03b1 = 0.5 + 0.05 \u00b7 1 / (1 + (runoff/50))",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PIXAL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2",
+            "target_entity_type": "Metric",
+            "paragraph": "Performance metrics show that PIXAL achieves an R2 of 0.563, a structural similarity index measure (SSIM) of 0.620, a mean squared error (MSE) of 0.005, and a mean absolute percentage error (MAPE) of 14.699%, compared to MAR's R2 of 0.062, SSIM of 0.112, MSE of 0.032, and MAPE of 46.202%.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PIXAL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "SSIM",
+            "target_entity_type": "Metric",
+            "paragraph": "Performance metrics show that PIXAL achieves an R2 of 0.563, a structural similarity index measure (SSIM) of 0.620, a mean squared error (MSE) of 0.005, and a mean absolute percentage error (MAPE) of 14.699%, compared to MAR's R2 of 0.062, SSIM of 0.112, MSE of 0.032, and MAPE of 46.202%.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PIXAL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "Performance metrics show that PIXAL achieves an R2 of 0.563, a structural similarity index measure (SSIM) of 0.620, a mean squared error (MSE) of 0.005, and a mean absolute percentage error (MAPE) of 14.699%, compared to MAR's R2 of 0.062, SSIM of 0.112, MSE of 0.032, and MAPE of 46.202%.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PIXAL",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAPE",
+            "target_entity_type": "Metric",
+            "paragraph": "Performance metrics show that PIXAL achieves an R2 of 0.563, a structural similarity index measure (SSIM) of 0.620, a mean squared error (MSE) of 0.005, and a mean absolute percentage error (MAPE) of 14.699%, compared to MAR's R2 of 0.062, SSIM of 0.112, MSE of 0.032, and MAPE of 46.202%.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2",
+            "target_entity_type": "Metric",
+            "paragraph": "MAR tends to have low performance in predicting ice albedo when evaluated against MODIS (Fig. 1; reds) with a low coefficient of determination (R2 = 0.062), mean squared error (MSE = 0.032), mean absolute percentage error (MAPE = 46.202%), and structural similarity index measure (SSIM = 0.112).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "MAR tends to have low performance in predicting ice albedo when evaluated against MODIS (Fig. 1; reds) with a low coefficient of determination (R2 = 0.062), mean squared error (MSE = 0.032), mean absolute percentage error (MAPE = 46.202%), and structural similarity index measure (SSIM = 0.112).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAPE",
+            "target_entity_type": "Metric",
+            "paragraph": "MAR tends to have low performance in predicting ice albedo when evaluated against MODIS (Fig. 1; reds) with a low coefficient of determination (R2 = 0.062), mean squared error (MSE = 0.032), mean absolute percentage error (MAPE = 46.202%), and structural similarity index measure (SSIM = 0.112).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "SSIM",
+            "target_entity_type": "Metric",
+            "paragraph": "MAR tends to have low performance in predicting ice albedo when evaluated against MODIS (Fig. 1; reds) with a low coefficient of determination (R2 = 0.062), mean squared error (MSE = 0.032), mean absolute percentage error (MAPE = 46.202%), and structural similarity index measure (SSIM = 0.112).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "XGBoost",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Pseudo-Huber loss function",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We construct a regression tree ensemble with a Pseudo-Huber loss function, which is less sensitive to outliers than the commonly used squared error loss (Huber, 1964).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "XGBoost",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "exact greedy tree construction algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We use an exact greedy tree construction algorithm for split finding to minimize the loss and a gbtree booster, which, each iteration, builds the next tree and gives higher weights to misclassified points in the previous tree.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "XGBoost",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "gbtree booster",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We use an exact greedy tree construction algorithm for split finding to minimize the loss and a gbtree booster, which, each iteration, builds the next tree and gives higher weights to misclassified points in the previous tree.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "broadband albedo",
+            "target_entity_type": "Variable",
+            "paragraph": "We collect daily MOD10A1 broadband albedo images (Hall et al., 2016) over the GrIS from the Moderate Resolution Imaging Spectroradiometer (MODIS) for JJA in 2000-2021 at 500 m spatial resolution with Google Earth Engine (Gorelick et al., 2017).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "surface reflectance",
+            "target_entity_type": "Variable",
+            "paragraph": "We also collect daily MOD09GA v6 band 2 (841-876 nm) surface reflectance images (Vermote and Wolfe, 2015). This product has been corrected for atmospheric conditions, including aerosols, gasses, and Rayleigh scattering.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Terra",
+            "target_entity_type": "Platform",
+            "paragraph": "Moreover, NASA's Terra 10:30 AM overpass time could incur a bias towards higher albedo measurements because the darkening effect of meltwater production will occur mostly in strong incoming radiation and high-temperature conditions during the afternoon.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Greenland Ice Sheet",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Natural sources, including North American, Siberian, and Greenlandic wildfires, emit black carbon particles that have been found on the GrIS (Cali Quaglia et al., 2022; Keegan et al., 2014). Greenlandic wildfires can deposit up to 30% of their emissions onto the ice sheet (Evangeliou et al., 2019).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Wildfire",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Natural sources, including North American, Siberian, and Greenlandic wildfires, emit black carbon particles that have been found on the GrIS (Cali Quaglia et al., 2022; Keegan et al., 2014). Greenlandic wildfires can deposit up to 30% of their emissions onto the ice sheet (Evangeliou et al., 2019).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "albedo",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "near-surface air temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "runoff of melt and rain water",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "shortwave upward radiation",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "shortwave downward radiation",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "longwave upward radiation",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "longwave downward radiation",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "sensible heat flux",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "latent heat flux",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "cloud cover",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "cloud optical depth",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "average ice density of the top 1 m",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "zonal wind",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "meridional wind",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "sublimation",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "average liquid water content of the top 1 m",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "snowfall",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "rainfall",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface height",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface slope",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface aspect",
+            "target_entity_type": "Variable",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "spatial resolution of 6.5 km",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "We use MAR to produce daily output of topographic, atmospheric, radiative, and glaciologic variables at its native spatial resolution of 6.5 km: albedo (-), near-surface air temperature (\u00b0C; average height is 2m), runoff of melt and rain water (mmWE/day), shortwave upward radiation (W/m\u00b2), shortwave downward radiation (W/m\u00b2), longwave upward radiation (W/m\u00b2), longwave downward radiation (W/m\u00b2), sensible heat flux (W/m\u00b2), latent heat flux (W/m\u00b2), cloud cover (down) (-), cloud cover (middle) (-), cloud cover (up) (-), cloud optical depth (-), average ice density of the top 1 m (kg/m\u00b3), zonal wind (m/s), meridional wind (m/s), sublimation (mmWE/day), average liquid water content of the top 1 m (kg/kg), snowfall (mmWE/day), rainfall (mmWE/day), surface height (m), surface slope (degrees), surface aspect (azimuth degrees).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "PIXAL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mod\u00e8le Atmosph\u00e9rique R\u00e9gional",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Energy Exascale Earth System Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "E3SM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Regional Atmospheric Climate Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RACMO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MARv3.12",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RCM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "ESMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "MAR",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "RACMO",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "RACMO2",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "Soil Ice Snow Vegetation Atmosphere Transfer",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "SISVAT",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Crocus snow model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Snow, Ice, and Aerosol Radiative model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SNICAR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SNICAR-ADv3",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SNICAR-ADv4",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ice albedo calculated as a function of accumulated runoff and ice sheet slope",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "R2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "coefficient of determination",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SSIM",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "structural similarity index measure",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean squared error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAPE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean absolute percentage error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ice albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "near-surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "shortwave upward radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "shortwave downward radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longwave upward radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longwave downward radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sensible heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud optical depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "average ice density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zonal wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "meridional wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sublimation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "average liquid water content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snowfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface slope",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface aspect",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SSP5-8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Greenland Ice Mapping Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "GIMP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Lamont-Doherty Earth Observatory, Climate School, Columbia University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA Goddard Institute for Space Studies",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Center for Learning the Earth with Artificial Intelligence and Physics (LEAP), Climate School, Columbia University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute for Marine and Atmospheric Research Utrecht, Utrecht University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Department of Geography, University of Li\u00e8ge",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Science Foundation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Heising-Simons Foundation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA GISS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "6-h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "6.5 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "500 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Greenland ice sheet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "GrIS",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "southwestern GrIS",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "dark ice zone",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North American",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Siberian",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Asian and African deserts",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Icelandic volcanoes",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Jakobshavn Glacier",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "southeastern GrIS",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Netherlands",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Belgium",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "New York, NY",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Utrecht",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Li\u00e8ge",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "New York",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Utrecht",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Li\u00e8ge",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Moderate Resolution Imaging Spectroradiometer",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Terra",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "wildfires",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "forest fires",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Wildfire",
+            "entity_type": "NaturalHazardType"
+        }
+    ],
+    "referenced_works": []
+}

@@ -1,0 +1,441 @@
+{
+    "uri": "https://openalex.org/W7131348961",
+    "title": "Modelling crop-growing stages in CLEWs v1",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5115950622",
+            "display_name": "Camilla Lo Giudice",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5051382548",
+            "display_name": "Francesco Gardumi",
+            "orcid": "https://orcid.org/0000-0001-8371-9325"
+        }
+    ],
+    "doi": "https://doi.org/10.17504/protocols.io.14egn1n6mv5d/v1",
+    "abstract": "In a CLEWs model for each land-use, the amount of water that goes in (precipitation and irrigation if needed) is equal to the output (evapotranspiration, runoff, and groundwater recharge). Previous CLEWs studies modelled land water requirements using yearly averages. However, despite this simplification is true for land covers where the vegetations regenerates naturally (such as forest, grassland and water bodies), water needs, and therefore outputs, can change greatly for cropland. Land used for growing crops has an intra-annual variability since crops are planted and harvested regularly within the year. Depending on the season, crops\u2019 water requirements can be three times more if we are in the growing stage than the harvested phase. Rainfall precipitation patterns are forecasted to increase their variability due to climate change impact. The increased variability might lead to a mismatch in water availability and supply if water scarcity occurs when there is a higher water requirement from the crops. Because of that, we modelled seasonal crop-growth stages in order to represent variable water demand.",
+    "field": "Water-energy-land nexus modeling",
+    "problem": "Existing CLEWs models use yearly averages for water requirements, failing to capture the significant intra-annual variability of crop water needs between growing and harvested stages, which can lead to a mismatch between water availability and demand, especially with increased climate variability.",
+    "method": "This protocol models seasonal crop-growing stages in the CLEWs framework by associating distinct modes of operation with each stage and using capacity factors to switch between them, allowing for a more accurate representation of variable water demand and ensuring consistent land use across seasons.",
+    "task": "The task is to model seasonal crop-growing stages within the CLEWs framework to represent variable intra-annual water demand for croplands, improving upon previous models that used only yearly averages.",
+    "model": [
+        "CLEWs",
+        "OSeMOSYS"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/irrigation",
+            "display_name": "Irrigation",
+            "score": 0.6065000295639038
+        },
+        {
+            "id": "https://openalex.org/keywords/water-use",
+            "display_name": "Water use",
+            "score": 0.5717999935150146
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.5461000204086304
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.5152000188827515
+        },
+        {
+            "id": "https://openalex.org/keywords/groundwater",
+            "display_name": "Groundwater",
+            "score": 0.5120999813079834
+        },
+        {
+            "id": "https://openalex.org/keywords/water-scarcity",
+            "display_name": "Water scarcity",
+            "score": 0.4982999861240387
+        },
+        {
+            "id": "https://openalex.org/keywords/water-supply",
+            "display_name": "Water supply",
+            "score": 0.48570001125335693
+        },
+        {
+            "id": "https://openalex.org/keywords/water-conservation",
+            "display_name": "Water conservation",
+            "score": 0.4512999951839447
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.753600001335144
+        },
+        {
+            "id": "https://openalex.org/C88862950",
+            "wikidata": "https://www.wikidata.org/wiki/Q11453",
+            "display_name": "Irrigation",
+            "level": 2,
+            "score": 0.6065000295639038
+        },
+        {
+            "id": "https://openalex.org/C149207113",
+            "wikidata": "https://www.wikidata.org/wiki/Q26534",
+            "display_name": "Water use",
+            "level": 2,
+            "score": 0.5717999935150146
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.5461000204086304
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.5152000188827515
+        },
+        {
+            "id": "https://openalex.org/C76177295",
+            "wikidata": "https://www.wikidata.org/wiki/Q161598",
+            "display_name": "Groundwater",
+            "level": 2,
+            "score": 0.5120999813079834
+        },
+        {
+            "id": "https://openalex.org/C51193700",
+            "wikidata": "https://www.wikidata.org/wiki/Q5376358",
+            "display_name": "Water scarcity",
+            "level": 3,
+            "score": 0.4982999861240387
+        },
+        {
+            "id": "https://openalex.org/C97053079",
+            "wikidata": "https://www.wikidata.org/wiki/Q1061108",
+            "display_name": "Water supply",
+            "level": 2,
+            "score": 0.48570001125335693
+        },
+        {
+            "id": "https://openalex.org/C110158866",
+            "wikidata": "https://www.wikidata.org/wiki/Q1462136",
+            "display_name": "Water conservation",
+            "level": 3,
+            "score": 0.4512999951839447
+        },
+        {
+            "id": "https://openalex.org/C524765639",
+            "wikidata": "https://www.wikidata.org/wiki/Q1501619",
+            "display_name": "Water resource management",
+            "level": 1,
+            "score": 0.4438000023365021
+        },
+        {
+            "id": "https://openalex.org/C133830359",
+            "wikidata": "https://www.wikidata.org/wiki/Q81041",
+            "display_name": "Water cycle",
+            "level": 2,
+            "score": 0.44209998846054077
+        },
+        {
+            "id": "https://openalex.org/C76886044",
+            "wikidata": "https://www.wikidata.org/wiki/Q2883300",
+            "display_name": "Hydrology (agriculture)",
+            "level": 2,
+            "score": 0.43230000138282776
+        },
+        {
+            "id": "https://openalex.org/C66465714",
+            "wikidata": "https://www.wikidata.org/wiki/Q1148989",
+            "display_name": "Water balance",
+            "level": 2,
+            "score": 0.41749998927116394
+        },
+        {
+            "id": "https://openalex.org/C176205827",
+            "wikidata": "https://www.wikidata.org/wiki/Q5435593",
+            "display_name": "Farm water",
+            "level": 4,
+            "score": 0.4147000014781952
+        },
+        {
+            "id": "https://openalex.org/C153823671",
+            "wikidata": "https://www.wikidata.org/wiki/Q1049799",
+            "display_name": "Water resources",
+            "level": 2,
+            "score": 0.3962000012397766
+        },
+        {
+            "id": "https://openalex.org/C146357865",
+            "wikidata": "https://www.wikidata.org/wiki/Q1123245",
+            "display_name": "Stage (stratigraphy)",
+            "level": 2,
+            "score": 0.34060001373291016
+        },
+        {
+            "id": "https://openalex.org/C4792198",
+            "wikidata": "https://www.wikidata.org/wiki/Q1165944",
+            "display_name": "Land use",
+            "level": 2,
+            "score": 0.3353999853134155
+        },
+        {
+            "id": "https://openalex.org/C1284942",
+            "wikidata": "https://www.wikidata.org/wiki/Q1929501",
+            "display_name": "Water level",
+            "level": 2,
+            "score": 0.31450000405311584
+        },
+        {
+            "id": "https://openalex.org/C2775835988",
+            "wikidata": "https://www.wikidata.org/wiki/Q1006733",
+            "display_name": "Grassland",
+            "level": 2,
+            "score": 0.3116999864578247
+        },
+        {
+            "id": "https://openalex.org/C122690726",
+            "wikidata": "https://www.wikidata.org/wiki/Q3348639",
+            "display_name": "Land use, land-use change and forestry",
+            "level": 3,
+            "score": 0.3100000023841858
+        },
+        {
+            "id": "https://openalex.org/C176783924",
+            "wikidata": "https://www.wikidata.org/wiki/Q828158",
+            "display_name": "Evapotranspiration",
+            "level": 2,
+            "score": 0.2838999927043915
+        },
+        {
+            "id": "https://openalex.org/C2776182401",
+            "wikidata": "https://www.wikidata.org/wiki/Q7973769",
+            "display_name": "Water storage",
+            "level": 3,
+            "score": 0.2786000072956085
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.2583000063896179
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a protocol for modelling seasonal crop-growing stages in the CLEWs framework, using multiple modes of operation to replace yearly averages and more accurately represent the significant intra-annual variability in water demand and availability for cropland.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "CLEWs V.1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "KTH",
+            "target_entity_type": "Institute",
+            "paragraph": "Camilla Lo Giudice\u00b9, Francesco Gardumi\u00b9\n1KTH",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CLEWs V.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LNDCROP",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Figure 1 Schematic reference system of the seasonal water balance represented in OSEMOSYS. The figure represents a schematic overview of the water balance represented in OSEMOSYS for a general crop (LNDCROP). On the left-side, we see the inputs to that technology: precipitation, land, season1 and season 2. On the right-side we see the output: evapotranspiration, groundwater, surface water, and crop demand. For each technology (represented as a square), there are two modes of operation associated (continued line or dotted line) which have to be consistent to the season represented (see section below).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LNDCROP",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "evapotranspiration",
+            "target_entity_type": "Variable",
+            "paragraph": "Figure 1 Schematic reference system of the seasonal water balance represented in OSEMOSYS. The figure represents a schematic overview of the water balance represented in OSEMOSYS for a general crop (LNDCROP). On the left-side, we see the inputs to that technology: precipitation, land, season1 and season 2. On the right-side we see the output: evapotranspiration, groundwater, surface water, and crop demand. For each technology (represented as a square), there are two modes of operation associated (continued line or dotted line) which have to be consistent to the season represented (see section below).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LNDCROP",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "groundwater",
+            "target_entity_type": "Variable",
+            "paragraph": "Figure 1 Schematic reference system of the seasonal water balance represented in OSEMOSYS. The figure represents a schematic overview of the water balance represented in OSEMOSYS for a general crop (LNDCROP). On the left-side, we see the inputs to that technology: precipitation, land, season1 and season 2. On the right-side we see the output: evapotranspiration, groundwater, surface water, and crop demand. For each technology (represented as a square), there are two modes of operation associated (continued line or dotted line) which have to be consistent to the season represented (see section below).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LNDCROP",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface water",
+            "target_entity_type": "Variable",
+            "paragraph": "Figure 1 Schematic reference system of the seasonal water balance represented in OSEMOSYS. The figure represents a schematic overview of the water balance represented in OSEMOSYS for a general crop (LNDCROP). On the left-side, we see the inputs to that technology: precipitation, land, season1 and season 2. On the right-side we see the output: evapotranspiration, groundwater, surface water, and crop demand. For each technology (represented as a square), there are two modes of operation associated (continued line or dotted line) which have to be consistent to the season represented (see section below).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LNDCROP",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "crop demand",
+            "target_entity_type": "Variable",
+            "paragraph": "Figure 1 Schematic reference system of the seasonal water balance represented in OSEMOSYS. The figure represents a schematic overview of the water balance represented in OSEMOSYS for a general crop (LNDCROP). On the left-side, we see the inputs to that technology: precipitation, land, season1 and season 2. On the right-side we see the output: evapotranspiration, groundwater, surface water, and crop demand. For each technology (represented as a square), there are two modes of operation associated (continued line or dotted line) which have to be consistent to the season represented (see section below).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "OSEMOSYS",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "linear optimization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The first step consists of keeping for both modes the same crop yield. OSEMOSYS is a demand driven model. Even if harvesting happens in the late stage (Season 2), OSEMOSYS uses linear optimization for minimizing the system's costs and there is therefore a linear relationship between the technology's outputs commodities.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "KTH",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CLEWs",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OSEMOSYS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LNDCRP",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "linear optimization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two modes of operations",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1 year as operational life",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "no capital costs",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Fixed and Variable costs",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Capacity Factor",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Technology Activity Decrease By Mode Limit",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Technology Activity Increase By Mode Limit",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Total Annual Max Capacity",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Total Technology Annual Activity Lower Limit",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Total Technology Annual Activity Upper Limit",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "seasonal",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Rate Of Activity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "groundwater recharge",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "groundwater",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "crop demand",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Yield",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "water availability",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "water requirement",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "harvested area",
+            "entity_type": "Variable"
+        }
+    ],
+    "referenced_works": []
+}

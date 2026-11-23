@@ -1,0 +1,1252 @@
+{
+    "uri": "https://openalex.org/W4410126219",
+    "title": "Replicable Fine-Spatio-Temporal Climate Data for Long-Term Ecology in the Western Mediterranean",
+    "venue": {
+        "name": "Scientific Data",
+        "id": "https://openalex.org/S2607323502",
+        "type": "journal"
+    },
+    "publication_year": 2025,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5071813101",
+            "display_name": "Daniel Romera\u2010Romera",
+            "orcid": "https://orcid.org/0000-0003-1621-0857"
+        },
+        {
+            "id": "https://openalex.org/A5031151804",
+            "display_name": "Francisca Alba\u2010S\u00e1nchez",
+            "orcid": "https://orcid.org/0000-0003-0387-1533"
+        },
+        {
+            "id": "https://openalex.org/A5030378796",
+            "display_name": "Daniel Abel\u2010Schaad",
+            "orcid": "https://orcid.org/0000-0003-3915-8342"
+        },
+        {
+            "id": "https://openalex.org/A5055089043",
+            "display_name": "Diego Nieto\u2010Lugilde",
+            "orcid": "https://orcid.org/0000-0003-4135-2881"
+        }
+    ],
+    "doi": "https://doi.org/10.1038/s41597-025-05067-9",
+    "abstract": null,
+    "field": "Paleoclimate reconstruction",
+    "problem": "Obtaining fine spatio-temporal climate data for past periods is challenging, as existing datasets often suffer from either coarse spatial resolution, limiting their use in regional studies, or sparse temporal coverage, which prevents the analysis of continuous long-term ecological patterns.",
+    "method": "We propose a statistical downscaling toolkit using a perfect prognosis approach with Generalized Linear Models to generate fine-resolution, long-term climate reconstructions by creating a transfer function between coarse-resolution climate simulations and fine-resolution historical data.",
+    "task": "The task is to downscale coarse-resolution climate datasets for the Western Mediterranean from 22 ka BP to 2100 using a new R-based toolkit, creating a fine-resolution climate dataset for long-term ecological studies.",
+    "model": [
+        "CESM1-CAM5",
+        "CSIRO-Mk3-6-0",
+        "IPSL-CM5A-MR"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/term",
+            "display_name": "Term (time)",
+            "score": 0.7219425439834595
+        },
+        {
+            "id": "https://openalex.org/keywords/ecology",
+            "display_name": "Ecology",
+            "score": 0.705123782157898
+        },
+        {
+            "id": "https://openalex.org/keywords/mediterranean-climate",
+            "display_name": "Mediterranean climate",
+            "score": 0.6583604216575623
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.4972248375415802
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.49046704173088074
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.4763520061969757
+        },
+        {
+            "id": "https://openalex.org/keywords/biology",
+            "display_name": "Biology",
+            "score": 0.17820048332214355
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C61797465",
+            "wikidata": "https://www.wikidata.org/wiki/Q1188986",
+            "display_name": "Term (time)",
+            "level": 2,
+            "score": 0.7219425439834595
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.705123782157898
+        },
+        {
+            "id": "https://openalex.org/C4646841",
+            "wikidata": "https://www.wikidata.org/wiki/Q13996",
+            "display_name": "Mediterranean climate",
+            "level": 2,
+            "score": 0.6583604216575623
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.4972248375415802
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.49046704173088074
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.4763520061969757
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.17820048332214355
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C62520636",
+            "wikidata": "https://www.wikidata.org/wiki/Q944",
+            "display_name": "Quantum mechanics",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Simple regression model (spatial point A)",
+            "observational_dataset": "UERRA",
+            "evaluation_metric": "R-squared",
+            "result": "0.86"
+        },
+        {
+            "model": "Simple regression model (spatial point A)",
+            "observational_dataset": "UERRA",
+            "evaluation_metric": "p-value",
+            "result": "< 2.2e-16"
+        },
+        {
+            "model": "Simple regression model (spatial point B)",
+            "observational_dataset": "UERRA",
+            "evaluation_metric": "R-squared",
+            "result": "0.81"
+        },
+        {
+            "model": "Simple regression model (spatial point B)",
+            "observational_dataset": "UERRA",
+            "evaluation_metric": "p-value",
+            "result": "< 2.2e-16"
+        }
+    ],
+    "innovation": "This paper presents a replicable R-based toolkit and a high-resolution (11x11 km, monthly) downscaled climate dataset for the Western Mediterranean, providing continuous data from 22,000 years BP to 2100 to support long-term ecological and paleoclimatic research.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "PMIP",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "GCM Simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CMIP",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "GCM Simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "GCM Simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Ecoclimate",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "PMIP3",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Ecoclimate",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CMIP5",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA-TraCE21k",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "TraCE-21ka",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CHELSA-TraCE21k",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CHELSA V1.2",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PaleoClim",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CHELSA",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PaleoClim",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Paleoview",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PaleoView",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "TraCE-21ka",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CRU Ts4.0",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "JRA55",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "WorldClim",
+            "target_entity_type": "Source",
+            "paragraph": "Table 1. Description of several climate products in raster format at large/global scale publicly available, including their spatial extent, their finest spatial resolution, their temporal coverage and resolution, their data origin, and data source, and whether they are derived products. *Global extent except the Antartica; ** depending on time period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Community Climate System Model version 3",
+            "target_entity_type": "Source",
+            "paragraph": "Similarly, the TraCE-21ka project used a coupled atmosphere-ocean GCM (Community Climate System Model version 3) to estimate global monthly climate data since the LGM, providing a foundation for other projects aiming to increase spatial resolution (e.g., PaleoView, CHELSA-TraCE21k) or the number of variables available (e.g., CHELSA-TraCE21k).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "TraCE-21ka",
+            "target_entity_type": "Source",
+            "paragraph": "It was subsequently used to downscale monthly climate reconstructions from the LGM (22 ka BP; 1000 years before the end of the LGM) to future projections (up to 2100 cal years), using data from the TraCE-21ka project, the Coupled Model Intercomparison Project 5 (CMIP5), and the UERRA reanalysis project. This process yielded a high-resolution dataset for the Western Mediterranean region, both spatially and temporally (DS-TraCE-21ka).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CMIP5",
+            "target_entity_type": "Source",
+            "paragraph": "It was subsequently used to downscale monthly climate reconstructions from the LGM (22 ka BP; 1000 years before the end of the LGM) to future projections (up to 2100 cal years), using data from the TraCE-21ka project, the Coupled Model Intercomparison Project 5 (CMIP5), and the UERRA reanalysis project. This process yielded a high-resolution dataset for the Western Mediterranean region, both spatially and temporally (DS-TraCE-21ka).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "UERRA",
+            "target_entity_type": "Source",
+            "paragraph": "It was subsequently used to downscale monthly climate reconstructions from the LGM (22 ka BP; 1000 years before the end of the LGM) to future projections (up to 2100 cal years), using data from the TraCE-21ka project, the Coupled Model Intercomparison Project 5 (CMIP5), and the UERRA reanalysis project. This process yielded a high-resolution dataset for the Western Mediterranean region, both spatially and temporally (DS-TraCE-21ka).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UERRA",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "UERRA-HARMONIE",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The project provides reanalysis data for Europe and North Africa from two different systems (UERRA-HARMONIE and MESCAN-SURFEX) that produce data in the Lambert Conformal Conic Grid at a temporal resolution of six hours and two spatial resolutions: The UERRA-HARMONIE system provides data at a resolution of 11 km \u00d7 11 km, while the MESCAN-SURFEX system offers data at a resolution of 5.5 km \u00d7 5.5 km.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UERRA",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "MESCAN-SURFEX",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The project provides reanalysis data for Europe and North Africa from two different systems (UERRA-HARMONIE and MESCAN-SURFEX) that produce data in the Lambert Conformal Conic Grid at a temporal resolution of six hours and two spatial resolutions: The UERRA-HARMONIE system provides data at a resolution of 11 km \u00d7 11 km, while the MESCAN-SURFEX system offers data at a resolution of 5.5 km \u00d7 5.5 km.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CESM1-CAM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CAM5",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Table 2. CMIP5 models and the institutions that provided model output used in this study. [Row in table: Model: Community Earth System Model, version 1 - Community Atmosphere Model, version 5 (CESM1-CAM5)]",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM1-CAM5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "National Science Foundation",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. CMIP5 models and the institutions that provided model output used in this study. [Row in table: Model: Community Earth System Model, version 1 - Community Atmosphere Model, version 5 (CESM1-CAM5), Institution: National Science Foundation, Department of Energy, National Center for Atmospheric Research (NSF-DOE-NCAR)]",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM1-CAM5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Department of Energy",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. CMIP5 models and the institutions that provided model output used in this study. [Row in table: Model: Community Earth System Model, version 1 - Community Atmosphere Model, version 5 (CESM1-CAM5), Institution: National Science Foundation, Department of Energy, National Center for Atmospheric Research (NSF-DOE-NCAR)]",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM1-CAM5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "National Center for Atmospheric Research",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. CMIP5 models and the institutions that provided model output used in this study. [Row in table: Model: Community Earth System Model, version 1 - Community Atmosphere Model, version 5 (CESM1-CAM5), Institution: National Science Foundation, Department of Energy, National Center for Atmospheric Research (NSF-DOE-NCAR)]",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CSIRO-Mk3-6-0",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Commonwealth Scientific and Industrial Research Organisation - Queensland Climate Change Centre of Excellence",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. CMIP5 models and the institutions that provided model output used in this study. [Row in table: Model: The Commonwealth Scientific and Industrial Research Organisation Mark version 3.6.0 (CSIRO-Mk3-6-0), Institution: Commonwealth Scientific and Industrial Research Organisation - Queensland Climate Change Centre of Excellence (CSIRO-QCCCE)]",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-MR",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "Institut Pierre-Simon Laplace",
+            "target_entity_type": "Institute",
+            "paragraph": "Table 2. CMIP5 models and the institutions that provided model output used in this study. [Row in table: Model: Institut Pierre Simon Laplace Climate Model, version 5 A, Medium Resolution (IPSL-CM5A-MR), Institution: Institut Pierre-Simon Laplace (IPSL)]",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM1-CAM5",
+            "source_entity_type": "Source",
+            "relation": "BELONGS_TO_MIP_ERA",
+            "target_entity_instance": "CMIP5",
+            "target_entity_type": "MIPEra",
+            "paragraph": "The future climate data were obtained from the CMIP5 multi-model ensemble\u00b3\u00b9, which are accessible from a variety of sources, including https://pcmdi.llnl.gov/mips/cmip5/ and the Climate Data Store. The CMIP5 data were obtained for two distinct time periods... Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CSIRO-Mk3-6-0",
+            "source_entity_type": "Source",
+            "relation": "BELONGS_TO_MIP_ERA",
+            "target_entity_instance": "CMIP5",
+            "target_entity_type": "MIPEra",
+            "paragraph": "The future climate data were obtained from the CMIP5 multi-model ensemble\u00b3\u00b9, which are accessible from a variety of sources, including https://pcmdi.llnl.gov/mips/cmip5/ and the Climate Data Store. The CMIP5 data were obtained for two distinct time periods... Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-MR",
+            "source_entity_type": "Source",
+            "relation": "BELONGS_TO_MIP_ERA",
+            "target_entity_instance": "CMIP5",
+            "target_entity_type": "MIPEra",
+            "paragraph": "The future climate data were obtained from the CMIP5 multi-model ensemble\u00b3\u00b9, which are accessible from a variety of sources, including https://pcmdi.llnl.gov/mips/cmip5/ and the Climate Data Store. The CMIP5 data were obtained for two distinct time periods... Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM1-CAM5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP2.6",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM1-CAM5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM1-CAM5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP6.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM1-CAM5",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CSIRO-Mk3-6-0",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP2.6",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CSIRO-Mk3-6-0",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CSIRO-Mk3-6-0",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP6.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CSIRO-Mk3-6-0",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-MR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP2.6",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-MR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-MR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP6.0",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5A-MR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "RCP8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Despite the availability of data from multiple GCMs within the CMIP5 datasets, only three models (i.e., CESM1-CAM5, CSIRO-Mk3-6-0 and IPSL-CM5A-MR; see Table 2) possessed all the selected variables for all four representative pathways (RCPs; RCP2.6, RCP4.5, RCP6.0 and RCP8.5).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "maximum temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The variables included in the dataset are: maximum temperature (\u00b0C), minimum temperature (\u00b0C), average temperature (\u00b0C), precipitation (mm), wind speed (m/s), relative air humidity (percent), and cloud cover (fraction).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "minimum temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The variables included in the dataset are: maximum temperature (\u00b0C), minimum temperature (\u00b0C), average temperature (\u00b0C), precipitation (mm), wind speed (m/s), relative air humidity (percent), and cloud cover (fraction).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "average temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The variables included in the dataset are: maximum temperature (\u00b0C), minimum temperature (\u00b0C), average temperature (\u00b0C), precipitation (mm), wind speed (m/s), relative air humidity (percent), and cloud cover (fraction).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "The variables included in the dataset are: maximum temperature (\u00b0C), minimum temperature (\u00b0C), average temperature (\u00b0C), precipitation (mm), wind speed (m/s), relative air humidity (percent), and cloud cover (fraction).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "wind speed",
+            "target_entity_type": "Variable",
+            "paragraph": "The variables included in the dataset are: maximum temperature (\u00b0C), minimum temperature (\u00b0C), average temperature (\u00b0C), precipitation (mm), wind speed (m/s), relative air humidity (percent), and cloud cover (fraction).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "relative air humidity",
+            "target_entity_type": "Variable",
+            "paragraph": "The variables included in the dataset are: maximum temperature (\u00b0C), minimum temperature (\u00b0C), average temperature (\u00b0C), precipitation (mm), wind speed (m/s), relative air humidity (percent), and cloud cover (fraction).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "cloud cover",
+            "target_entity_type": "Variable",
+            "paragraph": "The variables included in the dataset are: maximum temperature (\u00b0C), minimum temperature (\u00b0C), average temperature (\u00b0C), precipitation (mm), wind speed (m/s), relative air humidity (percent), and cloud cover (fraction).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "SAMPLED_AT_FREQUENCY",
+            "target_entity_instance": "monthly",
+            "target_entity_type": "Frequency",
+            "paragraph": "It provides monthly climate data since 22 ka BP up to the year 2100.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DS-TraCE-21ka",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "11 x 11 km",
+            "target_entity_type": "Resolution",
+            "paragraph": "All variables are presented at a spatial resolution of 11 \u00d7 11 km, ensuring high-resolution data for regional and local-scale analyses.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Western Mediterranean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "dsclim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "dsclimtools",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "General Circulation Models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "GCMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Departamento de Bot\u00e1nica, Ecolog\u00eda y Fisiolog\u00eda Vegetal. Universidad de C\u00f3rdoba",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "C\u00f3rdoba",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Spain",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Departamento de Bot\u00e1nica. Universidad de Granada",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Granada",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "PMIP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "CMIP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "TraCE-21ka",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CRU-TS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5-Land",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WorldClim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Ecoclimate",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CHELSA-TraCE21k",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PaleoClim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PaleoView",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "E-OBS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TerraClimate",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "6ka",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "21ka",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "GCM Simulation",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "PMIP3",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CHELSA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JRA55",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Last Glacial Maximum",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "LGM",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "mid-Holocene",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Paleo Model Intercomparison Project",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Community Climate System Model version 3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project 5",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "UERRA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "DS-TraCE-21ka",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "maximum temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "minimum temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "average temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative air humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TraCE-21ka paleoclimatic simulation",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "T31_gx3 grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3.75\u00b0 \u00d7 3.75\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "UERRA project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "UERRA-HARMONIE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MESCAN-SURFEX",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Lambert Conformal Conic Grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "six hours",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "11 km \u00d7 11 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "5.5 km \u00d7 5.5 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Community Earth System Model, version 1 - Community Atmosphere Model, version 5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM1-CAM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "The Commonwealth Scientific and Industrial Research Organisation Mark version 3.6.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CSIRO-Mk3-6-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Institut Pierre Simon Laplace Climate Model, version 5 A, Medium Resolution",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM5A-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "National Science Foundation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Department of Energy",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Center for Atmospheric Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NSF-DOE-NCAR",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Commonwealth Scientific and Industrial Research Organisation - Queensland Climate Change Centre of Excellence",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CSIRO-QCCCE",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institut Pierre-Simon Laplace",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IPSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CMIP5 multi-model ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "RCP2.6",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "RCP4.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "RCP6.0",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "RCP8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "skewness of bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "30 arc sec",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Southern Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "11 \u00d7 11 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "mean bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "cld",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hurs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tas",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tasmax",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tasmin",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wss",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pr",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rcp2.6",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "rcp4.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "rcp6.0",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "rcp8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Rif Mountains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Morocco",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "World Climate Research Programme",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "U.S. Department of Energy",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Program for Climate Model Diagnosis and Intercomparison",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Global Organization for Earth System Science Portals",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of C\u00f3rdoba",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Iberian Peninsula",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northern Levant",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Weather stations",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Mediterranean",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W3037869374",
+        "https://openalex.org/W3007531900",
+        "https://openalex.org/W2039268927",
+        "https://openalex.org/W3209942122",
+        "https://openalex.org/W2148736789",
+        "https://openalex.org/W4211031645",
+        "https://openalex.org/W1970631545",
+        "https://openalex.org/W1950936206",
+        "https://openalex.org/W4210795151",
+        "https://openalex.org/W2784611995",
+        "https://openalex.org/W2515706791",
+        "https://openalex.org/W2111586759",
+        "https://openalex.org/W2003828079",
+        "https://openalex.org/W2162730033",
+        "https://openalex.org/W1749426142",
+        "https://openalex.org/W2981565417",
+        "https://openalex.org/W1952970230",
+        "https://openalex.org/W2463620791",
+        "https://openalex.org/W2134197702",
+        "https://openalex.org/W2110060010",
+        "https://openalex.org/W1994680616",
+        "https://openalex.org/W1743197635",
+        "https://openalex.org/W1986790048",
+        "https://openalex.org/W1927219369",
+        "https://openalex.org/W3128197957",
+        "https://openalex.org/W4226145038",
+        "https://openalex.org/W6949252602",
+        "https://openalex.org/W6963976559",
+        "https://openalex.org/W2024966118",
+        "https://openalex.org/W2893189831",
+        "https://openalex.org/W1982684643",
+        "https://openalex.org/W826610098",
+        "https://openalex.org/W6930635754"
+    ]
+}

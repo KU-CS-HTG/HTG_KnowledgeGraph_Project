@@ -1,0 +1,1623 @@
+{
+    "uri": "https://openalex.org/W7152331573",
+    "title": "IPSL-AID: Generative Diffusion Models for Climate Downscaling from Global to Regional Scales",
+    "venue": {
+        "name": "arXiv (Cornell University)",
+        "id": "https://openalex.org/S4306400194",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5099098848",
+            "display_name": "Kishanthan Kingston",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5133165211",
+            "display_name": "Olivier Boucher",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5133152123",
+            "display_name": "Freddy Bouchet",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5128978288",
+            "display_name": "Pierre Chapel",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5133173280",
+            "display_name": "Rosemary Eade",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5133121747",
+            "display_name": "Jean-Francois Lamarque",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5008759934",
+            "display_name": "Redouane Lguensat",
+            "orcid": "https://orcid.org/0000-0003-0226-9057"
+        },
+        {
+            "id": "https://openalex.org/A5012323326",
+            "display_name": "Kazem Ardaneh",
+            "orcid": "https://orcid.org/0000-0003-0473-6907"
+        }
+    ],
+    "doi": null,
+    "abstract": "Effective adaptation and mitigation strategies for climate change require high-resolution projections to inform strategic decision-making. Conventional global climate models, which typically operate at resolutions of 150 to 200 kilometers, lack the capacity to represent essential regional processes. IPSL-AID is a global to regional downscaling tool based on a denoising diffusion probabilistic model designed to address this limitation. Trained on ERA5 reanalysis data, it generates 0.25 degree resolution fields for temperature, wind, and precipitation using coarse inputs and their spatiotemporal context. It also models probability distributions of fine-scale features to produce plausible scenarios for uncertainty quantification. The model accurately reconstructs statistical distributions, including extreme events, power spectra, and spatial structures. This work highlights the potential of generative diffusion models for efficient climate downscaling with uncertainty",
+    "field": "Climate downscaling",
+    "problem": "Conventional global climate models have coarse resolutions insufficient for regional analysis, while existing downscaling methods are often computationally expensive, deterministic, lack robust uncertainty quantification, or are not generalizable to new geographic areas without retraining.",
+    "method": "We propose a generative downscaling tool, IPSL-AID, using a denoising diffusion probabilistic model and random block sampling to generate high-resolution fields of temperature, wind, and precipitation from coarse global inputs, enabling application to any region without retraining.",
+    "task": "The task is to perform global-to-regional climate downscaling for temperature, wind, and precipitation using a generative diffusion model that produces high-resolution, plausible scenarios and quantifies uncertainty.",
+    "model": [
+        "IPSL-AID",
+        "Pangu-Weather",
+        "GraphCast",
+        "FourCastNet",
+        "CorrDiff"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.9761000275611877
+        },
+        {
+            "id": "https://openalex.org/keywords/probabilistic-logic",
+            "display_name": "Probabilistic logic",
+            "score": 0.6269999742507935
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5670999884605408
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.5648999810218811
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.5356000065803528
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-extremes",
+            "display_name": "Climate extremes",
+            "score": 0.43230000138282776
+        },
+        {
+            "id": "https://openalex.org/keywords/statistical-model",
+            "display_name": "Statistical model",
+            "score": 0.4018999934196472
+        },
+        {
+            "id": "https://openalex.org/keywords/general-circulation-model",
+            "display_name": "General Circulation Model",
+            "score": 0.38420000672340393
+        },
+        {
+            "id": "https://openalex.org/keywords/scale",
+            "display_name": "Scale (ratio)",
+            "score": 0.3750999867916107
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.9761000275611877
+        },
+        {
+            "id": "https://openalex.org/C49937458",
+            "wikidata": "https://www.wikidata.org/wiki/Q2599292",
+            "display_name": "Probabilistic logic",
+            "level": 2,
+            "score": 0.6269999742507935
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5670999884605408
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.5648999810218811
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5554999709129333
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.5356000065803528
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5221999883651733
+        },
+        {
+            "id": "https://openalex.org/C2993643576",
+            "wikidata": "https://www.wikidata.org/wiki/Q1277161",
+            "display_name": "Climate extremes",
+            "level": 3,
+            "score": 0.43230000138282776
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4180000126361847
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.4146000146865845
+        },
+        {
+            "id": "https://openalex.org/C114289077",
+            "wikidata": "https://www.wikidata.org/wiki/Q3284399",
+            "display_name": "Statistical model",
+            "level": 2,
+            "score": 0.4018999934196472
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.38420000672340393
+        },
+        {
+            "id": "https://openalex.org/C2778755073",
+            "wikidata": "https://www.wikidata.org/wiki/Q10858537",
+            "display_name": "Scale (ratio)",
+            "level": 2,
+            "score": 0.3750999867916107
+        },
+        {
+            "id": "https://openalex.org/C69357855",
+            "wikidata": "https://www.wikidata.org/wiki/Q163214",
+            "display_name": "Diffusion",
+            "level": 2,
+            "score": 0.3458000123500824
+        },
+        {
+            "id": "https://openalex.org/C158709400",
+            "wikidata": "https://www.wikidata.org/wiki/Q3578586",
+            "display_name": "Spatial ecology",
+            "level": 2,
+            "score": 0.33889999985694885
+        },
+        {
+            "id": "https://openalex.org/C96240277",
+            "wikidata": "https://www.wikidata.org/wiki/Q5333237",
+            "display_name": "Ecological forecasting",
+            "level": 4,
+            "score": 0.3237999975681305
+        },
+        {
+            "id": "https://openalex.org/C107673813",
+            "wikidata": "https://www.wikidata.org/wiki/Q812534",
+            "display_name": "Bayesian probability",
+            "level": 2,
+            "score": 0.3228999972343445
+        },
+        {
+            "id": "https://openalex.org/C122282355",
+            "wikidata": "https://www.wikidata.org/wiki/Q7246855",
+            "display_name": "Probabilistic forecasting",
+            "level": 3,
+            "score": 0.31859999895095825
+        },
+        {
+            "id": "https://openalex.org/C139807058",
+            "wikidata": "https://www.wikidata.org/wiki/Q352374",
+            "display_name": "Adaptation (eye)",
+            "level": 2,
+            "score": 0.30809998512268066
+        },
+        {
+            "id": "https://openalex.org/C18762648",
+            "wikidata": "https://www.wikidata.org/wiki/Q42213",
+            "display_name": "Work (physics)",
+            "level": 2,
+            "score": 0.30469998717308044
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.28700000047683716
+        },
+        {
+            "id": "https://openalex.org/C2777489503",
+            "wikidata": "https://www.wikidata.org/wiki/Q7698936",
+            "display_name": "Temporal scales",
+            "level": 2,
+            "score": 0.28450000286102295
+        },
+        {
+            "id": "https://openalex.org/C32230216",
+            "wikidata": "https://www.wikidata.org/wiki/Q7882499",
+            "display_name": "Uncertainty quantification",
+            "level": 2,
+            "score": 0.28040000796318054
+        },
+        {
+            "id": "https://openalex.org/C96608239",
+            "wikidata": "https://www.wikidata.org/wiki/Q1199823",
+            "display_name": "Statistical power",
+            "level": 2,
+            "score": 0.27900001406669617
+        },
+        {
+            "id": "https://openalex.org/C167966045",
+            "wikidata": "https://www.wikidata.org/wiki/Q5532625",
+            "display_name": "Generative model",
+            "level": 3,
+            "score": 0.2773999869823456
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.2678999900817871
+        },
+        {
+            "id": "https://openalex.org/C149782125",
+            "wikidata": "https://www.wikidata.org/wiki/Q160039",
+            "display_name": "Econometrics",
+            "level": 1,
+            "score": 0.2671000063419342
+        },
+        {
+            "id": "https://openalex.org/C94747663",
+            "wikidata": "https://www.wikidata.org/wiki/Q7574086",
+            "display_name": "Spatial variability",
+            "level": 2,
+            "score": 0.26460000872612
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 90th quantile",
+            "result": "300.09"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 90th quantile",
+            "result": "300.07"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 90th quantile",
+            "result": "300.08"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 90th quantile",
+            "result": "300.01"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 95th quantile",
+            "result": "301.20"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 95th quantile",
+            "result": "301.17"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 95th quantile",
+            "result": "301.14"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 95th quantile",
+            "result": "300.97"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 97.5th quantile",
+            "result": "302.57"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 97.5th quantile",
+            "result": "302.57"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 97.5th quantile",
+            "result": "302.52"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 97.5th quantile",
+            "result": "302.13"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 99th quantile",
+            "result": "306.40"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 99th quantile",
+            "result": "306.41"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 99th quantile",
+            "result": "306.35"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 99th quantile",
+            "result": "305.55"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 99.5th quantile",
+            "result": "309.21"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 99.5th quantile",
+            "result": "309.21"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 99.5th quantile",
+            "result": "309.16"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "T2m (K) at 99.5th quantile",
+            "result": "308.30"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 90th quantile",
+            "result": "7.61"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 90th quantile",
+            "result": "7.60"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 90th quantile",
+            "result": "7.56"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 90th quantile",
+            "result": "7.09"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 95th quantile",
+            "result": "10.24"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 95th quantile",
+            "result": "10.24"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 95th quantile",
+            "result": "10.19"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 95th quantile",
+            "result": "9.71"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 97.5th quantile",
+            "result": "12.33"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 97.5th quantile",
+            "result": "12.33"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 97.5th quantile",
+            "result": "12.27"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 97.5th quantile",
+            "result": "11.77"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 99th quantile",
+            "result": "14.48"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 99th quantile",
+            "result": "14.47"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 99th quantile",
+            "result": "14.40"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 99th quantile",
+            "result": "13.85"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 99.5th quantile",
+            "result": "15.81"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 99.5th quantile",
+            "result": "15.80"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 99.5th quantile",
+            "result": "15.72"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10U (ms-1) at 99.5th quantile",
+            "result": "15.11"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 90th quantile",
+            "result": "6.10"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 90th quantile",
+            "result": "6.09"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 90th quantile",
+            "result": "6.06"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 90th quantile",
+            "result": "5.64"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 95th quantile",
+            "result": "7.93"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 95th quantile",
+            "result": "7.91"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 95th quantile",
+            "result": "7.89"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 95th quantile",
+            "result": "7.31"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 97.5th quantile",
+            "result": "9.60"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 97.5th quantile",
+            "result": "9.57"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 97.5th quantile",
+            "result": "9.55"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 97.5th quantile",
+            "result": "8.82"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 99th quantile",
+            "result": "11.62"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 99th quantile",
+            "result": "11.58"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 99th quantile",
+            "result": "11.56"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 99th quantile",
+            "result": "10.66"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 99.5th quantile",
+            "result": "13.04"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 99.5th quantile",
+            "result": "13.00"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 99.5th quantile",
+            "result": "12.97"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "10V (ms-1) at 99.5th quantile",
+            "result": "11.94"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 90th quantile",
+            "result": "0.20"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 90th quantile",
+            "result": "0.21"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 90th quantile",
+            "result": "0.21"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 90th quantile",
+            "result": "0.27"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 95th quantile",
+            "result": "0.47"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 95th quantile",
+            "result": "0.49"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 95th quantile",
+            "result": "0.49"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 95th quantile",
+            "result": "0.49"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 97.5th quantile",
+            "result": "0.92"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 97.5th quantile",
+            "result": "0.94"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 97.5th quantile",
+            "result": "0.89"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 97.5th quantile",
+            "result": "0.75"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 99th quantile",
+            "result": "1.71"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 99th quantile",
+            "result": "1.73"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 99th quantile",
+            "result": "1.56"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 99th quantile",
+            "result": "1.13"
+        },
+        {
+            "model": "Truth",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 99.5th quantile",
+            "result": "2.43"
+        },
+        {
+            "model": "Diffusion model",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 99.5th quantile",
+            "result": "2.45"
+        },
+        {
+            "model": "U-Net",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 99.5th quantile",
+            "result": "2.15"
+        },
+        {
+            "model": "CU input",
+            "observational_dataset": "Truth",
+            "evaluation_metric": "TP (mm hr-1) at 99.5th quantile",
+            "result": "1.45"
+        }
+    ],
+    "innovation": "This paper introduces IPSL-AID, a probabilistic diffusion model trained with a novel random block sampling strategy, enabling a single global model to generate high-resolution, uncertainty-aware climate scenarios for any arbitrary region on Earth without requiring retraining.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "2-m temperature (T2m)",
+            "target_entity_type": "Variable",
+            "paragraph": "The model is trained using four ERA5 variables (Hersbach et al., 2020): 2-m temperature (T2m), 10-m zonal wind (10U), 10-m meridional wind (10V), and precipitation (TP), at 0.25\u0159 resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "10-m zonal wind (10U)",
+            "target_entity_type": "Variable",
+            "paragraph": "The model is trained using four ERA5 variables (Hersbach et al., 2020): 2-m temperature (T2m), 10-m zonal wind (10U), 10-m meridional wind (10V), and precipitation (TP), at 0.25\u0159 resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "10-m meridional wind (10V)",
+            "target_entity_type": "Variable",
+            "paragraph": "The model is trained using four ERA5 variables (Hersbach et al., 2020): 2-m temperature (T2m), 10-m zonal wind (10U), 10-m meridional wind (10V), and precipitation (TP), at 0.25\u0159 resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation (TP)",
+            "target_entity_type": "Variable",
+            "paragraph": "The model is trained using four ERA5 variables (Hersbach et al., 2020): 2-m temperature (T2m), 10-m zonal wind (10U), 10-m meridional wind (10V), and precipitation (TP), at 0.25\u0159 resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.25 deg",
+            "target_entity_type": "Resolution",
+            "paragraph": "Trained on ERA5 reanalysis data, it generates 0.25\u0159 resolution fields for temperature, wind, and precipitation using coarse inputs and their spatiotemporal context.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.25 deg",
+            "target_entity_type": "Resolution",
+            "paragraph": "The model is trained using four ERA5 variables (Hersbach et al., 2020): 2-m temperature (T2m), 10-m zonal wind (10U), 10-m meridional wind (10V), and precipitation (TP), at 0.25\u0159 resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CorrDiff",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "2 km",
+            "target_entity_type": "Resolution",
+            "paragraph": "CorrDiff, introduced by Mardani et al. (2025), is a residual corrective diffusion model that downscales 25 km ERA5 inputs to 2 km resolution over Taiwan, demonstrating strong performance in reconstructing spatial spectra and synthesizing radar reflectivity.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "U-Net",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The EDM preconditioning architecture employs a U-Net-based denoising network, adapted from the work of Dhariwal & Nichol (2021).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "U-Net",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "encoder-decoder structure with symmetric downsampling and upsampling paths",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "It utilizes an encoder-decoder structure with symmetric downsampling and upsampling paths, incorporating multi-head self-attention blocks at selected spatial resolutions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "U-Net",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "base channel count of 128",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The U-Net configuration includes a base channel count of Cbase = 128, channel multipliers per resolution of [1, 2, 3, 4], and three residual blocks per resolution. Self-attention mechanisms are implemented at resolutions [32, 16, 8] with a dropout probability of p = 0.10. The embedding dimension multiplier is defined as Cemb = 4 \u00d7 Cbase. All convolutional and linear layers are initialized",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "U-Net",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "channel multipliers per resolution of [1, 2, 3, 4]",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The U-Net configuration includes a base channel count of Cbase = 128, channel multipliers per resolution of [1, 2, 3, 4], and three residual blocks per resolution. Self-attention mechanisms are implemented at resolutions [32, 16, 8] with a dropout probability of p = 0.10. The embedding dimension multiplier is defined as Cemb = 4 \u00d7 Cbase. All convolutional and linear layers are initialized",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "U-Net",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "three residual blocks per resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The U-Net configuration includes a base channel count of Cbase = 128, channel multipliers per resolution of [1, 2, 3, 4], and three residual blocks per resolution. Self-attention mechanisms are implemented at resolutions [32, 16, 8] with a dropout probability of p = 0.10. The embedding dimension multiplier is defined as Cemb = 4 \u00d7 Cbase. All convolutional and linear layers are initialized",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "U-Net",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Self-attention mechanisms at resolutions [32, 16, 8]",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The U-Net configuration includes a base channel count of Cbase = 128, channel multipliers per resolution of [1, 2, 3, 4], and three residual blocks per resolution. Self-attention mechanisms are implemented at resolutions [32, 16, 8] with a dropout probability of p = 0.10. The embedding dimension multiplier is defined as Cemb = 4 \u00d7 Cbase. All convolutional and linear layers are initialized",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Elucidated Diffusion Model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "DDPM formulations, this work focuses on the Elucidated Diffusion Model (EDM). The core architecture is a U-Net implemented within the EDM framework.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "random block sampling strategy",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "First, we propose a random block sampling strategy that enables training the model on global data with limited GPU resources, thereby delivering a model that can be used for any arbitrary region without retraining, representing a step toward foundation models for downscaling.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "U-Net baseline",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "L2 loss function",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We trained a U-Net model as a baseline using the L2 loss function to predict the HR fields, using the network described in Section A.2.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "92,140,548 trainable parameters",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The diffusion model has 92,140,548 trainable parameters, compared with 92,135,940 for the U-Net baseline.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "U-Net baseline",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "92,135,940 trainable parameters",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The diffusion model has 92,140,548 trainable parameters, compared with 92,135,940 for the U-Net baseline.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The model is evaluated using a set of metrics and spatial statistical diagnostics to assess both the pointwise accuracy and the distributional fidelity of the predictions. The primary metrics include the Mean Absolute Error MAE = * =1|yn - \u0177n|, the Normalized MAE NMAE = =1|yn - n/2-1yn, the Root Mean Square Error RMSE = =(yn - \u00c2n)2, the coefficient of determination R2 = 1 \u2013 2-1 (yn - \u00c2n)2/2=(yn - y)\u00b2, and the Continuous Ranked Probability Score CRPS(Fn, yn) = f d\u0177 (Fn(y) \u2013 1 (\u0177 \u2013 yn))2.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Normalized Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The model is evaluated using a set of metrics and spatial statistical diagnostics to assess both the pointwise accuracy and the distributional fidelity of the predictions. The primary metrics include the Mean Absolute Error MAE = * =1|yn - \u0177n|, the Normalized MAE NMAE = =1|yn - n/2-1yn, the Root Mean Square Error RMSE = =(yn - \u00c2n)2, the coefficient of determination R2 = 1 \u2013 2-1 (yn - \u00c2n)2/2=(yn - y)\u00b2, and the Continuous Ranked Probability Score CRPS(Fn, yn) = f d\u0177 (Fn(y) \u2013 1 (\u0177 \u2013 yn))2.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Root Mean Square Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The model is evaluated using a set of metrics and spatial statistical diagnostics to assess both the pointwise accuracy and the distributional fidelity of the predictions. The primary metrics include the Mean Absolute Error MAE = * =1|yn - \u0177n|, the Normalized MAE NMAE = =1|yn - n/2-1yn, the Root Mean Square Error RMSE = =(yn - \u00c2n)2, the coefficient of determination R2 = 1 \u2013 2-1 (yn - \u00c2n)2/2=(yn - y)\u00b2, and the Continuous Ranked Probability Score CRPS(Fn, yn) = f d\u0177 (Fn(y) \u2013 1 (\u0177 \u2013 yn))2.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "coefficient of determination R2",
+            "target_entity_type": "Metric",
+            "paragraph": "The model is evaluated using a set of metrics and spatial statistical diagnostics to assess both the pointwise accuracy and the distributional fidelity of the predictions. The primary metrics include the Mean Absolute Error MAE = * =1|yn - \u0177n|, the Normalized MAE NMAE = =1|yn - n/2-1yn, the Root Mean Square Error RMSE = =(yn - \u00c2n)2, the coefficient of determination R2 = 1 \u2013 2-1 (yn - \u00c2n)2/2=(yn - y)\u00b2, and the Continuous Ranked Probability Score CRPS(Fn, yn) = f d\u0177 (Fn(y) \u2013 1 (\u0177 \u2013 yn))2.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Continuous Ranked Probability Score",
+            "target_entity_type": "Metric",
+            "paragraph": "The model is evaluated using a set of metrics and spatial statistical diagnostics to assess both the pointwise accuracy and the distributional fidelity of the predictions. The primary metrics include the Mean Absolute Error MAE = * =1|yn - \u0177n|, the Normalized MAE NMAE = =1|yn - n/2-1yn, the Root Mean Square Error RMSE = =(yn - \u00c2n)2, the coefficient of determination R2 = 1 \u2013 2-1 (yn - \u00c2n)2/2=(yn - y)\u00b2, and the Continuous Ranked Probability Score CRPS(Fn, yn) = f d\u0177 (Fn(y) \u2013 1 (\u0177 \u2013 yn))2.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Power Spectral Density",
+            "target_entity_type": "Metric",
+            "paragraph": "Power Spectral Density (PSD) analysis is used to evaluate the model's ability to reconstruct spatial variability across scales, from large-scale structures to smaller-scale features.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Kullback-Leibler divergence",
+            "target_entity_type": "Metric",
+            "paragraph": "Distributional consistency is further quantified using the Kullback-Leibler (KL) divergence KL(p || q) = \u222b dy p(y) log p(y)/q(y), where p and q denote the reference and predicted PDFs, respectively.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Pearson correlation coefficient",
+            "target_entity_type": "Metric",
+            "paragraph": "Additionally, the Pearson correlation coefficient pp,q = cov (p,q)/\u03c3\u03c1\u03c3\u03b1 is computed between the predicted and true fields to assess the similarity of their spatial patterns and overall structure, where p and q denote the flattened prediction and truth, respectively.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "rank histograms",
+            "target_entity_type": "Metric",
+            "paragraph": "For the diffusion model, we also evaluated rank histograms, which assess how well the predicted ensemble represents the truth, and the spread-skill ratio (SSR), which quantifies the consistency between ensemble spread and prediction error.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-AID",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "spread-skill ratio",
+            "target_entity_type": "Metric",
+            "paragraph": "For the diffusion model, we also evaluated rank histograms, which assess how well the predicted ensemble represents the truth, and the spread-skill ratio (SSR), which quantifies the consistency between ensemble spread and prediction error.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "IPSL-AID",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "denoising diffusion probabilistic model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "power spectra",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "IPSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Sorbonne University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNRS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IRD",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Climate Modeling and Analysis, LLC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Paris",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Superior, CO",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "CO",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "150-200 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "regional climate models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "RCMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Pangu-Weather",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GraphCast",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FourCastNet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CorrDiff",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "residual corrective diffusion model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "25 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "2 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Taiwan",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "radar reflectivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "continental United States",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "U-Net",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "linear interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "IPSL AI Downscaling",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "DDPMs",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "random block sampling strategy",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "variance-preserving",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "variance-expanding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Elucidated Diffusion Model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "EDM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "U-Net",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "2-m temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "T2m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "10-m zonal wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "10U",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "10-m meridional wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "10V",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TP",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1440\u00d7721",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "bilinear interpolation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "16 \u00d7 32",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "2.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "latitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "topography",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land-sea mask",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LSM",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "time embedding",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "L2 loss function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Mean Absolute Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Normalized MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "NMAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Root Mean Square Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "coefficient of determination",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "R2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Continuous Ranked Probability Score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CRPS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Power Spectral Density",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "PSD",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Probability Density Functions",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "PDFs",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Kullback-Leibler (KL) divergence",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pearson correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "rank histograms",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spread-skill ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SSR",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "10-member ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "quantilequantile analysis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "convective and localized rainfall processes",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Himalayas",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Andes",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "poles",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Intertropical Convergence Zone",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropical rainforests",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "bias correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "debiasing strategies",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "overlap-block method",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "cosine-weighted blending",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "explicit boundary regularization in the loss function",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "frequency-domain spectral loss",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "adaptive Fourier-domain filtering",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "probabilistic calibration",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "LEONARDO",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "CINECA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Italy",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "preconditioned denoising model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "U-Net-based denoising network",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "encoder-decoder structure",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "symmetric downsampling and upsampling paths",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "multi-head self-attention blocks",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Kaiming uniform initialization",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "sinusoidal positional embedding layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "SiLU activations",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "U-NetBlock",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "group normalization",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3 \u00d7 3 convolutions",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "adaptive scaling",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Self-attention",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "weighted denoising loss",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "reverse-time stochastic differential equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Euler/Heun procedure",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Amazon",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": []
+}

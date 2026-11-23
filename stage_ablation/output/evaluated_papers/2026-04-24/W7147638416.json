@@ -1,0 +1,972 @@
+{
+    "uri": "https://openalex.org/W7147638416",
+    "title": "Earth System Foundation Models for Predicting Extreme Climate Events Through Integrated Satellite, Oceanic, and Land-Surface Intelligence",
+    "venue": {
+        "name": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
+        "id": "https://openalex.org/S5407047243",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5019613463",
+            "display_name": "Murali Krishna Pasupuleti",
+            "orcid": "https://orcid.org/0009-0007-1023-7035"
+        }
+    ],
+    "doi": "https://doi.org/10.62311/nesx/rp2-30032026",
+    "abstract": "Abstract: This study investigates the scientific and operational potential of Earth system foundation models for anticipating extreme climate events through the joint assimilation and representation of atmospheric, oceanic, and land-surface information. The manuscript develops a rigorous synthesis framework built on real observational and reanalysis data sources, including ERA5, SMAP, NOAA OISST v2.1, GPM IMERG, MODIS surface products, and the NOAA IBTrACS archive. Rather than treating weather, ocean, and land processes as isolated forecasting domains, the proposed framework formalizes extreme-event prediction as a multiscale sequence-learning problem in which precursor signals propagate across coupled geophysical subsystems. Particular attention is given to rapidly intensifying tropical cyclones, compound flood events, and heat-related marine and terrestrial extremes, because these hazards expose the limits of conventional single-domain models and the benefits of cross-sphere intelligence. The methodological contribution consists of Earth system intelligence pipeline that integrates heterogeneous spatial resolutions, temporal frequencies, and physical variables into a unified tokenized representation suitable for transformer-based foundation modeling. The paper specifies real data collection procedures, harmonization rules, loss functions, and event-centric evaluation protocols using track error, anomaly reconstruction, rare-event likelihood, and warning-skill diagnostics. To maintain realism, the empirical section relies on documented public data and published benchmark outcomes from peer-reviewed or official sources rather than synthetic examples. Comparative evidence from Aurora, Pangu-Weather, GraphCast, and related systems is interpreted alongside real extreme-event indicators from Hurricane Otis (2023), the Pakistan floods (2022), and North Atlantic marine heat anomalies (2023). The results indicate that Earth system foundation models achieve meaningful gains when the representation space is informed by coupled oceanic and land-surface precursors rather than atmospheric state alone. Published evidence shows that Aurora exceeded operational baselines on 92% of high-resolution weather targets, 86% of ocean-wave targets, 74% of air-quality targets, and 100% of evaluated tropical-cyclone-track targets, while Pangu-Weather reduced 3-day and 5-day tropical-cyclone direct-position errors relative to ECMWF-HRES. Case evidence further shows that extreme events consistently emerge from interacting anomalies in sea-surface temperature, moisture availability, antecedent soil state, and circulation structure. Accordingly, the paper concludes that Earth system foundation models offer a credible pathway toward next-generation early-warning systems, provided that uncertainty quantification, interpretability, and equitable operational deployment remain central to future research. Keywords: Earth system foundation models; extreme climate events; satellite intelligence; ocean-atmosphere coupling; land-surface intelligence; tropical cyclone prediction; flood forecasting; climate AI",
+    "field": "AI for extreme climate event prediction",
+    "problem": "Existing forecasting models are limited by treating atmospheric, oceanic, and land processes in isolation, failing to integrate cross-sphere intelligence needed to predict extreme climate events that emerge from the interaction of these coupled systems.",
+    "method": "The paper proposes an Earth system foundation model that integrates heterogeneous satellite, oceanic, and land-surface data into a unified tokenized representation suitable for transformer-based modeling to predict extreme climate events.",
+    "task": "The task is to evaluate the use of Earth system foundation models for predicting extreme climate events by integrating atmospheric, oceanic, and land-surface intelligence from diverse data sources into a single, unified framework.",
+    "model": [
+        "Aurora",
+        "Pangu-Weather",
+        "GraphCast",
+        "ECMWF-HRES",
+        "ClimaX"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/earth-system-science",
+            "display_name": "Earth system science",
+            "score": 0.7206000089645386
+        },
+        {
+            "id": "https://openalex.org/keywords/data-assimilation",
+            "display_name": "Data assimilation",
+            "score": 0.5763000249862671
+        },
+        {
+            "id": "https://openalex.org/keywords/earth-observation",
+            "display_name": "Earth observation",
+            "score": 0.4388999938964844
+        },
+        {
+            "id": "https://openalex.org/keywords/foundation",
+            "display_name": "Foundation (evidence)",
+            "score": 0.42989999055862427
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4133000075817108
+        },
+        {
+            "id": "https://openalex.org/keywords/anomaly",
+            "display_name": "Anomaly (physics)",
+            "score": 0.3668000102043152
+        },
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.36419999599456787
+        },
+        {
+            "id": "https://openalex.org/keywords/representation",
+            "display_name": "Representation (politics)",
+            "score": 0.36340001225471497
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-system",
+            "display_name": "Climate system",
+            "score": 0.35850000381469727
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.7206000089645386
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.5763000249862671
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.44119998812675476
+        },
+        {
+            "id": "https://openalex.org/C39399123",
+            "wikidata": "https://www.wikidata.org/wiki/Q1348989",
+            "display_name": "Earth observation",
+            "level": 3,
+            "score": 0.4388999938964844
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.43720000982284546
+        },
+        {
+            "id": "https://openalex.org/C2780966255",
+            "wikidata": "https://www.wikidata.org/wiki/Q5474306",
+            "display_name": "Foundation (evidence)",
+            "level": 2,
+            "score": 0.42989999055862427
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4133000075817108
+        },
+        {
+            "id": "https://openalex.org/C12997251",
+            "wikidata": "https://www.wikidata.org/wiki/Q567560",
+            "display_name": "Anomaly (physics)",
+            "level": 2,
+            "score": 0.3668000102043152
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.36419999599456787
+        },
+        {
+            "id": "https://openalex.org/C2776359362",
+            "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+            "display_name": "Representation (politics)",
+            "level": 3,
+            "score": 0.36340001225471497
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.35850000381469727
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.3531999886035919
+        },
+        {
+            "id": "https://openalex.org/C186594467",
+            "wikidata": "https://www.wikidata.org/wiki/Q1429176",
+            "display_name": "Flooding (psychology)",
+            "level": 2,
+            "score": 0.3384000062942505
+        },
+        {
+            "id": "https://openalex.org/C11693305",
+            "wikidata": "https://www.wikidata.org/wiki/Q5138350",
+            "display_name": "Coastal flood",
+            "level": 4,
+            "score": 0.3352000117301941
+        },
+        {
+            "id": "https://openalex.org/C185798385",
+            "wikidata": "https://www.wikidata.org/wiki/Q1161707",
+            "display_name": "Benchmark (surveying)",
+            "level": 2,
+            "score": 0.32190001010894775
+        },
+        {
+            "id": "https://openalex.org/C74256435",
+            "wikidata": "https://www.wikidata.org/wiki/Q134052",
+            "display_name": "Flood myth",
+            "level": 2,
+            "score": 0.3199000060558319
+        },
+        {
+            "id": "https://openalex.org/C2522767166",
+            "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+            "display_name": "Data science",
+            "level": 1,
+            "score": 0.313400000333786
+        },
+        {
+            "id": "https://openalex.org/C183195422",
+            "wikidata": "https://www.wikidata.org/wiki/Q3409303",
+            "display_name": "Flood forecasting",
+            "level": 3,
+            "score": 0.29809999465942383
+        },
+        {
+            "id": "https://openalex.org/C107826830",
+            "wikidata": "https://www.wikidata.org/wiki/Q929380",
+            "display_name": "Environmental resource management",
+            "level": 1,
+            "score": 0.29190000891685486
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.29019999504089355
+        },
+        {
+            "id": "https://openalex.org/C165696696",
+            "wikidata": "https://www.wikidata.org/wiki/Q11287",
+            "display_name": "Exploit",
+            "level": 2,
+            "score": 0.2892000079154968
+        },
+        {
+            "id": "https://openalex.org/C2779962950",
+            "wikidata": "https://www.wikidata.org/wiki/Q5659376",
+            "display_name": "Harmonization",
+            "level": 2,
+            "score": 0.289000004529953
+        },
+        {
+            "id": "https://openalex.org/C205537798",
+            "wikidata": "https://www.wikidata.org/wiki/Q1277161",
+            "display_name": "Extreme weather",
+            "level": 3,
+            "score": 0.28600001335144043
+        },
+        {
+            "id": "https://openalex.org/C42475967",
+            "wikidata": "https://www.wikidata.org/wiki/Q194292",
+            "display_name": "Operations research",
+            "level": 1,
+            "score": 0.2847000062465668
+        },
+        {
+            "id": "https://openalex.org/C105339364",
+            "wikidata": "https://www.wikidata.org/wiki/Q2297740",
+            "display_name": "Software deployment",
+            "level": 2,
+            "score": 0.28290000557899475
+        },
+        {
+            "id": "https://openalex.org/C147947694",
+            "wikidata": "https://www.wikidata.org/wiki/Q837552",
+            "display_name": "Numerical weather prediction",
+            "level": 2,
+            "score": 0.2825999855995178
+        },
+        {
+            "id": "https://openalex.org/C133462117",
+            "wikidata": "https://www.wikidata.org/wiki/Q4929239",
+            "display_name": "Data collection",
+            "level": 2,
+            "score": 0.273499995470047
+        },
+        {
+            "id": "https://openalex.org/C2779662365",
+            "wikidata": "https://www.wikidata.org/wiki/Q5416694",
+            "display_name": "Event (particle physics)",
+            "level": 2,
+            "score": 0.27219998836517334
+        },
+        {
+            "id": "https://openalex.org/C60229501",
+            "wikidata": "https://www.wikidata.org/wiki/Q18822",
+            "display_name": "Global Positioning System",
+            "level": 2,
+            "score": 0.27070000767707825
+        },
+        {
+            "id": "https://openalex.org/C2777489503",
+            "wikidata": "https://www.wikidata.org/wiki/Q7698936",
+            "display_name": "Temporal scales",
+            "level": 2,
+            "score": 0.262800008058548
+        },
+        {
+            "id": "https://openalex.org/C124101348",
+            "wikidata": "https://www.wikidata.org/wiki/Q172491",
+            "display_name": "Data mining",
+            "level": 1,
+            "score": 0.25870001316070557
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.2506999969482422
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Aurora - high-resolution weather",
+            "observational_dataset": "Operational numerical weather baseline",
+            "evaluation_metric": "Percentage of targets improved",
+            "result": "92%"
+        },
+        {
+            "model": "Aurora - ocean waves",
+            "observational_dataset": "Operational wave model baseline",
+            "evaluation_metric": "Percentage of targets improved",
+            "result": "86%"
+        },
+        {
+            "model": "Aurora - air quality",
+            "observational_dataset": "Operational chemistry baseline",
+            "evaluation_metric": "Percentage of targets improved",
+            "result": "74%"
+        },
+        {
+            "model": "Aurora - tropical cyclone tracks",
+            "observational_dataset": "Seven operational centres",
+            "evaluation_metric": "Percentage of targets improved",
+            "result": "100%"
+        },
+        {
+            "model": "Pangu-Weather",
+            "observational_dataset": "IBTrACS",
+            "evaluation_metric": "3-day DPE (km)",
+            "result": "120.29"
+        },
+        {
+            "model": "Pangu-Weather",
+            "observational_dataset": "IBTrACS",
+            "evaluation_metric": "5-day DPE (km)",
+            "result": "195.65"
+        },
+        {
+            "model": "ECMWF-HRES",
+            "observational_dataset": "IBTrACS",
+            "evaluation_metric": "3-day DPE (km)",
+            "result": "162.28"
+        },
+        {
+            "model": "ECMWF-HRES",
+            "observational_dataset": "IBTrACS",
+            "evaluation_metric": "5-day DPE (km)",
+            "result": "272.10"
+        }
+    ],
+    "innovation": "This paper proposes a unified framework that advances extreme climate event prediction by using Earth system foundation models to integrate satellite, oceanic, and land-surface intelligence, treating hazards as coupled, cross-domain phenomena rather than isolated events.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "atmospheric and land-surface state variables",
+            "target_entity_type": "Variable",
+            "paragraph": "Real data collection focused on six principal sources. ERA5 supplied atmospheric and land-surface state variables at hourly resolution from 1940 onward. NOAA OISST v2.1 provided daily global sea-surface temperature and anomaly fields from September 1981 onward. NASA SMAP Level-3 soil moisture products supplied daily global land-surface moisture observations. GPM IMERG informed precipitation accumulation and flood-event characterization. MODIS land products served as contextual indicators for land-surface temperature and vegetation condition where relevant. NOAA IBTrACS provided the global best-track archive for tropical cyclone positions and intensities. These sources were selected because they represent the current backbone of reproducible Earth system intelligence workflows and are directly relevant to extreme-event precursors.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NOAA OISST v2.1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "sea-surface temperature and anomaly fields",
+            "target_entity_type": "Variable",
+            "paragraph": "Real data collection focused on six principal sources. ERA5 supplied atmospheric and land-surface state variables at hourly resolution from 1940 onward. NOAA OISST v2.1 provided daily global sea-surface temperature and anomaly fields from September 1981 onward. NASA SMAP Level-3 soil moisture products supplied daily global land-surface moisture observations. GPM IMERG informed precipitation accumulation and flood-event characterization. MODIS land products served as contextual indicators for land-surface temperature and vegetation condition where relevant. NOAA IBTrACS provided the global best-track archive for tropical cyclone positions and intensities. These sources were selected because they represent the current backbone of reproducible Earth system intelligence workflows and are directly relevant to extreme-event precursors.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NASA SMAP L3",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Surface soil moisture",
+            "target_entity_type": "Variable",
+            "paragraph": "Table 4.1. Real data sources used in the integrated Earth system intelligence framework. Dataset: NASA SMAP L3, Primary variables: Surface soil moisture, Temporal resolution: Daily, Spatial support: 36 km global, Coverage: 2015-present, Analytical role: Land-surface memory and hydrological preconditioning",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GPM IMERG",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Precipitation accumulation",
+            "target_entity_type": "Variable",
+            "paragraph": "Real data collection focused on six principal sources. ERA5 supplied atmospheric and land-surface state variables at hourly resolution from 1940 onward. NOAA OISST v2.1 provided daily global sea-surface temperature and anomaly fields from September 1981 onward. NASA SMAP Level-3 soil moisture products supplied daily global land-surface moisture observations. GPM IMERG informed precipitation accumulation and flood-event characterization. MODIS land products served as contextual indicators for land-surface temperature and vegetation condition where relevant. NOAA IBTrACS provided the global best-track archive for tropical cyclone positions and intensities. These sources were selected because they represent the current backbone of reproducible Earth system intelligence workflows and are directly relevant to extreme-event precursors.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS land products",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "land-surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Real data collection focused on six principal sources. ERA5 supplied atmospheric and land-surface state variables at hourly resolution from 1940 onward. NOAA OISST v2.1 provided daily global sea-surface temperature and anomaly fields from September 1981 onward. NASA SMAP Level-3 soil moisture products supplied daily global land-surface moisture observations. GPM IMERG informed precipitation accumulation and flood-event characterization. MODIS land products served as contextual indicators for land-surface temperature and vegetation condition where relevant. NOAA IBTrACS provided the global best-track archive for tropical cyclone positions and intensities. These sources were selected because they represent the current backbone of reproducible Earth system intelligence workflows and are directly relevant to extreme-event precursors.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS land products",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "vegetation condition",
+            "target_entity_type": "Variable",
+            "paragraph": "Real data collection focused on six principal sources. ERA5 supplied atmospheric and land-surface state variables at hourly resolution from 1940 onward. NOAA OISST v2.1 provided daily global sea-surface temperature and anomaly fields from September 1981 onward. NASA SMAP Level-3 soil moisture products supplied daily global land-surface moisture observations. GPM IMERG informed precipitation accumulation and flood-event characterization. MODIS land products served as contextual indicators for land-surface temperature and vegetation condition where relevant. NOAA IBTrACS provided the global best-track archive for tropical cyclone positions and intensities. These sources were selected because they represent the current backbone of reproducible Earth system intelligence workflows and are directly relevant to extreme-event precursors.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NOAA IBTrACS",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "tropical cyclone positions and intensities",
+            "target_entity_type": "Variable",
+            "paragraph": "Real data collection focused on six principal sources. ERA5 supplied atmospheric and land-surface state variables at hourly resolution from 1940 onward. NOAA OISST v2.1 provided daily global sea-surface temperature and anomaly fields from September 1981 onward. NASA SMAP Level-3 soil moisture products supplied daily global land-surface moisture observations. GPM IMERG informed precipitation accumulation and flood-event characterization. MODIS land products served as contextual indicators for land-surface temperature and vegetation condition where relevant. NOAA IBTrACS provided the global best-track archive for tropical cyclone positions and intensities. These sources were selected because they represent the current backbone of reproducible Earth system intelligence workflows and are directly relevant to extreme-event precursors.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Pakistan floods (2022)",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Pakistan",
+            "target_entity_type": "Country",
+            "paragraph": "The case-event matrix presented in Table 4.4 and Figure 4.3 illustrates why integrated satellite, oceanic, and land-surface intelligence is scientifically necessary. During the 2022 Pakistan floods, national rainfall in August reached 243% above average, while Balochistan and Sindh registered anomalies of 590% and 726% above average, respectively. These values indicate that the disaster was not an ordinary heavy-rain event but an extreme hydroclimatic anomaly whose interpretation requires synoptic forcing, remote moisture transport, and antecedent land response to be considered jointly.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Pakistan floods (2022)",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Balochistan",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "The case-event matrix presented in Table 4.4 and Figure 4.3 illustrates why integrated satellite, oceanic, and land-surface intelligence is scientifically necessary. During the 2022 Pakistan floods, national rainfall in August reached 243% above average, while Balochistan and Sindh registered anomalies of 590% and 726% above average, respectively. These values indicate that the disaster was not an ordinary heavy-rain event but an extreme hydroclimatic anomaly whose interpretation requires synoptic forcing, remote moisture transport, and antecedent land response to be considered jointly.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Pakistan floods (2022)",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Sindh",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "The case-event matrix presented in Table 4.4 and Figure 4.3 illustrates why integrated satellite, oceanic, and land-surface intelligence is scientifically necessary. During the 2022 Pakistan floods, national rainfall in August reached 243% above average, while Balochistan and Sindh registered anomalies of 590% and 726% above average, respectively. These values indicate that the disaster was not an ordinary heavy-rain event but an extreme hydroclimatic anomaly whose interpretation requires synoptic forcing, remote moisture transport, and antecedent land response to be considered jointly.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Pakistan floods (Aug 2022)",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Flood",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Table 4.4. Real-event precursor matrix illustrating atmosphere-ocean-land coupling in documented extremes. Event: Pakistan floods (Aug 2022), Observed data basis: GPM IMERG / rain-gauge assessments, Key real indicator: National rainfall +243%; Balochistan +590%; Sindh +726% above average, Earth-system implication: Compound flood conditions require precipitation plus antecedent land-state interpretation",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "North Atlantic marine heat anomaly (2023)",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "North Atlantic",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The 2023 North Atlantic marine heat anomaly provides the oceanic counterpart to this logic. Official summaries reported record North Atlantic warmth, and a scientific assessment documented that by August 2023 the basin was about 1.4\u00b0C warmer than the 1982\u20132011 average. Such an anomaly is large enough to alter air-sea fluxes, atmospheric moisture supply, and the energetic environment available to storms and marine heatwaves. It therefore represents precisely the kind of slow-varying precursor that should be embedded in an Earth system latent state rather than treated as an external contextual note.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hurricane Otis (2023)",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Acapulco",
+            "target_entity_type": "City",
+            "paragraph": "Hurricane Otis demonstrates the value of coupling these perspectives. Official post- event assessment reported that the cyclone reached 145-kt peak intensity and made landfall near Acapulco as a 140-kt Category 5 hurricane after intensifying by approximately 95 kt within 24 hours. NASA reporting emphasized the role of very warm sea-surface conditions, deep ocean heat, abundant moisture, and low vertical wind shear. This combination of atmospheric readiness and oceanic support is an exemplary extreme-event configuration for which integrated Earth system intelligence is indispensable. No atmospheric-state snapshot alone sufficiently explains the speed and severity of the transition.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hurricane Otis (Oct 2023)",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Cyclone",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Table 4.4. Real-event precursor matrix illustrating atmosphere-ocean-land coupling in documented extremes. Event: Hurricane Otis (Oct 2023), Observed data basis: NHC best track / satellite analysis, Key real indicator: Rapid intensification about +95 kt in 24 h; landfall intensity 140 kt, Earth-system implication: Cyclone explosiveness reflects atmosphere-ocean coupling rather than atmospheric state alone",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Aurora",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Percentage of targets improved",
+            "target_entity_type": "Metric",
+            "paragraph": "Published benchmark evidence indicates that the strongest Earth system foundation- model results are not confined to one niche application. Aurora reported improvement over operational reference systems on 92% of high-resolution weather targets, 86% of ocean-wave targets, 74% of air-quality targets, and all evaluated tropical-cyclone- track targets. These values, presented in Table 4.2 and Figure 4.1, imply that a pretrained and fine-tuned Earth system model can attain broad operational competitiveness across domains that historically required separate numerical infrastructures. From an Earth-system-science perspective, this matters because severe hazards rarely respect disciplinary boundaries: a single event can be simultaneously a weather, ocean, air-quality, and land-surface problem.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GraphCast",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Qualitative severe-event comparison",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 4.2. Benchmark summary for Earth system foundation models and related severe-event systems. Model/task: GraphCast severe-event, Reference baseline: ECMWF HRES, Metric: Qualitative severe-event comparison, Reported value: Improved, Interpretation: Official summary reports stronger guidance",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Pangu-Weather",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "DPE (km)",
+            "target_entity_type": "Metric",
+            "paragraph": "Pangu-Weather provides further quantitative support in the tropical-cyclone setting. Using IBTrACS-based evaluation over 88 named tropical cyclones in 2018, the model achieved 3-day and 5-day mean direct-position errors of 120.29 km and 195.65 km, compared with 162.28 km and 272.10 km for ECMWF-HRES. As shown in Table 4.3 and Figure 4.2, the relative advantage widens with lead time, suggesting that learned spatiotemporal structure remains informative deeper into the forecast horizon. Operationally, this is significant because even moderate reductions in position error can alter coastal warning geometry, logistical staging, and evacuation timing.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SMAP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NOAA OISST v2.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GPM IMERG",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IBTrACS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Aurora",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Pangu-Weather",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GraphCast",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECMWF-HRES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ClimaX",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HEC-HMS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NOAA/Copernicus",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NHC best track",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "atmos",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "landIce",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "sea-surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "moisture availability",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "antecedent soil state",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric circulation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud properties",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "upper-ocean heat content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "runoff efficiency",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "antecedent soil wetness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "near-surface temperature anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "terrestrial water-storage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land-surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation accumulation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vegetation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Tropical cyclone track and intensity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea state",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "6hr",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "3hr",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "subhr",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "36 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.4\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "track error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "anomaly reconstruction",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "rare-event likelihood",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "warning-skill diagnostics",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "direct-position error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean-square accuracy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "rare-event discrimination",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "tail fidelity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "warning lead time",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "calibration",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "event hit rate",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "false-alarm balance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "probabilistic scores",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "weighted mean absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Brier score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "DPE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Absolute reduction",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Relative reduction",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Rapid intensification",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "landfall intensity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Percentage of targets improved",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Percent-of-targets-better-than-baseline",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "token-based spatiotemporal transformers",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "attention mechanisms",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "transformer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "neural-operator",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "physically informed pretraining",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "hybrid data assimilation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "percentile scaling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "modality-specific encoders",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "different vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "irregular masks over land and ocean",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "different spatial grids",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "positional and variable embeddings",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "domain-aware encodings",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Land-sea masks",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "topographic indices",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ensemble-style sampling",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "tropical cyclones",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "heat extremes",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Hurricane Otis",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "marine heat anomalies",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "compound flood events",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Pakistan floods",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "drought-to-fire cascades",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "flash floods",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Flood",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Drought",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Wildfire",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Pakistan",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Balochistan",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Sindh",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Acapulco",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Asia",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": []
+}
