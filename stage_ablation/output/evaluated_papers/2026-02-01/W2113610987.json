@@ -1,0 +1,859 @@
+{
+    "uri": "https://openalex.org/W2113610987",
+    "title": "Reconstruction of total and spectral solar irradiance from 1974 to 2013 based on KPVT, SoHO/MDI, and SDO/HMI observations",
+    "venue": {
+        "name": "Astronomy and Astrophysics",
+        "id": "https://openalex.org/S205231332",
+        "type": "journal"
+    },
+    "publication_year": 2014,
+    "authors": [
+        {
+            "id": null,
+            "display_name": "K. L. Yeo",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "N. A. Krivova",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "S. K. Solanki",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "K. H. Glassmeier",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.1051/0004-6361/201423628",
+    "abstract": "Total and spectral solar irradiance are key parameters in the assessment of\\nsolar influence on changes in the Earth's climate. We present a reconstruction\\nof daily solar irradiance obtained using the SATIRE-S model spanning 1974 to\\n2013 based on full-disc observations from the KPVT, SoHO/MDI and SDO/HMI.\\nSATIRE-S ascribes variation in solar irradiance on timescales greater than a\\nday to photospheric magnetism. The solar spectrum is reconstructed from the\\napparent surface coverage of bright magnetic features and sunspots in the daily\\ndata using the modelled intensity spectra of these magnetic structures. We\\ncross-calibrated the various data sets, harmonizing the model input so as to\\nyield a single consistent time series as the output. The model replicates 92%\\nof the variability in the PMOD TSI composite including the secular decline\\nbetween the 1996 and 2008 solar cycle minima. The model also reproduces most of\\nthe variability in observed Lyman-alpha irradiance and the Mg II index. The UV\\nsolar irradiance measurements from the UARS and SORCE missions are mutually\\nconsistent up to about 180 nm before they start to exhibit discrepant\\nrotational and cyclical variability, indicative of unresolved instrumental\\neffects. As a result, the agreement between model and measurement starts to\\ndeteriorate above this wavelength. As with earlier similar investigations, the\\nreconstruction cannot reproduce the overall trends in SORCE/SIM SSI. We argue,\\nfrom the lack of clear solar cycle modulation in the SIM record and the\\ninconsistency between the total flux recorded by the instrument and TSI, that\\nunaccounted instrumental trends are present. The reconstruction is consistent\\nwith observations from multiple sources, demonstrating its validity. It also\\nprovides further evidence that photospheric magnetism is the prime driver of\\nvariation in solar irradiance on timescales greater than a day.\\n",
+    "field": "Solar influence on climate",
+    "problem": "Creating a single, long-term solar irradiance time series is challenging because measurements from different instruments are inconsistent due to instrumental effects, calibration differences, and degradation, which prevents their direct combination for climate studies.",
+    "method": "This paper reconstructs daily solar irradiance from 1974-2013 by cross-calibrating and harmonizing full-disc observations from KPVT, MDI, and HMI to create a single consistent input for the SATIRE-S model, which ascribes irradiance variations to photospheric magnetism.",
+    "task": "The task is to reconstruct daily total and spectral solar irradiance from 1974 to 2013 using the SATIRE-S model, which is based on full-disc observations from the KPVT, SoHO/MDI, and SDO/HMI instruments.",
+    "model": [
+        "no"
+    ],
+    "paper_screening": "no",
+    "keywords": [],
+    "concepts": [],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a daily reconstruction of total and spectral solar irradiance from 1974 to 2013 using the SATIRE-S model, featuring an improved method to cross-calibrate and harmonize multiple observational datasets into a single, consistent time series for climate studies.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "SATIRE-S",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2 = 0.916",
+            "target_entity_type": "Metric",
+            "paragraph": "Results. The model replicates 92% (R2 = 0.916) of the variability in the PMOD TSI composite including the secular decline between the 1996 and 2008 solar cycle minima.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MDI",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SoHO",
+            "target_entity_type": "Platform",
+            "paragraph": "The SATIRE-S model has previously been applied to fulldisc observations of intensity and magnetic flux from the Kitt Peak Vacuum Telescope (KPVT, Livingston et al. 1976; Jones et al. 1992) and the Michelson Doppler Imager onboard the Solar and Heliospheric Observatory (SoHO/MDI, Scherrer et al. 1995).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HMI",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SDO",
+            "target_entity_type": "Platform",
+            "paragraph": "In this study, we present a SATIRE-S reconstruction of total and spectral solar irradiance from 1974 to 2013. We update the preceding efforts with observations from the Helioseismic and Magnetic Imager onboard the Solar Dynamics Observatory (SDO/HMI, Schou et al. 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GOME",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "ERS-2",
+            "target_entity_type": "Platform",
+            "paragraph": "The series of GOME instruments (the first of which was launched in 1996 onboard ERS-2, Weber et al. 1998; Munro et al. 2006) and ENVISAT/SCIAMACHY (launched in 2002; Skupin et al. 2005a) made regular measurements of the solar spectrum in the 240 to 790 nm and 240 to 2380 nm wavelength range, respectively.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SCIAMACHY",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "ENVISAT",
+            "target_entity_type": "Platform",
+            "paragraph": "The series of GOME instruments (the first of which was launched in 1996 onboard ERS-2, Weber et al. 1998; Munro et al. 2006) and ENVISAT/SCIAMACHY (launched in 2002; Skupin et al. 2005a) made regular measurements of the solar spectrum in the 240 to 790 nm and 240 to 2380 nm wavelength range, respectively.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SPM",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SoHO",
+            "target_entity_type": "Platform",
+            "paragraph": "The spectral measurements from the Sun PhotoMeter (SPM) on the SOHO/VIRGO experiment (spanning 1996 to the present, Fr\u00f6hlich et al. 1995, 1997) cover just three narrow (FWHM of 5 nm) passbands at 402, 500 and 862 nm.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SIM",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SORCE",
+            "target_entity_type": "Platform",
+            "paragraph": "In the visible and the infrared, regular observation of spectral irradiance only started, in effect, with SORCE/SIM (Harder et al. 2005a,b) in 2003.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACRIM3",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "ACRIMSAT",
+            "target_entity_type": "Platform",
+            "paragraph": "For the purpose of determining the optimal value of (\u27e8B1\u27e9 /\u00b5)sat, we considered the daily TSI measurements from four radiometers in current operation: ACRIMSAT/ACRIM3 (version 11/13, Willson & Mordvinov 2003), the DIARAD (Crommelynck & Domingo 1984; Dewitte et al. 2004a) and PMO6V (Brusa & Fr\u00f6hlich 1986) radiometers on SOHO/VIRGO (level 2, version 6_002_1302, Fr\u00f6hlich et al. 1995, 1997), and SORCE/TIM (level 3, version 14, Kopp & Lawrence 2005; Kopp et al. 2005a,b).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DIARAD",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SoHO",
+            "target_entity_type": "Platform",
+            "paragraph": "For the purpose of determining the optimal value of (\u27e8B1\u27e9 /\u00b5)sat, we considered the daily TSI measurements from four radiometers in current operation: ACRIMSAT/ACRIM3 (version 11/13, Willson & Mordvinov 2003), the DIARAD (Crommelynck & Domingo 1984; Dewitte et al. 2004a) and PMO6V (Brusa & Fr\u00f6hlich 1986) radiometers on SOHO/VIRGO (level 2, version 6_002_1302, Fr\u00f6hlich et al. 1995, 1997), and SORCE/TIM (level 3, version 14, Kopp & Lawrence 2005; Kopp et al. 2005a,b).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PMO6V",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SoHO",
+            "target_entity_type": "Platform",
+            "paragraph": "For the purpose of determining the optimal value of (\u27e8B1\u27e9 /\u00b5)sat, we considered the daily TSI measurements from four radiometers in current operation: ACRIMSAT/ACRIM3 (version 11/13, Willson & Mordvinov 2003), the DIARAD (Crommelynck & Domingo 1984; Dewitte et al. 2004a) and PMO6V (Brusa & Fr\u00f6hlich 1986) radiometers on SOHO/VIRGO (level 2, version 6_002_1302, Fr\u00f6hlich et al. 1995, 1997), and SORCE/TIM (level 3, version 14, Kopp & Lawrence 2005; Kopp et al. 2005a,b).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TIM",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SORCE",
+            "target_entity_type": "Platform",
+            "paragraph": "For the purpose of determining the optimal value of (\u27e8B1\u27e9 /\u00b5)sat, we considered the daily TSI measurements from four radiometers in current operation: ACRIMSAT/ACRIM3 (version 11/13, Willson & Mordvinov 2003), the DIARAD (Crommelynck & Domingo 1984; Dewitte et al. 2004a) and PMO6V (Brusa & Fr\u00f6hlich 1986) radiometers on SOHO/VIRGO (level 2, version 6_002_1302, Fr\u00f6hlich et al. 1995, 1997), and SORCE/TIM (level 3, version 14, Kopp & Lawrence 2005; Kopp et al. 2005a,b).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PREMOS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Picard",
+            "target_entity_type": "Platform",
+            "paragraph": "The TSI measurements from Picard/PREMOS (launched in 2010; Schmutz et al. 2009, 2013; Fehlmann et al. 2012), the only TSI radiometer calibrated in vacuum at full solar power levels before launch at two separate facilities (the National Physical Laboratory and the TRF), agree with TIM to within a similar margin.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOLSTICE",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "UARS",
+            "target_entity_type": "Platform",
+            "paragraph": "We contrasted the reconstruction against the daily spectral measurements from the SOLSTICE4 (covering 119 to 420 nm, Rottman et al. 2001) and the SUSIM (version 22, 115 to 410 nm, Brueckner et al. 1993; Floyd et al. 2003) experiments onboard the UARS mission, and SOLSTICE (level 3, version 12, 114 to 310 nm, McClintock et al. 2005; Snow et al. 2005a) and SIM (level 3, version 19, 240 to 2416 nm, Harder et al. 2005a,b) onboard SORCE.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SUSIM",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "UARS",
+            "target_entity_type": "Platform",
+            "paragraph": "We contrasted the reconstruction against the daily spectral measurements from the SOLSTICE4 (covering 119 to 420 nm, Rottman et al. 2001) and the SUSIM (version 22, 115 to 410 nm, Brueckner et al. 1993; Floyd et al. 2003) experiments onboard the UARS mission, and SOLSTICE (level 3, version 12, 114 to 310 nm, McClintock et al. 2005; Snow et al. 2005a) and SIM (level 3, version 19, 240 to 2416 nm, Harder et al. 2005a,b) onboard SORCE.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOLSTICE",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SORCE",
+            "target_entity_type": "Platform",
+            "paragraph": "We contrasted the reconstruction against the daily spectral measurements from the SOLSTICE4 (covering 119 to 420 nm, Rottman et al. 2001) and the SUSIM (version 22, 115 to 410 nm, Brueckner et al. 1993; Floyd et al. 2003) experiments onboard the UARS mission, and SOLSTICE (level 3, version 12, 114 to 310 nm, McClintock et al. 2005; Snow et al. 2005a) and SIM (level 3, version 19, 240 to 2416 nm, Harder et al. 2005a,b) onboard SORCE.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KPVT",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "continuum intensity images",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, we employed full-disc continuum intensity images and longitudinal magnetograms collected at the KPVT and from the first-ever spaceborne magnetographs, SoHO/MDI and its successor instrument, SDO/HMI.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KPVT",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "longitudinal magnetograms",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, we employed full-disc continuum intensity images and longitudinal magnetograms collected at the KPVT and from the first-ever spaceborne magnetographs, SoHO/MDI and its successor instrument, SDO/HMI.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MDI",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "continuum intensity images",
+            "target_entity_type": "Variable",
+            "paragraph": "The MDI returned observations from 19th March 1996 to 11th April 2011. The instrument recorded full-disc filtergrams at four wavelength positions across the Ni I 6768 \u00c5 line and one in the nearby continuum, from which a number of continuum intensity images and longitudinal magnetograms are produced each observation day.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MDI",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "longitudinal magnetograms",
+            "target_entity_type": "Variable",
+            "paragraph": "The MDI returned observations from 19th March 1996 to 11th April 2011. The instrument recorded full-disc filtergrams at four wavelength positions across the Ni I 6768 \u00c5 line and one in the nearby continuum, from which a number of continuum intensity images and longitudinal magnetograms are produced each observation day.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HMI",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "continuum intensity images",
+            "target_entity_type": "Variable",
+            "paragraph": "The HMI (in regular operation since 30th April 2010) captures full-disc filtergrams at six wavelength positions across the Fe 16173 \u00c5 line almost continuously at 1.875 s intervals. The filtergram data are combined to form simultaneous continuum intensity images and longitudinal magnetograms at 45-s cadence.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HMI",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "longitudinal magnetograms",
+            "target_entity_type": "Variable",
+            "paragraph": "The HMI (in regular operation since 30th April 2010) captures full-disc filtergrams at six wavelength positions across the Fe 16173 \u00c5 line almost continuously at 1.875 s intervals. The filtergram data are combined to form simultaneous continuum intensity images and longitudinal magnetograms at 45-s cadence.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "GOME",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "solar spectrum",
+            "target_entity_type": "Variable",
+            "paragraph": "The series of GOME instruments (the first of which was launched in 1996 onboard ERS-2, Weber et al. 1998; Munro et al. 2006) and ENVISAT/SCIAMACHY (launched in 2002; Skupin et al. 2005a) made regular measurements of the solar spectrum in the 240 to 790 nm and 240 to 2380 nm wavelength range, respectively.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SCIAMACHY",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "solar spectrum",
+            "target_entity_type": "Variable",
+            "paragraph": "The series of GOME instruments (the first of which was launched in 1996 onboard ERS-2, Weber et al. 1998; Munro et al. 2006) and ENVISAT/SCIAMACHY (launched in 2002; Skupin et al. 2005a) made regular measurements of the solar spectrum in the 240 to 790 nm and 240 to 2380 nm wavelength range, respectively.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SIM",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "spectral irradiance",
+            "target_entity_type": "Variable",
+            "paragraph": "In the visible and the infrared, regular observation of spectral irradiance only started, in effect, with SORCE/SIM (Harder et al. 2005a,b) in 2003. The instrument, which has been surveying the wavelength range of 200 to 2416 nm ever since, provides what is effectively the only continuous and extended SSI record spanning the ultraviolet to the infrared presently available\u00b9.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TIM",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Total Solar Irradiance",
+            "target_entity_type": "Variable",
+            "paragraph": "The recent TSI reconstructions by Ball et al. (2012) and Chapman et al. (2013) based on such models replicated 96% and 95% of the observed variation in SORCE/TIM radiometry (Kopp & Lawrence 2005; Kopp et al. 2005a,b), respectively.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOLSTICE",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "spectral measurements",
+            "target_entity_type": "Variable",
+            "paragraph": "We contrasted the reconstruction against the daily spectral measurements from the SOLSTICE4 (covering 119 to 420 nm, Rottman et al. 2001) and the SUSIM (version 22, 115 to 410 nm, Brueckner et al. 1993; Floyd et al. 2003) experiments onboard the UARS mission, and SOLSTICE (level 3, version 12, 114 to 310 nm, McClintock et al. 2005; Snow et al. 2005a) and SIM (level 3, version 19, 240 to 2416 nm, Harder et al. 2005a,b) onboard SORCE.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SUSIM",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "spectral measurements",
+            "target_entity_type": "Variable",
+            "paragraph": "We contrasted the reconstruction against the daily spectral measurements from the SOLSTICE4 (covering 119 to 420 nm, Rottman et al. 2001) and the SUSIM (version 22, 115 to 410 nm, Brueckner et al. 1993; Floyd et al. 2003) experiments onboard the UARS mission, and SOLSTICE (level 3, version 12, 114 to 310 nm, McClintock et al. 2005; Snow et al. 2005a) and SIM (level 3, version 19, 240 to 2416 nm, Harder et al. 2005a,b) onboard SORCE.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SATIRE-S",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "ATLAS9 radiative transfer code",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The intensity spectra of umbra, penumbra, faculae and quiet Sun currently employed in SATIRE-S were synthesized with the ATLAS9 radiative transfer code (Kurucz 1993), which assumes local thermodynamic equilibrium (LTE).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SATIRE-S",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2 = 0.959",
+            "target_entity_type": "Metric",
+            "paragraph": "In terms of the overall agreement, given by the R2 and k over the entire period of comparison, the closest alignment was found between the PMO6V record and the corresponding candidate reconstruction (Table 2). Considering this and the observation that only with the PMO6V record did reconstructed TSI exhibit consistent close agreement at both rotational and cyclical timescales (Fig. 6), we retained this candidate reconstruction for the succeeding analysis. The R2 of 0.959 between this candidate reconstruction and the PMO6V record, which spans 1996 to 2013, also suggests that at least 96% of the variability in TSI over this period can be accounted for by photospheric magnetism alone.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SATIRE-S",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2 = 0.942",
+            "target_entity_type": "Metric",
+            "paragraph": "The correlation between model and measurement is excellent. The R2 between the reconstruction and the LASP Lyman-a composite is 0.942.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SATIRE-S",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2 = 0.963",
+            "target_entity_type": "Metric",
+            "paragraph": "The R\u00b2 with the Mg II index composites by IUP and by LASP is 0.963 and 0.899, respectively.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Kitt Peak Vacuum Telescope",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SOHO/MDI",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SDO/HMI",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SATIRE-S",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Total Solar Irradiance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Spectral Solar Irradiance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PMOD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "R2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Lyman-a irradiance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mg II index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "UARS",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SORCE",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SIM",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ultraviolet irradiance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stratospheric ozone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ACRIM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IRMB",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GOME",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ERS-2",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SCIAMACHY",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ENVISAT",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Sun PhotoMeter",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SPM",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SOHO/VIRGO",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "VIRGO",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SORCE/SIM",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "KPVT",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Michelson Doppler Imager",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "MDI",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SoHO",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Helioseismic and Magnetic Imager",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "HMI",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SDO",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "reconstruction",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "KP512",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "KPSPM",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ACRIMSAT/ACRIM3",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ACRIM3",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "DIARAD",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "PMO6V",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SORCE/TIM",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "TIM",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Picard/PREMOS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "PREMOS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ACRIMSAT",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Picard",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "limb darkening",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "sunspot area",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "umbra to sunspot area ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "proportion of the solar disc covered by faculae",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "noise surface",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean square difference",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "coefficient of determination",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ATLAS9",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "local thermodynamic equilibrium",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "UARS/SUSIM",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SUSIM",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Whole Heliospheric Interval",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SOLSTICE",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "slope",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "offset",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Ottawa and Penticton adjusted 10.7 cm radio flux",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LASP Lyman-a composite",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IUP Mg II index composite",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "projected sunspot area composite",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "reconstruction uncertainty",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "cross-calibration error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Max-Planck-Institut f\u00fcr Sonnensystemforschung",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Kyung Hee University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Technische Universit\u00e4t Braunschweig",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "difference between the TSI level at the solar cycle minima",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "LASP Mg II index composite",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "mesospheric ozone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Morrill et al. (2011)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "solar cycle amplitude",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "total flux",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Stanford Solar Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "German Data Center for SDO",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "PMOD/WRC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Mount Wilson Observatory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Wilcox Solar Observatory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "zero level bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "magnetic flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "visible flux",
+            "entity_type": "Variable"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2156486633",
+        "https://openalex.org/W2139986371",
+        "https://openalex.org/W2098247140",
+        "https://openalex.org/W2037244902",
+        "https://openalex.org/W2063153717",
+        "https://openalex.org/W2156012054",
+        "https://openalex.org/W2046416779",
+        "https://openalex.org/W2077816612",
+        "https://openalex.org/W2147775076",
+        "https://openalex.org/W1982880786",
+        "https://openalex.org/W2029208200",
+        "https://openalex.org/W1979458867",
+        "https://openalex.org/W2122197376",
+        "https://openalex.org/W2168945024",
+        "https://openalex.org/W2986533588",
+        "https://openalex.org/W2158950390",
+        "https://openalex.org/W1981855300",
+        "https://openalex.org/W1976832862",
+        "https://openalex.org/W2126876018",
+        "https://openalex.org/W2143171135",
+        "https://openalex.org/W2004518208",
+        "https://openalex.org/W2093142865",
+        "https://openalex.org/W63183209",
+        "https://openalex.org/W1515958249",
+        "https://openalex.org/W2041678711",
+        "https://openalex.org/W1989788132",
+        "https://openalex.org/W1982844135",
+        "https://openalex.org/W2052748489",
+        "https://openalex.org/W4241199054",
+        "https://openalex.org/W2128349082",
+        "https://openalex.org/W2053393338",
+        "https://openalex.org/W2085704648",
+        "https://openalex.org/W2093034372",
+        "https://openalex.org/W1986750220",
+        "https://openalex.org/W1671609216",
+        "https://openalex.org/W2044469361",
+        "https://openalex.org/W2034890511",
+        "https://openalex.org/W2143144469",
+        "https://openalex.org/W2110967629",
+        "https://openalex.org/W2083828769",
+        "https://openalex.org/W2082850205",
+        "https://openalex.org/W2126071212",
+        "https://openalex.org/W1978839768",
+        "https://openalex.org/W2085923653",
+        "https://openalex.org/W2002347438",
+        "https://openalex.org/W2171150947",
+        "https://openalex.org/W2031622157",
+        "https://openalex.org/W2122559418",
+        "https://openalex.org/W2104775196",
+        "https://openalex.org/W2094611979",
+        "https://openalex.org/W2048620975",
+        "https://openalex.org/W2071804560",
+        "https://openalex.org/W1964421336",
+        "https://openalex.org/W1997015642",
+        "https://openalex.org/W2028666073",
+        "https://openalex.org/W2010659008",
+        "https://openalex.org/W1980140410",
+        "https://openalex.org/W2071475071",
+        "https://openalex.org/W1612275472",
+        "https://openalex.org/W2079529263",
+        "https://openalex.org/W2377429195",
+        "https://openalex.org/W2166641883",
+        "https://openalex.org/W2072517607",
+        "https://openalex.org/W1992215198",
+        "https://openalex.org/W2042982435",
+        "https://openalex.org/W2134627791",
+        "https://openalex.org/W3177773949",
+        "https://openalex.org/W2061190302",
+        "https://openalex.org/W2077626615",
+        "https://openalex.org/W2158612941",
+        "https://openalex.org/W2010985038",
+        "https://openalex.org/W4240970399",
+        "https://openalex.org/W4249113604",
+        "https://openalex.org/W1966668197",
+        "https://openalex.org/W2131553768",
+        "https://openalex.org/W2030539995",
+        "https://openalex.org/W2097943545",
+        "https://openalex.org/W2081536504",
+        "https://openalex.org/W2025308802",
+        "https://openalex.org/W1587976434",
+        "https://openalex.org/W2150540551",
+        "https://openalex.org/W2023949803",
+        "https://openalex.org/W2141117266",
+        "https://openalex.org/W1982720763",
+        "https://openalex.org/W4238186944",
+        "https://openalex.org/W2039541629",
+        "https://openalex.org/W2135922885",
+        "https://openalex.org/W2007307250",
+        "https://openalex.org/W2147742111",
+        "https://openalex.org/W1973097689",
+        "https://openalex.org/W2120909292",
+        "https://openalex.org/W2018328868",
+        "https://openalex.org/W2105827718",
+        "https://openalex.org/W2107596681",
+        "https://openalex.org/W2111682151"
+    ]
+}

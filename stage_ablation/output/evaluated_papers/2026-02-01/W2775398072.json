@@ -1,0 +1,1219 @@
+{
+    "uri": "https://openalex.org/W2775398072",
+    "title": "Impact of numerical choices on water conservation in the E3SM Atmosphere Model version 1 (EAMv1)",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2018,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5100671104",
+            "display_name": "Kai Zhang",
+            "orcid": "https://orcid.org/0000-0003-0457-6368"
+        },
+        {
+            "id": "https://openalex.org/A5024879281",
+            "display_name": "Philip J. Rasch",
+            "orcid": "https://orcid.org/0000-0002-5125-2174"
+        },
+        {
+            "id": "https://openalex.org/A5022737320",
+            "display_name": "Mark A. Taylor",
+            "orcid": "https://orcid.org/0000-0002-9267-2554"
+        },
+        {
+            "id": "https://openalex.org/A5085932755",
+            "display_name": "Hui Wan",
+            "orcid": "https://orcid.org/0000-0001-5294-4116"
+        },
+        {
+            "id": "https://openalex.org/A5087402778",
+            "display_name": "L. Ruby Leung",
+            "orcid": "https://orcid.org/0000-0002-3221-9467"
+        },
+        {
+            "id": "https://openalex.org/A5075609761",
+            "display_name": "Po\u2010Lun Ma",
+            "orcid": "https://orcid.org/0000-0003-3109-5316"
+        },
+        {
+            "id": "https://openalex.org/A5021252147",
+            "display_name": "Jean\u2010Christophe Golaz",
+            "orcid": "https://orcid.org/0000-0003-1616-5435"
+        },
+        {
+            "id": "https://openalex.org/A5108700818",
+            "display_name": "J. Wolfe",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5067533658",
+            "display_name": "Wuyin Lin",
+            "orcid": "https://orcid.org/0000-0002-3392-9954"
+        },
+        {
+            "id": "https://openalex.org/A5055570611",
+            "display_name": "Balwinder Singh",
+            "orcid": "https://orcid.org/0000-0001-6798-3097"
+        },
+        {
+            "id": "https://openalex.org/A5020853176",
+            "display_name": "Susannah M. Burrows",
+            "orcid": "https://orcid.org/0000-0002-0745-7252"
+        },
+        {
+            "id": "https://openalex.org/A5035635583",
+            "display_name": "Jin\u2010Ho Yoon",
+            "orcid": "https://orcid.org/0000-0002-4939-8078"
+        },
+        {
+            "id": "https://openalex.org/A5065736522",
+            "display_name": "Hailong Wang",
+            "orcid": "https://orcid.org/0000-0002-1994-4402"
+        },
+        {
+            "id": "https://openalex.org/A5004388090",
+            "display_name": "Yun Qian",
+            "orcid": "https://orcid.org/0000-0003-4821-1934"
+        },
+        {
+            "id": "https://openalex.org/A5054017640",
+            "display_name": "Qi Tang",
+            "orcid": "https://orcid.org/0000-0003-2959-0203"
+        },
+        {
+            "id": "https://openalex.org/A5058081182",
+            "display_name": "Peter Caldwell",
+            "orcid": "https://orcid.org/0000-0001-8604-0844"
+        },
+        {
+            "id": "https://openalex.org/A5038252713",
+            "display_name": "Shaocheng Xie",
+            "orcid": "https://orcid.org/0000-0001-8931-5145"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-11-1971-2018",
+    "abstract": "Abstract. The conservation of total water is an important numerical feature for global Earth system models. Even small conservation problems in the water budget can lead to systematic errors in century-long simulations. This study quantifies and reduces various sources of water conservation error in the atmosphere component of the Energy Exascale Earth System Model. Several sources of water conservation error have been identified during the development of the version 1 (V1) model. The largest errors result from the numerical coupling between the resolved dynamics and the parameterized sub-grid physics. A hybrid coupling using different methods for fluid dynamics and tracer transport provides a reduction of water conservation error by a factor of 50 at 1\u2218 horizontal resolution as well as consistent improvements at other resolutions. The second largest error source is the use of an overly simplified relationship between the surface moisture flux and latent heat flux at the interface between the host model and the turbulence parameterization. This error can be prevented by applying the same (correct) relationship throughout the entire model. Two additional types of conservation error that result from correcting the surface moisture flux and clipping negative water concentrations can be avoided by using mass-conserving fixers. With all four error sources addressed, the water conservation error in the V1 model becomes negligible and insensitive to the horizontal resolution. The associated changes in the long-term statistics of the main atmospheric features are small. A sensitivity analysis is carried out to show that the magnitudes of the conservation errors in early V1 versions decrease strongly with temporal resolution but increase with horizontal resolution. The increased vertical resolution in V1 results in a very thin model layer at the Earth's surface, which amplifies the conservation error associated with the surface moisture flux correction. We note that for some of the identified error sources, the proposed fixers are remedies rather than solutions to the problems at their roots. Future improvements in time integration would be beneficial for V1.",
+    "field": "Climate model development",
+    "problem": "The E3SM climate model suffers from significant water conservation errors caused by numerical choices, such as the coupling between dynamics and physics and the simplistic clipping of negative values, which lead to systematic biases like spurious sea level rise in long-term simulations.",
+    "method": "The authors propose a method to reduce water conservation errors by implementing a hybrid physics-dynamics coupling, correcting an inconsistent surface flux calculation, and replacing non-conservative clipping of negative water concentrations with mass-borrowing fixers.",
+    "task": "The task is to quantify and reduce various sources of water conservation error in the atmosphere component of the Energy Exascale Earth System Model (E3SM) version 1.",
+    "model": [
+        "E3SM",
+        "EAMv1",
+        "ECHAM6",
+        "ACME",
+        "CESM",
+        "CESM1.3_beta10",
+        "ECHAM-HAM2"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/conservation-of-mass",
+            "display_name": "Conservation of mass",
+            "score": 0.7409334778785706
+        },
+        {
+            "id": "https://openalex.org/keywords/flux",
+            "display_name": "Flux (metallurgy)",
+            "score": 0.5510361194610596
+        },
+        {
+            "id": "https://openalex.org/keywords/atmosphere",
+            "display_name": "Atmosphere (unit)",
+            "score": 0.5245645046234131
+        },
+        {
+            "id": "https://openalex.org/keywords/moisture",
+            "display_name": "Moisture",
+            "score": 0.5208321809768677
+        },
+        {
+            "id": "https://openalex.org/keywords/conservation-law",
+            "display_name": "Conservation law",
+            "score": 0.5095358490943909
+        },
+        {
+            "id": "https://openalex.org/keywords/turbulence",
+            "display_name": "Turbulence",
+            "score": 0.49362432956695557
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.47627657651901245
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.4556875228881836
+        },
+        {
+            "id": "https://openalex.org/keywords/numerical-weather-prediction",
+            "display_name": "Numerical weather prediction",
+            "score": 0.4481663405895233
+        },
+        {
+            "id": "https://openalex.org/keywords/mechanics",
+            "display_name": "Mechanics",
+            "score": 0.3117879629135132
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.2925592064857483
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.22606369853019714
+        },
+        {
+            "id": "https://openalex.org/keywords/chemistry",
+            "display_name": "Chemistry",
+            "score": 0.15140247344970703
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematical-analysis",
+            "display_name": "Mathematical analysis",
+            "score": 0.09592774510383606
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C157206272",
+            "wikidata": "https://www.wikidata.org/wiki/Q483948",
+            "display_name": "Conservation of mass",
+            "level": 2,
+            "score": 0.7409334778785706
+        },
+        {
+            "id": "https://openalex.org/C68709404",
+            "wikidata": "https://www.wikidata.org/wiki/Q1134475",
+            "display_name": "Flux (metallurgy)",
+            "level": 2,
+            "score": 0.5510361194610596
+        },
+        {
+            "id": "https://openalex.org/C65440619",
+            "wikidata": "https://www.wikidata.org/wiki/Q177974",
+            "display_name": "Atmosphere (unit)",
+            "level": 2,
+            "score": 0.5245645046234131
+        },
+        {
+            "id": "https://openalex.org/C176864760",
+            "wikidata": "https://www.wikidata.org/wiki/Q217651",
+            "display_name": "Moisture",
+            "level": 2,
+            "score": 0.5208321809768677
+        },
+        {
+            "id": "https://openalex.org/C3445786",
+            "wikidata": "https://www.wikidata.org/wiki/Q205805",
+            "display_name": "Conservation law",
+            "level": 2,
+            "score": 0.5095358490943909
+        },
+        {
+            "id": "https://openalex.org/C196558001",
+            "wikidata": "https://www.wikidata.org/wiki/Q190132",
+            "display_name": "Turbulence",
+            "level": 2,
+            "score": 0.49362432956695557
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.47627657651901245
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4556875228881836
+        },
+        {
+            "id": "https://openalex.org/C147947694",
+            "wikidata": "https://www.wikidata.org/wiki/Q837552",
+            "display_name": "Numerical weather prediction",
+            "level": 2,
+            "score": 0.4481663405895233
+        },
+        {
+            "id": "https://openalex.org/C57879066",
+            "wikidata": "https://www.wikidata.org/wiki/Q41217",
+            "display_name": "Mechanics",
+            "level": 1,
+            "score": 0.3117879629135132
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.2925592064857483
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.22606369853019714
+        },
+        {
+            "id": "https://openalex.org/C185592680",
+            "wikidata": "https://www.wikidata.org/wiki/Q2329",
+            "display_name": "Chemistry",
+            "level": 0,
+            "score": 0.15140247344970703
+        },
+        {
+            "id": "https://openalex.org/C134306372",
+            "wikidata": "https://www.wikidata.org/wiki/Q7754",
+            "display_name": "Mathematical analysis",
+            "level": 1,
+            "score": 0.09592774510383606
+        },
+        {
+            "id": "https://openalex.org/C178790620",
+            "wikidata": "https://www.wikidata.org/wiki/Q11351",
+            "display_name": "Organic chemistry",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This study quantifies four major sources of water conservation error in the E3SM Atmosphere Model v1 and proposes numerical fixes, including a hybrid physics-dynamics coupling method and mass-conserving fixers, which collectively reduce the error by two orders of magnitude to a negligible level.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "E3SM",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CESM",
+            "target_entity_type": "Source",
+            "paragraph": "E3SM, formerly known as Accelerated Climate Modeling for Energy (ACME), is a global Earth system model developed by the U.S. Department of Energy (DOE) for high-resolution modelling at leadership supercomputing facilities. The model is a descendant of the Community Earth System Model (CESM). The investigation and model improvement discussed in the present paper focus on the atmosphere component EAM.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "E3SM V0",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CESM1.3_beta10",
+            "target_entity_type": "Source",
+            "paragraph": "E3SM V0 is essentially equivalent to CESM1.3_beta10 except for various bug fixes and retuning that have a rather small impact on the simulated climate. EAM V0 uses the spectral element dynamical core on a cubed-sphere mesh (Dennis et al., 2012; Taylor and Fournier, 2010) using an explicit Runge-Kutta time integration scheme.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "E3SM V1\u03b1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "E3SM V1\u03b2",
+            "target_entity_type": "Source",
+            "paragraph": "In the discussions below, we further distinguish three sub-versions of the V1 model: V1\u03b1 is the configuration this study started with (which was found to have a substantial water conservation error; see Table 1). V1\u03b2 and V1\u03b3 are versions with various improvements in water conservation. Details of the configurations are described in Table 2 and Sect. 3, and the results are evaluated in Sect. 5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "E3SM V1\u03b2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "E3SM V1\u03b3",
+            "target_entity_type": "Source",
+            "paragraph": "In the discussions below, we further distinguish three sub-versions of the V1 model: V1\u03b1 is the configuration this study started with (which was found to have a substantial water conservation error; see Table 1). V1\u03b2 and V1\u03b3 are versions with various improvements in water conservation. Details of the configurations are described in Table 2 and Sect. 3, and the results are evaluated in Sect. 5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "E3SM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "EAM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "E3SM, formerly known as Accelerated Climate Modeling for Energy (ACME), is a global Earth system model developed by the U.S. Department of Energy (DOE) for high-resolution modelling at leadership supercomputing facilities. The model is a descendant of the Community Earth System Model (CESM). The investigation and model improvement discussed in the present paper focus on the atmosphere component EAM.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "E3SM V0",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CLM4.0",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "We note that the so-called \u201catmosphere-only\u201d simulations of the present climate actually use an interactive land surface model. From V0 to V1, the land model changed from CLM4.0 (Oleson et al., 2010) to CLM4.5 (Oleson et al., 2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "E3SM V1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CLM4.5",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "We note that the so-called \u201catmosphere-only\u201d simulations of the present climate actually use an interactive land surface model. From V0 to V1, the land model changed from CLM4.0 (Oleson et al., 2010) to CLM4.5 (Oleson et al., 2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CLM4.0",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "CLM4.5",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "We note that the so-called \u201catmosphere-only\u201d simulations of the present climate actually use an interactive land surface model. From V0 to V1, the land model changed from CLM4.0 (Oleson et al., 2010) to CLM4.5 (Oleson et al., 2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "explicit Runge-Kutta time integration scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "E3SM V0 is essentially equivalent to CESM1.3_beta10 except for various bug fixes and retuning that have a rather small impact on the simulated climate. EAM V0 uses the spectral element dynamical core on a cubed-sphere mesh (Dennis et al., 2012; Taylor and Fournier, 2010) using an explicit Runge-Kutta time integration scheme.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "deep convection scheme (Zhang and McFarlane, 1995)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The key physical processes considered (see Fig. 1a) include deep convection (Zhang and McFarlane, 1995), shallow convection and turbulent transport/vertical diffusion (Park and Bretherton, 2009), cloud microphysics (Morrison and Gettelman, 2008) and macrophysics (Park et al., 2014), aerosol microphysics (Liu et al., 2012), and radiation (Iacono et al., 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "PB2009",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Table 2. Comparison of different atmosphere model configurations discussed in this paper. Abbreviations: Spec. element \u2013 spectral-element dynamical of Dennis et al. (2012) and Taylor and Fournier (2010); PB2009 \u2013 shallow convection and turbulence parameterization of Park and Bretherton (2009); PBR2014 \u2013 cloud macrophysics parameterization of Park et al. (2014); MG1 \u2013 stratiform cloud microphysics param- eterization of Morrison and Gettelman (2008); MG2 \u2013 stratiform cloud microphysics parameterization of Gettelman and Morrison (2015); CLUBB - unified turbulence, shallow convection, and cloud macrophysics parameterization of Golaz et al. (2002) and Larson et al. (2002). L72 - vertical grid with 72 layers. (This is the vertical grid used in the V1 models, while the V0 model uses a 30-layer grid.) Further details of the model configurations can be found in Sect. 2. The sources of water conservation error are explained in Sect. 3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "EAM V0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "PBR2014",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Table 2. Comparison of different atmosphere model configurations discussed in this paper. Abbreviations: Spec. element \u2013 spectral-element dynamical of Dennis et al. (2012) and Taylor and Fournier (2010); PB2009 \u2013 shallow convection and turbulence parameterization of Park and Bretherton (2009); PBR2014 \u2013 cloud macrophysics parameterization of Park et al. (2014); MG1 \u2013 stratiform cloud microphysics param- eterization of Morrison and Gettelman (2008); MG2 \u2013 stratiform cloud microphysics parameterization of Gettelman and Morrison (2015); CLUBB - unified turbulence, shallow convection, and cloud macrophysics parameterization of Golaz et al. (2002) and Larson et al. (2002). L72 - vertical grid with 72 layers. (This is the vertical grid used in the V1 models, while the V0 model uses a 30-layer grid.) Further details of the model configurations can be found in Sect. 2. The sources of water conservation error are explained in Sect. 3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "EAM V0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "MG1",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Table 2. Comparison of different atmosphere model configurations discussed in this paper. Abbreviations: Spec. element \u2013 spectral-element dynamical of Dennis et al. (2012) and Taylor and Fournier (2010); PB2009 \u2013 shallow convection and turbulence parameterization of Park and Bretherton (2009); PBR2014 \u2013 cloud macrophysics parameterization of Park et al. (2014); MG1 \u2013 stratiform cloud microphysics param- eterization of Morrison and Gettelman (2008); MG2 \u2013 stratiform cloud microphysics parameterization of Gettelman and Morrison (2015); CLUBB - unified turbulence, shallow convection, and cloud macrophysics parameterization of Golaz et al. (2002) and Larson et al. (2002). L72 - vertical grid with 72 layers. (This is the vertical grid used in the V1 models, while the V0 model uses a 30-layer grid.) Further details of the model configurations can be found in Sect. 2. The sources of water conservation error are explained in Sect. 3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "EAM V1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Cloud Layers Unified by Binormals (CLUBB) parameterization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "New parameterizations in V1 include the Cloud Layers Unified by Binormals (CLUBB) parameterization for shallow convection, turbulent transport, and cloud macrophysics (Golaz et al., 2002; Larson et al., 2002; Bogenschutz et al., 2013) and an updated cloud microphysics scheme (MG2, Gettelman and Morrison, 2015).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "MG2",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "New parameterizations in V1 include the Cloud Layers Unified by Binormals (CLUBB) parameterization for shallow convection, turbulent transport, and cloud macrophysics (Golaz et al., 2002; Larson et al., 2002; Bogenschutz et al., 2013) and an updated cloud microphysics scheme (MG2, Gettelman and Morrison, 2015).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V1\u03b3",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "QQFLX fixer",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In E3SM V1y, we replace the QNEG4 limiter by a fixer named QQFLX that borrows water vapour from air aloft to increase humidity in the lowest model layer while keeping the coupler-provided fluxes untouched.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V1\u03b3",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "mass-borrower",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In V1y, a different fixer based on the mass-borrower module of the ECHAM-HAM2 model (Stier et al., 2005; Zhang et al., 2012) is applied, which borrows tracer mass from an adjacent layer and conserves mass.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "spectral element dynamical core",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "EAM V0 uses the spectral element dynamical core on a cubed-sphere mesh (Dennis et al., 2012; Taylor and Fournier, 2010) using an explicit Runge-Kutta time integration scheme.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "cubed-sphere mesh",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "EAM V0 uses the spectral element dynamical core on a cubed-sphere mesh (Dennis et al., 2012; Taylor and Fournier, 2010) using an explicit Runge-Kutta time integration scheme.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "30 vertical layers",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The number of vertical layers is 30 everywhere, extending from the Earth\u2019s surface to about 2 hPa using a pressure-based terrain-following coordinate near the surface and pressure levels near the model top.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "pressure-based terrain-following coordinate",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The number of vertical layers is 30 everywhere, extending from the Earth\u2019s surface to about 2 hPa using a pressure-based terrain-following coordinate near the surface and pressure levels near the model top.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "model top at 2hPa",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The number of vertical layers is 30 everywhere, extending from the Earth\u2019s surface to about 2hPa using a pressure-based terrain-following coordinate near the surface and pressure levels near the model top.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "72 vertical layers",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "EAM V1 uses the same dynamical core but the vertical resolution is increased to 72 layers for both the dynamics and physics, with a typical layer thickness of 50\u2013120 m in the bottom 1 km of the atmosphere, except for the lowest model layer, which is about 20 m thick. The model top is about 0.1 hPa.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "model top at 0.1hPa",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "EAM V1 uses the same dynamical core but the vertical resolution is increased to 72 layers for both the dynamics and physics, with a typical layer thickness of 50\u2013120 m in the bottom 1 km of the atmosphere, except for the lowest model layer, which is about 20 m thick. The model top is about 0.1 hPa.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V1\u03b2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "hybrid physics-dynamics coupling (se_ftype = 2)",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "A new physics-dynamics coupling method is used in V1\u03b2 and V1\u03b3.\n\u2013 se_ftype = 2. A hybrid method that uses option se_ftype = 0 (Fig. 2b) for the fluid dynamics variables (temperature, winds, and surface pressure), while option se_ftype = 1 (Fig. 2a) is used for water vapour, liquid- and ice-phase condensate, and all other advected tracers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V1\u03b3",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "hybrid physics-dynamics coupling (se_ftype = 2)",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "A new physics-dynamics coupling method is used in V1\u03b2 and V1\u03b3.\n\u2013 se_ftype = 2. A hybrid method that uses option se_ftype = 0 (Fig. 2b) for the fluid dynamics variables (temperature, winds, and surface pressure), while option se_ftype = 1 (Fig. 2a) is used for water vapour, liquid- and ice-phase condensate, and all other advected tracers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "E3SM V1\u03b1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "atmosphere-only",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Table 1. Water conservation error from the atmosphere model component in the coupled and atmosphere-only (atm) simulations with E3SM V0, V1a and V1\u03b2. The relative errors are given as the ratio to the global mean precipitation rate, calculated using Eq. (5) in Sect. 4. The \u201cartificial sea level rise\u201d is defined as an equivalent sea level rise due to the artificial source of water substances in the atmosphere model, calculated using Eq. (6) in Sect. 4. The results are slightly different if a different length (number of years) is chosen, but they are very similar to the numbers shown in the table.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "E3SM V1\u03b1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "coupled",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Table 1. Water conservation error from the atmosphere model component in the coupled and atmosphere-only (atm) simulations with E3SM V0, V1a and V1\u03b2. The relative errors are given as the ratio to the global mean precipitation rate, calculated using Eq. (5) in Sect. 4. The \u201cartificial sea level rise\u201d is defined as an equivalent sea level rise due to the artificial source of water substances in the atmosphere model, calculated using Eq. (6) in Sect. 4. The results are slightly different if a different length (number of years) is chosen, but they are very similar to the numbers shown in the table.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V1\u03b1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "water conservation error",
+            "target_entity_type": "Metric",
+            "paragraph": "This study investigated the causes of water conservation problem in E3SM V1a and related model versions. Earlier development of this model and its predecessors already paid substantial attention to conservation in individual resolved or parameterized processes; therefore those errors turned out to be negligible in our simulations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V1\u03b1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Equivalent sea level rise",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 1. Water conservation error from the atmosphere model component in the coupled and atmosphere-only (atm) simulations with E3SM V0, V1a and V1\u03b2. The relative errors are given as the ratio to the global mean precipitation rate, calculated using Eq. (5) in Sect. 4. The \u201cartificial sea level rise\u201d is defined as an equivalent sea level rise due to the artificial source of water substances in the atmosphere model, calculated using Eq. (6) in Sect. 4. The results are slightly different if a different length (number of years) is chosen, but they are very similar to the numbers shown in the table.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAM V1\u03b1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Relative water conservation error",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 1. Water conservation error from the atmosphere model component in the coupled and atmosphere-only (atm) simulations with E3SM V0, V1a and V1\u03b2. The relative errors are given as the ratio to the global mean precipitation rate, calculated using Eq. (5) in Sect. 4. The \u201cartificial sea level rise\u201d is defined as an equivalent sea level rise due to the artificial source of water substances in the atmosphere model, calculated using Eq. (6) in Sect. 4. The results are slightly different if a different length (number of years) is chosen, but they are very similar to the numbers shown in the table.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "E3SM Atmosphere Model version 1 (EAMv1)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "E3SM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EAM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "EAMv1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "V1a",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "V1\u03b2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "V1\u03b3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EAM V0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "V0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EAM V1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM1.3_beta10",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECHAM6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA-Interim reanalysis",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECHAM-HAM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "V0_L72",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "V0_CLUBB_MG2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "global Earth system model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "CLM4.0",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CLM4.5",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "deep convection (Zhang and McFarlane, 1995)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "shallow convection and turbulent transport/vertical diffusion (Park and Bretherton, 2009)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cloud microphysics (Morrison and Gettelman, 2008)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cloud macrophysics (Park et al., 2014)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "aerosol microphysics (Liu et al., 2012)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "radiation (Iacono et al., 2008)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Cloud Layers Unified by Binormals (CLUBB) parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "explicit Runge-Kutta time integration scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "PB2009",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "PBR2014",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MG1",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MG2",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CLUBB",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "QNEG3 fixer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Mass borrower",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "qqflx fixer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "QNEG4 fixer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "high-order, locally conservative advection scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "sign-preserving 2-D (horizontal) limiter",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "QQFLX fixer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MassBorrow fixer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "mass borrowing algorithms",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Zhang-McFarlane deep convection scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CLUBB-MG2 schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cubed-sphere mesh",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "spectral element dynamical core",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "30 vertical layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "72 vertical layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "pressure-based terrain-following coordinate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "model top at 2hPa",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "model top at 0.1hPa",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "20 m thick lowest model layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "se_ftype = 0",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "se_ftype = 1",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "se_ftype = 2",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ne30",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ne120",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ne16",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ne11",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "atmosphere-only",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "century-long simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "water conservation error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spurious sea level drift",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "global moisture residual",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Relative water conservation error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Equivalent sea level rise",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "normalized relative global mean error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "equivalent sea level change",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "convergence rate",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "pre-industrial",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "E3SM",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ACME",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CESM",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Pacific Northwest National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Sandia National Laboratories",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Lawrence Livermore National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Los Alamos National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Brookhaven National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Gwangju Institute of Science and Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "U.S. Department of Energy",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "total water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "water budget",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface moisture flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "negative water concentrations",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea level",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "water vapour",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud condensate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "winds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "liquid- and ice-phase condensate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sensible heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stratiform cloud liquid",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stratiform cloud ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rain",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "30 min",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "5 min",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "hour",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "2h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "15 min",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1/4\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1.9\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "2.8\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "100 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "25 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "190 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "280 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "South Korea",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "WA",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "NM",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "CA",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "NY",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Richland",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Albuquerque",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Livermore",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Los Alamos",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Upton",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Gwangju",
+            "entity_type": "City"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2084571691",
+        "https://openalex.org/W2050198601",
+        "https://openalex.org/W4254773735",
+        "https://openalex.org/W1951817746",
+        "https://openalex.org/W2127900800",
+        "https://openalex.org/W2141208140",
+        "https://openalex.org/W2156647858",
+        "https://openalex.org/W2079424054",
+        "https://openalex.org/W2110179017",
+        "https://openalex.org/W2119389437",
+        "https://openalex.org/W2045875548",
+        "https://openalex.org/W2130871986",
+        "https://openalex.org/W1959499254",
+        "https://openalex.org/W2153226382",
+        "https://openalex.org/W2917223911",
+        "https://openalex.org/W2025051238",
+        "https://openalex.org/W2007604340",
+        "https://openalex.org/W1718036133",
+        "https://openalex.org/W2118184331",
+        "https://openalex.org/W1974404496",
+        "https://openalex.org/W1492144958",
+        "https://openalex.org/W1775477311",
+        "https://openalex.org/W2013013195",
+        "https://openalex.org/W1985675473",
+        "https://openalex.org/W2172169796",
+        "https://openalex.org/W2076192533",
+        "https://openalex.org/W1979541009",
+        "https://openalex.org/W1999139360",
+        "https://openalex.org/W2082136389",
+        "https://openalex.org/W1866231958",
+        "https://openalex.org/W1997752402"
+    ]
+}

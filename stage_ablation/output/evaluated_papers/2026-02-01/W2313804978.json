@@ -1,0 +1,1007 @@
+{
+    "uri": "https://openalex.org/W2313804978",
+    "title": "Parallel finite-element implementation for higher-order ice-sheet models",
+    "venue": {
+        "name": "Journal of Glaciology",
+        "id": "https://openalex.org/S140216511",
+        "type": "journal"
+    },
+    "publication_year": 2012,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5076542592",
+            "display_name": "Mauro Perego",
+            "orcid": "https://orcid.org/0000-0002-2671-8032"
+        },
+        {
+            "id": "https://openalex.org/A5076283476",
+            "display_name": "Max Gunzburger",
+            "orcid": "https://orcid.org/0000-0003-0921-9079"
+        },
+        {
+            "id": "https://openalex.org/A5024090165",
+            "display_name": "John Burkardt",
+            "orcid": "https://orcid.org/0000-0003-0273-2769"
+        }
+    ],
+    "doi": "https://doi.org/10.3189/2012jog11j063",
+    "abstract": "Abstract Higher-order models represent a computationally less expensive alternative to the Stokes model for ice-sheet modeling. In this work, we develop linear and quadratic finite-element methods, implemented on parallel architectures, for the three-dimensional first-order model of Dukowicz and others (2010) that is based on the Blatter-Pattyn model, and for the depth-integrated model of Schoof and Hindmarsh (2010). We then apply our computational models to three of the ISMIP-HOM benchmark test cases (Pattyn and others, 2008). We compare results obtained from our models with those obtained using a reliable Stokes computational model, showing that our first-order model implementation produces reliable and accurate solutions for almost all characteristic length scales of the test geometries considered. Good agreement with the reference Stokes solution is also obtained by our depth-integrated model implementation in fast-sliding regimes and for medium to large length scales. We also provide a comprehensive comparison between results obtained from our first-order model implementation and implementations developed by ISMIP-HOM participants; this study shows that our implementation is at least as good as the previous ones. Finally, a comparison between linear and quadratic finite- element approximations is carried out, showing, as expected, the better accuracy of the quadratic finite-element method.",
+    "field": "Computational glaciology",
+    "problem": "The significant computational expense of the full Stokes model for ice-sheet simulation creates a need for reliable and accurate, yet less costly, approximations. This work develops and validates parallel finite-element implementations for higher-order models to serve as computationally efficient alternatives for large-scale ice-sheet modeling.",
+    "method": "We develop parallel linear and quadratic finite-element methods for the three-dimensional first-order and depth-integrated higher-order ice-sheet models, demonstrating their accuracy by comparing solutions against the full Stokes model and other implementations on benchmark test cases.",
+    "task": "The task is to develop, implement, and test parallel finite-element methods for higher-order ice-sheet models, evaluating their accuracy against the full Stokes model and other implementations using standard benchmark cases.",
+    "model": [
+        "no"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/finite-element-method",
+            "display_name": "Finite element method",
+            "score": 0.761093258857727
+        },
+        {
+            "id": "https://openalex.org/keywords/quadratic-equation",
+            "display_name": "Quadratic equation",
+            "score": 0.7143675684928894
+        },
+        {
+            "id": "https://openalex.org/keywords/benchmark",
+            "display_name": "Benchmark (surveying)",
+            "score": 0.6854886412620544
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.5925408601760864
+        },
+        {
+            "id": "https://openalex.org/keywords/element",
+            "display_name": "Element (criminal law)",
+            "score": 0.5209420919418335
+        },
+        {
+            "id": "https://openalex.org/keywords/quadratic-model",
+            "display_name": "Quadratic model",
+            "score": 0.509026050567627
+        },
+        {
+            "id": "https://openalex.org/keywords/applied-mathematics",
+            "display_name": "Applied mathematics",
+            "score": 0.5074805617332458
+        },
+        {
+            "id": "https://openalex.org/keywords/algorithm",
+            "display_name": "Algorithm",
+            "score": 0.4660113453865051
+        },
+        {
+            "id": "https://openalex.org/keywords/implementation",
+            "display_name": "Implementation",
+            "score": 0.4603246748447418
+        },
+        {
+            "id": "https://openalex.org/keywords/test-case",
+            "display_name": "Test case",
+            "score": 0.4595753848552704
+        },
+        {
+            "id": "https://openalex.org/keywords/order",
+            "display_name": "Order (exchange)",
+            "score": 0.45084503293037415
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematical-optimization",
+            "display_name": "Mathematical optimization",
+            "score": 0.3537163734436035
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.33119136095046997
+        },
+        {
+            "id": "https://openalex.org/keywords/geometry",
+            "display_name": "Geometry",
+            "score": 0.19737708568572998
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.17323601245880127
+        },
+        {
+            "id": "https://openalex.org/keywords/structural-engineering",
+            "display_name": "Structural engineering",
+            "score": 0.13842591643333435
+        },
+        {
+            "id": "https://openalex.org/keywords/response-surface-methodology",
+            "display_name": "Response surface methodology",
+            "score": 0.1044246256351471
+        },
+        {
+            "id": "https://openalex.org/keywords/engineering",
+            "display_name": "Engineering",
+            "score": 0.08834537863731384
+        },
+        {
+            "id": "https://openalex.org/keywords/machine-learning",
+            "display_name": "Machine learning",
+            "score": 0.07404258847236633
+        },
+        {
+            "id": "https://openalex.org/keywords/geodesy",
+            "display_name": "Geodesy",
+            "score": 0.0663481056690216
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C135628077",
+            "wikidata": "https://www.wikidata.org/wiki/Q220184",
+            "display_name": "Finite element method",
+            "level": 2,
+            "score": 0.761093258857727
+        },
+        {
+            "id": "https://openalex.org/C129844170",
+            "wikidata": "https://www.wikidata.org/wiki/Q41299",
+            "display_name": "Quadratic equation",
+            "level": 2,
+            "score": 0.7143675684928894
+        },
+        {
+            "id": "https://openalex.org/C185798385",
+            "wikidata": "https://www.wikidata.org/wiki/Q1161707",
+            "display_name": "Benchmark (surveying)",
+            "level": 2,
+            "score": 0.6854886412620544
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5925408601760864
+        },
+        {
+            "id": "https://openalex.org/C200288055",
+            "wikidata": "https://www.wikidata.org/wiki/Q2621792",
+            "display_name": "Element (criminal law)",
+            "level": 2,
+            "score": 0.5209420919418335
+        },
+        {
+            "id": "https://openalex.org/C2983524802",
+            "wikidata": "https://www.wikidata.org/wiki/Q41299",
+            "display_name": "Quadratic model",
+            "level": 3,
+            "score": 0.509026050567627
+        },
+        {
+            "id": "https://openalex.org/C28826006",
+            "wikidata": "https://www.wikidata.org/wiki/Q33521",
+            "display_name": "Applied mathematics",
+            "level": 1,
+            "score": 0.5074805617332458
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.4660113453865051
+        },
+        {
+            "id": "https://openalex.org/C26713055",
+            "wikidata": "https://www.wikidata.org/wiki/Q245962",
+            "display_name": "Implementation",
+            "level": 2,
+            "score": 0.4603246748447418
+        },
+        {
+            "id": "https://openalex.org/C128942645",
+            "wikidata": "https://www.wikidata.org/wiki/Q1568346",
+            "display_name": "Test case",
+            "level": 3,
+            "score": 0.4595753848552704
+        },
+        {
+            "id": "https://openalex.org/C182306322",
+            "wikidata": "https://www.wikidata.org/wiki/Q1779371",
+            "display_name": "Order (exchange)",
+            "level": 2,
+            "score": 0.45084503293037415
+        },
+        {
+            "id": "https://openalex.org/C126255220",
+            "wikidata": "https://www.wikidata.org/wiki/Q141495",
+            "display_name": "Mathematical optimization",
+            "level": 1,
+            "score": 0.3537163734436035
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.33119136095046997
+        },
+        {
+            "id": "https://openalex.org/C2524010",
+            "wikidata": "https://www.wikidata.org/wiki/Q8087",
+            "display_name": "Geometry",
+            "level": 1,
+            "score": 0.19737708568572998
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.17323601245880127
+        },
+        {
+            "id": "https://openalex.org/C66938386",
+            "wikidata": "https://www.wikidata.org/wiki/Q633538",
+            "display_name": "Structural engineering",
+            "level": 1,
+            "score": 0.13842591643333435
+        },
+        {
+            "id": "https://openalex.org/C150077022",
+            "wikidata": "https://www.wikidata.org/wiki/Q3136137",
+            "display_name": "Response surface methodology",
+            "level": 2,
+            "score": 0.1044246256351471
+        },
+        {
+            "id": "https://openalex.org/C127413603",
+            "wikidata": "https://www.wikidata.org/wiki/Q11023",
+            "display_name": "Engineering",
+            "level": 0,
+            "score": 0.08834537863731384
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.07404258847236633
+        },
+        {
+            "id": "https://openalex.org/C13280743",
+            "wikidata": "https://www.wikidata.org/wiki/Q131089",
+            "display_name": "Geodesy",
+            "level": 1,
+            "score": 0.0663481056690216
+        },
+        {
+            "id": "https://openalex.org/C10138342",
+            "wikidata": "https://www.wikidata.org/wiki/Q43015",
+            "display_name": "Finance",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C162324750",
+            "wikidata": "https://www.wikidata.org/wiki/Q8134",
+            "display_name": "Economics",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C199539241",
+            "wikidata": "https://www.wikidata.org/wiki/Q7748",
+            "display_name": "Law",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C152877465",
+            "wikidata": "https://www.wikidata.org/wiki/Q208042",
+            "display_name": "Regression analysis",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C199360897",
+            "wikidata": "https://www.wikidata.org/wiki/Q9143",
+            "display_name": "Programming language",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C17744445",
+            "wikidata": "https://www.wikidata.org/wiki/Q36442",
+            "display_name": "Political science",
+            "level": 0,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper develops and validates parallel, finite-element implementations for first-order and depth-integrated higher-order ice-sheet models, demonstrating their accuracy against full-Stokes solutions and other implementations using standard ISMIP-HOM benchmark tests.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Perego et al. FO model",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Blatter-Pattyn model",
+            "target_entity_type": "Source",
+            "paragraph": "ABSTRACT. Higher-order models represent a computationally less expensive alternative to the Stokes model for ice-sheet modeling. In this work, we develop linear and quadratic finite-element methods, implemented on parallel architectures, for the three-dimensional first-order model of Dukowicz and others (2010) that is based on the Blatter-Pattyn model, and for the depth-integrated model of Schoof and Hindmarsh (2010). We then apply our computational models to three of the ISMIP-HOM benchmark test cases (Pattyn and others, 2008). We compare results obtained from our models with those obtained using a reliable Stokes computational model, showing that our first-order model implementation produces reliable and accurate solutions for almost all characteristic length scales of the test geometries considered. Good agreement with the reference Stokes solution is also obtained by our depth-integrated model implementation in fast-sliding regimes and for medium to large length scales. We also provide a comprehensive comparison between results obtained from our first-order model implementation and implementations developed by ISMIP-HOM participants; this study shows that our implementation is at least as good as the previous ones. Finally, a comparison between linear and quadratic finite- element approximations is carried out, showing, as expected, the better accuracy of the quadratic finite-element method.\nHigher-order models can be regarded as a trade-off between accuracy and computational costs. In this work, we consider the FO model presented by Dukowicz and others (2010), which is based on the Blatter-Pattyn model (Blatter, 1995; Pattyn, 2003) and the modified version of the L1L2 model of Schoof and Hindmarsh (2010).\nIn this paper we have presented a parallel FE implementation of the FO model (Blatter, 1995; Pattyn, 2003; Dukowicz and others, 2010) and of the L1L2 model (Hindmarsh, 2004; Schoof and Hindmarsh, 2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Perego et al. L1L2 model",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "L1L2 model of Schoof and Hindmarsh (2010)",
+            "target_entity_type": "Source",
+            "paragraph": "ABSTRACT. Higher-order models represent a computationally less expensive alternative to the Stokes model for ice-sheet modeling. In this work, we develop linear and quadratic finite-element methods, implemented on parallel architectures, for the three-dimensional first-order model of Dukowicz and others (2010) that is based on the Blatter-Pattyn model, and for the depth-integrated model of Schoof and Hindmarsh (2010).\nHigher-order models can be regarded as a trade-off between accuracy and computational costs. In this work, we consider the FO model presented by Dukowicz and others (2010), which is based on the Blatter-Pattyn model (Blatter, 1995; Pattyn, 2003) and the modified version of the L1L2 model of Schoof and Hindmarsh (2010).\nThe L1L2 model presented here is derived by Schoof and Hindmarsh (2010), where it is shown to have the same accuracy as the FO model for fast-sliding regimes.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Perego et al. L1L2 model",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "FO model",
+            "target_entity_type": "Source",
+            "paragraph": "The L1L2 model approximates the FO model, retaining almost the same order of accuracy. It requires the solution of 2-D nonlinear partial differential equations. The L1L2 model presented here is derived by Schoof and Hindmarsh (2010), where it is shown to have the same accuracy as the FO model for fast-sliding regimes.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FO model",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Stokes model",
+            "target_entity_type": "Source",
+            "paragraph": "The FO model is derived as an approximation of the Stokes model under the assumption that the aspect ratio, d, is small and that the normals to the upper and lower surfaces are almost in the vertical direction, that is, n ~ [O(\u03b4), \u039f(\u03b4), 1]. Loosely speaking, the FO model is obtained neglecting those terms of the Stokes model that are O(82) (Blatter, 1995; Pattyn, 2003; Dukowicz and others, 2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Stokes model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Glen's law",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The effective viscosity, u, is given by Glen's law (Nye, 1957; Cuffey and Paterson, 2010)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Perego et al. FO model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Newton's method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In order to find the roots of Equation (16), we use Newton's method. Details are given in the Appendix. Newton's method is an iterative algorithm and requires an initial guess, (u\u00ba, v\u00ba).\nHere we compare the CPU times consumed for solving the FO and L1L2 models and using Newton and Picard methods.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Perego et al. L1L2 model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Newton's method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "As in the FO case, we use Newton's method to solve the problem. Details are given in the Appendix.\nHere we compare the CPU times consumed for solving the FO and L1L2 models and using Newton and Picard methods.",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Perego et al. FO model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Picard method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Here we compare the CPU times consumed for solving the FO and L1L2 models and using Newton and Picard methods. The Picard method consists of solving Equation (15) or (32), using the viscosity, \u03bc = \u00b5k, to obtain a new solution,",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Perego et al. L1L2 model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Picard method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Here we compare the CPU times consumed for solving the FO and L1L2 models and using Newton and Picard methods. The Picard method consists of solving Equation (15) or (32), using the viscosity, \u03bc = \u00b5k, to obtain a new solution,",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Perego et al. FO model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "linear finite-element method",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ABSTRACT. Higher-order models represent a computationally less expensive alternative to the Stokes model for ice-sheet modeling. In this work, we develop linear and quadratic finite-element methods, implemented on parallel architectures, for the three-dimensional first-order model of Dukowicz and others (2010) that is based on the Blatter-Pattyn model, and for the depth-integrated model of Schoof and Hindmarsh (2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Perego et al. FO model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "quadratic finite-element method",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ABSTRACT. Higher-order models represent a computationally less expensive alternative to the Stokes model for ice-sheet modeling. In this work, we develop linear and quadratic finite-element methods, implemented on parallel architectures, for the three-dimensional first-order model of Dukowicz and others (2010) that is based on the Blatter-Pattyn model, and for the depth-integrated model of Schoof and Hindmarsh (2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Perego et al. FO model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "three-dimensional",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The FO model is a fully 3-D model, whereas the L1L2 is depth-integrated and reduces to a two-dimensional (2-D) elliptic system in the horizontal coordinates.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Perego et al. L1L2 model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "two-dimensional",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The FO model is a fully 3-D model, whereas the L1L2 is depth-integrated and reduces to a two-dimensional (2-D) elliptic system in the horizontal coordinates. Dukowicz and others (2010) and Schoof and Hindmarsh (2010), respectively, show that there exist variational principles associated with both the FO and the L1L2 models. In fact, the two problems are equivalent to the unconstrained minimization of associated positive functionals. In contrast, the Stokes model is equivalent to a constrained minimization problem (Dukowicz and others, 2010) in which the pressure plays the role of a Lagrange multiplier. Therefore, besides the reduction in the number of variables (from four to two), the higher-order models have mathematical properties which are more favorable than the Stokes model from a numerical point of view. Moreover, the L1L2 model has the clear advantage of being a 2-D model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Perego et al. FO model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "P1 finite elements",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this work, we use both linear (P1) and quadratic (P2) finite elements. Linear elements provide a second-order accurate approximate solution, whereas quadratic elements provide third-order accuracy (in L2 norm). A comparison between the solutions obtained with linear and quadratic finite elements is carried out for the FO model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Perego et al. FO model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "P2 finite elements",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this work, we use both linear (P1) and quadratic (P2) finite elements. Linear elements provide a second-order accurate approximate solution, whereas quadratic elements provide third-order accuracy (in L2 norm). A comparison between the solutions obtained with linear and quadratic finite elements is carried out for the FO model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "rhi",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "spectral elements",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Most of the FO models presented in the ISMIP- HOM were implemented using finite-difference methods, with the following exceptions: group 'rhi' uses spectral elements, while groups 'cma' and 'bds' use finite elements.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "cma",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "finite elements",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Most of the FO models presented in the ISMIP- HOM were implemented using finite-difference methods, with the following exceptions: group 'rhi' uses spectral elements, while groups 'cma' and 'bds' use finite elements.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "bds",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "finite elements",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Most of the FO models presented in the ISMIP- HOM were implemented using finite-difference methods, with the following exceptions: group 'rhi' uses spectral elements, while groups 'cma' and 'bds' use finite elements.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "dpo",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "finite differences",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Here we compare the proposed L1L2 model with the depth-integrated higher-order models of the authors of the ISMIP-HOM paper (Pattyn and others, 2008). Namely, we compare it with the L1L1 and L1L2 models of group 'rhi' that are based on the work of Hindmarsh (2004) and solved with spectral elements, the L1L2 model by group 'dpo' (Pollard and Deconto, 2007) solved with finite differences and the L1L1 model by group 'Ipe' based on MacAyeal (1989) and Pattyn (2003) and solved with finite differences.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "lpe",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "finite differences",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Here we compare the proposed L1L2 model with the depth-integrated higher-order models of the authors of the ISMIP-HOM paper (Pattyn and others, 2008). Namely, we compare it with the L1L1 and L1L2 models of group 'rhi' that are based on the work of Hindmarsh (2004) and solved with spectral elements, the L1L2 model by group 'dpo' (Pollard and Deconto, 2007) solved with finite differences and the L1L1 model by group 'Ipe' based on MacAyeal (1989) and Pattyn (2003) and solved with finite differences.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "first-order model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Blatter-Pattyn model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "depth-integrated model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ISMIP-HOM",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "ISMIP-HOM test A",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ISMIP-HOM test C",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ISMIP-HOM test E",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Stokes model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "shallow-ice approximation",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "L1L2 model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "zeroth-order models",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "higher-order models",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "shallow-shelf approximation",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "L1L1 model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LifeV",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "unstructured and anisotropic meshes",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "linear (P1) finite elements",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "quadratic (P2) finite elements",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "finite-element methods",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Florida State University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "landIce",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Stokes equations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Glen's law",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ice velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Cauchy stress tensor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "gravitational acceleration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "deviatoric stress tensor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice effective viscosity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "strain-rate tensor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "effective strain rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "effective stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stress-free boundary condition",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "sliding boundary condition",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "no-slip boundary condition",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Newton's method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "periodic boundary conditions",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "basal velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Trilinos",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "15-point fourth-order accurate quadrature rule",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Parmetis",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NOX",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "GMRES",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Schwarz method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "KLU factorization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Belos",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Ifpack",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "parallel",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "structured mesh",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "surface velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "5 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "10 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "20 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "40 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "80 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "160 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "40x40x10",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "40x40",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "shear stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Flow rate factor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Glen's flow law exponent",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Gravitational constant",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Picard method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CPU time",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ILU preconditioner",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "20x20x5",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Switzerland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Haut Glacier d'Arolla",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "200x1x14",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "oga1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "aas1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "mmr1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "cma1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ssu1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "structured grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "unstructured grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "locally refined unstructured grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "finite-difference method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "spectral elements",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "rhi",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "cma",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "bds",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "tpa1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "fpa1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "100x1x10",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "50x1x7",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ahu1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "cma2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "fsa1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "mtk1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "rhi2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "bds1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "mbr1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "dpo",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "lpe",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "60x60x15",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "SIA model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Elmer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "G\u00e2teaux derivative",
+            "entity_type": "PhysicalScheme"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2003433978",
+        "https://openalex.org/W2028664135",
+        "https://openalex.org/W2116621195",
+        "https://openalex.org/W1995658458",
+        "https://openalex.org/W81594258",
+        "https://openalex.org/W2112831418",
+        "https://openalex.org/W2119817529",
+        "https://openalex.org/W1553005670",
+        "https://openalex.org/W4234337445",
+        "https://openalex.org/W4292079189",
+        "https://openalex.org/W2130272322",
+        "https://openalex.org/W2074272083",
+        "https://openalex.org/W2050248855",
+        "https://openalex.org/W2145016426",
+        "https://openalex.org/W2056753208",
+        "https://openalex.org/W601329258",
+        "https://openalex.org/W1578281258",
+        "https://openalex.org/W4297803526",
+        "https://openalex.org/W1514561316",
+        "https://openalex.org/W2490300892",
+        "https://openalex.org/W2070611029",
+        "https://openalex.org/W1555557982",
+        "https://openalex.org/W2495286352",
+        "https://openalex.org/W1967011851"
+    ]
+}

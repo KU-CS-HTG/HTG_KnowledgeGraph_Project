@@ -1,0 +1,1009 @@
+{
+    "uri": "https://openalex.org/W2784993024",
+    "title": "An interactive ocean surface albedo scheme (OSAv1.0): formulation and evaluation in ARPEGE-Climat (V6.1) and LMDZ (V5A)",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2018,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5019912667",
+            "display_name": "Roland S\u00e9f\u00e9rian",
+            "orcid": "https://orcid.org/0000-0002-2571-2114"
+        },
+        {
+            "id": "https://openalex.org/A5082935089",
+            "display_name": "Sunghye Baek",
+            "orcid": "https://orcid.org/0000-0001-7432-8103"
+        },
+        {
+            "id": "https://openalex.org/A5077051671",
+            "display_name": "Olivi\u00e9r Boucher",
+            "orcid": "https://orcid.org/0000-0003-2328-5769"
+        },
+        {
+            "id": "https://openalex.org/A5061626712",
+            "display_name": "Jean\u2010Louis Dufresne",
+            "orcid": "https://orcid.org/0000-0003-4764-9600"
+        },
+        {
+            "id": "https://openalex.org/A5071907317",
+            "display_name": "Bertrand Decharme",
+            "orcid": "https://orcid.org/0000-0002-8661-1464"
+        },
+        {
+            "id": "https://openalex.org/A5061786944",
+            "display_name": "David Saint\u2010Martin",
+            "orcid": "https://orcid.org/0000-0002-8478-6914"
+        },
+        {
+            "id": "https://openalex.org/A5054074305",
+            "display_name": "Romain Roehrig",
+            "orcid": "https://orcid.org/0000-0002-3903-3841"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-11-321-2018",
+    "abstract": "Abstract. Ocean surface represents roughly 70 % of the Earth's surface, playing a large role in the partitioning of the energy flow within the climate system. The ocean surface albedo (OSA) is an important parameter in this partitioning because it governs the amount of energy penetrating into the ocean or reflected towards space. The old OSA schemes in the ARPEGE-Climat and LMDZ models only resolve the latitudinal dependence in an ad hoc way without an accurate representation of the solar zenith angle dependence. Here, we propose a new interactive OSA scheme suited for Earth system models, which enables coupling between Earth system model components like surface ocean waves and marine biogeochemistry. This scheme resolves spectrally the various contributions of the surface for direct and diffuse solar radiation. The implementation of this scheme in two Earth system models leads to substantial improvements in simulated OSA. At the local scale, models using the interactive OSA scheme better replicate the day-to-day distribution of OSA derived from ground-based observations in contrast to old schemes. At global scale, the improved representation of OSA for diffuse radiation reduces model biases by up to 80 % over the tropical oceans, reducing annual-mean model\u2013data error in surface upwelling shortwave radiation by up to 7 W m\u22122 over this domain. The spatial correlation coefficient between modeled and observed OSA at monthly resolution has been increased from 0.1 to 0.8. Despite its complexity, this interactive OSA scheme is computationally efficient for enabling precise OSA calculation without penalizing the elapsed model time.",
+    "field": "Climate model development",
+    "problem": "Existing ocean surface albedo (OSA) schemes in climate models are often ad hoc, inaccurately representing solar zenith angle dependence and failing to properly differentiate between direct and diffuse solar radiation, which leads to substantial errors in simulations.",
+    "method": "This paper proposes a new interactive ocean surface albedo scheme that spectrally computes albedo by accounting for direct/diffuse radiation, surface wind speed, chlorophyll content, and whitecaps to improve simulations in Earth system models.",
+    "task": "The task is to formulate and evaluate a new interactive ocean surface albedo scheme (OSAv1.0) that accounts for spectral and biophysical properties, and to test its performance within the ARPEGE-Climat (V6.1) and LMDZ (V5A) climate models.",
+    "model": [
+        "ARPEGE-Climat",
+        "LMDZ",
+        "AGCM4",
+        "IPSL-CM5A",
+        "SURFEX",
+        "NEMO",
+        "ACCESS1-3",
+        "BNU-ESM",
+        "HadCM3",
+        "MIROC-ESM",
+        "MIROC-ESM-CHEM"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/shortwave-radiation",
+            "display_name": "Shortwave radiation",
+            "score": 0.7841379642486572
+        },
+        {
+            "id": "https://openalex.org/keywords/albedo",
+            "display_name": "Albedo (alchemy)",
+            "score": 0.7462384700775146
+        },
+        {
+            "id": "https://openalex.org/keywords/shortwave",
+            "display_name": "Shortwave",
+            "score": 0.5737630724906921
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.5271947979927063
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.48049747943878174
+        },
+        {
+            "id": "https://openalex.org/keywords/bidirectional-reflectance-distribution-function",
+            "display_name": "Bidirectional reflectance distribution function",
+            "score": 0.43058058619499207
+        },
+        {
+            "id": "https://openalex.org/keywords/remote-sensing",
+            "display_name": "Remote sensing",
+            "score": 0.4124915599822998
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.40716442465782166
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.3896077871322632
+        },
+        {
+            "id": "https://openalex.org/keywords/radiative-transfer",
+            "display_name": "Radiative transfer",
+            "score": 0.3397938013076782
+        },
+        {
+            "id": "https://openalex.org/keywords/radiation",
+            "display_name": "Radiation",
+            "score": 0.22545957565307617
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.19637355208396912
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.19520843029022217
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.14033570885658264
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C19369268",
+            "wikidata": "https://www.wikidata.org/wiki/Q7502259",
+            "display_name": "Shortwave radiation",
+            "level": 3,
+            "score": 0.7841379642486572
+        },
+        {
+            "id": "https://openalex.org/C195886398",
+            "wikidata": "https://www.wikidata.org/wiki/Q2110050",
+            "display_name": "Albedo (alchemy)",
+            "level": 3,
+            "score": 0.7462384700775146
+        },
+        {
+            "id": "https://openalex.org/C2776272892",
+            "wikidata": "https://www.wikidata.org/wiki/Q7502249",
+            "display_name": "Shortwave",
+            "level": 3,
+            "score": 0.5737630724906921
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5271947979927063
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.48049747943878174
+        },
+        {
+            "id": "https://openalex.org/C151596937",
+            "wikidata": "https://www.wikidata.org/wiki/Q856980",
+            "display_name": "Bidirectional reflectance distribution function",
+            "level": 3,
+            "score": 0.43058058619499207
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.4124915599822998
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.40716442465782166
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.3896077871322632
+        },
+        {
+            "id": "https://openalex.org/C74902906",
+            "wikidata": "https://www.wikidata.org/wiki/Q1190858",
+            "display_name": "Radiative transfer",
+            "level": 2,
+            "score": 0.3397938013076782
+        },
+        {
+            "id": "https://openalex.org/C153385146",
+            "wikidata": "https://www.wikidata.org/wiki/Q18335",
+            "display_name": "Radiation",
+            "level": 2,
+            "score": 0.22545957565307617
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.19637355208396912
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.19520843029022217
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.14033570885658264
+        },
+        {
+            "id": "https://openalex.org/C108597893",
+            "wikidata": "https://www.wikidata.org/wiki/Q663650",
+            "display_name": "Reflectivity",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C120665830",
+            "wikidata": "https://www.wikidata.org/wiki/Q14620",
+            "display_name": "Optics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C52119013",
+            "wikidata": "https://www.wikidata.org/wiki/Q50637",
+            "display_name": "Art history",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C142362112",
+            "wikidata": "https://www.wikidata.org/wiki/Q735",
+            "display_name": "Art",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C62520636",
+            "wikidata": "https://www.wikidata.org/wiki/Q944",
+            "display_name": "Quantum mechanics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C554144382",
+            "wikidata": "https://www.wikidata.org/wiki/Q213156",
+            "display_name": "Performance art",
+            "level": 2,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "LMDZ-old",
+            "observational_dataset": "COVE station",
+            "evaluation_metric": "Temporal correlation (R) of daily mean ocean surface albedo",
+            "result": "0.074"
+        },
+        {
+            "model": "ARPEGE-old",
+            "observational_dataset": "COVE station",
+            "evaluation_metric": "Temporal correlation (R) of daily mean ocean surface albedo",
+            "result": "0.188"
+        },
+        {
+            "model": "LMDZ-new",
+            "observational_dataset": "COVE station",
+            "evaluation_metric": "Temporal correlation (R) of daily mean ocean surface albedo",
+            "result": "0.396"
+        },
+        {
+            "model": "ARPEGE-new",
+            "observational_dataset": "COVE station",
+            "evaluation_metric": "Temporal correlation (R) of daily mean ocean surface albedo",
+            "result": "0.375"
+        },
+        {
+            "model": "LMDZ (old scheme)",
+            "observational_dataset": "CERES",
+            "evaluation_metric": "Spatial correlation of climatological mean OSA",
+            "result": "-0.03"
+        },
+        {
+            "model": "ARPEGE-Climat (old scheme)",
+            "observational_dataset": "CERES",
+            "evaluation_metric": "Spatial correlation of climatological mean OSA",
+            "result": "0.40"
+        },
+        {
+            "model": "LMDZ (new scheme)",
+            "observational_dataset": "CERES",
+            "evaluation_metric": "Spatial correlation of climatological mean OSA",
+            "result": "0.82"
+        },
+        {
+            "model": "ARPEGE-Climat (new scheme)",
+            "observational_dataset": "CERES",
+            "evaluation_metric": "Spatial correlation of climatological mean OSA",
+            "result": "0.86"
+        },
+        {
+            "model": "LMDZ (new scheme)",
+            "observational_dataset": "CERES",
+            "evaluation_metric": "Global mean OSA",
+            "result": "0.062"
+        },
+        {
+            "model": "ARPEGE-Climat (new scheme)",
+            "observational_dataset": "CERES",
+            "evaluation_metric": "Global mean OSA",
+            "result": "0.057"
+        },
+        {
+            "model": "ARPEGE-Climat (old scheme)",
+            "observational_dataset": "COVE station",
+            "evaluation_metric": "Correlation of seasonal OSA",
+            "result": "0.32"
+        },
+        {
+            "model": "LMDZ (old scheme)",
+            "observational_dataset": "COVE station",
+            "evaluation_metric": "Correlation of seasonal OSA",
+            "result": "0.28"
+        },
+        {
+            "model": "LMDZ (old scheme)",
+            "observational_dataset": "COVE station",
+            "evaluation_metric": "Correlation of daily values over a mean yearly cycle",
+            "result": "0.23"
+        },
+        {
+            "model": "LMDZ (new scheme)",
+            "observational_dataset": "COVE station",
+            "evaluation_metric": "Correlation of daily values over a mean yearly cycle",
+            "result": "0.84"
+        },
+        {
+            "model": "ARPEGE-Climat (old scheme)",
+            "observational_dataset": "COVE station",
+            "evaluation_metric": "Correlation of daily values over a mean yearly cycle",
+            "result": "0.32"
+        },
+        {
+            "model": "ARPEGE-Climat (new scheme)",
+            "observational_dataset": "COVE station",
+            "evaluation_metric": "Correlation of daily values over a mean yearly cycle",
+            "result": "0.86"
+        }
+    ],
+    "innovation": "This paper presents a new interactive ocean surface albedo scheme (OSAv1.0) that spectrally resolves physical and biological factors, leading to substantial improvements in simulated ocean albedo and reduced model biases in two major Earth system models.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ARPEGE-Climat (V6.1)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "OSAv1.0",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "An interactive ocean surface albedo scheme (OSAv1.0): formulation and evaluation in ARPEGE-Climat (V6.1) and LMDZ (V5A)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDZ (V5A)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "OSAv1.0",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "An interactive ocean surface albedo scheme (OSAv1.0): formulation and evaluation in ARPEGE-Climat (V6.1) and LMDZ (V5A)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDZ v5A",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Larsen and Barkstrom (1977) formulation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The old OSA scheme in this version of LMDZ [LMDZ v5A] is based on the formulation of Larsen and Barkstrom (1977). It is parameterized in terms of \u00b5 as follows:",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ARPEGE-Climat v6.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "SURFEX",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "ARPEGE-Climat v6.1 is implicitly coupled to the surface model called SURFEX (Masson et al., 2013), which considers a diversity of surface formulations for the evolution of four types of surface: land, town, inland water and ocean.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SURFEX",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Taylor et al. (1996) scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The old OSA formulation implemented in SURFEX follows Taylor et al. (1996). This scheme enables the computation of \u03b1Sdir as a function of \u00b5:",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDZ v5A",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "96 \u00d7 95 horizontally and 39 layers vertically",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "LMDZ is an atmospheric general circulation model developed at the Laboratoire de M\u00e9t\u00e9orologie Dynamique. The version of this atmosphere model, known as LMDZ v5A, is described in detail in Hourdin et al. (2013); it is part of the main IPSL climate model used for CMIP5 and described in Dufresne et al. (2013; IPSL-CM5A). The atmospheric resolution is 96 \u00d7 95 horizontally and 39 layers vertically.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDZ v5A",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "atmosphere-only simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "We assess simulated OSA using an atmosphere-only simulation with prescribed radiative forcing (greenhouse gases, aerosols, land-cover change) and fixed sea surface temperature as recommended by CMIP5 (Taylor et al., 2012). LMDZ has been integrated from 1979 up to 2012 under this protocol.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ARPEGE-Climat v6.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "new vertical diffusion scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Compared to the version used in Voldoire et al. (2013), sev eral improvements in atmospheric physics have been implemented. They consist of a new vertical diffusion scheme which solves a prognostic turbulent kinetic energy equation following Cuxart et al. (2000), an updated prognostic microphysics representing the specific masses of cloud liquid and ice water, rain and snow, as detailed in Lopez (2002), and a new convection scheme known as the Prognostic Condensates Microphysics Transport (PCMT; Gu\u00e9r\u00e9my, 2011; Piriou et al., 2007).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ARPEGE-Climat v6.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "updated prognostic microphysics",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Compared to the version used in Voldoire et al. (2013), sev eral improvements in atmospheric physics have been implemented. They consist of a new vertical diffusion scheme which solves a prognostic turbulent kinetic energy equation following Cuxart et al. (2000), an updated prognostic microphysics representing the specific masses of cloud liquid and ice water, rain and snow, as detailed in Lopez (2002), and a new convection scheme known as the Prognostic Condensates Microphysics Transport (PCMT; Gu\u00e9r\u00e9my, 2011; Piriou et al., 2007).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ARPEGE-Climat v6.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Prognostic Condensates Microphysics Transport",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Compared to the version used in Voldoire et al. (2013), sev eral improvements in atmospheric physics have been implemented. They consist of a new vertical diffusion scheme which solves a prognostic turbulent kinetic energy equation following Cuxart et al. (2000), an updated prognostic microphysics representing the specific masses of cloud liquid and ice water, rain and snow, as detailed in Lopez (2002), and a new convection scheme known as the Prognostic Condensates Microphysics Transport (PCMT; Gu\u00e9r\u00e9my, 2011; Piriou et al., 2007).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ARPEGE-Climat v6.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "AMIP simulations",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Simulations performed with ARPEGE-Climat also consists of AMIP simulations as in LMDZ, except for sea surface temperature which relies on data recommended by CMIP6 (Eyring et al., 2016a). This simulation also spans 1979 to 2012.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDZ (V5A)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "spatial correlation coefficient",
+            "target_entity_type": "Metric",
+            "paragraph": "The spatial correlation coefficient between modeled and observed OSA at monthly resolution has been increased from 0.1 to 0.8.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ARPEGE-Climat (V6.1)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "spatial correlation coefficient",
+            "target_entity_type": "Metric",
+            "paragraph": "The spatial correlation coefficient between modeled and observed OSA at monthly resolution has been increased from 0.1 to 0.8.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CERES",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "global shortwave radiation",
+            "target_entity_type": "Variable",
+            "paragraph": "At global scale, we perform model evaluation with retrievals from the CERES satellite radiation measurements (Wielicki et al., 1996). CERES data provides estimates of global shortwave radiation at top of the atmosphere and at the surface.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "OSAv1.0",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ARPEGE-Climat (V6.1)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LMDZ (V5A)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Centre National de Recherches M\u00e9t\u00e9orologiques, M\u00e9t\u00e9o-France/CNRS, Toulouse, France",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institut Pierre-Simon Laplace, CNRS/UPMC, Paris, France",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Laboratoire de M\u00e9t\u00e9orologie Dynamique, CNRS/UPMC, Paris, France",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Korea Institute of Atmospheric Prediction Systems (KIAPS), Seoul, South Korea",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ocean surface albedo (OSA)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ARPEGE-Climat",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LMDZ",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "interactive OSA scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "surface ocean waves",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "marine biogeochemistry",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "direct solar radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "diffuse solar radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "upwelling shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "spatial correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "IPCC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "sea surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean heat content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar zenith angle (SZA)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "chlorophyll",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "whitecaps",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "AGCM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "bidirectional reflectance distribution function (BRDF)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "azimuthally averaged radiative transfer equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "whitecap cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "WAM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Salisbury et al. (2014) formulation of WC",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "10 m wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Whitlock et al. (1982) relationship",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fresnel reflection",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "refractive index of seawater",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Cox and Munk (1954) probabilistic function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "surface roughness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Jin et al. (2011) polynomial function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ocean interior reflectance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "chlorophyll content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Morel and Gentili (1991) formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "absorption and backscattering coefficients of seawater",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Morel and Maritorena (2001) formalism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "chlorophyll concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ERA-Interim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SeaWiFS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "CERES Ocean Validation Experiment (COVE)",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "upwelling and downwelling shortwave radiative fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Chesapeake Bay",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "CERES",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "global shortwave radiation at top of the atmosphere",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global shortwave radiation at the surface",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "IPSL-CM5A",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "96 \u00d7 95 horizontally and 39 layers vertically",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Larsen and Barkstrom (1977) formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ARPEGE-Climat v6.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ARPEGE-Integrated Forecasting System (IFS)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "M\u00e9t\u00e9o-France",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-range Weather Forecasts (ECMWF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "vertical diffusion scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "prognostic microphysics",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Prognostic Condensates Microphysics Transport (PCMT)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SURFEX",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Taylor et al. (1996) old OSA formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AMIP",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "nudged",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Payne (1972) OSA scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NEMO",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "COVE",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "probability density function (pdf)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "temporal correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "seasonal",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ACCESS1-3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BNU-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadCM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ESM-CHEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "bias in the surface energy budget",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "systematic bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "aerosol optical thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "satellite",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "cloud cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HYDROLIGHT",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "SURFEX (V8.0)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CRESCENDO",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "IS-ENES2",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "GENCI",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1985148570",
+        "https://openalex.org/W2172782942",
+        "https://openalex.org/W1995609103",
+        "https://openalex.org/W2051663919",
+        "https://openalex.org/W2139455631",
+        "https://openalex.org/W2163418722",
+        "https://openalex.org/W2063135892",
+        "https://openalex.org/W2010341850",
+        "https://openalex.org/W2075828063",
+        "https://openalex.org/W4229887323",
+        "https://openalex.org/W2076678844",
+        "https://openalex.org/W2121745948",
+        "https://openalex.org/W1990376608",
+        "https://openalex.org/W2483370739",
+        "https://openalex.org/W2193503481",
+        "https://openalex.org/W2443985281",
+        "https://openalex.org/W1994402780",
+        "https://openalex.org/W2405417942",
+        "https://openalex.org/W2050402931",
+        "https://openalex.org/W2109596948",
+        "https://openalex.org/W2077042386",
+        "https://openalex.org/W1996478169",
+        "https://openalex.org/W2160918457",
+        "https://openalex.org/W1537300530",
+        "https://openalex.org/W2098585742",
+        "https://openalex.org/W2043986368",
+        "https://openalex.org/W2484036528",
+        "https://openalex.org/W2013277008",
+        "https://openalex.org/W1967500398",
+        "https://openalex.org/W2171030279",
+        "https://openalex.org/W2039210007",
+        "https://openalex.org/W2167928455",
+        "https://openalex.org/W2045343125",
+        "https://openalex.org/W2075151278",
+        "https://openalex.org/W1985037632",
+        "https://openalex.org/W1784386226",
+        "https://openalex.org/W2015548800",
+        "https://openalex.org/W6602283354",
+        "https://openalex.org/W2014373509",
+        "https://openalex.org/W1971417482",
+        "https://openalex.org/W2004878137",
+        "https://openalex.org/W2090592000",
+        "https://openalex.org/W1993485260",
+        "https://openalex.org/W2083339292",
+        "https://openalex.org/W2018045139",
+        "https://openalex.org/W2129825189",
+        "https://openalex.org/W2040649777",
+        "https://openalex.org/W2176363601",
+        "https://openalex.org/W2981420978",
+        "https://openalex.org/W2052863652",
+        "https://openalex.org/W2091357651",
+        "https://openalex.org/W2138847249",
+        "https://openalex.org/W2174208401",
+        "https://openalex.org/W2162901362",
+        "https://openalex.org/W2089199027",
+        "https://openalex.org/W2102560404",
+        "https://openalex.org/W2029599228",
+        "https://openalex.org/W2128565309",
+        "https://openalex.org/W1980234020",
+        "https://openalex.org/W2106392141",
+        "https://openalex.org/W2059923548",
+        "https://openalex.org/W1994492814",
+        "https://openalex.org/W2027362352",
+        "https://openalex.org/W4233213234",
+        "https://openalex.org/W2024966118",
+        "https://openalex.org/W2075112338",
+        "https://openalex.org/W2099343751",
+        "https://openalex.org/W2073773661",
+        "https://openalex.org/W97751169",
+        "https://openalex.org/W2097807518",
+        "https://openalex.org/W2906975172",
+        "https://openalex.org/W2049311385",
+        "https://openalex.org/W2127959702",
+        "https://openalex.org/W1516460738",
+        "https://openalex.org/W2148471369",
+        "https://openalex.org/W2317167256"
+    ]
+}

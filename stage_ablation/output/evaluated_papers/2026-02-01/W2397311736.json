@@ -1,0 +1,1111 @@
+{
+    "uri": "https://openalex.org/W2397311736",
+    "title": "MSWEP: 3-hourly 0.25\u00b0 global gridded precipitation (1979\u20132015) by merging gauge, satellite, and reanalysis data",
+    "venue": {
+        "name": "Hydrology and earth system sciences",
+        "id": "https://openalex.org/S93121129",
+        "type": "journal"
+    },
+    "publication_year": 2017,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5057753834",
+            "display_name": "Hylke E. Beck",
+            "orcid": "https://orcid.org/0000-0003-2553-9566"
+        },
+        {
+            "id": "https://openalex.org/A5026818785",
+            "display_name": "Albert I. J. M. van Dijk",
+            "orcid": "https://orcid.org/0000-0002-6508-7480"
+        },
+        {
+            "id": "https://openalex.org/A5000773178",
+            "display_name": "Vincenzo Levizzani",
+            "orcid": "https://orcid.org/0000-0002-7620-5235"
+        },
+        {
+            "id": "https://openalex.org/A5019355794",
+            "display_name": "Jaap Schellekens",
+            "orcid": "https://orcid.org/0000-0002-9942-4078"
+        },
+        {
+            "id": "https://openalex.org/A5030207043",
+            "display_name": "Diego G. Miralles",
+            "orcid": "https://orcid.org/0000-0001-6186-5751"
+        },
+        {
+            "id": "https://openalex.org/A5036096971",
+            "display_name": "Brecht Martens",
+            "orcid": "https://orcid.org/0000-0002-7368-7953"
+        },
+        {
+            "id": "https://openalex.org/A5036857139",
+            "display_name": "Ad de Roo",
+            "orcid": "https://orcid.org/0000-0001-9859-9127"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/hess-21-589-2017",
+    "abstract": "Abstract. Current global precipitation (P) datasets do not take full advantage of the complementary nature of satellite and reanalysis data. Here, we present Multi-Source Weighted-Ensemble Precipitation (MSWEP) version 1.1, a global P dataset for the period 1979\u20132015 with a 3-hourly temporal and 0.25\u00b0 spatial resolution, specifically designed for hydrological modeling. The design philosophy of MSWEP was to optimally merge the highest quality P data sources available as a function of timescale and location. The long-term mean of MSWEP was based on the CHPclim dataset but replaced with more accurate regional datasets where available. A correction for gauge under-catch and orographic effects was introduced by inferring catchment-average P from streamflow (Q) observations at 13 762 stations across the globe. The temporal variability of MSWEP was determined by weighted averaging of P anomalies from seven datasets; two based solely on interpolation of gauge observations (CPC Unified and GPCC), three on satellite remote sensing (CMORPH, GSMaP-MVK, and TMPA 3B42RT), and two on atmospheric model reanalysis (ERA-Interim and JRA-55). For each grid cell, the weight assigned to the gauge-based estimates was calculated from the gauge network density, while the weights assigned to the satellite- and reanalysis-based estimates were calculated from their comparative performance at the surrounding gauges. The quality of MSWEP was compared against four state-of-the-art gauge-adjusted P datasets (WFDEI-CRU, GPCP-1DD, TMPA 3B42, and CPC Unified) using independent P data from 125 FLUXNET tower stations around the globe. MSWEP obtained the highest daily correlation coefficient (R) among the five P datasets for 60.0 % of the stations and a median R of 0.67 vs. 0.44\u20130.59 for the other datasets. We further evaluated the performance of MSWEP using hydrological modeling for 9011 catchments (&lt; 50 000 km2) across the globe. Specifically, we calibrated the simple conceptual hydrological model HBV (Hydrologiska Byr\u00e5ns Vattenbalansavdelning) against daily Q observations with P from each of the different datasets. For the 1058 sparsely gauged catchments, representative of 83.9 % of the global land surface (excluding Antarctica), MSWEP obtained a median calibration NSE of 0.52 vs. 0.29\u20130.39 for the other P datasets. MSWEP is available via http://www.gloh2o.org.",
+    "field": "Global precipitation estimation",
+    "problem": "Current global precipitation datasets are suboptimal for hydrological modeling because they do not fully merge complementary satellite and reanalysis data and often fail to correct for biases from gauge under-catch and orographic effects.",
+    "method": "We propose a method to create a global precipitation dataset by optimally merging gauge, satellite, and reanalysis data, correcting for long-term bias using streamflow observations, and determining temporal variability from a weighted average of anomalies from seven different data sources.",
+    "task": "The task is to develop a global gridded precipitation dataset (MSWEP) by optimally merging gauge, satellite, and reanalysis data to create a high-resolution product specifically designed for hydrological applications.",
+    "model": [
+        "HBV",
+        "PRISM",
+        "NCEP-CFSR",
+        "ERA-Interim",
+        "JRA-55",
+        "ERA5"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/orography",
+            "display_name": "Orography",
+            "score": 0.6388462781906128
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.6299608945846558
+        },
+        {
+            "id": "https://openalex.org/keywords/satellite",
+            "display_name": "Satellite",
+            "score": 0.5830025672912598
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.576256275177002
+        },
+        {
+            "id": "https://openalex.org/keywords/rain-gauge",
+            "display_name": "Rain gauge",
+            "score": 0.543660044670105
+        },
+        {
+            "id": "https://openalex.org/keywords/cru",
+            "display_name": "Cru",
+            "score": 0.47136011719703674
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.46923142671585083
+        },
+        {
+            "id": "https://openalex.org/keywords/global-precipitation-measurement",
+            "display_name": "Global Precipitation Measurement",
+            "score": 0.4556364119052887
+        },
+        {
+            "id": "https://openalex.org/keywords/fluxnet",
+            "display_name": "FluxNet",
+            "score": 0.45397260785102844
+        },
+        {
+            "id": "https://openalex.org/keywords/disdrometer",
+            "display_name": "Disdrometer",
+            "score": 0.4412012994289398
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.4408705234527588
+        },
+        {
+            "id": "https://openalex.org/keywords/data-assimilation",
+            "display_name": "Data assimilation",
+            "score": 0.428333580493927
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.16306215524673462
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.1404372751712799
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.08808234333992004
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C194507410",
+            "wikidata": "https://www.wikidata.org/wiki/Q901704",
+            "display_name": "Orography",
+            "level": 3,
+            "score": 0.6388462781906128
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6299608945846558
+        },
+        {
+            "id": "https://openalex.org/C19269812",
+            "wikidata": "https://www.wikidata.org/wiki/Q26540",
+            "display_name": "Satellite",
+            "level": 2,
+            "score": 0.5830025672912598
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.576256275177002
+        },
+        {
+            "id": "https://openalex.org/C120961793",
+            "wikidata": "https://www.wikidata.org/wiki/Q190052",
+            "display_name": "Rain gauge",
+            "level": 3,
+            "score": 0.543660044670105
+        },
+        {
+            "id": "https://openalex.org/C160467669",
+            "wikidata": "https://www.wikidata.org/wiki/Q505772",
+            "display_name": "Cru",
+            "level": 3,
+            "score": 0.47136011719703674
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.46923142671585083
+        },
+        {
+            "id": "https://openalex.org/C29278236",
+            "wikidata": "https://www.wikidata.org/wiki/Q3108963",
+            "display_name": "Global Precipitation Measurement",
+            "level": 3,
+            "score": 0.4556364119052887
+        },
+        {
+            "id": "https://openalex.org/C2780797852",
+            "wikidata": "https://www.wikidata.org/wiki/Q5463009",
+            "display_name": "FluxNet",
+            "level": 4,
+            "score": 0.45397260785102844
+        },
+        {
+            "id": "https://openalex.org/C116810829",
+            "wikidata": "https://www.wikidata.org/wiki/Q1230193",
+            "display_name": "Disdrometer",
+            "level": 4,
+            "score": 0.4412012994289398
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.4408705234527588
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.428333580493927
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.16306215524673462
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.1404372751712799
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.08808234333992004
+        },
+        {
+            "id": "https://openalex.org/C1276947",
+            "wikidata": "https://www.wikidata.org/wiki/Q333",
+            "display_name": "Astronomy",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C110872660",
+            "wikidata": "https://www.wikidata.org/wiki/Q37813",
+            "display_name": "Ecosystem",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C35187779",
+            "wikidata": "https://www.wikidata.org/wiki/Q5336709",
+            "display_name": "Eddy covariance",
+            "level": 3,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents the Multi-Source Weighted-Ensemble Precipitation (MSWEP) dataset, a high-resolution global precipitation product (1979\u20132015) created by optimally merging gauge, satellite, and reanalysis data while correcting for biases using global streamflow observations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "MSWEP",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CHPclim",
+            "target_entity_type": "Source",
+            "paragraph": "The long-term mean of MSWEP was based on the recently released Climate Hazards Group Precipitation Climatology (CHPclim) dataset (0.05\u00b0 resolution; version 1.0; Funk et al., 2015b), a global P climatology based on gauge observations and satellite data. The CHPclim data were replaced with more accurate Parameter-elevation Relationships on Independent Slopes Model (PRISM) data for the conterminous USA (1 km resolution; Daly et al., 1994) and Tait et al. (2006) data for New Zealand (0.05\u00b0 resolution). For brevity, however, we refer to this combination of gauge-analysis products as CHPclim. Although CHPclim has been corrected for orographic effects it has not been adjusted for gauge under-catch, and is thus expected to underestimate the actual P, especially in snow-dominated regions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MSWEP",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "correlation coefficient (R)",
+            "target_entity_type": "Metric",
+            "paragraph": "The quality of MSWEP was compared against four state-of-the-art gauge-adjusted P datasets (WFDEI-CRU, GPCP-1DD, TMPA 3B42, and CPC Unified) using independent P data from 125 FLUXNET tower stations around the globe. MSWEP obtained the highest daily correlation coefficient (R) among the five P datasets for 60.0% of the stations and a median R of 0.67 vs. 0.44-0.59 for the other datasets.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MSWEP",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Nash and Sutcliffe (1970) efficiency (NSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "We further evaluated the performance of MSWEP using hydrological modeling for 9011 catchments (<50000 km\u00b2) across the globe. Specifically, we calibrated the simple conceptual hydrological model HBV (Hydrologiska Byr\u00e5ns Vattenbalansavdelning) against daily Q observations with P from each of the different datasets. For the 1058 sparsely gauged catchments, representative of 83.9% of the global land surface (excluding Antarctica), MSWEP obtained a median calibration NSE of 0.52 vs. 0.29-0.39 for the other P datasets.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MSWEP",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation (P)",
+            "target_entity_type": "Variable",
+            "paragraph": "Abstract. Current global precipitation (P) datasets do not take full advantage of the complementary nature of satellite and reanalysis data. Here, we present Multi-Source Weighted-Ensemble Precipitation (MSWEP) version 1.1, a global P dataset for the period 1979\u20132015 with a 3-hourly temporal and 0.25\u00b0 spatial resolution, specifically designed for hydrological modeling. The design philosophy of MSWEP was to optimally merge the highest quality P data sources available as a function of timescale and location.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "gauge",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "P",
+            "target_entity_type": "Variable",
+            "paragraph": "There are currently four principal measurement or modeling sources to determine P (Michaelides et al., 2009): (i) ground-based gauge observations, (ii) ground-based radar remote sensing, (iii) satellite remote sensing, and (iv) atmospheric retrospective-analysis models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "radar",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "P",
+            "target_entity_type": "Variable",
+            "paragraph": "There are currently four principal measurement or modeling sources to determine P (Michaelides et al., 2009): (i) ground-based gauge observations, (ii) ground-based radar remote sensing, (iii) satellite remote sensing, and (iv) atmospheric retrospective-analysis models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "satellite",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "P",
+            "target_entity_type": "Variable",
+            "paragraph": "There are currently four principal measurement or modeling sources to determine P (Michaelides et al., 2009): (i) ground-based gauge observations, (ii) ground-based radar remote sensing, (iii) satellite remote sensing, and (iv) atmospheric retrospective-analysis models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "droughts",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Drought",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "A quantitative appraisal of precipitation (P) amount and of its spatiotemporal distribution is essential for many scientific and operational applications, including but not limited to increasing our understanding of the hydrological cycle, assessing the hydrological impacts of human activities, assessing water resources, irrigation planning, and forecasting of droughts and floods (Golding, 2009; Kucera et al., 2013; Pozzi et al., 2013; Serrat-Capdevila et al., 2013; Lettenmaier et al., 2015).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "floods",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Flood",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "A quantitative appraisal of precipitation (P) amount and of its spatiotemporal distribution is essential for many scientific and operational applications, including but not limited to increasing our understanding of the hydrological cycle, assessing the hydrological impacts of human activities, assessing water resources, irrigation planning, and forecasting of droughts and floods (Golding, 2009; Kucera et al., 2013; Pozzi et al., 2013; Serrat-Capdevila et al., 2013; Lettenmaier et al., 2015).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "droughts",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "North America",
+            "target_entity_type": "Continent",
+            "paragraph": "The NSE values are consistently lower in (semi-)arid regions in North America, Africa, and Australia, likely due to the highly non-linear rainfall-runoff response, the high transmission losses, and the flashy nature of the Q under these conditions (Pilgrim et al., 1988; Ye et al., 1997; Lid\u00e9n and Harlin, 2000).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "droughts",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Africa",
+            "target_entity_type": "Continent",
+            "paragraph": "The NSE values are consistently lower in (semi-)arid regions in North America, Africa, and Australia, likely due to the highly non-linear rainfall-runoff response, the high transmission losses, and the flashy nature of the Q under these conditions (Pilgrim et al., 1988; Ye et al., 1997; Lid\u00e9n and Harlin, 2000).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "droughts",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Australia",
+            "target_entity_type": "Continent",
+            "paragraph": "The NSE values are consistently lower in (semi-)arid regions in North America, Africa, and Australia, likely due to the highly non-linear rainfall-runoff response, the high transmission losses, and the flashy nature of the Q under these conditions (Pilgrim et al., 1988; Ye et al., 1997; Lid\u00e9n and Harlin, 2000).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "MSWEP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "3-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "gauge",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "satellite",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "reanalysis",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "European Commission, Joint Research Centre (JRC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "The Australian National University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Research Council of Italy, Institute of Atmospheric Sciences and Climate (CNR-ISAC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Deltares",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Ghent University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "VU University Amsterdam",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CHPclim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "streamflow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Q",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CPC Unified",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GPCC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMORPH",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GSMaP-MVK",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TMPA 3B42RT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA-Interim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JRA-55",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WFDEI-CRU",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GPCP-1DD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TMPA 3B42",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FLUXNET",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "R",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "HBV",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "radar",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "TRMM",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "CHIRPS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TMPA 3B43",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PFD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WFDEI",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMAP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "gauge under-catch",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "0.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "CRU",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "PREC/L",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UDEL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.05\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "0.1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "IMERG",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "30 min",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "PERSIANN-CDR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "6 hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "MERRA-Land",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.5\u00b0 \u00d7 0.67\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "NCEP-CFSR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.3125\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "CHOMPS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SM2RAIN-ASCAT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ASCAT",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "2.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "5 day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "PRISM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "New Zealand",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "catch-ratio (CR) equations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind profile power-law relationship",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "WorldClim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ta",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "potential evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ep",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Zhang et al. (2001) relationship",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "P anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "3-day correlation coefficients",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Hargreaves and Samani (1982) equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Priestley and Taylor (1972) approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FAO-56 Penman-Monteith combination equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GAGES-II",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Runoff Data Centre (GRDC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "SRTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GTOPO30",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PERSIANN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GHCN-D",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GSOD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Pearson correlation coefficients",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "3 day mean rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "3 day mean snowfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "root mean square error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "absolute bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "B",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Nash and Sutcliffe (1970) efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Penman (1948) equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "net radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GlobAlbedo",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "European Space Agency (ESA)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Alaska",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Andes",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Scandinavia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Central Asian mountain ranges",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Russia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "IR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Chokurdakh",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Puerto Rico",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Interior Plains of North America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Iceland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GPM",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "GRACE",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "orographic P",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Italy",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Netherlands",
+            "entity_type": "Country"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2028554047",
+        "https://openalex.org/W1971911655",
+        "https://openalex.org/W2075171190",
+        "https://openalex.org/W2023099118",
+        "https://openalex.org/W2135559420",
+        "https://openalex.org/W2143977229",
+        "https://openalex.org/W2159143056",
+        "https://openalex.org/W2161094103",
+        "https://openalex.org/W2098455129",
+        "https://openalex.org/W2170280355",
+        "https://openalex.org/W4244052039",
+        "https://openalex.org/W2158370478",
+        "https://openalex.org/W2338049369",
+        "https://openalex.org/W2259066221",
+        "https://openalex.org/W2127779712",
+        "https://openalex.org/W2064807406",
+        "https://openalex.org/W4243011801",
+        "https://openalex.org/W2338949170",
+        "https://openalex.org/W2338786291",
+        "https://openalex.org/W2140878949",
+        "https://openalex.org/W1832989026",
+        "https://openalex.org/W2089374007",
+        "https://openalex.org/W1986214504",
+        "https://openalex.org/W2154733848",
+        "https://openalex.org/W2120321707",
+        "https://openalex.org/W6940887764",
+        "https://openalex.org/W2084154199",
+        "https://openalex.org/W2133502098",
+        "https://openalex.org/W2298116394",
+        "https://openalex.org/W2014431247",
+        "https://openalex.org/W2174913496",
+        "https://openalex.org/W2071352614",
+        "https://openalex.org/W2137882837",
+        "https://openalex.org/W2164088984",
+        "https://openalex.org/W2135477047",
+        "https://openalex.org/W2072183993",
+        "https://openalex.org/W2113907164",
+        "https://openalex.org/W2176478590",
+        "https://openalex.org/W1966334841",
+        "https://openalex.org/W2121745948",
+        "https://openalex.org/W2155879257",
+        "https://openalex.org/W2099270539",
+        "https://openalex.org/W2053992261",
+        "https://openalex.org/W2335101576",
+        "https://openalex.org/W617972239",
+        "https://openalex.org/W1951242150",
+        "https://openalex.org/W2084744129",
+        "https://openalex.org/W2107375797",
+        "https://openalex.org/W2067552953",
+        "https://openalex.org/W2261645655",
+        "https://openalex.org/W2104027063",
+        "https://openalex.org/W1520029184",
+        "https://openalex.org/W1967901272",
+        "https://openalex.org/W2149541905",
+        "https://openalex.org/W2170525373",
+        "https://openalex.org/W1964264838",
+        "https://openalex.org/W2072655584",
+        "https://openalex.org/W1487289320",
+        "https://openalex.org/W1867005924",
+        "https://openalex.org/W2017982546",
+        "https://openalex.org/W1934188560",
+        "https://openalex.org/W2185153088",
+        "https://openalex.org/W2112776483",
+        "https://openalex.org/W2019295213",
+        "https://openalex.org/W2015525638",
+        "https://openalex.org/W2096533595",
+        "https://openalex.org/W1995622703",
+        "https://openalex.org/W2089603617",
+        "https://openalex.org/W2047497169",
+        "https://openalex.org/W1967448299",
+        "https://openalex.org/W2032316641",
+        "https://openalex.org/W3145288741",
+        "https://openalex.org/W2107858720",
+        "https://openalex.org/W2101394945",
+        "https://openalex.org/W2173354132",
+        "https://openalex.org/W2159341569",
+        "https://openalex.org/W2152012447",
+        "https://openalex.org/W2091213310",
+        "https://openalex.org/W1995837538",
+        "https://openalex.org/W2033904783",
+        "https://openalex.org/W4250798757",
+        "https://openalex.org/W1989120577",
+        "https://openalex.org/W2116275201",
+        "https://openalex.org/W2081556096",
+        "https://openalex.org/W2051332113",
+        "https://openalex.org/W2045148060",
+        "https://openalex.org/W2154306139",
+        "https://openalex.org/W1948837742",
+        "https://openalex.org/W2009843708",
+        "https://openalex.org/W2051300033",
+        "https://openalex.org/W384974881",
+        "https://openalex.org/W2035627522",
+        "https://openalex.org/W2148691574",
+        "https://openalex.org/W2107201215",
+        "https://openalex.org/W1749225136",
+        "https://openalex.org/W2064441488",
+        "https://openalex.org/W1975750260",
+        "https://openalex.org/W2260021327",
+        "https://openalex.org/W2026621198",
+        "https://openalex.org/W2013084637",
+        "https://openalex.org/W2049899966",
+        "https://openalex.org/W2033904036",
+        "https://openalex.org/W2093795633",
+        "https://openalex.org/W2001317094",
+        "https://openalex.org/W2117703295",
+        "https://openalex.org/W2148486202",
+        "https://openalex.org/W2315155642",
+        "https://openalex.org/W1969974566",
+        "https://openalex.org/W2137738811",
+        "https://openalex.org/W2003814557",
+        "https://openalex.org/W2025797668",
+        "https://openalex.org/W2150545406",
+        "https://openalex.org/W2164361769",
+        "https://openalex.org/W2104923199",
+        "https://openalex.org/W2341721186",
+        "https://openalex.org/W2172396214",
+        "https://openalex.org/W2142416245",
+        "https://openalex.org/W2074355870",
+        "https://openalex.org/W2063496671",
+        "https://openalex.org/W2155513837",
+        "https://openalex.org/W1974038018",
+        "https://openalex.org/W2131659791",
+        "https://openalex.org/W1989839776",
+        "https://openalex.org/W2159567924",
+        "https://openalex.org/W2099271058",
+        "https://openalex.org/W2118094598",
+        "https://openalex.org/W1984988613",
+        "https://openalex.org/W2082053078",
+        "https://openalex.org/W2075878664",
+        "https://openalex.org/W2060419904",
+        "https://openalex.org/W2120496201",
+        "https://openalex.org/W1997869645",
+        "https://openalex.org/W2042814997",
+        "https://openalex.org/W2111681875",
+        "https://openalex.org/W2172609192",
+        "https://openalex.org/W2060747052",
+        "https://openalex.org/W1992879962",
+        "https://openalex.org/W2129864604",
+        "https://openalex.org/W2053203198",
+        "https://openalex.org/W2074338125",
+        "https://openalex.org/W2023194175",
+        "https://openalex.org/W2157474075",
+        "https://openalex.org/W2005359372",
+        "https://openalex.org/W2141565621",
+        "https://openalex.org/W2082555211",
+        "https://openalex.org/W1752626349",
+        "https://openalex.org/W1974859342",
+        "https://openalex.org/W2040300188",
+        "https://openalex.org/W2096931143",
+        "https://openalex.org/W2300487082",
+        "https://openalex.org/W2072613263",
+        "https://openalex.org/W1963908600",
+        "https://openalex.org/W2152977202",
+        "https://openalex.org/W2011601793",
+        "https://openalex.org/W2176956584",
+        "https://openalex.org/W2143357393",
+        "https://openalex.org/W2071468694",
+        "https://openalex.org/W2027469749",
+        "https://openalex.org/W2148183179",
+        "https://openalex.org/W2144313490",
+        "https://openalex.org/W1937938483",
+        "https://openalex.org/W2162539139",
+        "https://openalex.org/W1976095361",
+        "https://openalex.org/W599710785",
+        "https://openalex.org/W2109042184",
+        "https://openalex.org/W1568404366",
+        "https://openalex.org/W3160528504",
+        "https://openalex.org/W2530436725",
+        "https://openalex.org/W3006565604",
+        "https://openalex.org/W2145071089",
+        "https://openalex.org/W2913558040",
+        "https://openalex.org/W3150065959",
+        "https://openalex.org/W2100251801",
+        "https://openalex.org/W2060975319",
+        "https://openalex.org/W2271643568",
+        "https://openalex.org/W3124745367",
+        "https://openalex.org/W2384117639",
+        "https://openalex.org/W2999627517"
+    ]
+}

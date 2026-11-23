@@ -1,0 +1,934 @@
+{
+    "uri": "https://openalex.org/W7133311194",
+    "title": "Conditional diffusion models for downscaling and bias correction of Earth system model precipitation",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5093674675",
+            "display_name": "Michael Aich",
+            "orcid": "https://orcid.org/0009-0003-5406-3998"
+        },
+        {
+            "id": "https://openalex.org/A5016617112",
+            "display_name": "Philipp Hess",
+            "orcid": "https://orcid.org/0000-0001-7097-2161"
+        },
+        {
+            "id": "https://openalex.org/A5128065617",
+            "display_name": "Baoxiang Pan",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5010835660",
+            "display_name": "Sebastian Bathiany",
+            "orcid": "https://orcid.org/0000-0001-9904-1619"
+        },
+        {
+            "id": "https://openalex.org/A5002101589",
+            "display_name": "Yu Huang",
+            "orcid": "https://orcid.org/0000-0002-7930-9056"
+        },
+        {
+            "id": "https://openalex.org/A5121858393",
+            "display_name": "Niklas Boers",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-19-1791-2026",
+    "abstract": "Abstract. Climate change exacerbates extreme weather events like heavy rainfall and flooding. As these events cause severe socioeconomic damage, accurate high-resolution simulation of precipitation is imperative. However, existing Earth System Models (ESMs) struggle to resolve small-scale dynamics and suffer from biases. Traditional statistical bias correction and downscaling methods fall short in improving spatial structure, while recent deep learning methods lack controllability and suffer from unstable training. Here, we propose a machine learning framework for simultaneous bias correction and downscaling. We first map observational and ESM data to a shared embedding space, where both are unbiased towards each other, and then train a conditional diffusion model to reverse the mapping. Only observational data is used for the training, so that the diffusion model can be employed to correct and downscale any ESM field without need for retraining. Our approach ensures statistical fidelity and preserves spatial patterns larger than a chosen spatial correction scale. We demonstrate that our approach outperforms existing statistical and deep learning methods especially regarding extreme events.",
+    "field": "Climate model downscaling and bias correction",
+    "problem": "Existing methods for downscaling and bias-correcting Earth System Model precipitation fall short, as traditional approaches fail to improve spatial structure, while deep learning methods are hindered by unstable training and the fundamental challenge of using unpaired simulation and observational data.",
+    "method": "We propose a machine learning framework that maps observational and model data to a shared embedding space and then uses a conditional diffusion model to reverse this mapping, achieving simultaneous bias correction and downscaling of Earth system model precipitation.",
+    "task": "The task is to use a conditional diffusion model for the simultaneous downscaling and bias correction of Earth System Model precipitation to generate accurate, high-resolution data suitable for climate impact assessments.",
+    "model": [
+        "GFDL-ESM4",
+        "MPI-ESM-HR"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.8521999716758728
+        },
+        {
+            "id": "https://openalex.org/keywords/earth-system-science",
+            "display_name": "Earth system science",
+            "score": 0.5005000233650208
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.4593999981880188
+        },
+        {
+            "id": "https://openalex.org/keywords/controllability",
+            "display_name": "Controllability",
+            "score": 0.4318000078201294
+        },
+        {
+            "id": "https://openalex.org/keywords/diffusion",
+            "display_name": "Diffusion",
+            "score": 0.4066999852657318
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4002000093460083
+        },
+        {
+            "id": "https://openalex.org/keywords/fidelity",
+            "display_name": "Fidelity",
+            "score": 0.39980000257492065
+        },
+        {
+            "id": "https://openalex.org/keywords/statistical-model",
+            "display_name": "Statistical model",
+            "score": 0.3905999958515167
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-system",
+            "display_name": "Climate system",
+            "score": 0.38089999556541443
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.8521999716758728
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5586000084877014
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.5212000012397766
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.5005000233650208
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.4602999985218048
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.4593999981880188
+        },
+        {
+            "id": "https://openalex.org/C48209547",
+            "wikidata": "https://www.wikidata.org/wiki/Q1331104",
+            "display_name": "Controllability",
+            "level": 2,
+            "score": 0.4318000078201294
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.4099999964237213
+        },
+        {
+            "id": "https://openalex.org/C69357855",
+            "wikidata": "https://www.wikidata.org/wiki/Q163214",
+            "display_name": "Diffusion",
+            "level": 2,
+            "score": 0.4066999852657318
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4002000093460083
+        },
+        {
+            "id": "https://openalex.org/C2776459999",
+            "wikidata": "https://www.wikidata.org/wiki/Q2119376",
+            "display_name": "Fidelity",
+            "level": 2,
+            "score": 0.39980000257492065
+        },
+        {
+            "id": "https://openalex.org/C114289077",
+            "wikidata": "https://www.wikidata.org/wiki/Q3284399",
+            "display_name": "Statistical model",
+            "level": 2,
+            "score": 0.3905999958515167
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.38089999556541443
+        },
+        {
+            "id": "https://openalex.org/C9652623",
+            "wikidata": "https://www.wikidata.org/wiki/Q190109",
+            "display_name": "Field (mathematics)",
+            "level": 2,
+            "score": 0.3767000138759613
+        },
+        {
+            "id": "https://openalex.org/C23131810",
+            "wikidata": "https://www.wikidata.org/wiki/Q818574",
+            "display_name": "Observational study",
+            "level": 2,
+            "score": 0.3677000105381012
+        },
+        {
+            "id": "https://openalex.org/C150060386",
+            "wikidata": "https://www.wikidata.org/wiki/Q7574054",
+            "display_name": "Spatial correlation",
+            "level": 2,
+            "score": 0.32749998569488525
+        },
+        {
+            "id": "https://openalex.org/C138695830",
+            "wikidata": "https://www.wikidata.org/wiki/Q1938983",
+            "display_name": "Spatial dependence",
+            "level": 2,
+            "score": 0.3249000012874603
+        },
+        {
+            "id": "https://openalex.org/C159620131",
+            "wikidata": "https://www.wikidata.org/wiki/Q1938983",
+            "display_name": "Spatial analysis",
+            "level": 2,
+            "score": 0.3084000051021576
+        },
+        {
+            "id": "https://openalex.org/C44492722",
+            "wikidata": "https://www.wikidata.org/wiki/Q327069",
+            "display_name": "Conditional probability",
+            "level": 2,
+            "score": 0.3075000047683716
+        },
+        {
+            "id": "https://openalex.org/C158709400",
+            "wikidata": "https://www.wikidata.org/wiki/Q3578586",
+            "display_name": "Spatial ecology",
+            "level": 2,
+            "score": 0.29789999127388
+        },
+        {
+            "id": "https://openalex.org/C124101348",
+            "wikidata": "https://www.wikidata.org/wiki/Q172491",
+            "display_name": "Data mining",
+            "level": 1,
+            "score": 0.28929999470710754
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.28850001096725464
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.2838999927043915
+        },
+        {
+            "id": "https://openalex.org/C67186912",
+            "wikidata": "https://www.wikidata.org/wiki/Q367664",
+            "display_name": "Data modeling",
+            "level": 2,
+            "score": 0.2775999903678894
+        },
+        {
+            "id": "https://openalex.org/C108583219",
+            "wikidata": "https://www.wikidata.org/wiki/Q197536",
+            "display_name": "Deep learning",
+            "level": 2,
+            "score": 0.27559998631477356
+        },
+        {
+            "id": "https://openalex.org/C149782125",
+            "wikidata": "https://www.wikidata.org/wiki/Q160039",
+            "display_name": "Econometrics",
+            "level": 1,
+            "score": 0.26429998874664307
+        },
+        {
+            "id": "https://openalex.org/C170061395",
+            "wikidata": "https://www.wikidata.org/wiki/Q5468164",
+            "display_name": "Forecast skill",
+            "level": 2,
+            "score": 0.26409998536109924
+        },
+        {
+            "id": "https://openalex.org/C118671147",
+            "wikidata": "https://www.wikidata.org/wiki/Q578714",
+            "display_name": "Quantile",
+            "level": 2,
+            "score": 0.263700008392334
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.25679999589920044
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.25440001487731934
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "diffusion model-corrected GFDL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Mean Absolute Bias",
+            "result": "0.32 mm/d"
+        },
+        {
+            "model": "uncorrected GFDL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Mean Absolute Bias",
+            "result": "0.69 mm/d"
+        },
+        {
+            "model": "QM-corrected GFDL",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Mean Absolute Bias",
+            "result": "0.26 mm/d"
+        }
+    ],
+    "innovation": "This paper proposes a machine learning framework using a conditional diffusion model for simultaneous bias correction and downscaling of Earth system model precipitation, enabled by mapping observational and model data to a shared embedding space which allows for training exclusively on observations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "flooding",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Flood",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Abstract. Climate change exacerbates extreme weather events like heavy rainfall and flooding. As these events cause severe socioeconomic damage, accurate high-resolution simulation of precipitation is imperative. However, existing Earth System Models (ESMs) struggle to resolve small-scale dynamics and suffer from biases. Traditional statistical bias correction and downscaling methods fall short in improving spatial structure, while recent deep learning methods lack controllability and suffer from unstable training. Here, we propose a machine learning framework for simultaneous bias correction and downscaling. We first map observational and ESM data to a shared embedding space, where both are unbiased towards each other, and then train a conditional diffusion model to reverse the mapping. Only observational data is used for the training, so that the diffusion model can be employed to correct and downscale any ESM field without need for retraining. Our approach ensures statistical fidelity and preserves spatial patterns larger than a chosen spatial correction scale. We demonstrate that our approach outperforms existing statistical and deep learning methods especially regarding extreme events.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "floods",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Flood",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "With global warming, we anticipate more intense rainfall events and associated natural hazards, e.g., in terms of floods and landslides, in many regions of the world (IPCC, 2023). Understanding and accurately simulating precipitation is particularly important for adaptation planning and, hence, for mitigating damages and reducing risks associated with climate change. Earth System Models (ESMs) play a crucial role in simulating precipitation patterns for both historical and future scenarios. However, these simulations are computationally extremely demanding, primarily because they require solving complex partial differential equations. To manage the computational load, ESMs resort to approximate solutions on discretized grids with coarse spatial resolution (typically around 100 km). The consequence is that these models do not resolve small-scale dynamics, such as many of the processes relevant to precipitation generation. This leads to considerable biases in the ESM fields compared to observations. Moreover, the coarse spatial resolution prevents accurate projections of localized precipitation extremes. Therefore, precipitation fields simulated by ESMs cannot be used directly for impact assessments (Zelinka et al., 2020) and especially tasks such as water resource and flood management, which require precise spatial data at high resolution (Gutmann et al., 2014).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "landslides",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Landslide",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "With global warming, we anticipate more intense rainfall events and associated natural hazards, e.g., in terms of floods and landslides, in many regions of the world (IPCC, 2023). Understanding and accurately simulating precipitation is particularly important for adaptation planning and, hence, for mitigating damages and reducing risks associated with climate change. Earth System Models (ESMs) play a crucial role in simulating precipitation patterns for both historical and future scenarios. However, these simulations are computationally extremely demanding, primarily because they require solving complex partial differential equations. To manage the computational load, ESMs resort to approximate solutions on discretized grids with coarse spatial resolution (typically around 100 km). The consequence is that these models do not resolve small-scale dynamics, such as many of the processes relevant to precipitation generation. This leads to considerable biases in the ESM fields compared to observations. Moreover, the coarse spatial resolution prevents accurate projections of localized precipitation extremes. Therefore, precipitation fields simulated by ESMs cannot be used directly for impact assessments (Zelinka et al., 2020) and especially tasks such as water resource and flood management, which require precise spatial data at high resolution (Gutmann et al., 2014).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM4",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "1\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "Without loss of generality, we chose the 0.25\u00b0 ERA5 reanalysis (Hersbach et al., 2020) data as observational data and the state-of-the-art GFDL-ESM4 (Dunne et al., 2020) at 1\u00b0 as our ESM.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.25\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "Without loss of generality, we chose the 0.25\u00b0 ERA5 reanalysis (Hersbach et al., 2020) data as observational data and the state-of-the-art GFDL-ESM4 (Dunne et al., 2020) at 1\u00b0 as our ESM.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM4",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP5-8.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Evaluating the performance of downscaling models is crucial for their application in climate impact studies under future climate scenarios. We assess our diffusion model's ability to preserve climate change signals in the underlying ESM simulations by applying it to a high-emission future scenario (SSP5-8.5). Figure 6 compares the relative climate change signal between the late 21st century (2081\u2013 2100) and the historical period (1995\u20132014) for annual mean and annual extreme precipitation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM4",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Figure 6. Comparison of relative climate change signals. We compute the relative climate change signal between the late 21st century (2081-2100) under the GFDL SSP5-8.5 scenario and the historical GFDL period (1995\u20132014). In (a) and (b), we show that our diffusion model successfully preserves the mean precipitation climate change signal in the downscaled 0.25\u00b0 GFDL fields, matching the change of the original 1\u00b0 GFDL data. Positive values (red) indicate an intensification of precipitation, while negative values (blue) indicate reductions. In (c, d) and (e, f) we evaluate how well the DM-correction preserves the climate change signal for extreme events in historical and future scenarios. Both the Rx1Day (c, d) as well as R95p in (e, f) show that the DM-downscaling does preserve the climate change signal for extreme events. There are only slight differences over the north western part of our fields, where the DM-correction predicts more slightly more extremes for the SSP5-8.5 scenario. This is in line with the bias correction capabilities of the DM, correcting the under-representation of extreme precipitation in the original GFDL data.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "European Center for Medium-Range Weather Forecasting",
+            "target_entity_type": "Institute",
+            "paragraph": "ERA5 (Hersbach et al., 2020) is a state-of-the-art atmospheric reanalysis dataset provided by the European Center for Medium-Range Weather Forecasting (ECMWF). Reanalysis refers to the process of combining observations from various sources, such as weather stations, satellites, and other instruments, with a numerical weather model to create a continuous and comprehensive representation of the Earth's atmosphere. We use the daily total precipitation data at 0.25\u00b0 horizontal resolution as the target for the diffusion model.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM4",
+            "source_entity_type": "Source",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "CMIP6",
+            "target_entity_type": "Project",
+            "paragraph": "The climate model output is taken from a state-of-the-art ESM from Phase 6 of the Coupled Model Intercomparison Project (CMIP6), namely GFDL-ESM4 (Dunne et al., 2020). We abbreviate the model with GFDL throughout the paper. The dataset contains daily precipitation data of the first ensemble member (r1i1p1f1) of the historical simulation (esm-hist). The data is available from 1850 to 2014, at 1\u00b0 latitudinal and 1.25\u00b0 longitudinal resolution and a daily temporal resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM4",
+            "source_entity_type": "Source",
+            "relation": "ASSOCIATED_WITH_MEMBER",
+            "target_entity_instance": "r1i1p1f1",
+            "target_entity_type": "Member",
+            "paragraph": "The climate model output is taken from a state-of-the-art ESM from Phase 6 of the Coupled Model Intercomparison Project (CMIP6), namely GFDL-ESM4 (Dunne et al., 2020). We abbreviate the model with GFDL throughout the paper. The dataset contains daily precipitation data of the first ensemble member (r1i1p1f1) of the historical simulation (esm-hist). The data is available from 1850 to 2014, at 1\u00b0 latitudinal and 1.25\u00b0 longitudinal resolution and a daily temporal resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM4",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "The climate model output is taken from a state-of-the-art ESM from Phase 6 of the Coupled Model Intercomparison Project (CMIP6), namely GFDL-ESM4 (Dunne et al., 2020). We abbreviate the model with GFDL throughout the paper. The dataset contains daily precipitation data of the first ensemble member (r1i1p1f1) of the historical simulation (esm-hist). The data is available from 1850 to 2014, at 1\u00b0 latitudinal and 1.25\u00b0 longitudinal resolution and a daily temporal resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM4",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "1\u00b0 x 1.25\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "The climate model output is taken from a state-of-the-art ESM from Phase 6 of the Coupled Model Intercomparison Project (CMIP6), namely GFDL-ESM4 (Dunne et al., 2020). We abbreviate the model with GFDL throughout the paper. The dataset contains daily precipitation data of the first ensemble member (r1i1p1f1) of the historical simulation (esm-hist). The data is available from 1850 to 2014, at 1\u00b0 latitudinal and 1.25\u00b0 longitudinal resolution and a daily temporal resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM4",
+            "source_entity_type": "Source",
+            "relation": "SAMPLED_AT_FREQUENCY",
+            "target_entity_instance": "day",
+            "target_entity_type": "Frequency",
+            "paragraph": "The climate model output is taken from a state-of-the-art ESM from Phase 6 of the Coupled Model Intercomparison Project (CMIP6), namely GFDL-ESM4 (Dunne et al., 2020). We abbreviate the model with GFDL throughout the paper. The dataset contains daily precipitation data of the first ensemble member (r1i1p1f1) of the historical simulation (esm-hist). The data is available from 1850 to 2014, at 1\u00b0 latitudinal and 1.25\u00b0 longitudinal resolution and a daily temporal resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SSP5-8.5",
+            "source_entity_type": "Experiment",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "CMIP6",
+            "target_entity_type": "Project",
+            "paragraph": "GFDL-ESM4 (Dunne et al., 2020) SSP5-8.5 represents a high-emission future pathway. We use daily-resolution data from the CMIP6 archive, provided at 1\u00b0 latitude and 1.25\u00b0 longitude spatial resolution, covering the period from 2015 to 2100.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-HR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.9375\u00b0 x 0.9375\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "For our ablation study, we repeat our experiments for the MPI-ESM HR model (Gutjahr et al., 2019). We abbreviate MPI-ESM-HR with MPI in the paper. The data has 0.9375\u00b0\u00d7 0.9375\u00b0 spatial resolution. We use daily data from 1992 to 2014 using data from 1992\u20132011 for training and 2011 to 2014 for inference.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-HR",
+            "source_entity_type": "Source",
+            "relation": "SAMPLED_AT_FREQUENCY",
+            "target_entity_instance": "day",
+            "target_entity_type": "Frequency",
+            "paragraph": "For our ablation study, we repeat our experiments for the MPI-ESM HR model (Gutjahr et al., 2019). We abbreviate MPI-ESM-HR with MPI in the paper. The data has 0.9375\u00b0\u00d7 0.9375\u00b0 spatial resolution. We use daily data from 1992 to 2014 using data from 1992\u20132011 for training and 2011 to 2014 for inference.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "ERA5 (Hersbach et al., 2020) is a state-of-the-art atmospheric reanalysis dataset provided by the European Center for Medium-Range Weather Forecasting (ECMWF). Reanalysis refers to the process of combining observations from various sources, such as weather stations, satellites, and other instruments, with a numerical weather model to create a continuous and comprehensive representation of the Earth's atmosphere. We use the daily total precipitation data at 0.25\u00b0 horizontal resolution as the target for the diffusion model.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Earth System Models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Technical University of Munich",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Potsdam Institute for Climate Impact Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute of Atmospheric Physics, Chinese Academy of Sciences",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Exeter",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "extreme weather events",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "heavy rainfall",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "flooding",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "flooding",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "ESMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "biases",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "extreme events",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "rainfall events",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "floods",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "floods",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "landslides",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "precipitation patterns",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "100 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "precipitation extremes",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "3\u00b0 \u00d7 3.75\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.75\u00b0 x 0.9375\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1\u00b0 \u00d7 1.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.25\u00b0 \u00d7 0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "extreme precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "reanalysis",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "GFDL-ESM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "power spectral density",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GFDL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "structural similarity index",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SSIM",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pearson correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Root Mean Square Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pearson correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "precipitation intensities",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "regional biases",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "R95p",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "return periods",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "consecutive dry days",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CDD",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "consecutive wet days",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CWD",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "PSD",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "autocorrelation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "seasonal spell duration",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "South Asia",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "South American",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "MPI-ESM-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "50-member DM ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "CRPS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spread-skill plot",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SSP5-8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Rx1Day",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MPI-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "South American region",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "South American continent",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "South Asian region",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "r1i1p1f1",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "1\u00b0 latitudinal and 1.25\u00b0 longitudinal resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "MPI",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.9375\u00b0\u00d7 0.9375\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "European Center for Medium-Range Weather Forecasting",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "1 x 1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "256\u00d7256 pixel",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "64 x 64 pixel",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "256 \u00d7 256 pixels",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Copernicus Climate Change Service",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "TUM Innovation Network EarthCare",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Volkswagen Foundation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Alexander von Humboldt Foundation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "High-Resolution Model Intercomparison Project",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "HighResMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "GFDL Earth System Model Version 4.1 (GFDL-ESM 4.1)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM 4.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "mean absolute value of the differences",
+            "entity_type": "Metric"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1907702319",
+        "https://openalex.org/W1999783660",
+        "https://openalex.org/W2133665775",
+        "https://openalex.org/W2166535858",
+        "https://openalex.org/W2604521289",
+        "https://openalex.org/W2903911135",
+        "https://openalex.org/W2909984890",
+        "https://openalex.org/W2928248204",
+        "https://openalex.org/W2962793481",
+        "https://openalex.org/W2998500935",
+        "https://openalex.org/W3025949386",
+        "https://openalex.org/W3048932873",
+        "https://openalex.org/W3084519032",
+        "https://openalex.org/W3096831136",
+        "https://openalex.org/W3155072588",
+        "https://openalex.org/W3188765846",
+        "https://openalex.org/W3203217919",
+        "https://openalex.org/W3212516020",
+        "https://openalex.org/W4200309788",
+        "https://openalex.org/W4285891375",
+        "https://openalex.org/W4300861245",
+        "https://openalex.org/W4308540792",
+        "https://openalex.org/W4312933868",
+        "https://openalex.org/W4323307475",
+        "https://openalex.org/W4379739870",
+        "https://openalex.org/W4385123314",
+        "https://openalex.org/W4387610444",
+        "https://openalex.org/W4390873030",
+        "https://openalex.org/W4392550838",
+        "https://openalex.org/W4401057144",
+        "https://openalex.org/W4405996640",
+        "https://openalex.org/W4408413580",
+        "https://openalex.org/W4411739837",
+        "https://openalex.org/W7133185348",
+        "https://openalex.org/W7133244780"
+    ]
+}

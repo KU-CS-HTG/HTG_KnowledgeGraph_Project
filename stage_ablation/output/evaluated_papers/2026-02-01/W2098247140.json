@@ -1,0 +1,891 @@
+{
+    "uri": "https://openalex.org/W2098247140",
+    "title": "Reconstruction of total solar irradiance 1974\u20132009",
+    "venue": {
+        "name": "Astronomy and Astrophysics",
+        "id": "https://openalex.org/S205231332",
+        "type": "journal"
+    },
+    "publication_year": 2012,
+    "authors": [
+        {
+            "id": null,
+            "display_name": "W. T. Ball",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Y. C. Unruh",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "N. A. Krivova",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "S. Solanki",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "T. Wenzler",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "D. J. Mortlock",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "A. H. Jaffe",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.1051/0004-6361/201118702",
+    "abstract": "Context: The study of variations in total solar irradiance (TSI) is important\\nfor understanding how the Sun affects the Earth's climate.\\n Aims: Full-disk continuum images and magnetograms are now available for three\\nfull solar cycles. We investigate how modelled TSI compares with direct\\nobservations by building a consistent modelled TSI dataset. The model, based\\nonly on changes in the photospheric magnetic flux can then be tested on\\nrotational, cyclical and secular timescales.\\n Methods: We use Kitt Peak and SoHO/MDI continuum images and magnetograms in\\nthe SATIRE-S model to reconstruct TSI over cycles 21-23. To maximise\\nindependence from TSI composites, SORCE/TIM TSI data are used to fix the one\\nfree parameter of the model. We compare and combine the separate data sources\\nfor the model to estimate an uncertainty on the reconstruction and prevent any\\nadditional free parameters entering the model.\\n Results: The reconstruction supports the PMOD composite as being the best\\nhistorical record of TSI observations, although on timescales of the solar\\nrotation the IRMB composite provides somewhat better agreement. Further to\\nthis, the model is able to account for 92% of TSI variations from 1978 to 2009\\nin the PMOD composite and over 96% during cycle 23. The reconstruction also\\ndisplays an inter-cycle, secular decline of 0.20 (+0.12 / -0.09) Wm-2 between\\ncycle 23 minima, in agreement with the PMOD composite.\\n Conclusions: SATIRE-S is able to recreate TSI observations on all timescales\\nof a day and longer over 31 years from 1978. This is strong evidence that\\nchanges in photospheric magnetic flux alone are responsible for almost all\\nsolar irradiance variations over the last three solar cycles.\\n",
+    "field": "Solar irradiance reconstruction",
+    "problem": "Creating a consistent long-term record of total solar irradiance is challenging because combining data from multiple satellites has produced competing observational composites that disagree on long-term trends, creating uncertainty about the Sun's influence on climate.",
+    "method": "The authors reconstruct total solar irradiance from 1974\u20132009 using the SATIRE-S model with combined Kitt Peak and SoHO/MDI magnetograms, fixing the model's free parameter with SORCE/TIM data to create a consistent dataset largely independent of the historical TSI composites it is tested against.",
+    "task": "The task is to reconstruct total solar irradiance (TSI) from 1974 to 2009 using the SATIRE-S model with photospheric magnetic flux data to create a consistent modeled dataset and test how it compares with direct observational composites on multiple timescales.",
+    "model": [
+        "SATIRE-S"
+    ],
+    "paper_screening": "yes",
+    "keywords": [],
+    "concepts": [],
+    "obs_and_metrics": [
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "ACRIM",
+            "evaluation_metric": "rc[r^2] (Daily, 1978-2009)",
+            "result": "0.879 [0.772]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "ACRIM",
+            "evaluation_metric": "Slope (Daily, 1978-2009)",
+            "result": "0.832"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "rc[r^2] (Daily, 1978-2009)",
+            "result": "0.936 [0.875]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Slope (Daily, 1978-2009)",
+            "result": "1.000"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "ACRIM",
+            "evaluation_metric": "rc[r^2] (Daily, 1984-2009)",
+            "result": "0.903 [0.815]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "ACRIM",
+            "evaluation_metric": "Slope (Daily, 1984-2009)",
+            "result": "0.835"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "IRMB",
+            "evaluation_metric": "rc[r^2] (Daily, 1984-2009)",
+            "result": "0.924 [0.854]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "IRMB",
+            "evaluation_metric": "Slope (Daily, 1984-2009)",
+            "result": "0.978"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "rc[r^2] (Daily, 1984-2009)",
+            "result": "0.942 [0.888]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Slope (Daily, 1984-2009)",
+            "result": "0.992"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "ACRIM",
+            "evaluation_metric": "rc[r^2] (Daily detrended, 1978-2009)",
+            "result": "0.866 [0.750]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "ACRIM",
+            "evaluation_metric": "Slope (Daily detrended, 1978-2009)",
+            "result": "0.986"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "rc[r^2] (Daily detrended, 1978-2009)",
+            "result": "0.873 [0.762]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Slope (Daily detrended, 1978-2009)",
+            "result": "1.039"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "ACRIM",
+            "evaluation_metric": "rc[r^2] (Daily detrended, 1984-2009)",
+            "result": "0.889 [0.791]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "ACRIM",
+            "evaluation_metric": "Slope (Daily detrended, 1984-2009)",
+            "result": "0.992"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "IRMB",
+            "evaluation_metric": "rc[r^2] (Daily detrended, 1984-2009)",
+            "result": "0.940 [0.883]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "IRMB",
+            "evaluation_metric": "Slope (Daily detrended, 1984-2009)",
+            "result": "1.036"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "rc[r^2] (Daily detrended, 1984-2009)",
+            "result": "0.877 [0.769]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Slope (Daily detrended, 1984-2009)",
+            "result": "1.032"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Min C20/21 TSI (W m-2)",
+            "result": "1361.06"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Max C21 TSI (W m-2)",
+            "result": "1362.01"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Min C21/22 TSI (W m-2)",
+            "result": "1361.08"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Max C22 TSI (W m-2)",
+            "result": "1361.96"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Min C22/23 TSI (W m-2)",
+            "result": "1361.01"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Max C23 TSI (W m-2)",
+            "result": "1361.74"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Min C23/24 TSI (W m-2)",
+            "result": "1360.82"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Min C20/21 relative TSI (W m-2)",
+            "result": "0.24+0.14-0.06"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Max C21 relative TSI (W m-2)",
+            "result": "1.19+0.40-0.09"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Min C21/22 relative TSI (W m-2)",
+            "result": "0.26+0.14-0.06"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Max C22 relative TSI (W m-2)",
+            "result": "1.14+0.42-0.09"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Min C22/23 relative TSI (W m-2)",
+            "result": "0.20+0.12-0.09"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Max C23 relative TSI (W m-2)",
+            "result": "0.92+0.02-0.02"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Min C23/24 relative TSI (W m-2)",
+            "result": "0.00+0.00-0.00"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "rc[r^2] (Full period)",
+            "result": "0.958 [0.919]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Slope (Full period)",
+            "result": "0.995"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "rc[r^2] (Cycle 23)",
+            "result": "0.981 [0.963]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Slope (Cycle 23)",
+            "result": "0.978"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "rc[r^2] (Cycle 22)",
+            "result": "0.917 [0.840]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Slope (Cycle 22)",
+            "result": "1.040"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "rc[r^2] (Cycle 21 part)",
+            "result": "0.898 [0.806]"
+        },
+        {
+            "model": "SATIRE-SInd",
+            "observational_dataset": "PMOD",
+            "evaluation_metric": "Slope (Cycle 21 part)",
+            "result": "1.050"
+        }
+    ],
+    "innovation": "This paper presents a 36-year reconstruction of total solar irradiance (1974\u20132009) by consistently combining multiple observational datasets in the SATIRE-S model, demonstrating that variations in photospheric magnetic flux alone are responsible for nearly all observed TSI changes over the last three solar cycles.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "SATIRE-S",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Total Solar Irradiance",
+            "target_entity_type": "Variable",
+            "paragraph": "Methods. We use Kitt Peak and SoHO/MDI continuum images and magnetograms in the SATIRE-S model to reconstruct TSI over cycles 21-23. To maximise independence from TSI composites, SORCE/TIM TSI data are used to fix the one free parameter of the model. We compare and combine the separate data sources for the model to estimate an uncertainty on the reconstruction and prevent any additional free parameters entering the model.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Total Irradiance Monitor",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Total Solar Irradiance",
+            "target_entity_type": "Variable",
+            "paragraph": "The Total Irradiance Monitor (TIM), a radiometer on the SORCE satellite, has been observing TSI since February 2003 with an absolute accuracy of 350 ppm, an instrumental noise of ~2 ppm and a stability of better than 10 ppm/yr (Kopp & Lawrence 2005; Kopp et al. 2005; Kopp & Lean 2011).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Total Irradiance Monitor",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SORCE",
+            "target_entity_type": "Platform",
+            "paragraph": "The Total Irradiance Monitor (TIM), a radiometer on the SORCE satellite, has been observing TSI since February 2003 with an absolute accuracy of 350 ppm, an instrumental noise of ~2 ppm and a stability of better than 10 ppm/yr (Kopp & Lawrence 2005; Kopp et al. 2005; Kopp & Lean 2011).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SATIRE-S",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "variance explained",
+            "target_entity_type": "Metric",
+            "paragraph": "Results. The reconstruction supports the PMOD composite as being the best historical record of TSI observations, although on timescales of the solar rotation the IRMB composite provides somewhat better agreement. Further to this, the SATIRE-S model is able to account for 92% of TSI variations from 1978 to 2009 in the PMOD composite and over 96% during cycle 23. The reconstruction also displays an inter-cycle, secular decline of 0.20\u00b10.03 W m\u22122 between cycle 23 minima, in agreement with the PMOD composite.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Michelson Doppler Imager",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SoHO",
+            "target_entity_type": "Platform",
+            "paragraph": "The Michelson Doppler Imager (MDI) operated onboard the SoHO satellite between 1996 and 2011.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Michelson Doppler Imager",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "photospheric magnetic flux",
+            "target_entity_type": "Variable",
+            "paragraph": "MDI (Scherrer et al. 1995) records 1024 \u00d7 1024 pixel full-disk filtergrams and magnetograms in the Ni I absorption line at 676.78 nm with 4\" resolution. Simultaneous continuum intensity image and magnetogram data are usually not available to download.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KP/512",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Kitt Peak Vacuum Tower",
+            "target_entity_type": "Platform",
+            "paragraph": "We use full-disk continuum intensity images and magnetograms employed in SATIRE-S, taken from two locations: the National Solar Observatory Kitt Peak Vacuum Tower (KP) and the Solar and Heliospheric Observatory (SoHO). KP data were taken using the 512-channel diode array (KP/512) from 1974.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KP/SPM",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Kitt Peak Vacuum Tower",
+            "target_entity_type": "Platform",
+            "paragraph": "We use full-disk continuum intensity images and magnetograms employed in SATIRE-S, taken from two locations: the National Solar Observatory Kitt Peak Vacuum Tower (KP) and the Solar and Heliospheric Observatory (SoHO). KP data were taken using the 512-channel diode array (KP/512) from 1974. KP/512 was replaced by the spectromagnetograph (KP/SPM) which operated between 1993 and 2003.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KP/512 magnetograph",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "photospheric magnetic flux",
+            "target_entity_type": "Variable",
+            "paragraph": "Observations by the KP/512 magnetograph (Livingston et al. 1976) were taken between 1974 and 1993. Full-disk images are 2048 x 2048 pixels with a 1\" pixel size, but with a generally sig-inificantly lower spatial resolution given by seeing. Continuum intensity images and magnetograms were built simultaneously from scans lasting approximately 40 min.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KP/SPM",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "photospheric magnetic flux",
+            "target_entity_type": "Variable",
+            "paragraph": "KP/SPM (Jones et al. 1992) operated between 1992 and 2003 taking 1788 \u00d7 1788 pixel images in the Fe I line at 868.8 nm with a 1.14\" pixel size. Continuum intensity images and magnetograms were extracted from slit spectra that scanned across the solar disk in one hour.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HF",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "NIMBUS7",
+            "target_entity_type": "Platform",
+            "paragraph": "The current version of the PMOD composite, d41_62_1003 (Fr\u00f6hlich 2000), covers the period 1978 to present. It is composed of data from four radiometers: NIMBUS7/HF, SMM/ACRIM I, UARS/ACRIM II and the SOHO/VIRGO instrument (see references within Fr\u00f6hlich & Lean 1998).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACRIM I",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SMM",
+            "target_entity_type": "Platform",
+            "paragraph": "The current version of the PMOD composite, d41_62_1003 (Fr\u00f6hlich 2000), covers the period 1978 to present. It is composed of data from four radiometers: NIMBUS7/HF, SMM/ACRIM I, UARS/ACRIM II and the SOHO/VIRGO instrument (see references within Fr\u00f6hlich & Lean 1998).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACRIM II",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "UARS",
+            "target_entity_type": "Platform",
+            "paragraph": "The current version of the PMOD composite, d41_62_1003 (Fr\u00f6hlich 2000), covers the period 1978 to present. It is composed of data from four radiometers: NIMBUS7/HF, SMM/ACRIM I, UARS/ACRIM II and the SOHO/VIRGO instrument (see references within Fr\u00f6hlich & Lean 1998).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "VIRGO",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SOHO",
+            "target_entity_type": "Platform",
+            "paragraph": "The current version of the PMOD composite, d41_62_1003 (Fr\u00f6hlich 2000), covers the period 1978 to present. It is composed of data from four radiometers: NIMBUS7/HF, SMM/ACRIM I, UARS/ACRIM II and the SOHO/VIRGO instrument (see references within Fr\u00f6hlich & Lean 1998).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACRIM III",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "ACRIMSAT",
+            "target_entity_type": "Platform",
+            "paragraph": "The ACRIM composite also uses NIMBUS7/HF and SMM/ACRIM I, but where PMOD uses SOHO/VIRGO from 1996, the ACRIM composite continues to use UARS/ACRIM II until 2000 before switching to ACRIMSAT/ACRIM III.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DIARAD",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "SOHO",
+            "target_entity_type": "Platform",
+            "paragraph": "The latest version of the IRMB composite begins in 1984, employing NIMBUS7/HF, SMM/ACRIM I, UARS/ACRIM II and then the DIARAD radiometer, on the SOHO/VIRGO instrument, from 1996.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HF",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Total Solar Irradiance",
+            "target_entity_type": "Variable",
+            "paragraph": "The current version of the PMOD composite, d41_62_1003 (Fr\u00f6hlich 2000), covers the period 1978 to present. It is composed of data from four radiometers: NIMBUS7/HF, SMM/ACRIM I, UARS/ACRIM II and the SOHO/VIRGO instrument (see references within Fr\u00f6hlich & Lean 1998).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACRIM I",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Total Solar Irradiance",
+            "target_entity_type": "Variable",
+            "paragraph": "The current version of the PMOD composite, d41_62_1003 (Fr\u00f6hlich 2000), covers the period 1978 to present. It is composed of data from four radiometers: NIMBUS7/HF, SMM/ACRIM I, UARS/ACRIM II and the SOHO/VIRGO instrument (see references within Fr\u00f6hlich & Lean 1998).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACRIM II",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Total Solar Irradiance",
+            "target_entity_type": "Variable",
+            "paragraph": "The current version of the PMOD composite, d41_62_1003 (Fr\u00f6hlich 2000), covers the period 1978 to present. It is composed of data from four radiometers: NIMBUS7/HF, SMM/ACRIM I, UARS/ACRIM II and the SOHO/VIRGO instrument (see references within Fr\u00f6hlich & Lean 1998).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "VIRGO",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Total Solar Irradiance",
+            "target_entity_type": "Variable",
+            "paragraph": "The current version of the PMOD composite, d41_62_1003 (Fr\u00f6hlich 2000), covers the period 1978 to present. It is composed of data from four radiometers: NIMBUS7/HF, SMM/ACRIM I, UARS/ACRIM II and the SOHO/VIRGO instrument (see references within Fr\u00f6hlich & Lean 1998).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACRIM III",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Total Solar Irradiance",
+            "target_entity_type": "Variable",
+            "paragraph": "The ACRIM composite also uses NIMBUS7/HF and SMM/ACRIM I, but where PMOD uses SOHO/VIRGO from 1996, the ACRIM composite continues to use UARS/ACRIM II until 2000 before switching to ACRIMSAT/ACRIM III.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DIARAD",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Total Solar Irradiance",
+            "target_entity_type": "Variable",
+            "paragraph": "The latest version of the IRMB composite begins in 1984, employing NIMBUS7/HF, SMM/ACRIM I, UARS/ACRIM II and then the DIARAD radiometer, on the SOHO/VIRGO instrument, from 1996.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SATIRE-S",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "correlation coefficient",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 1. Comparison of SATIRE-SInd with TSI composites using the original time series (upper half of the table) and detrended (lower half).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "total solar irradiance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SATIRE-S",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Kitt Peak",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SoHO/MDI",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SORCE/TIM",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "PMOD composite",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IRMB composite",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "photospheric magnetic flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Imperial College London",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Max-Planck-Institut f\u00fcr Sonnensystemforschung",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Kyung Hee University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ZHAW Zurich University of Applied Science",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "spectral solar irradiance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "open solar flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "model atmosphere",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "National Solar Observatory Kitt Peak Vacuum Tower",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Solar and Heliospheric Observatory",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "512-channel diode array",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "spectromagnetograph",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Michelson Doppler Imager",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "KP/512 magnetograph",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "PMOD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ACRIM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IRMB",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NIMBUS7/HF",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SMM/ACRIM I",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "UARS/ACRIM II",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SOHO/VIRGO",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "ACRIMSAT/ACRIM III",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "DIARAD radiometer",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Total Irradiance Monitor",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "radiometer",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SORCE",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "six-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "histogram equating",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Wilcox (WSO) Solar Observatories",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Mount Wilson (MWO) Solar Observatories",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "ACRIM composite",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Total photospheric flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mean background magnetic flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Michelson interferometers",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "point spread function",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "FITEXY linear regression routine",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "least-squares fit",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SATIRE-SInd",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "regression slope",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "DIARAD",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Solar Influences Data Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Stanford Solar Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ESA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NERC SolCli consortium",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "STFC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Korean Ministry of Education, Science and Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Deutsche Forschungsgemeinschaft",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "International Space Science Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "PMOD/WRC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Royal Observatory of Belgium",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NIMBUS-7/HF radiometer",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ACRIM I",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "VIRGO/PMO6V radiometer",
+            "entity_type": "Instrument"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2156486633",
+        "https://openalex.org/W2139986371",
+        "https://openalex.org/W1990899433",
+        "https://openalex.org/W1970793601",
+        "https://openalex.org/W2163314548",
+        "https://openalex.org/W2122197376",
+        "https://openalex.org/W2004518208",
+        "https://openalex.org/W63183209",
+        "https://openalex.org/W1560110635",
+        "https://openalex.org/W2041678711",
+        "https://openalex.org/W2147385032",
+        "https://openalex.org/W2053393338",
+        "https://openalex.org/W1671609216",
+        "https://openalex.org/W2034890511",
+        "https://openalex.org/W2143144469",
+        "https://openalex.org/W2110967629",
+        "https://openalex.org/W2082850205",
+        "https://openalex.org/W1978839768",
+        "https://openalex.org/W2171150947",
+        "https://openalex.org/W2122559418",
+        "https://openalex.org/W2104775196",
+        "https://openalex.org/W2081216200",
+        "https://openalex.org/W2000892928",
+        "https://openalex.org/W2028666073",
+        "https://openalex.org/W2146501314",
+        "https://openalex.org/W2166641883",
+        "https://openalex.org/W1966843527",
+        "https://openalex.org/W3177773949",
+        "https://openalex.org/W1921171233",
+        "https://openalex.org/W2142822059",
+        "https://openalex.org/W1977154400",
+        "https://openalex.org/W2026884501",
+        "https://openalex.org/W2156102187",
+        "https://openalex.org/W2078921813",
+        "https://openalex.org/W2094600528",
+        "https://openalex.org/W2150540551",
+        "https://openalex.org/W2116232706",
+        "https://openalex.org/W2135922885",
+        "https://openalex.org/W2007307250",
+        "https://openalex.org/W2147742111",
+        "https://openalex.org/W1973097689",
+        "https://openalex.org/W2120909292",
+        "https://openalex.org/W2018635133"
+    ]
+}

@@ -1,0 +1,2296 @@
+{
+    "uri": "https://openalex.org/W1999139360",
+    "title": "The global aerosol-climate model ECHAM-HAM, version 2: sensitivity to improvements in process representations",
+    "venue": {
+        "name": "Atmospheric chemistry and physics",
+        "id": "https://openalex.org/S162708223",
+        "type": "journal"
+    },
+    "publication_year": 2012,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5100671104",
+            "display_name": "Kai Zhang",
+            "orcid": "https://orcid.org/0000-0003-0457-6368"
+        },
+        {
+            "id": "https://openalex.org/A5046346964",
+            "display_name": "Declan O\u2019Donnell",
+            "orcid": "https://orcid.org/0000-0002-2700-471X"
+        },
+        {
+            "id": "https://openalex.org/A5006008084",
+            "display_name": "J. Kazil",
+            "orcid": "https://orcid.org/0000-0003-3271-2451"
+        },
+        {
+            "id": "https://openalex.org/A5087616218",
+            "display_name": "Philip Stier",
+            "orcid": "https://orcid.org/0000-0002-1191-0128"
+        },
+        {
+            "id": "https://openalex.org/A5056128894",
+            "display_name": "S. Kinne",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5041284859",
+            "display_name": "Ulrike Lohmann",
+            "orcid": "https://orcid.org/0000-0001-8885-3785"
+        },
+        {
+            "id": "https://openalex.org/A5063577105",
+            "display_name": "Sylvaine Ferrachat",
+            "orcid": "https://orcid.org/0000-0003-3366-8296"
+        },
+        {
+            "id": "https://openalex.org/A5057056367",
+            "display_name": "Betty Croft",
+            "orcid": "https://orcid.org/0000-0002-7009-1767"
+        },
+        {
+            "id": "https://openalex.org/A5053411542",
+            "display_name": "Johannes Quaas",
+            "orcid": "https://orcid.org/0000-0001-7057-194X"
+        },
+        {
+            "id": "https://openalex.org/A5085932755",
+            "display_name": "Hui Wan",
+            "orcid": "https://orcid.org/0000-0001-5294-4116"
+        },
+        {
+            "id": "https://openalex.org/A5052138298",
+            "display_name": "S. Rast",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5046561587",
+            "display_name": "J. Feichter",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/acp-12-8911-2012",
+    "abstract": "Abstract. This paper introduces and evaluates the second version of the global aerosol-climate model ECHAM-HAM. Major changes have been brought into the model, including new parameterizations for aerosol nucleation and water uptake, an explicit treatment of secondary organic aerosols, modified emission calculations for sea salt and mineral dust, the coupling of aerosol microphysics to a two-moment stratiform cloud microphysics scheme, and alternative wet scavenging parameterizations. These revisions extend the model's capability to represent details of the aerosol lifecycle and its interaction with climate. Nudged simulations of the year 2000 are carried out to compare the aerosol properties and global distribution in HAM1 and HAM2, and to evaluate them against various observations. Sensitivity experiments are performed to help identify the impact of each individual update in model formulation. Results indicate that from HAM1 to HAM2 there is a marked weakening of aerosol water uptake in the lower troposphere, reducing the total aerosol water burden from 75 Tg to 51 Tg. The main reason is the newly introduced \u03ba-K\u00f6hler-theory-based water uptake scheme uses a lower value for the maximum relative humidity cutoff. Particulate organic matter loading in HAM2 is considerably higher in the upper troposphere, because the explicit treatment of secondary organic aerosols allows highly volatile oxidation products of the precursors to be vertically transported to regions of very low temperature and to form aerosols there. Sulfate, black carbon, particulate organic matter and mineral dust in HAM2 have longer lifetimes than in HAM1 because of weaker in-cloud scavenging, which is in turn related to lower autoconversion efficiency in the newly introduced two-moment cloud microphysics scheme. Modification in the sea salt emission scheme causes a significant increase in the ratio (from 1.6 to 7.7) between accumulation mode and coarse mode emission fluxes of aerosol number concentration. This leads to a general increase in the number concentration of smaller particles over the oceans in HAM2, as reflected by the higher \u00c5ngstr\u00f6m parameters. Evaluation against observation reveals that in terms of model performance, main improvements in HAM2 include a marked decrease of the systematic negative bias in the absorption aerosol optical depth, as well as smaller biases over the oceans in \u00c5ngstr\u00f6m parameter and in the accumulation mode number concentration. The simulated geographical distribution of aerosol optical depth (AOD) is better correlated with the MODIS data, while the surface aerosol mass concentrations are very similar to those in the old version. The total aerosol water content in HAM2 is considerably closer to the multi-model average from Phase I of the AeroCom intercomparison project. Model deficiencies that require further efforts in the future include (i) positive biases in AOD over the ocean, (ii) negative biases in AOD and aerosol mass concentration in high-latitude regions, and (iii) negative biases in particle number concentration, especially that of the Aitken mode, in the lower troposphere in heavily polluted regions.",
+    "field": "Aerosol-climate modeling",
+    "problem": "The previous version of the ECHAM-HAM global aerosol-climate model showed systematic biases in simulating aerosol concentrations and optical properties, and lacked a physically-based aerosol-cloud coupling and explicit treatment of secondary organic aerosols, which motivated the development of an improved version.",
+    "method": "This paper introduces the global aerosol-climate model ECHAM-HAM version 2, which incorporates improved process representations for aerosol nucleation, water uptake, emissions, and cloud microphysics to better simulate the aerosol lifecycle and its interaction with climate.",
+    "task": "The task is to introduce and evaluate the second version of the global aerosol-climate model ECHAM-HAM, quantifying the impacts of improved process representations on simulated aerosol properties by comparing the new model with its predecessor and with observations.",
+    "model": [
+        "ECHAM-HAM",
+        "ECHAM5",
+        "HAM1",
+        "HAM2"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/aerosol",
+            "display_name": "Aerosol",
+            "score": 0.9091721773147583
+        },
+        {
+            "id": "https://openalex.org/keywords/troposphere",
+            "display_name": "Troposphere",
+            "score": 0.7604804635047913
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.6285656690597534
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-salt-aerosol",
+            "display_name": "Sea salt aerosol",
+            "score": 0.5395879149436951
+        },
+        {
+            "id": "https://openalex.org/keywords/particulates",
+            "display_name": "Particulates",
+            "score": 0.5378382205963135
+        },
+        {
+            "id": "https://openalex.org/keywords/sulfate-aerosol",
+            "display_name": "Sulfate aerosol",
+            "score": 0.5199164748191833
+        },
+        {
+            "id": "https://openalex.org/keywords/scavenging",
+            "display_name": "Scavenging",
+            "score": 0.5154157876968384
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5087736248970032
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.49613842368125916
+        },
+        {
+            "id": "https://openalex.org/keywords/sulfate",
+            "display_name": "Sulfate",
+            "score": 0.4780055582523346
+        },
+        {
+            "id": "https://openalex.org/keywords/relative-humidity",
+            "display_name": "Relative humidity",
+            "score": 0.46786192059516907
+        },
+        {
+            "id": "https://openalex.org/keywords/ice-nucleus",
+            "display_name": "Ice nucleus",
+            "score": 0.4450254440307617
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.41198575496673584
+        },
+        {
+            "id": "https://openalex.org/keywords/chemistry",
+            "display_name": "Chemistry",
+            "score": 0.3806811571121216
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.30552148818969727
+        },
+        {
+            "id": "https://openalex.org/keywords/nucleation",
+            "display_name": "Nucleation",
+            "score": 0.2642454504966736
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.2642029821872711
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-salt",
+            "display_name": "Sea salt",
+            "score": 0.23536881804466248
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.08320257067680359
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.06625750660896301
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.06374135613441467
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2779345167",
+            "wikidata": "https://www.wikidata.org/wiki/Q104541",
+            "display_name": "Aerosol",
+            "level": 2,
+            "score": 0.9091721773147583
+        },
+        {
+            "id": "https://openalex.org/C9075549",
+            "wikidata": "https://www.wikidata.org/wiki/Q40631",
+            "display_name": "Troposphere",
+            "level": 2,
+            "score": 0.7604804635047913
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.6285656690597534
+        },
+        {
+            "id": "https://openalex.org/C169969230",
+            "wikidata": "https://www.wikidata.org/wiki/Q7440121",
+            "display_name": "Sea salt aerosol",
+            "level": 4,
+            "score": 0.5395879149436951
+        },
+        {
+            "id": "https://openalex.org/C24245907",
+            "wikidata": "https://www.wikidata.org/wiki/Q498957",
+            "display_name": "Particulates",
+            "level": 2,
+            "score": 0.5378382205963135
+        },
+        {
+            "id": "https://openalex.org/C2779681926",
+            "wikidata": "https://www.wikidata.org/wiki/Q4117936",
+            "display_name": "Sulfate aerosol",
+            "level": 3,
+            "score": 0.5199164748191833
+        },
+        {
+            "id": "https://openalex.org/C2777807096",
+            "wikidata": "https://www.wikidata.org/wiki/Q1285257",
+            "display_name": "Scavenging",
+            "level": 3,
+            "score": 0.5154157876968384
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5087736248970032
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.49613842368125916
+        },
+        {
+            "id": "https://openalex.org/C2778343803",
+            "wikidata": "https://www.wikidata.org/wiki/Q172290",
+            "display_name": "Sulfate",
+            "level": 2,
+            "score": 0.4780055582523346
+        },
+        {
+            "id": "https://openalex.org/C158960510",
+            "wikidata": "https://www.wikidata.org/wiki/Q180600",
+            "display_name": "Relative humidity",
+            "level": 2,
+            "score": 0.46786192059516907
+        },
+        {
+            "id": "https://openalex.org/C122409099",
+            "wikidata": "https://www.wikidata.org/wiki/Q3136993",
+            "display_name": "Ice nucleus",
+            "level": 3,
+            "score": 0.4450254440307617
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.41198575496673584
+        },
+        {
+            "id": "https://openalex.org/C185592680",
+            "wikidata": "https://www.wikidata.org/wiki/Q2329",
+            "display_name": "Chemistry",
+            "level": 0,
+            "score": 0.3806811571121216
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.30552148818969727
+        },
+        {
+            "id": "https://openalex.org/C61048295",
+            "wikidata": "https://www.wikidata.org/wiki/Q909022",
+            "display_name": "Nucleation",
+            "level": 2,
+            "score": 0.2642454504966736
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.2642029821872711
+        },
+        {
+            "id": "https://openalex.org/C2778804858",
+            "wikidata": "https://www.wikidata.org/wiki/Q282694",
+            "display_name": "Sea salt",
+            "level": 3,
+            "score": 0.23536881804466248
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.08320257067680359
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.06625750660896301
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.06374135613441467
+        },
+        {
+            "id": "https://openalex.org/C55493867",
+            "wikidata": "https://www.wikidata.org/wiki/Q7094",
+            "display_name": "Biochemistry",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C2778004101",
+            "wikidata": "https://www.wikidata.org/wiki/Q133948",
+            "display_name": "Antioxidant",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C178790620",
+            "wikidata": "https://www.wikidata.org/wiki/Q11351",
+            "display_name": "Organic chemistry",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "ECHAM-HAM2",
+            "observational_dataset": "Petters and Kreidenweis (2007)",
+            "evaluation_metric": "Hygroscopicity parameter \u03ba for Sulfate",
+            "result": "Model: 0.60; Observed Range: 0.33-0.72"
+        },
+        {
+            "model": "ECHAM-HAM2",
+            "observational_dataset": "Petters and Kreidenweis (2007)",
+            "evaluation_metric": "Hygroscopicity parameter \u03ba for Sea salt",
+            "result": "Model: 1.12; Observed Range: 0.91-1.33"
+        },
+        {
+            "model": "ECHAM-HAM2",
+            "observational_dataset": "Petters and Kreidenweis (2007)",
+            "evaluation_metric": "Hygroscopicity parameter \u03ba for Primary organic aerosol",
+            "result": "Model: 0.06; Observed Range: 0.006-0.44"
+        },
+        {
+            "model": "ECHAM-HAM2",
+            "observational_dataset": "Petters and Kreidenweis (2007)",
+            "evaluation_metric": "Hygroscopicity parameter \u03ba for Secondary organic aerosol",
+            "result": "Model: 0.037; Observed Range: 0.022-0.070"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "SO4(2-) particle Burden (Tg S)",
+            "result": "HAM1: 0.78; AeroCom Mean: 0.67"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "SO4(2-) particle Burden (Tg S)",
+            "result": "HAM2: 0.85; AeroCom Mean: 0.67"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "SO4(2-) particle Sources (Tg S yr-1)",
+            "result": "HAM1: 77.6; AeroCom Mean: 59.7"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "SO4(2-) particle Sources (Tg S yr-1)",
+            "result": "HAM2: 70.9; AeroCom Mean: 59.7"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "SO4(2-) particle Sinks (Dry deposition + Sedimentation) (Tg S yr-1)",
+            "result": "HAM1: 3.78; AeroCom Mean: 6.9"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "SO4(2-) particle Sinks (Dry deposition + Sedimentation) (Tg S yr-1)",
+            "result": "HAM2: 3.89; AeroCom Mean: 6.9"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "SO4(2-) particle Sinks (Wet deposition) (Tg S yr-1)",
+            "result": "HAM1: 73.5; AeroCom Mean: 52.8"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "SO4(2-) particle Sinks (Wet deposition) (Tg S yr-1)",
+            "result": "HAM2: 66.6; AeroCom Mean: 52.8"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "SO4(2-) particle Lifetime (days)",
+            "result": "HAM1: 3.7; AeroCom Mean: 4.12"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "SO4(2-) particle Lifetime (days)",
+            "result": "HAM2: 4.4; AeroCom Mean: 4.12"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Black carbon Burden (Tg)",
+            "result": "HAM1: 0.11; AeroCom Mean: 0.24"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Black carbon Burden (Tg)",
+            "result": "HAM2: 0.13; AeroCom Mean: 0.24"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Black carbon Sources (Emissions) (Tg yr-1)",
+            "result": "HAM1: 7.7; AeroCom Mean: 11.9"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Black carbon Sources (Emissions) (Tg yr-1)",
+            "result": "HAM2: 7.7; AeroCom Mean: 11.9"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Black carbon Sinks (Dry deposition + Sedimentation) (Tg yr-1)",
+            "result": "HAM1: 0.61; AeroCom Mean: 2.55"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Black carbon Sinks (Dry deposition + Sedimentation) (Tg yr-1)",
+            "result": "HAM2: 0.66; AeroCom Mean: 2.55"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Black carbon Sinks (Wet deposition) (Tg yr-1)",
+            "result": "HAM1: 7.19; AeroCom Mean: 9.35"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Black carbon Sinks (Wet deposition) (Tg yr-1)",
+            "result": "HAM2: 7.14; AeroCom Mean: 9.35"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Black carbon Lifetime (days)",
+            "result": "HAM1: 5.3; AeroCom Mean: 7.12"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Black carbon Lifetime (days)",
+            "result": "HAM2: 5.9; AeroCom Mean: 7.12"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "POM (POA+SOA) Burden (Tg)",
+            "result": "HAM1: 0.99; AeroCom Mean: 1.70"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "POM (POA+SOA) Burden (Tg)",
+            "result": "HAM2: 1.48; AeroCom Mean: 1.70"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "POM (POA+SOA) Sources (Tg yr-1)",
+            "result": "HAM1: 66.1; AeroCom Mean: 96.6"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "POM (POA+SOA) Sources (Tg yr-1)",
+            "result": "HAM2: 68.4; AeroCom Mean: 96.6"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "POM (POA+SOA) Sinks (Dry deposition + Sedimentation) (Tg yr-1)",
+            "result": "HAM1: 5.09; AeroCom Mean: 19.2"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "POM (POA+SOA) Sinks (Dry deposition + Sedimentation) (Tg yr-1)",
+            "result": "HAM2: 4.69; AeroCom Mean: 19.2"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "POM (POA+SOA) Sinks (Wet deposition) (Tg yr-1)",
+            "result": "HAM1: 61.4; AeroCom Mean: 76.7"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "POM (POA+SOA) Sinks (Wet deposition) (Tg yr-1)",
+            "result": "HAM2: 63.3; AeroCom Mean: 76.7"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "POM (POA+SOA) Lifetime (days)",
+            "result": "HAM1: 5.5; AeroCom Mean: 6.54"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "POA Lifetime (days)",
+            "result": "HAM2: 6.4; AeroCom Mean (POM): 6.54"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "SOA Lifetime (days)",
+            "result": "HAM2: 11.4; AeroCom Mean (POM): 6.54"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Sea salt Burden (Tg)",
+            "result": "HAM1: 10.3; AeroCom Median: 6.37"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Sea salt Burden (Tg)",
+            "result": "HAM2: 11.6; AeroCom Median: 6.37"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Sea salt Sources (Emissions) (Tg yr-1)",
+            "result": "HAM1: 5019; AeroCom Median: 6280"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Sea salt Sources (Emissions) (Tg yr-1)",
+            "result": "HAM2: 6110; AeroCom Median: 6280"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Sea salt Sinks (Dry deposition + Sedimentation) (Tg yr-1)",
+            "result": "HAM1: 2324; AeroCom Median: 4377"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Sea salt Sinks (Dry deposition + Sedimentation) (Tg yr-1)",
+            "result": "HAM2: 3522; AeroCom Median: 4377"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Sea salt Sinks (Wet deposition) (Tg yr-1)",
+            "result": "HAM1: 2721; AeroCom Median: 1902"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Sea salt Sinks (Wet deposition) (Tg yr-1)",
+            "result": "HAM2: 2591; AeroCom Median: 1902"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Sea salt Lifetime (days)",
+            "result": "HAM1: 0.75; AeroCom Median: 0.41"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Sea salt Lifetime (days)",
+            "result": "HAM2: 0.69; AeroCom Median: 0.41"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Dust Burden (Tg)",
+            "result": "HAM1: 10.3; AeroCom Mean: 19.20"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Dust Burden (Tg)",
+            "result": "HAM2: 11.6; AeroCom Mean: 19.20"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Dust Sources (Emissions) (Tg yr-1)",
+            "result": "HAM1: 751; AeroCom Mean: 1840"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Dust Sources (Emissions) (Tg yr-1)",
+            "result": "HAM2: 805; AeroCom Mean: 1840"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Dust Sinks (Dry deposition + Sedimentation) (Tg yr-1)",
+            "result": "HAM1: 333.8; AeroCom Mean: 1235"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Dust Sinks (Dry deposition + Sedimentation) (Tg yr-1)",
+            "result": "HAM2: 397.1; AeroCom Mean: 1235"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Dust Sinks (Wet deposition) (Tg yr-1)",
+            "result": "HAM1: 423; AeroCom Mean: 607"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Dust Sinks (Wet deposition) (Tg yr-1)",
+            "result": "HAM2: 410; AeroCom Mean: 607"
+        },
+        {
+            "model": "HAM1",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Dust Lifetime (days)",
+            "result": "HAM1: 5.0; AeroCom Mean: 4.1"
+        },
+        {
+            "model": "HAM2",
+            "observational_dataset": "AeroCom (Textor et al., 2006)",
+            "evaluation_metric": "Dust Lifetime (days)",
+            "result": "HAM2: 5.2; AeroCom Mean: 4.1"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "AODant",
+            "result": "HAM2_CLD: 0.028; AeroCom I: 0.029\u00b10.010"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "AODant/AODPD",
+            "result": "HAM2_CLD: 25.2%; AeroCom I: 25\u00b111%"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Cloud Cover",
+            "result": "HAM2_CLD: 63%; AeroCom I: 63\u00b15%"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "NRF clear-sky (W m-2)",
+            "result": "HAM2_CLD: -15.7; AeroCom I: -23\u00b17"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "RF TOA all-sky/clear-sky",
+            "result": "HAM2_CLD: 0.22; AeroCom I: 0.33\u00b10.21"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "RF TOA clear-sky (W m-2)",
+            "result": "HAM2_CLD: -0.44; AeroCom I: -0.68\u00b10.24"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "RF TOA all-sky (W m-2)",
+            "result": "HAM2_CLD: -0.10; AeroCom I: -0.22\u00b10.16"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Surface forcing all-sky (W m-2)",
+            "result": "HAM2_CLD: -1.12; AeroCom I: -1.02\u00b10.23"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Atmos. forcing all-sky (W m-2)",
+            "result": "HAM2_CLD: 1.02; AeroCom I: 0.82\u00b10.17"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate Load (mg m-2)",
+            "result": "HAM2_CLD: 2.12; AeroCom I: 2.12\u00b10.82"
+        },
+        {
+            "model": "HAM2_CLD_WAT",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate Load (mg m-2)",
+            "result": "HAM2_CLD_WAT: 2.11; AeroCom I: 2.12\u00b10.82"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate AODant",
+            "result": "HAM2_CLD: 0.019; AeroCom I: 0.019\u00b10.009"
+        },
+        {
+            "model": "HAM2_CLD_WAT",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate AODant",
+            "result": "HAM2_CLD_WAT: 0.026; AeroCom I: 0.019\u00b10.009"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate MEC (m2 g-1)",
+            "result": "HAM2_CLD: 9.1; AeroCom I: 9.1\u00b12.7"
+        },
+        {
+            "model": "HAM2_CLD_WAT",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate MEC (m2 g-1)",
+            "result": "HAM2_CLD_WAT: 8.1; AeroCom I: 9.1\u00b12.7"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate RF (W m-2)",
+            "result": "HAM2_CLD: -0.26; AeroCom I: -0.35\u00b10.15"
+        },
+        {
+            "model": "HAM2_CLD_WAT",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate RF (W m-2)",
+            "result": "HAM2_CLD_WAT: -0.32; AeroCom I: -0.35\u00b10.15"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate NRF (W m-2)",
+            "result": "HAM2_CLD: -13.2; AeroCom I: -19.0\u00b17.0"
+        },
+        {
+            "model": "HAM2_CLD_WAT",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate NRF (W m-2)",
+            "result": "HAM2_CLD_WAT: -12.3; AeroCom I: -19.0\u00b17.0"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate NRFM (W g-1)",
+            "result": "HAM2_CLD: -119; AeroCom I: -161\u00b141"
+        },
+        {
+            "model": "HAM2_CLD_WAT",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "Sulfate NRFM (W g-1)",
+            "result": "HAM2_CLD_WAT: -150; AeroCom I: -161\u00b141"
+        },
+        {
+            "model": "HAM2_CLD",
+            "observational_dataset": "AeroCom I (Schulz et al., 2006)",
+            "evaluation_metric": "BC RF (W m-2)",
+            "result": "HAM2_CLD: 0.13; AeroCom I: 0.12\u00b10.04"
+        }
+    ],
+    "innovation": "This paper introduces the second version of the ECHAM-HAM global aerosol-climate model, detailing major improvements in process representations for aerosol nucleation, water uptake, secondary organic aerosols, emissions, and cloud microphysics coupling, and evaluating their impact on aerosol lifecycle and climate interaction simulations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ECHAM-HAM, version 1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "ECHAM-HAM, version 2",
+            "target_entity_type": "Source",
+            "paragraph": "Abstract. This paper introduces and evaluates the second version of the global aerosol-climate model ECHAM-HAM. Major changes have been brought into the model, including new parameterizations for aerosol nucleation and water uptake, an explicit treatment of secondary organic aerosols, modified emission calculations for sea salt and mineral dust, the coupling of aerosol microphysics to a two-moment stratiform cloud microphysics scheme, and alternative wet scavenging parameterizations. These revisions extend the model's capability to represent details of the aerosol lifecycle and its interaction with climate. Nudged simulations of the year 2000 are carried out to compare the aerosol properties and global distribution in HAM1 and HAM2, and to evaluate them against various observations. Sensitivity experiments are performed to help identify the impact of each individual update in model formulation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM, version 1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "ECHAM-HAM, version 2",
+            "target_entity_type": "Source",
+            "paragraph": "These revisions have brought us to the point where a second version of this aerosol-climate model is ready for release. This new version, referred to as ECHAM-HAM2 (or simply HAM2), participated in phase II of the AeroCom model intercomparison (Schulz et al., 2009).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM, version 1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "ECHAM-HAM, version 2",
+            "target_entity_type": "Source",
+            "paragraph": "Later in the paper, when mentioning these features, or the model development effort in general, we use the term \u201cECHAM-HAM\u201d or simply \u201cHAM\u201d. When it is necessary to distinguish, \u201cHAM1\" refers to the specific model configuration described by Stier et al. (2005), and \u201cHAM2\" the new version presented in this paper. An overview of the updates in HAM2 with respect to HAM1 is provided by Table 1. Further details and the impacts on aerosol simulation are discussed in Sect. 4.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "HAM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The aerosol module HAM (Stier et al., 2005) was designed as a component of the global climate model ECHAM5 (Roeckner et al., 2003, 2006a) for the purpose of investigating aerosol-climate interactions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "M7",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The aerosol microphysics sub-module M7 of Vignati et al. (2004) simulates the formation and growth of aerosol particles due to nucleation and condensation of sulfuric acid gas, coagulation of particles, and aerosol water uptake. These processes lead to re-distribution of particle number and mass among different modes.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "two-moment stratiform cloud microphysics scheme by Lohmann et al. (2007)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Table 1. An overview of the main differences between HAM1 and HAM2 in model configuration.\n... HAM2 specifics Two-moment stratiform cloud microphysics scheme by Lohmann et al. (2007); Solar radiation scheme extended to six bands (Cagnazzo et al., 2007)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Stratiform cloud microphysics scheme by Lohmann and Roeckner (1996)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Table 1. An overview of the main differences between HAM1 and HAM2 in model configuration.\n... HAM1 specifics Stratiform cloud microphysics scheme by Lohmann and Roeckner (1996); Solar radiation scheme with four bands (Fouquart and Bonnel, 1980).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Vehkam\u00e4ki et al. (2002) nucleation scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Table 1. An overview of the main differences between HAM1 and HAM2 in model configuration. ... HAM1 specifics Vehkam\u00e4ki et al. (2002) as default",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Kazil et al. (2010) nucleation scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Table 1. An overview of the main differences between HAM1 and HAM2 in model configuration.\n... HAM2 specifics New scheme by Kazil et al. (2010) as default, with optional H2SO4-organic nucleation based on the kinetic nucleation theory (Kuang et al., 2008) or cluster activation (Kulmala et al., 2006; Riipinen et al., 2007; Kazil et al., 2010). Old schemes by Vehkam\u00e4ki et al. (2002) and by Kulmala et al. (1998) are still optional.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "\u03ba-K\u00f6hler theory",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Table 1. An overview of the main differences between HAM1 and HAM2 in model configuration.\n... HAM2 specifics Considered for non-organic and organic aerosols, based on the \u03ba-K\u00f6hler theory (Petters and Kreidenweis, 2007; O\u2019Donnell et al., 2011)",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Tegen et al. (2002) dust emission scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Table 1. An overview of the main differences between HAM1 and HAM2 in model configuration. ... HAM1 and HAM2 shared features ... Interactive calculation using the Tegen et al. (2002) scheme",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "mass-flux scheme of Tiedtke (1989)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "As for the parameterized physics, cumulus convection and convective tracer transport are represented by the mass-flux scheme of Tiedtke (1989) with further modifications by Nordeng (1994).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "eddy diffusivity theory",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Turbulent transport of momentum, heat, moisture and passive tracers is described by the eddy diffusivity theory (Louis, 1979), with the vertical diffusion coefficient computed as functions of atmospheric stability and the turbulent kinetic energy (Brinkop and Roeckner, 1995).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "radiative transfer calculation methods of Fouquart and Bonnel (1980) and Mlawer et al. (1997)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Shortwave and longwave radiative transfer calculations follow the methods of Fouquart and Bonnel (1980) and Mlawer et al. (1997), respectively.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "7 log-normal modes",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The aerosol module HAM predicts the evolution of an aerosol ensemble of five compositions: sulfate (SU), black carbon (BC), particulate organic matter (POM), sea salt (SS), and mineral dust (DU). The size distribution of this aerosol population is described by 7 log-normal modes with prescribed variance.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T63 resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The tropospheric version of ECHAM5 is most often used at T63 resolution (approximately 2\u00ba latitude \u00d7 2\u00b0 longitude grid spacing), with 31 vertical levels up to 10 hPa and a default time step of 12 min. This is also the configuration used in this study.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "31 vertical levels up to 10 hPa",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The tropospheric version of ECHAM5 is most often used at T63 resolution (approximately 2\u00ba latitude \u00d7 2\u00b0 longitude grid spacing), with 31 vertical levels up to 10 hPa and a default time step of 12 min. This is also the configuration used in this study.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "spectral transform dynamical core",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The host model ECHAM5 employs a spectral transform dynamical core inherited from the European Centre for Medium-range Weather Forecasts (ECMWF), and a flux-form semi-Langrangian tracer transport algorithm of Lin and Rood (1996) with piecewise parabolic sub-grid distribution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "nudged simulations",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Since the purpose of this study is to evaluate the aerosol module HAM rather than the host model ECHAM5, we carry out nudged simulations, which relax the meteorological fields towards the ERA-40 reanalysis (Uppala et al., 2005).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "composition and size distribution of aerosols",
+            "target_entity_type": "Variable",
+            "paragraph": "The ECHAM5-HAM model (Stier et al., 2005) developed at the Max Planck Institute for Meteorology was one of the earlier examples of a global atmospheric general circulation model that can dynamically predict the composition and size distribution of aerosols by taking into account the most important chemical and physical processes ranging from the micro- to the global scale, and in return, calculate the radiative effects of aerosols on the atmospheric dynamics.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "troposphere",
+            "target_entity_type": "Realm",
+            "paragraph": "The first released version, designed with a focus on tropospheric aerosols, has been extended into the stratosphere and used in volcanic eruption and geoengineering studies (e.g. Niemeier et al., 2009; Timmreck et al., 2010; Niemeier et al., 2011).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "marked decrease of the systematic negative bias in the absorption aerosol optical depth",
+            "target_entity_type": "Metric",
+            "paragraph": "Evaluation against observation reveals that in terms of model performance, main improvements in HAM2 include a marked decrease of the systematic negative bias in the absorption aerosol optical depth, as well as smaller biases over the oceans in \u00c5ngstr\u00f6m parameter and in the accumulation mode number concentration.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "smaller biases over the oceans in \u00c5ngstr\u00f6m parameter",
+            "target_entity_type": "Metric",
+            "paragraph": "Evaluation against observation reveals that in terms of model performance, main improvements in HAM2 include a marked decrease of the systematic negative bias in the absorption aerosol optical depth, as well as smaller biases over the oceans in \u00c5ngstr\u00f6m parameter and in the accumulation mode number concentration.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "smaller biases in the accumulation mode number concentration",
+            "target_entity_type": "Metric",
+            "paragraph": "Evaluation against observation reveals that in terms of model performance, main improvements in HAM2 include a marked decrease of the systematic negative bias in the absorption aerosol optical depth, as well as smaller biases over the oceans in \u00c5ngstr\u00f6m parameter and in the accumulation mode number concentration.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "better correlation with MODIS data for aerosol optical depth",
+            "target_entity_type": "Metric",
+            "paragraph": "The simulated geographical distribution of aerosol optical depth (AOD) is better correlated with the MODIS data, while the surface aerosol mass concentrations are very similar to those in the old version.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "positive biases in AOD over the ocean",
+            "target_entity_type": "Metric",
+            "paragraph": "Model deficiencies that require further efforts in the future include (i) positive biases in AOD over the ocean, (ii) negative biases in AOD and aerosol mass concentration in high-latitude regions, and (iii) negative biases in particle number concentration, especially that of the Aitken mode, in the lower troposphere in heavily polluted regions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "negative biases in AOD and aerosol mass concentration in high-latitude regions",
+            "target_entity_type": "Metric",
+            "paragraph": "Model deficiencies that require further efforts in the future include (i) positive biases in AOD over the ocean, (ii) negative biases in AOD and aerosol mass concentration in high-latitude regions, and (iii) negative biases in particle number concentration, especially that of the Aitken mode, in the lower troposphere in heavily polluted regions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM-HAM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "negative biases in particle number concentration",
+            "target_entity_type": "Metric",
+            "paragraph": "Model deficiencies that require further efforts in the future include (i) positive biases in AOD over the ocean, (ii) negative biases in AOD and aerosol mass concentration in high-latitude regions, and (iii) negative biases in particle number concentration, especially that of the Aitken mode, in the lower troposphere in heavily polluted regions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "\u00c5ngstr\u00f6m parameter",
+            "target_entity_type": "Variable",
+            "paragraph": "The \u00c5ngstr\u00f6m parameter over the ocean was on the large large side compared to the Moderate Resolution Imaging Spectroradiometer (MODIS) satellite retrieval.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "aerosol optical depth (AOD)",
+            "target_entity_type": "Variable",
+            "paragraph": "The simulated geographical distribution of aerosol optical depth (AOD) is better correlated with the MODIS data, while the surface aerosol mass concentrations are very similar to those in the old version.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "ECHAM-HAM, version 2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Max Planck Institute for Meteorology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Cooperative Institute for Research in Environmental Sciences (CIRES)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Colorado, Boulder",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Oxford",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute of Atmospheric and Climate Science, ETH Z\u00fcrich",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Dalhousie University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Pacific Northwest National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NOAA Earth System Research Laboratory (ESRL)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Finnish Meteorological Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Leipzig",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECHAM-HAM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "global aerosol-climate model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "parameterizations for aerosol nucleation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "parameterizations for water uptake",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "explicit treatment of secondary organic aerosols",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "emission calculations for sea salt",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "emission calculations for mineral dust",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two-moment stratiform cloud microphysics scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "wet scavenging parameterizations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "HAM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HAM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "total aerosol water burden",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "\u03ba-K\u00f6hler-theory-based water uptake scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Particulate organic matter loading",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "in-cloud scavenging",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "sea salt emission scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "\u00c5ngstr\u00f6m parameters",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "absorption aerosol optical depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol optical depth (AOD)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "surface aerosol mass concentrations",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total aerosol water content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "AeroCom",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "ECHAM5-HAM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "global atmospheric general circulation model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "HAM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "EUCAARI",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "ECHAM5",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Aitken mode particle number concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "accumulation mode number concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "extinction profiles",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "secondary organic aerosols (SOA)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "four-band shortwave radiative transfer scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "aerosol nucleation parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "hygroscopic growth of aerosol particles",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "wet scavenging schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two-moment cloud microphysics scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "on-line calculation of dust and sea salt emissions",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "satellite simulator",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ECHAM-HAM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "spectral transform dynamical core",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "European Centre for Medium-range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "flux-form semi-Langrangian tracer transport algorithm of Lin and Rood (1996)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "piecewise parabolic sub-grid distribution",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "mass-flux scheme of Tiedtke (1989)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "eddy diffusivity theory (Louis, 1979)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "shortwave radiative transfer calculations follow the methods of Fouquart and Bonnel (1980)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "longwave radiative transfer calculations follow the methods of Mlawer et al. (1997)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "16 spectral bands",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "6-band version adapted from the ECMWF model by Cagnazzo et al. (2007)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "T63 resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "approximately 2\u00b0 latitude \u00d7 2\u00b0 longitude",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "31 vertical levels up to 10 hPa",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "default time step of 12 min",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "AeroCom Phase I",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "GOCART",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MATCH",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MOZGN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UMI",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PNNL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Stratiform cloud microphysics scheme by Lohmann and Roeckner (1996)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Solar radiation scheme with four bands (Fouquart and Bonnel, 1980)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "three-step sequential operator splitting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Vehkam\u00e4ki et al. (2002)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Kulmala et al. (1998)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "water uptake scheme based on Zeleznik (1991)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "water uptake scheme based on Zdanovskii (1948)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "water uptake scheme based on Stokes and Robinson (1966)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Interactive calculation based on Monahan et al. (1986) and Smith and Harrison (1998)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Interactive calculation using the Tegen et al. (2002) scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Two-moment stratiform cloud microphysics scheme by Lohmann et al. (2007)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Solar radiation scheme extended to six bands (Cagnazzo et al., 2007)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two-step operator splitting scheme with analytical solution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "New scheme by Kazil et al. (2010)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "H2SO4-organic nucleation based on the kinetic nucleation theory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cluster activation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "\u03ba-K\u00f6hler theory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Monahan et al. (1986) formula",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "East Asia soil properties updated by Cheng et al. (2008)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "temperature dependent scavenging parameters for mixed-phase stratiform clouds",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Optional scheme by Croft et al. (2009)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "sulfate (SU)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "black carbon (BC)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "primary organic aerosol (POA)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mineral dust (DU)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea salt (SS)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "7 log-normal modes",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Nucleation Mode",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Aitken Mode",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Accumulation Mode",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Coarse Mode",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Global Fire Emission Database",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Speciated Particulate Emissions Wizard inventory",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EDGAR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MOZART",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "aerosol microphysics sub-module M7",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Stokes theory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "big leaf approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Mie theory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "AeroCom Phase I emission data for the year 2000",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA-40 reanalysis",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "nudged simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "HAM1",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2_H2SO4",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2_NUL",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2_OA",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2_WAT",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2_SS",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2_DU",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2_CLD",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2_INCLD",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2_BLCLD",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2_cluster",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HAM2_kinetic",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "below-cloud wet scavenging scheme proposed by Croft et al. (2009)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cluster activation nucleation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "kinetic nucleation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "scheme of Kazil and Lovejoy (2007)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Kazil et al. (2010)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "explicit SOA module",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MEGAN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two-product model of Odum et al. (1996)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "absorption-based theory of Pankow (1994a,b)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "particulate organic matter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hygroscopicity parameter \u03ba",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "generalized Kelvin equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ZSR method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "semi-empirical water uptake scheme based on the \u03ba-K\u00f6hler theory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "humidified tandem differential mobility analyzer",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Aerosol Inorganic Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Dentener et al. (2006) emission dataset",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "East Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "aerosol lifetime",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "autoconversion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "accretion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "aggregation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "semi-empirical scheme of Lin and Leaitch (1997)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Khairoutdinov and Kogan (2000)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "K\u00e4rcher and Lohmann (2003)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "liquid water path",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "scavenging parameter",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Jungfraujoch",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Switzerland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "cluster activation scheme of Kulmala et al. (2006)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cluster activation scheme of Riipinen et al. (2007)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "kinetic nucleation scheme of Laakso et al. (2004)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "kinetic nucleation scheme of Kuang et al. (2008)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "aerosol mass budget",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Burden",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Lifetime",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Aging time",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol mass concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Polar Regions",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "EMEP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "IMPROVE",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "University of Miami",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "condensation nuclei",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NASA LaRC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NCAR EOL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "BADC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Pacific Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indian Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Pole",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Northern Polar Region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Harwell",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Hohenpeissenberg",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Aspvretren",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Ispra",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Pallas",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Hyyti\u00e4l\u00e4",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Milan",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "INTEX-B",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "INTEX-A",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "INDOEX",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ARCTAS",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ACE-ASIA",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ACE-1",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "PEM_TROPICS_A",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "PASE",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "PACDEX",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "MILAGRO",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ITOP",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "VOCALS",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "TRACE-P",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "RICO",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "PEM_TROPICS_B",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "marine boundary layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Taylor diagram",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "AERONET",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "probability density function",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "direct radiative effect",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "anthropogenic aerosol direct forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol size distribution",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "planetary boundary layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "AeroCom Phase II",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "cloud droplet activation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ice nucleation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "root mean square error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "joint probability density distribution",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "anthropogenic AOD",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "radiative forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "normalized radiative forcing per unit AOD",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "top-of-atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "single scattering albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dry mass extinction coefficient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "raditive forcing efficiency per unit aerosol load",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "K\u00f6hler theory based scheme of Abdul-Razzak and Ghan (2000)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "C-130",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "DC-8",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "P3-B",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "BAE-146",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "HIAPER",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "top-of-atmosphere clear-sky shortwave forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "top-of-atmosphere all-sky shortwave forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface clear-sky shortwave forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface all-sky shortwave forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "top-of-atmosphere clear-sky longwave forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "top-of-atmosphere all-sky longwave forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface clear-sky longwave forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface all-sky longwave forcing",
+            "entity_type": "Variable"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2024612183",
+        "https://openalex.org/W2094571126",
+        "https://openalex.org/W2034026239",
+        "https://openalex.org/W2116867160",
+        "https://openalex.org/W1980560428",
+        "https://openalex.org/W2132425731",
+        "https://openalex.org/W2162214076",
+        "https://openalex.org/W2164231461",
+        "https://openalex.org/W2085219293",
+        "https://openalex.org/W1976681003",
+        "https://openalex.org/W2161836169",
+        "https://openalex.org/W2115570969",
+        "https://openalex.org/W2059584473",
+        "https://openalex.org/W2120358141",
+        "https://openalex.org/W2167280668",
+        "https://openalex.org/W2078592413",
+        "https://openalex.org/W2004497841",
+        "https://openalex.org/W2005953962",
+        "https://openalex.org/W2095245634",
+        "https://openalex.org/W1967774595",
+        "https://openalex.org/W1989884765",
+        "https://openalex.org/W2141857539",
+        "https://openalex.org/W2068591668",
+        "https://openalex.org/W1993723247",
+        "https://openalex.org/W2067209936",
+        "https://openalex.org/W2002570697",
+        "https://openalex.org/W1966960610",
+        "https://openalex.org/W2126430862",
+        "https://openalex.org/W4248700080",
+        "https://openalex.org/W2012287642",
+        "https://openalex.org/W2109979560",
+        "https://openalex.org/W2088560779",
+        "https://openalex.org/W2098531686",
+        "https://openalex.org/W2168407306",
+        "https://openalex.org/W2127510753",
+        "https://openalex.org/W1657365528",
+        "https://openalex.org/W2081175257",
+        "https://openalex.org/W2104518068",
+        "https://openalex.org/W1909779732",
+        "https://openalex.org/W2070348652",
+        "https://openalex.org/W2158669608",
+        "https://openalex.org/W2138977661",
+        "https://openalex.org/W2125855972",
+        "https://openalex.org/W2073382277",
+        "https://openalex.org/W2132002340",
+        "https://openalex.org/W2149738905",
+        "https://openalex.org/W2109358553",
+        "https://openalex.org/W2103575397",
+        "https://openalex.org/W2136884131",
+        "https://openalex.org/W2004735773",
+        "https://openalex.org/W2129433315",
+        "https://openalex.org/W2130728866",
+        "https://openalex.org/W2145782305",
+        "https://openalex.org/W1994699491",
+        "https://openalex.org/W2078773517",
+        "https://openalex.org/W2176254346",
+        "https://openalex.org/W2064999688",
+        "https://openalex.org/W1967584785",
+        "https://openalex.org/W2130871986",
+        "https://openalex.org/W2070497864",
+        "https://openalex.org/W2158897593",
+        "https://openalex.org/W4235432158",
+        "https://openalex.org/W2110759070",
+        "https://openalex.org/W2089727804",
+        "https://openalex.org/W2114829375",
+        "https://openalex.org/W2159629319",
+        "https://openalex.org/W2083339292",
+        "https://openalex.org/W2230007037",
+        "https://openalex.org/W4234342136",
+        "https://openalex.org/W2150956567",
+        "https://openalex.org/W2156229884",
+        "https://openalex.org/W1994675574",
+        "https://openalex.org/W2149932227",
+        "https://openalex.org/W2004218522",
+        "https://openalex.org/W1975310705",
+        "https://openalex.org/W2035014908",
+        "https://openalex.org/W2084281396",
+        "https://openalex.org/W2067157510",
+        "https://openalex.org/W2029337195",
+        "https://openalex.org/W2099636727",
+        "https://openalex.org/W2037568311",
+        "https://openalex.org/W2003940390",
+        "https://openalex.org/W2142154379",
+        "https://openalex.org/W2171939740",
+        "https://openalex.org/W2108136067",
+        "https://openalex.org/W2042290651",
+        "https://openalex.org/W2051127417",
+        "https://openalex.org/W2095777412",
+        "https://openalex.org/W1665433863",
+        "https://openalex.org/W2123293242",
+        "https://openalex.org/W2020729558",
+        "https://openalex.org/W2076109598",
+        "https://openalex.org/W1981247149",
+        "https://openalex.org/W2080824835",
+        "https://openalex.org/W2118184331",
+        "https://openalex.org/W2152066096",
+        "https://openalex.org/W2129806068",
+        "https://openalex.org/W1999842422",
+        "https://openalex.org/W1985250047",
+        "https://openalex.org/W2139836399",
+        "https://openalex.org/W2113594490",
+        "https://openalex.org/W1965473538",
+        "https://openalex.org/W2175098853",
+        "https://openalex.org/W1523815748",
+        "https://openalex.org/W2030357483",
+        "https://openalex.org/W2106519884",
+        "https://openalex.org/W2090249381",
+        "https://openalex.org/W2098964970",
+        "https://openalex.org/W2013350969",
+        "https://openalex.org/W2050647958",
+        "https://openalex.org/W2035482390",
+        "https://openalex.org/W1980026409",
+        "https://openalex.org/W2059756703",
+        "https://openalex.org/W1679833810",
+        "https://openalex.org/W2072692927",
+        "https://openalex.org/W2079239402",
+        "https://openalex.org/W2042801400",
+        "https://openalex.org/W2128095803",
+        "https://openalex.org/W2335253659",
+        "https://openalex.org/W2106683183",
+        "https://openalex.org/W2045129899",
+        "https://openalex.org/W2092758993",
+        "https://openalex.org/W2495906559",
+        "https://openalex.org/W787018995",
+        "https://openalex.org/W1568287675",
+        "https://openalex.org/W2140752117",
+        "https://openalex.org/W2046762519",
+        "https://openalex.org/W2618029600",
+        "https://openalex.org/W1608661376",
+        "https://openalex.org/W1979660112",
+        "https://openalex.org/W2084372611"
+    ]
+}

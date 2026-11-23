@@ -1,0 +1,1354 @@
+{
+    "uri": "https://openalex.org/W2772564114",
+    "title": "PCR-GLOBWB\u00a02: a 5\u2009arcmin global hydrological and water resources model",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2018,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5043362415",
+            "display_name": "Edwin H. Sutanudjaja",
+            "orcid": "https://orcid.org/0000-0002-3426-4069"
+        },
+        {
+            "id": "https://openalex.org/A5070877954",
+            "display_name": "Rens van Beek",
+            "orcid": "https://orcid.org/0000-0002-4758-108X"
+        },
+        {
+            "id": "https://openalex.org/A5062523421",
+            "display_name": "Niko Wanders",
+            "orcid": "https://orcid.org/0000-0002-7102-5454"
+        },
+        {
+            "id": "https://openalex.org/A5032181031",
+            "display_name": "Yoshihide Wada",
+            "orcid": "https://orcid.org/0000-0003-4770-2539"
+        },
+        {
+            "id": "https://openalex.org/A5051117336",
+            "display_name": "Joyce Bosmans",
+            "orcid": "https://orcid.org/0000-0001-7697-5136"
+        },
+        {
+            "id": "https://openalex.org/A5086946420",
+            "display_name": "Niels Drost",
+            "orcid": "https://orcid.org/0000-0001-9795-7981"
+        },
+        {
+            "id": "https://openalex.org/A5052834879",
+            "display_name": "Ruud van der Ent",
+            "orcid": "https://orcid.org/0000-0001-5450-4333"
+        },
+        {
+            "id": "https://openalex.org/A5059761123",
+            "display_name": "Inge de Graaf",
+            "orcid": "https://orcid.org/0000-0001-7748-868X"
+        },
+        {
+            "id": "https://openalex.org/A5069722633",
+            "display_name": "Jannis Hoch",
+            "orcid": "https://orcid.org/0000-0003-3570-6436"
+        },
+        {
+            "id": "https://openalex.org/A5059031922",
+            "display_name": "Kor de Jong",
+            "orcid": "https://orcid.org/0000-0002-8650-9961"
+        },
+        {
+            "id": "https://openalex.org/A5077042002",
+            "display_name": "Derek Karssenberg",
+            "orcid": "https://orcid.org/0000-0002-6475-363X"
+        },
+        {
+            "id": "https://openalex.org/A5109455826",
+            "display_name": "Patricia L\u00f3pez L\u00f3pez",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5005521687",
+            "display_name": "Stefanie Pe\u00dfenteiner",
+            "orcid": "https://orcid.org/0000-0001-8721-3874"
+        },
+        {
+            "id": "https://openalex.org/A5082780784",
+            "display_name": "Oliver Schmitz",
+            "orcid": "https://orcid.org/0000-0002-0493-851X"
+        },
+        {
+            "id": "https://openalex.org/A5047675949",
+            "display_name": "Menno Straatsma",
+            "orcid": "https://orcid.org/0000-0002-2035-301X"
+        },
+        {
+            "id": "https://openalex.org/A5059292839",
+            "display_name": "Ekkamol Vannametee",
+            "orcid": "https://orcid.org/0000-0002-2259-6234"
+        },
+        {
+            "id": "https://openalex.org/A5061867870",
+            "display_name": "Dominik Wisser",
+            "orcid": "https://orcid.org/0000-0001-8368-3801"
+        },
+        {
+            "id": "https://openalex.org/A5080638739",
+            "display_name": "Marc F. P. Bierkens",
+            "orcid": "https://orcid.org/0000-0002-7411-6562"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-11-2429-2018",
+    "abstract": "Abstract. We present PCR-GLOBWB 2, a global hydrology and water resources model. Compared to previous versions of PCR-GLOBWB, this version fully integrates water use. Sector-specific water demand, groundwater and surface water withdrawal, water consumption, and return flows are dynamically calculated at every time step and interact directly with the simulated hydrology. PCR-GLOBWB 2 has been fully rewritten in Python and PCRaster Python and has a modular structure, allowing easier replacement, maintenance, and development of model components. PCR-GLOBWB 2 has been implemented at 5 arcmin resolution, but a version parameterized at 30 arcmin resolution is also available. Both versions are available as open-source codes on https://github.com/UU-Hydro/PCR-GLOBWB_model (Sutanudjaja et al., 2017a). PCR-GLOBWB 2 has its own routines for groundwater dynamics and surface water routing. These relatively simple routines can alternatively be replaced by dynamically coupling PCR-GLOBWB 2 to a global two-layer groundwater model and 1-D\u20132-D hydrodynamic models. Here, we describe the main components of the model, compare results of the 30 and 5 arcmin versions, and evaluate their model performance using Global Runoff Data Centre discharge data. Results show that model performance of the 5 arcmin version is notably better than that of the 30 arcmin version. Furthermore, we compare simulated time series of total water storage (TWS) of the 5 arcmin model with those observed with GRACE, showing similar negative trends in areas of prevalent groundwater depletion. Also, we find that simulated total water withdrawal matches reasonably well with reported water withdrawal from AQUASTAT, while water withdrawal by source and sector provide mixed results.",
+    "field": "Global hydrological modeling",
+    "problem": "Previous global hydrological models, including the original PCR-GLOBWB, are limited by coarse spatial resolution, fragmented codebases, and treating water demand and availability independently, which prevents dynamic feedback between human water use and the simulated hydrology.",
+    "method": "We propose PCR-GLOBWB 2, a 5 arcmin global hydrological model that fully integrates water use by dynamically calculating sector-specific demand, withdrawal, consumption, and return flows, allowing these components to interact directly with the simulated hydrology at each time step.",
+    "task": "The task is to present the global hydrological and water resources model PCR-GLOBWB 2, describing its components and evaluating the performance of its new 5 arcmin version by comparing it to a 30 arcmin version and observational data.",
+    "model": [
+        "VIC",
+        "WMB",
+        "WaterGAP",
+        "H08",
+        "Mac-PDM",
+        "MODFLOW",
+        "ERA40",
+        "ERA-Interim"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/python",
+            "display_name": "Python (programming language)",
+            "score": 0.7581807971000671
+        },
+        {
+            "id": "https://openalex.org/keywords/groundwater",
+            "display_name": "Groundwater",
+            "score": 0.5969793200492859
+        },
+        {
+            "id": "https://openalex.org/keywords/surface-runoff",
+            "display_name": "Surface runoff",
+            "score": 0.5136763453483582
+        },
+        {
+            "id": "https://openalex.org/keywords/hydrology",
+            "display_name": "Hydrology (agriculture)",
+            "score": 0.5119165182113647
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.5096862316131592
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.5039018988609314
+        },
+        {
+            "id": "https://openalex.org/keywords/surface-water",
+            "display_name": "Surface water",
+            "score": 0.4512828290462494
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.20771130919456482
+        },
+        {
+            "id": "https://openalex.org/keywords/ecology",
+            "display_name": "Ecology",
+            "score": 0.12381681799888611
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C519991488",
+            "wikidata": "https://www.wikidata.org/wiki/Q28865",
+            "display_name": "Python (programming language)",
+            "level": 2,
+            "score": 0.7581807971000671
+        },
+        {
+            "id": "https://openalex.org/C76177295",
+            "wikidata": "https://www.wikidata.org/wiki/Q161598",
+            "display_name": "Groundwater",
+            "level": 2,
+            "score": 0.5969793200492859
+        },
+        {
+            "id": "https://openalex.org/C50477045",
+            "wikidata": "https://www.wikidata.org/wiki/Q1444790",
+            "display_name": "Surface runoff",
+            "level": 2,
+            "score": 0.5136763453483582
+        },
+        {
+            "id": "https://openalex.org/C76886044",
+            "wikidata": "https://www.wikidata.org/wiki/Q2883300",
+            "display_name": "Hydrology (agriculture)",
+            "level": 2,
+            "score": 0.5119165182113647
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5096862316131592
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5039018988609314
+        },
+        {
+            "id": "https://openalex.org/C8625798",
+            "wikidata": "https://www.wikidata.org/wiki/Q752112",
+            "display_name": "Surface water",
+            "level": 2,
+            "score": 0.4512828290462494
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.20771130919456482
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.12381681799888611
+        },
+        {
+            "id": "https://openalex.org/C87717796",
+            "wikidata": "https://www.wikidata.org/wiki/Q146326",
+            "display_name": "Environmental engineering",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C187320778",
+            "wikidata": "https://www.wikidata.org/wiki/Q1349130",
+            "display_name": "Geotechnical engineering",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C111919701",
+            "wikidata": "https://www.wikidata.org/wiki/Q9135",
+            "display_name": "Operating system",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "PCR-GLOBWB 2 (5 arcmin)",
+            "observational_dataset": "IGRAC database",
+            "evaluation_metric": "Groundwater withdrawal (km\u00b3/year)",
+            "result": "632"
+        },
+        {
+            "model": "PCR-GLOBWB 2 (5 arcmin)",
+            "observational_dataset": "FAO (2016)",
+            "evaluation_metric": "Total water withdrawal (km\u00b3/year)",
+            "result": "3330"
+        }
+    ],
+    "innovation": "This paper presents PCR-GLOBWB 2, an open-source global hydrological and water resources model that fully integrates dynamic water use calculations, features a modular Python structure, and operates at a higher spatial resolution of 5 arcmin compared to its predecessor.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "PCR-GLOBWB 1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "PCR-GLOBWB 2",
+            "target_entity_type": "Source",
+            "paragraph": "The objective of this paper is to summarize and present the new version of the model, PCR-GLOBWB 2, which consolidates all components that have been developed since the original version of the model was first introduced (van Beek et al., 2011). The new version of the model, PCR-GLOBWB 2, which is able to simulate the water balance at a finer spatial resolution of 5 arcmin, supersedes the original PCR-GLOBWB 1, which has a resolution of 30 arcmin only\u00b9.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "meteorological forcing module",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "There are currently five main hydrological modules in PCR-GLOBWB 2 as illustrated in Fig. 1 and briefly described in Sect. 2.3: meteorological forcing, land surface, groundwater, surface water routing, and irrigation and water use.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "land surface module",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "There are currently five main hydrological modules in PCR-GLOBWB 2 as illustrated in Fig. 1 and briefly described in Sect. 2.3: meteorological forcing, land surface, groundwater, surface water routing, and irrigation and water use.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "groundwater module",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "There are currently five main hydrological modules in PCR-GLOBWB 2 as illustrated in Fig. 1 and briefly described in Sect. 2.3: meteorological forcing, land surface, groundwater, surface water routing, and irrigation and water use.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "surface water routing module",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "There are currently five main hydrological modules in PCR-GLOBWB 2 as illustrated in Fig. 1 and briefly described in Sect. 2.3: meteorological forcing, land surface, groundwater, surface water routing, and irrigation and water use.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "irrigation and water use module",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "There are currently five main hydrological modules in PCR-GLOBWB 2 as illustrated in Fig. 1 and briefly described in Sect. 2.3: meteorological forcing, land surface, groundwater, surface water routing, and irrigation and water use.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "5 arcmin resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "PCR-GLOBWB 2 has been implemented at 5 arcmin resolution, but a version parameterized at 30 arcmin resolution is also available.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "30 arcmin resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "PCR-GLOBWB 2 has been implemented at 5 arcmin resolution, but a version parameterized at 30 arcmin resolution is also available.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "flexible modular structure",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "PCR-GLOBWB 2 has a flexible modular structure (Fig. 1). The modular structure of PCR-GLOBWB 2, both in terms of model concepts and implementation (separate modules are called from a main program), makes it easy to modify or replace components according to specific objectives of the model application, to introduce new modules or components within the modelling system, and to couple it to existing codes.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "written in Python and PCRaster Python",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "PCR-GLOBWB 2 has been fully rewritten in Python and PCRaster Python and has a modular structure, allowing easier replacement, maintenance, and development of model components.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "global coverage except Greenland and Antarctica",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The computational grid covers all continents except Greenland and Antarctica.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1 day time step",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Typical time steps for hydrology and water use are 1 day while sub-daily time stepping is used for hydrodynamic river routing.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "sub-daily time stepping",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Typical time steps for hydrology and water use are 1 day while sub-daily time stepping is used for hydrodynamic river routing.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "coupling to MODFLOW",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "As an option PCR-GLOBWB 2 can be partially or fully coupled to a two-layer global groundwater model based on MODFLOW (de Graaf et al., 2017).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "coupling to Delft3D Flexible Mesh",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Recent work (Hoch et al., 2017a, b) also includes coupling PCR-GLOBWB 2 to either Delft3D Flexible Mesh (Kernkamp et al., 2011) or LISFLOOD-FP (Bates et al., 2010), which are model codes that can be used to solve the 1-D\u20132-D shallow water equations (or approximations thereof) for detailed inundation studies.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "coupling to LISFLOOD-FP",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Recent work (Hoch et al., 2017a, b) also includes coupling PCR-GLOBWB 2 to either Delft3D Flexible Mesh (Kernkamp et al., 2011) or LISFLOOD-FP (Bates et al., 2010), which are model codes that can be used to solve the 1-D\u20132-D shallow water equations (or approximations thereof) for detailed inundation studies.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Hamon method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "There are two options for calculating reference potential evaporation: (1) using Hamon (1963) in case only daily mean temperature is available, or (2) using Penman-Monteith following the FAO guidelines (Allen et al., 1998) if net radiation, wind speed, and vapour pressure deficit are additionally available.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Penman-Monteith method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "There are two options for calculating reference potential evaporation: (1) using Hamon (1963) in case only daily mean temperature is available, or (2) using Penman-Monteith following the FAO guidelines (Allen et al., 1998) if net radiation, wind speed, and vapour pressure deficit are additionally available.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "improved Arno scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Surface run-off (Qdr, from precipitation and snowmelt) consists of infiltration excess run-off and saturation excess run-off following a sub-grid approach that mimics variable source areas, i.e. the improved Arno scheme (Todini, 1996; Hagemann and Gates, 2003).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Sloan and Moore run-off parameterization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Interflow or stormflow (Qsf), mostly occurring in regolith soils on hillslopes, is also handled with a sub-grid approach based on a run-off parameterization by Sloan and Moore (1984).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Kraijenhoff van de Leur drainage theory",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Groundwater discharge (assumed to be the same as groundwater baseflow here) depends on a linear storage-outflow relationship (Qbf = S3/J) in which the proportionality constant J is calculated following the drainage theory of Kraijenhoff van de Leur (1958) based on drainage network density and aquifer properties.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "kinematic wave solution",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Routing can be carried out in three ways of increasing complexity: (1) simple accumulation of the fluxes over the drainage network, (2) a travel-time characteristic solution (Karssenberg et al., 2007), and (3) the kinematic wave solution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "travel-time characteristic solution",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Routing can be carried out in three ways of increasing complexity: (1) simple accumulation of the fluxes over the drainage network, (2) a travel-time characteristic solution (Karssenberg et al., 2007), and (3) the kinematic wave solution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "simple accumulation routing",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Routing can be carried out in three ways of increasing complexity: (1) simple accumulation of the fluxes over the drainage network, (2) a travel-time characteristic solution (Karssenberg et al., 2007), and (3) the kinematic wave solution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Land surface module",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface run-off",
+            "target_entity_type": "Variable",
+            "paragraph": "This core module of PCR-GLOBWB 2 covers the land-atmosphere exchange, the vertical flow among soil compartments and the eventual groundwater recharge, snow and interception storage, and the run-off generation mechanisms... Surface run-off (Qdr, from precipitation and snowmelt) consists of infiltration excess run-off and saturation excess run-off following a sub-grid approach that mimics variable source areas, i.e. the improved Arno scheme (Todini, 1996; Hagemann and Gates, 2003).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Land surface module",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "interflow",
+            "target_entity_type": "Variable",
+            "paragraph": "This core module of PCR-GLOBWB 2 covers the land-atmosphere exchange, the vertical flow among soil compartments and the eventual groundwater recharge, snow and interception storage, and the run-off generation mechanisms... Interflow or stormflow (Qsf), mostly occurring in regolith soils on hillslopes, is also handled with a sub-grid approach based on a run-off parameterization by Sloan and Moore (1984).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Groundwater module",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "groundwater discharge",
+            "target_entity_type": "Variable",
+            "paragraph": "The groundwater module calculates groundwater storage dynamics subject to recharge and capillary rise (calculated by the land surface module), groundwater discharge (Qbf, in case of a positive groundwater storage), and riverbed infiltration (Inf).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GRACE",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "total water storage",
+            "target_entity_type": "Variable",
+            "paragraph": "We compared total water storage (TWS) as simulated by PCR-GLOBWB 2 with the TWS estimated from GRACE (Gravity Recovery and Climate Experiment) gravity anomalies.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "correlation coefficient",
+            "target_entity_type": "Metric",
+            "paragraph": "When evaluating the simulated discharge with discharge observations from GRDC, we used the monthly values and calculated three different measures. The first one is the correlation coefficient between monthly simulated and observed GRDC time series, which is a measure of reproducing correct timing of high and low discharge.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Kling-Gupta efficiency coefficient",
+            "target_entity_type": "Metric",
+            "paragraph": "The second measure is the Kling-Gupta efficiency coefficient or KGE (Gupta et al., 2009), which equally measures bias, differences in amplitude, and differences in timing between monthly simulated and observed GRDC time series.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PCR-GLOBWB 2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "anomaly correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "The last metric is the anomaly correlation, i.e. the correlation among monthly time series after the seasonal signal (climatology) has been removed. This statistic measures the ability of the model to correctly simulate timing of seasonal and inter-annual anomalies from the yearly climatology.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "PCR-GLOBWB 2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "5 arcmin",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "30 arcmin",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Python",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "PCRaster Python",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Global Runoff Data Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "total water storage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GRACE",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "AQUASTAT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Utrecht University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "International Institute for Applied Systems Analysis",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Netherlands eScience Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Freiburg",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Deltares",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Graz",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Chulalongkorn University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Food and Agriculture Organization of the United Nations",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of New Hampshire",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "VIC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WMB",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WaterGAP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "H08",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mac-PDM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.5\u00b0 \u00d7 0.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "flood",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "drought",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "PCR-GLOBWB 1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODFLOW",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "6 arcmin",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "PCR-GLOBWB",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Irrigation and water use module",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Meteorological forcing module",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Land surface module",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Groundwater module",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Surface water routing module",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil moisture storage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "groundwater storage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface run-off",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "interflow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "baseflow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "time-explicit scheme",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "kinematic wave routing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "floodplain inundation scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GRanD database",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Delft3D Flexible Mesh",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LISFLOOD-FP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1-D-2-D shallow water equations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "reference evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Hamon (1963)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Penman-Monteith",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "net radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vapour pressure deficit",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "atmos",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "leaf area index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "improved Arno scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "run-off",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Sloan and Moore (1984)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Global Land Cover Characteristics Database (GLCC) version 2.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIRCA2000",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Crop Water Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "linear storage-outflow relationship",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "drainage theory of Kraijenhoff van de Leur (1958)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "eight-point steepest-gradient algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "travel-time characteristic solution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "kinematic wave solution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Manning's equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "time-explicit variable sub-time stepping scheme",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Courant number",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "surface water temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "energy routing scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "30 arcsec",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "HydroSHEDS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GTOPO30",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Hydrolk",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "USGS EROS Data Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Global Lakes and Wetlands Database (GLWD)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FAOSTAT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "dynamic allocation scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "1 arcdeg",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.5 arcdeg",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "IGRAC GGIS database",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PCRaster",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "PCRaster scripting language",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NetCDF",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "yearly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Gravity Recovery and Climate Experiment",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "CRU TS 3.2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "ERA40",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA-Interim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "1.2 degrees",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.7 degrees",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "CRU CL 2.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Amazon",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Niger",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "JPL GRACE Mascon product RL05M",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JPL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "3 x 3 arcdeg",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "300 km by 300km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "900000 km\u00b2",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "multiscale parameter regionalization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Rhine",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Kling-Gupta efficiency coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "anomaly correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "K\u00f6ppen-Geiger zones",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "tropical",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "desert",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "temperate",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "continental",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Russia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "US",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Norwegian mountains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "African rivers",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Rocky Mountains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Niger basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Central Valley aquifer",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "High Plains aquifer",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North China Plain aquifer",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Middle East",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pakistan",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Yukon River basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Iceland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Nile river basins",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "R2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "regression slopes",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Netherlands",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "GitHub",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GNU General Public License version 3",
+            "entity_type": "PhysicalFeature"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2043607614",
+        "https://openalex.org/W2080226292",
+        "https://openalex.org/W2055668893",
+        "https://openalex.org/W2087324037",
+        "https://openalex.org/W1981553906",
+        "https://openalex.org/W2154112865",
+        "https://openalex.org/W2559802488",
+        "https://openalex.org/W1989350061",
+        "https://openalex.org/W1974655800",
+        "https://openalex.org/W2121077852",
+        "https://openalex.org/W1981147500",
+        "https://openalex.org/W2087105362",
+        "https://openalex.org/W2021582029",
+        "https://openalex.org/W2602856331",
+        "https://openalex.org/W2107073505",
+        "https://openalex.org/W1993784089",
+        "https://openalex.org/W1992012555",
+        "https://openalex.org/W2584421029",
+        "https://openalex.org/W2121745948",
+        "https://openalex.org/W2072139618",
+        "https://openalex.org/W1677549105",
+        "https://openalex.org/W2151329188",
+        "https://openalex.org/W2094915443",
+        "https://openalex.org/W2061903993",
+        "https://openalex.org/W2115385872",
+        "https://openalex.org/W2276547633",
+        "https://openalex.org/W1533016475",
+        "https://openalex.org/W1973584596",
+        "https://openalex.org/W2122854726",
+        "https://openalex.org/W2049491271",
+        "https://openalex.org/W2085858708",
+        "https://openalex.org/W2138763184",
+        "https://openalex.org/W2141630770",
+        "https://openalex.org/W2028714471",
+        "https://openalex.org/W2119442345",
+        "https://openalex.org/W2140193139",
+        "https://openalex.org/W2624779099",
+        "https://openalex.org/W2123673345",
+        "https://openalex.org/W1867005924",
+        "https://openalex.org/W2083029259",
+        "https://openalex.org/W2514034892",
+        "https://openalex.org/W2629538631",
+        "https://openalex.org/W1979260682",
+        "https://openalex.org/W1996601154",
+        "https://openalex.org/W2106044591",
+        "https://openalex.org/W1964182760",
+        "https://openalex.org/W2101206644",
+        "https://openalex.org/W2114695886",
+        "https://openalex.org/W1998515817",
+        "https://openalex.org/W2171675471",
+        "https://openalex.org/W2103751670",
+        "https://openalex.org/W2122389133",
+        "https://openalex.org/W2127559745",
+        "https://openalex.org/W2155304622",
+        "https://openalex.org/W2084659566",
+        "https://openalex.org/W1985949400",
+        "https://openalex.org/W2173844276",
+        "https://openalex.org/W2166186402",
+        "https://openalex.org/W2137333775",
+        "https://openalex.org/W2106301584",
+        "https://openalex.org/W2012804429",
+        "https://openalex.org/W2142231247",
+        "https://openalex.org/W2103897732",
+        "https://openalex.org/W2121687501",
+        "https://openalex.org/W2164532904",
+        "https://openalex.org/W2753484804",
+        "https://openalex.org/W1966901701",
+        "https://openalex.org/W2148345493",
+        "https://openalex.org/W2000228740",
+        "https://openalex.org/W2074288000",
+        "https://openalex.org/W2156382101",
+        "https://openalex.org/W2118930997",
+        "https://openalex.org/W6632579400",
+        "https://openalex.org/W2161334450",
+        "https://openalex.org/W2139025179",
+        "https://openalex.org/W2064578974",
+        "https://openalex.org/W2114302857",
+        "https://openalex.org/W1570698328",
+        "https://openalex.org/W3208290116",
+        "https://openalex.org/W2772564114",
+        "https://openalex.org/W2016989768",
+        "https://openalex.org/W2090249381",
+        "https://openalex.org/W1724334760",
+        "https://openalex.org/W2119265442",
+        "https://openalex.org/W2112027169",
+        "https://openalex.org/W2106371033",
+        "https://openalex.org/W1773843643",
+        "https://openalex.org/W2129095959",
+        "https://openalex.org/W1997054429",
+        "https://openalex.org/W1880607942",
+        "https://openalex.org/W2039841361",
+        "https://openalex.org/W2153971255",
+        "https://openalex.org/W2151156435",
+        "https://openalex.org/W2344700162",
+        "https://openalex.org/W2169047369",
+        "https://openalex.org/W2298732832",
+        "https://openalex.org/W1981407003",
+        "https://openalex.org/W2060059902",
+        "https://openalex.org/W1532228020",
+        "https://openalex.org/W2064323945",
+        "https://openalex.org/W6966925386",
+        "https://openalex.org/W2520852046",
+        "https://openalex.org/W2074766847",
+        "https://openalex.org/W2335114787",
+        "https://openalex.org/W3129075462",
+        "https://openalex.org/W2045944858",
+        "https://openalex.org/W3047765741",
+        "https://openalex.org/W2794517103",
+        "https://openalex.org/W3140490678",
+        "https://openalex.org/W136786544"
+    ]
+}

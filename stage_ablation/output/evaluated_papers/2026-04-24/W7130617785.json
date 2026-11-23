@@ -1,0 +1,1230 @@
+{
+    "uri": "https://openalex.org/W7130617785",
+    "title": "Examining Fast Radiative Feedbacks Using Machine-Learning Weather Emulators",
+    "venue": {
+        "name": "ArXiv.org",
+        "id": "https://openalex.org/S4393918464",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5124411889",
+            "display_name": "Ankur Mahesh",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5036281700",
+            "display_name": "W.K. Collins",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5125907814",
+            "display_name": "Travis Allen O'Brien",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5014217823",
+            "display_name": "Paul B Goddard",
+            "orcid": "https://orcid.org/0000-0002-4954-8988"
+        },
+        {
+            "id": "https://openalex.org/A5126398939",
+            "display_name": "Sinclaire Zebaze",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126421599",
+            "display_name": "Shashank Subramanian",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5028209366",
+            "display_name": "James Duncan",
+            "orcid": "https://orcid.org/0000-0003-3297-681X"
+        },
+        {
+            "id": "https://openalex.org/A5023857630",
+            "display_name": "Oliver Watt\u2010Meyer",
+            "orcid": "https://orcid.org/0000-0001-8419-1526"
+        },
+        {
+            "id": "https://openalex.org/A5126411458",
+            "display_name": "Boris Bonev",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126409353",
+            "display_name": "Thorsten Kurth",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126405402",
+            "display_name": "Karthik Kashinath",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126407239",
+            "display_name": "Michael S. Pritchard",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126401024",
+            "display_name": "Da Yang",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "The response of the climate system to increased greenhouse gases and other radiative perturbations is governed by a combination of fast and slow feedbacks. Slow feedbacks are typically activated in response to changes in ocean temperatures on decadal timescales and manifest as changes in climatic state with no recent historical analogue. However, fast feedbacks are activated in response to rapid atmospheric physical processes on weekly timescales, and they are already operative in the present-day climate. This distinction implies that the physics of fast radiative feedbacks is present in the historical meteorological reanalyses used to train many recent successful machine-learning-based (ML) emulators of weather and climate. In addition, these feedbacks are functional under the historical boundary conditions pertaining to the top-of-atmosphere radiative balance and sea-surface temperatures. Together, these factors imply that we can use historically trained ML weather emulators to study the response of radiative-convective equilibrium (RCE), and hence the global hydrological cycle, to perturbations in carbon dioxide and other well-mixed greenhouse gases. Without retraining on prospective Earth system conditions, we use ML weather emulators to quantify the fast precipitation response to reduced and elevated carbon dioxed concentrations with no recent historical precedent. We show that the responses from historically trained emulators agree with those produced by full-physics Earth System Models (ESMs). In conclusion, we discuss the prospects for and advantages from using ESMs and ML emulators to study fast processes in global climate.",
+    "field": "Machine learning for climate science",
+    "problem": "The paper tests whether machine learning emulators, trained only on historical climate data, can accurately predict fast physical responses of the hydrological cycle to unprecedented CO2 concentrations, a critical test of their ability to generalize to conditions outside their training data.",
+    "method": "We propose a hybrid method coupling a machine-learning emulator with a physics-based radiation model and modifying its architecture with a column-local abstraction to accurately simulate fast hydrological responses to changes in CO2 concentrations.",
+    "task": "The task is to determine if machine-learning weather emulators, trained solely on historical climate data, can accurately simulate the fast precipitation responses to large, unprecedented changes in CO2 concentrations without requiring retraining on those new conditions.",
+    "model": [
+        "ACE",
+        "EAMv2",
+        "RRTMG",
+        "E3SM",
+        "ACCESS-CM2",
+        "CMCC-CM2-SR5",
+        "CNRM-ESM2-1",
+        "CanESM5",
+        "IPSL-CM6A-LR",
+        "MIROC6",
+        "MPI-ESM1-2-HR",
+        "NorESM2-MM",
+        "fv3GFS",
+        "CAM",
+        "FourCastNet",
+        "NeuralGCM"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/greenhouse-gas",
+            "display_name": "Greenhouse gas",
+            "score": 0.5843999981880188
+        },
+        {
+            "id": "https://openalex.org/keywords/earth-system-science",
+            "display_name": "Earth system science",
+            "score": 0.5339999794960022
+        },
+        {
+            "id": "https://openalex.org/keywords/radiative-transfer",
+            "display_name": "Radiative transfer",
+            "score": 0.5024999976158142
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.45570001006126404
+        },
+        {
+            "id": "https://openalex.org/keywords/earths-energy-budget",
+            "display_name": "Earth's energy budget",
+            "score": 0.42879998683929443
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.41100001335144043
+        },
+        {
+            "id": "https://openalex.org/keywords/radiative-forcing",
+            "display_name": "Radiative forcing",
+            "score": 0.4041000008583069
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.7073000073432922
+        },
+        {
+            "id": "https://openalex.org/C47737302",
+            "wikidata": "https://www.wikidata.org/wiki/Q167336",
+            "display_name": "Greenhouse gas",
+            "level": 2,
+            "score": 0.5843999981880188
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.5339999794960022
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5199000239372253
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.5102999806404114
+        },
+        {
+            "id": "https://openalex.org/C74902906",
+            "wikidata": "https://www.wikidata.org/wiki/Q1190858",
+            "display_name": "Radiative transfer",
+            "level": 2,
+            "score": 0.5024999976158142
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.4984999895095825
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.45570001006126404
+        },
+        {
+            "id": "https://openalex.org/C7337166",
+            "wikidata": "https://www.wikidata.org/wiki/Q1292280",
+            "display_name": "Earth's energy budget",
+            "level": 3,
+            "score": 0.42879998683929443
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.41100001335144043
+        },
+        {
+            "id": "https://openalex.org/C99578197",
+            "wikidata": "https://www.wikidata.org/wiki/Q1463606",
+            "display_name": "Radiative forcing",
+            "level": 3,
+            "score": 0.4041000008583069
+        },
+        {
+            "id": "https://openalex.org/C137851953",
+            "wikidata": "https://www.wikidata.org/wiki/Q41560",
+            "display_name": "Greenhouse effect",
+            "level": 4,
+            "score": 0.3790000081062317
+        },
+        {
+            "id": "https://openalex.org/C199491958",
+            "wikidata": "https://www.wikidata.org/wiki/Q737514",
+            "display_name": "Global change",
+            "level": 3,
+            "score": 0.34279999136924744
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.3319000005722046
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.326200008392334
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.27959999442100525
+        },
+        {
+            "id": "https://openalex.org/C111603439",
+            "wikidata": "https://www.wikidata.org/wiki/Q752193",
+            "display_name": "Boundary layer",
+            "level": 2,
+            "score": 0.2711000144481659
+        },
+        {
+            "id": "https://openalex.org/C530467964",
+            "wikidata": "https://www.wikidata.org/wiki/Q1997",
+            "display_name": "Carbon dioxide",
+            "level": 2,
+            "score": 0.2653000056743622
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper demonstrates that a machine-learning weather emulator, trained only on historical data, can accurately predict the fast physical response of the global hydrological cycle to large, unseen CO2 perturbations when coupled with a physics-based radiative transfer model.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ACE",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "ACE2",
+            "target_entity_type": "Source",
+            "paragraph": "These constraints were introduced in ACE2 [40], which is a successor to the ACE E3SMv2 model architecture used in [25]. We find that these changes are not the major changes necessary for the correct fast response to elevated CO2 (Section B.2.1), but we include them because it is intrinsically advantageous to have an ML climate emulator that conserves moisture and dry air.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "E3SM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "EAMv2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The reference simulations were generated using EAMv2, the atmospheric component of the Energy Exascale Earth System Model (E3SM) [26]. Our simulations with EAMv2 are all branched from the 20230614.v2.LR.F2010 control run of E3SM used to train ACE. We branched from years 64\u201373 withheld from the training data. The control is based on the \u201cF2010\u201d (2010 CE radiative forcing) component set using the E3SMv2.LR configuration of E3SM. The atmospheric dynamics are computed using a spectral element dynamical core on a cubed sphere with 30 spectral elements per cubed-sphere face. This corresponds to a resolution of approximately 1\u25e6 in latitude and longitude.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACE",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "FourCastNet Spherical Fourier Neural Operator (SFNO)",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The machine learning component of this work utilizes the Allen Institute Climate Emulator (ACE), a model known to produce stable, long-term climate emulations [22, 40]. ACE is based on NVIDIA\u2019s FourCastNet Spherical Fourier Neural Operator (SFNO) architecture [19]. ACE is trained on the EAMv2 training dataset introduced in [25]. ACE emulates an EAMv2 simulation in a \u201cperpetual 2010\u201d configuration, with the simulation using the annual cycle of SSTs from 2010 CE. ACE includes three types of variables: forcing, prognostic, and diagnostic. For convenience, we reproduce the tables from [25] which show the ACE variables (Table 1) and the ACE vertical levels (Table 2). Notably, while some new versions of ACE have a feature to include a CO2 variable as input, none of the versions used in the manuscript have this input field.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAMv2",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "spectral element dynamical core",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The reference simulations were generated using EAMv2, the atmospheric component of the Energy Exascale Earth System Model (E3SM) [26]. Our simulations with EAMv2 are all branched from the 20230614.v2.LR.F2010 control run of E3SM used to train ACE. We branched from years 64\u201373 withheld from the training data. The control is based on the \u201cF2010\u201d (2010 CE radiative forcing) component set using the E3SMv2.LR configuration of E3SM. The atmospheric dynamics are computed using a spectral element dynamical core on a cubed sphere with 30 spectral elements per cubed-sphere face. This corresponds to a resolution of approximately 1\u25e6 in latitude and longitude.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FourCastNet Spherical Fourier Neural Operator (SFNO)",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Air temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The machine learning component of this work utilizes the Allen Institute Climate Emulator (ACE), a model known to produce stable, long-term climate emulations [22, 40]. ACE is based on NVIDIA\u2019s FourCastNet Spherical Fourier Neural Operator (SFNO) architecture [19]. ACE is trained on the EAMv2 training dataset introduced in [25]. ACE emulates an EAMv2 simulation in a \u201cperpetual 2010\u201d configuration, with the simulation using the annual cycle of SSTs from 2010 CE. ACE includes three types of variables: forcing, prognostic, and diagnostic. For convenience, we reproduce the tables from [25] which show the ACE variables (Table 1) and the ACE vertical levels (Table 2). Notably, while some new versions of ACE have a feature to include a CO2 variable as input, none of the versions used in the manuscript have this input field.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FourCastNet Spherical Fourier Neural Operator (SFNO)",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Specific total water",
+            "target_entity_type": "Variable",
+            "paragraph": "The machine learning component of this work utilizes the Allen Institute Climate Emulator (ACE), a model known to produce stable, long-term climate emulations [22, 40]. ACE is based on NVIDIA\u2019s FourCastNet Spherical Fourier Neural Operator (SFNO) architecture [19]. ACE is trained on the EAMv2 training dataset introduced in [25]. ACE emulates an EAMv2 simulation in a \u201cperpetual 2010\u201d configuration, with the simulation using the annual cycle of SSTs from 2010 CE. ACE includes three types of variables: forcing, prognostic, and diagnostic. For convenience, we reproduce the tables from [25] which show the ACE variables (Table 1) and the ACE vertical levels (Table 2). Notably, while some new versions of ACE have a feature to include a CO2 variable as input, none of the versions used in the manuscript have this input field.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FourCastNet Spherical Fourier Neural Operator (SFNO)",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Surface precipitation rate",
+            "target_entity_type": "Variable",
+            "paragraph": "The machine learning component of this work utilizes the Allen Institute Climate Emulator (ACE), a model known to produce stable, long-term climate emulations [22, 40]. ACE is based on NVIDIA\u2019s FourCastNet Spherical Fourier Neural Operator (SFNO) architecture [19]. ACE is trained on the EAMv2 training dataset introduced in [25]. ACE emulates an EAMv2 simulation in a \u201cperpetual 2010\u201d configuration, with the simulation using the annual cycle of SSTs from 2010 CE. ACE includes three types of variables: forcing, prognostic, and diagnostic. For convenience, we reproduce the tables from [25] which show the ACE variables (Table 1) and the ACE vertical levels (Table 2). Notably, while some new versions of ACE have a feature to include a CO2 variable as input, none of the versions used in the manuscript have this input field.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACE",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Rapid Radiative Transfer Model for GCMs (RRTMG)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We conduct 1-month forecasts with ACE assuming different levels of CO2. In 2010 CE (Common Era), the CO2 concentration was 388 ppm, and we refer to this level as \u201c1 \u00d7 CO2.\u201d To change the CO2 level, we couple ACE to the Rapid Radiative Transfer Model for GCMS (RRTMG) (Section 4.3), a physics-based radiative transfer package",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAMv2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "RRTMG",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We perform the analogous experiment using EAMv2 (Section 4.1). EAMv2 also uses RRTMG with the same shortwave and longwave correlated-k bands and the same versions of the optical parameters for water vapor and greenhouse gases employed in ACE. We utilize perturbations for clear-sky rather than all-sky conditions because ACE does not emulate cloud fields directly and instead uses specific total water (the sum of water vapor and condensates) as its moisture variable.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAMv2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Rapid Radiative Transfer Method for GCMs (RRTMG)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Perturbations to all-sky radiative heating rates come from the difference in clear-sky radiative heating rates between N\u00d7 and 1\u00d7CO2. We use clear-sky rather than all-sky calculations since ACE simulates the effects of clouds implicitly and thus does not provide prognostic cloud condensate that would be required for interactive all-sky radiative feedback (Section 2.1). EAMv2\u2019s radiative transfer calculations are handled by the Rapid Radiative Transfer Method for GCMS (RRTMG) [47].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACE",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "6-hour timestep",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Here, we test whether machine learning (ML) emulators of weather and climate can reproduce these fast adjustments of RCE without being trained on simulations with elevated CO2. Physics-based ESMs approach climate prediction by encoding fundamental laws of physics, chemistry, and biogeochemistry, approximating subgrid-scale physical processes, and extrapolating into future climate states. On the other hand, ML emulators are trained to emulate the time evolution of the atmosphere directly from historical reanalyses [15\u201319]. While they can be expensive to train, ML emulators are significantly faster and more energy-efficient during inference than their physics-based counterparts [20]. ML emulators also maintain similar accuracy on weather and climate timescales [16, 17, 21\u201324]. Here we use the Allen Institute for Artificial Intelligence (Ai2) Climate Emulator (ACE) [25], an ML emulator that autoregressively predicts the three-dimensional atmospheric state with a 6-hour timestep and 1-degree horizontal resolution (Section 4.2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACE",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1-degree horizontal resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Here, we test whether machine learning (ML) emulators of weather and climate can reproduce these fast adjustments of RCE without being trained on simulations with elevated CO2. Physics-based ESMs approach climate prediction by encoding fundamental laws of physics, chemistry, and biogeochemistry, approximating subgrid-scale physical processes, and extrapolating into future climate states. On the other hand, ML emulators are trained to emulate the time evolution of the atmosphere directly from historical reanalyses [15\u201319]. While they can be expensive to train, ML emulators are significantly faster and more energy-efficient during inference than their physics-based counterparts [20]. ML emulators also maintain similar accuracy on weather and climate timescales [16, 17, 21\u201324]. Here we use the Allen Institute for Artificial Intelligence (Ai2) Climate Emulator (ACE) [25], an ML emulator that autoregressively predicts the three-dimensional atmospheric state with a 6-hour timestep and 1-degree horizontal resolution (Section 4.2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACE",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "eight vertical model levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ACE-RRTMG successfully replicates the vertical profile of radiative heating from the EAMv2 simulation. Figures 3a and 3b show the longwave, shortwave, and net heating rates from EAMv2 and ACE-RRTMG. The net heating rates applied to ACE-RRTMG (Figure 2) are the sums of the longwave and shortwave components. ACE utilizes eight vertical model levels and hence has a coarser vertical resolution than EAMv2 discretized onto 72 model levels (Table 2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAMv2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "72 model levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ACE-RRTMG successfully replicates the vertical profile of radiative heating from the EAMv2 simulation. Figures 3a and 3b show the longwave, shortwave, and net heating rates from EAMv2 and ACE-RRTMG. The net heating rates applied to ACE-RRTMG (Figure 2) are the sums of the longwave and shortwave components. ACE utilizes eight vertical model levels and hence has a coarser vertical resolution than EAMv2 discretized onto 72 model levels (Table 2).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAMv2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "cubed sphere",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The reference simulations were generated using EAMv2, the atmospheric component of the Energy Exascale Earth System Model (E3SM) [26]. Our simulations with EAMv2 are all branched from the 20230614.v2.LR.F2010 control run of E3SM used to train ACE. We branched from years 64\u201373 withheld from the training data. The control is based on the \u201cF2010\u201d (2010 CE radiative forcing) component set using the E3SMv2.LR configuration of E3SM. The atmospheric dynamics are computed using a spectral element dynamical core on a cubed sphere with 30 spectral elements per cubed-sphere face. This corresponds to a resolution of approximately 1\u25e6 in latitude and longitude.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAMv2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "30 spectral elements per cubed-sphere face",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The reference simulations were generated using EAMv2, the atmospheric component of the Energy Exascale Earth System Model (E3SM) [26]. Our simulations with EAMv2 are all branched from the 20230614.v2.LR.F2010 control run of E3SM used to train ACE. We branched from years 64\u201373 withheld from the training data. The control is based on the \u201cF2010\u201d (2010 CE radiative forcing) component set using the E3SMv2.LR configuration of E3SM. The atmospheric dynamics are computed using a spectral element dynamical core on a cubed sphere with 30 spectral elements per cubed-sphere face. This corresponds to a resolution of approximately 1\u25e6 in latitude and longitude.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EAMv2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1\u00b0 in latitude and longitude",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The reference simulations were generated using EAMv2, the atmospheric component of the Energy Exascale Earth System Model (E3SM) [26]. Our simulations with EAMv2 are all branched from the 20230614.v2.LR.F2010 control run of E3SM used to train ACE. We branched from years 64\u201373 withheld from the training data. The control is based on the \u201cF2010\u201d (2010 CE radiative forcing) component set using the E3SMv2.LR configuration of E3SM. The atmospheric dynamics are computed using a spectral element dynamical core on a cubed sphere with 30 spectral elements per cubed-sphere face. This corresponds to a resolution of approximately 1\u25e6 in latitude and longitude.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACE",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "fixed-SST CO2 experiments",
+            "target_entity_type": "SimulationType",
+            "paragraph": "By subjecting data-driven emulators to standard physical radiative perturbation tests such as fixed-SST CO2 experiments, we directly assess whether they reproduce established physical responses.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACE",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Fig. A10 Spatial Pattern of Bias. Bias maps comparing the columnwise ACE (left column) to the default ACE (right column). Bias is calculated by comparing an 8-year ACE rollout to the corresponding mean values of the EAMv2 out-of-sample test set. Bias maps are shown for precipitation (\u201cPrecip\u201d), latent heat flux (\u201cLHFLX\u201d), outgoing shortwave at the top of the atmosphere (\u201cSW\u2191 TOA\u201d), and outgoing longwave at the top of the atmosphere (\u201cLW\u2191 TOA\u201d). Values in the bottom left corner of each figure denote the global latitude-weighted root mean squared bias (RMSB).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACE",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean squared bias (RMSB)",
+            "target_entity_type": "Metric",
+            "paragraph": "Fig. A10 Spatial Pattern of Bias. Bias maps comparing the columnwise ACE (left column) to the default ACE (right column). Bias is calculated by comparing an 8-year ACE rollout to the corresponding mean values of the EAMv2 out-of-sample test set. Bias maps are shown for precipitation (\u201cPrecip\u201d), latent heat flux (\u201cLHFLX\u201d), outgoing shortwave at the top of the atmosphere (\u201cSW\u2191 TOA\u201d), and outgoing longwave at the top of the atmosphere (\u201cLW\u2191 TOA\u201d). Values in the bottom left corner of each figure denote the global latitude-weighted root mean squared bias (RMSB).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "University of California, Berkeley",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Lawrence Berkeley National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Indiana University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Allen Institute for Artificial Intelligence (Ai2)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NVIDIA Corporation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Stanford University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "California",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Indiana",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Washington",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Berkeley",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Bloomington",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Seattle",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Santa Clara",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Stanford",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "greenhouse gases",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean temperatures",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "weekly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "decadal",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "radiative-convective equilibrium (RCE)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Earth System Models (ESMs)",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "atmospheric radiative cooling",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latent heating",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "water vapor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "clouds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global mean rainfall rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project Phase 6 (CMIP6)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "abrupt4xCO2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "sea surface temperatures (SSTs)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pre-industrial control",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "ocean surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ai2 Climate Emulator (ACE)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "6-hour",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1-degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Energy Exascale Earth System Model Atmosphere Model (EAMv2)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "perpetual 2010",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "F2010",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Rapid Radiative Transfer Model for GCMs (RRTMG)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "clear-sky longwave and shortwave heating rates",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "physics-based radiative transfer package",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ACE-RRTMG",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "shortwave and longwave correlated-k bands",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "specific total water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "eight vertical model levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "72 model levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "96-member ensembles",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "E3SM Atmosphere Model EAMv2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Spherical Fourier Neural Operators",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "2xCO2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "4xCO2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "8xCO2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "0.5xCO2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "midlatitudes",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "mean-squared error loss function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "probabilistic loss function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project Phase 7 (CMIP7)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "black carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "column abstraction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "100 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "physics-based dynamical core",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "machine-learned parameterizations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "physics-based radiation scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NOAA's fv3GFS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Community Atmosphere Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "cloud condensate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land-surface change",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmosphere-ocean coupled simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "slab ocean models",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Energy Exascale Earth System Model (E3SM)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "spectral element dynamical core",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "cubed sphere",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "top of atmosphere (TOA) fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "specific humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "liquid and ice condensates",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1x",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "2x",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "4x",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "8x",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "NVIDIA's FourCastNet Spherical Fourier Neural Operator (SFNO)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "climt",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GPU-accelerated radiation schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Skin temperature of land or sea ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Atmospheric pressure at surface",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Upward shortwave radiative flux at TOA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Upward longwave radiative flux at TOA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Upward shortwave radiative flux at surface",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Upward longwave radiative flux at surface",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Downward shortwave radiative flux at surface",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Downward longwave radiative flux at surface",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface sensible heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface precipitation rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Solar insolation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Skin temperature over sea",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface geopotential",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Land grid cell fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ocean grid cell fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Sea-ice grid cell fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1xCO2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "NxCO2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "troposphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "stratosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "stratospheric adjustment",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Hybrid vertical coordinate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "sudden stratospheric warming events",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Precipitation Driver and Model Response Model Intercomparison Project",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "six-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "AMD EPYC 7763 CPU",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NVIDIA A100 GPU",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Bowen ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "condensation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fusion",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice and snow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "subtropics",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "poles",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "column-local neural network",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3 grid cell x 3 grid cell input patch",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "discrete-continuous spherical convolutions",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "global spherical harmonic transform",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "four-layer neural network",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3x3 kernel",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "fully connected layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "FourCastNet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NeuralGCM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dry air",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ACE2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "E3SMv2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "U.S. Department of Energy",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Energy Research Scientific Computing Center (NERSC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Lilly Endowment, Inc.",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "World Climate Research Programme",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Earth System Grid Federation (ESGF)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Program for Climate Model Diagnosis and Intercomparison (PCMDI)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Lawrence Livermore National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Energy Exascale Earth System Model (E3SM) project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Histogram of daily mean precipitation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "meridional-mean zonal power spectrum of daily mean precipitation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Hovm\u00f6ller diagrams",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSB",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "piControl",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ACCESS-CM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC-CM2-SR5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-ESM2-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CanESM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM6A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM2-MM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "r1i1p1f1_gn",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "r1i1p1f2_gr",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "total water path (TWP)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Spherical convolutions",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "planar convolutions",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Column timestepping",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Fourier neural operator blocks",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "encoder",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "decoder",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "position embedding",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3x3 convolution",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Purely Local Column Diagnostics",
+            "entity_type": "PhysicalFeature"
+        }
+    ],
+    "referenced_works": []
+}

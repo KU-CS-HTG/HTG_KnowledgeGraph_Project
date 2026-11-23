@@ -1,0 +1,1499 @@
+{
+    "uri": "https://openalex.org/W2884933885",
+    "title": "Description and evaluation of the Community Ice Sheet Model (CISM) v2.1",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2019,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5086312703",
+            "display_name": "William H. Lipscomb",
+            "orcid": "https://orcid.org/0000-0002-7100-3730"
+        },
+        {
+            "id": "https://openalex.org/A5068628691",
+            "display_name": "Stephen Price",
+            "orcid": "https://orcid.org/0000-0001-6878-2553"
+        },
+        {
+            "id": "https://openalex.org/A5079326539",
+            "display_name": "Matthew J. Hoffman",
+            "orcid": "https://orcid.org/0000-0001-5076-0540"
+        },
+        {
+            "id": "https://openalex.org/A5073792502",
+            "display_name": "Gunter Leguy",
+            "orcid": "https://orcid.org/0000-0002-9963-8076"
+        },
+        {
+            "id": "https://openalex.org/A5020035707",
+            "display_name": "Andrew Bennett",
+            "orcid": "https://orcid.org/0000-0002-7742-3138"
+        },
+        {
+            "id": "https://openalex.org/A5007598366",
+            "display_name": "Sarah Bradley",
+            "orcid": "https://orcid.org/0000-0003-3740-5696"
+        },
+        {
+            "id": "https://openalex.org/A5079659440",
+            "display_name": "Katherine J. Evans",
+            "orcid": "https://orcid.org/0000-0001-8174-6450"
+        },
+        {
+            "id": "https://openalex.org/A5003576248",
+            "display_name": "Jeremy Fyke",
+            "orcid": "https://orcid.org/0000-0002-4522-3019"
+        },
+        {
+            "id": "https://openalex.org/A5013690731",
+            "display_name": "Joseph H. Kennedy",
+            "orcid": "https://orcid.org/0000-0002-9348-693X"
+        },
+        {
+            "id": "https://openalex.org/A5076542592",
+            "display_name": "Mauro Perego",
+            "orcid": "https://orcid.org/0000-0002-2671-8032"
+        },
+        {
+            "id": "https://openalex.org/A5108666122",
+            "display_name": "D.M. Ranken",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5067569418",
+            "display_name": "William J. Sacks",
+            "orcid": "https://orcid.org/0000-0003-2902-5263"
+        },
+        {
+            "id": "https://openalex.org/A5063635634",
+            "display_name": "Andrew G. Salinger",
+            "orcid": "https://orcid.org/0000-0003-4692-6813"
+        },
+        {
+            "id": "https://openalex.org/A5059842854",
+            "display_name": "Lauren Vargo",
+            "orcid": "https://orcid.org/0000-0001-7037-0451"
+        },
+        {
+            "id": "https://openalex.org/A5004248420",
+            "display_name": "Patrick H Worley",
+            "orcid": "https://orcid.org/0000-0003-1734-0821"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-12-387-2019",
+    "abstract": "Abstract. We describe and evaluate version 2.1 of the Community Ice Sheet Model (CISM). CISM is a parallel, 3-D thermomechanical model, written mainly in Fortran, that solves equations for the momentum balance and the thickness and temperature evolution of ice sheets. CISM's velocity solver incorporates a hierarchy of Stokes flow approximations, including shallow-shelf, depth-integrated higher order, and 3-D higher order. CISM also includes a suite of test cases, links to third-party solver libraries, and parameterizations of physical processes such as basal sliding, iceberg calving, and sub-ice-shelf melting. The model has been verified for standard test problems, including the Ice Sheet Model Intercomparison Project for Higher-Order Models (ISMIP-HOM) experiments, and has participated in the initMIP-Greenland initialization experiment. In multimillennial simulations with modern climate forcing on a 4 km grid, CISM reaches a steady state that is broadly consistent with observed flow patterns of the Greenland ice sheet. CISM has been integrated into version 2.0 of the Community Earth System Model, where it is being used for Greenland simulations under past, present, and future climates. The code is open-source with extensive documentation and remains under active development.",
+    "field": "Ice sheet modeling",
+    "problem": "Early ice sheet models use simplified approximations (SIA/SSA) that are invalid for important, fast-flowing regions like ice streams and outlet glaciers, where both vertical shear and horizontal stresses are significant, limiting the accuracy of predictions for future mass loss and sea-level rise.",
+    "method": "We describe the Community Ice Sheet Model (CISM), a parallel, 3D thermomechanical model that solves equations for ice sheet evolution using a hierarchy of Stokes flow approximations and parameterizations for physical processes like basal sliding, iceberg calving, and sub-ice-shelf melting.",
+    "task": "The task is to describe and evaluate version 2.1 of the Community Ice Sheet Model (CISM), a numerical model that solves equations for the momentum, mass, and energy balance of ice sheets, and to demonstrate its performance on standard test cases and Greenland simulations.",
+    "model": [
+        "CISM",
+        "CESM",
+        "PISM",
+        "ISSM",
+        "Glide",
+        "Glissade",
+        "Glint",
+        "Glad",
+        "BISICLES",
+        "Elmer-Ice",
+        "MALI",
+        "RACMO2"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/ice-sheet-model",
+            "display_name": "Ice-sheet model",
+            "score": 0.8192052841186523
+        },
+        {
+            "id": "https://openalex.org/keywords/greenland-ice-sheet",
+            "display_name": "Greenland ice sheet",
+            "score": 0.7686499357223511
+        },
+        {
+            "id": "https://openalex.org/keywords/solver",
+            "display_name": "Solver",
+            "score": 0.6376667022705078
+        },
+        {
+            "id": "https://openalex.org/keywords/ice-sheet",
+            "display_name": "Ice sheet",
+            "score": 0.6314283013343811
+        },
+        {
+            "id": "https://openalex.org/keywords/initialization",
+            "display_name": "Initialization",
+            "score": 0.5316054821014404
+        },
+        {
+            "id": "https://openalex.org/keywords/fortran",
+            "display_name": "Fortran",
+            "score": 0.5153007507324219
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.48593869805336
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.46666067838668823
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.4665887653827667
+        },
+        {
+            "id": "https://openalex.org/keywords/ice-stream",
+            "display_name": "Ice stream",
+            "score": 0.3246745765209198
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.29165464639663696
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-ice",
+            "display_name": "Sea ice",
+            "score": 0.2475510835647583
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.20200330018997192
+        },
+        {
+            "id": "https://openalex.org/keywords/geomorphology",
+            "display_name": "Geomorphology",
+            "score": 0.15103355050086975
+        },
+        {
+            "id": "https://openalex.org/keywords/programming-language",
+            "display_name": "Programming language",
+            "score": 0.10077142715454102
+        },
+        {
+            "id": "https://openalex.org/keywords/cryosphere",
+            "display_name": "Cryosphere",
+            "score": 0.09565120935440063
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C134543767",
+            "wikidata": "https://www.wikidata.org/wiki/Q1319627",
+            "display_name": "Ice-sheet model",
+            "level": 5,
+            "score": 0.8192052841186523
+        },
+        {
+            "id": "https://openalex.org/C2780021526",
+            "wikidata": "https://www.wikidata.org/wiki/Q1542432",
+            "display_name": "Greenland ice sheet",
+            "level": 3,
+            "score": 0.7686499357223511
+        },
+        {
+            "id": "https://openalex.org/C2778770139",
+            "wikidata": "https://www.wikidata.org/wiki/Q1966904",
+            "display_name": "Solver",
+            "level": 2,
+            "score": 0.6376667022705078
+        },
+        {
+            "id": "https://openalex.org/C123750103",
+            "wikidata": "https://www.wikidata.org/wiki/Q12599",
+            "display_name": "Ice sheet",
+            "level": 2,
+            "score": 0.6314283013343811
+        },
+        {
+            "id": "https://openalex.org/C114466953",
+            "wikidata": "https://www.wikidata.org/wiki/Q6034165",
+            "display_name": "Initialization",
+            "level": 2,
+            "score": 0.5316054821014404
+        },
+        {
+            "id": "https://openalex.org/C2778241615",
+            "wikidata": "https://www.wikidata.org/wiki/Q83303",
+            "display_name": "Fortran",
+            "level": 2,
+            "score": 0.5153007507324219
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.48593869805336
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.46666067838668823
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4665887653827667
+        },
+        {
+            "id": "https://openalex.org/C81820708",
+            "wikidata": "https://www.wikidata.org/wiki/Q2540532",
+            "display_name": "Ice stream",
+            "level": 4,
+            "score": 0.3246745765209198
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.29165464639663696
+        },
+        {
+            "id": "https://openalex.org/C136894858",
+            "wikidata": "https://www.wikidata.org/wiki/Q213926",
+            "display_name": "Sea ice",
+            "level": 2,
+            "score": 0.2475510835647583
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.20200330018997192
+        },
+        {
+            "id": "https://openalex.org/C114793014",
+            "wikidata": "https://www.wikidata.org/wiki/Q52109",
+            "display_name": "Geomorphology",
+            "level": 1,
+            "score": 0.15103355050086975
+        },
+        {
+            "id": "https://openalex.org/C199360897",
+            "wikidata": "https://www.wikidata.org/wiki/Q9143",
+            "display_name": "Programming language",
+            "level": 1,
+            "score": 0.10077142715454102
+        },
+        {
+            "id": "https://openalex.org/C197435368",
+            "wikidata": "https://www.wikidata.org/wiki/Q493109",
+            "display_name": "Cryosphere",
+            "level": 3,
+            "score": 0.09565120935440063
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "DIVA without shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/wall-clock hour on 144 cores",
+            "result": "1350"
+        },
+        {
+            "model": "DIVA without shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/core hour on 144 cores",
+            "result": "9.41"
+        },
+        {
+            "model": "DIVA without shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/wall-clock hour on 288 cores",
+            "result": "2480"
+        },
+        {
+            "model": "DIVA without shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/core hour on 288 cores",
+            "result": "8.61"
+        },
+        {
+            "model": "BP without shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/wall-clock hour on 144 cores",
+            "result": "28.4"
+        },
+        {
+            "model": "BP without shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/core hour on 144 cores",
+            "result": "0.197"
+        },
+        {
+            "model": "BP without shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/wall-clock hour on 288 cores",
+            "result": "54.0"
+        },
+        {
+            "model": "BP without shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/core hour on 288 cores",
+            "result": "0.188"
+        },
+        {
+            "model": "DIVA with shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/wall-clock hour on 144 cores",
+            "result": "1330"
+        },
+        {
+            "model": "DIVA with shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/core hour on 144 cores",
+            "result": "9.26"
+        },
+        {
+            "model": "DIVA with shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/wall-clock hour on 288 cores",
+            "result": "2590"
+        },
+        {
+            "model": "DIVA with shelves",
+            "observational_dataset": "Not applicable",
+            "evaluation_metric": "Model year/core hour on 288 cores",
+            "result": "8.98"
+        }
+    ],
+    "innovation": "This paper describes and evaluates the Community Ice Sheet Model (CISM) v2.1, a parallel, thermomechanical model for simulating ice sheet evolution using a hierarchy of Stokes flow approximations, which has been verified with standard test problems and applied to Greenland simulations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Community Ice Sheet Model v2.1",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Glimmer model",
+            "target_entity_type": "Source",
+            "paragraph": "Here, we describe and evaluate the Community Ice Sheet Model (CISM) version 2.1, a higher-order model that evolved from the Glimmer model (Rutt et al., 2009). The current name reflects the model's evolution as a component of the Community Earth System Model (CESM; Hurrell et al., 2013). Like Glimmer, CISM is written mainly in Fortran 90 and its extensions, to maximize efficiency and to simplify coupling to climate models. Glimmer, however, is a serial SIA model, whereas CISM is a parallel model that solves not only the SIA but also higher-order Stokes approximations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model v2.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "Community Ice Sheet Model v2.1",
+            "target_entity_type": "Source",
+            "paragraph": "Many of these features were present in CISM v.2.0, which was released in 2014 (Price et al., 2015). Changes between versions 2.0 and 2.1 have been made primarily to support robust, accurate, and efficient Greenland ice sheet simulations, both as a stand-alone model and in CESM. These changes include a depth-integrated higher-order velocity solver (Sect. 3.1.4), new parameterizations of basal sliding (Sect. 3.4), iceberg calving (Sect. 3.5), and sub-ice-shelf melting (Sect. 3.6), a new build-and-test structure (Sect. 4.6), and many improvements in model numerics.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "cism_driver",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "cism_driver is the high-level driver (i.e., the executable) that is used to run the stand-alone model in all configurations, including idealized test cases with simplified climate forcing, as well as model runs with realistic geometry and climate forcing data.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Glide",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Glide is the serial dycore based on shallow-ice dynamics. Glide solves the governing conservation equations and computes ice velocities, internal ice temperature, and ice geometry evolution. Apart from minor changes, this is the same dycore used in Glimmer and described by Rutt et al. (2009). It will not be discussed further here.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Glissade",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Glissade is the dycore that solves higher-order approximations of the Stokes equations for ice flow. Glissade, unlike Glide, is fully parallel in order to take advantage of multiprocessor, high-performance architectures. It is described in detail in Sect. 3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Glint",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Glint is the original climate model interface for Glimmer. Glint allows the core ice sheet model to be coupled to a global climate model or any other source of time-varying climate data on a lat-long grid. Glint computes the surface mass balance (SMB) on the ice sheet grid using a positive-degree-day (PDD) scheme.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Glad",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Glad is a lightweight climate model interface that has replaced Glint in CESM. The CESM coupler supports remapping and downscaling between general land-surface grids and ice sheet grids, and thus is able to send CISM an SMB that is already downscaled.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Glide",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "ice velocities",
+            "target_entity_type": "Variable",
+            "paragraph": "Glide is the serial dycore based on shallow-ice dynamics. Glide solves the governing conservation equations and computes ice velocities, internal ice temperature, and ice geometry evolution. Apart from minor changes, this is the same dycore used in Glimmer and described by Rutt et al. (2009). It will not be discussed further here.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glide",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "internal ice temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Glide is the serial dycore based on shallow-ice dynamics. Glide solves the governing conservation equations and computes ice velocities, internal ice temperature, and ice geometry evolution. Apart from minor changes, this is the same dycore used in Glimmer and described by Rutt et al. (2009). It will not be discussed further here.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glide",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "ice geometry evolution",
+            "target_entity_type": "Variable",
+            "paragraph": "Glide is the serial dycore based on shallow-ice dynamics. Glide solves the governing conservation equations and computes ice velocities, internal ice temperature, and ice geometry evolution. Apart from minor changes, this is the same dycore used in Glimmer and described by Rutt et al. (2009). It will not be discussed further here.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glint",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface mass balance",
+            "target_entity_type": "Variable",
+            "paragraph": "Glint is the original climate model interface for Glimmer. Glint allows the core ice sheet model to be coupled to a global climate model or any other source of time-varying climate data on a lat-long grid. Glint computes the surface mass balance (SMB) on the ice sheet grid using a positive-degree-day (PDD) scheme.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glint",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "positive-degree-day scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Glint is the original climate model interface for Glimmer. Glint allows the core ice sheet model to be coupled to a global climate model or any other source of time-varying climate data on a lat-long grid. Glint computes the surface mass balance (SMB) on the ice sheet grid using a positive-degree-day (PDD) scheme.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "landIce",
+            "target_entity_type": "Realm",
+            "paragraph": "CISM is a numerical model \u2013 a collection of software libraries, utilities, and drivers \u2013 used to simulate ice sheet evolution. It is modular in design and is coded mainly in standard-compliant Fortran 90/95.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "structured rectangular grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In order to reduce development effort, CISM runs on a structured rectangular grid and thus lacks the flexibility of models that run on variable-resolution or adaptive meshes (e.g., ISSM and BISICLES).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "stand-alone ice sheet simulations",
+            "target_entity_type": "SimulationType",
+            "paragraph": "It should support not only stand-alone ice sheet simulations but also coupled applications in which fields are exchanged with a global climate or Earth system model (CESM in particular).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "coupled applications",
+            "target_entity_type": "SimulationType",
+            "paragraph": "It should support not only stand-alone ice sheet simulations but also coupled applications in which fields are exchanged with a global climate or Earth system model (CESM in particular).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "finite-element methods",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Velocity: Glide solves the SIA only, but Glissade can solve several Stokes approximations, including the SIA, SSA, a depth-integrated higher-order approximation based on Goldberg (2011), and a 3-D higher-order approximation based on Blatter (1995) and Pattyn (2003). Glide uses finite differences, whereas the Glissade velocity solvers use finite-element methods.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "incremental remapping scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Mass and tracer transport: Glide solves an implicit diffusion equation for mass transport, incorporating shallow-ice velocities. Glissade solves explicit equations for horizontal transport of mass (i.e., ice thickness) and tracers (e.g., ice temperature) using either an incremental remapping scheme (Lipscomb and Hunke, 2004) or a simpler first-order upwind scheme. Horizontal transport is followed by vertical remapping to terrain-following sigma coordinates.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "first-order upwind scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Mass and tracer transport: Glide solves an implicit diffusion equation for mass transport, incorporating shallow-ice velocities. Glissade solves explicit equations for horizontal transport of mass (i.e., ice thickness) and tracers (e.g., ice temperature) using either an incremental remapping scheme (Lipscomb and Hunke, 2004) or a simpler first-order upwind scheme. Horizontal transport is followed by vertical remapping to terrain-following sigma coordinates.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Blatter-Pattyn approximation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Glissade computes the ice velocity by solving approximate Stokes equations, given the surface elevation, ice thickness, ice temperature, and relevant boundary conditions. Section 3.1.1 describes the solution method for the Blatter-Pattyn (BP; Blatter, 1995; Pattyn, 2003) approximation, which is the most sophisticated and accurate solver in CISM. Subsequent sections discuss simpler approximations.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "terrain-following sigma coordinate system",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The equations are discretized on a structured 3-D mesh. In the map plane, the mesh consists of rectangular cells, each with four vertices. The nz vertical levels of the mesh are based on a terrain-following sigma coordinate system, with \u03c3 = (s \u2212z)/H, where H is the ice thickness.",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Glen's flow law",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The effective viscosity \u03b7 is defined in each active element by \u03b7=1/2 A^(1/n\u22121) \u03b5_e^(1-n), where A is the temperature-dependent rate factor in Glen's flow law (Glen, 1955), and \u03b5e is the effective strain rate, given in the BP approximation by...",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Arrhenius relationship",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The rate factor A is given by an Arrhenius relationship: A(T*) = ae^(\u2212Q/RT*).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Shallow-ice approximation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Instead, Glissade has an efficient local SIA solver. The solver is local in the sense that u and v in each column are found independently of u and v in other columns. It resembles Glide's SIA solver as described by Payne and Dongelmans (1997) and Rutt et al. (2009), except that Glide incorporates the velocity solution in a diffusion equation for ice thickness, whereas Glissade's SIA solver computes u and v only, with thickness evolution handled separately as described in Sect. 3.3.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Shallow-shelf approximation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The SSA equations can be derived by vertically integrating the BP equations, given the assumption of small basal shear stress and vertically uniform velocity. The shallow-shelf analog of Eq. (1) is...",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Depth-integrated-viscosity approximation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Goldberg (2011) derived a higher-order stress approximation that in most cases is similar in accuracy to BP but is much cheaper to solve, because (as with the SSA) the matrix system is assembled and solved in two dimensions. Since the stress balance equations use a depth-integrated effective viscosity in place of a vertically varying viscosity, we refer to this scheme as a depth-integrated-viscosity approximation, or DIVA.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Picard iteration",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The linear solver is wrapped by a nonlinear solver that does Picard iteration. Following each iteration, a new global matrix is assembled, using the latest velocity solution to compute the effective viscosity. Glissade then computes the new residual, r = b\u2212Ax. If the l2 norm of the residual, defined as \u221a(r, r), is smaller than a prescribed tolerance threshold, the nonlinear system of equations is considered solved.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Power-law sliding",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Power-law sliding, based on the sliding relation of Weertman (1957). Basal velocity is given by ub = k \u03c4_b^p N^\u2212q, where N is the effective pressure (the difference between the ice overburden pressure Po = \u03c1igH and the basal water pressure pw) and k is an empirical constant.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Coulomb friction",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Coulomb friction as described by Schoof (2005), with notation and default values from Pimentel et al. (2010).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Pseudo-plastic sliding",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Pseudo-plastic sliding, as described by Schoof and Hindmarsh (2010) and Aschwanden et al. (2013) and implemented in PISM.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "local till model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Basal water depth is computed using a local till model, as described by Bueler and van Pelt (2015). In this model, water depth W evolves according to dW/dt = -B_b/\u03c1_w - C_d.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Glissade",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "eigencalving",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In addition, Glissade includes several new calving schemes: mask-based calving, thickness-based calving, and eigencalving.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "MISMIP+ Ice1 sub-shelf melting parameterization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Sub-shelf melting is prescribed as for the Marine Ice Sheet Model Intercomparison Project (MISMIP+) Ice1 experiments described by Asay-Davis et al. (2016). In this parameterization, the melt rate is set to zero above a reference elevation z0, then increases linearly as a function of depth.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "elastic lithosphere and relaxing asthenosphere isostasy",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The default, when isostasy is active, is an elastic lithosphere and relaxing asthenosphere.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Ice Sheet Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "rms error",
+            "target_entity_type": "Metric",
+            "paragraph": "The rms error in the solution is 6.43 m, with a maximum absolute error of 32.8 m.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Community Ice Sheet Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CISM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Glimmer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Parallel Ice Sheet Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PISM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Ice Sheet System Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ISSM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Penn State Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BISICLES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Elmer-Ice",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPAS-Albany Land Ice",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MALI",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Community Earth System Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RACMO2.3p1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RACMO2",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "CESM2.0",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Ice Sheet Model Intercomparison Project for Higher-Order Models",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "ISMIP-HOM",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "initMIP-Greenland",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Marine Ice Sheet Model Intercomparison Project",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "MISMIP+",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "ISMIP-HOM experiments",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "initMIP-Greenland initialization experiment",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Halfar dome test",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "stream tests",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "shelf tests",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "MISMIP+ Ice1 experiments",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Raymond stream test",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Schoof stream test",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Ross Ice Shelf test",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ISM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "cism_driver",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Glide",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Glissade",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Glint",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Glad",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "shallow-shelf approximation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SSA",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "depth-integrated higher order",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "3-D higher order",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "basal sliding parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "iceberg calving parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "sub-ice-shelf melting parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "shallow-ice approximation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SIA",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "positive-degree-day (PDD) scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Blatter-Pattyn approximation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "BP",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "incremental remapping scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "first-order upwind scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "depth-integrated-viscosity approximation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DIVA",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Power-law sliding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Plastic sliding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Coulomb friction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Pseudo-plastic sliding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "mask-based calving",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "thickness-based calving",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "eigencalving",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cliff limiting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "3-D thermomechanical model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "parallel model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "structured rectangular grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "terrain-following sigma coordinates",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "finite-element methods",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "finite-difference methods",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "preconditioned conjugate gradient (PCG) solver",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Trilinos solver libraries",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Sparse Linear Algebra Package (SLAP)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "diagonal preconditioning",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "shallow-ice-based preconditioning",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "GMRES",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "incomplete lower-upper (ILU) preconditioning",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Picard iteration",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "vertical o coordinate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "11 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "multimillennial simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "steady state",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "stand-alone",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "spin-ups",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "time-dependent",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "rms error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "maximum absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Los Alamos National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Center for Atmospheric Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Oak Ridge National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Washington",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Delft University of Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Associated Engineering Group, Ltd.",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Sandia National Laboratories",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Victoria University of Wellington",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NCAR Computational and Information Systems Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Oak Ridge Leadership Computing Facility",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Energy Research Scientific Computing Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Copernicus Publications",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Geosciences Union",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "EGU",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "momentum balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "basal sliding",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "iceberg calving",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sub-ice-shelf melting",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mass loss",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea level rise",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface mass balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SMB",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "internal energy",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface elevation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "effective viscosity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "effective strain rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "basal shear stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "effective pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "basal water depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "4 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "~ 5 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "2 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "6.8 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Greenland ice sheet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctic ice sheets",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "West Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Amundsen Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ross Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Petermann Glacier",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northeast Greenland Ice Stream",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "NEGIS",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Nioghalvfjerdsbr\u00e6",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "79 North Glacier",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Zachariae Isstrom",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Store Gletscher",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Humboldt Glacier",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Jakobshavn",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Helheim",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Kangerlussuaq",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Kangerlussuaq Glacier",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "the Netherlands",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "New Zealand",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Los Alamos, NM",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Boulder, CO",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Oak Ridge, TN",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Seattle, WA",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Vernon, BC",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Albuquerque, NM",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Wellington",
+            "entity_type": "City"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2007414044",
+        "https://openalex.org/W2594814229",
+        "https://openalex.org/W1600084285",
+        "https://openalex.org/W2480261700",
+        "https://openalex.org/W2766594799",
+        "https://openalex.org/W2023226070",
+        "https://openalex.org/W2264161424",
+        "https://openalex.org/W1973237687",
+        "https://openalex.org/W2160215853",
+        "https://openalex.org/W1578281258",
+        "https://openalex.org/W2057660933",
+        "https://openalex.org/W1541597243",
+        "https://openalex.org/W1985717720",
+        "https://openalex.org/W2747264389",
+        "https://openalex.org/W2765875692",
+        "https://openalex.org/W2066692739",
+        "https://openalex.org/W4254773735",
+        "https://openalex.org/W1996216696",
+        "https://openalex.org/W1993571445",
+        "https://openalex.org/W2050248855",
+        "https://openalex.org/W2161306464",
+        "https://openalex.org/W2074326665",
+        "https://openalex.org/W1971945215",
+        "https://openalex.org/W2106544729",
+        "https://openalex.org/W2122527296",
+        "https://openalex.org/W2134159265",
+        "https://openalex.org/W2735264555",
+        "https://openalex.org/W2104275055",
+        "https://openalex.org/W4232232293",
+        "https://openalex.org/W2041535910",
+        "https://openalex.org/W2022916138",
+        "https://openalex.org/W1996952559",
+        "https://openalex.org/W2018797216",
+        "https://openalex.org/W2797257963",
+        "https://openalex.org/W6756684819",
+        "https://openalex.org/W6636093862",
+        "https://openalex.org/W2115247641",
+        "https://openalex.org/W2597800499",
+        "https://openalex.org/W2071341963",
+        "https://openalex.org/W2128701626",
+        "https://openalex.org/W2072667640",
+        "https://openalex.org/W2132587316",
+        "https://openalex.org/W2001533294",
+        "https://openalex.org/W2145016426",
+        "https://openalex.org/W3152993254",
+        "https://openalex.org/W2460447094",
+        "https://openalex.org/W1546441396",
+        "https://openalex.org/W2009811105",
+        "https://openalex.org/W2281988277",
+        "https://openalex.org/W2954044913",
+        "https://openalex.org/W2416982532",
+        "https://openalex.org/W2762875957",
+        "https://openalex.org/W2066295842",
+        "https://openalex.org/W2056753208",
+        "https://openalex.org/W2130272322",
+        "https://openalex.org/W2163298292",
+        "https://openalex.org/W2038638154",
+        "https://openalex.org/W2313804978",
+        "https://openalex.org/W2151653380",
+        "https://openalex.org/W2024618751",
+        "https://openalex.org/W1968247562",
+        "https://openalex.org/W2153259684",
+        "https://openalex.org/W6628760365",
+        "https://openalex.org/W2032800452",
+        "https://openalex.org/W1997249214",
+        "https://openalex.org/W2135449655",
+        "https://openalex.org/W2113476442",
+        "https://openalex.org/W2074272083",
+        "https://openalex.org/W2018254066",
+        "https://openalex.org/W2123042467",
+        "https://openalex.org/W2156567817",
+        "https://openalex.org/W2801080873",
+        "https://openalex.org/W2089774562",
+        "https://openalex.org/W2124508572",
+        "https://openalex.org/W2157492109",
+        "https://openalex.org/W198461670",
+        "https://openalex.org/W2169971095",
+        "https://openalex.org/W2011034246",
+        "https://openalex.org/W4234337445",
+        "https://openalex.org/W1647748162",
+        "https://openalex.org/W2098841537",
+        "https://openalex.org/W1515864807"
+    ]
+}

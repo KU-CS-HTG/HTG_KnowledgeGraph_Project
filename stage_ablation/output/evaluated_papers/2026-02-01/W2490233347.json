@@ -1,0 +1,1292 @@
+{
+    "uri": "https://openalex.org/W2490233347",
+    "title": "Evaluating lossy data compression on climate simulation data within a large ensemble",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2016,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5067337048",
+            "display_name": "Allison H. Baker",
+            "orcid": "https://orcid.org/0000-0003-2436-7838"
+        },
+        {
+            "id": "https://openalex.org/A5050498512",
+            "display_name": "Dorit Hammerling",
+            "orcid": "https://orcid.org/0000-0003-3583-3611"
+        },
+        {
+            "id": "https://openalex.org/A5048152909",
+            "display_name": "Sheri Mickelson",
+            "orcid": "https://orcid.org/0000-0001-6101-1975"
+        },
+        {
+            "id": "https://openalex.org/A5035799778",
+            "display_name": "Haiying Xu",
+            "orcid": "https://orcid.org/0000-0001-8312-7346"
+        },
+        {
+            "id": "https://openalex.org/A5067939391",
+            "display_name": "Martin B. Stolpe",
+            "orcid": "https://orcid.org/0000-0001-6792-285X"
+        },
+        {
+            "id": "https://openalex.org/A5070528023",
+            "display_name": "Philippe Naveau",
+            "orcid": "https://orcid.org/0000-0002-7231-6210"
+        },
+        {
+            "id": "https://openalex.org/A5018906200",
+            "display_name": "Benjamin M. Sanderson",
+            "orcid": "https://orcid.org/0000-0001-8635-4624"
+        },
+        {
+            "id": "https://openalex.org/A5082309905",
+            "display_name": "Imme Ebert\u2010Uphoff",
+            "orcid": "https://orcid.org/0000-0001-6470-1947"
+        },
+        {
+            "id": "https://openalex.org/A5034429888",
+            "display_name": "Savini M. Samarasinghe",
+            "orcid": "https://orcid.org/0000-0002-1377-967X"
+        },
+        {
+            "id": "https://openalex.org/A5084702008",
+            "display_name": "Francesco De Simone",
+            "orcid": "https://orcid.org/0000-0003-0252-2382"
+        },
+        {
+            "id": "https://openalex.org/A5064386021",
+            "display_name": "Francesco Carbone",
+            "orcid": "https://orcid.org/0000-0002-3559-5273"
+        },
+        {
+            "id": "https://openalex.org/A5084597054",
+            "display_name": "Christian N. Gencarelli",
+            "orcid": "https://orcid.org/0000-0002-2366-661X"
+        },
+        {
+            "id": "https://openalex.org/A5053602586",
+            "display_name": "John M. Dennis",
+            "orcid": "https://orcid.org/0000-0002-2119-8242"
+        },
+        {
+            "id": "https://openalex.org/A5068112847",
+            "display_name": "Jennifer E. Kay",
+            "orcid": "https://orcid.org/0000-0002-3625-5377"
+        },
+        {
+            "id": "https://openalex.org/A5085342992",
+            "display_name": "Peter Lindstr\u00f6m",
+            "orcid": "https://orcid.org/0000-0003-3817-4199"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-9-4381-2016",
+    "abstract": "Abstract. High-resolution Earth system model simulations generate enormous data volumes, and retaining the data from these simulations often strains institutional storage resources. Further, these exceedingly large storage requirements negatively impact science objectives, for example, by forcing reductions in data output frequency, simulation length, or ensemble size. To lessen data volumes from the Community Earth System Model (CESM), we advocate the use of lossy data compression techniques. While lossy data compression does not exactly preserve the original data (as lossless compression does), lossy techniques have an advantage in terms of smaller storage requirements. To preserve the integrity of the scientific simulation data, the effects of lossy data compression on the original data should, at a minimum, not be statistically distinguishable from the natural variability of the climate system, and previous preliminary work with data from CESM has shown this goal to be attainable. However, to ultimately convince climate scientists that it is acceptable to use lossy data compression, we provide climate scientists with access to publicly available climate data that have undergone lossy data compression. In particular, we report on the results of a lossy data compression experiment with output from the CESM Large Ensemble (CESM-LE) Community Project, in which we challenge climate scientists to examine features of the data relevant to their interests, and attempt to identify which of the ensemble members have been compressed and reconstructed. We find that while detecting distinguishing features is certainly possible, the compression effects noticeable in these features are often unimportant or disappear in post-processing analyses. In addition, we perform several analyses that directly compare the original data to the reconstructed data to investigate the preservation, or lack thereof, of specific features critical to climate science. Overall, we conclude that applying lossy data compression to climate simulation data is both advantageous in terms of data reduction and generally acceptable in terms of effects on scientific results.",
+    "field": "Lossy data compression for climate data",
+    "problem": "Storing enormous data volumes from high-resolution climate simulations strains resources and limits scientific objectives, while the adoption of lossy compression is hindered by a lack of trust from scientists concerned about its potential impact on the scientific integrity and validity of the data.",
+    "method": "To evaluate the impact of lossy compression on climate data, we report on an experiment where new compressed ensemble members were added to a large climate dataset, and scientists were challenged to identify compression effects using various standard analyses to demonstrate the technique's acceptability for scientific use.",
+    "task": "The task is to evaluate the scientific acceptability of applying lossy data compression to a large-ensemble climate simulation by challenging researchers to distinguish compressed from original data and assess its impact on scientific analyses.",
+    "model": [
+        "CESM"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/lossy-compression",
+            "display_name": "Lossy compression",
+            "score": 0.9798299074172974
+        },
+        {
+            "id": "https://openalex.org/keywords/lossless-compression",
+            "display_name": "Lossless compression",
+            "score": 0.8356284499168396
+        },
+        {
+            "id": "https://openalex.org/keywords/data-compression",
+            "display_name": "Data compression",
+            "score": 0.636146068572998
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.6358022689819336
+        },
+        {
+            "id": "https://openalex.org/keywords/compression",
+            "display_name": "Compression (physics)",
+            "score": 0.519668459892273
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.511496901512146
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.33959639072418213
+        },
+        {
+            "id": "https://openalex.org/keywords/data-mining",
+            "display_name": "Data mining",
+            "score": 0.3322697877883911
+        },
+        {
+            "id": "https://openalex.org/keywords/algorithm",
+            "display_name": "Algorithm",
+            "score": 0.22179892659187317
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.10134309530258179
+        },
+        {
+            "id": "https://openalex.org/keywords/artificial-intelligence",
+            "display_name": "Artificial intelligence",
+            "score": 0.09814193844795227
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.07998716831207275
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C165021410",
+            "wikidata": "https://www.wikidata.org/wiki/Q55564",
+            "display_name": "Lossy compression",
+            "level": 2,
+            "score": 0.9798299074172974
+        },
+        {
+            "id": "https://openalex.org/C81081738",
+            "wikidata": "https://www.wikidata.org/wiki/Q55542",
+            "display_name": "Lossless compression",
+            "level": 3,
+            "score": 0.8356284499168396
+        },
+        {
+            "id": "https://openalex.org/C78548338",
+            "wikidata": "https://www.wikidata.org/wiki/Q2493",
+            "display_name": "Data compression",
+            "level": 2,
+            "score": 0.636146068572998
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.6358022689819336
+        },
+        {
+            "id": "https://openalex.org/C180016635",
+            "wikidata": "https://www.wikidata.org/wiki/Q2712821",
+            "display_name": "Compression (physics)",
+            "level": 2,
+            "score": 0.519668459892273
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.511496901512146
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.33959639072418213
+        },
+        {
+            "id": "https://openalex.org/C124101348",
+            "wikidata": "https://www.wikidata.org/wiki/Q172491",
+            "display_name": "Data mining",
+            "level": 1,
+            "score": 0.3322697877883911
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.22179892659187317
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.10134309530258179
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.09814193844795227
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.07998716831207275
+        },
+        {
+            "id": "https://openalex.org/C97355855",
+            "wikidata": "https://www.wikidata.org/wiki/Q11473",
+            "display_name": "Thermodynamics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper evaluates the impact of lossy data compression on a large climate model ensemble by challenging climate scientists to distinguish compressed data from original data, ultimately concluding that the effects are generally acceptable and advantageous for reducing data storage requirements.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "CESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CAM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "We restrict our attention in this work to data from the atmospheric model component of CESM, which is the CAM. CAM output data for the CESMLE simulations consists of 159 distinct variables, many of which are output at multiple frequencies: 136 have monthly output, 51 have daily output, and 25 have 6-hourly output (212 total variable outputs).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmosphere",
+            "target_entity_type": "Realm",
+            "paragraph": "We restrict our attention in this work to data from the atmospheric model component of CESM, which is the CAM. CAM output data for the CESMLE simulations consists of 159 distinct variables, many of which are output at multiple frequencies: 136 have monthly output, 51 have daily output, and 25 have 6-hourly output (212 total variable outputs).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CAM5",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "All simulations use the fully coupled 1\u00ba latitude-longitude version of CESM-CAM5 (Community Atmosphere Model version 5). Historical forcing is used for the period 1920\u20132005 and RCP8.5 radiative forcing (i.e., forcing that reflects near-past and future climate change; e.g., Lamarque et al., 2011) thereafter.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1\u00b0 latitude-longitude version",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "All simulations use the fully coupled 1\u00ba latitude-longitude version of CESM-CAM5 (Community Atmosphere Model version 5). Historical forcing is used for the period 1920\u20132005 and RCP8.5 radiative forcing (i.e., forcing that reflects near-past and future climate change; e.g., Lamarque et al., 2011) thereafter.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "fully coupled",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "All simulations use the fully coupled 1\u00ba latitude-longitude version of CESM-CAM5 (Community Atmosphere Model version 5). Historical forcing is used for the period 1920\u20132005 and RCP8.5 radiative forcing (i.e., forcing that reflects near-past and future climate change; e.g., Lamarque et al., 2011) thereafter.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "finite volume (FV) dynamical core",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "First, the data in Baker et al. (2014) were output as annual averages, which we would expect to be smoother (and easier to compress) than the 6-hourly, daily, and monthly data from CESM-LE. Also, the choices of bits to retain with fpzip in Baker et al. (2014) were limited to 16, 24, and 32, and notably, the CAM variant in Baker et al. (2014) used the spectral element (SE) dynamical core, whereas the CESM-LE CAM variant uses the finite volume (FV) dynamical core.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "spectral element (SE) dynamical core",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "First, the data in Baker et al. (2014) were output as annual averages, which we would expect to be smoother (and easier to compress) than the 6-hourly, daily, and monthly data from CESM-LE. Also, the choices of bits to retain with fpzip in Baker et al. (2014) were limited to 16, 24, and 32, and notably, the CAM variant in Baker et al. (2014) used the spectral element (SE) dynamical core, whereas the CESM-LE CAM variant uses the finite volume (FV) dynamical core.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "TOT_CLD_VISTAU",
+            "target_entity_type": "Variable",
+            "paragraph": "Therefore the following CESM-LE variables are not compressed at all: TOT_CLD_VISTAU, ABSORB, EXTINCT, PHIS, SOLIN, AODDUST2, LANDFRAC, and SFCO2_FFF.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "ABSORB",
+            "target_entity_type": "Variable",
+            "paragraph": "Therefore the following CESM-LE variables are not compressed at all: TOT_CLD_VISTAU, ABSORB, EXTINCT, PHIS, SOLIN, AODDUST2, LANDFRAC, and SFCO2_FFF.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "EXTINCT",
+            "target_entity_type": "Variable",
+            "paragraph": "Therefore the following CESM-LE variables are not compressed at all: TOT_CLD_VISTAU, ABSORB, EXTINCT, PHIS, SOLIN, AODDUST2, LANDFRAC, and SFCO2_FFF.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "PHIS",
+            "target_entity_type": "Variable",
+            "paragraph": "Therefore the following CESM-LE variables are not compressed at all: TOT_CLD_VISTAU, ABSORB, EXTINCT, PHIS, SOLIN, AODDUST2, LANDFRAC, and SFCO2_FFF.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "SOLIN",
+            "target_entity_type": "Variable",
+            "paragraph": "Therefore the following CESM-LE variables are not compressed at all: TOT_CLD_VISTAU, ABSORB, EXTINCT, PHIS, SOLIN, AODDUST2, LANDFRAC, and SFCO2_FFF.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "AODDUST2",
+            "target_entity_type": "Variable",
+            "paragraph": "Therefore the following CESM-LE variables are not compressed at all: TOT_CLD_VISTAU, ABSORB, EXTINCT, PHIS, SOLIN, AODDUST2, LANDFRAC, and SFCO2_FFF.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "LANDFRAC",
+            "target_entity_type": "Variable",
+            "paragraph": "Therefore the following CESM-LE variables are not compressed at all: TOT_CLD_VISTAU, ABSORB, EXTINCT, PHIS, SOLIN, AODDUST2, LANDFRAC, and SFCO2_FFF.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "SFCO2_FFF",
+            "target_entity_type": "Variable",
+            "paragraph": "Therefore the following CESM-LE variables are not compressed at all: TOT_CLD_VISTAU, ABSORB, EXTINCT, PHIS, SOLIN, AODDUST2, LANDFRAC, and SFCO2_FFF.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "TAS",
+            "target_entity_type": "Variable",
+            "paragraph": "Global trend maps are one of the key metrics in the CVDP, and in Fig. 1, we show the CVDP-generated global trend map for annual air surface temperature (TAS) for historical simulation data (1920\u20132012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "FSNS",
+            "target_entity_type": "Variable",
+            "paragraph": "The energy balance at the Earth's surface indicates the heat storage in the climate system and is calculated as the sum of the net solar flux at the surface (FSNS), the net longwave flux at the surface (FLNS), the surface latent heat flux (LHFLX), and surface sensible heat flux (SHFLX) (e.g., see Raschke and Ohmura, 2005).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "FLNS",
+            "target_entity_type": "Variable",
+            "paragraph": "The energy balance at the Earth's surface indicates the heat storage in the climate system and is calculated as the sum of the net solar flux at the surface (FSNS), the net longwave flux at the surface (FLNS), the surface latent heat flux (LHFLX), and surface sensible heat flux (SHFLX) (e.g., see Raschke and Ohmura, 2005).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "LHFLX",
+            "target_entity_type": "Variable",
+            "paragraph": "The energy balance at the Earth's surface indicates the heat storage in the climate system and is calculated as the sum of the net solar flux at the surface (FSNS), the net longwave flux at the surface (FLNS), the surface latent heat flux (LHFLX), and surface sensible heat flux (SHFLX) (e.g., see Raschke and Ohmura, 2005).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "SHFLX",
+            "target_entity_type": "Variable",
+            "paragraph": "The energy balance at the Earth's surface indicates the heat storage in the climate system and is calculated as the sum of the net solar flux at the surface (FSNS), the net longwave flux at the surface (FLNS), the surface latent heat flux (LHFLX), and surface sensible heat flux (SHFLX) (e.g., see Raschke and Ohmura, 2005).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "PRECC",
+            "target_entity_type": "Variable",
+            "paragraph": "Next we evaluated precipitation (the sum of variables PRECC and PRECL) across the ensemble, shown in Fig. 8, supposing that precipitation levels could be lower in 31 and 33 due to reduced LHFLX; however, members 31 and 33 do not stand out in the context of precipitation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "PRECL",
+            "target_entity_type": "Variable",
+            "paragraph": "Next we evaluated precipitation (the sum of variables PRECC and PRECL) across the ensemble, shown in Fig. 8, supposing that precipitation levels could be lower in 31 and 33 due to reduced LHFLX; however, members 31 and 33 do not stand out in the context of precipitation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "TREFHT",
+            "target_entity_type": "Variable",
+            "paragraph": "For each of the ensemble members, we calculate the difference field for the near-surface air temperature (TREFHT) field monthly mean for October 1920.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Z3",
+            "target_entity_type": "Variable",
+            "paragraph": "We examined the monthly averaged output of four variables: Z3 (geopotential height above sea level), CCN3 (cloud condensation nuclei concentration), U (zonal wind), and FSDSC (clear-sky downwelling solar flux at surface).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "CCN3",
+            "target_entity_type": "Variable",
+            "paragraph": "We examined the monthly averaged output of four variables: Z3 (geopotential height above sea level), CCN3 (cloud condensation nuclei concentration), U (zonal wind), and FSDSC (clear-sky downwelling solar flux at surface).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "U",
+            "target_entity_type": "Variable",
+            "paragraph": "We examined the monthly averaged output of four variables: Z3 (geopotential height above sea level), CCN3 (cloud condensation nuclei concentration), U (zonal wind), and FSDSC (clear-sky downwelling solar flux at surface).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "FSDSC",
+            "target_entity_type": "Variable",
+            "paragraph": "We examined the monthly averaged output of four variables: Z3 (geopotential height above sea level), CCN3 (cloud condensation nuclei concentration), U (zonal wind), and FSDSC (clear-sky downwelling solar flux at surface).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "PRECT",
+            "target_entity_type": "Variable",
+            "paragraph": "We focus our analysis on four variables from the ensemble data: average convective and large-scale precipitation rate (PRECT) over the output period, maximum convective and large-scale precipitation rate (PRECTMX), minimum surface temperature over output period (TSMN), and maximum surface temperature over output period (TSMX).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "PRECTMX",
+            "target_entity_type": "Variable",
+            "paragraph": "We focus our analysis on four variables from the ensemble data: average convective and large-scale precipitation rate (PRECT) over the output period, maximum convective and large-scale precipitation rate (PRECTMX), minimum surface temperature over output period (TSMN), and maximum surface temperature over output period (TSMX).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "TSMN",
+            "target_entity_type": "Variable",
+            "paragraph": "We focus our analysis on four variables from the ensemble data: average convective and large-scale precipitation rate (PRECT) over the output period, maximum convective and large-scale precipitation rate (PRECTMX), minimum surface temperature over output period (TSMN), and maximum surface temperature over output period (TSMX).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "TSMX",
+            "target_entity_type": "Variable",
+            "paragraph": "We focus our analysis on four variables from the ensemble data: average convective and large-scale precipitation rate (PRECT) over the output period, maximum convective and large-scale precipitation rate (PRECTMX), minimum surface temperature over output period (TSMN), and maximum surface temperature over output period (TSMX).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "FSNTOA",
+            "target_entity_type": "Variable",
+            "paragraph": "Note that only the weak connection between SHFLX (surface sensible heat flux) and FSNTOA (net solar flux at top of atmosphere), which is indicated by a dotted line, is missing in the map corresponding to the reconstructed data.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "RELHUM",
+            "target_entity_type": "Variable",
+            "paragraph": "First we show vertical contour plots produced by the AMWG-DP (from diagnostics set 4) comparing the original and reconstructed variants of ensemble member 31 for relative humidity (RELHUM) in Fig. 19.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "PS",
+            "target_entity_type": "Variable",
+            "paragraph": "Now we show surface pressure (PS), as it is a \"popular\" variable to view with the AMWG-DP. Variable PS was compressed with fpzip-20, yielding a CR of 0.13.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "FSNT",
+            "target_entity_type": "Variable",
+            "paragraph": "Recall that top of the model energy imbalance was examined in Sect. 4.2.2 and is simply the difference between the net solar flux (shortwave radiation) at the top of the model (FSNT) and the net longwave flux at the top of the model (FLNT).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "FLNT",
+            "target_entity_type": "Variable",
+            "paragraph": "Recall that top of the model energy imbalance was examined in Sect. 4.2.2 and is simply the difference between the net solar flux (shortwave radiation) at the top of the model (FSNT) and the net longwave flux at the top of the model (FLNT).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "QFLX",
+            "target_entity_type": "Variable",
+            "paragraph": "However, the difference is that the AMWG-DP does not use the LHFLX variable from the output data, but instead calculates surface latent heat flux via surface water flux (QFLX) and four precipitation variables (PRECC, PRECL, PRECSC, and PRECSL).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "PRECSC",
+            "target_entity_type": "Variable",
+            "paragraph": "However, the difference is that the AMWG-DP does not use the LHFLX variable from the output data, but instead calculates surface latent heat flux via surface water flux (QFLX) and four precipitation variables (PRECC, PRECL, PRECSC, and PRECSL).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "PRECSL",
+            "target_entity_type": "Variable",
+            "paragraph": "However, the difference is that the AMWG-DP does not use the LHFLX variable from the output data, but instead calculates surface latent heat flux via surface water flux (QFLX) and four precipitation variables (PRECC, PRECL, PRECSC, and PRECSL).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RESTOM",
+            "target_entity_type": "Metric",
+            "paragraph": "In particular, the AMWG-DP-derived variables RESTOM and RESSURF are important diagnostics as they indicate the top-of-model residual energy balance and the surface residual energy balance, respectively, and Table 3 indicates that their computed values for the compressed and original cases are identical (to the precision used by AMWG-DP).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RESSURF",
+            "target_entity_type": "Metric",
+            "paragraph": "In particular, the AMWG-DP-derived variables RESTOM and RESSURF are important diagnostics as they indicate the top-of-model residual energy balance and the surface residual energy balance, respectively, and Table 3 indicates that their computed values for the compressed and original cases are identical (to the precision used by AMWG-DP).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 3. Subset of AMWG diagnostics set 1: annual means global. RESTOM and RESSURF are AMWG-DP-derived variables for the top-of-model residual energy balance and the surface residual energy balance, respectively. RMSE indicates the root mean squared error. Units are W m\u22122.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "ensemble",
+            "target_entity_type": "SimulationType",
+            "paragraph": "A second example of a data-intensive CESM project is the CESM-Large Ensemble (LE) project (Kay et al., 2015), a large ensemble climate simulation study. The CESM-LE project is a publicly available collection of 180-year climate simulations at approximately 1\u25e6 horizontal resolution for studying internal climate variability.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "The National Center for Atmospheric Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute for Atmospheric and Climate Science, ETH Zurich",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Laboratoire des Sciences du Climat et l'Environnement",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Colorado State University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNR-Institute of Atmospheric Pollution Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Colorado",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Lawrence Livermore National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NCAR",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "WMO",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Earth System Grid",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CESM Large Ensemble Community Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CESM-LE",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Large Ensemble Community Project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM-CAM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CAM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CAM5",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Community Atmosphere Model version 5",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CESM Large Ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "CESM-LE",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "31",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "32",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "33",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "RCP8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "1 degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "32 bit precision",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "64 bit precision",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "spectral element dynamical core",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "finite volume dynamical core",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "6-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "annual",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "atmos",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TAS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "top-of-the-atmosphere model radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface energy balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "FSNS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "FLNS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LHFLX",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SHFLX",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PRECC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PRECL",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TREFHT",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "near-surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Z3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "geopotential height above sea level",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CCN3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud condensation nuclei concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "U",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zonal wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "FSDSC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "clear-sky downwelling solar flux at surface",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TSMN",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "minimum surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TSMX",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "maximum surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PRECT",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "average convective and large-scale precipitation rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PRECTMX",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "maximum convective and large-scale precipitation rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "FSNTOA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net solar flux at top of atmosphere",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "RELHUM",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "RESTOM",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "top-of-model residual energy balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "RESSURF",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface residual energy balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "FSNT",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "FLNT",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "QFLX",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PRECSC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PRECSL",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TOT_CLD_VISTAU",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ABSORB",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "EXTINCT",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PHIS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SOLIN",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "AODDUST2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LANDFRAC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SFCO2_FFF",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Q500",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Z500",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PSL",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TMQ",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TAUX",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "WSPDSRFAV",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TAUY",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "FLUT",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "compression ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Z score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "maximum pointwise error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean squared error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean square Z score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "unexplained variance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ENSO",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Madden\u2013Julian Oscillation",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "AMOC",
+            "entity_type": "Ocean_Circulation"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2045544414",
+        "https://openalex.org/W1973657321",
+        "https://openalex.org/W1616657595",
+        "https://openalex.org/W4229774059",
+        "https://openalex.org/W2111122809",
+        "https://openalex.org/W2025139459",
+        "https://openalex.org/W1972141013",
+        "https://openalex.org/W2071769383",
+        "https://openalex.org/W4214712351",
+        "https://openalex.org/W1504657038",
+        "https://openalex.org/W2071312622",
+        "https://openalex.org/W2502254989",
+        "https://openalex.org/W2122456939",
+        "https://openalex.org/W2058024531",
+        "https://openalex.org/W4248705221",
+        "https://openalex.org/W2294407044",
+        "https://openalex.org/W1033938421",
+        "https://openalex.org/W2115247641",
+        "https://openalex.org/W28625479",
+        "https://openalex.org/W2159689047",
+        "https://openalex.org/W2125634634",
+        "https://openalex.org/W2471888666",
+        "https://openalex.org/W1573873110",
+        "https://openalex.org/W118291038",
+        "https://openalex.org/W2136080546",
+        "https://openalex.org/W2076457094",
+        "https://openalex.org/W2146713313",
+        "https://openalex.org/W2052440657",
+        "https://openalex.org/W2142265837",
+        "https://openalex.org/W2152526135",
+        "https://openalex.org/W1992579369",
+        "https://openalex.org/W2212816755",
+        "https://openalex.org/W2047502570",
+        "https://openalex.org/W4246874051",
+        "https://openalex.org/W4247700142",
+        "https://openalex.org/W2506069579",
+        "https://openalex.org/W4302423442",
+        "https://openalex.org/W2029098807",
+        "https://openalex.org/W1924873506",
+        "https://openalex.org/W1968011005",
+        "https://openalex.org/W2338569857",
+        "https://openalex.org/W2008664411",
+        "https://openalex.org/W156439318",
+        "https://openalex.org/W86570392",
+        "https://openalex.org/W2159080219",
+        "https://openalex.org/W4206796377",
+        "https://openalex.org/W1598342322",
+        "https://openalex.org/W2952400209",
+        "https://openalex.org/W1498464051",
+        "https://openalex.org/W3102947437",
+        "https://openalex.org/W2091656757",
+        "https://openalex.org/W2495182697",
+        "https://openalex.org/W81790847"
+    ]
+}

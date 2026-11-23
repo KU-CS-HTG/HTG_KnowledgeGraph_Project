@@ -1,0 +1,781 @@
+{
+    "uri": "https://openalex.org/W7141945263",
+    "title": "Research on Improving Numerical Accuracy of Ocean Circulation Prediction Using Mixed-former Model",
+    "venue": {
+        "name": "Frontiers in Computing and Intelligent Systems",
+        "id": "https://openalex.org/S4387283309",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5130832439",
+            "display_name": "Min Xu",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5130852399",
+            "display_name": "Li Ma",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5130863509",
+            "display_name": "Yang Li",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.54097/bkp3jh06",
+    "abstract": "With the in-depth research on global climate change, accurately grasping ocean circulation patterns has become increasingly crucial for understanding the evolution laws of the climate system. However, traditional numerical models have limited prediction accuracy in ocean circulation prediction due to their insufficient characterization of multivariate spatiotemporal dependencies, especially in short-term prediction scenarios where error fluctuations are relatively large. This study aims to propose an ocean circulation prediction method based on the Mixed-Former model to improve the numerical accuracy of predictions. In the research process, we first constructed a Mixed-Former model that integrates multi-scale spatiotemporal information. This model fully retains temporal and dimensional information and effectively captures cross-variable dependencies through the innovative Dimension-Segment-Wise (DSW) embedding technology; it accurately captures temporal fluctuations using the Two-Stage Attention (TSA) layer; and it achieves efficient fusion of multi-scale information by adopting a Hierarchical Encoder-Decoder (HED) structure. Subsequently, we conducted comprehensive experiments on multiple sets of ocean circulation datasets covering different ocean regions and different spatiotemporal characteristics. These datasets include multi-time-scale prediction scenarios ranging from short-term (7 days) to long-term (six months). Meanwhile, to comprehensively and objectively evaluate the model performance, we selected several core evaluation indicators such as Mean Squared Error (MSE), Mean Absolute Error (MAE), and Correlation Coefficient (R).In conclusion, the Mixed-Former model demonstrates significant advantages in ocean circulation prediction, whether for predicting short-term fluctuations or long-term trends. It provides a more reliable tool for marine dynamics research and long-term climate prediction, and is expected to promote the further development of research in related fields.",
+    "field": "Ocean circulation prediction",
+    "problem": "Traditional numerical and deep learning models have limited accuracy in ocean circulation prediction because they insufficiently characterize complex multivariate spatiotemporal dependencies and overlook the intricate interactions among different variables, especially in short-term forecasts.",
+    "method": "This paper proposes a Mixed-Former model, a novel Transformer architecture, to improve ocean circulation prediction accuracy by effectively capturing multi-scale, cross-variable spatiotemporal dependencies.",
+    "task": "The task is to improve the numerical accuracy of ocean circulation prediction by proposing a Mixed-Former deep learning model designed to effectively capture complex multivariate spatiotemporal dependencies.",
+    "model": [
+        "MITgcm",
+        "HYCOM",
+        "Mixed-Former"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/ocean-current",
+            "display_name": "Ocean current",
+            "score": 0.5069000124931335
+        },
+        {
+            "id": "https://openalex.org/keywords/mean-squared-error",
+            "display_name": "Mean squared error",
+            "score": 0.4221999943256378
+        },
+        {
+            "id": "https://openalex.org/keywords/general-circulation-model",
+            "display_name": "General Circulation Model",
+            "score": 0.3813999891281128
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.3564999997615814
+        },
+        {
+            "id": "https://openalex.org/keywords/correlation-coefficient",
+            "display_name": "Correlation coefficient",
+            "score": 0.3483999967575073
+        },
+        {
+            "id": "https://openalex.org/keywords/circulation",
+            "display_name": "Circulation (fluid dynamics)",
+            "score": 0.3479999899864197
+        },
+        {
+            "id": "https://openalex.org/keywords/predictive-modelling",
+            "display_name": "Predictive modelling",
+            "score": 0.3463999927043915
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-surface-temperature",
+            "display_name": "Sea surface temperature",
+            "score": 0.336899995803833
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C187599188",
+            "wikidata": "https://www.wikidata.org/wiki/Q129558",
+            "display_name": "Ocean current",
+            "level": 2,
+            "score": 0.5069000124931335
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.45419999957084656
+        },
+        {
+            "id": "https://openalex.org/C139945424",
+            "wikidata": "https://www.wikidata.org/wiki/Q1940696",
+            "display_name": "Mean squared error",
+            "level": 2,
+            "score": 0.4221999943256378
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.41429999470710754
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.41100001335144043
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.3813999891281128
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.3564999997615814
+        },
+        {
+            "id": "https://openalex.org/C2780092901",
+            "wikidata": "https://www.wikidata.org/wiki/Q3433612",
+            "display_name": "Correlation coefficient",
+            "level": 2,
+            "score": 0.3483999967575073
+        },
+        {
+            "id": "https://openalex.org/C11111821",
+            "wikidata": "https://www.wikidata.org/wiki/Q205880",
+            "display_name": "Circulation (fluid dynamics)",
+            "level": 2,
+            "score": 0.3479999899864197
+        },
+        {
+            "id": "https://openalex.org/C45804977",
+            "wikidata": "https://www.wikidata.org/wiki/Q7239673",
+            "display_name": "Predictive modelling",
+            "level": 2,
+            "score": 0.3463999927043915
+        },
+        {
+            "id": "https://openalex.org/C134097258",
+            "wikidata": "https://www.wikidata.org/wiki/Q1507383",
+            "display_name": "Sea surface temperature",
+            "level": 2,
+            "score": 0.336899995803833
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.335999995470047
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.32710000872612
+        },
+        {
+            "id": "https://openalex.org/C2164484",
+            "wikidata": "https://www.wikidata.org/wiki/Q5170150",
+            "display_name": "Core (optical fiber)",
+            "level": 2,
+            "score": 0.3228999972343445
+        },
+        {
+            "id": "https://openalex.org/C2776248883",
+            "wikidata": "https://www.wikidata.org/wiki/Q17154087",
+            "display_name": "Ocean observations",
+            "level": 2,
+            "score": 0.3192000091075897
+        },
+        {
+            "id": "https://openalex.org/C124101348",
+            "wikidata": "https://www.wikidata.org/wiki/Q172491",
+            "display_name": "Data mining",
+            "level": 1,
+            "score": 0.313400000333786
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.3028999865055084
+        },
+        {
+            "id": "https://openalex.org/C170061395",
+            "wikidata": "https://www.wikidata.org/wiki/Q5468164",
+            "display_name": "Forecast skill",
+            "level": 2,
+            "score": 0.29919999837875366
+        },
+        {
+            "id": "https://openalex.org/C2781468064",
+            "wikidata": "https://www.wikidata.org/wiki/Q1267117",
+            "display_name": "Lead time",
+            "level": 2,
+            "score": 0.29679998755455017
+        },
+        {
+            "id": "https://openalex.org/C2988944679",
+            "wikidata": "https://www.wikidata.org/wiki/Q7937",
+            "display_name": "Global climate",
+            "level": 3,
+            "score": 0.2827000021934509
+        },
+        {
+            "id": "https://openalex.org/C7228185",
+            "wikidata": "https://www.wikidata.org/wiki/Q7076138",
+            "display_name": "Ocean dynamics",
+            "level": 3,
+            "score": 0.2822999954223633
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.28049999475479126
+        },
+        {
+            "id": "https://openalex.org/C167085575",
+            "wikidata": "https://www.wikidata.org/wiki/Q6803654",
+            "display_name": "Mean squared prediction error",
+            "level": 2,
+            "score": 0.2721000015735626
+        },
+        {
+            "id": "https://openalex.org/C161584116",
+            "wikidata": "https://www.wikidata.org/wiki/Q1952580",
+            "display_name": "Multivariate statistics",
+            "level": 2,
+            "score": 0.2500999867916107
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "HYCOM",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "MSE",
+            "result": "0.0243"
+        },
+        {
+            "model": "HYCOM",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "RMSE",
+            "result": "0.1561"
+        },
+        {
+            "model": "HYCOM",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "MAE",
+            "result": "0.1050"
+        },
+        {
+            "model": "OURS",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "MSE",
+            "result": "0.0077"
+        },
+        {
+            "model": "OURS",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "RMSE",
+            "result": "0.0875"
+        },
+        {
+            "model": "OURS",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "MAE",
+            "result": "0.0411"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "MSE",
+            "result": "0.0122"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "RMSE",
+            "result": "0.1109"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "MAE",
+            "result": "0.0440"
+        },
+        {
+            "model": "CNN-LSTM",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "MSE",
+            "result": "0.0245"
+        },
+        {
+            "model": "CNN-LSTM",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "RMSE",
+            "result": "0.1564"
+        },
+        {
+            "model": "CNN-LSTM",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "MAE",
+            "result": "0.0581"
+        },
+        {
+            "model": "Crossformer",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "MSE",
+            "result": "0.0097"
+        },
+        {
+            "model": "Crossformer",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "RMSE",
+            "result": "0.0987"
+        },
+        {
+            "model": "Crossformer",
+            "observational_dataset": "southern Sea of Japan observational data",
+            "evaluation_metric": "MAE",
+            "result": "0.0577"
+        }
+    ],
+    "innovation": "This paper introduces the Mixed-Former model, a novel Transformer architecture that improves ocean circulation prediction accuracy by using Dimension-Segment-Wise embedding and Two-Stage Attention to effectively capture multi-scale, cross-variable spatiotemporal dependencies.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Mixed-Former",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Dimension-Segment-Wise (DSW) embedding",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "This model fully retains temporal and dimensional information and effectively captures cross-variable dependencies through the innovative Dimension-Segment-Wise (DSW) embedding technology; it accurately captures temporal fluctuations using the Two-Stage Attention (TSA) layer; and it achieves efficient fusion of multi-scale information by adopting a Hierarchical Encoder-Decoder (HED) structure. ... Specifically, the Mixed-former model employs a Dimension-Segment-Wise (DSW) embedding technique. This method segments each variable in the ocean circulation data along the temporal axis and embeds each segment into a feature vector, thereby preserving information across both time and variable dimensions [2].",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Mixed-Former",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Two-Stage Attention (TSA)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Building upon this, Mixed-former further incorporates a Two-Stage Attention (TSA) layer. This layer performs attention calculations sequentially across the temporal dimension and the variable dimension, efficiently capturing dependencies across both time and variables. ... The model employs Dimension-Segment-Wise (DSW) embedding to preserve both temporal and variable-dimensional information, utilizes a Two-Stage Attention (TSA) mechanism to separately capture cross-time and cross-variable dependencies, and incorporates a Hierarchical Encoder-Decoder (HED) structure to integrate multi-scale information.",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mixed-Former",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Hierarchical Encoder-Decoder (HED) structure",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Additionally, Mixed-former constructs a Hierarchical Encoder-Decoder (HED) structure, which utilizes information at different scales for prediction, further augmenting the model's predictive capability [3]. ... The model employs Dimension-Segment-Wise (DSW) embedding to preserve both temporal and variable-dimensional information, utilizes a Two-Stage Attention (TSA) mechanism to separately capture cross-time and cross-variable dependencies, and incorporates a Hierarchical Encoder-Decoder (HED) structure to integrate multi-scale information.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mixed-Former",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Squared Error (MSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "Meanwhile, to comprehensively and objectively evaluate the model performance, we selected several core evaluation indicators such as Mean Squared Error (MSE), Mean Absolute Error (MAE), and Correlation Coefficient (R).In conclusion, the Mixed-Former model demonstrates significant advantages in ocean circulation prediction, whether for predicting short-term fluctuations or long-term trends.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mixed-Former",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error (MAE)",
+            "target_entity_type": "Metric",
+            "paragraph": "Meanwhile, to comprehensively and objectively evaluate the model performance, we selected several core evaluation indicators such as Mean Squared Error (MSE), Mean Absolute Error (MAE), and Correlation Coefficient (R).In conclusion, the Mixed-Former model demonstrates significant advantages in ocean circulation prediction, whether for predicting short-term fluctuations or long-term trends.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mixed-Former",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Correlation Coefficient (R)",
+            "target_entity_type": "Metric",
+            "paragraph": "Meanwhile, to comprehensively and objectively evaluate the model performance, we selected several core evaluation indicators such as Mean Squared Error (MSE), Mean Absolute Error (MAE), and Correlation Coefficient (R).In conclusion, the Mixed-Former model demonstrates significant advantages in ocean circulation prediction, whether for predicting short-term fluctuations or long-term trends.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Informer",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "ProbSparse attention",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Informer enhanced the self-attention mechanism by proposing ProbSparse attention, reducing computational complexity and making it suitable for long-sequence prediction tasks [11].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Autoformer",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "auto-correlation mechanism",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Autoformer introduced an auto-correlation mechanism to mine periodic patterns in sequences, further improving prediction accuracy [12].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Pyraformer",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "pyramidal attention structure",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Pyraformer achieved modeling of multi-scale temporal dependencies through a pyramidal attention structure [13].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FourCastNet",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Fourier Neural Operator (FNO)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "FourCastNet utilizes the Fourier Neural Operator (FNO) to achieve efficient atmospheric circulation prediction, providing new insights for ocean circulation prediction [20].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Ocean_Circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Sea of Japan",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "To validate the effectiveness of the proposed ocean circulation prediction method based on the Mixed-Former model, extensive experiments were conducted on multiple ocean circulation datasets. These datasets include high-resolution observational data from representative sea areas such as the southern Sea of Japan (38\u00b0N to 42\u00b0N latitude, 132\u00b0E to 136\u00b0E longitude), covering multi-temporal-scale prediction scenarios from short-term to long-term.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mixed-Former",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Multi-scale Structure",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "This paper proposes an enhanced Mixed-Former encoder structure designed to improve the model's ability to capture information at different scales through a multi-scale architecture while enhancing training stability via residual connections. To improve the accuracy of ocean circulation prediction, a model architecture capable of simultaneously processing multi-scale information is required. A multi-scale structure can better model the dynamic variations of ocean circulation by capturing dependencies across different temporal scales.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mixed-Former",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Residual Connections",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "To enhance gradient flow and improve training stability, residual connections are introduced after each Two-Stage Attention Layer. The residual connection is formulated as: H(l) = Z(l) + H(l). This residual mechanism allows gradients to propagate directly from later layers to earlier ones, thereby mitigating the vanishing gradient problem in deep networks.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mixed-Former",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Percentage Error (MAPE)",
+            "target_entity_type": "Metric",
+            "paragraph": "Percentage Error (MAPE), and Root Mean Square Error (RMSE) are employed to assess the discrepancy and bias between the actual data values and the corrected data values, thereby evaluating the performance of the correction model. MAE, MAPE, and MSE reflect the average error magnitude between corrected and actual values, the relative error percentage between corrected and actual values, and the relative error along with the goodness of fit between corrected and actual values, respectively.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mixed-Former",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Root Mean Square Error (RMSE)",
+            "target_entity_type": "Metric",
+            "paragraph": "Percentage Error (MAPE), and Root Mean Square Error (RMSE) are employed to assess the discrepancy and bias between the actual data values and the corrected data values, thereby evaluating the performance of the correction model. MAE, MAPE, and MSE reflect the average error magnitude between corrected and actual values, the relative error percentage between corrected and actual values, and the relative error along with the goodness of fit between corrected and actual values, respectively.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Mean Squared Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean Absolute Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Correlation Coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mixed-former",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Dimension-Segment-Wise (DSW) embedding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Two-Stage Attention (TSA) layer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Hierarchical Encoder-Decoder (HED) structure",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Transformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Transformer architecture",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "MITgcm",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HYCOM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Autoregressive Moving Average (ARMA)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Convolutional Neural Networks (CNN)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Recurrent Neural Networks (RNN)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "LSTM",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "GRU",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Informer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ProbSparse attention",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Autoformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "auto-correlation mechanism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Pyraformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "pyramidal attention structure",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ST-Transformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Graph Neural Networks (GNN)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "MTGNN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Temporal Convolutional Networks (TCN)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "N-BEATS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "DeepAR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PDE-Net",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FourCastNet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Fourier Neural Operator (FNO)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "time",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "predicted values",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ground truth values",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "sea surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mercator Ocean",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "MACOM",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "satellites",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "buoys",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "southern Sea of Japan",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "(1/12)\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "one day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Dimension-Segment-Wise (DSW) embedding method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Multi-Head Self-Attention (MSA) mechanism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Multi-Scale Structure",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Segment Merging layer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Multi-Layer Attention Layer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Residual Connections",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Percentage Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Root Mean Square Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CNN-LSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Crossformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "R",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAPE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "satellite",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "buoy",
+            "entity_type": "Platform"
+        }
+    ],
+    "referenced_works": []
+}

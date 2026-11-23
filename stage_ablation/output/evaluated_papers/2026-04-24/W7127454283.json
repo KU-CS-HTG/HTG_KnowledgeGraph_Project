@@ -1,0 +1,940 @@
+{
+    "uri": "https://openalex.org/W7127454283",
+    "title": "Anthropogenic climate change drives rising global heat stress and its spatial inequality",
+    "venue": {
+        "name": "Nature Communications",
+        "id": "https://openalex.org/S64187185",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5124921147",
+            "display_name": "Jian Peng",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5124882164",
+            "display_name": "Qi Wang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5124742017",
+            "display_name": "Zhiwei Yang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5102384171",
+            "display_name": "Jianquan Dong",
+            "orcid": "https://orcid.org/0000-0001-6810-172X"
+        },
+        {
+            "id": "https://openalex.org/A5124961620",
+            "display_name": "Xiaoyu Yu",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5124927538",
+            "display_name": "Jonathan Corcoran",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.1038/s41467-026-69164-y",
+    "abstract": "Global heat stress is intensifying under climate change, yet the relative roles of natural and anthropogenic forcing remain insufficiently quantified. Here, we show that global heat stress trend, assessed with the Universal Thermal Climate Index, increases markedly over the past four decades, with 52% of land area experiencing rises in mean heat stress intensity and 67% showing increases in extreme heat stress days. We find that anthropogenic climate change overwhelmingly dominates these trends, with the land area it dominates nearly twice as large as that dominated by natural climate change. Anthropogenic climate change also results in pronounced spatial inequality in heat stress trends across different economies, with low-income economies experiencing a growth rate two to three times higher than that of high-income economies. These findings demonstrate that human-induced climate change is amplifying global heat stress while deepening existing spatial inequalities, underscoring the urgency of equitable climate change adaptation.",
+    "field": "Climate change and heat stress inequality",
+    "problem": "The precise contributions of anthropogenic versus natural climate change to rising global heat stress remain inadequately quantified, particularly regarding their differential impacts across socioeconomically diverse regions and the resulting spatial inequality.",
+    "method": "This study employs a LightGBM model with statistical and counterfactual analyses to quantify and attribute global heat stress trends and their spatial inequality to anthropogenic and natural climate change drivers across economies from 1981 to 2020.",
+    "task": "The task is to quantify rising global heat stress trends, attribute their causes to natural versus anthropogenic climate change, and analyze the resulting spatial inequality across economies at different development levels.",
+    "model": [
+        "LightGBM"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.792900025844574
+        },
+        {
+            "id": "https://openalex.org/keywords/heat-stress",
+            "display_name": "Heat stress",
+            "score": 0.6753000020980835
+        },
+        {
+            "id": "https://openalex.org/keywords/forcing",
+            "display_name": "Forcing (mathematics)",
+            "score": 0.5595999956130981
+        },
+        {
+            "id": "https://openalex.org/keywords/global-warming",
+            "display_name": "Global warming",
+            "score": 0.5386999845504761
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.45179998874664307
+        },
+        {
+            "id": "https://openalex.org/keywords/greenhouse-gas",
+            "display_name": "Greenhouse gas",
+            "score": 0.4178999960422516
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-commitment",
+            "display_name": "Climate commitment",
+            "score": 0.3840999901294708
+        },
+        {
+            "id": "https://openalex.org/keywords/spatial-ecology",
+            "display_name": "Spatial ecology",
+            "score": 0.3763999938964844
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.792900025844574
+        },
+        {
+            "id": "https://openalex.org/C2987418964",
+            "wikidata": "https://www.wikidata.org/wiki/Q242165",
+            "display_name": "Heat stress",
+            "level": 2,
+            "score": 0.6753000020980835
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6029999852180481
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.589900016784668
+        },
+        {
+            "id": "https://openalex.org/C197115733",
+            "wikidata": "https://www.wikidata.org/wiki/Q1003136",
+            "display_name": "Forcing (mathematics)",
+            "level": 2,
+            "score": 0.5595999956130981
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.5386999845504761
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.45179998874664307
+        },
+        {
+            "id": "https://openalex.org/C47737302",
+            "wikidata": "https://www.wikidata.org/wiki/Q167336",
+            "display_name": "Greenhouse gas",
+            "level": 2,
+            "score": 0.4178999960422516
+        },
+        {
+            "id": "https://openalex.org/C48999079",
+            "wikidata": "https://www.wikidata.org/wiki/Q5133511",
+            "display_name": "Climate commitment",
+            "level": 5,
+            "score": 0.3840999901294708
+        },
+        {
+            "id": "https://openalex.org/C158709400",
+            "wikidata": "https://www.wikidata.org/wiki/Q3578586",
+            "display_name": "Spatial ecology",
+            "level": 2,
+            "score": 0.3763999938964844
+        },
+        {
+            "id": "https://openalex.org/C21036866",
+            "wikidata": "https://www.wikidata.org/wiki/Q181767",
+            "display_name": "Stress (linguistics)",
+            "level": 2,
+            "score": 0.36329999566078186
+        },
+        {
+            "id": "https://openalex.org/C2776608160",
+            "wikidata": "https://www.wikidata.org/wiki/Q4785462",
+            "display_name": "Natural (archaeology)",
+            "level": 2,
+            "score": 0.3571000099182129
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.3370000123977661
+        },
+        {
+            "id": "https://openalex.org/C205537798",
+            "wikidata": "https://www.wikidata.org/wiki/Q1277161",
+            "display_name": "Extreme weather",
+            "level": 3,
+            "score": 0.3287999927997589
+        },
+        {
+            "id": "https://openalex.org/C2993190167",
+            "wikidata": "https://www.wikidata.org/wiki/Q215864",
+            "display_name": "Extreme heat",
+            "level": 3,
+            "score": 0.3257000148296356
+        },
+        {
+            "id": "https://openalex.org/C99578197",
+            "wikidata": "https://www.wikidata.org/wiki/Q1463606",
+            "display_name": "Radiative forcing",
+            "level": 3,
+            "score": 0.3188999891281128
+        },
+        {
+            "id": "https://openalex.org/C114990195",
+            "wikidata": "https://www.wikidata.org/wiki/Q1430548",
+            "display_name": "Effects of global warming",
+            "level": 4,
+            "score": 0.3183000087738037
+        },
+        {
+            "id": "https://openalex.org/C173727882",
+            "wikidata": "https://www.wikidata.org/wiki/Q5153620",
+            "display_name": "Common spatial pattern",
+            "level": 2,
+            "score": 0.30070000886917114
+        },
+        {
+            "id": "https://openalex.org/C199491958",
+            "wikidata": "https://www.wikidata.org/wiki/Q737514",
+            "display_name": "Global change",
+            "level": 3,
+            "score": 0.28360000252723694
+        },
+        {
+            "id": "https://openalex.org/C94747663",
+            "wikidata": "https://www.wikidata.org/wiki/Q7574086",
+            "display_name": "Spatial variability",
+            "level": 2,
+            "score": 0.2702000141143799
+        },
+        {
+            "id": "https://openalex.org/C175605778",
+            "wikidata": "https://www.wikidata.org/wiki/Q3299701",
+            "display_name": "Natural resource economics",
+            "level": 1,
+            "score": 0.265500009059906
+        },
+        {
+            "id": "https://openalex.org/C69131732",
+            "wikidata": "https://www.wikidata.org/wiki/Q2956049",
+            "display_name": "Abrupt climate change",
+            "level": 5,
+            "score": 0.2653999924659729
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.25440001487731934
+        },
+        {
+            "id": "https://openalex.org/C100970517",
+            "wikidata": "https://www.wikidata.org/wiki/Q52107",
+            "display_name": "Physical geography",
+            "level": 1,
+            "score": 0.2526000142097473
+        },
+        {
+            "id": "https://openalex.org/C45555294",
+            "wikidata": "https://www.wikidata.org/wiki/Q28113351",
+            "display_name": "Inequality",
+            "level": 2,
+            "score": 0.251800000667572
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper attributes rising global heat stress and its spatial inequality to anthropogenic climate change, demonstrating that human-induced warming is the dominant driver and disproportionately impacts low-income economies.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ERA5-HEAT",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.25\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "ERA5-HEAT is the first set of global historical UTCI raster data, which is based on ERA5 meteorological reanalysis data 43, and offers a temporal resolution of hour-by-hour and a spatial resolution of 0.25\u00b0 44.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5-Land",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.1\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "Temperature data were sourced from the ERA5-Land dataset, which has a spatial resolution of 0.1\u00b0.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.25\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "Relative humidity data were obtained from the ERA5 reanalysis dataset, which has a spatial resolution of 0.25\u00b0.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DAMIP",
+            "source_entity_type": "Project",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "CMIP6",
+            "target_entity_type": "Project",
+            "paragraph": "Model data were sourced from the Coupled Model Intercomparison Project Phase 6 (CMIP6). The Detection and Attribution Model Intercomparison Project (DAMIP), a component of CMIP6, was utilized to assess the contributions of various factors to global climate change.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ScenarioMIP",
+            "source_entity_type": "Project",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "CMIP6",
+            "target_entity_type": "Project",
+            "paragraph": "Additionally, future climate projections based on the SSP and Representative Concentration Pathways (RCP) are provided by the CMIP6 Scenario Model Intercomparison Projection (ScenarioMIP).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "historical simulation",
+            "source_entity_type": "Experiment",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "DAMIP",
+            "target_entity_type": "Project",
+            "paragraph": "The Detection and Attribution Model Intercomparison Project (DAMIP), a component of CMIP6, was utilized to assess the contributions of various factors to global climate change. DAMIP provides four sets of experiments: historical simulation, natural-forced historical simulation, greenhouse gas-forced historical simulation, and aerosol-forced historical simulation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "natural-forced historical simulation",
+            "source_entity_type": "Experiment",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "DAMIP",
+            "target_entity_type": "Project",
+            "paragraph": "The Detection and Attribution Model Intercomparison Project (DAMIP), a component of CMIP6, was utilized to assess the contributions of various factors to global climate change. DAMIP provides four sets of experiments: historical simulation, natural-forced historical simulation, greenhouse gas-forced historical simulation, and aerosol-forced historical simulation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "greenhouse gas-forced historical simulation",
+            "source_entity_type": "Experiment",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "DAMIP",
+            "target_entity_type": "Project",
+            "paragraph": "The Detection and Attribution Model Intercomparison Project (DAMIP), a component of CMIP6, was utilized to assess the contributions of various factors to global climate change. DAMIP provides four sets of experiments: historical simulation, natural-forced historical simulation, greenhouse gas-forced historical simulation, and aerosol-forced historical simulation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "aerosol-forced historical simulation",
+            "source_entity_type": "Experiment",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "DAMIP",
+            "target_entity_type": "Project",
+            "paragraph": "The Detection and Attribution Model Intercomparison Project (DAMIP), a component of CMIP6, was utilized to assess the contributions of various factors to global climate change. DAMIP provides four sets of experiments: historical simulation, natural-forced historical simulation, greenhouse gas-forced historical simulation, and aerosol-forced historical simulation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SSP2-4.5",
+            "source_entity_type": "Experiment",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "ScenarioMIP",
+            "target_entity_type": "Project",
+            "paragraph": "Additionally, future climate projections based on the SSP and Representative Concentration Pathways (RCP) are provided by the CMIP6 Scenario Model Intercomparison Projection (ScenarioMIP). We chose the SSP2-4.5 (Medium Development with Medium Radiative Forcing), which is considered a continuation of the historical scenario 45, for the period of 2015\u20132020 to complement the historical climate data.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "South Asia",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Studies indicate pronounced disparities in adaptive capacities and vulnerability to heat stress, particularly in South Asia, Africa, and South America, where extreme heat events increasingly threaten economic stability and public health 13.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Africa",
+            "target_entity_type": "Continent",
+            "paragraph": "Studies indicate pronounced disparities in adaptive capacities and vulnerability to heat stress, particularly in South Asia, Africa, and South America, where extreme heat events increasingly threaten economic stability and public health 13.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "South America",
+            "target_entity_type": "Continent",
+            "paragraph": "Studies indicate pronounced disparities in adaptive capacities and vulnerability to heat stress, particularly in South Asia, Africa, and South America, where extreme heat events increasingly threaten economic stability and public health 13.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Eurasia",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The results showed that the border areas of Eurasia and North Africa exhibited a higher increasing trend in mean heat stress intensity (Fig. 1a).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "North Africa",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The results showed that the border areas of Eurasia and North Africa exhibited a higher increasing trend in mean heat stress intensity (Fig. 1a).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Australia",
+            "target_entity_type": "Country",
+            "paragraph": "Eastern Australia and northern Australia, in particular, experienced the most dramatic increases in mean heat stress intensity, with trend increases for 2001-2020 of 0.082\u00b0C\u00b7yr\u00af\u00b9 and 0.071\u00b0C\u00b7yr\u00af\u00b9 relative to 1981\u20132000, respectively.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Madagascar",
+            "target_entity_type": "Country",
+            "paragraph": "The low-latitude tropics recorded similarly steep rises. For example, Central Africa reached +2.030 days yr\u00af\u00b9, with North-Eastern Africa +1.494 days yr\u00af\u00b9, and Madagascar +1.444 days yr\u00af\u00b9.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Brazil",
+            "target_entity_type": "Country",
+            "paragraph": "Within this latitudinal band, regions such as Brazil and many parts of equatorial Africa showed a particularly strong anthropogenic signal. Many low-income and lower-middle-income economies exhibited a higher anthropogenic contribution to heat stress (e.g., Brazil and sub-Saharan African countries).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Europe",
+            "target_entity_type": "Continent",
+            "paragraph": "four decades, as evidenced by increases in the annual hours above UTCI 32\u00b0C in regions ranging from Europe (1979-2019) 15, to the Caribbean and subtropical Atlantic 16, South America 17 and even high-latitude Beringia 18.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Caribbean",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "four decades, as evidenced by increases in the annual hours above UTCI 32\u00b0C in regions ranging from Europe (1979-2019) 15, to the Caribbean and subtropical Atlantic 16, South America 17 and even high-latitude Beringia 18.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "India",
+            "target_entity_type": "Country",
+            "paragraph": "In India's coastal cities, for example, a rising Steadman Heat Stress Index indicates a substantial decline in work performance in future decades, especially under higher Shared Socioeconomic Pathways (SSP) scenarios 22.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "South Africa",
+            "target_entity_type": "Country",
+            "paragraph": "For example, in South Africa, inequality increases sharply at higher temperatures, especially affecting agricultural workers and poorer households with lower adaptive capacity 26.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat stress",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "West Africa",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "For instance, South Asia and West Africa have reported simultaneous exposure to heat extremes and rainfall anomalies that overwhelmed coping systems 38,39.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "South Asia",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Studies indicate pronounced disparities in adaptive capacities and vulnerability to heat stress, particularly in South Asia, Africa, and South America, where extreme heat events increasingly threaten economic stability and public health 13.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Africa",
+            "target_entity_type": "Continent",
+            "paragraph": "Studies indicate pronounced disparities in adaptive capacities and vulnerability to heat stress, particularly in South Asia, Africa, and South America, where extreme heat events increasingly threaten economic stability and public health 13.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heat waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "South America",
+            "target_entity_type": "Continent",
+            "paragraph": "Studies indicate pronounced disparities in adaptive capacities and vulnerability to heat stress, particularly in South Asia, Africa, and South America, where extreme heat events increasingly threaten economic stability and public health 13.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Universal Thermal Climate Index",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "wet-bulb temperature",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "net effective temperature",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Theil-Sen estimator",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mann-Kendall trend analysis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Eurasia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "North Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Eastern Australia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "northern Australia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "western Southern Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "eastern Southern Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "north-eastern South America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "north-western South America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Central Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North-Eastern Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Madagascar",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "tropical South America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North South America sub-region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South American Monsoon zone",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "equatorial Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mean heat stress intensity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Extreme heat stress days",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Theil-Sen slope",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mann-Kendall trend test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "p-value",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "New Zealand",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "historical scenario",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "natural-only scenario",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "anthropogenic-only scenario",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Northeastern South America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northern Australia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Brazil",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "northern North America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Russian Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "concentration index",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Caribbean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "subtropical Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Beringia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Steadman Heat Stress Index",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Shared Socioeconomic Pathways",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "sub-Saharan African countries",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Africa",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "African equatorial regions",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Latin American cities",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ERA5-HEAT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPCC AR6",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "South Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "West Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ERA5-Land",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "0.1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "Detection and Attribution Model Intercomparison Project",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "historical simulation",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "natural-forced historical simulation",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "greenhouse gas-forced historical simulation",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "aerosol-forced historical simulation",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Representative Concentration Pathways",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "ScenarioMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "SSP2-4.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "heat stress days",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "R\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GDP per capita",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heatwave",
+            "entity_type": "Weather_Event"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2070844476",
+        "https://openalex.org/W2149187735",
+        "https://openalex.org/W2162775913",
+        "https://openalex.org/W2398134364",
+        "https://openalex.org/W3022490421",
+        "https://openalex.org/W3040144530",
+        "https://openalex.org/W3042785817",
+        "https://openalex.org/W3045723651",
+        "https://openalex.org/W3130783541",
+        "https://openalex.org/W3156059982",
+        "https://openalex.org/W3161549521",
+        "https://openalex.org/W3171801815",
+        "https://openalex.org/W3181205698",
+        "https://openalex.org/W3203145978",
+        "https://openalex.org/W3203675430",
+        "https://openalex.org/W3211328827",
+        "https://openalex.org/W4283030074",
+        "https://openalex.org/W4283070066",
+        "https://openalex.org/W4283512311",
+        "https://openalex.org/W4293237588",
+        "https://openalex.org/W4303684207",
+        "https://openalex.org/W4308615951",
+        "https://openalex.org/W4313502404",
+        "https://openalex.org/W4376272368",
+        "https://openalex.org/W4377287078",
+        "https://openalex.org/W4378904059",
+        "https://openalex.org/W4379260238",
+        "https://openalex.org/W4382362038",
+        "https://openalex.org/W4385782445",
+        "https://openalex.org/W4386730138",
+        "https://openalex.org/W4387251990",
+        "https://openalex.org/W4387448724",
+        "https://openalex.org/W4387698176",
+        "https://openalex.org/W4391166345",
+        "https://openalex.org/W4391250688",
+        "https://openalex.org/W4391612697",
+        "https://openalex.org/W4392845096",
+        "https://openalex.org/W4393238350",
+        "https://openalex.org/W4398193556",
+        "https://openalex.org/W4400033862",
+        "https://openalex.org/W4400265004",
+        "https://openalex.org/W4401813547",
+        "https://openalex.org/W4403425198",
+        "https://openalex.org/W4412444810",
+        "https://openalex.org/W4414084165"
+    ]
+}

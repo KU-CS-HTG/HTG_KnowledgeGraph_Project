@@ -1,0 +1,775 @@
+{
+    "uri": "https://openalex.org/W2157168483",
+    "title": "A new algorithm to simulate the dynamics of a glacier: theory and applications",
+    "venue": {
+        "name": "Journal of Glaciology",
+        "id": "https://openalex.org/S140216511",
+        "type": "journal"
+    },
+    "publication_year": 2008,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5068013521",
+            "display_name": "Guillaume Jouvet",
+            "orcid": "https://orcid.org/0000-0002-8546-8459"
+        },
+        {
+            "id": "https://openalex.org/A5001315978",
+            "display_name": "Marco Picasso",
+            "orcid": "https://orcid.org/0000-0002-0069-5856"
+        },
+        {
+            "id": "https://openalex.org/A5113449031",
+            "display_name": "Jacques Rappaz",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5062121939",
+            "display_name": "Heinz Blatter",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.3189/002214308787780049",
+    "abstract": "Abstract We propose a novel Eulerian algorithm to compute the changes of a glacier geometry for given mass balances. The surface of a glacier is obtained by solving a transport equation for the volume of fluid (VOF). The surface mass balance is taken into account by adding an interfacial term in the transport equation. An unstructured mesh with standard stabilized finite elements is used to solve the non-linear Stokes problem. The VOF function is computed on a structured grid with a high resolution. The algorithm is stable for Courant numbers larger than unity and conserves mass to a high accuracy. To demonstrate the potential of the algorithm, we apply it to reconstructed Late-glacial states of a small valley glacier, Vadret Muragl, in the Swiss Alps.",
+    "field": "Glacier modeling",
+    "problem": "Existing glacier models using moving meshes struggle to simulate surface evolution because adapting the mesh at each time step is computationally demanding and can cause problems and inaccuracies at complex ice margins with large curvature or steep slopes.",
+    "method": "We propose a novel Eulerian algorithm to compute glacier geometry changes by solving a transport equation for the volume of fluid (VOF) on a structured grid, with the ice velocity field obtained from the full Stokes equations solved using finite elements on a separate unstructured mesh.",
+    "task": "The task is to develop a novel Eulerian algorithm using the volume of fluid (VOF) method to compute the dynamic changes in a glacier's geometry over time for a given mass balance.",
+    "model": [
+        "no"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/volume-of-fluid-method",
+            "display_name": "Volume of fluid method",
+            "score": 0.7679314613342285
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.6877352595329285
+        },
+        {
+            "id": "https://openalex.org/keywords/glacier",
+            "display_name": "Glacier",
+            "score": 0.6791524887084961
+        },
+        {
+            "id": "https://openalex.org/keywords/algorithm",
+            "display_name": "Algorithm",
+            "score": 0.5120425820350647
+        },
+        {
+            "id": "https://openalex.org/keywords/grid",
+            "display_name": "Grid",
+            "score": 0.49244436621665955
+        },
+        {
+            "id": "https://openalex.org/keywords/function",
+            "display_name": "Function (biology)",
+            "score": 0.4680110216140747
+        },
+        {
+            "id": "https://openalex.org/keywords/eulerian-path",
+            "display_name": "Eulerian path",
+            "score": 0.44198110699653625
+        },
+        {
+            "id": "https://openalex.org/keywords/surface",
+            "display_name": "Surface (topology)",
+            "score": 0.4176047444343567
+        },
+        {
+            "id": "https://openalex.org/keywords/geometry",
+            "display_name": "Geometry",
+            "score": 0.2837335467338562
+        },
+        {
+            "id": "https://openalex.org/keywords/geomorphology",
+            "display_name": "Geomorphology",
+            "score": 0.2789022922515869
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.27315080165863037
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.2565077543258667
+        },
+        {
+            "id": "https://openalex.org/keywords/applied-mathematics",
+            "display_name": "Applied mathematics",
+            "score": 0.24311843514442444
+        },
+        {
+            "id": "https://openalex.org/keywords/geodesy",
+            "display_name": "Geodesy",
+            "score": 0.24164366722106934
+        },
+        {
+            "id": "https://openalex.org/keywords/lagrangian",
+            "display_name": "Lagrangian",
+            "score": 0.14226165413856506
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C127210992",
+            "wikidata": "https://www.wikidata.org/wiki/Q4291887",
+            "display_name": "Volume of fluid method",
+            "level": 3,
+            "score": 0.7679314613342285
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.6877352595329285
+        },
+        {
+            "id": "https://openalex.org/C100834320",
+            "wikidata": "https://www.wikidata.org/wiki/Q35666",
+            "display_name": "Glacier",
+            "level": 2,
+            "score": 0.6791524887084961
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.5120425820350647
+        },
+        {
+            "id": "https://openalex.org/C187691185",
+            "wikidata": "https://www.wikidata.org/wiki/Q2020720",
+            "display_name": "Grid",
+            "level": 2,
+            "score": 0.49244436621665955
+        },
+        {
+            "id": "https://openalex.org/C14036430",
+            "wikidata": "https://www.wikidata.org/wiki/Q3736076",
+            "display_name": "Function (biology)",
+            "level": 2,
+            "score": 0.4680110216140747
+        },
+        {
+            "id": "https://openalex.org/C43058520",
+            "wikidata": "https://www.wikidata.org/wiki/Q624580",
+            "display_name": "Eulerian path",
+            "level": 3,
+            "score": 0.44198110699653625
+        },
+        {
+            "id": "https://openalex.org/C2776799497",
+            "wikidata": "https://www.wikidata.org/wiki/Q484298",
+            "display_name": "Surface (topology)",
+            "level": 2,
+            "score": 0.4176047444343567
+        },
+        {
+            "id": "https://openalex.org/C2524010",
+            "wikidata": "https://www.wikidata.org/wiki/Q8087",
+            "display_name": "Geometry",
+            "level": 1,
+            "score": 0.2837335467338562
+        },
+        {
+            "id": "https://openalex.org/C114793014",
+            "wikidata": "https://www.wikidata.org/wiki/Q52109",
+            "display_name": "Geomorphology",
+            "level": 1,
+            "score": 0.2789022922515869
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.27315080165863037
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.2565077543258667
+        },
+        {
+            "id": "https://openalex.org/C28826006",
+            "wikidata": "https://www.wikidata.org/wiki/Q33521",
+            "display_name": "Applied mathematics",
+            "level": 1,
+            "score": 0.24311843514442444
+        },
+        {
+            "id": "https://openalex.org/C13280743",
+            "wikidata": "https://www.wikidata.org/wiki/Q131089",
+            "display_name": "Geodesy",
+            "level": 1,
+            "score": 0.24164366722106934
+        },
+        {
+            "id": "https://openalex.org/C53469067",
+            "wikidata": "https://www.wikidata.org/wiki/Q505735",
+            "display_name": "Lagrangian",
+            "level": 2,
+            "score": 0.14226165413856506
+        },
+        {
+            "id": "https://openalex.org/C38349280",
+            "wikidata": "https://www.wikidata.org/wiki/Q1434290",
+            "display_name": "Flow (mathematics)",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C78458016",
+            "wikidata": "https://www.wikidata.org/wiki/Q840400",
+            "display_name": "Evolutionary biology",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper introduces a novel mass-conserving Eulerian algorithm that simulates glacier dynamics by solving a volume of fluid (VOF) transport equation on a structured grid for surface evolution, coupled with a full Stokes ice flow model on a separate unstructured mesh.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Eulerian algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "ABSTRACT. We propose a novel Eulerian algorithm to compute the changes of a glacier geometry for given mass balances. The surface of a glacier is obtained by solving a transport equation for the volume of fluid (VOF). The surface mass balance is taken into account by adding an interfacial term in the transport equation. An unstructured mesh with standard stabilized finite elements is used to solve the non-linear Stokes problem. The VOF function is computed on a structured grid with a high resolution. The algorithm is stable for Courant numbers larger than unity and conserves mass to a high accuracy. To demonstrate the potential of the algorithm, we apply it to reconstructed Late-glacial states of a small valley glacier, Vadret Muragl, in the Swiss Alps.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "volume of fluid (VOF) method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In this paper, we propose a different approach for handling the surface evolution of a glacier. The presence of ice is indicated by a volume of fluid (VOF) function, which takes the value of 1 inside and 0 outside the glacier. This description allows the geometry of the glacier to change its topology. The full Stokes solution of the flow field is computed on a fixed unstructured mesh, and the varying surface is computed on a fixed and regular Cartesian grid with high resolution, by solving an equation for the mass transport for the VOF function. Two mass-conserving post- processing steps prevent numerical diffusion and numerical compression. The surface mass balance is taken into account by adding a source term to the transport equation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "solver for the non-linear Stokes problem",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "An unstructured mesh with standard stabilized finite elements is used to solve the non-linear Stokes problem. The VOF function is computed on a structured grid with a high resolution.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "unstructured mesh",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "An unstructured mesh with standard stabilized finite elements is used to solve the non-linear Stokes problem. The VOF function is computed on a structured grid with a high resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "structured grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The VOF function is computed on a structured grid with a high resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "forward characteristic method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Firstly, we solve Equation (14) without the interface term on the right-hand side using a forward characteristic method (Pironneau, 1989). Let \u03c6n+1/2 denote an approximation of the solution at time tn+1 of : ...",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "dual-mesh configuration",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Two different meshes are used (Fig. 2) to take into account the various specifications of the advection and elliptic problems. These two meshes are fixed and are not changed during the computations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "simple line interface calculation (SLIC) algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The first post-processing step is the simple line interface calculation (SLIC) algorithm presented by Scardovelli and Zaleski (1999) which reduces numerical diffusion. Figure 4 shows the numerical diffusion of a projection step and the efficiency with which the SLIC algorithm suppresses this diffusion in a simple example.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "fixed-point algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Given the new ice domain, \u03a9Hn+1, a fixed-point algorithm is used to solve the non-linear problem, Equations (3\u20137). The pressure and velocity fields computed at the previous time- step are chosen as the starting point for the iteration.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "stabilized continuous, piecewise-linear finite-element method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The above set of equations is solved using a stabilized continuous, piecewise-linear finite-element method (Franca and Frey, 1992), which ensures the velocity field satisfies \u2207 \u00b7 Uk = O(H).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "difference between the computed and the exact ice volume",
+            "target_entity_type": "Metric",
+            "paragraph": "The error of \u03c6 (defined by Equation (16)) is checked at the final time, T = 1 year: E\u03c6 = h2\u2211i,k|\u03c6(t, xi, zk) \u2212 \u03c6Tex| where (xi, zk) are the coordinates of the center of the cell (ik). The physical meaning of E\u03c6 is the difference between the computed and the exact ice volume.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "equilibrium simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Firstly, we test the ability of the model to compute accurate equilibrium shapes and the assumed uniqueness of an equilibrium shape for a given mass-balance distribution. For a given elevation-dependent mass balance, the model was run with two different initial shapes.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "transient simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "An advancing glacier tongue is generally steeper and thicker than a retreating glacier. This suggests transient experiments to test the hypothesis that the reconstructed ice tongue is in a transient retreat state rather than a stagnant or equilibrium position. A simulation of an advance into the Punt Muragl equilibrium state and a subsequent retreat was carried out.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "finite-element ice-flow model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The combination of a finite-element ice-flow model with the new transport scheme yields a flexible and stable model for the dynamics of small mountain glaciers with a wide range of sizes and shapes. The method is well suited to simulate the dynamics of a glacier over long periods of time.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Jouvet et al. 2008 glacier model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "mass-transport algorithm",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The combination of a finite-element ice-flow model with the new transport scheme yields a flexible and stable model for the dynamics of small mountain glaciers with a wide range of sizes and shapes. The method is well suited to simulate the dynamics of a glacier over long periods of time. Moreover, it can handle complex topological shapes. Contrary to the Saint-Venant models, it can handle a change.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Swiss Federal Institute of Technology (EPFL)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ETH Z\u00fcrich",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute for Scientific Analysis and Calculations",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute for Atmospheric and Climate Science",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Lausanne",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Z\u00fcrich",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Switzerland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Vadret Muragl",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Swiss Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Val de Muragl",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pontresina",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Margun",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Punt Muragl",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "volume of fluid (VOF)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "non-linear Stokes problem",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "shallow-ice approximation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "full Stokes solutions",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "incompressible stationary Stokes equations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Glen's flow law",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Saint-Venant equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "level-set approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "simple line interface calculation (SLIC) algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "fixed-point algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "secant method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Eulerian algorithm",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "unstructured mesh",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "stabilized finite elements",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "structured grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "finite differences",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "finite elements",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "finite volumes",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Lagrangian methods",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Eulerian methods",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Time-splitting scheme",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "forward characteristic method",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "method of characteristics",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "anisotropic mesh",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "fine-structured grid of cubic cells",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "stabilized continuous, piecewise-linear finite-element method",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "characteristic Galerkin methods",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "finite-element ice-flow model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "debris-covered glacier",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "steady-state",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "equilibrium",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "transient",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "stagnant",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Courant-Friedrichs-Lewy (CFL) number",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "numerical diffusion",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "numerical compression",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "rate of convergence",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "difference between the computed and the exact ice volume",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "linear convergence",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mass conservation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Climate sensitivity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "uniqueness of an equilibrium shape",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "dL/dZELA",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "landIce",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "atmos",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "strain tensor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "viscosity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rate factor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Glen's exponent",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "effective stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "thickness of the ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "height of ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mass balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "melt gradient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "equilibrium-line altitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "maximum accumulation rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "glacier length",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "glacier volume",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "5 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "year",
+            "entity_type": "Frequency"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2056753208",
+        "https://openalex.org/W2116986669",
+        "https://openalex.org/W1994875376",
+        "https://openalex.org/W2043459131",
+        "https://openalex.org/W1980153000",
+        "https://openalex.org/W2085885354",
+        "https://openalex.org/W1999396203",
+        "https://openalex.org/W2032092224",
+        "https://openalex.org/W2319130094",
+        "https://openalex.org/W188414524",
+        "https://openalex.org/W1505645564",
+        "https://openalex.org/W2034609615",
+        "https://openalex.org/W4246112776",
+        "https://openalex.org/W6701589015",
+        "https://openalex.org/W2065438814",
+        "https://openalex.org/W4246618158",
+        "https://openalex.org/W2152694125",
+        "https://openalex.org/W4242728694",
+        "https://openalex.org/W2125781554",
+        "https://openalex.org/W2077447749",
+        "https://openalex.org/W1984806906",
+        "https://openalex.org/W2056124888",
+        "https://openalex.org/W2051456183",
+        "https://openalex.org/W2327577256",
+        "https://openalex.org/W2289366489",
+        "https://openalex.org/W2119817529",
+        "https://openalex.org/W605155612",
+        "https://openalex.org/W2098476371",
+        "https://openalex.org/W3120346248",
+        "https://openalex.org/W1634938045",
+        "https://openalex.org/W2065845977",
+        "https://openalex.org/W2023754092"
+    ]
+}

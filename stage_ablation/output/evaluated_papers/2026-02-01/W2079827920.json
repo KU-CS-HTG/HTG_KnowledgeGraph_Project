@@ -1,0 +1,1916 @@
+{
+    "uri": "https://openalex.org/W2079827920",
+    "title": "The OASIS3 coupler: a European climate modelling community software",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2013,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5089762930",
+            "display_name": "Sophie Valcke",
+            "orcid": "https://orcid.org/0000-0002-0438-5978"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-6-373-2013",
+    "abstract": "Abstract. This paper presents the OASIS3 coupling software used in five of the seven European Earth System Models (ESMs) participating to the Fifth Coupled Model Intercomparison Project (CMIP5). A short history of the coupler development is followed by a technical description of OASIS3. The performances of a few relatively high resolution models coupled with OASIS3 are then described. It is shown that, although its limited field-per-field parallelism will eventually become a bottleneck in the simulation, OASIS3 can still be considered an appropriate tool for most of these relatively demanding coupled configurations. Its successful use in different CMIP5 ESMs is then detailed. A discussion of the benefits and drawbacks of the OASIS3's approach and a presentation of planned developments conclude the paper.",
+    "field": "Climate model coupling",
+    "problem": "Coupling independently developed climate components requires flexible software, but the chosen external coupler approach creates a performance bottleneck in high-resolution models due to its limited parallelism, which hinders scalability and overall simulation efficiency as component codes become more parallel.",
+    "method": "This paper presents the OASIS3 coupling software, an external coupler that enables climate model components to run as separate applications and exchange data through a flexible library, with the coupler handling the necessary field transformations, regridding, and communication between the component models.",
+    "task": "The task is to present the OASIS3 coupling software, detailing its technical description, history, performance, and its use in European Earth System Models participating in the Coupled Model Intercomparison Project 5 (CMIP5).",
+    "model": [
+        "CNRM-CM5",
+        "IPSL-CM5",
+        "CMCC-ESM",
+        "CMCC-CM",
+        "CMCC-CMS",
+        "EC-Earth",
+        "MPI-ESM",
+        "MPI-ESM-MR",
+        "MPI-ESM-LR",
+        "MPI-ESM-P",
+        "HadCM3",
+        "HadGEM2",
+        "HadGEM3",
+        "NorESM1",
+        "Unified Model",
+        "ARPEGE-NEMIX",
+        "EMAC-MPIOM",
+        "ESMF",
+        "CCSM",
+        "FMS"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/bottleneck",
+            "display_name": "Bottleneck",
+            "score": 0.8558075428009033
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.6831982135772705
+        },
+        {
+            "id": "https://openalex.org/keywords/field",
+            "display_name": "Field (mathematics)",
+            "score": 0.5946730971336365
+        },
+        {
+            "id": "https://openalex.org/keywords/software",
+            "display_name": "Software",
+            "score": 0.5869328379631042
+        },
+        {
+            "id": "https://openalex.org/keywords/coupled-model-intercomparison-project",
+            "display_name": "Coupled model intercomparison project",
+            "score": 0.5816918015480042
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5717103481292725
+        },
+        {
+            "id": "https://openalex.org/keywords/coupling",
+            "display_name": "Coupling (piping)",
+            "score": 0.5313456654548645
+        },
+        {
+            "id": "https://openalex.org/keywords/presentation",
+            "display_name": "Presentation (obstetrics)",
+            "score": 0.473888099193573
+        },
+        {
+            "id": "https://openalex.org/keywords/resolution",
+            "display_name": "Resolution (logic)",
+            "score": 0.4146231412887573
+        },
+        {
+            "id": "https://openalex.org/keywords/systems-engineering",
+            "display_name": "Systems engineering",
+            "score": 0.39339298009872437
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.20054617524147034
+        },
+        {
+            "id": "https://openalex.org/keywords/programming-language",
+            "display_name": "Programming language",
+            "score": 0.11106711626052856
+        },
+        {
+            "id": "https://openalex.org/keywords/embedded-system",
+            "display_name": "Embedded system",
+            "score": 0.1069035530090332
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.07805284857749939
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.07747972011566162
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2780513914",
+            "wikidata": "https://www.wikidata.org/wiki/Q18210350",
+            "display_name": "Bottleneck",
+            "level": 2,
+            "score": 0.8558075428009033
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.6831982135772705
+        },
+        {
+            "id": "https://openalex.org/C9652623",
+            "wikidata": "https://www.wikidata.org/wiki/Q190109",
+            "display_name": "Field (mathematics)",
+            "level": 2,
+            "score": 0.5946730971336365
+        },
+        {
+            "id": "https://openalex.org/C2777904410",
+            "wikidata": "https://www.wikidata.org/wiki/Q7397",
+            "display_name": "Software",
+            "level": 2,
+            "score": 0.5869328379631042
+        },
+        {
+            "id": "https://openalex.org/C25022447",
+            "wikidata": "https://www.wikidata.org/wiki/Q5178021",
+            "display_name": "Coupled model intercomparison project",
+            "level": 4,
+            "score": 0.5816918015480042
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5717103481292725
+        },
+        {
+            "id": "https://openalex.org/C131584629",
+            "wikidata": "https://www.wikidata.org/wiki/Q4308705",
+            "display_name": "Coupling (piping)",
+            "level": 2,
+            "score": 0.5313456654548645
+        },
+        {
+            "id": "https://openalex.org/C2777601897",
+            "wikidata": "https://www.wikidata.org/wiki/Q3409113",
+            "display_name": "Presentation (obstetrics)",
+            "level": 2,
+            "score": 0.473888099193573
+        },
+        {
+            "id": "https://openalex.org/C138268822",
+            "wikidata": "https://www.wikidata.org/wiki/Q1051925",
+            "display_name": "Resolution (logic)",
+            "level": 2,
+            "score": 0.4146231412887573
+        },
+        {
+            "id": "https://openalex.org/C201995342",
+            "wikidata": "https://www.wikidata.org/wiki/Q682496",
+            "display_name": "Systems engineering",
+            "level": 1,
+            "score": 0.39339298009872437
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.20054617524147034
+        },
+        {
+            "id": "https://openalex.org/C199360897",
+            "wikidata": "https://www.wikidata.org/wiki/Q9143",
+            "display_name": "Programming language",
+            "level": 1,
+            "score": 0.11106711626052856
+        },
+        {
+            "id": "https://openalex.org/C149635348",
+            "wikidata": "https://www.wikidata.org/wiki/Q193040",
+            "display_name": "Embedded system",
+            "level": 1,
+            "score": 0.1069035530090332
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.07805284857749939
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.07747972011566162
+        },
+        {
+            "id": "https://openalex.org/C126838900",
+            "wikidata": "https://www.wikidata.org/wiki/Q77604",
+            "display_name": "Radiology",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C127413603",
+            "wikidata": "https://www.wikidata.org/wiki/Q11023",
+            "display_name": "Engineering",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C78519656",
+            "wikidata": "https://www.wikidata.org/wiki/Q101333",
+            "display_name": "Mechanical engineering",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C202444582",
+            "wikidata": "https://www.wikidata.org/wiki/Q837863",
+            "display_name": "Pure mathematics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C71924100",
+            "wikidata": "https://www.wikidata.org/wiki/Q11190",
+            "display_name": "Medicine",
+            "level": 0,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents the OASIS3 coupling software, providing a technical description, performance analysis, and detailing its successful implementation in five of the seven European Earth System Models participating in the Coupled Model Intercomparison Project 5 (CMIP5).",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ARPEGE-Climat 5.1",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "CNRM-CM5, assembled by M\u00e9t\u00e9o-France and CERFACS, is used in CMIP5 for the decadal and the long-range simulations (Voldoire et al., 2011). CNRM-CM5 is composed of 3 codes: the atmospheric component ARPEGE-Climat 5.1 including the surface module SURFEX, the ocean NEMO V3.2 interfaced with the sea-ice module GELATO and the runoff routing model TRIP.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ARPEGE-Climat 5.1",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "SURFEX",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "CNRM-CM5, assembled by M\u00e9t\u00e9o-France and CERFACS, is used in CMIP5 for the decadal and the long-range simulations (Voldoire et al., 2011). CNRM-CM5 is composed of 3 codes: the atmospheric component ARPEGE-Climat 5.1 including the surface module SURFEX, the ocean NEMO V3.2 interfaced with the sea-ice module GELATO and the runoff routing model TRIP.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "NEMO V3.2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "CNRM-CM5, assembled by M\u00e9t\u00e9o-France and CERFACS, is used in CMIP5 for the decadal and the long-range simulations (Voldoire et al., 2011). CNRM-CM5 is composed of 3 codes: the atmospheric component ARPEGE-Climat 5.1 including the surface module SURFEX, the ocean NEMO V3.2 interfaced with the sea-ice module GELATO and the runoff routing model TRIP.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO V3.2",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "GELATO",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "CNRM-CM5, assembled by M\u00e9t\u00e9o-France and CERFACS, is used in CMIP5 for the decadal and the long-range simulations (Voldoire et al., 2011). CNRM-CM5 is composed of 3 codes: the atmospheric component ARPEGE-Climat 5.1 including the surface module SURFEX, the ocean NEMO V3.2 interfaced with the sea-ice module GELATO and the runoff routing model TRIP.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "TRIP",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "CNRM-CM5, assembled by M\u00e9t\u00e9o-France and CERFACS, is used in CMIP5 for the decadal and the long-range simulations (Voldoire et al., 2011). CNRM-CM5 is composed of 3 codes: the atmospheric component ARPEGE-Climat 5.1 including the surface module SURFEX, the ocean NEMO V3.2 interfaced with the sea-ice module GELATO and the runoff routing model TRIP.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T127 triangular truncation",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The atmospheric spectral model operates on a T127 triangular truncation with 31 vertical levels and the coupling fields are expressed on a reduced Gaussian grid equivalent to a spatial resolution of about 1.4 degree in both longitude and latitude (with a total of 24 572 grid points).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "31 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The atmospheric spectral model operates on a T127 triangular truncation with 31 vertical levels and the coupling fields are expressed on a reduced Gaussian grid equivalent to a spatial resolution of about 1.4 degree in both longitude and latitude (with a total of 24 572 grid points).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "reduced Gaussian grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The atmospheric spectral model operates on a T127 triangular truncation with 31 vertical levels and the coupling fields are expressed on a reduced Gaussian grid equivalent to a spatial resolution of about 1.4 degree in both longitude and latitude (with a total of 24 572 grid points).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "ORCA1 configuration",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "NEMO uses the ORCA1 configuration (362 \u00d7 292 grid points horizontally) with 42 levels vertically.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "42 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "NEMO uses the ORCA1 configuration (362 \u00d7 292 grid points horizontally) with 42 levels vertically.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "bilinear regridding",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "6 coupling fields are transferred from the ocean to the atmosphere using bilinear regridding for the surface temperature, sea ice extent and albedo fields, and bicubic regridding for the surface current fields, while 16 fields are transferred from the atmosphere to the ocean using bicubic regridding for the wind stress fields and conservative remapping with option FRACNNEI for the water, solar and non-solar heat fluxes.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "bicubic regridding",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "6 coupling fields are transferred from the ocean to the atmosphere using bilinear regridding for the surface temperature, sea ice extent and albedo fields, and bicubic regridding for the surface current fields, while 16 fields are transferred from the atmosphere to the ocean using bicubic regridding for the wind stress fields and conservative remapping with option FRACNNEI for the water, solar and non-solar heat fluxes.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "conservative remapping with option FRACNNEI",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "6 coupling fields are transferred from the ocean to the atmosphere using bilinear regridding for the surface temperature, sea ice extent and albedo fields, and bicubic regridding for the surface current fields, while 16 fields are transferred from the atmosphere to the ocean using bicubic regridding for the wind stress fields and conservative remapping with option FRACNNEI for the water, solar and non-solar heat fluxes.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "global conservation with option GLOBAL",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "As the coastlines in the ocean and in the atmosphere models do not match, overall global operations are used to force the global conservation with options GLOBAL, GLBPOS, BASBAL or BASPOS (see Sect. 3.3.1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "global conservation with option GLBPOS",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "As the coastlines in the ocean and in the atmosphere models do not match, overall global operations are used to force the global conservation with options GLOBAL, GLBPOS, BASBAL or BASPOS (see Sect. 3.3.1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "global conservation with option BASBAL",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "As the coastlines in the ocean and in the atmosphere models do not match, overall global operations are used to force the global conservation with options GLOBAL, GLBPOS, BASBAL or BASPOS (see Sect. 3.3.1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "global conservation with option BASPOS",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "As the coastlines in the ocean and in the atmosphere models do not match, overall global operations are used to force the global conservation with options GLOBAL, GLBPOS, BASBAL or BASPOS (see Sect. 3.3.1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "1-nearest-neighbour regridding",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The runoff field modelled by the land scheme (included in the atmosphere model) is transferred to TRIP with a 1- nearest-neighbour regridding, so to avoid smoothing the extrema of the field, followed by a global conservation of type GLBPOS.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "6 nearest-neighbour Gaussian-weighted interpolation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The runoff is remapped from the TRIP land discharge coastal points to the ORCA1 ocean coastal band with a 6 nearest-neighbour Gaussian-weighted interpolation ensuring an uneven distribution of the runoff with the target points closer to the coast receiving more runoff.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LMDz",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "IPSL-CM5 (Dufresne et al., 2013) is developed by IPSL and includes 5 component models representing the Earth System climate and its carbon cycle: LMDz (atmosphere), NEMO (ocean, oceanic biogeochemistry and sea-ice), ORCHIDEE (continental surfaces and vegetation), INCA (atmospheric tropospheric chemistry) and Reprobus (atmospheric stratospheric chemistry).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "NEMO",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "IPSL-CM5 (Dufresne et al., 2013) is developed by IPSL and includes 5 component models representing the Earth System climate and its carbon cycle: LMDz (atmosphere), NEMO (ocean, oceanic biogeochemistry and sea-ice), ORCHIDEE (continental surfaces and vegetation), INCA (atmospheric tropospheric chemistry) and Reprobus (atmospheric stratospheric chemistry).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDz",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ORCHIDEE",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "INCA, Reprobus and ORCHIDEE are directly included in LMDz that is coupled to NEMO through OASIS3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDz",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "INCA",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "INCA, Reprobus and ORCHIDEE are directly included in LMDz that is coupled to NEMO through OASIS3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDz",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Reprobus",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "INCA, Reprobus and ORCHIDEE are directly included in LMDz that is coupled to NEMO through OASIS3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "ORCA2 configuration",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In CMIP5, three different versions of IPSL-CM5 are used that differ by the atmospheric model with two different sets of parameterisation and two horizontal resolution (LMDZ5A with 96 \u00d7 95 L39) and (LMDZ5B_with_144 \u00d7 144 L39) while NEMO is always used in the ORCA2 configuration (149 \u00d7 182 grid points horizontally) with 30 levels vertically.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "30 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In CMIP5, three different versions of IPSL-CM5 are used that differ by the atmospheric model with two different sets of parameterisation and two horizontal resolution (LMDZ5A with 96 \u00d7 95 L39) and (LMDZ5B_with_144 \u00d7 144 L39) while NEMO is always used in the ORCA2 configuration (149 \u00d7 182 grid points horizontally) with 30 levels vertically.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "in-house conservative algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The fields transferred from the ocean to the atmosphere (surface temperature over water and ice, sea-ice extent, surface currents and albedo) are remapped by OASIS3 using a pre-defined set of weights and addresses. This set of weights and addresses was computed using an inhouse conservative algorithm: the source cells and the target cell are described by 8 points (4 corners and 4 middle point on each edge) and, for each target cell, the resulting polygons are projected on a plane passing through the centre of the target cell with a projection that conserves surfaces; the weight of each source cell is then evaluated using a general algorithm calculating the intersection between polygons 5).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM5",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "in-house bicubic interpolation method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In the atmosphere-to-ocean direction, the 3 Cartesian components of the wind stress and the 10m wind speed are first extrapolated over land and then interpolated to the U and V ocean grid using an in-house bicubic interpolation method, directly implemented in OASIS3 sources.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-CM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "OPA8.2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Three different coupled models are used at CMCC for CMIP5. They are all based on the OPA8.2 ocean model, using the ORCA2 configuration (182 \u00d7 149 grid points) with 31 vertical levels and including LIM for the sea-ice, coupled by OASIS3 to the atmosphere model ECHAM5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-CM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ECHAM5",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Three different coupled models are used at CMCC for CMIP5. They are all based on the OPA8.2 ocean model, using the ORCA2 configuration (182 \u00d7 149 grid points) with 31 vertical levels and including LIM for the sea-ice, coupled by OASIS3 to the atmosphere model ECHAM5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-CMS",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "OPA8.2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Three different coupled models are used at CMCC for CMIP5. They are all based on the OPA8.2 ocean model, using the ORCA2 configuration (182 \u00d7 149 grid points) with 31 vertical levels and including LIM for the sea-ice, coupled by OASIS3 to the atmosphere model ECHAM5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-CMS",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ECHAM5",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Three different coupled models are used at CMCC for CMIP5. They are all based on the OPA8.2 ocean model, using the ORCA2 configuration (182 \u00d7 149 grid points) with 31 vertical levels and including LIM for the sea-ice, coupled by OASIS3 to the atmosphere model ECHAM5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-ESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "OPA8.2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Three different coupled models are used at CMCC for CMIP5. They are all based on the OPA8.2 ocean model, using the ORCA2 configuration (182 \u00d7 149 grid points) with 31 vertical levels and including LIM for the sea-ice, coupled by OASIS3 to the atmosphere model ECHAM5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-ESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ECHAM5",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Three different coupled models are used at CMCC for CMIP5. They are all based on the OPA8.2 ocean model, using the ORCA2 configuration (182 \u00d7 149 grid points) with 31 vertical levels and including LIM for the sea-ice, coupled by OASIS3 to the atmosphere model ECHAM5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "OPA8.2",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LIM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Three different coupled models are used at CMCC for CMIP5. They are all based on the OPA8.2 ocean model, using the ORCA2 configuration (182 \u00d7 149 grid points) with 31 vertical levels and including LIM for the sea-ice, coupled by OASIS3 to the atmosphere model ECHAM5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CMCC-CM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T159",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "CMCC-CM (Scoccimarro et al., 2011) is the standard CMCC climate model used for CMIP5 pre-industrial simulations, decadal simulations and centennial projections. In CMCC-CM, ECHAM5 is run with a horizontal triangular truncation T159 (480 \u00d7 240 grid points) and 31 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-CMS",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T63",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "CMCC-CMS is very close to CMCC-CM except that the atmosphere model runs at higher resolution to resolve the stratosphere with a horizontal triangular truncation T63 with 95 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-ESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T31",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In CMCC-ESM (Vichi et al., 2011), a lower resolution is used for ECHAM5, i.e., a horizontal triangular truncation T31 (96 \u00d7 48 grid points) with 19 vertical levels, but the processes related to the biological and geochemical parts of the carbon cycle are represented by SILVA for the land and vegetation (interfaced directly in ECHAM5) and by PELAGOS for the ocean biogeochemistry (interfaced directly in OPA).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM5",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "SILVA",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In CMCC-ESM (Vichi et al., 2011), a lower resolution is used for ECHAM5, i.e., a horizontal triangular truncation T31 (96 \u00d7 48 grid points) with 19 vertical levels, but the processes related to the biological and geochemical parts of the carbon cycle are represented by SILVA for the land and vegetation (interfaced directly in ECHAM5) and by PELAGOS for the ocean biogeochemistry (interfaced directly in OPA).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "OPA8.2",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "PELAGOS",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In CMCC-ESM (Vichi et al., 2011), a lower resolution is used for ECHAM5, i.e., a horizontal triangular truncation T31 (96 \u00d7 48 grid points) with 19 vertical levels, but the processes related to the biological and geochemical parts of the carbon cycle are represented by SILVA for the land and vegetation (interfaced directly in ECHAM5) and by PELAGOS for the ocean biogeochemistry (interfaced directly in OPA).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth V2.3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "IFS",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The EC-Earth model is a state-of-the-art Earth System Model based on ECMWF Seasonal Forecasting System. Different partners in the consortium further develop the baseline model into an Earth System Model used for different climate studies and for CMIP5 in particular. Currently, the EC-Earth consortium consists of 25 academic institutions and meteorological services from 10 countries in Europe. EC-Earth component models are IFS for the atmosphere, including the land and vegetation HTESSEL component, and NEMO for the ocean including the LIM2 sea-ice model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth V2.3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "NEMO",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The EC-Earth model is a state-of-the-art Earth System Model based on ECMWF Seasonal Forecasting System. Different partners in the consortium further develop the baseline model into an Earth System Model used for different climate studies and for CMIP5 in particular. Currently, the EC-Earth consortium consists of 25 academic institutions and meteorological services from 10 countries in Europe. EC-Earth component models are IFS for the atmosphere, including the land and vegetation HTESSEL component, and NEMO for the ocean including the LIM2 sea-ice model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IFS",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "HTESSEL",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The EC-Earth model is a state-of-the-art Earth System Model based on ECMWF Seasonal Forecasting System. Different partners in the consortium further develop the baseline model into an Earth System Model used for different climate studies and for CMIP5 in particular. Currently, the EC-Earth consortium consists of 25 academic institutions and meteorological services from 10 countries in Europe. EC-Earth component models are IFS for the atmosphere, including the land and vegetation HTESSEL component, and NEMO for the ocean including the LIM2 sea-ice model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LIM2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The EC-Earth model is a state-of-the-art Earth System Model based on ECMWF Seasonal Forecasting System. Different partners in the consortium further develop the baseline model into an Earth System Model used for different climate studies and for CMIP5 in particular. Currently, the EC-Earth consortium consists of 25 academic institutions and meteorological services from 10 countries in Europe. EC-Earth component models are IFS for the atmosphere, including the land and vegetation HTESSEL component, and NEMO for the ocean including the LIM2 sea-ice model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth V2.3",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T159",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In EC-Earth V2.3 used for CMIP5 (Hazelger et al., 2011), the IFS version used is cycle 31r1 and runs with horizontal triangular truncation of T159 (i.e., with 35718 grid points in the horizontal for the reduced Gaussian grid) and 62 vertical levels; NEMO uses the ORCA1 configuration with 362 \u00d7 292 grid points horizontally and 42 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth V2.3",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "62 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In EC-Earth V2.3 used for CMIP5 (Hazelger et al., 2011), the IFS version used is cycle 31r1 and runs with horizontal triangular truncation of T159 (i.e., with 35718 grid points in the horizontal for the reduced Gaussian grid) and 62 vertical levels; NEMO uses the ORCA1 configuration with 362 \u00d7 292 grid points horizontally and 42 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth V2.3",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "ORCA1 configuration",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In EC-Earth V2.3 used for CMIP5 (Hazelger et al., 2011), the IFS version used is cycle 31r1 and runs with horizontal triangular truncation of T159 (i.e., with 35718 grid points in the horizontal for the reduced Gaussian grid) and 62 vertical levels; NEMO uses the ORCA1 configuration with 362 \u00d7 292 grid points horizontally and 42 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth V2.3",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "SCRIP first-order conservative remapping",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "All coupling fields in both directions are remapped using the SCRIP first-order conservative remapping and no other transformation is performed by OASIS3.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-MR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ECHAM6",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In MPI-ESM (Giorgetta et al., 2012 and Jungclaus et al., 2012) the atmospheric circulation model ECHAM6, including the dynamical land vegetation JSBACH, is coupled via OASIS3 to the ocean and sea ice model MPIOM that also includes the marine biogeochemistry model HAMOCC.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ECHAM6",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In MPI-ESM (Giorgetta et al., 2012 and Jungclaus et al., 2012) the atmospheric circulation model ECHAM6, including the dynamical land vegetation JSBACH, is coupled via OASIS3 to the ocean and sea ice model MPIOM that also includes the marine biogeochemistry model HAMOCC.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-P",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ECHAM6",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In MPI-ESM (Giorgetta et al., 2012 and Jungclaus et al., 2012) the atmospheric circulation model ECHAM6, including the dynamical land vegetation JSBACH, is coupled via OASIS3 to the ocean and sea ice model MPIOM that also includes the marine biogeochemistry model HAMOCC.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-MR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "MPIOM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In MPI-ESM (Giorgetta et al., 2012 and Jungclaus et al., 2012) the atmospheric circulation model ECHAM6, including the dynamical land vegetation JSBACH, is coupled via OASIS3 to the ocean and sea ice model MPIOM that also includes the marine biogeochemistry model HAMOCC.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "MPIOM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In MPI-ESM (Giorgetta et al., 2012 and Jungclaus et al., 2012) the atmospheric circulation model ECHAM6, including the dynamical land vegetation JSBACH, is coupled via OASIS3 to the ocean and sea ice model MPIOM that also includes the marine biogeochemistry model HAMOCC.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-P",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "MPIOM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In MPI-ESM (Giorgetta et al., 2012 and Jungclaus et al., 2012) the atmospheric circulation model ECHAM6, including the dynamical land vegetation JSBACH, is coupled via OASIS3 to the ocean and sea ice model MPIOM that also includes the marine biogeochemistry model HAMOCC.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECHAM6",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "JSBACH",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In MPI-ESM (Giorgetta et al., 2012 and Jungclaus et al., 2012) the atmospheric circulation model ECHAM6, including the dynamical land vegetation JSBACH, is coupled via OASIS3 to the ocean and sea ice model MPIOM that also includes the marine biogeochemistry model HAMOCC.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPIOM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "HAMOCC",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In MPI-ESM (Giorgetta et al., 2012 and Jungclaus et al., 2012) the atmospheric circulation model ECHAM6, including the dynamical land vegetation JSBACH, is coupled via OASIS3 to the ocean and sea ice model MPIOM that also includes the marine biogeochemistry model HAMOCC.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-MR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T63 spherical harmonic truncation",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "All 3 versions use a spherical harmonic truncation T63 in ECHAM6.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T63 spherical harmonic truncation",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "All 3 versions use a spherical harmonic truncation T63 in ECHAM6.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-P",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T63 spherical harmonic truncation",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "All 3 versions use a spherical harmonic truncation T63 in ECHAM6.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-MR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "95 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In MPI-ESM-MR, ECHAM6 is run using with 95 vertical levels and the MPI-OM tripolar ocean grid has an approximate horizontal resolution of 0.4 degree and 40 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-MR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "tripolar ocean grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In MPI-ESM-MR, ECHAM6 is run using with 95 vertical levels and the MPI-OM tripolar ocean grid has an approximate horizontal resolution of 0.4 degree and 40 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "47 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In MPI-ESM-LR and MPI-ESM-P, ECHAM6 uses 47 vertical levels and MPI-OM uses a bi-polar grid with poles located over Greenland and Antarctica with a horizontal resolution of about 1.5 degree, still with 40 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-P",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "47 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In MPI-ESM-LR and MPI-ESM-P, ECHAM6 uses 47 vertical levels and MPI-OM uses a bi-polar grid with poles located over Greenland and Antarctica with a horizontal resolution of about 1.5 degree, still with 40 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-LR",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "bi-polar grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In MPI-ESM-LR and MPI-ESM-P, ECHAM6 uses 47 vertical levels and MPI-OM uses a bi-polar grid with poles located over Greenland and Antarctica with a horizontal resolution of about 1.5 degree, still with 40 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-P",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "bi-polar grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In MPI-ESM-LR and MPI-ESM-P, ECHAM6 uses 47 vertical levels and MPI-OM uses a bi-polar grid with poles located over Greenland and Antarctica with a horizontal resolution of about 1.5 degree, still with 40 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-MR",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "first order conservative remapping with FRACAREA normalisation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In this direction, all coupling fields are transferred using first order conservative remapping with FRACAREA normalization.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-LR",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "first order conservative remapping with FRACAREA normalisation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In this direction, all coupling fields are transferred using first order conservative remapping with FRACAREA normalization.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-P",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "first order conservative remapping with FRACAREA normalisation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In this direction, all coupling fields are transferred using first order conservative remapping with FRACAREA normalization.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM-MR",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "bicubic interpolation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In the other direction, the coupling fields (i.e., the eastward and northward wind stress vector components over water and ice, the snow flux over ice, the water flux in the ocean, the heat flux over water and ice, the residual heat flux, the surface shortwave flux, the wind speed at 10 m, the atmospheric CO2 concentration, and the ocean-atmosphere CO2 flux) are first extrapolated over land and then interpolated using first order conservative remapping (again with FRACAREA normalisation) besides the wind stress components in MPI-ESM-MR that use a bicubic interpolation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "OASIS3",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CERFACS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Earth System Models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Coupled General Circulation Models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Atmospheric General Circulation Model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Oceanic General Circulation Model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "land surface",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "sea ice",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "atmospheric chemistry",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "marine biology",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "carbon cycle",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "World Climate Research Programme",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "World Meteorological Organisation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Intergovernmental Panel of Climate Change",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "OASIS2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "OPA",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LODYC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ARPEGE",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LMDz",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "M\u00e9t\u00e9o-France",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "LMD",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "external coupler",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "PRISM",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "MPI2",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "MPI1",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "MPMD",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "APPLE",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "BOX",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "end-point exchange principle",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "field-per-field parallelisation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Time accumulation or averaging",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Combination",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Addition or multiplication by a scalar",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Extrapolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SCRIP",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "N nearest-neighbour",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bilinear",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bicubic",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "2-D conservative remapping",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DESTAREA normalisation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FRACAREA normalisation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FRACNNEI",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Forced global conservation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GLOBAL",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GLBPOS",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "BASBAL",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "BASPOS",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Recreation of subgrid scale variability",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "logically-rectangular",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "unstructured grids",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Gaussian Reduced grids",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Regular latitude-longitude",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "stretched or/and rotated grids",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "HadGEM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL Earth System Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ARPEGE-NEMIX",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UK Hadley Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IPSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Unified Model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NEMO",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CICE",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ORCA025",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "0.25 degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "85 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "75 depth levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "IFS",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "T799",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "~20 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "62 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "EC-Earth consortium",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "MPI-M",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NCAS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "MetOffice",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "SMHI",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "KNMI",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CMCC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "HadCM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNRM-CM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ARPEGE-Climat 5.1",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "SURFEX",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NEMO V3.2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "GELATO",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "TRIP",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "T127",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "31 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "reduced Gaussian grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1.4 degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ORCA1",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "42 levels vertically",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "every day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "bilinear regridding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice extent",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface current",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "bicubic regridding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "wind stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "conservative remapping with option FRACNNEI",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "water, solar and non-solar heat fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1-nearest-neighbour regridding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "6 nearest-neighbour Gaussian-weighted interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "IPSL-CM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ORCHIDEE",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "INCA",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Reprobus",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "oceanic biogeochemistry",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "continental surfaces and vegetation",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "atmospheric tropospheric chemistry",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "atmospheric stratospheric chemistry",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "LMDZ5A",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LMDZ5B",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ORCA2",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "30 levels vertically",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "in-house conservative algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "10m wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CMCC-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OPA8.2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LIM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ECHAM5",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CMCC-CM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "T159",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "CMCC-CMS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "T63",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "95 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "T31",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "19 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "SILVA",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "PELAGOS",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "160 min",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "one day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "nearest-neighbour interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "snow thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea water velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "bilinear algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bicubic interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "atmospheric CO2 partial pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "EC-Earth V2.3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HTESSEL",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LIM2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "3hr",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "SCRIP first-order conservative remapping",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MPI-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECHAM6",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "JSBACH",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "MPIOM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "HAMOCC",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "MPI-ESM-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM-P",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "tripolar ocean grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "0.4 degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "40 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "bi-polar grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1.5 degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "first order conservative remapping with FRACAREA normalisation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "multiple binary",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "integrated framework",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ESMF",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CCSM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FMS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IS-ENES",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "OASIS4",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "OASIS3-MCT",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "MCT",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Argonne National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCAR",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Open-PALM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CWIPI",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ONERA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IS-ENES2",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP3",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CCSM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ALADIN",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "REMO",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "RegCM",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "WRF",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "HIRLAM",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "MM5",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "COSMO-CLM",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "CREM",
+            "entity_type": "RCM"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2069198249",
+        "https://openalex.org/W2035996493",
+        "https://openalex.org/W1976242206",
+        "https://openalex.org/W2043196564",
+        "https://openalex.org/W1990376608",
+        "https://openalex.org/W1544875105",
+        "https://openalex.org/W2903691225",
+        "https://openalex.org/W1964551106",
+        "https://openalex.org/W2128217437",
+        "https://openalex.org/W2161987407",
+        "https://openalex.org/W2162343095",
+        "https://openalex.org/W1725273891",
+        "https://openalex.org/W2125720396",
+        "https://openalex.org/W2006200303",
+        "https://openalex.org/W2045607019",
+        "https://openalex.org/W2120278748",
+        "https://openalex.org/W2125767514",
+        "https://openalex.org/W2029614531",
+        "https://openalex.org/W4232196245",
+        "https://openalex.org/W2108087478",
+        "https://openalex.org/W1988021198",
+        "https://openalex.org/W2075112338",
+        "https://openalex.org/W2014292464",
+        "https://openalex.org/W593731039"
+    ]
+}

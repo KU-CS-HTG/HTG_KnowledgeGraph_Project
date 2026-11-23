@@ -1,0 +1,1410 @@
+{
+    "uri": "https://openalex.org/W7130518852",
+    "title": "Implementation of primary and secondary ice production in EC-Earth3-AerChem: global impacts and insights",
+    "venue": {
+        "name": "Atmospheric chemistry and physics",
+        "id": "https://openalex.org/S162708223",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5122367030",
+            "display_name": "Montserrat Costa-Sur\u00f3s",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126369572",
+            "display_name": "Mar\u00eda Gon\u00e7alves Ageitos",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5019042065",
+            "display_name": "Marios Chatziparaschos",
+            "orcid": "https://orcid.org/0000-0003-2014-6499"
+        },
+        {
+            "id": "https://openalex.org/A5003772560",
+            "display_name": "Paraskevi Georgakaki",
+            "orcid": "https://orcid.org/0000-0002-4296-8779"
+        },
+        {
+            "id": "https://openalex.org/A5057450057",
+            "display_name": "Manu Anna Thomas",
+            "orcid": "https://orcid.org/0000-0002-5709-7507"
+        },
+        {
+            "id": "https://openalex.org/A5113137491",
+            "display_name": "Gilbert Montan\u00e9 Pinto",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126409798",
+            "display_name": "Stelios Myriokefalitakis",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5109548730",
+            "display_name": "Twan van Noije",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5052158736",
+            "display_name": "Philippe Le Sager",
+            "orcid": "https://orcid.org/0000-0002-2855-668X"
+        },
+        {
+            "id": "https://openalex.org/A5126390099",
+            "display_name": "Maria Kanakidou",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126391483",
+            "display_name": "Athanasios Nenes",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126404757",
+            "display_name": "Carlos P\u00e9rez Garc\u00eda-Pando",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/acp-26-2667-2026",
+    "abstract": "Abstract. Clouds and aerosol\u2013cloud interactions remain major sources of uncertainty in climate projections. Here, we improve the representation of mixed-phase clouds (MPCs) in the EC-Earth3-AerChem Earth System Model by replacing the default temperature-dependent nucleation scheme with a physically based aerosol-sensitive heterogeneous ice nucleation parameterization. This scheme accounts for immersion freezing by K-feldspar, quartz, and marine organic aerosols, and is combined with a machine-learning-based parameterization of secondary ice production (SIP) to represent ice crystal multiplication processes. The new configuration improves agreement with global in situ ice nucleating particle (INP) observations and reveals realistic spatial patterns of ice crystal number concentrations (ICNC) across diverse environments. While these improvements do not eliminate the persistent structural cloud biases in EC-Earth3-AerChem, the aerosol-sensitive primary ice production scheme increases supercooled liquid water and cloud cover, particularly in the extratropics. Critically, the addition of SIP rebalances the cloud phase by enhancing ICNC in regions with low primary ice formation. Compared to the default scheme, the aerosol-sensitive primary ice production configuration with SIP reduces cloud radiative effect biases at mid- and high latitudes, while increasing them in the lower latitudes, leading to comparable global biases across configurations. Our results highlight the importance of explicitly representing both aerosol-sensitive nucleation and SIP for realistic simulations of MPCs and their radiative impacts. Unlike previous schemes, in which ice concentrations depend directly on INPs, the presence of effective SIP enhances ice formation in all MPCs and reduces the sensitivity of ICNC to aerosols, especially at low INP levels.",
+    "field": "Aerosol-cloud interactions",
+    "problem": "The EC-Earth3-AerChem climate model poorly represents mixed-phase clouds because its default ice formation scheme is only temperature-dependent, failing to account for aerosol-sensitive primary ice nucleation or secondary ice multiplication, leading to major uncertainties in climate projections.",
+    "method": "We improve mixed-phase cloud representation in an Earth System Model by implementing a physically-based, aerosol-sensitive primary ice nucleation scheme and a machine-learning-based parameterization for secondary ice production to better simulate ice crystal formation.",
+    "task": "The task is to implement aerosol-sensitive primary and secondary ice production schemes into the EC-Earth3-AerChem climate model to improve the representation of mixed-phase clouds and investigate the resulting global impacts on cloud properties and radiative fluxes.",
+    "model": [
+        "EC-Earth3-AerChem",
+        "EC-Earth3",
+        "TM4-ECPL",
+        "TM5",
+        "IFS",
+        "WRF",
+        "EC-Earth4"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/ice-nucleus",
+            "display_name": "Ice nucleus",
+            "score": 0.781000018119812
+        },
+        {
+            "id": "https://openalex.org/keywords/ice-crystals",
+            "display_name": "Ice crystals",
+            "score": 0.7300999760627747
+        },
+        {
+            "id": "https://openalex.org/keywords/supercooling",
+            "display_name": "Supercooling",
+            "score": 0.6409000158309937
+        },
+        {
+            "id": "https://openalex.org/keywords/radiative-transfer",
+            "display_name": "Radiative transfer",
+            "score": 0.5504000186920166
+        },
+        {
+            "id": "https://openalex.org/keywords/nucleation",
+            "display_name": "Nucleation",
+            "score": 0.5430999994277954
+        },
+        {
+            "id": "https://openalex.org/keywords/ice-cloud",
+            "display_name": "Ice cloud",
+            "score": 0.5081999897956848
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5059999823570251
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-sensitivity",
+            "display_name": "Climate sensitivity",
+            "score": 0.42089998722076416
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C122409099",
+            "wikidata": "https://www.wikidata.org/wiki/Q3136993",
+            "display_name": "Ice nucleus",
+            "level": 3,
+            "score": 0.781000018119812
+        },
+        {
+            "id": "https://openalex.org/C125388846",
+            "wikidata": "https://www.wikidata.org/wiki/Q1325808",
+            "display_name": "Ice crystals",
+            "level": 2,
+            "score": 0.7300999760627747
+        },
+        {
+            "id": "https://openalex.org/C112964491",
+            "wikidata": "https://www.wikidata.org/wiki/Q213659",
+            "display_name": "Supercooling",
+            "level": 2,
+            "score": 0.6409000158309937
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5629000067710876
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.5554999709129333
+        },
+        {
+            "id": "https://openalex.org/C74902906",
+            "wikidata": "https://www.wikidata.org/wiki/Q1190858",
+            "display_name": "Radiative transfer",
+            "level": 2,
+            "score": 0.5504000186920166
+        },
+        {
+            "id": "https://openalex.org/C61048295",
+            "wikidata": "https://www.wikidata.org/wiki/Q909022",
+            "display_name": "Nucleation",
+            "level": 2,
+            "score": 0.5430999994277954
+        },
+        {
+            "id": "https://openalex.org/C2776120014",
+            "wikidata": "https://www.wikidata.org/wiki/Q12119193",
+            "display_name": "Ice cloud",
+            "level": 3,
+            "score": 0.5081999897956848
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5059999823570251
+        },
+        {
+            "id": "https://openalex.org/C54464151",
+            "wikidata": "https://www.wikidata.org/wiki/Q521783",
+            "display_name": "Climate sensitivity",
+            "level": 4,
+            "score": 0.42089998722076416
+        },
+        {
+            "id": "https://openalex.org/C126603772",
+            "wikidata": "https://www.wikidata.org/wiki/Q7440067",
+            "display_name": "Sea ice growth processes",
+            "level": 5,
+            "score": 0.4101000130176544
+        },
+        {
+            "id": "https://openalex.org/C79974875",
+            "wikidata": "https://www.wikidata.org/wiki/Q483639",
+            "display_name": "Cloud computing",
+            "level": 2,
+            "score": 0.3952000141143799
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.3935000002384186
+        },
+        {
+            "id": "https://openalex.org/C2778348673",
+            "wikidata": "https://www.wikidata.org/wiki/Q739302",
+            "display_name": "Production (economics)",
+            "level": 2,
+            "score": 0.33399999141693115
+        },
+        {
+            "id": "https://openalex.org/C2777977315",
+            "wikidata": "https://www.wikidata.org/wiki/Q7243056",
+            "display_name": "Primary (astronomy)",
+            "level": 2,
+            "score": 0.32269999384880066
+        },
+        {
+            "id": "https://openalex.org/C40382383",
+            "wikidata": "https://www.wikidata.org/wiki/Q2399824",
+            "display_name": "Mesoscale meteorology",
+            "level": 2,
+            "score": 0.30720001459121704
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.29980000853538513
+        },
+        {
+            "id": "https://openalex.org/C15908118",
+            "wikidata": "https://www.wikidata.org/wiki/Q2997395",
+            "display_name": "Radiative cooling",
+            "level": 2,
+            "score": 0.28360000252723694
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.27090001106262207
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.2662999927997589
+        },
+        {
+            "id": "https://openalex.org/C2988944679",
+            "wikidata": "https://www.wikidata.org/wiki/Q7937",
+            "display_name": "Global climate",
+            "level": 3,
+            "score": 0.2599000036716461
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Meyers",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Rlog",
+            "result": "0.86"
+        },
+        {
+            "model": "Meyers",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Pt1",
+            "result": "11.3%"
+        },
+        {
+            "model": "Meyers",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Pt1.5",
+            "result": "16.5%"
+        },
+        {
+            "model": "Harrison",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Rlog",
+            "result": "0.86"
+        },
+        {
+            "model": "Harrison",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Pt1",
+            "result": "11.3%"
+        },
+        {
+            "model": "Harrison",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Pt1.5",
+            "result": "16.5%"
+        },
+        {
+            "model": "Wilson",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Rlog",
+            "result": "0.81"
+        },
+        {
+            "model": "Wilson",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Pt1",
+            "result": "47.0%"
+        },
+        {
+            "model": "Wilson",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Pt1.5",
+            "result": "72.3%"
+        },
+        {
+            "model": "Harrison + Wilson",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Rlog",
+            "result": "0.82"
+        },
+        {
+            "model": "Harrison + Wilson",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Pt1",
+            "result": "51.4%"
+        },
+        {
+            "model": "Harrison + Wilson",
+            "observational_dataset": "INP field measurements",
+            "evaluation_metric": "Pt1.5",
+            "result": "74.5%"
+        }
+    ],
+    "innovation": "This paper improves mixed-phase cloud representation in the EC-Earth3-AerChem model by implementing a physically-based, aerosol-sensitive primary ice nucleation scheme and a machine-learning-based parameterization for secondary ice production, resulting in more realistic ice crystal concentrations and reduced cloud radiative effect biases at high latitudes.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "IFS (CY36R4)",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The model used in this study is EC-Earth3-AerChem, the EC-Earth3 configuration with interactive chemistry and aerosols (van Noije et al., 2021). The baseline version of this model was used to contribute to CMIP6 and AerChemMIP. This study includes several new developments: (1) explicit incorporation of the atmospheric cycle of dust minerals linked to a soil mineralogy atlas (Claquin et al., 1999), (2) online calculation of marine organic aerosol emissions, (3) aerosol-sensitive heterogeneous ice nucleation parameterizations for immersion freezing of dust minerals (K-feldspar and quartz) and marine organic aerosols in the MPC regime, and (4) a SIP parameterization based on a random forest model as detailed in the following subsections. The atmospheric component is based on the Integrated Forecasting System (IFS, CY36R4 version) of European Centre for Medium-Range Weather Forecasts (ECMWF) at TL255L91, with a linear N128 reduced Gaussian grid corresponding to a resolution of about 80 km, and with 91 vertical levels and a model top at 0.01 hPa.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "TM5",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Recent work evaluating INP concentrations in the TM4-ECPL atmospheric chemistry model (Chatziparaschos et al., 2023, 2025), a predecessor of the Tracer Model 5 (TM5) component used within EC-Earth3-AerChem, has highlighted the potential to expand these capabilities toward improved representation of INPs, and thus MPCs.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TM5",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "M7 aerosol microphysics module",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "TM5 uses the M7 aerosol microphysics module (Vignati et al., 2004), which includes seven modes: four water-soluble (nucleation, Aitken, accumulation, and coarse), and three insoluble (Aitken, accumulation, and coarse).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TM4-ECPL",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "TM5",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Recent work evaluating INP concentrations in the TM4-ECPL atmospheric chemistry model (Chatziparaschos et al., 2023, 2025), a predecessor of the Tracer Model 5 (TM5) component used within EC-Earth3-AerChem, has highlighted the potential to expand these capabilities toward improved representation of INPs, and thus MPCs.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Meyers et al. (1992) parameterization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Instead, ICNC (m\u00b3) is determined diagnostically, following the deposition-condensation-freezing (temperature-based) nucleation parameterization of Meyers et al. (1992): icncMeyers = 1000exp[12.96(esl \u2013 esi)/esi-0.639] (1)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Harrison et al. (2019) parameterization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "This work incorporates aerosol-sensitive heterogeneous ice nucleation parameterizations in the MPC regime, specifically for the immersion freezing of dust minerals (K-feldspar and quartz) and marine organic aerosols. Immersion freezing, wherein INPs are engulfed within supercooled droplets, is considered the dominant freezing pathway in MPCs (De Boer et al., 2010; Vergara-Temprado et al., 2017). Deposition nucleation, by contrast, typically occurs at colder temperatures and is not the focus here. K-feldspar is among the most efficient atmospheric INPs in immersion freezing (Harrison et al., 2019, Fig. 8), while quartz, though less efficient, is more abundant in the atmosphere (Harrison et al., 2019; Chatziparaschos et al., 2023). Soot particles have been excluded due to their comparatively limited role in immersion freezing (Ullrich et al., 2017). Marine organic aerosols, although considered of secondary importance on a global scale, have been shown to play a significant role on a regional scale in certain temperature regimes (Gantt and Meskhidze, 2013; Vergara-Temprado et al., 2018a; McCluskey et al., 2018b; Zhao et al., 2021), particularly over oceanic regions like the Southern Ocean. We decided to neglect terrestrial bioaerosols, such as pollen, bacteria, and fungal spores, as INPs. In Chatziparaschos et al. (2025), better agreement with observed INP concentrations was achieved when only mineral dust and marine organic aerosols were included, while the inclusion of terrestrial bioaerosols tended to overestimate INP levels. The underlying cause of this overestimation remains uncertain. Harrison et al. (2019) provide active site density parameterizations derived from laboratory analysis of freshly milled quartz, K-feldspar, plagioclase and albite, the former two being the most ice-active. These are implemented as: icncHarrison = \u2211[nKf,i(1 \u2013 exp[-ns-Kf\u03c3i]) +nq,i(1 - exp[-ns-q\u03c3i])] (2)",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Wilson et al. (2015) parameterization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Marine organic aerosol immersion freezing is estimated using the parameterization by Wilson et al. (2015): icncwilson = TOC \u00d7 exp[11.2186 \u2013 (0.4459T)] (5)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "RaFSIPv1",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For this purpose, we implement two versions of the RaF-SIP scheme developed by Georgakaki and Nenes (2024). These parameterizations are based on machine learning models trained using high-resolution regional climate simulations with the Weather Research and Forecasting Model (WRF) model. RaFSIP version 1 (RaFSIPv1) estimates secondary ice crystals via Ice Enhancement Factors (IEFs) relative to primary ice concentrations, and is active in the -20 to -3 \u00b0C temperature range.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "RaFSIPv2",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For this purpose, we implement two versions of the RaF-SIP scheme developed by Georgakaki and Nenes (2024). These parameterizations are based on machine learning models trained using high-resolution regional climate simulations with the Weather Research and Forecasting Model (WRF) model. ... RaFSIP version 2 (RaFSIPv2) predicts secondary ice crystal concentrations directly from the random forest regressor, making it independent of primary ice and active from -20 to 0 \u00b0C.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Tegen et al. (2002) dust emission scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Relevant minerals for ice nucleation in dust, particularly K-feldspar and quartz, have been explicitly included in the model. Their emissions are calculated using a dust emission scheme based on the approach of Tegen et al. (2002), which drives the release of mineral dust particles from arid surfaces (van Noije et al., 2021).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Kok (2011) Brittle Fragmentation Theory",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Since the size distribution of minerals in soil differs from that of airborne aerosols, we apply the Brittle Fragmentation Theory proposed by Kok (2011) to better represent the emitted particle size distribution (PSD) of each mineral.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Gong (2003) sea-salt source scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The sea-salt source itself is driven by wind speed using the scheme of Gong (2003), includes a temperature dependence as described in van Noije et al. (2021), and is fitted for accumulation and coarse modes as described in Vignati et al. (2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "TL255L91 grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The atmospheric component is based on the Integrated Forecasting System (IFS, CY36R4 version) of European Centre for Medium-Range Weather Forecasts (ECMWF) at TL255L91, with a linear N128 reduced Gaussian grid corresponding to a resolution of about 80 km, and with 91 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "91 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The atmospheric component is based on the Integrated Forecasting System (IFS, CY36R4 version) of European Centre for Medium-Range Weather Forecasts (ECMWF) at TL255L91, with a linear N128 reduced Gaussian grid corresponding to a resolution of about 80 km, and with 91 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "model top at 0.01 hPa",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The atmospheric component is based on the Integrated Forecasting System (IFS, CY36R4 version) of European Centre for Medium-Range Weather Forecasts (ECMWF) at TL255L91, with a linear N128 reduced Gaussian grid corresponding to a resolution of about 80 km, and with 91 vertical levels and a model top at 0.01 hPa.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "atmosphere-only",
+            "target_entity_type": "SimulationType",
+            "paragraph": "All simulations were conducted in atmosphere-only mode using the Atmospheric Model Intercomparison Project (AMIP) configuration, which prescribes sea surface temperature and sea ice concentrations from the Program for Climate Model Diagnosis and Intercomparison (PCMDIv1.1.8) dataset (Meehl et al., 2007).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "cold bias",
+            "target_entity_type": "Metric",
+            "paragraph": "For instance, EC-Earth3, as other coupled climate models (Hyder et al., 2018), exhibits a cold bias over extensive parts of the Northern Hemisphere (NH) land regions and the Arctic as well as a warm bias in the high-latitudes of the Southern Hemisphere (SH), including Antarctica.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-AerChem",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "warm bias",
+            "target_entity_type": "Metric",
+            "paragraph": "For instance, EC-Earth3, as other coupled climate models (Hyder et al., 2018), exhibits a cold bias over extensive parts of the Northern Hemisphere (NH) land regions and the Arctic as well as a warm bias in the high-latitudes of the Southern Hemisphere (SH), including Antarctica.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Cloud Properties",
+            "target_entity_type": "Variable",
+            "paragraph": "Cloud-related variables simulated by the model have been evaluated against the MODIS Cloud Feedback Model Intercomparison Project Observation Simulator Package (COSP)-ready Cloud Properties including both Aqua and Terra satellites (https://ladsweb.modaps.eosdis.nasa.gov/ missions-and-measurements/products/MCD06COSP_M3_ MODIS, last access: 30 August 2023).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "cloud cover",
+            "target_entity_type": "Variable",
+            "paragraph": "Variables evaluated include cloud mask fraction (or cloud cover), IWP, and LWP. Note that both MODIS retrievals and COSP MODIS products represent in-cloud means, rather than grid cell averages.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "IWP",
+            "target_entity_type": "Variable",
+            "paragraph": "Variables evaluated include cloud mask fraction (or cloud cover), IWP, and LWP. Note that both MODIS retrievals and COSP MODIS products represent in-cloud means, rather than grid cell averages.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LWP",
+            "target_entity_type": "Variable",
+            "paragraph": "Variables evaluated include cloud mask fraction (or cloud cover), IWP, and LWP. Note that both MODIS retrievals and COSP MODIS products represent in-cloud means, rather than grid cell averages.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Aqua",
+            "target_entity_type": "Platform",
+            "paragraph": "Cloud-related variables simulated by the model have been evaluated against the MODIS Cloud Feedback Model Intercomparison Project Observation Simulator Package (COSP)-ready Cloud Properties including both Aqua and Terra satellites (https://ladsweb.modaps.eosdis.nasa.gov/ missions-and-measurements/products/MCD06COSP_M3_ MODIS, last access: 30 August 2023).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Terra",
+            "target_entity_type": "Platform",
+            "paragraph": "Cloud-related variables simulated by the model have been evaluated against the MODIS Cloud Feedback Model Intercomparison Project Observation Simulator Package (COSP)-ready Cloud Properties including both Aqua and Terra satellites (https://ladsweb.modaps.eosdis.nasa.gov/ missions-and-measurements/products/MCD06COSP_M3_ MODIS, last access: 30 August 2023).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CERES",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "radiative fluxes",
+            "target_entity_type": "Variable",
+            "paragraph": "For radiative fluxes, we used the Clouds and the Earth's Radiant Energy System (CERES) Energy Balanced and Filled (EBAF) Ed4.2 Level-3b dataset (Loeb et al., 2018; Kato et al., 2018) to evaluate top-of-atmosphere (TOA) and surface SW and LW CRE.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "EC-Earth4",
+            "target_entity_type": "Source",
+            "paragraph": "The transition to EC-Earth4, which adopts updated IFS c\u0443- cles and revised physical parameterizations, offers an impor- tant opportunity to integrate and further develop these ca- pabilities. We anticipate that modifications in the cloud mi- crophysical scheme from later IFS cycles, such as modifica- tions in the cloud scheme and the representation of super- cooled liquid water made in more recent versions of IFS, in- cluding CY45R1 (Forbes and Ahlgrimm, 2014; Forbes et al., 2016) will substantially reduce these biases. The new gen- eration of the EC-Earth ESM, EC-Earth4, will rely in the OIFS version 48r1, and will bring these updates to the ESM framework.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "EC-Earth3-AerChem",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Barcelona Supercomputing Center (BSC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Barcelona",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Spain",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Universitat Polit\u00e8cnica de Catalunya (UPC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Leipzig Institute for Meteorology, Leipzig University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Leipzig",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Swedish Meteorological and Hydrological Institute (SMHI)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Norrk\u00f6ping",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Sweden",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Institute for Environmental Research and Sustainable Development, National Observatory of Athens (NOA)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Penteli",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Greece",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Royal Netherlands Meteorological Institute (KNMI)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "De Bilt",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Netherlands",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Environmental Chemical Processes Laboratory (EPCL)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Crete",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Heraklion",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Foundation for Research and Technology, Center for the Study of Air Quality and Climate Change (C-STACC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute of Chemical Engineering Sciences (ICE-HT)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Patras",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Institute of Environmental Physics (IUP), University of Bremen",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Bremen",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Laboratory of Atmospheric Processes and their Impacts (LAPI), School of Architecture, Civil & Environmental Engineering (ENAC), Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Lausanne",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Switzerland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Catalan Institution for Research and Advanced Studies (ICREA)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "temperature-dependent nucleation scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "aerosol-sensitive heterogeneous ice nucleation parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "immersion freezing by K-feldspar, quartz, and marine organic aerosols",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "machine-learning-based parameterization of secondary ice production (SIP)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ice nucleating particle (INP)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice crystal number concentrations (ICNC)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "supercooled liquid water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud radiative effect",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "EC-Earth3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Northern Hemisphere (NH)",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Arctic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Hemisphere (SH)",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "shortwave (SW) component of the cloud radiative effect (CRE)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "IPCC",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Earth System Models (ESMs)",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "long-wave (LW) warming",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice nucleating particles (INPs)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TM4-ECPL",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Tracer Model 5 (TM5)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project Phase 6 (CMIP6)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "rime splintering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "droplet shattering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ice-ice collisional breakup",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Random Forest Secondary Ice Production (RaF-SIP)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "AerChemMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Integrated Forecasting System (IFS, CY36R4 version)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "TL255L91",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "linear N128 reduced Gaussian grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "80 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "91 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "timestep of 2700 s",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3\u00b0 x 2\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "34 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "M7 aerosol microphysics module",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "1-moment cloud microphysics scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Wegener-Bergeron-Findeisen process",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "deposition-condensation-freezing (temperature-based) nucleation parameterization of Meyers et al. (1992)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "model top at 0.01 hPa",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "dust emission scheme based on the approach of Tegen et al. (2002)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Brittle Fragmentation Theory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Moderate Resolution Imaging Spectroradiometer (MODIS)",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Harrison et al. (2019) active site density parameterizations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "parameterization by Wilson et al. (2015)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "total organic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Secondary ice production schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RaF-SIP scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Weather Research and Forecasting Model (WRF)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "RaFSIPv1",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RaFSIPv2",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Hallett-Mossop rime-splintering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "droplet freezing and shattering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "collisional fracturing and breakup",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "temperature-based scheme by Meyers et al. (1992)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "EU FORCES project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "atmosphere-only mode",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Atmospheric Model Intercomparison Project (AMIP)",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Program for Climate Model Diagnosis and Intercomparison (PCMDIv1.1.8) dataset",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "nudging technique",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMIP6 Community Emissions Data System (CEDS; Hoesly et al., 2018)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BB4CMIP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SSP2-4.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Meyers",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Harrison",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Harrison + Wilson (H + W)",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "H + W + RaFSIPv1",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "H + W + RaFSIPv2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "BACCHUS",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "MODIS Cloud Feedback Model Intercomparison Project Observation Simulator Package (COSP)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Aqua",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Terra",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "COSP simulator",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "cloud mask fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "IWP",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LWP",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observation (CALIPSO)",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "GCM Oriented Cloud CALIPSO Product (GOCCP)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "lidar",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Clouds and the Earth's Radiant Energy System (CERES)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Energy Balanced and Filled (EBAF) Ed4.2 Level-3b dataset",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "top-of-atmosphere (TOA) and surface SW and LW CRE",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Meyers scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Harrison scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Wilson scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "correlation coefficients (Rlog)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "fractions of modeled INP values within 1 (Pt1) and 1.5 (Pt1.5) orders of magnitude",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Meyers et al. (1992) parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Harrison et al. (2019) parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Wilson et al. (2015) parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RaFSIPv2 scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RaFSIPv1 scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "forestBRwarm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "total cloud cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud liquid and ice water paths",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CALIPSO-GOCCP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CERES-EBAF",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LWC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "IWC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Monte Carlo Independent Column Approximation (McICA)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "IFS (CY36R4) cloud scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "convective cloud parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "root mean square error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SW CRE",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LW CRE",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net (SW+LW) CRE",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global RMSE of the net surface CRE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "COSP2",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "EC-Earth4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OIFS version 48r1",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "IFS cycles",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ecRad radiation scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Abdul-Razzak and Ghan (2000) aerosol activation parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Morales Betancourt and Nenes (2014)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MODIS (Aqua/Terra) Cloud Properties Level 3 monthly, 1x1 degree grid (MCD06COSP_M3_MODIS)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CERES-EBAF Ed4.2 Level-3b",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Horizon Europe FOCI project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Horizon Europe CERTAINTY",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Horizon Europe CleanCloud project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "European Research Council",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "AXA Research Fund",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Spanish Ministerio de Ciencia, Innovaci\u00f3n y Universidades",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Swiss National Science Foundation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Partnership for Advanced Computing in Europe (PRACE)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "WCRP CMIP3 Multimodel Dataset",
+            "entity_type": "Project"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1422331571",
+        "https://openalex.org/W1616087035",
+        "https://openalex.org/W1783045389",
+        "https://openalex.org/W1974342476",
+        "https://openalex.org/W1983086210",
+        "https://openalex.org/W1983408938",
+        "https://openalex.org/W1984365615",
+        "https://openalex.org/W1985250047",
+        "https://openalex.org/W1993436181",
+        "https://openalex.org/W2000074954",
+        "https://openalex.org/W2001066139",
+        "https://openalex.org/W2002898709",
+        "https://openalex.org/W2004736225",
+        "https://openalex.org/W2024612183",
+        "https://openalex.org/W2025707787",
+        "https://openalex.org/W2028487758",
+        "https://openalex.org/W2029094030",
+        "https://openalex.org/W2029853075",
+        "https://openalex.org/W2033352751",
+        "https://openalex.org/W2034941207",
+        "https://openalex.org/W2035482390",
+        "https://openalex.org/W2039629601",
+        "https://openalex.org/W2047119754",
+        "https://openalex.org/W2062217294",
+        "https://openalex.org/W2062248711",
+        "https://openalex.org/W2064465292",
+        "https://openalex.org/W2064960533",
+        "https://openalex.org/W2075712895",
+        "https://openalex.org/W2083458282",
+        "https://openalex.org/W2092254498",
+        "https://openalex.org/W2100365896",
+        "https://openalex.org/W2101328904",
+        "https://openalex.org/W2106415879",
+        "https://openalex.org/W2108812349",
+        "https://openalex.org/W2131027220",
+        "https://openalex.org/W2142416981",
+        "https://openalex.org/W2170905040",
+        "https://openalex.org/W2210130261",
+        "https://openalex.org/W2409204845",
+        "https://openalex.org/W2522616261",
+        "https://openalex.org/W2559556773",
+        "https://openalex.org/W2566267159",
+        "https://openalex.org/W2587328645",
+        "https://openalex.org/W2593887101",
+        "https://openalex.org/W2600399632",
+        "https://openalex.org/W2754728072",
+        "https://openalex.org/W2769271313",
+        "https://openalex.org/W2789457679",
+        "https://openalex.org/W2794765099",
+        "https://openalex.org/W2802696788",
+        "https://openalex.org/W2806697654",
+        "https://openalex.org/W2806853263",
+        "https://openalex.org/W2892993412",
+        "https://openalex.org/W2894860873",
+        "https://openalex.org/W2896040023",
+        "https://openalex.org/W2900373313",
+        "https://openalex.org/W2902916646",
+        "https://openalex.org/W2904220286",
+        "https://openalex.org/W2916685104",
+        "https://openalex.org/W2938179994",
+        "https://openalex.org/W2953877685",
+        "https://openalex.org/W2974575738",
+        "https://openalex.org/W3034228277",
+        "https://openalex.org/W3036117470",
+        "https://openalex.org/W3063739560",
+        "https://openalex.org/W3086814589",
+        "https://openalex.org/W3092032352",
+        "https://openalex.org/W3093462351",
+        "https://openalex.org/W3122318250",
+        "https://openalex.org/W3136307833",
+        "https://openalex.org/W3177035091",
+        "https://openalex.org/W3192880971",
+        "https://openalex.org/W4210799981",
+        "https://openalex.org/W4225272962",
+        "https://openalex.org/W4225713763",
+        "https://openalex.org/W4226178852",
+        "https://openalex.org/W4226457127",
+        "https://openalex.org/W4234894822",
+        "https://openalex.org/W4254019189",
+        "https://openalex.org/W4289204373",
+        "https://openalex.org/W4290644496",
+        "https://openalex.org/W4312126049",
+        "https://openalex.org/W4317103402",
+        "https://openalex.org/W4318979642",
+        "https://openalex.org/W4380575777",
+        "https://openalex.org/W4382358731",
+        "https://openalex.org/W4399676953",
+        "https://openalex.org/W4400770622",
+        "https://openalex.org/W4400851384",
+        "https://openalex.org/W4402808683",
+        "https://openalex.org/W4407823666",
+        "https://openalex.org/W4413363367",
+        "https://openalex.org/W4414851410",
+        "https://openalex.org/W4416352551"
+    ]
+}

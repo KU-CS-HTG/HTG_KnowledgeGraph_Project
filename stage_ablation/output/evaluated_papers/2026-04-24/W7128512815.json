@@ -1,0 +1,1016 @@
+{
+    "uri": "https://openalex.org/W7128512815",
+    "title": "The Mod\u00e8le Atmosph\u00e9rique R\u00e9gional \u2013 Intelligence Artificielle (MAR-IA): surface meltwater over Greenland",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5125549091",
+            "display_name": "Marco Tedesco",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5083174807",
+            "display_name": "Racheet Matai",
+            "orcid": "https://orcid.org/0000-0003-1719-4721"
+        },
+        {
+            "id": "https://openalex.org/A5123222624",
+            "display_name": "Xavier Fettweis",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2026-490",
+    "abstract": "Abstract. Surface melting over the Greenland Ice Sheet has become one of the dominant sources of contemporary and projected global sea-level rise, with melt rates accelerating over recent decades. Understanding those processes and feedbacks that control Greenland's surface melt is central to improving projections of future mass loss and to clarifying how changes in surface energy balance components shape ice-sheet stability. To this aim, we developed MAR-IA \u2013 a machine-learning emulator of the MAR regional climate model \u2013 designed to emulate daily surface meltwater production over Greenland and to enable attribution of melt drivers. We implement two complementary emulators: a high-fidelity MAR-IA trained on full MAR surface energy balance fields and a reanalysis-compatible MAR-IA-ERA trained on variables available from products such as ERA5, thereby extending applicability beyond MAR-specific outputs. Both emulators employ gradient-boosted trees optimized via Bayesian hyperparameter search, achieving test-set performance up to R2 = 0.99 with low mean squared error and negligible bias relative to MAR meltwater outputs. We apply a SHAP-based explainable AI analysis to quantify how the importance of surface energy balance components \u2013 e.g., albedo, shortwave and longwave radiation, etc. \u2013 evolves across space and time over Greenland. Our results reveal robust spatial and temporal patterns in the dominance of radiative versus non-radiative drivers and demonstrate long-term trends in the relative contribution of temperature, shortwave radiation, and albedo to melt variability. These findings show that emulators can be used as powerful tools to complement regional climate models by enabling computationally efficient ensemble simulations and physically interpretable attribution of past and future Greenland surface melt. Development of regional climate models should go hand in hand with ML-based tools.",
+    "field": "Machine learning applications in cryosphere science",
+    "problem": "The computational demands of regional climate models limit large-ensemble simulations and hinder the systematic attribution of melt variability to individual drivers, making it difficult to disentangle the complex, non-linear relationships governing Greenland's surface melt.",
+    "method": "We propose a machine-learning emulator (MAR-IA) using gradient-boosted trees and explainable AI to replicate daily surface meltwater production over Greenland and enable attribution of its key physical drivers.",
+    "task": "The task is to develop a machine-learning emulator (MAR-IA) of a regional climate model to simulate daily surface meltwater production over Greenland and enable the attribution of its key drivers using explainable AI.",
+    "model": [
+        "MAR",
+        "RACMO",
+        "HIRHAM",
+        "MAR-IA"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/meltwater",
+            "display_name": "Meltwater",
+            "score": 0.7414000034332275
+        },
+        {
+            "id": "https://openalex.org/keywords/albedo",
+            "display_name": "Albedo (alchemy)",
+            "score": 0.4756999909877777
+        },
+        {
+            "id": "https://openalex.org/keywords/shortwave",
+            "display_name": "Shortwave",
+            "score": 0.4564000070095062
+        },
+        {
+            "id": "https://openalex.org/keywords/energy-balance",
+            "display_name": "Energy balance",
+            "score": 0.4447999894618988
+        },
+        {
+            "id": "https://openalex.org/keywords/greenland-ice-sheet",
+            "display_name": "Greenland ice sheet",
+            "score": 0.4253999888896942
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.3849000036716461
+        },
+        {
+            "id": "https://openalex.org/keywords/snow",
+            "display_name": "Snow",
+            "score": 0.3296000063419342
+        },
+        {
+            "id": "https://openalex.org/keywords/longwave",
+            "display_name": "Longwave",
+            "score": 0.32589998841285706
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C207318512",
+            "wikidata": "https://www.wikidata.org/wiki/Q360925",
+            "display_name": "Meltwater",
+            "level": 3,
+            "score": 0.7414000034332275
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5123000144958496
+        },
+        {
+            "id": "https://openalex.org/C195886398",
+            "wikidata": "https://www.wikidata.org/wiki/Q2110050",
+            "display_name": "Albedo (alchemy)",
+            "level": 3,
+            "score": 0.4756999909877777
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.45680001378059387
+        },
+        {
+            "id": "https://openalex.org/C2776272892",
+            "wikidata": "https://www.wikidata.org/wiki/Q7502249",
+            "display_name": "Shortwave",
+            "level": 3,
+            "score": 0.4564000070095062
+        },
+        {
+            "id": "https://openalex.org/C2777423268",
+            "wikidata": "https://www.wikidata.org/wiki/Q3663116",
+            "display_name": "Energy balance",
+            "level": 2,
+            "score": 0.4447999894618988
+        },
+        {
+            "id": "https://openalex.org/C2780021526",
+            "wikidata": "https://www.wikidata.org/wiki/Q1542432",
+            "display_name": "Greenland ice sheet",
+            "level": 3,
+            "score": 0.4253999888896942
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.3849000036716461
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3352000117301941
+        },
+        {
+            "id": "https://openalex.org/C197046000",
+            "wikidata": "https://www.wikidata.org/wiki/Q7561",
+            "display_name": "Snow",
+            "level": 2,
+            "score": 0.3296000063419342
+        },
+        {
+            "id": "https://openalex.org/C2779155178",
+            "wikidata": "https://www.wikidata.org/wiki/Q1082861",
+            "display_name": "Longwave",
+            "level": 3,
+            "score": 0.32589998841285706
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.3158000111579895
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.311599999666214
+        },
+        {
+            "id": "https://openalex.org/C119601563",
+            "wikidata": "https://www.wikidata.org/wiki/Q2315892",
+            "display_name": "Downwelling",
+            "level": 3,
+            "score": 0.30809998512268066
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.30799999833106995
+        },
+        {
+            "id": "https://openalex.org/C127045886",
+            "wikidata": "https://www.wikidata.org/wiki/Q3528741",
+            "display_name": "Glacier mass balance",
+            "level": 3,
+            "score": 0.3068000078201294
+        },
+        {
+            "id": "https://openalex.org/C64649846",
+            "wikidata": "https://www.wikidata.org/wiki/Q1754697",
+            "display_name": "Snowmelt",
+            "level": 3,
+            "score": 0.30379998683929443
+        },
+        {
+            "id": "https://openalex.org/C151913843",
+            "wikidata": "https://www.wikidata.org/wiki/Q3454555",
+            "display_name": "Dominance (genetics)",
+            "level": 3,
+            "score": 0.2806999981403351
+        },
+        {
+            "id": "https://openalex.org/C100834320",
+            "wikidata": "https://www.wikidata.org/wiki/Q35666",
+            "display_name": "Glacier",
+            "level": 2,
+            "score": 0.27459999918937683
+        },
+        {
+            "id": "https://openalex.org/C206887242",
+            "wikidata": "https://www.wikidata.org/wiki/Q830457",
+            "display_name": "Cloud cover",
+            "level": 3,
+            "score": 0.2655999958515167
+        },
+        {
+            "id": "https://openalex.org/C107673813",
+            "wikidata": "https://www.wikidata.org/wiki/Q812534",
+            "display_name": "Bayesian probability",
+            "level": 2,
+            "score": 0.25369998812675476
+        },
+        {
+            "id": "https://openalex.org/C2776799497",
+            "wikidata": "https://www.wikidata.org/wiki/Q484298",
+            "display_name": "Surface (topology)",
+            "level": 2,
+            "score": 0.2526000142097473
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.2508000135421753
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper introduces MAR-IA, a machine-learning emulator of a regional climate model, and for the first time, applies explainable AI (SHAP) to provide a physically interpretable attribution of the evolving drivers controlling surface meltwater production over Greenland.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "MAR-IA",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "MAR",
+            "target_entity_type": "Source",
+            "paragraph": "To this aim, we developed MAR-IA - a machine-learning emulator of the MAR regional climate model - designed to emulate daily surface meltwater production over Greenland and to enable attribution of melt drivers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface meltwater production",
+            "target_entity_type": "Variable",
+            "paragraph": "To this aim, we developed MAR-IA - a machine-learning emulator of the MAR regional climate model - designed to emulate daily surface meltwater production over Greenland and to enable attribution of melt drivers.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "gradient-boosted trees",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Both emulators employ gradient-boosted trees optimized via Bayesian hyperparameter search, achieving test-set performance up to R2 = 0.99 with low mean squared error and negligible bias relative to MAR meltwater outputs.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2",
+            "target_entity_type": "Metric",
+            "paragraph": "Both emulators employ gradient-boosted trees optimized via Bayesian hyperparameter search, achieving test-set performance up to R2 = 0.99 with low mean squared error and negligible bias relative to MAR meltwater outputs.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "MAR-IA",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean squared error",
+            "target_entity_type": "Metric",
+            "paragraph": "Both emulators employ gradient-boosted trees optimized via Bayesian hyperparameter search, achieving test-set performance up to R2 = 0.99 with low mean squared error and negligible bias relative to MAR meltwater outputs.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Both emulators employ gradient-boosted trees optimized via Bayesian hyperparameter search, achieving test-set performance up to R2 = 0.99 with low mean squared error and negligible bias relative to MAR meltwater outputs.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "RCM",
+            "target_entity_type": "SourceType",
+            "paragraph": "Regional climate models (RCMs), including the Mod\u00e8le Atmosph\u00e9rique R\u00e9gional (MAR, Fettweis et al., 2013), RACMO (No\u00ebl et al., 2018), and HIRHAM (Langen et al., 2017), have substantially advanced our ability to simulate surface melt and better capture the driving processes.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "RACMO",
+            "source_entity_type": "Source",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "RCM",
+            "target_entity_type": "SourceType",
+            "paragraph": "Regional climate models (RCMs), including the Mod\u00e8le Atmosph\u00e9rique R\u00e9gional (MAR, Fettweis et al., 2013), RACMO (No\u00ebl et al., 2018), and HIRHAM (Langen et al., 2017), have substantially advanced our ability to simulate surface melt and better capture the driving processes.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HIRHAM",
+            "source_entity_type": "Source",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "RCM",
+            "target_entity_type": "SourceType",
+            "paragraph": "Regional climate models (RCMs), including the Mod\u00e8le Atmosph\u00e9rique R\u00e9gional (MAR, Fettweis et al., 2013), RACMO (No\u00ebl et al., 2018), and HIRHAM (Langen et al., 2017), have substantially advanced our ability to simulate surface melt and better capture the driving processes.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA-ERA",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "ERA5",
+            "target_entity_type": "Source",
+            "paragraph": "We implement two complementary emulators: a high-fidelity MAR-IA trained on full MAR surface energy balance fields and a reanalysis-compatible MAR-IA-ERA trained on variables available from products such as ERA5, thereby extending applicability beyond MAR-specific outputs.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA-ERA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "gradient-boosted trees",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Both emulators employ gradient-boosted trees optimized via Bayesian hyperparameter search, achieving test-set performance up to R2 = 0.99 with low mean squared error and negligible bias relative to MAR meltwater outputs.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "three-dimensional atmospheric model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "MAR incorporates a three-dimensional atmospheric model coupled with a multilayer snow model, which allows it to resolve energy and mass exchanges at the snow-atmosphere interface, including processes such as meltwater percolation, refreezing, and densification (Brun et al. 1992).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "multilayer snow model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "MAR incorporates a three-dimensional atmospheric model coupled with a multilayer snow model, which allows it to resolve energy and mass exchanges at the snow-atmosphere interface, including processes such as meltwater percolation, refreezing, and densification (Brun et al. 1992).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "DRIVEN_BY_SOURCE",
+            "target_entity_instance": "ERA5",
+            "target_entity_type": "Source",
+            "paragraph": "The atmospheric component of MAR is forced at the boundaries of the Greenland region using data from global reanalysis products. For the MAR simulations used here, MAR was forced by the ERA5 product, produced by the European Centre for Medium-Range Weather Forecasts (ECMWF) (Hersbach et al. 2020).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "31 km",
+            "target_entity_type": "Resolution",
+            "paragraph": "With a horizontal resolution of approximately 31 km, 137 vertical levels, and a detailed vertical structure, ERA5 offers comprehensive coverage of variables such as geopotential height, temperature, humidity, wind speed, and radiative and turbulent surface fluxes (Hersbach et al. 2020; Delhasse et al. 2020).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "137 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "With a horizontal resolution of approximately 31 km, 137 vertical levels, and a detailed vertical structure, ERA5 offers comprehensive coverage of variables such as geopotential height, temperature, humidity, wind speed, and radiative and turbulent surface fluxes (Hersbach et al. 2020; Delhasse et al. 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Crocus",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In the context of surface meltwater prediction, variables of primary interest include surface albedo (modeled through snow grain properties in Crocus), which controls reflected versus absorbed solar radiation (Brun et al. 1992; M. Tedesco et al. 2016; Col\u00e9ou and Lesaffre 1998); and 2-meter air temperature, a critical driver of melt energy.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Crocus",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface albedo",
+            "target_entity_type": "Variable",
+            "paragraph": "In the context of surface meltwater prediction, variables of primary interest include surface albedo (modeled through snow grain properties in Crocus), which controls reflected versus absorbed solar radiation (Brun et al. 1992; M. Tedesco et al. 2016; Col\u00e9ou and Lesaffre 1998); and 2-meter air temperature, a critical driver of melt energy.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2",
+            "target_entity_type": "Metric",
+            "paragraph": "As expected, the MAR-IA1 model (Fig. 4a), which includes the full predictor set, achieves the highest accuracy (R2 = 0.98, RMSE = 1.38 mm w.e.day\u00af\u00b9 ), with an extremely low bias (-8 \u00d7 10-4 mm w.e. day\u00af\u00b9).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "As expected, the MAR-IA1 model (Fig. 4a), which includes the full predictor set, achieves the highest accuracy (R2 = 0.98, RMSE = 1.38 mm w.e.day\u00af\u00b9 ), with an extremely low bias (-8 \u00d7 10-4 mm w.e. day\u00af\u00b9).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "bias",
+            "target_entity_type": "Metric",
+            "paragraph": "As expected, the MAR-IA1 model (Fig. 4a), which includes the full predictor set, achieves the highest accuracy (R2 = 0.98, RMSE = 1.38 mm w.e.day\u00af\u00b9 ), with an extremely low bias (-8 \u00d7 10-4 mm w.e. day\u00af\u00b9).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2",
+            "target_entity_type": "Metric",
+            "paragraph": "Excluding skin temperature and upwelling longwave and shortwave radiation (MAR-IA2) has little effect on R2 (0.97) but results in a higher RMSE of 1.887 mm w.e. day\u00af\u00b9, reflected in the greater spread for low melt values (< 20 mm w.e.; Fig. 4b).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "Excluding skin temperature and upwelling longwave and shortwave radiation (MAR-IA2) has little effect on R2 (0.97) but results in a higher RMSE of 1.887 mm w.e. day\u00af\u00b9, reflected in the greater spread for low melt values (< 20 mm w.e.; Fig. 4b).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA2-ERA",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2",
+            "target_entity_type": "Metric",
+            "paragraph": "Using ERA-based predictors (MAR-IA2-ERA) further reduces performance (R2 = 0.83, RMSE = 4.746 mm w.e. day\u00af\u00b9), with larger errors also concentrated at low melt rates (Fig. 4d).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA2-ERA",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "Using ERA-based predictors (MAR-IA2-ERA) further reduces performance (R2 = 0.83, RMSE = 4.746 mm w.e. day\u00af\u00b9), with larger errors also concentrated at low melt rates (Fig. 4d).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean absolute difference",
+            "target_entity_type": "Metric",
+            "paragraph": "At the Swiss Camp station, the mean absolute difference between the machine learning model and MAR is 1.17 mm w.e. day\u00af\u00b9, with a maximum of 5.97 mm w.e. day-\u00b9 and a standard deviation of 0.96 mm w.e. Day\u00af\u00b9 The model performs comparably well at the K-transect S6 station, yielding a mean difference of 0.91 mm w.e. day\u00af\u00b9, a maximum of 6.54 mm w.e. day\u00af\u00b9, and a standard deviation of 0.93 mm w.e. day\u00af\u00b9. This result underscores the reliability of the ML-based emulator as a robust emulator for the MAR model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mount Pinatubo eruptions",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Greenland",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "As a further example of the relationships between Shapley values and the surface energy balance quantities, Figure 9 shows the distribution of the averaged summed values for Shapley coefficients, albedo and the MAR predicted meltwater for the years 1992 and 2012. These two years are characterized by opposite conditions in terms of surface melting, with 1992 being a low year, as a consequence of the Mount Pinatubo eruptions, and 2012 being an extremely high year in terms of meltwater production (e.g., Nghiem et al., 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "pan-Greenland melt episode",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Greenland",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The comparison of Shapley summer maps for low-melt (1992) and extreme-melt (2012) years further illustrates how the emulator and Shapley decomposition can provide physically interpretable results across regimes and extremes: 1992 reflects externally forced radiative suppression following the Mount Pinatubo eruption, whereas 2012 captures the compounded influence of strong melt-favorable energy inputs and feedbacks associated with a well-documented pan-Greenland melt episode (Nghiem et al., 2012).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAR-IA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "XGBoost",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In this study, we introduced MAR-IA, a machine learning (ML) emulator designed to replicate surface meltwater production over the Greenland Ice Sheet (GrIS) as simulated by the MAR regional climate model (Fettweis et al., 2017). MAR-IA leverages XGBoost, a tree-based ML algorithm, trained on MAR outputs from 1979\u20132024 using predictors such as albedo, air temperature, radiative fluxes, and turbulent heat fluxes (MAR-IA1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "MAR-IA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RACMO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HIRHAM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ISSM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAR-IA-ERA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAR-IA1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAR-IA2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAR-IA2ERA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAR-IA2_no_alb",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAR-IA2-ERA-no_alb",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAR-IA2ERA_mar_alb",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RCM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Mod\u00e8le Atmosph\u00e9rique R\u00e9gional",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "MAR",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "RACMO",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "HIRHAM",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "multilayer snow model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Crocus",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "three-dimensional atmospheric model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "XGBoost",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "gradient-boosted trees",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bayesian hyperparameter search",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "boosting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "decision trees",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bayesian optimization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "grid search",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "random search",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "137 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "n_estimators = 500",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "max_depth = 15",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "min_child_weight = 4",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "learning_rate = 0.05",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "gamma = 0",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "R2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "coefficient of determination",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean squared error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean absolute SHAP values",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pearson correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "slope",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "p <0.01",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean absolute difference",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "maximum absolute percentage error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Lamont-Doherty Earth Observatory, Climate School, Columbia University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Liege",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NSF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "surface meltwater production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface melt",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface energy balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "incoming shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "incoming longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface mass balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SMB",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "geopotential height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "radiative fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "turbulent surface fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2-meter air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "downward shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "downward longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sensible heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "elevation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "skin temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Sublimation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "upwelling shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "upwelling longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "liquid meltwater production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "liquid water content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snowpack properties",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud microphysics",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric circulation indices",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "summer",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "JJA",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "31 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Greenland Ice Sheet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctic Ice Sheets",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "the Himalaya",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "the European Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "K-transect S6 station",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Swiss Camp",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "pan-Greenland melt episode",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Mount Pinatubo eruptions",
+            "entity_type": "Natural_Hazard"
+        }
+    ],
+    "referenced_works": []
+}

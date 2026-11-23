@@ -1,0 +1,271 @@
+{
+    "uri": "https://openalex.org/W4230531635",
+    "title": "Preface",
+    "venue": {
+        "name": "Advances in Atmospheric Sciences",
+        "id": "https://openalex.org/S63270775",
+        "type": "journal"
+    },
+    "publication_year": 2013,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5100325724",
+            "display_name": "Tianjun Zhou",
+            "orcid": "https://orcid.org/0000-0002-5829-7279"
+        }
+    ],
+    "doi": "https://doi.org/10.1007/s00376-013-0002-5",
+    "abstract": null,
+    "field": "Earth system modeling",
+    "problem": "The continuous development of complex climate system models like FGOALS necessitates a comprehensive evaluation to document persistent limitations and biases, providing a crucial reference to guide future improvements and enhance the model's predictive capabilities for the scientific community.",
+    "method": "This paper does not propose a method; it is a preface introducing the Flexible Global Ocean-Atmosphere-Land System Model (FGOALS) and a special issue documenting its performance for conducting research into the Earth's climate states.",
+    "task": "The task is to document, evaluate, and compare the performance of the Flexible Global Ocean-Atmosphere-Land System Model (FGOALS) based on its results in the CMIP5 experiments.",
+    "model": [
+        "FGOALS",
+        "FGOALS1",
+        "GOALS",
+        "FGOALS2",
+        "FGOALS-s2",
+        "FGOALS-g2"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.31683066487312317
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.31683066487312317
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper serves as a preface to a special issue that documents the development and evaluates the performance of the two versions of the FGOALS climate model, presenting results from CMIP5 experiments and providing a reference for future improvements.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "FGOALS",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "coupled",
+            "target_entity_type": "SimulationType",
+            "paragraph": "The Flexible Global Ocean-Atmosphere-Land System Model (FGOALS) is a coupled climate model that allows researchers to conduct fundamental research into the Earth's past, present, near-term and long-term future climate states.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "coupler",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "FGOALS couples the ocean, atmosphere, land, and sea ice through a coupler that coordinates the component models and passes the exchange of energy, momentum, and water among them.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GOALS",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "FGOALS1",
+            "target_entity_type": "Source",
+            "paragraph": "The first version of the model, FGOALS1, was released in 2004 as a new version of the Global Ocean-Atmosphere-Land System Model (GOALS), which has been developed by LASG/IAP since the early 1990s.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS1",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "GOALS",
+            "target_entity_type": "Source",
+            "paragraph": "The first version of the model, FGOALS1, was released in 2004 as a new version of the Global Ocean-Atmosphere-Land System Model (GOALS), which has been developed by LASG/IAP since the early 1990s.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "FGOALS2",
+            "target_entity_type": "Source",
+            "paragraph": "The first version of the model, FGOALS1, was released in 2004 as a new version of the Global Ocean-Atmosphere-Land System Model (GOALS), which has been developed by LASG/IAP since the early 1990s. FGOALS1 has been applied to comparative model calculations in the context of CMIP3, as well as a variety of scientific studies that support the implementation of many Chinese research projects. The second version of the model, FGOALS2, was released in 2009, and its experiments as part of CMIP5 have been conducted in support of the Fifth Assessment Report of the Intergovernmental Panel on Climate Change (IPCC). The output from the FGOALS CMIP5 runs is available to the international climate research community via the Earth System Grid gateway at LASG/IAP: http://esg.lasg.ac.cn.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-s2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "coupler",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "FGOALS2 has two versions, FGOALS-s2 and FGOALS-g2, which share the same coupling framework, ocean and land components, but adopt different atmospheric and sea ice components. Although the development of FGOALS2 is based at LASG/IAP, it is a cooperative effort among several Chinese research centers/institutions. The First Institute of Oceanography, State Oceanic Administration, has contributed to the setup of the coupler used in these two versions. The Center of Earth System Science (CESS), Tsinghua University, has devoted itself to the code optimization of FGOALS-g2. More than half of the FGOALS-g2 CMIP5 experiments were performed on the supercomputer at CESS. The Sate Key Laboratory of Atmospheric Boundary Physics and Atmospheric Chemistry (LAPC), Institute of Atmospheric Physics, has been dedicated to the ocean carbon cycle module of FGOALS-s2. The School of Atmospheric Sciences, Nanjing University, has long been involved in the assessment of the model. The Supercomputing Center of the Institute of Atmospheric Physics and Supercomputing Center of the Chinese Academy of Sciences, have provided most of the computer resources for the FGOALS CMIP5 experiments.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-g2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "coupler",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "FGOALS2 has two versions, FGOALS-s2 and FGOALS-g2, which share the same coupling framework, ocean and land components, but adopt different atmospheric and sea ice components. Although the development of FGOALS2 is based at LASG/IAP, it is a cooperative effort among several Chinese research centers/institutions. The First Institute of Oceanography, State Oceanic Administration, has contributed to the setup of the coupler used in these two versions. The Center of Earth System Science (CESS), Tsinghua University, has devoted itself to the code optimization of FGOALS-g2. More than half of the FGOALS-g2 CMIP5 experiments were performed on the supercomputer at CESS. The Sate Key Laboratory of Atmospheric Boundary Physics and Atmospheric Chemistry (LAPC), Institute of Atmospheric Physics, has been dedicated to the ocean carbon cycle module of FGOALS-s2. The School of Atmospheric Sciences, Nanjing University, has long been involved in the assessment of the model. The Supercomputing Center of the Institute of Atmospheric Physics and Supercomputing Center of the Chinese Academy of Sciences, have provided most of the computer resources for the FGOALS CMIP5 experiments.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FGOALS-s2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ocean carbon cycle module",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The Sate Key Laboratory of Atmospheric Boundary Physics and Atmospheric Chemistry (LAPC), Institute of Atmospheric Physics, has been dedicated to the ocean carbon cycle module of FGOALS-s2.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "FGOALS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "sea ice",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "FGOALS1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GOALS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LASG/IAP",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CMIP3",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "FGOALS2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "IPCC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "FGOALS-s2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FGOALS-g2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "The First Institute of Oceanography, State Oceanic Administration",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Center of Earth System Science (CESS)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Tsinghua University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Sate Key Laboratory of Atmospheric Boundary Physics and Atmospheric Chemistry (LAPC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Institute of Atmospheric Physics",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ocnBgchem",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "School of Atmospheric Sciences, Nanjing University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Supercomputing Center of the Institute of Atmospheric Physics",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Supercomputing Center of the Chinese Academy of Sciences",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Chinese Academy of Sciences",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Earth System Model of the Chinese Academy of Sciences",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IAP",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "State Key Laboratory of Numerical Modeling for Atmospheric Sciences and Geophysical Fluid Dynamics",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Beijing",
+            "entity_type": "City"
+        }
+    ],
+    "referenced_works": []
+}

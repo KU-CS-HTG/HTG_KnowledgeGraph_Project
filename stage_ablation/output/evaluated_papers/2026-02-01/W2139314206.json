@@ -1,0 +1,1474 @@
+{
+    "uri": "https://openalex.org/W2139314206",
+    "title": "Development and evaluation of an Earth-System model \u2013 HadGEM2",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2011,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5019573225",
+            "display_name": "W. J. Collins",
+            "orcid": "https://orcid.org/0000-0002-7419-0850"
+        },
+        {
+            "id": "https://openalex.org/A5042660117",
+            "display_name": "Nicolas Bellouin",
+            "orcid": "https://orcid.org/0000-0003-2109-9559"
+        },
+        {
+            "id": "https://openalex.org/A5002811767",
+            "display_name": "Marie Doutriaux\u2010Boucher",
+            "orcid": "https://orcid.org/0000-0003-0214-6786"
+        },
+        {
+            "id": "https://openalex.org/A5054845721",
+            "display_name": "Nicola Gedney",
+            "orcid": "https://orcid.org/0000-0002-2165-5239"
+        },
+        {
+            "id": "https://openalex.org/A5048634777",
+            "display_name": "Paul R. Halloran",
+            "orcid": "https://orcid.org/0000-0002-9227-0678"
+        },
+        {
+            "id": "https://openalex.org/A5011305942",
+            "display_name": "T. Hinton",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5053465857",
+            "display_name": "John P. Hughes",
+            "orcid": "https://orcid.org/0000-0002-8816-6800"
+        },
+        {
+            "id": "https://openalex.org/A5025928838",
+            "display_name": "Chris Jones",
+            "orcid": "https://orcid.org/0000-0002-7141-9285"
+        },
+        {
+            "id": "https://openalex.org/A5071584695",
+            "display_name": "Manoj Joshi",
+            "orcid": "https://orcid.org/0000-0002-2948-2811"
+        },
+        {
+            "id": "https://openalex.org/A5032464741",
+            "display_name": "Spencer Liddicoat",
+            "orcid": "https://orcid.org/0000-0002-5145-7153"
+        },
+        {
+            "id": "https://openalex.org/A5077279145",
+            "display_name": "Gill Martin",
+            "orcid": "https://orcid.org/0000-0003-0851-6020"
+        },
+        {
+            "id": "https://openalex.org/A5070540282",
+            "display_name": "Fiona M. O\u2019Connor",
+            "orcid": "https://orcid.org/0000-0003-2893-4828"
+        },
+        {
+            "id": "https://openalex.org/A5110524991",
+            "display_name": "Jamie Rae",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5077264335",
+            "display_name": "C. A. Senior",
+            "orcid": "https://orcid.org/0000-0002-4124-0612"
+        },
+        {
+            "id": "https://openalex.org/A5063621337",
+            "display_name": "Stephen Sitch",
+            "orcid": "https://orcid.org/0000-0003-1821-8561"
+        },
+        {
+            "id": "https://openalex.org/A5083109543",
+            "display_name": "I. J. Totterdell",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5035579254",
+            "display_name": "A. Wiltshire",
+            "orcid": "https://orcid.org/0000-0001-7307-173X"
+        },
+        {
+            "id": "https://openalex.org/A5110884873",
+            "display_name": "S. Woodward",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-4-1051-2011",
+    "abstract": "Abstract. We describe here the development and evaluation of an Earth system model suitable for centennial-scale climate prediction. The principal new components added to the physical climate model are the terrestrial and ocean ecosystems and gas-phase tropospheric chemistry, along with their coupled interactions. The individual Earth system components are described briefly and the relevant interactions between the components are explained. Because the multiple interactions could lead to unstable feedbacks, we go through a careful process of model spin up to ensure that all components are stable and the interactions balanced. This spun-up configuration is evaluated against observed data for the Earth system components and is generally found to perform very satisfactorily. The reason for the evaluation phase is that the model is to be used for the core climate simulations carried out by the Met Office Hadley Centre for the Coupled Model Intercomparison Project (CMIP5), so it is essential that addition of the extra complexity does not detract substantially from its climate performance. Localised changes in some specific meteorological variables can be identified, but the impacts on the overall simulation of present day climate are slight. This model is proving valuable both for climate predictions, and for investigating the strengths of biogeochemical feedbacks.",
+    "field": "Earth system modeling",
+    "problem": "Previous climate models lacked interactive biogeochemical components, such as terrestrial and ocean ecosystems, which prevented the simulation of important climate-carbon cycle feedbacks and often required artificial flux corrections to avoid model drift.",
+    "method": "This paper describes the development of the HadGEM2 Earth System model, which couples terrestrial/ocean ecosystems and tropospheric chemistry components to a physical climate model to simulate biogeochemical feedbacks for climate prediction without requiring artificial flux corrections.",
+    "task": "The task is to describe the development and evaluation of the HadGEM2 Earth system model, which adds terrestrial and ocean ecosystems and tropospheric chemistry to a physical climate model to assess its performance for centennial-scale climate prediction.",
+    "model": [
+        "HadGEM2",
+        "HadGEM1",
+        "HadCM3LC",
+        "HadGEM2-ES",
+        "HadGEM2-CC",
+        "HadGEM2-AO",
+        "MOSES II",
+        "JULES",
+        "TOPMODEL",
+        "TRIP",
+        "UKCA",
+        "TOMCAT",
+        "STOCHEM",
+        "TRIFFID",
+        "RothC",
+        "Diat-HadOCC",
+        "HadOCC",
+        "HadGEM2-A"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/coupled-model-intercomparison-project",
+            "display_name": "Coupled model intercomparison project",
+            "score": 0.7979635000228882
+        },
+        {
+            "id": "https://openalex.org/keywords/earth-system-science",
+            "display_name": "Earth system science",
+            "score": 0.7614369988441467
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.6048197746276855
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.5745539665222168
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.567275881767273
+        },
+        {
+            "id": "https://openalex.org/keywords/biogeochemical-cycle",
+            "display_name": "Biogeochemical cycle",
+            "score": 0.5347352027893066
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-system",
+            "display_name": "Climate system",
+            "score": 0.47983285784721375
+        },
+        {
+            "id": "https://openalex.org/keywords/centennial",
+            "display_name": "Centennial",
+            "score": 0.45784276723861694
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.4506455063819885
+        },
+        {
+            "id": "https://openalex.org/keywords/troposphere",
+            "display_name": "Troposphere",
+            "score": 0.4196702539920807
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.3858520984649658
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.38407325744628906
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.38281697034835815
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.17041024565696716
+        },
+        {
+            "id": "https://openalex.org/keywords/chemistry",
+            "display_name": "Chemistry",
+            "score": 0.1386769413948059
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.11675742268562317
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.11064296960830688
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C25022447",
+            "wikidata": "https://www.wikidata.org/wiki/Q5178021",
+            "display_name": "Coupled model intercomparison project",
+            "level": 4,
+            "score": 0.7979635000228882
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.7614369988441467
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6048197746276855
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5745539665222168
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.567275881767273
+        },
+        {
+            "id": "https://openalex.org/C71915725",
+            "wikidata": "https://www.wikidata.org/wiki/Q846303",
+            "display_name": "Biogeochemical cycle",
+            "level": 2,
+            "score": 0.5347352027893066
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.47983285784721375
+        },
+        {
+            "id": "https://openalex.org/C2778086194",
+            "wikidata": "https://www.wikidata.org/wiki/Q48995876",
+            "display_name": "Centennial",
+            "level": 2,
+            "score": 0.45784276723861694
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4506455063819885
+        },
+        {
+            "id": "https://openalex.org/C9075549",
+            "wikidata": "https://www.wikidata.org/wiki/Q40631",
+            "display_name": "Troposphere",
+            "level": 2,
+            "score": 0.4196702539920807
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.3858520984649658
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.38407325744628906
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.38281697034835815
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.17041024565696716
+        },
+        {
+            "id": "https://openalex.org/C185592680",
+            "wikidata": "https://www.wikidata.org/wiki/Q2329",
+            "display_name": "Chemistry",
+            "level": 0,
+            "score": 0.1386769413948059
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.11675742268562317
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.11064296960830688
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C166957645",
+            "wikidata": "https://www.wikidata.org/wiki/Q23498",
+            "display_name": "Archaeology",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C107872376",
+            "wikidata": "https://www.wikidata.org/wiki/Q321355",
+            "display_name": "Environmental chemistry",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "HadGEM2-ES",
+            "observational_dataset": "None",
+            "evaluation_metric": "pre-industrial Global total net primary productivity, NPP (GtC yr\u207b\u00b9)",
+            "result": "58.0"
+        },
+        {
+            "model": "HadGEM2-ES",
+            "observational_dataset": "Potsdam, MODIS, Meta-analysis",
+            "evaluation_metric": "present-day Global total net primary productivity, NPP (GtC yr\u207b\u00b9)",
+            "result": "70.5"
+        },
+        {
+            "model": "HadGEM2-ES",
+            "observational_dataset": "None",
+            "evaluation_metric": "% increase in Global total net primary productivity, NPP",
+            "result": "21.6%"
+        },
+        {
+            "model": "HadGEM2-A",
+            "observational_dataset": "Potsdam, MODIS, Meta-analysis",
+            "evaluation_metric": "present-day Global total net primary productivity, NPP (GtC yr\u207b\u00b9)",
+            "result": "54.6"
+        },
+        {
+            "model": "HadCM3LC",
+            "observational_dataset": "None",
+            "evaluation_metric": "pre-industrial Global total net primary productivity, NPP (GtC yr\u207b\u00b9)",
+            "result": "62.4"
+        },
+        {
+            "model": "HadCM3LC",
+            "observational_dataset": "Potsdam, MODIS, Meta-analysis",
+            "evaluation_metric": "present-day Global total net primary productivity, NPP (GtC yr\u207b\u00b9)",
+            "result": "68.9"
+        },
+        {
+            "model": "HadCM3LC",
+            "observational_dataset": "None",
+            "evaluation_metric": "% increase in Global total net primary productivity, NPP",
+            "result": "10.4%"
+        },
+        {
+            "model": "C4MIP",
+            "observational_dataset": "None",
+            "evaluation_metric": "pre-industrial Global total net primary productivity, NPP (GtC yr\u207b\u00b9)",
+            "result": "52.9-75.7"
+        },
+        {
+            "model": "C4MIP",
+            "observational_dataset": "Potsdam, MODIS, Meta-analysis",
+            "evaluation_metric": "present-day Global total net primary productivity, NPP (GtC yr\u207b\u00b9)",
+            "result": "54.1-82.2"
+        },
+        {
+            "model": "C4MIP",
+            "observational_dataset": "None",
+            "evaluation_metric": "% increase in Global total net primary productivity, NPP",
+            "result": "0.4-23.3%"
+        }
+    ],
+    "innovation": "This paper describes the development and evaluation of the HadGEM2 Earth system model, which integrates terrestrial/ocean ecosystems and tropospheric chemistry to simulate centennial-scale climate evolution and biogeochemical feedbacks without requiring artificial flux corrections.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "HadGEM1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "HadGEM2",
+            "target_entity_type": "Source",
+            "paragraph": "For example HadGEM1 (Johns et al., 2006), the predecessor to HadGEM2, already included a land surface scheme and some interactive aerosols; however typically the term \"Earth system\" is used for those models that at least include terrestrial and ocean carbon cycles.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "HadGEM1",
+            "target_entity_type": "Source",
+            "paragraph": "The physical model configuration is derived from the HadGEM1 climate model (Johns et al., 2006 and references therein) with improvements as discussed in The HadGEM2 Development Team (2011) and Martin et al. (2010), and is only described briefly here.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2-ES",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "TRIFFID",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The ecosystem components TRIFFID (Cox, 2001) and diat-HadOCC (Palmer and Totterdell, 2001) are introduced principally to enable the simulation of the carbon cycle and its interactions with the climate.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2-ES",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "diat-HadOCC",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The ecosystem components TRIFFID (Cox, 2001) and diat-HadOCC (Palmer and Totterdell, 2001) are introduced principally to enable the simulation of the carbon cycle and its interactions with the climate.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2-ES",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "UKCA",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The UKCA scheme (O\u2019Connor et al., 2009, 2011) is used to model tropospheric chemistry interactively, allowing it to vary with climate.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "JULES",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The land surface scheme in HadGEM2 is MOSES II (Essery et al., 2003), from which the JULES scheme (Best et al., 2011; Clark et al., 2011) is derived.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LSH",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "A large-scale hydrology module (LSH) has been introduced into HadGEM2 in order to improve the soil moisture, and hence the vegetation distribution, and provide additional functionality such as simulation of wetland area required for interactive methane emissions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "TRIP",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The river scheme is based on TRIP (Oki and Sud, 1998) as in HadGEM1. It includes river transport dynamics, driven by fluxes of surface and subsurface runoff.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "RothC",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The terrestrial carbon cycle component of HadGEM2 is made up of the TRIFFID dynamic vegetation model (Cox, 2001; Clark et al., 2011) and an implementation of the RothC soil carbon model (Coleman and Jenkinson, 1999).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadCM3LC",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "TRIFFID",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The TRIFFID vegetation scheme had been used in a configuration from a previous generation of Hadley Centre models (HadCM3LC). It simulates phenology, growth and competition of 5 plant functional types (broad-leaved and needleleaved trees, C3 and C4 grasses and shrubs).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadOCC",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "Diat-HadOCC",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The ecosystem model used is the Diat-HadOCC model, a development of the previous HadOCC model (Palmer and Totterdell, 2001) that splits the phytoplankton compartment into \u201cdiatoms\u201d and \u201cother phytoplankton\u201d.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MOSES II",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "JULES",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The land surface scheme in HadGEM2 is MOSES II (Essery et al., 2003), from which the JULES scheme (Best et al., 2011; Clark et al., 2011) is derived.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "TOPMODEL approach",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "A large-scale hydrology module (LSH) has been introduced into HadGEM2 in order to improve the soil moisture, and hence the vegetation distribution, and provide additional functionality such as simulation of wetland area required for interactive methane emissions. LSH (Clark and Gedney, 2008; Gedney and Cox, 2003) is based on the TOPMODEL approach (Beven and Kirkby, 1979) whereby soil moisture and runoff are affected by local topography as well as meteorology, vegetation and soil properties.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Marticorena and Bergametti (1995) formulation for dust emission",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Calculation of dust emission is based on the widely-used formulation of Marticorena and Bergametti (1995) for a horizontal flux size range of 0.03 to 1000 \u00b5m radius.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Price and Rind (1993) lightning NOx scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Interactive lightning emissions of NOx are included according to Price and Rind (1993).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Wesely (1989) dry deposition scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Dry deposition is an adaptation of the Wesely (1989) scheme as implemented in the STOCHEM model (Sanderson et al., 2006).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "horizontal resolution of 1.25\u00b0 x 1.875\u00b0",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The atmospheric component uses a horizontal resolution of 1.25\u00b0 x 1.875\u00b0 in latitude and longitude with 38 layers in the vertical extending to over 39 km in height.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "38 vertical layers",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The atmospheric component uses a horizontal resolution of 1.25\u00b0 x 1.875\u00b0 in latitude and longitude with 38 layers in the vertical extending to over 39 km in height.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "40 vertical levels in ocean component",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The oceanic component uses a latitude-longitude grid with a zonal resolution of 1\u00ba everywhere and meridional resolution of 1\u00ba between the poles and 30\u00b0 latitude, from which it increases smoothly to 1/3\u00b0 at the equator. The oceanic component has 40 unevenly spaced levels in the vertical.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "dynamical timestep of 30 min",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The couplings take place every dynamical timestep (30 min in this configuration) within the land-atmosphere system, except for those involving radiation which take place every 3 h.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "daily ocean-atmosphere coupling",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Coupling between the ocean and the atmosphere is on a daily timescale.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "HadGEM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Met Office Hadley Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Centres for Atmospheric Science",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Leeds",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "HadGEM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadCM3LC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMIP3",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "HadGEM2-ES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TRIFFID",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "diat-HadOCC",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "UKCA",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "HadGEM2-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM2-AO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "hydrology",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "river routing",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "aerosol",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "methane",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ozone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sulphur dioxide",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DMS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sulphate aerosol",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Terrestrial Carbon cycle",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Ocean carbon cycle",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Atmospheric Chemistry",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "O3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CH4",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1.25\u00b0 x 1.875\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "38 layers in the vertical",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "model top at 39 km",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "1\u00ba",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "meridional resolution of 1\u00ba between the poles and 30\u00b0 latitude",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "meridional resolution of 1/3\u00b0 at the equator",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "40 unevenly spaced levels in the vertical",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "El Ni\u00f1o Southern Oscillation",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "MOSES II",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "JULES",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "multilayer approach to scaling from leaf to canopy level photosynthesis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "transpiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "gross primary productivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "leaf stomatal conductance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LSH",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "TOPMODEL",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TRIP",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "1\u00b0\u00d71\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ammonium sulphate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ammonium nitrate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fossil-fuel black carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fossil-fuel organic carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mineral dust",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "biomass-burning",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea salt",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "biogenic aerosols",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "direct effect",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "indirect effects",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HNO3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "OH",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "H2O2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Marticorena and Bergametti (1995)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bagnold (1941)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fecan et al. (1999)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TOMCAT",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NOx-HOx-CH4-CO chemistry",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NOx",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HOx",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Price and Rind (1993)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Wesely (1989)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "STOCHEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RothC",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NPP",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net ecosystem exchange",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net ecosystem productivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "di-methyl sulphide",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Diat-HadOCC",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "HadOCC",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "silicate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "iron",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "30 min",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "3 h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "10 days",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "offline",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "N2O",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "halocarbons",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stratospheric ozone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "control",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "IGBP",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "ocean-only",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "atmospheric CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean primary productivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air to sea CO2 flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "methane concentrations",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "satellite",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Amazon basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "AMIP",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "atmosphere-only",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "river discharge",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "methane sulphonic acid",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Amsterdam Island",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Dumont d'Urville",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Cape Grim",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Dust load",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol optical depths",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "AERONET",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Saharan",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Sahel",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Kagoshima",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Irene",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Sapporo",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Tateno",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Alert",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Edmonton",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Amazonia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Central Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "S.E. Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "methane lifetime",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "pre-industrial control",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Tree cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Grass/shrub cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Bare soil",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soil Carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "C4MIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "vegetation carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil carbon",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "GCM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "flux-correction",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Brazil",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "east Siberia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Siberia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "GPP",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Plant Resp.",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soil Resp.",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Total Resp.",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "AMERIFLUX",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Harvard Forest",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "SeaWiFs",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "chlorophyll surface concentrations",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mauna Loa",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Barrow",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "EUROFLUX",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "HadGEM2-A",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "normalised RMS error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "diatoms",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Sahara",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Hawaii",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Pt. Barrow",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Alaska",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "surface temperatures",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud properties",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "carbon cycle",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "gas phase",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "nitrogen cycle",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "COMBINE",
+            "entity_type": "Project"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2047894493",
+        "https://openalex.org/W4300096197",
+        "https://openalex.org/W2083471549",
+        "https://openalex.org/W2147654971",
+        "https://openalex.org/W1981646498",
+        "https://openalex.org/W2153140543",
+        "https://openalex.org/W2097441736",
+        "https://openalex.org/W1503902831",
+        "https://openalex.org/W2108084128",
+        "https://openalex.org/W1982254235",
+        "https://openalex.org/W2012982138",
+        "https://openalex.org/W1983381692",
+        "https://openalex.org/W2097896815",
+        "https://openalex.org/W2160252043",
+        "https://openalex.org/W2154409236",
+        "https://openalex.org/W2173589103",
+        "https://openalex.org/W1987988199",
+        "https://openalex.org/W2083857556",
+        "https://openalex.org/W2179765713",
+        "https://openalex.org/W2168828042",
+        "https://openalex.org/W2111822688",
+        "https://openalex.org/W2151328940",
+        "https://openalex.org/W1997499217",
+        "https://openalex.org/W2165797202",
+        "https://openalex.org/W2064920548",
+        "https://openalex.org/W2078517784",
+        "https://openalex.org/W2098273857",
+        "https://openalex.org/W2122472848",
+        "https://openalex.org/W1971794483",
+        "https://openalex.org/W2132411008",
+        "https://openalex.org/W2124414449",
+        "https://openalex.org/W2091101199",
+        "https://openalex.org/W70443427",
+        "https://openalex.org/W2110534701",
+        "https://openalex.org/W2052426378",
+        "https://openalex.org/W2887745844",
+        "https://openalex.org/W2163210913",
+        "https://openalex.org/W2106963750",
+        "https://openalex.org/W2038165320",
+        "https://openalex.org/W1986127040",
+        "https://openalex.org/W2127559745",
+        "https://openalex.org/W2153438006",
+        "https://openalex.org/W2032365551",
+        "https://openalex.org/W2068676456",
+        "https://openalex.org/W2062217294",
+        "https://openalex.org/W2090538303",
+        "https://openalex.org/W2083812685",
+        "https://openalex.org/W2044642305",
+        "https://openalex.org/W2121311122",
+        "https://openalex.org/W2177016926",
+        "https://openalex.org/W1605320083",
+        "https://openalex.org/W1987707266",
+        "https://openalex.org/W2092947239",
+        "https://openalex.org/W2036229340",
+        "https://openalex.org/W1985275493",
+        "https://openalex.org/W2066583288",
+        "https://openalex.org/W1826576214",
+        "https://openalex.org/W2134289299",
+        "https://openalex.org/W1966715855",
+        "https://openalex.org/W2111266914",
+        "https://openalex.org/W2139836399",
+        "https://openalex.org/W2140155467",
+        "https://openalex.org/W2041885277",
+        "https://openalex.org/W580381918",
+        "https://openalex.org/W2040684390",
+        "https://openalex.org/W2065758433",
+        "https://openalex.org/W4231641183",
+        "https://openalex.org/W2068106641",
+        "https://openalex.org/W1967579008",
+        "https://openalex.org/W1524589981",
+        "https://openalex.org/W2168872978",
+        "https://openalex.org/W3037980133",
+        "https://openalex.org/W2007936903",
+        "https://openalex.org/W2896388651",
+        "https://openalex.org/W1510447231",
+        "https://openalex.org/W2802403280",
+        "https://openalex.org/W1608747627",
+        "https://openalex.org/W2156861557",
+        "https://openalex.org/W2106648215",
+        "https://openalex.org/W652277385",
+        "https://openalex.org/W1985479415",
+        "https://openalex.org/W51449076",
+        "https://openalex.org/W2105348794",
+        "https://openalex.org/W1967820238",
+        "https://openalex.org/W2185648240",
+        "https://openalex.org/W4241374827",
+        "https://openalex.org/W2625551533"
+    ]
+}

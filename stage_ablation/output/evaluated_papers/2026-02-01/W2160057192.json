@@ -1,0 +1,605 @@
+{
+    "uri": "https://openalex.org/W2160057192",
+    "title": "Approximate decorrelation and non-isotropic smoothing of time-variable GRACE-type gravity field models",
+    "venue": {
+        "name": "Journal of Geodesy",
+        "id": "https://openalex.org/S4210204015",
+        "type": "journal"
+    },
+    "publication_year": 2007,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5060111105",
+            "display_name": "J\u00fcrgen Kusche",
+            "orcid": "https://orcid.org/0000-0001-7069-021X"
+        }
+    ],
+    "doi": "https://doi.org/10.1007/s00190-007-0143-3",
+    "abstract": "We discuss a new method for approximately decorrelating and non-isotropically filtering the monthly gravity fields provided by the gravity recovery and climate experiment (GRACE) twin-satellite mission. The procedure is more efficient than conventional Gaussian-type isotropic filters in reducing stripes and spurious patterns, while retaining the signal magnitudes. One of the problems that users of GRACE level 2 monthly gravity field solutions fight is the effect of increasing noise in higher frequencies. Simply truncating the spherical harmonic solution at low degrees causes the loss of a significant portion of signal, which is not an option if one is interested in geophysical phenomena on a scale of few hundred to few thousand km. The common approach is to filter the published solutions, that is to convolve them with an isotropic kernel that allows an interpretation as smoothed averaging. The downside of this approach is an amplitude bias and the fact that it neither accounts for the variable data density that increases towards the poles where the orbits converge nor for the anisotropic error correlation structure that the solutions exhibit. Here a relatively simple regularization procedure will be outlined, which allows one to take the latter two effects into account, on the basis of published level 2 products. This leads to a series of approximate decorrelation transformations applied to the monthly solutions, which enable a successive smoothing to reduce the noise in the higher frequencies. This smoothing effect may be used to generate solutions that behave, on average over all possible directions, very close to Gaussian-type filtered ones. The localizing and smoothing properties of our non-isotropic kernels are compared with Gaussian kernels in terms of the kernel variance and the resulting amplitude bias for a standard signal. Examples involving real GRACE level 2 fields as well as geophysical models are used to demonstrate the techniques. With the new method, we find that the characteristic striping pattern in the GRACE solutions are much more reduced than Gaussian-filtered solutions of comparable signal amplitude and root mean square.",
+    "field": "Time-variable gravity",
+    "problem": "Conventional isotropic filtering of GRACE gravity data introduces signal amplitude bias and fails to account for the anisotropic error correlation structure and variable data density, leading to inefficient removal of noise patterns like stripes while retaining signal.",
+    "method": "We propose a non-isotropic smoothing method based on a regularization procedure using an approximate error covariance matrix to decorrelate and filter noisy GRACE gravity fields, effectively reducing characteristic striping patterns while better preserving the geophysical signal compared to conventional isotropic filters.",
+    "task": "The task is to develop a non-isotropic smoothing and decorrelation method for time-variable GRACE gravity field models to reduce noise and characteristic striping patterns while better preserving the geophysical signal.",
+    "model": [
+        "ECCO",
+        "LaD"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/decorrelation",
+            "display_name": "Decorrelation",
+            "score": 0.8167811632156372
+        },
+        {
+            "id": "https://openalex.org/keywords/smoothing",
+            "display_name": "Smoothing",
+            "score": 0.6600536108016968
+        },
+        {
+            "id": "https://openalex.org/keywords/isotropy",
+            "display_name": "Isotropy",
+            "score": 0.5756425261497498
+        },
+        {
+            "id": "https://openalex.org/keywords/spurious-relationship",
+            "display_name": "Spurious relationship",
+            "score": 0.5014352798461914
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.4957033395767212
+        },
+        {
+            "id": "https://openalex.org/keywords/gaussian",
+            "display_name": "Gaussian",
+            "score": 0.4564847946166992
+        },
+        {
+            "id": "https://openalex.org/keywords/amplitude",
+            "display_name": "Amplitude",
+            "score": 0.4301438629627228
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematical-analysis",
+            "display_name": "Mathematical analysis",
+            "score": 0.4121440052986145
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.3376997113227844
+        },
+        {
+            "id": "https://openalex.org/keywords/applied-mathematics",
+            "display_name": "Applied mathematics",
+            "score": 0.332533061504364
+        },
+        {
+            "id": "https://openalex.org/keywords/algorithm",
+            "display_name": "Algorithm",
+            "score": 0.27847135066986084
+        },
+        {
+            "id": "https://openalex.org/keywords/optics",
+            "display_name": "Optics",
+            "score": 0.10557857155799866
+        },
+        {
+            "id": "https://openalex.org/keywords/statistics",
+            "display_name": "Statistics",
+            "score": 0.10519856214523315
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C177860922",
+            "wikidata": "https://www.wikidata.org/wiki/Q788608",
+            "display_name": "Decorrelation",
+            "level": 2,
+            "score": 0.8167811632156372
+        },
+        {
+            "id": "https://openalex.org/C3770464",
+            "wikidata": "https://www.wikidata.org/wiki/Q775963",
+            "display_name": "Smoothing",
+            "level": 2,
+            "score": 0.6600536108016968
+        },
+        {
+            "id": "https://openalex.org/C184050105",
+            "wikidata": "https://www.wikidata.org/wiki/Q273163",
+            "display_name": "Isotropy",
+            "level": 2,
+            "score": 0.5756425261497498
+        },
+        {
+            "id": "https://openalex.org/C97256817",
+            "wikidata": "https://www.wikidata.org/wiki/Q1462316",
+            "display_name": "Spurious relationship",
+            "level": 2,
+            "score": 0.5014352798461914
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.4957033395767212
+        },
+        {
+            "id": "https://openalex.org/C163716315",
+            "wikidata": "https://www.wikidata.org/wiki/Q901177",
+            "display_name": "Gaussian",
+            "level": 2,
+            "score": 0.4564847946166992
+        },
+        {
+            "id": "https://openalex.org/C180205008",
+            "wikidata": "https://www.wikidata.org/wiki/Q159190",
+            "display_name": "Amplitude",
+            "level": 2,
+            "score": 0.4301438629627228
+        },
+        {
+            "id": "https://openalex.org/C134306372",
+            "wikidata": "https://www.wikidata.org/wiki/Q7754",
+            "display_name": "Mathematical analysis",
+            "level": 1,
+            "score": 0.4121440052986145
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.3376997113227844
+        },
+        {
+            "id": "https://openalex.org/C28826006",
+            "wikidata": "https://www.wikidata.org/wiki/Q33521",
+            "display_name": "Applied mathematics",
+            "level": 1,
+            "score": 0.332533061504364
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.27847135066986084
+        },
+        {
+            "id": "https://openalex.org/C120665830",
+            "wikidata": "https://www.wikidata.org/wiki/Q14620",
+            "display_name": "Optics",
+            "level": 1,
+            "score": 0.10557857155799866
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.10519856214523315
+        },
+        {
+            "id": "https://openalex.org/C62520636",
+            "wikidata": "https://www.wikidata.org/wiki/Q944",
+            "display_name": "Quantum mechanics",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper introduces a new method for approximately decorrelating and non-isotropically filtering monthly GRACE gravity fields, which more effectively reduces characteristic striping noise and retains signal magnitude compared to conventional isotropic Gaussian filters.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "K-band ranging system (KBR)",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "intersatellite range",
+            "target_entity_type": "Variable",
+            "paragraph": "GRACE is a twin-satellite formation, with two identical spacecraft chasing each other in similar near-polar orbits. A K-band ranging system (KBR) provides the biased intersatellite range as well as its derivatives with respect to time.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "K-band ranging system (KBR)",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "GRACE twin-satellite formation",
+            "target_entity_type": "Platform",
+            "paragraph": "GRACE is a twin-satellite formation, with two identical spacecraft chasing each other in similar near-polar orbits. A K-band ranging system (KBR) provides the biased intersatellite range as well as its derivatives with respect to time. In addition, both satellites are equipped with geodetic GPS receivers as well as accelerometry for removing non-gravitational forces prior to data analysis.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "geodetic GPS receivers",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "GRACE twin-satellite formation",
+            "target_entity_type": "Platform",
+            "paragraph": "In addition, both satellites are equipped with geodetic GPS receivers as well as accelerometry for removing non-gravitational forces prior to data analysis.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "accelerometry",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "GRACE twin-satellite formation",
+            "target_entity_type": "Platform",
+            "paragraph": "In addition, both satellites are equipped with geodetic GPS receivers as well as accelerometry for removing non-gravitational forces prior to data analysis.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GRACE",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "near-polar orbits",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "GRACE is a twin-satellite formation, with two identical spacecraft chasing each other in similar near-polar orbits.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GRACE monthly gravity fields",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Isotropic Gaussian smoothing",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Isotropic Gaussian smoothing (i.e., degree-dependent down-weighting of the Stokes coefficients) of the GRACE monthly gravity fields had been proposed in Wahr et al. (1998), based upon methods outlined in Jekeli (1981).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "monthly gravity fields provided by the gravity recovery and climate experiment (GRACE) twin-satellite mission",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "approximate decorrelation and non-isotropic smoothing",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We discuss a new method for approximately decorrelating and non-isotropically filtering the monthly gravity fields provided by the gravity recovery and climate experiment (GRACE) twin-satellite mission.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "GRACE solutions",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square",
+            "target_entity_type": "Metric",
+            "paragraph": "With the new method, we find that the characteristic striping pattern in the GRACE solutions are much more reduced than Gaussian-filtered solutions of comparable signal amplitude and root mean square.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "GRACE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Delft Institute of Earth Observation and Space Systems",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Delft University of Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GeoForschungsZentrum Potsdam",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "time-variable gravity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "approximate decorrelation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "non-isotropic smoothing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Gaussian-type isotropic filters",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "root mean square",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "amplitude bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "kernel variance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mass change",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "terrestrial water storage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hydrosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "geosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "GRACE",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "twin-satellite formation",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "K-band ranging system",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "KBR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "geodetic GPS receivers",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "accelerometry",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Center for Space Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Texas",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GFZ",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Jet Propulsion Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "JPL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Isotropic Gaussian smoothing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "global root mean square",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Tikhonov-type regularization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "geoid changes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface mass change",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "spherical harmonic coefficients",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "gravitational potential",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Degree-dependent smoothing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "spherical Dirac kernel",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Gaussian kernel",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "half-width",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Degree- and order-dependent smoothing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Wiener filter",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bayesian estimate",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "atmospheric pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "half-width radius",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "square root of variance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard scaling bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "annual and semi-annual amplitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mass loss",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mediterranean Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North pole",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Level-2 GRACE monthly gravity field solutions",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ocean bottom pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "OBP",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ECCO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LaD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Technical University Munich",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GFZ Information System and Data Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "10s sampling",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "60s sampling",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "energy conservation approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "geoid power spectra",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "load Love numbers",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "geoid height changes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "equivalent water height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "geophysical surface mass field",
+            "entity_type": "Variable"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2052831834",
+        "https://openalex.org/W2018981508",
+        "https://openalex.org/W2078118719",
+        "https://openalex.org/W2073089386",
+        "https://openalex.org/W6812469177",
+        "https://openalex.org/W2159268657",
+        "https://openalex.org/W1981486729",
+        "https://openalex.org/W4388321579",
+        "https://openalex.org/W2165660664",
+        "https://openalex.org/W2108384686",
+        "https://openalex.org/W1206732546",
+        "https://openalex.org/W2122197798",
+        "https://openalex.org/W1991221590",
+        "https://openalex.org/W2075953468",
+        "https://openalex.org/W2080082513",
+        "https://openalex.org/W2068953701",
+        "https://openalex.org/W2127525487",
+        "https://openalex.org/W2122516172",
+        "https://openalex.org/W1991319789",
+        "https://openalex.org/W2052879598",
+        "https://openalex.org/W2107387379",
+        "https://openalex.org/W2122775741",
+        "https://openalex.org/W2060576920",
+        "https://openalex.org/W1588827410",
+        "https://openalex.org/W2053692638",
+        "https://openalex.org/W1990931465",
+        "https://openalex.org/W2007815508",
+        "https://openalex.org/W3101320476",
+        "https://openalex.org/W311724416",
+        "https://openalex.org/W2759425973",
+        "https://openalex.org/W3096412764",
+        "https://openalex.org/W1980450508",
+        "https://openalex.org/W4230880638",
+        "https://openalex.org/W1549124992"
+    ]
+}

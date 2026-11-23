@@ -1,0 +1,1311 @@
+{
+    "uri": "https://openalex.org/W2988579853",
+    "title": "Enforcing conservation of axial angular momentum in the atmospheric general circulation model CAM6",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2020,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5025693557",
+            "display_name": "Thomas Toniazzo",
+            "orcid": "https://orcid.org/0000-0001-9375-7034"
+        },
+        {
+            "id": "https://openalex.org/A5088945731",
+            "display_name": "Mats Bentsen",
+            "orcid": "https://orcid.org/0000-0001-5441-4063"
+        },
+        {
+            "id": "https://openalex.org/A5056213449",
+            "display_name": "Cheryl Craig",
+            "orcid": "https://orcid.org/0000-0003-4606-6710"
+        },
+        {
+            "id": "https://openalex.org/A5055852278",
+            "display_name": "Brian Eaton",
+            "orcid": "https://orcid.org/0000-0002-4433-3339"
+        },
+        {
+            "id": "https://openalex.org/A5034062881",
+            "display_name": "Jim Edwards",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5065104535",
+            "display_name": "S. Goldhaber",
+            "orcid": "https://orcid.org/0000-0003-0719-3776"
+        },
+        {
+            "id": "https://openalex.org/A5079274357",
+            "display_name": "Christiane Jablonowski",
+            "orcid": "https://orcid.org/0000-0003-0407-0092"
+        },
+        {
+            "id": "https://openalex.org/A5083624624",
+            "display_name": "P. H. Lauritzen",
+            "orcid": "https://orcid.org/0000-0001-7066-138X"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-13-685-2020",
+    "abstract": "Abstract. Numerical general circulation models of the atmosphere are generally required to conserve mass and energy for their application to climate studies. Here we draw attention to another conserved global integral, viz. the component of angular momentum (AM) along the Earth's axis of rotation, which tends to receive less consideration. We demonstrate the importance of global AM conservation in climate simulations with the example of the Community Atmosphere Model (CAM) with the finite-volume (FV) dynamical core, which produces a noticeable numerical sink of AM. We use a combination of mathematical analysis and numerical diagnostics to pinpoint the main source of AM non-conservation in CAM\u2013FV. We then present a method to enforce global conservation of AM, and we discuss the results in a hierarchy of numerical simulations of the atmosphere of increasing complexity. In line with theoretical expectations, we show that even a crude, non-local enforcement of AM conservation in the simulations consistently results in the mitigation of certain persistent model biases.",
+    "field": "Geoscientific model development",
+    "problem": "The Community Atmosphere Model with the finite-volume dynamical core (CAM-FV) produces a significant numerical sink of axial angular momentum, a failure to conserve a fundamental quantity that leads to persistent biases in simulations of the large-scale atmospheric circulation.",
+    "method": "This paper proposes a method that combines a zonal-mean correction to the shallow-water advection scheme with a \"fixer\" that enforces the conservation of global angular momentum, thereby reducing the numerical sink of angular momentum in the CAM-FV atmospheric model.",
+    "task": "The task is to address the numerical sink of axial angular momentum in the Community Atmosphere Model (CAM6) by developing and testing a method to enforce its conservation, thereby mitigating persistent model biases.",
+    "model": [
+        "CAM6",
+        "CAM",
+        "CAM-FV",
+        "NorESM",
+        "CESM",
+        "GFDL-x",
+        "CCSM4",
+        "FV3"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/angular-momentum",
+            "display_name": "Angular momentum",
+            "score": 0.665402889251709
+        },
+        {
+            "id": "https://openalex.org/keywords/conservation-law",
+            "display_name": "Conservation law",
+            "score": 0.6438862085342407
+        },
+        {
+            "id": "https://openalex.org/keywords/atmosphere",
+            "display_name": "Atmosphere (unit)",
+            "score": 0.6352279186248779
+        },
+        {
+            "id": "https://openalex.org/keywords/conservation-of-mass",
+            "display_name": "Conservation of mass",
+            "score": 0.5929064750671387
+        },
+        {
+            "id": "https://openalex.org/keywords/finite-volume-method",
+            "display_name": "Finite volume method",
+            "score": 0.5294337272644043
+        },
+        {
+            "id": "https://openalex.org/keywords/momentum",
+            "display_name": "Momentum (technical analysis)",
+            "score": 0.5029842257499695
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.4910767078399658
+        },
+        {
+            "id": "https://openalex.org/keywords/energy-conservation",
+            "display_name": "Energy conservation",
+            "score": 0.485029399394989
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.47737929224967957
+        },
+        {
+            "id": "https://openalex.org/keywords/general-circulation-model",
+            "display_name": "General Circulation Model",
+            "score": 0.45717766880989075
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-model",
+            "display_name": "Atmospheric model",
+            "score": 0.43892985582351685
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-simulation",
+            "display_name": "Computer simulation",
+            "score": 0.4107336699962616
+        },
+        {
+            "id": "https://openalex.org/keywords/mechanics",
+            "display_name": "Mechanics",
+            "score": 0.3968910574913025
+        },
+        {
+            "id": "https://openalex.org/keywords/statistical-physics",
+            "display_name": "Statistical physics",
+            "score": 0.37471359968185425
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.35527297854423523
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.3404502868652344
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.3372237980365753
+        },
+        {
+            "id": "https://openalex.org/keywords/classical-mechanics",
+            "display_name": "Classical mechanics",
+            "score": 0.3100981116294861
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.16799208521842957
+        },
+        {
+            "id": "https://openalex.org/keywords/economics",
+            "display_name": "Economics",
+            "score": 0.12313112616539001
+        },
+        {
+            "id": "https://openalex.org/keywords/engineering",
+            "display_name": "Engineering",
+            "score": 0.10921797156333923
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C155675718",
+            "wikidata": "https://www.wikidata.org/wiki/Q161254",
+            "display_name": "Angular momentum",
+            "level": 2,
+            "score": 0.665402889251709
+        },
+        {
+            "id": "https://openalex.org/C3445786",
+            "wikidata": "https://www.wikidata.org/wiki/Q205805",
+            "display_name": "Conservation law",
+            "level": 2,
+            "score": 0.6438862085342407
+        },
+        {
+            "id": "https://openalex.org/C65440619",
+            "wikidata": "https://www.wikidata.org/wiki/Q177974",
+            "display_name": "Atmosphere (unit)",
+            "level": 2,
+            "score": 0.6352279186248779
+        },
+        {
+            "id": "https://openalex.org/C157206272",
+            "wikidata": "https://www.wikidata.org/wiki/Q483948",
+            "display_name": "Conservation of mass",
+            "level": 2,
+            "score": 0.5929064750671387
+        },
+        {
+            "id": "https://openalex.org/C50478463",
+            "wikidata": "https://www.wikidata.org/wiki/Q1401936",
+            "display_name": "Finite volume method",
+            "level": 2,
+            "score": 0.5294337272644043
+        },
+        {
+            "id": "https://openalex.org/C60718061",
+            "wikidata": "https://www.wikidata.org/wiki/Q1414747",
+            "display_name": "Momentum (technical analysis)",
+            "level": 2,
+            "score": 0.5029842257499695
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.4910767078399658
+        },
+        {
+            "id": "https://openalex.org/C520301825",
+            "wikidata": "https://www.wikidata.org/wiki/Q380170",
+            "display_name": "Energy conservation",
+            "level": 2,
+            "score": 0.485029399394989
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.47737929224967957
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.45717766880989075
+        },
+        {
+            "id": "https://openalex.org/C118365302",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric model",
+            "level": 2,
+            "score": 0.43892985582351685
+        },
+        {
+            "id": "https://openalex.org/C500300565",
+            "wikidata": "https://www.wikidata.org/wiki/Q925667",
+            "display_name": "Computer simulation",
+            "level": 2,
+            "score": 0.4107336699962616
+        },
+        {
+            "id": "https://openalex.org/C57879066",
+            "wikidata": "https://www.wikidata.org/wiki/Q41217",
+            "display_name": "Mechanics",
+            "level": 1,
+            "score": 0.3968910574913025
+        },
+        {
+            "id": "https://openalex.org/C121864883",
+            "wikidata": "https://www.wikidata.org/wiki/Q677916",
+            "display_name": "Statistical physics",
+            "level": 1,
+            "score": 0.37471359968185425
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.35527297854423523
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3404502868652344
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3372237980365753
+        },
+        {
+            "id": "https://openalex.org/C74650414",
+            "wikidata": "https://www.wikidata.org/wiki/Q11397",
+            "display_name": "Classical mechanics",
+            "level": 1,
+            "score": 0.3100981116294861
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.16799208521842957
+        },
+        {
+            "id": "https://openalex.org/C162324750",
+            "wikidata": "https://www.wikidata.org/wiki/Q8134",
+            "display_name": "Economics",
+            "level": 0,
+            "score": 0.12313112616539001
+        },
+        {
+            "id": "https://openalex.org/C127413603",
+            "wikidata": "https://www.wikidata.org/wiki/Q11023",
+            "display_name": "Engineering",
+            "level": 0,
+            "score": 0.10921797156333923
+        },
+        {
+            "id": "https://openalex.org/C10138342",
+            "wikidata": "https://www.wikidata.org/wiki/Q43015",
+            "display_name": "Finance",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C62520636",
+            "wikidata": "https://www.wikidata.org/wiki/Q944",
+            "display_name": "Quantum mechanics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C119599485",
+            "wikidata": "https://www.wikidata.org/wiki/Q43035",
+            "display_name": "Electrical engineering",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "f19 default",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Sea level pressure Correlation coefficient: space-time",
+            "result": "0.955"
+        },
+        {
+            "model": "f19 AM",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Sea level pressure Correlation coefficient: space-time",
+            "result": "0.964"
+        },
+        {
+            "model": "f09 default",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Sea level pressure Correlation coefficient: space-time",
+            "result": "0.969"
+        },
+        {
+            "model": "f09 AM",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Sea level pressure Correlation coefficient: space-time",
+            "result": "0.971"
+        },
+        {
+            "model": "f19 default",
+            "observational_dataset": "CERES-EBAF",
+            "evaluation_metric": "SW cloud forcing Correlation coefficient: space-time",
+            "result": "0.857"
+        },
+        {
+            "model": "f19 AM",
+            "observational_dataset": "CERES-EBAF",
+            "evaluation_metric": "SW cloud forcing Correlation coefficient: space-time",
+            "result": "0.863"
+        },
+        {
+            "model": "f09 default",
+            "observational_dataset": "CERES-EBAF",
+            "evaluation_metric": "SW cloud forcing Correlation coefficient: space-time",
+            "result": "0.892"
+        },
+        {
+            "model": "f09 AM",
+            "observational_dataset": "CERES-EBAF",
+            "evaluation_metric": "SW cloud forcing Correlation coefficient: space-time",
+            "result": "0.892"
+        },
+        {
+            "model": "f19 default",
+            "observational_dataset": "CERES-EBAF",
+            "evaluation_metric": "LW cloud forcing Correlation coefficient: space-time",
+            "result": "0.808"
+        },
+        {
+            "model": "f19 AM",
+            "observational_dataset": "CERES-EBAF",
+            "evaluation_metric": "LW cloud forcing Correlation coefficient: space-time",
+            "result": "0.828"
+        },
+        {
+            "model": "f09 default",
+            "observational_dataset": "CERES-EBAF",
+            "evaluation_metric": "LW cloud forcing Correlation coefficient: space-time",
+            "result": "0.842"
+        },
+        {
+            "model": "f09 AM",
+            "observational_dataset": "CERES-EBAF",
+            "evaluation_metric": "LW cloud forcing Correlation coefficient: space-time",
+            "result": "0.845"
+        },
+        {
+            "model": "f19 default",
+            "observational_dataset": "GPCP",
+            "evaluation_metric": "Land rainfall (30N-30S) Correlation coefficient: space-time",
+            "result": "0.853"
+        },
+        {
+            "model": "f19 AM",
+            "observational_dataset": "GPCP",
+            "evaluation_metric": "Land rainfall (30N-30S) Correlation coefficient: space-time",
+            "result": "0.871"
+        },
+        {
+            "model": "f09 default",
+            "observational_dataset": "GPCP",
+            "evaluation_metric": "Land rainfall (30N-30S) Correlation coefficient: space-time",
+            "result": "0.865"
+        },
+        {
+            "model": "f09 AM",
+            "observational_dataset": "GPCP",
+            "evaluation_metric": "Land rainfall (30N-30S) Correlation coefficient: space-time",
+            "result": "0.872"
+        },
+        {
+            "model": "f19 default",
+            "observational_dataset": "GPCP",
+            "evaluation_metric": "Ocean rainfall (30N-30S) Correlation coefficient: space-time",
+            "result": "0.788"
+        },
+        {
+            "model": "f19 AM",
+            "observational_dataset": "GPCP",
+            "evaluation_metric": "Ocean rainfall (30N-30S) Correlation coefficient: space-time",
+            "result": "0.777"
+        },
+        {
+            "model": "f09 default",
+            "observational_dataset": "GPCP",
+            "evaluation_metric": "Ocean rainfall (30N-30S) Correlation coefficient: space-time",
+            "result": "0.813"
+        },
+        {
+            "model": "f09 AM",
+            "observational_dataset": "GPCP",
+            "evaluation_metric": "Ocean rainfall (30N-30S) Correlation coefficient: space-time",
+            "result": "0.815"
+        },
+        {
+            "model": "f19 default",
+            "observational_dataset": "Willmott",
+            "evaluation_metric": "Land 2 m temperature Correlation coefficient: space-time",
+            "result": "0.986"
+        },
+        {
+            "model": "f19 AM",
+            "observational_dataset": "Willmott",
+            "evaluation_metric": "Land 2 m temperature Correlation coefficient: space-time",
+            "result": "0.985"
+        },
+        {
+            "model": "f09 default",
+            "observational_dataset": "Willmott",
+            "evaluation_metric": "Land 2 m temperature Correlation coefficient: space-time",
+            "result": "0.990"
+        },
+        {
+            "model": "f09 AM",
+            "observational_dataset": "Willmott",
+            "evaluation_metric": "Land 2 m temperature Correlation coefficient: space-time",
+            "result": "0.990"
+        },
+        {
+            "model": "f19 default",
+            "observational_dataset": "ERS",
+            "evaluation_metric": "Pacific surface stress (5N-5S) Correlation coefficient: space-time",
+            "result": "0.851"
+        },
+        {
+            "model": "f19 AM",
+            "observational_dataset": "ERS",
+            "evaluation_metric": "Pacific surface stress (5N-5S) Correlation coefficient: space-time",
+            "result": "0.882"
+        },
+        {
+            "model": "f09 default",
+            "observational_dataset": "ERS",
+            "evaluation_metric": "Pacific surface stress (5N-5S) Correlation coefficient: space-time",
+            "result": "0.883"
+        },
+        {
+            "model": "f09 AM",
+            "observational_dataset": "ERS",
+            "evaluation_metric": "Pacific surface stress (5N-5S) Correlation coefficient: space-time",
+            "result": "0.901"
+        },
+        {
+            "model": "f19 default",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Zonal wind (300mb) Correlation coefficient: space-time",
+            "result": "0.947"
+        },
+        {
+            "model": "f19 AM",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Zonal wind (300mb) Correlation coefficient: space-time",
+            "result": "0.952"
+        },
+        {
+            "model": "f09 default",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Zonal wind (300mb) Correlation coefficient: space-time",
+            "result": "0.956"
+        },
+        {
+            "model": "f09 AM",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Zonal wind (300mb) Correlation coefficient: space-time",
+            "result": "0.957"
+        },
+        {
+            "model": "f19 default",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Relative humidity Correlation coefficient: space-time",
+            "result": "0.894"
+        },
+        {
+            "model": "f19 AM",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Relative humidity Correlation coefficient: space-time",
+            "result": "0.898"
+        },
+        {
+            "model": "f09 default",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Relative humidity Correlation coefficient: space-time",
+            "result": "0.922"
+        },
+        {
+            "model": "f09 AM",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Relative humidity Correlation coefficient: space-time",
+            "result": "0.925"
+        },
+        {
+            "model": "f19 default",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Temperature Correlation coefficient: space-time",
+            "result": "0.988"
+        },
+        {
+            "model": "f19 AM",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Temperature Correlation coefficient: space-time",
+            "result": "0.987"
+        },
+        {
+            "model": "f09 default",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Temperature Correlation coefficient: space-time",
+            "result": "0.987"
+        },
+        {
+            "model": "f09 AM",
+            "observational_dataset": "ERAI",
+            "evaluation_metric": "Temperature Correlation coefficient: space-time",
+            "result": "0.987"
+        }
+    ],
+    "innovation": "This paper introduces a zonal-mean correction and a global \"fixer\" to enforce conservation of axial angular momentum in the CAM-FV atmospheric model, which substantially reduces persistent model biases in the simulated surface winds and global atmospheric circulation.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "CAM6",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "finite-volume (FV) dynamical core",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Abstract. Numerical general circulation models of the atmo- sphere are generally required to conserve mass and energy for their application to climate studies. Here we draw atten- tion to another conserved global integral, viz. the component of angular momentum (AM) along the Earth's axis of rota- tion, which tends to receive less consideration. We demon- strate the importance of global AM conservation in climate simulations with the example of the Community Atmosphere Model (CAM) with the finite-volume (FV) dynamical core, which produces a noticeable numerical sink of AM.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CAM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "CAM, the Community Atmosphere Model developed and maintained at the National Center for Atmospheric Research (NCAR) in Boulder, Colorado, is one of the atmospheric general circulations models (AGCMs) in most widespread use today. It also constitutes the core atmospheric component of NorESM, the Norwegian Earth System Model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "finite-volume (FV) dynamical core",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "CAM, the Community Atmosphere Model developed and maintained at the National Center for Atmospheric Research (NCAR) in Boulder, Colorado, is one of the atmospheric gen- eral circulations models (AGCMs) in most widespread use today. It also constitutes the core atmospheric component of NorESM, the Norwegian Earth System Model. Although it offers a choice of dynamical cores, the finite-volume (FV) dynamical core (Lin, 2004) has been, and in many instances still is, the default option.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM-FV",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "numerical sink of AM",
+            "target_entity_type": "Metric",
+            "paragraph": "We demonstrate the importance of global AM conservation in climate simulations with the example of the Community Atmosphere Model (CAM) with the finite-volume (FV) dynamical core, which produces a noticeable numerical sink of AM.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "National Center for Atmospheric Research (NCAR)",
+            "target_entity_type": "Institute",
+            "paragraph": "CAM, the Community Atmosphere Model developed and maintained at the National Center for Atmospheric Research (NCAR) in Boulder, Colorado, is one of the atmospheric general circulations models (AGCMs) in most widespread use today.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CCSM4",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "FV dynamical core",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Model simulations with CAM FV consistently tend to reflect such phenomenology: for example, Feldl and Bordoni (2016) and Lipat et al. (2017) show that among CMIP5 models, those based on the FV dynamical core (GFDL-x, CCSM4, and NorESM-x) simulate both relatively large overturning mass flux in the HC and a high latitude of its edge.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM-x",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "FV dynamical core",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Model simulations with CAM FV consistently tend to reflect such phenomenology: for example, Feldl and Bordoni (2016) and Lipat et al. (2017) show that among CMIP5 models, those based on the FV dynamical core (GFDL-x, CCSM4, and NorESM-x) simulate both relatively large overturning mass flux in the HC and a high latitude of its edge.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-x",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "FV dynamical core",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Model simulations with CAM FV consistently tend to reflect such phenomenology: for example, Feldl and Bordoni (2016) and Lipat et al. (2017) show that among CMIP5 models, those based on the FV dynamical core (GFDL-x, CCSM4, and NorESM-x) simulate both relatively large overturning mass flux in the HC and a high latitude of its edge.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM-FV",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "aquaplanet",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Figure 1 shows the spurious AM source in aquaplanet (AP; Neale and Hoskins, 2000; Blackburn et al., 2013) and Held- Suarez (HS; Held and Suarez, 1994) simulations with CAM FV and an otherwise identical simulation but with the global spectral dynamical core with T42 truncation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM-FV",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "Held-Suarez",
+            "target_entity_type": "SimulationType",
+            "paragraph": "Figure 1 shows the spurious AM source in aquaplanet (AP; Neale and Hoskins, 2000; Blackburn et al., 2013) and Held- Suarez (HS; Held and Suarez, 1994) simulations with CAM FV and an otherwise identical simulation but with the global spectral dynamical core with T42 truncation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM-FV",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "regular latitude-longitude grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Figure 1. Numerical torque in idealised CAM simulations. The vertically and zonally integrated apparent numerical torque is shown as a function of latitude for CAM simulations in aquaplanet (AP; a, b and c) and Held-Suarez (HS; d and e) configurations. The numerical torque here is obtained as a time-average residual of the tendency of angular momentum in each cylindrical shell of constant latitude of the model's domain, after subtracting the contributions from meridional convergence and from the surface stress torque. The details of the calculation are in Appendix A. Two simulations with the FV dynamical core are shown for each configuration, one at f19 resolution (i.e. on a regular latitude-longitude grid with spacing of 1.9\u00b0 x 2.5\u00b0; a and d) and one at f09 (i.e. with twice that resolution; b and e).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM-FV",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "D grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The FV dynamical core (Lin, 2004) solves the HPE by up- dating first the advective (C grid) and then the prognostic (D grid) winds in two steps.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM-FV",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "C grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The FV dynamical core (Lin, 2004) solves the HPE by up- dating first the advective (C grid) and then the prognostic (D grid) winds in two steps.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FV3",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "cubed-sphere grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Particularly compelling is the comparison with the performance of a prototype implementation in CAM of the FV scheme on a cubed-sphere grid (FV3), which lacks any poles and does not require or use any of these special formulations (and is, in particular, run in pure Eulerian mode, i.e. without the flux-form semi-Lagrangian extension described in Lin and Rood, 1996).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "FV dynamical core",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "piece-wise parabolic method (PPM)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In particular, LR97 implement a flux-form semi-Lagrangian extension of Colella and Woodward's (1984) piece-wise parabolic method (PPM), which is used near the poles where Courant- Friedrichs-Lewy numbers (Courant et al., 1928) become large during the time integration.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM-FV",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "30 hybrid levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Initial tests were carried out for adiabatic dynamics and flat bottom topography from baroclinically unstable initial conditions, as defined in Jablonowski and Williamson (2006; JW06). Figure 3 shows the result in terms of the conservation of global AM for CAM-FV integrations at f19 resolution (1.9 x 2.5\u00b0 of latitude and longitude) and 30 hybrid levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM-FV",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square (RMS) of the differences in surface pressure",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 4a shows their impact on the accuracy of the JW06 baroclinic wave test in terms of the root mean square (RMS) of the differences in surface pressure from a nominal reference solution with original FV dynamical core.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM-FV",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "AMIP-type simulations",
+            "target_entity_type": "SimulationType",
+            "paragraph": "The relevance of the AM modifications to the FV dynami- cal core for CAM simulations in a realistic configuration is investigated here using F2000 cases, which are AMIP-type simulations (Gates, 1992) wherein sea surface temperatures (SSTs) and all compositional forcings are prescribed as a re- peating annual cycle obtained from an observed climatology of the decade spanning the turn of the century.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CAM-FV",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "PPM advection scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In CAM's default configuration, the order of FV's PPM advection scheme is reduced here, which results in large numerical dissipation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hadley circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "mid-latitudes",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "In the upper branch of the Hadley circulation (HC), the ad- vection of planetary angular momentum determines a sharp acceleration of the zonal wind in the mid-latitudes linked to a front-like drop in air temperatures, marking the location of the subtropical jets (STJs).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "CAM6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Community Atmosphere Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-x",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CCSM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM-x",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA40",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERAI",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CERES-EBAF",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GPCP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "AGCM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "finite-volume (FV) dynamical core",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "global spectral dynamical core",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "National Center for Atmospheric Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NORCE Klima and Bjerknes Centre for Climate Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Department of Meteorology (MISU), Stockholm University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Department of Climate and Space Sciences and Engineering, University of Michigan",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Norwegian Climate Centre (NCC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CESM",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "aquaplanet",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Held-Suarez",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "F2000",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "dry baroclinic wave test",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "AMIP-type simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "climate simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "palaeoclimate simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "coupled ocean-atmosphere climate simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "idealised AGCM experiments",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "adiabatic",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "full-physics",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "C grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "D grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "cubed-sphere grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "hybrid-level",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "30 hybrid levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "subtropical jets",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "piece-wise parabolic method (PPM)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "flux-form semi-Lagrangian extension",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Arakawa and Lamb (1981) type schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "gravity-wave parameterisation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "moist atmospheric boundary-layer parameterisation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "PPM advection scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "model bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean square (RMS) of the differences",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Taylor (2001) diagrams",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "angular momentum",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mass",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "energy",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zonal wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "form drag",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air temperatures",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "kinetic energy",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vorticity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea surface temperatures (SSTs)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface wind-stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Sea level pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SW cloud forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LW cloud forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Land rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ocean rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Land 2 m temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Pacific surface stress",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Zonal wind (300mb, ERAI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Temperature (ERAI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1.9\u00b0 x 2.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "f19",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.9\u00b0 \u00d7 1.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "f09",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "T42 truncation",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "satellite",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "satellite scatterometer",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Hadley circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Atlantic meridional overturning circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "subtropical gyres",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "subpolar gyres",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "cyclone",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "cyclogenesis",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Norway",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Sweden",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Colorado",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Michigan",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Bergen",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Stockholm",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Boulder",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Ann Arbor",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Equator",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "poles",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "mid-latitudes",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "inter-tropical convergence zone (ITCZ)",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "boreal winter",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Tropical",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project",
+            "entity_type": "Activity"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1977998515",
+        "https://openalex.org/W2031628447",
+        "https://openalex.org/W2073945818",
+        "https://openalex.org/W2046899724",
+        "https://openalex.org/W2141343789",
+        "https://openalex.org/W1977141213",
+        "https://openalex.org/W1951383380",
+        "https://openalex.org/W2174939835",
+        "https://openalex.org/W6931407470",
+        "https://openalex.org/W4252425265",
+        "https://openalex.org/W2047114993",
+        "https://openalex.org/W2008642300",
+        "https://openalex.org/W2098244132",
+        "https://openalex.org/W2986345846",
+        "https://openalex.org/W2135339809",
+        "https://openalex.org/W2017449635",
+        "https://openalex.org/W1976719990",
+        "https://openalex.org/W1871183312",
+        "https://openalex.org/W2036673630",
+        "https://openalex.org/W2109356213",
+        "https://openalex.org/W2176254346",
+        "https://openalex.org/W4248426483",
+        "https://openalex.org/W1999433668",
+        "https://openalex.org/W2621922516",
+        "https://openalex.org/W4241116540",
+        "https://openalex.org/W2147451346",
+        "https://openalex.org/W2013603173",
+        "https://openalex.org/W2019071997",
+        "https://openalex.org/W2016411152",
+        "https://openalex.org/W1985479415",
+        "https://openalex.org/W2090249381",
+        "https://openalex.org/W2122003667",
+        "https://openalex.org/W2106906845",
+        "https://openalex.org/W1605883162",
+        "https://openalex.org/W1983307362",
+        "https://openalex.org/W2791906314",
+        "https://openalex.org/W2148813569"
+    ]
+}

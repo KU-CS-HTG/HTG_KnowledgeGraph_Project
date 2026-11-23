@@ -1,0 +1,677 @@
+{
+    "uri": "https://openalex.org/W7134016764",
+    "title": "Climate Downscaling with Stochastic Interpolants (CDSI)",
+    "venue": {
+        "name": "arXiv (Cornell University)",
+        "id": "https://openalex.org/S4306400194",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5128143801",
+            "display_name": "Erik Larsson",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5128162748",
+            "display_name": "Ramon Fuentes-Franco",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5128172985",
+            "display_name": "Mikhail Ivanov",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5045048407",
+            "display_name": "Fredrik Lindsten",
+            "orcid": "https://orcid.org/0000-0003-3749-5820"
+        }
+    ],
+    "doi": null,
+    "abstract": "Global climate projections rely on computationally demanding Earth System Models (ESMs), which are typically limited to coarse spatial resolutions due to their high cost. To obtain high-resolution projections for regions of interest, it is common to use Regional Climate Models (RCMs), which are driven by data produced by ESMs as boundary conditions. While more efficient than running ESMs at fine resolution, RCMs remain expensive and restrict the size of ensemble simulations. Inspired by recent advances in probabilistic machine learning for weather and climate, we introduce a data-driven climate downscaling method based on stochastic interpolants. Our approach efficiently transforms coarse ESM output into high-resolution regional climate projections at a fraction of the computational cost of traditional RCMs. Through extensive validation, we demonstrate that our method generates accurate regional ensembles, enabling both improved uncertainty quantification and broader use of high-resolution climate information.",
+    "field": "Climate downscaling",
+    "problem": "Global climate projections from Earth System Models are too coarse for local impact assessments, and while Regional Climate Models provide higher resolution, they are computationally expensive, which limits the size of ensemble simulations and thus restricts uncertainty quantification.",
+    "method": "We propose a data-driven climate downscaling method based on stochastic interpolants to transform coarse Earth System Model output into high-resolution regional climate projections at a fraction of the computational cost of traditional methods.",
+    "task": "The task is to transform coarse Earth System Model outputs into high-resolution regional climate projections using a data-driven method based on stochastic interpolants, which efficiently generates accurate ensembles for assessing local climate impacts and uncertainty.",
+    "model": [
+        "CDSI",
+        "ESMS",
+        "RCMS",
+        "HCLIM",
+        "EC-Earth"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.9528999924659729
+        },
+        {
+            "id": "https://openalex.org/keywords/probabilistic-logic",
+            "display_name": "Probabilistic logic",
+            "score": 0.6607000231742859
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.6413999795913696
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.46050000190734863
+        },
+        {
+            "id": "https://openalex.org/keywords/general-circulation-model",
+            "display_name": "General Circulation Model",
+            "score": 0.4535999894142151
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-system",
+            "display_name": "Climate system",
+            "score": 0.3944000005722046
+        },
+        {
+            "id": "https://openalex.org/keywords/boundary",
+            "display_name": "Boundary (topology)",
+            "score": 0.37549999356269836
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.9528999924659729
+        },
+        {
+            "id": "https://openalex.org/C49937458",
+            "wikidata": "https://www.wikidata.org/wiki/Q2599292",
+            "display_name": "Probabilistic logic",
+            "level": 2,
+            "score": 0.6607000231742859
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.6413999795913696
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5613999962806702
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.46050000190734863
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.4535999894142151
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.41510000824928284
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.3944000005722046
+        },
+        {
+            "id": "https://openalex.org/C62354387",
+            "wikidata": "https://www.wikidata.org/wiki/Q875399",
+            "display_name": "Boundary (topology)",
+            "level": 2,
+            "score": 0.37549999356269836
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3727000057697296
+        },
+        {
+            "id": "https://openalex.org/C127491075",
+            "wikidata": "https://www.wikidata.org/wiki/Q7617825",
+            "display_name": "Stochastic modelling",
+            "level": 2,
+            "score": 0.36480000615119934
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.3564999997615814
+        },
+        {
+            "id": "https://openalex.org/C149629883",
+            "wikidata": "https://www.wikidata.org/wiki/Q660926",
+            "display_name": "Fraction (chemistry)",
+            "level": 2,
+            "score": 0.34130001068115234
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.336899995803833
+        },
+        {
+            "id": "https://openalex.org/C32230216",
+            "wikidata": "https://www.wikidata.org/wiki/Q7882499",
+            "display_name": "Uncertainty quantification",
+            "level": 2,
+            "score": 0.31520000100135803
+        },
+        {
+            "id": "https://openalex.org/C114289077",
+            "wikidata": "https://www.wikidata.org/wiki/Q3284399",
+            "display_name": "Statistical model",
+            "level": 2,
+            "score": 0.30799999833106995
+        },
+        {
+            "id": "https://openalex.org/C126255220",
+            "wikidata": "https://www.wikidata.org/wiki/Q141495",
+            "display_name": "Mathematical optimization",
+            "level": 1,
+            "score": 0.2922999858856201
+        },
+        {
+            "id": "https://openalex.org/C2988944679",
+            "wikidata": "https://www.wikidata.org/wiki/Q7937",
+            "display_name": "Global climate",
+            "level": 3,
+            "score": 0.2703000009059906
+        },
+        {
+            "id": "https://openalex.org/C2993643576",
+            "wikidata": "https://www.wikidata.org/wiki/Q1277161",
+            "display_name": "Climate extremes",
+            "level": 3,
+            "score": 0.258899986743927
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper introduces Climate Downscaling with Stochastic Interpolants (CDSI), a probabilistic, data-driven framework that efficiently transforms coarse global climate simulations into high-resolution regional ensembles, providing a direct, single-model alternative to complex multi-stage methods.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "HARMONIE-Climate (HCLIM)",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "HIRLAM-ALADIN Numerial Weather Prediction system",
+            "target_entity_type": "Source",
+            "paragraph": "In this study, we use the HARMONIE-Climate (HCLIM) regional climate modeling system as our reference dataset, serving as both the ground truth for validation and the training target for our emulator. HCLIM is a community-developed, high-resolution modeling framework designed for regional climate simulations across a wide range of spatial scales. Built upon the HIRLAM-ALADIN Numerial Weather Prediction system, HARMONIE-Climate (HCLIM) integrates advanced physical parameterizations, data assimilation techniques, and surface modeling via the SURFEX land model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HARMONIE-Climate (HCLIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "SURFEX",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Built upon the HIRLAM-ALADIN Numerial Weather Prediction system, HARMONIE-Climate (HCLIM) integrates advanced physical parameterizations, data assimilation techniques, and surface modeling via the SURFEX land model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HARMONIE-Climate (HCLIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "advanced physical parameterizations",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Built upon the HIRLAM-ALADIN Numerial Weather Prediction system, HARMONIE-Climate (HCLIM) integrates advanced physical parameterizations, data assimilation techniques, and surface modeling via the SURFEX land model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HARMONIE-Climate (HCLIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "data assimilation techniques",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Built upon the HIRLAM-ALADIN Numerial Weather Prediction system, HARMONIE-Climate (HCLIM) integrates advanced physical parameterizations, data assimilation techniques, and surface modeling via the SURFEX land model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HARMONIE-Climate (HCLIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "AROME",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The HARMONIE-Climate (HCLIM) system includes multiple configurations optimized for different resolutions: AROME for convection-permitting (~2.5 km), ALARO for intermediate (~4\u201310 km), and ALADIN for coarser (~10-50 km) grids.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HARMONIE-Climate (HCLIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ALARO",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The HARMONIE-Climate (HCLIM) system includes multiple configurations optimized for different resolutions: AROME for convection-permitting (~2.5 km), ALARO for intermediate (~4\u201310 km), and ALADIN for coarser (~10-50 km) grids.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HARMONIE-Climate (HCLIM)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ALADIN",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The HARMONIE-Climate (HCLIM) system includes multiple configurations optimized for different resolutions: AROME for convection-permitting (~2.5 km), ALARO for intermediate (~4\u201310 km), and ALADIN for coarser (~10-50 km) grids.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HCLIM38",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "ALADIN physics",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In this work, we employ simulations from the HCLIM38 configuration using ALADIN physics at 12 km resolution over the EURO-CORDEX domain.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "flood",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Flood",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Finer spatial detail is essential for simulating climate extremes; for example, high-resolution precipitation data are needed to assess flood risks (Wang et al., 2021).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Earth System Models (ESMS)",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Regional Climate Models (RCMs)",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "100 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1-10 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Coordinated Regional Downscaling Experiment (CORDEX)",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "EURO-CORDEX",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "0.1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "12 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "flood",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "50 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "convective storms",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "HARMONIE-Climate (HCLIM)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HIRLAM-ALADIN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SURFEX",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "AROME",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "2.5 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ALARO",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "4-10 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ALADIN",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "10-50 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "EURO-CORDEX domain",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "CORDEX FPS",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "land-sea masks",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "topography",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "45 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "9 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "2 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "25 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "second-order EDM ODE solver",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Euler-Maruyama method",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "bilinear interpolation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "latitude/longitude coordinates",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "orography",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "stochastic Euler-Maruyama sampling scheme",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Root Mean Squared Error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Spread-Skill Ratio (SSR)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Continuous Ranked Probability Score (CRPS)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "power spectra",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "EC-Earth",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1 degree",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "110 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.1 degrees",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "realization 1",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "realization 2",
+            "entity_type": "Member"
+        },
+        {
+            "entity_instance": "2 m air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mean squared error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "second-order solver",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Swedish Meteorological and Hydrological Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Link\u00f6ping University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Stockholm University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Uppsala University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "cloud_cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity_1000",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity_850",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity_700",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity_500",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity_250",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea_level_pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature_2m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature_1000",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature_850",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature_700",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature_500",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature_250",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind_u_1000",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind_u_850",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind_u_700",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind_u_500",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind_u_250",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind_v_1000",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind_v_850",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind_v_700",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind_v_500",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind_v_250",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Land-sea-mask",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "x-coordinate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "y-coordinate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Time of year cosine",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Time of year sine",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mathews Correlation Coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CORDEX",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        }
+    ],
+    "referenced_works": []
+}

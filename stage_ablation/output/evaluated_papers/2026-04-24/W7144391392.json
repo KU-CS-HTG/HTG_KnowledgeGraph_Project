@@ -1,0 +1,971 @@
+{
+    "uri": "https://openalex.org/W7144391392",
+    "title": "Do Climate Models Need Microphysical and Convective Parameterizations to Generate Accurate Precipitation Fields?",
+    "venue": {
+        "name": "ArXiv.org",
+        "id": "https://openalex.org/S4393918464",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5131250888",
+            "display_name": "Raul Moreno",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5131332196",
+            "display_name": "Dale Durran",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "Accurately representing surface precipitation is crucial for the operational use of weather and climate models. Presently, global numerical weather prediction (NWP) models struggle to accurately generate precipitation due to their parametrization of unresolved deep convective clouds and, in regions of grid-resolved ascent, inadequate parameterizations of cloud microphysics. Here we bypass these parameterizations with a machine learning model that diagnoses precipitation from 13 ERA5 fields that are easily observed and assimilated, as opposed for example, to fields like rain or cloud liquid water. We train a pair of models; ML_ERA5 using ERA5 precipitation as the target, and ML_IMERG using a satellite based precipitation product. ML_ERA5 closely reproduces the ERA5 precipitation at all intensities. When evaluated against the satellite dataset, ML_IMERG closely matches observations, notably reproducing the diurnal cycle of the satellite product. ML_IMERG generally captures extremes better than ERA5 while also reducing ERA5's overproduction of light precipitation. When evaluated against a third ground-and-radar-based dataset, ML_IMERG inherits the strengths of the satellite dataset which is superior to ERA5 in the summer months.",
+    "field": "Machine learning for precipitation prediction",
+    "problem": "Global weather models struggle to accurately generate precipitation due to their reliance on inadequate parameterizations for unresolved deep convective clouds and cloud microphysics, which introduces systematic biases in timing and intensity into forecasts and climate simulations.",
+    "method": "The authors propose a machine learning model that diagnoses precipitation from easily observed atmospheric fields, bypassing traditional microphysical and convective parameterizations to reduce known biases by training on satellite precipitation observations.",
+    "task": "The task is to determine if a machine learning model can diagnose accurate precipitation fields from easily assimilated atmospheric variables, bypassing the need for traditional microphysical and convective parameterizations used in climate and weather models.",
+    "model": [
+        "MLERA5",
+        "MLIMERG",
+        "IFS",
+        "ERA5",
+        "CAM6",
+        "DLESyM",
+        "MetNet-2",
+        "Global MetNet",
+        "NeuralGCM",
+        "DiffObs",
+        "AIFS"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.8582000136375427
+        },
+        {
+            "id": "https://openalex.org/keywords/parametrization",
+            "display_name": "Parametrization (atmospheric modeling)",
+            "score": 0.8070999979972839
+        },
+        {
+            "id": "https://openalex.org/keywords/satellite",
+            "display_name": "Satellite",
+            "score": 0.6952000260353088
+        },
+        {
+            "id": "https://openalex.org/keywords/convection",
+            "display_name": "Convection",
+            "score": 0.46790000796318054
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.42100000381469727
+        },
+        {
+            "id": "https://openalex.org/keywords/weather-modification",
+            "display_name": "Weather modification",
+            "score": 0.364300012588501
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.8582000136375427
+        },
+        {
+            "id": "https://openalex.org/C202887219",
+            "wikidata": "https://www.wikidata.org/wiki/Q3895221",
+            "display_name": "Parametrization (atmospheric modeling)",
+            "level": 3,
+            "score": 0.8070999979972839
+        },
+        {
+            "id": "https://openalex.org/C19269812",
+            "wikidata": "https://www.wikidata.org/wiki/Q26540",
+            "display_name": "Satellite",
+            "level": 2,
+            "score": 0.6952000260353088
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6754999756813049
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.5530999898910522
+        },
+        {
+            "id": "https://openalex.org/C10899652",
+            "wikidata": "https://www.wikidata.org/wiki/Q160329",
+            "display_name": "Convection",
+            "level": 2,
+            "score": 0.46790000796318054
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.45170000195503235
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.42100000381469727
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.3815000057220459
+        },
+        {
+            "id": "https://openalex.org/C550656013",
+            "wikidata": "https://www.wikidata.org/wiki/Q1513578",
+            "display_name": "Weather modification",
+            "level": 2,
+            "score": 0.364300012588501
+        },
+        {
+            "id": "https://openalex.org/C79974875",
+            "wikidata": "https://www.wikidata.org/wiki/Q483639",
+            "display_name": "Cloud computing",
+            "level": 2,
+            "score": 0.3433000147342682
+        },
+        {
+            "id": "https://openalex.org/C147947694",
+            "wikidata": "https://www.wikidata.org/wiki/Q837552",
+            "display_name": "Numerical weather prediction",
+            "level": 2,
+            "score": 0.3425000011920929
+        },
+        {
+            "id": "https://openalex.org/C45493050",
+            "wikidata": "https://www.wikidata.org/wiki/Q7884934",
+            "display_name": "Unified Model",
+            "level": 2,
+            "score": 0.29409998655319214
+        },
+        {
+            "id": "https://openalex.org/C141452985",
+            "wikidata": "https://www.wikidata.org/wiki/Q650994",
+            "display_name": "General Circulation Model",
+            "level": 3,
+            "score": 0.28349998593330383
+        },
+        {
+            "id": "https://openalex.org/C75398719",
+            "wikidata": "https://www.wikidata.org/wiki/Q7268938",
+            "display_name": "Quantitative precipitation estimation",
+            "level": 3,
+            "score": 0.2822999954223633
+        },
+        {
+            "id": "https://openalex.org/C186293655",
+            "wikidata": "https://www.wikidata.org/wiki/Q3268251",
+            "display_name": "Precipitation types",
+            "level": 3,
+            "score": 0.2703999876976013
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper demonstrates that a machine learning model can diagnose accurate precipitation fields from a small set of easily assimilated large-scale atmospheric variables, potentially bypassing the need for traditional microphysical and convective parameterizations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "IFS",
+            "target_entity_type": "Source",
+            "paragraph": "The approximations used to parameterize these processes, combined with the lack of assimilated observations in the total precipitation field yield known biases in the IFS forecasts as well as in the popular reanalysis dataset ERA5, which uses the IFS as its base model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IFS",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "convective parameterization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Traditional global NWP models like the European Center for Medium Range Weather Forecast- ing\u2019s (ECMWF) Integrated Forecasting System (IFS) generate precipitation through two parame- terizations, one representing sub-grid-scale deep convection and the other microphysical processes occurring in response to adiabatic cooling during grid-resolved vertical motions (ECMWF 2024).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IFS",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "mass-flux scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The convective parameterization estimates vertical transport of heat and mois- ture at the subgrid level. In the IFS this is implemented with a mass-flux scheme triggered in unstable conditions and tuned using empirically derived estimates of entrainment and detrainment (ECMWF 2024).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MLERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "In this section, we analyze the global performance of a model (MLERA5 ) trained to reproduce ERA5 3-hr precipitation from the 13 input fields in Table 1. This allows us to assess the degree to which the ERA5 precipitation fields can be determined by a small collection of easy-to-assimilate fields in contrast to a more conventional combination of microphysical and deep convective pa- rameterizations.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MLIMERG",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "We now evaluate a similar model (MLIMERG ) except that it is trained with IMERG data as the target. Directly training against observational data has the potential to improve precipitation forecasts beyond those obtained via more traditional parameterizations, although we currently lack a perfect dataset against which to train.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "Precipitation in the ERA5 dataset is obtained primarily from short-term model forecasts by ECMWF\u2019s IFS as part of the data assimilation process (some radar data from over the US is also assimilated). IFS precipitation is calculated using deterministic parameterizations of microphysical processes and deep convection.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IMERG",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "Satellite observations are from NASA\u2019s Integrated Multi-satellitE Retrievals for GPM (IMERG) version 7 dataset, which includes precipitation fields every 30 minutes from 2000 to present. IMERG combines microwave, infrared, and rain gauge estimates of precipitation to provide a \u2018best estimate\u2019 record of precipitation at the surface (Huffman et al. 2020).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MLERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1\u00b0\u00d71\u00b0 latitude-longitude global mesh",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Our focus will be on resolutions in space and time appropriate for typical climate model simulations: a 1\u00b0\u00d71\u00b0 latitude- longitude global mesh and 3- or 24-h accumulations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MLIMERG",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1\u00b0\u00d71\u00b0 latitude-longitude global mesh",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Our focus will be on resolutions in space and time appropriate for typical climate model simulations: a 1\u00b0\u00d71\u00b0 latitude- longitude global mesh and 3- or 24-h accumulations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MLERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "FSS",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 4 gives several globally averaged skill metrics for MLERA5 evaluated against ERA5 pre- cipitation in the test set. Figure 4a shows the fraction skill score across six intensity categories for a neighborhood size of 5\u00d75 grid cells. Data is not plotted for the most frequent intensity category of dry or almost dry (precipitation less than 1 mm d\u22121). For thresholds below 10 mm d\u22121, FSS values exceed 0.9 and approach a perfect score of 1.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MLIMERG",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "FSS",
+            "target_entity_type": "Metric",
+            "paragraph": "Further quantitative comparison of MLIMERG with ERA5 is presented in Fig. 6, which shows metrics spatially averaged between 70\u00b0 N and 70\u00b0 S over the 2022\u20132024 test set. Figure 6a shows the fraction skill score computed over 5\u00d75 grid-cell neighborhoods, binned by threshold intensities. The FSS diagnosed from MLIMERG is better (higher) than that from ERA5 at all intensity levels.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "FSS",
+            "target_entity_type": "Metric",
+            "paragraph": "In contrast to ERA5, MLIMERG scores above the nominal threshold for skillful forecasts at all intensities, whereas ERA5 falls short at the lowest intensity of 1\u20132 mm d-1.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MLERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "ETS",
+            "target_entity_type": "Metric",
+            "paragraph": "The equitable threat score (ETS) for MLERA5 3-h and 24-h accumulations is given in Fig. 4b.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MLIMERG",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "ETS",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 6b compares Equitable Threat Scores (ETS) as a function intensity for 24-h accumulations. MLIMERG demonstrates higher skill than ERA5 at all intensity thresholds, indicating more reliable detection of events beyond random chance.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "ETS",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 6b compares Equitable Threat Scores (ETS) as a function intensity for 24-h accumulations. MLIMERG demonstrates higher skill than ERA5 at all intensity thresholds, indicating more reliable detection of events beyond random chance.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MLERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "1-SEEPS",
+            "target_entity_type": "Metric",
+            "paragraph": "The 1-SEEPS score in Fig. 4c gives a measure of overall performance on dry, light, and heavy categories, as determined from the climatology in each grid cell. The MLERA5 scores are approxi- mately 0.94, which are both quite close to a perfect score of 1 and also well above the 0.72 value determined for a \u201cperfect-model\u201d forecast at 80-km grid spacing (Rodwell et al. 2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MLIMERG",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "1-SEEPS",
+            "target_entity_type": "Metric",
+            "paragraph": "Lastly, Fig. 6c shows that the 1-SEEPS score for MLIMERG again exceeds ERA5 in skill, con- sistently yielding better estimates of dry, light, and heavy precipitation conditions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "1-SEEPS",
+            "target_entity_type": "Metric",
+            "paragraph": "Lastly, Fig. 6c shows that the 1-SEEPS score for MLIMERG again exceeds ERA5 in skill, con- sistently yielding better estimates of dry, light, and heavy precipitation conditions. Note that the 1-SEEPS values for MLIMERG exceed those for the \u201cperfect model\u201d comparison of (G\u00f6ber 2008), while the ERA5 results are worse.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Typhoon Chaba",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "South China Sea",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "As further representative examples, two heavy precipitation events associated different synoptic- scale systems are compared: a typhoon in the South China Sea and a significant flood event in Brazil.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "flood event",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Brazil",
+            "target_entity_type": "Country",
+            "paragraph": "As further representative examples, two heavy precipitation events associated different synoptic- scale systems are compared: a typhoon in the South China Sea and a significant flood event in Brazil.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Rio Grande do Sul floods",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Rio Grande do Sul",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "FIG. 16. Precipitation fields for three different synoptic cases with the MLIMERG estimate on the left, IMERG validation in the center column, and ERA5 in the right. (a)-(c) Brazil flood event 24-h totals for September 5, 2023. (d)-(f) Typhoon Chaba 24-h totals for July 1, 2022. FSS for MLIMERG and ERA5 estimates are also included in the lower left corners of the subplots.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Rio Grande do Sul floods",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Flood",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "FIG. 16. Precipitation fields for three different synoptic cases with the MLIMERG estimate on the left, IMERG validation in the center column, and ERA5 in the right. (a)-(c) Brazil flood event 24-h totals for September 5, 2023. (d)-(f) Typhoon Chaba 24-h totals for July 1, 2022. FSS for MLIMERG and ERA5 estimates are also included in the lower left corners of the subplots.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "University of Washington",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "MLERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MLIMERG",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IMERG",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "diurnal cycle",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "light precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "floods",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Flood",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "droughts",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Drought",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "snow and ice storms",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Integrated Forecasting System (IFS)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "convective parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cloud liquid specific water content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation rain specific water content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mass-flux scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "wet bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "extreme precipitation events",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "intertropical convergence zone",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "microphysics parameterizations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DYAMOND",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "convective rainfall intensity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stratiform rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ACC",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "500-hPa height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MetNet-2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global MetNet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HREF",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "NeuralGCM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECMWF ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "DiffObs",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "total column water vapor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "out going top-of-atmosphere thermal radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "specific humidity at 850 hPa",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1\u00b0\u00d71\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "3-hr",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "24-h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "CAM6",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "NCAR",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "0.9\u00b0 \u00d71.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "stochastic bin model of warm-rain precipitation process",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GPM",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "NASA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NCEP Stage IV",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCEP",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ERA-Interim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "geopotential height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "80-km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "CMORPH",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NOAA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "U-net style convolutional neural network",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "DLESyM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ConvNeXt blocks",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "U-net",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "MSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "horizontal winds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "3-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "topography",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land-sea mask",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1-hour",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1000-hPa geopotential height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "500-hPa geopotential height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "250-hPa geopotential height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "700-300 thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2-m temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "850-hPa temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "850-hPa specific humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "850-hPa meridional winds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "850-hPa zonal winds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Total column water vapor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "10-meter wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Top of atmos. thermal radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Sea surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "3-hr (model) total precip.",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "3-hr (satellite) total precip.",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "30-min",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "microwave",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "infrared",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "rain gauge",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "half-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "radar",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "fraction skill score (FSS)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Stable Equitable Error in Probability Space (SEEPS) score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "1-SEEPS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Equitable Threat Score (ETS)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "probability of detection (POD)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "success ratio (SR)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "performance diagram",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "temporal correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "deep convective parameterizations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "6-h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "80\u00d780 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Eastern United States",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "convection permitting models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "50N-25N",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "25N-25S",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Maritime Continent",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "50N-50S",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "central and eastern United States",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "mesoscale convective systems",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Taylor diagrams",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "pattern correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ratio of the standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "centered RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "central plains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "maximum one-day accumulation (Rx1d)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Bay in Bengal",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South China Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "cyclone",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "typhoon",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "flood event",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Brazil",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "deterministic parameterizations of microphysical processes and deep convection",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "outgoing long-wave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Rio Grande do Sul floods",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Typhoon Chaba",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "parameterizations of cloud microphysics",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "subgrid-scale deep convection",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "0.25\u00b0 \u00d70.25\u00b0",
+            "entity_type": "Resolution"
+        }
+    ],
+    "referenced_works": []
+}

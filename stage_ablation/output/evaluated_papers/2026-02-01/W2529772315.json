@@ -1,0 +1,514 @@
+{
+    "uri": "https://openalex.org/W2529772315",
+    "title": "Treatment of overlapping gaseous absorption with the correlated-<i>k</i>method in hot Jupiter and brown dwarf atmosphere models",
+    "venue": {
+        "name": "Astronomy and Astrophysics",
+        "id": "https://openalex.org/S205231332",
+        "type": "journal"
+    },
+    "publication_year": 2016,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5057183824",
+            "display_name": "D. S. Amundsen",
+            "orcid": "https://orcid.org/0000-0002-5612-7321"
+        },
+        {
+            "id": "https://openalex.org/A5029764095",
+            "display_name": "Pascal Tremblin",
+            "orcid": "https://orcid.org/0000-0001-6172-3403"
+        },
+        {
+            "id": "https://openalex.org/A5049631343",
+            "display_name": "James Manners",
+            "orcid": "https://orcid.org/0000-0003-4402-6811"
+        },
+        {
+            "id": "https://openalex.org/A5057666462",
+            "display_name": "I. Baraffe",
+            "orcid": "https://orcid.org/0000-0001-8365-5982"
+        },
+        {
+            "id": "https://openalex.org/A5064794366",
+            "display_name": "Nathan J. Mayne",
+            "orcid": "https://orcid.org/0000-0001-6707-4563"
+        }
+    ],
+    "doi": "https://doi.org/10.1051/0004-6361/201629322",
+    "abstract": "The correlated-k method is frequently used to speed up radiation calculations\\nin both one-dimensional and three-dimensional atmosphere models. An inherent\\ndifficulty with this method is how to treat overlapping absorption, i.e.\\nabsorption by more than one gas in a given spectral region. We have evaluated\\nthe applicability of three different methods in hot Jupiter and brown dwarf\\natmosphere models, all of which have been previously applied within models in\\nthe literature: (i) Random overlap, both with and without resorting and\\nrebinning, (ii) equivalent extinction and (iii) pre-mixing of opacities, where\\n(i) and (ii) combine k-coefficients for different gases to obtain\\nk-coefficients for a mixture of gases, while (iii) calculates k-coefficients\\nfor a given mixture from the corresponding mixed line-by-line opacities. We\\nfind that the random overlap method is the most accurate and flexible of these\\ntreatments, and is fast enough to be used in one-dimensional models with\\nresorting and rebinning. In three-dimensional models such as GCMs it is too\\nslow, however, and equivalent extinction can provide a speed-up of at least a\\nfactor of three with only a minor loss of accuracy while at the same time\\nretaining the flexibility gained by combining k-coefficients computed for each\\ngas individually. Pre-mixed opacities are significantly less flexible, and we\\nalso find that particular care must be taken when using this method in order to\\nto adequately resolve steep variations in composition at important chemical\\nequilibrium boundaries. We use the random overlap method with resorting and\\nrebinning in our one-dimensional atmosphere model and equivalent extinction in\\nour GCM, which allows us to e.g. consistently treat the feedback of\\nnon-equilibrium chemistry on the total opacity and therefore the calculated P-T\\nprofiles in our models.\\n",
+    "field": "Radiative transfer in planetary atmospheres",
+    "problem": "Atmospheric models using the correlated-k method struggle to treat overlapping gaseous absorption, as existing techniques force a trade-off between computational speed, accuracy, and the flexibility to handle variable gas compositions, especially in complex three-dimensional simulations.",
+    "method": "This paper proposes a method for treating overlapping gaseous absorption by evaluating three schemes and recommending the use of random overlap with resorting for 1D models and equivalent extinction for 3D models to best balance accuracy, flexibility, and computational cost.",
+    "task": "The task is to evaluate the accuracy, flexibility, and computational efficiency of three methods for treating overlapping gaseous absorption using the correlated-k method in atmosphere models of hot Jupiters and brown dwarfs.",
+    "model": [
+        "ATMO",
+        "SOCRATES",
+        "MITgcm"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.7811169624328613
+        },
+        {
+            "id": "https://openalex.org/keywords/opacity",
+            "display_name": "Opacity",
+            "score": 0.715191125869751
+        },
+        {
+            "id": "https://openalex.org/keywords/atmosphere",
+            "display_name": "Atmosphere (unit)",
+            "score": 0.6672937870025635
+        },
+        {
+            "id": "https://openalex.org/keywords/extinction",
+            "display_name": "Extinction (optical mineralogy)",
+            "score": 0.5837792754173279
+        },
+        {
+            "id": "https://openalex.org/keywords/absorption",
+            "display_name": "Absorption (acoustics)",
+            "score": 0.5794278383255005
+        },
+        {
+            "id": "https://openalex.org/keywords/astrophysics",
+            "display_name": "Astrophysics",
+            "score": 0.5378637909889221
+        },
+        {
+            "id": "https://openalex.org/keywords/line",
+            "display_name": "Line (geometry)",
+            "score": 0.5299383401870728
+        },
+        {
+            "id": "https://openalex.org/keywords/hot-jupiter",
+            "display_name": "Hot Jupiter",
+            "score": 0.5053927898406982
+        },
+        {
+            "id": "https://openalex.org/keywords/computational-physics",
+            "display_name": "Computational physics",
+            "score": 0.35430192947387695
+        },
+        {
+            "id": "https://openalex.org/keywords/statistical-physics",
+            "display_name": "Statistical physics",
+            "score": 0.3329266905784607
+        },
+        {
+            "id": "https://openalex.org/keywords/thermodynamics",
+            "display_name": "Thermodynamics",
+            "score": 0.24350205063819885
+        },
+        {
+            "id": "https://openalex.org/keywords/stars",
+            "display_name": "Stars",
+            "score": 0.17147362232208252
+        },
+        {
+            "id": "https://openalex.org/keywords/optics",
+            "display_name": "Optics",
+            "score": 0.16652047634124756
+        },
+        {
+            "id": "https://openalex.org/keywords/exoplanet",
+            "display_name": "Exoplanet",
+            "score": 0.12043842673301697
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.10945147275924683
+        },
+        {
+            "id": "https://openalex.org/keywords/geometry",
+            "display_name": "Geometry",
+            "score": 0.10734903812408447
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.7811169624328613
+        },
+        {
+            "id": "https://openalex.org/C60056205",
+            "wikidata": "https://www.wikidata.org/wiki/Q691914",
+            "display_name": "Opacity",
+            "level": 2,
+            "score": 0.715191125869751
+        },
+        {
+            "id": "https://openalex.org/C65440619",
+            "wikidata": "https://www.wikidata.org/wiki/Q177974",
+            "display_name": "Atmosphere (unit)",
+            "level": 2,
+            "score": 0.6672937870025635
+        },
+        {
+            "id": "https://openalex.org/C101991246",
+            "wikidata": "https://www.wikidata.org/wiki/Q5422078",
+            "display_name": "Extinction (optical mineralogy)",
+            "level": 2,
+            "score": 0.5837792754173279
+        },
+        {
+            "id": "https://openalex.org/C125287762",
+            "wikidata": "https://www.wikidata.org/wiki/Q1758948",
+            "display_name": "Absorption (acoustics)",
+            "level": 2,
+            "score": 0.5794278383255005
+        },
+        {
+            "id": "https://openalex.org/C44870925",
+            "wikidata": "https://www.wikidata.org/wiki/Q37547",
+            "display_name": "Astrophysics",
+            "level": 1,
+            "score": 0.5378637909889221
+        },
+        {
+            "id": "https://openalex.org/C198352243",
+            "wikidata": "https://www.wikidata.org/wiki/Q37105",
+            "display_name": "Line (geometry)",
+            "level": 2,
+            "score": 0.5299383401870728
+        },
+        {
+            "id": "https://openalex.org/C206489886",
+            "wikidata": "https://www.wikidata.org/wiki/Q382979",
+            "display_name": "Hot Jupiter",
+            "level": 4,
+            "score": 0.5053927898406982
+        },
+        {
+            "id": "https://openalex.org/C30475298",
+            "wikidata": "https://www.wikidata.org/wiki/Q909554",
+            "display_name": "Computational physics",
+            "level": 1,
+            "score": 0.35430192947387695
+        },
+        {
+            "id": "https://openalex.org/C121864883",
+            "wikidata": "https://www.wikidata.org/wiki/Q677916",
+            "display_name": "Statistical physics",
+            "level": 1,
+            "score": 0.3329266905784607
+        },
+        {
+            "id": "https://openalex.org/C97355855",
+            "wikidata": "https://www.wikidata.org/wiki/Q11473",
+            "display_name": "Thermodynamics",
+            "level": 1,
+            "score": 0.24350205063819885
+        },
+        {
+            "id": "https://openalex.org/C150846664",
+            "wikidata": "https://www.wikidata.org/wiki/Q7602306",
+            "display_name": "Stars",
+            "level": 2,
+            "score": 0.17147362232208252
+        },
+        {
+            "id": "https://openalex.org/C120665830",
+            "wikidata": "https://www.wikidata.org/wiki/Q14620",
+            "display_name": "Optics",
+            "level": 1,
+            "score": 0.16652047634124756
+        },
+        {
+            "id": "https://openalex.org/C163479331",
+            "wikidata": "https://www.wikidata.org/wiki/Q44559",
+            "display_name": "Exoplanet",
+            "level": 3,
+            "score": 0.12043842673301697
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.10945147275924683
+        },
+        {
+            "id": "https://openalex.org/C2524010",
+            "wikidata": "https://www.wikidata.org/wiki/Q8087",
+            "display_name": "Geometry",
+            "level": 1,
+            "score": 0.10734903812408447
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper systematically evaluates the accuracy, flexibility, and computational cost of three methods for treating overlapping gaseous absorption in correlated-k models of hot Jupiter and brown dwarf atmospheres, providing practical recommendations for their use in 1D and 3D simulations.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "SPARC/MITgcm",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Pre-mixed k-coefficients",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "This technique has been used in 1D atmosphere models (e.g. Marley & Robinson 2015) and the SPARC/MITgcm (Showman et al. 2009). It is not particularly flexible, however, as the local mixing ratios \u03b6i(P, T) must be determined before the time consuming calculation of k-coefficients.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ATMO",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Random overlap with resorting and rebinning",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In our 1D atmosphere code ATMO we use RORR, usually with about 30 rebinned k-terms in each band. This gives us the flexibility to manipulate gas mixing ratios without recomputing or having to add additional dimensions to the k-table.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ATMO",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "uniform weights",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "For simplicity and ease of implementation we use a much simpler approach for determining the weights w_xy,l^bin: in SOCRATES we use weights given by a Gauss-Legendre quadrature, while in ATMO we use uniform weights, both of which can have an arbitrary number of rebinned k-coefficients n_k^bin.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "University of Exeter",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Columbia University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA Goddard Institute for Space Studies",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CEA-CNRS-INRIA-UPS-UVSQ",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Met Office",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Univ. Lyon, ENS de Lyon, Univ. Lyon 1, CNRS, CRAL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "correlated-k method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "random overlap method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "equivalent extinction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "pre-mixing of opacities",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "opacity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "radiative transfer",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heating rates",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ATMO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SOCRATES",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "random overlap method with resorting and rebinning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "k-coefficients",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mixing ratios",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "transmission",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SPARC/MITgcm",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "absorption coefficient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "adaptive equivalent extinction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Rayleigh scattering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "H2O",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CH4",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NH3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "H2-H2 and H2-He collision induced absorption",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TiO",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "VO",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Li",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Na",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "K",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Rb",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Cs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "line-by-line (LbL) calculations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "two-stream approximation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "diffusivity of D = 1.66 for thermal radiation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "diffusivity of D = 2 for stellar radiation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "random overlap method without resorting and rebinning",
+            "entity_type": "PhysicalScheme"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2123256863",
+        "https://openalex.org/W2510203193",
+        "https://openalex.org/W2170742148",
+        "https://openalex.org/W1987847710",
+        "https://openalex.org/W1985663566",
+        "https://openalex.org/W2162157272",
+        "https://openalex.org/W2117319060",
+        "https://openalex.org/W2471423568",
+        "https://openalex.org/W2023961099",
+        "https://openalex.org/W2155654615",
+        "https://openalex.org/W1990066366",
+        "https://openalex.org/W2037957511",
+        "https://openalex.org/W2008295354",
+        "https://openalex.org/W2079401795",
+        "https://openalex.org/W1989157521",
+        "https://openalex.org/W2949203445",
+        "https://openalex.org/W2141565348",
+        "https://openalex.org/W1985871547",
+        "https://openalex.org/W1996277899",
+        "https://openalex.org/W1965679932",
+        "https://openalex.org/W2059756096",
+        "https://openalex.org/W2082894652",
+        "https://openalex.org/W2136782798",
+        "https://openalex.org/W2078720990",
+        "https://openalex.org/W1994035366",
+        "https://openalex.org/W2183583307",
+        "https://openalex.org/W1998955927",
+        "https://openalex.org/W2162653031",
+        "https://openalex.org/W2126858388",
+        "https://openalex.org/W2063954496",
+        "https://openalex.org/W2008435425",
+        "https://openalex.org/W2097516358",
+        "https://openalex.org/W2074044119",
+        "https://openalex.org/W2233399347",
+        "https://openalex.org/W1982678971",
+        "https://openalex.org/W2011783179",
+        "https://openalex.org/W2108915436",
+        "https://openalex.org/W2165965411",
+        "https://openalex.org/W3099904069",
+        "https://openalex.org/W3098260780",
+        "https://openalex.org/W3104241980",
+        "https://openalex.org/W3125808094",
+        "https://openalex.org/W3123128739",
+        "https://openalex.org/W1982162561",
+        "https://openalex.org/W3099098958",
+        "https://openalex.org/W3106287569",
+        "https://openalex.org/W4239146293",
+        "https://openalex.org/W3106513728",
+        "https://openalex.org/W3099737126",
+        "https://openalex.org/W3102142924",
+        "https://openalex.org/W3124312923",
+        "https://openalex.org/W3100383555",
+        "https://openalex.org/W3105751361"
+    ]
+}

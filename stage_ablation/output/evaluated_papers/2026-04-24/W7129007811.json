@@ -1,0 +1,901 @@
+{
+    "uri": "https://openalex.org/W7129007811",
+    "title": "Supplementary material to \"Particle flux dynamics amplify marine carbon cycle differences between climate states\"",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5081579322",
+            "display_name": "Markus Adloff",
+            "orcid": "https://orcid.org/0000-0001-7515-6702"
+        },
+        {
+            "id": "https://openalex.org/A5123271566",
+            "display_name": "Frerk P\u00f6ppelmeier",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5040966525",
+            "display_name": "Ashley Dinauer",
+            "orcid": "https://orcid.org/0000-0003-3622-6098"
+        },
+        {
+            "id": "https://openalex.org/A5123373417",
+            "display_name": "Charlotte Laufk\u00f6tter",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126081491",
+            "display_name": "Fortunat Joos",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2026-275-supplement",
+    "abstract": "Implementation of the implicit version of MSPACMAMMSPACMAM (Dinauer et al., 2022) calculates vertical profiles of organic (POC), calcite, aragonite, and opal (OPAL) particles through depth-by-depth temporal integration of particle losses and downward fluxes until a dynamic equilibrium is achieved.This approach requires much shorter time steps than those of Bern3D (3 days), making its direct implementation costly.To reduce computational cost and increase numerical stability, we devised an implicit scheme which estimates the dynamic equilibrium based on primary production, particle sinking speed and environmental conditions in the water column.Our model operates on a 3D grid with and indicating longitude and latitude of the center of a grid cell. indicates the depth of the upper boundary of the grid cell , and +1 indicates the lower boundary of the grid cell .is the thickness of cell .In the following , are omitted to ease notation.Variables are specific for depth (), size class () and particle component (; POC,calcite,aragonite,opal): 0(0, , ): export flux out of euphotic zone (mol/(m 2 /s)) (, ): mean sinking speed in box (m/s) (approximated by ( , )) (, ) = ()/(, ) : average time particle is spending in box (s) (approximated by ()/( , ) ( , , ): particle remineralization/dissolution rate (1/s) at depth : model time step (s)The 1-dimensional equation for the divergence of a particle flux can be written as + = 0, with particle concentration , particle velocity , and particle flux = .For particles dissolving with rate , the temporal change in particle concentration is:Where / is the time, , the particles require for travelling distance .We get = and this equation is transferred to our model grid.We can then calculate the degradation rate in box k between depth k' and k'+1 either relative to the input f(k',l,m), or output f(k'+1,l,m), of the box, or a mix of the two, resulting in three different approaches to derive f(k'+1,l,m) from f(k',l,m):",
+    "field": "Marine carbon cycle modeling",
+    "problem": "The direct implementation of the MSPACMAM particle flux model is computationally costly and numerically unstable for climate models because it requires much shorter time steps, necessitating the development of a more efficient implicit scheme.",
+    "method": "To reduce the computational cost and instability of the explicit MSPACMAM model, this paper proposes a new implicit scheme that estimates the dynamic equilibrium of vertical particle fluxes based on primary production, sinking speed, and environmental conditions in the water column.",
+    "task": "The task is to implement a computationally efficient implicit scheme for a particle flux model and an updated iron cycle into a climate model to improve simulations of marine carbon cycle dynamics.",
+    "model": [
+        "MSPACMAM",
+        "Bern3D",
+        "PISCES-QUOTA",
+        "KMBM2",
+        "UVic"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/carbon-cycle",
+            "display_name": "Carbon cycle",
+            "score": 0.5601999759674072
+        },
+        {
+            "id": "https://openalex.org/keywords/carbon-flux",
+            "display_name": "Carbon flux",
+            "score": 0.4896000027656555
+        },
+        {
+            "id": "https://openalex.org/keywords/flux",
+            "display_name": "Flux (metallurgy)",
+            "score": 0.46650001406669617
+        },
+        {
+            "id": "https://openalex.org/keywords/carbon-fibers",
+            "display_name": "Carbon fibers",
+            "score": 0.42579999566078186
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.39430001378059387
+        },
+        {
+            "id": "https://openalex.org/keywords/carbon-dioxide",
+            "display_name": "Carbon dioxide",
+            "score": 0.32519999146461487
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6626999974250793
+        },
+        {
+            "id": "https://openalex.org/C6939412",
+            "wikidata": "https://www.wikidata.org/wiki/Q167751",
+            "display_name": "Carbon cycle",
+            "level": 3,
+            "score": 0.5601999759674072
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.54339998960495
+        },
+        {
+            "id": "https://openalex.org/C2993678126",
+            "wikidata": "https://www.wikidata.org/wiki/Q167751",
+            "display_name": "Carbon flux",
+            "level": 3,
+            "score": 0.4896000027656555
+        },
+        {
+            "id": "https://openalex.org/C68709404",
+            "wikidata": "https://www.wikidata.org/wiki/Q1134475",
+            "display_name": "Flux (metallurgy)",
+            "level": 2,
+            "score": 0.46650001406669617
+        },
+        {
+            "id": "https://openalex.org/C140205800",
+            "wikidata": "https://www.wikidata.org/wiki/Q5860",
+            "display_name": "Carbon fibers",
+            "level": 3,
+            "score": 0.42579999566078186
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.39430001378059387
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.3677999973297119
+        },
+        {
+            "id": "https://openalex.org/C530467964",
+            "wikidata": "https://www.wikidata.org/wiki/Q1997",
+            "display_name": "Carbon dioxide",
+            "level": 2,
+            "score": 0.32519999146461487
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.3199999928474426
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.3197000026702881
+        },
+        {
+            "id": "https://openalex.org/C74826761",
+            "wikidata": "https://www.wikidata.org/wiki/Q1361502",
+            "display_name": "Sulfur cycle",
+            "level": 3,
+            "score": 0.3098999857902527
+        },
+        {
+            "id": "https://openalex.org/C145912823",
+            "wikidata": "https://www.wikidata.org/wiki/Q113558",
+            "display_name": "Dynamics (music)",
+            "level": 2,
+            "score": 0.2903999984264374
+        },
+        {
+            "id": "https://openalex.org/C133830359",
+            "wikidata": "https://www.wikidata.org/wiki/Q81041",
+            "display_name": "Water cycle",
+            "level": 2,
+            "score": 0.28769999742507935
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.27230000495910645
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.2635999917984009
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "POC export (GtC yr-1)",
+            "result": "13.55"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "POC flux 1000m (GtC yr-1)",
+            "result": "1.44"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Export efficiency",
+            "result": "0.12"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "POC deposition (GtC yr-1)",
+            "result": "0.91"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "POC burial (GtC yr-1)",
+            "result": "0.16"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "POC stock (GtC)",
+            "result": "339"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "CaCO3 export (GtC yr-1)",
+            "result": "1.0"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "CaCO3 deposition (GtC yr-1)",
+            "result": "0.29"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "CaCO3 burial (GtC yr-1)",
+            "result": "0.1"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "CaCO3 stock (GtC)",
+            "result": "550"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Opal export (Tmol Si yr-1)",
+            "result": "133.3"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Opal deposition (Tmol Si yr-1)",
+            "result": "79.5"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Opal burial (Tmol Si yr-1)",
+            "result": "3.38"
+        },
+        {
+            "model": "Bern3D v3.1",
+            "observational_dataset": "Not mentioned in the table",
+            "evaluation_metric": "Opal stock (Tmol Si)",
+            "result": "15255"
+        }
+    ],
+    "innovation": "This paper presents a computationally efficient, implicit particle flux scheme and an updated iron cycle for the Bern3D model to improve simulations of the marine carbon cycle's response to different climate states.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Bern3D v3.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "Bern3D v3.1",
+            "target_entity_type": "Source",
+            "paragraph": "Figure S1.5. Transfer efficiency of particulate organic C into the ocean's interior, evaluated at 1000m depth for the previous (v3.0) and updated (v3.1) versions of Bern3D.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bern3D",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "MSPACMAM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "MSPACMAM (Dinauer et al., 2022) calculates vertical profiles of organic (POC), calcite, aragonite, and opal (OPAL) particles through depth-by-depth temporal integration of particle losses and downward fluxes until a dynamic equilibrium is achieved. This approach requires much shorter time steps than those of Bern3D (~3 days), making its direct implementation costly.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Bern3D",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Martin Curve",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Bern3D adjusts the respiration rate of organic particles in oxygen minimum zones to account for anaerobic respiration due to denitrification by varying the local exponent of the Martin Curve (Battaglia and Joos, 2018).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bern3D",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "implicit scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "To reduce computational cost and increase numerical stability, we devised an implicit scheme which estimates the dynamic equilibrium based on primary production, particle sinking speed and environmental conditions in the water column.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bern3D",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "3D grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Our model operates on a 3D grid with i and j indicating longitude and latitude of the center of a grid cell. k' indicates the depth of the upper boundary of the grid cell k, and k' +1 indicates the lower boundary of the grid cell . dz(k) = z(k'+1)-z(k') is the thickness of cell k. In the following i, j are omitted to ease notation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MSPACMAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "organic (POC)",
+            "target_entity_type": "Variable",
+            "paragraph": "MSPACMAM (Dinauer et al., 2022) calculates vertical profiles of organic (POC), calcite, aragonite, and opal (OPAL) particles through depth-by-depth temporal integration of particle losses and downward fluxes until a dynamic equilibrium is achieved.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MSPACMAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "calcite",
+            "target_entity_type": "Variable",
+            "paragraph": "MSPACMAM (Dinauer et al., 2022) calculates vertical profiles of organic (POC), calcite, aragonite, and opal (OPAL) particles through depth-by-depth temporal integration of particle losses and downward fluxes until a dynamic equilibrium is achieved.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MSPACMAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "aragonite",
+            "target_entity_type": "Variable",
+            "paragraph": "MSPACMAM (Dinauer et al., 2022) calculates vertical profiles of organic (POC), calcite, aragonite, and opal (OPAL) particles through depth-by-depth temporal integration of particle losses and downward fluxes until a dynamic equilibrium is achieved.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MSPACMAM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "opal (OPAL)",
+            "target_entity_type": "Variable",
+            "paragraph": "MSPACMAM (Dinauer et al., 2022) calculates vertical profiles of organic (POC), calcite, aragonite, and opal (OPAL) particles through depth-by-depth temporal integration of particle losses and downward fluxes until a dynamic equilibrium is achieved.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bern3D",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Scheme k2",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We chose the second approach because it is numerically stable: As rP(k',l,m) and dtP(k,l,m) are always positive, the denominator is always \u22651 in the second approach, and f cannot grow with depth irrespective of the absolute values of rP(k',l,m) and dtP(k,l,m), and f cannot become negative. k2 is also the scheme which produces the smallest errors compared to the explicit scheme, implemented offline and evaluated on the vertical Bern3D grid (SI Fig S2.8 for an examplary location in the South Pacific).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Bern3D",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Fe cycle module",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "A list of fixed parameters in the new module is provided in table S1.1.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Bern3D",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square error",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluated the root mean square error of the 3D-fields of DIC, ALK, O2, PO4, SiO2-, Fe, DI13C and DI\u00b94C relative to the respective observational fields from WOA 2018, GLODAP v2 and GEOTRACES 2021 v2 between each member of the tuning ensembles.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Bern3D v3.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Export efficiency",
+            "target_entity_type": "Metric",
+            "paragraph": "Table S1.4. Global carbon cycle metrics. Metric Bern3D v3.1 POC export (GtC yr-1) 13.55 POC flux 1000m (GtC yr-1) 1.44 Export efficiency 0.12 POC deposition (GtC yr-1) 0.91 POC burial (GtC yr-1) 0.16 POC stock (GtC) 339 CaCO3 export (GtC yr-1) 1.0 CaCO3 deposition (GtC yr-1) 0.29 CaCO3 burial (GtC yr-1) 0.1 CaCO3 stock (GtC) 550 Opal export (Tmol Si yr-1) 133.3 Opal deposition (Tmol Si yr-1) 79.5 Opal burial (Tmol Si yr-1) 3.38 Opal stock (Tmol Si) 15255",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bern3D",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Transfer efficiency",
+            "target_entity_type": "Metric",
+            "paragraph": "The resulting transfer efficiency, i.e. the fraction of organic particles that reaches depths below 1000 m, is highest in the polar and subpolar oceans and tropical high-productivity zones, related to low temperatures or oxygen. This large-scale pattern matches estimates combining satellite-derived and in-situ observations of production and remineralization in the upper water column (DeVries and Weber, 2017).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Bern3D",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MSPACMAM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PISCES-QUOTA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UVic",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Kiel Marine Biogeochemical Model 2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "BGC",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "University of Bern",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Climate and Environmental Physics, Physics Institute, University of Bern",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Oeschger Centre for Climate Change Research, University of Bern",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "pre-industrial",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "PI spin-up",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Martin PI steady state",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Particle_cold",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Particle_PI",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "implicit scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "explicit scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Scheme 'k1'",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Scheme 'k2'",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Scheme 'k12'",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Martin Curve",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "new Fe cycle",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "authigenic particle coagulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "'bucket model'",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "3D grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "tuning ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "atmosphere-ocean only",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "interactive marine sediments",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "root mean square error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "carbon cycle disequilibrium",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "model error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean error of 3D and surface Fe fields",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Transfer efficiency of particulate organic C",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Fe limitation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Global carbon cycle metrics",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Changes in transfer efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Simulated strength of the global sedimentary Fe source",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Model error of DIC concentrations",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Model error of O2 concentrations",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Model error of PO4 concentrations",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Model error of ALK concentrations",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Model error of SiO concentrations",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Model error of \u03b413C",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "POC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "calcite",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aragonite",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "opal",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "particle flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sinking speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "remineralization rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dissolution rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "POC remineralization",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "seawater viscosity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fe",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dissolved organic C",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ligand concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "apparent oxygen utilization",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "free Fe",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "colloidial Fe",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fe scavenging flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sedimentary Fe flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DIC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ALK",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "O2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PO4",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SiO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DI13C",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DI14C",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric CO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sedimentary Fe release",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hydrothermal input",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Primary production rates of POC and carbonate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "silicate production",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "POM",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CaCO3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "POC export",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "POC deposition",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "POC burial",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "POC stock",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CaCO3 export",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CaCO3 deposition",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CaCO3 burial",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CaCO3 stock",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Opal export",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Opal deposition",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Opal burial",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Opal stock",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global mean surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Calcite saturation state",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "preformed DIC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "regenerated DIC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "750 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "South Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East Equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Pacific Gyre",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "abyssal Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "polar oceans",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "subpolar oceans",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropical high-productivity zones",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "subpolar Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropical upwelling zones",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Atlantic subtropical gyre",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Eastern Equatorial Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atlantic",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indian Ocean",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": []
+}

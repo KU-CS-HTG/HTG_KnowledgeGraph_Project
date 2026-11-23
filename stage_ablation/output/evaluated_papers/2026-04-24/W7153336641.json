@@ -1,0 +1,801 @@
+{
+    "uri": "https://openalex.org/W7153336641",
+    "title": "Vision transformers for multi-variable climate downscaling: emulating regional climate models with a shared encoder and multi-decoder architecture",
+    "venue": {
+        "name": "Neural Computing and Applications",
+        "id": "https://openalex.org/S147897268",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5133353745",
+            "display_name": "Fabio Merizzi",
+            "orcid": "https://orcid.org/0009-0006-9067-793X"
+        },
+        {
+            "id": "https://openalex.org/A5030449213",
+            "display_name": "Harilaos Loukos",
+            "orcid": "https://orcid.org/0000-0001-5417-5947"
+        }
+    ],
+    "doi": "https://doi.org/10.1007/s00521-026-12066-3",
+    "abstract": "Global Climate Models (GCMs) are critical for simulating large-scale climate dynamics, but their coarse spatial resolution limits their applicability in regional studies. Regional Climate Models (RCMs) address this limitation through dynamical downscaling, albeit at considerable computational cost and with limited flexibility. Deep learning has emerged as an efficient data-driven alternative; however, most existing approaches focus on single-variable models that downscale one variable at a time. This paradigm can lead to redundant computation, limited contextual awareness, and weak cross-variable interactions. To address these limitations, we propose a multi-variable Vision Transformer (ViT) architecture with a shared encoder and variable-specific decoders (1EMD). The proposed model jointly predicts six key climate variables: surface temperature, wind speed, 500 hPa geopotential height, total precipitation, surface downwelling shortwave radiation, and surface downwelling longwave radiation, directly from GCM-resolution inputs, emulating RCM-scale downscaling over Europe. Compared to single-variable ViT models, the 1EMD architecture improves performance across all six variables, achieving an average MSE reduction of approximately 5.5% under a fair and controlled comparison. It also consistently outperforms alternative multi-variable baselines, including a single-decoder ViT and a multi-variable U-Net. Moreover, multi-variable models substantially reduce computational cost, yielding a 29\u201332% lower inference time per variable compared to single-variable approaches. Overall, our results demonstrate that multi-variable modeling provides systematic advantages for high-resolution climate downscaling in terms of both accuracy and efficiency. Among the evaluated architectures, the proposed 1EMD ViT achieves the most favorable trade-off between predictive performance and computational cost.",
+    "field": "Climate downscaling",
+    "problem": "Existing deep learning approaches for climate downscaling typically focus on single-variable models, a paradigm that leads to redundant computation, limited contextual awareness, and weak cross-variable interactions, thereby hindering both accuracy and efficiency.",
+    "method": "The paper proposes a multi-variable Vision Transformer (ViT) architecture with a shared encoder and variable-specific decoders (1EMD) to jointly downscale multiple climate variables from coarse GCM inputs, emulating high-resolution RCM outputs while improving accuracy and computational efficiency.",
+    "task": "The task is to jointly downscale six climate variables from coarse GCM-resolution inputs to high-resolution RCM-scale outputs over Europe, emulating the RCM process with a multi-variable Vision Transformer architecture.",
+    "model": [
+        "GCMs",
+        "RCMs",
+        "MPI-ESM-LR",
+        "ICTP-RegCM4-6",
+        "ViT",
+        "1EMD",
+        "1E1D",
+        "U-Net",
+        "CNNs",
+        "GANs",
+        "M2GSNet"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/encoder",
+            "display_name": "Encoder",
+            "score": 0.635699987411499
+        },
+        {
+            "id": "https://openalex.org/keywords/architecture",
+            "display_name": "Architecture",
+            "score": 0.6305999755859375
+        },
+        {
+            "id": "https://openalex.org/keywords/transformer",
+            "display_name": "Transformer",
+            "score": 0.5677000284194946
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5085999965667725
+        },
+        {
+            "id": "https://openalex.org/keywords/computational-science-and-engineering",
+            "display_name": "Computational Science and Engineering",
+            "score": 0.4090999960899353
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.34940001368522644
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.7046999931335449
+        },
+        {
+            "id": "https://openalex.org/C118505674",
+            "wikidata": "https://www.wikidata.org/wiki/Q42586063",
+            "display_name": "Encoder",
+            "level": 2,
+            "score": 0.635699987411499
+        },
+        {
+            "id": "https://openalex.org/C123657996",
+            "wikidata": "https://www.wikidata.org/wiki/Q12271",
+            "display_name": "Architecture",
+            "level": 2,
+            "score": 0.6305999755859375
+        },
+        {
+            "id": "https://openalex.org/C66322947",
+            "wikidata": "https://www.wikidata.org/wiki/Q11658",
+            "display_name": "Transformer",
+            "level": 3,
+            "score": 0.5677000284194946
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5085999965667725
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.4131999909877777
+        },
+        {
+            "id": "https://openalex.org/C68597687",
+            "wikidata": "https://www.wikidata.org/wiki/Q362601",
+            "display_name": "Computational Science and Engineering",
+            "level": 2,
+            "score": 0.4090999960899353
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.34940001368522644
+        },
+        {
+            "id": "https://openalex.org/C101738243",
+            "wikidata": "https://www.wikidata.org/wiki/Q786435",
+            "display_name": "Autoencoder",
+            "level": 3,
+            "score": 0.3416000008583069
+        },
+        {
+            "id": "https://openalex.org/C79403827",
+            "wikidata": "https://www.wikidata.org/wiki/Q3988",
+            "display_name": "Real-time computing",
+            "level": 1,
+            "score": 0.33340001106262207
+        },
+        {
+            "id": "https://openalex.org/C44154836",
+            "wikidata": "https://www.wikidata.org/wiki/Q45045",
+            "display_name": "Simulation",
+            "level": 1,
+            "score": 0.2759000062942505
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.27309998869895935
+        },
+        {
+            "id": "https://openalex.org/C31972630",
+            "wikidata": "https://www.wikidata.org/wiki/Q844240",
+            "display_name": "Computer vision",
+            "level": 1,
+            "score": 0.25999999046325684
+        },
+        {
+            "id": "https://openalex.org/C50644808",
+            "wikidata": "https://www.wikidata.org/wiki/Q192776",
+            "display_name": "Artificial neural network",
+            "level": 2,
+            "score": 0.25920000672340393
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.25859999656677246
+        },
+        {
+            "id": "https://openalex.org/C118524514",
+            "wikidata": "https://www.wikidata.org/wiki/Q173212",
+            "display_name": "Computer architecture",
+            "level": 1,
+            "score": 0.2549000084400177
+        },
+        {
+            "id": "https://openalex.org/C113775141",
+            "wikidata": "https://www.wikidata.org/wiki/Q428691",
+            "display_name": "Computer engineering",
+            "level": 1,
+            "score": 0.2547999918460846
+        },
+        {
+            "id": "https://openalex.org/C98025372",
+            "wikidata": "https://www.wikidata.org/wiki/Q477538",
+            "display_name": "Systems architecture",
+            "level": 3,
+            "score": 0.2535000145435333
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.25119999051094055
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper proposes a multi-variable Vision Transformer architecture with a shared encoder and variable-specific decoders (1EMD) for climate downscaling, which improves both predictive accuracy and computational efficiency compared to single-variable models and alternative multi-variable baselines.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Single-variable ViT",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Squared Error",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Single-variable ViT",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Single-variable ViT",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Structural Similarity Index",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Single-variable ViT",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Pearson correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable ViT (1E1D)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Squared Error",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable ViT (1E1D)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable ViT (1E1D)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Structural Similarity Index",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable ViT (1E1D)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Pearson correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable ViT (1EMD)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Squared Error",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable ViT (1EMD)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable ViT (1EMD)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Structural Similarity Index",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable ViT (1EMD)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Pearson correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable U-Net",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Squared Error",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable U-Net",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable U-Net",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Structural Similarity Index",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-variable U-Net",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Pearson correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "We evaluate the four models, Single-variable ViT, Multi-variable ViT (1E1D), Multi-variable ViT (1EMD) and Multi-variable U-Net on a test dataset comprising ten years of unseen data. The test set includes one year per decade from 2010 to 2100. All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bilinear interpolation",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Squared Error",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 1 reports the mean performance across two independent runs for all six variables. All deep-learning models provide substantial improvements over the bilinear interpolation baseline. For example, the MSE for near-surface temperature (tas) decreases from 9.97 \u00d7 10\u20134 under bilinear interpolation to 4.34 \u00d7 10\u22124 with the Single-variable ViT.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bilinear interpolation",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations. ... Table 1 reports the mean performance across two independent runs for all six variables. All deep-learning models provide substantial improvements over the bilinear interpolation baseline.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bilinear interpolation",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Structural Similarity Index",
+            "target_entity_type": "Metric",
+            "paragraph": "All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations. ... Table 1 reports the mean performance across two independent runs for all six variables. All deep-learning models provide substantial improvements over the bilinear interpolation baseline.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Bilinear interpolation",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Pearson correlation",
+            "target_entity_type": "Metric",
+            "paragraph": "All models are tested across the six selected variables using three evaluation metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index (SSIM) alongside spatial and temporal Pearson correlations. ... Table 1 reports the mean performance across two independent runs for all six variables. All deep-learning models provide substantial improvements over the bilinear interpolation baseline.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Global Climate Models (GCMs)",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Regional Climate Models (RCMs)",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Vision Transformer (ViT)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "shared encoder and variable-specific decoders (1EMD)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "500 hPa geopotential height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface downwelling shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface downwelling longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "MSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "single-decoder ViT",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "U-Net",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "100 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.1\u00b0 to 0.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "10 to 50 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "European domain",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "sfcWind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tas",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zg500",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tp",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rsds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rlds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "single shared encoder with multiple dedicated decoders (1EMD)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "EURO-CORDEX",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "Coordinated Regional Downscaling Experiment (CORDEX)",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "World Climate Research Programme (WCRP)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "0.11\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "MPI-ESM-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ICTP-RegCM4-6",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "RCP8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1.0\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "convolutional neural networks (CNNs)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "generative adversarial networks (GANs)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "diffusion models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "encoder-decoder structure",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "transformer-based encoder with a convolutional decoder",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "skip connections",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Indian Ocean Dipole",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "single-encoder single-decoder (1E1D) model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "single-encoder multi-decoder (1EMD)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ViT-CNN hybrid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "transformer blocks",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "six transformer layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "multi-head self-attention",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "residual connection",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "multi-layer perceptron (MLP)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Group Normalization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bilinear interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "residual block",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "mean square error (MSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Multi-variable U-net",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "average pooling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "10 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "near-surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "AdamW",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Mean Absolute Error (MAE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Structural Similarity Index (SSIM)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pearson correlations",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Number of parameters",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Execution Time",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Train Time",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Inference time",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Alma Mater Studiorum - Universit\u00e0 di Bologna",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ISCRA Project \"AI for weather analysis and forecast\" (AI-WAF)",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "The Climate Data Factory (TCDF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Paris",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2168515722",
+        "https://openalex.org/W2535388113",
+        "https://openalex.org/W2604521289",
+        "https://openalex.org/W2963636167",
+        "https://openalex.org/W2981977644",
+        "https://openalex.org/W3039441806",
+        "https://openalex.org/W3080778091",
+        "https://openalex.org/W3099309371",
+        "https://openalex.org/W3105660549",
+        "https://openalex.org/W3154650405",
+        "https://openalex.org/W3170841864",
+        "https://openalex.org/W3176066814",
+        "https://openalex.org/W3207918547",
+        "https://openalex.org/W4214520160",
+        "https://openalex.org/W4220664068",
+        "https://openalex.org/W4228999327",
+        "https://openalex.org/W4250482878",
+        "https://openalex.org/W4285092676",
+        "https://openalex.org/W4285891375",
+        "https://openalex.org/W4287020683",
+        "https://openalex.org/W4301373652",
+        "https://openalex.org/W4311219469",
+        "https://openalex.org/W4312812783",
+        "https://openalex.org/W4322718564",
+        "https://openalex.org/W4362607871",
+        "https://openalex.org/W4366991492",
+        "https://openalex.org/W4386102314",
+        "https://openalex.org/W4387642293",
+        "https://openalex.org/W4390561626",
+        "https://openalex.org/W4390768602",
+        "https://openalex.org/W4393225045",
+        "https://openalex.org/W4398251381",
+        "https://openalex.org/W4402782550",
+        "https://openalex.org/W4404501363",
+        "https://openalex.org/W4406267821",
+        "https://openalex.org/W4408435112",
+        "https://openalex.org/W4408449236",
+        "https://openalex.org/W4409069769",
+        "https://openalex.org/W4409759437",
+        "https://openalex.org/W4411739837",
+        "https://openalex.org/W4413141501",
+        "https://openalex.org/W4414260331",
+        "https://openalex.org/W7130504224",
+        "https://openalex.org/W7133207997"
+    ]
+}

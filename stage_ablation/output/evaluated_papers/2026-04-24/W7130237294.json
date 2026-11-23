@@ -1,0 +1,1208 @@
+{
+    "uri": "https://openalex.org/W7130237294",
+    "title": "High-Resolution Climate Projections Using Diffusion-Based Downscaling of a Lightweight Climate Emulator",
+    "venue": {
+        "name": "ArXiv.org",
+        "id": "https://openalex.org/S4393918464",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": null,
+            "display_name": "Guan, Haiwen",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Darman, Moein",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Chakraborty, Dibyajyoti",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Arcomano, Troy",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Chattopadhyay, Ashesh",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Maulik, Romit",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "The proliferation of data-driven models in weather and climate sciences has marked a significant paradigm shift, with advanced models demonstrating exceptional skill in medium-range forecasting. However, these models are often limited by long-term instabilities, climatological drift, and substantial computational costs during training and inference, restricting their broader application for climate studies. Addressing these limitations, Guan et al. (2024) introduced LUCIE, a lightweight, physically consistent climate emulator utilizing a Spherical Fourier Neural Operator (SFNO) architecture. This model is able to reproduce accurate long-term statistics including climatological mean and seasonal variability. However, LUCIE's native resolution (~300 km) is inadequate for detailed regional impact assessments. To overcome this limitation, we introduce a deep learning-based downscaling framework, leveraging probabilistic diffusion-based generative models with conditional and posterior sampling frameworks. These models downscale coarse LUCIE outputs to 25 km resolution. They are trained on approximately 14,000 ERA5 timesteps spanning 2000-2009 and evaluated on LUCIE predictions from 2010 to 2020. Model performance is assessed through diverse metrics, including latitude-averaged RMSE, power spectrum, probability density functions and First Empirical Orthogonal Function of the zonal wind. We observe that the proposed approach is able to preserve the coarse-grained dynamics from LUCIE while generating fine-scaled climatological statistics at ~28km resolution.",
+    "field": "Climate model downscaling",
+    "problem": "Computationally efficient climate emulators are limited by their coarse spatial resolution (300 km), which is inadequate for the high-resolution (25 km) regional impact assessments required for local climate planning and adaptation efforts.",
+    "method": "The paper proposes a deep learning framework that uses diffusion-based super-resolution models to downscale the coarse-grid outputs of a lightweight climate emulator, generating high-resolution (25 km) climate projections from low-resolution (300 km) inputs.",
+    "task": "The task is to downscale the coarse-grid (300 km) output from a lightweight climate emulator to produce high-resolution (25 km) climate projections using a deep learning framework.",
+    "model": [
+        "LUCIE",
+        "ERA5"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.8891000151634216
+        },
+        {
+            "id": "https://openalex.org/keywords/probabilistic-logic",
+            "display_name": "Probabilistic logic",
+            "score": 0.6240000128746033
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5824999809265137
+        },
+        {
+            "id": "https://openalex.org/keywords/sampling",
+            "display_name": "Sampling (signal processing)",
+            "score": 0.412200003862381
+        },
+        {
+            "id": "https://openalex.org/keywords/probability-density-function",
+            "display_name": "Probability density function",
+            "score": 0.4000000059604645
+        },
+        {
+            "id": "https://openalex.org/keywords/baseline",
+            "display_name": "Baseline (sea)",
+            "score": 0.36980000138282776
+        },
+        {
+            "id": "https://openalex.org/keywords/training",
+            "display_name": "Training (meteorology)",
+            "score": 0.36090001463890076
+        },
+        {
+            "id": "https://openalex.org/keywords/statistical-model",
+            "display_name": "Statistical model",
+            "score": 0.3449000120162964
+        },
+        {
+            "id": "https://openalex.org/keywords/empirical-orthogonal-functions",
+            "display_name": "Empirical orthogonal functions",
+            "score": 0.3434000015258789
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.8891000151634216
+        },
+        {
+            "id": "https://openalex.org/C49937458",
+            "wikidata": "https://www.wikidata.org/wiki/Q2599292",
+            "display_name": "Probabilistic logic",
+            "level": 2,
+            "score": 0.6240000128746033
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5824999809265137
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.48840001225471497
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.4819999933242798
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.4596000015735626
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.4196999967098236
+        },
+        {
+            "id": "https://openalex.org/C140779682",
+            "wikidata": "https://www.wikidata.org/wiki/Q210868",
+            "display_name": "Sampling (signal processing)",
+            "level": 3,
+            "score": 0.412200003862381
+        },
+        {
+            "id": "https://openalex.org/C197055811",
+            "wikidata": "https://www.wikidata.org/wiki/Q207522",
+            "display_name": "Probability density function",
+            "level": 2,
+            "score": 0.4000000059604645
+        },
+        {
+            "id": "https://openalex.org/C12725497",
+            "wikidata": "https://www.wikidata.org/wiki/Q810247",
+            "display_name": "Baseline (sea)",
+            "level": 2,
+            "score": 0.36980000138282776
+        },
+        {
+            "id": "https://openalex.org/C2777211547",
+            "wikidata": "https://www.wikidata.org/wiki/Q17141490",
+            "display_name": "Training (meteorology)",
+            "level": 2,
+            "score": 0.36090001463890076
+        },
+        {
+            "id": "https://openalex.org/C114289077",
+            "wikidata": "https://www.wikidata.org/wiki/Q3284399",
+            "display_name": "Statistical model",
+            "level": 2,
+            "score": 0.3449000120162964
+        },
+        {
+            "id": "https://openalex.org/C13724139",
+            "wikidata": "https://www.wikidata.org/wiki/Q3042818",
+            "display_name": "Empirical orthogonal functions",
+            "level": 2,
+            "score": 0.3434000015258789
+        },
+        {
+            "id": "https://openalex.org/C50644808",
+            "wikidata": "https://www.wikidata.org/wiki/Q192776",
+            "display_name": "Artificial neural network",
+            "level": 2,
+            "score": 0.3402999937534332
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3361000120639801
+        },
+        {
+            "id": "https://openalex.org/C143742823",
+            "wikidata": "https://www.wikidata.org/wiki/Q5513004",
+            "display_name": "GCM transcription factors",
+            "level": 4,
+            "score": 0.3222000002861023
+        },
+        {
+            "id": "https://openalex.org/C207609745",
+            "wikidata": "https://www.wikidata.org/wiki/Q4944086",
+            "display_name": "Bootstrapping (finance)",
+            "level": 2,
+            "score": 0.3165999948978424
+        },
+        {
+            "id": "https://openalex.org/C14036430",
+            "wikidata": "https://www.wikidata.org/wiki/Q3736076",
+            "display_name": "Function (biology)",
+            "level": 2,
+            "score": 0.3156999945640564
+        },
+        {
+            "id": "https://openalex.org/C166955791",
+            "wikidata": "https://www.wikidata.org/wiki/Q629579",
+            "display_name": "Macro",
+            "level": 2,
+            "score": 0.3061000108718872
+        },
+        {
+            "id": "https://openalex.org/C133199616",
+            "wikidata": "https://www.wikidata.org/wiki/Q25386885",
+            "display_name": "Empirical modelling",
+            "level": 2,
+            "score": 0.2833999991416931
+        },
+        {
+            "id": "https://openalex.org/C103784038",
+            "wikidata": "https://www.wikidata.org/wiki/Q386228",
+            "display_name": "Cumulative distribution function",
+            "level": 3,
+            "score": 0.2806999981403351
+        },
+        {
+            "id": "https://openalex.org/C96608239",
+            "wikidata": "https://www.wikidata.org/wiki/Q1199823",
+            "display_name": "Statistical power",
+            "level": 2,
+            "score": 0.2653000056743622
+        },
+        {
+            "id": "https://openalex.org/C25022447",
+            "wikidata": "https://www.wikidata.org/wiki/Q5178021",
+            "display_name": "Coupled model intercomparison project",
+            "level": 4,
+            "score": 0.26489999890327454
+        },
+        {
+            "id": "https://openalex.org/C139945424",
+            "wikidata": "https://www.wikidata.org/wiki/Q1940696",
+            "display_name": "Mean squared error",
+            "level": 2,
+            "score": 0.26249998807907104
+        },
+        {
+            "id": "https://openalex.org/C149441793",
+            "wikidata": "https://www.wikidata.org/wiki/Q200726",
+            "display_name": "Probability distribution",
+            "level": 2,
+            "score": 0.2581999897956848
+        },
+        {
+            "id": "https://openalex.org/C161840515",
+            "wikidata": "https://www.wikidata.org/wiki/Q186131",
+            "display_name": "Terrain",
+            "level": 2,
+            "score": 0.25459998846054077
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Bicubic",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for Temperature [K]",
+            "result": "2.581"
+        },
+        {
+            "model": "Bicubic",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for Temperature [K]",
+            "result": "5.34"
+        },
+        {
+            "model": "Bicubic",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for U wind [m/s]",
+            "result": "2.358"
+        },
+        {
+            "model": "Bicubic",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for U wind [m/s]",
+            "result": "11.61"
+        },
+        {
+            "model": "Bicubic",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for V wind [m/s]",
+            "result": "0.933"
+        },
+        {
+            "model": "Bicubic",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for V wind [m/s]",
+            "result": "10.48"
+        },
+        {
+            "model": "Bicubic",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for Precipitation [10^-3 m/6hr]",
+            "result": "0.249"
+        },
+        {
+            "model": "Bicubic",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for Precipitation [10^-3 m/6hr]",
+            "result": "0.8"
+        },
+        {
+            "model": "SFNO-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for Temperature [K]",
+            "result": "2.497"
+        },
+        {
+            "model": "SFNO-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for Temperature [K]",
+            "result": "4.99"
+        },
+        {
+            "model": "SFNO-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for U wind [m/s]",
+            "result": "2.387"
+        },
+        {
+            "model": "SFNO-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for U wind [m/s]",
+            "result": "11.79"
+        },
+        {
+            "model": "SFNO-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for V wind [m/s]",
+            "result": "0.780"
+        },
+        {
+            "model": "SFNO-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for V wind [m/s]",
+            "result": "10.56"
+        },
+        {
+            "model": "SFNO-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for Precipitation [10^-3 m/6hr]",
+            "result": "0.325"
+        },
+        {
+            "model": "SFNO-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for Precipitation [10^-3 m/6hr]",
+            "result": "0.7"
+        },
+        {
+            "model": "UNet-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for Temperature [K]",
+            "result": "2.427"
+        },
+        {
+            "model": "UNet-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for Temperature [K]",
+            "result": "4.91"
+        },
+        {
+            "model": "UNet-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for U wind [m/s]",
+            "result": "2.000"
+        },
+        {
+            "model": "UNet-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for U wind [m/s]",
+            "result": "11.54"
+        },
+        {
+            "model": "UNet-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for V wind [m/s]",
+            "result": "0.815"
+        },
+        {
+            "model": "UNet-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for V wind [m/s]",
+            "result": "10.20"
+        },
+        {
+            "model": "UNet-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for Precipitation [10^-3 m/6hr]",
+            "result": "0.301"
+        },
+        {
+            "model": "UNet-SR",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for Precipitation [10^-3 m/6hr]",
+            "result": "0.6"
+        },
+        {
+            "model": "Conditional",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for Temperature [K]",
+            "result": "1.357"
+        },
+        {
+            "model": "Conditional",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for Temperature [K]",
+            "result": "6.07"
+        },
+        {
+            "model": "Conditional",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for U wind [m/s]",
+            "result": "1.481"
+        },
+        {
+            "model": "Conditional",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for U wind [m/s]",
+            "result": "12.97"
+        },
+        {
+            "model": "Conditional",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for V wind [m/s]",
+            "result": "0.770"
+        },
+        {
+            "model": "Conditional",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for V wind [m/s]",
+            "result": "11.50"
+        },
+        {
+            "model": "Conditional",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for Precipitation [10^-3 m/6hr]",
+            "result": "0.212"
+        },
+        {
+            "model": "Conditional",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for Precipitation [10^-3 m/6hr]",
+            "result": "1.1"
+        },
+        {
+            "model": "Posterior Sampling",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for Temperature [K]",
+            "result": "1.237"
+        },
+        {
+            "model": "Posterior Sampling",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for Temperature [K]",
+            "result": "5.94"
+        },
+        {
+            "model": "Posterior Sampling",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for U wind [m/s]",
+            "result": "1.390"
+        },
+        {
+            "model": "Posterior Sampling",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for U wind [m/s]",
+            "result": "11.83"
+        },
+        {
+            "model": "Posterior Sampling",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for V wind [m/s]",
+            "result": "0.798"
+        },
+        {
+            "model": "Posterior Sampling",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for V wind [m/s]",
+            "result": "10.76"
+        },
+        {
+            "model": "Posterior Sampling",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for Precipitation [10^-3 m/6hr]",
+            "result": "0.221"
+        },
+        {
+            "model": "Posterior Sampling",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "Temporal Standard Deviation for Precipitation [10^-3 m/6hr]",
+            "result": "1.3"
+        }
+    ],
+    "innovation": "This paper introduces a deep learning framework that couples a lightweight climate emulator with diffusion-based super-resolution models to efficiently generate high-resolution climate projections (25 km) from coarse-grid outputs (300 km).",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "LUCIE",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "300 km",
+            "target_entity_type": "Resolution",
+            "paragraph": "However, LUCIE's native resolution (300 km) is inadequate for detailed re- gional impact assessments.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LUCIE",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T30 Gaussian grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "However, the relatively coarse T30 Gaussian grid (3.75\u00b0 resolution) is its main limitation. While this grid is sufficient for capturing large-scale dynamics and global climatology, it cannot resolve the fine-scale regional details necessary for localized stud- ies.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LUCIE",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "SFNO backbone",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "LUCIE (Lightweight Uncou- pled Climate Emulator) is a data-driven atmospheric emulator designed to overcome the prohibitive computational costs of traditional numerical weather prediction and high- resolution ML models, which often require thousands of GPU hours. By leveraging an SFNO (Bonev et al., 2023) backbone and a specialized training strategy including spec- tral regularization and a hard-constrained first-order integrator-LUCIE maintains long- term stability and physical consistency without the common unphysical drift in autore- gressive models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "0.25\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "For training our downscaling models, we use ECMWF Reanalysis v5 (ERA5) (Hers- bach et al., 2020), a physically consistent, global atmospheric reanalysis available hourly on a 0.25\u00b0 grid.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "SAMPLED_AT_FREQUENCY",
+            "target_entity_instance": "hourly",
+            "target_entity_type": "Frequency",
+            "paragraph": "For training our downscaling models, we use ECMWF Reanalysis v5 (ERA5) (Hers- bach et al., 2020), a physically consistent, global atmospheric reanalysis available hourly on a 0.25\u00b0 grid.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SFNO-SR",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The SFNO-SR architecture leverages this framework to map four variables temperature, zonal wind (u), meridional wind (v), and precipitation from a 48\u00d796 grid to a 720\u00d7 1440 resolution (15\u00d7 upscaling).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SFNO-SR",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "zonal wind (u)",
+            "target_entity_type": "Variable",
+            "paragraph": "The SFNO-SR architecture leverages this framework to map four variables temperature, zonal wind (u), meridional wind (v), and precipitation from a 48\u00d796 grid to a 720\u00d7 1440 resolution (15\u00d7 upscaling).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SFNO-SR",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "meridional wind (v)",
+            "target_entity_type": "Variable",
+            "paragraph": "The SFNO-SR architecture leverages this framework to map four variables temperature, zonal wind (u), meridional wind (v), and precipitation from a 48\u00d796 grid to a 720\u00d7 1440 resolution (15\u00d7 upscaling).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SFNO-SR",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "The SFNO-SR architecture leverages this framework to map four variables temperature, zonal wind (u), meridional wind (v), and precipitation from a 48\u00d796 grid to a 720\u00d7 1440 resolution (15\u00d7 upscaling).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Conditional EDM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "U-Net backbone",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The conditional super-resolution framework utilizes a U-Net backbone optimized with EDM (Elucidating Diffusion Models) preconditioning.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Conditional EDM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The conditional super-resolution framework utilizes a U-Net backbone optimized with EDM (Elucidating Diffusion Models) preconditioning. The architecture is designed for multi-variable atmospheric states, featuring 4 input/output channels-including tem- perature, winds, humidity, and precipitation-conditioned on 4 coarse-resolution T30 chan- nels and orography from high resolution ERA5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Conditional EDM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "winds",
+            "target_entity_type": "Variable",
+            "paragraph": "The conditional super-resolution framework utilizes a U-Net backbone optimized with EDM (Elucidating Diffusion Models) preconditioning. The architecture is designed for multi-variable atmospheric states, featuring 4 input/output channels-including tem- perature, winds, humidity, and precipitation-conditioned on 4 coarse-resolution T30 chan- nels and orography from high resolution ERA5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Conditional EDM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "humidity",
+            "target_entity_type": "Variable",
+            "paragraph": "The conditional super-resolution framework utilizes a U-Net backbone optimized with EDM (Elucidating Diffusion Models) preconditioning. The architecture is designed for multi-variable atmospheric states, featuring 4 input/output channels-including tem- perature, winds, humidity, and precipitation-conditioned on 4 coarse-resolution T30 chan- nels and orography from high resolution ERA5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Conditional EDM",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "The conditional super-resolution framework utilizes a U-Net backbone optimized with EDM (Elucidating Diffusion Models) preconditioning. The architecture is designed for multi-variable atmospheric states, featuring 4 input/output channels-including tem- perature, winds, humidity, and precipitation-conditioned on 4 coarse-resolution T30 chan- nels and orography from high resolution ERA5.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UNet-SR",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "The diffusion-based SR models generates high-resolution fields with accu- rate long-term average compared to UNet-SR and SFNO-SR, as reflected in the RMSE values summarized in Table 2: conditional EDM reduces the errors substantially across all variables, and posterior sampling achieves the lowest RMSE in temperature and zonal wind while maintaining competitive performance for meridional wind and precipitation. While deterministic baselines like UNet-SR achieve competitive RMSE, they exhibit a notable 'variance deficit.'",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SFNO-SR",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "The diffusion-based SR models generates high-resolution fields with accu- rate long-term average compared to UNet-SR and SFNO-SR, as reflected in the RMSE values summarized in Table 2: conditional EDM reduces the errors substantially across all variables, and posterior sampling achieves the lowest RMSE in temperature and zonal wind while maintaining competitive performance for meridional wind and precipitation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Conditional EDM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "The diffusion-based SR models generates high-resolution fields with accu- rate long-term average compared to UNet-SR and SFNO-SR, as reflected in the RMSE values summarized in Table 2: conditional EDM reduces the errors substantially across all variables, and posterior sampling achieves the lowest RMSE in temperature and zonal wind while maintaining competitive performance for meridional wind and precipitation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Posterior Sampling EDM",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "The diffusion-based SR models generates high-resolution fields with accu- rate long-term average compared to UNet-SR and SFNO-SR, as reflected in the RMSE values summarized in Table 2: conditional EDM reduces the errors substantially across all variables, and posterior sampling achieves the lowest RMSE in temperature and zonal wind while maintaining competitive performance for meridional wind and precipitation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Northern Annular Mode (NAM)",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Northern Hemisphere",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "To evaluate how well each model captures dominant atmospheric patterns, an EOF analysis was performed on the zonal wind component. The first EOF mode (EOF1) rep- resents the primary spatial pattern of variability, specifically the Northern Annular Mode (NAM) during the Northern Hemisphere winter (DJF) and the Southern Annular Mode (SAM) during the Southern Hemisphere winter (JJA).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Southern Annular Mode (SAM)",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Southern Hemisphere",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "To evaluate how well each model captures dominant atmospheric patterns, an EOF analysis was performed on the zonal wind component. The first EOF mode (EOF1) rep- resents the primary spatial pattern of variability, specifically the Northern Annular Mode (NAM) during the Northern Hemisphere winter (DJF) and the Southern Annular Mode (SAM) during the Southern Hemisphere winter (JJA).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Wildfire",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "By adding this spatial resolution, the combined LUCIE-SR framework makes it possible to conduct studies on monsoon-dependent agriculture or wildfire risk zones-applications that were previously beyond the reach of coarse-resolution emulators.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "LUCIE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SFNO-SR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UNet-SR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Conditional EDM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Posterior Sampling EDM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Bicubic",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CorrDiff",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SRNO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UNet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EDM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RCM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "AOGCM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "300 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "25 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "28km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "720x1440",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "48x96",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "3.75\u00b0 x 3.75\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.25\u00b0 x 0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "3.75\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "6hr",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "power spectrum",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "probability density functions",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "First Empirical Orthogonal Function",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "zonal averaged climatology",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spectral analysis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Empirical Orthogonal Function (EOF) analysis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean Absolute Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "EDM noise-weighted loss function",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "temporal standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Quadrature-weighted RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Temporal Standard Deviation (STD)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "variance distribution",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "return-period",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spectral slope",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "EOF",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean spectral magnitudes",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "The Pennsylvania State University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of California, Santa Cruz",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Allen Institute for Artificial Intelligence",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Purdue University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Spherical Fourier Neural Operator",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "diffusion-based generative models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "generative diffusion models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "spectral regularization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "hard-constrained first-order integrator",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fourier Neural Operator",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spherical Harmonic Transforms",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "self-attention",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GELU",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "instance normalization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Adam optimizer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cosine annealing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bicubic interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "log-scaling transformation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "max-pooling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bilinear interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Batch Normalization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ReLU activation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "diffusion framework",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "score-based generative models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "probability flow Ordinary Differential Equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AdamW optimizer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Group Normalization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "posterior sampling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Diffusion Posterior Sampling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Score-based Data Assimilation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bayesian posterior sampling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "T30 Grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "T30 Gaussian grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "four SFNO layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "encoder-decoder UNet framework",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "U-Net backbone",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "UNet with EDM preconditioning",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "zonal wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "orographic precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "thermal gradients",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "near-surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "meridional wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Orography",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "U wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "V wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "monsoon",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "wildfire",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Northern Annular Mode",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Southern Annular Mode",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "CONUS",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "California",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Rocky Mountains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Sierra Nevada",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Intermountain West",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northern Plains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Appalachian range",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indian peninsula",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Andes",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "NVIDIA A100",
+            "entity_type": "Platform"
+        }
+    ],
+    "referenced_works": []
+}

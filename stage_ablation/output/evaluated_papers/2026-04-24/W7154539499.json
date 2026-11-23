@@ -1,0 +1,901 @@
+{
+    "uri": "https://openalex.org/W7154539499",
+    "title": "Multistability and intermingledness in complex high-dimensional data",
+    "venue": {
+        "name": "ArXiv.org",
+        "id": "https://openalex.org/S4393918464",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5067061714",
+            "display_name": "George Datseris",
+            "orcid": "https://orcid.org/0000-0002-6427-2385"
+        },
+        {
+            "id": "https://openalex.org/A5133695257",
+            "display_name": "Johannes Lohmann",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5001564220",
+            "display_name": "Ois\u00edn Hamilton",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5066773524",
+            "display_name": "Jacob Haqq\u2010Misra",
+            "orcid": "https://orcid.org/0000-0003-4346-2611"
+        }
+    ],
+    "doi": null,
+    "abstract": "Multistability is a phenomenon prevalent in many natural systems. In climate, for example, it allows the possibility of irreversible consequences on planetary scale as a result of climate change. Indeed, a climate ``tipping element'' is a multistable component that can undergo a transition to an alternative steady state due to an external perturbation. Despite the potential impact, multistability in realistic, complex simulations (e.g. climate models) remains poorly understood. Arguably a reason for this the lack of applicable methodology that explicitly targets finite yet high-dimensional datasets. In this work we utilize recent progress in computational nonlinear dynamics to formulate a workflow that analyses potentially multistable simulation data and decides algorithmically what are the alternative steady states contained within, if any. The framework undergoes an optimization routine that showcases which observables in the data best differentiate the alternative states, and which ones do not differentiate at all, which could be used to guide monitoring and early-warning for multistable components in climate or ecosystems. Finally, once the alternate states have been found, we define an indicator called ``intermingledness''. It quantifies differences and similarities between alternate states, as well as for their basins of attraction, across various diagnostic variables. We analyse and present results using three diverse climate datasets: Atlantic ocean circulation, atmospheric midlatitude flow, and habitability of exoplanets. We also provide easy-to-use open source code for applying the workflow to new data.",
+    "field": "Multistability in complex climate systems",
+    "problem": "Identifying multistability in complex, high-dimensional simulations is challenging due to a lack of objective methodology, forcing reliance on subjective, non-reproducible expert judgments because traditional techniques are inapplicable to such finite datasets.",
+    "method": "We propose a computational workflow that identifies multistability by extracting features from simulation data, applying an optimized clustering algorithm to group them into attractors, and using a new \"intermingledness\" indicator to quantify their separation.",
+    "task": "The task is to formulate a computational workflow that analyzes potentially multistable high-dimensional simulation data to algorithmically decide what alternative steady states exist and which observables best differentiate them.",
+    "model": [
+        "Veros",
+        "MAOOAM",
+        "ExoPlaSim",
+        "PlaSim"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/multistability",
+            "display_name": "Multistability",
+            "score": 0.934499979019165
+        },
+        {
+            "id": "https://openalex.org/keywords/habitability",
+            "display_name": "Habitability",
+            "score": 0.574999988079071
+        },
+        {
+            "id": "https://openalex.org/keywords/observable",
+            "display_name": "Observable",
+            "score": 0.43309998512268066
+        },
+        {
+            "id": "https://openalex.org/keywords/work",
+            "display_name": "Work (physics)",
+            "score": 0.41359999775886536
+        },
+        {
+            "id": "https://openalex.org/keywords/workflow",
+            "display_name": "Workflow",
+            "score": 0.38769999146461487
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.3650999963283539
+        },
+        {
+            "id": "https://openalex.org/keywords/representation",
+            "display_name": "Representation (politics)",
+            "score": 0.34549999237060547
+        },
+        {
+            "id": "https://openalex.org/keywords/scale",
+            "display_name": "Scale (ratio)",
+            "score": 0.34540000557899475
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2776966350",
+            "wikidata": "https://www.wikidata.org/wiki/Q6935096",
+            "display_name": "Multistability",
+            "level": 3,
+            "score": 0.934499979019165
+        },
+        {
+            "id": "https://openalex.org/C21435255",
+            "wikidata": "https://www.wikidata.org/wiki/Q5636875",
+            "display_name": "Habitability",
+            "level": 3,
+            "score": 0.574999988079071
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5304999947547913
+        },
+        {
+            "id": "https://openalex.org/C32848918",
+            "wikidata": "https://www.wikidata.org/wiki/Q845789",
+            "display_name": "Observable",
+            "level": 2,
+            "score": 0.43309998512268066
+        },
+        {
+            "id": "https://openalex.org/C18762648",
+            "wikidata": "https://www.wikidata.org/wiki/Q42213",
+            "display_name": "Work (physics)",
+            "level": 2,
+            "score": 0.41359999775886536
+        },
+        {
+            "id": "https://openalex.org/C177212765",
+            "wikidata": "https://www.wikidata.org/wiki/Q627335",
+            "display_name": "Workflow",
+            "level": 2,
+            "score": 0.38769999146461487
+        },
+        {
+            "id": "https://openalex.org/C121864883",
+            "wikidata": "https://www.wikidata.org/wiki/Q677916",
+            "display_name": "Statistical physics",
+            "level": 1,
+            "score": 0.36980000138282776
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.3650999963283539
+        },
+        {
+            "id": "https://openalex.org/C2776359362",
+            "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+            "display_name": "Representation (politics)",
+            "level": 3,
+            "score": 0.34549999237060547
+        },
+        {
+            "id": "https://openalex.org/C2778755073",
+            "wikidata": "https://www.wikidata.org/wiki/Q10858537",
+            "display_name": "Scale (ratio)",
+            "level": 2,
+            "score": 0.34540000557899475
+        },
+        {
+            "id": "https://openalex.org/C47822265",
+            "wikidata": "https://www.wikidata.org/wiki/Q854457",
+            "display_name": "Complex system",
+            "level": 2,
+            "score": 0.3336000144481659
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.32919999957084656
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3257000148296356
+        },
+        {
+            "id": "https://openalex.org/C126701199",
+            "wikidata": "https://www.wikidata.org/wiki/Q264224",
+            "display_name": "Complex dynamics",
+            "level": 2,
+            "score": 0.3174999952316284
+        },
+        {
+            "id": "https://openalex.org/C168167062",
+            "wikidata": "https://www.wikidata.org/wiki/Q1117970",
+            "display_name": "Component (thermodynamics)",
+            "level": 2,
+            "score": 0.3151000142097473
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.30809998512268066
+        },
+        {
+            "id": "https://openalex.org/C2777052490",
+            "wikidata": "https://www.wikidata.org/wiki/Q5072826",
+            "display_name": "Chaotic",
+            "level": 2,
+            "score": 0.30160000920295715
+        },
+        {
+            "id": "https://openalex.org/C32334204",
+            "wikidata": "https://www.wikidata.org/wiki/Q961310",
+            "display_name": "Planetary boundaries",
+            "level": 3,
+            "score": 0.30070000886917114
+        },
+        {
+            "id": "https://openalex.org/C197115733",
+            "wikidata": "https://www.wikidata.org/wiki/Q1003136",
+            "display_name": "Forcing (mathematics)",
+            "level": 2,
+            "score": 0.3003999888896942
+        },
+        {
+            "id": "https://openalex.org/C158622935",
+            "wikidata": "https://www.wikidata.org/wiki/Q660848",
+            "display_name": "Nonlinear system",
+            "level": 2,
+            "score": 0.2946999967098236
+        },
+        {
+            "id": "https://openalex.org/C51929080",
+            "wikidata": "https://www.wikidata.org/wiki/Q2425187",
+            "display_name": "Codebase",
+            "level": 3,
+            "score": 0.2685999870300293
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.25839999318122864
+        },
+        {
+            "id": "https://openalex.org/C148043351",
+            "wikidata": "https://www.wikidata.org/wiki/Q4456944",
+            "display_name": "Current (fluid)",
+            "level": 2,
+            "score": 0.2574000060558319
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper introduces a computational workflow to algorithmically identify alternative steady states in complex, high-dimensional data and a new metric called \"intermingledness\" to quantify similarities between these states and their basins of attraction.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Atlantic meridional overturning circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Atlantic",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Simulations with the ocean model Veros show a multistability of the Atlantic meridional overturning circulation (AMOC), where steady states with a vigorous circulation can co-exist with states of fully or partially collapsed circulation, in agreement with previous studies [Rah95].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAOOAM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "non-linear longwave radiation scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The MAOOAM (Modular Arbitrary Order Ocean Atmosphere Model) [DDV16; DDH25], with a non-linear longwave radiation scheme, produces multiple stable attractors.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "thermohaline circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Atlantic",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "For the analysis presented here we only retain observables pertaining to the Atlantic and to the thermohaline circulation (disregarding the wind-driven circulation).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "wind-driven circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Atlantic",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "For the analysis presented here we only retain observables pertaining to the Atlantic and to the thermohaline circulation (disregarding the wind-driven circulation).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Veros",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "salinity",
+            "target_entity_type": "Variable",
+            "paragraph": "The set of observables comprises salinity, temperature and density in the north (abbreviated by 'xxx_NA')and south Atlantic ('xxx_SA') averaged for the surface and subsurface ocean, respectively.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Veros",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The set of observables comprises salinity, temperature and density in the north (abbreviated by 'xxx_NA')and south Atlantic ('xxx_SA') averaged for the surface and subsurface ocean, respectively.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Veros",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "density",
+            "target_entity_type": "Variable",
+            "paragraph": "The set of observables comprises salinity, temperature and density in the north (abbreviated by 'xxx_NA')and south Atlantic ('xxx_SA') averaged for the surface and subsurface ocean, respectively.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Veros",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "global average salinity",
+            "target_entity_type": "Variable",
+            "paragraph": "In addition, global average salinity ('salt_tot'), north Atlantic and globally averaged surface salinity forcing ('salt forc' and 'salt_forc_tot'), as well as global sea ice extent ('seaice') is used.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Veros",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface salinity forcing",
+            "target_entity_type": "Variable",
+            "paragraph": "In addition, global average salinity ('salt_tot'), north Atlantic and globally averaged surface salinity forcing ('salt forc' and 'salt_forc_tot'), as well as global sea ice extent ('seaice') is used.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Veros",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "global sea ice extent",
+            "target_entity_type": "Variable",
+            "paragraph": "In addition, global average salinity ('salt_tot'), north Atlantic and globally averaged surface salinity forcing ('salt forc' and 'salt_forc_tot'), as well as global sea ice extent ('seaice') is used.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Veros",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "AMOC streamfunction",
+            "target_entity_type": "Variable",
+            "paragraph": "Finally, the maximum of the AMOC streamfunction below 500 meters ('amoc_max'), the value of the AMOC streamfunction at the equator at 1000m depth ('amoc_EQ'), and the minimum of the Antarctic bottom water cell ('aabw again from the meridional stream- function) is used.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Veros",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Antarctic bottom water cell",
+            "target_entity_type": "Variable",
+            "paragraph": "Finally, the maximum of the AMOC streamfunction below 500 meters ('amoc_max'), the value of the AMOC streamfunction at the equator at 1000m depth ('amoc_EQ'), and the minimum of the Antarctic bottom water cell ('aabw again from the meridional stream- function) is used.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAOOAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "two layer quasi-geostrophic atmosphere",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The MAOOAM model consists of a simple two layer quasi-geostrophic atmosphere coupled to a single quasi-geostrophic ocean layer [DDV16].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAOOAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "single quasi-geostrophic ocean layer",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The MAOOAM model consists of a simple two layer quasi-geostrophic atmosphere coupled to a single quasi-geostrophic ocean layer [DDV16].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAOOAM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Galerkin-expansion",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The model equations are projected onto a set of basis modes, known as a Galerkin-expansion, to create a set of 38 ordinary differential equations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAOOAM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "barotropic streamfunctions of the atmosphere",
+            "target_entity_type": "Variable",
+            "paragraph": "The key variables discussed in this paper are the barotropic streamfunctions of the atmosphere (Va,i) and ocean (Vo,i), the baroclinic streamfunction of the atmospheric (from which we can calculate the atmospheric temperature) (\u03b8a,i), and the temperature of the ocean (To,i).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAOOAM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "barotropic streamfunctions of the ocean",
+            "target_entity_type": "Variable",
+            "paragraph": "The key variables discussed in this paper are the barotropic streamfunctions of the atmosphere (Va,i) and ocean (Vo,i), the baroclinic streamfunction of the atmospheric (from which we can calculate the atmospheric temperature) (\u03b8a,i), and the temperature of the ocean (To,i).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "MAOOAM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "baroclinic streamfunction of the atmospheric",
+            "target_entity_type": "Variable",
+            "paragraph": "The key variables discussed in this paper are the barotropic streamfunctions of the atmosphere (Va,i) and ocean (Vo,i), the baroclinic streamfunction of the atmospheric (from which we can calculate the atmospheric temperature) (\u03b8a,i), and the temperature of the ocean (To,i).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MAOOAM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature of the ocean",
+            "target_entity_type": "Variable",
+            "paragraph": "The key variables discussed in this paper are the barotropic streamfunctions of the atmosphere (Va,i) and ocean (Vo,i), the baroclinic streamfunction of the atmospheric (from which we can calculate the atmospheric temperature) (\u03b8a,i), and the temperature of the ocean (To,i).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ExoPlaSim",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Planet Simulator (PlaSim)",
+            "target_entity_type": "Source",
+            "paragraph": "The ExoPlaSim general circulation model of intermediate complexity is a modified version of the Planet Simulator (PlaSim) model [Par+21a] that has been extended for application to exoplanet atmospheres [Par+22].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ExoPlaSim",
+            "source_entity_type": "Source",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "general circulation model",
+            "target_entity_type": "SourceType",
+            "paragraph": "The ExoPlaSim general circulation model of intermediate complexity is a modified version of the Planet Simulator (PlaSim) model [Par+21a] that has been extended for application to exoplanet atmospheres [Par+22].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ExoPlaSim",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "spectral dynamical core",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The model uses a spectral dynamical core, with a 50m mixed-layer slab ocean and no topography for these simulations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ExoPlaSim",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "50m mixed-layer slab ocean",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The model uses a spectral dynamical core, with a 50m mixed-layer slab ocean and no topography for these simulations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ExoPlaSim",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "no topography",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The model uses a spectral dynamical core, with a 50m mixed-layer slab ocean and no topography for these simulations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ExoPlaSim",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "simplified radiative transfer (two shortwave bands and one longwave band)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Radiative transfer is simplified with only two shortwave bands and one longwave band, which accounts for much of the reduced computational time compared with other computationally-intensive general circulation models.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ExoPlaSim",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "water vapor as a minor atmospheric constituent",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The model treats water vapor as a minor atmospheric constituent, which is known to limit the accuracy of predictions for hot climates.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "University of Exeter",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Niels Bohr Institute, University of Copenhagen",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Stats NZ",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Blue Marble Space",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Atlantic ocean circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Atlantic meridional overturning circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "Veros",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "mean",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "maximum",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "kurtosis",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "extreme quantiles",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "main frequency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "period",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spectral variance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "spectral entropy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "auto-correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "sample entropy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "fractal dimension",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "recurrence quantifiers",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "silhouette mean",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "grouping quality q",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "basin entropy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "uncertainty exponent",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "intermingledness",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "control",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "equilibrium",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "AMOC",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "sst_NA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temp_sub_NA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rho_sub_SA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salt_sub_SA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sss_NA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aabw",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MAOOAM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "non-linear longwave radiation scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "low order quasi-geostrophic atmosphere",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "single layer ocean",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "North Atlantic Oscillation",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "transient",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "psi_a_3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "psi_o_6",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "T_o_2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "psi_o_2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "theta_a_10",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SAMOSA",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ExoPlaSim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "synchronous rotation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Tglob",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Tmax",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Tmin",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "OLR",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ASR",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fsdn",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fnet",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Qstrat",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Qmass",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ocnfrac",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Icethick",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Cldfrac",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TipMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "north Atlantic freshwater forcing",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salt_tot",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salt_forc",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salt_forc_tot",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "seaice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "amoc_max",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "amoc_EQ",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "two layer quasi-geostrophic atmosphere",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "single quasi-geostrophic ocean layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Galerkin-expansion",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "barotropic streamfunctions of the atmosphere",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "barotropic streamfunctions of the ocean",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "baroclinic streamfunction of the atmospheric",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature of the ocean",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean north-south double gyres",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Planet Simulator",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "spectral dynamical core",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "50m mixed-layer slab ocean",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "no topography",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "simplified radiative transfer with two shortwave bands and one longwave band",
+            "entity_type": "PhysicalScheme"
+        }
+    ],
+    "referenced_works": []
+}

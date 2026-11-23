@@ -1,0 +1,909 @@
+{
+    "uri": "https://openalex.org/W2109822557",
+    "title": "The leaf-level emission factor of volatile isoprenoids: caveats, model algorithms, response shapes and scaling",
+    "venue": {
+        "name": "Biogeosciences",
+        "id": "https://openalex.org/S13442111",
+        "type": "journal"
+    },
+    "publication_year": 2010,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5023326297",
+            "display_name": "\u00dclo Niinemets",
+            "orcid": "https://orcid.org/0000-0002-3078-2192"
+        },
+        {
+            "id": "https://openalex.org/A5091729870",
+            "display_name": "Russell K. Monson",
+            "orcid": "https://orcid.org/0000-0002-7671-4371"
+        },
+        {
+            "id": "https://openalex.org/A5061518589",
+            "display_name": "Almut Arneth",
+            "orcid": "https://orcid.org/0000-0001-6616-0822"
+        },
+        {
+            "id": "https://openalex.org/A5027890510",
+            "display_name": "P. Ciccioli",
+            "orcid": "https://orcid.org/0000-0002-5645-7638"
+        },
+        {
+            "id": "https://openalex.org/A5027565935",
+            "display_name": "J. Kesselmeier",
+            "orcid": "https://orcid.org/0000-0002-4446-534X"
+        },
+        {
+            "id": "https://openalex.org/A5037075303",
+            "display_name": "Uwe K\u00fchn",
+            "orcid": "https://orcid.org/0000-0002-8495-1414"
+        },
+        {
+            "id": "https://openalex.org/A5051575275",
+            "display_name": "Steffen M. Noe",
+            "orcid": "https://orcid.org/0000-0003-1514-1140"
+        },
+        {
+            "id": "https://openalex.org/A5016893899",
+            "display_name": "Josep Pe\u00f1uelas",
+            "orcid": "https://orcid.org/0000-0002-7215-0150"
+        },
+        {
+            "id": "https://openalex.org/A5005423746",
+            "display_name": "Michael Staudt",
+            "orcid": "https://orcid.org/0000-0001-8694-507X"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/bg-7-1809-2010",
+    "abstract": "Abstract. In models of plant volatile isoprenoid emissions, the instantaneous compound emission rate typically scales with the plant's emission potential under specified environmental conditions, also called as the emission factor, ES. In the most widely employed plant isoprenoid emission models, the algorithms developed by Guenther and colleagues (1991, 1993), instantaneous variation of the steady-state emission rate is described as the product of ES and light and temperature response functions. When these models are employed in the atmospheric chemistry modeling community, species-specific ES values and parameter values defining the instantaneous response curves are often taken as initially defined. In the current review, we argue that ES as a characteristic used in the models importantly depends on our understanding of which environmental factors affect isoprenoid emissions, and consequently need standardization during experimental ES determinations. In particular, there is now increasing consensus that in addition to variations in light and temperature, alterations in atmospheric and/or within-leaf CO2 concentrations may need to be included in the emission models. Furthermore, we demonstrate that for less volatile isoprenoids, mono- and sesquiterpenes, the emissions are often jointly controlled by the compound synthesis and volatility. Because of these combined biochemical and physico-chemical drivers, specification of ES as a constant value is incapable of describing instantaneous emissions within the sole assumptions of fluctuating light and temperature as used in the standard algorithms. The definition of ES also varies depending on the degree of aggregation of ES values in different parameterization schemes (leaf- vs. canopy- or region-scale, species vs. plant functional type levels) and various aggregated ES schemes are not compatible for different integration models. The summarized information collectively emphasizes the need to update model algorithms by including missing environmental and physico-chemical controls, and always to define ES within the proper context of model structure and spatial and temporal resolution.",
+    "field": "Biogenic volatile organic compound emissions",
+    "problem": "Standard isoprenoid emission models are challenged by treating the emission factor (Es) as a constant, which fails to incorporate crucial environmental (e.g., CO2) and physico-chemical (e.g., volatility) controls, leading to inaccurate and inconsistent emission predictions across different scales and conditions.",
+    "method": "This review proposes improving plant volatile isoprenoid emission models by updating algorithms to include missing environmental (e.g., CO2) and physico-chemical controls, and defining the emission factor (Es) within the context of model structure, spatial scale, and temporal resolution.",
+    "task": "The task is to review the concept of the leaf-level emission factor (Es) for volatile isoprenoids, highlighting caveats in current models and arguing for the need to update algorithms by including additional environmental controls and defining Es within the proper context of model structure.",
+    "model": [
+        "MEGAN",
+        "LPJ-GUESS"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/scaling",
+            "display_name": "Scaling",
+            "score": 0.6180481314659119
+        },
+        {
+            "id": "https://openalex.org/keywords/degree",
+            "display_name": "Degree (music)",
+            "score": 0.5147150158882141
+        },
+        {
+            "id": "https://openalex.org/keywords/terpenoid",
+            "display_name": "Terpenoid",
+            "score": 0.4305967092514038
+        },
+        {
+            "id": "https://openalex.org/keywords/biological-system",
+            "display_name": "Biological system",
+            "score": 0.4141741693019867
+        },
+        {
+            "id": "https://openalex.org/keywords/algorithm",
+            "display_name": "Algorithm",
+            "score": 0.39338070154190063
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.39300867915153503
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.37993788719177246
+        },
+        {
+            "id": "https://openalex.org/keywords/chemistry",
+            "display_name": "Chemistry",
+            "score": 0.3703581690788269
+        },
+        {
+            "id": "https://openalex.org/keywords/mathematics",
+            "display_name": "Mathematics",
+            "score": 0.3196278214454651
+        },
+        {
+            "id": "https://openalex.org/keywords/botany",
+            "display_name": "Botany",
+            "score": 0.2551875710487366
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.19173523783683777
+        },
+        {
+            "id": "https://openalex.org/keywords/biology",
+            "display_name": "Biology",
+            "score": 0.13727769255638123
+        },
+        {
+            "id": "https://openalex.org/keywords/geometry",
+            "display_name": "Geometry",
+            "score": 0.11937293410301208
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C99844830",
+            "wikidata": "https://www.wikidata.org/wiki/Q102441924",
+            "display_name": "Scaling",
+            "level": 2,
+            "score": 0.6180481314659119
+        },
+        {
+            "id": "https://openalex.org/C2775997480",
+            "wikidata": "https://www.wikidata.org/wiki/Q586277",
+            "display_name": "Degree (music)",
+            "level": 2,
+            "score": 0.5147150158882141
+        },
+        {
+            "id": "https://openalex.org/C206103511",
+            "wikidata": "https://www.wikidata.org/wiki/Q426694",
+            "display_name": "Terpenoid",
+            "level": 2,
+            "score": 0.4305967092514038
+        },
+        {
+            "id": "https://openalex.org/C186060115",
+            "wikidata": "https://www.wikidata.org/wiki/Q30336093",
+            "display_name": "Biological system",
+            "level": 1,
+            "score": 0.4141741693019867
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.39338070154190063
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.39300867915153503
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.37993788719177246
+        },
+        {
+            "id": "https://openalex.org/C185592680",
+            "wikidata": "https://www.wikidata.org/wiki/Q2329",
+            "display_name": "Chemistry",
+            "level": 0,
+            "score": 0.3703581690788269
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.3196278214454651
+        },
+        {
+            "id": "https://openalex.org/C59822182",
+            "wikidata": "https://www.wikidata.org/wiki/Q441",
+            "display_name": "Botany",
+            "level": 1,
+            "score": 0.2551875710487366
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.19173523783683777
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.13727769255638123
+        },
+        {
+            "id": "https://openalex.org/C2524010",
+            "wikidata": "https://www.wikidata.org/wiki/Q8087",
+            "display_name": "Geometry",
+            "level": 1,
+            "score": 0.11937293410301208
+        },
+        {
+            "id": "https://openalex.org/C24890656",
+            "wikidata": "https://www.wikidata.org/wiki/Q82811",
+            "display_name": "Acoustics",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper critically reviews the concept of the leaf-level emission factor (Es) for volatile isoprenoids, arguing that standard model algorithms must be updated to incorporate additional environmental, biochemical, and physico-chemical controls to accurately predict plant emissions.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "MEGAN",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Modifications in the optimum temperature of isoprene emission in dependence on past temperature environment",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Modifications in the optimum temperature of isoprene emission in dependence on past temperature environment have been embedded in MEGAN (Guenther et al., 2006), but the quantitative data for parameterization of such relationships are very limited (Gray et al., 2003; P\u00e9tron et al., 2001; Sharkey et al., 1999).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MEGAN",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "isoprene emission",
+            "target_entity_type": "Variable",
+            "paragraph": "In the integration schemes outlined above, Es values used are still leaf-scale emission potentials determined for un- shaded foliage. Alternatively, in the recent isoprene emission model MEGAN, canopy-scale isoprene emission potential, Ecan was defined (Guenther et al., 2006) that is not only standardized for temperature and light as Es traditionally was, but also for leaf area index (LAI) and for many biological factors. In MEGAN, canopy-level isoprene emission fluxes are calculated combining Ecan with empirical relationships between above-canopy average incident quantum flux den- sity and temperature (Guenther et al., 2006).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MEGAN",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "canopy-scale isoprene emission potential",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Alternatively, in the recent isoprene emission model MEGAN, canopy-scale isoprene emission potential, Ecan was defined (Guenther et al., 2006) that is not only standardized for temperature and light as Es traditionally was, but also for leaf area index (LAI) and for many biological factors.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LPJ-GUESS",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "big-leaf approach",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Many big-leaf type models assume that the responses of the entire canopy to light and temperature can be approximated with functions similar to those used for single leaves. Certain \"optimum\u201d variation in foliage physiological poten- tials within the canopy is assumed, and thus, only the upper canopy leaf physiological potentials are used for analytical integration of whole canopy responses to above-canopy en- vironmental conditions (Amthor, 1994; Dai et al., 2004; de Pury and Farquhar, 1997). In these models, the \"optimum\" variation is defined as linear decrease of foliage physiolog- ical potentials with long-term light availability from top to bottom of the canopy (Amthor, 1994; Dai et al., 2004; de Pury and Farquhar, 1997). With such assumption, the typi- cal Es values estimated for high-light exposed foliage, and ES.PFT values derived from these, can be used in the area- dependent integration of large-scale fluxes. Such big-leaf approaches have been used in global isoprene and monoterpene simulations with LPJ-GUESS (Arneth et al., 2007, 2008a; Schurgers et al., 2009a).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LPJ-GUESS",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "isoprene",
+            "target_entity_type": "Variable",
+            "paragraph": "With such assumption, the typical Es values estimated for high-light exposed foliage, and ES.PFT values derived from these, can be used in the area- dependent integration of large-scale fluxes. Such big-leaf approaches have been used in global isoprene and monoterpene simulations with LPJ-GUESS (Arneth et al., 2007, 2008a; Schurgers et al., 2009a).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LPJ-GUESS",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "monoterpene",
+            "target_entity_type": "Variable",
+            "paragraph": "With such assumption, the typical Es values estimated for high-light exposed foliage, and ES.PFT values derived from these, can be used in the area- dependent integration of large-scale fluxes. Such big-leaf approaches have been used in global isoprene and monoterpene simulations with LPJ-GUESS (Arneth et al., 2007, 2008a; Schurgers et al., 2009a).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Bellaterra",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Boulder",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Lund",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Mainz",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Monterotondo",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Montpellier",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Tartu",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Zuerich",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Colorado",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Estonia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Italy",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Spain",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Sweden",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Switzerland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "1h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Catalan government",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Centre d'Ecologie Fonctionnelle et Evolutive (CEFE-CNRS)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Estonian Ministry of Education and Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Estonian Science Foundation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Estonian University of Life Sciences",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Federal Research Station Agroscope Reckenholz-Taenikon, ART",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Global Ecology Unit CSIC-CEAB-CREAF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Human Frontier Science Programme",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Istituto di Metodologie Chimiche del CNR",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Lund University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Max Planck Institute for Chemistry",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Spanish Government",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Swedish Research Councils Formas",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Swedish Research Councils VR",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "US Environmental Protection Agency",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "US National Science Foundation",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Colorado",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "sum of error squares",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "1-D layered model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3-D model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Antoine equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Arrhenius type response function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CO2 concentration response function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Guenther et al. algorithms",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Lambert-Beer model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Smith's function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "big-leaf canopy model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "exponential temperature response function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "isoprene emission algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "light response function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "mixed emission model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "modified sigmoidal light response function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "monoterpene release model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "parameterization schemes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "temperature response function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two-layer big-leaf model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "two-pool dynamic emission model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "INTROP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "VOCBAS",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "1-50 km\u00b2",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "100-10000 km\u00b2",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "LPJ-GUESS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MEGAN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SVAT",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "BVOC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO2 concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DMNT",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Henry's law constant",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Octanol/air partition coefficient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Octanol/water partition coefficient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Q10",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TMTT",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "apparent quantum yield",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "canopy-scale isoprene emission potential",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud condensation nuclei",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "constitutive emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "emission factor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "emission rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "glyceraldehyde 3-phosphate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "homoterpenes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "induced emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "intercellular CO2 concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "isoprene",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "isoprene synthase activity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "isoprenoid emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "leaf area index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "leaf temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "light",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "light intensity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "methylbutenol",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mono- and sesquiterpenes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "monoterpenes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "secondary organic aerosols",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sesquiterpenes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stomatal conductance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stress-driven monoterpene emissions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature response coefficient",
+            "entity_type": "Variable"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1989473086",
+        "https://openalex.org/W2143606014",
+        "https://openalex.org/W4292199066",
+        "https://openalex.org/W2131196073",
+        "https://openalex.org/W1757086073",
+        "https://openalex.org/W2064895264",
+        "https://openalex.org/W2044724516",
+        "https://openalex.org/W2093264248",
+        "https://openalex.org/W2048077074",
+        "https://openalex.org/W2054566120",
+        "https://openalex.org/W2488057130",
+        "https://openalex.org/W2126786104",
+        "https://openalex.org/W2150332718",
+        "https://openalex.org/W2043419391",
+        "https://openalex.org/W1995192472",
+        "https://openalex.org/W2056119491",
+        "https://openalex.org/W2047586097",
+        "https://openalex.org/W2084718815",
+        "https://openalex.org/W2141710437",
+        "https://openalex.org/W2016716193",
+        "https://openalex.org/W1592422775",
+        "https://openalex.org/W2115614630",
+        "https://openalex.org/W4211254762",
+        "https://openalex.org/W2024446077",
+        "https://openalex.org/W2086889977",
+        "https://openalex.org/W2027344660",
+        "https://openalex.org/W2065058313",
+        "https://openalex.org/W2061320585",
+        "https://openalex.org/W2086395485",
+        "https://openalex.org/W1971443474",
+        "https://openalex.org/W2179250365",
+        "https://openalex.org/W2125491431",
+        "https://openalex.org/W2147802740",
+        "https://openalex.org/W2133687844",
+        "https://openalex.org/W2049095766",
+        "https://openalex.org/W2113925232",
+        "https://openalex.org/W2082876088",
+        "https://openalex.org/W2162292215",
+        "https://openalex.org/W2080517497",
+        "https://openalex.org/W2059753633",
+        "https://openalex.org/W1736367156",
+        "https://openalex.org/W1968004968",
+        "https://openalex.org/W2017062271",
+        "https://openalex.org/W1967568888",
+        "https://openalex.org/W2094282833",
+        "https://openalex.org/W2128178730",
+        "https://openalex.org/W2079975275",
+        "https://openalex.org/W2017552442",
+        "https://openalex.org/W1551633339",
+        "https://openalex.org/W2056980845",
+        "https://openalex.org/W2117811002",
+        "https://openalex.org/W2054652969",
+        "https://openalex.org/W2146061402",
+        "https://openalex.org/W2067209936",
+        "https://openalex.org/W2116872816",
+        "https://openalex.org/W2161856877",
+        "https://openalex.org/W2044745358",
+        "https://openalex.org/W2068260720",
+        "https://openalex.org/W2479704413",
+        "https://openalex.org/W2086533537",
+        "https://openalex.org/W2002570697",
+        "https://openalex.org/W2062557772",
+        "https://openalex.org/W2117830870",
+        "https://openalex.org/W2081669923",
+        "https://openalex.org/W2142827701",
+        "https://openalex.org/W2006041993",
+        "https://openalex.org/W2014414979",
+        "https://openalex.org/W1684083346",
+        "https://openalex.org/W2034019956",
+        "https://openalex.org/W1970610528",
+        "https://openalex.org/W2015976160",
+        "https://openalex.org/W2060413005",
+        "https://openalex.org/W2079638279",
+        "https://openalex.org/W2012700379",
+        "https://openalex.org/W2061758893",
+        "https://openalex.org/W2125304937",
+        "https://openalex.org/W2127573791",
+        "https://openalex.org/W1969740092",
+        "https://openalex.org/W2117117800",
+        "https://openalex.org/W2080174234",
+        "https://openalex.org/W2129027708",
+        "https://openalex.org/W1972558168",
+        "https://openalex.org/W2141371835",
+        "https://openalex.org/W2110708931",
+        "https://openalex.org/W2111155943",
+        "https://openalex.org/W2124071240",
+        "https://openalex.org/W1969537981",
+        "https://openalex.org/W2111432716",
+        "https://openalex.org/W2062309149",
+        "https://openalex.org/W1991495295",
+        "https://openalex.org/W2004227448",
+        "https://openalex.org/W1997593222",
+        "https://openalex.org/W2108110404",
+        "https://openalex.org/W2101913496",
+        "https://openalex.org/W2145646776",
+        "https://openalex.org/W4242220966",
+        "https://openalex.org/W1981176893",
+        "https://openalex.org/W2323211502",
+        "https://openalex.org/W2118207534",
+        "https://openalex.org/W1978855535",
+        "https://openalex.org/W2090640544",
+        "https://openalex.org/W1988734079",
+        "https://openalex.org/W1557125326",
+        "https://openalex.org/W1522928255",
+        "https://openalex.org/W1970752206",
+        "https://openalex.org/W4254348680",
+        "https://openalex.org/W2116748617",
+        "https://openalex.org/W1990709422",
+        "https://openalex.org/W2117117703",
+        "https://openalex.org/W2040441515",
+        "https://openalex.org/W1997738632",
+        "https://openalex.org/W1979893468",
+        "https://openalex.org/W1986554123",
+        "https://openalex.org/W2142685211",
+        "https://openalex.org/W2076625309",
+        "https://openalex.org/W2028736183",
+        "https://openalex.org/W2009306410",
+        "https://openalex.org/W2125934489",
+        "https://openalex.org/W2046038007",
+        "https://openalex.org/W2101110718",
+        "https://openalex.org/W2031290845",
+        "https://openalex.org/W2058563014",
+        "https://openalex.org/W2116859808",
+        "https://openalex.org/W2021219745",
+        "https://openalex.org/W1989667647",
+        "https://openalex.org/W2148171955",
+        "https://openalex.org/W2024578803",
+        "https://openalex.org/W2116720571",
+        "https://openalex.org/W87046952",
+        "https://openalex.org/W1970391023",
+        "https://openalex.org/W4250534631",
+        "https://openalex.org/W1976329934",
+        "https://openalex.org/W1571469753",
+        "https://openalex.org/W2001198640",
+        "https://openalex.org/W2164674397",
+        "https://openalex.org/W2091822352",
+        "https://openalex.org/W2061900932",
+        "https://openalex.org/W2024223815",
+        "https://openalex.org/W144543321",
+        "https://openalex.org/W2024268757",
+        "https://openalex.org/W2010455465",
+        "https://openalex.org/W2028103457",
+        "https://openalex.org/W2101079432",
+        "https://openalex.org/W2108859505",
+        "https://openalex.org/W2090234310",
+        "https://openalex.org/W2032582872",
+        "https://openalex.org/W2085279538",
+        "https://openalex.org/W1984153926",
+        "https://openalex.org/W2082845414",
+        "https://openalex.org/W2069925853",
+        "https://openalex.org/W1574212700",
+        "https://openalex.org/W2162946366",
+        "https://openalex.org/W2098082930",
+        "https://openalex.org/W1997585042",
+        "https://openalex.org/W1974736543",
+        "https://openalex.org/W2048976484",
+        "https://openalex.org/W1964768303",
+        "https://openalex.org/W1481642727",
+        "https://openalex.org/W2070149635",
+        "https://openalex.org/W2001900561",
+        "https://openalex.org/W2123915839",
+        "https://openalex.org/W1493311085",
+        "https://openalex.org/W2141994158",
+        "https://openalex.org/W2103650494",
+        "https://openalex.org/W2083253647",
+        "https://openalex.org/W1964387228",
+        "https://openalex.org/W2030869843",
+        "https://openalex.org/W2168311108",
+        "https://openalex.org/W2129592757",
+        "https://openalex.org/W2334470749",
+        "https://openalex.org/W2159618489",
+        "https://openalex.org/W2074547809",
+        "https://openalex.org/W4239616659",
+        "https://openalex.org/W2112099970",
+        "https://openalex.org/W2099095316",
+        "https://openalex.org/W2040986334",
+        "https://openalex.org/W4236390923",
+        "https://openalex.org/W2043657138",
+        "https://openalex.org/W2119873327",
+        "https://openalex.org/W2171539981",
+        "https://openalex.org/W1981962082",
+        "https://openalex.org/W2017052641",
+        "https://openalex.org/W4252097007",
+        "https://openalex.org/W2054169071",
+        "https://openalex.org/W2312587765",
+        "https://openalex.org/W2064056436",
+        "https://openalex.org/W2149507606",
+        "https://openalex.org/W2167308833",
+        "https://openalex.org/W2081637547",
+        "https://openalex.org/W2068202203",
+        "https://openalex.org/W1975941360",
+        "https://openalex.org/W1996309099",
+        "https://openalex.org/W1967110180",
+        "https://openalex.org/W2137671492",
+        "https://openalex.org/W2110879771",
+        "https://openalex.org/W2114705684",
+        "https://openalex.org/W2129491008",
+        "https://openalex.org/W2102155348",
+        "https://openalex.org/W2068097374",
+        "https://openalex.org/W2029180534",
+        "https://openalex.org/W172287908",
+        "https://openalex.org/W3046542839",
+        "https://openalex.org/W2134988868",
+        "https://openalex.org/W2085300171",
+        "https://openalex.org/W2121203982",
+        "https://openalex.org/W2075394698",
+        "https://openalex.org/W4285719527",
+        "https://openalex.org/W4246533652",
+        "https://openalex.org/W4250629648",
+        "https://openalex.org/W2144960462"
+    ]
+}

@@ -1,0 +1,3310 @@
+{
+    "uri": "https://openalex.org/W2463201722",
+    "title": "Climatologies at high resolution for the earth\u2019s land surface areas",
+    "venue": {
+        "name": "Scientific Data",
+        "id": "https://openalex.org/S2607323502",
+        "type": "journal"
+    },
+    "publication_year": 2017,
+    "authors": [
+        {
+            "id": "https://openalex.org/A1977562749",
+            "display_name": "Dirk Nikolaus Karger",
+            "orcid": "https://orcid.org/0000-0001-7770-6229"
+        },
+        {
+            "id": "https://openalex.org/A2087487957",
+            "display_name": "Olaf Conrad",
+            "orcid": "https://orcid.org/0000-0003-3754-0484"
+        },
+        {
+            "id": "https://openalex.org/A2015520542",
+            "display_name": "J\u00fcrgen Bohner",
+            "orcid": "https://orcid.org/0000-0002-0842-0152"
+        },
+        {
+            "id": "https://openalex.org/A846189290",
+            "display_name": "Tobias Kawohl",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A1991993357",
+            "display_name": "Holger Kreft",
+            "orcid": "https://orcid.org/0000-0003-4471-8236"
+        },
+        {
+            "id": "https://openalex.org/A4293872107",
+            "display_name": "Rodrigo Wilber Soria-Auza",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A1442336764",
+            "display_name": "Niklaus E. Zimmermann",
+            "orcid": "https://orcid.org/0000-0003-3099-9604"
+        },
+        {
+            "id": "https://openalex.org/A2130088497",
+            "display_name": "H. Peter Linder",
+            "orcid": "https://orcid.org/0000-0002-1373-2708"
+        },
+        {
+            "id": "https://openalex.org/A2056155443",
+            "display_name": "Michael Kessler",
+            "orcid": "https://orcid.org/0000-0001-5391-471X"
+        }
+    ],
+    "doi": "https://doi.org/10.1038/sdata.2017.122",
+    "abstract": null,
+    "field": "High-resolution climatology",
+    "problem": "Existing global climate datasets are too coarse for many applications, while methods based on interpolating station data are often inaccurate in complex terrains and regions with sparse, unevenly distributed meteorological stations, failing to capture crucial small-scale climate patterns.",
+    "method": "The paper presents a downscaling method that incorporates orographic predictors and gauge-based bias correction to derive high-resolution monthly temperature and precipitation climatologies for the earth's land surface areas from ERA-Interim reanalysis data.",
+    "task": "The task is to create the CHELSA high-resolution (30 arc sec) temperature and precipitation climatology for the Earth's land surface areas by downscaling ERA-Interim reanalysis data using algorithms that incorporate orographic predictors and statistical methods.",
+    "model": [
+        "CHELSA",
+        "ERA-Interim",
+        "CHIRPS",
+        "TRMM",
+        "WorldClim",
+        "CRU",
+        "GPCC",
+        "PRISM",
+        "NCEP",
+        "AN\u016aCLIM",
+        "CHPclim",
+        "CRUTEM4",
+        "MODIS"
+    ],
+    "paper_screening": "yes",
+    "keywords": [],
+    "concepts": [],
+    "obs_and_metrics": [
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 1)",
+            "result": "0.03"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 1)",
+            "result": "0.03"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 1)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 1)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 1)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 1)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 2)",
+            "result": "0.05"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 2)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 2)",
+            "result": "0.03"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 2)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 2)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 2)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 3)",
+            "result": "0.05"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 3)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 3)",
+            "result": "0.06"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 3)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 3)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 3)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 4)",
+            "result": "0.08"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 4)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 4)",
+            "result": "0.14"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 4)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 4)",
+            "result": "0.03"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 4)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 5)",
+            "result": "0.03"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 5)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 5)",
+            "result": "0.10"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 5)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 5)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 5)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 6)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 6)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 6)",
+            "result": "0.17"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 6)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 6)",
+            "result": "-0.03"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 6)",
+            "result": "0.03"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 7)",
+            "result": "-0.03"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 7)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 7)",
+            "result": "0.20"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 7)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 7)",
+            "result": "-0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 7)",
+            "result": "0.04"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 8)",
+            "result": "-0.04"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 8)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 8)",
+            "result": "0.15"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 8)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 8)",
+            "result": "-0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 8)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 9)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 9)",
+            "result": "-0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 9)",
+            "result": "0.13"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 9)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 9)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 9)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 10)",
+            "result": "0.03"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 10)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 10)",
+            "result": "0.07"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 10)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 10)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 10)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 11)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 11)",
+            "result": "0.03"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 11)",
+            "result": "-0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 11)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 11)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 11)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Alps)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 12)",
+            "result": "0.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Andes)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 12)",
+            "result": "0.04"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Himalaya)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 12)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Rocky Mnts.)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 12)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (South Africa)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 12)",
+            "result": "0.00"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "station data (Global)",
+            "evaluation_metric": "Difference in R\u00b2 (Month 12)",
+            "result": "0.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2",
+            "result": "0.43"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.15"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE",
+            "result": "32.49"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "12.71"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE",
+            "result": "24.03"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE s.d.",
+            "result": "9.47"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2",
+            "result": "0.41"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.15"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE",
+            "result": "32.99"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "12.26"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE",
+            "result": "24.09"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE s.d.",
+            "result": "9.03"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2",
+            "result": "0.35"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.16"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE",
+            "result": "34.55"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "13.03"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE",
+            "result": "25.65"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE s.d.",
+            "result": "9.75"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2",
+            "result": "0.61"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.17"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE",
+            "result": "30.85"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "43.87"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE",
+            "result": "17.61"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE s.d.",
+            "result": "12.65"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2",
+            "result": "0.60"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.17"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE",
+            "result": "36.76"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "35.08"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE",
+            "result": "21.70"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE s.d.",
+            "result": "26.70"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2",
+            "result": "0.48"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.18"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE",
+            "result": "34.77"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "44.18"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE",
+            "result": "20.11"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE s.d.",
+            "result": "13.61"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2",
+            "result": "0.83"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.11"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE",
+            "result": "37.66"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "12.67"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE",
+            "result": "18.64"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "7.08"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2",
+            "result": "0.73"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.13"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE",
+            "result": "48.80"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "18.28"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE",
+            "result": "22.40"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "8.42"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2",
+            "result": "0.51"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.11"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE",
+            "result": "66.81"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "20.76"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE",
+            "result": "37.82"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "11.52"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2",
+            "result": "0.39"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.11"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE",
+            "result": "62.37"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "35.87"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE",
+            "result": "37.54"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "25.59"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2",
+            "result": "0.35"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.11"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE",
+            "result": "64.21"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "36.92"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE",
+            "result": "38.49"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "25.86"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2",
+            "result": "0.33"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.10"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE",
+            "result": "66.32"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "39.94"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE",
+            "result": "41.58"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "28.67"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2",
+            "result": "0.78"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.22"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE",
+            "result": "24.40"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "14.06"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE",
+            "result": "16.38"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE s.d.",
+            "result": "9.35"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2",
+            "result": "0.79"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.22"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE",
+            "result": "22.79"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "12.07"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE",
+            "result": "15.07"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE s.d.",
+            "result": "7.80"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2",
+            "result": "0.62"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.24"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE",
+            "result": "33.27"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "15.36"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE",
+            "result": "21.73"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE s.d.",
+            "result": "9.30"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 mean",
+            "result": "0.38"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.06"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 mean",
+            "result": "0.38"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.05"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 mean",
+            "result": "0.34"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.02"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 mean",
+            "result": "0.32"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.04"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 mean",
+            "result": "0.30"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.06"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 mean",
+            "result": "0.62"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.08"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 mean",
+            "result": "0.59"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.09"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 mean",
+            "result": "0.64"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.10"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 mean",
+            "result": "0.57"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.11"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 mean",
+            "result": "0.61"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "China",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.10"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 mean",
+            "result": "0.92"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.01"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 mean",
+            "result": "0.92"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.03"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 mean",
+            "result": "0.48"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.26"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 mean",
+            "result": "0.65"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.03"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 mean",
+            "result": "[0.93]"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "[0.02]"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 mean",
+            "result": "0.79"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.03"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 mean",
+            "result": "0.65"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.16"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 mean",
+            "result": "0.45"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.11"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 mean",
+            "result": "0.51"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.07"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 mean",
+            "result": "[0.83]"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "[0.02]"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 mean",
+            "result": "0.87"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.04"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 mean",
+            "result": "0.50"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.23"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 mean",
+            "result": "0.86"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.11"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 mean",
+            "result": "0.59"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.17"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 mean",
+            "result": "[0.81]"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "R2 s.d.",
+            "result": "[0.11]"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE mean",
+            "result": "25.71"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "1.29"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE mean",
+            "result": "25.70"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "1.28"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE mean",
+            "result": "26.56"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.97"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE mean",
+            "result": "26.95"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "1.06"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE mean",
+            "result": "27.39"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "1.50"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE mean",
+            "result": "17.23"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "2.77"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE mean",
+            "result": "16.86"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "2.38"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE mean",
+            "result": "15.40"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "2.07"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE mean",
+            "result": "16.89"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "2.26"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE mean",
+            "result": "16.46"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "China",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "2.56"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE mean",
+            "result": "24.55"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "3.94"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE mean",
+            "result": "28.97"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "20.23"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE mean",
+            "result": "58.94"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "26.24"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE mean",
+            "result": "49.21"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "11.00"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE mean",
+            "result": "[20.61]"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "[3.65]"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE mean",
+            "result": "28.13"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "17.60"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE mean",
+            "result": "36.23"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "27.98"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE mean",
+            "result": "43.73"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "24.06"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE mean",
+            "result": "42.36"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "25.71"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE mean",
+            "result": "[24.53]"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "[14.44]"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE mean",
+            "result": "14.44"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "5.54"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE mean",
+            "result": "27.55"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "9.97"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE mean",
+            "result": "13.55"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "3.84"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE mean",
+            "result": "25.15"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "7.60"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE mean",
+            "result": "[16.74]"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "[6.16]"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE mean",
+            "result": "19.37"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.97"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE mean",
+            "result": "19.15"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.92"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE mean",
+            "result": "19.78"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.83"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE mean",
+            "result": "20.04"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.86"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE mean",
+            "result": "20.19"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Austria",
+            "evaluation_metric": "MAE s.d.",
+            "result": "1.26"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE mean",
+            "result": "12.56"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE s.d.",
+            "result": "2.62"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE mean",
+            "result": "12.24"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE s.d.",
+            "result": "2.07"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE mean",
+            "result": "10.09"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE s.d.",
+            "result": "1.89"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE mean",
+            "result": "11.81"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE s.d.",
+            "result": "2.38"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE mean",
+            "result": "11.94"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "China",
+            "evaluation_metric": "MAE s.d.",
+            "result": "2.17"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE mean",
+            "result": "13.24"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "1.68"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE mean",
+            "result": "14.67"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "15.10"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE mean",
+            "result": "39.96"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "19.72"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE mean",
+            "result": "27.09"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "4.39"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE mean",
+            "result": "[10.44]"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "[1.38]"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE mean",
+            "result": "16.98"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "12.10"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE mean",
+            "result": "22.83"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "20.84"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE mean",
+            "result": "27.56"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "17.32"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE mean",
+            "result": "26.97"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "18.57"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE mean",
+            "result": "[14.44]"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "[9.23]"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE mean",
+            "result": "9.57"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE s.d.",
+            "result": "3.31"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE mean",
+            "result": "19.02"
+        },
+        {
+            "model": "CHPclim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE s.d.",
+            "result": "6.43"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE mean",
+            "result": "9.56"
+        },
+        {
+            "model": "CRU",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE s.d.",
+            "result": "2.84"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE mean",
+            "result": "15.71"
+        },
+        {
+            "model": "ERA",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE s.d.",
+            "result": "4.20"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE mean",
+            "result": "[10.38]"
+        },
+        {
+            "model": "WorldClim",
+            "observational_dataset": "Scandinavia",
+            "evaluation_metric": "MAE s.d.",
+            "result": "[3.70]"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "R2",
+            "result": "0.97"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.017"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "RMSE",
+            "result": "1.37"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.109"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "MAE",
+            "result": "1.01"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.088"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2",
+            "result": "0.81"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.036"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE",
+            "result": "1.95"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.103"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE",
+            "result": "1.43"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.100"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2",
+            "result": "0.96"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.037"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE",
+            "result": "1.50"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.296"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE",
+            "result": "1.02"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.209"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "R2",
+            "result": "0.75"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.08"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "RMSE",
+            "result": "1.17"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.233"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "MAE",
+            "result": "0.86"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.179"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "R2",
+            "result": "0.86"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.059"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "RMSE",
+            "result": "3.59"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.394"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "MAE",
+            "result": "2.64"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.332"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2",
+            "result": "0.19"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.064"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE",
+            "result": "2.87"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.296"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE",
+            "result": "2.33"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.269"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2",
+            "result": "0.80"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.113"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE",
+            "result": "3.31"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.891"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE",
+            "result": "2.15"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.989"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "R2",
+            "result": "0.29"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.165"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "RMSE",
+            "result": "2.57"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.439"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "MAE",
+            "result": "1.82"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.323"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "R2",
+            "result": "0.99"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.007"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "RMSE",
+            "result": "0.94"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.062"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "MAE",
+            "result": "0.67"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.042"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2",
+            "result": "0.89"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.023"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE",
+            "result": "1.47"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.075"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE",
+            "result": "1.08"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.080"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2",
+            "result": "0.98"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.014"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE",
+            "result": "1.11"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.094"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE",
+            "result": "0.78"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.079"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "R2",
+            "result": "0.94"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.028"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "RMSE",
+            "result": "0.70"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.368"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "MAE",
+            "result": "0.49"
+        },
+        {
+            "model": "CHELSA",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.233"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "R2",
+            "result": "0.88"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.051"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "RMSE",
+            "result": "3.28"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.203"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "MAE",
+            "result": "2.34"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.201"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2",
+            "result": "0.20"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.060"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE",
+            "result": "2.84"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.283"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE",
+            "result": "2.30"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Mexico",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.249"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2",
+            "result": "0.82"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.074"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE",
+            "result": "3.59"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.235"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE",
+            "result": "2.69"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "FAO",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.228"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "R2",
+            "result": "0.32"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "R2 s.d.",
+            "result": "0.178"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "RMSE",
+            "result": "2.51"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "RMSE s.d.",
+            "result": "0.399"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "MAE",
+            "result": "1.82"
+        },
+        {
+            "model": "CRUTEM4",
+            "observational_dataset": "Nordklim",
+            "evaluation_metric": "MAE s.d.",
+            "result": "0.316"
+        }
+    ],
+    "innovation": "This paper presents CHELSA, a high-resolution (30 arc sec) global land climatology for 1979-2013 that downscales ERA-Interim reanalysis using a novel algorithm with orographic predictors to improve the accuracy of precipitation patterns.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "ERA-Interim",
+            "target_entity_type": "Source",
+            "paragraph": "High-resolution information on climatic conditions is essential to many applications in environmental and ecological sciences. Here we present the CHELSA (Climatologies at high resolution for the earth's land surface areas) data of downscaled model output temperature and precipitation estimates of the ERA-Interim climatic reanalysis to a high resolution of 30 arc sec.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "statistical downscaling",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The temperature algorithm is based on statistical downscaling of atmospheric temperatures.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "bias correction",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The precipitation algorithm incorporates orographic predictors including wind fields, valley exposition, and boundary layer height, with a subsequent bias correction.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "monthly temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The resulting data consist of a monthly temperature and precipitation climatology for the years 1979-2013.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "monthly precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "The resulting data consist of a monthly temperature and precipitation climatology for the years 1979-2013.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "GPCC",
+            "target_entity_type": "Source",
+            "paragraph": "To overcome the problem of heterogeneous spatial and temporal distribution of meteorological station data, we use a Model Output Statistics algorithm for data provided from the ERA-Interim reanalysis17 which we correct using gauge-derived products from the GPCC10 and the GHCN14,15 datasets.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "GHCN",
+            "target_entity_type": "Source",
+            "paragraph": "To overcome the problem of heterogeneous spatial and temporal distribution of meteorological station data, we use a Model Output Statistics algorithm for data provided from the ERA-Interim reanalysis17 which we correct using gauge-derived products from the GPCC10 and the GHCN14,15 datasets.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "0.75\u00b0 lat/long horizontal resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ERA-Interim (developed at the European Centre for Medium-Range Weather Forecast, ECMWF), simulates six-hourly large-scale atmospheric fields for 60 pressure levels between 1,000 and 1 hPa globally with a horizontal resolution of 0.75\u00b0 lat/long (T255)17,21,22.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA-Interim",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "60 pressure levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "ERA-Interim (developed at the European Centre for Medium-Range Weather Forecast, ECMWF), simulates six-hourly large-scale atmospheric fields for 60 pressure levels between 1,000 and 1 hPa globally with a horizontal resolution of 0.75\u00b0 lat/long (T255)17,21,22.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "climatological aided interpolation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Maximum (tmax) and minimum (tmin) temperatures were calculated using climatological aided interpolation30.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "GMTED2010",
+            "target_entity_type": "Source",
+            "paragraph": "For our downscaling approach of mean monthly temperatures, we used the monthly means of daily mean temperature derived from six-hourly synoptic data from ERA-Interim. Temperature lapse rates were calculated from the ERA-Interim for pressure levels from 1,000 to 300 hPa, using linear regression for each ERA-Interim grid cell. We then interpolated temperature to sea level using the derived lapse rates. Sea level temperatures were then interpolated between grid cells using B-spline interpolation, and then projected back on the elevational surface of the digital elevation model using the equation: t = \u0393a * elev + t0 (1) where t equals the temperature at a given elevation, \u0393a equals the lapse rate, elev equals elevation at 30 arc sec. from the Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010)29 of the United States Geological Survey (USGS) and the National Geospatial-Intelligence Agency (NGA), and t0 equals the interpolated temperature at sea level.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "temperature algorithm",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The temperature algorithm is based on statistical downscaling of atmospheric temperatures.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "precipitation algorithm",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The precipitation algorithm incorporates orographic predictors including wind fields, valley exposition, and boundary layer height, with a subsequent bias correction.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "bioclimatic variables",
+            "target_entity_type": "Variable",
+            "paragraph": "From the monthly temperature and precipitation values, we additionally calculated a set of derived parameters often used in ecological applications. These bioclimatic variables are derived variables from the monthly mean, min, max, mean temperature, and mean precipitation values. These variables are specifically developed for species distribution modelling and related ecological applications.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R\u00b2",
+            "target_entity_type": "Metric",
+            "paragraph": "To validate the results of the bias correction method using meteorological station data, we employed a cross-validation approach based on repeated split-resampling. We randomly omitted 20% of the stations for validation and used the remaining 80% for the bias correction by multilevel B-spline interpolation. We repeated the randomization 20 times per month for each respective year from 1979\u20132013. The mean R\u00b2 values after cross-validation ranged between 0.53 and 0.90 with a mean of R\u00b2 = 0.77 and a root mean squared error (RMSE) ranging from 30.06\u2013189.12 mm (mean = 54.69 mm) globally throughout the years.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "To validate the results of the bias correction method using meteorological station data, we employed a cross-validation approach based on repeated split-resampling. We randomly omitted 20% of the stations for validation and used the remaining 80% for the bias correction by multilevel B-spline interpolation. We repeated the randomization 20 times per month for each respective year from 1979\u20132013. The mean R\u00b2 values after cross-validation ranged between 0.53 and 0.90 with a mean of R\u00b2 = 0.77 and a root mean squared error (RMSE) ranging from 30.06\u2013189.12 mm (mean = 54.69 mm) globally throughout the years.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CHELSA",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "The climatologies show a lower RMSE and MAE than the time series when compared to all station data (Table 5). This indicates that although an error exists in the monthly CHELSA reanalysis temperatures, the error does not inflate when these values are averaged. R\u00b2 values are also higher for the climatologies, than for the reanalysis values.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "CHELSA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA-Interim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Historical Climate Network",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "statistical downscaling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "orographic predictors",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bias correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "30 arc sec",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "temperature of air",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hydrological precipitation process",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "planetary atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "University of Zurich",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Swiss Federal Research Institute WSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Hamburg",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of G\u00f6ttingen",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Asociaci\u00f3n Armon\u00eda",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CHIRPS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TRMM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WorldClim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CRU",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GPCC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PRISM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GHCN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCEP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecast",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Model Output Statistics",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "60 pressure levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "0.75\u00b0 lat/long",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "linear regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "B-spline interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GMTED2010",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "United States Geological Survey",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "USGS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Geospatial-Intelligence Agency",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NGA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "climatological aided interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Wind effect correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "world Mercator projection",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "u-wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "v-wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "boundary layer height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Multilevel B-Spline interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Valley exposition correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Boundary layer correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Monthly bias correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Station bias correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MeteoSwiss",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "DWD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GPCC Climatology Version 2015",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "bioclimatic variables",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ANUCLIM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Annual Mean Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mean Diurnal Range",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Isothermality",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Temperature Seasonality",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Max Temperature of Warmest Month",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Min Temperature of Coldest Month",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Temperature Annual Range",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mean Temperature of Wettest Quarter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mean Temperature of Driest Quarter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mean Temperature of Warmest Quarter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mean Temperature of Coldest Quarter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Annual Precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation of Wettest Month",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation of Driest Month",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation Seasonality",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation of Wettest Quarter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation of Driest Quarter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation of Warmest Quarter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation of Coldest Quarter",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cross-validation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "repeated split-resampling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "R\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean squared error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Andes",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Himalaya",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Rocky Mountains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Africa",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "FAO-data",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mexico-data",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Austria-Ehyd data",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "South Africa-SAEON data",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Scandinavia-Nordklim data",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "China-CMA data",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CHPclim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Food and Agriculture Organization of the United Nations",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "FAO",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Mexico",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Austria",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Federal Ministry of Agriculture, Forestry, Environment and Water Management of Austria",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Scandinavia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "NORDKLIM/NORDMET",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "DMI",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "FMI",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "VI",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "DNMI",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "SMHI",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Chinese Meteorological Administration",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "TRMM/TMPA (3B43)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Atacama",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Bhutan",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "MODIS (MOD11C3)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CRUTEM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GHCN Version 3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GHCN Version 2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "generalized linear model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Switzerland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "adjusted D\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "area under the receiver operation statistics curve",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "AUC",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Kappa statistics",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "true skill statistics",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "TSS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean annual precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mean annual temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "WGS 84",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "geographic coordinate system",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "GTOPO30",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1-arc-second",
+            "entity_type": "Resolution"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2261645655",
+        "https://openalex.org/W2095566797",
+        "https://openalex.org/W1995622703",
+        "https://openalex.org/W2172191993",
+        "https://openalex.org/W2055695879",
+        "https://openalex.org/W2139433170",
+        "https://openalex.org/W2038294068",
+        "https://openalex.org/W2112776483",
+        "https://openalex.org/W1867005924",
+        "https://openalex.org/W1989839776",
+        "https://openalex.org/W2256319116",
+        "https://openalex.org/W2156691552",
+        "https://openalex.org/W1970940206",
+        "https://openalex.org/W2078580016",
+        "https://openalex.org/W2173251738",
+        "https://openalex.org/W2121745948",
+        "https://openalex.org/W2026156015",
+        "https://openalex.org/W164008156",
+        "https://openalex.org/W3035631840",
+        "https://openalex.org/W6637441922",
+        "https://openalex.org/W2084571691",
+        "https://openalex.org/W2111383244",
+        "https://openalex.org/W2151788810",
+        "https://openalex.org/W2140672087",
+        "https://openalex.org/W1991146308",
+        "https://openalex.org/W2162280645",
+        "https://openalex.org/W2066737612",
+        "https://openalex.org/W1606754933",
+        "https://openalex.org/W2172315312",
+        "https://openalex.org/W4237234234",
+        "https://openalex.org/W1984955620",
+        "https://openalex.org/W1993171187",
+        "https://openalex.org/W1975649382",
+        "https://openalex.org/W2176478590",
+        "https://openalex.org/W1534096420",
+        "https://openalex.org/W2106733496",
+        "https://openalex.org/W2124969601",
+        "https://openalex.org/W4240717376",
+        "https://openalex.org/W2058246249",
+        "https://openalex.org/W2002496920",
+        "https://openalex.org/W1996210711",
+        "https://openalex.org/W1998422116",
+        "https://openalex.org/W2008669846",
+        "https://openalex.org/W2027312777",
+        "https://openalex.org/W6969592230",
+        "https://openalex.org/W2005857528",
+        "https://openalex.org/W2104027063",
+        "https://openalex.org/W2312858779",
+        "https://openalex.org/W3109070402",
+        "https://openalex.org/W2986345846",
+        "https://openalex.org/W2075573792",
+        "https://openalex.org/W2120160157",
+        "https://openalex.org/W2123337039",
+        "https://openalex.org/W2110888553",
+        "https://openalex.org/W1541774929",
+        "https://openalex.org/W6967488164"
+    ]
+}

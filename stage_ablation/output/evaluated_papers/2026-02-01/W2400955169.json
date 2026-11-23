@@ -1,0 +1,835 @@
+{
+    "uri": "https://openalex.org/W2400955169",
+    "title": "Parallelization of Diagnostics for Climate Model Development",
+    "venue": {
+        "name": "Journal of Software Engineering and Applications",
+        "id": "https://openalex.org/S33096572",
+        "type": "journal"
+    },
+    "publication_year": 2016,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5027956333",
+            "display_name": "Jim McEnerney",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5034847086",
+            "display_name": "Sasha Ames",
+            "orcid": "https://orcid.org/0000-0001-9981-2997"
+        },
+        {
+            "id": "https://openalex.org/A5103560894",
+            "display_name": "Cameron Christensen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5037197694",
+            "display_name": "Charles Doutriaux",
+            "orcid": "https://orcid.org/0009-0000-2803-3275"
+        },
+        {
+            "id": "https://openalex.org/A5090971671",
+            "display_name": "Tony Hoang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5038928510",
+            "display_name": "Jeff Painter",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5113795639",
+            "display_name": "Brian E. Smith",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5112318559",
+            "display_name": "Zeshawn Shaheen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5106183255",
+            "display_name": "D. N. Williams",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.4236/jsea.2016.95016",
+    "abstract": "The parallelization of the diagnostics for climate research has been an important goal in the performance testing and improvement of the diagnostics for the Department of Energy\u2019s (DOE\u2019s) Accelerated Climate Modeling for Energy (ACME) project [1]. The primary mission of the ACME project is to build and test the next-generation Earth system model for current and future generations of computing systems operated by the DOE office of science computing facilities, including the envisioned exascale systems foreseen in the early part of the next decade. As part of the underpinning workflow environment, a diagnostics, model metrics, and intercomparison Python framework, called UVC Metrics was created to aid in testing and production execution of the model. This framework builds on common methods and similar metrics to accommodate and diagnose individual component models, such as atmosphere, land, ocean, sea ice, and land ice. This paper reports on initial parallelization of UVC Metrics for the atmosphere model component using two popular frameworks: MPI and SPARK. A timing study is presented to assess the performance of each method in which significant improvement was achieved for both frameworks despite I/O contentions with NFS. The advantages and disadvantages of each framework are also presented.",
+    "field": "Parallel computing for climate science",
+    "problem": "The performance of climate model diagnostics is challenged by slow serial processing of large datasets, and attempts at parallelization are significantly hindered by I/O contention and bottlenecks, particularly when accessing data on a Network File System (NFS).",
+    "method": "The paper evaluates the parallelization of the UVC Metrics climate diagnostics framework for atmosphere models by implementing and comparing the performance of the MPI and SPARK frameworks through a detailed timing study.",
+    "task": "The task is to assess the performance of parallelizing the UVC Metrics climate diagnostics framework for atmosphere models using two different parallel frameworks, MPI and SPARK, to improve computational efficiency in climate model development.",
+    "model": [
+        "ACME",
+        "CMIP5"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/python",
+            "display_name": "Python (programming language)",
+            "score": 0.7269542217254639
+        },
+        {
+            "id": "https://openalex.org/keywords/workflow",
+            "display_name": "Workflow",
+            "score": 0.6695528626441956
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.6669943332672119
+        },
+        {
+            "id": "https://openalex.org/keywords/component",
+            "display_name": "Component (thermodynamics)",
+            "score": 0.5883027911186218
+        },
+        {
+            "id": "https://openalex.org/keywords/underpinning",
+            "display_name": "Underpinning",
+            "score": 0.5449324250221252
+        },
+        {
+            "id": "https://openalex.org/keywords/systems-engineering",
+            "display_name": "Systems engineering",
+            "score": 0.5366750359535217
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5349416136741638
+        },
+        {
+            "id": "https://openalex.org/keywords/supercomputer",
+            "display_name": "Supercomputer",
+            "score": 0.49750760197639465
+        },
+        {
+            "id": "https://openalex.org/keywords/atmosphere",
+            "display_name": "Atmosphere (unit)",
+            "score": 0.45671382546424866
+        },
+        {
+            "id": "https://openalex.org/keywords/earth-system-science",
+            "display_name": "Earth system science",
+            "score": 0.4330212473869324
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.31524479389190674
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.21245262026786804
+        },
+        {
+            "id": "https://openalex.org/keywords/database",
+            "display_name": "Database",
+            "score": 0.1905270218849182
+        },
+        {
+            "id": "https://openalex.org/keywords/engineering",
+            "display_name": "Engineering",
+            "score": 0.13302889466285706
+        },
+        {
+            "id": "https://openalex.org/keywords/parallel-computing",
+            "display_name": "Parallel computing",
+            "score": 0.12710309028625488
+        },
+        {
+            "id": "https://openalex.org/keywords/operating-system",
+            "display_name": "Operating system",
+            "score": 0.1070813238620758
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C519991488",
+            "wikidata": "https://www.wikidata.org/wiki/Q28865",
+            "display_name": "Python (programming language)",
+            "level": 2,
+            "score": 0.7269542217254639
+        },
+        {
+            "id": "https://openalex.org/C177212765",
+            "wikidata": "https://www.wikidata.org/wiki/Q627335",
+            "display_name": "Workflow",
+            "level": 2,
+            "score": 0.6695528626441956
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.6669943332672119
+        },
+        {
+            "id": "https://openalex.org/C168167062",
+            "wikidata": "https://www.wikidata.org/wiki/Q1117970",
+            "display_name": "Component (thermodynamics)",
+            "level": 2,
+            "score": 0.5883027911186218
+        },
+        {
+            "id": "https://openalex.org/C2780871342",
+            "wikidata": "https://www.wikidata.org/wiki/Q7883752",
+            "display_name": "Underpinning",
+            "level": 2,
+            "score": 0.5449324250221252
+        },
+        {
+            "id": "https://openalex.org/C201995342",
+            "wikidata": "https://www.wikidata.org/wiki/Q682496",
+            "display_name": "Systems engineering",
+            "level": 1,
+            "score": 0.5366750359535217
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5349416136741638
+        },
+        {
+            "id": "https://openalex.org/C83283714",
+            "wikidata": "https://www.wikidata.org/wiki/Q121117",
+            "display_name": "Supercomputer",
+            "level": 2,
+            "score": 0.49750760197639465
+        },
+        {
+            "id": "https://openalex.org/C65440619",
+            "wikidata": "https://www.wikidata.org/wiki/Q177974",
+            "display_name": "Atmosphere (unit)",
+            "level": 2,
+            "score": 0.45671382546424866
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.4330212473869324
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.31524479389190674
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.21245262026786804
+        },
+        {
+            "id": "https://openalex.org/C77088390",
+            "wikidata": "https://www.wikidata.org/wiki/Q8513",
+            "display_name": "Database",
+            "level": 1,
+            "score": 0.1905270218849182
+        },
+        {
+            "id": "https://openalex.org/C127413603",
+            "wikidata": "https://www.wikidata.org/wiki/Q11023",
+            "display_name": "Engineering",
+            "level": 0,
+            "score": 0.13302889466285706
+        },
+        {
+            "id": "https://openalex.org/C173608175",
+            "wikidata": "https://www.wikidata.org/wiki/Q232661",
+            "display_name": "Parallel computing",
+            "level": 1,
+            "score": 0.12710309028625488
+        },
+        {
+            "id": "https://openalex.org/C111919701",
+            "wikidata": "https://www.wikidata.org/wiki/Q9135",
+            "display_name": "Operating system",
+            "level": 1,
+            "score": 0.1070813238620758
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C97355855",
+            "wikidata": "https://www.wikidata.org/wiki/Q11473",
+            "display_name": "Thermodynamics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C147176958",
+            "wikidata": "https://www.wikidata.org/wiki/Q77590",
+            "display_name": "Civil engineering",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "MPI",
+            "observational_dataset": "1 node, 1 task",
+            "evaluation_metric": "mean time (s)",
+            "result": "1904.8"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "1 node, 1 task",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "6.58"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "1 node, 2 tasks",
+            "evaluation_metric": "mean time (s)",
+            "result": "935.04"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "1 node, 2 tasks",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "0.53"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "2 nodes, 1 task",
+            "evaluation_metric": "mean time (s)",
+            "result": "1043.41"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "2 nodes, 1 task",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "1.33"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "2 nodes, 2 tasks",
+            "evaluation_metric": "mean time (s)",
+            "result": "517.57"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "2 nodes, 2 tasks",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "1.1"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "3 nodes, 1 task",
+            "evaluation_metric": "mean time (s)",
+            "result": "697.38"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "3 nodes, 1 task",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "1.56"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "3 nodes, 2 tasks",
+            "evaluation_metric": "mean time (s)",
+            "result": "346.02"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "3 nodes, 2 tasks",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "0.73"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "4 nodes, 1 task",
+            "evaluation_metric": "mean time (s)",
+            "result": "769.99"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "4 nodes, 1 task",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "27.33"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "4 nodes, 2 tasks",
+            "evaluation_metric": "mean time (s)",
+            "result": "358.01"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "4 nodes, 2 tasks",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "22.75"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "6 nodes, 1 task",
+            "evaluation_metric": "mean time (s)",
+            "result": "528.25"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "6 nodes, 1 task",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "27.88"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "6 nodes, 2 tasks",
+            "evaluation_metric": "mean time (s)",
+            "result": "244.06"
+        },
+        {
+            "model": "MPI",
+            "observational_dataset": "6 nodes, 2 tasks",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "23.84"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "1 node, 1 task, 1 partition",
+            "evaluation_metric": "mean time (s)",
+            "result": "2099.05"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "1 node, 1 task, 1 partition",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "11.6"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "1 node, 2 tasks, 2 partitions",
+            "evaluation_metric": "mean time (s)",
+            "result": "1045.92"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "1 node, 2 tasks, 2 partitions",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "2.49"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "2 nodes, 1 task, 2 partitions",
+            "evaluation_metric": "mean time (s)",
+            "result": "1055.62"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "2 nodes, 1 task, 2 partitions",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "1.22"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "2 nodes, 2 tasks, 4 partitions",
+            "evaluation_metric": "mean time (s)",
+            "result": "571.6"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "2 nodes, 2 tasks, 4 partitions",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "76.25"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "3 nodes, 1 task, 3 partitions",
+            "evaluation_metric": "mean time (s)",
+            "result": "764.0"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "3 nodes, 1 task, 3 partitions",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "107.81"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "3 nodes, 2 tasks, 6 partitions",
+            "evaluation_metric": "mean time (s)",
+            "result": "388.61"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "3 nodes, 2 tasks, 6 partitions",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "50.32"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "4 nodes, 1 task, 4 partitions",
+            "evaluation_metric": "mean time (s)",
+            "result": "706.35"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "4 nodes, 1 task, 4 partitions",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "153.15"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "4 nodes, 2 tasks, 8 partitions",
+            "evaluation_metric": "mean time (s)",
+            "result": "363.52"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "4 nodes, 2 tasks, 8 partitions",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "45.57"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "6 nodes, 1 task, 6 partitions",
+            "evaluation_metric": "mean time (s)",
+            "result": "411.19"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "6 nodes, 1 task, 6 partitions",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "22.25"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "6 nodes, 2 tasks, 12 partitions",
+            "evaluation_metric": "mean time (s)",
+            "result": "248.4"
+        },
+        {
+            "model": "SPARK",
+            "observational_dataset": "6 nodes, 2 tasks, 12 partitions",
+            "evaluation_metric": "standard deviation (s)",
+            "result": "15.69"
+        }
+    ],
+    "innovation": "This paper presents a comparative performance study of parallelizing climate model diagnostics using MPI and Spark, demonstrating significant speed improvements for the UVC Metrics framework and assessing the trade-offs and I/O contentions of each parallelization method.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ACME Earth system model",
+            "source_entity_type": "Source",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "Accelerated Climate Modeling for Energy",
+            "target_entity_type": "Project",
+            "paragraph": "The parallelization of the diagnostics for climate research has been an important goal in the performance testing and improvement of the diagnostics for the Department of Energy's (DOE's) Accelerated Climate Modeling for Energy (ACME) project [1]. The primary mission of the ACME project is to build and test the next-generation Earth system model for current and future generations of computing systems operated by the DOE office of science computing facilities, including the envisioned exascale systems foreseen in the early part of the next decade.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACME Earth system model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "atmosphere model component",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This framework builds on common methods and similar metrics to accommodate and diagnose individual component models, such as atmosphere, land, ocean, sea ice, and land ice. This paper reports on initial parallelization of UVC Metrics for the atmosphere model component using two popular frameworks: MPI and SPARK.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACME Earth system model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "land model component",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This framework builds on common methods and similar metrics to accommodate and diagnose individual component models, such as atmosphere, land, ocean, sea ice, and land ice.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACME Earth system model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ocean model component",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This framework builds on common methods and similar metrics to accommodate and diagnose individual component models, such as atmosphere, land, ocean, sea ice, and land ice.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACME Earth system model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "sea ice model component",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This framework builds on common methods and similar metrics to accommodate and diagnose individual component models, such as atmosphere, land, ocean, sea ice, and land ice.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACME Earth system model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "land ice model component",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This framework builds on common methods and similar metrics to accommodate and diagnose individual component models, such as atmosphere, land, ocean, sea ice, and land ice.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "atmosphere model component",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmosphere",
+            "target_entity_type": "Realm",
+            "paragraph": "This framework builds on common methods and similar metrics to accommodate and diagnose individual component models, such as atmosphere, land, ocean, sea ice, and land ice. This paper reports on initial parallelization of UVC Metrics for the atmosphere model component using two popular frameworks: MPI and SPARK.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "land model component",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "land",
+            "target_entity_type": "Realm",
+            "paragraph": "This framework builds on common methods and similar metrics to accommodate and diagnose individual component models, such as atmosphere, land, ocean, sea ice, and land ice.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ocean model component",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocean",
+            "target_entity_type": "Realm",
+            "paragraph": "This framework builds on common methods and similar metrics to accommodate and diagnose individual component models, such as atmosphere, land, ocean, sea ice, and land ice.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "sea ice model component",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "sea ice",
+            "target_entity_type": "Realm",
+            "paragraph": "This framework builds on common methods and similar metrics to accommodate and diagnose individual component models, such as atmosphere, land, ocean, sea ice, and land ice.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "land ice model component",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "land ice",
+            "target_entity_type": "Realm",
+            "paragraph": "This framework builds on common methods and similar metrics to accommodate and diagnose individual component models, such as atmosphere, land, ocean, sea ice, and land ice.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACME Earth system model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "timing study",
+            "target_entity_type": "Metric",
+            "paragraph": "A timing study is presented to assess the performance of each method in which significant improvement was achieved for both frameworks despite I/O contentions with NFS.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACME Earth system model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Annual Cycle Contour Plot of Zonal means",
+            "target_entity_type": "Metric",
+            "paragraph": "The diagnostic chosen is the Annual Cycle Contour Plot of Zonal means. The graphical output is a plot of latitude versus month, Figure 1. The reduction averages across longitude and altitude.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Lawrence Livermore National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Utah",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Oak Ridge National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "California",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Livermore",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Utah",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Salt Lake City",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Tennessee",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Oak Ridge",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "ACME",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "sea ice",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "land ice",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "CMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "latitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "altitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "level",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "time",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zonal mean",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "month",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "weak scaling",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "U.S. Department of Energy Office of Science/Office of Biological and Environmental Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ACME Council",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W4242141558",
+        "https://openalex.org/W2148736789",
+        "https://openalex.org/W1992579369",
+        "https://openalex.org/W2024966118",
+        "https://openalex.org/W2198201407",
+        "https://openalex.org/W2036518930",
+        "https://openalex.org/W2081612620",
+        "https://openalex.org/W2059919683",
+        "https://openalex.org/W1995343013",
+        "https://openalex.org/W2001032894",
+        "https://openalex.org/W1596936080",
+        "https://openalex.org/W1496872754",
+        "https://openalex.org/W2039765803",
+        "https://openalex.org/W1644334008",
+        "https://openalex.org/W2607166800",
+        "https://openalex.org/W593731039",
+        "https://openalex.org/W104327127",
+        "https://openalex.org/W2903691225",
+        "https://openalex.org/W2189465200"
+    ]
+}

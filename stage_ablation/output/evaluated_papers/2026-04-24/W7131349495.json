@@ -1,0 +1,841 @@
+{
+    "uri": "https://openalex.org/W7131349495",
+    "title": "Integrating a global glacier model into local hydrological modeling: Impacts on melt contributions",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5122635552",
+            "display_name": "Justine Berg",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5036092496",
+            "display_name": "Pascal Horton",
+            "orcid": "https://orcid.org/0000-0003-0466-0359"
+        },
+        {
+            "id": "https://openalex.org/A5088729827",
+            "display_name": "Martina Kauzlaric",
+            "orcid": "https://orcid.org/0000-0002-6155-837X"
+        },
+        {
+            "id": "https://openalex.org/A5079975517",
+            "display_name": "Alexandra von der Esch",
+            "orcid": "https://orcid.org/0009-0002-2974-4903"
+        },
+        {
+            "id": "https://openalex.org/A5025365611",
+            "display_name": "Bettina Schaefli",
+            "orcid": "https://orcid.org/0000-0003-1140-6244"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2026-439",
+    "abstract": "Abstract. Snow and glacier meltwater are critical water resources for mountain regions, yet their accurate representation in hydrological models remains challenging. As climate change alters the timing and magnitude of melt contributions, accurate partitioning between snow and glacier sources becomes increasingly important. To address this challenge, this study couples the hydrological model HBV (as implemented in the Raven modeling framework) with the Global Glacier Evolution Model GloGEM and integrates a snow redistribution scheme for application across 14 glaciated headwater catchments in Switzerland. At this local catchment scale, we investigate whether glacier constraints and the addition of snow redistribution reduce parameter equifinality and increase the reliability of melt contribution estimates. Simulations are evaluated against observed streamflow, gridded snow water equivalent data, and glacier melt data based on observed mass balance. The gravitational snow redistribution algorithm successfully prevents unrealistic high-elevation snow accumulation and improves catchment average SWE simulation performance. Uncoupled HBV configurations outperform coupled HBV-GloGEM setups according to streamflow metrics. However, this superior performance is achieved by simulating glacier melt rates exceeding GloGEM estimates and glacier storage change data by factors of 2\u20133 in some catchments, effectively using glacier ice to offset precipitation biases in forcing data, which can be critical for climate change impact studies. Glacier melt contributions can vary by nearly an order of magnitude among best-performing parameter sets, highlighting severe parameter equifinality. Coupling with GloGEM, calibrated using glacier-specific geodetic mass balance, produces glacier melt consistent with observations and substantially improves identifiability of both glacier and snowmelt contributions. Despite lower streamflow performance metrics, glacier melt constraints prevent compensatory errors that would compromise projections as melt dynamics shift under climate change. Applying this framework to future climate scenarios and integrating additional constraints such as snow observations may further improve the reliability of melt contribution projections.",
+    "field": "Cryospheric hydrology",
+    "problem": "Accurate partitioning of snow and glacier melt in hydrological models is challenging due to parameter equifinality and compensatory errors, where unrealistic glacier melt often compensates for forcing data biases and poor snow process representation, compromising the reliability of melt contribution estimates.",
+    "method": "We propose a modeling framework that couples the hydrological model HBV with the global glacier model GloGEM and integrates a snow redistribution scheme to improve estimates of snow and glacier melt contributions in mountain catchments.",
+    "task": "The task is to investigate whether coupling a hydrological model with a global glacier model and a snow redistribution scheme reduces parameter uncertainty and improves the reliability of snow and glacier melt contribution estimates in glaciated catchments.",
+    "model": [
+        "no"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/glacier",
+            "display_name": "Glacier",
+            "score": 0.8008000254631042
+        },
+        {
+            "id": "https://openalex.org/keywords/meltwater",
+            "display_name": "Meltwater",
+            "score": 0.7379999756813049
+        },
+        {
+            "id": "https://openalex.org/keywords/snow",
+            "display_name": "Snow",
+            "score": 0.6074000000953674
+        },
+        {
+            "id": "https://openalex.org/keywords/glacier-mass-balance",
+            "display_name": "Glacier mass balance",
+            "score": 0.5859000086784363
+        },
+        {
+            "id": "https://openalex.org/keywords/snowmelt",
+            "display_name": "Snowmelt",
+            "score": 0.5680000185966492
+        },
+        {
+            "id": "https://openalex.org/keywords/streamflow",
+            "display_name": "Streamflow",
+            "score": 0.5270000100135803
+        },
+        {
+            "id": "https://openalex.org/keywords/snowpack",
+            "display_name": "Snowpack",
+            "score": 0.42739999294281006
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.42570000886917114
+        },
+        {
+            "id": "https://openalex.org/keywords/snow-line",
+            "display_name": "Snow line",
+            "score": 0.38679999113082886
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C100834320",
+            "wikidata": "https://www.wikidata.org/wiki/Q35666",
+            "display_name": "Glacier",
+            "level": 2,
+            "score": 0.8008000254631042
+        },
+        {
+            "id": "https://openalex.org/C207318512",
+            "wikidata": "https://www.wikidata.org/wiki/Q360925",
+            "display_name": "Meltwater",
+            "level": 3,
+            "score": 0.7379999756813049
+        },
+        {
+            "id": "https://openalex.org/C197046000",
+            "wikidata": "https://www.wikidata.org/wiki/Q7561",
+            "display_name": "Snow",
+            "level": 2,
+            "score": 0.6074000000953674
+        },
+        {
+            "id": "https://openalex.org/C127045886",
+            "wikidata": "https://www.wikidata.org/wiki/Q3528741",
+            "display_name": "Glacier mass balance",
+            "level": 3,
+            "score": 0.5859000086784363
+        },
+        {
+            "id": "https://openalex.org/C64649846",
+            "wikidata": "https://www.wikidata.org/wiki/Q1754697",
+            "display_name": "Snowmelt",
+            "level": 3,
+            "score": 0.5680000185966492
+        },
+        {
+            "id": "https://openalex.org/C53739315",
+            "wikidata": "https://www.wikidata.org/wiki/Q29425295",
+            "display_name": "Streamflow",
+            "level": 3,
+            "score": 0.5270000100135803
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.49790000915527344
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.4636000096797943
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.4327000081539154
+        },
+        {
+            "id": "https://openalex.org/C2778877292",
+            "wikidata": "https://www.wikidata.org/wiki/Q18575846",
+            "display_name": "Snowpack",
+            "level": 3,
+            "score": 0.42739999294281006
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.42570000886917114
+        },
+        {
+            "id": "https://openalex.org/C42832001",
+            "wikidata": "https://www.wikidata.org/wiki/Q740358",
+            "display_name": "Snow line",
+            "level": 4,
+            "score": 0.38679999113082886
+        },
+        {
+            "id": "https://openalex.org/C197115733",
+            "wikidata": "https://www.wikidata.org/wiki/Q1003136",
+            "display_name": "Forcing (mathematics)",
+            "level": 2,
+            "score": 0.35339999198913574
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.3522999882698059
+        },
+        {
+            "id": "https://openalex.org/C197435368",
+            "wikidata": "https://www.wikidata.org/wiki/Q493109",
+            "display_name": "Cryosphere",
+            "level": 3,
+            "score": 0.3271999955177307
+        },
+        {
+            "id": "https://openalex.org/C193091731",
+            "wikidata": "https://www.wikidata.org/wiki/Q3428388",
+            "display_name": "Accumulation zone",
+            "level": 5,
+            "score": 0.3264999985694885
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.302700012922287
+        },
+        {
+            "id": "https://openalex.org/C169556411",
+            "wikidata": "https://www.wikidata.org/wiki/Q884736",
+            "display_name": "Rock glacier",
+            "level": 3,
+            "score": 0.2888999879360199
+        },
+        {
+            "id": "https://openalex.org/C126197015",
+            "wikidata": "https://www.wikidata.org/wiki/Q1586683",
+            "display_name": "Hydrological modelling",
+            "level": 2,
+            "score": 0.2858000099658966
+        },
+        {
+            "id": "https://openalex.org/C100970517",
+            "wikidata": "https://www.wikidata.org/wiki/Q52107",
+            "display_name": "Physical geography",
+            "level": 1,
+            "score": 0.28540000319480896
+        },
+        {
+            "id": "https://openalex.org/C126645576",
+            "wikidata": "https://www.wikidata.org/wiki/Q166620",
+            "display_name": "Drainage basin",
+            "level": 2,
+            "score": 0.28139999508857727
+        },
+        {
+            "id": "https://openalex.org/C99578197",
+            "wikidata": "https://www.wikidata.org/wiki/Q1463606",
+            "display_name": "Radiative forcing",
+            "level": 3,
+            "score": 0.27720001339912415
+        },
+        {
+            "id": "https://openalex.org/C186816422",
+            "wikidata": "https://www.wikidata.org/wiki/Q66900467",
+            "display_name": "Lapse rate",
+            "level": 2,
+            "score": 0.2720000147819519
+        },
+        {
+            "id": "https://openalex.org/C171289182",
+            "wikidata": "https://www.wikidata.org/wiki/Q690578",
+            "display_name": "Glacier ice accumulation",
+            "level": 5,
+            "score": 0.27000001072883606
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.2694999873638153
+        },
+        {
+            "id": "https://openalex.org/C50477045",
+            "wikidata": "https://www.wikidata.org/wiki/Q1444790",
+            "display_name": "Surface runoff",
+            "level": 2,
+            "score": 0.267300009727478
+        },
+        {
+            "id": "https://openalex.org/C76886044",
+            "wikidata": "https://www.wikidata.org/wiki/Q2883300",
+            "display_name": "Hydrology (agriculture)",
+            "level": 2,
+            "score": 0.267300009727478
+        },
+        {
+            "id": "https://openalex.org/C183195422",
+            "wikidata": "https://www.wikidata.org/wiki/Q3409303",
+            "display_name": "Flood forecasting",
+            "level": 3,
+            "score": 0.2605000138282776
+        },
+        {
+            "id": "https://openalex.org/C37054046",
+            "wikidata": "https://www.wikidata.org/wiki/Q641888",
+            "display_name": "Elevation (ballistics)",
+            "level": 2,
+            "score": 0.25859999656677246
+        },
+        {
+            "id": "https://openalex.org/C518008717",
+            "wikidata": "https://www.wikidata.org/wiki/Q25322",
+            "display_name": "Arctic",
+            "level": 2,
+            "score": 0.2572000026702881
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper demonstrates that coupling a local hydrological model with a global glacier model and a snow redistribution scheme provides more reliable estimates of snow and glacier melt contributions by preventing compensatory errors, despite slightly lower streamflow performance metrics compared to uncoupled models.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "HBV",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "native glacier module",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "For this study, we emulate the HBV (Hydrologiska Byr\u00e5ns Vattenbalansavdelning) model, a conceptual precipitation- streamflow model (Bergstr\u00f6m, 1995). HBV is widely applied in mountainous catchments and includes a simple glacier melt parameterization, making it well-suited for comparing simulated glacier melt between its native glacier module and GloGEM.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "snow routine",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The snow routine determines whether precipitation falls as rain or snow according to a temperature threshold (fRAINSNOW_TEMP). Snowmelt is modeled using a modified degree-day method where the melt factor (fMELT_FACTOR) varies seasonally between minimum and maximum values and is adjusted for forest cover and terrain aspect.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "conceptual groundwater reservoirs",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "HBV has two conceptual groundwater reservoirs: an upper zone for quick response (interflow) and a lower zone for baseflow. Each is depleted by linear recession equations with different coefficients ((fBASEFLOW_COEFF).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "modified degree-day method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Snowmelt is modeled using a modified degree-day method where the melt factor (fMELT_FACTOR) varies seasonally between minimum and maximum values and is adjusted for forest cover and terrain aspect.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GloGEM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "temperature-index model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The mass balance is estimated with a temperature-index model (Hock, 2003), which links positive air temperatures to melt through degree-day factors.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "GloGEM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "dh-parameterization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Glacier dynamics are simulated using an empirical relationship that connects thickness change to the normalized elevation range, enabling the modeling of glacier advance/retreat and surface elevation change (dh- parameterization; Huss et al., 2010).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Raven",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "hydrological response units",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The land surface can be subdivided into subbasins, which are further composed of hydrological response units (HRUs).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Raven",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "snow redistribution module",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "We implemented a snow redistribution module in the Raven framework using a simple parameterization similar to SnowSlide (Bernhardt and Schulz, 2010), adapted for semi-distributed models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Raven",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "D8 flow routing algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Flow direction and flow accumulation are then computed using the D8 flow routing algorithm (O'Callaghan and Mark, 1984) as implemented in the Python package pysheds (Bartos, 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV-GloGEM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Kling-Gupta Efficiency",
+            "target_entity_type": "Metric",
+            "paragraph": "The KGE results indicate that uncoupled HBV configurations slightly outperform coupled configurations, with median KGE values for HBV configurations ranging between 0.83 and 0.86 compared to median KGE values ranging from 0.81 to 0.84 for HBV-GloGEM configurations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV-GloGEM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Nash-Sutcliffe Efficiency",
+            "target_entity_type": "Metric",
+            "paragraph": "In terms of NSE, the two configurations show relativity similar performance, with median values of 0.78\u20130.79 for HBV and 0.77\u20130.78 for HBV-GloGEM.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Kling-Gupta Efficiency",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated using KGE (Gupta et al., 2009), which also serves as the calibration objective function, and the Nash-Sutcliffe Efficiency (NSE; Nash and Sutcliffe, 1970). KGE and NSE are computed based on daily simulated and observed streamflow. Figure 3a presents KGE and NSE values for all catchments over the validation period. The KGE results indicate that uncoupled HBV configurations slightly outperform coupled configurations, with median KGE values for HBV configurations ranging between 0.83 and 0.86 compared to median KGE values ranging from 0.81 to 0.84 for HBV-GloGEM configurations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Nash-Sutcliffe Efficiency",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated using KGE (Gupta et al., 2009), which also serves as the calibration objective function, and the Nash-Sutcliffe Efficiency (NSE; Nash and Sutcliffe, 1970). KGE and NSE are computed based on daily simulated and observed streamflow.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV-SR",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "snow redistribution",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Six model configurations are calibrated for each catchment (Table 3). The first three configurations use the native HBV glacier module: (1) baseline HBV with 15 calibrated parameters, (2) HBV with snow redistribution (HBV-SR, 15 parame- ters), and (3) HBV with snow redistribution and a calibrated precipitation correction factor (HBV-PCF, 16 parameters).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV-PCF",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "calibrated precipitation correction factor",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Six model configurations are calibrated for each catchment (Table 3). The first three configurations use the native HBV glacier module: (1) baseline HBV with 15 calibrated parameters, (2) HBV with snow redistribution (HBV-SR, 15 parame- ters), and (3) HBV with snow redistribution and a calibrated precipitation correction factor (HBV-PCF, 16 parameters).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square error",
+            "target_entity_type": "Metric",
+            "paragraph": "Simulated catchment-average snow water equivalent (SWE) was validated against the 1 km gridded SPASS dataset (Marty et al., 2025) (Figure 5). The root mean square error (RMSE) is computed based on the daily catchment average SWE (only non-glacier area) of the SPASS dataset and simulated SWE. In the HBV and HBV-GloGEM configurations, the simulations show a continuous increase in catchment-average SWE, indicating unrealistic snow accumulation in higher-elevation HRUs (Freudiger et al., 2017).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV-GloGEM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square error",
+            "target_entity_type": "Metric",
+            "paragraph": "Simulated catchment-average snow water equivalent (SWE) was validated against the 1 km gridded SPASS dataset (Marty et al., 2025) (Figure 5). The root mean square error (RMSE) is computed based on the daily catchment average SWE (only non-glacier area) of the SPASS dataset and simulated SWE. In the HBV and HBV-GloGEM configurations, the simulations show a continuous increase in catchment-average SWE, indicating unrealistic snow accumulation in higher-elevation HRUs (Freudiger et al., 2017).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HBV-PCF",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "coefficient of variation",
+            "target_entity_type": "Metric",
+            "paragraph": "Figure 7b shows the coefficient of variation (CV) in melt estimates for the eight catchments with the highest glacier coverage. Catchments with very little glacier melt are not shown, as CV values in those catchments become extremely high and do not reflect meaningful variability. The CV of glacier melt is markedly higher for the HBV-PCF configuration than for the other HBV setups, reflecting increased sensitivity when a precipitation correction factor is applied.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "HBV",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Raven",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Glacier Evolution Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GloGEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Switzerland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "gravitational snow redistribution algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "streamflow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow water equivalent",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "glacier melt",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mass balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SWE",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snowmelt",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "streamflow metrics",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "glacier storage change",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "temperature-index approaches",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "WaSIM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Open Global Glacier Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OGGM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "volume-area scaling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "snow redistribution scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Swiss Alps",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "CAMELS-CH",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TabsD",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TminD",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TmaxD",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "RhiresD",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MeteoSwiss",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Swisstopo",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ESA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "RGI v6.0",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "SPASS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "temperature-index model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Ensemble Kalman Filter",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "10 m elevation bands",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "degree-day factors",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HYMOD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GR4J",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "lumped watershed",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "fully distributed models",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "subbasins",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "hydrological response units",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "HRUs",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "glacier melt parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "HBV glacier model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "snow routine",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "modified degree-day method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "conceptual groundwater reservoirs",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "triangular weighting function",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "precipitation correction factor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "one-way coupling",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "100 m elevation bands",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "snow redistribution module",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SnowSlide",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "semi-distributed models",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "FSM2trans",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "D8 flow routing algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Shuffled Complex Evolution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SCE-UA",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Kling-Gupta Efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "KGE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "HBV-SR",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HBV-PCF",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HBV-GloGEM",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HBV-GloGEM-SR",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "HBV-GloGEM-PCF",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "Nash-Sutcliffe Efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "NSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean square error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "melt factor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "coefficient of variation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CV",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "simplified gravitational redistribution scheme",
+            "entity_type": "PhysicalScheme"
+        }
+    ],
+    "referenced_works": []
+}

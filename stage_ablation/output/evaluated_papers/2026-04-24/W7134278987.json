@@ -1,0 +1,1491 @@
+{
+    "uri": "https://openalex.org/W7134278987",
+    "title": "Python-Fortran Hybrid Programming for Deep Incorporation of AI and Physics Modeling and Data Assimilation (Hf2pMDA_1.0)",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5121250563",
+            "display_name": "Xianrui Zhu",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5121256574",
+            "display_name": "Zikuan Lin",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5128384182",
+            "display_name": "Shaoqing Zhang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5102494900",
+            "display_name": "Zebin Lu",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5112451576",
+            "display_name": "Songhua Wu",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5088091096",
+            "display_name": "Xiangyun Hou",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5025988171",
+            "display_name": "Zhisheng Xiao",
+            "orcid": "https://orcid.org/0000-0003-0411-6652"
+        },
+        {
+            "id": "https://openalex.org/A5128583183",
+            "display_name": "Zhicheng Ren",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5128517408",
+            "display_name": "Jiangyu Li",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5121646550",
+            "display_name": "Jing Xu",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Yang Gao",
+            "orcid": "https://orcid.org/0000-0001-6444-6544"
+        },
+        {
+            "id": "https://openalex.org/A5128563587",
+            "display_name": "Rixu Hao",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5128433416",
+            "display_name": "Xiaolin Yu",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5073600565",
+            "display_name": "M. Li",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2025-6479",
+    "abstract": "Abstract. Artificial intelligence (AI) provides an unprecedented opportunity for advancing physics numerical modeling including data assimilation, which is a high-efficient and critically-important tool for advancing our understanding on Earth system and its applications. At the same time, deep incorporation of AI and physical modeling can make great driving to advance AI by injecting it rich physics from long time physics-based modeling development. However, since such physics models are conventionally coded in Fortran and AI algorithms usually are conveniently designed in Python, difficulties exist to directly incorporate AI algorithms into physics models, vice versa. Here, based on a f2py protocol, we have developed a procedure that implements an infrastructure which conveniently conducts Python and Fortran hybrid modeling and data assimilation (Hf2pMDA) to form a program entity so that AI algorithms and physical models can invoke mutually. As examples, within Hf2pMDA, a climate weakly coupled data assimilation (WCDA) system is naturally upgraded to a strongly CDA (SCDA) system, and a 1 km high-resolution weather DA system is conveniently implemented within a multi-layer downscaling model that has multiscale DA in different nesting layers. In the climate SCDA system, a coupled general circulation model (CGCM) and multiscale filtering algorithm is integrated by a Python main controller (PMC) that calls Fortran CGCM components and WCDA modules as well as a data-trained SCDA algorithm by latent space variational autoencoder (VAE) in Python. In the high-resolution weather DA system, the downscaled model consisting of traditional Fortran DA modules in all mother domains and Python VAE DA algorithm in the central child domain is integrated by a PMC that organizes these components. With convenient realization of deep incorporation of any AI algorithm and physics model, the Hf2pMDA has a great potential to make progresses on both AI and scientific modeling.",
+    "field": "Hybrid AI-physics modeling",
+    "problem": "Integrating Python-based AI algorithms with conventionally Fortran-coded physics models is challenging because a lack of convenient infrastructure prevents the two distinct programming environments from mutually invoking one another, thereby hindering the development of deeply incorporated hybrid models.",
+    "method": "Based on the f2py protocol, the authors propose a Python-Fortran hybrid programming infrastructure, Hf2pMDA, to enable mutual invocation between AI algorithms and physics models, which are conventionally coded in different languages, for deep incorporation and data assimilation.",
+    "task": "The task is to develop a Python-Fortran hybrid programming infrastructure, Hf2pMDA, to enable the deep incorporation of Python-coded AI algorithms with traditionally Fortran-coded physics models for advanced data assimilation.",
+    "model": [
+        "CM2",
+        "CM2.1",
+        "CESM2",
+        "ICON"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/python",
+            "display_name": "Python (programming language)",
+            "score": 0.8428000211715698
+        },
+        {
+            "id": "https://openalex.org/keywords/fortran",
+            "display_name": "Fortran",
+            "score": 0.7145000100135803
+        },
+        {
+            "id": "https://openalex.org/keywords/data-assimilation",
+            "display_name": "Data assimilation",
+            "score": 0.6348999738693237
+        },
+        {
+            "id": "https://openalex.org/keywords/autoencoder",
+            "display_name": "Autoencoder",
+            "score": 0.49390000104904175
+        },
+        {
+            "id": "https://openalex.org/keywords/debugging",
+            "display_name": "Debugging",
+            "score": 0.37369999289512634
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.3617999851703644
+        },
+        {
+            "id": "https://openalex.org/keywords/suite",
+            "display_name": "Suite",
+            "score": 0.36070001125335693
+        },
+        {
+            "id": "https://openalex.org/keywords/data-structure",
+            "display_name": "Data structure",
+            "score": 0.33480000495910645
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C519991488",
+            "wikidata": "https://www.wikidata.org/wiki/Q28865",
+            "display_name": "Python (programming language)",
+            "level": 2,
+            "score": 0.8428000211715698
+        },
+        {
+            "id": "https://openalex.org/C2778241615",
+            "wikidata": "https://www.wikidata.org/wiki/Q83303",
+            "display_name": "Fortran",
+            "level": 2,
+            "score": 0.7145000100135803
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.6348999738693237
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5911999940872192
+        },
+        {
+            "id": "https://openalex.org/C101738243",
+            "wikidata": "https://www.wikidata.org/wiki/Q786435",
+            "display_name": "Autoencoder",
+            "level": 3,
+            "score": 0.49390000104904175
+        },
+        {
+            "id": "https://openalex.org/C199360897",
+            "wikidata": "https://www.wikidata.org/wiki/Q9143",
+            "display_name": "Programming language",
+            "level": 1,
+            "score": 0.40450000762939453
+        },
+        {
+            "id": "https://openalex.org/C459310",
+            "wikidata": "https://www.wikidata.org/wiki/Q117801",
+            "display_name": "Computational science",
+            "level": 1,
+            "score": 0.37770000100135803
+        },
+        {
+            "id": "https://openalex.org/C168065819",
+            "wikidata": "https://www.wikidata.org/wiki/Q845566",
+            "display_name": "Debugging",
+            "level": 2,
+            "score": 0.37369999289512634
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.3682999908924103
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.3617999851703644
+        },
+        {
+            "id": "https://openalex.org/C79581498",
+            "wikidata": "https://www.wikidata.org/wiki/Q1367530",
+            "display_name": "Suite",
+            "level": 2,
+            "score": 0.36070001125335693
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.33500000834465027
+        },
+        {
+            "id": "https://openalex.org/C162319229",
+            "wikidata": "https://www.wikidata.org/wiki/Q175263",
+            "display_name": "Data structure",
+            "level": 2,
+            "score": 0.33480000495910645
+        },
+        {
+            "id": "https://openalex.org/C50644808",
+            "wikidata": "https://www.wikidata.org/wiki/Q192776",
+            "display_name": "Artificial neural network",
+            "level": 2,
+            "score": 0.3287999927997589
+        },
+        {
+            "id": "https://openalex.org/C34165917",
+            "wikidata": "https://www.wikidata.org/wiki/Q188267",
+            "display_name": "Programming paradigm",
+            "level": 2,
+            "score": 0.3163999915122986
+        },
+        {
+            "id": "https://openalex.org/C167740415",
+            "wikidata": "https://www.wikidata.org/wiki/Q2876213",
+            "display_name": "Aerospace",
+            "level": 2,
+            "score": 0.2980000078678131
+        },
+        {
+            "id": "https://openalex.org/C50897621",
+            "wikidata": "https://www.wikidata.org/wiki/Q2665508",
+            "display_name": "Hybrid system",
+            "level": 2,
+            "score": 0.29739999771118164
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.28369998931884766
+        },
+        {
+            "id": "https://openalex.org/C21001229",
+            "wikidata": "https://www.wikidata.org/wiki/Q182868",
+            "display_name": "Weather forecasting",
+            "level": 2,
+            "score": 0.2816999852657318
+        },
+        {
+            "id": "https://openalex.org/C147947694",
+            "wikidata": "https://www.wikidata.org/wiki/Q837552",
+            "display_name": "Numerical weather prediction",
+            "level": 2,
+            "score": 0.2775000035762787
+        },
+        {
+            "id": "https://openalex.org/C80444323",
+            "wikidata": "https://www.wikidata.org/wiki/Q2878974",
+            "display_name": "Theoretical computer science",
+            "level": 1,
+            "score": 0.27090001106262207
+        },
+        {
+            "id": "https://openalex.org/C45357846",
+            "wikidata": "https://www.wikidata.org/wiki/Q2001982",
+            "display_name": "Notation",
+            "level": 2,
+            "score": 0.2700999975204468
+        },
+        {
+            "id": "https://openalex.org/C36503486",
+            "wikidata": "https://www.wikidata.org/wiki/Q11235244",
+            "display_name": "Domain (mathematical analysis)",
+            "level": 2,
+            "score": 0.2639999985694885
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents Hf2pMDA_1.0, a Python-Fortran hybrid programming infrastructure that allows AI algorithms and physics-based models to invoke each other mutually, enabling their deep incorporation for advanced scientific modeling and data assimilation.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "CM2.1",
+            "source_entity_type": "Source",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmosphere",
+            "target_entity_type": "Realm",
+            "paragraph": "The CM2 is a fully-coupled Earth system model consisting of the atmosphere, ocean, land and sea-ice components (Lin, 2004; Gnanadesikan et al., 2006; Winton, 2000), having been an important member of the Coupled Model Intercomparison Project (CMIP) (Delworth et al., 2006a; Randall, 2007; Taylor et al., 2012; Eyring et al., 2016).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2.1",
+            "source_entity_type": "Source",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocean",
+            "target_entity_type": "Realm",
+            "paragraph": "The CM2 is a fully-coupled Earth system model consisting of the atmosphere, ocean, land and sea-ice components (Lin, 2004; Gnanadesikan et al., 2006; Winton, 2000), having been an important member of the Coupled Model Intercomparison Project (CMIP) (Delworth et al., 2006a; Randall, 2007; Taylor et al., 2012; Eyring et al., 2016).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2.1",
+            "source_entity_type": "Source",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "land",
+            "target_entity_type": "Realm",
+            "paragraph": "The CM2 is a fully-coupled Earth system model consisting of the atmosphere, ocean, land and sea-ice components (Lin, 2004; Gnanadesikan et al., 2006; Winton, 2000), having been an important member of the Coupled Model Intercomparison Project (CMIP) (Delworth et al., 2006a; Randall, 2007; Taylor et al., 2012; Eyring et al., 2016).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2.1",
+            "source_entity_type": "Source",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "sea-ice",
+            "target_entity_type": "Realm",
+            "paragraph": "The CM2 is a fully-coupled Earth system model consisting of the atmosphere, ocean, land and sea-ice components (Lin, 2004; Gnanadesikan et al., 2006; Winton, 2000), having been an important member of the Coupled Model Intercomparison Project (CMIP) (Delworth et al., 2006a; Randall, 2007; Taylor et al., 2012; Eyring et al., 2016).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2.1",
+            "source_entity_type": "Source",
+            "relation": "PART_OF_PROJECT",
+            "target_entity_instance": "CMIP",
+            "target_entity_type": "Project",
+            "paragraph": "The CM2 is a fully-coupled Earth system model consisting of the atmosphere, ocean, land and sea-ice components (Lin, 2004; Gnanadesikan et al., 2006; Winton, 2000), having been an important member of the Coupled Model Intercomparison Project (CMIP) (Delworth et al., 2006a; Randall, 2007; Taylor et al., 2012; Eyring et al., 2016).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "2\u00ba latitude \u00d7 2.5\u00b0 longitude horizontal resolution for atmosphere",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The version we used in this study has the atmosphere model with 2\u00ba latitude \u00d7 2.5\u00b0 longitude horizontal resolution and 24 vertical levels, and the ocean with 1\u00b0\u00d71\u00b0 horizontal resolution and 50 vertical levels, time stepping with 30 minutes and 2 hours for atmosphere and ocean as well as their coupling.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "24 vertical levels for atmosphere",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The version we used in this study has the atmosphere model with 2\u00ba latitude \u00d7 2.5\u00b0 longitude horizontal resolution and 24 vertical levels, and the ocean with 1\u00b0\u00d71\u00b0 horizontal resolution and 50 vertical levels, time stepping with 30 minutes and 2 hours for atmosphere and ocean as well as their coupling.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1\u00b0\u00d71\u00b0 horizontal resolution for ocean",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The version we used in this study has the atmosphere model with 2\u00ba latitude \u00d7 2.5\u00b0 longitude horizontal resolution and 24 vertical levels, and the ocean with 1\u00b0\u00d71\u00b0 horizontal resolution and 50 vertical levels, time stepping with 30 minutes and 2 hours for atmosphere and ocean as well as their coupling.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "50 vertical levels for ocean",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The version we used in this study has the atmosphere model with 2\u00ba latitude \u00d7 2.5\u00b0 longitude horizontal resolution and 24 vertical levels, and the ocean with 1\u00b0\u00d71\u00b0 horizontal resolution and 50 vertical levels, time stepping with 30 minutes and 2 hours for atmosphere and ocean as well as their coupling.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2-CDA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "ensemble Kalman filter (EnKF)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "As the first CGCM's CDA system, the first version of CM2-CDA was developed based on the ensemble Kalman filter (EnKF) (Zhang and Anderson, 2003; Zhang et al., 2007), implemented in a WCDA manner.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2-CDA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "multiscale high-efficient approximate filter (MSHea-EnKF)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The WCDA is a multiscale high-efficient approximate filter (MSHea-EnKF).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2-CDA",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "libfms.a",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The entire CM2-CDA package of codes consists of 4 static libraries: libfms.a, libland.a, libecda.a and libcoupler.a.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2-CDA",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "libland.a",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The entire CM2-CDA package of codes consists of 4 static libraries: libfms.a, libland.a, libecda.a and libcoupler.a.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2-CDA",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "libecda.a",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The entire CM2-CDA package of codes consists of 4 static libraries: libfms.a, libland.a, libecda.a and libcoupler.a.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CM2-CDA",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "libcoupler.a",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The entire CM2-CDA package of codes consists of 4 static libraries: libfms.a, libland.a, libecda.a and libcoupler.a.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "libland.a",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "land",
+            "target_entity_type": "Realm",
+            "paragraph": "Here libfms.a contains all the lowest shared information such as MPI and remapping functions etc. and libland.a is a relatively-independent application package for land model based on libfms.a, while libecda.a includes all atmosphere and ocean model components as well as CDA subroutines beside land model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "libecda.a",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "atmosphere",
+            "target_entity_type": "Realm",
+            "paragraph": "Here libfms.a contains all the lowest shared information such as MPI and remapping functions etc. and libland.a is a relatively-independent application package for land model based on libfms.a, while libecda.a includes all atmosphere and ocean model components as well as CDA subroutines beside land model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "libecda.a",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocean",
+            "target_entity_type": "Realm",
+            "paragraph": "Here libfms.a contains all the lowest shared information such as MPI and remapping functions etc. and libland.a is a relatively-independent application package for land model based on libfms.a, while libecda.a includes all atmosphere and ocean model components as well as CDA subroutines beside land model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "latent space variational autoencoder (VAE) SCDA algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Since the PMC cm2_cda_main.py conducts the coupled model time integration and it explicitly controls the evolution of coupling interface between the atmosphere and ocean, we can conveniently insert SCDA into the model integration. What follows describes a latent space variational autoencoder (VAE) SCDA algorithm, which consists of VAE latent space transformation and latent space minimization (Cheng et al., 2022).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "3-dimensional variational (3D-Var)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Based on the technology of VAE latent space transformation described above, as shown in Fig. 4, Latent Data Assimilation (LDA) further introduces a minimization process in the latent space, which includes an observational term (see lower panel of Fig. 4) in the loss function being minimized, to implement data assimilation (Cheng et al., 2024). Note that the utilization error convariance matrices B and R (also serving as scaling factors for the background and observational terms respectively) makes the loss function non-dimensional in minimization for which we choose 3-dimensional variational (3D-Var) for simplicity in this study (although 4D-Var could also be used).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "atmosphere surface wind",
+            "target_entity_type": "Variable",
+            "paragraph": "For the CM2-SCDA, we set the input vector x0 consisting of the atmosphere surface wind, temperature and pressure (Us, Vs, Ts, Ps), and ocean surface currents, temperature and height (SSU, SSV, SST, SSH).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "atmosphere surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "For the CM2-SCDA, we set the input vector x0 consisting of the atmosphere surface wind, temperature and pressure (Us, Vs, Ts, Ps), and ocean surface currents, temperature and height (SSU, SSV, SST, SSH).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "atmosphere surface pressure",
+            "target_entity_type": "Variable",
+            "paragraph": "For the CM2-SCDA, we set the input vector x0 consisting of the atmosphere surface wind, temperature and pressure (Us, Vs, Ts, Ps), and ocean surface currents, temperature and height (SSU, SSV, SST, SSH).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "ocean surface currents",
+            "target_entity_type": "Variable",
+            "paragraph": "For the CM2-SCDA, we set the input vector x0 consisting of the atmosphere surface wind, temperature and pressure (Us, Vs, Ts, Ps), and ocean surface currents, temperature and height (SSU, SSV, SST, SSH).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "ocean surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "For the CM2-SCDA, we set the input vector x0 consisting of the atmosphere surface wind, temperature and pressure (Us, Vs, Ts, Ps), and ocean surface currents, temperature and height (SSU, SSV, SST, SSH).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "ocean surface height",
+            "target_entity_type": "Variable",
+            "paragraph": "For the CM2-SCDA, we set the input vector x0 consisting of the atmosphere surface wind, temperature and pressure (Us, Vs, Ts, Ps), and ocean surface currents, temperature and height (SSU, SSV, SST, SSH).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Cross Attention",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Under this circumstance, the VAE training process therefore includes a Cross Attention step which consists of mixing and its inverse (separation). Apart from this point, the VAE still follows a pretty general training procedure for downsampling and upsampling.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "physical space state vector size of 343,296",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In the case of Hf2pMDA-CM2CDA, through the VAE training, we establish a latent space which is transformed from the air-sea interface space so that we can efficiently conduct minimization to blending atmospheric and oceanic observations into the model space. Here while the size of coupled state vector in physical space is 343,296, through space transformation, the state vector size in the latent space becomes 20480 with a reduction rate of 94%, which makes fast and efficient minimization feasible.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "latent space state vector size of 20480",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In the case of Hf2pMDA-CM2CDA, through the VAE training, we establish a latent space which is transformed from the air-sea interface space so that we can efficiently conduct minimization to blending atmospheric and oceanic observations into the model space. Here while the size of coupled state vector in physical space is 343,296, through space transformation, the state vector size in the latent space becomes 20480 with a reduction rate of 94%, which makes fast and efficient minimization feasible.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-CM2CDA",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean squared errors (RMSEs)",
+            "target_entity_type": "Metric",
+            "paragraph": "From Figs. 9b-c, we can see that due to the low-frequency and quasi-linear nature of ocean motions, both WCDA and SCDA make the model SST quickly converged to observations and keep in nearly identical root mean squared errors (RMSEs) in most of the time.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface pressure Ps",
+            "target_entity_type": "Variable",
+            "paragraph": "In this test case, we use the ERA5 (5th generation atmospheric reanalysis of European Centre for Medium-Range Weather Forecasts) surface pressure Ps (with a 25 km horizontal resolution) and OISST (NOAA 1/4\u00b0Daily Optimum Interpolation Sea Surface Temperature) as atmospheric and oceanic observations respectively.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "25 km",
+            "target_entity_type": "Resolution",
+            "paragraph": "In this test case, we use the ERA5 (5th generation atmospheric reanalysis of European Centre for Medium-Range Weather Forecasts) surface pressure Ps (with a 25 km horizontal resolution) and OISST (NOAA 1/4\u00b0Daily Optimum Interpolation Sea Surface Temperature) as atmospheric and oceanic observations respectively.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "wind",
+            "target_entity_type": "Variable",
+            "paragraph": "To do that, we conduct the large scale \u201cobservational\u201d constraint in D01 using ERA5's wind and temperature, local data constraint in D02 and D03 using the conventional observations shown in Fig. 10b (in D02) as well as additional Lidar observations shown in Fig. 10c (in D03).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "To do that, we conduct the large scale \u201cobservational\u201d constraint in D01 using ERA5's wind and temperature, local data constraint in D02 and D03 using the conventional observations shown in Fig. 10b (in D02) as well as additional Lidar observations shown in Fig. 10c (in D03).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "OISST v2.1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Sea Surface Temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "In this test case, we use the ERA5 (5th generation atmospheric reanalysis of European Centre for Medium-Range Weather Forecasts) surface pressure Ps (with a 25 km horizontal resolution) and OISST (NOAA 1/4\u00b0Daily Optimum Interpolation Sea Surface Temperature) as atmospheric and oceanic observations respectively.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "OISST v2.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "1/4\u00b0",
+            "target_entity_type": "Resolution",
+            "paragraph": "In this test case, we use the ERA5 (5th generation atmospheric reanalysis of European Centre for Medium-Range Weather Forecasts) surface pressure Ps (with a 25 km horizontal resolution) and OISST (NOAA 1/4\u00b0Daily Optimum Interpolation Sea Surface Temperature) as atmospheric and oceanic observations respectively.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "3-layer nesting",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Here we use a version of Weather Research and Forecasting (WRF, v3.7.1) model configured as 3-layer nesting at 9, 3 and 1 km horizontal resolutions for the West of China (D01), Central Sichuan Province (D02) and Chengdu City (D03) respectively as shown in Fig. 10a.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "9 km",
+            "target_entity_type": "Resolution",
+            "paragraph": "Here we use a version of Weather Research and Forecasting (WRF, v3.7.1) model configured as 3-layer nesting at 9, 3 and 1 km horizontal resolutions for the West of China (D01), Central Sichuan Province (D02) and Chengdu City (D03) respectively as shown in Fig. 10a.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "3 km",
+            "target_entity_type": "Resolution",
+            "paragraph": "Here we use a version of Weather Research and Forecasting (WRF, v3.7.1) model configured as 3-layer nesting at 9, 3 and 1 km horizontal resolutions for the West of China (D01), Central Sichuan Province (D02) and Chengdu City (D03) respectively as shown in Fig. 10a.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "1 km",
+            "target_entity_type": "Resolution",
+            "paragraph": "Here we use a version of Weather Research and Forecasting (WRF, v3.7.1) model configured as 3-layer nesting at 9, 3 and 1 km horizontal resolutions for the West of China (D01), Central Sichuan Province (D02) and Chengdu City (D03) respectively as shown in Fig. 10a.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "COVERS_DOMAIN",
+            "target_entity_instance": "West of China (D01)",
+            "target_entity_type": "Domain",
+            "paragraph": "Here we use a version of Weather Research and Forecasting (WRF, v3.7.1) model configured as 3-layer nesting at 9, 3 and 1 km horizontal resolutions for the West of China (D01), Central Sichuan Province (D02) and Chengdu City (D03) respectively as shown in Fig. 10a.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "COVERS_DOMAIN",
+            "target_entity_instance": "Central Sichuan Province (D02)",
+            "target_entity_type": "Domain",
+            "paragraph": "Here we use a version of Weather Research and Forecasting (WRF, v3.7.1) model configured as 3-layer nesting at 9, 3 and 1 km horizontal resolutions for the West of China (D01), Central Sichuan Province (D02) and Chengdu City (D03) respectively as shown in Fig. 10a.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "COVERS_DOMAIN",
+            "target_entity_instance": "Chengdu City (D03)",
+            "target_entity_type": "Domain",
+            "paragraph": "Here we use a version of Weather Research and Forecasting (WRF, v3.7.1) model configured as 3-layer nesting at 9, 3 and 1 km horizontal resolutions for the West of China (D01), Central Sichuan Province (D02) and Chengdu City (D03) respectively as shown in Fig. 10a.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "50 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The WRF model is divided into 50 vertical levels from the surface to the model top at 50 hPa.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "model top at 50 hPa",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The WRF model is divided into 50 vertical levels from the surface to the model top at 50 hPa.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Kain-Fritsch convection parameterization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The model includes most of the primary physics such as the Kain-Fritsch convection parameterization (Kain, 2004), Rapid Radiative Transfer Model for GCMs (RRTMG) longwave and shortwave radiations (Clough et al., 2005) and Yonsei University (YSU) boundary layer (Hu et al., 2013) as well as WRF single-moment 3-class (WSM3) microphysics (Hong et al., 2004) etc.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Rapid Radiative Transfer Model for GCMs (RRTMG)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The model includes most of the primary physics such as the Kain-Fritsch convection parameterization (Kain, 2004), Rapid Radiative Transfer Model for GCMs (RRTMG) longwave and shortwave radiations (Clough et al., 2005) and Yonsei University (YSU) boundary layer (Hu et al., 2013) as well as WRF single-moment 3-class (WSM3) microphysics (Hong et al., 2004) etc.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Yonsei University (YSU) boundary layer scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The model includes most of the primary physics such as the Kain-Fritsch convection parameterization (Kain, 2004), Rapid Radiative Transfer Model for GCMs (RRTMG) longwave and shortwave radiations (Clough et al., 2005) and Yonsei University (YSU) boundary layer (Hu et al., 2013) as well as WRF single-moment 3-class (WSM3) microphysics (Hong et al., 2004) etc.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "WRF single-moment 3-class (WSM3) microphysics scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The model includes most of the primary physics such as the Kain-Fritsch convection parameterization (Kain, 2004), Rapid Radiative Transfer Model for GCMs (RRTMG) longwave and shortwave radiations (Clough et al., 2005) and Yonsei University (YSU) boundary layer (Hu et al., 2013) as well as WRF single-moment 3-class (WSM3) microphysics (Hong et al., 2004) etc.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "DRIVEN_BY_SOURCE",
+            "target_entity_instance": "ERA5",
+            "target_entity_type": "Source",
+            "paragraph": "The initial and boundary conditions are drawn from the ERA5 reanalysis dataset in this study.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF v3.7.1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "100 m vertical resolution in planetary boundary layer",
+            "target_entity_type": "Resolution",
+            "paragraph": "Since the model version used in this study does still not resolve turbulence-featured extreme events (1 km horizontal resolution and 100 m vertical resolution in planetary boundary layer in this case), when one of 8 Lidars measures out a local gust event at 06UTC-10UTC 21 June, either MDA or LDA does not capture this event.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF DA system",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "multiscale high-efficiency approximate EnKF (MSHea-EnKF)",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Same as the CM2-CDA described in Sect. 3.1, a multiscale high-efficiency approximate EnKF (MSHea-EnKF) (Yu et al., 2019) data assimilation algorithm is used in this multi-layer nesting WRF to carry out multiscale observational information extraction (Wang et al., 2024).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-WRFDA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "MSHea-EnKF",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In this study, once the Hf2pMDA-WRFDA system (will be described in the next section) is set, we use it to conduct parallel assimilation experiments in the 1 km resolution Chengdu City core domain by the classic MSHea-EnKF and VAE LDA to test validation of the Hf2pMDA-WRFDA.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-WRFDA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "VAE LDA",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In this study, once the Hf2pMDA-WRFDA system (will be described in the next section) is set, we use it to conduct parallel assimilation experiments in the 1 km resolution Chengdu City core domain by the classic MSHea-EnKF and VAE LDA to test validation of the Hf2pMDA-WRFDA.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-WRFDA",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "latent_dim of 196608",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "It's worth to mention that in this case, pursuing 1 km resolution high-precision expression, we particularly concern local small scale information, and therefore we set a relatively large latent_dim (196608) with only a reduction rate of roughly 25%.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-WRFDA",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Swin Transformer",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Figure 11: Same as Fig. 6 but for WRF DA of Hf2pMDA-WRFDA in D03. In this case, we set the latent_dim as 196608.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-WRFDA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface wind",
+            "target_entity_type": "Variable",
+            "paragraph": "As examples, the reconstructed surface wind (u1, v1), temperature (T1) and moisture (q1) fields at 00UTC on 23 June 2025 are shown in Figs. 12 and 13, which are randomly drawn from a 1-month validation dataset of June 20 - July 20, 2025, for which we will conduct parallel MSHea-EnKF and LDA experiments using Hf2pMDA-WRFDA in D03.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-WRFDA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "As examples, the reconstructed surface wind (u1, v1), temperature (T1) and moisture (q1) fields at 00UTC on 23 June 2025 are shown in Figs. 12 and 13, which are randomly drawn from a 1-month validation dataset of June 20 - July 20, 2025, for which we will conduct parallel MSHea-EnKF and LDA experiments using Hf2pMDA-WRFDA in D03.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-WRFDA",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface moisture",
+            "target_entity_type": "Variable",
+            "paragraph": "As examples, the reconstructed surface wind (u1, v1), temperature (T1) and moisture (q1) fields at 00UTC on 23 June 2025 are shown in Figs. 12 and 13, which are randomly drawn from a 1-month validation dataset of June 20 - July 20, 2025, for which we will conduct parallel MSHea-EnKF and LDA experiments using Hf2pMDA-WRFDA in D03.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hf2pMDA-WRFDA",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "SSIM (Structure Similarity Index Measure)",
+            "target_entity_type": "Metric",
+            "paragraph": "From Figs. 12 and 13, we can see that the VAE encoder and decoder reconstructed fields (Figs. 12c-d, 13c-d) represent these physical variables (Figs. 12a-b, 13a-b) very accurately, with a nearly-perfect SSIM (Structure Similarity Index Measure \u2248 0) (Figs. 12e-f, 13e-f). Note that the shown quantity is normalized values by the difference of maximum and minimum of corresponding physical variable.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Lidar",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "wind",
+            "target_entity_type": "Variable",
+            "paragraph": "We see very local u\u2081 and v\u2081 adjustments that distribute around Lidar locations (Figs. 14a-b), and although the Lidar only provides wind measurements in this case, the temperature and moisture also get consistent adjustments (Figs. 14c-d) under this VAE-LDA multivariate nonlinear assimilation framework.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "CMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "CTL",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "WCDA",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SCDA",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "MDA",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "LDA",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "CM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OISST",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WRF, v3.7.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CM2.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OISST v2.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Weather Research and Forecasting model version 3.7.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "coupled general circulation model (CGCM)",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Earth system model (ESM)",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "fully-coupled Earth system model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "high-resolution (HR) Earth system model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "coupler_main",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "libfms.a",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "libland.a",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "libecda.a",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "libcoupler.a",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "integrate",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "wrfda_plug.F90",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "callback_python.F90",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "MOM5",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "multiscale filtering algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "latent space variational autoencoder (VAE)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "parameterization of planetary boundary layer (PBL) processes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ensemble Kalman filter (EnKF)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "multiscale high-efficiency approximate EnKF (MSHea-EnKF)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "\u03b2-VAE",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "3-dimensional variational (3D-Var)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "4D-Var",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Kain-Fritsch convection parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Rapid Radiative Transfer Model for GCMs (RRTMG) longwave and shortwave radiations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Yonsei University (YSU) boundary layer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "WRF single-moment 3-class (WSM3) microphysics",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "generative assimilation and prediction (GAP)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "multi-layer downscaling model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "24 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "50 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "air-sea interface",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3-layer nesting",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "model top at 50 hPa",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "3-layer nesting downscaling simulations",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "coupled",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Kullback-Leibler (KL) loss",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "reconstruction and KL losses",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Structure Similarity Index Measure",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SSIM",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "analysis increments",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean squared errors (RMSEs)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Ocean University of China",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Qingdao Leice Transient Technology Co., Ltd.",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Qingdao Marine and Meteorological Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Harbin Engineering University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NOAA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "atmosphere surface wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean surface currents",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "height",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Us",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Vs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ts",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ps",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SSU",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SSV",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SSH",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Sea Surface Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "u1",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "v1",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "T1",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "q1",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "u\u2081",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "v\u2081",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "sea-ice",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "planetary boundary layer",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "3hr",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "2\u00ba latitude \u00d7 2.5\u00b0 longitude",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1\u00b0\u00d71\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "~200 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "~100 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "9 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "3 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "25 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1/4\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "100 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "D01",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "D02",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "D03",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Sichuan Province",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Qingdao",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Harbin",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Chengdu City",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "West of China",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "lidar",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Lidar stations",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "conventional surface station",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "local gust event",
+            "entity_type": "Weather_Event"
+        }
+    ],
+    "referenced_works": []
+}

@@ -1,0 +1,1216 @@
+{
+    "uri": "https://openalex.org/W4415038882",
+    "title": "Multi-decadal streamflow projections for catchments in Brazil based on CMIP6 multi-model simulations and neural network embeddings for linear regression models",
+    "venue": {
+        "name": "Hydrology and earth system sciences",
+        "id": "https://openalex.org/S93121129",
+        "type": "journal"
+    },
+    "publication_year": 2025,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5005789669",
+            "display_name": "Michael Scheuerer",
+            "orcid": "https://orcid.org/0000-0003-4540-9478"
+        },
+        {
+            "id": "https://openalex.org/A5099058290",
+            "display_name": "Emilie Byermoen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5111223844",
+            "display_name": "Julia Ribeiro de Oliveira",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5080932936",
+            "display_name": "Thea Roksv\u00e5g",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5049417907",
+            "display_name": "Dagrun Vikhamar Schuler",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/hess-29-5099-2025",
+    "abstract": "Abstract. A linear regression model is developed to link anomalies of streamflow to anomalies of precipitation amounts and temperature with the goal of making multi-decadal streamflow projections based on CMIP6 multi-model simulations. Regression coefficients estimated separately for each catchment and each month show physically implausible spatial patterns and indicate issues with overfitting. An alternative approach is therefore explored in which all regression coefficients are estimated simultaneously through a neural network that retains the original linear model structure, but uses embeddings to map each combination of catchment and month to a set of regression coefficients. The model is demonstrated over a set of catchments in Brazil, where the estimated relationships are used to make streamflow projections for the next decades based on CMIP6 multi-model simulations. It yields physically more plausible relationships between streamflow, precipitation amounts, and temperature for our study area than the locally fitted regression models. The resulting projections indicate reduced streamflow over northern, north-eastern, central, and south-eastern Brazil, especially for the austral spring and summer season. The signal is less clear during austral winter. In southern Brazil, an increase in streamflow is expected.",
+    "field": "Hydroclimatological forecasting",
+    "problem": "Locally fitted linear regression models for streamflow projection suffer from overfitting, yielding physically implausible and spatially inconsistent relationships, while process-based or complex AI models face challenges with calibration effort and interpretability.",
+    "method": "This paper proposes a linear regression model that uses neural network embeddings to estimate regression coefficients for each catchment and month, linking streamflow anomalies to precipitation and temperature for making multi-decadal projections.",
+    "task": "The task is to project multi-decadal streamflow for catchments in Brazil by developing a linear regression model, with coefficients estimated by a neural network, to link streamflow to precipitation and temperature anomalies from CMIP6 simulations.",
+    "model": [
+        "ACCESS-CM2",
+        "BCC-CSM2-MR",
+        "CESM2",
+        "CMCC-ESM2",
+        "CNRM-CM6-1",
+        "CNRM-ESM2-1",
+        "EC-Earth3-CC",
+        "GFDL-ESM4",
+        "HadGEM3-GC31-LL",
+        "IITM-ESM",
+        "INM-CM4-8",
+        "INM-CM5-0",
+        "IPSL-CM6A-LR",
+        "KACE-1-0-G",
+        "KIOST-ESM",
+        "MIROC-ES2L",
+        "MIROC6",
+        "MPI-ESM1-2-LR",
+        "MRI-ESM2-0",
+        "NESM3",
+        "NorESM2-MM",
+        "UKESM1-0-LL"
+    ],
+    "paper_screening": "yes",
+    "keywords": [],
+    "concepts": [],
+    "obs_and_metrics": [],
+    "innovation": "This paper introduces a statistical model where a neural network with embeddings estimates the parameters of a linear regression model, yielding more physically plausible multi-decadal streamflow projections for Brazilian catchments by preventing overfitting and sharing information across space and time.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "South Atlantic Convergence Zone",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Brazil",
+            "target_entity_type": "Country",
+            "paragraph": "These trends are linked to a southward shifting of the average location of the South Atlantic Convergence Zone (Zilli et al., 2019) and direct (through reduced runoff) or indirect (through increased atmospheric moisture content) implications of increased evapotranspiration. It is unclear, however, to what degree the observed changes are part of longer, on-going trends or part of multi-decadal oscillations in the climate system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "South Atlantic Convergence Zone",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Brazil",
+            "target_entity_type": "Country",
+            "paragraph": "In the central part of the country, where several of the large river systems carrying water northward and southward to hydro-electrical plants are formed, the South Atlantic Convergence Zone (SACZ) regime dominates (Rosa et al., 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Intertropical Convergence Zone",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "Brazil",
+            "target_entity_type": "Country",
+            "paragraph": "The precipitation regime in northern and northeastern Brazil is dominated by the Intertropical Convergence Zone (ITCZ), a belt near the equator associated with heavy precipitation os- cillating north- and southwards depending on the position of maximum incoming solar radiation (Garreaud et al., 2009).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACCESS-CM2",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "BCC-CSM2-MR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM2",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-ESM2",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM6-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM2-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-CC",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM4",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3-GC31-LL",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IITM-ESM",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "INM-CM4-8",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "INM-CM5-0",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KACE-1-0-G",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KIOST-ESM",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIROC-ES2L",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIROC6",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM1-2-LR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MRI-ESM2-0",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NESM3",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2-MM",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UKESM1-0-LL",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "SSP2-4.5",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ACCESS-CM2",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "BCC-CSM2-MR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CESM2",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-ESM2",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM6-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-ESM2-1",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EC-Earth3-CC",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GFDL-ESM4",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HadGEM3-GC31-LL",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IITM-ESM",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "INM-CM4-8",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "INM-CM5-0",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM6A-LR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KACE-1-0-G",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KIOST-ESM",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIROC-ES2L",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIROC6",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM1-2-LR",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MRI-ESM2-0",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NESM3",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2-MM",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UKESM1-0-LL",
+            "source_entity_type": "Source",
+            "relation": "USED_IN_EXPERIMENT",
+            "target_entity_instance": "historical",
+            "target_entity_type": "Experiment",
+            "paragraph": "Simulations of 2 m temperature and precipitation from the Coupled Model Intercomparison Project Phase 6 (CMIP6, Eyring et al., 2016) multi-model ensemble were downloaded from the Earth System Grid Federation (ESGF). The SSP2-4.5 scenario was selected, which assumes a moderate level of greenhouse gas emissions in the calculations of the fu- ture precipitation and temperature (O\u2019Neill et al., 2016). The datasets are available for both a historical period (1850- 2014) and a projection period (2015\u20132100).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Coupled Model Intercomparison Project Phase 6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "Working Group on Coupled Modelling",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "historical",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP2-4.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "ACCESS-CM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BCC-CSM2-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC-ESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CM6-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-ESM2-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth3-CC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM3-GC31-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IITM-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INM-CM4-8",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INM-CM5-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM6A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "KACE-1-0-G",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "KIOST-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ES2L",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-ESM2-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NESM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM2-MM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UKESM1-0-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MGB-SA model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HBV model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Climate Hazards group InfraRed Precipitation with a Station dataset (CHIRPS) version 2.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GCMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "RCMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "linear regression model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "neural network",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Long Short-Term Memory (LSTM) networks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "neural network embeddings",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "INLA framework",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "multilayer perceptron (MLP)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "nonlinear activation function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Adam optimizer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "exponential linear unit (ELU) activation functions",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "early stopping",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "fully connected",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "dense",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "embeddings",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "embedding dimension",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "dropout layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "dropout rate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "data-driven methods",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "bias correction",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "correlation coefficients",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "regression coefficients",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean squared error loss function",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "coefficients of determination",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "prediction error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Fraction of inter-annual streamflow variability explained (out-of-sample)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Norsk Regnesentral STI",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Bergen",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Statkraft Energi AS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Statkraft Energia do Brasil Ltda",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Brazil's National Operator of the Electric System (ONS)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Copernicus Climate Change Service (C3S)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Earth System Grid Federation (ESGF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "PyTorch",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Optuna",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "World Climate Research Programme",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Climatempo",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Oslo",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Norges Forskningsr\u00e5d",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "streamflow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation amounts",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric moisture content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2m temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Total precipitation accumulation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "transpiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "greenhouse gas concentrations",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "0.05\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "multi-model simulations",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "multi-model ensemble",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Brazil",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Norway",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Italy",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "UK",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Russia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "South Korea",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Japan",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Par\u00e1",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Oslo",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Bergen",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Rio de Janeiro",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "South Atlantic Convergence Zone",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Amazon",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Xingu",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Tocantins",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "S\u00e3o Francisco",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Parana",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Grande",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Parana\u00edba",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Tiet\u00ea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Paranapanema",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Igua\u00e7u",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Uruguai",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Corumb\u00e1",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Araguari",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Rio Grande",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "multi-decadal oscillations",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Intertropical Convergence Zone (ITCZ)",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "South Atlantic Convergence Zone (SACZ)",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "deforestation",
+            "entity_type": "Natural_Hazard"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W4400091648",
+        "https://openalex.org/W2949676527",
+        "https://openalex.org/W3082971356",
+        "https://openalex.org/W3048180500",
+        "https://openalex.org/W4313814630",
+        "https://openalex.org/W3194737938",
+        "https://openalex.org/W3092223550",
+        "https://openalex.org/W3030446301",
+        "https://openalex.org/W3003393482",
+        "https://openalex.org/W3216489549",
+        "https://openalex.org/W2770679160",
+        "https://openalex.org/W4294052039",
+        "https://openalex.org/W2903814883",
+        "https://openalex.org/W2572622164",
+        "https://openalex.org/W4392749246",
+        "https://openalex.org/W2962115862",
+        "https://openalex.org/W2998885490",
+        "https://openalex.org/W4392221853",
+        "https://openalex.org/W4226178852",
+        "https://openalex.org/W3048932873",
+        "https://openalex.org/W2082996654",
+        "https://openalex.org/W2193503481",
+        "https://openalex.org/W2303468042",
+        "https://openalex.org/W4296741726",
+        "https://openalex.org/W4388539483",
+        "https://openalex.org/W4283811973",
+        "https://openalex.org/W2261645655",
+        "https://openalex.org/W2010560237",
+        "https://openalex.org/W3024077375",
+        "https://openalex.org/W2027092332",
+        "https://openalex.org/W4226546282",
+        "https://openalex.org/W2800819102",
+        "https://openalex.org/W2899086334",
+        "https://openalex.org/W2971023506",
+        "https://openalex.org/W4400308603",
+        "https://openalex.org/W2888597009",
+        "https://openalex.org/W1992746051",
+        "https://openalex.org/W2887558848",
+        "https://openalex.org/W2337225114",
+        "https://openalex.org/W3157967546",
+        "https://openalex.org/W4408117349",
+        "https://openalex.org/W3195883581",
+        "https://openalex.org/W3007277743",
+        "https://openalex.org/W2144898279",
+        "https://openalex.org/W3107502106",
+        "https://openalex.org/W2982338710",
+        "https://openalex.org/W2802122013",
+        "https://openalex.org/W4387437512",
+        "https://openalex.org/W2796069583",
+        "https://openalex.org/W2986935314",
+        "https://openalex.org/W2884302651",
+        "https://openalex.org/W2947991756",
+        "https://openalex.org/W2586235541",
+        "https://openalex.org/W2905458031",
+        "https://openalex.org/W2900538720",
+        "https://openalex.org/W2953301534",
+        "https://openalex.org/W2804508765",
+        "https://openalex.org/W2806942102"
+    ]
+}

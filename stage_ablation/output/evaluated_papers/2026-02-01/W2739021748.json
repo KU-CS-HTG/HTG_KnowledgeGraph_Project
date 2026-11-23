@@ -1,0 +1,1295 @@
+{
+    "uri": "https://openalex.org/W2739021748",
+    "title": "Explicit representation and parametrised impacts of under ice shelf seas in the <i>z</i> <sup>\u2217</sup> coordinate ocean model NEMO 3.6",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2017,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5066489861",
+            "display_name": "Pierre Mathiot",
+            "orcid": "https://orcid.org/0000-0002-2001-0762"
+        },
+        {
+            "id": "https://openalex.org/A5057113419",
+            "display_name": "Adrian Jenkins",
+            "orcid": "https://orcid.org/0000-0002-9117-0616"
+        },
+        {
+            "id": "https://openalex.org/A5026513517",
+            "display_name": "Christopher M. Harris",
+            "orcid": "https://orcid.org/0000-0002-9612-0642"
+        },
+        {
+            "id": "https://openalex.org/A5057547356",
+            "display_name": "Gurvan Madec",
+            "orcid": "https://orcid.org/0000-0002-6447-4198"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-10-2849-2017",
+    "abstract": "Abstract. Ice-shelf\u2013ocean interactions are a major source of freshwater on the Antarctic continental shelf and have a strong impact on ocean properties, ocean circulation and sea ice. However, climate models based on the ocean\u2013sea ice model NEMO (Nucleus for European Modelling of the Ocean) currently do not include these interactions in any detail. The capability of explicitly simulating the circulation beneath ice shelves is introduced in the non-linear free surface model NEMO. Its implementation into the NEMO framework and its assessment in an idealised and realistic circum-Antarctic configuration is described in this study. Compared with the current prescription of ice shelf melting (i.e. at the surface), inclusion of open sub-ice-shelf cavities leads to a decrease in sea ice thickness along the coast, a weakening of the ocean stratification on the shelf, a decrease in salinity of high-salinity shelf water on the Ross and Weddell sea shelves and an increase in the strength of the gyres that circulate within the over-deepened basins on the West Antarctic continental shelf. Mimicking the overturning circulation under the ice shelves by introducing a prescribed meltwater flux over the depth range of the ice shelf base, rather than at the surface, is also assessed. It yields similar improvements in the simulated ocean properties and circulation over the Antarctic continental shelf to those from the explicit ice shelf cavity representation. With the ice shelf cavities opened, the widely used three equation ice shelf melting formulation, which enables an interactive computation of melting, is tested. Comparison with observational estimates of ice shelf melting indicates realistic results for most ice shelves. However, melting rates for the Amery, Getz and George VI ice shelves are considerably overestimated.",
+    "field": "Ice-shelf-ocean interaction modeling",
+    "problem": "Climate models based on the NEMO ocean model lack a detailed representation of ice-shelf-ocean interactions, typically applying meltwater at the surface, which fails to accurately simulate the resulting circulation, water property changes, and sea ice formation on the Antarctic continental shelf.",
+    "method": "This paper introduces a capability into the NEMO ocean model to explicitly simulate circulation beneath ice shelves and a parameterization that mimics the impact of unresolved cavities by distributing meltwater flux over the depth range of the ice shelf base.",
+    "task": "The task is to implement and assess methods for explicitly representing and parameterizing ice-shelf\u2013ocean interactions within the NEMO 3.6 ocean model to improve simulations of the Antarctic coastal ocean and sea ice.",
+    "model": [
+        "NEMO",
+        "IPSL",
+        "EC earth",
+        "CNRM",
+        "CMCC",
+        "MITgcm",
+        "ROMS",
+        "OzPOM",
+        "POP",
+        "LIM2",
+        "FESOM"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/ice-shelf",
+            "display_name": "Ice shelf",
+            "score": 0.8121117949485779
+        },
+        {
+            "id": "https://openalex.org/keywords/oceanography",
+            "display_name": "Oceanography",
+            "score": 0.7049517631530762
+        },
+        {
+            "id": "https://openalex.org/keywords/sea-ice",
+            "display_name": "Sea ice",
+            "score": 0.6617110967636108
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.6181210875511169
+        },
+        {
+            "id": "https://openalex.org/keywords/continental-shelf",
+            "display_name": "Continental shelf",
+            "score": 0.581191897392273
+        },
+        {
+            "id": "https://openalex.org/keywords/ocean-gyre",
+            "display_name": "Ocean gyre",
+            "score": 0.5766308903694153
+        },
+        {
+            "id": "https://openalex.org/keywords/ocean-current",
+            "display_name": "Ocean current",
+            "score": 0.5299426317214966
+        },
+        {
+            "id": "https://openalex.org/keywords/antarctic-bottom-water",
+            "display_name": "Antarctic Bottom Water",
+            "score": 0.448697566986084
+        },
+        {
+            "id": "https://openalex.org/keywords/meltwater",
+            "display_name": "Meltwater",
+            "score": 0.4376477003097534
+        },
+        {
+            "id": "https://openalex.org/keywords/antarctic-sea-ice",
+            "display_name": "Antarctic sea ice",
+            "score": 0.42106354236602783
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.34736955165863037
+        },
+        {
+            "id": "https://openalex.org/keywords/arctic-ice-pack",
+            "display_name": "Arctic ice pack",
+            "score": 0.2831946313381195
+        },
+        {
+            "id": "https://openalex.org/keywords/cryosphere",
+            "display_name": "Cryosphere",
+            "score": 0.2549133896827698
+        },
+        {
+            "id": "https://openalex.org/keywords/bottom-water",
+            "display_name": "Bottom water",
+            "score": 0.20470017194747925
+        },
+        {
+            "id": "https://openalex.org/keywords/glacier",
+            "display_name": "Glacier",
+            "score": 0.18367153406143188
+        },
+        {
+            "id": "https://openalex.org/keywords/geomorphology",
+            "display_name": "Geomorphology",
+            "score": 0.12697261571884155
+        },
+        {
+            "id": "https://openalex.org/keywords/subtropics",
+            "display_name": "Subtropics",
+            "score": 0.07622992992401123
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C87547467",
+            "wikidata": "https://www.wikidata.org/wiki/Q46966",
+            "display_name": "Ice shelf",
+            "level": 4,
+            "score": 0.8121117949485779
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.7049517631530762
+        },
+        {
+            "id": "https://openalex.org/C136894858",
+            "wikidata": "https://www.wikidata.org/wiki/Q213926",
+            "display_name": "Sea ice",
+            "level": 2,
+            "score": 0.6617110967636108
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.6181210875511169
+        },
+        {
+            "id": "https://openalex.org/C184751465",
+            "wikidata": "https://www.wikidata.org/wiki/Q134851",
+            "display_name": "Continental shelf",
+            "level": 2,
+            "score": 0.581191897392273
+        },
+        {
+            "id": "https://openalex.org/C30380174",
+            "wikidata": "https://www.wikidata.org/wiki/Q1250263",
+            "display_name": "Ocean gyre",
+            "level": 3,
+            "score": 0.5766308903694153
+        },
+        {
+            "id": "https://openalex.org/C187599188",
+            "wikidata": "https://www.wikidata.org/wiki/Q129558",
+            "display_name": "Ocean current",
+            "level": 2,
+            "score": 0.5299426317214966
+        },
+        {
+            "id": "https://openalex.org/C136005005",
+            "wikidata": "https://www.wikidata.org/wiki/Q3913650",
+            "display_name": "Antarctic Bottom Water",
+            "level": 3,
+            "score": 0.448697566986084
+        },
+        {
+            "id": "https://openalex.org/C207318512",
+            "wikidata": "https://www.wikidata.org/wiki/Q360925",
+            "display_name": "Meltwater",
+            "level": 3,
+            "score": 0.4376477003097534
+        },
+        {
+            "id": "https://openalex.org/C16335420",
+            "wikidata": "https://www.wikidata.org/wiki/Q18205270",
+            "display_name": "Antarctic sea ice",
+            "level": 4,
+            "score": 0.42106354236602783
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.34736955165863037
+        },
+        {
+            "id": "https://openalex.org/C161798024",
+            "wikidata": "https://www.wikidata.org/wiki/Q3651008",
+            "display_name": "Arctic ice pack",
+            "level": 3,
+            "score": 0.2831946313381195
+        },
+        {
+            "id": "https://openalex.org/C197435368",
+            "wikidata": "https://www.wikidata.org/wiki/Q493109",
+            "display_name": "Cryosphere",
+            "level": 3,
+            "score": 0.2549133896827698
+        },
+        {
+            "id": "https://openalex.org/C2780275952",
+            "wikidata": "https://www.wikidata.org/wiki/Q4949154",
+            "display_name": "Bottom water",
+            "level": 2,
+            "score": 0.20470017194747925
+        },
+        {
+            "id": "https://openalex.org/C100834320",
+            "wikidata": "https://www.wikidata.org/wiki/Q35666",
+            "display_name": "Glacier",
+            "level": 2,
+            "score": 0.18367153406143188
+        },
+        {
+            "id": "https://openalex.org/C114793014",
+            "wikidata": "https://www.wikidata.org/wiki/Q52109",
+            "display_name": "Geomorphology",
+            "level": 1,
+            "score": 0.12697261571884155
+        },
+        {
+            "id": "https://openalex.org/C14168384",
+            "wikidata": "https://www.wikidata.org/wiki/Q16305538",
+            "display_name": "Subtropics",
+            "level": 2,
+            "score": 0.07622992992401123
+        },
+        {
+            "id": "https://openalex.org/C505870484",
+            "wikidata": "https://www.wikidata.org/wiki/Q180538",
+            "display_name": "Fishery",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for Amery ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 207, Obs: 13-59"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for West ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 26, Obs: 17-37"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for Shackleton ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 14, Obs: 58-88"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for Ross ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 111, Obs: 14-81"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for Larsen C ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 46, Obs: -46-87"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for FRIS ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 123, Obs: 111-210"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for Brunt + Riiser ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 39, Obs: -6-26"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for Fimbul ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 42, Obs: 13-43"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Total basal melt for Cold ice shelves (Gtyr\u207b\u00b9)",
+            "result": "Model: 722, Obs: 531-1033"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for Getz ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 337, Obs: 131-159"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for Thwaites ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 74, Obs: 91-105"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for Pine Island ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 87, Obs: 93-109"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for Abbot ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 52, Obs: 32-72"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for George VI ice shelf (Gtyr\u207b\u00b9)",
+            "result": "Model: 298, Obs: 72-106"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Total basal melt for Warm ice shelves (Gtyr\u207b\u00b9)",
+            "result": "Model: 1142, Obs: 452-630"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Basal melt for Others (Gtyr\u207b\u00b9)",
+            "result": "Model: 408, Obs: 214-425"
+        },
+        {
+            "model": "R_MLT",
+            "observational_dataset": "Rignot, 2013",
+            "evaluation_metric": "Total basal melt (Gtyr\u207b\u00b9)",
+            "result": "Model: 1864, Obs: 1263-1737"
+        }
+    ],
+    "innovation": "This paper introduces and assesses the capability of explicitly simulating circulation beneath ice shelves within the NEMO ocean model, and also evaluates a simplified parameterization to mimic the impacts of unresolved ice shelf cavities on Antarctic coastal ocean properties, circulation, and sea ice.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "NEMO 3.6",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "z* coordinate",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Explicit representation and parametrised impacts of under ice shelf seas in the z* coordinate ocean model NEMO 3.6",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO 3.6",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Arakawa C-grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "NEMO is a primitive equation ocean model, and this study uses version 3.6 of the code. The variables are distributed on an Arakawa C-grid; i.e. the scalar point (temperature, salinity) is defined on the centre of the cell and the vector points (zonal, meridional, vertical velocity) are defined on the centre of each face (Arakawa, 1966).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO 3.6",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "time varying z* vertical coordinate",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "We also make use of the time varying z* vertical coordinate; i.e. the variation of the water column thickness due to sea-surface undulations is not concentrated in the surface level, as in the z coordinate formulation, but is distributed over the full water column (Adcroft and Campin, 2004).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO 3.6",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "partial cell scheme",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Representation of the bottom topography is difficult in z coordinate models. The partial cell scheme allows a more accurate representation of bottom topography through the use of partially wet cells (Adcroft et al., 1997). Solutions obtained with this scheme compare favourably with those obtained with sigma coordinate models (Adcroft et al., 1997) and also with more realistic solutions (Barnier et al., 2006). Following L08, we apply the partial cell scheme developed for the bottom topography to the top cells beneath the ice shelf base.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO 3.6",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "ISOMIP formulation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Two formulations of the ice shelf melt rate are available: a simple one used in the idealised cases, for consistency with earlier studies and the Ice Shelf-Ocean Model Intercomparison Project (ISOMIP), and a more sophisticated one used in the realistic configuration. For the idealised study, the heat flux and the freshwater flux (negative for melting) resulting from ice shelf melting-freezing are parameterized following Grosfeld et al. (1997). This formulation is based on a balance between the vertical diffusive heat flux across the ocean top boundary layer and the latent heat due to melting-freezing: Qh = pcpy (Tw \u2013 \u03a4\u00a3), q=\u2212Qh/Lf, where Qh (Wm\u22122) is the heat flux, q (kgs\u00af\u00b9 m\u22122) the fresh-water flux, Lf the specific latent heat, Tw the temperature averaged over a boundary layer below the ice shelf (explained below), Tf the freezing point computed from Millero (1978) using the pressure at the ice shelf base and the salinity of the water in the boundary layer, and y the thermal exchange coefficient. Hereafter, Eqs. (7) and (8) are referred to as the ISOMIP formulation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO 3.6",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "three equation ice shelf melting formulation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "With the ice shelf cavities opened, the widely used \u201cthree equation\" ice shelf melting formulation, which enables an interactive computation of melting, is tested. Comparison with observational estimates of ice shelf melting indicates realistic results for most ice shelves. However, melting rates for the Amery, Getz and George VI ice shelves are considerably overestimated.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO 3.6",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LIM2",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Other choices (the momentum advection, tracer advection, diffusion, viscosity, vertical mixing, double diffusion, bottom friction, bottom boundary layer and tidal mixing parametrisations) are as used in Megann et al. (2014). For the sea ice we use the Louvain-la-Neuve sea-ice model LIM2 (Fichefet and Morales, 1997) with ice rheology based on an elasto-visco-plastic law as described in Bouillon et al. (2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIM2",
+            "source_entity_type": "SourceComponent",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "elasto-visco-plastic law",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "For the sea ice we use the Louvain-la-Neuve sea-ice model LIM2 (Fichefet and Morales, 1997) with ice rheology based on an elasto-visco-plastic law as described in Bouillon et al. (2013).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NEMO",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "ocean",
+            "target_entity_type": "Realm",
+            "paragraph": "To improve the representation of the Antarctic coastal ocean and global sea level rise in the coupled Ocean\u2013Sea-ice model NEMO (Nucleus for European Modelling of the Ocean), ice-shelf\u2013ocean interactions need to be properly included. In previous NEMO simulations, ice-shelf melt was uniformly distributed around the coast of Antarctica and input at the surface. Global conservation is an important issue, as the ocean\u2013sea-ice model is also used as a component within Earth system models.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LIM2",
+            "source_entity_type": "SourceComponent",
+            "relation": "APPLIES_TO_REALM",
+            "target_entity_instance": "seaIce",
+            "target_entity_type": "Realm",
+            "paragraph": "For the sea ice we use the Louvain-la-Neuve sea-ice model LIM2 (Fichefet and Morales, 1997) with ice rheology based on an elasto-visco-plastic law as described in Bouillon et al. (2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "overturning circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "West Antarctic continental shelf",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Compared with the current prescription of ice shelf melting (i.e. at the surface), inclusion of open sub-ice-shelf cavities leads to a decrease in sea ice thickness along the coast, a weakening of the ocean stratification on the shelf, a decrease in salinity of high-salinity shelf water on the Ross and Weddell sea shelves and an increase in the strength of the gyres that circulate within the over-deepened basins on the West Antarctic continental shelf. Mimicking the overturning circulation under the ice shelves by introducing a prescribed meltwater flux over the depth range of the ice shelf base, rather than at the surface, is also assessed. It yields similar improvements in the simulated ocean properties and circulation over the Antarctic continental shelf to those from the explicit ice shelf cavity representation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "overturning circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Weddell sea",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "At the edge of the broad continental shelves of the southern Weddell and Ross seas and along the Adelie Land coast, ISW mixes with CDW and HSSW to form Antarctic Bottom Water (Foldvik et al., 1985; Williams et al., 2008) that contributes to the global overturning circulation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "overturning circulation",
+            "source_entity_type": "Ocean_Circulation",
+            "relation": "OBSERVED_IN_REGION",
+            "target_entity_instance": "Ross sea",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "At the edge of the broad continental shelves of the southern Weddell and Ross seas and along the Adelie Land coast, ISW mixes with CDW and HSSW to form Antarctic Bottom Water (Foldvik et al., 1985; Williams et al., 2008) that contributes to the global overturning circulation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "NEMO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MITgcm",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ROMS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OzPOM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "POP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ePERIANT025",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PERIANT025",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FESOM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC earth",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NEMO 3.6",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LIM2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "z* coordinate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "non-linear free surface",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Arakawa C-grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "partial cell scheme",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "s-coordinate model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "z coordinate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "sigma coordinate",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "75 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "variable vertical resolution",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "quasi-isotropic bipolar grids",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "tripolar ORCA grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "circum-Antarctic configuration",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "idealised",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "realistic",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "explicit",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "prescribed",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "ISOMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "DRAKKAR project",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CESM",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "ISOMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "MISMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "MISOMIP",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "I_5M",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "I_5M30M",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "I_10M",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "I_10M30M",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "I_30M",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "I_60M",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "I_100M",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "I_150M",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "I_31L",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "I_46L",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "I_75L",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "A_ISF",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "A_PAR",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "A_BG03",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "R_ISF",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "R_PAR",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "R_noISF",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "R_MLT",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "British Antarctic Survey",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Met Office",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Sorbonne Universit\u00e9s",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNRS-IRD-MNHN, LOCEAN Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IPSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Hadley Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CNRM",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CMCC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "DRAKKAR group",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Moscow University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Environmental Research Council",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "UK Met Office",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NCAR",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "seaIce",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "landIce",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ice shelf melting",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "freshwater",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean properties",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ocean circulation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice thickness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "salinity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "high-salinity shelf water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "meltwater flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice mass loss",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "basal meltwater flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "iceberg calving",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "eustatic sea level change",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea level rise",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Circumpolar Deep Water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Antarctic Surface Water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice shelf water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Antarctic Bottom Water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "freshwater flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "potential temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "barotropic stream function",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "meridional overturning circulation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "melt rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total melting rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total freezing rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ACC transport",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Weddell gyre transport",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sea ice extent",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Basal melt",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "overturning circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "cyclonic gyre",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "western boundary current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "ACC transport",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Weddell gyre transport",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "barotropic circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Antarctic Circumpolar Current",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Weddell gyre",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctic continental shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Ocean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ross Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Weddell Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Amundsen Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Bellingshausen Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "West Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Amery Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Getz Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "George VI Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ross Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ferrigno ice shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Filchner-Ronne Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Totten Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Dalton Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Shackleton Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Larsen C Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Brunt Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Riiser-Larsen Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Fimbul Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Thwaites Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pine Island Glacier",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Abbot Ice Shelf",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pine Island Bay",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctic Peninsula",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Berkner Island",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Henry Ice Rise",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Dronning Maud Land",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Antarctic Ice Sheet",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "1/4\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "5 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "10 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "30 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "60 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "100 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "150 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "6 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "11 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "\"three equation\" ice shelf melting formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ISOMIP formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "BG03 parametrisation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "elasto-visco-plastic law",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "double-diffusive convection",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ACC transport",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Weddell gyre transport",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Total melting rate",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Total freezing rate",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Temperature error at the ice shelf edge",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean temperature differences",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "satellite",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP3",
+            "entity_type": "MIPEra"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2125370488",
+        "https://openalex.org/W2179541677",
+        "https://openalex.org/W4251865999",
+        "https://openalex.org/W1554035627",
+        "https://openalex.org/W2480261700",
+        "https://openalex.org/W2115757528",
+        "https://openalex.org/W2114687263",
+        "https://openalex.org/W2168073072",
+        "https://openalex.org/W2013412685",
+        "https://openalex.org/W2042862842",
+        "https://openalex.org/W1993262300",
+        "https://openalex.org/W1979156498",
+        "https://openalex.org/W2163867398",
+        "https://openalex.org/W2165265087",
+        "https://openalex.org/W2142576103",
+        "https://openalex.org/W2173589103",
+        "https://openalex.org/W1502220241",
+        "https://openalex.org/W2027769809",
+        "https://openalex.org/W1978023852",
+        "https://openalex.org/W2038439001",
+        "https://openalex.org/W2136464389",
+        "https://openalex.org/W1990376608",
+        "https://openalex.org/W2048253968",
+        "https://openalex.org/W2064260672",
+        "https://openalex.org/W2058555254",
+        "https://openalex.org/W2119714731",
+        "https://openalex.org/W2009412734",
+        "https://openalex.org/W1523985096",
+        "https://openalex.org/W2102213705",
+        "https://openalex.org/W2002675380",
+        "https://openalex.org/W1732003274",
+        "https://openalex.org/W1991215286",
+        "https://openalex.org/W1942530457",
+        "https://openalex.org/W2071747718",
+        "https://openalex.org/W2044109738",
+        "https://openalex.org/W2072844010",
+        "https://openalex.org/W2166037956",
+        "https://openalex.org/W2339934570",
+        "https://openalex.org/W2152846021",
+        "https://openalex.org/W4231500343",
+        "https://openalex.org/W2032432925",
+        "https://openalex.org/W2176894860",
+        "https://openalex.org/W2123027903",
+        "https://openalex.org/W1613378058",
+        "https://openalex.org/W1965373095",
+        "https://openalex.org/W2148298925",
+        "https://openalex.org/W1972993015",
+        "https://openalex.org/W2587110457",
+        "https://openalex.org/W1976429043",
+        "https://openalex.org/W1978479166",
+        "https://openalex.org/W2038631500",
+        "https://openalex.org/W2079183834",
+        "https://openalex.org/W2161658478",
+        "https://openalex.org/W1987732095",
+        "https://openalex.org/W2097469929",
+        "https://openalex.org/W1970910879",
+        "https://openalex.org/W1980805564",
+        "https://openalex.org/W6636814128",
+        "https://openalex.org/W2142966978",
+        "https://openalex.org/W2069384562",
+        "https://openalex.org/W1989742661",
+        "https://openalex.org/W2570261579",
+        "https://openalex.org/W1769133074",
+        "https://openalex.org/W2120072583",
+        "https://openalex.org/W2004080653",
+        "https://openalex.org/W1982616895",
+        "https://openalex.org/W2003371436",
+        "https://openalex.org/W1994101564",
+        "https://openalex.org/W2123735866",
+        "https://openalex.org/W2084481702",
+        "https://openalex.org/W2125767514",
+        "https://openalex.org/W2268526594",
+        "https://openalex.org/W1993331306",
+        "https://openalex.org/W1987086452",
+        "https://openalex.org/W2111578148",
+        "https://openalex.org/W2127521102",
+        "https://openalex.org/W2044555187",
+        "https://openalex.org/W1979264317",
+        "https://openalex.org/W2075112338",
+        "https://openalex.org/W2008765582",
+        "https://openalex.org/W1972700249",
+        "https://openalex.org/W2053368638",
+        "https://openalex.org/W2130686389",
+        "https://openalex.org/W2995058219",
+        "https://openalex.org/W1666018831",
+        "https://openalex.org/W1488946387"
+    ]
+}

@@ -1,0 +1,1049 @@
+{
+    "uri": "https://openalex.org/W7131788484",
+    "title": "Optimization of snow cover fraction parameterization in the Community Land Model: implementation and preliminary validation over Tibetan Plateau",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5126967132",
+            "display_name": "Kai Yang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5123284441",
+            "display_name": "Chenghai Wang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126951957",
+            "display_name": "Yang Cui",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126961592",
+            "display_name": "Lingyun Ai",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126964442",
+            "display_name": "Feimin Zhang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5040575722",
+            "display_name": "Pinghan Zhaoye",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2025-6490",
+    "abstract": "Abstract. Snow cover over Tibetan Plateau (TP) is not only a key land forcing for the regional and global climate but also an important water resource for surround regions. However, state-of-the-art climate models still exhibit substantial biases in simulating winter snow cover over the TP, which constitutes one of the major sources of uncertainty in climate prediction. Using satellite-based snow cover datasets, this study reveals that the Community Land Model version 5 (CLM5) systematically overestimates the winter snow cover fraction (SCF) over the TP. This bias mainly arises because the original SCF parameterization scheme neglects the spatially varying probability distribution of snowfall accumulation and underestimates snow depletion over barren land during the melting period. By accounting for the effects of non-growing-season low vegetation (i.e., withered grass stems) and topographic relief, we parameterize the snow accumulation probability factor (kaccum) instead of prescribing it as a constant. In addition, a revised factor is introduced to modify the snow depletion curve shape parameter (Nmelt), thereby optimizing the SCF parameterization scheme. Preliminary validation indicates that the optimized scheme substantially reduces positive winter SCF biases over barren land and grassland by 34 %~88 %, and improves surface albedo simulations, thereby alleviating cold surface temperature biases by approximately 1~2 \u00b0C in snow-affected regions.",
+    "field": "Land surface modeling",
+    "problem": "The Community Land Model overestimates winter snow cover fraction on the Tibetan Plateau because its parameterization scheme neglects the spatially varying effects of topography and low vegetation on snowfall accumulation and underestimates snow depletion over barren land.",
+    "method": "The study proposes an optimized snow cover fraction parameterization scheme by revising the snow accumulation and depletion parameters based on topographic relief and withered grass stems to reduce winter snow cover overestimation in the Community Land Model over the Tibetan Plateau.",
+    "task": "The task is to optimize the snow cover fraction parameterization in the Community Land Model for the Tibetan Plateau by incorporating effects of topography and low vegetation to reduce biases in simulating winter snow cover.",
+    "model": [
+        "CLM5",
+        "PIEKTUK",
+        "CLM4.5",
+        "SNICAR",
+        "Noah-MP",
+        "WRF",
+        "CLM4",
+        "CMIP6",
+        "SSiB3",
+        "CESM",
+        "Crocus",
+        "SURFEX",
+        "CoLM"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/snow",
+            "display_name": "Snow",
+            "score": 0.8866999745368958
+        },
+        {
+            "id": "https://openalex.org/keywords/albedo",
+            "display_name": "Albedo (alchemy)",
+            "score": 0.7365999817848206
+        },
+        {
+            "id": "https://openalex.org/keywords/snow-cover",
+            "display_name": "Snow cover",
+            "score": 0.6952999830245972
+        },
+        {
+            "id": "https://openalex.org/keywords/plateau",
+            "display_name": "Plateau (mathematics)",
+            "score": 0.6220999956130981
+        },
+        {
+            "id": "https://openalex.org/keywords/land-cover",
+            "display_name": "Land cover",
+            "score": 0.5564000010490417
+        },
+        {
+            "id": "https://openalex.org/keywords/forcing",
+            "display_name": "Forcing (mathematics)",
+            "score": 0.5295000076293945
+        },
+        {
+            "id": "https://openalex.org/keywords/vegetation",
+            "display_name": "Vegetation (pathology)",
+            "score": 0.5209000110626221
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5072000026702881
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C197046000",
+            "wikidata": "https://www.wikidata.org/wiki/Q7561",
+            "display_name": "Snow",
+            "level": 2,
+            "score": 0.8866999745368958
+        },
+        {
+            "id": "https://openalex.org/C195886398",
+            "wikidata": "https://www.wikidata.org/wiki/Q2110050",
+            "display_name": "Albedo (alchemy)",
+            "level": 3,
+            "score": 0.7365999817848206
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.7314000129699707
+        },
+        {
+            "id": "https://openalex.org/C2983043445",
+            "wikidata": "https://www.wikidata.org/wiki/Q7561",
+            "display_name": "Snow cover",
+            "level": 3,
+            "score": 0.6952999830245972
+        },
+        {
+            "id": "https://openalex.org/C2780030769",
+            "wikidata": "https://www.wikidata.org/wiki/Q4968575",
+            "display_name": "Plateau (mathematics)",
+            "level": 2,
+            "score": 0.6220999956130981
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5616000294685364
+        },
+        {
+            "id": "https://openalex.org/C2780648208",
+            "wikidata": "https://www.wikidata.org/wiki/Q3001793",
+            "display_name": "Land cover",
+            "level": 3,
+            "score": 0.5564000010490417
+        },
+        {
+            "id": "https://openalex.org/C197115733",
+            "wikidata": "https://www.wikidata.org/wiki/Q1003136",
+            "display_name": "Forcing (mathematics)",
+            "level": 2,
+            "score": 0.5295000076293945
+        },
+        {
+            "id": "https://openalex.org/C2776133958",
+            "wikidata": "https://www.wikidata.org/wiki/Q7918366",
+            "display_name": "Vegetation (pathology)",
+            "level": 2,
+            "score": 0.5209000110626221
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5072000026702881
+        },
+        {
+            "id": "https://openalex.org/C122523270",
+            "wikidata": "https://www.wikidata.org/wiki/Q34027",
+            "display_name": "Latitude",
+            "level": 2,
+            "score": 0.44839999079704285
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.4259999990463257
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.4131999909877777
+        },
+        {
+            "id": "https://openalex.org/C64649846",
+            "wikidata": "https://www.wikidata.org/wiki/Q1754697",
+            "display_name": "Snowmelt",
+            "level": 3,
+            "score": 0.41190001368522644
+        },
+        {
+            "id": "https://openalex.org/C82544793",
+            "wikidata": "https://www.wikidata.org/wiki/Q1365419",
+            "display_name": "Snow field",
+            "level": 4,
+            "score": 0.3781999945640564
+        },
+        {
+            "id": "https://openalex.org/C100970517",
+            "wikidata": "https://www.wikidata.org/wiki/Q52107",
+            "display_name": "Physical geography",
+            "level": 1,
+            "score": 0.3228999972343445
+        },
+        {
+            "id": "https://openalex.org/C2775835988",
+            "wikidata": "https://www.wikidata.org/wiki/Q1006733",
+            "display_name": "Grassland",
+            "level": 2,
+            "score": 0.29660001397132874
+        },
+        {
+            "id": "https://openalex.org/C42832001",
+            "wikidata": "https://www.wikidata.org/wiki/Q740358",
+            "display_name": "Snow line",
+            "level": 4,
+            "score": 0.2833999991416931
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.2831999957561493
+        },
+        {
+            "id": "https://openalex.org/C99578197",
+            "wikidata": "https://www.wikidata.org/wiki/Q1463606",
+            "display_name": "Radiative forcing",
+            "level": 3,
+            "score": 0.28040000796318054
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.27230000495910645
+        },
+        {
+            "id": "https://openalex.org/C2777016058",
+            "wikidata": "https://www.wikidata.org/wiki/Q7574061",
+            "display_name": "Spatial distribution",
+            "level": 2,
+            "score": 0.26840001344680786
+        },
+        {
+            "id": "https://openalex.org/C131918245",
+            "wikidata": "https://www.wikidata.org/wiki/Q1409090",
+            "display_name": "Fetch",
+            "level": 2,
+            "score": 0.25130000710487366
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "CTL",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion A",
+            "result": "13.04"
+        },
+        {
+            "model": "MOD1",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion A",
+            "result": "0.99"
+        },
+        {
+            "model": "MOD2",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion A",
+            "result": "2.07"
+        },
+        {
+            "model": "CTL",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion B",
+            "result": "23.71"
+        },
+        {
+            "model": "MOD1",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion B",
+            "result": "9.21"
+        },
+        {
+            "model": "MOD2",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion B",
+            "result": "9.80"
+        },
+        {
+            "model": "CTL",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion C",
+            "result": "28.55"
+        },
+        {
+            "model": "MOD1",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion C",
+            "result": "18.31"
+        },
+        {
+            "model": "MOD2",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion C",
+            "result": "13.80"
+        },
+        {
+            "model": "CTL",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion D",
+            "result": "36.55"
+        },
+        {
+            "model": "MOD1",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion D",
+            "result": "19.02"
+        },
+        {
+            "model": "MOD2",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion D",
+            "result": "17.53"
+        },
+        {
+            "model": "CTL",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion E",
+            "result": "30.78"
+        },
+        {
+            "model": "MOD1",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion E",
+            "result": "18.20"
+        },
+        {
+            "model": "MOD2",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion E",
+            "result": "15.47"
+        },
+        {
+            "model": "CTL",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion F",
+            "result": "24.97"
+        },
+        {
+            "model": "MOD1",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion F",
+            "result": "13.86"
+        },
+        {
+            "model": "MOD2",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion F",
+            "result": "12.73"
+        },
+        {
+            "model": "CTL",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion G",
+            "result": "7.53"
+        },
+        {
+            "model": "MOD1",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion G",
+            "result": "2.04"
+        },
+        {
+            "model": "MOD2",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion G",
+            "result": "1.31"
+        },
+        {
+            "model": "CTL",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion H",
+            "result": "2.16"
+        },
+        {
+            "model": "MOD1",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion H",
+            "result": "0.92"
+        },
+        {
+            "model": "MOD2",
+            "observational_dataset": "Not specified in table",
+            "evaluation_metric": "winter SCF simulation MBE (%) for Subregion H",
+            "result": "0.16"
+        }
+    ],
+    "innovation": "This paper develops an optimized snow cover fraction parameterization for the Community Land Model by incorporating the effects of withered grass stems and topography, which substantially reduces winter snow cover overestimation and alleviates cold temperature biases over the Tibetan Plateau.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Community Land Model version 4 (CLM4)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "Community Land Model version 5 (CLM5)",
+            "target_entity_type": "Source",
+            "paragraph": "The Community Land Model version 5 (CLM5), the latest LSM developed by the U.S. National Center for Atmospheric Research (NCAR), incorporates substantial improvements in snow cover parameterization compared with its predecessor, CLM4 (Lawrence et al., 2019).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "China meteorological forcing dataset v1.6 (CMFD v1.6)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "CMFD v2.0",
+            "target_entity_type": "Source",
+            "paragraph": "In this study, we adopt the CMFD v1.6. Although a newer version, CMFD v2.0, has recently been released with substantial improvements\u2014including precipitation directly derived from the TPHiPr dataset (Jiang et al., 2023)\u2014previous evaluations indicate that CMFD v1.6 exhibits relatively lower biases compared to other forcing datasets (Liu et al., 2025).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Land Model version 4.5 (CLM4.5)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "PIEKTUK",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "For example, Xie et al. (2019) coupled a blowing snow model (PIEKTUK) with the Community Land Model version 4.5 (CLM4.5) and improved simulations of snow dynamics over most regions of the TP.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Land Model version 5 (CLM5)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Snow, Ice, and Aerosol Radiative (SNICAR) model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Snow compaction and aging mainly affect snow albedo, which in CLM5 is simulated using the Snow, Ice, and Aerosol Radiative (SNICAR) model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Snow, Ice, and Aerosol Radiative (SNICAR) model",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "snow albedo",
+            "target_entity_type": "Variable",
+            "paragraph": "Snow compaction and aging mainly affect snow albedo, which in CLM5 is simulated using the Snow, Ice, and Aerosol Radiative (SNICAR) model.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Land Model version 5 (CLM5)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "original SCF parameterization scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Using satellite-based snow cover datasets, this study reveals that the Community Land Model version 5 (CLM5) systematically overestimates the winter snow cover fraction (SCF) over the TP. This bias mainly arises because the original SCF parameterization scheme neglects the spatially varying probability distribution of snowfall accumulation and underestimates snow depletion over barren land during the melting period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah-MP land surface model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "fresh snow albedo scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Based on station observations and simulations with the SNICAR radiative transfer model, Wang et al. (2020) developed a fresh snow albedo scheme in the Noah-MP land surface model, which effectively reduced excessive snow depth biases over the TP.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah land surface model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "improved albedo scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Liu and Ma (2024) further showed that an improved albedo scheme-by optimizing snow age parameters and explicitly accounting for snow depth in the Noah land surface model-enhanced snow cover simulations in the Weather Research and Forecasting (WRF) model during snow events over the TP.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Weather Research and Forecasting (WRF) model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "improved albedo scheme",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Liu and Ma (2024) further showed that an improved albedo scheme-by optimizing snow age parameters and explicitly accounting for snow depth in the Noah land surface model-enhanced snow cover simulations in the Weather Research and Forecasting (WRF) model during snow events over the TP.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Land Model version 5 (CLM5)",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "linear ramp function",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In CLM5, the partitioning of total precipitation into snowfall and rainfall is diagnosed using a linear ramp function.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Land Model version 5 (CLM5)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "positive winter SCF biases",
+            "target_entity_type": "Metric",
+            "paragraph": "Preliminary validation indicates that the optimized scheme substantially reduces positive winter SCF biases over barren land and grassland by 34%~88%, and improves surface albedo simulations, thereby alleviating cold surface temperature biases by approximately 1~2 \u00b0C in snow-affected regions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Land Model version 5 (CLM5)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "cold surface temperature biases",
+            "target_entity_type": "Metric",
+            "paragraph": "Preliminary validation indicates that the optimized scheme substantially reduces positive winter SCF biases over barren land and grassland by 34%~88%, and improves surface albedo simulations, thereby alleviating cold surface temperature biases by approximately 1~2 \u00b0C in snow-affected regions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Land Model version 5 (CLM5)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean bias error (MBE)",
+            "target_entity_type": "Metric",
+            "paragraph": "The mean bias error (MBE) was used to quantify the errors of model simulations, which is calculated as follows:\nMBE = 1/n * sum(xsi - xoi)\nwhere xsi and xoi represent the simulated value and observed value, respectively, n represents the sequence length.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Community Land Model version 5 (CLM5)",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "positive biases of surface albedo",
+            "target_entity_type": "Metric",
+            "paragraph": "Due to the overestimation of SCF, CLM5 has obvious positive biases of surface albedo by up to 0.3 (Figure 10a), especially over the northwestern TP.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Moderate Resolution Imaging Spectroradiometer (MODIS)",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "snow area ratio",
+            "target_entity_type": "Variable",
+            "paragraph": "To validate the CLM5 simulations of snow cover over TP, a daily cloudless Moderate Resolution Imaging Spectroradiometer (MODIS) snow area ratio dataset (2000-2015) with the 500 m spatial resolution (https://data.tpdc.ac.cn/en/data/94a8858b-3ace-488d-9233-75c021a964f0/) was obtained, this dataset is obtained by using a cloud removal algorithm based on cubic spline interpolation (Tang et al., 2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Moderate Resolution Imaging Spectroradiometer (MODIS)",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "land surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The MODIS monthly land surface temperature product with a 0.05\u00b0 \u00d7 0.05\u00b0 spatial resolution from 2002 to 2011 was also used (https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/MOD11C3).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Moderate Resolution Imaging Spectroradiometer (MODIS)",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "stem area index (SAI)",
+            "target_entity_type": "Variable",
+            "paragraph": "The SAI data which is used as the proxy of WGS area or coverage is derived from a MODIS consistent land surface parameters dataset (Lawrence and Chase, 2007; https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/lnd/clm2/mappingdata/grids/).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Winter Snow Cover",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Tibetan Plateau",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Abstract. Snow cover over Tibetan Plateau (TP) is not only a key land forcing for the regional and global climate but also an important water resource for surround regions. However, state-of-the-art climate models still exhibit substantial biases in simulating winter snow cover over the TP, which constitutes one of the major sources of uncertainty in climate prediction.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Community Land Model version 5 (CLM5)",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "offline simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "To conduct the offline simulation of CLM5 over TP, the 3-hourly China meteorological forcing dataset v1.6 (CMFD 1.6; https://data.tpdc.ac.cn/zh-hans/data/8028b944-daaa-4511-8769-965612652c49/) (Yang et al., 2010; He et al., 2020) with a horizontal resolution of 0.1\u00b0 \u00d7 0.1\u00b0 for the period 1979\u20132018 was obtained, CMFD 1.6 includes the surface air temperature, surface pressure, specific humidity, wind speed, precipitation, downward shortwave and longwave radiation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Community Land Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Community Land Model version 5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CLM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Tibetan Plateau",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "snow cover fraction",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cold surface temperature biases",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "surface energy balance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "water cycle",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "East Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "land surface models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "LSMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "PIEKTUK",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Community Land Model version 4.5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CLM4.5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SNICAR radiative transfer model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "fresh snow albedo scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Noah-MP land surface model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "snow depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "improved albedo scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Weather Research and Forecasting (WRF) model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "U.S. National Center for Atmospheric Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NCAR",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CLM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "snow cover parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "separate calculations of snow cover fraction (SCF) for accumulation and depletion stages",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "representations of topographic effects on snowmelt",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "influence of wind and air temperature on fresh snow density",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "SCF parameterizations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Simplified Simple Biosphere Model version 3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SSiB3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "three-dimensional subgrid terrain radiative effect scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "overestimation of surface solar radiation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "warm land surface temperature biases",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "withered grass stems",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "China meteorological forcing dataset v1.6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMFD",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.1\u00b0 \u00d7 0.1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "3-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "specific humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "downward shortwave and longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Moderate Resolution Imaging Spectroradiometer",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "MODIS snow area ratio dataset",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "500 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "0.05\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Global Land Surface Satellites (GLASS) albedo products",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.05\u00b0 \u00d7 0.05\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "8-day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MODIS monthly land surface temperature product",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "land surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "standard deviation of topography",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stem area index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SAI",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "USGS HYDRO1K 1-km dataset",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1-km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "MODIS consistent land surface parameters dataset",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "mean bias error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MBE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "snowfall events",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "snowmelt events",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "probability distribution of snow cover during snowfall",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "depletion curve",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CTL",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "MOD1",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "MOD2",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "25\u00b0N-40\u00b0N, 75\u00b0E\u2013105\u00b0E",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "spin-up",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "monthly output",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "MEB",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "total precipitation partitioning into snowfall",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Snow, Ice, and Aerosol Radiative (SNICAR) model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CMFD v2.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TPHiPr dataset",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "precipitation phase partitioning scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "linear ramp function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "snow redistribution and drifting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "terrain-induced three-dimensional radiation transfer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "wind effects on fresh snow density",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Community Earth System Model version 2.2.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "National Tibetan Plateau Data Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Global Land Surface Satellite (GLASS) project",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "U.S. Geological Survey",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "USGS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "CLM 3.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Crocus",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SURFEX v7.2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CoLM",
+            "entity_type": "Source"
+        }
+    ],
+    "referenced_works": []
+}

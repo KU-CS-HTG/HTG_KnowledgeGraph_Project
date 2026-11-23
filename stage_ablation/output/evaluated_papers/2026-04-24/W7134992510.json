@@ -1,0 +1,553 @@
+{
+    "uri": "https://openalex.org/W7134992510",
+    "title": "Uncertainty quantification for critical energy systems during compound extremes via BMW-GAM",
+    "venue": {
+        "name": "ArXiv.org",
+        "id": "https://openalex.org/S4393918464",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5082820100",
+            "display_name": "Mitchell Krock",
+            "orcid": "https://orcid.org/0000-0002-1628-1842"
+        },
+        {
+            "id": "https://openalex.org/A5128742034",
+            "display_name": "W. Neal Mann",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5128745411",
+            "display_name": "Zhi Zhou",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "Extreme weather poses a large risk to critical energy systems (Ekisheva, Rieder, Norris, Lauby, & Dobson 2021; Levin, Botterud, Mann, Kwon, & Zhou 2022). Uncertainty quantification of negative impacts is important for developing resilience, especially during compound extreme weather events involving multiple climate variables. We leverage BMW-GAM (Economou & Garry 2022), a copula workflow that relies on fitting marginal distributions with Bayesian generalized additive models in moving windows -- an embarrassingly parallel task. The Gaussian copula has separable multivariate space-time correlation, allowing for efficient emulation and likelihood fitting with big datasets. Overall, the formulation is interpretable and provides uncertainty quantification through probabilistic simulations of weather variables during extreme events. Our method is illustrated in an analysis of temperature, wind speed, and global horizontal irradiance from Argonne National Laboratory's high-fidelity climate model output ADDA.",
+    "field": "Statistical modeling of compound weather extremes",
+    "problem": "Quantifying the uncertainty of compound extreme weather impacts on energy systems is challenging, as running sufficient climate model simulations is often computationally prohibitive and existing data is inadequate for assessing the risk of rare events.",
+    "method": "The paper proposes a probabilistic workflow, BMW-GAM, that uses Bayesian generalized additive models in moving windows and a Gaussian copula to generate probabilistic simulations of multiple weather variables, allowing for uncertainty quantification during compound extreme weather events.",
+    "task": "The task is to construct a probabilistic model for uncertainty quantification during compound weather extremes, providing simulations of weather variables that can be used to assess risks for interdependent electricity and natural gas systems.",
+    "model": [
+        "ADDA",
+        "WRF",
+        "HadGEM",
+        "GFDL",
+        "CCSM",
+        "A-LEAF",
+        "NGTransient"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/uncertainty-quantification",
+            "display_name": "Uncertainty quantification",
+            "score": 0.6942999958992004
+        },
+        {
+            "id": "https://openalex.org/keywords/copula",
+            "display_name": "Copula (linguistics)",
+            "score": 0.5529000163078308
+        },
+        {
+            "id": "https://openalex.org/keywords/uncertainty-analysis",
+            "display_name": "Uncertainty analysis",
+            "score": 0.5123000144958496
+        },
+        {
+            "id": "https://openalex.org/keywords/leverage",
+            "display_name": "Leverage (statistics)",
+            "score": 0.4830000102519989
+        },
+        {
+            "id": "https://openalex.org/keywords/probabilistic-logic",
+            "display_name": "Probabilistic logic",
+            "score": 0.46219998598098755
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.46059998869895935
+        },
+        {
+            "id": "https://openalex.org/keywords/bayesian-probability",
+            "display_name": "Bayesian probability",
+            "score": 0.4580000042915344
+        },
+        {
+            "id": "https://openalex.org/keywords/sensitivity-analysis",
+            "display_name": "Sensitivity analysis",
+            "score": 0.40549999475479126
+        },
+        {
+            "id": "https://openalex.org/keywords/robustness",
+            "display_name": "Robustness (evolution)",
+            "score": 0.3896999955177307
+        },
+        {
+            "id": "https://openalex.org/keywords/embarrassingly-parallel",
+            "display_name": "Embarrassingly parallel",
+            "score": 0.38609999418258667
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C32230216",
+            "wikidata": "https://www.wikidata.org/wiki/Q7882499",
+            "display_name": "Uncertainty quantification",
+            "level": 2,
+            "score": 0.6942999958992004
+        },
+        {
+            "id": "https://openalex.org/C17618745",
+            "wikidata": "https://www.wikidata.org/wiki/Q207509",
+            "display_name": "Copula (linguistics)",
+            "level": 2,
+            "score": 0.5529000163078308
+        },
+        {
+            "id": "https://openalex.org/C177803969",
+            "wikidata": "https://www.wikidata.org/wiki/Q29205",
+            "display_name": "Uncertainty analysis",
+            "level": 2,
+            "score": 0.5123000144958496
+        },
+        {
+            "id": "https://openalex.org/C153083717",
+            "wikidata": "https://www.wikidata.org/wiki/Q6535263",
+            "display_name": "Leverage (statistics)",
+            "level": 2,
+            "score": 0.4830000102519989
+        },
+        {
+            "id": "https://openalex.org/C49937458",
+            "wikidata": "https://www.wikidata.org/wiki/Q2599292",
+            "display_name": "Probabilistic logic",
+            "level": 2,
+            "score": 0.46219998598098755
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.46059998869895935
+        },
+        {
+            "id": "https://openalex.org/C107673813",
+            "wikidata": "https://www.wikidata.org/wiki/Q812534",
+            "display_name": "Bayesian probability",
+            "level": 2,
+            "score": 0.4580000042915344
+        },
+        {
+            "id": "https://openalex.org/C149782125",
+            "wikidata": "https://www.wikidata.org/wiki/Q160039",
+            "display_name": "Econometrics",
+            "level": 1,
+            "score": 0.4499000012874603
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.43779999017715454
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4318000078201294
+        },
+        {
+            "id": "https://openalex.org/C176147448",
+            "wikidata": "https://www.wikidata.org/wiki/Q1889114",
+            "display_name": "Sensitivity analysis",
+            "level": 3,
+            "score": 0.40549999475479126
+        },
+        {
+            "id": "https://openalex.org/C63479239",
+            "wikidata": "https://www.wikidata.org/wiki/Q7353546",
+            "display_name": "Robustness (evolution)",
+            "level": 3,
+            "score": 0.3896999955177307
+        },
+        {
+            "id": "https://openalex.org/C126909462",
+            "wikidata": "https://www.wikidata.org/wiki/Q5369501",
+            "display_name": "Embarrassingly parallel",
+            "level": 3,
+            "score": 0.38609999418258667
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.3840999901294708
+        },
+        {
+            "id": "https://openalex.org/C161584116",
+            "wikidata": "https://www.wikidata.org/wiki/Q1952580",
+            "display_name": "Multivariate statistics",
+            "level": 2,
+            "score": 0.3433000147342682
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.33219999074935913
+        },
+        {
+            "id": "https://openalex.org/C162376815",
+            "wikidata": "https://www.wikidata.org/wiki/Q2158281",
+            "display_name": "Frequentist inference",
+            "level": 4,
+            "score": 0.3280999958515167
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.321399986743927
+        },
+        {
+            "id": "https://openalex.org/C149810388",
+            "wikidata": "https://www.wikidata.org/wiki/Q5374873",
+            "display_name": "Emulation",
+            "level": 2,
+            "score": 0.3212999999523163
+        },
+        {
+            "id": "https://openalex.org/C205537798",
+            "wikidata": "https://www.wikidata.org/wiki/Q1277161",
+            "display_name": "Extreme weather",
+            "level": 3,
+            "score": 0.3122999966144562
+        },
+        {
+            "id": "https://openalex.org/C19499675",
+            "wikidata": "https://www.wikidata.org/wiki/Q232207",
+            "display_name": "Monte Carlo method",
+            "level": 2,
+            "score": 0.3019999861717224
+        },
+        {
+            "id": "https://openalex.org/C161067210",
+            "wikidata": "https://www.wikidata.org/wiki/Q1464943",
+            "display_name": "Wind speed",
+            "level": 2,
+            "score": 0.29840001463890076
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.2955999970436096
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.29420000314712524
+        },
+        {
+            "id": "https://openalex.org/C2777606061",
+            "wikidata": "https://www.wikidata.org/wiki/Q16991115",
+            "display_name": "Tail dependence",
+            "level": 3,
+            "score": 0.28700000047683716
+        },
+        {
+            "id": "https://openalex.org/C160234255",
+            "wikidata": "https://www.wikidata.org/wiki/Q812535",
+            "display_name": "Bayesian inference",
+            "level": 3,
+            "score": 0.2851000130176544
+        },
+        {
+            "id": "https://openalex.org/C163716315",
+            "wikidata": "https://www.wikidata.org/wiki/Q901177",
+            "display_name": "Gaussian",
+            "level": 2,
+            "score": 0.2808000147342682
+        },
+        {
+            "id": "https://openalex.org/C61326573",
+            "wikidata": "https://www.wikidata.org/wiki/Q1496376",
+            "display_name": "Gaussian process",
+            "level": 3,
+            "score": 0.2745000123977661
+        },
+        {
+            "id": "https://openalex.org/C126255220",
+            "wikidata": "https://www.wikidata.org/wiki/Q141495",
+            "display_name": "Mathematical optimization",
+            "level": 1,
+            "score": 0.2703999876976013
+        },
+        {
+            "id": "https://openalex.org/C149441793",
+            "wikidata": "https://www.wikidata.org/wiki/Q200726",
+            "display_name": "Probability distribution",
+            "level": 2,
+            "score": 0.26589998602867126
+        },
+        {
+            "id": "https://openalex.org/C147581598",
+            "wikidata": "https://www.wikidata.org/wiki/Q729429",
+            "display_name": "Extreme value theory",
+            "level": 2,
+            "score": 0.2637999951839447
+        },
+        {
+            "id": "https://openalex.org/C2983637589",
+            "wikidata": "https://www.wikidata.org/wiki/Q1066823",
+            "display_name": "National weather service",
+            "level": 2,
+            "score": 0.257999986410141
+        },
+        {
+            "id": "https://openalex.org/C9695528",
+            "wikidata": "https://www.wikidata.org/wiki/Q7556707",
+            "display_name": "Solar irradiance",
+            "level": 2,
+            "score": 0.25609999895095825
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.2540000081062317
+        },
+        {
+            "id": "https://openalex.org/C137209882",
+            "wikidata": "https://www.wikidata.org/wiki/Q1403517",
+            "display_name": "Measurement uncertainty",
+            "level": 2,
+            "score": 0.25290000438690186
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a probabilistic workflow, BMW-GAM, that leverages Bayesian generalized additive models and a separable Gaussian copula to provide uncertainty quantification for compound extreme weather events for the purpose of assessing risks to critical energy systems.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "ADDA",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "WRF",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Argonne Downscaled Data Archive (ADDA), hosted at ClimRR hub (Argonne National Laboratory 2025), leverages the regional weather model WRF to dynamically downscale output from three global climate models (HadGEM, GFDL, CCSM) under various RCP emission scenarios (J. Wang & Kotamarthi 2015; Zobel, Wang, Wuebbles, & Kotamarthi 2017 2018).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ADDA",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "HadGEM",
+            "target_entity_type": "Source",
+            "paragraph": "Argonne Downscaled Data Archive (ADDA), hosted at ClimRR hub (Argonne National Laboratory 2025), leverages the regional weather model WRF to dynamically downscale output from three global climate models (HadGEM, GFDL, CCSM) under various RCP emission scenarios (J. Wang & Kotamarthi 2015; Zobel, Wang, Wuebbles, & Kotamarthi 2017 2018). Our analysis considers HadGEM data under RCP 8.5, without loss of generality; see Section 4 for more discussion on this matter.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ADDA",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "GFDL",
+            "target_entity_type": "Source",
+            "paragraph": "Argonne Downscaled Data Archive (ADDA), hosted at ClimRR hub (Argonne National Laboratory 2025), leverages the regional weather model WRF to dynamically downscale output from three global climate models (HadGEM, GFDL, CCSM) under various RCP emission scenarios (J. Wang & Kotamarthi 2015; Zobel, Wang, Wuebbles, & Kotamarthi 2017 2018).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "ADDA",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CCSM",
+            "target_entity_type": "Source",
+            "paragraph": "Argonne Downscaled Data Archive (ADDA), hosted at ClimRR hub (Argonne National Laboratory 2025), leverages the regional weather model WRF to dynamically downscale output from three global climate models (HadGEM, GFDL, CCSM) under various RCP emission scenarios (J. Wang & Kotamarthi 2015; Zobel, Wang, Wuebbles, & Kotamarthi 2017 2018).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Our method is illustrated in an analysis of temperature, wind speed, and global horizontal irradiance from Argonne National Laboratory's high-fidelity climate model output ADDA. Argonne Downscaled Data Archive (ADDA), hosted at ClimRR hub (Argonne National Laboratory 2025), leverages the regional weather model WRF to dynamically downscale output from three global climate models (HadGEM, GFDL, CCSM) under various RCP emission scenarios (J. Wang & Kotamarthi 2015; Zobel, Wang, Wuebbles, & Kotamarthi 2017 2018).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "wind speed",
+            "target_entity_type": "Variable",
+            "paragraph": "Our method is illustrated in an analysis of temperature, wind speed, and global horizontal irradiance from Argonne National Laboratory's high-fidelity climate model output ADDA. Argonne Downscaled Data Archive (ADDA), hosted at ClimRR hub (Argonne National Laboratory 2025), leverages the regional weather model WRF to dynamically downscale output from three global climate models (HadGEM, GFDL, CCSM) under various RCP emission scenarios (J. Wang & Kotamarthi 2015; Zobel, Wang, Wuebbles, & Kotamarthi 2017 2018).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WRF",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "global horizontal irradiance",
+            "target_entity_type": "Variable",
+            "paragraph": "Our method is illustrated in an analysis of temperature, wind speed, and global horizontal irradiance from Argonne National Laboratory's high-fidelity climate model output ADDA. Argonne Downscaled Data Archive (ADDA), hosted at ClimRR hub (Argonne National Laboratory 2025), leverages the regional weather model WRF to dynamically downscale output from three global climate models (HadGEM, GFDL, CCSM) under various RCP emission scenarios (J. Wang & Kotamarthi 2015; Zobel, Wang, Wuebbles, & Kotamarthi 2017 2018).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "winter storm",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "northeastern United States",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "the northeastern United States, targeting a five-day synthetic weather event, a winter storm with exceptionally low temperature.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Argonne National Laboratory",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Missouri",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "U.S. Department of Energy, Office of Science",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "UChicago Argonne, LLC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ADDA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CCSM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WRF",
+            "entity_type": "RCM"
+        },
+        {
+            "entity_instance": "RCP 8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "global horizontal irradiance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "three-hour",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Extreme weather",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "compound extreme weather events",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "winter storm",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Northeast U.S.",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "northeastern United States",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "New York City",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Delaware",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Sussex County",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Autocorrelation function",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "partial autocorrelation function",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "variograms",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ClimRR",
+            "entity_type": "Source"
+        }
+    ],
+    "referenced_works": []
+}

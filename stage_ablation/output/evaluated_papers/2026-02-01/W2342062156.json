@@ -1,0 +1,665 @@
+{
+    "uri": "https://openalex.org/W2342062156",
+    "title": "Predicting Climate Change Using Response Theory: Global Averages and Spatial Patterns",
+    "venue": {
+        "name": "Journal of Statistical Physics",
+        "id": "https://openalex.org/S185067381",
+        "type": "journal"
+    },
+    "publication_year": 2016,
+    "authors": [
+        {
+            "id": "https://openalex.org/A324860427",
+            "display_name": "Valerio Lucarini",
+            "orcid": "https://orcid.org/0000-0001-9392-1471"
+        },
+        {
+            "id": "https://openalex.org/A1750270675",
+            "display_name": "Francesco Ragone",
+            "orcid": "https://orcid.org/0000-0002-2493-7020"
+        },
+        {
+            "id": "https://openalex.org/A1756633773",
+            "display_name": "Frank Lunkeit",
+            "orcid": "https://orcid.org/0000-0002-7854-8282"
+        }
+    ],
+    "doi": "https://doi.org/10.1007/s10955-016-1506-z",
+    "abstract": null,
+    "field": "Climate response theory",
+    "problem": "Predicting climate response to various forcings is challenging, as direct simulations for every scenario are computationally prohibitive and existing theoretical methods, like the fluctuation-dissipation theorem, are prone to error when applied to complex, nonequilibrium systems like the climate.",
+    "method": "This paper proposes a method using response theory to predict climate change by deriving a linear Green function from test perturbation model runs, which allows for predicting the climate system's response to arbitrary forcing scenarios through simple convolution.",
+    "task": "The task is to apply response theory from nonequilibrium statistical mechanics to a general circulation model to predict changes in global averages and spatial patterns of surface temperature and precipitation resulting from increased CO2 concentration.",
+    "model": [
+        "PLASIM",
+        "PUMA",
+        "FAMOUS"
+    ],
+    "paper_screening": "no",
+    "keywords": [],
+    "concepts": [],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a method using response theory from statistical mechanics to predict global and spatial climate change, creating response operators from test simulations that project the climate's reaction to arbitrary CO2 forcing scenarios without requiring new, dedicated model runs.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "PUMA",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The dynamical core of PLASIM is based on the Portable University Model of the Atmosphere PUMA [59]. The atmospheric dynamics is modelled using the primitive equations formulated for vorticity, divergence, temperature and the logarithm of surface pressure. Moisture is included by transport of water vapour (specific humidity).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "spectral transform method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The governing equations are solved using the spectral transform method [60,61]. In the vertical, non-equally spaced sigma (pressure divided by surface pressure) levels are used.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "non-equally spaced sigma vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The governing equations are solved using the spectral transform method [60,61]. In the vertical, non-equally spaced sigma (pressure divided by surface pressure) levels are used.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "long-wave radiation parametrization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The parametrization of unresolved processes consists of long- [62] and short- [63] wave radiation, interactive clouds [64\u201366], moist [67,68] and dry convection, large-scale precipitation, boundary layer fluxes of latent and sensible heat and vertical and horizontal diffusion [69\u201372].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "short-wave radiation parametrization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The parametrization of unresolved processes consists of long- [62] and short- [63] wave radiation, interactive clouds [64\u201366], moist [67,68] and dry convection, large-scale precipitation, boundary layer fluxes of latent and sensible heat and vertical and horizontal diffusion [69\u201372].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "interactive clouds parametrization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The parametrization of unresolved processes consists of long- [62] and short- [63] wave radiation, interactive clouds [64\u201366], moist [67,68] and dry convection, large-scale precipitation, boundary layer fluxes of latent and sensible heat and vertical and horizontal diffusion [69\u201372].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "moist convection parametrization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The parametrization of unresolved processes consists of long- [62] and short- [63] wave radiation, interactive clouds [64\u201366], moist [67,68] and dry convection, large-scale precipitation, boundary layer fluxes of latent and sensible heat and vertical and horizontal diffusion [69\u201372].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "dry convection parametrization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The parametrization of unresolved processes consists of long- [62] and short- [63] wave radiation, interactive clouds [64\u201366], moist [67,68] and dry convection, large-scale precipitation, boundary layer fluxes of latent and sensible heat and vertical and horizontal diffusion [69\u201372].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "large-scale precipitation parametrization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The parametrization of unresolved processes consists of long- [62] and short- [63] wave radiation, interactive clouds [64\u201366], moist [67,68] and dry convection, large-scale precipitation, boundary layer fluxes of latent and sensible heat and vertical and horizontal diffusion [69\u201372].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "boundary layer fluxes parametrization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The parametrization of unresolved processes consists of long- [62] and short- [63] wave radiation, interactive clouds [64\u201366], moist [67,68] and dry convection, large-scale precipitation, boundary layer fluxes of latent and sensible heat and vertical and horizontal diffusion [69\u201372].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "vertical and horizontal diffusion parametrization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The parametrization of unresolved processes consists of long- [62] and short- [63] wave radiation, interactive clouds [64\u201366], moist [67,68] and dry convection, large-scale precipitation, boundary layer fluxes of latent and sensible heat and vertical and horizontal diffusion [69\u201372].",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "bucket model for soil hydrology",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The land surface scheme uses five diffusive layers for the temperature and a bucket model for the soil hydrology.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "50 m mixed-layer (swamp) ocean",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The oceanic part is a 50 m mixed-layer (swamp) ocean, which includes a thermodynamic sea ice model [73].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "50 m mixed-layer (swamp) ocean",
+            "source_entity_type": "SourceComponent",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "thermodynamic sea ice model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The oceanic part is a 50 m mixed-layer (swamp) ocean, which includes a thermodynamic sea ice model [73].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "horizontal diffusion for ocean heat transport",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The horizontal transport of heat in the ocean can either be prescribed or parametrized by horizontal diffusion. While in [36] the ocean transport was set to zero, in the experiments performed here we choose the second option, because having even a severely simplified representation of the feedbacks associated to the large scale heat transport performed by the ocean improves the realism of the response of the system.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "T21 resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The model is run at T21 resolution (approximately 5.6\u00b0 \u00d7 5.6\u00b0) with 10 vertical levels. While this resolution is relatively low, it is expected to be sufficient for obtaining a reasonable description of the large scale properties of the atmospheric dynamics, which are most relevant for the global features we are interested in.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "10 vertical levels",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The model is run at T21 resolution (approximately 5.6\u00b0 \u00d7 5.6\u00b0) with 10 vertical levels.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "O(10^5) degrees of freedom",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "PLASIM has O(10^5) degrees of freedom and provides a flexible tool for performing theoretical studies in climate dynamics.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "We assess strengths and limitations of the response theory in predicting the changes in the globally averaged values of surface temperature and of the yearly total precipitation, as well as in their spatial patterns.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "yearly total precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "We assess strengths and limitations of the response theory in predicting the changes in the globally averaged values of surface temperature and of the yearly total precipitation, as well as in their spatial patterns.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Equilibrium Climate Sensitivity ~ 4.9 K",
+            "target_entity_type": "Metric",
+            "paragraph": "We find that the asymptotic change in the surface temperature is given by the equilibrium climate sensitivity ECS = \u2206{Ts} ~ 4.9 K, which is just outside the likely range of values for the ECS elicited in [12].",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PLASIM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Transient Climate Sensitivity",
+            "target_entity_type": "Metric",
+            "paragraph": "A quantity that has attracted considerable interest in the climate community is the so-called transient climate sensitivity (TCS), which, as opposed to the ECS, which looks at asymptotic temperature changes, describes the change of {Ts} at the moment of CO2 concentration doubling following a 1 % per year increase [81].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "PLASIM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Planet Simulator",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PUMA",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "general circulation model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "University of Hamburg",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Reading",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Laboratoire de Physique de l'\u00c9cole Normale Sup\u00e9rieure de Lyon",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "control run",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "instantaneous doubling the CO2 concentration",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "1% yearly increase of the CO2 concentration up to its doubling",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "yearly total precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CO2 concentration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar constant",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "water vapour",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "specific humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vorticity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "divergence",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "logarithm of surface pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "long-wave radiation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "short-wave radiation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "interactive clouds",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "moist convection",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "dry convection",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "large-scale precipitation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "boundary layer fluxes of latent and sensible heat",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "vertical and horizontal diffusion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bucket model for the soil hydrology",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "horizontal diffusion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "T21 resolution",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "10 vertical levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "non-equally spaced sigma levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "50 m mixed-layer (swamp) ocean",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "thermodynamic sea ice model",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "spectral transform method",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "primitive equations",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "five diffusive layers for the temperature",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "control",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "perturbed",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "equilibrium climate sensitivity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "transient climate sensitivity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "atmosphere",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "ocean",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "land surface",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "sea ice",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "yearly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1 day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "T21",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "5.6\u00b0 \u00d7 5.6\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "N = 200",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "N = 20",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "polar regions",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "mid latitudes",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "equator",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "equatorial belt",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "subtropical band",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "hurricanes",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "extratropical cyclones",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "storm tracks",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "El-Ni\u00f1o-Southern Oscillation",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "meridional oceanic heat transport",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "tropical",
+            "entity_type": "ClimateZone"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1534652061",
+        "https://openalex.org/W2007442176",
+        "https://openalex.org/W2500101335",
+        "https://openalex.org/W2158697779",
+        "https://openalex.org/W6735431556",
+        "https://openalex.org/W2072040850",
+        "https://openalex.org/W2477102469",
+        "https://openalex.org/W2018351159",
+        "https://openalex.org/W1998525562",
+        "https://openalex.org/W2080058507",
+        "https://openalex.org/W2086470077",
+        "https://openalex.org/W2176027706",
+        "https://openalex.org/W2049359727",
+        "https://openalex.org/W2032626930",
+        "https://openalex.org/W2041965365",
+        "https://openalex.org/W2154984999",
+        "https://openalex.org/W2030114330",
+        "https://openalex.org/W2102703047",
+        "https://openalex.org/W2022727199",
+        "https://openalex.org/W2025900241",
+        "https://openalex.org/W2010502606",
+        "https://openalex.org/W2046207696",
+        "https://openalex.org/W2126770432",
+        "https://openalex.org/W2126583401",
+        "https://openalex.org/W2187868195",
+        "https://openalex.org/W2155441288",
+        "https://openalex.org/W1981101113",
+        "https://openalex.org/W2036002301",
+        "https://openalex.org/W1977226459",
+        "https://openalex.org/W1966441314",
+        "https://openalex.org/W1509469724",
+        "https://openalex.org/W2027797534",
+        "https://openalex.org/W2074878468",
+        "https://openalex.org/W1693784448",
+        "https://openalex.org/W2040602243",
+        "https://openalex.org/W1981705627",
+        "https://openalex.org/W1815024706",
+        "https://openalex.org/W4232484813",
+        "https://openalex.org/W2030887470",
+        "https://openalex.org/W2093944806",
+        "https://openalex.org/W2041360742",
+        "https://openalex.org/W2146156763",
+        "https://openalex.org/W2082193626",
+        "https://openalex.org/W2071665095",
+        "https://openalex.org/W2058392012",
+        "https://openalex.org/W2005542959",
+        "https://openalex.org/W1636226385",
+        "https://openalex.org/W2128144169",
+        "https://openalex.org/W2072082455",
+        "https://openalex.org/W2026529675",
+        "https://openalex.org/W2012910700",
+        "https://openalex.org/W1963545378",
+        "https://openalex.org/W2030794945",
+        "https://openalex.org/W2140571170",
+        "https://openalex.org/W1965818033",
+        "https://openalex.org/W2042507029",
+        "https://openalex.org/W2089727804",
+        "https://openalex.org/W4246395652",
+        "https://openalex.org/W2117920489",
+        "https://openalex.org/W2087638916",
+        "https://openalex.org/W1979916853",
+        "https://openalex.org/W2068856845",
+        "https://openalex.org/W3099865236",
+        "https://openalex.org/W2148650162",
+        "https://openalex.org/W2020881523",
+        "https://openalex.org/W1972946703",
+        "https://openalex.org/W2122511023",
+        "https://openalex.org/W1979833738",
+        "https://openalex.org/W2951418525",
+        "https://openalex.org/W2146529780",
+        "https://openalex.org/W2015952177",
+        "https://openalex.org/W2501677469",
+        "https://openalex.org/W2020301263",
+        "https://openalex.org/W2167469018",
+        "https://openalex.org/W2012828643",
+        "https://openalex.org/W2112162838",
+        "https://openalex.org/W2121045795",
+        "https://openalex.org/W2949647273",
+        "https://openalex.org/W2074008132",
+        "https://openalex.org/W2006420198",
+        "https://openalex.org/W2062622678",
+        "https://openalex.org/W1966947588",
+        "https://openalex.org/W2029443974",
+        "https://openalex.org/W2056042327",
+        "https://openalex.org/W2078680350",
+        "https://openalex.org/W1582592707",
+        "https://openalex.org/W1996064060",
+        "https://openalex.org/W2127151305"
+    ]
+}

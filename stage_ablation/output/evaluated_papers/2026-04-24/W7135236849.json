@@ -1,0 +1,766 @@
+{
+    "uri": "https://openalex.org/W7135236849",
+    "title": "Uncovering regional climate patterns in Turkey using multivariate functional data analysis",
+    "venue": {
+        "name": "G\u00fcm\u00fc\u015fhane \u00dcniversitesi Fen Bilimleri Enstit\u00fcs\u00fc Dergisi",
+        "id": "https://openalex.org/S4210234318",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5088089157",
+            "display_name": "\u00c7a\u011flar S\u00f6zen",
+            "orcid": "https://orcid.org/0000-0002-3732-5058"
+        },
+        {
+            "id": "https://openalex.org/A5125061138",
+            "display_name": "Y\u00fcksel \u00d6ner",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.17714/gumusfenbil.1825537",
+    "abstract": "This study investigates regional climate patterns in Turkey through multivariate Functional Data Analysis (FDA) using daily observations recorded at 81 meteorological stations over 2012\u20132018 (T = 2557 days). Five coupled climate variables\u2014mean temperature, total precipitation, temperature range, evaporation, and sunshine duration\u2014are transformed into smooth functional trajectories using Fourier basis expansions with roughness control, where smoothing levels are selected via generalized cross-validation (GCV). To summarize joint seasonal variability and cross-variable dependence, we apply multivariate functional principal component analysis (MFPCA) and obtain low-dimensional score representations for each station. These scores are then used in a model-based clustering framework, with the number of climate regimes selected by the Bayesian Information Criterion (BIC). Finally, functional ANOVA (FANOVA) procedures are employed to evaluate whether the identified regimes differ significantly for each variable on the functional scale. The results reveal distinct data-driven climate regimes and indicate that regime separation is driven primarily by temperature range, evaporation, and sunshine duration, whereas differences in mean temperature and precipitation are comparatively weaker. Overall, the proposed FDA pipeline provides an interpretable and statistically principled framework for regional climate classification and functional inference, offering useful insights for climate monitoring and environmental modeling in Turkey.",
+    "field": "Statistical climatology",
+    "problem": "Conventional multivariate methods struggle to capture the continuous seasonal dynamics, temporal dependence, and coupled relationships across multiple climate variables, as they treat time-indexed observations as independent scalar measurements rather than as smooth functional trajectories, limiting the ability to characterize complex regional climate patterns.",
+    "method": "The study proposes a multivariate functional data analysis pipeline that smooths daily climate data, applies principal component analysis and model-based clustering to identify regimes, and uses functional ANOVA to test for significant differences and determine the key variables driving climate separation across Turkey.",
+    "task": "The task is to identify regional climate patterns in Turkey by applying a multivariate functional data analysis pipeline to daily time-series observations of five coupled climate variables from 81 meteorological stations.",
+    "model": [
+        "no"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/functional-data-analysis",
+            "display_name": "Functional data analysis",
+            "score": 0.7391999959945679
+        },
+        {
+            "id": "https://openalex.org/keywords/principal-component-analysis",
+            "display_name": "Principal component analysis",
+            "score": 0.7103999853134155
+        },
+        {
+            "id": "https://openalex.org/keywords/multivariate-statistics",
+            "display_name": "Multivariate statistics",
+            "score": 0.6676999926567078
+        },
+        {
+            "id": "https://openalex.org/keywords/functional-principal-component-analysis",
+            "display_name": "Functional principal component analysis",
+            "score": 0.5440000295639038
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.5401999950408936
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.5274999737739563
+        },
+        {
+            "id": "https://openalex.org/keywords/multivariate-analysis",
+            "display_name": "Multivariate analysis",
+            "score": 0.4717000126838684
+        },
+        {
+            "id": "https://openalex.org/keywords/smoothing",
+            "display_name": "Smoothing",
+            "score": 0.43220001459121704
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C51820054",
+            "wikidata": "https://www.wikidata.org/wiki/Q5508814",
+            "display_name": "Functional data analysis",
+            "level": 2,
+            "score": 0.7391999959945679
+        },
+        {
+            "id": "https://openalex.org/C27438332",
+            "wikidata": "https://www.wikidata.org/wiki/Q2873",
+            "display_name": "Principal component analysis",
+            "level": 2,
+            "score": 0.7103999853134155
+        },
+        {
+            "id": "https://openalex.org/C161584116",
+            "wikidata": "https://www.wikidata.org/wiki/Q1952580",
+            "display_name": "Multivariate statistics",
+            "level": 2,
+            "score": 0.6676999926567078
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.6123999953269958
+        },
+        {
+            "id": "https://openalex.org/C71176878",
+            "wikidata": "https://www.wikidata.org/wiki/Q17014987",
+            "display_name": "Functional principal component analysis",
+            "level": 3,
+            "score": 0.5440000295639038
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.5401999950408936
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.5274999737739563
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.4918000102043152
+        },
+        {
+            "id": "https://openalex.org/C38180746",
+            "wikidata": "https://www.wikidata.org/wiki/Q1952580",
+            "display_name": "Multivariate analysis",
+            "level": 2,
+            "score": 0.4717000126838684
+        },
+        {
+            "id": "https://openalex.org/C3770464",
+            "wikidata": "https://www.wikidata.org/wiki/Q775963",
+            "display_name": "Smoothing",
+            "level": 2,
+            "score": 0.43220001459121704
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4052000045776367
+        },
+        {
+            "id": "https://openalex.org/C107673813",
+            "wikidata": "https://www.wikidata.org/wiki/Q812534",
+            "display_name": "Bayesian probability",
+            "level": 2,
+            "score": 0.40230000019073486
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.373199999332428
+        },
+        {
+            "id": "https://openalex.org/C73555534",
+            "wikidata": "https://www.wikidata.org/wiki/Q622825",
+            "display_name": "Cluster analysis",
+            "level": 2,
+            "score": 0.3718999922275543
+        },
+        {
+            "id": "https://openalex.org/C197529216",
+            "wikidata": "https://www.wikidata.org/wiki/Q14907183",
+            "display_name": "Sunshine duration",
+            "level": 3,
+            "score": 0.3662000000476837
+        },
+        {
+            "id": "https://openalex.org/C149782125",
+            "wikidata": "https://www.wikidata.org/wiki/Q160039",
+            "display_name": "Econometrics",
+            "level": 1,
+            "score": 0.34450000524520874
+        },
+        {
+            "id": "https://openalex.org/C42683663",
+            "wikidata": "https://www.wikidata.org/wiki/Q3517834",
+            "display_name": "Mean radiant temperature",
+            "level": 3,
+            "score": 0.3319999873638153
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.311599999666214
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.30090001225471497
+        },
+        {
+            "id": "https://openalex.org/C97256817",
+            "wikidata": "https://www.wikidata.org/wiki/Q1462316",
+            "display_name": "Spurious relationship",
+            "level": 2,
+            "score": 0.27410000562667847
+        },
+        {
+            "id": "https://openalex.org/C119043178",
+            "wikidata": "https://www.wikidata.org/wiki/Q320723",
+            "display_name": "Covariate",
+            "level": 2,
+            "score": 0.27300000190734863
+        },
+        {
+            "id": "https://openalex.org/C192901106",
+            "wikidata": "https://www.wikidata.org/wiki/Q12432978",
+            "display_name": "Geopotential height",
+            "level": 3,
+            "score": 0.27239999175071716
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.26899999380111694
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.26669999957084656
+        },
+        {
+            "id": "https://openalex.org/C148298330",
+            "wikidata": "https://www.wikidata.org/wiki/Q1784754",
+            "display_name": "Correspondence analysis",
+            "level": 2,
+            "score": 0.26019999384880066
+        },
+        {
+            "id": "https://openalex.org/C178650346",
+            "wikidata": "https://www.wikidata.org/wiki/Q201984",
+            "display_name": "Covariance",
+            "level": 2,
+            "score": 0.2554999887943268
+        },
+        {
+            "id": "https://openalex.org/C114990195",
+            "wikidata": "https://www.wikidata.org/wiki/Q1430548",
+            "display_name": "Effects of global warming",
+            "level": 4,
+            "score": 0.25459998846054077
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This study proposes a multivariate functional data analysis pipeline that integrates clustering with functional ANOVA to classify Turkey's regional climate regimes and statistically determine which climate variables primarily drive their differences.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "meteorological station instruments",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "mean daily temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "We analyze multivariate functional climate trajectories derived from daily observations recorded by the Turkish State Meteorological Service (TSMS) over 2012\u20132018 at N = 81 meteorological stations (one representative station per province; province names are used only as geographic labels) (TSMS, 2018). The five variables are mean daily temperature X1 (t), daily total precipitation X2(t), daily temperature range X3(t), daily evaporation amount X4(t), and daily sunshine duration X5(t), observed on a common daily index t =",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "meteorological station instruments",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "daily total precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "We analyze multivariate functional climate trajectories derived from daily observations recorded by the Turkish State Meteorological Service (TSMS) over 2012\u20132018 at N = 81 meteorological stations (one representative station per province; province names are used only as geographic labels) (TSMS, 2018). The five variables are mean daily temperature X1 (t), daily total precipitation X2(t), daily temperature range X3(t), daily evaporation amount X4(t), and daily sunshine duration X5(t), observed on a common daily index t =",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "meteorological station instruments",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "daily temperature range",
+            "target_entity_type": "Variable",
+            "paragraph": "We analyze multivariate functional climate trajectories derived from daily observations recorded by the Turkish State Meteorological Service (TSMS) over 2012\u20132018 at N = 81 meteorological stations (one representative station per province; province names are used only as geographic labels) (TSMS, 2018). The five variables are mean daily temperature X1 (t), daily total precipitation X2(t), daily temperature range X3(t), daily evaporation amount X4(t), and daily sunshine duration X5(t), observed on a common daily index t =",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "meteorological station instruments",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "daily evaporation amount",
+            "target_entity_type": "Variable",
+            "paragraph": "We analyze multivariate functional climate trajectories derived from daily observations recorded by the Turkish State Meteorological Service (TSMS) over 2012\u20132018 at N = 81 meteorological stations (one representative station per province; province names are used only as geographic labels) (TSMS, 2018). The five variables are mean daily temperature X1 (t), daily total precipitation X2(t), daily temperature range X3(t), daily evaporation amount X4(t), and daily sunshine duration X5(t), observed on a common daily index t =",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "meteorological station instruments",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "daily sunshine duration",
+            "target_entity_type": "Variable",
+            "paragraph": "We analyze multivariate functional climate trajectories derived from daily observations recorded by the Turkish State Meteorological Service (TSMS) over 2012\u20132018 at N = 81 meteorological stations (one representative station per province; province names are used only as geographic labels) (TSMS, 2018). The five variables are mean daily temperature X1 (t), daily total precipitation X2(t), daily temperature range X3(t), daily evaporation amount X4(t), and daily sunshine duration X5(t), observed on a common daily index t =",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "meteorological station instruments",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "meteorological stations",
+            "target_entity_type": "Platform",
+            "paragraph": "This study investigates regional climate patterns in Turkey through multivariate Functional Data Analysis (FDA) using daily observations recorded at 81 meteorological stations over 2012\u20132018 (T = 2557 days).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Turkey",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Kars",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "\u00c7anakkale",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Erzincan",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Bing\u00f6l",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Malatya",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Artvin",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Giresun",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Ordu",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Rize",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Trabzon",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Amasya",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Bart\u0131n",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "\u00c7ank\u0131r\u0131",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "\u00c7orum",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Kastamonu",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Samsun",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Sinop",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Tokat",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Zonguldak",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Bilecik",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Bolu",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "D\u00fczce",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Kocaeli",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Sakarya",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Yalova",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Edirne",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "K\u0131rklareli",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Tekirda\u011f",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "\u0130stanbul",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Afyonkarahisar",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Denizli",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "\u0130zmir",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "K\u00fctahya",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Manisa",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "U\u015fak",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Ankara",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Karaman",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Konya",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Aksaray",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Kayseri",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "K\u0131r\u0131kkale",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Nev\u015fehir",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Ni\u011fde",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Sivas",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Yozgat",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Burdur",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Isparta",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Kahramanmara\u015f",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Ad\u0131yaman",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Batman",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Diyarbak\u0131r",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Gaziantep",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Kilis",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Mardin",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Siirt",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "\u015eanl\u0131urfa",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "\u015e\u0131rnak",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "A\u011fr\u0131",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Ardahan",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Erzurum",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Bayburt",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "I\u011fd\u0131r",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Bitlis",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Elaz\u0131\u011f",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Hakk\u00e2ri",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Mu\u015f",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Tunceli",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Van",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "G\u00fcm\u00fc\u015fhane",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Karab\u00fck",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Bursa",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Eski\u015fehir",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Adana",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Antalya",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Mu\u011fla",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Bal\u0131kesir",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Ayd\u0131n",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Hatay",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Mersin",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Osmaniye",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Turkish State Meteorological Service",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "G\u00fcm\u00fc\u015fhane University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Giresun University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Ondokuz May\u0131s University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Turkish State Meteorological Service",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "mean temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature range",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evaporation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sunshine duration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmos",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "land",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "meteorological stations",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "generalized cross-validation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Bayesian Information Criterion",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "functional ANOVA",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pointwise F-test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "L2-norm (global) test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "F-type global test",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "p-value",
+            "entity_type": "Metric"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1983908352",
+        "https://openalex.org/W1990369652",
+        "https://openalex.org/W1996619541",
+        "https://openalex.org/W2050850754",
+        "https://openalex.org/W2076434863",
+        "https://openalex.org/W2150097763",
+        "https://openalex.org/W2230970864",
+        "https://openalex.org/W2804982730",
+        "https://openalex.org/W3000332379",
+        "https://openalex.org/W3134148606",
+        "https://openalex.org/W4205462863",
+        "https://openalex.org/W4292156489",
+        "https://openalex.org/W4317831475"
+    ]
+}

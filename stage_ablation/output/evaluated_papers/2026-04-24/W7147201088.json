@@ -1,0 +1,1094 @@
+{
+    "uri": "https://openalex.org/W7147201088",
+    "title": "Daily Human Thermal Index Dataset for India (HiTIC-India) at 1-km Spatial Resolution (2003\u20132020)",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": null,
+            "display_name": "Subhransu Sekhar Gouda",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Saket Dubey",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Vrinda Kankanala",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Jasinta Gera",
+            "orcid": null
+        },
+        {
+            "id": null,
+            "display_name": "Sukeerthi Bharatha",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/essd-2026-103",
+    "abstract": "Abstract. Human exposure to extreme heat and cold poses increasing risks to public health, labour productivity, and urban sustainability, particularly in densely populated and climate-sensitive regions such as India. Human-perceived temperature (HPT) indices provide a more realistic measure of thermal stress than air temperature alone by integrating multiple meteorological factors. Here, we present the Human Thermal Index Collection for India (HiTIC-India), a high-resolution daily gridded dataset comprising twelve widely used HPT indices at 1 km spatial resolution for 2003\u20132020. The indices are initially derived from ERA5-based meteorological data and then downscaled using a Light Gradient Boosting Machine (LightGBM) framework. This downscaling incorporates satellite-derived land surface temperature, precipitable water vapour, population density, and topographic variables (slope, elevation and aspect) to generate spatially continuous predictions at 1 km resolution. Model valuation shows high prediction accuracy across all indices, with a mean root-mean-square error (RMSE) of 3.12 \u00b0C, a coefficient of determination (R\u00b2) of 0.89, and a mean absolute error (MAE) of 2.39 \u00b0C. The resulting dataset significantly captures local-scale variability in heat and cold stress across India\u2019s diverse climatic and physiographic zones. HiTIC-India also supports numerous applications, including public health risk evaluation, urban heat exposure analysis, labour productivity assessment, and climate adaptation and mitigation planning. By providing consistent daily HPT datasets, HiTIC-India provides a comprehensive, high-resolution, and publicly accessible resource for climate\u2013health research and evidence-based decision-making under warming climate.",
+    "field": "Human thermal stress",
+    "problem": "Existing human thermal stress assessments rely on sparse meteorological observations or coarse-resolution climate products, which are unable to capture the fine-scale spatial variability required for accurate local-level analysis and public health planning.",
+    "method": "This study presents a method to generate a high-resolution (1-km) daily human thermal index dataset for India by downscaling coarse ERA5-derived indices using a LightGBM machine learning model that incorporates satellite-derived and topographic covariates.",
+    "task": "The task is to generate a high-resolution (1-km) daily dataset of twelve human thermal indices for India (2003\u20132020) by downscaling ERA5 reanalysis data using a LightGBM machine learning model with satellite-derived and topographic covariates.",
+    "model": [
+        "ERA5"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.6664000153541565
+        },
+        {
+            "id": "https://openalex.org/keywords/urban-heat-island",
+            "display_name": "Urban heat island",
+            "score": 0.45489999651908875
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.44530001282691956
+        },
+        {
+            "id": "https://openalex.org/keywords/mean-radiant-temperature",
+            "display_name": "Mean radiant temperature",
+            "score": 0.4302999973297119
+        },
+        {
+            "id": "https://openalex.org/keywords/elevation",
+            "display_name": "Elevation (ballistics)",
+            "score": 0.4189999997615814
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.4189999997615814
+        },
+        {
+            "id": "https://openalex.org/keywords/index",
+            "display_name": "Index (typography)",
+            "score": 0.39329999685287476
+        },
+        {
+            "id": "https://openalex.org/keywords/population",
+            "display_name": "Population",
+            "score": 0.39079999923706055
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-extremes",
+            "display_name": "Climate extremes",
+            "score": 0.3702999949455261
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.7257000207901001
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.6664000153541565
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.511900007724762
+        },
+        {
+            "id": "https://openalex.org/C54005896",
+            "wikidata": "https://www.wikidata.org/wiki/Q215712",
+            "display_name": "Urban heat island",
+            "level": 2,
+            "score": 0.45489999651908875
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.44530001282691956
+        },
+        {
+            "id": "https://openalex.org/C42683663",
+            "wikidata": "https://www.wikidata.org/wiki/Q3517834",
+            "display_name": "Mean radiant temperature",
+            "level": 3,
+            "score": 0.4302999973297119
+        },
+        {
+            "id": "https://openalex.org/C37054046",
+            "wikidata": "https://www.wikidata.org/wiki/Q641888",
+            "display_name": "Elevation (ballistics)",
+            "level": 2,
+            "score": 0.4189999997615814
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.4189999997615814
+        },
+        {
+            "id": "https://openalex.org/C2777382242",
+            "wikidata": "https://www.wikidata.org/wiki/Q6017816",
+            "display_name": "Index (typography)",
+            "level": 2,
+            "score": 0.39329999685287476
+        },
+        {
+            "id": "https://openalex.org/C2908647359",
+            "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+            "display_name": "Population",
+            "level": 2,
+            "score": 0.39079999923706055
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.38999998569488525
+        },
+        {
+            "id": "https://openalex.org/C2993643576",
+            "wikidata": "https://www.wikidata.org/wiki/Q1277161",
+            "display_name": "Climate extremes",
+            "level": 3,
+            "score": 0.3702999949455261
+        },
+        {
+            "id": "https://openalex.org/C2777129202",
+            "wikidata": "https://www.wikidata.org/wiki/Q190107",
+            "display_name": "Weather station",
+            "level": 2,
+            "score": 0.3686999976634979
+        },
+        {
+            "id": "https://openalex.org/C94747663",
+            "wikidata": "https://www.wikidata.org/wiki/Q7574086",
+            "display_name": "Spatial variability",
+            "level": 2,
+            "score": 0.3560999929904938
+        },
+        {
+            "id": "https://openalex.org/C156008332",
+            "wikidata": "https://www.wikidata.org/wiki/Q778526",
+            "display_name": "Precipitable water",
+            "level": 3,
+            "score": 0.31790000200271606
+        },
+        {
+            "id": "https://openalex.org/C158709400",
+            "wikidata": "https://www.wikidata.org/wiki/Q3578586",
+            "display_name": "Spatial ecology",
+            "level": 2,
+            "score": 0.31709998846054077
+        },
+        {
+            "id": "https://openalex.org/C607359",
+            "wikidata": "https://www.wikidata.org/wiki/Q845339",
+            "display_name": "Atmospheric temperature",
+            "level": 2,
+            "score": 0.3156000077724457
+        },
+        {
+            "id": "https://openalex.org/C2987418964",
+            "wikidata": "https://www.wikidata.org/wiki/Q242165",
+            "display_name": "Heat stress",
+            "level": 2,
+            "score": 0.31459999084472656
+        },
+        {
+            "id": "https://openalex.org/C139945424",
+            "wikidata": "https://www.wikidata.org/wiki/Q1940696",
+            "display_name": "Mean squared error",
+            "level": 2,
+            "score": 0.3133000135421753
+        },
+        {
+            "id": "https://openalex.org/C69332959",
+            "wikidata": "https://www.wikidata.org/wiki/Q2141844",
+            "display_name": "Heat index",
+            "level": 3,
+            "score": 0.3102000057697296
+        },
+        {
+            "id": "https://openalex.org/C2983363897",
+            "wikidata": "https://www.wikidata.org/wiki/Q845339",
+            "display_name": "Air temperature",
+            "level": 2,
+            "score": 0.30480000376701355
+        },
+        {
+            "id": "https://openalex.org/C197046000",
+            "wikidata": "https://www.wikidata.org/wiki/Q7561",
+            "display_name": "Snow",
+            "level": 2,
+            "score": 0.2992999851703644
+        },
+        {
+            "id": "https://openalex.org/C12725497",
+            "wikidata": "https://www.wikidata.org/wiki/Q810247",
+            "display_name": "Baseline (sea)",
+            "level": 2,
+            "score": 0.29429998993873596
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.2906999886035919
+        },
+        {
+            "id": "https://openalex.org/C2993190167",
+            "wikidata": "https://www.wikidata.org/wiki/Q215864",
+            "display_name": "Extreme heat",
+            "level": 3,
+            "score": 0.28619998693466187
+        },
+        {
+            "id": "https://openalex.org/C2993220731",
+            "wikidata": "https://www.wikidata.org/wiki/Q215864",
+            "display_name": "Heat wave",
+            "level": 3,
+            "score": 0.28369998931884766
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.2809999883174896
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.26460000872612
+        },
+        {
+            "id": "https://openalex.org/C1549246",
+            "wikidata": "https://www.wikidata.org/wiki/Q718775",
+            "display_name": "Normalized Difference Vegetation Index",
+            "level": 3,
+            "score": 0.2632000148296356
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents HiTIC-India, a high-resolution (1-km) daily dataset of twelve human thermal indices for India (2003\u20132020), created by downscaling ERA5 reanalysis data using a LightGBM machine learning framework to capture localized thermal stress.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "1-km Spatial Resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Daily Human Thermal Index Dataset for India (HiTIC-India) at 1-km Spatial Resolution (2003\u20132020). Here, we present the Human Thermal Index Collection for India (HiTIC-India), a high-resolution daily gridded dataset comprising twelve widely used HPT indices at 1 km spatial resolution for 2003-2020. This study presents HiTIC-India, a high-resolution (1 km) gridded dataset of twelve HPT indices spanning 2003\u20132020. To address this gap, we present the HiTIC-India, a daily gridded dataset comprising 12 key HPT indices at a 1 km resolution covering the period 2003\u20132020.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "ERA5",
+            "target_entity_type": "Source",
+            "paragraph": "The indices are initially derived from ERA5-based meteorological data and then downscaled using a Light Gradient Boosting Machine (LightGBM) framework. By integrating ERA5 reanalysis with satellite-derived and topographic covariates through a LightGBM framework, we have generated a spatially consistent record of thermal conditions across India.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Light Gradient Boosting Machine",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The indices are initially derived from ERA5-based meteorological data and then downscaled using a Light Gradient Boosting Machine (LightGBM) framework. Given its combination of efficiency, robustness, and flexibility, LightGBM is adopted in this study as the primary modelling framework for generating high-resolution HPT datasets. By integrating ERA5 reanalysis with satellite-derived and topographic covariates through a LightGBM framework, we have generated a spatially consistent record of thermal conditions across India.",
+            "ontology_conformed": false,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root-mean-square error (RMSE) of 3.12 \u00b0C",
+            "target_entity_type": "Metric",
+            "paragraph": "Model valuation shows high prediction accuracy across all indices, with a mean root-mean-square error (RMSE) of 3.12 \u00b0C, a coefficient of determination (R2) of 0.89, and a mean absolute error (MAE) of 2.39 \u00b0C.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "coefficient of determination (R\u00b2) of 0.89",
+            "target_entity_type": "Metric",
+            "paragraph": "Model valuation shows high prediction accuracy across all indices, with a mean root-mean-square error (RMSE) of 3.12 \u00b0C, a coefficient of determination (R2) of 0.89, and a mean absolute error (MAE) of 2.39 \u00b0C.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean absolute error (MAE) of 2.39 \u00b0C",
+            "target_entity_type": "Metric",
+            "paragraph": "Model valuation shows high prediction accuracy across all indices, with a mean root-mean-square error (RMSE) of 3.12 \u00b0C, a coefficient of determination (R2) of 0.89, and a mean absolute error (MAE) of 2.39 \u00b0C.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "heatwaves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "India",
+            "target_entity_type": "Country",
+            "paragraph": "Over the past few decades, India has seen a notable rise in extreme weather events, posing escalating risks to public health. These risks are further amplified by the country's dense population, rapid urbanisation, and persistent socioeconomic inequalities (Oakes, 2009). Extreme thermal events, particularly heatwaves during the pre-monsoon and summer months (March-July) and cold waves in winter (December-February), now account for hundreds of deaths annually, with heat-related mortalities increasing by approximately 146% between 1967 and 2009 (Mazdiyasni et al., 2025; Ray et al., 2021).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "cold waves",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "India",
+            "target_entity_type": "Country",
+            "paragraph": "Over the past few decades, India has seen a notable rise in extreme weather events, posing escalating risks to public health. These risks are further amplified by the country's dense population, rapid urbanisation, and persistent socioeconomic inequalities (Oakes, 2009). Extreme thermal events, particularly heatwaves during the pre-monsoon and summer months (March-July) and cold waves in winter (December-February), now account for hundreds of deaths annually, with heat-related mortalities increasing by approximately 146% between 1967 and 2009 (Mazdiyasni et al., 2025; Ray et al., 2021).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "2003 European heatwave",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "European",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The historical record underscores the severe consequences of these thermal extremes, with the 2003 European and 2010 Russian heatwaves resulting in over 70,000 and 55,000 excess deaths, respectively (Barriopedro et al., 2011; Robine et al., 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "2010 Russian heatwave",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Russian",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The historical record underscores the severe consequences of these thermal extremes, with the 2003 European and 2010 Russian heatwaves resulting in over 70,000 and 55,000 excess deaths, respectively (Barriopedro et al., 2011; Robine et al., 2008).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "cold-wave events",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Madrid",
+            "target_entity_type": "City",
+            "paragraph": "Between 2000 and 2013, Madrid recorded nearly 900 deaths across 1,542 cold-wave events (L\u00f3pez-Bueno et al., 2021), while in the United States, extreme cold accounted for approximately 63% of all weather-related fatalities from 2006 to 2010 (Berko et al., 2014).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "extreme cold",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "United States",
+            "target_entity_type": "Country",
+            "paragraph": "Between 2000 and 2013, Madrid recorded nearly 900 deaths across 1,542 cold-wave events (L\u00f3pez-Bueno et al., 2021), while in the United States, extreme cold accounted for approximately 63% of all weather-related fatalities from 2006 to 2010 (Berko et al., 2014).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "May 2010 heatwave",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Ahmedabad",
+            "target_entity_type": "City",
+            "paragraph": "Major urban centres have recorded substantial spikes in death rates during intense heatwaves, including the May 2010 heatwave in Ahmedabad (Azhar et al., 2014), and prolonged high-temperature periods in Surat during 2014-2015 (Rathi et al., 2017).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "prolonged high-temperature periods",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Surat",
+            "target_entity_type": "City",
+            "paragraph": "Major urban centres have recorded substantial spikes in death rates during intense heatwaves, including the May 2010 heatwave in Ahmedabad (Azhar et al., 2014), and prolonged high-temperature periods in Surat during 2014-2015 (Rathi et al., 2017).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "cold-wave events",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Uttar Pradesh",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Historical records from 1978 to 2014 indicate that hundreds of cold-wave events have claimed thousands of lives, with the highest casualties traditionally concentrated in northern states like Uttar Pradesh and Bihar (Malik et al., 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "cold-wave events",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Bihar",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Historical records from 1978 to 2014 indicate that hundreds of cold-wave events have claimed thousands of lives, with the highest casualties traditionally concentrated in northern states like Uttar Pradesh and Bihar (Malik et al., 2020).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "air temperature at 2 m height",
+            "target_entity_type": "Variable",
+            "paragraph": "This study includes twelve core HPT indices calculated using four meteorological variables: air temperature at 2 m height, relative humidity at 2 m height (RH), actual vapour pressure (Ea), and wind speed. These variables are obtained as daily gridded products from the ERA5 agro-meteorological indicators (0.1\u00b0 \u00d7 0.1\u00b0) and the Copernicus Climate Change Service Climate Data Store (0.25\u00b0 \u00d7 0.25\u00b0).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "relative humidity at 2 m height",
+            "target_entity_type": "Variable",
+            "paragraph": "This study includes twelve core HPT indices calculated using four meteorological variables: air temperature at 2 m height, relative humidity at 2 m height (RH), actual vapour pressure (Ea), and wind speed. These variables are obtained as daily gridded products from the ERA5 agro-meteorological indicators (0.1\u00b0 \u00d7 0.1\u00b0) and the Copernicus Climate Change Service Climate Data Store (0.25\u00b0 \u00d7 0.25\u00b0).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "actual vapour pressure",
+            "target_entity_type": "Variable",
+            "paragraph": "This study includes twelve core HPT indices calculated using four meteorological variables: air temperature at 2 m height, relative humidity at 2 m height (RH), actual vapour pressure (Ea), and wind speed. These variables are obtained as daily gridded products from the ERA5 agro-meteorological indicators (0.1\u00b0 \u00d7 0.1\u00b0) and the Copernicus Climate Change Service Climate Data Store (0.25\u00b0 \u00d7 0.25\u00b0).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "wind speed",
+            "target_entity_type": "Variable",
+            "paragraph": "This study includes twelve core HPT indices calculated using four meteorological variables: air temperature at 2 m height, relative humidity at 2 m height (RH), actual vapour pressure (Ea), and wind speed. These variables are obtained as daily gridded products from the ERA5 agro-meteorological indicators (0.1\u00b0 \u00d7 0.1\u00b0) and the Copernicus Climate Change Service Climate Data Store (0.25\u00b0 \u00d7 0.25\u00b0).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Indoor Apparent Temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Discomfort Index",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Effective Temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Heat Index",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Humidex",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Modified Discomfort Index",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Net Effective Temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Outdoor Shaded Apparent Temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Surface Air Temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Simplified Wet-Bulb Globe Temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Wet-Bulb Temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "HiTIC-India",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Wind Chill Temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "All meteorological variables are harmonized to a common daily spatial resolution of 0.1\u00b0 \u00d7 0.1\u00b0, after which twelve HPT indices including Indoor Apparent Temperature (ATin), Discomfort Index (DI), Effective Temperature (ET), Heat Index (HI), Humidex (HMI), Modified Discomfort Index (MDI), Net Effective Temperature (NET), Outdoor Shaded Apparent Temperature (ATout), Surface Air Temperature (SAT), Simplified Wet-Bulb Globe Temperature (SWBGT), Wet-Bulb Temperature (WBT), and Wind Chill Temperature (WCT) are calculated using standard formulations (Table 1).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Moderate Resolution Imaging Spectroradiometer",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "The LST is included as a key covariate and is obtained from the Moderate Resolution Imaging Spectroradiometer (MODIS).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-Error-Removed Improved-Terrain (MERIT) Digital Elevation Model (DEM)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "elevation",
+            "target_entity_type": "Variable",
+            "paragraph": "Topographic factors such as elevation, slope, and aspect are derived from the Multi-Error-Removed Improved-Terrain (MERIT) Digital Elevation Model (DEM).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-Error-Removed Improved-Terrain (MERIT) Digital Elevation Model (DEM)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "slope",
+            "target_entity_type": "Variable",
+            "paragraph": "Topographic factors such as elevation, slope, and aspect are derived from the Multi-Error-Removed Improved-Terrain (MERIT) Digital Elevation Model (DEM).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Multi-Error-Removed Improved-Terrain (MERIT) Digital Elevation Model (DEM)",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "aspect",
+            "target_entity_type": "Variable",
+            "paragraph": "Topographic factors such as elevation, slope, and aspect are derived from the Multi-Error-Removed Improved-Terrain (MERIT) Digital Elevation Model (DEM).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS MCD19A2",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Precipitable water vapour (PWV)",
+            "target_entity_type": "Variable",
+            "paragraph": "Precipitable water vapour (PWV) data at 1 km daily resolution were obtained from the MODIS MCD19A2 product is https://developers.google.com/earthengine/datasets/catalog/MODIS_061_MCD19A2_GRANULES#dois (Lyapustin et al., 2022).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "1-km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Indian Institute of Technology, Bhubaneswar",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Human-perceived temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "HiTIC-India",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "1 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Light Gradient Boosting Machine",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "land surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitable water vapour",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "population density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "slope",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "elevation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aspect",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "root-mean-square error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "coefficient of determination",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "R2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Heatwaves",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "cold waves",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "droughts",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "coldwaves",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "heavy precipitation",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "wildfires",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "2003 European and 2010 Russian heatwaves",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Madrid",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "near-surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Ahmedabad",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Surat",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Varanasi",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Uttar Pradesh",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Bihar",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Rajasthan",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "actual vapour pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "0.1\u00b0 \u00d7 0.1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Copernicus Climate Change Service Climate Data Store",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "0.25\u00b0 \u00d7 0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Indoor Apparent Temperature (ATin)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Discomfort Index (DI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Effective Temperature (ET)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Heat Index (HI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Humidex (HMI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Modified Discomfort Index (MDI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Net Effective Temperature (NET)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Outdoor Shaded Apparent Temperature (ATout)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface Air Temperature (SAT)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Simplified Wet-Bulb Globe Temperature (SWBGT)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wet-Bulb Temperature (WBT)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wind Chill Temperature (WCT)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LightGBM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "gradient boosting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "histogram-based learning approach",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "vapour pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Egypt",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Israel",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Moderate Resolution Imaging Spectroradiometer (MODIS)",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "two-stage spatiotemporal gap-filling framework",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "correlation-based and weighted-residual interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "WorldPop",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Multi-Error-Removed Improved-Terrain (MERIT) Digital Elevation Model (DEM)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Indian subcontinent",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "central, northern, and eastern India",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Himalayas",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "northern and north-western India",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Indo-Gangetic Plain",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "ERA5 agro-meteorological indicators",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5 reanalysis datasets",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Zenodo",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "mon",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "ISRO-NICES data portal",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "MODIS MCD19A2 product",
+            "entity_type": "Source"
+        }
+    ],
+    "referenced_works": []
+}

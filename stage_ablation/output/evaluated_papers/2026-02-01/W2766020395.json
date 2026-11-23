@@ -1,0 +1,988 @@
+{
+    "uri": "https://openalex.org/W2766020395",
+    "title": "Aerosol particle size distribution in the stratosphere retrieved from SCIAMACHY limb measurements",
+    "venue": {
+        "name": "Atmospheric measurement techniques",
+        "id": "https://openalex.org/S70769875",
+        "type": "journal"
+    },
+    "publication_year": 2018,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5014584279",
+            "display_name": "Elizaveta Malinina",
+            "orcid": "https://orcid.org/0000-0002-4102-2877"
+        },
+        {
+            "id": "https://openalex.org/A5082547275",
+            "display_name": "Alexei Rozanov",
+            "orcid": "https://orcid.org/0000-0003-4525-3223"
+        },
+        {
+            "id": "https://openalex.org/A5085854210",
+            "display_name": "\u0412. \u0412. \u0420\u043e\u0437\u0430\u043d\u043e\u0432",
+            "orcid": "https://orcid.org/0000-0002-3243-8782"
+        },
+        {
+            "id": "https://openalex.org/A5104087467",
+            "display_name": "Patricia Liebing",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5032548516",
+            "display_name": "H. Bovensmann",
+            "orcid": "https://orcid.org/0000-0001-8882-4108"
+        },
+        {
+            "id": "https://openalex.org/A5037073060",
+            "display_name": "John P. Burrows",
+            "orcid": "https://orcid.org/0000-0002-6821-5580"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/amt-11-2085-2018",
+    "abstract": "Abstract. Information about aerosols in the Earth's atmosphere is of a great importance in the scientific community. While tropospheric aerosol influences the radiative balance of the troposphere and affects human health, stratospheric aerosol plays an important role in atmospheric chemistry and climate change. In particular, information about the amount and distribution of stratospheric aerosols is required to initialize climate models, as well as validate aerosol microphysics models and investigate geoengineering. In addition, good knowledge of stratospheric aerosol loading is needed to increase the retrieval accuracy of key trace gases (e.g. ozone or water vapour) when interpreting remote sensing measurements of the scattered solar light. The most commonly used characteristics to describe stratospheric aerosols are the aerosol extinction coefficient and \u00c5ngstr\u00f6m coefficient. However, the use of particle size distribution parameters along with the aerosol number density is a more optimal approach. In this paper we present a new retrieval algorithm to obtain the particle size distribution of stratospheric aerosol from space-borne observations of the scattered solar light in the limb-viewing geometry. While the mode radius and width of the aerosol particle size distribution are retrieved, the aerosol particle number density profile remains unchanged. The latter is justified by a lower sensitivity of the limb-scattering measurements to changes in this parameter. To our knowledge this is the first data set providing two parameters of the particle size distribution of stratospheric aerosol from space-borne measurements of scattered solar light. Typically, the mode radius and w can be retrieved with an uncertainty of less than 20 %. The algorithm was successfully applied to the tropical region (20\u00b0 N\u201320\u00b0 S) for 10 years (2002\u20132012) of SCIAMACHY observations in limb-viewing geometry, establishing a unique data set. Analysis of this new climatology for the particle size distribution parameters showed clear increases in the mode radius after the tropical volcanic eruptions, whereas no distinct behaviour of the absolute distribution width could be identified. A tape recorder, which describes the time lag as the perturbation propagates to higher altitudes, was identified for both parameters after the volcanic eruptions. A quasi-biannual oscillation (QBO) pattern at upper altitudes (28\u201332 km) is prominent in the anomalies of the analysed parameters. A comparison of the aerosol effective radii derived from SCIAMACHY and SAGE II data was performed. The average difference is found to be around 30 % at the lower altitudes, decreasing with increasing height to almost zero around 30 km. The data sample available for the comparison is, however, relatively small.",
+    "field": "Remote sensing of stratospheric aerosols",
+    "problem": "Existing methods for characterizing stratospheric aerosols using metrics like the \u00c5ngstr\u00f6m coefficient are limited, as the coefficient cannot be uniquely transformed into particle size distribution parameters, making the direct retrieval of multiple parameters from limb-scattering measurements a challenging task.",
+    "method": "We propose a retrieval algorithm using an iterative regularized inversion to directly obtain the mode radius and width of the stratospheric aerosol particle size distribution from SCIAMACHY space-borne limb measurements of scattered solar light, while assuming a fixed aerosol number density profile.",
+    "task": "The task is to present a new retrieval algorithm to obtain the particle size distribution of stratospheric aerosol from space-borne observations of scattered solar light in a limb-viewing geometry using the SCIAMACHY instrument.",
+    "model": [
+        "ECMWF",
+        "SCIATRAN",
+        "ECSTRA"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/aerosol",
+            "display_name": "Aerosol",
+            "score": 0.9226275682449341
+        },
+        {
+            "id": "https://openalex.org/keywords/stratosphere",
+            "display_name": "Stratosphere",
+            "score": 0.6838909387588501
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.6440432071685791
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.5819888114929199
+        },
+        {
+            "id": "https://openalex.org/keywords/troposphere",
+            "display_name": "Troposphere",
+            "score": 0.5714176893234253
+        },
+        {
+            "id": "https://openalex.org/keywords/sciamachy",
+            "display_name": "SCIAMACHY",
+            "score": 0.5679749846458435
+        },
+        {
+            "id": "https://openalex.org/keywords/effective-radius",
+            "display_name": "Effective radius",
+            "score": 0.5507310032844543
+        },
+        {
+            "id": "https://openalex.org/keywords/earths-energy-budget",
+            "display_name": "Earth's energy budget",
+            "score": 0.43764254450798035
+        },
+        {
+            "id": "https://openalex.org/keywords/particle",
+            "display_name": "Particle (ecology)",
+            "score": 0.4108333885669708
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.37828975915908813
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.18776559829711914
+        },
+        {
+            "id": "https://openalex.org/keywords/radiation",
+            "display_name": "Radiation",
+            "score": 0.09393033385276794
+        },
+        {
+            "id": "https://openalex.org/keywords/optics",
+            "display_name": "Optics",
+            "score": 0.07811373472213745
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.07359996438026428
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C2779345167",
+            "wikidata": "https://www.wikidata.org/wiki/Q104541",
+            "display_name": "Aerosol",
+            "level": 2,
+            "score": 0.9226275682449341
+        },
+        {
+            "id": "https://openalex.org/C163861444",
+            "wikidata": "https://www.wikidata.org/wiki/Q108376",
+            "display_name": "Stratosphere",
+            "level": 2,
+            "score": 0.6838909387588501
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.6440432071685791
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5819888114929199
+        },
+        {
+            "id": "https://openalex.org/C9075549",
+            "wikidata": "https://www.wikidata.org/wiki/Q40631",
+            "display_name": "Troposphere",
+            "level": 2,
+            "score": 0.5714176893234253
+        },
+        {
+            "id": "https://openalex.org/C2777812092",
+            "wikidata": "https://www.wikidata.org/wiki/Q2205341",
+            "display_name": "SCIAMACHY",
+            "level": 3,
+            "score": 0.5679749846458435
+        },
+        {
+            "id": "https://openalex.org/C2779406902",
+            "wikidata": "https://www.wikidata.org/wiki/Q1295998",
+            "display_name": "Effective radius",
+            "level": 3,
+            "score": 0.5507310032844543
+        },
+        {
+            "id": "https://openalex.org/C7337166",
+            "wikidata": "https://www.wikidata.org/wiki/Q1292280",
+            "display_name": "Earth's energy budget",
+            "level": 3,
+            "score": 0.43764254450798035
+        },
+        {
+            "id": "https://openalex.org/C2778517922",
+            "wikidata": "https://www.wikidata.org/wiki/Q7140482",
+            "display_name": "Particle (ecology)",
+            "level": 2,
+            "score": 0.4108333885669708
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.37828975915908813
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.18776559829711914
+        },
+        {
+            "id": "https://openalex.org/C153385146",
+            "wikidata": "https://www.wikidata.org/wiki/Q18335",
+            "display_name": "Radiation",
+            "level": 2,
+            "score": 0.09393033385276794
+        },
+        {
+            "id": "https://openalex.org/C120665830",
+            "wikidata": "https://www.wikidata.org/wiki/Q14620",
+            "display_name": "Optics",
+            "level": 1,
+            "score": 0.07811373472213745
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.07359996438026428
+        },
+        {
+            "id": "https://openalex.org/C98444146",
+            "wikidata": "https://www.wikidata.org/wiki/Q318",
+            "display_name": "Galaxy",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C62520636",
+            "wikidata": "https://www.wikidata.org/wiki/Q944",
+            "display_name": "Quantum mechanics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a new retrieval algorithm to obtain two parameters of the stratospheric aerosol particle size distribution from SCIAMACHY limb-scattering measurements, generating the first 10-year data set of its kind from space-borne observations of scattered solar light.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "SCIAMACHY",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Envisat",
+            "target_entity_type": "Platform",
+            "paragraph": "SCIAMACHY (Scanning Imaging Absorption Spectrometer for Atmospheric CHartographY) was one of these instruments operated on the Envisat satellite from 2002 to 2012. SCIAMACHY had three main measurement modes: nadir, solar/lunar occultation, and limb scattering.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GOMOS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Envisat",
+            "target_entity_type": "Platform",
+            "paragraph": "Other instruments on board Envisat providing stratospheric aerosol information were Global Ozone Monitoring by Occultation of Stars (GOMOS) and the Michelson Interferometer for Passive Atmospheric Sounding (MIPAS).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIPAS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Envisat",
+            "target_entity_type": "Platform",
+            "paragraph": "Other instruments on board Envisat providing stratospheric aerosol information were Global Ozone Monitoring by Occultation of Stars (GOMOS) and the Michelson Interferometer for Passive Atmospheric Sounding (MIPAS).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "OSIRIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Odin",
+            "target_entity_type": "Platform",
+            "paragraph": "OSIRIS (Optical Spectrograph and InfraRed Imager System), on board the Odin satellite, which was launched in 2001 and is still operating, measures scattered solar light in the limb-viewing geometry (Llewellyn et al., 2004).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SCIAMACHY",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "aerosol particle size distribution",
+            "target_entity_type": "Variable",
+            "paragraph": "In this paper we present a new retrieval algorithm to obtain the particle size distribution of stratospheric aerosol from space-borne observations of the scattered solar light in the limb-viewing geometry.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SCIAMACHY",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "mode radius",
+            "target_entity_type": "Variable",
+            "paragraph": "While the mode radius and width of the aerosol particle size distribution are retrieved, the aerosol particle number density profile remains unchanged.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SCIAMACHY",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "distribution width",
+            "target_entity_type": "Variable",
+            "paragraph": "While the mode radius and width of the aerosol particle size distribution are retrieved, the aerosol particle number density profile remains unchanged.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIPAS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "SO2 volume densities",
+            "target_entity_type": "Variable",
+            "paragraph": "while the MIPAS instrument measured limb emission spectra (Fischer et al., 2008) and provided vertical profiles of SO2 and sulfate aerosol (H2SO4) volume densities (G\u00fcnther et al., 2018).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MIPAS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "sulfate aerosol (H2SO4) volume densities",
+            "target_entity_type": "Variable",
+            "paragraph": "while the MIPAS instrument measured limb emission spectra (Fischer et al., 2008) and provided vertical profiles of SO2 and sulfate aerosol (H2SO4) volume densities (G\u00fcnther et al., 2018).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "OSIRIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "aerosol extinction profiles",
+            "target_entity_type": "Variable",
+            "paragraph": "OSIRIS (Optical Spectrograph and InfraRed Imager System), on board the Odin satellite, which was launched in 2001 and is still operating, measures scattered solar light in the limb-viewing geometry (Llewellyn et al., 2004). Using these data, aerosol extinction profiles and \u00c5ngstr\u00f6m coefficient are retrieved (Bourassa et al., 2012; Rieger et al., 2014).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "OSIRIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "\u00c5ngstr\u00f6m coefficient",
+            "target_entity_type": "Variable",
+            "paragraph": "OSIRIS (Optical Spectrograph and InfraRed Imager System), on board the Odin satellite, which was launched in 2001 and is still operating, measures scattered solar light in the limb-viewing geometry (Llewellyn et al., 2004). Using these data, aerosol extinction profiles and \u00c5ngstr\u00f6m coefficient are retrieved (Bourassa et al., 2012; Rieger et al., 2014).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "OMPS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "aerosol extinction coefficient",
+            "target_entity_type": "Variable",
+            "paragraph": "First results with respect to the retrievals of aerosol extinction coefficient from OMPS-LP (Limb Profiler) are presented in several publications (Taha et al., 2011; Arosio et al., 2017; Loughman et al., 2017).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CALIOP",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "aerosol backscatter coefficient",
+            "target_entity_type": "Variable",
+            "paragraph": "In addition, it is important to mention the space-based lidar CALIOP (Cloud-Aerosol Lidar with Orthogonal Polarization Lidar), which provides measurements of aerosol backscatter coefficient, which is afterwards converted to the aerosol extinction coefficient.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAGE II",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "aerosol extinction",
+            "target_entity_type": "Variable",
+            "paragraph": "The current v7.0 SAGE II product provides the aerosol extinction at four wavelengths and some information on particle size distribution parameters (more detailed in Sect. 5).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SAGE II",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "particle size distribution parameters",
+            "target_entity_type": "Variable",
+            "paragraph": "The current v7.0 SAGE II product provides the aerosol extinction at four wavelengths and some information on particle size distribution parameters (more detailed in Sect. 5).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GOMOS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "aerosol extinction coefficient",
+            "target_entity_type": "Variable",
+            "paragraph": "GOMOS made measurements using the stellar occultation technique and provided aerosol extinction coefficient (Vanhellemont et al., 2016), while the MIPAS instrument measured limb emission spectra (Fischer et al., 2008) and provided vertical profiles of SO2 and sulfate aerosol (H2SO4) volume densities (G\u00fcnther et al., 2018).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Quasi-biannual oscillation",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "tropical region",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "A quasi-biannual oscillation (QBO) pattern at upper altitudes (28\u201332 km) is prominent in the anomalies of the analysed parameters. A comparison of the aerosol effective radii derived from SCIAMACHY and SAGE II data was performed. The average difference is found to be around 30% at the lower altitudes, decreasing with increasing height to almost zero around 30km. The data sample available for the comparison is, however, relatively small.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Tambora eruption",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Volcanic Eruption",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "A large amount of aerosol emitted by volcanic eruptions significantly changes the radiative forcing affecting global temperatures. For example, the super-colossal Tambora eruption in 1815 is claimed to have caused \u201cthe year without a summer\u201d in 1816.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Mount Pinatubo eruption",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Volcanic Eruption",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "The more recent colossal eruption of Mount Pinatubo in 1991 caused a surface temperature cooling of a few tenths of a kelvin (Robock and Mao, 1995).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Manam eruption",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Volcanic Eruption",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Following the strong tropical eruptions (Manam, Tavurvur, Nabro) there is a well-defined increase in Rmod shortly after the eruptions in the 18\u201321 km altitudes, while at higher altitudes (22\u201326 km) the volcanic perturbation is observed with a specific time lag.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Tavurvur eruption",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Volcanic Eruption",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Following the strong tropical eruptions (Manam, Tavurvur, Nabro) there is a well-defined increase in Rmod shortly after the eruptions in the 18\u201321 km altitudes, while at higher altitudes (22\u201326 km) the volcanic perturbation is observed with a specific time lag.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Nabro eruption",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Volcanic Eruption",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Following the strong tropical eruptions (Manam, Tavurvur, Nabro) there is a well-defined increase in Rmod shortly after the eruptions in the 18\u201321 km altitudes, while at higher altitudes (22\u201326 km) the volcanic perturbation is observed with a specific time lag.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Sarychev eruption",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Volcanic Eruption",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "After strong mid-latitude eruptions (Sarychev, Kasatochi) the increase in Rmod is less pronounced as compared to the tropical volcanoes, though there is a definite increase in w.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Kasatochi eruption",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Volcanic Eruption",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "After strong mid-latitude eruptions (Sarychev, Kasatochi) the increase in Rmod is less pronounced as compared to the tropical volcanoes, though there is a definite increase in w.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "tropical region (20\u00b0 N-20\u00b0 S)",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "Tropical",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "The algorithm was successfully applied to the tropical region (20\u00b0 N-20\u00b0 S) for 10 years (2002\u20132012) of SCIAMACHY observations in limb-viewing geometry, establishing a unique data set.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "SCIAMACHY",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Envisat",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Institute of Environmental Physics (IUP), University of Bremen",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Leiden Observatory, University of Leiden",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "mode radius",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "width of the aerosol particle size distribution",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol particle number density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aerosol extinction coefficient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "\u00c5ngstr\u00f6m coefficient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "effective radii",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "limb-viewing geometry",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "tropical region (20\u00b0 N-20\u00b0 S)",
+            "entity_type": "Domain"
+        },
+        {
+            "entity_instance": "quasi-biannual oscillation (QBO)",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "SAGE II",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "stratospheric aerosol",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Tambora eruption in 1815",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Mount Pinatubo in 1991",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Volcanic Eruption",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "carbonyl sulfide (OCS)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sulfur dioxide (SO2)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Brewer-Dobson circulation",
+            "entity_type": "Ocean_Circulation"
+        },
+        {
+            "entity_instance": "Australian \"Black Saturday\" bushfires",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Wildfire",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "solar occultation technique",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "SAM",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SAM II",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SAGE",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "stellar occultation",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "limb scattering",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "nadir",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "GOMOS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "MIPAS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "OSIRIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Odin",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "OMPS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "OMPS-LP (Limb Profiler)",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "CALIOP",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "aerosol backscatter coefficient",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "European Space Agency (ESA)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "sun-synchronous orbit",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "800 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "3.3 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "110 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "960 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "240 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "400 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "unimodal",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "log-normal shape",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "bimodal particle size distribution",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "optical particle counters (OPCs)",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "median radius",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total number density of the aerosol particles",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "absolute distribution width",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "iterative regularized inversion technique",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "zeroth-order Tikhonov method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "limb radiances",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar irradiance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "signal-to-noise ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ECSTRA model climatology",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mie scattering theory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "OPAC database",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "effective spectral Lambertian albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SCODA cloud-filtering algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "uncertainty",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "relative error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean relative difference",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "systematic negative bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Ruang",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Reventador",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Merapi",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Tavurvur",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Kasatochi",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Sarychev",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Nabro",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Manam",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Soufri\u00e8re Hills",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Smithsonian Institution",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "0.5 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "NASA Langley Research Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "German Aerospace Center (DLR)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "German Federal Ministry of Education and Research (BMBF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Bremen",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Leiden",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "the Netherlands",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Laramie, Wyoming",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Tropical",
+            "entity_type": "ClimateZone"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W4245164951",
+        "https://openalex.org/W2032436288",
+        "https://openalex.org/W1997197091",
+        "https://openalex.org/W2728503689",
+        "https://openalex.org/W2150556053",
+        "https://openalex.org/W1977184325",
+        "https://openalex.org/W289040827",
+        "https://openalex.org/W2036192608",
+        "https://openalex.org/W6600640271",
+        "https://openalex.org/W1971396724",
+        "https://openalex.org/W1978983144",
+        "https://openalex.org/W2083252717",
+        "https://openalex.org/W1831793316",
+        "https://openalex.org/W3133407509",
+        "https://openalex.org/W4211058530",
+        "https://openalex.org/W1992022169",
+        "https://openalex.org/W1599730348",
+        "https://openalex.org/W1527644548",
+        "https://openalex.org/W2785791635",
+        "https://openalex.org/W2042112467",
+        "https://openalex.org/W2109979560",
+        "https://openalex.org/W2046264816",
+        "https://openalex.org/W2145104212",
+        "https://openalex.org/W2309305529",
+        "https://openalex.org/W2054582084",
+        "https://openalex.org/W4238079326",
+        "https://openalex.org/W2121946793",
+        "https://openalex.org/W2044554079",
+        "https://openalex.org/W1833267810",
+        "https://openalex.org/W2093637953",
+        "https://openalex.org/W4244900767",
+        "https://openalex.org/W2135108747",
+        "https://openalex.org/W1672771901",
+        "https://openalex.org/W2142147023",
+        "https://openalex.org/W2035979240",
+        "https://openalex.org/W1998582463",
+        "https://openalex.org/W2093808168",
+        "https://openalex.org/W2013182485",
+        "https://openalex.org/W2118725015",
+        "https://openalex.org/W2010598341",
+        "https://openalex.org/W2110859665",
+        "https://openalex.org/W2319050047",
+        "https://openalex.org/W2032472872",
+        "https://openalex.org/W2197594070",
+        "https://openalex.org/W4241019511",
+        "https://openalex.org/W2491218868",
+        "https://openalex.org/W2396278483",
+        "https://openalex.org/W2749299708",
+        "https://openalex.org/W4240733927",
+        "https://openalex.org/W2781631477",
+        "https://openalex.org/W2150873663",
+        "https://openalex.org/W2155004235",
+        "https://openalex.org/W2762549527"
+    ]
+}

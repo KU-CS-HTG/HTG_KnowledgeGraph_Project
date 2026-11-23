@@ -1,0 +1,1589 @@
+{
+    "uri": "https://openalex.org/W7139089461",
+    "title": "Deep Extreme Transformer: Tackling Zero-Inflated Time Series for Precipitation Prediction",
+    "venue": {
+        "name": "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "id": "https://openalex.org/S4210191458",
+        "type": "conference"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5129753756",
+            "display_name": "Wentao Gao",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5070721424",
+            "display_name": "Xiongren Chen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126302548",
+            "display_name": "Xiaojing Du",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5100423198",
+            "display_name": "Wenjun Yu",
+            "orcid": "https://orcid.org/0000-0003-4823-5338"
+        },
+        {
+            "id": "https://openalex.org/A5045445602",
+            "display_name": "Andr\u00e9s Mauricio Cifuentes Bernal",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5100743349",
+            "display_name": "Ziqi Xu",
+            "orcid": "https://orcid.org/0000-0003-1748-5801"
+        }
+    ],
+    "doi": "https://doi.org/10.1609/aaai.v40i45.41189",
+    "abstract": "Rainfall forecasting presents a dual challenge: extreme zero inflation, where dry days dominate and obscure meaningful precipitation patterns, and pronounced nonstationarity, where climate dynamics evolve across time and regimes. We propose the Deep Extreme Transformer (DET), a principled architecture that integrates statistical distribution mod- eling with neural sequence learning to address both issues simultaneously. DET augments the Transformer with a Tweedie distribution output head that unifies discrete zeros and continuous intensities, a fixed shared-weight mech- anism that emphasizes rare but critical events in both attention and loss computation, and a Gaussian perturbation strat- egy that enhances learning stability without violating physical constraints. DET further incorporates nonstationary attention to adapt to evolving rainfall regimes. Extensive experiments on multi-decadal South Australian climate data demonstrate that DET consistently outperforms existing deep learning and statistical models across forecasting horizons. Our method provides an effective and generalizable framework for zero- inflated, shift-prone time series, bridging statistical rigor with deep temporal modeling in a unified and scalable design.",
+    "field": "Zero-inflated time series forecasting",
+    "problem": "Existing forecasting models, particularly Transformers, fail at precipitation prediction because extreme zero-inflation dilutes attention mechanisms and nonstationarity shifts data patterns, preventing the detection of rare but critical rainfall events.",
+    "method": "We propose the Deep Extreme Transformer (DET), which integrates a weighted attention mechanism, Tweedie distribution modeling, and a Gaussian perturbation strategy to accurately forecast precipitation from zero-inflated and nonstationary time series data.",
+    "task": "The task is to forecast future precipitation from zero-inflated time series data by developing a deep learning model to accurately predict rare rainfall events despite the overwhelming prevalence of dry days.",
+    "model": [
+        "NCEP-NCAR"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/deep-learning",
+            "display_name": "Deep learning",
+            "score": 0.515500009059906
+        },
+        {
+            "id": "https://openalex.org/keywords/time-series",
+            "display_name": "Time series",
+            "score": 0.4855000078678131
+        },
+        {
+            "id": "https://openalex.org/keywords/scalability",
+            "display_name": "Scalability",
+            "score": 0.4722000062465668
+        },
+        {
+            "id": "https://openalex.org/keywords/stability",
+            "display_name": "Stability (learning theory)",
+            "score": 0.3937000036239624
+        },
+        {
+            "id": "https://openalex.org/keywords/probability-distribution",
+            "display_name": "Probability distribution",
+            "score": 0.3828999996185303
+        },
+        {
+            "id": "https://openalex.org/keywords/transformer",
+            "display_name": "Transformer",
+            "score": 0.37860000133514404
+        },
+        {
+            "id": "https://openalex.org/keywords/artificial-neural-network",
+            "display_name": "Artificial neural network",
+            "score": 0.3675000071525574
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.36239999532699585
+        },
+        {
+            "id": "https://openalex.org/keywords/statistical-learning",
+            "display_name": "Statistical learning",
+            "score": 0.3571000099182129
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5295000076293945
+        },
+        {
+            "id": "https://openalex.org/C108583219",
+            "wikidata": "https://www.wikidata.org/wiki/Q197536",
+            "display_name": "Deep learning",
+            "level": 2,
+            "score": 0.515500009059906
+        },
+        {
+            "id": "https://openalex.org/C151406439",
+            "wikidata": "https://www.wikidata.org/wiki/Q186588",
+            "display_name": "Time series",
+            "level": 2,
+            "score": 0.4855000078678131
+        },
+        {
+            "id": "https://openalex.org/C48044578",
+            "wikidata": "https://www.wikidata.org/wiki/Q727490",
+            "display_name": "Scalability",
+            "level": 2,
+            "score": 0.4722000062465668
+        },
+        {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.42329999804496765
+        },
+        {
+            "id": "https://openalex.org/C112972136",
+            "wikidata": "https://www.wikidata.org/wiki/Q7595718",
+            "display_name": "Stability (learning theory)",
+            "level": 2,
+            "score": 0.3937000036239624
+        },
+        {
+            "id": "https://openalex.org/C149441793",
+            "wikidata": "https://www.wikidata.org/wiki/Q200726",
+            "display_name": "Probability distribution",
+            "level": 2,
+            "score": 0.3828999996185303
+        },
+        {
+            "id": "https://openalex.org/C66322947",
+            "wikidata": "https://www.wikidata.org/wiki/Q11658",
+            "display_name": "Transformer",
+            "level": 3,
+            "score": 0.37860000133514404
+        },
+        {
+            "id": "https://openalex.org/C50644808",
+            "wikidata": "https://www.wikidata.org/wiki/Q192776",
+            "display_name": "Artificial neural network",
+            "level": 2,
+            "score": 0.3675000071525574
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.36239999532699585
+        },
+        {
+            "id": "https://openalex.org/C2982736386",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Statistical learning",
+            "level": 2,
+            "score": 0.3571000099182129
+        },
+        {
+            "id": "https://openalex.org/C114289077",
+            "wikidata": "https://www.wikidata.org/wiki/Q3284399",
+            "display_name": "Statistical model",
+            "level": 2,
+            "score": 0.35530000925064087
+        },
+        {
+            "id": "https://openalex.org/C2776434776",
+            "wikidata": "https://www.wikidata.org/wiki/Q19246213",
+            "display_name": "Domain adaptation",
+            "level": 3,
+            "score": 0.34380000829696655
+        },
+        {
+            "id": "https://openalex.org/C61326573",
+            "wikidata": "https://www.wikidata.org/wiki/Q1496376",
+            "display_name": "Gaussian process",
+            "level": 3,
+            "score": 0.3353999853134155
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.3310999870300293
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.3237000107765198
+        },
+        {
+            "id": "https://openalex.org/C2781468064",
+            "wikidata": "https://www.wikidata.org/wiki/Q1267117",
+            "display_name": "Lead time",
+            "level": 2,
+            "score": 0.3221000134944916
+        },
+        {
+            "id": "https://openalex.org/C2779915298",
+            "wikidata": "https://www.wikidata.org/wiki/Q7604400",
+            "display_name": "Statistical learning theory",
+            "level": 3,
+            "score": 0.30230000615119934
+        },
+        {
+            "id": "https://openalex.org/C163716315",
+            "wikidata": "https://www.wikidata.org/wiki/Q901177",
+            "display_name": "Gaussian",
+            "level": 2,
+            "score": 0.3003000020980835
+        },
+        {
+            "id": "https://openalex.org/C147061848",
+            "wikidata": "https://www.wikidata.org/wiki/Q1934245",
+            "display_name": "Stable distribution",
+            "level": 2,
+            "score": 0.2987000048160553
+        },
+        {
+            "id": "https://openalex.org/C2777317252",
+            "wikidata": "https://www.wikidata.org/wiki/Q18393516",
+            "display_name": "Rare events",
+            "level": 2,
+            "score": 0.28529998660087585
+        },
+        {
+            "id": "https://openalex.org/C147581598",
+            "wikidata": "https://www.wikidata.org/wiki/Q729429",
+            "display_name": "Extreme value theory",
+            "level": 2,
+            "score": 0.2842999994754791
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.28139999508857727
+        },
+        {
+            "id": "https://openalex.org/C143724316",
+            "wikidata": "https://www.wikidata.org/wiki/Q312468",
+            "display_name": "Series (stratigraphy)",
+            "level": 2,
+            "score": 0.28040000796318054
+        },
+        {
+            "id": "https://openalex.org/C177918212",
+            "wikidata": "https://www.wikidata.org/wiki/Q803623",
+            "display_name": "Perturbation (astronomy)",
+            "level": 2,
+            "score": 0.2784999907016754
+        },
+        {
+            "id": "https://openalex.org/C140178040",
+            "wikidata": "https://www.wikidata.org/wiki/Q18402512",
+            "display_name": "Quantitative precipitation forecast",
+            "level": 3,
+            "score": 0.2696000039577484
+        },
+        {
+            "id": "https://openalex.org/C147168706",
+            "wikidata": "https://www.wikidata.org/wiki/Q1457734",
+            "display_name": "Recurrent neural network",
+            "level": 3,
+            "score": 0.26840001344680786
+        },
+        {
+            "id": "https://openalex.org/C149782125",
+            "wikidata": "https://www.wikidata.org/wiki/Q160039",
+            "display_name": "Econometrics",
+            "level": 1,
+            "score": 0.26170000433921814
+        },
+        {
+            "id": "https://openalex.org/C2983961125",
+            "wikidata": "https://www.wikidata.org/wiki/Q1288707",
+            "display_name": "Stopping rule",
+            "level": 2,
+            "score": 0.26100000739097595
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.2565999925136566
+        },
+        {
+            "id": "https://openalex.org/C2780980858",
+            "wikidata": "https://www.wikidata.org/wiki/Q110022",
+            "display_name": "Dual (grammatical number)",
+            "level": 2,
+            "score": 0.2558000087738037
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.25440001487731934
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 24",
+            "result": "0.5120"
+        },
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 24",
+            "result": "0.2120"
+        },
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 48",
+            "result": "0.5180"
+        },
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 48",
+            "result": "0.2140"
+        },
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 96",
+            "result": "0.5320"
+        },
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 96",
+            "result": "0.2210"
+        },
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 192",
+            "result": "0.5450"
+        },
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 192",
+            "result": "0.2280"
+        },
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 336",
+            "result": "0.5580"
+        },
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 336",
+            "result": "0.2350"
+        },
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 720",
+            "result": "0.5800"
+        },
+        {
+            "model": "DeepExtreme Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 720",
+            "result": "0.2450"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 24",
+            "result": "0.9458"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 24",
+            "result": "0.4010"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 48",
+            "result": "0.9491"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 48",
+            "result": "0.4084"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 96",
+            "result": "0.9546"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 96",
+            "result": "0.4098"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 192",
+            "result": "0.9671"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 192",
+            "result": "0.4053"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 336",
+            "result": "0.9734"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 336",
+            "result": "0.4253"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 720",
+            "result": "0.9733"
+        },
+        {
+            "model": "TSMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 720",
+            "result": "0.4282"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 24",
+            "result": "0.9018"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 24",
+            "result": "0.3256"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 48",
+            "result": "0.9082"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 48",
+            "result": "0.3171"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 96",
+            "result": "0.9220"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 96",
+            "result": "0.3299"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 192",
+            "result": "0.9292"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 192",
+            "result": "0.3339"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 336",
+            "result": "0.9215"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 336",
+            "result": "0.3217"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 720",
+            "result": "0.9179"
+        },
+        {
+            "model": "iTransformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 720",
+            "result": "0.3150"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 24",
+            "result": "0.8723"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 24",
+            "result": "0.3157"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 48",
+            "result": "0.8641"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 48",
+            "result": "0.3312"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 96",
+            "result": "0.8716"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 96",
+            "result": "0.2973"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 192",
+            "result": "0.8764"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 192",
+            "result": "0.3090"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 336",
+            "result": "0.8777"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 336",
+            "result": "0.3048"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 720",
+            "result": "0.8655"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 720",
+            "result": "0.3050"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 24",
+            "result": "0.9065"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 24",
+            "result": "0.3251"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 48",
+            "result": "0.9118"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 48",
+            "result": "0.3243"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 96",
+            "result": "0.9185"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 96",
+            "result": "0.3067"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 192",
+            "result": "0.9200"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 192",
+            "result": "0.3200"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 336",
+            "result": "0.9250"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 336",
+            "result": "0.3150"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 720",
+            "result": "0.9300"
+        },
+        {
+            "model": "PatchTST",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 720",
+            "result": "0.3200"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 24",
+            "result": "0.9089"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 24",
+            "result": "0.3140"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 48",
+            "result": "0.9127"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 48",
+            "result": "0.3211"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 96",
+            "result": "0.9205"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 96",
+            "result": "0.3156"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 192",
+            "result": "0.9252"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 192",
+            "result": "0.3220"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 336",
+            "result": "0.9267"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 336",
+            "result": "0.3235"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 720",
+            "result": "0.9490"
+        },
+        {
+            "model": "TimeMixer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 720",
+            "result": "1.8307"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 24",
+            "result": "0.6520"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 24",
+            "result": "0.4291"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 48",
+            "result": "0.6620"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 48",
+            "result": "0.4337"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 96",
+            "result": "0.6776"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 96",
+            "result": "0.4455"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 192",
+            "result": "0.7450"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 192",
+            "result": "0.4904"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 336",
+            "result": "0.7500"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 336",
+            "result": "0.4950"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 720",
+            "result": "0.7600"
+        },
+        {
+            "model": "TimesNet",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 720",
+            "result": "0.5000"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 24",
+            "result": "0.7200"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 24",
+            "result": "0.2975"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 48",
+            "result": "0.7350"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 48",
+            "result": "0.3117"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 96",
+            "result": "0.7600"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 96",
+            "result": "0.3078"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 192",
+            "result": "0.7800"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 192",
+            "result": "0.2984"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 336",
+            "result": "0.8000"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 336",
+            "result": "0.3026"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 720",
+            "result": "0.8200"
+        },
+        {
+            "model": "Nonstationary Transformer",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 720",
+            "result": "0.3080"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 24",
+            "result": "1.5620"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 24",
+            "result": "0.5612"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 48",
+            "result": "1.6031"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 48",
+            "result": "0.5763"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 96",
+            "result": "1.7025"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 96",
+            "result": "0.5889"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 192",
+            "result": "1.7501"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 192",
+            "result": "0.6025"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 336",
+            "result": "1.8457"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 336",
+            "result": "0.6205"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 720",
+            "result": "1.9123"
+        },
+        {
+            "model": "ZIP",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 720",
+            "result": "0.6358"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 24",
+            "result": "1.8725"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 24",
+            "result": "0.6250"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 48",
+            "result": "1.8952"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 48",
+            "result": "0.6425"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 96",
+            "result": "1.9331"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 96",
+            "result": "0.6520"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 192",
+            "result": "1.9803"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 192",
+            "result": "0.6624"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 336",
+            "result": "2.0310"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 336",
+            "result": "0.6742"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MSE at output length 720",
+            "result": "2.1057"
+        },
+        {
+            "model": "Hurdle",
+            "observational_dataset": "NCEP-NCAR Reanalysis 1",
+            "evaluation_metric": "MAE at output length 720",
+            "result": "0.6820"
+        }
+    ],
+    "innovation": "This paper introduces the Deep Extreme Transformer (DET), which integrates a Tweedie distribution, weighted attention, and Gaussian perturbation into a Transformer architecture to provide a unified framework for accurately predicting zero-inflated and nonstationary precipitation time series.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "recurrent droughts",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "South Australia",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Our study focuses on South Australia, a region known for its pronounced rainfall variability and recurrent droughts.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "recurrent droughts",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Drought",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Our study focuses on South Australia, a region known for its pronounced rainfall variability and recurrent droughts.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "southern jet stream",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "South Australia",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "The climate of South Australia is largely semi-arid to arid, characterized by significant fluctuations in rainfall driven by seasonal influences, including the southern jet stream and the influx of tropical moisture.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NCEP-NCAR Reanalysis 1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCED_BY_INSTITUTE",
+            "target_entity_instance": "National Oceanic and Atmospheric Administration",
+            "target_entity_type": "Institute",
+            "paragraph": "Our dataset uses NCEP-NCAR Reanalysis 11, provided by the National Oceanic and Atmospheric Administration (NOAA).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "NCEP-NCAR Reanalysis 1",
+            "source_entity_type": "Source",
+            "relation": "SAMPLED_AT_FREQUENCY",
+            "target_entity_instance": "daily",
+            "target_entity_type": "Frequency",
+            "paragraph": "This data is available at a daily frequency, covering the period from 1948 to 2014, with a global resolution of 2.5 degrees in both the latitudinal and longitudinal directions, and has not been re-gridded.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NCEP-NCAR Reanalysis 1",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "2.5 degrees",
+            "target_entity_type": "Resolution",
+            "paragraph": "This data is available at a daily frequency, covering the period from 1948 to 2014, with a global resolution of 2.5 degrees in both the latitudinal and longitudinal directions, and has not been re-gridded.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NCEP-NCAR Reanalysis 1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "We evaluate our method on NCEP-NCAR Reanalysis precipitation data from South Australia (1948-2014) with 80% zero values, using chronological train/validation/test splits of 70/15/15.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NCEP-NCAR Reanalysis 1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Our features include relevant meteorological variables, such as temperature, pressure, humidity, and wind speed, among others. Detailed data preprocessing procedures are provided in the Appendix.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "NCEP-NCAR Reanalysis 1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "pressure",
+            "target_entity_type": "Variable",
+            "paragraph": "Our features include relevant meteorological variables, such as temperature, pressure, humidity, and wind speed, among others. Detailed data preprocessing procedures are provided in the Appendix.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NCEP-NCAR Reanalysis 1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "humidity",
+            "target_entity_type": "Variable",
+            "paragraph": "Our features include relevant meteorological variables, such as temperature, pressure, humidity, and wind speed, among others. Detailed data preprocessing procedures are provided in the Appendix.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NCEP-NCAR Reanalysis 1",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "wind speed",
+            "target_entity_type": "Variable",
+            "paragraph": "Our features include relevant meteorological variables, such as temperature, pressure, humidity, and wind speed, among others. Detailed data preprocessing procedures are provided in the Appendix.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Deep Extreme Transformer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "As shown in Table 1, our experimental results demonstrate that DET significantly outperforms all baseline methods across forecasting horizons. For 24-step forecasting, DET achieves the best performance with MSE of 0.512 and MAE of 0.212.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Deep Extreme Transformer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "As shown in Table 1, our experimental results demonstrate that DET significantly outperforms all baseline methods across forecasting horizons. For 24-step forecasting, DET achieves the best performance with MSE of 0.512 and MAE of 0.212.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TSMixer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TSMixer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "iTransformer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "iTransformer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Transformer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Transformer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PatchTST",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "PatchTST",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TimeMixer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TimeMixer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TimesNet",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TimesNet",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Nonstationary Transformer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Nonstationary Transformer",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Zero-Inflated Poisson",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Zero-Inflated Poisson",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Hurdle Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MSE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Hurdle Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "We carefully chose 7 well-acknowledged forecasting models and 2 zero-inflated models as our benchmark, including TSMixer (Chen et al. 2023), iTransformer (Liu et al. 2023), Transformer (Vaswani et al. 2017), PatchTST (Nie et al. 2023), TimeMixer (Wang et al. 2024), TimesNet (Wu et al. 2023), Nonstationary Transformer (Liu et al. 2022), Zero-Inflated Poisson (ZIP), and Hurdle Model to ensure a comprehensive evaluation of our approach.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Adelaide University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Shanghai University of International Business and Economics",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "RMIT University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National Oceanic and Atmospheric Administration",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "DeepExtreme Transformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCEP-NCAR Reanalysis 1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TSMixer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "iTransformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Transformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PatchTST",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TimeMixer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TimesNet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Nonstationary Transformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ZIP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Hurdle",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Informer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "drought",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "South Australia",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "2.5 degrees",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Tweedie distribution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Gaussian perturbation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "nonstationary attention",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "self-attention mechanism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "hurdle models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "zero-inflated Poisson models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "de-stationary attention mechanism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "weighted attention mechanism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "standard attention",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "zero-inflated Poisson regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "weighted Tweedie loss",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard MSE loss",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Tweedie log-likelihood",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        }
+    ],
+    "referenced_works": []
+}

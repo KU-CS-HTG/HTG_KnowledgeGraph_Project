@@ -1,0 +1,1521 @@
+{
+    "uri": "https://openalex.org/W7137868769",
+    "title": "Assessing and enhancing Noah-MP land surface modeling over tropical forests using machine learning techniques",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5071311799",
+            "display_name": "Yanyan Cheng",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5066131390",
+            "display_name": "Yaomin Wang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5009507921",
+            "display_name": "Kalli Furtado",
+            "orcid": "https://orcid.org/0000-0002-5166-112X"
+        },
+        {
+            "id": "https://openalex.org/A5129119896",
+            "display_name": "Cenlin He",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5129721105",
+            "display_name": "Fei Chen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5018754758",
+            "display_name": "Alan D. Ziegler",
+            "orcid": "https://orcid.org/0000-0001-5305-2136"
+        },
+        {
+            "id": "https://openalex.org/A5129703569",
+            "display_name": "Song Chen",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5026440231",
+            "display_name": "Matteo Detto",
+            "orcid": "https://orcid.org/0000-0003-0494-188X"
+        },
+        {
+            "id": "https://openalex.org/A5129741232",
+            "display_name": "Yuna Mao",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5129653976",
+            "display_name": "Baoxiang Pan",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5035998096",
+            "display_name": "Yoshiko Kosugi",
+            "orcid": "https://orcid.org/0000-0002-0256-8404"
+        },
+        {
+            "id": "https://openalex.org/A5078844753",
+            "display_name": "Marryanna Lion",
+            "orcid": "https://orcid.org/0000-0001-8182-7752"
+        },
+        {
+            "id": "https://openalex.org/A5078602195",
+            "display_name": "Shoji NOGUCHI",
+            "orcid": "https://orcid.org/0000-0003-1097-1954"
+        },
+        {
+            "id": "https://openalex.org/A5027607505",
+            "display_name": "Satoru Takanashi",
+            "orcid": "https://orcid.org/0000-0001-9466-5385"
+        },
+        {
+            "id": "https://openalex.org/A5039017192",
+            "display_name": "Lulie Melling",
+            "orcid": "https://orcid.org/0000-0003-4480-517X"
+        },
+        {
+            "id": "https://openalex.org/A5129691552",
+            "display_name": "Baoqing Zhang",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-19-2197-2026",
+    "abstract": "Abstract. Tropical land-surface processes play a key role in Earth system dynamics, yet evaluation and calibration of land surface models in these regions remain limited. This study addresses this gap through site-specific calibration of the Noah with Multi-Parameterizations (Noah-MP) land surface model at two tropical forest sites: the Panama site with a tropical monsoon climate and the Malaysia site with a tropical rainforest climate. We develop an efficient machine learning-based calibration framework that combines emulator construction with parameter optimization. Site-specific calibration improves the model's ability to simulate key variables, including latent and sensible heat fluxes as well as soil moisture, particularly at daily and seasonal scales. The emulator-based framework enables efficient calibration and shows robust performance during independent validation periods at each site. While the calibrated parameters are not directly transferable between the two sites with different climate regimes, they perform effectively during unseen validation periods at their respective sites, suggesting the potential transferability of parameters across similar climates. Remaining challenges include simulating nighttime sensible heat fluxes, balancing the optimization of latent and sensible heat fluxes, and capturing seasonal soil moisture dynamics. These limitations may stem from structural simplifications in Noah-MP, such as the lack of multi-species vegetation modeling, soil organic layer representation, and detailed tropical subsurface hydrology. Our results demonstrate how the calibration framework can effectively improve Noah-MP performance in tropical forests and provide guidance for future development priorities, which can support broader efforts to generalize model calibration strategies and improve Earth system model fidelity in data-scarce, climatically distinct regions.",
+    "field": "Land surface modeling",
+    "problem": "Evaluation and calibration of land surface models are limited in tropical forests, where default parameters often fail to accurately capture complex land-surface processes due to the regions' unique biodiversity, canopy structures, and distinct seasonality, leading to poor model performance.",
+    "method": "This study develops an efficient machine learning-based calibration framework, combining an emulator with a global optimization algorithm, to improve the Noah-MP land surface model's ability to simulate key variables like heat fluxes and soil moisture in tropical forests.",
+    "task": "The task is to calibrate the Noah-MP land surface model for two tropical forest sites using a machine learning-based framework to improve simulations of energy fluxes and soil moisture.",
+    "model": [
+        "Noah-MP",
+        "WRF",
+        "MPAS",
+        "UFS",
+        "JULES",
+        "CTSM"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/calibration",
+            "display_name": "Calibration",
+            "score": 0.6887000203132629
+        },
+        {
+            "id": "https://openalex.org/keywords/tropical-climate",
+            "display_name": "Tropical climate",
+            "score": 0.47269999980926514
+        },
+        {
+            "id": "https://openalex.org/keywords/benchmark",
+            "display_name": "Benchmark (surveying)",
+            "score": 0.47040000557899475
+        },
+        {
+            "id": "https://openalex.org/keywords/vegetation",
+            "display_name": "Vegetation (pathology)",
+            "score": 0.4456000030040741
+        },
+        {
+            "id": "https://openalex.org/keywords/humid-subtropical-climate",
+            "display_name": "Humid subtropical climate",
+            "score": 0.3840999901294708
+        },
+        {
+            "id": "https://openalex.org/keywords/sensible-heat",
+            "display_name": "Sensible heat",
+            "score": 0.3801000118255615
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.3709000051021576
+        },
+        {
+            "id": "https://openalex.org/keywords/tropics",
+            "display_name": "Tropics",
+            "score": 0.3677000105381012
+        },
+        {
+            "id": "https://openalex.org/keywords/tropical-rainforest",
+            "display_name": "Tropical rainforest",
+            "score": 0.3675000071525574
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C165838908",
+            "wikidata": "https://www.wikidata.org/wiki/Q736777",
+            "display_name": "Calibration",
+            "level": 2,
+            "score": 0.6887000203132629
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.673799991607666
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.47780001163482666
+        },
+        {
+            "id": "https://openalex.org/C2776172968",
+            "wikidata": "https://www.wikidata.org/wiki/Q135712",
+            "display_name": "Tropical climate",
+            "level": 2,
+            "score": 0.47269999980926514
+        },
+        {
+            "id": "https://openalex.org/C185798385",
+            "wikidata": "https://www.wikidata.org/wiki/Q1161707",
+            "display_name": "Benchmark (surveying)",
+            "level": 2,
+            "score": 0.47040000557899475
+        },
+        {
+            "id": "https://openalex.org/C2776133958",
+            "wikidata": "https://www.wikidata.org/wiki/Q7918366",
+            "display_name": "Vegetation (pathology)",
+            "level": 2,
+            "score": 0.4456000030040741
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.44429999589920044
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.3937999904155731
+        },
+        {
+            "id": "https://openalex.org/C178963451",
+            "wikidata": "https://www.wikidata.org/wiki/Q864320",
+            "display_name": "Humid subtropical climate",
+            "level": 2,
+            "score": 0.3840999901294708
+        },
+        {
+            "id": "https://openalex.org/C59242433",
+            "wikidata": "https://www.wikidata.org/wiki/Q1480581",
+            "display_name": "Sensible heat",
+            "level": 2,
+            "score": 0.3801000118255615
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3767000138759613
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.3709000051021576
+        },
+        {
+            "id": "https://openalex.org/C50660011",
+            "wikidata": "https://www.wikidata.org/wiki/Q42530",
+            "display_name": "Tropics",
+            "level": 2,
+            "score": 0.3677000105381012
+        },
+        {
+            "id": "https://openalex.org/C555313981",
+            "wikidata": "https://www.wikidata.org/wiki/Q199403",
+            "display_name": "Tropical rainforest",
+            "level": 3,
+            "score": 0.3675000071525574
+        },
+        {
+            "id": "https://openalex.org/C91492127",
+            "wikidata": "https://www.wikidata.org/wiki/Q7846186",
+            "display_name": "Tropical vegetation",
+            "level": 3,
+            "score": 0.3666999936103821
+        },
+        {
+            "id": "https://openalex.org/C80368990",
+            "wikidata": "https://www.wikidata.org/wiki/Q3046459",
+            "display_name": "Earth system science",
+            "level": 2,
+            "score": 0.36160001158714294
+        },
+        {
+            "id": "https://openalex.org/C61272859",
+            "wikidata": "https://www.wikidata.org/wiki/Q7834031",
+            "display_name": "Transferability",
+            "level": 3,
+            "score": 0.3612000048160553
+        },
+        {
+            "id": "https://openalex.org/C2776285232",
+            "wikidata": "https://www.wikidata.org/wiki/Q1048194",
+            "display_name": "Tropical forest",
+            "level": 2,
+            "score": 0.3531999886035919
+        },
+        {
+            "id": "https://openalex.org/C26517878",
+            "wikidata": "https://www.wikidata.org/wiki/Q228039",
+            "display_name": "Key (lock)",
+            "level": 2,
+            "score": 0.33629998564720154
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.31209999322891235
+        },
+        {
+            "id": "https://openalex.org/C4792198",
+            "wikidata": "https://www.wikidata.org/wiki/Q1165944",
+            "display_name": "Land use",
+            "level": 2,
+            "score": 0.28929999470710754
+        },
+        {
+            "id": "https://openalex.org/C14168384",
+            "wikidata": "https://www.wikidata.org/wiki/Q16305538",
+            "display_name": "Subtropics",
+            "level": 2,
+            "score": 0.2847000062465668
+        },
+        {
+            "id": "https://openalex.org/C22019652",
+            "wikidata": "https://www.wikidata.org/wiki/Q331309",
+            "display_name": "Overfitting",
+            "level": 3,
+            "score": 0.2770000100135803
+        },
+        {
+            "id": "https://openalex.org/C2619416",
+            "wikidata": "https://www.wikidata.org/wiki/Q9444",
+            "display_name": "Rainforest",
+            "level": 2,
+            "score": 0.2768000066280365
+        },
+        {
+            "id": "https://openalex.org/C119898033",
+            "wikidata": "https://www.wikidata.org/wiki/Q3433888",
+            "display_name": "Ensemble forecasting",
+            "level": 2,
+            "score": 0.2732999920845032
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.2660999894142151
+        },
+        {
+            "id": "https://openalex.org/C136996986",
+            "wikidata": "https://www.wikidata.org/wiki/Q42967",
+            "display_name": "Monsoon",
+            "level": 2,
+            "score": 0.26190000772476196
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.2513999938964844
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "44.0 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "7.3 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.79"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "59.8 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "20.4 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.61"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "46.7 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "4.0 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.81"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "59.7 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "19.1 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.69"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "45.4 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "5.6 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.8"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "59.7 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "19.7 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (LH, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.65"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "51.2 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "30.6 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.69"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "33.5 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "17.4 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.87"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "56.9 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "34.9 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.57"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "37.7 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "19.0 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.81"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "54.1 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "32.7 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.63"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "35.7 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "18.3 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SH, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.84"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "0.051 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "-0.020 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.61"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "0.042 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "0.006 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.73"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "0.066 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "-0.035 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.40"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "0.055 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "-0.008 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.59"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "0.059 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "-0.028 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.51"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "0.049 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "-0.001 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Panama BCI tropical forest site (SM, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.67"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "52.1 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "-14.2 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.87"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "48.7 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "-8.4 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.89"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "53.3 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "-10.0 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.87"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "50.7 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "-2.3 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.88"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "52.8 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "-11.7 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.87"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "49.9 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "-4.7 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (LH, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.89"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "46.2 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "7.6 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.82"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "48.2 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "3.3 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.80"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "46.0 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "5.8 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.81"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "49.6 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "-0.3 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.78"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "46.1 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "6.5 W m-2"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.82"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "49.0 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "1.2 W m-2"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SH, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.79"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "0.022 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "-0.009 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.62"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Calibration)",
+            "evaluation_metric": "RMSE",
+            "result": "0.019 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Calibration)",
+            "evaluation_metric": "BIAS",
+            "result": "0.005 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Calibration)",
+            "evaluation_metric": "R2",
+            "result": "0.73"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "0.021 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "-0.014 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.51"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Validation)",
+            "evaluation_metric": "RMSE",
+            "result": "0.015 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Validation)",
+            "evaluation_metric": "BIAS",
+            "result": "-0.001 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Validation)",
+            "evaluation_metric": "R2",
+            "result": "0.74"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "0.021 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "-0.012 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Default)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.58"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Full)",
+            "evaluation_metric": "RMSE",
+            "result": "0.017 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Full)",
+            "evaluation_metric": "BIAS",
+            "result": "0.002 m3 m-3"
+        },
+        {
+            "model": "Noah-MP (Calibrated)",
+            "observational_dataset": "Malaysia PSO tropical forest site (SM, Full)",
+            "evaluation_metric": "R2",
+            "result": "0.75"
+        }
+    ],
+    "innovation": "This paper develops an efficient machine learning-based calibration framework, combining an emulator with parameter optimization, to enhance the Noah-MP land surface model\u2019s performance for simulating energy fluxes and soil moisture in tropical forests.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Noah-MP",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "latent heat",
+            "target_entity_type": "Variable",
+            "paragraph": "We use observational data from two tropical sites in Panama and Malaysia (Fig. 1, Table 1) to calibrate Noah-MP and improve its performance over tropical forests. Specifically, we evaluate and improve Noah-MP's performance in simulating latent heat (LH), sensible heat (SH), and soil moisture (SM), which are key variables influencing land-atmosphere interactions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah-MP",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "sensible heat",
+            "target_entity_type": "Variable",
+            "paragraph": "We use observational data from two tropical sites in Panama and Malaysia (Fig. 1, Table 1) to calibrate Noah-MP and improve its performance over tropical forests. Specifically, we evaluate and improve Noah-MP's performance in simulating latent heat (LH), sensible heat (SH), and soil moisture (SM), which are key variables influencing land-atmosphere interactions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah-MP",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "soil moisture",
+            "target_entity_type": "Variable",
+            "paragraph": "We use observational data from two tropical sites in Panama and Malaysia (Fig. 1, Table 1) to calibrate Noah-MP and improve its performance over tropical forests. Specifically, we evaluate and improve Noah-MP's performance in simulating latent heat (LH), sensible heat (SH), and soil moisture (SM), which are key variables influencing land-atmosphere interactions.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Panama BCI site",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "tropical monsoon climate",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "The Barro Colorado Island (BCI) site in Panama is located at 9.151\u00b0 N, 79.855\u00b0 W. It is a primary lowland (elevation 120 m) semi-deciduous tropical forest site with a mean canopy height of 30 m and few emergent trees (Cheng et al., 2022b; Detto et al., 2015; Detto and Pacala, 2022; Fang et al., 2022). It has distinct ?dry (mid-December to midApril) and wet (late-April to early December) seasons (Ogden et al., 2013). The site exhibits a tropical monsoon climate (Am), characterized by a short dry season. The soils are mostly well weathered kaolinitic Oxisols.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Malaysia PSO site",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "tropical rainforest climate",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "The Pasoh Forest Reserve (PFR), known as the PSO AsiaFlux site, is a tropical forest located in Malaysia at 2.9667\u00b0 N, 102.3\u00b0 E. This lowland forest (140 m elevation) boasts a canopy height of 30\u201340 m, with emergent trees exceeding 45 m. The site is notable for being located within a dry zone of Peninsular Malaysia and receives the lowest annual rainfall among adjacent south-eastern tropical rainforests (Lion et al., 2017; Noguchi et al., 2016). The soils are dominated by Ultisols and Oxisols, which are Haplic Acrisol and Xanthic Ferralsol in FAO classification. The site has a tropical rainforest climate (Af), with consistently high rainfall throughout the year.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah-MP",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "\"big-leaf\" canopy approach",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The community Noah-MP LSM (He et al., 2023a, b; Niu et al., 2011) is designed for a wide range of applications, including uncoupled studies of hydrometeorological and ecohydrological processes, as well as coupled numerical weather prediction and decadal climate simulations. It can operate from point to global scales. The land grid in Noah-MP is divided into two sub-grid tiles: vegetated and non-vegetated areas, determined by vegetation cover fraction. The biogeophysical and biogeochemical processes are treated separately for these two tiles. Noah-MP employs a \"big-leaf\" canopy approach, with canopy properties varying according to the type of vegetation (He et al., 2023a). More detailed descriptions of Noah-MP have been provided elsewhere (He et al., 2023c).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah-MP",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "multi-parameterization design",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The core strength of Noah-MP lies in its multi-parameterization design, allowing testing and use of different combinations of parameterization schemes (Li et al., 2020, 2022; Gan et al., 2019). Prior to calibration, we tested several physical options that could potentially impact LH and SH, including stomatal resistance, soil moisture factor, and surface resistance options. No significant difference in model performance was observed at either site (Figs. S1 and S2 in the Supplement); therefore, we adopted the default Noah-MP physics option set (He et al., 2023a) for parameter optimization.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah-MP",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "single-point simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "We configure single-point Noah-MP simulations at the two study sites and calibrate the model at the daily scale. For the Panama tropical forest site, the vegetation type is set as evergreen broadleaf forest and the soil type as clay. The simulated soil moisture for the top 10 cm is used as the closest available depth for validation against the observations at the site in Panama. At the Malaysia site, the vegetation type is also evergreen broadleaf forest, with silty clay soil. The simulated soil moisture averaged over the top 30 cm is used to validate against the observed soil water content at the site.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah-MP",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated separately for the calibration and validation periods using standard metrics computed in physical units, including RMSE, R2, and bias (BIAS; Eq. 8). Performance during the calibration assesses whether the emulator-based calibration identifies parameterizations that translate to the physical model, while performance during the independent validation period evaluates generalization and robustness.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah-MP",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated separately for the calibration and validation periods using standard metrics computed in physical units, including RMSE, R2, and bias (BIAS; Eq. 8). Performance during the calibration assesses whether the emulator-based calibration identifies parameterizations that translate to the physical model, while performance during the independent validation period evaluates generalization and robustness.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah-MP",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "BIAS",
+            "target_entity_type": "Metric",
+            "paragraph": "Model performance is evaluated separately for the calibration and validation periods using standard metrics computed in physical units, including RMSE, R2, and bias (BIAS; Eq. 8). Performance during the calibration assesses whether the emulator-based calibration identifies parameterizations that translate to the physical model, while performance during the independent validation period evaluates generalization and robustness.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah-MP",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "PBIAS",
+            "target_entity_type": "Metric",
+            "paragraph": "The metrics of evaluating emulator performance include the coefficient of determination (R2, Eq. 2), root mean square error (RMSE, Eq. 3), and percent bias (PBIAS, Eq. 4). Only emulators demonstrating sufficient accuracy are used in subsequent calibration in Sect. 2.5.3, ensuring that parameter optimization is based on a reliable approximation of Noah-MP behaviour.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Noah-MP",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "default physics option set",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "This study applies only the default Noah-MP physics option set. Different combinations of physics options may yield different results, which warrants future investigation. Comparative studies could evaluate Noah-MP's performance against other land surface models, such as the Joint UK Land Environment Simulator (JULES) and the Community Terrestrial System Model (CTSM). These comparisons would provide valuable insights into how different land surface schemes influence model performance in tropical regions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Noah-MP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Noah with Multi-Parameterizations",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Weather Research and Forecasting (WRF) model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Multiscale Prediction and Analysis System (MPAS)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NOAA's Unified Forecast System (UFS)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Joint UK Land Environment Simulator (JULES)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Community Terrestrial System Model (CTSM)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LSM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Nanyang Technological University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Centre for Climate Research Singapore",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "National University of Singapore",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NSF National Center for Atmospheric Research",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "The Hong Kong University of Science and Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Kasetsart University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Princeton University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Smithsonian Tropical Research Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Beijing Normal University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Chinese Academy of Sciences",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Kyoto University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Forest Research Institute Malaysia",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Tohoku Research Center, Forestry and Forest Products Research Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Kansai Research Center, Forestry and Forest Products Research Institute",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Lanzhou University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Geosciences Union",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "latent heat fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sensible heat fluxes",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "maximum rate of carboxylation at 25\u00b0C (VCMX25)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wilting point (WLTSMC)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "saturated hydraulic conductivity (SATDK)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stomatal resistance",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "soil moisture factor",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "surface resistance",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "preferential flow",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Poiseuille's law",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "soil organic layer parameterization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "\"big-leaf\" canopy approach",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "plant functional type (PFT) framework",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "ensemble simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "single-point Noah-MP simulations",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "BIAS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "R2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "PBIAS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Shapley value",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "land surface",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "half-hour",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "seasonal",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "diurnal",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Panama",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Malaysia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Singapore",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Thailand",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Japan",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Barro Colorado Island",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pasoh Forest Reserve",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Panama City",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "flux tower",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "TDR (time domain reflectometry) sensors",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "tropical monsoon climate",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "tropical rainforest climate",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "tropical",
+            "entity_type": "ClimateZone"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1550235540",
+        "https://openalex.org/W1588011536",
+        "https://openalex.org/W1595159159",
+        "https://openalex.org/W1598449041",
+        "https://openalex.org/W1637029135",
+        "https://openalex.org/W1968681915",
+        "https://openalex.org/W1986181047",
+        "https://openalex.org/W1993032372",
+        "https://openalex.org/W1994015690",
+        "https://openalex.org/W2012558906",
+        "https://openalex.org/W2020997422",
+        "https://openalex.org/W2027113398",
+        "https://openalex.org/W2031130560",
+        "https://openalex.org/W2049650811",
+        "https://openalex.org/W2087987077",
+        "https://openalex.org/W2090137585",
+        "https://openalex.org/W2109631166",
+        "https://openalex.org/W2131022626",
+        "https://openalex.org/W2131859951",
+        "https://openalex.org/W2133837084",
+        "https://openalex.org/W2135132094",
+        "https://openalex.org/W2135902443",
+        "https://openalex.org/W2136217680",
+        "https://openalex.org/W2143513491",
+        "https://openalex.org/W2147767491",
+        "https://openalex.org/W2147893540",
+        "https://openalex.org/W2149715078",
+        "https://openalex.org/W2160252043",
+        "https://openalex.org/W2160741281",
+        "https://openalex.org/W2162231719",
+        "https://openalex.org/W2421194745",
+        "https://openalex.org/W2487898712",
+        "https://openalex.org/W2729888501",
+        "https://openalex.org/W2754763437",
+        "https://openalex.org/W2761089649",
+        "https://openalex.org/W2785697432",
+        "https://openalex.org/W2796796463",
+        "https://openalex.org/W2800819102",
+        "https://openalex.org/W2801862923",
+        "https://openalex.org/W2802336901",
+        "https://openalex.org/W2884525810",
+        "https://openalex.org/W2910249264",
+        "https://openalex.org/W2944570917",
+        "https://openalex.org/W2950424176",
+        "https://openalex.org/W2981227897",
+        "https://openalex.org/W2981294234",
+        "https://openalex.org/W2982098174",
+        "https://openalex.org/W2983717423",
+        "https://openalex.org/W2986857630",
+        "https://openalex.org/W2998663874",
+        "https://openalex.org/W3011056298",
+        "https://openalex.org/W3027657907",
+        "https://openalex.org/W3088086597",
+        "https://openalex.org/W3111302672",
+        "https://openalex.org/W3209971528",
+        "https://openalex.org/W4200546666",
+        "https://openalex.org/W4205127571",
+        "https://openalex.org/W4210433567",
+        "https://openalex.org/W4223541171",
+        "https://openalex.org/W4224278819",
+        "https://openalex.org/W4229030278",
+        "https://openalex.org/W4292730938",
+        "https://openalex.org/W4307282744",
+        "https://openalex.org/W4309896784",
+        "https://openalex.org/W4382708709",
+        "https://openalex.org/W4386559402",
+        "https://openalex.org/W4387668340",
+        "https://openalex.org/W4391527566",
+        "https://openalex.org/W4393193289",
+        "https://openalex.org/W4400739153",
+        "https://openalex.org/W4401420138",
+        "https://openalex.org/W7125603289"
+    ]
+}

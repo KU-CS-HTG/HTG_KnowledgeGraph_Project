@@ -1,0 +1,1351 @@
+{
+    "uri": "https://openalex.org/W7154498929",
+    "title": "Assessing agricultural drought risk under CMIP6 scenarios using hybrid AI models and satellite-derived TVDI",
+    "venue": {
+        "name": "npj natural hazards.",
+        "id": "https://openalex.org/S4392228751",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5113993922",
+            "display_name": "Mohammad Zare",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5057937108",
+            "display_name": "Marius Hobart",
+            "orcid": "https://orcid.org/0000-0001-8703-0306"
+        },
+        {
+            "id": "https://openalex.org/A5019250292",
+            "display_name": "Michael Schirrmann",
+            "orcid": "https://orcid.org/0000-0002-3945-3539"
+        }
+    ],
+    "doi": "https://doi.org/10.1038/s44304-026-00199-3",
+    "abstract": "Abstract This study focuses on predicting the temperature vegetation dryness index (TVDI), an agricultural drought index, for a Mango orchard in Tamale, Ghana, using climate projections and satellite imagery. The nonlinear cross-correlation between the standardized precipitation Index (SPI) and TVDI was examined to comprehend the impact of meteorological drought on agricultural drought. Historical precipitation data and CMIP6 projected data (2015\u20132050) from 35 climate models across four Shared Socioeconomic Pathway (SSP) scenarios were subjected to bias correction and utilized to compute SPI. TVDI was obtained from Landsat 8/9 imagery and validated by UAV-based data, demonstrating good agreement. Mutual information (MI) analysis revealed scenario-dependent lag times of 0-6 months between SPI and TVDI, facilitating lag-based prediction. A hybrid Wavelet-ANFIS/FCM model predicted TVDI using SPIs as inputs with high accuracy (RMSE &lt; 0.08 in training and test phases). These findings demonstrate a progressive increase in the frequency and duration of agricultural drought under higher-emission SSP scenarios, underscoring the escalating future risk and emphasizing the necessity for an agricultural drought early warning system and climate adaptation planning. The proposed framework provides an AI-driven solution for predicting agricultural drought, supporting sustainable development goals (SDGs) related to food security and climate action.",
+    "field": "Agricultural drought forecasting",
+    "problem": "Existing studies lack an integrated framework for predicting future agricultural drought, often failing to use bias-corrected climate projections or account for the complex, nonlinear, and scenario-specific time lags between meteorological conditions and vegetation stress.",
+    "method": "The paper proposes a hybrid AI framework using a Wavelet-ANFIS/FCM model to predict future agricultural drought (TVDI) based on its lagged, nonlinear relationship with meteorological drought (SPI) derived from bias-corrected CMIP6 climate projections and validated with satellite data.",
+    "task": "The task is to predict a future agricultural drought index (TVDI) for a mango orchard in Ghana by using CMIP6 climate projections and satellite imagery as inputs for a hybrid AI model.",
+    "model": [
+        "UKESM1-0-LL",
+        "TaiESM1",
+        "NorESM2-MM",
+        "NorESM2-LM",
+        "NESM3",
+        "MRI-ESM2-0",
+        "MPI-ESM1-2-LR",
+        "MPI-ESM1-2-HR",
+        "MIROC6",
+        "MIROC-ES2L",
+        "KIOST-ESM",
+        "KACE-1-0-G",
+        "IPSL-CM6A-LR",
+        "INM-CM5-0",
+        "INM-CM4-8",
+        "IITM-ESM",
+        "HadGEM3-GC31-MM",
+        "HadGEM3-GC31-LL",
+        "GISS-E2-1-G",
+        "GFDL-ESM4",
+        "GFDL-CM4-gr2",
+        "GFDL-CM4",
+        "FGOALS-g3",
+        "EC-Earth3-Veg-LR",
+        "EC-Earth3",
+        "CanESM5",
+        "CNRM-ESM2-1",
+        "CNRM-CM6-1",
+        "CMCC-ESM2",
+        "CMCC-CM2-SR5",
+        "CESM2-WACCM",
+        "CESM2",
+        "BCC-CSM2-MR",
+        "ACCESS-ESM1-5",
+        "ACCESS-CM2"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.566100001335144
+        },
+        {
+            "id": "https://openalex.org/keywords/food-security",
+            "display_name": "Food security",
+            "score": 0.5404000282287598
+        },
+        {
+            "id": "https://openalex.org/keywords/agriculture",
+            "display_name": "Agriculture",
+            "score": 0.508899986743927
+        },
+        {
+            "id": "https://openalex.org/keywords/warning-system",
+            "display_name": "Warning system",
+            "score": 0.45899999141693115
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.43720000982284546
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.4154999852180481
+        },
+        {
+            "id": "https://openalex.org/keywords/vegetation",
+            "display_name": "Vegetation (pathology)",
+            "score": 0.4147999882698059
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-risk",
+            "display_name": "Climate risk",
+            "score": 0.3815999925136566
+        },
+        {
+            "id": "https://openalex.org/keywords/agricultural-productivity",
+            "display_name": "Agricultural productivity",
+            "score": 0.350600004196167
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6388999819755554
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.566100001335144
+        },
+        {
+            "id": "https://openalex.org/C549605437",
+            "wikidata": "https://www.wikidata.org/wiki/Q1229911",
+            "display_name": "Food security",
+            "level": 3,
+            "score": 0.5404000282287598
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5297999978065491
+        },
+        {
+            "id": "https://openalex.org/C118518473",
+            "wikidata": "https://www.wikidata.org/wiki/Q11451",
+            "display_name": "Agriculture",
+            "level": 2,
+            "score": 0.508899986743927
+        },
+        {
+            "id": "https://openalex.org/C107826830",
+            "wikidata": "https://www.wikidata.org/wiki/Q929380",
+            "display_name": "Environmental resource management",
+            "level": 1,
+            "score": 0.47110000252723694
+        },
+        {
+            "id": "https://openalex.org/C29825287",
+            "wikidata": "https://www.wikidata.org/wiki/Q1427940",
+            "display_name": "Warning system",
+            "level": 2,
+            "score": 0.45899999141693115
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.43720000982284546
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.4154999852180481
+        },
+        {
+            "id": "https://openalex.org/C2776133958",
+            "wikidata": "https://www.wikidata.org/wiki/Q7918366",
+            "display_name": "Vegetation (pathology)",
+            "level": 2,
+            "score": 0.4147999882698059
+        },
+        {
+            "id": "https://openalex.org/C2780210451",
+            "wikidata": "https://www.wikidata.org/wiki/Q3433166",
+            "display_name": "Climate risk",
+            "level": 3,
+            "score": 0.3815999925136566
+        },
+        {
+            "id": "https://openalex.org/C128383755",
+            "wikidata": "https://www.wikidata.org/wiki/Q3816336",
+            "display_name": "Agricultural productivity",
+            "level": 3,
+            "score": 0.350600004196167
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.3310000002384186
+        },
+        {
+            "id": "https://openalex.org/C159009313",
+            "wikidata": "https://www.wikidata.org/wiki/Q5283159",
+            "display_name": "Distributed lag",
+            "level": 2,
+            "score": 0.3208000063896179
+        },
+        {
+            "id": "https://openalex.org/C66204764",
+            "wikidata": "https://www.wikidata.org/wiki/Q219416",
+            "display_name": "Sustainability",
+            "level": 2,
+            "score": 0.31369999051094055
+        },
+        {
+            "id": "https://openalex.org/C2779296788",
+            "wikidata": "https://www.wikidata.org/wiki/Q5326904",
+            "display_name": "Early warning system",
+            "level": 3,
+            "score": 0.30250000953674316
+        },
+        {
+            "id": "https://openalex.org/C502990516",
+            "wikidata": "https://www.wikidata.org/wiki/Q3395383",
+            "display_name": "Agricultural land",
+            "level": 3,
+            "score": 0.29440000653266907
+        },
+        {
+            "id": "https://openalex.org/C2777382242",
+            "wikidata": "https://www.wikidata.org/wiki/Q6017816",
+            "display_name": "Index (typography)",
+            "level": 2,
+            "score": 0.2896000146865845
+        },
+        {
+            "id": "https://openalex.org/C75778745",
+            "wikidata": "https://www.wikidata.org/wiki/Q342626",
+            "display_name": "Lag",
+            "level": 2,
+            "score": 0.2863999903202057
+        },
+        {
+            "id": "https://openalex.org/C12174686",
+            "wikidata": "https://www.wikidata.org/wiki/Q1058438",
+            "display_name": "Risk assessment",
+            "level": 2,
+            "score": 0.28029999136924744
+        },
+        {
+            "id": "https://openalex.org/C39820584",
+            "wikidata": "https://www.wikidata.org/wiki/Q125928",
+            "display_name": "Climate pattern",
+            "level": 3,
+            "score": 0.27810001373291016
+        },
+        {
+            "id": "https://openalex.org/C2780753983",
+            "wikidata": "https://www.wikidata.org/wiki/Q236371",
+            "display_name": "Orchard",
+            "level": 2,
+            "score": 0.2676999866962433
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.26499998569488525
+        },
+        {
+            "id": "https://openalex.org/C170061395",
+            "wikidata": "https://www.wikidata.org/wiki/Q5468164",
+            "display_name": "Forecast skill",
+            "level": 2,
+            "score": 0.25769999623298645
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.25679999589920044
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "NorESM2-LM (QM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Cal (mm/m)",
+            "result": "24.73"
+        },
+        {
+            "model": "NorESM2-LM (QM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Val (mm/m)",
+            "result": "48.55"
+        },
+        {
+            "model": "NorESM2-LM (QM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Cal (mm/m)",
+            "result": "16.41"
+        },
+        {
+            "model": "NorESM2-LM (QM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Val (mm/m)",
+            "result": "33.89"
+        },
+        {
+            "model": "NorESM2-LM (QM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Cal",
+            "result": "0.95"
+        },
+        {
+            "model": "NorESM2-LM (QM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Val",
+            "result": "0.73"
+        },
+        {
+            "model": "CMCC-CM2-SR5 (GAM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Cal (mm/m)",
+            "result": "25.13"
+        },
+        {
+            "model": "CMCC-CM2-SR5 (GAM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Val (mm/m)",
+            "result": "52.15"
+        },
+        {
+            "model": "CMCC-CM2-SR5 (GAM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Cal (mm/m)",
+            "result": "15.74"
+        },
+        {
+            "model": "CMCC-CM2-SR5 (GAM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Val (mm/m)",
+            "result": "36.08"
+        },
+        {
+            "model": "CMCC-CM2-SR5 (GAM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Cal",
+            "result": "0.95"
+        },
+        {
+            "model": "CMCC-CM2-SR5 (GAM for SSP126)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Val",
+            "result": "0.72"
+        },
+        {
+            "model": "IITM-ESM (QM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Cal (mm/m)",
+            "result": "23.55"
+        },
+        {
+            "model": "IITM-ESM (QM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Val (mm/m)",
+            "result": "50.29"
+        },
+        {
+            "model": "IITM-ESM (QM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Cal (mm/m)",
+            "result": "15.91"
+        },
+        {
+            "model": "IITM-ESM (QM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Val (mm/m)",
+            "result": "31.09"
+        },
+        {
+            "model": "IITM-ESM (QM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Cal",
+            "result": "0.96"
+        },
+        {
+            "model": "IITM-ESM (QM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Val",
+            "result": "0.71"
+        },
+        {
+            "model": "INM-CM4-8 (GAM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Cal (mm/m)",
+            "result": "28.56"
+        },
+        {
+            "model": "INM-CM4-8 (GAM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Val (mm/m)",
+            "result": "40"
+        },
+        {
+            "model": "INM-CM4-8 (GAM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Cal (mm/m)",
+            "result": "18.14"
+        },
+        {
+            "model": "INM-CM4-8 (GAM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Val (mm/m)",
+            "result": "29.08"
+        },
+        {
+            "model": "INM-CM4-8 (GAM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Cal",
+            "result": "0.94"
+        },
+        {
+            "model": "INM-CM4-8 (GAM for SSP245)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Val",
+            "result": "0.80"
+        },
+        {
+            "model": "GISS-E2-1-G (QM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Cal (mm/m)",
+            "result": "20.41"
+        },
+        {
+            "model": "GISS-E2-1-G (QM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Val (mm/m)",
+            "result": "57.89"
+        },
+        {
+            "model": "GISS-E2-1-G (QM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Cal (mm/m)",
+            "result": "14.19"
+        },
+        {
+            "model": "GISS-E2-1-G (QM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Val (mm/m)",
+            "result": "36.75"
+        },
+        {
+            "model": "GISS-E2-1-G (QM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Cal",
+            "result": "0.97"
+        },
+        {
+            "model": "GISS-E2-1-G (QM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Val",
+            "result": "0.65"
+        },
+        {
+            "model": "CMCC-ESM2 (GAM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Cal (mm/m)",
+            "result": "21.78"
+        },
+        {
+            "model": "CMCC-ESM2 (GAM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Val (mm/m)",
+            "result": "48.12"
+        },
+        {
+            "model": "CMCC-ESM2 (GAM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Cal (mm/m)",
+            "result": "13.71"
+        },
+        {
+            "model": "CMCC-ESM2 (GAM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Val (mm/m)",
+            "result": "30.31"
+        },
+        {
+            "model": "CMCC-ESM2 (GAM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Cal",
+            "result": "0.96"
+        },
+        {
+            "model": "CMCC-ESM2 (GAM for SSP370)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Val",
+            "result": "0.73"
+        },
+        {
+            "model": "MIROC-ES2L (QM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Cal (mm/m)",
+            "result": "25.05"
+        },
+        {
+            "model": "MIROC-ES2L (QM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Val (mm/m)",
+            "result": "64.9"
+        },
+        {
+            "model": "MIROC-ES2L (QM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Cal (mm/m)",
+            "result": "15.82"
+        },
+        {
+            "model": "MIROC-ES2L (QM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Val (mm/m)",
+            "result": "49.13"
+        },
+        {
+            "model": "MIROC-ES2L (QM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Cal",
+            "result": "0.95"
+        },
+        {
+            "model": "MIROC-ES2L (QM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Val",
+            "result": "0.71"
+        },
+        {
+            "model": "KACE-1-0-G (GAM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Cal (mm/m)",
+            "result": "30.02"
+        },
+        {
+            "model": "KACE-1-0-G (GAM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "RMSE_Val (mm/m)",
+            "result": "25.68"
+        },
+        {
+            "model": "KACE-1-0-G (GAM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Cal (mm/m)",
+            "result": "20.59"
+        },
+        {
+            "model": "KACE-1-0-G (GAM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "MAE_Val (mm/m)",
+            "result": "22.92"
+        },
+        {
+            "model": "KACE-1-0-G (GAM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Cal",
+            "result": "0.93"
+        },
+        {
+            "model": "KACE-1-0-G (GAM for SSP585)",
+            "observational_dataset": "WMO station data from Tamale, Ghana",
+            "evaluation_metric": "r_Val",
+            "result": "0.84"
+        }
+    ],
+    "innovation": "This paper presents an AI-driven framework for predicting future agricultural drought by integrating bias-corrected CMIP6 scenarios with satellite imagery, using a hybrid Wavelet-ANFIS/FCM model and scenario-specific lag-time analysis between meteorological and agricultural drought indices.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Tamale",
+            "target_entity_type": "City",
+            "paragraph": "This study focuses on predicting the temperature vegetation dryness index (TVDI), an agricultural drought index, for a Mango orchard in Tamale, Ghana, using climate projections and satellite imagery.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Ghana",
+            "target_entity_type": "Country",
+            "paragraph": "This study focuses on predicting the temperature vegetation dryness index (TVDI), an agricultural drought index, for a Mango orchard in Tamale, Ghana, using climate projections and satellite imagery.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Drought",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "This study focuses on predicting the temperature vegetation dryness index (TVDI), an agricultural drought index, for a Mango orchard in Tamale, Ghana, using climate projections and satellite imagery.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Landsat 8",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "TVDI",
+            "target_entity_type": "Variable",
+            "paragraph": "TVDI was obtained from Landsat 8/9 imagery and validated by UAV-based data, demonstrating good agreement.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Landsat 9",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "TVDI",
+            "target_entity_type": "Variable",
+            "paragraph": "TVDI was obtained from Landsat 8/9 imagery and validated by UAV-based data, demonstrating good agreement.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UAV",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "TVDI",
+            "target_entity_type": "Variable",
+            "paragraph": "TVDI was obtained from Landsat 8/9 imagery and validated by UAV-based data, demonstrating good agreement.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "floods",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Flood",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Changes in global climatic conditions, especially in arid and semi-arid regions, have altered precipitation patterns both temporally and spatially. This changes the frequency of hydrological extremes, including floods and droughts fundamentally\u00b9.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "West African regions",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Particularly in West African regions near the Sahel Zone, such as Tamale in northern Ghana, where farming is mostly rain-fed, drought impacts threaten food security and agricultural productivity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Sahel Zone",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Particularly in West African regions near the Sahel Zone, such as Tamale in northern Ghana, where farming is mostly rain-fed, drought impacts threaten food security and agricultural productivity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "northern Ghana",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Particularly in West African regions near the Sahel Zone, such as Tamale in northern Ghana, where farming is mostly rain-fed, drought impacts threaten food security and agricultural productivity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Landsat 8",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "NDVI",
+            "target_entity_type": "Variable",
+            "paragraph": "Since the 1980s, remote sensing data, especially satellite imagery, have been applied for vegetation indices such as the normalized difference vegetation index (NDVI) and for land surface temperature (LST) estimations. The relationship between NDVI and LST has been used to track crop and orchard water stress through the temperature vegetation dryness index (TVDI). The TVDI measures a combined signal of both the soil moisture under trees and the leaf water status and has been considered as an agricultural drought index\u00b9\u2070. It can be calculated and validated using high-resolution multispectral and thermal data from Landsat 8 and 9 satellites, together with field-based methodologies such as thermal surveys conducted by unmanned aerial vehicles (UAVs) \u00b9\u00b9\u207b\u00b9\u00b3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Landsat 8",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "Since the 1980s, remote sensing data, especially satellite imagery, have been applied for vegetation indices such as the normalized difference vegetation index (NDVI) and for land surface temperature (LST) estimations. The relationship between NDVI and LST has been used to track crop and orchard water stress through the temperature vegetation dryness index (TVDI). The TVDI measures a combined signal of both the soil moisture under trees and the leaf water status and has been considered as an agricultural drought index\u00b9\u2070. It can be calculated and validated using high-resolution multispectral and thermal data from Landsat 8 and 9 satellites, together with field-based methodologies such as thermal surveys conducted by unmanned aerial vehicles (UAVs) \u00b9\u00b9\u207b\u00b9\u00b3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Landsat 9",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "NDVI",
+            "target_entity_type": "Variable",
+            "paragraph": "Since the 1980s, remote sensing data, especially satellite imagery, have been applied for vegetation indices such as the normalized difference vegetation index (NDVI) and for land surface temperature (LST) estimations. The relationship between NDVI and LST has been used to track crop and orchard water stress through the temperature vegetation dryness index (TVDI). The TVDI measures a combined signal of both the soil moisture under trees and the leaf water status and has been considered as an agricultural drought index\u00b9\u2070. It can be calculated and validated using high-resolution multispectral and thermal data from Landsat 8 and 9 satellites, together with field-based methodologies such as thermal surveys conducted by unmanned aerial vehicles (UAVs) \u00b9\u00b9\u207b\u00b9\u00b3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Landsat 9",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "Since the 1980s, remote sensing data, especially satellite imagery, have been applied for vegetation indices such as the normalized difference vegetation index (NDVI) and for land surface temperature (LST) estimations. The relationship between NDVI and LST has been used to track crop and orchard water stress through the temperature vegetation dryness index (TVDI). The TVDI measures a combined signal of both the soil moisture under trees and the leaf water status and has been considered as an agricultural drought index\u00b9\u2070. It can be calculated and validated using high-resolution multispectral and thermal data from Landsat 8 and 9 satellites, together with field-based methodologies such as thermal surveys conducted by unmanned aerial vehicles (UAVs) \u00b9\u00b9\u207b\u00b9\u00b3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "UAV",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "Since the 1980s, remote sensing data, especially satellite imagery, have been applied for vegetation indices such as the normalized difference vegetation index (NDVI) and for land surface temperature (LST) estimations. The relationship between NDVI and LST has been used to track crop and orchard water stress through the temperature vegetation dryness index (TVDI). The TVDI measures a combined signal of both the soil moisture under trees and the leaf water status and has been considered as an agricultural drought index\u00b9\u2070. It can be calculated and validated using high-resolution multispectral and thermal data from Landsat 8 and 9 satellites, together with field-based methodologies such as thermal surveys conducted by unmanned aerial vehicles (UAVs) \u00b9\u00b9\u207b\u00b9\u00b3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Landsat 8",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "satellite",
+            "target_entity_type": "Platform",
+            "paragraph": "It can be calculated and validated using high-resolution multispectral and thermal data from Landsat 8 and 9 satellites, together with field-based methodologies such as thermal surveys conducted by unmanned aerial vehicles (UAVs) \u00b9\u00b9\u207b\u00b9\u00b3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "Landsat 9",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "satellite",
+            "target_entity_type": "Platform",
+            "paragraph": "It can be calculated and validated using high-resolution multispectral and thermal data from Landsat 8 and 9 satellites, together with field-based methodologies such as thermal surveys conducted by unmanned aerial vehicles (UAVs) \u00b9\u00b9\u207b\u00b9\u00b3.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "NorESM2-LM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "The QM-corrected NorESM2-LM model outperformed the GAM-corrected model in validation with an RMSE (48.55 mm/m) and MAE (33.89 mm/ m), ergo showing that QM was more effective in the SSP126 scenario.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2-LM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "The QM-corrected NorESM2-LM model outperformed the GAM-corrected model in validation with an RMSE (48.55 mm/m) and MAE (33.89 mm/ m), ergo showing that QM was more effective in the SSP126 scenario.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2-LM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "r",
+            "target_entity_type": "Metric",
+            "paragraph": "QM and GAM for four SSP scenarios, including SSP1-2.6 (SSP126), SSP2-4.5 (SSP245), SSP3-7.0 (SSP370), and SSP5-8.5 (SSP585), have been applied to investigate how effective various bias correction methods are on 35 GCMs incorporated in CMIP6 precipitation data. To assess the performance of the techniques throughout the calibration and validation phases, statistical parameters like RMSE, MAE, and r have been used. Table 1 shows that both approaches produced acceptable results; yet, the best model changed depending on the scenario.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "INM-CM4-8",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "The GAM-corrected INM-CM4-8 model showed validation results in SSP245 with a lower RMSE (40 mm/m) and a stronger correlation (r = 0.80) than the QM version.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "INM-CM4-8",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "r",
+            "target_entity_type": "Metric",
+            "paragraph": "The GAM-corrected INM-CM4-8 model showed validation results in SSP245 with a lower RMSE (40 mm/m) and a stronger correlation (r = 0.80) than the QM version.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "INM-CM4-8",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "QM and GAM for four SSP scenarios, including SSP1-2.6 (SSP126), SSP2-4.5 (SSP245), SSP3-7.0 (SSP370), and SSP5-8.5 (SSP585), have been applied to investigate how effective various bias correction methods are on 35 GCMs incorporated in CMIP6 precipitation data. To assess the performance of the techniques throughout the calibration and validation phases, statistical parameters like RMSE, MAE, and r have been used. Table 1 shows that both approaches produced acceptable results; yet, the best model changed depending on the scenario.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-ESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "QM and GAM for four SSP scenarios, including SSP1-2.6 (SSP126), SSP2-4.5 (SSP245), SSP3-7.0 (SSP370), and SSP5-8.5 (SSP585), have been applied to investigate how effective various bias correction methods are on 35 GCMs incorporated in CMIP6 precipitation data. To assess the performance of the techniques throughout the calibration and validation phases, statistical parameters like RMSE, MAE, and r have been used. Table 1 shows that both approaches produced acceptable results; yet, the best model changed depending on the scenario.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-ESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "QM and GAM for four SSP scenarios, including SSP1-2.6 (SSP126), SSP2-4.5 (SSP245), SSP3-7.0 (SSP370), and SSP5-8.5 (SSP585), have been applied to investigate how effective various bias correction methods are on 35 GCMs incorporated in CMIP6 precipitation data. To assess the performance of the techniques throughout the calibration and validation phases, statistical parameters like RMSE, MAE, and r have been used. Table 1 shows that both approaches produced acceptable results; yet, the best model changed depending on the scenario.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-ESM2",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "r",
+            "target_entity_type": "Metric",
+            "paragraph": "QM and GAM for four SSP scenarios, including SSP1-2.6 (SSP126), SSP2-4.5 (SSP245), SSP3-7.0 (SSP370), and SSP5-8.5 (SSP585), have been applied to investigate how effective various bias correction methods are on 35 GCMs incorporated in CMIP6 precipitation data. To assess the performance of the techniques throughout the calibration and validation phases, statistical parameters like RMSE, MAE, and r have been used. Table 1 shows that both approaches produced acceptable results; yet, the best model changed depending on the scenario.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KACE-1-0-G",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "RMSE",
+            "target_entity_type": "Metric",
+            "paragraph": "Although its calibration performance was a bit poorer, GAM with KACE-1-0-G also surpassed QM in the SSP585 scenario, attaining the lowest validation RMSE (25.68 mm/m) and MAE (22.92 mm/m).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KACE-1-0-G",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "Although its calibration performance was a bit poorer, GAM with KACE-1-0-G also surpassed QM in the SSP585 scenario, attaining the lowest validation RMSE (25.68 mm/m) and MAE (22.92 mm/m).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KACE-1-0-G",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "r",
+            "target_entity_type": "Metric",
+            "paragraph": "QM and GAM for four SSP scenarios, including SSP1-2.6 (SSP126), SSP2-4.5 (SSP245), SSP3-7.0 (SSP370), and SSP5-8.5 (SSP585), have been applied to investigate how effective various bias correction methods are on 35 GCMs incorporated in CMIP6 precipitation data. To assess the performance of the techniques throughout the calibration and validation phases, statistical parameters like RMSE, MAE, and r have been used. Table 1 shows that both approaches produced acceptable results; yet, the best model changed depending on the scenario.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "NorESM2-LM",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "This multi-criteria evaluation indicates that the selected models for the next projection are SSP126: QM-based NorESM2-LM, SSP245: GAM-based INM-CM4-8; SSP370: CMCC-ESM2 model using GAM bias correction technique; and SSP585: KACE-1-0-G corrected with GAM. In the next phases, the selected models\u2019 precipitation data will be used for calculating the future meteorological drought index (Fig. 6).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "INM-CM4-8",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "This multi-criteria evaluation indicates that the selected models for the next projection are SSP126: QM-based NorESM2-LM, SSP245: GAM-based INM-CM4-8; SSP370: CMCC-ESM2 model using GAM bias correction technique; and SSP585: KACE-1-0-G corrected with GAM. In the next phases, the selected models\u2019 precipitation data will be used for calculating the future meteorological drought index (Fig. 6).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CMCC-ESM2",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "This multi-criteria evaluation indicates that the selected models for the next projection are SSP126: QM-based NorESM2-LM, SSP245: GAM-based INM-CM4-8; SSP370: CMCC-ESM2 model using GAM bias correction technique; and SSP585: KACE-1-0-G corrected with GAM. In the next phases, the selected models\u2019 precipitation data will be used for calculating the future meteorological drought index (Fig. 6).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "KACE-1-0-G",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "This multi-criteria evaluation indicates that the selected models for the next projection are SSP126: QM-based NorESM2-LM, SSP245: GAM-based INM-CM4-8; SSP370: CMCC-ESM2 model using GAM bias correction technique; and SSP585: KACE-1-0-G corrected with GAM. In the next phases, the selected models\u2019 precipitation data will be used for calculating the future meteorological drought index (Fig. 6).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Sahel Zone",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "Dry",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "Changes in global climatic conditions, especially in arid and semi-arid regions, have altered precipitation patterns both temporally and spatially. This changes the frequency of hydrological extremes, including floods and droughts fundamentally\u00b9. Particularly in West African regions near the Sahel Zone, such as Tamale in northern Ghana, where farming is mostly rain-fed, drought impacts threaten food security and agricultural productivity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "TVDI",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SPI",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "SSP",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "Landsat 8",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Landsat 9",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "UAV",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Mutual Information",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "drought",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Drought",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "drought",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "West African regions",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Sahel Zone",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Tamale",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Ghana",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "flood",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Flood",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "flood",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "NDVI",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "LST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CMIP6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "GAM",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pearson correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "GCM",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "SSP585",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "UKESM1-0-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TaiESM1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM2-MM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NorESM2-LM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NESM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-ESM2-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MIROC-ES2L",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "KIOST-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "KACE-1-0-G",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM6A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INM-CM5-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INM-CM4-8",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IITM-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM3-GC31-MM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadGEM3-GC31-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GISS-E2-1-G",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-CM4-gr2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-CM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FGOALS-g3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth3-Veg-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EC-Earth3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CanESM5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-ESM2-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CNRM-CM6-1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC-ESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMCC-CM2-SR5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM2-WACCM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CESM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BCC-CSM2-MR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ACCESS-ESM1-5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ACCESS-CM2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SSP126",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP245",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP370",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "West African Monsoon",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "decadal simulation",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "World Meteorological Organization",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NEX-GDDP-CMIP6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Mean error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "95% Confidence Interval",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Linear correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "USGS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "satellite",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1907702319",
+        "https://openalex.org/W1917061602",
+        "https://openalex.org/W1973676661",
+        "https://openalex.org/W2029364363",
+        "https://openalex.org/W2033804135",
+        "https://openalex.org/W2046945713",
+        "https://openalex.org/W2052605703",
+        "https://openalex.org/W2073328482",
+        "https://openalex.org/W2100956194",
+        "https://openalex.org/W2133321814",
+        "https://openalex.org/W2193503481",
+        "https://openalex.org/W2410610637",
+        "https://openalex.org/W2613921977",
+        "https://openalex.org/W2767752353",
+        "https://openalex.org/W2802248750",
+        "https://openalex.org/W2995454507",
+        "https://openalex.org/W3021465089",
+        "https://openalex.org/W3047533223",
+        "https://openalex.org/W3048849603",
+        "https://openalex.org/W3082159165",
+        "https://openalex.org/W3094533352",
+        "https://openalex.org/W3118309152",
+        "https://openalex.org/W3166918019",
+        "https://openalex.org/W3207036780",
+        "https://openalex.org/W3208268338",
+        "https://openalex.org/W4231543492",
+        "https://openalex.org/W4245295309",
+        "https://openalex.org/W4295648998",
+        "https://openalex.org/W4304788990",
+        "https://openalex.org/W4361269784",
+        "https://openalex.org/W4364366023",
+        "https://openalex.org/W4365445755",
+        "https://openalex.org/W4382363608",
+        "https://openalex.org/W4387221150",
+        "https://openalex.org/W4390971351",
+        "https://openalex.org/W4391218484",
+        "https://openalex.org/W4399104671",
+        "https://openalex.org/W4401627476",
+        "https://openalex.org/W4401898149",
+        "https://openalex.org/W4407164973",
+        "https://openalex.org/W4409150262",
+        "https://openalex.org/W4412748980",
+        "https://openalex.org/W7124267624"
+    ]
+}

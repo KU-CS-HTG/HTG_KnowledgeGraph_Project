@@ -1,0 +1,1167 @@
+{
+    "uri": "https://openalex.org/W7153299500",
+    "title": "Application of random forest modeling to evaluate groundwater storage changes in the Breede Water Management Area, South Africa",
+    "venue": {
+        "name": "Hydrogeology Journal",
+        "id": "https://openalex.org/S163378907",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5133329018",
+            "display_name": "Maal A. Adam",
+            "orcid": "https://orcid.org/0000-0002-7018-7320"
+        },
+        {
+            "id": "https://openalex.org/A5026022533",
+            "display_name": "Stephanie Scheiber-Enslin",
+            "orcid": "https://orcid.org/0000-0003-1966-4651"
+        },
+        {
+            "id": "https://openalex.org/A5133365648",
+            "display_name": "K. A. Ali",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.1007/s10040-026-03047-w",
+    "abstract": "Abstract Monitoring groundwater storage anomalies (GWSA) at high spatial resolutions is critical for sustainable water resource management and hydrological applications. The Gravity Recovery and Climate Experiment (GRACE) satellite provides unique insights into changes in terrestrial water storage but is limited by its coarse spatial resolution. In this study, GRACE observations, in situ groundwater levels, and Global Land Data Assimilation System (GLDAS)-derived hydrological variables were integrated to downscale GWSA from 1\u00b0 \u00d7 1\u00b0 to 0.25\u00b0 \u00d7 0.25\u00b0 in the Breede Water Management Area, South Africa (2002\u20132022). Three machine learning models, namely, random forest (RF), support vector regression (SVR), and artificial neural networks (ANN), were tested. RF consistently outperformed the others ( R 2 = 0.86, Nash\u2013Sutcliffe efficiency (NSE) = 0.75, root mean square error (RMSE) = 0.19) and was selected for downscaling. The downscaled GWSA revealed spatial heterogeneity, with higher recharge in the eastern mountainous regions and persistent depletion in the western lowlands. Temporal patterns captured major droughts (2002\u20132006, 2015\u20132021) and recovery phases (2008\u20132010, 2020\u20132022), consistent with the observed hydroclimatic variability. Validation against in situ boreholes (NSE up to 0.55, RMSE = 19\u201325 mm, R 2 = 0.77\u20130.81) confirmed strong agreement, although some discrepancies reflected aquifer heterogeneity and effects of groundwater abstractions. Uncertainties remain due to GRACE errors, GLDAS predictor biases, and limited borehole coverage, which constrain model generalization. Despite these limitations, this study demonstrates the potential of RF-based downscaling to improve GRACE groundwater monitoring in data-scarce regions and to inform adaptive water management under increasing climate variability.",
+    "field": "Groundwater modeling with machine learning",
+    "problem": "Monitoring groundwater storage is challenged by the coarse spatial resolution of GRACE satellite data, which limits its applicability for effective water management in smaller basins, and by the scarcity of in-situ observation networks in regions like South Africa.",
+    "method": "This study proposes using a random forest model to downscale coarse-resolution GRACE groundwater storage anomalies by integrating them with finer-resolution hydrological variables from the Global Land Data Assimilation System (GLDAS).",
+    "task": "The task is to downscale coarse-resolution GRACE satellite groundwater storage anomalies to a finer resolution in the Breede Water Management Area, South Africa, using a random forest model integrated with hydrological variables.",
+    "model": [
+        "RF",
+        "SVR",
+        "ANN",
+        "GLDAS",
+        "CLSM",
+        "GBDT",
+        "Mosaic",
+        "VIC"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/downscaling",
+            "display_name": "Downscaling",
+            "score": 0.7544000148773193
+        },
+        {
+            "id": "https://openalex.org/keywords/groundwater-recharge",
+            "display_name": "Groundwater recharge",
+            "score": 0.7354000210762024
+        },
+        {
+            "id": "https://openalex.org/keywords/groundwater",
+            "display_name": "Groundwater",
+            "score": 0.6093000173568726
+        },
+        {
+            "id": "https://openalex.org/keywords/water-storage",
+            "display_name": "Water storage",
+            "score": 0.6007000207901001
+        },
+        {
+            "id": "https://openalex.org/keywords/hydrogeology",
+            "display_name": "Hydrogeology",
+            "score": 0.593999981880188
+        },
+        {
+            "id": "https://openalex.org/keywords/aquifer",
+            "display_name": "Aquifer",
+            "score": 0.5896999835968018
+        },
+        {
+            "id": "https://openalex.org/keywords/hydrology",
+            "display_name": "Hydrology (agriculture)",
+            "score": 0.5527999997138977
+        },
+        {
+            "id": "https://openalex.org/keywords/data-assimilation",
+            "display_name": "Data assimilation",
+            "score": 0.49729999899864197
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.47909998893737793
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.7544000148773193
+        },
+        {
+            "id": "https://openalex.org/C174091901",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670986",
+            "display_name": "Groundwater recharge",
+            "level": 4,
+            "score": 0.7354000210762024
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.7289999723434448
+        },
+        {
+            "id": "https://openalex.org/C76177295",
+            "wikidata": "https://www.wikidata.org/wiki/Q161598",
+            "display_name": "Groundwater",
+            "level": 2,
+            "score": 0.6093000173568726
+        },
+        {
+            "id": "https://openalex.org/C2776182401",
+            "wikidata": "https://www.wikidata.org/wiki/Q7973769",
+            "display_name": "Water storage",
+            "level": 3,
+            "score": 0.6007000207901001
+        },
+        {
+            "id": "https://openalex.org/C33556824",
+            "wikidata": "https://www.wikidata.org/wiki/Q179509",
+            "display_name": "Hydrogeology",
+            "level": 2,
+            "score": 0.593999981880188
+        },
+        {
+            "id": "https://openalex.org/C75622301",
+            "wikidata": "https://www.wikidata.org/wiki/Q208791",
+            "display_name": "Aquifer",
+            "level": 3,
+            "score": 0.5896999835968018
+        },
+        {
+            "id": "https://openalex.org/C76886044",
+            "wikidata": "https://www.wikidata.org/wiki/Q2883300",
+            "display_name": "Hydrology (agriculture)",
+            "level": 2,
+            "score": 0.5527999997138977
+        },
+        {
+            "id": "https://openalex.org/C24552861",
+            "wikidata": "https://www.wikidata.org/wiki/Q2670177",
+            "display_name": "Data assimilation",
+            "level": 2,
+            "score": 0.49729999899864197
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.47909998893737793
+        },
+        {
+            "id": "https://openalex.org/C153823671",
+            "wikidata": "https://www.wikidata.org/wiki/Q1049799",
+            "display_name": "Water resources",
+            "level": 2,
+            "score": 0.4293000102043152
+        },
+        {
+            "id": "https://openalex.org/C524765639",
+            "wikidata": "https://www.wikidata.org/wiki/Q1501619",
+            "display_name": "Water resource management",
+            "level": 1,
+            "score": 0.33629998564720154
+        },
+        {
+            "id": "https://openalex.org/C94747663",
+            "wikidata": "https://www.wikidata.org/wiki/Q7574086",
+            "display_name": "Spatial variability",
+            "level": 2,
+            "score": 0.3212999999523163
+        },
+        {
+            "id": "https://openalex.org/C158709400",
+            "wikidata": "https://www.wikidata.org/wiki/Q3578586",
+            "display_name": "Spatial ecology",
+            "level": 2,
+            "score": 0.3181000053882599
+        },
+        {
+            "id": "https://openalex.org/C169258074",
+            "wikidata": "https://www.wikidata.org/wiki/Q245748",
+            "display_name": "Random forest",
+            "level": 2,
+            "score": 0.31679999828338623
+        },
+        {
+            "id": "https://openalex.org/C150560799",
+            "wikidata": "https://www.wikidata.org/wiki/Q502102",
+            "display_name": "Borehole",
+            "level": 2,
+            "score": 0.30329999327659607
+        },
+        {
+            "id": "https://openalex.org/C126197015",
+            "wikidata": "https://www.wikidata.org/wiki/Q1586683",
+            "display_name": "Hydrological modelling",
+            "level": 2,
+            "score": 0.30070000886917114
+        },
+        {
+            "id": "https://openalex.org/C2778760939",
+            "wikidata": "https://www.wikidata.org/wiki/Q7314241",
+            "display_name": "Representative Concentration Pathways",
+            "level": 4,
+            "score": 0.2939000129699707
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.28790000081062317
+        },
+        {
+            "id": "https://openalex.org/C1284942",
+            "wikidata": "https://www.wikidata.org/wiki/Q1929501",
+            "display_name": "Water level",
+            "level": 2,
+            "score": 0.28369998931884766
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.2791000008583069
+        },
+        {
+            "id": "https://openalex.org/C206345919",
+            "wikidata": "https://www.wikidata.org/wiki/Q20380951",
+            "display_name": "Resource (disambiguation)",
+            "level": 2,
+            "score": 0.2761000096797943
+        },
+        {
+            "id": "https://openalex.org/C2775841215",
+            "wikidata": "https://www.wikidata.org/wiki/Q47572",
+            "display_name": "Sustainable forest management",
+            "level": 3,
+            "score": 0.2750999927520752
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.2750000059604645
+        },
+        {
+            "id": "https://openalex.org/C2780748813",
+            "wikidata": "https://www.wikidata.org/wiki/Q7649683",
+            "display_name": "Sustainable management",
+            "level": 3,
+            "score": 0.274399995803833
+        },
+        {
+            "id": "https://openalex.org/C2777489503",
+            "wikidata": "https://www.wikidata.org/wiki/Q7698936",
+            "display_name": "Temporal scales",
+            "level": 2,
+            "score": 0.2621999979019165
+        },
+        {
+            "id": "https://openalex.org/C2778102629",
+            "wikidata": "https://www.wikidata.org/wiki/Q725252",
+            "display_name": "Satellite imagery",
+            "level": 2,
+            "score": 0.2606000006198883
+        },
+        {
+            "id": "https://openalex.org/C176783924",
+            "wikidata": "https://www.wikidata.org/wiki/Q828158",
+            "display_name": "Evapotranspiration",
+            "level": 2,
+            "score": 0.2581999897956848
+        },
+        {
+            "id": "https://openalex.org/C195729132",
+            "wikidata": "https://www.wikidata.org/wiki/Q1540011",
+            "display_name": "Specific storage",
+            "level": 5,
+            "score": 0.2567000091075897
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "RF",
+            "observational_dataset": "GRACE-derived GWSA",
+            "evaluation_metric": "R\u00b2",
+            "result": "0.86"
+        },
+        {
+            "model": "RF",
+            "observational_dataset": "GRACE-derived GWSA",
+            "evaluation_metric": "RMSE",
+            "result": "0.19"
+        },
+        {
+            "model": "RF",
+            "observational_dataset": "GRACE-derived GWSA",
+            "evaluation_metric": "NSE",
+            "result": "0.75"
+        },
+        {
+            "model": "SVR",
+            "observational_dataset": "GRACE-derived GWSA",
+            "evaluation_metric": "R\u00b2",
+            "result": "0.84"
+        },
+        {
+            "model": "SVR",
+            "observational_dataset": "GRACE-derived GWSA",
+            "evaluation_metric": "RMSE",
+            "result": "0.22"
+        },
+        {
+            "model": "SVR",
+            "observational_dataset": "GRACE-derived GWSA",
+            "evaluation_metric": "NSE",
+            "result": "0.72"
+        },
+        {
+            "model": "ANN",
+            "observational_dataset": "GRACE-derived GWSA",
+            "evaluation_metric": "R\u00b2",
+            "result": "0.81"
+        },
+        {
+            "model": "ANN",
+            "observational_dataset": "GRACE-derived GWSA",
+            "evaluation_metric": "RMSE",
+            "result": "0.27"
+        },
+        {
+            "model": "ANN",
+            "observational_dataset": "GRACE-derived GWSA",
+            "evaluation_metric": "NSE",
+            "result": "0.69"
+        }
+    ],
+    "innovation": "This paper provides one of the first regional-scale applications of random forest modeling to downscale GRACE groundwater storage anomalies in the hydrogeologically complex and data-scarce Breede Water Management Area of South Africa, informing adaptive water management.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "GRACE satellite",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "terrestrial water storage",
+            "target_entity_type": "Variable",
+            "paragraph": "The Gravity Recovery and Climate Experiment (GRACE) satellite provides unique insights into changes in terrestrial water storage but is limited by its coarse spatial resolution. In this study, GRACE observations, in situ groundwater levels, and Global Land Data Assimilation System (GLDAS)-derived hydrological variables were integrated to downscale GWSA from 1\u00b0 \u00d7 1\u00b0 to 0.25\u00b0 \u00d7 0.25\u00b0 in the Breede Water Management Area, South Africa (2002-2022).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GLDAS",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "GLDAS Noah 2.1 land surface model (LSM)",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "This study employed the GLDAS Noah 2.1 land surface model (LSM), providing data at a spatial resolution of 0.25\u00b0 \u00d7 0.25\u00b0 every month. The GLDAS Noah 2.1model used to obtain variables such as canopy surface water, evapotranspiration, base flow groundwater runoff, root zone soil moisture, precipitation, temperature, and soil moisture at finer spatial scales (0.25\u00b0 \u00d7 0.25\u00b0) for each month during the study period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GLDAS Noah 2.1model",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "canopy surface water",
+            "target_entity_type": "Variable",
+            "paragraph": "The GLDAS Noah 2.1model used to obtain variables such as canopy surface water, evapotranspiration, base flow groundwater runoff, root zone soil moisture, precipitation, temperature, and soil moisture at finer spatial scales (0.25\u00b0 \u00d7 0.25\u00b0) for each month during the study period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GLDAS Noah 2.1model",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "evapotranspiration",
+            "target_entity_type": "Variable",
+            "paragraph": "The GLDAS Noah 2.1model used to obtain variables such as canopy surface water, evapotranspiration, base flow groundwater runoff, root zone soil moisture, precipitation, temperature, and soil moisture at finer spatial scales (0.25\u00b0 \u00d7 0.25\u00b0) for each month during the study period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GLDAS Noah 2.1model",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "base flow groundwater runoff",
+            "target_entity_type": "Variable",
+            "paragraph": "The GLDAS Noah 2.1model used to obtain variables such as canopy surface water, evapotranspiration, base flow groundwater runoff, root zone soil moisture, precipitation, temperature, and soil moisture at finer spatial scales (0.25\u00b0 \u00d7 0.25\u00b0) for each month during the study period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GLDAS Noah 2.1model",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "root zone soil moisture",
+            "target_entity_type": "Variable",
+            "paragraph": "The GLDAS Noah 2.1model used to obtain variables such as canopy surface water, evapotranspiration, base flow groundwater runoff, root zone soil moisture, precipitation, temperature, and soil moisture at finer spatial scales (0.25\u00b0 \u00d7 0.25\u00b0) for each month during the study period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GLDAS Noah 2.1model",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "precipitation",
+            "target_entity_type": "Variable",
+            "paragraph": "The GLDAS Noah 2.1model used to obtain variables such as canopy surface water, evapotranspiration, base flow groundwater runoff, root zone soil moisture, precipitation, temperature, and soil moisture at finer spatial scales (0.25\u00b0 \u00d7 0.25\u00b0) for each month during the study period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GLDAS Noah 2.1model",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The GLDAS Noah 2.1model used to obtain variables such as canopy surface water, evapotranspiration, base flow groundwater runoff, root zone soil moisture, precipitation, temperature, and soil moisture at finer spatial scales (0.25\u00b0 \u00d7 0.25\u00b0) for each month during the study period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GLDAS Noah 2.1model",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "soil moisture",
+            "target_entity_type": "Variable",
+            "paragraph": "The GLDAS Noah 2.1model used to obtain variables such as canopy surface water, evapotranspiration, base flow groundwater runoff, root zone soil moisture, precipitation, temperature, and soil moisture at finer spatial scales (0.25\u00b0 \u00d7 0.25\u00b0) for each month during the study period.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Breede Water Management Area",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Temporal patterns captured major droughts (2002\u20132006, 2015\u20132021) and recovery phases (2008\u20132010, 2020-2022), consistent with the observed hydroclimatic variability. Validation against in situ boreholes (NSE up to 0.55, RMSE = 19\u201325 mm, R2 = 0.77\u20130.81) confirmed strong agreement, although some discrepancies reflected aquifer heterogeneity and effects of groundwater abstractions. Uncertainties remain due to GRACE errors, GLDAS predictor biases, and limited borehole coverage, which constrain model generalization. Despite these limitations, this study demonstrates the potential of RF-based downscaling to improve GRACE groundwater monitoring in data-scarce regions and to inform adaptive water management under increasing climate variability.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "GRACE",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "coarse spatial resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The Gravity Recovery and Climate Experiment (GRACE) satellite provides unique insights into changes in terrestrial water storage but is limited by its coarse spatial resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GRACE",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "3\u00b0 (~ 300 km) native spatial resolution",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "However, its native spatial resolution is approximately 3\u00b0 (~ 300 km), which is constrained by the orbital configuration and inversion physics (Chen et al., 2022).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "RF downscaling model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2 = 0.86",
+            "target_entity_type": "Metric",
+            "paragraph": "RF consistently outperformed the others (R2 = 0.86, Nash\u2013Sutcliffe efficiency (NSE) = 0.75, root mean square error (RMSE) = 0.19) and was selected for downscaling.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "RF downscaling model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Nash\u2013Sutcliffe efficiency (NSE) = 0.75",
+            "target_entity_type": "Metric",
+            "paragraph": "RF consistently outperformed the others (R2 = 0.86, Nash\u2013Sutcliffe efficiency (NSE) = 0.75, root mean square error (RMSE) = 0.19) and was selected for downscaling.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "RF downscaling model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square error (RMSE) = 0.19",
+            "target_entity_type": "Metric",
+            "paragraph": "RF consistently outperformed the others (R2 = 0.86, Nash\u2013Sutcliffe efficiency (NSE) = 0.75, root mean square error (RMSE) = 0.19) and was selected for downscaling.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SVR downscaling model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2 = 0.84",
+            "target_entity_type": "Metric",
+            "paragraph": "All three models reproduced GWSA variability, but with differing accuracies. RF achieved the highest performance (R2 = 0.86, RMSE = 0.19, NSE = 0.75), followed by SVR (R2 = 0.84, RMSE = 0.22, NSE = 0.72), while ANN performed slightly weaker (R2 = 0.81, RMSE = 0.27, NSE = 0.69) (Table 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SVR downscaling model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square error (RMSE) = 0.22",
+            "target_entity_type": "Metric",
+            "paragraph": "All three models reproduced GWSA variability, but with differing accuracies. RF achieved the highest performance (R2 = 0.86, RMSE = 0.19, NSE = 0.75), followed by SVR (R2 = 0.84, RMSE = 0.22, NSE = 0.72), while ANN performed slightly weaker (R2 = 0.81, RMSE = 0.27, NSE = 0.69) (Table 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SVR downscaling model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Nash\u2013Sutcliffe efficiency (NSE) = 0.72",
+            "target_entity_type": "Metric",
+            "paragraph": "All three models reproduced GWSA variability, but with differing accuracies. RF achieved the highest performance (R2 = 0.86, RMSE = 0.19, NSE = 0.75), followed by SVR (R2 = 0.84, RMSE = 0.22, NSE = 0.72), while ANN performed slightly weaker (R2 = 0.81, RMSE = 0.27, NSE = 0.69) (Table 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ANN downscaling model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R2 = 0.81",
+            "target_entity_type": "Metric",
+            "paragraph": "All three models reproduced GWSA variability, but with differing accuracies. RF achieved the highest performance (R2 = 0.86, RMSE = 0.19, NSE = 0.75), followed by SVR (R2 = 0.84, RMSE = 0.22, NSE = 0.72), while ANN performed slightly weaker (R2 = 0.81, RMSE = 0.27, NSE = 0.69) (Table 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ANN downscaling model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square error (RMSE) = 0.27",
+            "target_entity_type": "Metric",
+            "paragraph": "All three models reproduced GWSA variability, but with differing accuracies. RF achieved the highest performance (R2 = 0.86, RMSE = 0.19, NSE = 0.75), followed by SVR (R2 = 0.84, RMSE = 0.22, NSE = 0.72), while ANN performed slightly weaker (R2 = 0.81, RMSE = 0.27, NSE = 0.69) (Table 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ANN downscaling model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Nash\u2013Sutcliffe efficiency (NSE) = 0.69",
+            "target_entity_type": "Metric",
+            "paragraph": "All three models reproduced GWSA variability, but with differing accuracies. RF achieved the highest performance (R2 = 0.86, RMSE = 0.19, NSE = 0.75), followed by SVR (R2 = 0.84, RMSE = 0.22, NSE = 0.72), while ANN performed slightly weaker (R2 = 0.81, RMSE = 0.27, NSE = 0.69) (Table 1).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Breede WMA",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "semi-arid climate",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "The Breede WMA, located in the Western Cape, is characterized by a semi-arid climate with variable rainfall patterns.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Western Cape",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "The GWSA peaked in September 2012 at 2.87 cm, while the lowest GWSA occurred in April 2005 at \u2013 2.00 cm, consistent with findings of Le Maitre (Le Maitre et al., 2018), who attributed similar variations in the Western Cape to changing climatic conditions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Drought",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Temporal patterns captured major droughts (2002\u20132006, 2015\u20132021) and recovery phases (2008\u20132010, 2020-2022), consistent with the observed hydroclimatic variability.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GRACE Jet Propulsion Laboratory (JPL) RL06 mass concentration (mascon) dataset",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Coastal Resolution Improvement (CRI) filter",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "To address coastal signal leakage, particularly relevant for the Breede WMA, the Coastal Resolution Improvement (CRI) filter included in the RL06 dataset was applied (Wiese et al., 2019).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "GRACE",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "GLDAS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "groundwater storage anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GWSA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1\u00b0 \u00d7 1\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.25\u00b0 \u00d7 0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Breede Water Management Area",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Africa",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "random forest",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "support vector regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SVR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "artificial neural networks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ANN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "R2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Nash\u2013Sutcliffe efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "NSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean square error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "drought",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Downscaling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "geostatistical analysis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "numerical groundwater modeling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "terrestrial water storage anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "TWSA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Johannesburg",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Charleston",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mascon",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "0.5-1\u00b0 grids",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dynamic downscaling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "land surface models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "LSMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "catchment land surface models",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "CLSMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "statistical downscaling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "surface runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "normalized difference vegetation index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NDVI",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vegetation indices",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "gradient boosting decision tree",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GBDT",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "multiple regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Western Cape",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Breede River Valley",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Botswana",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Namibia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Zimbabwe",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Mozambique",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Swaziland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Lesotho",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "JPL RL06 mass concentration (mascon) dataset",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Coastal Resolution Improvement (CRI) filter",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GLDAS Noah 2.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "land surface model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "canopy surface water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "base flow groundwater runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "root zone soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil moisture anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SMA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface water anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SWA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "groundwater level anomaly",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "\u2206GWL",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "specific yield",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SM",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "RZSM",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ET",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "P",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GRO",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "canopy water storage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CWS",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "T",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "linear interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "permutation importance",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "variable importance measures",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "VIMP",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean squared error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "fivefold cross-validation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "linear kernel",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "radial basis function (RBF) kernels",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ReLU activation function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Adam optimizer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "grid search",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "mean absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pearson correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "r",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "seasonal bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "residual correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "semi-arid climate",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Storm surface runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SSR",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Groundwater runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "GRACE-FO",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Mosaic",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CLSM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "VIC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "scale mismatch",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Sentinel",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SMAP",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Monte Carlo simulations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ensemble modeling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GLDAS Noah v2.1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "storm runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "river and lake storage",
+            "entity_type": "Variable"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1484814760",
+        "https://openalex.org/W1508955431",
+        "https://openalex.org/W1511158591",
+        "https://openalex.org/W1515230668",
+        "https://openalex.org/W1548430664",
+        "https://openalex.org/W1964357740",
+        "https://openalex.org/W1970438763",
+        "https://openalex.org/W1975373052",
+        "https://openalex.org/W1990653740",
+        "https://openalex.org/W1996977391",
+        "https://openalex.org/W2013489803",
+        "https://openalex.org/W2061770662",
+        "https://openalex.org/W2119132330",
+        "https://openalex.org/W2301692565",
+        "https://openalex.org/W2302432179",
+        "https://openalex.org/W2520351572",
+        "https://openalex.org/W2581107633",
+        "https://openalex.org/W2592183559",
+        "https://openalex.org/W2767496663",
+        "https://openalex.org/W2768812587",
+        "https://openalex.org/W2786804361",
+        "https://openalex.org/W2802645119",
+        "https://openalex.org/W2803410606",
+        "https://openalex.org/W2886688446",
+        "https://openalex.org/W2911964244",
+        "https://openalex.org/W2919115771",
+        "https://openalex.org/W2925986121",
+        "https://openalex.org/W2948053842",
+        "https://openalex.org/W2994688647",
+        "https://openalex.org/W3015774492",
+        "https://openalex.org/W3091957946",
+        "https://openalex.org/W3116774688",
+        "https://openalex.org/W3185689123",
+        "https://openalex.org/W4205101448",
+        "https://openalex.org/W4206629728",
+        "https://openalex.org/W4313379929",
+        "https://openalex.org/W4313459902",
+        "https://openalex.org/W4399878419",
+        "https://openalex.org/W4400867591",
+        "https://openalex.org/W4406964459"
+    ]
+}

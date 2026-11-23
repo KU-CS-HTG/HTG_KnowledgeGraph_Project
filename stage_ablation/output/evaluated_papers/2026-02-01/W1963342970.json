@@ -1,0 +1,792 @@
+{
+    "uri": "https://openalex.org/W1963342970",
+    "title": "Photolysis rates in correlated overlapping cloud fields: Cloud-J 7.3c",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2015,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5087251657",
+            "display_name": "Michael J. Prather",
+            "orcid": "https://orcid.org/0000-0002-9442-8109"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-8-2587-2015",
+    "abstract": "Abstract. A new approach for modeling photolysis rates (J values) in atmospheres with fractional cloud cover has been developed and is implemented as Cloud-J \u2013 a multi-scattering eight-stream radiative transfer model for solar radiation based on Fast-J. Using observations of the vertical correlation of cloud layers, Cloud-J 7.3c provides a practical and accurate method for modeling atmospheric chemistry. The combination of the new maximum-correlated cloud groups with the integration over all cloud combinations by four quadrature atmospheres produces mean J values in an atmospheric column with root mean square (rms) errors of 4 % or less compared with 10\u201320 % errors using simpler approximations. Cloud-J is practical for chemistry\u2013climate models, requiring only an average of 2.8 Fast-J calls per atmosphere vs. hundreds of calls with the correlated cloud groups, or 1 call with the simplest cloud approximations. Another improvement in modeling J values, the treatment of volatile organic compounds with pressure-dependent cross sections, is also incorporated into Cloud-J.",
+    "field": "Atmospheric chemistry modeling",
+    "problem": "Existing atmospheric chemistry models struggle to calculate photolysis rates accurately because simple approximations of vertical cloud overlap are inaccurate, while more realistic, observation-based methods that account for cloud correlation are often too computationally expensive for practical use in large-scale climate models.",
+    "method": "The proposed method uses observed vertical cloud decorrelation lengths to define maximally correlated cloud groups and integrates over all cloud combinations using four quadrature atmospheres to accurately and practically calculate mean photolysis rates for atmospheric chemistry models.",
+    "task": "The task is to develop a practical and accurate method for modeling atmospheric photolysis rates by creating a new model that better represents the vertical overlap of fractional clouds in atmospheric chemistry models.",
+    "model": [
+        "Cloud-J",
+        "Fast-J",
+        "MAX-RAN",
+        "MAX-COR",
+        "G0",
+        "G3",
+        "G6/.33",
+        "MOZART-4",
+        "Oslo CTM3",
+        "CCM"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/cloud-computing",
+            "display_name": "Cloud computing",
+            "score": 0.7774368524551392
+        },
+        {
+            "id": "https://openalex.org/keywords/cloud-cover",
+            "display_name": "Cloud cover",
+            "score": 0.6450766921043396
+        },
+        {
+            "id": "https://openalex.org/keywords/radiative-transfer",
+            "display_name": "Radiative transfer",
+            "score": 0.6445932984352112
+        },
+        {
+            "id": "https://openalex.org/keywords/cloud-height",
+            "display_name": "Cloud height",
+            "score": 0.5939062237739563
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.4869774281978607
+        },
+        {
+            "id": "https://openalex.org/keywords/photodissociation",
+            "display_name": "Photodissociation",
+            "score": 0.47675570845603943
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.4648182988166809
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-models",
+            "display_name": "Atmospheric models",
+            "score": 0.44832414388656616
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-chemistry",
+            "display_name": "Atmospheric chemistry",
+            "score": 0.4452741742134094
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.444240540266037
+        },
+        {
+            "id": "https://openalex.org/keywords/atmosphere",
+            "display_name": "Atmosphere (unit)",
+            "score": 0.4372170567512512
+        },
+        {
+            "id": "https://openalex.org/keywords/computational-physics",
+            "display_name": "Computational physics",
+            "score": 0.422751784324646
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-radiative-transfer-codes",
+            "display_name": "Atmospheric radiative transfer codes",
+            "score": 0.41935276985168457
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.3219829797744751
+        },
+        {
+            "id": "https://openalex.org/keywords/chemistry",
+            "display_name": "Chemistry",
+            "score": 0.25101980566978455
+        },
+        {
+            "id": "https://openalex.org/keywords/computer-science",
+            "display_name": "Computer science",
+            "score": 0.15471333265304565
+        },
+        {
+            "id": "https://openalex.org/keywords/photochemistry",
+            "display_name": "Photochemistry",
+            "score": 0.1277197301387787
+        },
+        {
+            "id": "https://openalex.org/keywords/optics",
+            "display_name": "Optics",
+            "score": 0.11668157577514648
+        },
+        {
+            "id": "https://openalex.org/keywords/ozone",
+            "display_name": "Ozone",
+            "score": 0.1140960156917572
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C79974875",
+            "wikidata": "https://www.wikidata.org/wiki/Q483639",
+            "display_name": "Cloud computing",
+            "level": 2,
+            "score": 0.7774368524551392
+        },
+        {
+            "id": "https://openalex.org/C206887242",
+            "wikidata": "https://www.wikidata.org/wiki/Q830457",
+            "display_name": "Cloud cover",
+            "level": 3,
+            "score": 0.6450766921043396
+        },
+        {
+            "id": "https://openalex.org/C74902906",
+            "wikidata": "https://www.wikidata.org/wiki/Q1190858",
+            "display_name": "Radiative transfer",
+            "level": 2,
+            "score": 0.6445932984352112
+        },
+        {
+            "id": "https://openalex.org/C142773270",
+            "wikidata": "https://www.wikidata.org/wiki/Q1810412",
+            "display_name": "Cloud height",
+            "level": 4,
+            "score": 0.5939062237739563
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.4869774281978607
+        },
+        {
+            "id": "https://openalex.org/C54582936",
+            "wikidata": "https://www.wikidata.org/wiki/Q16814",
+            "display_name": "Photodissociation",
+            "level": 2,
+            "score": 0.47675570845603943
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4648182988166809
+        },
+        {
+            "id": "https://openalex.org/C62279395",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric models",
+            "level": 3,
+            "score": 0.44832414388656616
+        },
+        {
+            "id": "https://openalex.org/C49999975",
+            "wikidata": "https://www.wikidata.org/wiki/Q287919",
+            "display_name": "Atmospheric chemistry",
+            "level": 3,
+            "score": 0.4452741742134094
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.444240540266037
+        },
+        {
+            "id": "https://openalex.org/C65440619",
+            "wikidata": "https://www.wikidata.org/wiki/Q177974",
+            "display_name": "Atmosphere (unit)",
+            "level": 2,
+            "score": 0.4372170567512512
+        },
+        {
+            "id": "https://openalex.org/C30475298",
+            "wikidata": "https://www.wikidata.org/wiki/Q909554",
+            "display_name": "Computational physics",
+            "level": 1,
+            "score": 0.422751784324646
+        },
+        {
+            "id": "https://openalex.org/C199390426",
+            "wikidata": "https://www.wikidata.org/wiki/Q2353151",
+            "display_name": "Atmospheric radiative transfer codes",
+            "level": 3,
+            "score": 0.41935276985168457
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.3219829797744751
+        },
+        {
+            "id": "https://openalex.org/C185592680",
+            "wikidata": "https://www.wikidata.org/wiki/Q2329",
+            "display_name": "Chemistry",
+            "level": 0,
+            "score": 0.25101980566978455
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.15471333265304565
+        },
+        {
+            "id": "https://openalex.org/C75473681",
+            "wikidata": "https://www.wikidata.org/wiki/Q188651",
+            "display_name": "Photochemistry",
+            "level": 1,
+            "score": 0.1277197301387787
+        },
+        {
+            "id": "https://openalex.org/C120665830",
+            "wikidata": "https://www.wikidata.org/wiki/Q14620",
+            "display_name": "Optics",
+            "level": 1,
+            "score": 0.11668157577514648
+        },
+        {
+            "id": "https://openalex.org/C508106653",
+            "wikidata": "https://www.wikidata.org/wiki/Q36933",
+            "display_name": "Ozone",
+            "level": 2,
+            "score": 0.1140960156917572
+        },
+        {
+            "id": "https://openalex.org/C111919701",
+            "wikidata": "https://www.wikidata.org/wiki/Q9135",
+            "display_name": "Operating system",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents Cloud-J 7.3c, a new model that accurately and efficiently calculates photolysis rates by using observed vertical correlations to represent the overlap of fractional cloud fields in atmospheric chemistry models.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Cloud-J",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Fast-J",
+            "target_entity_type": "Source",
+            "paragraph": "This computer code is a major expansion of Fast-J (Wild et al., 2000; Bian and Prather, 2002; Neu et al., 2007) and is presented here as Cloud-J version 7.3c. Cloud-J contains Fast-J and thus continues that numbering sequence, for which Fast-J 7.2 was the last released version.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Fast-J 7.2",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "Cloud-J 7.3c",
+            "target_entity_type": "Source",
+            "paragraph": "This computer code is a major expansion of Fast-J (Wild et al., 2000; Bian and Prather, 2002; Neu et al., 2007) and is presented here as Cloud-J version 7.3c. Cloud-J contains Fast-J and thus continues that numbering sequence, for which Fast-J 7.2 was the last released version.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Fast-J2",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Fast-J",
+            "target_entity_type": "Source",
+            "paragraph": "Fast-J has gone through several variants: Fast-J began with 7 bands, full scattering, for the troposphere; Fast-J2 added 11 bands, absorption only, for the stratosphere; Fast-JX applied full scattering to all 18 bands. Fast-J is used here throughout, although some recent code versions use the JX notation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Fast-JX",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Fast-J",
+            "target_entity_type": "Source",
+            "paragraph": "Fast-J has gone through several variants: Fast-J began with 7 bands, full scattering, for the troposphere; Fast-J2 added 11 bands, absorption only, for the stratosphere; Fast-JX applied full scattering to all 18 bands. Fast-J is used here throughout, although some recent code versions use the JX notation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Cloud-J",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "maximum-correlated cloud groups",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The combination of the new maximum-correlated cloud groups with the integration over all cloud combinations by four quadrature atmospheres produces mean J values in an atmospheric column with root mean square (rms) errors of 4% or less compared with 10\u201320% errors using simpler approximations.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Cloud-J",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "four quadrature atmospheres integration",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The combination of the new maximum-correlated cloud groups with the integration over all cloud combinations by four quadrature atmospheres produces mean J values in an atmospheric column with root mean square (rms) errors of 4% or less compared with 10\u201320% errors using simpler approximations.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Cloud-J",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "multi-scattering eight-stream radiative transfer model",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Abstract. A new approach for modeling photolysis rates (J values) in atmospheres with fractional cloud cover has been developed and is implemented as Cloud-J a multi-scattering eight-stream radiative transfer model for solar radiation based on Fast-J.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Cloud-J",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "treatment of volatile organic compounds with pressure-dependent cross sections",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Another improvement in modeling J values, the treatment of volatile organic compounds with pressure-dependent cross sections, is also incorporated into Cloud-J.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Fast-J",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "7 bands",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Fast-J has gone through several variants: Fast-J began with 7 bands, full scattering, for the troposphere; Fast-J2 added 11 bands, absorption only, for the stratosphere; Fast-JX applied full scattering to all 18 bands.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Fast-J2",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "11 bands",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Fast-J has gone through several variants: Fast-J began with 7 bands, full scattering, for the troposphere; Fast-J2 added 11 bands, absorption only, for the stratosphere; Fast-JX applied full scattering to all 18 bands.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Fast-JX",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "18 bands",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Fast-J has gone through several variants: Fast-J began with 7 bands, full scattering, for the troposphere; Fast-J2 added 11 bands, absorption only, for the stratosphere; Fast-JX applied full scattering to all 18 bands.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Cloud-J",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square (rms) errors",
+            "target_entity_type": "Metric",
+            "paragraph": "The combination of the new maximum-correlated cloud groups with the integration over all cloud combinations by four quadrature atmospheres produces mean J values in an atmospheric column with root mean square (rms) errors of 4% or less compared with 10\u201320% errors using simpler approximations.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Cloud-J",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "University of California, Irvine",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "California",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "photolysis rates",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "J values",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fast-J",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "eight-stream radiative transfer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "rms error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "treatment of volatile organic compounds with pressure-dependent cross sections",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "aerosol",
+            "entity_type": "Realm"
+        },
+        {
+            "entity_instance": "Fast-J2",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Fast-JX",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "MAX-RAN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cloud decorrelation length",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MAX-COR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "heating rates",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "3-D radiative transfer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Random overlap",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MAXimum overlap",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CORrelated overlap",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Correlated overlap",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Maximal overlap",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "G6/.33",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "G6/.00",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "G6/.99",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "G0",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "G3",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "J-O\u00b9D",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "J-NO3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "photolysis rate of HNO3",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "photolysis rate of NO2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "European Center for Medium-range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Oslo",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "T319L60",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Equator",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "avg err",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ClSky",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AvCld",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CF3/2",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AvDir",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MdQCA",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AvQCA",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Ran-3",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ozone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Rayleigh-scattering optical depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total optical depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Quadrature column atmospheres",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cloud optical depths",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cloud-water content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "direct solar beam",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "scattering optical depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "asymmetry factor",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "scattering phase function",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar zenith angle",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "liquid water content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ice water content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Volatile organic compounds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CH4",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "secondary organic aerosols",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "H2O2",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "OH",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "quantum yields",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Stern-Volmer formulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "methyl glyoxal",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "glyoxal",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "H2CO",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "propionaldehyde",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "glycol aldehyde",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "acetaldehyde",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "methylethyl ketone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "methylvinyl ketone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CH3OOH",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "methacrolein",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "acetone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "methyl nitrate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "peroxyacetyl nitrate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "acetone photolysis",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "3-D radiative transfer model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "independently scattering cloudlets",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NASA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "DOE BER",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W4235888992",
+        "https://openalex.org/W2111212139",
+        "https://openalex.org/W2015528677",
+        "https://openalex.org/W2170102990",
+        "https://openalex.org/W1965950155",
+        "https://openalex.org/W2075000842",
+        "https://openalex.org/W2065439635",
+        "https://openalex.org/W1991199950",
+        "https://openalex.org/W1819343697",
+        "https://openalex.org/W2063774097",
+        "https://openalex.org/W1971689725",
+        "https://openalex.org/W1988459714",
+        "https://openalex.org/W2025189440",
+        "https://openalex.org/W2137861113",
+        "https://openalex.org/W2016241302",
+        "https://openalex.org/W1979502228",
+        "https://openalex.org/W1992364289",
+        "https://openalex.org/W2046917282",
+        "https://openalex.org/W2139744245",
+        "https://openalex.org/W2176242631",
+        "https://openalex.org/W2064969045",
+        "https://openalex.org/W2006396472",
+        "https://openalex.org/W2147555034",
+        "https://openalex.org/W2070259289",
+        "https://openalex.org/W2072410985",
+        "https://openalex.org/W1486027341",
+        "https://openalex.org/W72104013",
+        "https://openalex.org/W2168225205",
+        "https://openalex.org/W1608669614"
+    ]
+}

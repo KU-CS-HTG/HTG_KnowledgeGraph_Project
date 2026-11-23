@@ -1,0 +1,919 @@
+{
+    "uri": "https://openalex.org/W7130644684",
+    "title": "A supranational machine learning approach to assess wildfire losses under climate change in Southeastern Europe",
+    "venue": {
+        "name": "Discover Environment",
+        "id": "https://openalex.org/S4387289596",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5045959062",
+            "display_name": "Bushra Sanira Asif",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5094118582",
+            "display_name": "Farzad Ghasemiazma",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5074627752",
+            "display_name": "Giorgio Meschi",
+            "orcid": "https://orcid.org/0000-0002-5629-0284"
+        },
+        {
+            "id": "https://openalex.org/A5075960385",
+            "display_name": "Andrea Trucchia",
+            "orcid": "https://orcid.org/0000-0001-7294-9061"
+        },
+        {
+            "id": "https://openalex.org/A5024411142",
+            "display_name": "Maryia Markhvida",
+            "orcid": "https://orcid.org/0000-0001-5398-0960"
+        },
+        {
+            "id": "https://openalex.org/A5122966102",
+            "display_name": "Paolo Fiorucci",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.1007/s44274-026-00584-9",
+    "abstract": "Abstract Wildfires pose significant threats to both ecosystems and socio-economic assets, particularly under changing climate conditions. This paper presents a comprehensive, data-driven approach for wildfire risk assessment that integrates machine learning modeling, fuel-type classification, and economic loss estimation. First, a Random forest-based susceptibility model is developed to identify the probability of fire spread, using diverse predictors such as climate indices, topographic parameters, and vegetation continuity. The model is calibrated at a pan-European scale and then tailored at national levels to capture interannual variability. Next, wildfire hazard is determined by combining susceptibility output with aggregated vegetation classes to approximate potential fire intensity. This susceptibility-hazard combination highlights the range of wildfire behaviors, from low-intensity surface fires in grasslands to high-intensity crown fires in coniferous forests. To account for potential economic impacts, the approach incorporates exposure data\u2014buildings, forests, and critical infrastructure, along with vulnerability tables that translate hazard intensity into monetary losses. Average Annual Loss is then derived by pairing hazard-based probabilities with these exposure and vulnerability layers. The results comprehensively quantify potential financial impacts. By merging detailed ML susceptibility modeling with explicit hazard and loss calculations, this study offers a scalable, robust tool for policymakers and land managers seeking to mitigate wildfire risks in an era of intensifying climate extremes.",
+    "field": "Wildfire risk assessment",
+    "problem": "Existing wildfire risk assessments in Europe often lack explicit, supranational-scale estimates of monetary losses, as they focus on hazard mapping or conceptual frameworks rather than quantifying Average Annual Loss, which is crucial for assessing impacts under climate change.",
+    "method": "The paper proposes a data-driven framework that integrates a Random Forest susceptibility model with fuel-type, exposure, and vulnerability data to calculate the Average Annual Loss from wildfires under present and future climate scenarios in Southeastern Europe.",
+    "task": "The task is to develop a machine learning framework to assess and project average annual monetary losses from wildfires in four Southeastern European countries under various climate change scenarios.",
+    "model": [
+        "MPI-ESM1-2HR",
+        "GFDL-ESM4",
+        "MRI-ESM2-0",
+        "IPSL-CM6A-LR",
+        "UKESM1-0-LL"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.7157999873161316
+        },
+        {
+            "id": "https://openalex.org/keywords/vulnerability",
+            "display_name": "Vulnerability (computing)",
+            "score": 0.7143999934196472
+        },
+        {
+            "id": "https://openalex.org/keywords/hazard",
+            "display_name": "Hazard",
+            "score": 0.6507999897003174
+        },
+        {
+            "id": "https://openalex.org/keywords/vegetation",
+            "display_name": "Vegetation (pathology)",
+            "score": 0.5551000237464905
+        },
+        {
+            "id": "https://openalex.org/keywords/scale",
+            "display_name": "Scale (ratio)",
+            "score": 0.45350000262260437
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.40639999508857727
+        },
+        {
+            "id": "https://openalex.org/keywords/random-forest",
+            "display_name": "Random forest",
+            "score": 0.3953999876976013
+        },
+        {
+            "id": "https://openalex.org/keywords/risk-assessment",
+            "display_name": "Risk assessment",
+            "score": 0.3698999881744385
+        },
+        {
+            "id": "https://openalex.org/keywords/vulnerability-assessment",
+            "display_name": "Vulnerability assessment",
+            "score": 0.36910000443458557
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.7157999873161316
+        },
+        {
+            "id": "https://openalex.org/C95713431",
+            "wikidata": "https://www.wikidata.org/wiki/Q631425",
+            "display_name": "Vulnerability (computing)",
+            "level": 2,
+            "score": 0.7143999934196472
+        },
+        {
+            "id": "https://openalex.org/C49261128",
+            "wikidata": "https://www.wikidata.org/wiki/Q1132455",
+            "display_name": "Hazard",
+            "level": 2,
+            "score": 0.6507999897003174
+        },
+        {
+            "id": "https://openalex.org/C2776133958",
+            "wikidata": "https://www.wikidata.org/wiki/Q7918366",
+            "display_name": "Vegetation (pathology)",
+            "level": 2,
+            "score": 0.5551000237464905
+        },
+        {
+            "id": "https://openalex.org/C107826830",
+            "wikidata": "https://www.wikidata.org/wiki/Q929380",
+            "display_name": "Environmental resource management",
+            "level": 1,
+            "score": 0.505299985408783
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.48739999532699585
+        },
+        {
+            "id": "https://openalex.org/C2778755073",
+            "wikidata": "https://www.wikidata.org/wiki/Q10858537",
+            "display_name": "Scale (ratio)",
+            "level": 2,
+            "score": 0.45350000262260437
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.40639999508857727
+        },
+        {
+            "id": "https://openalex.org/C169258074",
+            "wikidata": "https://www.wikidata.org/wiki/Q245748",
+            "display_name": "Random forest",
+            "level": 2,
+            "score": 0.3953999876976013
+        },
+        {
+            "id": "https://openalex.org/C12174686",
+            "wikidata": "https://www.wikidata.org/wiki/Q1058438",
+            "display_name": "Risk assessment",
+            "level": 2,
+            "score": 0.3698999881744385
+        },
+        {
+            "id": "https://openalex.org/C167063184",
+            "wikidata": "https://www.wikidata.org/wiki/Q1400839",
+            "display_name": "Vulnerability assessment",
+            "level": 3,
+            "score": 0.36910000443458557
+        },
+        {
+            "id": "https://openalex.org/C206355099",
+            "wikidata": "https://www.wikidata.org/wiki/Q3614972",
+            "display_name": "Hazard analysis",
+            "level": 2,
+            "score": 0.349700003862381
+        },
+        {
+            "id": "https://openalex.org/C122690726",
+            "wikidata": "https://www.wikidata.org/wiki/Q3348639",
+            "display_name": "Land use, land-use change and forestry",
+            "level": 3,
+            "score": 0.3441999852657318
+        },
+        {
+            "id": "https://openalex.org/C110872660",
+            "wikidata": "https://www.wikidata.org/wiki/Q37813",
+            "display_name": "Ecosystem",
+            "level": 2,
+            "score": 0.32710000872612
+        },
+        {
+            "id": "https://openalex.org/C100970517",
+            "wikidata": "https://www.wikidata.org/wiki/Q52107",
+            "display_name": "Physical geography",
+            "level": 1,
+            "score": 0.3249000012874603
+        },
+        {
+            "id": "https://openalex.org/C2987755307",
+            "wikidata": "https://www.wikidata.org/wiki/Q2997557",
+            "display_name": "Fire hazard",
+            "level": 2,
+            "score": 0.31540000438690186
+        },
+        {
+            "id": "https://openalex.org/C2778760939",
+            "wikidata": "https://www.wikidata.org/wiki/Q7314241",
+            "display_name": "Representative Concentration Pathways",
+            "level": 4,
+            "score": 0.29919999837875366
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.2935999929904938
+        },
+        {
+            "id": "https://openalex.org/C4792198",
+            "wikidata": "https://www.wikidata.org/wiki/Q1165944",
+            "display_name": "Land use",
+            "level": 2,
+            "score": 0.2870999872684479
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.2833000123500824
+        },
+        {
+            "id": "https://openalex.org/C89736061",
+            "wikidata": "https://www.wikidata.org/wiki/Q5451644",
+            "display_name": "Fire regime",
+            "level": 3,
+            "score": 0.28290000557899475
+        },
+        {
+            "id": "https://openalex.org/C204323151",
+            "wikidata": "https://www.wikidata.org/wiki/Q905424",
+            "display_name": "Range (aeronautics)",
+            "level": 2,
+            "score": 0.2766000032424927
+        },
+        {
+            "id": "https://openalex.org/C58563850",
+            "wikidata": "https://www.wikidata.org/wiki/Q7189604",
+            "display_name": "Physical hazard",
+            "level": 3,
+            "score": 0.26829999685287476
+        },
+        {
+            "id": "https://openalex.org/C58941895",
+            "wikidata": "https://www.wikidata.org/wiki/Q295865",
+            "display_name": "Ecosystem services",
+            "level": 3,
+            "score": 0.26269999146461487
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.2619999945163727
+        },
+        {
+            "id": "https://openalex.org/C114990195",
+            "wikidata": "https://www.wikidata.org/wiki/Q1430548",
+            "display_name": "Effects of global warming",
+            "level": 4,
+            "score": 0.2612000107765198
+        },
+        {
+            "id": "https://openalex.org/C119857082",
+            "wikidata": "https://www.wikidata.org/wiki/Q2539",
+            "display_name": "Machine learning",
+            "level": 1,
+            "score": 0.25920000672340393
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.25290000438690186
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a supranational machine learning framework that integrates fire susceptibility modeling with exposure and vulnerability data to explicitly quantify projected Average Annual Losses from wildfires under different climate change scenarios in Southeastern Europe.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Wildfires",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Wildfire",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Wildfires pose significant threats to both ecosystems and socio-economic assets, particularly under changing climate con- ditions. This paper presents a comprehensive, data-driven approach for wildfire risk assessment that integrates machine learning modeling, fuel-type classification, and economic loss estimation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfires",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Southeastern Europe",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "This paper presents a comprehensive, data-driven approach for wildfire risk assessment that integrates machine learning modeling, fuel-type classification, and economic loss estimation. First, a Random forest-based susceptibility model is developed to identify the probability of fire spread, using diverse predictors such as climate indices, topographic parameters, and vegetation continuity. The model is calibrated at a pan-European scale and then tailored at national levels to capture interannual variability. Next, wildfire hazard is determined by combining susceptibility output with aggregated vegetation classes to approximate potential fire intensity. This susceptibility-hazard combination highlights the range of wildfire behaviors, from low-intensity surface fires in grasslands to high-intensity crown fires in coniferous forests. To account for potential economic impacts, the approach incorporates exposure data\u2014buildings, forests, and critical infrastructure, along with vulnerability tables that translate hazard intensity into monetary losses. Average Annual Loss is then derived by pairing hazard-based probabilities with these exposure and vulnerability layers. The results com- prehensively quantify potential financial impacts. By merging detailed ML susceptibility modeling with explicit hazard and loss calculations, this study offers a scalable, robust tool for policymakers and land managers seeking to mitigate wildfire risks in an era of intensifying climate extremes.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "North America",
+            "target_entity_type": "Continent",
+            "paragraph": "Similar probabilistic wildfire risk frameworks have been developed, particularly in North America and other regional contexts.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Europe",
+            "target_entity_type": "Continent",
+            "paragraph": "Despite these advances, there remains a lack of studies that quantify wildfire risk in terms of Average Annual Loss at national or supranational scales, particularly for multi-country applications and for Europe.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Australia",
+            "target_entity_type": "Country",
+            "paragraph": "Recent works have also applied explainable machine-learning and deep-learning architectures to wildfire susceptibility mapping, spread prediction and spatio-temporal forecasting in Australia and Southeast Asia [46-49].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Southeast Asia",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Recent works have also applied explainable machine-learning and deep-learning architectures to wildfire susceptibility mapping, spread prediction and spatio-temporal forecasting in Australia and Southeast Asia [46-49].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "United States",
+            "target_entity_type": "Country",
+            "paragraph": "Existing probabilistic frameworks (e.g. [9, 10, 21, 35, 38]) largely focus on the United States, Canada, or specific case-study systems and are not directly to European regions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Canada",
+            "target_entity_type": "Country",
+            "paragraph": "Existing probabilistic frameworks (e.g. [9, 10, 21, 35, 38]) largely focus on the United States, Canada, or specific case-study systems and are not directly to European regions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "California",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Some regional applications demonstrate the feasibility of linking wildfire hazard to economic impacts, for example, Westerling and Bryant [44] modelled damage probabilities for buildings in California under climate change scenarios, and Galizia et al. [12] estimated expected annual fire losses in Brazilian eucalyptus plantations via large ensembles of stochastic fires, but comprehensive wildfire loss models at the country or multi- country scale remain underdeveloped.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Brazil",
+            "target_entity_type": "Country",
+            "paragraph": "Some regional applications demonstrate the feasibility of linking wildfire hazard to economic impacts, for example, Westerling and Bryant [44] modelled damage probabilities for buildings in California under climate change scenarios, and Galizia et al. [12] estimated expected annual fire losses in Brazilian eucalyptus plantations via large ensembles of stochastic fires, but comprehensive wildfire loss models at the country or multi- country scale remain underdeveloped.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Bulgaria",
+            "target_entity_type": "Country",
+            "paragraph": "This study focuses on four countries in southeastern Europe (Bulgaria, Croatia, Greece, and Romania) which represent a range of Mediterranean and Balkan environments with diverse wildfire regimes. Greece and Croatia have historically experienced frequent, high-intensity wildfires in their dry summer climates, whereas Bulgaria and Romania have had lower fire activity to date, though they remain susceptible under extreme conditions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Croatia",
+            "target_entity_type": "Country",
+            "paragraph": "This study focuses on four countries in southeastern Europe (Bulgaria, Croatia, Greece, and Romania) which represent a range of Mediterranean and Balkan environments with diverse wildfire regimes. Greece and Croatia have historically experienced frequent, high-intensity wildfires in their dry summer climates, whereas Bulgaria and Romania have had lower fire activity to date, though they remain susceptible under extreme conditions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Greece",
+            "target_entity_type": "Country",
+            "paragraph": "This study focuses on four countries in southeastern Europe (Bulgaria, Croatia, Greece, and Romania) which represent a range of Mediterranean and Balkan environments with diverse wildfire regimes. Greece and Croatia have historically experienced frequent, high-intensity wildfires in their dry summer climates, whereas Bulgaria and Romania have had lower fire activity to date, though they remain susceptible under extreme conditions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Romania",
+            "target_entity_type": "Country",
+            "paragraph": "This study focuses on four countries in southeastern Europe (Bulgaria, Croatia, Greece, and Romania) which represent a range of Mediterranean and Balkan environments with diverse wildfire regimes. Greece and Croatia have historically experienced frequent, high-intensity wildfires in their dry summer climates, whereas Bulgaria and Romania have had lower fire activity to date, though they remain susceptible under extreme conditions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "satellite",
+            "target_entity_type": "Platform",
+            "paragraph": "Wildfire Occurrence Historical fire records from the European Forest Fire Information System (EFFIS), based on MODIS and Sentinel-2 satellite observations, covering 2008\u20132022. This provides a standardized record of wildfire occurrences and burned areas across Europe, enabling correlation with environmental drivers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Sentinel-2",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "satellite",
+            "target_entity_type": "Platform",
+            "paragraph": "Wildfire Occurrence Historical fire records from the European Forest Fire Information System (EFFIS), based on MODIS and Sentinel-2 satellite observations, covering 2008\u20132022. This provides a standardized record of wildfire occurrences and burned areas across Europe, enabling correlation with environmental drivers.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "W5E5 v2",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "ERA5",
+            "target_entity_type": "Source",
+            "paragraph": "Climate Gridded climate data from the ISIMIP project. For the historical period (1979\u20132019), we use the W5E5 v2 dataset [19], a bias-corrected product based on ERA5 reanalysis, to compute annual averages of temperature, precipi- tation, wind speed, and relative humidity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Southern Europe",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Our findings for Southern Europe indicate that climate change is likely to significantly amplify wildfire losses, par- ticularly in countries with emerging fire problems.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Southeastern Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "wildfire",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Wildfire",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Average Annual Loss",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "climate indices",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "topographic parameters",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vegetation continuity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fire spread",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fire intensity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "monetary losses",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fire Weather Index",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "flood",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "earthquake",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Flood",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Earthquake",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Spain",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southeast Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Brazil",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Bulgaria",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Croatia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Greece",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Romania",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Mediterranean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Balkan",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "European Forest Fire Information System (EFFIS)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Sentinel-2",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Copernicus Land Monitoring Service",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CORINE Land Cover",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Copernicus Global Land Cover",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Portugal",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "MERIT digital elevation model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ISIMIP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "W5E5 v2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ISIMIP3b",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "SSP1-2.6",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP2-4.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "SSP5-8.5",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "3 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "neural network algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "OpenStreetMap",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Earthquake Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Joint Research Centre (JRC) datasets",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "100m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "MERIT DEM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "90 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1 to 5 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ISIMIP W5E5 v2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM1-2HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GFDL-ESM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MRI-ESM2-0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM6A-LR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "UKESM1-0-LL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "elevation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "slope",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aspect",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "tree cover density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fuel continuity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "annual maximum consecutive dry and wet days",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "annual average temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "annual maximum daily average temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "annual average relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "cumulative precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Area Under the ROC Curve",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "overall accuracy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean squared error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "annual burn probability",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CAL FIRE damage states",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GEM vulnerability framework",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "crown fires",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "potential damage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Adriatic coast",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North Macedonia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Southern Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Bayesian framework",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Monte Carlo simulation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Joint Research Centre",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1946614090",
+        "https://openalex.org/W1982611845",
+        "https://openalex.org/W1983413249",
+        "https://openalex.org/W1998346710",
+        "https://openalex.org/W2004848061",
+        "https://openalex.org/W2029752772",
+        "https://openalex.org/W2049366165",
+        "https://openalex.org/W2069079992",
+        "https://openalex.org/W2103219856",
+        "https://openalex.org/W2130742521",
+        "https://openalex.org/W2134289299",
+        "https://openalex.org/W2141992362",
+        "https://openalex.org/W2151514073",
+        "https://openalex.org/W2156575682",
+        "https://openalex.org/W2163225772",
+        "https://openalex.org/W2290410585",
+        "https://openalex.org/W2294741226",
+        "https://openalex.org/W2618708155",
+        "https://openalex.org/W2889146645",
+        "https://openalex.org/W2897306678",
+        "https://openalex.org/W2898266879",
+        "https://openalex.org/W2920911096",
+        "https://openalex.org/W2941499934",
+        "https://openalex.org/W2964406534",
+        "https://openalex.org/W3004099475",
+        "https://openalex.org/W3005369709",
+        "https://openalex.org/W3046990922",
+        "https://openalex.org/W3128573536",
+        "https://openalex.org/W3130313858",
+        "https://openalex.org/W3165820666",
+        "https://openalex.org/W4223923442",
+        "https://openalex.org/W4285087060",
+        "https://openalex.org/W4302774133",
+        "https://openalex.org/W4312698132",
+        "https://openalex.org/W4327497316",
+        "https://openalex.org/W4385813840",
+        "https://openalex.org/W4410371143",
+        "https://openalex.org/W4410972988",
+        "https://openalex.org/W4411277348",
+        "https://openalex.org/W4413159144",
+        "https://openalex.org/W4414306528",
+        "https://openalex.org/W6891652211"
+    ]
+}

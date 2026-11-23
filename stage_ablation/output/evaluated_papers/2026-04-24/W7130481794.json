@@ -1,0 +1,3183 @@
+{
+    "uri": "https://openalex.org/W7130481794",
+    "title": "SOON: Symmetric Orthogonal Operator Network for Global Subseasonal-to-Seasonal Climate Forecasting",
+    "venue": {
+        "name": "ArXiv.org",
+        "id": "https://openalex.org/S4393918464",
+        "type": "repository"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5069543144",
+            "display_name": "Ziyu Zhou",
+            "orcid": "https://orcid.org/0000-0002-7076-5645"
+        },
+        {
+            "id": "https://openalex.org/A5126300779",
+            "display_name": "Tian Zhou",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126341357",
+            "display_name": "Shiyu Wang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126331823",
+            "display_name": "James Kwok",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126319309",
+            "display_name": "Yuxuan Liang",
+            "orcid": null
+        }
+    ],
+    "doi": null,
+    "abstract": "Accurate global Subseasonal-to-Seasonal (S2S) climate forecasting is critical for disaster preparedness and resource management, yet it remains challenging due to chaotic atmospheric dynamics. Existing models predominantly treat atmospheric fields as isotropic images, conflating the distinct physical processes of zonal wave propagation and meridional transport, and leading to suboptimal modeling of anisotropic dynamics. In this paper, we propose the Symmetric Orthogonal Operator Network (SOON) for global S2S climate forecasting. It couples: (1) an Anisotropic Embedding strategy that tokenizes the global grid into latitudinal rings, preserving the integrity of zonal periodic structures; and (2) a stack of SOON Blocks that models the alternating interaction of Zonal and Meridional Operators via a symmetric decomposition, structurally mitigating discretization errors inherent in long-term integration. Extensive experiments on the Earth Reanalysis 5 dataset demonstrate that SOON establishes a new state-of-the-art, significantly outperforming existing methods in both forecasting accuracy and computational efficiency.",
+    "field": "Subseasonal-to-Seasonal climate forecasting",
+    "problem": "Existing Subseasonal-to-Seasonal forecasting models treat atmospheric fields as isotropic images, which conflates distinct physical processes like zonal wave propagation and meridional transport, leading to suboptimal modeling of anisotropic dynamics and rapid error accumulation.",
+    "method": "We propose the Symmetric Orthogonal Operator Network (SOON), which couples an anisotropic embedding strategy that tokenizes the grid into latitudinal rings with a symmetric decomposition of Zonal and Meridional Operators to model distinct atmospheric dynamics for S2S climate forecasting.",
+    "task": "The task is to perform global Subseasonal-to-Seasonal (S2S) climate forecasting by predicting bi-weekly atmospheric conditions for weeks 3-4 and 5-6 in advance, using a novel neural network designed to model anisotropic atmospheric dynamics.",
+    "model": [
+        "SOON"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/grid",
+            "display_name": "Grid",
+            "score": 0.4862000048160553
+        },
+        {
+            "id": "https://openalex.org/keywords/operator",
+            "display_name": "Operator (biology)",
+            "score": 0.4652000069618225
+        },
+        {
+            "id": "https://openalex.org/keywords/numerical-weather-prediction",
+            "display_name": "Numerical weather prediction",
+            "score": 0.4172999858856201
+        },
+        {
+            "id": "https://openalex.org/keywords/chaotic",
+            "display_name": "Chaotic",
+            "score": 0.4074999988079071
+        },
+        {
+            "id": "https://openalex.org/keywords/discretization",
+            "display_name": "Discretization",
+            "score": 0.40689998865127563
+        },
+        {
+            "id": "https://openalex.org/keywords/embedding",
+            "display_name": "Embedding",
+            "score": 0.38940000534057617
+        },
+        {
+            "id": "https://openalex.org/keywords/isotropy",
+            "display_name": "Isotropy",
+            "score": 0.37209999561309814
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.3603000044822693
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5055000185966492
+        },
+        {
+            "id": "https://openalex.org/C187691185",
+            "wikidata": "https://www.wikidata.org/wiki/Q2020720",
+            "display_name": "Grid",
+            "level": 2,
+            "score": 0.4862000048160553
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.47200000286102295
+        },
+        {
+            "id": "https://openalex.org/C17020691",
+            "wikidata": "https://www.wikidata.org/wiki/Q139677",
+            "display_name": "Operator (biology)",
+            "level": 5,
+            "score": 0.4652000069618225
+        },
+        {
+            "id": "https://openalex.org/C147947694",
+            "wikidata": "https://www.wikidata.org/wiki/Q837552",
+            "display_name": "Numerical weather prediction",
+            "level": 2,
+            "score": 0.4172999858856201
+        },
+        {
+            "id": "https://openalex.org/C2777052490",
+            "wikidata": "https://www.wikidata.org/wiki/Q5072826",
+            "display_name": "Chaotic",
+            "level": 2,
+            "score": 0.4074999988079071
+        },
+        {
+            "id": "https://openalex.org/C73000952",
+            "wikidata": "https://www.wikidata.org/wiki/Q17007827",
+            "display_name": "Discretization",
+            "level": 2,
+            "score": 0.40689998865127563
+        },
+        {
+            "id": "https://openalex.org/C41608201",
+            "wikidata": "https://www.wikidata.org/wiki/Q980509",
+            "display_name": "Embedding",
+            "level": 2,
+            "score": 0.38940000534057617
+        },
+        {
+            "id": "https://openalex.org/C184050105",
+            "wikidata": "https://www.wikidata.org/wiki/Q273163",
+            "display_name": "Isotropy",
+            "level": 2,
+            "score": 0.37209999561309814
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.3603000044822693
+        },
+        {
+            "id": "https://openalex.org/C126255220",
+            "wikidata": "https://www.wikidata.org/wiki/Q141495",
+            "display_name": "Mathematical optimization",
+            "level": 1,
+            "score": 0.3587000072002411
+        },
+        {
+            "id": "https://openalex.org/C11413529",
+            "wikidata": "https://www.wikidata.org/wiki/Q8366",
+            "display_name": "Algorithm",
+            "level": 1,
+            "score": 0.3280999958515167
+        },
+        {
+            "id": "https://openalex.org/C118365302",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric model",
+            "level": 2,
+            "score": 0.32739999890327454
+        },
+        {
+            "id": "https://openalex.org/C85725439",
+            "wikidata": "https://www.wikidata.org/wiki/Q466686",
+            "display_name": "Anisotropy",
+            "level": 2,
+            "score": 0.310699999332428
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.30979999899864197
+        },
+        {
+            "id": "https://openalex.org/C123138037",
+            "wikidata": "https://www.wikidata.org/wiki/Q5570871",
+            "display_name": "Global network",
+            "level": 2,
+            "score": 0.3086000084877014
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.2985999882221222
+        },
+        {
+            "id": "https://openalex.org/C21001229",
+            "wikidata": "https://www.wikidata.org/wiki/Q182868",
+            "display_name": "Weather forecasting",
+            "level": 2,
+            "score": 0.2969000041484833
+        },
+        {
+            "id": "https://openalex.org/C74193536",
+            "wikidata": "https://www.wikidata.org/wiki/Q574844",
+            "display_name": "Kernel (algebra)",
+            "level": 2,
+            "score": 0.2921999990940094
+        },
+        {
+            "id": "https://openalex.org/C28826006",
+            "wikidata": "https://www.wikidata.org/wiki/Q33521",
+            "display_name": "Applied mathematics",
+            "level": 1,
+            "score": 0.29100000858306885
+        },
+        {
+            "id": "https://openalex.org/C2779242930",
+            "wikidata": "https://www.wikidata.org/wiki/Q720957",
+            "display_name": "Global temperature",
+            "level": 4,
+            "score": 0.290800005197525
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.2816999852657318
+        },
+        {
+            "id": "https://openalex.org/C99498987",
+            "wikidata": "https://www.wikidata.org/wiki/Q2210247",
+            "display_name": "Noise (video)",
+            "level": 3,
+            "score": 0.2750000059604645
+        },
+        {
+            "id": "https://openalex.org/C26517878",
+            "wikidata": "https://www.wikidata.org/wiki/Q228039",
+            "display_name": "Key (lock)",
+            "level": 2,
+            "score": 0.2678999900817871
+        },
+        {
+            "id": "https://openalex.org/C41156917",
+            "wikidata": "https://www.wikidata.org/wiki/Q682831",
+            "display_name": "Downscaling",
+            "level": 3,
+            "score": 0.26109999418258667
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.2574000060558319
+        },
+        {
+            "id": "https://openalex.org/C115343472",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Global warming",
+            "level": 3,
+            "score": 0.25270000100135803
+        },
+        {
+            "id": "https://openalex.org/C124101348",
+            "wikidata": "https://www.wikidata.org/wiki/Q172491",
+            "display_name": "Data mining",
+            "level": 1,
+            "score": 0.2515000104904175
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "69.833"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "47.056"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.598"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.918"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "4.221"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.968"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.919"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.975"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.974"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.960"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "68.441"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "44.787"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.225"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.742"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "4.028"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.969"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.921"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.979"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.977"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.966"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "63.674"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "42.349"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.067"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.391"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "3.232"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.972"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.929"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.982"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.983"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.971"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "66.224"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "37.959"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.271"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.569"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 3-4",
+            "result": "2.431"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 3-4",
+            "result": "1.984"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.963"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.926"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.966"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.963"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 3-4",
+            "result": "0.812"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 3-4",
+            "result": "0.686"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "62.755"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "41.020"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.093"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.390"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 3-4",
+            "result": "2.328"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 3-4",
+            "result": "1.896"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.947"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.896"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.966"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.957"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 3-4",
+            "result": "0.830"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 3-4",
+            "result": "0.712"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "59.748"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "38.119"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.038"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.531"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "3.662"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 3-4",
+            "result": "2.244"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 3-4",
+            "result": "1.793"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.978"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.948"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.983"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.981"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.978"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 3-4",
+            "result": "0.840"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 3-4",
+            "result": "0.738"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "68.308"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "41.014"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.302"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.896"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "3.912"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 3-4",
+            "result": "3.442"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 3-4",
+            "result": "2.328"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.965"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.942"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.960"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.942"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.972"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 3-4",
+            "result": "0.837"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 3-4",
+            "result": "0.742"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "62.122"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "39.474"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.249"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.852"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "4.378"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 3-4",
+            "result": "2.379"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 3-4",
+            "result": "1.926"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.976"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.945"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.979"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.976"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.969"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 3-4",
+            "result": "0.814"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 3-4",
+            "result": "0.678"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "59.064"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "38.420"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.142"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "3.242"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "5.342"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 3-4",
+            "result": "2.360"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 3-4",
+            "result": "2.025"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.978"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.945"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.981"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.971"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.956"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 3-4",
+            "result": "0.807"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 3-4",
+            "result": "0.649"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "68.767"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "39.326"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.518"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "3.147"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "3.782"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 3-4",
+            "result": "2.326"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 3-4",
+            "result": "1.793"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.970"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.946"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.972"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.970"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.975"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 3-4",
+            "result": "0.827"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 3-4",
+            "result": "0.738"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "55.505"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "34.345"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "1.931"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.265"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "5.478"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 3-4",
+            "result": "2.253"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 3-4",
+            "result": "1.873"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.980"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.955"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.984"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.983"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.958"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 3-4",
+            "result": "0.835"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 3-4",
+            "result": "0.716"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "66.498"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "41.820"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.312"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.800"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "4.785"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 3-4",
+            "result": "3.683"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 3-4",
+            "result": "2.137"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.981"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.956"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.983"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.984"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.974"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 3-4",
+            "result": "0.672"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 3-4",
+            "result": "0.654"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "59.772"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "35.199"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "2.035"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.448"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "4.002"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 3-4",
+            "result": "2.122"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 3-4",
+            "result": "1.746"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.977"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.953"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.982"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.980"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.974"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 3-4",
+            "result": "0.854"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 3-4",
+            "result": "0.741"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 3-4",
+            "result": "51.956"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 3-4",
+            "result": "33.453"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 3-4",
+            "result": "1.824"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 3-4",
+            "result": "2.145"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 3-4",
+            "result": "3.255"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 3-4",
+            "result": "1.994"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 3-4",
+            "result": "1.621"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 3-4",
+            "result": "0.982"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 3-4",
+            "result": "0.958"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 3-4",
+            "result": "0.985"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 3-4",
+            "result": "0.985"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 3-4",
+            "result": "0.982"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 3-4",
+            "result": "0.872"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 3-4",
+            "result": "0.783"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "71.400"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "48.583"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "2.639"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "2.933"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "5.521"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.966"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.912"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.974"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.974"
+        },
+        {
+            "model": "CMA",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.950"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "71.332"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "46.834"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "2.343"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "2.833"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "4.406"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.967"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.913"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.977"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.976"
+        },
+        {
+            "model": "NCEP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.952"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "68.116"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "45.330"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "2.177"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "2.511"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "4.080"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.968"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.916"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.979"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.981"
+        },
+        {
+            "model": "ECMWF",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.970"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "76.939"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "47.041"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "2.829"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "2.998"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 5-6",
+            "result": "2.679"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 5-6",
+            "result": "2.104"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.956"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.911"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.958"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.957"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 5-6",
+            "result": "0.783"
+        },
+        {
+            "model": "Pangu",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 5-6",
+            "result": "0.655"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "66.531"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "43.469"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "2.250"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "2.567"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 5-6",
+            "result": "2.479"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 5-6",
+            "result": "1.980"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.943"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.889"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.963"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.953"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 5-6",
+            "result": "0.812"
+        },
+        {
+            "model": "FCN2",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 5-6",
+            "result": "0.691"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "59.970"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "38.433"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "2.065"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "2.568"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "3.454"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 5-6",
+            "result": "2.279"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 5-6",
+            "result": "1.824"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.977"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.947"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.983"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.981"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.980"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 5-6",
+            "result": "0.836"
+        },
+        {
+            "model": "Transformer",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 5-6",
+            "result": "0.725"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "72.021"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "44.327"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "2.564"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "3.334"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "4.301"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 5-6",
+            "result": "2.426"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 5-6",
+            "result": "2.084"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.960"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.949"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.971"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.971"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.968"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 5-6",
+            "result": "0.840"
+        },
+        {
+            "model": "FNO",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 5-6",
+            "result": "0.720"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "63.031"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "39.825"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "2.287"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "2.974"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "4.469"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 5-6",
+            "result": "2.397"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 5-6",
+            "result": "1.979"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.976"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.944"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.979"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.970"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.968"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 5-6",
+            "result": "0.815"
+        },
+        {
+            "model": "ViT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 5-6",
+            "result": "0.641"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "58.712"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "38.271"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "2.141"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "3.300"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "5.354"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 5-6",
+            "result": "2.394"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 5-6",
+            "result": "2.031"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.978"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.945"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.982"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.971"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.956"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 5-6",
+            "result": "0.800"
+        },
+        {
+            "model": "ClimaX",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 5-6",
+            "result": "0.643"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "68.218"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "39.287"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "2.554"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "3.213"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "4.094"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 5-6",
+            "result": "2.336"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 5-6",
+            "result": "1.844"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.971"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.946"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.972"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.969"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.971"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 5-6",
+            "result": "0.829"
+        },
+        {
+            "model": "ClimODE",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 5-6",
+            "result": "0.717"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "55.214"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "33.940"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "1.920"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "2.265"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "5.652"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 5-6",
+            "result": "2.251"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 5-6",
+            "result": "1.826"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.980"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.956"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.984"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.983"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.954"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 5-6",
+            "result": "0.835"
+        },
+        {
+            "model": "CirT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 5-6",
+            "result": "0.726"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "66.856"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "41.926"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "2.329"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "2.858"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "5.018"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 5-6",
+            "result": "2.555"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 5-6",
+            "result": "2.155"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.981"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.957"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.983"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.983"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.972"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 5-6",
+            "result": "0.792"
+        },
+        {
+            "model": "EIMP",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 5-6",
+            "result": "0.651"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "58.770"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "35.164"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "1.953"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "2.451"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "4.056"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 5-6",
+            "result": "2.120"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 5-6",
+            "result": "1.750"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.978"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.953"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.982"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.981"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.975"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 5-6",
+            "result": "0.854"
+        },
+        {
+            "model": "TelePiT",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 5-6",
+            "result": "0.741"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z500(gpm) at Weeks 5-6",
+            "result": "52.268"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for z850(gpm) at Weeks 5-6",
+            "result": "33.437"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t500(K) at Weeks 5-6",
+            "result": "1.830"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t850(K) at Weeks 5-6",
+            "result": "2.156"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for t2m(K) at Weeks 5-6",
+            "result": "3.231"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for u10(m/s) at Weeks 5-6",
+            "result": "1.993"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "RMSE for v10(m/s) at Weeks 5-6",
+            "result": "1.606"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z500(gpm) at Weeks 5-6",
+            "result": "0.982"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for z850(gpm) at Weeks 5-6",
+            "result": "0.958"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t500(K) at Weeks 5-6",
+            "result": "0.985"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t850(K) at Weeks 5-6",
+            "result": "0.985"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for t2m(K) at Weeks 5-6",
+            "result": "0.982"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for u10(m/s) at Weeks 5-6",
+            "result": "0.873"
+        },
+        {
+            "model": "SOON",
+            "observational_dataset": "ERA5",
+            "evaluation_metric": "ACC for v10(m/s) at Weeks 5-6",
+            "result": "0.786"
+        }
+    ],
+    "innovation": "This paper proposes the Symmetric Orthogonal Operator Network (SOON) for S2S climate forecasting, which explicitly decouples zonal and meridional dynamics using an anisotropic embedding strategy and a symmetric operator splitting scheme to improve accuracy and computational efficiency.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "SOON",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "SOON Blocks",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In this paper, we propose the Symmetric Orthogonal Operator Network (SOON) for global S2S climate forecasting. It couples: (1) an Anisotropic Embedding strategy that tokenizes the global grid into latitudinal rings, preserving the integrity of zonal periodic structures; and (2) a stack of SOON Blocks that models the alternating interaction of Zonal and Meridional Operators via a symmetric decomposition, structurally mitigating discretization errors inherent in long-term integration.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOON",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Anisotropic Embedding",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In this paper, we propose the Symmetric Orthogonal Operator Network (SOON) for global S2S climate forecasting. It couples: (1) an Anisotropic Embedding strategy that tokenizes the global grid into latitudinal rings, preserving the integrity of zonal periodic structures; and (2) a stack of SOON Blocks that models the alternating interaction of Zonal and Meridional Operators via a symmetric decomposition, structurally mitigating discretization errors inherent in long-term integration.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOON",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Zonal Operator",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The core SOON Blocks explicitly model the alternating interaction of these processes via a symmetric decomposition, with a Zonal Operator capturing global spectral wave dynamics and a Meridional Operator modeling local spatial transport.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOON",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Meridional Operator",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The core SOON Blocks explicitly model the alternating interaction of these processes via a symmetric decomposition, with a Zonal Operator capturing global spectral wave dynamics and a Meridional Operator modeling local spatial transport.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOON",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Decoder",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Finally, the encoded representation is passed through a lightweight MLP-based Decoder that enables forecasts on all atmospheric variables, after which the entire model is trained end-to-end.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOON",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "Strang splitting scheme",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The framework is composed of three strategic modules: (i) Anisotropic Embedding, which projects the global grid into a sequence of latitudinal ring tokens by compressing longitudinal spatial information into feature channels; (ii) A stack of Symmetric Operator Blocks (SOON Blocks), which function as high-order neural solvers via a symmetric Strang splitting scheme, explicitly employing a Zonal Operator to capture global spectral wave dynamics and a Meridional Operator to model local spatial transport; (iii) A lightweight Decoder, which projects the evolved latent representations back to the physical space to generate the final bi-weekly forecasts.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOON",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Root Mean Square Normalization",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In contrast, the following Proposition shows that RMSNorm acts as a uniform spectral scaler. This is critical for S2S forecasting because phase information encodes the spatial positioning and structural topology of planetary waves, which must be preserved to prevent trajectory divergence over long horizons. Accordingly, SOON consistently uses RMSNorm instead of LayerNorm to stabilize training.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOON",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Latitude-weighted Root Mean Square Error",
+            "target_entity_type": "Metric",
+            "paragraph": "Metrics. Following existing evaluation standards (Rasp et al., 2020; Nathaniel et al., 2024), we employ the Latitude-weighted Root Mean Square Error (RMSE) and Anomaly Correlation Coefficient (ACC) to quantify performance (Nathaniel et al., 2024), defined as:",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SOON",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Anomaly Correlation Coefficient",
+            "target_entity_type": "Metric",
+            "paragraph": "Metrics. Following existing evaluation standards (Rasp et al., 2020; Nathaniel et al., 2024), we employ the Latitude-weighted Root Mean Square Error (RMSE) and Anomaly Correlation Coefficient (ACC) to quantify performance (Nathaniel et al., 2024), defined as:",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "geopotential",
+            "target_entity_type": "Variable",
+            "paragraph": "Dataset. Consistent with the established benchmarking protocols (Liu et al., 2025a;b; Lyu et al., 2026), we evaluate SOON on the ERA5 reanalysis dataset (Hersbach et al., 2020), which is widely used as a reference for global atmospheric fields. We regrid the data to a 1.5\u00b0 resolution, resulting in a 121 \u00d7 240 latitude-longitude grid. Following (Liu et al., 2025a;b), we use 63 variables in total. This includes six pressure-level variables (geopotential z, specific humidity q, temperature t, u-wind u, v-wind v, and vertical velocity w) at ten pressure levels (10, 50, 100, 200, 300, 500, 700, 850, 925, and 1000 hPa), as well as three surface variables (2-meter temperature t2m, 10-meter u-wind u10, and 10-meter v-wind v10).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "specific humidity",
+            "target_entity_type": "Variable",
+            "paragraph": "Dataset. Consistent with the established benchmarking protocols (Liu et al., 2025a;b; Lyu et al., 2026), we evaluate SOON on the ERA5 reanalysis dataset (Hersbach et al., 2020), which is widely used as a reference for global atmospheric fields. We regrid the data to a 1.5\u00b0 resolution, resulting in a 121 \u00d7 240 latitude-longitude grid. Following (Liu et al., 2025a;b), we use 63 variables in total. This includes six pressure-level variables (geopotential z, specific humidity q, temperature t, u-wind u, v-wind v, and vertical velocity w) at ten pressure levels (10, 50, 100, 200, 300, 500, 700, 850, 925, and 1000 hPa), as well as three surface variables (2-meter temperature t2m, 10-meter u-wind u10, and 10-meter v-wind v10).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Dataset. Consistent with the established benchmarking protocols (Liu et al., 2025a;b; Lyu et al., 2026), we evaluate SOON on the ERA5 reanalysis dataset (Hersbach et al., 2020), which is widely used as a reference for global atmospheric fields. We regrid the data to a 1.5\u00b0 resolution, resulting in a 121 \u00d7 240 latitude-longitude grid. Following (Liu et al., 2025a;b), we use 63 variables in total. This includes six pressure-level variables (geopotential z, specific humidity q, temperature t, u-wind u, v-wind v, and vertical velocity w) at ten pressure levels (10, 50, 100, 200, 300, 500, 700, 850, 925, and 1000 hPa), as well as three surface variables (2-meter temperature t2m, 10-meter u-wind u10, and 10-meter v-wind v10).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "2-meter temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Dataset. Consistent with the established benchmarking protocols (Liu et al., 2025a;b; Lyu et al., 2026), we evaluate SOON on the ERA5 reanalysis dataset (Hersbach et al., 2020), which is widely used as a reference for global atmospheric fields. We regrid the data to a 1.5\u00b0 resolution, resulting in a 121 \u00d7 240 latitude-longitude grid. Following (Liu et al., 2025a;b), we use 63 variables in total. This includes six pressure-level variables (geopotential z, specific humidity q, temperature t, u-wind u, v-wind v, and vertical velocity w) at ten pressure levels (10, 50, 100, 200, 300, 500, 700, 850, 925, and 1000 hPa), as well as three surface variables (2-meter temperature t2m, 10-meter u-wind u10, and 10-meter v-wind v10).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Meridional Operator",
+            "source_entity_type": "PhysicalScheme",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Gated Linear Unit convolution",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Meridional Operator M. It targets the latitude dimension H, where atmospheric dynamics are dominated by local transport (i.e., advection) and thermodynamic mixing rather than global periodicity. We model this via a spatial Gated Linear Unit (GLU) convolution (Dauphin et al., 2017):",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CirT",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "circular patching",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "CirT (Liu et al., 2025a) introduces circular patching strategies to better handle spherical boundary conditions.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "EIMP",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "rotation-equivariant message passing",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "EIMP (Liu et al., 2025b) leverages graph neural networks with rotation-equivariant message passing to model vector fields.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TelePiT",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "physics-informed neural ODEs",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "TelePiT (Lyu et al., 2026) combines spherical harmonics with physics-informed neural ODEs to capture multi-scale teleconnections, while TianQuan-S2S (Li et al., 2025) further enhances predictability by incorporating climatology priors and noise injection.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "forecasting accuracy",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "computational efficiency",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SOON",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Earth Reanalysis 5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "The Hong Kong University of Science and Technology (Guangzhou)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "DAMO Academy, Alibaba Group",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "The Hong Kong University of Science and Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Rossby waves",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "Anisotropic Embedding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Zonal Operator",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Meridional Operator",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SOON Blocks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bi-weekly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Operator Splitting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Lie-Trotter splitting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Strang splitting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Symmetric Operator Blocks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "circular patching",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "spherical harmonic embedding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fourier embedding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "latitudinal ring tokens",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "2D convolution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Root Mean Square Normalization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RMSN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Layer Normalization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Feedforward Network",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "LayerScale",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Local Truncation Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Discrete Fourier Transform",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RMSNorm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spectral Fidelity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Gated Linear Unit (GLU) convolution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "1D convolution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Decoder",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "average squared error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "latitude-weighted Mean Squared Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Computational Complexity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "1.5\u00b0 resolution",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "121 x 240 latitude-longitude grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "geopotential",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "z",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "specific humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "q",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "t",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "u-wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "u",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "v-wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "v",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vertical velocity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "w",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2-meter temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "t2m",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "10-meter u-wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "u10",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "10-meter v-wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "v10",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CMA",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NCEP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PanguWeather",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Pangu",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FourCastNetV2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FCN2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ClimaX",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CirT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EIMP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TelePiT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ClimODE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Transformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Fourier Neural Operator",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FNO",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Vision Transformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ViT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Root Mean Square Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Anomaly Correlation Coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ACC",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "z500",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "z850",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "t500",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "t850",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PyTorch Lightning",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NVIDIA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "anomalies",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LayerNorm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FLOPS",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Inference Time",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Params Count",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Anisotropic ring embedding",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Strang splitting scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FourCastNet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GraphCast",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "AIFS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FengWu",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FuXi",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Adaptive Fourier Neural Operators",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Graph Neural Networks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "diffusion models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FuXi-S2S",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "rotation-equivariant message passing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "spherical harmonics",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "physics-informed neural ODEs",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TianQuan-S2S",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Symmetric Composition Z\u25cbM\u25cbZ",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Parseval's Theorem",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1.5\u00b0 x 1.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "China Meteorological Administration",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "BCC-CSM2-HR",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "National Centers for Environmental Prediction",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Climate Forecast System version 2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CFSv2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Integrated Forecasting System",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IFS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "PyTorch",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Neural Ordinary Differential Equations",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ODEs",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "frequency-domain mixing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "equivariant and invariant message passing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "anisotropic embedding kernel size of (1, 240)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "meridional spatial kernel size of k = 7",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "AdamW optimizer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SpecRes",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "wind components",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "13 pressure levels",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "surface (1000 hPa)",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "stratosphere (50 hPa)",
+            "entity_type": "PhysicalFeature"
+        }
+    ],
+    "referenced_works": []
+}

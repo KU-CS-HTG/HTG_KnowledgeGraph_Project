@@ -1,0 +1,994 @@
+{
+    "uri": "https://openalex.org/W2784327149",
+    "title": "TerraClimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958\u20132015",
+    "venue": {
+        "name": "Scientific Data",
+        "id": "https://openalex.org/S2607323502",
+        "type": "journal"
+    },
+    "publication_year": 2018,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5001293347",
+            "display_name": "John T. Abatzoglou",
+            "orcid": "https://orcid.org/0000-0001-7599-9750"
+        },
+        {
+            "id": "https://openalex.org/A5044279811",
+            "display_name": "Solomon Z. Dobrowski",
+            "orcid": "https://orcid.org/0000-0003-2561-3850"
+        },
+        {
+            "id": "https://openalex.org/A5026400677",
+            "display_name": "Sean A. Parks",
+            "orcid": "https://orcid.org/0000-0002-2982-5255"
+        },
+        {
+            "id": "https://openalex.org/A5011980904",
+            "display_name": "Katherine C. Hegewisch",
+            "orcid": "https://orcid.org/0000-0002-9539-2929"
+        }
+    ],
+    "doi": "https://doi.org/10.1038/sdata.2017.191",
+    "abstract": "Abstract We present TerraClimate, a dataset of high-spatial resolution (1/24\u00b0, ~4-km) monthly climate and climatic water balance for global terrestrial surfaces from 1958\u20132015. TerraClimate uses climatically aided interpolation, combining high-spatial resolution climatological normals from the WorldClim dataset, with coarser resolution time varying (i.e., monthly) data from other sources to produce a monthly dataset of precipitation, maximum and minimum temperature, wind speed, vapor pressure, and solar radiation. TerraClimate additionally produces monthly surface water balance datasets using a water balance model that incorporates reference evapotranspiration, precipitation, temperature, and interpolated plant extractable soil water capacity. These data provide important inputs for ecological and hydrological studies at global scales that require high spatial resolution and time varying climate and climatic water balance data. We validated spatiotemporal aspects of TerraClimate using annual temperature, precipitation, and calculated reference evapotranspiration from station data, as well as annual runoff from streamflow gauges. TerraClimate datasets showed noted improvement in overall mean absolute error and increased spatial realism relative to coarser resolution gridded datasets.",
+    "field": "Climate data modeling",
+    "problem": "Existing global climate datasets lack the high spatial resolution and long-term monthly variability needed for ecological and hydrological studies, as they are typically either static, high-resolution climatologies or time-varying but at a coarse spatial resolution, creating a critical data gap for fine-scale analysis.",
+    "method": "This paper presents a method that creates a high-resolution global climate dataset by using climatically aided interpolation to combine high-resolution climatologies with coarser, time-varying climate data, and subsequently applies a water balance model to produce additional climatic variables.",
+    "task": "The task is to produce a high-resolution global dataset of monthly climate and climatic water balance from 1958\u20132015 by combining high-resolution climatologies with coarser, time-varying climate data from other sources.",
+    "model": [
+        "TerraClimate",
+        "WorldClim",
+        "WBM",
+        "JRA-55",
+        "CRU Ts4.0"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/evapotranspiration",
+            "display_name": "Evapotranspiration",
+            "score": 0.8347393274307251
+        },
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.7800858616828918
+        },
+        {
+            "id": "https://openalex.org/keywords/water-balance",
+            "display_name": "Water balance",
+            "score": 0.7763943672180176
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.678679347038269
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.571444571018219
+        },
+        {
+            "id": "https://openalex.org/keywords/surface-runoff",
+            "display_name": "Surface runoff",
+            "score": 0.5532735586166382
+        },
+        {
+            "id": "https://openalex.org/keywords/multivariate-interpolation",
+            "display_name": "Multivariate interpolation",
+            "score": 0.49362480640411377
+        },
+        {
+            "id": "https://openalex.org/keywords/streamflow",
+            "display_name": "Streamflow",
+            "score": 0.49018651247024536
+        },
+        {
+            "id": "https://openalex.org/keywords/spatial-ecology",
+            "display_name": "Spatial ecology",
+            "score": 0.436794251203537
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.35540691018104553
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.2628573179244995
+        },
+        {
+            "id": "https://openalex.org/keywords/drainage-basin",
+            "display_name": "Drainage basin",
+            "score": 0.14328351616859436
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.1116550862789154
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.09968051314353943
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C176783924",
+            "wikidata": "https://www.wikidata.org/wiki/Q828158",
+            "display_name": "Evapotranspiration",
+            "level": 2,
+            "score": 0.8347393274307251
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.7800858616828918
+        },
+        {
+            "id": "https://openalex.org/C66465714",
+            "wikidata": "https://www.wikidata.org/wiki/Q1148989",
+            "display_name": "Water balance",
+            "level": 2,
+            "score": 0.7763943672180176
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.678679347038269
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.571444571018219
+        },
+        {
+            "id": "https://openalex.org/C50477045",
+            "wikidata": "https://www.wikidata.org/wiki/Q1444790",
+            "display_name": "Surface runoff",
+            "level": 2,
+            "score": 0.5532735586166382
+        },
+        {
+            "id": "https://openalex.org/C203332170",
+            "wikidata": "https://www.wikidata.org/wiki/Q6334079",
+            "display_name": "Multivariate interpolation",
+            "level": 3,
+            "score": 0.49362480640411377
+        },
+        {
+            "id": "https://openalex.org/C53739315",
+            "wikidata": "https://www.wikidata.org/wiki/Q29425295",
+            "display_name": "Streamflow",
+            "level": 3,
+            "score": 0.49018651247024536
+        },
+        {
+            "id": "https://openalex.org/C158709400",
+            "wikidata": "https://www.wikidata.org/wiki/Q3578586",
+            "display_name": "Spatial ecology",
+            "level": 2,
+            "score": 0.436794251203537
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.35540691018104553
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.2628573179244995
+        },
+        {
+            "id": "https://openalex.org/C126645576",
+            "wikidata": "https://www.wikidata.org/wiki/Q166620",
+            "display_name": "Drainage basin",
+            "level": 2,
+            "score": 0.14328351616859436
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.1116550862789154
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.09968051314353943
+        },
+        {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C205203396",
+            "wikidata": "https://www.wikidata.org/wiki/Q612143",
+            "display_name": "Bilinear interpolation",
+            "level": 2,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C18903297",
+            "wikidata": "https://www.wikidata.org/wiki/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C187320778",
+            "wikidata": "https://www.wikidata.org/wiki/Q1349130",
+            "display_name": "Geotechnical engineering",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C58640448",
+            "wikidata": "https://www.wikidata.org/wiki/Q42515",
+            "display_name": "Cartography",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for annual mean temperature (Tas)",
+            "result": "0.95"
+        },
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "mean absolute error (MAE) for annual mean temperature (Tas)",
+            "result": "0.32 \u00b0C"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for annual mean temperature (Tas)",
+            "result": "0.95"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "mean absolute error (MAE) for annual mean temperature (Tas)",
+            "result": "0.53 \u00b0C"
+        },
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for cumulative precipitation (Pr)",
+            "result": "0.90"
+        },
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "mean absolute error (MAE) for cumulative precipitation (Pr)",
+            "result": "9.1% (62.9 mm)"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for cumulative precipitation (Pr)",
+            "result": "0.89"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "GHCN",
+            "evaluation_metric": "mean absolute error (MAE) for cumulative precipitation (Pr)",
+            "result": "11% (76 mm)"
+        },
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "SNOTEL+RAWS",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for annual mean temperature (Tas)",
+            "result": "0.90"
+        },
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "SNOTEL+RAWS",
+            "evaluation_metric": "mean absolute error (MAE) for annual mean temperature (Tas)",
+            "result": "0.84 \u00b0C"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "SNOTEL+RAWS",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for annual mean temperature (Tas)",
+            "result": "0.90"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "SNOTEL+RAWS",
+            "evaluation_metric": "mean absolute error (MAE) for annual mean temperature (Tas)",
+            "result": "1.21 \u00b0C"
+        },
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "SNOTEL",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for cumulative precipitation (Pr)",
+            "result": "0.78"
+        },
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "SNOTEL",
+            "evaluation_metric": "mean absolute error (MAE) for cumulative precipitation (Pr)",
+            "result": "30% (251 mm)"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "SNOTEL",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for cumulative precipitation (Pr)",
+            "result": "0.78"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "SNOTEL",
+            "evaluation_metric": "mean absolute error (MAE) for cumulative precipitation (Pr)",
+            "result": "41% (316 mm)"
+        },
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "FLUXNET",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for reference evapotranspiration (ETo)",
+            "result": "0.77"
+        },
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "FLUXNET",
+            "evaluation_metric": "mean absolute error (MAE) for reference evapotranspiration (ETo)",
+            "result": "8.3% (57 mm)"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "FLUXNET",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for reference evapotranspiration (ETo)",
+            "result": "0.76"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "FLUXNET",
+            "evaluation_metric": "mean absolute error (MAE) for reference evapotranspiration (ETo)",
+            "result": "8.5% (59 mm)"
+        },
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "GRDC",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for cumulative streamflow (Q)",
+            "result": "0.80"
+        },
+        {
+            "model": "TerraClimate",
+            "observational_dataset": "GRDC",
+            "evaluation_metric": "mean absolute error (MAE) for cumulative streamflow (Q)",
+            "result": "36.0% (101 mm)"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "GRDC",
+            "evaluation_metric": "Pearsons' correlation coefficient (p) for cumulative streamflow (Q)",
+            "result": "0.76"
+        },
+        {
+            "model": "CRU Ts4.0",
+            "observational_dataset": "GRDC",
+            "evaluation_metric": "mean absolute error (MAE) for cumulative streamflow (Q)",
+            "result": "42.0% (118 mm)"
+        }
+    ],
+    "innovation": "This paper presents TerraClimate, a novel high-resolution (~4-km) global dataset of monthly climate and climatic water balance from 1958-2015, created by combining fine-scale climatologies with coarser time-varying data to provide crucial inputs for large-scale ecological and hydrological studies.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "WorldClim",
+            "target_entity_type": "Source",
+            "paragraph": "We present TerraClimate, a dataset of high-spatial resolution (1/24\u00b0, ~4-km) monthly climate and climatic water balance for global terrestrial surfaces from 1958\u20132015. TerraClimate uses climatically aided interpolation, combining high-spatial resolution climatological normals from the WorldClim dataset, with coarser resolution time varying (i.e., monthly) data from other sources to produce a monthly dataset of precipitation, maximum and minimum temperature, wind speed, vapor pressure, and solar radiation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Climatically aided interpolation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "TerraClimate uses climatically aided interpolation, combining high-spatial resolution climatological normals from the WorldClim dataset, with coarser resolution time varying (i.e., monthly) data from other sources to produce a monthly dataset of precipitation, maximum and minimum temperature, wind speed, vapor pressure, and solar radiation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "water balance model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "TerraClimate additionally produces monthly surface water balance datasets using a water balance model that incorporates reference evapotranspiration, precipitation, temperature, and interpolated plant extractable soil water capacity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean absolute error",
+            "target_entity_type": "Metric",
+            "paragraph": "TerraClimate datasets showed noted improvement in overall mean absolute error and increased spatial realism relative to coarser resolution gridded datasets.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WorldClim version 2",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "thin-plate splines",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The high-spatial resolution climatology from WorldClim version 2 (http://worldclim.org/version2) used thin-plate splines to interpolate station observations using covariates including MODIS derived land surface temperature and cloud cover, along with topographic features to develop monthly climate normal surfaces for global land surface\u00b9\u2075.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "WorldClim version 2",
+            "target_entity_type": "Source",
+            "paragraph": "Three global gridded climate datasets were used to develop TerraClimate, each offering distinct spatial or temporal qualities (Table 1).\nThe high-spatial resolution climatology from WorldClim version 2 (http://worldclim.org/version2) used thin-plate splines to interpolate station observations using covariates including MODIS derived land surface temperature and cloud cover, along with topographic features to develop monthly climate normal surfaces for global land surface\u00b9\u2075.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "WorldClim version 1.4",
+            "source_entity_type": "Source",
+            "relation": "HAS_SUBSEQUENT_VERSION",
+            "target_entity_instance": "WorldClim version 2",
+            "target_entity_type": "Source",
+            "paragraph": "We used the monthly diurnal temperature range (DTR) from WorldClim version 1.4 (http:// worldclim.org/version1) rather than the WorldClim version 2 dataset, as the latter showed widespread biases in mid latitudes despite monthly mean temperature showing nominal bias (Supplementary Figs 1 and 2). The monthly DTR from WorldClim version 1.4 for the 1960-1990 period was further modified to account for the change in DTR between the 1960-1990 base period and 1970\u20132000 base period of WorldClim v2.0.",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "WorldClim version 1.4",
+            "target_entity_type": "Source",
+            "paragraph": "Three global gridded climate datasets were used to develop TerraClimate, each offering distinct spatial or temporal qualities (Table 1).\nWe used the monthly diurnal temperature range (DTR) from WorldClim version 1.4 (http:// worldclim.org/version1) rather than the WorldClim version 2 dataset, as the latter showed widespread biases in mid latitudes despite monthly mean temperature showing nominal bias (Supplementary Figs 1 and 2).",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "CRU Ts4.0",
+            "target_entity_type": "Source",
+            "paragraph": "Time varying climate data were derived from two sources: (i) Climate Research Unit (CRU) time series data version 4.0 (ref. 1) (Data Citation 1), and (ii) the Japanese 55-year Reanalysis (JRA-55 (ref. 2); http:// jra.kishou.go.jp/JRA-55/index_en.html). The CRU Ts4.0 data provide monthly average maximum and minimum temperature, vapor pressure, and cumulative precipitation at a 0.5\u00b0 grid from 1901\u20132015 for global land surface and were developed based on station data.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "JRA-55",
+            "target_entity_type": "Source",
+            "paragraph": "Time varying climate data were derived from two sources: (i) Climate Research Unit (CRU) time series data version 4.0 (ref. 1) (Data Citation 1), and (ii) the Japanese 55-year Reanalysis (JRA-55 (ref. 2); http:// jra.kishou.go.jp/JRA-55/index_en.html).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Penman Montieth approach",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Monthly reference evapotranspiration (ET\u2080) was calculated using the Penman Montieth approach\u00b2\u2079.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Thornthwaite-Mather climatic water-balance model",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "A one-dimensional modified Thornthwaite-Mather climatic water-balance model (WBM)\u00b2\u00b2,\u00b3\u00b9 was used to calculate monthly water balance from 1958\u20132015.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "Wang-Erlandsson et al. (2016) root zone storage capacity dataset",
+            "target_entity_type": "Source",
+            "paragraph": "The WBM requires data on the plant extractable soil water capacity. We used extractable soil water storage capacity data at a 0.5\u00b0 grid from Wang-Erlandsson et al.32 that were derived from estimates of satellite based evaporation, ET0, and precipitation.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "Runoff",
+            "target_entity_type": "Variable",
+            "paragraph": "The resultant datasets from the WBM are monthly total runoff (Q), climatic water deficit, actual evapotranspiration, as well as snow water equivalent and soil moisture at the end of each month.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "climatic water deficit",
+            "target_entity_type": "Variable",
+            "paragraph": "The resultant datasets from the WBM are monthly total runoff (Q), climatic water deficit, actual evapotranspiration, as well as snow water equivalent and soil moisture at the end of each month.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "actual evapotranspiration",
+            "target_entity_type": "Variable",
+            "paragraph": "The resultant datasets from the WBM are monthly total runoff (Q), climatic water deficit, actual evapotranspiration, as well as snow water equivalent and soil moisture at the end of each month.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "snow water equivalent",
+            "target_entity_type": "Variable",
+            "paragraph": "The resultant datasets from the WBM are monthly total runoff (Q), climatic water deficit, actual evapotranspiration, as well as snow water equivalent and soil moisture at the end of each month.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "soil moisture",
+            "target_entity_type": "Variable",
+            "paragraph": "The resultant datasets from the WBM are monthly total runoff (Q), climatic water deficit, actual evapotranspiration, as well as snow water equivalent and soil moisture at the end of each month.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Pearson's correlation coefficient",
+            "target_entity_type": "Metric",
+            "paragraph": "Data from TerraClimate were extracted at grid cells co-located with individual stations. We calculated linear validation statistics of Pearsons' correlation coefficients, mean absolute error (MAE), and bias for each station.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TerraClimate",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "bias",
+            "target_entity_type": "Metric",
+            "paragraph": "Data from TerraClimate were extracted at grid cells co-located with individual stations. We calculated linear validation statistics of Pearsons' correlation coefficients, mean absolute error (MAE), and bias for each station.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "TerraClimate",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WorldClim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CRU Ts4.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Japanese 55-year Reanalysis",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JRA-55",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WorldClim version 2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WorldClim v2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WorldClim v1.4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WorldClim version 1.4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Historical Climatology Network",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GHCN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FLUXNET",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SNOTEL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RAWS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GRDC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Global Runoff Data Centre",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "water balance model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Thornthwaite-Mather climatic water-balance model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "WBM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "climatically aided interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "thin-plate splines",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bilinear interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Penman Montieth approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "University of Idaho",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Montana",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "USDA Forest Service",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Northwest Knowledge Network",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Climatic Research Unit",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "mean absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Pearsons' correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "relative mean absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1/24\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "~4-km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "<5-km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.5\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "2.5 arc-minute",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "maximum temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "minimum temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vapor pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "reference evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "plant extractable soil water capacity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mean temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "downward shortwave flux at the surface",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "accumulated monthly precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "diurnal temperature range",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "actual evapotranspiration",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "climatic water deficit",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow water equivalent",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "streamflow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "tropics",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "boreal systems",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Great Plains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Sahara Desert",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Pole",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W1867005924",
+        "https://openalex.org/W1989120577",
+        "https://openalex.org/W2120496201",
+        "https://openalex.org/W1995047010",
+        "https://openalex.org/W2397311736",
+        "https://openalex.org/W1966334841",
+        "https://openalex.org/W2411334469",
+        "https://openalex.org/W2033481223",
+        "https://openalex.org/W2192068956",
+        "https://openalex.org/W2463201722",
+        "https://openalex.org/W2112776483",
+        "https://openalex.org/W2138677176",
+        "https://openalex.org/W2051093708",
+        "https://openalex.org/W2166485029",
+        "https://openalex.org/W2614464134",
+        "https://openalex.org/W2059215520",
+        "https://openalex.org/W1973408814",
+        "https://openalex.org/W1987692325",
+        "https://openalex.org/W2022934840",
+        "https://openalex.org/W2530960585",
+        "https://openalex.org/W2106632946",
+        "https://openalex.org/W1964478938",
+        "https://openalex.org/W2008123689",
+        "https://openalex.org/W2159078401",
+        "https://openalex.org/W2034347104",
+        "https://openalex.org/W1989242738",
+        "https://openalex.org/W1484229688",
+        "https://openalex.org/W2133488074",
+        "https://openalex.org/W1553982499",
+        "https://openalex.org/W2167894011",
+        "https://openalex.org/W2233510150",
+        "https://openalex.org/W2173603700",
+        "https://openalex.org/W2029604816",
+        "https://openalex.org/W1977060819",
+        "https://openalex.org/W2127920964",
+        "https://openalex.org/W2089248910",
+        "https://openalex.org/W1934188560",
+        "https://openalex.org/W2086710305",
+        "https://openalex.org/W2287019727",
+        "https://openalex.org/W2507742528",
+        "https://openalex.org/W2133425694",
+        "https://openalex.org/W2136450465",
+        "https://openalex.org/W1972923188",
+        "https://openalex.org/W2031027346",
+        "https://openalex.org/W2175056019",
+        "https://openalex.org/W2280180646",
+        "https://openalex.org/W6950247764",
+        "https://openalex.org/W6902985498",
+        "https://openalex.org/W1487923163",
+        "https://openalex.org/W3104895181"
+    ]
+}

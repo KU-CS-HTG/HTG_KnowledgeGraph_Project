@@ -1,0 +1,1040 @@
+{
+    "uri": "https://openalex.org/W2128006102",
+    "title": "The improvement of soil thermodynamics and its effects on land surface meteorology in the IPSL climate model",
+    "venue": {
+        "name": "Geoscientific model development",
+        "id": "https://openalex.org/S60406085",
+        "type": "journal"
+    },
+    "publication_year": 2016,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5011677110",
+            "display_name": "Fuxing Wang",
+            "orcid": "https://orcid.org/0000-0001-7582-2752"
+        },
+        {
+            "id": "https://openalex.org/A5080862526",
+            "display_name": "F. Ch\u00e9ruy",
+            "orcid": "https://orcid.org/0000-0003-2833-7273"
+        },
+        {
+            "id": "https://openalex.org/A5061626712",
+            "display_name": "Jean\u2010Louis Dufresne",
+            "orcid": "https://orcid.org/0000-0003-4764-9600"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/gmd-9-363-2016",
+    "abstract": "Abstract. This paper describes the implementation of an improved soil thermodynamics in the hydrological module of Earth system model (ESM) developed at the Institut Pierre Simon Laplace (IPSL) and its effects on land surface meteorology in the IPSL climate model. A common vertical discretization scheme for the soil moisture and for the soil temperature is adopted. In addition to the heat conduction process, the heat transported by liquid water into the soil is modeled. The thermal conductivity and the heat capacity are parameterized as a function of the soil moisture and the texture. Preliminary tests are performed in an idealized 1-D (one-dimensional) framework and the full model is then evaluated in the coupled land\u2013atmospheric module of the IPSL ESM. A nudging approach is used in order to avoid the time-consuming long-term simulations required to account for the natural variability of the climate. Thanks to this nudging approach, the effects of the modified parameterizations can be modeled. The dependence of the soil thermal properties on moisture and texture lead to the most significant changes in the surface energy budget and in the surface temperature, with the strongest effects on the surface energy budget taking place over dry areas and during the night. This has important consequences on the mean surface temperature over dry areas and during the night and on its short-term variability. The parameterization of the soil thermal properties could therefore explain some of the temperature biases and part of the dispersion over dry areas in simulations of extreme events such as heat waves in state-of-the-art climate models.",
+    "field": "Land surface modeling",
+    "problem": "Existing land surface models exhibit temperature biases, especially over dry areas, due to simplified soil thermodynamics that often use inconsistent vertical grids for heat and moisture, neglect heat transport by liquid water, and use oversimplified thermal property parameterizations.",
+    "method": "This paper proposes an improved soil thermodynamics scheme for a climate model that includes heat transport by liquid water and moisture-dependent thermal properties on a common vertical grid to more realistically simulate land surface energy exchanges.",
+    "task": "The task is to implement an improved soil thermodynamics scheme in the IPSL climate model and to evaluate its effects on land surface meteorology, particularly the surface energy budget and temperature.",
+    "model": [
+        "IPSL-CM",
+        "ORCHIDEE",
+        "LMDZ",
+        "LMDZOR",
+        "CCSM3",
+        "JULES",
+        "MetUM",
+        "H-TESSEL",
+        "JSBACH",
+        "MPI-ESM",
+        "ISBA",
+        "CNRM-CM",
+        "Noah LSM"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.6519744396209717
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.5681837201118469
+        },
+        {
+            "id": "https://openalex.org/keywords/soil-texture",
+            "display_name": "Soil texture",
+            "score": 0.5510587692260742
+        },
+        {
+            "id": "https://openalex.org/keywords/moisture",
+            "display_name": "Moisture",
+            "score": 0.518835186958313
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.4852173626422882
+        },
+        {
+            "id": "https://openalex.org/keywords/sensible-heat",
+            "display_name": "Sensible heat",
+            "score": 0.48303088545799255
+        },
+        {
+            "id": "https://openalex.org/keywords/energy-budget",
+            "display_name": "Energy budget",
+            "score": 0.47210660576820374
+        },
+        {
+            "id": "https://openalex.org/keywords/atmospheric-sciences",
+            "display_name": "Atmospheric sciences",
+            "score": 0.44614213705062866
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.33843040466308594
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.3081550598144531
+        },
+        {
+            "id": "https://openalex.org/keywords/soil-water",
+            "display_name": "Soil water",
+            "score": 0.21355170011520386
+        },
+        {
+            "id": "https://openalex.org/keywords/soil-science",
+            "display_name": "Soil science",
+            "score": 0.20544251799583435
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.1512366235256195
+        },
+        {
+            "id": "https://openalex.org/keywords/thermodynamics",
+            "display_name": "Thermodynamics",
+            "score": 0.12070447206497192
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.09012371301651001
+        },
+        {
+            "id": "https://openalex.org/keywords/physics",
+            "display_name": "Physics",
+            "score": 0.07926395535469055
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6519744396209717
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.5681837201118469
+        },
+        {
+            "id": "https://openalex.org/C175963888",
+            "wikidata": "https://www.wikidata.org/wiki/Q5026010",
+            "display_name": "Soil texture",
+            "level": 3,
+            "score": 0.5510587692260742
+        },
+        {
+            "id": "https://openalex.org/C176864760",
+            "wikidata": "https://www.wikidata.org/wiki/Q217651",
+            "display_name": "Moisture",
+            "level": 2,
+            "score": 0.518835186958313
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.4852173626422882
+        },
+        {
+            "id": "https://openalex.org/C59242433",
+            "wikidata": "https://www.wikidata.org/wiki/Q1480581",
+            "display_name": "Sensible heat",
+            "level": 2,
+            "score": 0.48303088545799255
+        },
+        {
+            "id": "https://openalex.org/C128849468",
+            "wikidata": "https://www.wikidata.org/wiki/Q1341258",
+            "display_name": "Energy budget",
+            "level": 2,
+            "score": 0.47210660576820374
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.44614213705062866
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.33843040466308594
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3081550598144531
+        },
+        {
+            "id": "https://openalex.org/C159750122",
+            "wikidata": "https://www.wikidata.org/wiki/Q96621023",
+            "display_name": "Soil water",
+            "level": 2,
+            "score": 0.21355170011520386
+        },
+        {
+            "id": "https://openalex.org/C159390177",
+            "wikidata": "https://www.wikidata.org/wiki/Q9161265",
+            "display_name": "Soil science",
+            "level": 1,
+            "score": 0.20544251799583435
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.1512366235256195
+        },
+        {
+            "id": "https://openalex.org/C97355855",
+            "wikidata": "https://www.wikidata.org/wiki/Q11473",
+            "display_name": "Thermodynamics",
+            "level": 1,
+            "score": 0.12070447206497192
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.09012371301651001
+        },
+        {
+            "id": "https://openalex.org/C121332964",
+            "wikidata": "https://www.wikidata.org/wiki/Q413",
+            "display_name": "Physics",
+            "level": 0,
+            "score": 0.07926395535469055
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper implements an improved soil thermodynamics scheme in the IPSL climate model that accounts for heat transport by liquid water and moisture-dependent thermal properties, significantly altering the surface energy budget, mean temperature, and its short-term variability, particularly in dry areas.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "IPSL-CM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ORCHIDEE",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Organizing Carbon and Hydrology In Dynamic Ecosystems (ORCHIDEE) of Institute Pierre Simon Laplace Climate Model (IPSL-CM)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LMDZ",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The ORCHIDEE LSM is coupled to the atmospheric model LMDZ (developed at the Laboratoire de M\u00e9t\u00e9orologie Dynamique), whose physical parameterizations are described in Hourdin et al. (2013) and in Rio et al. (2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "LMDZOR",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "LMDZOR refers to the atmosphere-land component of the Institute Pierre Simon Laplace Climate Model (IPSL-CM; Dufresne et al., 2013).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CCSM3",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "CLM4",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Community Land Model (CLM4) included in Community Climate System Model-CCSM3",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MetUM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "JULES",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "the Joint UK Land Environment Simulator (JULES) in the Met Office Unified Model (MetUM)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MPI-ESM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "JSBACH",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Jena Scheme for Biosphere-Atmosphere Coupling in Hamburg (JSBACH)-Earth system model of Max Planck Institute for Meteorology (MPI-ESM)",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CNRM-CM",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "ISBA",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "Interaction between soil-biosphere-atmosphere (ISBA) LSM in CNRM-CM",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "1-D soil heat conduction approach",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "In the standard version of ORCHIDEE, the soil heat transfer is solved with a classical 1-D soil heat conduction approach (Hourdin, 1992).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "5m soil depth for temperature with 7 layers (5M7L)",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The vertical grid for temperature and moisture are different; the soil depth for the temperature is 5 m with 7 layers (5M7L hereafter) and 2 m for the moisture with 11 layers (2M11L hereafter).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "2m soil depth for moisture with 11 layers (2M11L)",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The vertical grid for temperature and moisture are different; the soil depth for the temperature is 5 m with 7 layers (5M7L hereafter) and 2 m for the moisture with 11 layers (2M11L hereafter).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "8m soil depth for moisture and temperature with 17 layers (8M17L)",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The soil depth is therefore chosen to be 8 m, which corresponds to 17 layers according to the criteria previously described (Fig. 2c, Table 3, Appendix B).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "implicit finite difference method",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Equation (1) is solved using an implicit finite difference method (FDM) with zero heat flux condition at the lower boundary of LSM (see Appendix A; Hourdin, 1992).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "1-D Fokker-Planck equation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The unsaturated soil water flow is described by the 1-D Fokker\u2013Planck equation obtained by combining the equation of motion (i.e. Darcy law applied to unsaturated 1-D ground water flow in an isotropic and homogeneous soil) with the mass balance equation (de Rosnay et al., 2000):",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "IPSL-CM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Johansen (1975) method for soil thermal conductivity",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "There are many ways to compute the soil thermal conductivity, including the method proposed by Johansen (1975; J75 hereafter) recommended by many studies (e.g. Peters-Lidard et al., 1998).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "IPSL-CM",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "nudging approach",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "A way to reduce the internal variability is to constrain the large-scale atmosphere dynamics towards prescribed atmospheric conditions using a nudging approach (Coindreau et al., 2007).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LMDZOR",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "volumetric soil moisture content",
+            "target_entity_type": "Variable",
+            "paragraph": "The wind speed is nudged by 6 h relaxing time for all simulations. The 8 m, 5 m, LT and TP mean 8 m discretization, 5 m discretization, soil heat convection by liquid water transfer, and soil thermal property, respectively. The VSMC, TS, Fh, LF1, qL,0, Train, H1, 2, Cp, KT, I, T2m,max, T2m,min, ROFF,TOT, and P mean volumetric soil moisture content, surface temperature, sensible heat flux, latent heat flux, water flux at surface, rain temperature, rain heat flux, soil thermal conductivity, soil heat capacity, soil heat diffusivity, soil thermal inertia, daily maximum air temperature, daily minimum air temperature, total runoff, and precipitation. The DTR, ETR, ITV, and ITNV mean diurnal temperature range, intra-annual extreme temperature range, inter-diurnal temperature variability of the daily mean (ITV) and of the minimum temperature (ITNV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LMDZOR",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The wind speed is nudged by 6 h relaxing time for all simulations. The 8 m, 5 m, LT and TP mean 8 m discretization, 5 m discretization, soil heat convection by liquid water transfer, and soil thermal property, respectively. The VSMC, TS, Fh, LF1, qL,0, Train, H1, 2, Cp, KT, I, T2m,max, T2m,min, ROFF,TOT, and P mean volumetric soil moisture content, surface temperature, sensible heat flux, latent heat flux, water flux at surface, rain temperature, rain heat flux, soil thermal conductivity, soil heat capacity, soil heat diffusivity, soil thermal inertia, daily maximum air temperature, daily minimum air temperature, total runoff, and precipitation. The DTR, ETR, ITV, and ITNV mean diurnal temperature range, intra-annual extreme temperature range, inter-diurnal temperature variability of the daily mean (ITV) and of the minimum temperature (ITNV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LMDZOR",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "sensible heat flux",
+            "target_entity_type": "Variable",
+            "paragraph": "The wind speed is nudged by 6 h relaxing time for all simulations. The 8 m, 5 m, LT and TP mean 8 m discretization, 5 m discretization, soil heat convection by liquid water transfer, and soil thermal property, respectively. The VSMC, TS, Fh, LF1, qL,0, Train, H1, 2, Cp, KT, I, T2m,max, T2m,min, ROFF,TOT, and P mean volumetric soil moisture content, surface temperature, sensible heat flux, latent heat flux, water flux at surface, rain temperature, rain heat flux, soil thermal conductivity, soil heat capacity, soil heat diffusivity, soil thermal inertia, daily maximum air temperature, daily minimum air temperature, total runoff, and precipitation. The DTR, ETR, ITV, and ITNV mean diurnal temperature range, intra-annual extreme temperature range, inter-diurnal temperature variability of the daily mean (ITV) and of the minimum temperature (ITNV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDZOR",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "latent heat flux",
+            "target_entity_type": "Variable",
+            "paragraph": "The wind speed is nudged by 6 h relaxing time for all simulations. The 8 m, 5 m, LT and TP mean 8 m discretization, 5 m discretization, soil heat convection by liquid water transfer, and soil thermal property, respectively. The VSMC, TS, Fh, LF1, qL,0, Train, H1, 2, Cp, KT, I, T2m,max, T2m,min, ROFF,TOT, and P mean volumetric soil moisture content, surface temperature, sensible heat flux, latent heat flux, water flux at surface, rain temperature, rain heat flux, soil thermal conductivity, soil heat capacity, soil heat diffusivity, soil thermal inertia, daily maximum air temperature, daily minimum air temperature, total runoff, and precipitation. The DTR, ETR, ITV, and ITNV mean diurnal temperature range, intra-annual extreme temperature range, inter-diurnal temperature variability of the daily mean (ITV) and of the minimum temperature (ITNV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LMDZOR",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "total runoff",
+            "target_entity_type": "Variable",
+            "paragraph": "The wind speed is nudged by 6 h relaxing time for all simulations. The 8 m, 5 m, LT and TP mean 8 m discretization, 5 m discretization, soil heat convection by liquid water transfer, and soil thermal property, respectively. The VSMC, TS, Fh, LF1, qL,0, Train, H1, 2, Cp, KT, I, T2m,max, T2m,min, ROFF,TOT, and P mean volumetric soil moisture content, surface temperature, sensible heat flux, latent heat flux, water flux at surface, rain temperature, rain heat flux, soil thermal conductivity, soil heat capacity, soil heat diffusivity, soil thermal inertia, daily maximum air temperature, daily minimum air temperature, total runoff, and precipitation. The DTR, ETR, ITV, and ITNV mean diurnal temperature range, intra-annual extreme temperature range, inter-diurnal temperature variability of the daily mean (ITV) and of the minimum temperature (ITNV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "LMDZOR",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "diurnal temperature range",
+            "target_entity_type": "Variable",
+            "paragraph": "The wind speed is nudged by 6 h relaxing time for all simulations. The 8 m, 5 m, LT and TP mean 8 m discretization, 5 m discretization, soil heat convection by liquid water transfer, and soil thermal property, respectively. The VSMC, TS, Fh, LF1, qL,0, Train, H1, 2, Cp, KT, I, T2m,max, T2m,min, ROFF,TOT, and P mean volumetric soil moisture content, surface temperature, sensible heat flux, latent heat flux, water flux at surface, rain temperature, rain heat flux, soil thermal conductivity, soil heat capacity, soil heat diffusivity, soil thermal inertia, daily maximum air temperature, daily minimum air temperature, total runoff, and precipitation. The DTR, ETR, ITV, and ITNV mean diurnal temperature range, intra-annual extreme temperature range, inter-diurnal temperature variability of the daily mean (ITV) and of the minimum temperature (ITNV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LMDZOR",
+            "source_entity_type": "SourceComponent",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "intra-annual extreme temperature range",
+            "target_entity_type": "Variable",
+            "paragraph": "The wind speed is nudged by 6 h relaxing time for all simulations. The 8 m, 5 m, LT and TP mean 8 m discretization, 5 m discretization, soil heat convection by liquid water transfer, and soil thermal property, respectively. The VSMC, TS, Fh, LF1, qL,0, Train, H1, 2, Cp, KT, I, T2m,max, T2m,min, ROFF,TOT, and P mean volumetric soil moisture content, surface temperature, sensible heat flux, latent heat flux, water flux at surface, rain temperature, rain heat flux, soil thermal conductivity, soil heat capacity, soil heat diffusivity, soil thermal inertia, daily maximum air temperature, daily minimum air temperature, total runoff, and precipitation. The DTR, ETR, ITV, and ITNV mean diurnal temperature range, intra-annual extreme temperature range, inter-diurnal temperature variability of the daily mean (ITV) and of the minimum temperature (ITNV).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "IPSL climate model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "IPSL-CM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ORCHIDEE",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LMDZ",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Institut Pierre Simon Laplace",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "IPSL",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Laboratoire de M\u00e9t\u00e9orologie Dynamique du CNRS",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Paris",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "LSMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Fourier Law of diffusion equation for heat",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Community Land Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CLM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Community Climate System Model-CCSM3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Organizing Carbon and Hydrology In Dynamic Ecosystems",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "the Joint UK Land Environment Simulator",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JULES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Met Office Unified Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MetUM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Hydrology-Tiled ECMWF Scheme for Surface Exchange over Land",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "H-TESSEL",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Jena Scheme for Biosphere-Atmosphere Coupling in Hamburg",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "JSBACH",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Earth system model of Max Planck Institute for Meteorology",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MPI-ESM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Interaction between soil-biosphere-atmosphere (ISBA) LSM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ISBA",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CNRM-CM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Noah LSM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "de Vries (1963)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Cox et al. (1999)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GCMs",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "1-D soil heat conduction approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "5 m",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "7 layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "5M7L",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "2 m",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "11 layers",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "2M11L",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "coupled land-atmospheric model",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "volumetric heat capacities",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "volumetric soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil thermal conductivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "flux density of liquid water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "zero heat flux condition",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "soil heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sensible heat flux of rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature of the rainfall",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature of the soil surface",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "net radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sensible heat",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1-D Fokker-Planck equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Darcy law",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "hydraulic conductivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "diffusivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Johansen (1975)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "J75",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "soil porosity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "quartz content",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil thermal inertia",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "soil heat diffusivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "diurnal cycle",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "annual cycle",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "soil damping depth",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "8M17L",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "nudging",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "control experiment",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "sensitivity experiments",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "EXP8m",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "EXP5m",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total runoff",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Congo Basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Amazonia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Brazil",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "EXP8m, LT",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "EXP8m, LT,TP",
+            "entity_type": "Experiment"
+        },
+        {
+            "entity_instance": "P02",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "diurnal temperature range",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "DTR",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "intra-annual extreme temperature range",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ETR",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "inter-diurnal temperature variability of the daily mean",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ITV",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "inter-diurnal temperature variability of the minimum temperature",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ITNV",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "March-April-May",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "June-July-August",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "September-October-November",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "December-January-February",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Sahara",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "west Australia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "daily maximum air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily minimum air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dry season",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "ground heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Great Plains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "arid",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "semi-arid",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Sahel",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "central US",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "heat waves",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "8 m",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "probability density function",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "10 m",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "5-layer soil depth",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "nocturnal cooling",
+            "entity_type": "Weather_Event"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W2100635276",
+        "https://openalex.org/W2148592335",
+        "https://openalex.org/W2155679368",
+        "https://openalex.org/W2018608667",
+        "https://openalex.org/W2147654971",
+        "https://openalex.org/W1948545957",
+        "https://openalex.org/W2032392248",
+        "https://openalex.org/W1994015690",
+        "https://openalex.org/W2094755347",
+        "https://openalex.org/W2131859951",
+        "https://openalex.org/W1791467465",
+        "https://openalex.org/W1970356353",
+        "https://openalex.org/W1990376608",
+        "https://openalex.org/W2101225175",
+        "https://openalex.org/W2158126259",
+        "https://openalex.org/W2156592434",
+        "https://openalex.org/W2327833314",
+        "https://openalex.org/W2134547824",
+        "https://openalex.org/W1704142073",
+        "https://openalex.org/W2006685249",
+        "https://openalex.org/W2006927432",
+        "https://openalex.org/W2088820143",
+        "https://openalex.org/W1964551106",
+        "https://openalex.org/W2084308561",
+        "https://openalex.org/W2043858858",
+        "https://openalex.org/W2131597477",
+        "https://openalex.org/W2068755216",
+        "https://openalex.org/W2157980636",
+        "https://openalex.org/W2123855284",
+        "https://openalex.org/W2030284676",
+        "https://openalex.org/W1991550912",
+        "https://openalex.org/W4254396919",
+        "https://openalex.org/W1971009199",
+        "https://openalex.org/W2150234230",
+        "https://openalex.org/W2066992347",
+        "https://openalex.org/W1991458109",
+        "https://openalex.org/W2018380065",
+        "https://openalex.org/W2055232818",
+        "https://openalex.org/W2102847508",
+        "https://openalex.org/W2008668438",
+        "https://openalex.org/W2133252855",
+        "https://openalex.org/W3346668",
+        "https://openalex.org/W2012227846",
+        "https://openalex.org/W2096988657",
+        "https://openalex.org/W1556995040",
+        "https://openalex.org/W2462183283",
+        "https://openalex.org/W2145780057",
+        "https://openalex.org/W2160741281",
+        "https://openalex.org/W2169854418",
+        "https://openalex.org/W620882815",
+        "https://openalex.org/W113286128",
+        "https://openalex.org/W2001309087"
+    ]
+}

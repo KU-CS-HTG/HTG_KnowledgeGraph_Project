@@ -1,0 +1,899 @@
+{
+    "uri": "https://openalex.org/W7131223278",
+    "title": "Microphysical evolution and column loading drive nonlinear regional contrast in black carbon top-of-atmosphere forcing",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5061509876",
+            "display_name": "Pravash Tiwari",
+            "orcid": "https://orcid.org/0000-0003-4770-4526"
+        },
+        {
+            "id": "https://openalex.org/A5043811836",
+            "display_name": "Jason Blake Cohen",
+            "orcid": "https://orcid.org/0000-0002-9889-8175"
+        },
+        {
+            "id": "https://openalex.org/A5051038579",
+            "display_name": "Hongrui Gao",
+            "orcid": "https://orcid.org/0009-0003-8470-7723"
+        },
+        {
+            "id": "https://openalex.org/A5035379660",
+            "display_name": "Lingxiao Lu",
+            "orcid": "https://orcid.org/0000-0002-3839-9083"
+        },
+        {
+            "id": "https://openalex.org/A5126680681",
+            "display_name": "Jun Wang",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126713969",
+            "display_name": "Oleg Dubovik",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5101766471",
+            "display_name": "Kai Qin",
+            "orcid": "https://orcid.org/0000-0001-5457-6652"
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2026-363",
+    "abstract": "Abstract. Black carbon (BC) aerosols remain among the most uncertain contributors to anthropogenic climate forcing, as their radiative impact depends sensitively on microphysical evolution and atmospheric loading. This study presents a physics-informed, machine learning (ML) approach to estimate clear-sky BC top-of-atmosphere direct radiative forcing (BCTOA) at high spatial-temporal resolution while retaining physical interpretability. The study derives necessary optical properties for radiative transfer modeling (RTM), by constraining them with multi-platform, multi-waveband observations and their associated uncertainties. The RTM outputs are then used to train the ML surrogates and applied over two contrasting urban agglomerates-Xuzhou, China, and Dhaka, Bangladesh. The ML framework closely reproduces physics-based regional climatological mean (\u201317.6 \u00b1 2.2 W m-2 versus \u201317.4 \u00b1 2.6 W m-2 over Xuzhou; \u201314.9 \u00b1 1.1 W m-2 versus \u201315.0 \u00b1 1.2 W m-2 for Dhaka), while achieving high predictive fidelity R2 &gt; 0.95; RMSE ~1.5\u20131.8 W m-2 and strong cross-regional consistency (r &gt; 0.9). Predictor decomposition reveals BCTOA is primarily modulated by BC aerosol optical depth (BCAOD), column number density, and mixing state, with their relative importance and influence varying non-linearly across cooling-to-warming regimes. Crucially, similar BC loading can yield contrasting absorption-scattering dynamics across region, which are not captured by simplfied forcing parameterization. Together, the physics-informed ML framework and the multi-domain evaluation provide an efficient and transferable tool for constraining BC radiative impacts across real-world heterogeneity. The analysis also offers new mechanistic insight into how regional properties reshape BC regional radiative forcing.",
+    "field": "Aerosol radiative forcing",
+    "problem": "Quantifying black carbon's radiative impact is highly uncertain because it depends sensitively on its microphysical evolution and atmospheric loading, which are not captured by simplified parameterizations that overlook complex, non-linear absorption-scattering dynamics across different regions.",
+    "method": "This study presents a physics-informed machine learning approach that trains surrogate models on outputs from an observationally-constrained radiative transfer model to rapidly estimate clear-sky black carbon top-of-atmosphere direct radiative forcing.",
+    "task": "The task is to estimate black carbon top-of-atmosphere direct radiative forcing using a physics-informed, machine learning approach trained on observationally-constrained radiative transfer model outputs over the urban areas of Xuzhou, China, and Dhaka, Bangladesh.",
+    "model": [
+        "MERRA-2",
+        "CAMS",
+        "GOCART"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/radiative-forcing",
+            "display_name": "Radiative forcing",
+            "score": 0.8865000009536743
+        },
+        {
+            "id": "https://openalex.org/keywords/radiative-transfer",
+            "display_name": "Radiative transfer",
+            "score": 0.7031000256538391
+        },
+        {
+            "id": "https://openalex.org/keywords/forcing",
+            "display_name": "Forcing (mathematics)",
+            "score": 0.6323000192642212
+        },
+        {
+            "id": "https://openalex.org/keywords/aerosol",
+            "display_name": "Aerosol",
+            "score": 0.47940000891685486
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.448199987411499
+        },
+        {
+            "id": "https://openalex.org/keywords/mixing",
+            "display_name": "Mixing (physics)",
+            "score": 0.38370001316070557
+        },
+        {
+            "id": "https://openalex.org/keywords/carbon-fibers",
+            "display_name": "Carbon fibers",
+            "score": 0.35989999771118164
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C99578197",
+            "wikidata": "https://www.wikidata.org/wiki/Q1463606",
+            "display_name": "Radiative forcing",
+            "level": 3,
+            "score": 0.8865000009536743
+        },
+        {
+            "id": "https://openalex.org/C74902906",
+            "wikidata": "https://www.wikidata.org/wiki/Q1190858",
+            "display_name": "Radiative transfer",
+            "level": 2,
+            "score": 0.7031000256538391
+        },
+        {
+            "id": "https://openalex.org/C197115733",
+            "wikidata": "https://www.wikidata.org/wiki/Q1003136",
+            "display_name": "Forcing (mathematics)",
+            "level": 2,
+            "score": 0.6323000192642212
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6148999929428101
+        },
+        {
+            "id": "https://openalex.org/C91586092",
+            "wikidata": "https://www.wikidata.org/wiki/Q757520",
+            "display_name": "Atmospheric sciences",
+            "level": 1,
+            "score": 0.5838000178337097
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.5120000243186951
+        },
+        {
+            "id": "https://openalex.org/C2779345167",
+            "wikidata": "https://www.wikidata.org/wiki/Q104541",
+            "display_name": "Aerosol",
+            "level": 2,
+            "score": 0.47940000891685486
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.448199987411499
+        },
+        {
+            "id": "https://openalex.org/C138777275",
+            "wikidata": "https://www.wikidata.org/wiki/Q6884054",
+            "display_name": "Mixing (physics)",
+            "level": 2,
+            "score": 0.38370001316070557
+        },
+        {
+            "id": "https://openalex.org/C140205800",
+            "wikidata": "https://www.wikidata.org/wiki/Q5860",
+            "display_name": "Carbon fibers",
+            "level": 3,
+            "score": 0.35989999771118164
+        },
+        {
+            "id": "https://openalex.org/C2776436953",
+            "wikidata": "https://www.wikidata.org/wiki/Q5163215",
+            "display_name": "Consistency (knowledge bases)",
+            "level": 2,
+            "score": 0.3580999970436096
+        },
+        {
+            "id": "https://openalex.org/C199390426",
+            "wikidata": "https://www.wikidata.org/wiki/Q2353151",
+            "display_name": "Atmospheric radiative transfer codes",
+            "level": 3,
+            "score": 0.3546000123023987
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.33329999446868896
+        },
+        {
+            "id": "https://openalex.org/C134121241",
+            "wikidata": "https://www.wikidata.org/wiki/Q899301",
+            "display_name": "Yield (engineering)",
+            "level": 2,
+            "score": 0.3330000042915344
+        },
+        {
+            "id": "https://openalex.org/C44038986",
+            "wikidata": "https://www.wikidata.org/wiki/Q764245",
+            "display_name": "Carbon black",
+            "level": 3,
+            "score": 0.3224000036716461
+        },
+        {
+            "id": "https://openalex.org/C7337166",
+            "wikidata": "https://www.wikidata.org/wiki/Q1292280",
+            "display_name": "Earth's energy budget",
+            "level": 3,
+            "score": 0.2976999878883362
+        },
+        {
+            "id": "https://openalex.org/C195886398",
+            "wikidata": "https://www.wikidata.org/wiki/Q2110050",
+            "display_name": "Albedo (alchemy)",
+            "level": 3,
+            "score": 0.26840001344680786
+        },
+        {
+            "id": "https://openalex.org/C18459110",
+            "wikidata": "https://www.wikidata.org/wiki/Q171293",
+            "display_name": "Mixing ratio",
+            "level": 2,
+            "score": 0.2623000144958496
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents a physics-informed machine learning framework to estimate high-resolution black carbon radiative forcing, providing an efficient tool that reveals the complex, non-linear impact of aerosol microphysics and column loading on regional climate contrasts and forcing outcomes.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "SBDART",
+            "source_entity_type": "Source",
+            "relation": "HAS_SIMULATION_TYPE",
+            "target_entity_instance": "clear-sky simulation",
+            "target_entity_type": "SimulationType",
+            "paragraph": "This study presents a physics-informed, machine learning (ML) approach to estimate clear-sky BC top-of-atmosphere direct radiative forcing (BCTOA) at high spatial-temporal resolution while retaining physical interpretability.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CERES",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "TOA fluxes",
+            "target_entity_type": "Variable",
+            "paragraph": "The Clouds and the Earth's Radiant Energy System (CERES) and CloudSat (2B-FLXHR-LIDAR) provides a comprehensive dataset of TOA fluxes which are widely used (Gautam et al., 2023; Loeb et al., 2021; Subba et al., 2020, 2022).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "AERONET",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "aerosol optical depth",
+            "target_entity_type": "Variable",
+            "paragraph": "Both ground and satellite-based observational communities are rigorously working to improve quantification of BCDRF regionally. Ground-based BC mass measurements and/or sun-sky photometer's aerosol optical depth (AOD) provide some essential constraints for optical modeling.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "AERONET",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "single-scattering albedo",
+            "target_entity_type": "Variable",
+            "paragraph": "The original framework combined multi-waveband single-scattering albedo (SSA) from TROPOMI (388 nm) and AERONET/SONET (440-1020 nm) observations for these regions and used a two-component Mie inversion to generate ensembles of physically consistent microphysical solutions for BC core and non-absorbing shell sizes while accounting for both waveband offsets and cross-platform SSA uncertainties at a grid-by-grid and day-by-day level.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TROPOMI",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "single-scattering albedo",
+            "target_entity_type": "Variable",
+            "paragraph": "The original framework combined multi-waveband single-scattering albedo (SSA) from TROPOMI (388 nm) and AERONET/SONET (440-1020 nm) observations for these regions and used a two-component Mie inversion to generate ensembles of physically consistent microphysical solutions for BC core and non-absorbing shell sizes while accounting for both waveband offsets and cross-platform SSA uncertainties at a grid-by-grid and day-by-day level.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SONET",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "single-scattering albedo",
+            "target_entity_type": "Variable",
+            "paragraph": "The original framework combined multi-waveband single-scattering albedo (SSA) from TROPOMI (388 nm) and AERONET/SONET (440-1020 nm) observations for these regions and used a two-component Mie inversion to generate ensembles of physically consistent microphysical solutions for BC core and non-absorbing shell sizes while accounting for both waveband offsets and cross-platform SSA uncertainties at a grid-by-grid and day-by-day level.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "COSMO",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "core-shell morphology",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In light of persistent challenges in regional BCDRF quantification and building on recent advances in observationally constrained BC microphysical retrievals, including the core-shell Mie model optimization (COSMO), this study extends and refines multi-platform framework of an earlier approach developed by Tiwari et al., (2025). That framework combined multi-wavelength observations with a flexible core-shell morphology to derive probabilistic BC microphysical solutions and column densities, jointly constrained by multi-band SSA.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "COSMO",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Mie model",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The original framework combined multi-waveband single-scattering albedo (SSA) from TROPOMI (388 nm) and AERONET/SONET (440-1020 nm) observations for these regions and used a two-component Mie inversion to generate ensembles of physically consistent microphysical solutions for BC core and non-absorbing shell sizes while accounting for both waveband offsets and cross-platform SSA uncertainties at a grid-by-grid and day-by-day level. A brief description of the Mie model framework and assumed morphological set up, including key assumptions and their rationale, is provided in Appendix A.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "TROPOMI",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "aerosol optical depth",
+            "target_entity_type": "Variable",
+            "paragraph": "To implement this total AOD constraint, we derive specific upper uncertainty bounds based on AOD measurements from Multi-Angle Implementation of Atmospheric Correction (MAIAC) algorithm-based AOD (470 nm, 550 nm) (Lyapustin et al., 2018; Martins et al., 2017) and TROPOMI (388 nm).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "aerosol optical depth",
+            "target_entity_type": "Variable",
+            "paragraph": "To implement this total AOD constraint, we derive specific upper uncertainty bounds based on AOD measurements from Multi-Angle Implementation of Atmospheric Correction (MAIAC) algorithm-based AOD (470 nm, 550 nm) (Lyapustin et al., 2018; Martins et al., 2017) and TROPOMI (388 nm).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "precipitable water vapor",
+            "target_entity_type": "Variable",
+            "paragraph": "Additional necessary datasets, including MODIS Level 2 precipitable water vapor (PWV) (MYD05/MOD05), surface spectral albedo from the MODIS Bidirectional Reflectance Distribution Function product (MCD43A1), and total column ozone from the TROPOMI S5P_L2_O3_TOT_HiR product, were processed and spatio-temporally harmonized to align with the BC data grid resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "surface spectral albedo",
+            "target_entity_type": "Variable",
+            "paragraph": "Additional necessary datasets, including MODIS Level 2 precipitable water vapor (PWV) (MYD05/MOD05), surface spectral albedo from the MODIS Bidirectional Reflectance Distribution Function product (MCD43A1), and total column ozone from the TROPOMI S5P_L2_O3_TOT_HiR product, were processed and spatio-temporally harmonized to align with the BC data grid resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TROPOMI",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "total column ozone",
+            "target_entity_type": "Variable",
+            "paragraph": "Additional necessary datasets, including MODIS Level 2 precipitable water vapor (PWV) (MYD05/MOD05), surface spectral albedo from the MODIS Bidirectional Reflectance Distribution Function product (MCD43A1), and total column ozone from the TROPOMI S5P_L2_O3_TOT_HiR product, were processed and spatio-temporally harmonized to align with the BC data grid resolution.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SBDART",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "DISORT",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The RTM model used herein, is the Santa Barbara DISORT Atmospheric Radiative Transfer (SBDART) (Ricchiazzi et al., 1998) model which generates the TOA and surface radiative forcing.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "TROPOMI",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Sentinel-5P",
+            "target_entity_type": "Platform",
+            "paragraph": "The total column ozone data used in this study were obtained from the Sentinel-5P TROPOMI (TROPOspheric Monitoring Instrument) S5P_L2_O3_TOT_HiR product, which provides data at a high spatial resolution of 5.5 \u00d7 3.5 km (Inness et al., 2019; Sullivan et al., 2022).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Terra",
+            "target_entity_type": "Platform",
+            "paragraph": "In this study, we utilize the MCD43A1 dataset, which includes MODIS, Terra and Aqua BRDF/Albedo model parameters on a daily basis at a 500m resolution, to compute the actual blue-sky albedo.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Aqua",
+            "target_entity_type": "Platform",
+            "paragraph": "In this study, we utilize the MCD43A1 dataset, which includes MODIS, Terra and Aqua BRDF/Albedo model parameters on a daily basis at a 500m resolution, to compute the actual blue-sky albedo.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "School of Environment and Spatial Informatics, China University of Mining and Technology",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Department of Chemical and Biochemical Engineering, University of Iowa",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Lille, CNRS, UMR 8518 \u2013 LOA \u2013 Laboratoire d'Optique Atmosph\u00e9rique",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Xuzhou",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Iowa City, IA",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Lille",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Black carbon (BC) aerosols",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "BC top-of-atmosphere direct radiative forcing (BCTOA)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "radiative transfer modeling (RTM)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Dhaka",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Bangladesh",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "R\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "BC aerosol optical depth (BCAOD)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "column number density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mixing state",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "direct aerosol effect",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "indirect aerosol effect",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "semi-direct effect",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "direct radiative forcing (DRF)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "AeroCom Phase II",
+            "entity_type": "Activity"
+        },
+        {
+            "entity_instance": "absorption aerosol optical depth (AAOD)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "IPCC AR5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "IPCC AR6",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "CMIP-6",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "single scatter albedo (SSA)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "phase function",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "asymmetry coefficient (ASY)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mass absorption coefficients (MAC)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CERES",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "CloudSat",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "MERRA-2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CAMS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "South Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Global South",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "core-shell Mie model optimization (COSMO)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "North China Plain",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "TROPOMI",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "AERONET",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SONET",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "two-component Mie inversion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "total AOD",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Multi-Angle Implementation of Atmospheric Correction (MAIAC) algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "precipitable water vapor (PWV)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface spectral albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "total column ozone",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Santa Barbara DISORT Atmospheric Radiative Transfer (SBDART)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SBDART",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "day-by-day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "linear model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Parametric multiple linear regression (MLR) model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "column mass (Mc)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "number concentration (Nc)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "BC size",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "BCAOD550",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "random forest approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MBE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "adj R\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean Absolute and bias error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean absolute percentage error (MAPE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias-corrected RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "confidence intervals",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SHapley Additive exPlanation (SHAP) analysis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "BC core size",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Total mass column density (Mc)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "BC core to Sulfate shell size ratio",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Yangtze River Delta",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Beijing-Tianjin-Hebei provinces",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "mean error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "95% CI",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "p-value",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "percentage error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "residual standard deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "0.05\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Dhaka_University AERONET station",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "mass absorption cross-section",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PM2.5",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SHAP attribution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Mie theory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "core-shell configuration",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "extinction efficiency (Qext)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "scattering efficiency (Qscat)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "asymmetry factor (g)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Dark Target (DT)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Deep Blue (DB)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Gobi region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "aerosol optical depth (AOD)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Terra",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Aqua",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "MODIS BRDF/Albedo model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Ross-Thick-Li-Sparse-Reciprocal model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "500m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Black-sky Albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "White-sky albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "blue-sky albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Sentinel-5P",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "GOME-type Direct FITting (GODFIT) algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "5.5 x 3.5 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "TROPOMAER",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "SRON",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Iowa",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "GRASP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "GOCART Model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "clear-sky",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "MISR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "South Asian outflow",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "northern Indian Ocean",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": []
+}

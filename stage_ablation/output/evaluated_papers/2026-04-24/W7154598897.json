@@ -1,0 +1,2591 @@
+{
+    "uri": "https://openalex.org/W7154598897",
+    "title": "Reconstructing Land Surface Temperature for Cloud-Covered Regions: A Review of Methods",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5094107825",
+            "display_name": "Marwa Alfouly",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5084250057",
+            "display_name": "Smajil Halilovic",
+            "orcid": "https://orcid.org/0000-0002-2024-8201"
+        },
+        {
+            "id": "https://openalex.org/A5133742142",
+            "display_name": "Niklas Boers",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5002116092",
+            "display_name": "Thomas Hamacher",
+            "orcid": "https://orcid.org/0000-0002-0387-8199"
+        }
+    ],
+    "doi": "https://doi.org/10.31223/x5nx91",
+    "abstract": "Understanding surface thermal conditions is essential for studying ecosystem responses, hydrological processes, and climate-driven environmental change. Land Surface Temperature (LST) is a key parameter for studying a wide range of environmental and climatic processes. Although remote sensing technologies enable the acquisition of LST data on a global scale, satellite observations are frequently obscured by cloud cover, resulting in spatial and temporal data gaps that limit their usability. This work provides a comprehensive review of existing methods developed to reconstruct gap-free LST data. First, state-of-the-art methods are systematically reviewed and classified into rule-based and data driven methods. For each method, the underlying principles are explained, alongside details on implementation, validation, and the selected case study, providing critical insights into their performance and generalizability. Second, the growing potential of advanced methods\u2014particularly deep learning frameworks\u2014is explored, highlighting their adaptability for the task of LST gap-filling. The findings indicate that despite the development of sophisticated models, significant challenges remain, especially regarding the generalizability of the methods in varying climatic and urban environments. In addition, inconsistencies are identified in the evaluation metrics, limiting the direct comparability of the methods. This review can help guide future research efforts by highlighting current limitations and identifying promising directions for the development of more robust and adaptable LST gap-filling approaches.",
+    "field": "Land Surface Temperature reconstruction methods",
+    "problem": "Satellite-based Land Surface Temperature (LST) measurements are frequently obscured by clouds, creating data gaps, and existing reconstruction methods face challenges in generalizability across diverse environments and lack consistent evaluation metrics, hindering their comparability.",
+    "method": "This paper provides a comprehensive review and unified taxonomy of existing methods for reconstructing land surface temperature in cloud-covered regions, systematically classifying them into rule-based and data-driven approaches and critically evaluating their performance, limitations, and generalizability.",
+    "task": "The task is to review and evaluate existing methods developed to reconstruct gap-free Land Surface Temperature (LST) data from satellite observations that are frequently obscured by cloud cover, resulting in spatial and temporal data gaps.",
+    "model": [
+        "Noah",
+        "HTESSEL",
+        "BATS",
+        "CLASS",
+        "Noah-MP",
+        "CLM5",
+        "JULES",
+        "ISBA"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/comparability",
+            "display_name": "Comparability",
+            "score": 0.7419000267982483
+        },
+        {
+            "id": "https://openalex.org/keywords/adaptability",
+            "display_name": "Adaptability",
+            "score": 0.5709999799728394
+        },
+        {
+            "id": "https://openalex.org/keywords/generalizability-theory",
+            "display_name": "Generalizability theory",
+            "score": 0.5504000186920166
+        },
+        {
+            "id": "https://openalex.org/keywords/limiting",
+            "display_name": "Limiting",
+            "score": 0.5087000131607056
+        },
+        {
+            "id": "https://openalex.org/keywords/cloud-computing",
+            "display_name": "Cloud computing",
+            "score": 0.36649999022483826
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.34450000524520874
+        },
+        {
+            "id": "https://openalex.org/keywords/land-use",
+            "display_name": "Land use",
+            "score": 0.3319999873638153
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C197947376",
+            "wikidata": "https://www.wikidata.org/wiki/Q5155608",
+            "display_name": "Comparability",
+            "level": 2,
+            "score": 0.7419000267982483
+        },
+        {
+            "id": "https://openalex.org/C177606310",
+            "wikidata": "https://www.wikidata.org/wiki/Q5674297",
+            "display_name": "Adaptability",
+            "level": 2,
+            "score": 0.5709999799728394
+        },
+        {
+            "id": "https://openalex.org/C27158222",
+            "wikidata": "https://www.wikidata.org/wiki/Q5532422",
+            "display_name": "Generalizability theory",
+            "level": 2,
+            "score": 0.5504000186920166
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.5253999829292297
+        },
+        {
+            "id": "https://openalex.org/C188198153",
+            "wikidata": "https://www.wikidata.org/wiki/Q1613840",
+            "display_name": "Limiting",
+            "level": 2,
+            "score": 0.5087000131607056
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.49810001254081726
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.4165000021457672
+        },
+        {
+            "id": "https://openalex.org/C79974875",
+            "wikidata": "https://www.wikidata.org/wiki/Q483639",
+            "display_name": "Cloud computing",
+            "level": 2,
+            "score": 0.36649999022483826
+        },
+        {
+            "id": "https://openalex.org/C107826830",
+            "wikidata": "https://www.wikidata.org/wiki/Q929380",
+            "display_name": "Environmental resource management",
+            "level": 1,
+            "score": 0.3472000062465668
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.34450000524520874
+        },
+        {
+            "id": "https://openalex.org/C4792198",
+            "wikidata": "https://www.wikidata.org/wiki/Q1165944",
+            "display_name": "Land use",
+            "level": 2,
+            "score": 0.3319999873638153
+        },
+        {
+            "id": "https://openalex.org/C204323151",
+            "wikidata": "https://www.wikidata.org/wiki/Q905424",
+            "display_name": "Range (aeronautics)",
+            "level": 2,
+            "score": 0.3249000012874603
+        },
+        {
+            "id": "https://openalex.org/C2522767166",
+            "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+            "display_name": "Data science",
+            "level": 1,
+            "score": 0.31610000133514404
+        },
+        {
+            "id": "https://openalex.org/C2777489503",
+            "wikidata": "https://www.wikidata.org/wiki/Q7698936",
+            "display_name": "Temporal scales",
+            "level": 2,
+            "score": 0.3084000051021576
+        },
+        {
+            "id": "https://openalex.org/C2780451532",
+            "wikidata": "https://www.wikidata.org/wiki/Q759676",
+            "display_name": "Task (project management)",
+            "level": 2,
+            "score": 0.29499998688697815
+        },
+        {
+            "id": "https://openalex.org/C18762648",
+            "wikidata": "https://www.wikidata.org/wiki/Q42213",
+            "display_name": "Work (physics)",
+            "level": 2,
+            "score": 0.28679999709129333
+        },
+        {
+            "id": "https://openalex.org/C153823671",
+            "wikidata": "https://www.wikidata.org/wiki/Q1049799",
+            "display_name": "Water resources",
+            "level": 2,
+            "score": 0.2754000127315521
+        },
+        {
+            "id": "https://openalex.org/C26517878",
+            "wikidata": "https://www.wikidata.org/wiki/Q228039",
+            "display_name": "Key (lock)",
+            "level": 2,
+            "score": 0.2660999894142151
+        },
+        {
+            "id": "https://openalex.org/C19269812",
+            "wikidata": "https://www.wikidata.org/wiki/Q26540",
+            "display_name": "Satellite",
+            "level": 2,
+            "score": 0.26330000162124634
+        },
+        {
+            "id": "https://openalex.org/C108583219",
+            "wikidata": "https://www.wikidata.org/wiki/Q197536",
+            "display_name": "Deep learning",
+            "level": 2,
+            "score": 0.26010000705718994
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper provides a comprehensive review of methods for reconstructing Land Surface Temperature (LST) in cloud-covered regions, systematically classifying them, evaluating their performance and limitations, and highlighting promising directions for future research.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "August 2003 European heatwave",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Europe",
+            "target_entity_type": "Continent",
+            "paragraph": "The study also confirmed the method successfully captured extreme climatological anomalies, specifically reproducing the high intensity and spatial extent of the August 2003 European heatwave.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "REMOTE SENSING LST DATASETS\nDataset Spatial resolution Revisit Spatial Coverage\nMODIS\u00b9 1 km Daily Global",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "VIIRS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "REMOTE SENSING LST DATASETS\nDataset Spatial resolution Revisit Spatial Coverage\nVIIRS\u00b2 750 m Daily Global",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SEVIRI",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "REMOTE SENSING LST DATASETS\nDataset Spatial resolution Revisit Spatial Coverage\nMSG SEVIRI\u00b3 3 km 15 minutes Geostationary (Europe, Africa, Middle East)",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECOSTRESS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "REMOTE SENSING LST DATASETS\nDataset Spatial resolution Revisit Spatial Coverage\nECOSTRESS\u2076 70 m 1 \u2013 5 days Near-Global Land (52\u00b0 N to 52\u00b0 S)",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ASTER",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "REMOTE SENSING LST DATASETS\nDataset Spatial resolution Revisit Spatial Coverage\nASTER\u2077 90 m 16 days Global",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "AMSR-E",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "REMOTE SENSING LST DATASETS\nDataset Spatial resolution Revisit Spatial Coverage\nAMSR-E LST 25 km 2 days Global",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "AMSR2",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "REMOTE SENSING LST DATASETS\nDataset Spatial resolution Revisit Spatial Coverage\nAMSR2\u2079 LST 10 km 2 days Global",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SMOS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "REMOTE SENSING LST DATASETS\nDataset Spatial resolution Revisit Spatial Coverage\nSMOS\u00b9\u2070 LST 40 \u2013 50 km 2 \u2013 3 days Global",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "SEVIRI",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "MSG",
+            "target_entity_type": "Platform",
+            "paragraph": "REMOTE SENSING LST DATASETS\nDataset Spatial resolution Revisit Spatial Coverage\nMSG SEVIRI\u00b3 3 km 15 minutes Geostationary (Europe, Africa, Middle East)",
+            "ontology_conformed": true,
+            "evidence_validated": false,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ECOSTRESS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Space Station",
+            "target_entity_type": "Platform",
+            "paragraph": "\u00b9MODIS: Moderate Resolution Imaging Spectroradiometer, \u00b2VIIRS: Visible Infrared Imaging Radiometer Suite, \u00b3SEVIRI: Spinning Enhanced Visible and Infra-Red Imager, \u2074GOES: Geostationary Operational Environmental Satellite, \u2075FY-2/3: FY is Fengyun (China\u2019s weather satellite program), the number (2 or 3) indicates the satellite generation/type, and the letter (B, D, F, G, etc.) identifies the specific satellite within that series. \u2076ECOSTRESS: ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station [11], \u2077ASTER: Advanced Spaceborne Thermal Emission and Reflection Radiometer, \u2078GPM: Global Precipitation Measurement, \u2079AMSR-E/2: Advanced Microwave Scanning Radiometer (for EOS/2), \u00b9\u2070SMOS: Soil Moisture and Ocean Salinity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "AMSR-E",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "EOS",
+            "target_entity_type": "Platform",
+            "paragraph": "\u00b9MODIS: Moderate Resolution Imaging Spectroradiometer, \u00b2VIIRS: Visible Infrared Imaging Radiometer Suite, \u00b3SEVIRI: Spinning Enhanced Visible and Infra-Red Imager, \u2074GOES: Geostationary Operational Environmental Satellite, \u2075FY-2/3: FY is Fengyun (China\u2019s weather satellite program), the number (2 or 3) indicates the satellite generation/type, and the letter (B, D, F, G, etc.) identifies the specific satellite within that series. \u2076ECOSTRESS: ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station [11], \u2077ASTER: Advanced Spaceborne Thermal Emission and Reflection Radiometer, \u2078GPM: Global Precipitation Measurement, \u2079AMSR-E/2: Advanced Microwave Scanning Radiometer (for EOS/2), \u00b9\u2070SMOS: Soil Moisture and Ocean Salinity.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Terra",
+            "target_entity_type": "Platform",
+            "paragraph": "The larger errors in the MWRI\u2013MODIS experiment are expected, as MWRI and MERSI are co-mounted on the same FY-3D satellite, whereas MODIS operates on NASA\u2019s Terra and Aqua platforms.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Aqua",
+            "target_entity_type": "Platform",
+            "paragraph": "The larger errors in the MWRI\u2013MODIS experiment are expected, as MWRI and MERSI are co-mounted on the same FY-3D satellite, whereas MODIS operates on NASA\u2019s Terra and Aqua platforms.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MWRI",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "To address the computational bottlenecks, Meng et al. [91] introduced the Global Spatiotemporal Fusion Model (GLOSTFM) for fusing PMW-based LST from MWRI with TIR-based LST from MERSI.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MERSI",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "To address the computational bottlenecks, Meng et al. [91] introduced the Global Spatiotemporal Fusion Model (GLOSTFM) for fusing PMW-based LST from MWRI with TIR-based LST from MERSI.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MWRI",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "FY-3D",
+            "target_entity_type": "Platform",
+            "paragraph": "The larger errors in the MWRI\u2013MODIS experiment are expected, as MWRI and MERSI are co-mounted on the same FY-3D satellite, whereas MODIS operates on NASA\u2019s Terra and Aqua platforms.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MERSI",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "FY-3D",
+            "target_entity_type": "Platform",
+            "paragraph": "The larger errors in the MWRI\u2013MODIS experiment are expected, as MWRI and MERSI are co-mounted on the same FY-3D satellite, whereas MODIS operates on NASA\u2019s Terra and Aqua platforms.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "Jia et al. [123] proposed a framework that integrates multi-satellite observations with physically-based modelling to generate global hourly, 5 km, all-weather LST dataset for the period 2011-2021. The framework first builds a time-evolving model using ERA5 clear-sky scenarios to provide continuous signals of how temperature changes over time due to air movement and weather shifts, even when the surface is hidden by clouds. Then, clear-sky LST observations from multi-stattlite are blended into this model using a Kalman filter resulting in a complete map of hypothetical clear-sky LST.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "CLM 5.0",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "Similarly, Ma et al. [24] developed an integrated temperature fusion framework to produce gapless LST maps at 60-m spatial resolution and half-hourly temporal resolution for urban-dominated region (Wuhan, China) and a natural-dominated region (Heihe River Basin, China) by blending Landsat and MODIS observations with SEB-informed CLM 5.0 simulations.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "GLDAS",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "Moving toward ensemble learning, Zhang et al. [128] proposed the estimation of gap-free all-weather MODIS LST over the TP region for 2003 and 2014 using GLDAS LST reanalysis data to account for the effect of clouds on incoming shortwave radiation.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JULES",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "LST",
+            "target_entity_type": "Variable",
+            "paragraph": "Second, and more central to this review, LSMs serve as the physical engine in data assimilation and fusion frameworks. In this approach, the model is not just a simulator but is actively constrained by satellite observations to correct its estimates. Ghent et al. [23], for instance, used this method to constrain JULES model simulations with remotely sensed LST data from SEVIRI, thereby reducing inherent model uncertainty.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CLDAS",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "soil surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "In this context, Tan et al. [130] proposed an XGBoost approach that used soil surface temperature and soil moisture from the China Land Data Assimilation System (CLDAS) as physical linking variables.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "CLDAS",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "soil moisture",
+            "target_entity_type": "Variable",
+            "paragraph": "In this context, Tan et al. [130] proposed an XGBoost approach that used soil surface temperature and soil moisture from the China Land Data Assimilation System (CLDAS) as physical linking variables.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Technical University of Munich",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Land Surface Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Community Land Model Version 5.0",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CLM5.0",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Enhanced vegetation index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "EVI",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "correlation coefficient",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "The European Centre for medium-range weather forecasts reanalysis data, fifth generation",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Enhanced STARFM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ESTARFM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Normalize difference vegetation index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "NDVI",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Singular spectrum decomposition",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SSA",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spatiotemporal attention network",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "STAN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spatial and temporal adaptive reflectance fusion model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "STARFM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spatio-Temporal Integrated Temperature Fusion Model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "STITFM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Surface Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "passive microwave sensors",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "PMW",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "thermal infrared sensors",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "TIR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Surface Energy Balance",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SEB",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "net radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Rn",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "sensible heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "H",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latent heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LE",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ground heat flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "G",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "1 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "VIIRS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "750 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Sentinel-3",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Landsat-8/9",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "30 - 100 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "16 days",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "MSG",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SEVIRI",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "3 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "15 minutes",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Poles",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Middle East",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "GOES",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "2 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Western Hemisphere",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "FY-2F/G",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "5 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "FY-3B/D",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "250 m - 1 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "12 hours",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Himawari-8",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "10 minutes",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Japan/Oceania",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ECOSTRESS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "70 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1-5 days",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Near-Global Land (52\u00b0 N to 52\u00b0 S)",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ASTER",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "90 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "GPM",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "10 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "3 hours",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "AMSR-E",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "25 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "2 days",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "AMSR2",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SMOS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "40 - 50 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "2-3 days",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Land Surface Models",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "LSMs",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "soil moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vegetation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "snow",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Noah LSM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "HTESSEL",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "BATS",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CLASS",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Noah-MP",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CLM5",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "JULES",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ISBA",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "ensemble learning models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "sparse learning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "feature learning methods",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "deep learning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Sparse Representation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Dictionary Learning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Random Forest",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Extreme Gradient Boosting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "XGBoost",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RF regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "neural network",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "feedforward networks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FFN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "recurrent neural networks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "convolutional neural networks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "long short-term memory networks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "LSTM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "generative adversarial networks",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GAN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "convolution layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "pooling layer",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "activation function",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "Deep Convolutional GAN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DCGAN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Conditional GAN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CGAN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "simple arithmetic means",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SAM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "correlation coefficient weighing",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CCW",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "inverse distance weighting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "IDW",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "multiple linear regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MLR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ordinary kriging",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "OK",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "regression kriging",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RK",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "spline curves",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "elevation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "latitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MODIS LST",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Central Qinghai-Tibet Plateau",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "MSG-SEVIRI",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Harmonic Analysis of Time Series",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "HANTS",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Annual Temperature Cycle",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ATC",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Yangtze River Delta region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Mean Absolute Error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Yazd-Ardakan plain",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Iran",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Caspian Sea",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Turkmenistan",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "mean annual surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MAST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "yearly amplitude of surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "YAST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface Air Temperatures",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SATs",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "albedo",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mainland China",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Yangtze River Delta",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Differential Dynamic Search Distance Algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DDSDA",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Remotely Sensed DAily land Surface Temperature reconstruction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RSDAST",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Northwest China",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Correlation Weighting (ICW) technique",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "quantile regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MODIS NDVI",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Interpolation of the Mean Anomalies (IMA) method",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spain",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Navarre",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Discrete Cosine Transforms",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DCT",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Penalized Least Squares (PLS) regression approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DCT-PLS",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Australia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Southeast Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Data Interpolating Empirical Orthogonal Functions algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DINEOF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Tibetan Plateau",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Ali",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Empirical Orthogonal Function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "EOF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "sea surface temperatures",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "atmospheric pressure",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Central Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Local Weighted Regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "LWR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "emissivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Thin Plate Spline",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TPS",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Switzerland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "France",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Germany",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "August 2003 European heatwave",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Heihe River Basin (HRB)",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "arid Northwest China",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "theoretical clear-sky radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "slope",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "aspect",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ATC-IDW framework",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Landsat 8",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Spatiotemporal Data Fusion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TIR-TIR fusion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TIR-PMW fusion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Landsat",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Linear Spectral Mixture Analysis",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "LSMA",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Los Angeles County, California",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "unbiased ESTARFM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ubESTARFM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "unbiased RMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "ubRMSE",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "southwestern United States",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Evora",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Portugal",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "integrated spatiotemporal fusion algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ISFAT",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Sentinel-3",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Hong Kong",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Multisensor Multiresolution Technique",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MMT",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Flexible Spatiotemporal DAta Fusion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FSDAF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Comprehensive Flexible Spatiotemporal DAta Fusion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CFSDAF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ASTER LST",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "southwestern U.S.",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Beijing",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Shenzhen",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Long Time-series Spatiotemporal Fusion Model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "LOTSFM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Shanghai",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Guangzhou",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "VIIRS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Beijing-Tianjin-Hebei region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Pearl River Delta",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Heihe River Basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Bayesian Maximum Entropy",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "BME",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Naqu City",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Cumulative Distribution Function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CDF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Multiresolution Kalman Filtering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MKF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "geographically weighted regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GWR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AMSR2",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Kenya",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Global Spatiotemporal Fusion Model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GLOSTFM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MWRI",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "MERSI",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "FY-3D",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Los Angeles",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "SW USA",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Beijing-Hebei",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "ensemble learning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "bagging",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "boosting",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "stacking",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "sparse and feature learning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Gradient Boosting Machine",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GBM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Lasso Regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Support Vector Regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SVR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "k-Nearest Neighbors",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "kNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Kriging regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Estonia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "spatial feature-considered random forest regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SFRFR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "soil texture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "ST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "population density",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "PD",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "digital elevation model",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DEM",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "solar zenith angle",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "SZA",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface reflectance of the middle-infrared",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "MIR",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land use and land cover change",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LUCC",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wuhan",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "spatial-temporal RF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "STRF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Thailand",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "RF-similar-pixel (RF-SP) interpolation scheme",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ensemble of RF and Ridge Regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RFRR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fengyun-3C",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Savitzky-Golay (S-G) filtering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "downscaled microwave LST",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Savitzky-Golay smoothed vegetation index (NDVI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land cover type",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "terrain slope",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "geographic coordinates",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Poisson equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Huainan",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Anhui Province",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Jining",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Shandong Province",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "AMSR2 PMW LST",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "corrected PMW data",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land cover",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "climate classification",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Synthetic Aperture Radar",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SAR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Sentinel-1",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SAR polarizations (VH, VV)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Radar Vegetation Index (RVI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Loess Plateau",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Qinghai-Tibet Plateau",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northeast China Plain",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "North China Plain",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Nanling Mountains",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Nevada",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "multitemporal sparse models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "expanded MT-KSVD",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bayesian MT-BPFA",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Example-Based Super-Resolution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SRR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "AMSR-2",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "SURFRAD network",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Markov network",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Belief Propagation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "LASSO linear regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "K-Means clustering",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "stratified random sampling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Atlanta, Georgia",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Sentinel-2",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Varanasi",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "SSGP-toolbox",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS Terra",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Saint Petersburg",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Madrid",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Vladivostok",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "U-Net",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Ceyhan, Adana",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Turkey",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Wuhan",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Russia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Heihe River Basin",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Multiscale Feature-Connected CNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MFCTR-CNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spatial Attention Units",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SAUs",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "residual learning",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FY-2G",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "MODIS Terra",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS Aqua",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Normalized Cross Correlation (NCC) loss",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spatiotemporal Temperature Fusion Network",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "STTFN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "non-local module",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "squeeze-and-excitation (SE) module",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "land cover ratios",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hybrid ATC-3DCNN approach",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "partial convolutions",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Source Augmented Partial Convolution v2 model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SAPC2",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Colorado",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Rhineland-Palatinate",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "conditional Generative Adversarial Network",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cGAN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "pix2pix architecture",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RGB orthophotography",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "RGB imagery",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Lyon Metropolis",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Lyon",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "RGB2LST framework",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Truncated Gaussian Function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Two-step Deep Learning Framework",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TDLF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "HRB",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "TP",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "SEB-based framework",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Physically Enhanced Statistical and Deterministic Approaches",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "RNN (LSTM)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Encoder-Decoder CNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Hybrid CNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Partial CNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Attention-Gated CNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "cGAN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Multi-Stage (CNN+GAN)",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "surface air temperature (SAT)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Neighboring-Pixel (NP) strategy",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Monin-Obukhov similarity theory",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "North America",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Cloud-regulated Surface Warming Model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "C-SWARM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GOES-R",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "CONUS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GEOS-5 Catchment Land Surface Model (CLSM)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "VIIRS VNP21",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS Aqua",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "MODIS Terra",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Western Anatolia Basin (WAB)",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Aegean Region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "T\u00fcrkiye",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Multivariate Data Interpolating Empirical Orthogonal Functions",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MDINEOF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "all-sky longwave downward radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "LWDR",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "all-wave net radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "AWNR",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CLM 5.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Annual and Diurnal Temperature Cycle (ATC/DTC) models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MERRA-2 reanalysis",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ADTC-based framework",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FY-2F",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Clouds and Earth's Radiant Energy System",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CERES",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "BSRN",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Fluxnet",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5-Land",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GLDAS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TP region",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "surface downward shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "China Land Data Assimilation System",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CLDAS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "soil surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Cloud Radiative Effect (CRE) model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Bayesian Optimized XGBoost",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "BO-XGB",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Light Gradient Boosting Machine",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Light-GBM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Local Data Assimilation and Prediction System",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LDAPS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mechanism-Guided LightGBM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "MG-LGBM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Community Land Model",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "CLM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "FY-3B MWRI",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "LDAS",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Diurnal Temperature Cycle (DTC) model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GraphProp",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Statistical Mono-Window algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NCEP/NCAR Reanalysis Data",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Jakarta",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "London",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Paris",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Cairo",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Gaborone",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Qu\u00e9bec City",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Nonlocality-Reinforced Network",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NRN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CLDAS assimilation data",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MOD11A2",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MYD11A1",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "INCA meteorological data",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Air Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Global Radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Relative Humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wind Speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Bowen ratio",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Innsbruck",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Vienna",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Austrian",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "physics guided CNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Pennsylvania State University (PSU)",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "GOES-16",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Masked Transformer Module",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "gradient consistency regularization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FengYun-3D (FY-3D)",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Eastern Pacific",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "East Coast of North America",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Deep Ensemble Learning (DELAG) framework",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Landsat 9",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Gaussian Processes",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "New York City",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "ATC-3DCNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Satellite-LSM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Spatial interpolation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Temporal harmonic models",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spatiotemporal or Fusion",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TIR-TIR fusion or ML",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Physics-enhanced or hybrid",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DCT-PLS or scalable ML",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Fast Fourier Convolution",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FFC",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "resolution-robust Large Mask Inpainting (LaMa) model",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Spline",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TISP",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "BME",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CDF-MKF",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "GLOSTFM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "RF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SRR",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SVM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "SEB-NP",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ADTC",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DINEOF-CDF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ERA5-GAM",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ERA5-RF",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CLDAS-XGBOOST",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Physics-GuidedCNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "DELAG",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ICNA-CNN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Berkeley Earth Surface Temperatures (BEST)",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "HadCRUT4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CMIP5",
+            "entity_type": "MIPEra"
+        },
+        {
+            "entity_instance": "Cloud Perception Integrated Fast Fourier Convolutional Network",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "CP-FFCN",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "FFC block structure",
+            "entity_type": "PhysicalScheme"
+        }
+    ],
+    "referenced_works": []
+}

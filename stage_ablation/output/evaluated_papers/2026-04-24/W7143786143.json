@@ -1,0 +1,717 @@
+{
+    "uri": "https://openalex.org/W7143786143",
+    "title": "Hybrid Deep Learning for Climate-Driven Atmospheric Irrigation Potential Forecasting: A Case Study for Ankara",
+    "venue": {
+        "name": "Gazi University Journal of Science Part A Engineering and Innovation",
+        "id": "https://openalex.org/S4210211416",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5029203572",
+            "display_name": "Murat Ak\u0131n",
+            "orcid": "https://orcid.org/0000-0003-0001-1036"
+        }
+    ],
+    "doi": "https://doi.org/10.54287/gujsa.1831069",
+    "abstract": "Accurate forecasting of atmospheric irrigation potential under variable climate conditions is essential for sustainable water management in semi-arid regions. In this study, monthly atmospheric irrigation potential for Ankara, T\u00fcrkiye was analyzed using a hybrid residual model that combines a Long Short-Term Memory (LSTM) network with an Extreme Gradient Boosting (XGBoost) algorithm. Daily climate data from the National Aeronautics and Space Administration Prediction of Worldwide Energy Resources (NASA POWER) archive for 2001\u20132024 and reference evapotranspiration (ET\u2080) values calculated using the Food and Agriculture Organization (FAO) 56 Penman\u2013Monteith equation formed the basis of the predictors. The LSTM model learned the temporal structure of the climatic inputs, and XGBoost was then applied to represent the remaining residual errors by incorporating extended climatic and seasonal features. Testing on the 2022\u20132024 period, the hybrid model produced a Root Mean Square Error (RMSE) of 24.4 mm, a Mean Absolute Error (MAE) of 20.3 mm and a Coefficient of Determination (R\u00b2) of 0.87. Feature-importance results showed that Month Sine and last-step ET\u2080 had the strongest influence, followed by relative humidity, wind speed and shortwave radiation. Although the accuracy gains over the standalone models were moderate, the hybrid design delivered more stable forecasts and a clearer view of variable contributions, offering practical value for climate-driven irrigation pressure assessment in semi-arid environments.",
+    "field": "Hydrological forecasting",
+    "problem": "Forecasting atmospheric irrigation potential is challenging because traditional physical models require complete data and fail to capture complex temporal dependencies, while single data-driven models may not fully correct for nonlinear residual errors or provide clear interpretability in semi-arid environments.",
+    "method": "This paper proposes a hybrid residual model that uses a Long Short-Term Memory (LSTM) network for an initial forecast of atmospheric irrigation potential, followed by an Extreme Gradient Boosting (XGBoost) model to learn and correct the remaining residual errors for an improved final prediction.",
+    "task": "The task is to forecast monthly atmospheric irrigation potential for Ankara, T\u00fcrkiye, using a hybrid deep learning model that combines an LSTM network with an XGBoost algorithm on satellite-derived climate data.",
+    "model": [
+        "no"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/evapotranspiration",
+            "display_name": "Evapotranspiration",
+            "score": 0.692799985408783
+        },
+        {
+            "id": "https://openalex.org/keywords/residual",
+            "display_name": "Residual",
+            "score": 0.6078000068664551
+        },
+        {
+            "id": "https://openalex.org/keywords/irrigation-scheduling",
+            "display_name": "Irrigation scheduling",
+            "score": 0.5723999738693237
+        },
+        {
+            "id": "https://openalex.org/keywords/wind-speed",
+            "display_name": "Wind speed",
+            "score": 0.49939998984336853
+        },
+        {
+            "id": "https://openalex.org/keywords/irrigation",
+            "display_name": "Irrigation",
+            "score": 0.4672999978065491
+        },
+        {
+            "id": "https://openalex.org/keywords/mean-squared-error",
+            "display_name": "Mean squared error",
+            "score": 0.40939998626708984
+        },
+        {
+            "id": "https://openalex.org/keywords/irrigation-management",
+            "display_name": "Irrigation management",
+            "score": 0.4092999994754791
+        },
+        {
+            "id": "https://openalex.org/keywords/approximation-error",
+            "display_name": "Approximation error",
+            "score": 0.40630000829696655
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.3991999924182892
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C176783924",
+            "wikidata": "https://www.wikidata.org/wiki/Q828158",
+            "display_name": "Evapotranspiration",
+            "level": 2,
+            "score": 0.692799985408783
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6572999954223633
+        },
+        {
+            "id": "https://openalex.org/C155512373",
+            "wikidata": "https://www.wikidata.org/wiki/Q287450",
+            "display_name": "Residual",
+            "level": 2,
+            "score": 0.6078000068664551
+        },
+        {
+            "id": "https://openalex.org/C2777589951",
+            "wikidata": "https://www.wikidata.org/wiki/Q6073845",
+            "display_name": "Irrigation scheduling",
+            "level": 3,
+            "score": 0.5723999738693237
+        },
+        {
+            "id": "https://openalex.org/C161067210",
+            "wikidata": "https://www.wikidata.org/wiki/Q1464943",
+            "display_name": "Wind speed",
+            "level": 2,
+            "score": 0.49939998984336853
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.4952999949455261
+        },
+        {
+            "id": "https://openalex.org/C88862950",
+            "wikidata": "https://www.wikidata.org/wiki/Q11453",
+            "display_name": "Irrigation",
+            "level": 2,
+            "score": 0.4672999978065491
+        },
+        {
+            "id": "https://openalex.org/C139945424",
+            "wikidata": "https://www.wikidata.org/wiki/Q1940696",
+            "display_name": "Mean squared error",
+            "level": 2,
+            "score": 0.40939998626708984
+        },
+        {
+            "id": "https://openalex.org/C112077630",
+            "wikidata": "https://www.wikidata.org/wiki/Q2623678",
+            "display_name": "Irrigation management",
+            "level": 3,
+            "score": 0.4092999994754791
+        },
+        {
+            "id": "https://openalex.org/C122383733",
+            "wikidata": "https://www.wikidata.org/wiki/Q865920",
+            "display_name": "Approximation error",
+            "level": 2,
+            "score": 0.40630000829696655
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3991999924182892
+        },
+        {
+            "id": "https://openalex.org/C50644808",
+            "wikidata": "https://www.wikidata.org/wiki/Q192776",
+            "display_name": "Artificial neural network",
+            "level": 2,
+            "score": 0.38589999079704285
+        },
+        {
+            "id": "https://openalex.org/C182365436",
+            "wikidata": "https://www.wikidata.org/wiki/Q50701",
+            "display_name": "Variable (mathematics)",
+            "level": 2,
+            "score": 0.366100013256073
+        },
+        {
+            "id": "https://openalex.org/C200239111",
+            "wikidata": "https://www.wikidata.org/wiki/Q81809",
+            "display_name": "Atmospheric pressure",
+            "level": 2,
+            "score": 0.3264999985694885
+        },
+        {
+            "id": "https://openalex.org/C153823671",
+            "wikidata": "https://www.wikidata.org/wiki/Q1049799",
+            "display_name": "Water resources",
+            "level": 2,
+            "score": 0.32280001044273376
+        },
+        {
+            "id": "https://openalex.org/C118518473",
+            "wikidata": "https://www.wikidata.org/wiki/Q11451",
+            "display_name": "Agriculture",
+            "level": 2,
+            "score": 0.32089999318122864
+        },
+        {
+            "id": "https://openalex.org/C21001229",
+            "wikidata": "https://www.wikidata.org/wiki/Q182868",
+            "display_name": "Weather forecasting",
+            "level": 2,
+            "score": 0.31200000643730164
+        },
+        {
+            "id": "https://openalex.org/C118365302",
+            "wikidata": "https://www.wikidata.org/wiki/Q4817115",
+            "display_name": "Atmospheric model",
+            "level": 2,
+            "score": 0.29840001463890076
+        },
+        {
+            "id": "https://openalex.org/C128990827",
+            "wikidata": "https://www.wikidata.org/wiki/Q192830",
+            "display_name": "Coefficient of determination",
+            "level": 2,
+            "score": 0.290800005197525
+        },
+        {
+            "id": "https://openalex.org/C46686674",
+            "wikidata": "https://www.wikidata.org/wiki/Q466303",
+            "display_name": "Boosting (machine learning)",
+            "level": 2,
+            "score": 0.2906999886035919
+        },
+        {
+            "id": "https://openalex.org/C2776272892",
+            "wikidata": "https://www.wikidata.org/wiki/Q7502249",
+            "display_name": "Shortwave",
+            "level": 3,
+            "score": 0.2892000079154968
+        },
+        {
+            "id": "https://openalex.org/C14331020",
+            "wikidata": "https://www.wikidata.org/wiki/Q907795",
+            "display_name": "Vapour Pressure Deficit",
+            "level": 4,
+            "score": 0.2816999852657318
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.27399998903274536
+        },
+        {
+            "id": "https://openalex.org/C70153297",
+            "wikidata": "https://www.wikidata.org/wiki/Q5591907",
+            "display_name": "Gradient boosting",
+            "level": 3,
+            "score": 0.25940001010894775
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.2583000063896179
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.25609999895095825
+        },
+        {
+            "id": "https://openalex.org/C76886044",
+            "wikidata": "https://www.wikidata.org/wiki/Q2883300",
+            "display_name": "Hydrology (agriculture)",
+            "level": 2,
+            "score": 0.250900000333786
+        },
+        {
+            "id": "https://openalex.org/C60352421",
+            "wikidata": "https://www.wikidata.org/wiki/Q7163111",
+            "display_name": "Penman\u2013Monteith equation",
+            "level": 3,
+            "score": 0.2500999867916107
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper develops an interpretable, hybrid LSTM-XGBoost residual model using open-access NASA climate data to improve the accuracy of monthly atmospheric irrigation potential forecasting for sustainable water management in semi-arid regions, demonstrated with a case study for Ankara, T\u00fcrkiye.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Hybrid Deep Learning Model",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "FAO-56 Penman-Monteith equation",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "Daily climate data from the National Aeronautics and Space Administration Prediction of Worldwide Energy Resources (NASA POWER) archive for 2001-2024 and reference evapotranspiration (ETo) values calculated using the Food and Agriculture Organization (FAO) 56 Penman-Monteith equation formed the basis of the predictors. The LSTM model learned the temporal structure of the climatic inputs, and XGBoost was then applied to represent the remaining residual errors by incorporating extended climatic and seasonal features.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hybrid Deep Learning Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Root Mean Square Error",
+            "target_entity_type": "Metric",
+            "paragraph": "Testing on the 2022-2024 period, the hybrid model produced a Root Mean Square Error (RMSE) of 24.4 mm, a Mean Absolute Error (MAE) of 20.3 mm and a Coefficient of Determination (R2) of 0.87.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hybrid Deep Learning Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "Testing on the 2022-2024 period, the hybrid model produced a Root Mean Square Error (RMSE) of 24.4 mm, a Mean Absolute Error (MAE) of 20.3 mm and a Coefficient of Determination (R2) of 0.87.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hybrid Deep Learning Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Coefficient of Determination",
+            "target_entity_type": "Metric",
+            "paragraph": "Testing on the 2022-2024 period, the hybrid model produced a Root Mean Square Error (RMSE) of 24.4 mm, a Mean Absolute Error (MAE) of 20.3 mm and a Coefficient of Determination (R2) of 0.87.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "T\u00fcrkiye",
+            "target_entity_type": "Country",
+            "paragraph": "Many dry and semi-dry regions, including large parts of T\u00fcrkiye, now experience longer drought periods, falling groundwater levels and rainfall patterns that vary sharply from year to year.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Central Anatolia",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Central Anatolia of T\u00fcrkiye is one of the regions where these changes are most evident. Over roughly the last decade, rainfall totals have declined, reservoir levels have fluctuated more than usual and evaporative losses have increased during the summer.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "drought",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Drought",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Many dry and semi-dry regions, including large parts of T\u00fcrkiye, now experience longer drought periods, falling groundwater levels and rainfall patterns that vary sharply from year to year.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Central Anatolian region",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "Dry",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "The study area is Ankara, T\u00fcrkiye (39.93\u00b0 N, 32.85\u00b0 E), located in the Central Anatolian region and shaped by a semi-arid continental climate.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hybrid Deep Learning Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Long Short-Term Memory",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In this study, monthly atmospheric irrigation potential for Ankara, T\u00fcrkiye was analyzed using a hybrid residual model that combines a Long Short-Term Memory (LSTM) network with an Extreme Gradient Boosting (XGBoost) algorithm.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Hybrid Deep Learning Model",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "Extreme Gradient Boosting",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "In this study, monthly atmospheric irrigation potential for Ankara, T\u00fcrkiye was analyzed using a hybrid residual model that combines a Long Short-Term Memory (LSTM) network with an Extreme Gradient Boosting (XGBoost) algorithm.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Root Mean Square Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The standalone LSTM performed slightly worse, reaching RMSE = 25.53 mm, MAE = 21.68 mm and R2 = 0.86, whereas the XGBoost baseline yielded RMSE = 27.11 mm, MAE = 20.96 mm and R2 = 0.83.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The standalone LSTM performed slightly worse, reaching RMSE = 25.53 mm, MAE = 21.68 mm and R2 = 0.86, whereas the XGBoost baseline yielded RMSE = 27.11 mm, MAE = 20.96 mm and R2 = 0.83.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "LSTM",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Coefficient of Determination",
+            "target_entity_type": "Metric",
+            "paragraph": "The standalone LSTM performed slightly worse, reaching RMSE = 25.53 mm, MAE = 21.68 mm and R2 = 0.86, whereas the XGBoost baseline yielded RMSE = 27.11 mm, MAE = 20.96 mm and R2 = 0.83.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "XGBoost",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Root Mean Square Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The standalone LSTM performed slightly worse, reaching RMSE = 25.53 mm, MAE = 21.68 mm and R2 = 0.86, whereas the XGBoost baseline yielded RMSE = 27.11 mm, MAE = 20.96 mm and R2 = 0.83.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "XGBoost",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Mean Absolute Error",
+            "target_entity_type": "Metric",
+            "paragraph": "The standalone LSTM performed slightly worse, reaching RMSE = 25.53 mm, MAE = 21.68 mm and R2 = 0.86, whereas the XGBoost baseline yielded RMSE = 27.11 mm, MAE = 20.96 mm and R2 = 0.83.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "XGBoost",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Coefficient of Determination",
+            "target_entity_type": "Metric",
+            "paragraph": "The standalone LSTM performed slightly worse, reaching RMSE = 25.53 mm, MAE = 21.68 mm and R2 = 0.86, whereas the XGBoost baseline yielded RMSE = 27.11 mm, MAE = 20.96 mm and R2 = 0.83.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Ankara",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "T\u00fcrkiye",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "LSTM-XGBoost",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NASA POWER",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Long Short-Term Memory (LSTM)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Extreme Gradient Boosting (XGBoost)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Reference Evapotranspiration (ETo)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "FAO-56 Penman-Monteith equation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Root Mean Square Error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean Absolute Error (MAE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Coefficient of Determination (R\u00b2)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Relative Humidity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wind Speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Shortwave Radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Gazi University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Ankara Y\u0131ld\u0131r\u0131m Beyaz\u0131t University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Drought",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Central Anatolia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Groundwater Level",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Surface Water",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Air Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Random Forest (RF)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Convolutional Neural Network (CNN)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Gated Recurrent Unit (GRU)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Soil Moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CNN-LSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Wavelet-CNN-LSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "CatBoost",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "particle swarm optimization",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Grey Wolf Optimization-enhanced XGBoost model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Deep Neural Network (DNN)",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "Dry",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Continental",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "Turkish State Meteorological Service (MGM)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Food and Agriculture Organization",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Net Radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Soil Heat Flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Vapor Pressure Deficit",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Atmospheric Irrigation Potential (AIP)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Effective Precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Min-Max scaling",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Adam optimizer",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Mean Squared Error (MSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "sequence-to-one regression model",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "PSO-LSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mediterranean",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Wavelet-LSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "FAO-56 datasets",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS NDVI",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Sentinel-2 land-surface temperature",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Transformer",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ConvLSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "NASA Langley Research Center",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W3196721192",
+        "https://openalex.org/W3210335280",
+        "https://openalex.org/W4205780615",
+        "https://openalex.org/W4206049050",
+        "https://openalex.org/W4283078118",
+        "https://openalex.org/W4288871001",
+        "https://openalex.org/W4295605402",
+        "https://openalex.org/W4323835317",
+        "https://openalex.org/W4366239906",
+        "https://openalex.org/W4403628384",
+        "https://openalex.org/W4406756827",
+        "https://openalex.org/W4407429784",
+        "https://openalex.org/W4411469757"
+    ]
+}

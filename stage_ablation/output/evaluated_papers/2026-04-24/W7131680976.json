@@ -1,0 +1,639 @@
+{
+    "uri": "https://openalex.org/W7131680976",
+    "title": "Integrating Multi-Resolution Remote Sensing Data for Daily Forest Fire Risk Forecasting in a Nigerian Savanna Ecosystem",
+    "venue": {
+        "name": "World Journal of Advanced Engineering Technology and Sciences",
+        "id": "https://openalex.org/S4210239011",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5126912562",
+            "display_name": "Oleka Chidubem Meshack",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126894055",
+            "display_name": "Paschal Chinedu Ohiri",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126930619",
+            "display_name": "Eleazar Benson Mfonobong",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5096130169",
+            "display_name": "Chrysogonus Chukwumere Ogomaka",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5126885900",
+            "display_name": "Chika Juliana Anyalewechi",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.30574/wjaets.2026.18.2.0106",
+    "abstract": "Forest fires represent a persistent environmental and socio-economic threat across West African savanna ecosystems, where limited ground-based monitoring and persistent cloud cover constrain effective early-warning systems. Remote sensing offers a powerful alternative for wildfire monitoring; however, the trade-off between high spatial resolution and high temporal frequency remains a key challenge for operational fire risk forecasting. This study developed a pragmatic spatio-temporal data fusion framework for daily forest fire risk forecasting using multi-resolution remote sensing and meteorological data, with Kainji Lake National Park, Nigeria, as a case study. High-resolution vegetation indices derived from Sentinel-2 imagery were integrated with daily MODIS surface reflectance products and ERA5-Land meteorological reanalysis data within the Google Earth Engine platform to generate a continuous daily dataset at a harmonized spatial resolution. VIIRS active fire detections was deployed, enabling the formulation of forest fire forecasting as a temporal classification problem. Random Forest and Extreme Gradient Boosting (XGBoost) models were trained. Both models demonstrated strong predictive performance on an independent test dataset, achieving high discrimination between fire and no-fire days. Random Forest slightly outperformed XGBoost, attaining an area under the receiver operating characteristic curve of 0.997 and an F1-score of 0.957, while both models achieved perfect recall for fire events. The results highlighted that daily fire risk in Kainji Lake National Park was primarily governed by seasonal and atmospheric conditions rather than vegetation greenness alone. The proposed framework provides a scalable foundation for early-warning systems and fire management applications in Nigeria and similar regions across West Africa.",
+    "field": "Forest fire forecasting",
+    "problem": "Effective forest fire forecasting is challenged by the trade-off between high spatial and temporal resolution in satellite data, a problem compounded in West African savannas by limited ground-based monitoring and persistent cloud cover.",
+    "method": "The paper proposes a pragmatic spatio-temporal fusion framework that integrates multi-resolution remote sensing and meteorological data to generate a continuous daily dataset for machine learning-based forest fire risk forecasting.",
+    "task": "The task is to develop a data fusion framework for daily forest fire risk forecasting in a Nigerian savanna ecosystem by integrating multi-resolution remote sensing imagery with meteorological data.",
+    "model": [
+        "no"
+    ],
+    "paper_screening": "no",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/random-forest",
+            "display_name": "Random forest",
+            "score": 0.5356000065803528
+        },
+        {
+            "id": "https://openalex.org/keywords/vegetation",
+            "display_name": "Vegetation (pathology)",
+            "score": 0.5198000073432922
+        },
+        {
+            "id": "https://openalex.org/keywords/land-cover",
+            "display_name": "Land cover",
+            "score": 0.44909998774528503
+        },
+        {
+            "id": "https://openalex.org/keywords/earth-observation",
+            "display_name": "Earth observation",
+            "score": 0.38359999656677246
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.37940001487731934
+        },
+        {
+            "id": "https://openalex.org/keywords/ecosystem",
+            "display_name": "Ecosystem",
+            "score": 0.37059998512268066
+        },
+        {
+            "id": "https://openalex.org/keywords/national-park",
+            "display_name": "National park",
+            "score": 0.3700000047683716
+        },
+        {
+            "id": "https://openalex.org/keywords/satellite-imagery",
+            "display_name": "Satellite imagery",
+            "score": 0.32249999046325684
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.6872000098228455
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6855000257492065
+        },
+        {
+            "id": "https://openalex.org/C169258074",
+            "wikidata": "https://www.wikidata.org/wiki/Q245748",
+            "display_name": "Random forest",
+            "level": 2,
+            "score": 0.5356000065803528
+        },
+        {
+            "id": "https://openalex.org/C2776133958",
+            "wikidata": "https://www.wikidata.org/wiki/Q7918366",
+            "display_name": "Vegetation (pathology)",
+            "level": 2,
+            "score": 0.5198000073432922
+        },
+        {
+            "id": "https://openalex.org/C2780648208",
+            "wikidata": "https://www.wikidata.org/wiki/Q3001793",
+            "display_name": "Land cover",
+            "level": 3,
+            "score": 0.44909998774528503
+        },
+        {
+            "id": "https://openalex.org/C39399123",
+            "wikidata": "https://www.wikidata.org/wiki/Q1348989",
+            "display_name": "Earth observation",
+            "level": 3,
+            "score": 0.38359999656677246
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.37940001487731934
+        },
+        {
+            "id": "https://openalex.org/C107826830",
+            "wikidata": "https://www.wikidata.org/wiki/Q929380",
+            "display_name": "Environmental resource management",
+            "level": 1,
+            "score": 0.37790000438690186
+        },
+        {
+            "id": "https://openalex.org/C110872660",
+            "wikidata": "https://www.wikidata.org/wiki/Q37813",
+            "display_name": "Ecosystem",
+            "level": 2,
+            "score": 0.37059998512268066
+        },
+        {
+            "id": "https://openalex.org/C2780993040",
+            "wikidata": "https://www.wikidata.org/wiki/Q46169",
+            "display_name": "National park",
+            "level": 2,
+            "score": 0.3700000047683716
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.34709998965263367
+        },
+        {
+            "id": "https://openalex.org/C2778102629",
+            "wikidata": "https://www.wikidata.org/wiki/Q725252",
+            "display_name": "Satellite imagery",
+            "level": 2,
+            "score": 0.32249999046325684
+        },
+        {
+            "id": "https://openalex.org/C73935091",
+            "wikidata": "https://www.wikidata.org/wiki/Q2249329",
+            "display_name": "Forest ecology",
+            "level": 3,
+            "score": 0.3084000051021576
+        },
+        {
+            "id": "https://openalex.org/C33954974",
+            "wikidata": "https://www.wikidata.org/wiki/Q486494",
+            "display_name": "Sensor fusion",
+            "level": 2,
+            "score": 0.3003000020980835
+        },
+        {
+            "id": "https://openalex.org/C206887242",
+            "wikidata": "https://www.wikidata.org/wiki/Q830457",
+            "display_name": "Cloud cover",
+            "level": 3,
+            "score": 0.29750001430511475
+        },
+        {
+            "id": "https://openalex.org/C2777489503",
+            "wikidata": "https://www.wikidata.org/wiki/Q7698936",
+            "display_name": "Temporal scales",
+            "level": 2,
+            "score": 0.29010000824928284
+        },
+        {
+            "id": "https://openalex.org/C1549246",
+            "wikidata": "https://www.wikidata.org/wiki/Q718775",
+            "display_name": "Normalized Difference Vegetation Index",
+            "level": 3,
+            "score": 0.2872999906539917
+        },
+        {
+            "id": "https://openalex.org/C51399673",
+            "wikidata": "https://www.wikidata.org/wiki/Q504027",
+            "display_name": "Lidar",
+            "level": 2,
+            "score": 0.27160000801086426
+        },
+        {
+            "id": "https://openalex.org/C2778755073",
+            "wikidata": "https://www.wikidata.org/wiki/Q10858537",
+            "display_name": "Scale (ratio)",
+            "level": 2,
+            "score": 0.2711000144481659
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.2689000070095062
+        },
+        {
+            "id": "https://openalex.org/C100970517",
+            "wikidata": "https://www.wikidata.org/wiki/Q52107",
+            "display_name": "Physical geography",
+            "level": 1,
+            "score": 0.2567000091075897
+        },
+        {
+            "id": "https://openalex.org/C176783924",
+            "wikidata": "https://www.wikidata.org/wiki/Q828158",
+            "display_name": "Evapotranspiration",
+            "level": 2,
+            "score": 0.2538999915122986
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.2526000142097473
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper develops a pragmatic spatio-temporal data fusion framework that integrates multi-resolution remote sensing and meteorological data to generate a continuous daily dataset, enabling improved machine learning-based forest fire risk forecasting for Nigerian savanna ecosystems.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "Forest fires",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Nigeria",
+            "target_entity_type": "Country",
+            "paragraph": "Forest fires pose a significant and growing threat to ecosystems, biodiversity, and human livelihoods across the globe, including in Nigeria [1]. They drive loss of tree cover, degrade biodiversity, and contribute to air pollution and carbon emissions, with remote-sensing records showing notable amounts of fire-driven tree-cover loss across the country in recent decades [2]. Covering approximately 20.4 million hectares of natural forest in 2020-equivalent to 22% of its land area-Nigeria has experienced accelerating tree cover loss, with 207,000 hectares deforested in the same year, releasing an estimated 87.4 million tons of CO2 emissions [2]. This degradation is compounded by frequent forest fires, primarily driven by anthropogenic activities such as slash-and-burn agriculture, hunting, and illegal logging, which account for the majority of ignitions in the country's savanna and transition forest zones [3].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Forest fires",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "West African savanna ecosystems",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Forest fires represent a persistent environmental and socio-economic threat across West African savanna ecosystems, where limited ground-based monitoring and persistent cloud cover constrain effective early-warning systems.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Kainji Lake National Park",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "During the dry season, the region is influenced by Harmattan winds, reduced soil moisture, and low relative humidity, conditions that substantially elevate wildfire ignition and spread potential [17].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Forest fires",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Cross-Niger transition forests",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Studies in Nigeria's Cross-Niger transition forests, for instance, have leveraged Landsat-8 operational land imager (OLI) data and ASTER digital elevation models (DEMs) to delineate low-, moderate- and high-risk fire zones, revealing that 82.59% of the area (17,997 km\u00b2) falls into moderate-risk categories, largely attributable to human-induced factors [5].",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Forest fires",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "IS_OF_TYPE",
+            "target_entity_instance": "Wildfire",
+            "target_entity_type": "NaturalHazardType",
+            "paragraph": "Remote sensing offers a powerful alternative for wildfire monitoring; however, the trade-off between high spatial resolution and high temporal frequency remains a key challenge for operational fire risk forecasting.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "wildfire",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "West Africa",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "The proposed framework provides a scalable foundation for early-warning systems and fire management applications in Nigeria and similar regions across West Africa.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Kainji Lake National Park",
+            "source_entity_type": "No_Country_Region",
+            "relation": "HAS_CLIMATE_ZONE",
+            "target_entity_instance": "tropical savanna (Aw)",
+            "target_entity_type": "ClimateZone",
+            "paragraph": "The climate of KLNP is classified as tropical savanna (Aw) under the K\u00f6ppen-Geiger classification, with a pronounced dry season from November to March and a wet season from April to October.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "VIIRS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "active fire detections",
+            "target_entity_type": "Variable",
+            "paragraph": "The VIIRS active fire dataset provides fire detections at a 375 m spatial resolution, offering enhanced sensitivity to smaller and low-intensity fires compared to legacy sensors. This higher spatial resolution improves the detection of early-stage ignitions and fragmented fire events, which are common in savanna ecosystems such as Kainji Lake National Park. Consequently, VIIRS data were used as the primary source for assigning daily fire occurrence labels in the machine learning framework, with emphasis placed on medium- and high-confidence detections to minimize false positives.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "surface reflectance",
+            "target_entity_type": "Variable",
+            "paragraph": "The data sources include Sentinel-2 Surface Reflectance imagery for high-resolution vegetation indices, MODIS Surface Reflectance products for temporal gap-filling, ERA5-Land reanalysis for meteorological variables, and VIIRS active fire detections for fire occurrence labeling.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "active fire products",
+            "target_entity_type": "Variable",
+            "paragraph": "Historical fire event data, serving as the dependent binary variable (fire/no-fire), were obtained from the Fire Information for Resource Management System (FIRMS), sourced from both the Moderate Resolution Imaging Spectroradiometer (MODIS) and the Visible Infrared Imaging Radiometer Suite (VIIRS) active fire products.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "Nigeria",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Kainji Lake National Park",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "West Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Niger State",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Kwara State",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "West African savanna",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "north-central Nigeria",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Tropical",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "harmattan",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Wildfire",
+            "entity_type": "NaturalHazardType"
+        },
+        {
+            "entity_instance": "Sentinel-2",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ERA5-Land",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "VIIRS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Landsat-8",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "OLI",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ASTER",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Sentinel-1",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "SAR",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "area under the receiver operating characteristic curve",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "F1-score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "recall",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "precision",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Average Precision (AP)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean decrease in impurity",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "SHAP values",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "AUC",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "surface reflectance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vegetation indices",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "normalized difference vegetation index (NDVI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative burn ratio (RBR)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vegetation greenness",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fuel availability",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Normalized Difference Moisture Index (NDMI)",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vegetation and surface moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "fuel moisture",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "flammability",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "near-infrared reflectance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "red reflectance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "shortwave infrared reflectance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily maximum air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily cumulative precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily mean wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Wind",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Fire Weather Index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "daily",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "weekly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "~5 days",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "1 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "10-30 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "10-100 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "375 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "250 m - 1 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "10 m - 20 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "~9 km (0.1\u00b0)",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "20 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "10 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "250 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Federal University of Technology, Owerri",
+            "entity_type": "Institute"
+        }
+    ],
+    "referenced_works": []
+}

@@ -1,0 +1,420 @@
+{
+    "uri": "https://openalex.org/W7130514684",
+    "title": "Supplementary material to \"Transport modelling for dynamic urban climate studies: MATSDA-roads v2.0\"",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5126385483",
+            "display_name": "Tiancheng Ma",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5002520258",
+            "display_name": "Denise Hertwig",
+            "orcid": "https://orcid.org/0000-0002-2483-2675"
+        },
+        {
+            "id": "https://openalex.org/A5017012817",
+            "display_name": "Megan McGrory",
+            "orcid": "https://orcid.org/0000-0003-1016-5573"
+        },
+        {
+            "id": "https://openalex.org/A5126387249",
+            "display_name": "Matthew Paskin",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5112627498",
+            "display_name": "Grimmond",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2025-6060-supplement",
+    "abstract": "1 Pre-processing of input road network and junction data [in preparation for defining road nodes and their attributes] Code: 1.clip_spatial_inputs.py; 2.enrich_road_segments.pyS1.2.2 2 Processing of input traffic flow speed data [in preparation for deriving travel times on road nodes] Code: 3.process_speed_data.pyS1.2.3 3 Generation and harmonisation of processed input data for MATSDA's travel database [combining outputs of steps 1 and 2] Code: 4.London_private_graph_input.pyS1.2.",
+    "field": "Urban transport modelling",
+    "problem": "Existing transport models for urban climate studies are challenged by the need to dynamically represent realistic driver behavior, as the choice between using local versus major roads varies significantly with journey length and time of day, affecting the accuracy of traffic and emissions simulations.",
+    "method": "This paper proposes a transport model using a graph-based travel database and Dijkstra's algorithm, with a distance-dependent local road parameterization, to simulate optimal vehicle routes and travel times for dynamic urban climate studies.",
+    "task": "The task is to develop the MATSDA-roads v2.0 model, which creates a road travel database and pathfinding algorithm to simulate vehicle journeys for dynamic urban climate studies, using London as a case study.",
+    "model": [
+        "MATSDA",
+        "DAVE",
+        "DASH",
+        "MAPSECC"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.40689998865127563
+        },
+        {
+            "id": "https://openalex.org/keywords/urban-heat-island",
+            "display_name": "Urban heat island",
+            "score": 0.34599998593330383
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.3018999993801117
+        },
+        {
+            "id": "https://openalex.org/keywords/urban-climate",
+            "display_name": "Urban climate",
+            "score": 0.28940001130104065
+        },
+        {
+            "id": "https://openalex.org/keywords/work",
+            "display_name": "Work (physics)",
+            "score": 0.28760001063346863
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.5458999872207642
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.40689998865127563
+        },
+        {
+            "id": "https://openalex.org/C54005896",
+            "wikidata": "https://www.wikidata.org/wiki/Q215712",
+            "display_name": "Urban heat island",
+            "level": 2,
+            "score": 0.34599998593330383
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.3151000142097473
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.3018999993801117
+        },
+        {
+            "id": "https://openalex.org/C158049464",
+            "wikidata": "https://www.wikidata.org/wiki/Q1075337",
+            "display_name": "Urban climate",
+            "level": 3,
+            "score": 0.28940001130104065
+        },
+        {
+            "id": "https://openalex.org/C18762648",
+            "wikidata": "https://www.wikidata.org/wiki/Q42213",
+            "display_name": "Work (physics)",
+            "level": 2,
+            "score": 0.28760001063346863
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.27900001406669617
+        },
+        {
+            "id": "https://openalex.org/C2994067962",
+            "wikidata": "https://www.wikidata.org/wiki/Q3509184",
+            "display_name": "Climate system",
+            "level": 3,
+            "score": 0.2712000012397766
+        },
+        {
+            "id": "https://openalex.org/C114990195",
+            "wikidata": "https://www.wikidata.org/wiki/Q1430548",
+            "display_name": "Effects of global warming",
+            "level": 4,
+            "score": 0.23240000009536743
+        }
+    ],
+    "obs_and_metrics": [],
+    "innovation": "This paper presents MATSDA-roads v2.0, a transport model for dynamic urban climate studies that generates a detailed road travel database and pathfinding tool to simulate vehicle journeys, with a comprehensive development and evaluation for London.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "MATSDA-roads v2.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "MATSDA-roads Pathfinder v2.0",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The MATSDA-roads Pathfinder v2.0 (MATSDA_pathfinder.py, Table S9) calculates the optimal travel route through the MATSDA-roads travel database (\u00a7S1.3) for a given origin-destination grid cell pair. It loads the complete transport database, which represents all possible road segments and connections as nodes and journeys. For a given starting node (origin) and time interval, it applies Dijkstra's algorithm (Dijkstra 1959) to find the fastest route to every other node in the network (Fig. S3).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MATSDA-roads v2.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Dijkstra's algorithm",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "The MATSDA-roads Pathfinder v2.0 (MATSDA_pathfinder.py, Table S9) calculates the optimal travel route through the MATSDA-roads travel database (\u00a7S1.3) for a given origin-destination grid cell pair. It loads the complete transport database, which represents all possible road segments and connections as nodes and journeys. For a given starting node (origin) and time interval, it applies Dijkstra's algorithm (Dijkstra 1959) to find the fastest route to every other node in the network (Fig. S3).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MATSDA-roads v2.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "regular Cartesian grid",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "Neighbourhood areas are grid-cells based on the MAPSECC: London (Hertwig et al. 2024, 2025a) regular Cartesian grid with a horizontal resolution of ~500 m, extended to include the important M25 circular motorway surrounding London (\u00a7S1.2.2 and \u00a73.1.1, Fig. la).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MATSDA-roads v2.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_SPATIAL_RESOLUTION",
+            "target_entity_instance": "500 m",
+            "target_entity_type": "Resolution",
+            "paragraph": "Neighbourhood areas are grid-cells based on the MAPSECC: London (Hertwig et al. 2024, 2025a) regular Cartesian grid with a horizontal resolution of ~500 m, extended to include the important M25 circular motorway surrounding London (\u00a7S1.2.2 and \u00a73.1.1, Fig. la).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MATSDA-roads v2.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "nodal network representation of sub-grid-scale transport",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "In MATSDA-roads v2.0 sub-grid-scale transport processes are represented using a nodal network of connected roads. Geospatial road network and junction location data are essential to defining road-node objects (\u00a72.2) and their attributes (connections to other nodes via junctions, travel times as a function of traffic speed and node length, etc.) within each grid-cell. The collection of road nodes across the domain form the MATSDA-roads v2.0 travel database.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MATSDA-roads v2.0",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "distance-based parameterization of effective local road length fraction",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "With a junction-based FL parameterization being impractical (\u00a7S4.2.1), we consider the importance of local roads relative to major roads travel as behaviour can vary with route length (Stead and Marshall 2001). To make MATSDA's F responsive to route length, we use the straight-line Origin-Destination (O-D) distance (d, unit: m; measured between grid-cell centres), a metric available before the detailed route is computed. The distance-based parameterization has five steps:",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MATSDA-roads v2.0",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean absolute error",
+            "target_entity_type": "Metric",
+            "paragraph": "4) Identify optimal F_L for each distance bin. Across the nine distance bins and four time periods, the mean absolute error (MAE; Eq. 6) of the median MATSDA travel times (cf. GM) per F_L run is obtained. The smallest MAE indicates the optimal F_L by distance bin and time period (Fig. S7).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "MATSDA-roads v2.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Department of Meteorology, University of Reading",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "London",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "UK",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "MATSDA-roads Pathfinder v2.0",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "MATSDA-roads Node Creator v2.0",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "500 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Dijkstra's algorithm",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "OS Open Roads",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OS Highways",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Digimap Pilot Collection",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MAPSECC",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "regular Cartesian grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "OSGB36",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "average vehicle speeds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Traffic flow speeds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "travel durations",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "travel time",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "road connectivity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "road type usage",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Google Maps",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "car-commuter population",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "road type fractions",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Training",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "Evaluation",
+            "entity_type": "ExperimentFamily"
+        },
+        {
+            "entity_instance": "travel distance",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "dominant road type",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Weekday",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Weekend",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Holiday",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "effective local road length fraction",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "LOWESS",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "sensitivity runs",
+            "entity_type": "SimulationType"
+        },
+        {
+            "entity_instance": "Morning Rush",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Morning Off-Peak",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Evening Rush",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Night Off-Peak",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "mean absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "traffic speeds",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Road-type usage ratio",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Transport for London",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Road speed limits",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "DASH v1.0",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "DAVE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "OS MasterMap Highways Network",
+            "entity_type": "Source"
+        }
+    ],
+    "referenced_works": []
+}

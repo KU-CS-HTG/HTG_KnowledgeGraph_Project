@@ -1,0 +1,849 @@
+{
+    "uri": "https://openalex.org/W7151621031",
+    "title": "Predicting Regional Food Production Under Climate Uncertainty with Probabilistic Deep Networks",
+    "venue": {
+        "name": "Frontiers in Agriculture",
+        "id": "https://openalex.org/S5407049410",
+        "type": "journal"
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5133077883",
+            "display_name": "Yunhao Zhu",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5133099034",
+            "display_name": "Xintao Guo",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5091547545",
+            "display_name": "Christopher Hale",
+            "orcid": "https://orcid.org/0000-0003-4253-1275"
+        }
+    ],
+    "doi": "https://doi.org/10.71465/fa762",
+    "abstract": "Regional food production forecasting under climate uncertainty represents one of the most pressing challenges at the intersection of environmental science and computational intelligence. Traditional deterministic models often fail to capture the compounding uncertainties arising from volatile precipitation regimes, temperature anomalies, and shifting growing seasons. This study proposes a probabilistic deep network (PDN) framework integrating Monte Carlo dropout with a hybrid recurrent encoder and a temporal attention mechanism to generate calibrated uncertainty bounds for multi-crop yield prediction across heterogeneous agricultural regions. The model is trained on a 35-year retrospective dataset covering six major crop types across 480 administrative units in East Asia and Sub-Saharan Africa, augmented with ERA5 reanalysis climate variables and MODIS-derived vegetation indices. Experimental results demonstrate that the proposed PDN achieves a root mean square error of 0.31 tonnes per hectare and a continuous ranked probability score of 0.18, outperforming baseline recurrent networks and ensemble regression methods by margins of 14% and 22%, respectively. Uncertainty quantification calibration evaluated through prediction interval coverage probability confirms that 90% prediction intervals contain the true yield in 88.4% of test instances, validating the practical utility of the probabilistic framework for climate adaptation planning and food security governance.",
+    "field": "Crop yield prediction using deep learning",
+    "problem": "Traditional deterministic crop yield forecasting models fail to capture compounding uncertainties from climate volatility like volatile precipitation and temperature anomalies, providing only single-point predictions without expressing forecast confidence, which is crucial for risk-sensitive food security planning.",
+    "method": "The proposed method is a probabilistic deep network that integrates Monte Carlo dropout with a hybrid recurrent encoder and temporal attention to generate calibrated uncertainty bounds for multi-crop yield prediction across heterogeneous agricultural regions.",
+    "task": "The task is to forecast regional multi-crop yields under climate uncertainty using a probabilistic deep network that generates predictions with calibrated uncertainty bounds for food security applications.",
+    "model": [
+        "ERA5"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/probabilistic-logic",
+            "display_name": "Probabilistic logic",
+            "score": 0.6967999935150146
+        },
+        {
+            "id": "https://openalex.org/keywords/baseline",
+            "display_name": "Baseline (sea)",
+            "score": 0.4887000024318695
+        },
+        {
+            "id": "https://openalex.org/keywords/calibration",
+            "display_name": "Calibration",
+            "score": 0.4828999936580658
+        },
+        {
+            "id": "https://openalex.org/keywords/mean-squared-error",
+            "display_name": "Mean squared error",
+            "score": 0.4185999929904938
+        },
+        {
+            "id": "https://openalex.org/keywords/uncertainty-analysis",
+            "display_name": "Uncertainty analysis",
+            "score": 0.4153999984264374
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.3952000141143799
+        },
+        {
+            "id": "https://openalex.org/keywords/agricultural-productivity",
+            "display_name": "Agricultural productivity",
+            "score": 0.3880000114440918
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.385699987411499
+        },
+        {
+            "id": "https://openalex.org/keywords/regression",
+            "display_name": "Regression",
+            "score": 0.3513000011444092
+        },
+        {
+            "id": "https://openalex.org/keywords/monte-carlo-method",
+            "display_name": "Monte Carlo method",
+            "score": 0.34779998660087585
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C49937458",
+            "wikidata": "https://www.wikidata.org/wiki/Q2599292",
+            "display_name": "Probabilistic logic",
+            "level": 2,
+            "score": 0.6967999935150146
+        },
+        {
+            "id": "https://openalex.org/C12725497",
+            "wikidata": "https://www.wikidata.org/wiki/Q810247",
+            "display_name": "Baseline (sea)",
+            "level": 2,
+            "score": 0.4887000024318695
+        },
+        {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.4869999885559082
+        },
+        {
+            "id": "https://openalex.org/C165838908",
+            "wikidata": "https://www.wikidata.org/wiki/Q736777",
+            "display_name": "Calibration",
+            "level": 2,
+            "score": 0.4828999936580658
+        },
+        {
+            "id": "https://openalex.org/C139945424",
+            "wikidata": "https://www.wikidata.org/wiki/Q1940696",
+            "display_name": "Mean squared error",
+            "level": 2,
+            "score": 0.4185999929904938
+        },
+        {
+            "id": "https://openalex.org/C177803969",
+            "wikidata": "https://www.wikidata.org/wiki/Q29205",
+            "display_name": "Uncertainty analysis",
+            "level": 2,
+            "score": 0.4153999984264374
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.3952000141143799
+        },
+        {
+            "id": "https://openalex.org/C128383755",
+            "wikidata": "https://www.wikidata.org/wiki/Q3816336",
+            "display_name": "Agricultural productivity",
+            "level": 3,
+            "score": 0.3880000114440918
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.385699987411499
+        },
+        {
+            "id": "https://openalex.org/C105795698",
+            "wikidata": "https://www.wikidata.org/wiki/Q12483",
+            "display_name": "Statistics",
+            "level": 1,
+            "score": 0.36079999804496765
+        },
+        {
+            "id": "https://openalex.org/C83546350",
+            "wikidata": "https://www.wikidata.org/wiki/Q1139051",
+            "display_name": "Regression",
+            "level": 2,
+            "score": 0.3513000011444092
+        },
+        {
+            "id": "https://openalex.org/C19499675",
+            "wikidata": "https://www.wikidata.org/wiki/Q232207",
+            "display_name": "Monte Carlo method",
+            "level": 2,
+            "score": 0.34779998660087585
+        },
+        {
+            "id": "https://openalex.org/C176147448",
+            "wikidata": "https://www.wikidata.org/wiki/Q1889114",
+            "display_name": "Sensitivity analysis",
+            "level": 3,
+            "score": 0.34619998931884766
+        },
+        {
+            "id": "https://openalex.org/C202050865",
+            "wikidata": "https://www.wikidata.org/wiki/Q35852",
+            "display_name": "Hectare",
+            "level": 3,
+            "score": 0.32760000228881836
+        },
+        {
+            "id": "https://openalex.org/C2776133958",
+            "wikidata": "https://www.wikidata.org/wiki/Q7918366",
+            "display_name": "Vegetation (pathology)",
+            "level": 2,
+            "score": 0.32589998841285706
+        },
+        {
+            "id": "https://openalex.org/C149782125",
+            "wikidata": "https://www.wikidata.org/wiki/Q160039",
+            "display_name": "Econometrics",
+            "level": 1,
+            "score": 0.3203999996185303
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.3190999925136566
+        },
+        {
+            "id": "https://openalex.org/C103402496",
+            "wikidata": "https://www.wikidata.org/wiki/Q1106171",
+            "display_name": "Prediction interval",
+            "level": 2,
+            "score": 0.3190999925136566
+        },
+        {
+            "id": "https://openalex.org/C549605437",
+            "wikidata": "https://www.wikidata.org/wiki/Q1229911",
+            "display_name": "Food security",
+            "level": 3,
+            "score": 0.31790000200271606
+        },
+        {
+            "id": "https://openalex.org/C33724603",
+            "wikidata": "https://www.wikidata.org/wiki/Q812540",
+            "display_name": "Bayesian network",
+            "level": 2,
+            "score": 0.3098999857902527
+        },
+        {
+            "id": "https://openalex.org/C114289077",
+            "wikidata": "https://www.wikidata.org/wiki/Q3284399",
+            "display_name": "Statistical model",
+            "level": 2,
+            "score": 0.30979999899864197
+        },
+        {
+            "id": "https://openalex.org/C2778348673",
+            "wikidata": "https://www.wikidata.org/wiki/Q739302",
+            "display_name": "Production (economics)",
+            "level": 2,
+            "score": 0.30820000171661377
+        },
+        {
+            "id": "https://openalex.org/C41426520",
+            "wikidata": "https://www.wikidata.org/wiki/Q1192065",
+            "display_name": "Point estimation",
+            "level": 2,
+            "score": 0.3077999949455261
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.30219998955726624
+        },
+        {
+            "id": "https://openalex.org/C160234255",
+            "wikidata": "https://www.wikidata.org/wiki/Q812535",
+            "display_name": "Bayesian inference",
+            "level": 3,
+            "score": 0.296999990940094
+        },
+        {
+            "id": "https://openalex.org/C182365436",
+            "wikidata": "https://www.wikidata.org/wiki/Q50701",
+            "display_name": "Variable (mathematics)",
+            "level": 2,
+            "score": 0.2842000126838684
+        },
+        {
+            "id": "https://openalex.org/C2778067643",
+            "wikidata": "https://www.wikidata.org/wiki/Q166507",
+            "display_name": "Interval (graph theory)",
+            "level": 2,
+            "score": 0.28040000796318054
+        },
+        {
+            "id": "https://openalex.org/C126343540",
+            "wikidata": "https://www.wikidata.org/wiki/Q889514",
+            "display_name": "Crop yield",
+            "level": 2,
+            "score": 0.27639999985694885
+        },
+        {
+            "id": "https://openalex.org/C199163554",
+            "wikidata": "https://www.wikidata.org/wiki/Q1681619",
+            "display_name": "Univariate",
+            "level": 3,
+            "score": 0.2732999920845032
+        },
+        {
+            "id": "https://openalex.org/C149441793",
+            "wikidata": "https://www.wikidata.org/wiki/Q200726",
+            "display_name": "Probability distribution",
+            "level": 2,
+            "score": 0.272599995136261
+        },
+        {
+            "id": "https://openalex.org/C39820584",
+            "wikidata": "https://www.wikidata.org/wiki/Q125928",
+            "display_name": "Climate pattern",
+            "level": 3,
+            "score": 0.27219998836517334
+        },
+        {
+            "id": "https://openalex.org/C107673813",
+            "wikidata": "https://www.wikidata.org/wiki/Q812534",
+            "display_name": "Bayesian probability",
+            "level": 2,
+            "score": 0.2694999873638153
+        },
+        {
+            "id": "https://openalex.org/C50644808",
+            "wikidata": "https://www.wikidata.org/wiki/Q192776",
+            "display_name": "Artificial neural network",
+            "level": 2,
+            "score": 0.26669999957084656
+        },
+        {
+            "id": "https://openalex.org/C44249647",
+            "wikidata": "https://www.wikidata.org/wiki/Q208498",
+            "display_name": "Confidence interval",
+            "level": 2,
+            "score": 0.263700008392334
+        },
+        {
+            "id": "https://openalex.org/C2780451532",
+            "wikidata": "https://www.wikidata.org/wiki/Q759676",
+            "display_name": "Task (project management)",
+            "level": 2,
+            "score": 0.25200000405311584
+        },
+        {
+            "id": "https://openalex.org/C196083921",
+            "wikidata": "https://www.wikidata.org/wiki/Q7915758",
+            "display_name": "Variance (accounting)",
+            "level": 2,
+            "score": 0.2515000104904175
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "Probabilistic Deep Network (PDN)",
+            "observational_dataset": "A 35-year retrospective dataset of crop yields, ERA5 reanalysis climate variables, and MODIS-derived vegetation indices covering East Asia and Sub-Saharan Africa.",
+            "evaluation_metric": "Root Mean Square Error (RMSE), Continuous Ranked Probability Score (CRPS), 90% Prediction Interval Coverage Probability (PICP)",
+            "result": "RMSE: 0.31 tonnes per hectare; CRPS: 0.18; 90% PICP: 88.4%"
+        },
+        {
+            "model": "MC dropout-only LSTM baseline",
+            "observational_dataset": "A 35-year retrospective dataset of crop yields, ERA5 reanalysis climate variables, and MODIS-derived vegetation indices covering East Asia and Sub-Saharan Africa.",
+            "evaluation_metric": "Continuous Ranked Probability Score (CRPS), 90% Prediction Interval Coverage Probability (PICP)",
+            "result": "CRPS: 0.24; 90% PICP: 79.2%"
+        },
+        {
+            "model": "Deep ensemble baseline",
+            "observational_dataset": "A 35-year retrospective dataset of crop yields, ERA5 reanalysis climate variables, and MODIS-derived vegetation indices covering East Asia and Sub-Saharan Africa.",
+            "evaluation_metric": "Continuous Ranked Probability Score (CRPS), 90% Prediction Interval Coverage Probability (PICP)",
+            "result": "CRPS: 0.21; 90% PICP: 83.6%"
+        }
+    ],
+    "innovation": "This paper proposes a probabilistic deep network that combines Monte Carlo dropout with a hybrid recurrent-convolutional architecture to generate accurate, calibrated uncertainty bounds for multi-crop yield forecasting across diverse agricultural regions under climate uncertainty.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "probabilistic deep network",
+            "source_entity_type": "Source",
+            "relation": "USES_PHYSICAL_SCHEME",
+            "target_entity_instance": "Monte Carlo dropout",
+            "target_entity_type": "PhysicalScheme",
+            "paragraph": "This study proposes a probabilistic deep network (PDN) framework integrating Monte Carlo dropout with a hybrid recurrent encoder and a temporal attention mechanism to generate calibrated uncertainty bounds for multi-crop yield prediction across heterogeneous agricultural regions. The model is trained on a 35-year retrospective dataset covering six major crop types across 480 administrative units in East Asia and Sub-Saharan Africa, augmented with ERA5 reanalysis climate variables and MODIS-derived vegetation indices. Experimental results demonstrate that the proposed PDN achieves a root mean square error of 0.31 tonnes per hectare and a continuous ranked probability score of 0.18, outperforming baseline recurrent networks and ensemble regression methods by margins of 14% and 22%, respectively. Uncertainty quantification calibration evaluated through prediction interval coverage probability confirms that 90% prediction intervals contain the true yield in 88.4% of test instances, validating the practical utility of the probabilistic framework for climate adaptation planning and food security governance.",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "probabilistic deep network",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "spatially aware LSTM encoder",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The first component of the PDN is a spatially aware LSTM encoder that processes the T \u00d7 V input sequence\u2014where T = 12 denotes monthly time steps and V = 9 represents the concatenated meteorological and vegetation variables\u2014through two stacked LSTM layers with hidden dimensions of 256 and 128 respectively. Dropout with probability p = 0.4 is applied to both the recurrent connections and the inter-layer transitions, following the variational dropout formulation in which a consistent dropout mask is maintained across all time steps within a single forward pass. This variational dropout scheme is critical for the UQ application: because the same mask is applied consistently across the entire sequence, the stochastic perturbation reflects genuine uncertainty in the learned temporal representations rather than introducing spurious noise that corrupts sequential dependencies.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "probabilistic deep network",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "temporal self-attention layer",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The second component is a temporal self-attention layer applied to the hidden state sequence produced by the LSTM encoder, computing a learned weighted sum over the T hidden states to allow the model to focus selectively on the sub-periods within the growing season most informative for yield prediction in each administrative unit.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "probabilistic deep network",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "convolutional LSTM",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The spatial dimension of the framework is addressed through a convolutional LSTM (ConvLSTM) extension whose architecture is illustrated in Figure 3. As shown in Figure 3, the ConvLSTM processes fifteen consecutive time-step inputs\u2014each represented as a three-dimensional tensor of spatial shape 101\u00d7101 with four feature channels encoding precipitation, temperature, vegetation index, and radiation flux-through a convolutional kernel of size 3\u00d73 with 24 filters. The ConvLSTM replaces standard matrix multiplications in the LSTM gating operations with spatial convolutions, enabling the network to extract spatially structured patterns in the climate forcing fields while simultaneously maintaining the temporal recurrence structure required for growing-season integration.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "probabilistic deep network",
+            "source_entity_type": "Source",
+            "relation": "HAS_SOURCE_COMPONENT",
+            "target_entity_instance": "distributional output head",
+            "target_entity_type": "SourceComponent",
+            "paragraph": "The third component is a distributional output head that parameterizes a normal predictive distribution over detrended yield. Rather than producing a single point prediction, this module produces two outputs: the predictive mean \u00b5 and the log predictive standard deviation log \u03c3, from which the full predictive distribution N(\u03bc, \u03c3\u00b2) is constructed. The model",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "probabilistic deep network",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "root mean square error",
+            "target_entity_type": "Metric",
+            "paragraph": "The PDN model achieves a mean root mean square error (RMSE) of 0.31 tonnes per hectare (t/ha) and a mean absolute error (MAE) of 0.21 t/ha across the full multi-crop, multi-region test set covering 2017-2021. Performance varies meaningfully across crop types: RMSE is lowest for rice (0.24 t/ha) and highest for sorghum (0.44 t/ha), reflecting the greater inter-annual yield variability of the latter driven by strong drought sensitivity in the semi-arid zones where sorghum is predominantly cultivated. Across geographic regions, prediction accuracy is highest for Chinese administrative units (RMSE = 0.22 t/ha) and lowest for Nigerian and Ethiopian units (RMSE = 0.47 and 0.51 t/ha respectively), consistent with the greater data density and meteorological network coverage in China relative to Sub-Saharan Africa.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "probabilistic deep network",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean absolute error",
+            "target_entity_type": "Metric",
+            "paragraph": "The PDN model achieves a mean root mean square error (RMSE) of 0.31 tonnes per hectare (t/ha) and a mean absolute error (MAE) of 0.21 t/ha across the full multi-crop, multi-region test set covering 2017-2021. Performance varies meaningfully across crop types: RMSE is lowest for rice (0.24 t/ha) and highest for sorghum (0.44 t/ha), reflecting the greater inter-annual yield variability of the latter driven by strong drought sensitivity in the semi-arid zones where sorghum is predominantly cultivated. Across geographic regions, prediction accuracy is highest for Chinese administrative units (RMSE = 0.22 t/ha) and lowest for Nigerian and Ethiopian units (RMSE = 0.47 and 0.51 t/ha respectively), consistent with the greater data density and meteorological network coverage in China relative to Sub-Saharan Africa.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "probabilistic deep network",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "continuous ranked probability score",
+            "target_entity_type": "Metric",
+            "paragraph": "To evaluate the quality of probabilistic outputs, three calibration metrics are computed: the continuous ranked probability score (CRPS), the prediction interval coverage probability (PICP) at 90% nominal coverage, and the mean prediction interval width (MPIW).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "probabilistic deep network",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "prediction interval coverage probability",
+            "target_entity_type": "Metric",
+            "paragraph": "To evaluate the quality of probabilistic outputs, three calibration metrics are computed: the continuous ranked probability score (CRPS), the prediction interval coverage probability (PICP) at 90% nominal coverage, and the mean prediction interval width (MPIW).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "probabilistic deep network",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean prediction interval width",
+            "target_entity_type": "Metric",
+            "paragraph": "To evaluate the quality of probabilistic outputs, three calibration metrics are computed: the continuous ranked probability score (CRPS), the prediction interval coverage probability (PICP) at 90% nominal coverage, and the mean prediction interval width (MPIW).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "Normalized difference vegetation index",
+            "target_entity_type": "Variable",
+            "paragraph": "Normalized difference vegetation index (NDVI) time series were derived from MODIS Terra 16-day composite products at 250-meter spatial resolution and spatially aggregated to administrative unit level following established protocols for regional-scale crop monitoring.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Terra",
+            "target_entity_type": "Platform",
+            "paragraph": "Normalized difference vegetation index (NDVI) time series were derived from MODIS Terra 16-day composite products at 250-meter spatial resolution and spatially aggregated to administrative unit level following established protocols for regional-scale crop monitoring.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "locust crisis",
+            "source_entity_type": "Natural_Hazard",
+            "relation": "AFFECTED_REGION",
+            "target_entity_instance": "Horn of Africa",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "A further analysis of model behavior during extreme climate years reveals that the PDN correctly identifies affected administrative units as high-uncertainty predictions during the 2020 locust crisis in the Horn of Africa and the 2021 La Ni\u00f1a-associated precipitation anomalies across South Asia. Prediction intervals averaged 40% wider than baseline for the affected units during these extreme years, constituting a quantitative early warning signal that cannot be derived from a deterministic point forecast system regardless of its mean accuracy. A calibration reliability diagram confirms that the PDN's distributional outputs track predicted probabilities within two percentage points for all decile bins across the full quantile range from the 5th to the 95th percentile\u2014a level of calibration precision that validates the practical reliability of the framework for operational deployment in food security monitoring contexts.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "La Ni\u00f1a",
+            "source_entity_type": "Teleconnection",
+            "relation": "INFLUENCES_REGION",
+            "target_entity_instance": "South Asia",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "A further analysis of model behavior during extreme climate years reveals that the PDN correctly identifies affected administrative units as high-uncertainty predictions during the 2020 locust crisis in the Horn of Africa and the 2021 La Ni\u00f1a-associated precipitation anomalies across South Asia. Prediction intervals averaged 40% wider than baseline for the affected units during these extreme years, constituting a quantitative early warning signal that cannot be derived from a deterministic point forecast system regardless of its mean accuracy. A calibration reliability diagram confirms that the PDN's distributional outputs track predicted probabilities within two percentage points for all decile bins across the full quantile range from the 5th to the 95th percentile\u2014a level of calibration precision that validates the practical reliability of the framework for operational deployment in food security monitoring contexts.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "probabilistic deep network",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Monte Carlo dropout",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "recurrent neural network",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "temporal attention mechanism",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "East Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Sub-Saharan Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "root mean square error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "continuous ranked probability score",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "prediction interval coverage probability",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "drought",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "heat stress",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "tropical",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "subtropical",
+            "entity_type": "ClimateZone"
+        },
+        {
+            "entity_instance": "long short-term memory",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "Bayesian neural network",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "deep ensembles",
+            "entity_type": "Ensemble"
+        },
+        {
+            "entity_instance": "conformal prediction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "unmanned aerial vehicle",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "R\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Finland",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Illinois",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Brazil",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "LSTM-based temporal encoder",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "multi-head attention layer",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "temporal self-attention",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "transformer-based deep learning model",
+            "entity_type": "SourceType"
+        },
+        {
+            "entity_instance": "ConvLSTM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "FAOSTAT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "China",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "India",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Ethiopia",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Kenya",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Nigeria",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Bangladesh",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "0.25 deg",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "vapor pressure deficit",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "wind speed",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "downwelling shortwave radiation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "Terra",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "16-day",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "250 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Normalized Difference Vegetation Index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Land surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "variational dropout",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "temporal self-attention layer",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "convolutional LSTM",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "vegetation index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "radiation flux",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "distributional output head",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "mean absolute error",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean prediction interval width",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "deep ensemble",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "soil water-holding capacity",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "La Ni\u00f1a",
+            "entity_type": "Teleconnection"
+        },
+        {
+            "entity_instance": "locust crisis",
+            "entity_type": "Natural_Hazard"
+        },
+        {
+            "entity_instance": "Horn of Africa",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "South Asia",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "deterministic LSTM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "random forest",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Gaussian process regression model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "process-based crop model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "temporal attention layer",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "University of Tennessee",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Knoxville",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Asia",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "crop yield",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "calibration reliability diagram",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "hidden dimensions of 256",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "hidden dimensions of 128",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "convolutional kernel size 3x3",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "24 filters",
+            "entity_type": "PhysicalFeature"
+        }
+    ],
+    "referenced_works": []
+}

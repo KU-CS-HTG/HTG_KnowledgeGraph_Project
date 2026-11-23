@@ -1,0 +1,905 @@
+{
+    "uri": "https://openalex.org/W2900086371",
+    "title": "A global dataset of air temperature derived from satellite remote sensing and weather stations",
+    "venue": {
+        "name": "Scientific Data",
+        "id": "https://openalex.org/S2607323502",
+        "type": "journal"
+    },
+    "publication_year": 2018,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5002617444",
+            "display_name": "Josh Hooker",
+            "orcid": null
+        },
+        {
+            "id": "https://openalex.org/A5088465455",
+            "display_name": "Gr\u00e9gory Duveiller",
+            "orcid": "https://orcid.org/0000-0002-6471-8404"
+        },
+        {
+            "id": "https://openalex.org/A5048243764",
+            "display_name": "Alessandro Cescatti",
+            "orcid": "https://orcid.org/0000-0002-2769-2591"
+        }
+    ],
+    "doi": "https://doi.org/10.1038/sdata.2018.246",
+    "abstract": null,
+    "field": "Environmental remote sensing",
+    "problem": "Existing air temperature records from weather stations are spatially and temporally patchy, while deriving it from continuous satellite land surface temperature is challenging because the relationship between the two variables is not constant across different geographic locations and climatic conditions.",
+    "method": "To create a global dataset of air temperature, the authors propose a statistical model that predicts monthly air temperature from satellite land surface temperature by combining geographically weighted and climate-space weighted regressions using stacked generalisation.",
+    "task": "The task is to create a global, gridded dataset of monthly air temperature by developing a statistical model that combines satellite land surface temperature with weather station observations, accounting for both geographic and climatic similarity.",
+    "model": [
+        "ERA-Interim",
+        "ERA5",
+        "GWR",
+        "CSWR",
+        "CRUTEM4"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/environmental-science",
+            "display_name": "Environmental science",
+            "score": 0.6576893329620361
+        },
+        {
+            "id": "https://openalex.org/keywords/satellite",
+            "display_name": "Satellite",
+            "score": 0.6069842576980591
+        },
+        {
+            "id": "https://openalex.org/keywords/air-temperature",
+            "display_name": "Air temperature",
+            "score": 0.6024835109710693
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.5331686735153198
+        },
+        {
+            "id": "https://openalex.org/keywords/meteorology",
+            "display_name": "Meteorology",
+            "score": 0.507478654384613
+        },
+        {
+            "id": "https://openalex.org/keywords/surface-air-temperature",
+            "display_name": "Surface air temperature",
+            "score": 0.48310375213623047
+        },
+        {
+            "id": "https://openalex.org/keywords/weather-station",
+            "display_name": "Weather station",
+            "score": 0.4529111385345459
+        },
+        {
+            "id": "https://openalex.org/keywords/climatology",
+            "display_name": "Climatology",
+            "score": 0.44867467880249023
+        },
+        {
+            "id": "https://openalex.org/keywords/remote-sensing",
+            "display_name": "Remote sensing",
+            "score": 0.38022372126579285
+        },
+        {
+            "id": "https://openalex.org/keywords/geography",
+            "display_name": "Geography",
+            "score": 0.2938218414783478
+        },
+        {
+            "id": "https://openalex.org/keywords/geology",
+            "display_name": "Geology",
+            "score": 0.10031905770301819
+        },
+        {
+            "id": "https://openalex.org/keywords/precipitation",
+            "display_name": "Precipitation",
+            "score": 0.0851893424987793
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.6576893329620361
+        },
+        {
+            "id": "https://openalex.org/C19269812",
+            "wikidata": "https://www.wikidata.org/wiki/Q26540",
+            "display_name": "Satellite",
+            "level": 2,
+            "score": 0.6069842576980591
+        },
+        {
+            "id": "https://openalex.org/C2983363897",
+            "wikidata": "https://www.wikidata.org/wiki/Q845339",
+            "display_name": "Air temperature",
+            "level": 2,
+            "score": 0.6024835109710693
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.5331686735153198
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.507478654384613
+        },
+        {
+            "id": "https://openalex.org/C2994323764",
+            "wikidata": "https://www.wikidata.org/wiki/Q909741",
+            "display_name": "Surface air temperature",
+            "level": 3,
+            "score": 0.48310375213623047
+        },
+        {
+            "id": "https://openalex.org/C2777129202",
+            "wikidata": "https://www.wikidata.org/wiki/Q190107",
+            "display_name": "Weather station",
+            "level": 2,
+            "score": 0.4529111385345459
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.44867467880249023
+        },
+        {
+            "id": "https://openalex.org/C62649853",
+            "wikidata": "https://www.wikidata.org/wiki/Q199687",
+            "display_name": "Remote sensing",
+            "level": 1,
+            "score": 0.38022372126579285
+        },
+        {
+            "id": "https://openalex.org/C205649164",
+            "wikidata": "https://www.wikidata.org/wiki/Q1071",
+            "display_name": "Geography",
+            "level": 0,
+            "score": 0.2938218414783478
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.10031905770301819
+        },
+        {
+            "id": "https://openalex.org/C107054158",
+            "wikidata": "https://www.wikidata.org/wiki/Q25257",
+            "display_name": "Precipitation",
+            "level": 2,
+            "score": 0.0851893424987793
+        },
+        {
+            "id": "https://openalex.org/C111368507",
+            "wikidata": "https://www.wikidata.org/wiki/Q43518",
+            "display_name": "Oceanography",
+            "level": 1,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C127413603",
+            "wikidata": "https://www.wikidata.org/wiki/Q11023",
+            "display_name": "Engineering",
+            "level": 0,
+            "score": 0.0
+        },
+        {
+            "id": "https://openalex.org/C146978453",
+            "wikidata": "https://www.wikidata.org/wiki/Q3798668",
+            "display_name": "Aerospace engineering",
+            "level": 1,
+            "score": 0.0
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for January (\u00b0C)",
+            "result": "2.10"
+        },
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for February (\u00b0C)",
+            "result": "1.97"
+        },
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for March (\u00b0C)",
+            "result": "1.80"
+        },
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for April (\u00b0C)",
+            "result": "1.71"
+        },
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for May (\u00b0C)",
+            "result": "1.62"
+        },
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for June (\u00b0C)",
+            "result": "1.62"
+        },
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for July (\u00b0C)",
+            "result": "1.60"
+        },
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for August (\u00b0C)",
+            "result": "1.52"
+        },
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for September (\u00b0C)",
+            "result": "1.45"
+        },
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for October (\u00b0C)",
+            "result": "1.45"
+        },
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for November (\u00b0C)",
+            "result": "1.63"
+        },
+        {
+            "model": "linear regression (LM)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for December (\u00b0C)",
+            "result": "1.92"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for January (\u00b0C)",
+            "result": "1.61"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for February (\u00b0C)",
+            "result": "1.53"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for March (\u00b0C)",
+            "result": "1.40"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for April (\u00b0C)",
+            "result": "1.34"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for May (\u00b0C)",
+            "result": "1.30"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for June (\u00b0C)",
+            "result": "1.31"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for July (\u00b0C)",
+            "result": "1.31"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for August (\u00b0C)",
+            "result": "1.27"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for September (\u00b0C)",
+            "result": "1.26"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for October (\u00b0C)",
+            "result": "1.27"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for November (\u00b0C)",
+            "result": "1.38"
+        },
+        {
+            "model": "geographically weighted regression (GWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for December (\u00b0C)",
+            "result": "1.52"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for January (\u00b0C)",
+            "result": "1.67"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for February (\u00b0C)",
+            "result": "1.56"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for March (\u00b0C)",
+            "result": "1.44"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for April (\u00b0C)",
+            "result": "1.31"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for May (\u00b0C)",
+            "result": "1.22"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for June (\u00b0C)",
+            "result": "1.17"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for July (\u00b0C)",
+            "result": "1.21"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for August (\u00b0C)",
+            "result": "1.19"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for September (\u00b0C)",
+            "result": "1.17"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for October (\u00b0C)",
+            "result": "1.19"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for November (\u00b0C)",
+            "result": "1.32"
+        },
+        {
+            "model": "climate space weighted regression (CSWR)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for December (\u00b0C)",
+            "result": "1.52"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for January (\u00b0C)",
+            "result": "1.55"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for February (\u00b0C)",
+            "result": "1.49"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for March (\u00b0C)",
+            "result": "1.35"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for April (\u00b0C)",
+            "result": "1.27"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for May (\u00b0C)",
+            "result": "1.18"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for June (\u00b0C)",
+            "result": "1.15"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for July (\u00b0C)",
+            "result": "1.18"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for August (\u00b0C)",
+            "result": "1.15"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for September (\u00b0C)",
+            "result": "1.14"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for October (\u00b0C)",
+            "result": "1.16"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for November (\u00b0C)",
+            "result": "1.29"
+        },
+        {
+            "model": "stacked generalised (SG)",
+            "observational_dataset": "GHCN-M (cross-validation)",
+            "evaluation_metric": "RMSEP for December (\u00b0C)",
+            "result": "1.45"
+        }
+    ],
+    "innovation": "This paper develops a global dataset of monthly air temperature by predicting it from satellite land surface temperature using a novel statistical model that combines geographically weighted regression and climate-space weighted regression.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Terra",
+            "target_entity_type": "Platform",
+            "paragraph": "Remotely sensed measures of both daytime and nighttime LST are obtained from the MODIS instrument. Whilst this instrument is available on two platforms, Terra and Aqua, only the latter is used as its overpass (approximately 13:30 and 1:30 local time at the Equator) is closer to when diurnal minimum and maximum temperatures are expected.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MOUNTED_ON",
+            "target_entity_instance": "Aqua",
+            "target_entity_type": "Platform",
+            "paragraph": "Remotely sensed measures of both daytime and nighttime LST are obtained from the MODIS instrument. Whilst this instrument is available on two platforms, Terra and Aqua, only the latter is used as its overpass (approximately 13:30 and 1:30 local time at the Equator) is closer to when diurnal minimum and maximum temperatures are expected.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "land surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Remotely sensed measures of both daytime and nighttime LST are obtained from the MODIS instrument. Whilst this instrument is available on two platforms, Terra and Aqua, only the latter is used as its overpass (approximately 13:30 and 1:30 local time at the Equator) is closer to when diurnal minimum and maximum temperatures are expected. The MODIS land surface temperature algorithm provides estimates of daytime and nighttime LST at a monthly time step at 0.05\u00b0 spatial resolution3,14 in the MYD11C3 product (we use collection 5 available from the NASA LPDAAC website https://lpdaac.usgs.gov/).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "daytime land surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Remotely sensed measures of both daytime and nighttime LST are obtained from the MODIS instrument. Whilst this instrument is available on two platforms, Terra and Aqua, only the latter is used as its overpass (approximately 13:30 and 1:30 local time at the Equator) is closer to when diurnal minimum and maximum temperatures are expected. The MODIS land surface temperature algorithm provides estimates of daytime and nighttime LST at a monthly time step at 0.05\u00b0 spatial resolution3,14 in the MYD11C3 product (we use collection 5 available from the NASA LPDAAC website https://lpdaac.usgs.gov/).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "MODIS",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "nighttime land surface temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "Remotely sensed measures of both daytime and nighttime LST are obtained from the MODIS instrument. Whilst this instrument is available on two platforms, Terra and Aqua, only the latter is used as its overpass (approximately 13:30 and 1:30 local time at the Equator) is closer to when diurnal minimum and maximum temperatures are expected. The MODIS land surface temperature algorithm provides estimates of daytime and nighttime LST at a monthly time step at 0.05\u00b0 spatial resolution3,14 in the MYD11C3 product (we use collection 5 available from the NASA LPDAAC website https://lpdaac.usgs.gov/).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "A global dataset of air temperature derived from satellite remote sensing and weather stations",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "Root Mean Square Error of Prediction",
+            "target_entity_type": "Metric",
+            "paragraph": "Table 2. Root mean square errors of prediction (RMSEP) in C for linear regression (LM), geographically weighted regression (GWR), climate space weighted regression (CSWR) and the stacked generalised (SG) models of air temperature.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "A global dataset of air temperature derived from satellite remote sensing and weather stations",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "mean absolute deviation",
+            "target_entity_type": "Metric",
+            "paragraph": "To complement this validation, an inter-comparison with 2 m air temperature from ERA5 reanalysis is provided in Fig. 5. To match both datasets together, the ERA5 hourly data is averaged to a monthly temporal resolution while our air temperature data is spatially aggregated from 0.05\u00b0 to 0.25\u00b0. The comparison is first done by calculating the mean absolute deviation (MAD) between all n paired values of a given ensemble:",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "A global dataset of air temperature derived from satellite remote sensing and weather stations",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "GHCN-M",
+            "target_entity_type": "Source",
+            "paragraph": "The Global Historical Climatology Network - Monthly (GHCN-M) dataset\u00b9\u00b3 is used as the source for reference air temperatures. This dataset provides monthly average air temperature at a large number of weather stations from sometimes up to more than 100 years ago.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "A global dataset of air temperature derived from satellite remote sensing and weather stations",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "MYD11C3",
+            "target_entity_type": "Source",
+            "paragraph": "Remotely sensed measures of both daytime and nighttime LST are obtained from the MODIS instrument. Whilst this instrument is available on two platforms, Terra and Aqua, only the latter is used as its overpass (approximately 13:30 and 1:30 local time at the Equator) is closer to when diurnal minimum and maximum temperatures are expected. The MODIS land surface temperature algorithm provides estimates of daytime and nighttime LST at a monthly time step at 0.05\u00b0 spatial resolution3,14 in the MYD11C3 product (we use collection 5 available from the NASA LPDAAC website https://lpdaac.usgs.gov/).",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        },
+        {
+            "source_entity_instance": "A global dataset of air temperature derived from satellite remote sensing and weather stations",
+            "source_entity_type": "Source",
+            "relation": "INHERITED_FROM",
+            "target_entity_instance": "WorldClim version 1.4",
+            "target_entity_type": "Source",
+            "paragraph": "We use WorldClim version 1.415 to define the monthly climate spaces over which CSWR is applied. This dataset provides the mean monthly temperature and mean monthly cumulated precipitation for the period 1960-1990 at a spatial resolution of 1/12\u00b0.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": false
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "temperature of air",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CRUTEM4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "5\u00ba",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "ERA-Interim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "0.05\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "geographically weighted regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "climate space weighted regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "daytime and nighttime land surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "stacked generalisation",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "GHCN-M",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MYD11C3",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "WorldClim v1.4",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Mean annual temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Mean annual precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Global Historical Climatology Network - Monthly (GHCN-M) dataset",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "weather station",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "monthly average air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "US",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Europe",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Terra",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "Aqua",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "NASA LPDAAC",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "monthly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "WorldClim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "mean monthly temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "mean monthly cumulated precipitation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "1/12\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Antarctica",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "negative exponential function",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "NetCDF",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "latitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "longitude",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "Tair",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "CSV",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "RMSEP",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "linear regression",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "Root mean square errors of prediction",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "MAD",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "mean absolute deviation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "Greenland",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Tibetan plateau",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Andes",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Northern Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Southern Europe",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "MODIS collection 5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "MODIS collection 6",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "EOS/MODIS",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "Africa",
+            "entity_type": "Continent"
+        },
+        {
+            "entity_instance": "Portugal",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "British Columbia",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "United States",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "LUC4C",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "Global Historical Climatology Network",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "NOAA's National Climatic Data Center",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "NASA",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "ECMWF",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "C3S",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "European Commission, Joint Research Centre",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Italy",
+            "entity_type": "Country"
+        }
+    ],
+    "referenced_works": [
+        "https://openalex.org/W3020939890",
+        "https://openalex.org/W2121745948",
+        "https://openalex.org/W2155897273",
+        "https://openalex.org/W2020977453",
+        "https://openalex.org/W2117422131",
+        "https://openalex.org/W2053683629",
+        "https://openalex.org/W2091447923",
+        "https://openalex.org/W2039579272",
+        "https://openalex.org/W2321235921",
+        "https://openalex.org/W2148169128",
+        "https://openalex.org/W2045066934",
+        "https://openalex.org/W28412257",
+        "https://openalex.org/W1970940206",
+        "https://openalex.org/W2029660080",
+        "https://openalex.org/W2112776483",
+        "https://openalex.org/W2237711914",
+        "https://openalex.org/W6902521537",
+        "https://openalex.org/W2914369697"
+    ]
+}

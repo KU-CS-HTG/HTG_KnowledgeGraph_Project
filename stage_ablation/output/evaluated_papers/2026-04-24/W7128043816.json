@@ -1,0 +1,935 @@
+{
+    "uri": "https://openalex.org/W7128043816",
+    "title": "DReaMIT: A Dynamical Reanalysis Framework for Modelling Surface-Based Temperature Inversions in Cold Environments",
+    "venue": {
+        "name": null,
+        "id": null,
+        "type": null
+    },
+    "publication_year": 2026,
+    "authors": [
+        {
+            "id": "https://openalex.org/A5063647615",
+            "display_name": "Victor Pozsgay",
+            "orcid": "https://orcid.org/0000-0002-6799-3364"
+        },
+        {
+            "id": "https://openalex.org/A5025274176",
+            "display_name": "Nick C. Noad",
+            "orcid": "https://orcid.org/0000-0003-0652-5337"
+        },
+        {
+            "id": "https://openalex.org/A5089170153",
+            "display_name": "Philip P. Bonnaventure",
+            "orcid": "https://orcid.org/0000-0002-4157-0689"
+        },
+        {
+            "id": "https://openalex.org/A5125145262",
+            "display_name": "Stephan Gruber",
+            "orcid": null
+        }
+    ],
+    "doi": "https://doi.org/10.5194/egusphere-2025-5512",
+    "abstract": "Abstract. Surface-based temperature inversions (SBIs) are critical to high-latitude mountain climatology, shaping permafrost stability and near-surface thermal regimes. This study develops and evaluates a new surface-based inversion model, DReaMIT (Dynamical Reanalysis Model for Inversions of Temperature), that extends the framework of (Pozsgay and Gruber, 2025) by spatializing the inversion strength parameter (\u03b1) using hypsometric position rather than absolute elevation. The reformulated approach enables a unified calibration across two contrasting Yukon valleys (WS01 and WS02), improving model transferability and reducing site-specific bias. Exponentiation of the elevation variable captures the observed nonlinear decay of lapse rates within SBIs, consistent with in-valley observations where temperature increases of up to 8 \u00b0C over 19 m were recorded. Model performance was assessed across the Yukon and Northwest Territories, where it successfully reproduced inversion structure even in areas with weaker or transient SBIs, such as Whitehorse and Haines Junction. Limitations were observed in flat regions with minimal hypsometric relief (e.g., Tulita, Old Crow), highlighting cases where microtopographic indices may better represent cold-air pooling potential. The new hypsometric formulation enhances the physical realism and spatial applicability of SBI modelling, providing an empirically-constrained, transferable tool for predicting near-surface temperature regimes and assessing permafrost sensitivity under northern climate change.",
+    "field": "High-latitude mountain climatology",
+    "problem": "Existing models for correcting climate reanalysis data for surface-based temperature inversions lack spatial transferability as they rely on absolute elevation, requiring site-specific calibration and limiting their applicability across diverse topographies in cold environments.",
+    "method": "This paper proposes a dynamical reanalysis framework for modelling surface-based temperature inversions that spatializes the inversion strength parameter using hypsometric position instead of absolute elevation to improve model transferability and reduce site-specific bias in cold, complex terrain.",
+    "task": "The task is to develop a dynamical framework for modeling surface-based temperature inversions in cold environments by using hypsometric position instead of absolute elevation to improve the model's spatial transferability and reduce site-specific bias.",
+    "model": [
+        "DReaMIT",
+        "ERA5",
+        "JRA-3Q",
+        "TopoSCALE",
+        "TopoCLIM",
+        "Globsim",
+        "REDCAPP"
+    ],
+    "paper_screening": "yes",
+    "keywords": [
+        {
+            "id": "https://openalex.org/keywords/permafrost",
+            "display_name": "Permafrost",
+            "score": 0.7642999887466431
+        },
+        {
+            "id": "https://openalex.org/keywords/inversion",
+            "display_name": "Inversion (geology)",
+            "score": 0.5672000050544739
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-change",
+            "display_name": "Climate change",
+            "score": 0.40939998626708984
+        },
+        {
+            "id": "https://openalex.org/keywords/transferability",
+            "display_name": "Transferability",
+            "score": 0.4081999957561493
+        },
+        {
+            "id": "https://openalex.org/keywords/lapse-rate",
+            "display_name": "Lapse rate",
+            "score": 0.3758000135421753
+        },
+        {
+            "id": "https://openalex.org/keywords/climate-model",
+            "display_name": "Climate model",
+            "score": 0.37310001254081726
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https://openalex.org/C15098985",
+            "wikidata": "https://www.wikidata.org/wiki/Q179918",
+            "display_name": "Permafrost",
+            "level": 2,
+            "score": 0.7642999887466431
+        },
+        {
+            "id": "https://openalex.org/C127313418",
+            "wikidata": "https://www.wikidata.org/wiki/Q1069",
+            "display_name": "Geology",
+            "level": 0,
+            "score": 0.6308000087738037
+        },
+        {
+            "id": "https://openalex.org/C1893757",
+            "wikidata": "https://www.wikidata.org/wiki/Q3653001",
+            "display_name": "Inversion (geology)",
+            "level": 3,
+            "score": 0.5672000050544739
+        },
+        {
+            "id": "https://openalex.org/C49204034",
+            "wikidata": "https://www.wikidata.org/wiki/Q52139",
+            "display_name": "Climatology",
+            "level": 1,
+            "score": 0.44279998540878296
+        },
+        {
+            "id": "https://openalex.org/C132651083",
+            "wikidata": "https://www.wikidata.org/wiki/Q7942",
+            "display_name": "Climate change",
+            "level": 2,
+            "score": 0.40939998626708984
+        },
+        {
+            "id": "https://openalex.org/C61272859",
+            "wikidata": "https://www.wikidata.org/wiki/Q7834031",
+            "display_name": "Transferability",
+            "level": 3,
+            "score": 0.4081999957561493
+        },
+        {
+            "id": "https://openalex.org/C186816422",
+            "wikidata": "https://www.wikidata.org/wiki/Q66900467",
+            "display_name": "Lapse rate",
+            "level": 2,
+            "score": 0.3758000135421753
+        },
+        {
+            "id": "https://openalex.org/C168754636",
+            "wikidata": "https://www.wikidata.org/wiki/Q620920",
+            "display_name": "Climate model",
+            "level": 3,
+            "score": 0.37310001254081726
+        },
+        {
+            "id": "https://openalex.org/C158622935",
+            "wikidata": "https://www.wikidata.org/wiki/Q660848",
+            "display_name": "Nonlinear system",
+            "level": 2,
+            "score": 0.34940001368522644
+        },
+        {
+            "id": "https://openalex.org/C165838908",
+            "wikidata": "https://www.wikidata.org/wiki/Q736777",
+            "display_name": "Calibration",
+            "level": 2,
+            "score": 0.3325999975204468
+        },
+        {
+            "id": "https://openalex.org/C63479239",
+            "wikidata": "https://www.wikidata.org/wiki/Q7353546",
+            "display_name": "Robustness (evolution)",
+            "level": 3,
+            "score": 0.30239999294281006
+        },
+        {
+            "id": "https://openalex.org/C153294291",
+            "wikidata": "https://www.wikidata.org/wiki/Q25261",
+            "display_name": "Meteorology",
+            "level": 1,
+            "score": 0.2802000045776367
+        },
+        {
+            "id": "https://openalex.org/C39432304",
+            "wikidata": "https://www.wikidata.org/wiki/Q188847",
+            "display_name": "Environmental science",
+            "level": 0,
+            "score": 0.260699987411499
+        },
+        {
+            "id": "https://openalex.org/C207467116",
+            "wikidata": "https://www.wikidata.org/wiki/Q4385666",
+            "display_name": "Inverse",
+            "level": 2,
+            "score": 0.25110000371932983
+        },
+        {
+            "id": "https://openalex.org/C183030095",
+            "wikidata": "https://www.wikidata.org/wiki/Q255894",
+            "display_name": "Equifinality",
+            "level": 2,
+            "score": 0.25060001015663147
+        }
+    ],
+    "obs_and_metrics": [
+        {
+            "model": "DReaMIT (calibrated with ERA5, with \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter aslope with relative uncertainty",
+            "result": "0.732 (0.2%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with ERA5, with \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter \u03b1intercept with relative uncertainty",
+            "result": "0.449 (0.4%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with ERA5, with \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter \u03b2amplitude with relative uncertainty",
+            "result": "0.918 \u00b0C (1.7%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with ERA5, with \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter t* with relative uncertainty",
+            "result": "0.958 (0.2%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with ERA5, with \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter \u03b2bias with relative uncertainty",
+            "result": "1.181 \u00b0C (1.0%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with JRA-3Q, with \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter aslope with relative uncertainty",
+            "result": "0.753 (0.3%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with JRA-3Q, with \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter \u03b1intercept with relative uncertainty",
+            "result": "0.525 (0.4%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with JRA-3Q, with \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter \u03b2amplitude with relative uncertainty",
+            "result": "0.796 \u00b0C (2.1%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with JRA-3Q, with \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter t* with relative uncertainty",
+            "result": "0.945 (0.3%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with JRA-3Q, with \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter \u03b2bias with relative uncertainty",
+            "result": "0.229 \u00b0C (4.9%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with ERA5, without \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter aslope with relative uncertainty",
+            "result": "0.728 (0.2%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with ERA5, without \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter \u03b1intercept with relative uncertainty",
+            "result": "0.352 (0.3%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with JRA-3Q, without \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter aslope with relative uncertainty",
+            "result": "0.752 (0.3%)"
+        },
+        {
+            "model": "DReaMIT (calibrated with JRA-3Q, without \u03b2(t))",
+            "observational_dataset": "Data from WS01 and WS02 valleys",
+            "evaluation_metric": "Best fit parameter \u03b1intercept with relative uncertainty",
+            "result": "0.478 (0.3%)"
+        }
+    ],
+    "innovation": "This paper introduces a new surface-based inversion model, DReaMIT, that spatializes the inversion strength parameter using hypsometric position rather than absolute elevation, improving model transferability and reducing site-specific bias for modelling temperatures in cold, complex terrain.",
+    "kg_extraction_triplets": [
+        {
+            "source_entity_instance": "DReaMIT",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "hypsometric position",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "This study develops and evaluates a new surface-based inversion model, DReaMIT (Dynamical Reanalysis Model for Inversions of Temperature), that extends the framework of (Pozsgay and Gruber, 2025) by spatializing the inversion strength parameter (a) using hypsometric position rather than absolute elevation. The reformulated approach enables a unified calibration across two contrasting Yukon valleys (WS01 and WS02), improving model transferability and reducing site-specific bias. Exponentiation of the elevation variable captures the observed nonlinear decay of lapse rates within SBIs, consistent with in-valley observations where temperature increases of up to 8\u00b0C over 19 m were recorded. Model performance was assessed across the Yukon and Northwest Territories, where it successfully reproduced inversion structure even in areas with weaker or transient SBIs, such as Whitehorse and Haines Junction. Limitations were observed in flat regions with minimal hypsometric relief (e.g., Tulita, Old Crow), highlighting cases where microtopographic indices may better represent cold-air pooling potential. The new hypsometric formulation enhances the physical realism and spatial applicability of SBI modelling, providing an empirically-constrained, transferable tool for predicting near-surface temperature regimes and assessing permafrost sensitivity under northern climate change.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DReaMIT",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "MAE",
+            "target_entity_type": "Metric",
+            "paragraph": "The results are shown in Fig. 5 below (left panel), and in Appendix C. For each station, we present the statistical metrics MAE and R2 as a function of hypsometry, for the new hypsometric model, compared to the worst of the surface and pressure- level temperatures given from reanalysis data (downscaled using GlobSim (Cao et al., 2019)). We compare to the worst of Tpl and Tsur since we cannot know a priori which will be best (Pozsgay and Gruber, 2025). A more complete comparison is presented in Appendix C. Note that we average results for ERA5 and JRA-3Q and present a relative change rather than absolute metrics. Positive values indicate better predictions from the model compared to reanalysis. However, it is interesting to note that the hypsometric model (whose parameters are given in Table 2 and set once and for all) predicts air temperature more consistently than either surface or pressure-level reanalysis data. We recall the fact that the pressure-level reanalysis data performs best at higher elevation (low h, milder inversions) while the strong inversions at the valley bottom (low elevation, high h) are better represented by the surface temperature of the reanalysis data.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "DReaMIT",
+            "source_entity_type": "Source",
+            "relation": "HAS_METRIC",
+            "target_entity_instance": "R-squared",
+            "target_entity_type": "Metric",
+            "paragraph": "The results are shown in Fig. 5 below (left panel), and in Appendix C. For each station, we present the statistical metrics MAE and R2 as a function of hypsometry, for the new hypsometric model, compared to the worst of the surface and pressure- level temperatures given from reanalysis data (downscaled using GlobSim (Cao et al., 2019)). We compare to the worst of Tpl and Tsur since we cannot know a priori which will be best (Pozsgay and Gruber, 2025). A more complete comparison is presented in Appendix C. Note that we average results for ERA5 and JRA-3Q and present a relative change rather than absolute metrics. Positive values indicate better predictions from the model compared to reanalysis. However, it is interesting to note that the hypsometric model (whose parameters are given in Table 2 and set once and for all) predicts air temperature more consistently than either surface or pressure-level reanalysis data. We recall the fact that the pressure-level reanalysis data performs best at higher elevation (low h, milder inversions) while the strong inversions at the valley bottom (low elevation, high h) are better represented by the surface temperature of the reanalysis data.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": false,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "passively-ventilated air temperature loggers",
+            "source_entity_type": "Instrument",
+            "relation": "MEASURES_VARIABLE",
+            "target_entity_instance": "air temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "The 50 locations scattered across the two valleys of the study area are instrumented with passively-ventilated air temperature loggers. Air temperature data was retrieved at the end of the 2024 summer during fieldwork.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Surface-based temperature inversions",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "high-latitude mountain",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "Surface-based temperature inversions (SBIs) are critical to high-latitude mountain climatology, shaping permafrost stability and near-surface thermal regimes. This study develops and evaluates a new surface-based inversion model, DReaMIT (Dynamical Reanalysis Model for Inversions of Temperature), that extends the framework of (Pozsgay and Gruber, 2025) by spatializing the inversion strength parameter (a) using hypsometric position rather than absolute elevation. The reformulated approach enables a unified calibration across two contrasting Yukon valleys (WS01 and WS02), improving model transferability and reducing site-specific bias. Exponentiation of the elevation variable captures the observed nonlinear decay of lapse rates within SBIs, consistent with in-valley observations where temperature increases of up to 8\u00b0C over 19 m were recorded. Model performance was assessed across the Yukon and Northwest Territories, where it successfully reproduced inversion structure even in areas with weaker or transient SBIs, such as Whitehorse and Haines Junction. Limitations were observed in flat regions with minimal hypsometric relief (e.g., Tulita, Old Crow), highlighting cases where microtopographic indices may better represent cold-air pooling potential. The new hypsometric formulation enhances the physical realism and spatial applicability of SBI modelling, providing an empirically-constrained, transferable tool for predicting near-surface temperature regimes and assessing permafrost sensitivity under northern climate change.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Surface-based temperature inversions",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "subarctic valleys",
+            "target_entity_type": "No_Country_Region",
+            "paragraph": "In subarctic valleys, prolonged periods of nocturnal radiative cooling during the winter promote deep, intense, and long-lasting SBI events (Fochesatto et al., 2015; Mayfield and Fochesatto, 2013; Noad and Bonnaventure, 2022, 2024). These SBIs generate strongly positive mean annual lapse rates (upwards to 25\u00b0Ckm\u00af\u00b9) within the first 100 to 150m above the valley floor (Noad and Bonnaventure, 2025), leading to substantial biases when unresolved below the grid level of the reanalysis product.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Surface-based temperature inversions",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Yukon",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Model performance was assessed across the Yukon and Northwest Territories, where it successfully reproduced inversion structure even in areas with weaker or transient SBIs, such as Whitehorse and Haines Junction. Limitations were observed in flat regions with minimal hypsometric relief (e.g., Tulita, Old Crow), highlighting cases where microtopographic indices may better represent cold-air pooling potential. The new hypsometric formulation enhances the physical realism and spatial applicability of SBI modelling, providing an empirically-constrained, transferable tool for predicting near-surface temperature regimes and assessing permafrost sensitivity under northern climate change.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Surface-based temperature inversions",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Northwest Territories",
+            "target_entity_type": "Country_Subdivision",
+            "paragraph": "Model performance was assessed across the Yukon and Northwest Territories, where it successfully reproduced inversion structure even in areas with weaker or transient SBIs, such as Whitehorse and Haines Junction. Limitations were observed in flat regions with minimal hypsometric relief (e.g., Tulita, Old Crow), highlighting cases where microtopographic indices may better represent cold-air pooling potential. The new hypsometric formulation enhances the physical realism and spatial applicability of SBI modelling, providing an empirically-constrained, transferable tool for predicting near-surface temperature regimes and assessing permafrost sensitivity under northern climate change.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Surface-based temperature inversions",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Whitehorse",
+            "target_entity_type": "City",
+            "paragraph": "Model performance in Whitehorse, Haines Junction, and MacMillan Pass, which are locations that experience weaker and more transient inversions than the subarctic valleys along the Dempster Highway (Lewkowicz and Bonnaventure, 2011; Noad et al., 2023; Garibaldi et al., 2024), remained surprisingly strong. This suggests that while the model was calibrated for more continental Dempster valleys, it captures the underlying structure of SBIs well, and that its transferability extends to regions with comparable hypsometric ranges. In these settings, the model appears to represent topographic constraints on cold-air pooling processes that develop within landscapes characterized by large hypsometric range. Although the frequency and intensity of SBIs are less at Whitehorse, MacMillan Pass, and Haines Junction, their structure likely resembles those of the Dempster sites.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Surface-based temperature inversions",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Haines Junction",
+            "target_entity_type": "City",
+            "paragraph": "Model performance in Whitehorse, Haines Junction, and MacMillan Pass, which are locations that experience weaker and more transient inversions than the subarctic valleys along the Dempster Highway (Lewkowicz and Bonnaventure, 2011; Noad et al., 2023; Garibaldi et al., 2024), remained surprisingly strong. This suggests that while the model was calibrated for more continental Dempster valleys, it captures the underlying structure of SBIs well, and that its transferability extends to regions with comparable hypsometric ranges. In these settings, the model appears to represent topographic constraints on cold-air pooling processes that develop within landscapes characterized by large hypsometric range. Although the frequency and intensity of SBIs are less at Whitehorse, MacMillan Pass, and Haines Junction, their structure likely resembles those of the Dempster sites.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "Surface-based temperature inversions",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "MacMillan Pass",
+            "target_entity_type": "City",
+            "paragraph": "Model performance in Whitehorse, Haines Junction, and MacMillan Pass, which are locations that experience weaker and more transient inversions than the subarctic valleys along the Dempster Highway (Lewkowicz and Bonnaventure, 2011; Noad et al., 2023; Garibaldi et al., 2024), remained surprisingly strong. This suggests that while the model was calibrated for more continental Dempster valleys, it captures the underlying structure of SBIs well, and that its transferability extends to regions with comparable hypsometric ranges. In these settings, the model appears to represent topographic constraints on cold-air pooling processes that develop within landscapes characterized by large hypsometric range. Although the frequency and intensity of SBIs are less at Whitehorse, MacMillan Pass, and Haines Junction, their structure likely resembles those of the Dempster sites.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "cold-air pooling",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Tulita",
+            "target_entity_type": "City",
+            "paragraph": "Limitations were observed in flat regions with minimal hypsometric relief (e.g., Tulita, Old Crow), highlighting cases where microtopographic indices may better represent cold-air pooling potential. The new hypsometric formulation enhances the physical realism and spatial applicability of SBI modelling, providing an empirically-constrained, transferable tool for predicting near-surface temperature regimes and assessing permafrost sensitivity under northern climate change.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "cold-air pooling",
+            "source_entity_type": "Weather_Event",
+            "relation": "IMPACTED_REGION",
+            "target_entity_instance": "Old Crow",
+            "target_entity_type": "City",
+            "paragraph": "Limitations were observed in flat regions with minimal hypsometric relief (e.g., Tulita, Old Crow), highlighting cases where microtopographic indices may better represent cold-air pooling potential. The new hypsometric formulation enhances the physical realism and spatial applicability of SBI modelling, providing an empirically-constrained, transferable tool for predicting near-surface temperature regimes and assessing permafrost sensitivity under northern climate change.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "REDCAPP",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "hypsometric position",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The temperature inversion model REDCAPP (Cao et al., 2017) makes explicit use of both hypsometric position h and MRVBF index v. We find that the Akaike and Bayesian information criteria (AIC and BIC, respectively) do not improve when explicitly accounting for v in the model, which motivates the functional form adopted in Eq. (4), where the temperature inversions only depend on the hypsometric position h.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "REDCAPP",
+            "source_entity_type": "Source",
+            "relation": "HAS_PHYSICAL_FEATURE",
+            "target_entity_instance": "MRVBF index",
+            "target_entity_type": "PhysicalFeature",
+            "paragraph": "The temperature inversion model REDCAPP (Cao et al., 2017) makes explicit use of both hypsometric position h and MRVBF index v. We find that the Akaike and Bayesian information criteria (AIC and BIC, respectively) do not improve when explicitly accounting for v in the model, which motivates the functional form adopted in Eq. (4), where the temperature inversions only depend on the hypsometric position h.",
+            "ontology_conformed": true,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "geopotential",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, we use hourly ERA5 data from the European Centre for Medium-Range Weather Forecasts (ECMWF) (Hersbach et al., 2023a, b) since 1940 and 6-hourly JRA-3Q data from the Japan Meteorological Agency (JMA) (Kosaka et al., 2024) (downscaled hourly) since since 1947. The former is available on a regular 0.25\u00b0 \u00d7 0.25\u00b0 grid in latitude and longitude, while the latter uses a TL479 Gaussian grid instead with a spatial resolution of 0.375\u00b0\u00d7 0.375\u00b0. We download data divided into three categories: constant (geopotential, land-sea mask), single level (2 m temperature), and pressure levels (air temperature).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "land-sea mask",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, we use hourly ERA5 data from the European Centre for Medium-Range Weather Forecasts (ECMWF) (Hersbach et al., 2023a, b) since 1940 and 6-hourly JRA-3Q data from the Japan Meteorological Agency (JMA) (Kosaka et al., 2024) (downscaled hourly) since since 1947. The former is available on a regular 0.25\u00b0 \u00d7 0.25\u00b0 grid in latitude and longitude, while the latter uses a TL479 Gaussian grid instead with a spatial resolution of 0.375\u00b0\u00d7 0.375\u00b0. We download data divided into three categories: constant (geopotential, land-sea mask), single level (2 m temperature), and pressure levels (air temperature).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "2 m temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, we use hourly ERA5 data from the European Centre for Medium-Range Weather Forecasts (ECMWF) (Hersbach et al., 2023a, b) since 1940 and 6-hourly JRA-3Q data from the Japan Meteorological Agency (JMA) (Kosaka et al., 2024) (downscaled hourly) since since 1947. The former is available on a regular 0.25\u00b0 \u00d7 0.25\u00b0 grid in latitude and longitude, while the latter uses a TL479 Gaussian grid instead with a spatial resolution of 0.375\u00b0\u00d7 0.375\u00b0. We download data divided into three categories: constant (geopotential, land-sea mask), single level (2 m temperature), and pressure levels (air temperature).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "ERA5",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "air temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, we use hourly ERA5 data from the European Centre for Medium-Range Weather Forecasts (ECMWF) (Hersbach et al., 2023a, b) since 1940 and 6-hourly JRA-3Q data from the Japan Meteorological Agency (JMA) (Kosaka et al., 2024) (downscaled hourly) since since 1947. The former is available on a regular 0.25\u00b0 \u00d7 0.25\u00b0 grid in latitude and longitude, while the latter uses a TL479 Gaussian grid instead with a spatial resolution of 0.375\u00b0\u00d7 0.375\u00b0. We download data divided into three categories: constant (geopotential, land-sea mask), single level (2 m temperature), and pressure levels (air temperature).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JRA-3Q",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "geopotential",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, we use hourly ERA5 data from the European Centre for Medium-Range Weather Forecasts (ECMWF) (Hersbach et al., 2023a, b) since 1940 and 6-hourly JRA-3Q data from the Japan Meteorological Agency (JMA) (Kosaka et al., 2024) (downscaled hourly) since since 1947. The former is available on a regular 0.25\u00b0 \u00d7 0.25\u00b0 grid in latitude and longitude, while the latter uses a TL479 Gaussian grid instead with a spatial resolution of 0.375\u00b0\u00d7 0.375\u00b0. We download data divided into three categories: constant (geopotential, land-sea mask), single level (2 m temperature), and pressure levels (air temperature).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JRA-3Q",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "land-sea mask",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, we use hourly ERA5 data from the European Centre for Medium-Range Weather Forecasts (ECMWF) (Hersbach et al., 2023a, b) since 1940 and 6-hourly JRA-3Q data from the Japan Meteorological Agency (JMA) (Kosaka et al., 2024) (downscaled hourly) since since 1947. The former is available on a regular 0.25\u00b0 \u00d7 0.25\u00b0 grid in latitude and longitude, while the latter uses a TL479 Gaussian grid instead with a spatial resolution of 0.375\u00b0\u00d7 0.375\u00b0. We download data divided into three categories: constant (geopotential, land-sea mask), single level (2 m temperature), and pressure levels (air temperature).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JRA-3Q",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "2 m temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, we use hourly ERA5 data from the European Centre for Medium-Range Weather Forecasts (ECMWF) (Hersbach et al., 2023a, b) since 1940 and 6-hourly JRA-3Q data from the Japan Meteorological Agency (JMA) (Kosaka et al., 2024) (downscaled hourly) since since 1947. The former is available on a regular 0.25\u00b0 \u00d7 0.25\u00b0 grid in latitude and longitude, while the latter uses a TL479 Gaussian grid instead with a spatial resolution of 0.375\u00b0\u00d7 0.375\u00b0. We download data divided into three categories: constant (geopotential, land-sea mask), single level (2 m temperature), and pressure levels (air temperature).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        },
+        {
+            "source_entity_instance": "JRA-3Q",
+            "source_entity_type": "Source",
+            "relation": "PRODUCES_VARIABLE",
+            "target_entity_instance": "air temperature",
+            "target_entity_type": "Variable",
+            "paragraph": "In this study, we use hourly ERA5 data from the European Centre for Medium-Range Weather Forecasts (ECMWF) (Hersbach et al., 2023a, b) since 1940 and 6-hourly JRA-3Q data from the Japan Meteorological Agency (JMA) (Kosaka et al., 2024) (downscaled hourly) since since 1947. The former is available on a regular 0.25\u00b0 \u00d7 0.25\u00b0 grid in latitude and longitude, while the latter uses a TL479 Gaussian grid instead with a spatial resolution of 0.375\u00b0\u00d7 0.375\u00b0. We download data divided into three categories: constant (geopotential, land-sea mask), single level (2 m temperature), and pressure levels (air temperature).",
+            "ontology_conformed": false,
+            "evidence_validated": true,
+            "valid": true,
+            "eval": true
+        }
+    ],
+    "entities_extracted": [
+        {
+            "entity_instance": "DReaMIT",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "ERA5",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "JRA-3Q",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TopoSCALE",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "TopoCLIM",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Globsim",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "REDCAPP",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "DReaMIT hypsometric model",
+            "entity_type": "Source"
+        },
+        {
+            "entity_instance": "Carleton University",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "University of Lethbridge",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Japan Meteorological Agency (JMA)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Environment and Climate Change Canada (ECCC)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Yukon Geological Survey",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "Navigation Canada (NAVCAN)",
+            "entity_type": "Institute"
+        },
+        {
+            "entity_instance": "PermafrostNet",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "CREATE LEAP",
+            "entity_type": "Project"
+        },
+        {
+            "entity_instance": "DReaMIT module",
+            "entity_type": "SourceComponent"
+        },
+        {
+            "entity_instance": "spatializing inversion strength parameter using hypsometric position",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "temporal bias correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "exponential correction",
+            "entity_type": "PhysicalScheme"
+        },
+        {
+            "entity_instance": "TL479 Gaussian grid",
+            "entity_type": "PhysicalFeature"
+        },
+        {
+            "entity_instance": "R\u00b2",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Mean Absolute Error (MAE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "coefficient of correlation",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "root mean square error (RMSE)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "reduced chi-square (\u03c7\u00b2red)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "Akaike and Bayesian information criteria (AIC and BIC)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "reanalysis bias",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "\u0394 MAE [%]",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "\u0394 R\u00b2 [%]",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "(1 - R\u00b2)",
+            "entity_type": "Metric"
+        },
+        {
+            "entity_instance": "air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "near-surface temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "lapse rates",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "permafrost",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "surface air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "geopotential",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "land-sea mask",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "2 m temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "pressure-level air temperature",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hypsometric position h",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "multiresolution valley bottom flatness (MRVBF) index",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "relative elevation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "absolute elevation",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hypsometric range",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "REDCAPP lapse rate",
+            "entity_type": "Variable"
+        },
+        {
+            "entity_instance": "hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "6-hourly",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "2 h",
+            "entity_type": "Frequency"
+        },
+        {
+            "entity_instance": "0.25\u00b0 \u00d7 0.25\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "0.375\u00b0\u00d7 0.375\u00b0",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "46 km \u00d7 20 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "59 km \u00d7 30 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "2 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "10 m",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "50 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "5 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "10 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "1 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "2 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "3 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "20 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "30 km",
+            "entity_type": "Resolution"
+        },
+        {
+            "entity_instance": "passively-ventilated air temperature loggers",
+            "entity_type": "Instrument"
+        },
+        {
+            "entity_instance": "ECCC/NAVCAN weather stations",
+            "entity_type": "Platform"
+        },
+        {
+            "entity_instance": "cold-air pooling",
+            "entity_type": "Weather_Event"
+        },
+        {
+            "entity_instance": "Canada",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "USA",
+            "entity_type": "Country"
+        },
+        {
+            "entity_instance": "Yukon",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Northwest Territories",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Alaska",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "British Columbia",
+            "entity_type": "Country_Subdivision"
+        },
+        {
+            "entity_instance": "Dawson City",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Whitehorse",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Haines Junction",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Tulita",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Old Crow",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Aklavik",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Inuvik",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Fort McPherson",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Fort Good Hope",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Norman Wells",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Mayo",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Faro",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "Beaver Creek",
+            "entity_type": "City"
+        },
+        {
+            "entity_instance": "WS01",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "WS02",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "Dempster",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "SVWS",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "NVWS",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "MacMillan Pass",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "northwestern Canada",
+            "entity_type": "No_Country_Region"
+        },
+        {
+            "entity_instance": "western Canadian Arctic",
+            "entity_type": "No_Country_Region"
+        }
+    ],
+    "referenced_works": []
+}
