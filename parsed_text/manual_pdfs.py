@@ -1,12 +1,13 @@
 """자동 다운로드가 막힌 논문(봇 확인 페이지 등)을 브라우저로 받은 뒤 정해진 이름으로 정리한다.
 
   python parsed_text/manual_pdfs.py list                    # 아직 없는 논문과 열어 볼 주소 목록
+  python parsed_text/manual_pdfs.py open                    # 없는 논문의 주소를 브라우저 탭으로 연다(--delay 초 간격)
   python parsed_text/manual_pdfs.py import --src <폴더>      # 브라우저로 받은 PDF를 매칭해 이름 붙여 복사
 
 매칭은 DOI 끝부분(예: s00382-012-1555-1)이 파일 이름에 들어 있는지로 한다.
 Springer는 보통 `s00382-012-1555-1.pdf` 또는 `10.1007_s00382-012-1555-1.pdf` 로 저장된다.
 """
-import argparse, json, re, shutil
+import argparse, json, re, shutil, sys, time, webbrowser
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -39,8 +40,13 @@ def match(paper: dict, files: list[Path]) -> list[Path]:
     return sorted(hits, key=lambda f: f.stat().st_mtime, reverse=True)
 
 def main() -> None:
+    # Windows 콘솔(cp949)에서 제목의 특수문자 때문에 죽지 않게 한다.
+    for s in (sys.stdout, sys.stderr):
+        try: s.reconfigure(errors="replace")
+        except Exception: pass
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", choices=["list", "import"])
+    ap.add_argument("cmd", choices=["list", "open", "import"])
+    ap.add_argument("--delay", type=float, default=3.0, help="open: 탭 사이 대기(초)")
     ap.add_argument("--src", type=Path, default=Path.home() / "Downloads")
     ap.add_argument("--manifest", type=Path, default=HERE / "data" / "cmip_papers_pdf_urls.json")
     ap.add_argument("--pdf-root", type=Path, default=HERE.parent / "cmip_recall" / "extraction" / "papers" / "pdfs")
@@ -51,6 +57,11 @@ def main() -> None:
         print(f"PDF가 없는 논문 {len(todo)}편\n")
         for p in todo:
             print(f"{p['id']}  {p['pdf_url']}\n    {p['title'][:90]}")
+        return
+    if a.cmd == "open":
+        print(f"PDF가 없는 논문 {len(todo)}편의 주소를 브라우저로 엽니다.")
+        for p in todo:
+            print(f"  {p['id']}", flush=True); webbrowser.open_new_tab(p["pdf_url"]); time.sleep(a.delay)
         return
     files = [f for f in a.src.glob("*.pdf") if is_pdf(f)]
     print(f"{a.src} 의 PDF {len(files)}개에서 매칭 중 (필요 {len(todo)}편)")
