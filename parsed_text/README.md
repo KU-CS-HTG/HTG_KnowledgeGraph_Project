@@ -47,6 +47,12 @@ python parsed_text\pdf_to_text.py
 python parsed_text\run_analysis.py
 ```
 
+5. 본문에 있는데 놓친 정답을 원인별로 정리한다(`output\analysis\missed_present_in_text.csv` 생성, 엑셀에서 열림).
+
+```powershell
+python parsed_text\list_missed.py
+```
+
 ## 비교 기준 (논문 Table 8)
 
 | 종류 | 정답 | 추출 | 재현율 |
