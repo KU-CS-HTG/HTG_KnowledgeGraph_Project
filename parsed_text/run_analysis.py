@@ -3,7 +3,7 @@
 사전 조건: download_pdfs.py 와 pdf_to_text.py 를 먼저 실행해 papers/parsed/<date>/*.md 가 있어야 한다.
 stats/output/<stage>/<date>/ (stats/data 의 tarball을 푼 것)도 필요하다.
 """
-import json, subprocess, sys
+import argparse, json, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -23,10 +23,22 @@ def main() -> None:
     n_md = len(list(parsed.glob("*.md")))
     if n_md == 0:
         sys.exit(f"파싱된 본문이 없습니다: {parsed}")
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--only-available", action="store_true",
+                    help="본문 파일이 있는 논문만 평가한다(받지 못한 논문을 분모에서 제외)")
+    args = ap.parse_args()
     eval_dir = sorted((EXP / "output" / "cmip_moreinfo_entity_evaluation").glob("*/"))[-1]
-    out = ROOT / "parsed_text" / "output" / "analysis"
+    out = ROOT / "parsed_text" / "output" / ("analysis_only_available" if args.only_available else "analysis")
+    comparison = eval_dir / "paper_entity_comparison.json"
+    if args.only_available:
+        full = json.loads(comparison.read_text(encoding="utf-8"))
+        kept = {k: v for k, v in full.items() if (parsed / f"{k}.md").exists()}
+        out.mkdir(parents=True, exist_ok=True)
+        comparison = out / "paper_entity_comparison_available.json"
+        comparison.write_text(json.dumps(kept, ensure_ascii=False), encoding="utf-8")
+        print(f"본문이 있는 논문 {len(kept)} / {len(full)}편만 평가합니다 (제외 {len(full) - len(kept)}편).")
     cmd = [sys.executable, "analyze_cmip_missing_entities_in_parsed_papers.py",
-           "--comparison", str(eval_dir / "paper_entity_comparison.json"),
+           "--comparison", str(comparison),
            "--parsed-dir", str(parsed), "--output-dir", str(out)]
     for s in STAGES:
         cmd += ["--pipeline-dir", str(ROOT / "stats" / "output" / s / DATE)]
@@ -38,6 +50,8 @@ def main() -> None:
     m = res["metrics"]
     tot = m["micro"]["ground_truth_present_in_parsed"] + m["micro"]["ground_truth_absent_from_parsed"]
     print(f"\n정답 {tot}개 중 본문에 나오는 비율: {100*m['micro']['ground_truth_present_in_parsed']/tot:.2f}%  (논문 50.78%)")
+    if args.only_available:
+        print("(받은 논문만의 값이라 논문의 139편 기준 수치와 정답 총수가 다릅니다.)")
     if miss: print(f"주의: 본문 파일이 없는 항목 {miss}개 (이 논문들의 정답은 '본문에 없음'으로 계산됨)")
     print(f"\n{'종류':12s}{'정답(본문에 있음)':>20s}{'맞힘':>8s}{'재현율%':>10s}   | 논문: 정답 / 추출 / 재현율%")
     for k in ["sources", "experiments", "frequencies", "activities", "micro"]:
