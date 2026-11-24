@@ -16,6 +16,9 @@ PAPER = {  # 논문 Table 8: (정답, 추출, 재현율%)
 }
 
 def main() -> None:
+    for _s in (sys.stdout, sys.stderr):  # Windows cp949 콘솔에서 특수문자로 죽지 않게
+        try: _s.reconfigure(errors="replace")
+        except Exception: pass
     parsed = ROOT / "cmip_recall" / "extraction" / "papers" / "parsed" / DATE
     n_md = len(list(parsed.glob("*.md")))
     if n_md == 0:

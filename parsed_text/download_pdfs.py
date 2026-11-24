@@ -5,7 +5,7 @@
 - 실패한 논문은 failures.json 에 이유(상태 코드, 콘텐츠 유형, 응답 내용 일부)와 함께 남긴다.
 - --openalex-fallback: 실패하면 OpenAlex에 등록된 다른 공개 PDF 주소(저장소 등)로 다시 시도한다.
 """
-import argparse, json, re, time
+import argparse, json, re, sys, time
 from pathlib import Path
 import requests
 
@@ -77,6 +77,9 @@ def pdf_urls_from_work(work: dict, tried: str) -> list[str]:
     return urls
 
 def main() -> None:
+    for _s in (sys.stdout, sys.stderr):  # Windows cp949 콘솔에서 특수문자로 죽지 않게
+        try: _s.reconfigure(errors="replace")
+        except Exception: pass
     here = Path(__file__).resolve().parent
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--manifest", type=Path, default=here / "data" / "cmip_papers_pdf_urls.json")
