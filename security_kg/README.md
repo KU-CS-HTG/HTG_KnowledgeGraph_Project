@@ -192,25 +192,29 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 
 ### CWE 대응표
 
-| RootCause | 대응 | 확인한 CWE | 확인 못 한 CWE |
-| --- | --- | --- | --- |
-| `UNPATCHED_KNOWN_VULNERABILITY` | partial | CWE-1395, CWE-1104 | - |
-| `CREDENTIAL_OR_KEY_MISMANAGEMENT` | partial | CWE-798 | CWE-320, CWE-324 |
-| `INSUFFICIENT_ENCRYPTION` | close | CWE-311, CWE-327 | CWE-326 |
-| `WEAK_ACCESS_CONTROL` | close | CWE-284, CWE-862 | CWE-306 |
-| `INSUFFICIENT_MONITORING_DETECTION` | close | CWE-778 | - |
-| `INADEQUATE_INCIDENT_RESPONSE` | none | - | - |
-| `THIRD_PARTY_OR_SUPPLY_CHAIN_RISK` | partial | CWE-1395 | CWE-1357 |
-| `MISCONFIGURATION` | partial | - | CWE-16, CWE-1188 |
+| RootCause | 대응 | CWE (MITRE 매핑 구분) |
+| --- | --- | --- |
+| `UNPATCHED_KNOWN_VULNERABILITY` | partial | CWE-1395 (Allowed-with-Review), CWE-1104 (Allowed) |
+| `CREDENTIAL_OR_KEY_MISMANAGEMENT` | partial | CWE-798 (Allowed-with-Review), CWE-324 (Allowed) |
+| `INSUFFICIENT_ENCRYPTION` | close | CWE-311 (Discouraged), CWE-327 (Allowed-with-Review), CWE-326 (Allowed-with-Review) |
+| `WEAK_ACCESS_CONTROL` | close | CWE-284 (Discouraged), CWE-862 (Allowed-with-Review), CWE-863 (Allowed-with-Review), CWE-306 (Allowed) |
+| `INSUFFICIENT_MONITORING_DETECTION` | close | CWE-778 (Allowed) |
+| `INADEQUATE_INCIDENT_RESPONSE` | none | - |
+| `THIRD_PARTY_OR_SUPPLY_CHAIN_RISK` | partial | CWE-1395 (Allowed-with-Review), CWE-1357 (Allowed-with-Review) |
+| `MISCONFIGURATION` | partial | CWE-1188 (Allowed) |
 
-- **확인한 CWE**는 이 세션에서 검색으로 정의를 확인한 번호이고([1395](https://cwe.mitre.org/data/definitions/1395.html), [1104](https://cwe.mitre.org/data/definitions/1104.html), [798](https://cwe.mitre.org/data/definitions/798.html), [311](https://cwe.mitre.org/data/definitions/311), [284](https://cwe.mitre.org/data/definitions/284), [862](https://cwe.mitre.org/data/definitions/862.html) 등), **확인 못 한 CWE**는 이름을 기억에 의존한 번호라 사용하기 전에 MITRE 페이지로 대조해야 한다. 공식 페이지를 직접 열어 본 것이 아니라 검색 결과 요약에 의존한 부분이 있다.
-- **대응**: `close`는 분명히 대응, `partial`은 일부만 맞음, `none`은 CWE에 대응이 없음이다.
-- MITRE는 [CWE-311](https://cwe.mitre.org/data/definitions/311)과 [CWE-284](https://cwe.mitre.org/data/definitions/284)를 실제 취약점 매핑에 쓰지 말라고(DISCOURAGED) 표시한다. 매핑에는 더 구체적인 자식 항목을 쓰는 편이 낫다.
+- **모든 CWE는 CWE 5.0 파일(2026-10-28, `cwec_v5.0.xml`)에서 이름, 상태, MITRE의 매핑 사용 구분을 확인했다.** 괄호 안이 그 구분이다: `Allowed`, `Allowed-with-Review`(검토 후 사용), `Discouraged`(포괄 항목이라 더 구체적인 하위 항목을 쓰라는 뜻). 이 파일의 버전 표기가 CWE 사이트 메인 페이지의 다른 표기와 어긋나서 최신 여부는 확인하지 못했다.
+- **대응 정도**: `close`는 분명히 대응, `partial`은 일부만 맞음, `none`은 CWE에 대응이 없음이다.
+- **의도적으로 뺀 CWE** (`ROOT_CAUSE_CWE_EXCLUDED`):
+  - **CWE-320 (Key Management Errors)**: 그룹이고 폐기(Obsolete)이며 파일의 매핑 주석이 `Prohibited`이다. 멤버 약점 322, 323, 324, 798을 쓴다.
+  - **CWE-16 (Configuration)**: 그룹이고 폐기이며 `Prohibited`이고 멤버 약점이 없다. 파일의 주석은 설정 오류를 "그 설정이 만든 행동의 약점"(접근 통제 계열 등)으로 매핑하라고 한다.
+- **`Discouraged`인 311과 284**는 목록에 두되, 매핑할 때는 파일이 제안하는 하위 항목을 쓴다(311 → 312 저장, 319 전송 / 284 → 862, 863, 732, 306 등).
+- 이 대응표는 **전문가 검토를 대신하지 않는다.** 번호가 존재하고 사용 가능하다는 것까지만 확인했고, 각 RootCause가 그 CWE로 충분히 설명되는지는 판단하지 않았다.
 
 ### 대응표에서 보이는 것
 
-1. **RootCause는 두 수준을 섞고 있다.** `ENCRYPTION`, `ACCESS_CONTROL`, `MONITORING`은 제품의 기술 약점이라 CWE와 잘 맞는다. 반면 `INADEQUATE_INCIDENT_RESPONSE`는 대응이 아예 없고 `UNPATCHED`, `CREDENTIAL`, `THIRD_PARTY`는 일부만 맞는다. CWE는 **제품의 약점**을 다루고 이 항목들은 **조직의 운영·절차 실패**이기 때문이다.
-2. 조직 수준 항목을 다른 표준에 대응시킬지는 열려 있다(예: 보안 관리 프레임워크). 이 세션에서 확인하지 않았다.
+1. **RootCause는 두 수준을 섞고 있다.** `ENCRYPTION`, `ACCESS_CONTROL`, `MONITORING`은 제품의 기술 약점이라 CWE와 잘 맞는다. 반면 `INADEQUATE_INCIDENT_RESPONSE`는 대응이 아예 없고 `UNPATCHED`, `CREDENTIAL`, `THIRD_PARTY`, `MISCONFIGURATION`은 일부만 맞는다. CWE는 **제품의 약점**을 다루고 이 항목들은 **조직의 운영·절차 실패**이기 때문이다.
+2. 조직 수준 항목을 다른 표준에 대응시킬지는 열려 있다(예: 보안 관리 프레임워크). 확인하지 않았다.
 3. 질문 틀의 칸 (b)는 "약점·관리 실패"이므로 두 수준을 한 칸에 두는 것은 의도와 맞다. 다만 사건 간 비교에서 두 수준을 섞어 세지 않도록 표시를 달지는 정해야 한다(전문가에게 묻는 질문).
 
 ### 경계 규칙
@@ -229,6 +233,31 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 
 - 경계 규칙은 내가 만든 것이고 실제 문서로 AI가 일관되게 따르는지는 확인하지 못했다. 사례는 프롬프트 예시와 사람 검토용이다.
 - 시드에서 빠진 원인(피싱 교육, 백업, 물리 보안 등)은 이 작업으로 드러나지 않는다. 파일럿에서 `other`로 빠지는 값을 모아야 한다.
+
+## `Weakness` 닫힌 목록: CWE 목록 변환 (`cwe_catalog.py`)
+
+`Weakness`는 CWE 번호로만 연결하는 닫힌 종류다. 목록의 재료는 MITRE의 CWE 전체 XML이다. 작은 일부(예: Top 25)로 한정하면 문서가 인용한 CWE가 25개 밖일 때 연결에 실패해 사실이 버려지므로 **전체 목록**을 쓴다.
+
+- `python cwe_catalog.py <cwec.xml>`이 XML에서 가벼운 목록 `data/cwe_catalog.json`(약 228KB)을 만든다. 원본 XML(18MB)은 올리지 않는다. 설명문은 뺐고 이름, 추상화 수준, 상태, 매핑 사용 구분, 제안, 부모만 둔다.
+- **이번 5.0 파일의 구성**: 약점 984개(폐기 28개 포함), 그룹 431개. 매핑 사용 구분은 Allowed 755, Allowed-with-Review 100, Discouraged 44, Prohibited 85이다.
+- **문서가 CWE 번호를 인용했을 때의 판정** (`resolve_cwe`):
+
+| 판정 | 조건 | 처리 |
+| --- | --- | --- |
+| `link` | 약점이고 Allowed 또는 Allowed-with-Review | 연결한다(후자는 검토 필요 표시) |
+| `link_specific` | Discouraged(포괄 항목) | 연결하되 MITRE가 제안한 더 구체적인 번호를 알린다 |
+| `review` | 그룹, 폐기, Prohibited, 목록에 없는 번호 | **연결하지 않고 사람 확인으로 보낸다. 버리지 않는다** |
+
+- 5.0 파일 기준으로 연결 가능한 약점은 899개이다(폐기 28개와 Prohibited 57개가 `review`).
+- **상태(Draft, Incomplete 등)로는 거르지 않는다.** 약점 대부분이 Incomplete(498)나 Draft(432)이고 Stable은 26개뿐이라, 상태로 거르면 쓸 수 있는 목록이 사라진다.
+- **폐기 항목**은 설명문에서 찾은 CWE 번호를 대체 힌트로만 알린다(예: CWE-1187 → CWE-908). 확정이 아니다.
+
+### 알려진 한계
+
+- XML 태그(`Mapping_Notes/Usage`, `Suggestion`, `Has_Member`)는 올려 받은 5.0 파일을 읽어 맞춘 것이다. 다른 버전에서는 달라질 수 있다.
+- 자체 시험은 작은 가짜 XML로 하고, 실제 5.0 파일에서는 대응표 14개의 구분이 `consts.py`의 값과 모두 일치하는지, 제외한 두 번호가 `review`로 가는지를 확인했다.
+- CWE 사이트에는 접속할 수 없어(이 환경의 프록시가 차단) 파일은 사용자가 올린 것을 썼고, 사이트의 최신 파일과 같은지는 확인하지 못했다.
+- 이 변환은 약점 목록만 만든다. 연결 단계(문서의 CWE 번호를 이 목록에 맞추는 코드)는 아직 이 저장소에 없다.
 
 ## 원본 코드에서 고쳐야 할 곳
 
@@ -267,7 +296,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 3. ~~**같은 사건을 여러 문서가 쓸 때 `Incident`를 합치는 규칙**이 없다.~~ **반영됨(D1~D4)**: 조직 단위 `Incident` + `Campaign`, 같은 조직 필수 + 공개 시점 + 공유 신호, 애매하면 사람 확인(위 "사건 해소"). 숫자는 파일럿에서 보정.
 4. ~~**기법 수준.**~~ **반영됨(D5~D8)**: 서술형 행동을 먼저 기록하고 ATT&CK 매핑은 별도 단계(AI 제안 + 사람 확인), 비교는 전술 수준, 유도된 기법은 구분해서 표시(위 "기법 층").
 5. ~~**날짜와 수치.**~~ **반영됨**: 날짜는 문서 단위 메타데이터(`headline_date`, `attack_span`, `document_date`)로 트리플렛 밖에 둔다. 수치는 별도 기록으로 정규화하고 출처별로 나란히 보여 준다(D9~D12, 위 "수치 층").
-6. `RootCause` 시드 8개는 5개 사건의 검색 요약에서 일반화한 것이라 **전문가 검토가 필요하다.** 준비 작업으로 CWE 대응표와 경계 규칙·사례를 만들었다(위 "RootCause 시드 검토 자료"). 대응이 없거나 일부인 항목(조직 절차 수준)을 어떻게 다룰지는 전문가에게 묻는 질문으로 남아 있다.
+6. `RootCause` 시드 8개는 5개 사건의 검색 요약에서 일반화한 것이라 **전문가 검토가 필요하다.** 준비 작업으로 CWE 대응표와 경계 규칙·사례를 만들었다(위 "RootCause 시드 검토 자료"). CWE 5.0 파일로 대응표를 확인하고 고쳤다(320, 16 제외, 863 추가 등). 대응이 없거나 일부인 항목(조직 절차 수준)을 어떻게 다룰지는 전문가에게 묻는 질문으로 남아 있다.
 
 ## 자체 검사
 
@@ -277,6 +306,7 @@ python aggregate.py           # 집계 규칙 자체 시험(13개)
 python attack_mapping.py      # 기법 층 규칙 자체 시험(10개)
 python incident_resolution.py # 사건 해소 규칙 자체 시험(11개)
 python measurements.py        # 수치 층 규칙 자체 시험(9개)
+python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 ```
 
 `consts.py` 검사는 관계의 개체 종류 정의 여부, FILTERED ⊂ ALL, 닫힌 목록 종류의 연결 방법, `ANSWER_SLOTS`가 문서에서 받는 관계만 쓰는지 등을 확인한다.
