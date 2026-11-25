@@ -1,5 +1,7 @@
 # ClimateKG Neo4j 로드 재현
 
+> 이 폴더는 `climate_kg/` 아래에 있다. 이 문서의 명령은 `climate_kg/` 폴더를 작업 폴더로 해서 실행한다.
+
 ```bash
 docker run -d --name climatekg-neo4j -p 8687:7687 -p 8474:7474 \
   -e NEO4J_AUTH=neo4j/climatekg123 neo4j:5.26-community
