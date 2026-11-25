@@ -238,7 +238,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 
 `Weakness`는 CWE 번호로만 연결하는 닫힌 종류다. 목록의 재료는 MITRE의 CWE 전체 XML이다. 작은 일부(예: Top 25)로 한정하면 문서가 인용한 CWE가 25개 밖일 때 연결에 실패해 사실이 버려지므로 **전체 목록**을 쓴다.
 
-- `python cwe_catalog.py <cwec.xml>`이 XML에서 가벼운 목록 `data/cwe_catalog.json`(약 228KB)을 만든다. 원본 XML(18MB)은 올리지 않는다. 설명문은 뺐고 이름, 추상화 수준, 상태, 매핑 사용 구분, 제안, 부모만 둔다.
+- `python cwe_catalog.py <cwec.xml>`이 XML에서 가벼운 목록 `data/cwe_catalog.json`(약 360KB)을 만든다. 원본 XML(18MB)은 올리지 않는다. 설명문은 뺐고 이름, 추상화 수준, 상태, 매핑 사용 구분, 제안, 부모만 둔다.
 - **이번 5.0 파일의 구성**: 약점 984개(폐기 28개 포함), 그룹 431개. 매핑 사용 구분은 Allowed 755, Allowed-with-Review 100, Discouraged 44, Prohibited 85이다.
 - **문서가 CWE 번호를 인용했을 때의 판정** (`resolve_cwe`):
 
@@ -266,12 +266,22 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 | 종류 | 재료 | 결과 | 상태 |
 | --- | --- | --- | --- |
 | `Weakness` | CWE 5.0 XML | `data/cwe_catalog.json` | 완료(앞 절) |
-| `Technique`, `Tactic` | ATT&CK Enterprise 20.1 | `data/attack_catalog.json` (334KB) | 기법 706(하위 479 포함), 전술 15, **폐기 기법 161개의 대체 ID 포함** |
+| `Technique`, `Tactic` | ATT&CK Enterprise 20.1 | `data/attack_catalog.json` (600KB) | 기법 706(하위 479 포함), 전술 15, **폐기 기법 161개의 대체 ID 포함** |
 | `MalwareFamily`, `ThreatActor` | ATT&CK 소프트웨어 842, 그룹 178 | 같은 파일 | 별칭, 쓰는 기법, 그룹이 쓰는 소프트웨어 포함 |
-| `Vulnerability`(주목받는 부분집합) | CISA KEV(GitHub 사본, 2026.11.24) | `data/kev.json` (401KB) | 1,795건. 악용 확인된 CVE와 CWE, 랜섬웨어 사용 여부 |
-| `ThreatActor` 별칭 보충 | MISP threat-actor 갤럭시 | `data/misp_threat_actors.json` (150KB) | 1,132개. **ATT&CK 그룹과 합치지 않고 따로 둠** |
+| `Vulnerability`(주목받는 부분집합) | CISA KEV(GitHub 사본, 2026.11.24) | `data/kev.json` (545KB) | 1,795건. 악용 확인된 CVE와 CWE, 랜섬웨어 사용 여부 |
+| `ThreatActor` 별칭 보충 | MISP threat-actor 갤럭시 | `data/misp_threat_actors.json` (220KB) | 1,132개. **ATT&CK 그룹과 합치지 않고 따로 둠** |
 | `Vulnerability`(전체) | CVE 레코드 | `backbone.lookup_cve` | **전체 목록은 못 받음.** 번호로 한 건씩 조회해 존재 확인, CWE, 제품 이름을 가져옴 |
 | `Product` | NVD CPE 사전 | **없음** | NVD API가 이 환경에서 막혀 받지 못함. CVE 레코드의 vendor/product 이름만 가능 |
+
+### 확인용 CSV
+
+`data/*.json`은 들여쓰기로 저장한다(저장소에서 바로 읽히고, 갱신할 때 `git diff`가 바뀐 줄만 보여 준다). 훑어보고 정렬·검색하려면 CSV가 편하다.
+
+```bash
+python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장소에는 올리지 않음)
+```
+
+`attack_techniques`, `attack_tactics`, `attack_software`, `attack_groups`, `attack_replaced_techniques`, `kev`, `misp_threat_actors`, `cwe_weaknesses`, `cwe_groupings`. 엑셀에서 한글이 깨지지 않도록 BOM이 붙은 UTF-8이다. 중첩된 목록(별칭, 기법)은 `; `로 이어 한 칸에 쓰므로 정보가 일부 줄어든다. JSON에서 언제든 다시 만들 수 있다.
 
 ### 실제 파일로 확인한 것
 
@@ -339,7 +349,7 @@ python attack_mapping.py      # 기법 층 규칙 자체 시험(10개)
 python incident_resolution.py # 사건 해소 규칙 자체 시험(11개)
 python measurements.py        # 수치 층 규칙 자체 시험(9개)
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
-python backbone.py            # 뼈대 변환 규칙 자체 시험(12개, 네트워크 없이)
+python backbone.py            # 뼈대 변환 규칙 자체 시험(13개, 네트워크 없이)
 ```
 
 `consts.py` 검사는 관계의 개체 종류 정의 여부, FILTERED ⊂ ALL, 닫힌 목록 종류의 연결 방법, `ANSWER_SLOTS`가 문서에서 받는 관계만 쓰는지 등을 확인한다.

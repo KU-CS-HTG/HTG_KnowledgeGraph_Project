@@ -1,7 +1,7 @@
 """`Weakness`(CWE) 닫힌 목록 만들기: CWE XML에서 가벼운 목록을 뽑고, 문서가 인용한 번호를 어떻게 다룰지 판정한다.
 
 입력: MITRE의 CWE 전체 XML(예: cwec_v5.0.xml, 18MB). 이 파일은 저장소에 올리지 않는다(용량). 변환 결과만 올린다
-      → data/cwe_catalog.json (약점 984개 + 그룹 431개의 이름, 상태, 매핑 사용 구분, 제안, 부모. 설명문은 뺐다)
+      → data/cwe_catalog.json (들여쓰기 저장, 약점 984개 + 그룹 431개의 이름, 상태, 매핑 사용 구분, 제안, 부모. 설명문은 뺐다)
 
 판정 규칙(resolve_cwe): 문서가 'CWE-n'을 인용했을 때
   link          : 약점이고 매핑 사용 구분이 Allowed 또는 Allowed-with-Review → 연결한다 (후자는 note에 표시)
@@ -147,6 +147,6 @@ if __name__ == "__main__":
         out = Path(args[args.index("--out") + 1]) if "--out" in args else DEFAULT_OUT
         cat = build_catalog(args[0])
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(json.dumps(cat, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        out.write_text(json.dumps(cat, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(json.dumps(summarize(cat), ensure_ascii=False, indent=1))
         print(f"저장: {out} ({out.stat().st_size / 1024:.0f}KB)")
