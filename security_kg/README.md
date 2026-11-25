@@ -152,7 +152,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 - **매핑 정확도는 보장되지 않는다.** 관련 연구의 정확도는 데이터셋마다 달라 비교할 수 없고, 우리 문서에서의 정확도는 사람이 만든 정답으로 재야 한다. 분석가 둘이 결과를 비교하는 것이 MITRE의 권고다.
 - **ATT&CK 버전이 바뀐다.** 2026년에만 v19(4월), v20(10월)이 나왔으니 이름과 ID가 달라질 수 있다. 내려받은 버전을 `BACKBONE_SNAPSHOTS["attack"]`에 기록한다.
 - **서술형 행동은 표현이 제각각이다.** 사건 안에서만 의미가 있고, 사건 간 비교는 매핑된 전술·기법으로 한다. 같은 행동의 다른 표현을 합치는 규칙은 아직 없다.
-- **STIX 필드 이름은 일반 지식이다.** `load_catalog_from_stix`는 가짜 번들로만 시험했고 실제 ATT&CK 번들로 돌려 보지 않았다.
+- **STIX 필드 이름**은 실제 ATT&CK Enterprise 20.1 번들로 확인했다(뒤의 "뼈대 데이터" 절). 다른 번들(ICS, Mobile)이나 다른 버전은 확인하지 않았다.
 - **시험 목록은 가짜다.** 시험에 쓴 기법 ID, 이름, 전술은 실제 ATT&CK 값이 아니다(확인하지 않은 값을 단정하지 않으려는 것).
 - 매핑 단계의 AI 호출은 이 저장소에 없다. 후보를 받아 검증하고 집계하는 부분만 있다.
 
@@ -259,6 +259,38 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 - CWE 사이트에는 접속할 수 없어(이 환경의 프록시가 차단) 파일은 사용자가 올린 것을 썼고, 사이트의 최신 파일과 같은지는 확인하지 못했다.
 - 이 변환은 약점 목록만 만든다. 연결 단계(문서의 CWE 번호를 이 목록에 맞추는 코드)는 아직 이 저장소에 없다.
 
+## 뼈대 데이터: 내려받기와 변환 (`backbone.py`)
+
+닫힌 종류(`Vulnerability`, `Technique`, `Tactic`, `MalwareFamily`, `ThreatActor`)의 목록 재료다. 모두 `raw.githubusercontent.com`의 원문 파일이고(이 환경에서 접근 가능한 곳), 내려받은 날짜는 2026-11-25이다. 원본(ATT&CK 55MB 등)은 올리지 않고(`backbone/raw/`는 무시) 변환 결과만 `data/`에 둔다. 사용: `python backbone.py build all`.
+
+| 종류 | 재료 | 결과 | 상태 |
+| --- | --- | --- | --- |
+| `Weakness` | CWE 5.0 XML | `data/cwe_catalog.json` | 완료(앞 절) |
+| `Technique`, `Tactic` | ATT&CK Enterprise 20.1 | `data/attack_catalog.json` (334KB) | 기법 706(하위 479 포함), 전술 15, **폐기 기법 161개의 대체 ID 포함** |
+| `MalwareFamily`, `ThreatActor` | ATT&CK 소프트웨어 842, 그룹 178 | 같은 파일 | 별칭, 쓰는 기법, 그룹이 쓰는 소프트웨어 포함 |
+| `Vulnerability`(주목받는 부분집합) | CISA KEV(GitHub 사본, 2026.11.24) | `data/kev.json` (401KB) | 1,795건. 악용 확인된 CVE와 CWE, 랜섬웨어 사용 여부 |
+| `ThreatActor` 별칭 보충 | MISP threat-actor 갤럭시 | `data/misp_threat_actors.json` (150KB) | 1,132개. **ATT&CK 그룹과 합치지 않고 따로 둠** |
+| `Vulnerability`(전체) | CVE 레코드 | `backbone.lookup_cve` | **전체 목록은 못 받음.** 번호로 한 건씩 조회해 존재 확인, CWE, 제품 이름을 가져옴 |
+| `Product` | NVD CPE 사전 | **없음** | NVD API가 이 환경에서 막혀 받지 못함. CVE 레코드의 vendor/product 이름만 가능 |
+
+### 실제 파일로 확인한 것
+
+- **`attack_mapping.load_catalog_from_stix`와 `load_software_map`이 실제 ATT&CK 번들에서 동작한다.** 이전에는 가짜 번들로만 시험했었다. 기법 706개(전체 867개에서 폐기·취소 161개를 뺀 값)가 나왔고, BPFDoor는 ATT&CK 소프트웨어 S1161로 기법 13개(T1205.002 포함)에 연결된다.
+- **20.1 버전은 전술 이름이 바뀌었다.** 전술이 15개이고 `stealth`(TA0005)와 `defense-impairment`(TA0112)가 있다. 이전 버전의 `defense-evasion`을 가정한 코드나 사례는 맞지 않는다. 시험용 가짜 목록에는 `defense-evasion`이 남아 있으나 가짜 값이다. 버전이 바뀔 때마다 `BACKBONE_SNAPSHOTS["attack"]`를 확인해야 한다.
+- **폐기된 기법 ID는 대체 ID로 안내한다**(`resolve_technique`: `link`, `replaced`, `review`). 폐기 161개 중 대체가 있는 것은 149개이다.
+- **KEV는 실제 데이터로 CWE 판정 규칙을 시험해 준다.** KEV가 인용한 CWE 1,754건 중 **63건(3.6%)이 그룹**(예: CWE-264, CWE-310, CWE-255)이라 `review`로 가고, 397건은 `Discouraged`(포괄 항목)라 하위 번호 안내와 함께 `link_specific`으로 간다. CWE가 비어 있는 KEV 항목도 175건이다. 앞서 만든 "그룹은 연결하지 않고 사람 확인" 규칙이 실제로 필요하다는 근거이다.
+- **CVE 레코드 조회**: CVE-2021-44228은 `PUBLISHED`, CWE 20, 400, 502, 제품 Apache Log4j2로 나왔고, 6자리 번호(CVE-2026-132224)도 폴더 규칙(`132xxx`)대로 조회된다. 없는 번호는 `exists: false`로 돌려준다.
+
+### 알려진 한계
+
+- **CVE 전체 목록이 없다.** 문서가 인용한 번호를 한 건씩 조회하는 방식이라 건당 네트워크 호출이 필요하고, 이 환경 밖에서 돌릴 때는 `cvelistV5` 전체를 받는 방식을 따로 정해야 한다.
+- **CVE→CWE는 CVE 레코드의 `problemTypes`(CNA와 ADP)로 대신했다.** NVD의 CPE 매핑과 CVSS는 받지 못했다. NVD가 매긴 CWE와 CNA가 매긴 CWE는 다를 수 있어 둘을 구분해 보관한다.
+- **KEV는 GitHub 사본**이다. 원본(`www.cisa.gov`)과 같은지는 확인하지 못했다.
+- **MISP 갤럭시는 `main`에서 받았고 커밋 해시를 기록하지 못했다.** 재현이 필요하면 특정 커밋으로 고정해야 한다. MISP 행위자와 ATT&CK 그룹을 같은 행위자로 합치는 규칙은 정하지 않았다(합치기 오류 위험은 사건 해소와 같다).
+- **ATT&CK은 Enterprise만 받았다.** ICS와 Mobile은 받지 않았다.
+- **Mapping 결과의 정확성은 평가하지 않았다.** 이 절은 목록이 만들어졌고 형식대로 읽힌다는 것까지만 확인한다.
+- 그래프에 넣는 코드(원본 `neo4j_v2.py`에 해당)와 임베딩 인덱스는 아직 없다.
+
 ## 원본 코드에서 고쳐야 할 곳
 
 `consts.py`만 바꿔서는 동작하지 않는다.
@@ -307,6 +339,7 @@ python attack_mapping.py      # 기법 층 규칙 자체 시험(10개)
 python incident_resolution.py # 사건 해소 규칙 자체 시험(11개)
 python measurements.py        # 수치 층 규칙 자체 시험(9개)
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
+python backbone.py            # 뼈대 변환 규칙 자체 시험(12개, 네트워크 없이)
 ```
 
 `consts.py` 검사는 관계의 개체 종류 정의 여부, FILTERED ⊂ ALL, 닫힌 목록 종류의 연결 방법, `ANSWER_SLOTS`가 문서에서 받는 관계만 쓰는지 등을 확인한다.
