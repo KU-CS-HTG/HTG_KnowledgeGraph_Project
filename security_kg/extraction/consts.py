@@ -1,0 +1,249 @@
+"""
+보안 사고 지식 그래프용 설정 초안 (ClimateKG의 extraction/consts.py를 대체하는 틀).
+
+질문 틀:
+    사건 X에서 공격자는 (a) 어떤 취약점 (b) 어떤 약점·관리 실패 (c) 어떤 기법을 이용했는가?
+    각 답에 출처와 확정/주장/추정 구분을 붙여라.
+
+원본과의 관계
+- 아래 5개 이름(GEMINI_MIN_CACHE_TOKEN_LIMIT, EMBEDDING_MATCH_ENTITIES, ENTITY_TYPES_TO_ADD_INSTANCES,
+  FILTERED_RELATIONSHIP_SOURCE_TO_TARGET, ALL_RELATIONSHIP_SOURCE_TO_TARGET)은 원본과 같은 이름이라
+  원본 코드가 그대로 가져다 쓸 수 있다.
+- "[신규]" 표시가 붙은 상수는 원본 코드가 읽지 않는다. 쓰려면 코드 수정이 필요하다(README 참고).
+
+주의: 초안이다. 분야 전문가의 검토를 받지 않았고, 이 파일로 파이프라인을 실행해 보지 않았다.
+"""
+
+GEMINI_MIN_CACHE_TOKEN_LIMIT = 4096  # 원본과 같은 기술 설정값
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# 1. 개체 종류와 정의 [신규: 정의 사전]
+#    원본은 정의를 프롬프트 안에 두었다. 여기서는 한곳에 모아 프롬프트가 읽게 하는 것을 권장한다.
+# ──────────────────────────────────────────────────────────────────────────
+ENTITY_TYPE_DEFINITIONS = {
+    # ── 문서가 채우는 종류 ──
+    "Incident": (
+        "A specific security incident (breach, intrusion, data leak, tampering) that happened to a "
+        "specific organization at a specific time, identified by a short descriptive name "
+        "(e.g. the victim plus the year). Not a general attack category."
+    ),
+    "Organization": (
+        "A company, institution or agency that is a victim of, or investigates, an incident. "
+        "Not a product or a person."
+    ),
+    "RootCause": (
+        "An organizational or operational failure that made the incident possible, such as a missing patch, "
+        "unrevoked credential, missing encryption or late incident response. Not a software defect with a "
+        "CVE identifier (that is a Vulnerability) and not an attacker action (that is a Technique)."
+    ),
+    # ── 표준(뼈대)에서 오는 종류 ──
+    "Vulnerability": (
+        "A publicly catalogued software or hardware flaw identified by a CVE identifier "
+        "(CVE-YYYY-NNNN), or a named flaw that is known by such an identifier. "
+        "A misconfiguration or mishandled key without a CVE is NOT a Vulnerability."
+    ),
+    "Weakness": (
+        "A class of code-level or design-level defect from the CWE catalogue (e.g. improper authentication). "
+        "An organizational failure is NOT a Weakness; use RootCause."
+    ),
+    "Technique": (
+        "An attacker behaviour from MITRE ATT&CK (e.g. supply chain compromise, web shell, valid account abuse). "
+        "Not a malware name, not a tool, not a vulnerability."
+    ),
+    "Tactic": (
+        "The attacker's goal at one phase of an attack in MITRE ATT&CK (e.g. initial access, persistence, "
+        "exfiltration). Only Techniques belong to Tactics."
+    ),
+    "MalwareFamily": (
+        "A named malware family or attacker tool (e.g. BPFDoor). Generic words such as 'malware' or "
+        "'backdoor' alone are NOT a MalwareFamily."
+    ),
+    "ThreatActor": (
+        "A named attacker group or named individual. Unnamed 'hackers' or 'attackers' are NOT a ThreatActor; "
+        "do not create an entity for them."
+    ),
+    "Product": (
+        "A named software product or operating system affected by a Vulnerability, as in a CPE name "
+        "(e.g. a Linux kernel). Not a vendor and not an organization."
+    ),
+}
+
+ENTITY_TYPES = sorted(ENTITY_TYPE_DEFINITIONS)
+
+# 표준에서 가져와 닫힌 목록(뼈대)으로 쓰는 종류와 그 출처
+BACKBONE_ENTITY_TYPES = {
+    "Vulnerability": "CVE list (+ NVD enrichment, CISA KEV flag)",
+    "Weakness": "CWE",
+    "Technique": "MITRE ATT&CK (STIX 2.1)",
+    "Tactic": "MITRE ATT&CK (STIX 2.1)",
+    "MalwareFamily": "MITRE ATT&CK software (+ MISP galaxy aliases)",
+    "ThreatActor": "MITRE ATT&CK groups (+ MISP galaxy aliases)",
+    "Product": "NVD CPE dictionary (partial; names vary)",
+    "RootCause": "hand-written seed list below (needs expert review)",
+}
+
+# [신규] 뼈대 내려받은 날짜·버전 기록용. 내려받을 때 채운다(재현을 위해 필수).
+BACKBONE_SNAPSHOTS = {
+    "cve": None,      # 예: cvelistV5 내려받은 날짜
+    "nvd": None,
+    "cwe": None,      # 검색상 2026-10-28 발표 CWE 5.0이 최신으로 보임. 내려받을 파일로 확인
+    "attack": None,   # 검색상 v20(2026-10-13)이 최신으로 보임. 내려받을 파일로 확인
+    "kev": None,
+    "misp_galaxy": None,
+}
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# 2. 연결(entity linking) 설정
+# ──────────────────────────────────────────────────────────────────────────
+
+# 이름(문자열 유사도 + 필요 시 AI 보조)으로 뼈대의 기존 노드와 맞출 종류 → 비교할 속성
+EMBEDDING_MATCH_ENTITIES = {
+    "Weakness": "name",
+    "Technique": "name",
+    "Tactic": "name",
+    "MalwareFamily": "name",   # 별칭이 많아 별칭 목록과 함께 인덱스를 만들 것
+    "ThreatActor": "name",     # 같은 이유
+    "Product": "name",         # 표기가 제각각이라 연결이 가장 어려운 종류
+    "RootCause": "name",
+}
+
+# [신규] 식별자 형식이 엄격해서 유사도가 아니라 '정확히 같은 ID'로만 연결할 종류 → 속성
+EXACT_ID_ENTITIES = {
+    "Vulnerability": "cve_id",
+    "Weakness": "cwe_id",       # 이름 유사도와 ID 일치를 모두 허용하려면 위 EMBEDDING_MATCH_ENTITIES도 유지
+    "Technique": "attack_id",
+}
+ID_PATTERNS = {                 # 형식은 일반적으로 알려진 것이며 이 세션에서 확인하지 않았다
+    "Vulnerability": r"^CVE-\d{4}-\d{4,}$",
+    "Weakness": r"^CWE-\d+$",
+    "Technique": r"^T\d{4}(\.\d{3})?$",
+}
+
+# 문서에서 새 노드를 추가할 수 있는 종류(뼈대 목록에 없으면 새로 만든다)
+ENTITY_TYPES_TO_ADD_INSTANCES = [
+    "Incident",
+    "Organization",
+    "RootCause",        # 시드에 없는 원인은 일단 추가하되 사람이 정리한다
+    "MalwareFamily",    # 새 악성코드 계열이 계속 생김
+    "ThreatActor",      # 새 행위자와 별칭이 계속 생김
+    "Product",
+]
+# Vulnerability, Weakness, Technique, Tactic은 닫힌 목록이다. 목록에 없으면 연결 실패로 버린다.
+# (CVE 번호는 있지만 아직 목록에 반영되지 않은 신규 CVE는 뼈대를 다시 내려받아 해결한다.)
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# 3. 허용 관계: (출발 종류, 도착 종류, 관계)
+# ──────────────────────────────────────────────────────────────────────────
+
+# 문서에서 받을 관계. 질문 틀의 (a), (b), (c)에 해당한다.
+FILTERED_RELATIONSHIP_SOURCE_TO_TARGET = [
+    ("Incident", "Organization", "AFFECTED_ORGANIZATION"),   # 사건의 대상
+    ("Incident", "Vulnerability", "EXPLOITED_VULNERABILITY"),  # (a) 취약점
+    ("Incident", "Weakness", "EXPLOITED_WEAKNESS"),          # (b) 코드·설계 수준 약점 (CWE)
+    ("Incident", "RootCause", "HAS_ROOT_CAUSE"),             # (b) 조직·운영의 관리 실패
+    ("Incident", "Technique", "USED_TECHNIQUE"),             # (c) 기법
+    ("Incident", "MalwareFamily", "USED_MALWARE"),           # (c) 악성코드·도구
+    ("Incident", "ThreatActor", "ATTRIBUTED_TO"),            # 배후 지목(주장인 경우가 많음)
+]
+
+# 표준 데이터가 이미 가진 관계. 문서에서 다시 받지 않고 뼈대로 만든다.
+BACKBONE_RELATIONSHIP_SOURCE_TO_TARGET = [
+    ("Vulnerability", "Weakness", "HAS_WEAKNESS"),           # CVE → CWE (NVD)
+    ("Vulnerability", "Product", "AFFECTS_PRODUCT"),         # CVE → 제품 (CPE)
+    ("Technique", "Tactic", "PART_OF_TACTIC"),               # ATT&CK
+    ("MalwareFamily", "Technique", "USES_TECHNIQUE"),        # ATT&CK 소프트웨어
+    ("ThreatActor", "Technique", "USES_TECHNIQUE"),          # ATT&CK 그룹
+    ("ThreatActor", "MalwareFamily", "USES_MALWARE"),
+]
+
+ALL_RELATIONSHIP_SOURCE_TO_TARGET = (
+    FILTERED_RELATIONSHIP_SOURCE_TO_TARGET + BACKBONE_RELATIONSHIP_SOURCE_TO_TARGET
+)
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# 4. 약점·관리 실패(RootCause)의 시드 목록 [신규, 초안]
+#    5개 사건의 검색 요약에서 나온 원인들을 일반화한 것이며 전문가 검토가 필요하다.
+# ──────────────────────────────────────────────────────────────────────────
+ROOT_CAUSE_SEED = [
+    "UNPATCHED_KNOWN_VULNERABILITY",       # 알려진 취약점 패치 미적용
+    "CREDENTIAL_OR_KEY_MISMANAGEMENT",     # 자격 증명·키 관리 미흡 (예: 퇴사자 키 미폐기)
+    "INSUFFICIENT_ENCRYPTION",             # 암호화 미흡
+    "WEAK_ACCESS_CONTROL",                 # 접근 통제 미흡
+    "INSUFFICIENT_MONITORING_DETECTION",   # 모니터링·탐지 미흡 (장기 잠복)
+    "INADEQUATE_INCIDENT_RESPONSE",        # 과거 침해 대응 미흡
+    "THIRD_PARTY_OR_SUPPLY_CHAIN_RISK",    # 서드파티·공급망 관리 미흡
+    "MISCONFIGURATION",                    # 설정 오류
+]
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# 5. 출처와 확정/주장/추정 구분 [신규]
+#    질문 틀의 "각 답에 출처와 구분을 붙여라"를 위한 어휘.
+#    - assertion_status: 사실(트리플렛) 하나마다 붙인다  → 추출 스키마(models.py)에 칸을 추가해야 함
+#    - source_type: 문서 하나마다 붙인다                  → 문서 메타데이터에 칸을 추가해야 함
+# ──────────────────────────────────────────────────────────────────────────
+ASSERTION_STATUSES = {
+    "confirmed": "Stated by the affected organization, an investigating authority or regulator, "
+                 "or backed by published technical findings.",
+    "claimed": "Asserted by the attacker or an interested party, or reported as 'according to X' "
+               "without confirmation.",
+    "inferred": "An analyst's or reporter's inference that is not attributed to an official finding.",
+}
+
+SOURCE_TYPES = [
+    "official_government",      # 정부·규제기관 발표
+    "affected_organization",    # 피해 조직 공지
+    "security_vendor",          # 보안 업체 분석
+    "media",                    # 언론 보도
+    "attacker_claim",           # 공격자 게시·주장
+    "researcher",               # 독립 연구자 보고
+]
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# 자체 검사: python consts.py
+# ──────────────────────────────────────────────────────────────────────────
+def validate() -> list[str]:
+    problems = []
+    types = set(ENTITY_TYPES)
+    for s, t, r in ALL_RELATIONSHIP_SOURCE_TO_TARGET:
+        for x in (s, t):
+            if x not in types:
+                problems.append(f"관계 {(s, t, r)}: 정의되지 않은 개체 종류 {x}")
+    if len(set(ALL_RELATIONSHIP_SOURCE_TO_TARGET)) != len(ALL_RELATIONSHIP_SOURCE_TO_TARGET):
+        problems.append("ALL 관계 목록에 중복이 있음")
+    if not set(FILTERED_RELATIONSHIP_SOURCE_TO_TARGET) <= set(ALL_RELATIONSHIP_SOURCE_TO_TARGET):
+        problems.append("FILTERED가 ALL의 부분 집합이 아님")
+    for name, group in (("EMBEDDING_MATCH_ENTITIES", EMBEDDING_MATCH_ENTITIES),
+                        ("EXACT_ID_ENTITIES", EXACT_ID_ENTITIES),
+                        ("ID_PATTERNS", ID_PATTERNS)):
+        for k in group:
+            if k not in types:
+                problems.append(f"{name}: 정의되지 않은 개체 종류 {k}")
+    for k in ENTITY_TYPES_TO_ADD_INSTANCES:
+        if k not in types:
+            problems.append(f"ENTITY_TYPES_TO_ADD_INSTANCES: 정의되지 않은 개체 종류 {k}")
+    used = {x for s, t, _ in ALL_RELATIONSHIP_SOURCE_TO_TARGET for x in (s, t)}
+    for k in types - used:
+        problems.append(f"어떤 관계에도 쓰이지 않는 개체 종류: {k}")
+    # 닫힌 목록 종류는 '연결 방법'이 하나는 정해져 있어야 한다
+    closed = {"Vulnerability", "Weakness", "Technique", "Tactic"}
+    for k in closed:
+        if k not in EMBEDDING_MATCH_ENTITIES and k not in EXACT_ID_ENTITIES:
+            problems.append(f"닫힌 목록 종류 {k}에 연결 방법이 없음")
+        if k in ENTITY_TYPES_TO_ADD_INSTANCES:
+            problems.append(f"닫힌 목록 종류 {k}가 추가 가능 목록에 있음")
+    return problems
+
+
+if __name__ == "__main__":
+    issues = validate()
+    print(f"개체 종류 {len(ENTITY_TYPES)}개, 관계 {len(ALL_RELATIONSHIP_SOURCE_TO_TARGET)}개 "
+          f"(문서에서 받는 것 {len(FILTERED_RELATIONSHIP_SOURCE_TO_TARGET)}개, 뼈대 {len(BACKBONE_RELATIONSHIP_SOURCE_TO_TARGET)}개)")
+    print("검사 결과:", "문제 없음" if not issues else "")
+    for p in issues:
+        print(" -", p)
