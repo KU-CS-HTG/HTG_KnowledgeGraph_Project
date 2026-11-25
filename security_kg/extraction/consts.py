@@ -378,6 +378,17 @@ ACTOR_ORIGIN_BOUNDARY_EXAMPLES = [
 # 지금은 사건 단위로만 기록하고 값이 여러 개면 aggregate.py가 "사람이 확인 필요"로 표시한다.
 ACTOR_PAIRING = "incident_level"   # 행위자별 기록("actor_level")은 보류
 
+# 결정 기록(4): 행위자 이름 연결. ATT&CK 그룹은 정확히 일치하면 연결하고, MISP는 후보로만 제시하며 둘을 합치지 않는다(옵션 A).
+# 근거: MISP에서 48개 별칭이 둘 이상의 항목에 나오고, ATT&CK과 MISP가 같은 이름을 다른 행위자 범위로 쓴다
+# (예: ATT&CK은 Andariel을 Lazarus Group과 따로 두지만 MISP는 Lazarus Group의 별칭으로 둔다). actors.py가 이 규칙을 구현한다.
+ACTOR_NAME_LINKING = {
+    "attack_exact_unique": "link",     # ATT&CK 그룹 한 곳의 이름·별칭과 정확히 일치
+    "attack_ambiguous": "review",      # 둘 이상의 그룹에 일치
+    "misp_only": "review",             # MISP에만 일치: 후보로 제시하고 사람이 확인
+    "not_found": "none",               # 어디에도 없음: 새 행위자일 수 있어 연결하지 않음
+}
+MISP_MERGE_WITH_ATTACK = False         # 두 출처를 같은 행위자로 합치지 않는다
+
 
 # ──────────────────────────────────────────────────────────────────────────
 # 5. 출처와 확정/주장/추정 구분 [신규]
@@ -671,6 +682,10 @@ def validate() -> list[str]:
     for k in ROOT_CAUSE_SEED:
         if k not in covered_by_examples:
             problems.append(f"ROOT_CAUSE_BOUNDARY_EXAMPLES: 시드 {k}를 보여 주는 사례가 없음")
+    if MISP_MERGE_WITH_ATTACK:
+        problems.append("MISP와 ATT&CK 행위자는 합치지 않기로 함(결정 4)")
+    if set(ACTOR_NAME_LINKING.values()) - {"link", "review", "none"}:
+        problems.append("ACTOR_NAME_LINKING 값이 올바르지 않음")
     if set(ASSERTION_RANK) != set(ASSERTION_STATUSES):
         problems.append("ASSERTION_RANK와 ASSERTION_STATUSES의 키가 다름")
     return problems

@@ -269,7 +269,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 | `Technique`, `Tactic` | ATT&CK Enterprise 20.1 | `data/attack_catalog.json` (600KB) | 기법 706(하위 479 포함), 전술 15, **폐기 기법 161개의 대체 ID 포함** |
 | `MalwareFamily`, `ThreatActor` | ATT&CK 소프트웨어 842, 그룹 178 | 같은 파일 | 별칭, 쓰는 기법, 그룹이 쓰는 소프트웨어 포함 |
 | `Vulnerability`(주목받는 부분집합) | CISA KEV(GitHub 사본, 2026.11.24) | `data/kev.json` (1.1MB) | 1,795건. 악용 확인된 CVE와 CWE, 랜섬웨어 사용 여부 |
-| `ThreatActor` 별칭 보충 | MISP threat-actor 갤럭시 | `data/misp_threat_actors.json` (220KB) | 1,132개. **ATT&CK 그룹과 합치지 않고 따로 둠** |
+| `ThreatActor` 별칭 보충 | MISP threat-actor 갤럭시 | `data/misp_threat_actors.json` (220KB) | 1,132개. **ATT&CK 그룹과 합치지 않고 후보로만 제시** (`actors.py`) |
 | `Vulnerability`(전체) | CVE 레코드 | `backbone.lookup_cve` | **전체 목록은 못 받음.** 번호로 한 건씩 조회해 존재 확인, CWE, 제품 이름을 가져옴 |
 | `Product` | NVD CPE 사전 | **없음** | NVD API가 이 환경에서 막혀 받지 못함. CVE 레코드의 vendor/product 이름만 가능 |
 
@@ -294,6 +294,33 @@ KEV의 `cwes`는 CISA가 붙인 값이고, 같은 CVE의 CVE 레코드에는 발
 - **어느 쪽이 맞는지는 판단하지 않았다.** 차이가 나는 이유(갱신 시점, 기준 차이 등)도 확인하지 못했다.
 - `python backbone.py export`의 `kev.csv`에 출처별 열이 들어간다.
 
+### 행위자 이름 연결 (`actors.py`, 설정은 `consts.py`의 `ACTOR_NAME_LINKING`)
+
+같은 행위자를 업체마다 다른 이름으로 부르고(Kimsuky, Velvet Chollima, Thallium), 한 별칭이 서로 다른 행위자에 쓰이기도 한다. 이름 문자열만으로 합치면 사건 해소에서 본 것과 같은 **잘못된 합치기**가 생기므로 **ATT&CK은 연결하고 MISP는 후보로만 제시한다**(옵션 A).
+
+| 판정 | 조건(대소문자와 공백만 무시한 정확한 일치) | 처리 |
+| --- | --- | --- |
+| `link` | ATT&CK 그룹 한 곳의 이름이나 별칭과 일치 | 그 그룹으로 연결 |
+| `review` | ATT&CK 그룹 둘 이상에 일치(모호), 또는 MISP에만 일치 | 연결하지 않고 후보를 보여 주며 사람이 확인 |
+| `none` | 어디에도 없음 | 연결하지 않음(새 행위자일 수 있음) |
+
+- MISP 항목이 ATT&CK 그룹과 별칭을 공유하면 `possible_attack_groups`로 **힌트만** 준다. 합치지 않는다.
+- 부분 일치와 비슷한 이름은 쓰지 않는다(`Alph`는 `Alpha`와 일치하지 않음).
+- `python actors.py "Velvet Chollima"`로 한 이름을 조회하고, `python actors.py review`로 사람 확인용 CSV(`backbone/export/actor_alias_candidates.csv`)를 만든다.
+
+**실제 데이터로 확인한 것** (MISP 1,132개 대상):
+
+| 구분 | 항목 수 |
+| --- | --- |
+| ATT&CK 그룹과 별칭이 겹치는 것: 정확히 한 그룹 | 173 |
+| 겹치는 그룹이 둘 이상 | 11 |
+| **ATT&CK과 겹치는 것이 없음** | **948** (ATT&CK에 없는 행위자) |
+| 같은 별칭을 쓰는 다른 MISP 항목이 있는 것 | 44 |
+
+- `Velvet Chollima`와 `Thallium`은 ATT&CK 별칭으로 Kimsuky(G0094)에 연결된다.
+- **이름 범위가 출처마다 다른 실제 사례**: `Andariel`은 ATT&CK에서 독립 그룹(G0138)이고 MISP에서는 Lazarus Group의 별칭이다. MISP의 Lazarus Group 항목은 ATT&CK 그룹 다섯 개(G0032, G0082, G0138, G1036, G1049)와 별칭이 겹친다. 합치기로 정했다면 서로 다른 그룹이 하나로 섞였을 것이다.
+- 한계: 이 규칙은 이름이 정확히 일치할 때만 연결한다. 철자 변형이나 다른 언어 표기, 번역된 이름은 `none`이 되어 사람 확인도 받지 못한다. 문서가 ATT&CK에도 MISP에도 없는 이름을 쓰는 경우에 대한 규칙은 아직 없다.
+
 ### 확인용 CSV
 
 `data/*.json`은 들여쓰기로 저장한다(저장소에서 바로 읽히고, 갱신할 때 `git diff`가 바뀐 줄만 보여 준다). 훑어보고 정렬·검색하려면 CSV가 편하다.
@@ -317,7 +344,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 - **CVE 전체 목록이 없다.** 문서가 인용한 번호를 한 건씩 조회하는 방식이라 건당 네트워크 호출이 필요하고, 이 환경 밖에서 돌릴 때는 `cvelistV5` 전체를 받는 방식을 따로 정해야 한다.
 - **CVE→CWE는 CVE 레코드의 `problemTypes`(CNA와 ADP)로 대신했다.** NVD의 CPE 매핑과 CVSS는 받지 못했다. NVD가 매긴 CWE와 CNA가 매긴 CWE는 다를 수 있어 둘을 구분해 보관한다.
 - **KEV는 GitHub 사본**이다. 원본(`www.cisa.gov`)과 같은지는 확인하지 못했다.
-- **MISP 갤럭시는 `main`에서 받았고 커밋 해시를 기록하지 못했다.** 재현이 필요하면 특정 커밋으로 고정해야 한다. MISP 행위자와 ATT&CK 그룹을 같은 행위자로 합치는 규칙은 정하지 않았다(합치기 오류 위험은 사건 해소와 같다).
+- **MISP 갤럭시는 `main`에서 받았고 커밋 해시를 기록하지 못했다.** 재현이 필요하면 특정 커밋으로 고정해야 한다. MISP 행위자와 ATT&CK 그룹은 합치지 않는다(옵션 A, 아래 "행위자 이름 연결").
 - **ATT&CK은 Enterprise만 받았다.** ICS와 Mobile은 받지 않았다.
 - **Mapping 결과의 정확성은 평가하지 않았다.** 이 절은 목록이 만들어졌고 형식대로 읽힌다는 것까지만 확인한다.
 - 그래프에 넣는 코드(원본 `neo4j_v2.py`에 해당)와 임베딩 인덱스는 아직 없다.
@@ -371,6 +398,7 @@ python incident_resolution.py # 사건 해소 규칙 자체 시험(11개)
 python measurements.py        # 수치 층 규칙 자체 시험(9개)
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 python backbone.py            # 뼈대 변환 규칙 자체 시험(네트워크 없이)
+python actors.py              # 행위자 이름 연결 자체 시험
 ```
 
 `consts.py` 검사는 관계의 개체 종류 정의 여부, FILTERED ⊂ ALL, 닫힌 목록 종류의 연결 방법, `ANSWER_SLOTS`가 문서에서 받는 관계만 쓰는지 등을 확인한다.
