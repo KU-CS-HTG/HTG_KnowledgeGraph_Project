@@ -110,12 +110,13 @@ BACKBONE_ENTITY_TYPES = {
 
 # [신규] 뼈대 내려받은 날짜·버전 기록용. 내려받을 때 채운다(재현을 위해 필수).
 BACKBONE_SNAPSHOTS = {
-    "cve": None,      # 예: cvelistV5 내려받은 날짜
-    "nvd": None,
+    # 내려받은 날짜는 2026-11-25. backbone.py가 같은 값을 출력한다. 모두 raw.githubusercontent.com의 원문 파일이다.
+    "cve": "전체 목록은 받지 못함(이 환경에서 cve.org와 저장소 전체 접근이 막힘). CVEProject/cvelistV5의 레코드를 번호로 하나씩 조회(backbone.lookup_cve)",
+    "nvd": None,      # NVD API가 이 환경에서 막혀 받지 못함. CVE→CWE는 CVE 레코드의 problemTypes로, CPE 사전은 없음
     "cwe": "5.0 (2026-10-28), cwec_v5.0.xml. 메인 페이지의 다른 버전 표기와 어긋나므로 최신 여부는 미확인",
-    "attack": None,   # 검색상 v20(2026-10-13)이 최신으로 보임. 내려받을 파일로 확인
-    "kev": None,
-    "misp_galaxy": None,
+    "attack": "Enterprise 20.1 (modified 2026-11-05), 기법 706, 소프트웨어 842, 그룹 178. ICS와 Mobile은 받지 않음",
+    "kev": "cisagov/kev-data 사본, catalogVersion 2026.11.24, 1,795건 (www.cisa.gov 원본은 이 환경에서 막혀 사본을 씀)",
+    "misp_galaxy": "threat-actor 갤럭시 version 360, 1,132개. main 브랜치에서 받았고 커밋 해시는 기록하지 못함",
 }
 
 
