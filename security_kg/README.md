@@ -186,6 +186,50 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 - 수치 추출(AI 호출)은 이 저장소에 없다. 추출된 기록을 받아 정규화하고 정리하는 부분만 있다.
 - `as_of`(수치의 기준 시점)를 AI가 일정하게 뽑는지는 확인하지 못했다. 같은 출처의 수치 갱신은 시점으로만 구분한다.
 
+## RootCause 시드 검토 자료: CWE 대응표와 경계 규칙
+
+열린 문제 6번(`RootCause` 시드 8개가 내 일반화일 뿐이라는 점)의 **준비 작업**이다. 전문가 검토를 대신하지 않는다. 설정은 `consts.py` 4-1절(`ROOT_CAUSE_CWE_MAP`, `ROOT_CAUSE_BOUNDARY_RULES`, `ROOT_CAUSE_BOUNDARY_EXAMPLES`)에 있다.
+
+### CWE 대응표
+
+| RootCause | 대응 | 확인한 CWE | 확인 못 한 CWE |
+| --- | --- | --- | --- |
+| `UNPATCHED_KNOWN_VULNERABILITY` | partial | CWE-1395, CWE-1104 | - |
+| `CREDENTIAL_OR_KEY_MISMANAGEMENT` | partial | CWE-798 | CWE-320, CWE-324 |
+| `INSUFFICIENT_ENCRYPTION` | close | CWE-311, CWE-327 | CWE-326 |
+| `WEAK_ACCESS_CONTROL` | close | CWE-284, CWE-862 | CWE-306 |
+| `INSUFFICIENT_MONITORING_DETECTION` | close | CWE-778 | - |
+| `INADEQUATE_INCIDENT_RESPONSE` | none | - | - |
+| `THIRD_PARTY_OR_SUPPLY_CHAIN_RISK` | partial | CWE-1395 | CWE-1357 |
+| `MISCONFIGURATION` | partial | - | CWE-16, CWE-1188 |
+
+- **확인한 CWE**는 이 세션에서 검색으로 정의를 확인한 번호이고([1395](https://cwe.mitre.org/data/definitions/1395.html), [1104](https://cwe.mitre.org/data/definitions/1104.html), [798](https://cwe.mitre.org/data/definitions/798.html), [311](https://cwe.mitre.org/data/definitions/311), [284](https://cwe.mitre.org/data/definitions/284), [862](https://cwe.mitre.org/data/definitions/862.html) 등), **확인 못 한 CWE**는 이름을 기억에 의존한 번호라 사용하기 전에 MITRE 페이지로 대조해야 한다. 공식 페이지를 직접 열어 본 것이 아니라 검색 결과 요약에 의존한 부분이 있다.
+- **대응**: `close`는 분명히 대응, `partial`은 일부만 맞음, `none`은 CWE에 대응이 없음이다.
+- MITRE는 [CWE-311](https://cwe.mitre.org/data/definitions/311)과 [CWE-284](https://cwe.mitre.org/data/definitions/284)를 실제 취약점 매핑에 쓰지 말라고(DISCOURAGED) 표시한다. 매핑에는 더 구체적인 자식 항목을 쓰는 편이 낫다.
+
+### 대응표에서 보이는 것
+
+1. **RootCause는 두 수준을 섞고 있다.** `ENCRYPTION`, `ACCESS_CONTROL`, `MONITORING`은 제품의 기술 약점이라 CWE와 잘 맞는다. 반면 `INADEQUATE_INCIDENT_RESPONSE`는 대응이 아예 없고 `UNPATCHED`, `CREDENTIAL`, `THIRD_PARTY`는 일부만 맞는다. CWE는 **제품의 약점**을 다루고 이 항목들은 **조직의 운영·절차 실패**이기 때문이다.
+2. 조직 수준 항목을 다른 표준에 대응시킬지는 열려 있다(예: 보안 관리 프레임워크). 이 세션에서 확인하지 않았다.
+3. 질문 틀의 칸 (b)는 "약점·관리 실패"이므로 두 수준을 한 칸에 두는 것은 의도와 맞다. 다만 사건 간 비교에서 두 수준을 섞어 세지 않도록 표시를 달지는 정해야 한다(전문가에게 묻는 질문).
+
+### 경계 규칙
+
+원칙은 **문서가 말한 "실패한 통제"로 고르고 결과(피해)로 고르지 않는다**이다. 서로 다른 실패가 둘이면 값도 둘이고, 한 실패에 값을 둘 붙이지 않는다. 겹치는 쌍 5개의 규칙은 `ROOT_CAUSE_BOUNDARY_RULES`에 있다.
+
+- 키·자격 증명의 **수명주기** 실패 → `CREDENTIAL`, 권한의 범위·분리·인증 요구 부재 → `WEAK_ACCESS_CONTROL`
+- 자기 시스템의 공개 패치 미적용 → `UNPATCHED`, 외부 공급사·협력사 침해 → `THIRD_PARTY`
+- 침입을 못 알아챔 → `MONITORING`, 알고도 대응 안 함 → `INCIDENT_RESPONSE`
+- 잘못된 설정·기본값 → `MISCONFIGURATION`, 통제 자체가 없음 → `WEAK_ACCESS_CONTROL`
+- `ENCRYPTION`은 암호화가 없거나 약하다고 말할 때만
+
+경계 사례 11개(`ROOT_CAUSE_BOUNDARY_EXAMPLES`)는 시드 8개를 모두 한 번씩 보이고, 한 문장에 실패가 둘인 경우, 피해만 말한 경우, 원인을 밝히지 않은 경우(기록하지 않음)를 포함한다. **문장은 규칙을 시험하려고 만든 가상 문장이며 실제 사건의 사실이 아니다.**
+
+### 한계
+
+- 경계 규칙은 내가 만든 것이고 실제 문서로 AI가 일관되게 따르는지는 확인하지 못했다. 사례는 프롬프트 예시와 사람 검토용이다.
+- 시드에서 빠진 원인(피싱 교육, 백업, 물리 보안 등)은 이 작업으로 드러나지 않는다. 파일럿에서 `other`로 빠지는 값을 모아야 한다.
+
 ## 원본 코드에서 고쳐야 할 곳
 
 `consts.py`만 바꿔서는 동작하지 않는다.
@@ -223,7 +267,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 3. ~~**같은 사건을 여러 문서가 쓸 때 `Incident`를 합치는 규칙**이 없다.~~ **반영됨(D1~D4)**: 조직 단위 `Incident` + `Campaign`, 같은 조직 필수 + 공개 시점 + 공유 신호, 애매하면 사람 확인(위 "사건 해소"). 숫자는 파일럿에서 보정.
 4. ~~**기법 수준.**~~ **반영됨(D5~D8)**: 서술형 행동을 먼저 기록하고 ATT&CK 매핑은 별도 단계(AI 제안 + 사람 확인), 비교는 전술 수준, 유도된 기법은 구분해서 표시(위 "기법 층").
 5. ~~**날짜와 수치.**~~ **반영됨**: 날짜는 문서 단위 메타데이터(`headline_date`, `attack_span`, `document_date`)로 트리플렛 밖에 둔다. 수치는 별도 기록으로 정규화하고 출처별로 나란히 보여 준다(D9~D12, 위 "수치 층").
-6. `RootCause` 시드 8개는 5개 사건의 검색 요약에서 일반화한 것이라 전문가 검토가 필요하다.
+6. `RootCause` 시드 8개는 5개 사건의 검색 요약에서 일반화한 것이라 **전문가 검토가 필요하다.** 준비 작업으로 CWE 대응표와 경계 규칙·사례를 만들었다(위 "RootCause 시드 검토 자료"). 대응이 없거나 일부인 항목(조직 절차 수준)을 어떻게 다룰지는 전문가에게 묻는 질문으로 남아 있다.
 
 ## 자체 검사
 

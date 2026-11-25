@@ -213,6 +213,113 @@ ROOT_CAUSE_SEED = [
 
 
 # ──────────────────────────────────────────────────────────────────────────
+# 4-1. RootCause 시드 검토 자료: CWE 대응표와 경계 규칙 [신규, 초안] — 열린 설계 문제 6번의 준비 작업
+#      목적: 전문가 검토를 받기 전에 (1) 시드가 공개 표준(CWE)과 어디까지 맞는지, (2) 겹치는 항목의 선을 어디에 긋는지를
+#      눈에 보이게 한다. 이것은 전문가 검토를 대신하지 않는다.
+#      검증 정도: cwe_verified는 이 세션에서 검색으로 정의를 확인한 번호, cwe_unverified는 이름만 기억에 의존한 번호다.
+#      fit: close(대응이 분명) / partial(일부만 맞음) / none(CWE에 대응이 없음).
+#      핵심 관찰: CWE는 '제품의 약점'이라서, 조직의 절차·대응 실패(패치 운영, 침해 대응)는 맞지 않거나 일부만 맞는다.
+#                 RootCause는 기술 약점과 조직 관리 실패를 한 목록에 섞고 있다.
+# ──────────────────────────────────────────────────────────────────────────
+ROOT_CAUSE_CWE_MAP = {
+    "UNPATCHED_KNOWN_VULNERABILITY": {
+        "fit": "partial", "cwe_verified": ["CWE-1395", "CWE-1104"], "cwe_unverified": [],
+        "note": "CWE-1395/1104는 개발자가 취약하거나 관리되지 않는 외부 구성요소에 기대는 약점이다. "
+                "운영 조직이 이미 공개된 패치를 적용하지 않은 것은 정확히 대응하는 CWE가 없다(패치 운영은 절차 문제).",
+    },
+    "CREDENTIAL_OR_KEY_MISMANAGEMENT": {
+        "fit": "partial", "cwe_verified": ["CWE-798"], "cwe_unverified": ["CWE-320", "CWE-324"],
+        "note": "CWE-798은 코드에 박힌 자격 증명이라 '퇴사자 키 미폐기'와는 다르다. 키 수명주기(발급, 교체, 폐기)는 "
+                "CWE-320/324가 가까워 보이나 이 세션에서 정의를 확인하지 못했다.",
+    },
+    "INSUFFICIENT_ENCRYPTION": {
+        "fit": "close", "cwe_verified": ["CWE-311", "CWE-327"], "cwe_unverified": ["CWE-326"],
+        "note": "암호화 없음(311), 깨졌거나 위험한 알고리즘(327), 강도 부족(326). "
+                "CWE-311은 MITRE가 실제 취약점 매핑에 쓰지 말라고(DISCOURAGED) 표시한 항목이다.",
+    },
+    "WEAK_ACCESS_CONTROL": {
+        "fit": "close", "cwe_verified": ["CWE-284", "CWE-862"], "cwe_unverified": ["CWE-306"],
+        "note": "CWE-284는 포괄 항목이라 MITRE가 매핑에 쓰지 말라고(DISCOURAGED) 한다. 더 구체적인 862(인가 없음) 등을 쓰는 편이 낫다.",
+    },
+    "INSUFFICIENT_MONITORING_DETECTION": {
+        "fit": "close", "cwe_verified": ["CWE-778"], "cwe_unverified": [],
+        "note": "CWE-778은 보안상 중요한 사건을 기록하지 않는 약점이다. '장기 잠복을 탐지하지 못함'은 기록 부재보다 넓은 개념이다.",
+    },
+    "INADEQUATE_INCIDENT_RESPONSE": {
+        "fit": "none", "cwe_verified": [], "cwe_unverified": [],
+        "note": "과거 침해에 대한 대응 실패는 제품의 약점이 아니라 조직의 절차 문제라서 CWE에 대응이 없다. "
+                "다른 표준(예: 침해 대응·보안 관리 프레임워크)을 대응 후보로 검토해야 하나 이 세션에서 확인하지 않았다.",
+    },
+    "THIRD_PARTY_OR_SUPPLY_CHAIN_RISK": {
+        "fit": "partial", "cwe_verified": ["CWE-1395"], "cwe_unverified": ["CWE-1357"],
+        "note": "OWASP Top 10 2025에 'Software Supply Chain Failures'(A03)가 있어 개념은 표준에 있다. "
+                "다만 CWE는 제품이 쓰는 구성요소의 약점이고, 협력사가 침해되어 그 접근 권한이 악용된 경우까지 덮지는 않는다.",
+    },
+    "MISCONFIGURATION": {
+        "fit": "partial", "cwe_verified": [], "cwe_unverified": ["CWE-16", "CWE-1188"],
+        "note": "설정 오류에 해당하는 CWE 번호를 이 세션에서 확인하지 못했다. 대응 여부는 미확정이다.",
+    },
+}
+
+# 겹치는 항목의 선 긋기. 원칙: 문서가 말한 '실패한 통제'를 기준으로 하고 결과(피해)로 고르지 않는다.
+# 문서가 서로 다른 실패를 둘 말하면 값도 둘이다(트리플렛 둘). 한 실패에 값을 둘 붙이지 않는다.
+ROOT_CAUSE_BOUNDARY_RULES = {
+    ("WEAK_ACCESS_CONTROL", "CREDENTIAL_OR_KEY_MISMANAGEMENT"):
+        "자격 증명·키의 수명주기(발급, 보관, 교체, 폐기, 노출)가 실패했으면 CREDENTIAL. "
+        "권한의 범위·분리·인증 요구(다중 인증, 망 분리, 최소 권한)가 없거나 약하면 WEAK_ACCESS_CONTROL.",
+    ("UNPATCHED_KNOWN_VULNERABILITY", "THIRD_PARTY_OR_SUPPLY_CHAIN_RISK"):
+        "피해 조직이 자기 시스템에서 공개된 패치를 적용하지 않았으면 UNPATCHED. "
+        "외부 공급사·협력사·구성요소가 침해되었거나 그 신뢰가 악용되었으면 THIRD_PARTY.",
+    ("INSUFFICIENT_MONITORING_DETECTION", "INADEQUATE_INCIDENT_RESPONSE"):
+        "침입 자체를 알아채지 못했으면(체류 기간이 길었으면) MONITORING. "
+        "경보나 과거 침해를 알고도 차단·정리·재발 방지를 하지 않았으면 INCIDENT_RESPONSE.",
+    ("MISCONFIGURATION", "WEAK_ACCESS_CONTROL"):
+        "문서가 '잘못된 설정·기본값'을 원인으로 말하면 MISCONFIGURATION. "
+        "통제 자체가 설계에 없었거나 약했다고 말하면 WEAK_ACCESS_CONTROL.",
+    ("INSUFFICIENT_ENCRYPTION", "WEAK_ACCESS_CONTROL"):
+        "저장·전송 데이터가 암호화되지 않았거나 약하게 암호화되었다고 말할 때만 INSUFFICIENT_ENCRYPTION. "
+        "암호화 이야기가 없으면 쓰지 않는다.",
+}
+
+# 경계 사례: (합성 문장, 기대하는 값 목록). 기대 목록이 빈 리스트면 어떤 값도 기록하지 않는다(추측 금지).
+# 문장은 규칙을 시험하려고 만든 가상 문장이며 실제 사건의 사실이 아니다. 추출 프롬프트의 예시와 시험에 쓴다.
+ROOT_CAUSE_BOUNDARY_EXAMPLES = [
+    ("The company had not applied a patch for an operating system flaw that was publicly known for years.",
+     ["UNPATCHED_KNOWN_VULNERABILITY"]),
+    ("A signing key issued to a contractor was never revoked after the contractor left, and was later used to log in.",
+     ["CREDENTIAL_OR_KEY_MISMANAGEMENT"]),
+    ("Administrator accounts could reach every internal server because the network was not segmented and no second factor was required.",
+     ["WEAK_ACCESS_CONTROL"]),
+    ("The vendor's update server was compromised and a signed update carried the malware into customer networks.",
+     ["THIRD_PARTY_OR_SUPPLY_CHAIN_RISK"]),
+    ("Customer data was stored without encryption and a stolen backup was readable.",
+     ["INSUFFICIENT_ENCRYPTION"]),
+    ("The intruder stayed in the network for three years before anyone noticed.",
+     ["INSUFFICIENT_MONITORING_DETECTION"]),
+    ("The company had received an alert about the intrusion but did not isolate the server for weeks.",
+     ["INADEQUATE_INCIDENT_RESPONSE"]),
+    ("A storage bucket was left public because of a default setting nobody changed.",
+     ["MISCONFIGURATION"]),
+    # 한 문장에 서로 다른 실패가 둘 있으면 값도 둘이다
+    ("Credentials were never rotated, and the intruder went unnoticed for months.",
+     ["CREDENTIAL_OR_KEY_MISMANAGEMENT", "INSUFFICIENT_MONITORING_DETECTION"]),
+    # 결과로 고르지 않는다: 피해가 크다는 말만으로는 원인을 정하지 않는다
+    ("The breach exposed millions of customer records.", []),
+    # 원인을 말하지 않은 문장
+    ("The investigation is ongoing and the cause has not been disclosed.", []),
+]
+
+
+def render_root_cause_table() -> str:
+    """CWE 대응표를 표로 출력한다(README와 전문가 검토용)."""
+    lines = ["| RootCause | 대응 | 확인한 CWE | 확인 못 한 CWE |", "| --- | --- | --- | --- |"]
+    for k in ROOT_CAUSE_SEED:
+        m = ROOT_CAUSE_CWE_MAP[k]
+        lines.append(f"| `{k}` | {m['fit']} | {', '.join(m['cwe_verified']) or '-'} | {', '.join(m['cwe_unverified']) or '-'} |")
+    return "\n".join(lines)
+
+
+# ──────────────────────────────────────────────────────────────────────────
 # 4-2. 공격자 유형(ActorOrigin)의 시드 목록 [신규]
 #      질문 틀 (a)(b)(c)에는 '누가'가 없다. 그래서 이 값은 답의 칸이 아니라 참고 정보(CONTEXT_FIELDS)다.
 #      UNKNOWN은 값으로 두지 않는다: 문서가 말하지 않은 것은 "언급 없음"으로 집계한다(부재를 추측하지 않는 원칙).
@@ -510,6 +617,29 @@ def validate() -> list[str]:
         problems.append("MEASUREMENT_QUALIFIERS에 range가 없음")
     if MEASUREMENT_COMPARE_ACROSS_METRICS or MEASUREMENT_CONVERT_CURRENCY:
         problems.append("지표 간 비교와 통화 환산은 결정 D10/D12에서 하지 않기로 함")
+    if set(ROOT_CAUSE_CWE_MAP) != set(ROOT_CAUSE_SEED):
+        problems.append("ROOT_CAUSE_CWE_MAP의 키가 ROOT_CAUSE_SEED와 다름")
+    for k, m in ROOT_CAUSE_CWE_MAP.items():
+        if m["fit"] not in ("close", "partial", "none"):
+            problems.append(f"ROOT_CAUSE_CWE_MAP[{k}]: fit 값이 올바르지 않음")
+        if m["fit"] == "none" and (m["cwe_verified"] or m["cwe_unverified"]):
+            problems.append(f"ROOT_CAUSE_CWE_MAP[{k}]: fit이 none인데 CWE가 있음")
+        if m["fit"] != "none" and not (m["cwe_verified"] or m["cwe_unverified"]):
+            problems.append(f"ROOT_CAUSE_CWE_MAP[{k}]: CWE가 하나도 없음")
+        if set(m["cwe_verified"]) & set(m["cwe_unverified"]):
+            problems.append(f"ROOT_CAUSE_CWE_MAP[{k}]: 확인한 것과 못 한 것이 겹침")
+    for pair in ROOT_CAUSE_BOUNDARY_RULES:
+        for x in pair:
+            if x not in ROOT_CAUSE_SEED:
+                problems.append(f"ROOT_CAUSE_BOUNDARY_RULES: 시드에 없는 값 {x}")
+    for text, expected in ROOT_CAUSE_BOUNDARY_EXAMPLES:
+        for x in expected:
+            if x not in ROOT_CAUSE_SEED:
+                problems.append(f"ROOT_CAUSE_BOUNDARY_EXAMPLES: 시드에 없는 값 {x}")
+    covered_by_examples = {x for _, exp in ROOT_CAUSE_BOUNDARY_EXAMPLES for x in exp}
+    for k in ROOT_CAUSE_SEED:
+        if k not in covered_by_examples:
+            problems.append(f"ROOT_CAUSE_BOUNDARY_EXAMPLES: 시드 {k}를 보여 주는 사례가 없음")
     if set(ASSERTION_RANK) != set(ASSERTION_STATUSES):
         problems.append("ASSERTION_RANK와 ASSERTION_STATUSES의 키가 다름")
     return problems
