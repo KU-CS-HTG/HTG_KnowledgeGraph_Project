@@ -36,6 +36,8 @@ def summarize_context(triplets: list[dict], n_documents: int) -> dict:
     out = summarize_fields(triplets, n_documents, consts.CONTEXT_FIELDS)
     for field in consts.REVIEW_IF_MULTIPLE_VALUES:
         out[field]["needs_review"] = len({i["target"] for i in out[field]["items"]}) > 1
+    for i in out["actor_origin"]["items"]:      # VERIS 데이터와 비교할 수 있도록 대응값을 붙인다
+        i["veris"] = consts.ACTOR_ORIGIN_TO_VERIS.get(i["target"])
     return out
 
 
@@ -83,7 +85,8 @@ def render(incident: str, summary: dict, context: dict | None = None) -> str:
             lines.append(f"  {NAMES[slot]}:{review}")
             for i in s["items"]:
                 mark = " (구분이 문서마다 다름: " + "/".join(i["statuses"]) + ")" if i["mixed_statuses"] else ""
-                lines.append(f"    - {i['target']} [{i['best_status']}, 문서 {i['n_documents']}개]{mark}")
+                veris = f" (VERIS: {i['veris']})" if i.get("veris") else ""
+                lines.append(f"    - {i['target']}{veris} [{i['best_status']}, 문서 {i['n_documents']}개]{mark}")
     return "\n".join(lines)
 
 
@@ -150,7 +153,15 @@ def self_test() -> None:
     assert e["actor_origin"]["items"][0]["best_status"] == "inferred"
     assert e["attribution"]["items"][0]["best_status"] == "claimed"
 
-    print("자체 시험 9개 통과\n")
+    # 10) VERIS 대응: 전직자는 VERIS에서 External이고 현직은 Internal이다. 세분화된 값은 그대로 유지된다
+    v = summarize_context(coupang_ctx + [_t("HAS_ACTOR_ORIGIN", "INTERNAL", "claimed", "d3")], 4)["actor_origin"]
+    mapped = {i["target"]: i["veris"] for i in v["items"]}
+    assert mapped == {"FORMER_INSIDER": "External", "INTERNAL": "Internal"}
+    # 경계 사례의 기대값은 모두 시드 안의 값이거나 None(기록하지 않음)이다
+    assert all(e is None or e in consts.ACTOR_ORIGIN_SEED for _, e in consts.ACTOR_ORIGIN_BOUNDARY_EXAMPLES)
+    assert consts.ACTOR_PAIRING == "incident_level"
+
+    print("자체 시험 10개 통과\n")
     print(render("SK텔레콤 유형", summarize_incident(skt, 3), summarize_context(skt, 3)))
     print()
     print(render("쿠팡 유형", summarize_incident(coupang_ctx, 4), summarize_context(coupang_ctx, 4)))

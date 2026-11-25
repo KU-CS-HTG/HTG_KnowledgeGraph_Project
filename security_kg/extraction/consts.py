@@ -68,6 +68,9 @@ ENTITY_TYPE_DEFINITIONS = {
         "authorized access), FORMER_INSIDER (a former employee or contractor who used access or knowledge "
         "retained from that role), PARTNER (a supplier, vendor or other third party with a business relationship), "
         "EXTERNAL (no authorized relationship, e.g. a named criminal or state-linked group or outsiders). "
+        "Decide by the attacker's employment status at the time of the access or attack, not at the time of "
+        "discovery: still employed then = INTERNAL (including misuse shortly before leaving); already left = "
+        "FORMER_INSIDER. If the text does not say when, do not guess: mark the assertion as inferred or omit it. "
         "Use ONLY when the text states or clearly implies the relationship; when it is only implied, mark the "
         "assertion as inferred. Never infer it from the attacker's nationality, location or skill."
     ),
@@ -198,10 +201,36 @@ ROOT_CAUSE_SEED = [
 # ──────────────────────────────────────────────────────────────────────────
 ACTOR_ORIGIN_SEED = [
     "INTERNAL",         # 현직 직원·계약자
-    "FORMER_INSIDER",   # 전직 직원·계약자. 퇴사 후에도 남은 접근 권한이나 지식을 이용(우리가 추가한 값)
+    "FORMER_INSIDER",   # 전직 직원·계약자. 퇴사 후에도 남은 접근 권한이나 지식을 이용(우리가 추가한 값. VERIS에서는 External)
     "PARTNER",          # 협력사·공급사·서드파티
     "EXTERNAL",         # 피해 조직과 정당한 관계가 없는 외부
 ]
+
+# 결정 기록(1): 세분화를 유지하고 VERIS 값으로 합치는 대응표를 둔다(옵션 B).
+# 세분화된 값은 상위 값으로 합칠 수 있지만 합친 값은 다시 쪼갤 수 없으므로 손실이 없는 쪽을 택했다.
+# 근거: VERIS 위키의 행위자 설명은 전직 직원을 외부(External) 위협의 예로 들고, 내부(Internal)는 현재 구성원으로 설명한다.
+# 주의: VERIS 위키 사본 페이지로 확인한 것이며 정확한 값 목록은 VERIS 스키마 저장소로 대조해야 한다.
+ACTOR_ORIGIN_TO_VERIS = {
+    "INTERNAL": "Internal",
+    "FORMER_INSIDER": "External",
+    "PARTNER": "Partner",
+    "EXTERNAL": "External",
+}
+
+# 결정 기록(2): 경계는 "공격(접근)이 일어난 시점의 고용 상태"로 정한다. 추출 프롬프트의 예시와 시험에 쓴다.
+# (사례, 기대하는 값). 기대값이 None이면 값을 기록하지 않는다(추측 금지).
+ACTOR_ORIGIN_BOUNDARY_EXAMPLES = [
+    ("퇴사 후에 남아 있던 인증 서명키로 접근했다", "FORMER_INSIDER"),
+    ("재직 중이던 개발자가 퇴사 직전에 데이터를 복사해 갔다", "INTERNAL"),
+    ("퇴사 의사를 밝힌 직원이 아직 재직 중일 때 권한을 오용했다", "INTERNAL"),
+    ("협력사 직원의 계정이 도용되어 침입에 쓰였다", "PARTNER"),
+    ("이름 있는 해킹 조직이 외부에서 침입했다", "EXTERNAL"),
+    ("개발자가 가진 접근 권한으로 침해가 일어났다(고용 상태와 시점이 적혀 있지 않음)", None),
+]
+
+# 결정 기록(3): 행위자가 둘 이상일 때 값과 이름의 짝 짓기는 파일럿에서 필요가 확인될 때까지 하지 않는다(옵션 i).
+# 지금은 사건 단위로만 기록하고 값이 여러 개면 aggregate.py가 "사람이 확인 필요"로 표시한다.
+ACTOR_PAIRING = "incident_level"   # 행위자별 기록("actor_level")은 보류
 
 
 # ──────────────────────────────────────────────────────────────────────────
@@ -320,6 +349,13 @@ def validate() -> list[str]:
             problems.append(f"REVIEW_IF_MULTIPLE_VALUES: 정의되지 않은 참고 정보 {field}")
     if covered & {r for rels in CONTEXT_FIELDS.values() for r in rels}:
         problems.append("같은 관계가 ANSWER_SLOTS와 CONTEXT_FIELDS에 모두 있음")
+    if set(ACTOR_ORIGIN_TO_VERIS) != set(ACTOR_ORIGIN_SEED):
+        problems.append("ACTOR_ORIGIN_TO_VERIS의 키가 ACTOR_ORIGIN_SEED와 다름")
+    for text, expected in ACTOR_ORIGIN_BOUNDARY_EXAMPLES:
+        if expected is not None and expected not in ACTOR_ORIGIN_SEED:
+            problems.append(f"경계 사례의 기대값이 시드에 없음: {expected}")
+    if ACTOR_PAIRING not in ("incident_level", "actor_level"):
+        problems.append("ACTOR_PAIRING은 incident_level 또는 actor_level이어야 함")
     if sorted(ACTOR_ORIGIN_SEED) != sorted(["INTERNAL", "FORMER_INSIDER", "PARTNER", "EXTERNAL"]):
         problems.append("ACTOR_ORIGIN_SEED가 정의 문구의 값과 다름")
     if set(ASSERTION_RANK) != set(ASSERTION_STATUSES):
