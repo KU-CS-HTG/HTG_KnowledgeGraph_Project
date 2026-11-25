@@ -16,11 +16,11 @@ ClimateKG 파이프라인을 보안 사고 분석에 적용하기 위한 `consts
 | (a) 취약점 | `Vulnerability` (CVE) | `EXPLOITED_VULNERABILITY` | 뼈대(CVE, 닫힌 목록) |
 | (b) 약점 | `Weakness` (CWE) | `EXPLOITED_WEAKNESS` | 뼈대(CWE) |
 | (b) 관리 실패 | `RootCause` | `HAS_ROOT_CAUSE` | 손으로 만든 시드 + 문서 추가 |
-| (c) 기법 | `Technique`, `Tactic`, `MalwareFamily` | `USED_TECHNIQUE`, `USED_MALWARE` | 뼈대(ATT&CK, MISP) |
+| (c) 기법 | `AttackBehavior`(서술형), `Technique`, `Tactic`, `MalwareFamily` | `USED_BEHAVIOR`, `USED_TECHNIQUE`, `USED_MALWARE` | 서술형은 문서, 기법은 뼈대(ATT&CK, MISP). 매핑은 별도 단계 |
 | (참고) 배후 | `ThreatActor` | `ATTRIBUTED_TO` | 뼈대 + 문서 추가 |
 | (참고) 공격자 유형 | `ActorOrigin` | `HAS_ACTOR_ORIGIN` | 닫힌 시드 4개(아래) |
 
-개체 종류 12개, 관계 16개(문서에서 받는 10개, 표준에서 오는 6개). 배후와 공격자 유형은 질문의 칸이 아니라 **참고 정보**다. 기후 버전은 개체 36종, 관계 75개였다.
+개체 종류 13개, 관계 17개(문서에서 받는 11개, 표준에서 오는 6개). 배후와 공격자 유형은 질문의 칸이 아니라 **참고 정보**다. 기후 버전은 개체 36종, 관계 75개였다.
 표준 데이터가 이미 가진 관계(CVE→CWE, 기법→전술 등)는 문서에서 다시 받지 않는다. 기후에서 모델→변수 같은 관계를 받지 않는 것과 같은 논리로 보이나, 저자가 그렇게 설명한 것은 아니다.
 
 ## 확정/주장/추정 구분을 담는 방법
@@ -42,7 +42,7 @@ ClimateKG 파이프라인을 보안 사고 분석에 적용하기 위한 `consts
 
 - **"없음"이라고 쓰지 않는다.** 다른 칸에 답이 있다고 해서 이 칸을 "없음"으로 추론하지도 않는다(예: 쿠팡 유형은 (b)가 있어도 (a)는 "언급 없음").
 - **문서 수를 항상 함께 쓴다.** "언급 없음"의 무게가 문서 1개일 때와 20개일 때 다르기 때문이다.
-- 구현: `aggregate.py`(`summarize_incident`, `render`). 자체 시험 12개가 위 규칙을 확인한다(묶음 합산 포함).
+- 구현: `aggregate.py`(`summarize_incident`, `render`). 자체 시험 13개가 위 규칙을 확인한다(묶음 합산, 기법 층 출력 포함).
 - 문서 수를 세려면 문서 단위로 `incident_mentions`(사건 해소 절 참고), `document_date`, `source_type`을 추가로 뽑아야 한다(`consts.NEW_DOCUMENT_LEVEL_FIELDS`). 원본에는 없다.
 
 ### 보류한 확장안: 명시적 부재 진술을 추출
@@ -122,6 +122,40 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET += [
 - `Campaign` 이름의 합치기는 아직 규칙이 없다(수가 적어서 원본 방식으로 시작할 수 있으나 같은 오류 위험이 있다).
 - 시점(`headline_date`)을 AI가 일정하게 뽑는지는 확인하지 못했다.
 
+## 기법 층: 서술형 행동 → ATT&CK 매핑 → 뼈대 유도 (D5~D8)
+
+문제: 뉴스는 "악성코드를 설치했다"처럼 평이하게 쓰고 ATT&CK는 표준 이름의 기법이다. 닫힌 목록에 맞추다 실패하면 **사실이 버려지고**, 억지로 맞추면 **틀린 매핑**이 생긴다.
+CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 하고, 연구들은 AI가 기법 ID를 지어내거나 엉뚱한 기법에 맞출 수 있다고 지적한다.
+
+### 결정
+
+| 결정 | 내용 |
+| --- | --- |
+| **D5 방식** | **2층.** ① 문서가 말한 행동을 서술형(`AttackBehavior`)으로 먼저 기록 ② ATT&CK 매핑은 별도 단계 ③ 이름 있는 악성코드는 뼈대에서 기법을 유도 |
+| **D6 매핑 책임** | AI가 후보를 제안하고 **사람이 확인**(파일럿). 사람이 확인하기 전의 AI 제안은 확정으로 세지 않는다 |
+| **D7 수준** | 사건 간 비교는 **전술**, 상세는 **기법**, 하위 기법은 문서가 구체적일 때만(아니면 상위 기법으로 올림) |
+| **D8 유도된 기법** | 답에 포함하되 "문서의 주장이 아니라 뼈대 유도"로 구분해서 표시 |
+
+### 동작 (`attack_mapping.py`, 설정은 `consts.py` 5-1절)
+
+- **서술형은 사라지지 않는다.** 매핑이 안 되거나(`unmapped`) 맞는 기법이 없어도(`no_match`) 서술형 행동으로 남는다.
+- **문서가 ATT&CK 기법 이름·ID를 직접 쓴 경우만** `USED_TECHNIQUE`로 받는다(`documented`). 목록에서 찾지 못한 이름은 조용히 받지 않고 "찾지 못함"으로 따로 알린다.
+- **AI가 낸 후보는 검증한다.** 내려받은 ATT&CK 목록에 없는 ID는 버린다(환각 방지). 후보에는 신뢰도(`high`/`medium`/`low`)와 근거가 붙는다.
+- **상태**: `documented`, `ai_suggested`(사람 확인 전), `human_confirmed`, `human_rejected`(답에서 제외), `no_match`(억지로 맞추지 않음).
+- **뼈대 유도**: ATT&CK 소프트웨어 정보에서 악성코드 → 기법을 가져온다. 모르는 악성코드는 추측하지 않는다. 예: BPFDoor는 ATT&CK 소프트웨어(S1161)이고 Socket Filters 기법(T1205.002) 등과 연결된다(검색으로 확인).
+- **전술 단위 집계**는 출처(문서가 쓴 것, 사람이 확인한 것, AI 제안, 뼈대 유도)별로 나눠서 센다. 서로 섞이지 않는다.
+- `load_catalog_from_stix`, `load_software_map`이 ATT&CK STIX 번들에서 목록과 소프트웨어 대응을 만든다.
+- 매핑 결과는 신뢰도와 근거가 필요해서 트리플렛이 아니라 **별도 기록**이다: `{"behavior", "candidates": [{"technique_id", "confidence", "evidence"}], "status"}`.
+
+### 알려진 한계
+
+- **매핑 정확도는 보장되지 않는다.** 관련 연구의 정확도는 데이터셋마다 달라 비교할 수 없고, 우리 문서에서의 정확도는 사람이 만든 정답으로 재야 한다. 분석가 둘이 결과를 비교하는 것이 MITRE의 권고다.
+- **ATT&CK 버전이 바뀐다.** 2026년에만 v19(4월), v20(10월)이 나왔으니 이름과 ID가 달라질 수 있다. 내려받은 버전을 `BACKBONE_SNAPSHOTS["attack"]`에 기록한다.
+- **서술형 행동은 표현이 제각각이다.** 사건 안에서만 의미가 있고, 사건 간 비교는 매핑된 전술·기법으로 한다. 같은 행동의 다른 표현을 합치는 규칙은 아직 없다.
+- **STIX 필드 이름은 일반 지식이다.** `load_catalog_from_stix`는 가짜 번들로만 시험했고 실제 ATT&CK 번들로 돌려 보지 않았다.
+- **시험 목록은 가짜다.** 시험에 쓴 기법 ID, 이름, 전술은 실제 ATT&CK 값이 아니다(확인하지 않은 값을 단정하지 않으려는 것).
+- 매핑 단계의 AI 호출은 이 저장소에 없다. 후보를 받아 검증하고 집계하는 부분만 있다.
+
 ## 원본 코드에서 고쳐야 할 곳
 
 `consts.py`만 바꿔서는 동작하지 않는다.
@@ -135,7 +169,8 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET += [
 | `extraction/ontology_conformance_agent.py` | 기후 어휘 6개 집합을 이 분야 규칙으로 교체(예: `ID_PATTERNS` 검사) |
 | `extraction/entity_linking.py` | `EXACT_ID_ENTITIES`(CVE, CWE, ATT&CK ID는 정확히 일치) 처리 추가 |
 | `extraction/create_embeddings.py` | 새 뼈대 목록으로 임베딩 인덱스 생성 |
-| `kg_create/` | CVE, CWE, ATT&CK, KEV를 그래프로 바꾸는 코드를 새로 작성(`neo4j_v2.py` 대체) |
+| `kg_create/` | CVE, CWE, ATT&CK, KEV를 그래프로 바꾸는 코드를 새로 작성(`neo4j_v2.py` 대체). ATT&CK 번들에서 `attack_mapping.load_catalog_from_stix`로 목록을 만들 것 |
+| 새 단계: 기법 매핑 | 추출 뒤, 연결 전에 서술형 행동마다 ATT&CK 후보를 AI로 제안받고 사람이 확인하는 단계를 새로 만든다(`attack_mapping.py`가 검증과 집계를 맡음) |
 | `extraction/find_papers.py` | 논문 검색이 아니라 뉴스·보고서 수집으로 교체 |
 | 검증·평가 프롬프트 | "climate modeling" 문구 교체 |
 
@@ -156,7 +191,7 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET += [
 1. ~~**"취약점 없음/미공개"를 어떻게 기록하나.**~~ **1단계(최소안) 반영됨**: 부재를 추측하지 않고 "언급 없음, 문서 n개"로 집계한다(위 "답의 집계"). "미공개"와 "언급 없음"을 구분하는 확장안은 파일럿 뒤로 보류.
 2. ~~**내부자 여부.**~~ **반영됨(옵션 B)**: `ActorOrigin` 시드 4개와 `HAS_ACTOR_ORIGIN`을 참고 정보로 추가. 경계 규칙(공격 시점의 고용 상태), VERIS 대응표, 다중 행위자 보류까지 결정됨(위 "공격자 유형").
 3. ~~**같은 사건을 여러 문서가 쓸 때 `Incident`를 합치는 규칙**이 없다.~~ **반영됨(D1~D4)**: 조직 단위 `Incident` + `Campaign`, 같은 조직 필수 + 공개 시점 + 공유 신호, 애매하면 사람 확인(위 "사건 해소"). 숫자는 파일럿에서 보정.
-4. **기법 수준.** 뉴스는 "악성코드 설치" 정도로 쓰고 ATT&CK 기법 이름은 분석가가 맞춰야 한다.
+4. ~~**기법 수준.**~~ **반영됨(D5~D8)**: 서술형 행동을 먼저 기록하고 ATT&CK 매핑은 별도 단계(AI 제안 + 사람 확인), 비교는 전술 수준, 유도된 기법은 구분해서 표시(위 "기법 층").
 5. **날짜와 수치.** 날짜는 사건 해소에 필요해서 **문서 단위 메타데이터**(`headline_date`, `attack_span`, `document_date`)로 도입했다. 트리플렛에는 넣지 않는다. 수치(피해 규모, 금액)는 아직 이 틀에 없고, 출처 간 차이 비교 질문에는 필요하다.
 6. `RootCause` 시드 8개는 5개 사건의 검색 요약에서 일반화한 것이라 전문가 검토가 필요하다.
 
@@ -164,7 +199,8 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET += [
 
 ```bash
 python extraction/consts.py   # 설정의 일관성 검사
-python aggregate.py           # 집계 규칙 자체 시험(12개)
+python aggregate.py           # 집계 규칙 자체 시험(13개)
+python attack_mapping.py      # 기법 층 규칙 자체 시험(10개)
 python incident_resolution.py # 사건 해소 규칙 자체 시험(11개)
 ```
 
