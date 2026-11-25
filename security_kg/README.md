@@ -156,6 +156,109 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 - **시험 목록은 가짜다.** 시험에 쓴 기법 ID, 이름, 전술은 실제 ATT&CK 값이 아니다(확인하지 않은 값을 단정하지 않으려는 것).
 - 매핑 단계의 AI 호출은 이 저장소에 없다. 후보를 받아 검증하고 집계하는 부분만 있다.
 
+## 수치 층: 피해 규모와 금액 (D9~D12)
+
+수치는 트리플렛의 도착이 개체가 아니라 값이고, 단위(명/건/GB/원), 정확도(약/이상/범위), 시점, 출처에 따라 뜻이 달라진다. 사람 수와 건수는 다른 지표이고(한 사람이 여러 건일 수 있다), 초기 발표와 조사 후 수치가 다르며, 같은 사건도 문서마다 다른 수치를 낸다.
+
+### 결정
+
+| 결정 | 구현 |
+| --- | --- |
+| **D9 별도 기록** | 트리플렛이나 값 노드가 아니라 단위·정확도·시점·출처가 붙은 기록. 값 노드는 연결 단계가 이름 유사도로 합칠 위험이 있다(3번과 같은 문제) |
+| **D10 닫힌 소수 지표 + `other`** | `affected_people`, `affected_records`, `data_volume`, `fine`, `loss_estimate`, `other`. 사람·건수·용량·금액은 합치거나 비교하지 않는다 |
+| **D11 조정하지 않고 나란히** | 출처 유형, 확정/주장/추정, 시점, 정확도 표현(`exact`, `approx`, `lower_bound`, `upper_bound`, `range`)을 같이 표시. **같은 지표(단위 종류, 통화) 안에서만** 최솟값~최댓값 범위를 보이고 어느 쪽이 맞는지는 판정하지 않는다 |
+| **D12 원문 보존, 규칙으로 정규화** | 원문 수치 문자열(`raw`)과 근거 문장(`evidence`)을 같이 기록. 정규화는 AI 없이 규칙. 단위를 못 읽으면 버리지 않고 `unit_unknown`으로 사람 확인 |
+
+### 동작 (`measurements.py`, 설정은 `consts.py` 5-2절)
+
+- 기록: `{"incident", "metric", "raw", "evidence", "as_of", "doc_id", "source_type", "assertion_status"}`. 정규화 결과로 `value`, `value_high`, `unit_kind`, `currency`, `qualifier`, `review`가 붙는다.
+- 읽는 표기: 한국어 만/억/조/천/백(`2,324만`, `1억 2,300만`, `3천5백만`), 영어 thousand~trillion, 용량(KB~PB, 십진), 통화 USD/KRW/EUR/JPY, 범위(`~`, `to`).
+- 사람 확인 사유(`consts.MEASUREMENT_REVIEW_REASONS`): 숫자 없음(`수백만`), 단위 모름, 지표와 단위 불일치(예: `affected_people`인데 `건`), 원문이 근거 문장에 없음, 정의되지 않은 지표(`other`로 바꿈). 확인 대상은 범위 계산에서 빠지지만 기록은 남는다.
+- 통화는 환산하지 않고 통화별로 따로 둔다(환율 시점 문제).
+- 수치를 말한 문서가 없으면 "없음"이 아니라 "확인되지 않음: 처리한 문서 n개 중 수치 언급 없음".
+
+### 알려진 한계
+
+- **한국어 수 표기 규칙은 일반 지식으로 만든 것이고 실제 문서로 시험하지 않았다.** 합성 표현 9개 시험만 통과했다.
+- 지표 5개는 다섯 사건에서 일반화한 출발점이라 파일럿에서 조정해야 한다.
+- 영어 약어(`23M`, `1.5bn`)와 "2,000만~2,500만" 외의 범위 표현(`between A and B`)은 읽지 못해 확인 대상이 된다.
+- `계정(accounts)`처럼 사람인지 건수인지 모호한 단위는 읽지 않고 `unit_unknown`으로 보낸다.
+- 수치 추출(AI 호출)은 이 저장소에 없다. 추출된 기록을 받아 정규화하고 정리하는 부분만 있다.
+- `as_of`(수치의 기준 시점)를 AI가 일정하게 뽑는지는 확인하지 못했다. 같은 출처의 수치 갱신은 시점으로만 구분한다.
+
+## RootCause 시드 검토 자료: CWE 대응표와 경계 규칙
+
+열린 문제 6번(`RootCause` 시드 8개가 내 일반화일 뿐이라는 점)의 **준비 작업**이다. 전문가 검토를 대신하지 않는다. 설정은 `consts.py` 4-1절(`ROOT_CAUSE_CWE_MAP`, `ROOT_CAUSE_BOUNDARY_RULES`, `ROOT_CAUSE_BOUNDARY_EXAMPLES`)에 있다.
+
+### CWE 대응표
+
+| RootCause | 대응 | CWE (MITRE 매핑 구분) |
+| --- | --- | --- |
+| `UNPATCHED_KNOWN_VULNERABILITY` | partial | CWE-1395 (Allowed-with-Review), CWE-1104 (Allowed) |
+| `CREDENTIAL_OR_KEY_MISMANAGEMENT` | partial | CWE-798 (Allowed-with-Review), CWE-324 (Allowed) |
+| `INSUFFICIENT_ENCRYPTION` | close | CWE-311 (Discouraged), CWE-327 (Allowed-with-Review), CWE-326 (Allowed-with-Review) |
+| `WEAK_ACCESS_CONTROL` | close | CWE-284 (Discouraged), CWE-862 (Allowed-with-Review), CWE-863 (Allowed-with-Review), CWE-306 (Allowed) |
+| `INSUFFICIENT_MONITORING_DETECTION` | close | CWE-778 (Allowed) |
+| `INADEQUATE_INCIDENT_RESPONSE` | none | - |
+| `THIRD_PARTY_OR_SUPPLY_CHAIN_RISK` | partial | CWE-1395 (Allowed-with-Review), CWE-1357 (Allowed-with-Review) |
+| `MISCONFIGURATION` | partial | CWE-1188 (Allowed) |
+
+- **모든 CWE는 CWE 5.0 파일(2026-10-28, `cwec_v5.0.xml`)에서 이름, 상태, MITRE의 매핑 사용 구분을 확인했다.** 괄호 안이 그 구분이다: `Allowed`, `Allowed-with-Review`(검토 후 사용), `Discouraged`(포괄 항목이라 더 구체적인 하위 항목을 쓰라는 뜻). 이 파일의 버전 표기가 CWE 사이트 메인 페이지의 다른 표기와 어긋나서 최신 여부는 확인하지 못했다.
+- **대응 정도**: `close`는 분명히 대응, `partial`은 일부만 맞음, `none`은 CWE에 대응이 없음이다.
+- **의도적으로 뺀 CWE** (`ROOT_CAUSE_CWE_EXCLUDED`):
+  - **CWE-320 (Key Management Errors)**: 그룹이고 폐기(Obsolete)이며 파일의 매핑 주석이 `Prohibited`이다. 멤버 약점 322, 323, 324, 798을 쓴다.
+  - **CWE-16 (Configuration)**: 그룹이고 폐기이며 `Prohibited`이고 멤버 약점이 없다. 파일의 주석은 설정 오류를 "그 설정이 만든 행동의 약점"(접근 통제 계열 등)으로 매핑하라고 한다.
+- **`Discouraged`인 311과 284**는 목록에 두되, 매핑할 때는 파일이 제안하는 하위 항목을 쓴다(311 → 312 저장, 319 전송 / 284 → 862, 863, 732, 306 등).
+- 이 대응표는 **전문가 검토를 대신하지 않는다.** 번호가 존재하고 사용 가능하다는 것까지만 확인했고, 각 RootCause가 그 CWE로 충분히 설명되는지는 판단하지 않았다.
+
+### 대응표에서 보이는 것
+
+1. **RootCause는 두 수준을 섞고 있다.** `ENCRYPTION`, `ACCESS_CONTROL`, `MONITORING`은 제품의 기술 약점이라 CWE와 잘 맞는다. 반면 `INADEQUATE_INCIDENT_RESPONSE`는 대응이 아예 없고 `UNPATCHED`, `CREDENTIAL`, `THIRD_PARTY`, `MISCONFIGURATION`은 일부만 맞는다. CWE는 **제품의 약점**을 다루고 이 항목들은 **조직의 운영·절차 실패**이기 때문이다.
+2. 조직 수준 항목을 다른 표준에 대응시킬지는 열려 있다(예: 보안 관리 프레임워크). 확인하지 않았다.
+3. 질문 틀의 칸 (b)는 "약점·관리 실패"이므로 두 수준을 한 칸에 두는 것은 의도와 맞다. 다만 사건 간 비교에서 두 수준을 섞어 세지 않도록 표시를 달지는 정해야 한다(전문가에게 묻는 질문).
+
+### 경계 규칙
+
+원칙은 **문서가 말한 "실패한 통제"로 고르고 결과(피해)로 고르지 않는다**이다. 서로 다른 실패가 둘이면 값도 둘이고, 한 실패에 값을 둘 붙이지 않는다. 겹치는 쌍 5개의 규칙은 `ROOT_CAUSE_BOUNDARY_RULES`에 있다.
+
+- 키·자격 증명의 **수명주기** 실패 → `CREDENTIAL`, 권한의 범위·분리·인증 요구 부재 → `WEAK_ACCESS_CONTROL`
+- 자기 시스템의 공개 패치 미적용 → `UNPATCHED`, 외부 공급사·협력사 침해 → `THIRD_PARTY`
+- 침입을 못 알아챔 → `MONITORING`, 알고도 대응 안 함 → `INCIDENT_RESPONSE`
+- 잘못된 설정·기본값 → `MISCONFIGURATION`, 통제 자체가 없음 → `WEAK_ACCESS_CONTROL`
+- `ENCRYPTION`은 암호화가 없거나 약하다고 말할 때만
+
+경계 사례 11개(`ROOT_CAUSE_BOUNDARY_EXAMPLES`)는 시드 8개를 모두 한 번씩 보이고, 한 문장에 실패가 둘인 경우, 피해만 말한 경우, 원인을 밝히지 않은 경우(기록하지 않음)를 포함한다. **문장은 규칙을 시험하려고 만든 가상 문장이며 실제 사건의 사실이 아니다.**
+
+### 한계
+
+- 경계 규칙은 내가 만든 것이고 실제 문서로 AI가 일관되게 따르는지는 확인하지 못했다. 사례는 프롬프트 예시와 사람 검토용이다.
+- 시드에서 빠진 원인(피싱 교육, 백업, 물리 보안 등)은 이 작업으로 드러나지 않는다. 파일럿에서 `other`로 빠지는 값을 모아야 한다.
+
+## `Weakness` 닫힌 목록: CWE 목록 변환 (`cwe_catalog.py`)
+
+`Weakness`는 CWE 번호로만 연결하는 닫힌 종류다. 목록의 재료는 MITRE의 CWE 전체 XML이다. 작은 일부(예: Top 25)로 한정하면 문서가 인용한 CWE가 25개 밖일 때 연결에 실패해 사실이 버려지므로 **전체 목록**을 쓴다.
+
+- `python cwe_catalog.py <cwec.xml>`이 XML에서 가벼운 목록 `data/cwe_catalog.json`(약 228KB)을 만든다. 원본 XML(18MB)은 올리지 않는다. 설명문은 뺐고 이름, 추상화 수준, 상태, 매핑 사용 구분, 제안, 부모만 둔다.
+- **이번 5.0 파일의 구성**: 약점 984개(폐기 28개 포함), 그룹 431개. 매핑 사용 구분은 Allowed 755, Allowed-with-Review 100, Discouraged 44, Prohibited 85이다.
+- **문서가 CWE 번호를 인용했을 때의 판정** (`resolve_cwe`):
+
+| 판정 | 조건 | 처리 |
+| --- | --- | --- |
+| `link` | 약점이고 Allowed 또는 Allowed-with-Review | 연결한다(후자는 검토 필요 표시) |
+| `link_specific` | Discouraged(포괄 항목) | 연결하되 MITRE가 제안한 더 구체적인 번호를 알린다 |
+| `review` | 그룹, 폐기, Prohibited, 목록에 없는 번호 | **연결하지 않고 사람 확인으로 보낸다. 버리지 않는다** |
+
+- 5.0 파일 기준으로 연결 가능한 약점은 899개이다(폐기 28개와 Prohibited 57개가 `review`).
+- **상태(Draft, Incomplete 등)로는 거르지 않는다.** 약점 대부분이 Incomplete(498)나 Draft(432)이고 Stable은 26개뿐이라, 상태로 거르면 쓸 수 있는 목록이 사라진다.
+- **폐기 항목**은 설명문에서 찾은 CWE 번호를 대체 힌트로만 알린다(예: CWE-1187 → CWE-908). 확정이 아니다.
+
+### 알려진 한계
+
+- XML 태그(`Mapping_Notes/Usage`, `Suggestion`, `Has_Member`)는 올려 받은 5.0 파일을 읽어 맞춘 것이다. 다른 버전에서는 달라질 수 있다.
+- 자체 시험은 작은 가짜 XML로 하고, 실제 5.0 파일에서는 대응표 14개의 구분이 `consts.py`의 값과 모두 일치하는지, 제외한 두 번호가 `review`로 가는지를 확인했다.
+- CWE 사이트에는 접속할 수 없어(이 환경의 프록시가 차단) 파일은 사용자가 올린 것을 썼고, 사이트의 최신 파일과 같은지는 확인하지 못했다.
+- 이 변환은 약점 목록만 만든다. 연결 단계(문서의 CWE 번호를 이 목록에 맞추는 코드)는 아직 이 저장소에 없다.
+
 ## 원본 코드에서 고쳐야 할 곳
 
 `consts.py`만 바꿔서는 동작하지 않는다.
@@ -192,8 +295,8 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 2. ~~**내부자 여부.**~~ **반영됨(옵션 B)**: `ActorOrigin` 시드 4개와 `HAS_ACTOR_ORIGIN`을 참고 정보로 추가. 경계 규칙(공격 시점의 고용 상태), VERIS 대응표, 다중 행위자 보류까지 결정됨(위 "공격자 유형").
 3. ~~**같은 사건을 여러 문서가 쓸 때 `Incident`를 합치는 규칙**이 없다.~~ **반영됨(D1~D4)**: 조직 단위 `Incident` + `Campaign`, 같은 조직 필수 + 공개 시점 + 공유 신호, 애매하면 사람 확인(위 "사건 해소"). 숫자는 파일럿에서 보정.
 4. ~~**기법 수준.**~~ **반영됨(D5~D8)**: 서술형 행동을 먼저 기록하고 ATT&CK 매핑은 별도 단계(AI 제안 + 사람 확인), 비교는 전술 수준, 유도된 기법은 구분해서 표시(위 "기법 층").
-5. **날짜와 수치.** 날짜는 사건 해소에 필요해서 **문서 단위 메타데이터**(`headline_date`, `attack_span`, `document_date`)로 도입했다. 트리플렛에는 넣지 않는다. 수치(피해 규모, 금액)는 아직 이 틀에 없고, 출처 간 차이 비교 질문에는 필요하다.
-6. `RootCause` 시드 8개는 5개 사건의 검색 요약에서 일반화한 것이라 전문가 검토가 필요하다.
+5. ~~**날짜와 수치.**~~ **반영됨**: 날짜는 문서 단위 메타데이터(`headline_date`, `attack_span`, `document_date`)로 트리플렛 밖에 둔다. 수치는 별도 기록으로 정규화하고 출처별로 나란히 보여 준다(D9~D12, 위 "수치 층").
+6. `RootCause` 시드 8개는 5개 사건의 검색 요약에서 일반화한 것이라 **전문가 검토가 필요하다.** 준비 작업으로 CWE 대응표와 경계 규칙·사례를 만들었다(위 "RootCause 시드 검토 자료"). CWE 5.0 파일로 대응표를 확인하고 고쳤다(320, 16 제외, 863 추가 등). 대응이 없거나 일부인 항목(조직 절차 수준)을 어떻게 다룰지는 전문가에게 묻는 질문으로 남아 있다.
 
 ## 자체 검사
 
@@ -202,6 +305,8 @@ python extraction/consts.py   # 설정의 일관성 검사
 python aggregate.py           # 집계 규칙 자체 시험(13개)
 python attack_mapping.py      # 기법 층 규칙 자체 시험(10개)
 python incident_resolution.py # 사건 해소 규칙 자체 시험(11개)
+python measurements.py        # 수치 층 규칙 자체 시험(9개)
+python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 ```
 
 `consts.py` 검사는 관계의 개체 종류 정의 여부, FILTERED ⊂ ALL, 닫힌 목록 종류의 연결 방법, `ANSWER_SLOTS`가 문서에서 받는 관계만 쓰는지 등을 확인한다.
