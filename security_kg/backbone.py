@@ -254,7 +254,15 @@ def build(which: str = "all") -> dict:
 
 # ── 확인용 CSV ─────────────────────────────────────────────────────────────
 def _join(x) -> str:
-    return "; ".join(str(i) for i in x) if isinstance(x, (list, tuple, set)) else ("" if x is None else str(x))
+    """목록(제너레이터 포함)은 '; '로 잇고, None은 빈 칸, 나머지는 문자열로 바꾼다."""
+    if x is None:
+        return ""
+    if isinstance(x, (str, bytes)):
+        return str(x)
+    try:
+        return "; ".join(str(i) for i in x)
+    except TypeError:
+        return str(x)
 
 
 def _write_csv(path: Path, header: list, rows: list) -> str:
@@ -376,6 +384,24 @@ def self_test() -> None:
         (d / "misp_threat_actors.json").write_text(json.dumps(m), encoding="utf-8")
         out = export_csv(Path(td) / "out", d)
         assert len(out) == 7                                       # ATT&CK 5개 + KEV + MISP. CWE는 데이터가 없어 만들지 않음
+        fk = {"vulnerabilities": {"CVE-2099-1": {**k["vulnerabilities"]["CVE-2099-1234"], **merge_cwe_sources(
+            ["CWE-284"], {"exists": True, "cwes_cna": ["CWE-434"], "cwes_adp": {"CISA-ADP": ["CWE-20", "CWE-22"]}})}}}
+        fc = {"weaknesses": {"1": {"name": "W", "abstraction": "Base", "status": "Draft", "usage": "Discouraged",
+                                   "suggestions": [{"id": "2", "comment": "c"}, {"id": "3", "comment": "d"}], "parents": ["9"]}},
+              "groupings": {"7": {"name": "G", "status": "Obsolete", "members": ["1", "2"]}}}
+        (d / "kev.json").write_text(json.dumps(fk), encoding="utf-8")
+        (d / "cwe_catalog.json").write_text(json.dumps(fc), encoding="utf-8")
+        out = export_csv(Path(td) / "out", d)
+        assert len(out) == 9
+        for f in (Path(td) / "out").glob("*.csv"):                  # 제너레이터나 None 같은 파이썬 표기가 칸에 남으면 안 된다
+            txt = f.read_text("utf-8-sig")
+            assert "<generator" not in txt and "None" not in txt, f.name
+        kv = list(csv.reader((Path(td) / "out" / "kev.csv").read_text("utf-8-sig").splitlines()))
+        assert kv[1][8:13] == ["CWE-434", "CISA-ADP: CWE-20; CWE-22", "CWE-434", "cna", "예"]
+        cw = list(csv.reader((Path(td) / "out" / "cwe_weaknesses.csv").read_text("utf-8-sig").splitlines()))
+        assert cw[1][5:7] == ["CWE-2; CWE-3", "CWE-9"]
+        gp = list(csv.reader((Path(td) / "out" / "cwe_groupings.csv").read_text("utf-8-sig").splitlines()))
+        assert gp[1][3] == "CWE-1; CWE-2"
         raw = (Path(td) / "out" / "attack_software.csv").read_bytes()
         assert raw.startswith(b"\xef\xbb\xbf")                       # 엑셀용 BOM
         rows = list(csv.reader(raw.decode("utf-8-sig").splitlines()))
