@@ -13,6 +13,7 @@
 원본(수십 MB)은 저장소에 올리지 않는다(`backbone/raw/`는 무시). 변환 결과만 data/에 둔다.
 사용:
   python backbone.py build [attack|kev|misp|all]   # 내려받아 data/에 저장하고 스냅샷 정보를 출력
+  python backbone.py export [폴더]                  # 확인용 CSV 만들기(기본 backbone/export/, 저장소에 올리지 않음)
   python backbone.py cve CVE-2021-44228            # 한 건 조회
   python backbone.py                               # 자체 시험(네트워크 없이)
 """
@@ -181,7 +182,7 @@ def lookup_cve(cve: str, cache: bool = True) -> dict:
 def _save(obj, name):
     DATA.mkdir(exist_ok=True)
     p = DATA / name
-    p.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    p.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return f"{name} ({p.stat().st_size / 1024:.0f}KB)"
 
 
@@ -206,6 +207,62 @@ def build(which: str = "all") -> dict:
         snap["misp_galaxy"] = f"threat-actor 갤럭시 version {mp['galaxy_version']}, {mp['count']}개 (main 브랜치에서 받음)"
         print("저장:", _save(mp, "misp_threat_actors.json"))
     return snap
+
+
+# ── 확인용 CSV ─────────────────────────────────────────────────────────────
+def _join(x) -> str:
+    return "; ".join(str(i) for i in x) if isinstance(x, (list, tuple, set)) else ("" if x is None else str(x))
+
+
+def _write_csv(path: Path, header: list, rows: list) -> str:
+    """엑셀에서 한글이 깨지지 않도록 BOM이 붙은 UTF-8로 쓴다."""
+    import csv
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(header)
+        w.writerows(rows)
+    return f"{path.name} ({len(rows)}행)"
+
+
+def export_csv(dest: Path | None = None, data_dir: Path | None = None) -> list:
+    """data/의 JSON을 사람이 보기 편한 CSV로 바꾼다. 중첩된 목록은 '; '로 이어 한 칸에 쓴다(정보가 일부 줄어든다).
+    JSON에서 다시 만들 수 있으므로 저장소에 올리지 않는다."""
+    dest, data_dir, done = Path(dest or HERE / "backbone" / "export"), Path(data_dir or DATA), []
+    load = lambda n: json.loads((data_dir / n).read_text(encoding="utf-8")) if (data_dir / n).exists() else None   # noqa: E731
+    atk = load("attack_catalog.json")
+    if atk:
+        done.append(_write_csv(dest / "attack_techniques.csv", ["id", "name", "tactics", "parent"],
+                               [[k, v["name"], _join(v["tactics"]), v["parent"] or ""] for k, v in sorted(atk["techniques"].items())]))
+        done.append(_write_csv(dest / "attack_tactics.csv", ["shortname", "id", "name"],
+                               [[k, v["id"], v["name"]] for k, v in sorted(atk["tactics"].items(), key=lambda x: x[1]["id"])]))
+        done.append(_write_csv(dest / "attack_software.csv", ["id", "name", "type", "aliases", "technique_count", "techniques"],
+                               [[k, v["name"], v["type"], _join(v["aliases"]), len(v["techniques"]), _join(v["techniques"])]
+                                for k, v in sorted(atk["software"].items())]))
+        done.append(_write_csv(dest / "attack_groups.csv", ["id", "name", "aliases", "technique_count", "software"],
+                               [[k, v["name"], _join(v["aliases"]), len(v["techniques"]), _join(v["software"])]
+                                for k, v in sorted(atk["groups"].items())]))
+        done.append(_write_csv(dest / "attack_replaced_techniques.csv", ["old_id", "replaced_by"],
+                               [[k, v or ""] for k, v in sorted(atk["replaced_techniques"].items())]))
+    kev = load("kev.json")
+    if kev:
+        done.append(_write_csv(dest / "kev.csv", ["cve", "vendor", "product", "name", "date_added", "due_date", "ransomware", "cwes"],
+                               [[k, v["vendor"], v["product"], v["name"], v["date_added"], v["due_date"], v["ransomware"], _join(v["cwes"])]
+                                for k, v in sorted(kev["vulnerabilities"].items())]))
+    misp = load("misp_threat_actors.json")
+    if misp:
+        done.append(_write_csv(dest / "misp_threat_actors.csv", ["name", "synonyms", "country", "state_sponsor"],
+                               [[a["name"], _join(a["synonyms"]), a["country"] or "", a["state_sponsor"] or ""] for a in misp["actors"]]))
+    cwe = load("cwe_catalog.json")
+    if cwe:
+        done.append(_write_csv(dest / "cwe_weaknesses.csv", ["id", "name", "abstraction", "status", "mapping_usage", "suggested", "parents"],
+                               [[f"CWE-{k}", v["name"], v["abstraction"], v["status"], v["usage"] or "",
+                                 _join(f"CWE-{s['id']}" for s in v["suggestions"]), _join(f"CWE-{p}" for p in v["parents"])]
+                                for k, v in sorted(cwe["weaknesses"].items(), key=lambda x: int(x[0]))]))
+        done.append(_write_csv(dest / "cwe_groupings.csv", ["id", "name", "status", "members"],
+                               [[f"CWE-{k}", v["name"], v["status"], _join(f"CWE-{m}" for m in v["members"])]
+                                for k, v in sorted(cwe["groupings"].items(), key=lambda x: int(x[0]))]))
+    return done
 
 
 # ── 자체 시험(네트워크 없음, 가짜 번들) ────────────────────────────────────
@@ -259,7 +316,25 @@ def self_test() -> None:
                                          "adp": [{"providerMetadata": {"shortName": "X"}, "problemTypes": [{"descriptions": [{"cweId": "CWE-3"}]}]}]}})
     assert p["cwes_cna"] == ["CWE-2"] and p["cwes_adp"] == {"X": ["CWE-3"]} and p["products"] == [("V", "P")]
     assert lookup_cve("garbage")["reason"] == "bad_format"
-    print("자체 시험 12개 통과")
+
+    # 확인용 CSV: 가짜 data 폴더로 만들고 다시 읽어 본다
+    import csv
+    import tempfile
+    with tempfile.TemporaryDirectory() as td:
+        d = Path(td) / "data"
+        d.mkdir()
+        (d / "attack_catalog.json").write_text(json.dumps(a), encoding="utf-8")
+        (d / "kev.json").write_text(json.dumps(k), encoding="utf-8")
+        (d / "misp_threat_actors.json").write_text(json.dumps(m), encoding="utf-8")
+        out = export_csv(Path(td) / "out", d)
+        assert len(out) == 7                                       # ATT&CK 5개 + KEV + MISP. CWE는 데이터가 없어 만들지 않음
+        raw = (Path(td) / "out" / "attack_software.csv").read_bytes()
+        assert raw.startswith(b"\xef\xbb\xbf")                       # 엑셀용 BOM
+        rows = list(csv.reader(raw.decode("utf-8-sig").splitlines()))
+        assert rows[1][:3] == ["S9", "FakeMal", "malware"] and rows[1][3] == "FakeMal; FM" and rows[1][4] == "1"
+        assert list(csv.reader((Path(td) / "out" / "attack_replaced_techniques.csv").read_text("utf-8-sig").splitlines()))[1:] == \
+            [["T9002", "T9001"], ["T9003", ""]]
+    print("자체 시험 13개 통과")
 
 
 if __name__ == "__main__":
@@ -273,5 +348,8 @@ if __name__ == "__main__":
         self_test()
     elif a[0] == "build":
         print(json.dumps(build(a[1] if len(a) > 1 else "all"), ensure_ascii=False, indent=1))
+    elif a[0] == "export":
+        for line in export_csv(a[1] if len(a) > 1 else None):
+            print("저장:", line)
     elif a[0] == "cve":
         print(json.dumps(lookup_cve(a[1]), ensure_ascii=False, indent=1, default=list))
