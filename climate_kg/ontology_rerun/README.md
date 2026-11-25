@@ -1,5 +1,7 @@
 # 온톨로지 적합성 단계(O) 재실행
 
+> 이 폴더는 `climate_kg/` 아래에 있다. 이 문서의 명령은 `climate_kg/` 폴더를 작업 폴더로 해서 실행한다.
+
 저장된 `ontology_conformed` 플래그를 그대로 집계하지 않고, `ontology_conformance_agent.py`를 `extracted_papers`에서 처음부터 다시 실행해 같은 플래그가 나오는지 확인한다.
 이 단계는 LLM 호출 없이 규칙(온톨로지 조합 + 정규식)으로만 동작하므로 API 비용이 없다.
 

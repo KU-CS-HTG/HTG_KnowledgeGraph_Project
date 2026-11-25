@@ -1,5 +1,7 @@
 # CMIP Publication Hub 엔티티 재현율 재현
 
+> 이 폴더는 `climate_kg/` 아래에 있다. 이 문서의 명령은 `climate_kg/` 폴더를 작업 폴더로 해서 실행한다.
+
 ClimateKG 논문의 "CMIP Publication Hub 대비 엔티티 수준 재현율" 실험을 재현한다.
 정답은 CMIP Publication Hub의 More Info(활동, 실험, 모델, 빈도)이고, 비교 대상은 파이프라인이 추출해 엔티티 링크한 결과다.
 
