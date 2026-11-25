@@ -7,7 +7,7 @@
 입력: 한 사건(Incident)에 대한 트리플렛 목록. 각 항목은 dict이며 사용하는 키는 아래와 같다.
   relation, target_entity_instance, assertion_status, doc_id
   (assertion_status와 doc_id는 원본 파이프라인에 없는 칸이라 추출 단계에서 추가해야 한다)
-n_documents: 이 사건을 다루는 것으로 처리한 문서 수 (문서 단위 필드 incident_names로 센다).
+n_documents: 이 사건을 다루는 것으로 처리한 문서 수 (문서 단위 필드 incident_mentions로 센다).
 
 참고 정보(공격자 유형, 배후 지목)는 summarize_context로 같은 규칙을 적용한다. 질문의 칸에는 섞이지 않는다.
 
