@@ -205,6 +205,38 @@ SOURCE_TYPES = [
 
 
 # ──────────────────────────────────────────────────────────────────────────
+# 6. 답의 집계 [신규] — '취약점 없음/미공개'를 다루는 최소안
+#    원칙: 부재를 추측하지 않는다. 트리플렛이 없으면 "없음"이 아니라 "언급 없음(처리한 문서 n개 중)"이다.
+#    새 개체 종류나 관계를 추가하지 않는다. aggregate.py가 이 설정으로 사건별 답을 만든다.
+# ──────────────────────────────────────────────────────────────────────────
+
+# 질문 틀의 칸 → 그 칸의 답이 되는 관계. 이 관계의 트리플렛이 하나라도 있으면 그 칸은 "있음"이다.
+ANSWER_SLOTS = {
+    "a_vulnerability": ["EXPLOITED_VULNERABILITY"],
+    "b_weakness_or_failure": ["EXPLOITED_WEAKNESS", "HAS_ROOT_CAUSE"],
+    "c_technique": ["USED_TECHNIQUE", "USED_MALWARE"],
+}
+
+# 칸의 상태. 최소안에서는 두 가지뿐이다. (구분이 필요해지면 확장안: README 참고)
+SLOT_STATES = {
+    "found": "하나 이상의 문서가 답을 제시함",
+    "not_mentioned": "처리한 문서 중 어느 것도 이 칸을 언급하지 않음(= '없음'이 아니라 '확인 안 됨')",
+}
+NOT_MENTIONED_TEXT = "확인되지 않음: 처리한 문서 {n}개 중 언급 없음"
+NO_DOCUMENTS_TEXT = "확인되지 않음: 처리한 문서가 없음"
+
+# 답을 보여 줄 때의 정렬 기준: 확정 > 주장 > 추정, 같으면 더 많은 문서가 말한 것을 먼저
+ASSERTION_RANK = {"confirmed": 0, "claimed": 1, "inferred": 2}
+
+# [신규] 문서 단위로 추가로 뽑아야 하는 필드. 사건당 처리한 문서 수와 시점을 세기 위해 필요하다.
+NEW_DOCUMENT_LEVEL_FIELDS = {
+    "incident_names": "이 문서가 다루는 사건의 이름 목록 (문서 수 집계의 기준)",
+    "document_date": "문서의 발행일 (확장안에서 '미공개'의 시점 비교에 필요)",
+    "source_type": "SOURCE_TYPES 중 하나",
+}
+
+
+# ──────────────────────────────────────────────────────────────────────────
 # 자체 검사: python consts.py
 # ──────────────────────────────────────────────────────────────────────────
 def validate() -> list[str]:
@@ -237,6 +269,17 @@ def validate() -> list[str]:
             problems.append(f"닫힌 목록 종류 {k}에 연결 방법이 없음")
         if k in ENTITY_TYPES_TO_ADD_INSTANCES:
             problems.append(f"닫힌 목록 종류 {k}가 추가 가능 목록에 있음")
+    known_relations = {r for _, _, r in ALL_RELATIONSHIP_SOURCE_TO_TARGET}
+    for slot, relations in ANSWER_SLOTS.items():
+        for r in relations:
+            if r not in known_relations:
+                problems.append(f"ANSWER_SLOTS[{slot}]: 정의되지 않은 관계 {r}")
+    asserted = {r for _, _, r in FILTERED_RELATIONSHIP_SOURCE_TO_TARGET}
+    covered = {r for rels in ANSWER_SLOTS.values() for r in rels}
+    for r in covered - asserted:
+        problems.append(f"ANSWER_SLOTS가 문서에서 받지 않는 관계를 씀: {r}")
+    if set(ASSERTION_RANK) != set(ASSERTION_STATUSES):
+        problems.append("ASSERTION_RANK와 ASSERTION_STATUSES의 키가 다름")
     return problems
 
 
