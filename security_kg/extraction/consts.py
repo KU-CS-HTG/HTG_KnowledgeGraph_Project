@@ -61,7 +61,15 @@ ENTITY_TYPE_DEFINITIONS = {
     ),
     "ThreatActor": (
         "A named attacker group or named individual. Unnamed 'hackers' or 'attackers' are NOT a ThreatActor; "
-        "do not create an entity for them."
+        "do not create an entity for them (record their relationship to the victim with ActorOrigin instead)."
+    ),
+    "ActorOrigin": (
+        "How the attacker relates to the victim organization: INTERNAL (a current employee or contractor with "
+        "authorized access), FORMER_INSIDER (a former employee or contractor who used access or knowledge "
+        "retained from that role), PARTNER (a supplier, vendor or other third party with a business relationship), "
+        "EXTERNAL (no authorized relationship, e.g. a named criminal or state-linked group or outsiders). "
+        "Use ONLY when the text states or clearly implies the relationship; when it is only implied, mark the "
+        "assertion as inferred. Never infer it from the attacker's nationality, location or skill."
     ),
     "Product": (
         "A named software product or operating system affected by a Vulnerability, as in a CPE name "
@@ -81,6 +89,7 @@ BACKBONE_ENTITY_TYPES = {
     "ThreatActor": "MITRE ATT&CK groups (+ MISP galaxy aliases)",
     "Product": "NVD CPE dictionary (partial; names vary)",
     "RootCause": "hand-written seed list below (needs expert review)",
+    "ActorOrigin": "hand-written seed list below; INTERNAL/EXTERNAL/PARTNER follow the top-level actor categories of VERIS",
 }
 
 # [신규] 뼈대 내려받은 날짜·버전 기록용. 내려받을 때 채운다(재현을 위해 필수).
@@ -114,6 +123,7 @@ EXACT_ID_ENTITIES = {
     "Vulnerability": "cve_id",
     "Weakness": "cwe_id",       # 이름 유사도와 ID 일치를 모두 허용하려면 위 EMBEDDING_MATCH_ENTITIES도 유지
     "Technique": "attack_id",
+    "ActorOrigin": "name",      # 닫힌 시드(ACTOR_ORIGIN_SEED). ID는 아니지만 '정확히 일치'로만 연결한다
 }
 ID_PATTERNS = {                 # 형식은 일반적으로 알려진 것이며 이 세션에서 확인하지 않았다
     "Vulnerability": r"^CVE-\d{4}-\d{4,}$",
@@ -147,6 +157,7 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET = [
     ("Incident", "Technique", "USED_TECHNIQUE"),             # (c) 기법
     ("Incident", "MalwareFamily", "USED_MALWARE"),           # (c) 악성코드·도구
     ("Incident", "ThreatActor", "ATTRIBUTED_TO"),            # 배후 지목(주장인 경우가 많음)
+    ("Incident", "ActorOrigin", "HAS_ACTOR_ORIGIN"),         # 공격자와 피해 조직의 관계(내부자, 외부자 등)
 ]
 
 # 표준 데이터가 이미 가진 관계. 문서에서 다시 받지 않고 뼈대로 만든다.
@@ -177,6 +188,19 @@ ROOT_CAUSE_SEED = [
     "INADEQUATE_INCIDENT_RESPONSE",        # 과거 침해 대응 미흡
     "THIRD_PARTY_OR_SUPPLY_CHAIN_RISK",    # 서드파티·공급망 관리 미흡
     "MISCONFIGURATION",                    # 설정 오류
+]
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# 4-2. 공격자 유형(ActorOrigin)의 시드 목록 [신규]
+#      질문 틀 (a)(b)(c)에는 '누가'가 없다. 그래서 이 값은 답의 칸이 아니라 참고 정보(CONTEXT_FIELDS)다.
+#      UNKNOWN은 값으로 두지 않는다: 문서가 말하지 않은 것은 "언급 없음"으로 집계한다(부재를 추측하지 않는 원칙).
+# ──────────────────────────────────────────────────────────────────────────
+ACTOR_ORIGIN_SEED = [
+    "INTERNAL",         # 현직 직원·계약자
+    "FORMER_INSIDER",   # 전직 직원·계약자. 퇴사 후에도 남은 접근 권한이나 지식을 이용(우리가 추가한 값)
+    "PARTNER",          # 협력사·공급사·서드파티
+    "EXTERNAL",         # 피해 조직과 정당한 관계가 없는 외부
 ]
 
 
@@ -216,6 +240,15 @@ ANSWER_SLOTS = {
     "b_weakness_or_failure": ["EXPLOITED_WEAKNESS", "HAS_ROOT_CAUSE"],
     "c_technique": ["USED_TECHNIQUE", "USED_MALWARE"],
 }
+
+# 질문의 칸은 아니지만 답과 함께 보여 줄 참고 정보 → 그 정보의 답이 되는 관계. 상태 규칙은 칸과 같다.
+CONTEXT_FIELDS = {
+    "actor_origin": ["HAS_ACTOR_ORIGIN"],
+    "attribution": ["ATTRIBUTED_TO"],
+}
+# 값이 여러 개 나오면 사람이 확인하도록 표시할 참고 정보
+# (문서들이 서로 다른 값을 말했거나 사건에 행위자가 둘 이상일 수 있다)
+REVIEW_IF_MULTIPLE_VALUES = ["actor_origin"]
 
 # 칸의 상태. 최소안에서는 두 가지뿐이다. (구분이 필요해지면 확장안: README 참고)
 SLOT_STATES = {
@@ -263,7 +296,7 @@ def validate() -> list[str]:
     for k in types - used:
         problems.append(f"어떤 관계에도 쓰이지 않는 개체 종류: {k}")
     # 닫힌 목록 종류는 '연결 방법'이 하나는 정해져 있어야 한다
-    closed = {"Vulnerability", "Weakness", "Technique", "Tactic"}
+    closed = {"Vulnerability", "Weakness", "Technique", "Tactic", "ActorOrigin"}
     for k in closed:
         if k not in EMBEDDING_MATCH_ENTITIES and k not in EXACT_ID_ENTITIES:
             problems.append(f"닫힌 목록 종류 {k}에 연결 방법이 없음")
@@ -278,6 +311,17 @@ def validate() -> list[str]:
     covered = {r for rels in ANSWER_SLOTS.values() for r in rels}
     for r in covered - asserted:
         problems.append(f"ANSWER_SLOTS가 문서에서 받지 않는 관계를 씀: {r}")
+    for field, relations in CONTEXT_FIELDS.items():
+        for r in relations:
+            if r not in asserted:
+                problems.append(f"CONTEXT_FIELDS[{field}]: 문서에서 받지 않는 관계 {r}")
+    for field in REVIEW_IF_MULTIPLE_VALUES:
+        if field not in CONTEXT_FIELDS:
+            problems.append(f"REVIEW_IF_MULTIPLE_VALUES: 정의되지 않은 참고 정보 {field}")
+    if covered & {r for rels in CONTEXT_FIELDS.values() for r in rels}:
+        problems.append("같은 관계가 ANSWER_SLOTS와 CONTEXT_FIELDS에 모두 있음")
+    if sorted(ACTOR_ORIGIN_SEED) != sorted(["INTERNAL", "FORMER_INSIDER", "PARTNER", "EXTERNAL"]):
+        problems.append("ACTOR_ORIGIN_SEED가 정의 문구의 값과 다름")
     if set(ASSERTION_RANK) != set(ASSERTION_STATUSES):
         problems.append("ASSERTION_RANK와 ASSERTION_STATUSES의 키가 다름")
     return problems

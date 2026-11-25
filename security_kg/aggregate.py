@@ -9,6 +9,8 @@
   (assertion_status와 doc_id는 원본 파이프라인에 없는 칸이라 추출 단계에서 추가해야 한다)
 n_documents: 이 사건을 다루는 것으로 처리한 문서 수 (문서 단위 필드 incident_names로 센다).
 
+참고 정보(공격자 유형, 배후 지목)는 summarize_context로 같은 규칙을 적용한다. 질문의 칸에는 섞이지 않는다.
+
 사용: python aggregate.py   # 자체 시험 실행
 """
 import sys
@@ -19,15 +21,32 @@ sys.path.insert(0, str(Path(__file__).resolve().parent / "extraction"))
 import consts  # noqa: E402
 
 
+def _group(triplets: list[dict], relations: list[str]) -> dict:
+    groups = defaultdict(lambda: {"docs": set(), "statuses": set()})
+    for t in triplets:
+        if t.get("relation") in relations:
+            g = groups[(t["relation"], t["target_entity_instance"])]
+            g["docs"].add(t.get("doc_id"))
+            g["statuses"].add(t.get("assertion_status", "inferred"))
+    return groups
+
+
+def summarize_context(triplets: list[dict], n_documents: int) -> dict:
+    """참고 정보(공격자 유형, 배후 지목 등). 칸과 같은 규칙이고, 값이 여러 개면 사람이 확인하도록 표시한다."""
+    out = summarize_fields(triplets, n_documents, consts.CONTEXT_FIELDS)
+    for field in consts.REVIEW_IF_MULTIPLE_VALUES:
+        out[field]["needs_review"] = len({i["target"] for i in out[field]["items"]}) > 1
+    return out
+
+
 def summarize_incident(triplets: list[dict], n_documents: int) -> dict:
+    return summarize_fields(triplets, n_documents, consts.ANSWER_SLOTS)
+
+
+def summarize_fields(triplets: list[dict], n_documents: int, fields: dict) -> dict:
     result = {}
-    for slot, relations in consts.ANSWER_SLOTS.items():
-        groups = defaultdict(lambda: {"docs": set(), "statuses": set()})
-        for t in triplets:
-            if t.get("relation") in relations:
-                g = groups[(t["relation"], t["target_entity_instance"])]
-                g["docs"].add(t.get("doc_id"))
-                g["statuses"].add(t.get("assertion_status", "inferred"))
+    for slot, relations in fields.items():
+        groups = _group(triplets, relations)
         if not groups:
             text = (consts.NOT_MENTIONED_TEXT.format(n=n_documents) if n_documents > 0
                     else consts.NO_DOCUMENTS_TEXT)
@@ -47,14 +66,21 @@ def summarize_incident(triplets: list[dict], n_documents: int) -> dict:
     return result
 
 
-def render(incident: str, summary: dict) -> str:
-    names = {"a_vulnerability": "(a) 취약점", "b_weakness_or_failure": "(b) 약점·관리 실패", "c_technique": "(c) 기법"}
+NAMES = {
+    "a_vulnerability": "(a) 취약점", "b_weakness_or_failure": "(b) 약점·관리 실패", "c_technique": "(c) 기법",
+    "actor_origin": "참고: 공격자 유형", "attribution": "참고: 배후 지목",
+}
+
+
+def render(incident: str, summary: dict, context: dict | None = None) -> str:
     lines = [f"[{incident}]"]
-    for slot, s in summary.items():
-        if s["state"] == "not_mentioned":
-            lines.append(f"  {names[slot]}: {s['text']}")
-        else:
-            lines.append(f"  {names[slot]}:")
+    for part in (summary, context or {}):
+        for slot, s in part.items():
+            if s["state"] == "not_mentioned":
+                lines.append(f"  {NAMES[slot]}: {s['text']}")
+                continue
+            review = "  ※ 값이 여러 개: 사람이 확인 필요" if s.get("needs_review") else ""
+            lines.append(f"  {NAMES[slot]}:{review}")
             for i in s["items"]:
                 mark = " (구분이 문서마다 다름: " + "/".join(i["statuses"]) + ")" if i["mixed_statuses"] else ""
                 lines.append(f"    - {i['target']} [{i['best_status']}, 문서 {i['n_documents']}개]{mark}")
@@ -104,10 +130,32 @@ def self_test() -> None:
     # 6) 문서가 하나도 없을 때
     assert summarize_incident([], 0)["a_vulnerability"]["text"] == consts.NO_DOCUMENTS_TEXT
 
-    print("자체 시험 6개 통과\n")
-    print(render("SK텔레콤 유형", summarize_incident(skt, 3)))
+    # 7) 공격자 유형: 쿠팡 유형(전직 직원)은 '있음', 배후 지목은 '언급 없음'. 칸의 결과에는 영향이 없다
+    coupang_ctx = coupang + [_t("HAS_ACTOR_ORIGIN", "FORMER_INSIDER", "confirmed", "d1"),
+                             _t("HAS_ACTOR_ORIGIN", "FORMER_INSIDER", "confirmed", "d2")]
+    c = summarize_context(coupang_ctx, 4)
+    assert c["actor_origin"]["state"] == "found" and c["actor_origin"]["items"][0]["target"] == "FORMER_INSIDER"
+    assert c["actor_origin"]["items"][0]["n_documents"] == 2 and not c["actor_origin"]["needs_review"]
+    assert c["attribution"]["state"] == "not_mentioned"
+    assert summarize_incident(coupang_ctx, 4) == summarize_incident(coupang, 4)   # 참고 정보는 칸에 섞이지 않는다
+
+    # 8) 값이 여러 개면 사람이 확인하도록 표시하고, 확정이 먼저 나온다 (문서마다 다르게 말하거나 행위자가 둘 이상)
+    multi = [_t("HAS_ACTOR_ORIGIN", "INTERNAL", "claimed", "d1"), _t("HAS_ACTOR_ORIGIN", "EXTERNAL", "confirmed", "d2")]
+    m = summarize_context(multi, 2)["actor_origin"]
+    assert m["needs_review"] and [i["target"] for i in m["items"]] == ["EXTERNAL", "INTERNAL"]
+
+    # 9) 이름 없는 공격자는 ThreatActor가 없어도 유형만 기록되고, 배후 지목은 주장으로 구분된다
+    ext = [_t("HAS_ACTOR_ORIGIN", "EXTERNAL", "inferred", "d1"), _t("ATTRIBUTED_TO", "ShinyHunters", "claimed", "d1")]
+    e = summarize_context(ext, 1)
+    assert e["actor_origin"]["items"][0]["best_status"] == "inferred"
+    assert e["attribution"]["items"][0]["best_status"] == "claimed"
+
+    print("자체 시험 9개 통과\n")
+    print(render("SK텔레콤 유형", summarize_incident(skt, 3), summarize_context(skt, 3)))
     print()
-    print(render("쿠팡 유형", summarize_incident(coupang, 4)))
+    print(render("쿠팡 유형", summarize_incident(coupang_ctx, 4), summarize_context(coupang_ctx, 4)))
+    print()
+    print(render("값이 여러 개인 경우", summarize_incident([], 2), summarize_context(multi, 2)))
 
 
 if __name__ == "__main__":

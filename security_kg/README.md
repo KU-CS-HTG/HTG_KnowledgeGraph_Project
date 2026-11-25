@@ -17,9 +17,10 @@ ClimateKG 파이프라인을 보안 사고 분석에 적용하기 위한 `consts
 | (b) 약점 | `Weakness` (CWE) | `EXPLOITED_WEAKNESS` | 뼈대(CWE) |
 | (b) 관리 실패 | `RootCause` | `HAS_ROOT_CAUSE` | 손으로 만든 시드 + 문서 추가 |
 | (c) 기법 | `Technique`, `Tactic`, `MalwareFamily` | `USED_TECHNIQUE`, `USED_MALWARE` | 뼈대(ATT&CK, MISP) |
-| 배후 | `ThreatActor` | `ATTRIBUTED_TO` | 뼈대 + 문서 추가 |
+| (참고) 배후 | `ThreatActor` | `ATTRIBUTED_TO` | 뼈대 + 문서 추가 |
+| (참고) 공격자 유형 | `ActorOrigin` | `HAS_ACTOR_ORIGIN` | 닫힌 시드 4개(아래) |
 
-개체 종류 10개, 관계 13개(문서에서 받는 7개, 표준에서 오는 6개). 기후 버전은 개체 36종, 관계 75개였다.
+개체 종류 11개, 관계 14개(문서에서 받는 8개, 표준에서 오는 6개). 배후와 공격자 유형은 질문의 칸이 아니라 **참고 정보**다. 기후 버전은 개체 36종, 관계 75개였다.
 표준 데이터가 이미 가진 관계(CVE→CWE, 기법→전술 등)는 문서에서 다시 받지 않는다. 기후에서 모델→변수 같은 관계를 받지 않는 것과 같은 논리로 보이나, 저자가 그렇게 설명한 것은 아니다.
 
 ## 확정/주장/추정 구분을 담는 방법
@@ -41,7 +42,7 @@ ClimateKG 파이프라인을 보안 사고 분석에 적용하기 위한 `consts
 
 - **"없음"이라고 쓰지 않는다.** 다른 칸에 답이 있다고 해서 이 칸을 "없음"으로 추론하지도 않는다(예: 쿠팡 유형은 (b)가 있어도 (a)는 "언급 없음").
 - **문서 수를 항상 함께 쓴다.** "언급 없음"의 무게가 문서 1개일 때와 20개일 때 다르기 때문이다.
-- 구현: `aggregate.py`(`summarize_incident`, `render`). 자체 시험 6개가 위 규칙을 확인한다.
+- 구현: `aggregate.py`(`summarize_incident`, `render`). 자체 시험 9개가 위 규칙을 확인한다.
 - 문서 수를 세려면 문서 단위로 `incident_names`, `document_date`, `source_type`을 추가로 뽑아야 한다(`consts.NEW_DOCUMENT_LEVEL_FIELDS`). 원본에는 없다.
 
 ### 보류한 확장안: 명시적 부재 진술을 추출
@@ -61,6 +62,27 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET += [
 
 도입 전에 풀어야 할 것: AI가 근거 없이 "없음"을 만드는 문제(명시적 문장일 때만 내도록 지시하고 처음에는 사람이 표본 검토), "미공개"의 시점(문서 날짜로 새 문서 우선), 평가용 정답을 사람이 만드는 일.
 `EXISTS_UNIDENTIFIED`가 필요한 이유: Canvas처럼 "취약점이 있었다고는 밝혔으나 CVE가 없는" 경우를 `Vulnerability`(CVE로 정의)로는 담을 수 없다.
+
+## 공격자 유형: 내부자 표현 (옵션 B)
+
+질문 틀 (a)(b)(c)에는 "누가"가 없다. 그러나 쿠팡 같은 사건에서 공격자가 전직 개발자라는 사실은 잃고 싶지 않다. 그래서 **참고 정보**로만 기록한다.
+
+| 값(`ACTOR_ORIGIN_SEED`) | 뜻 |
+| --- | --- |
+| `INTERNAL` | 현직 직원·계약자 |
+| `FORMER_INSIDER` | 전직 직원·계약자. 퇴사 후에도 남은 접근 권한이나 지식을 이용 (우리가 추가한 값) |
+| `PARTNER` | 협력사·공급사·서드파티 |
+| `EXTERNAL` | 피해 조직과 정당한 관계가 없는 외부 |
+
+- **속성이 아니라 "닫힌 값 목록을 가리키는 관계"로 둔 이유**: 파이프라인은 (출발, 관계, 도착) 트리플렛만 뽑는다. 사건의 속성으로 두면 근거 문장과 기존 검사 단계(형식, 출처, AI 재검증)를 받을 방법이 없다. 관계로 두면 근거 문장이 붙고 검사를 그대로 통과한다.
+- **`INTERNAL`/`EXTERNAL`/`PARTNER`는 VERIS의 최상위 행위자 구분(외부, 내부, 협력사)과 같은 이름 체계**이고, `FORMER_INSIDER`는 VERIS가 아니라 우리가 추가했다. VERIS에서 전직자를 어떻게 분류하는지는 확인하지 못했다.
+- **`UNKNOWN`은 값으로 두지 않는다.** 문서가 말하지 않은 것은 "언급 없음, 문서 n개"로 집계한다(부재를 추측하지 않는 원칙과 같다).
+- **추론 금지**: 공격자의 국적, 위치, 수법의 정교함으로 유형을 추론하지 않는다. 쿠팡 사건의 "중국 국적"은 유형과 무관하다. 관계가 암시만 될 때는 `assertion_status`를 `inferred`로 한다.
+- **이름 있는 행위자는 `ThreatActor`, 이름 없는 공격자는 `ActorOrigin`만 기록한다.** 둘은 같이 나올 수 있다(예: 이름 있는 외부 집단 = `ThreatActor` + `EXTERNAL`).
+- **집계**: `consts.CONTEXT_FIELDS`(`actor_origin`, `attribution`)를 `aggregate.summarize_context`가 칸과 같은 규칙으로 보여 준다. 값이 여러 개(문서들이 다르게 말했거나 행위자가 둘 이상)면 "사람이 확인 필요"로 표시한다.
+- **원인과의 관계**: 쿠팡 유형은 `HAS_ACTOR_ORIGIN = FORMER_INSIDER`와 `HAS_ROOT_CAUSE = CREDENTIAL_OR_KEY_MISMANAGEMENT`가 함께 나온다. 앞의 것은 "누구", 뒤의 것은 "왜 가능했나"이고 서로 대체하지 않는다.
+
+미해결: `FORMER_INSIDER`와 `INTERNAL`의 경계(예: 퇴사 직전 권한을 오용), 한 사건에 행위자가 둘 이상일 때 값과 행위자 이름의 짝 짓기(지금은 사건 단위로만 기록).
 
 ## 원본 코드에서 고쳐야 할 곳
 
@@ -93,7 +115,7 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET += [
 ## 열린 설계 문제
 
 1. ~~**"취약점 없음/미공개"를 어떻게 기록하나.**~~ **1단계(최소안) 반영됨**: 부재를 추측하지 않고 "언급 없음, 문서 n개"로 집계한다(위 "답의 집계"). "미공개"와 "언급 없음"을 구분하는 확장안은 파일럿 뒤로 보류.
-2. **내부자 여부.** 쿠팡의 공격자는 전직 개발자인데, `ThreatActor`는 이름 있는 행위자만 허용한다. 내부자/외부자 구분 칸이 필요할 수 있다.
+2. ~~**내부자 여부.**~~ **반영됨(옵션 B)**: `ActorOrigin` 시드 4개와 `HAS_ACTOR_ORIGIN`을 참고 정보로 추가(위 "공격자 유형"). 값과 행위자 이름의 짝 짓기는 미해결.
 3. **같은 사건을 여러 문서가 쓸 때 `Incident`를 합치는 규칙**이 없다.
 4. **기법 수준.** 뉴스는 "악성코드 설치" 정도로 쓰고 ATT&CK 기법 이름은 분석가가 맞춰야 한다.
 5. **날짜와 수치**(피해 규모, 금액)는 이 틀에 없다. 출처 간 차이 비교 질문에는 필요하다.
@@ -103,7 +125,7 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET += [
 
 ```bash
 python extraction/consts.py   # 설정의 일관성 검사
-python aggregate.py           # 집계 규칙 자체 시험(6개)
+python aggregate.py           # 집계 규칙 자체 시험(9개)
 ```
 
 `consts.py` 검사는 관계의 개체 종류 정의 여부, FILTERED ⊂ ALL, 닫힌 목록 종류의 연결 방법, `ANSWER_SLOTS`가 문서에서 받는 관계만 쓰는지 등을 확인한다.
