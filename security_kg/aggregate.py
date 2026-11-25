@@ -68,6 +68,49 @@ def summarize_fields(triplets: list[dict], n_documents: int, fields: dict) -> di
     return result
 
 
+def summarize_campaign(members: dict[str, dict]) -> dict:
+    """묶음(Campaign)의 답 = 소속 사건들의 답을 합산한 것 (결정 D1).
+    members: {incident_id: {"triplets": [...], "n_documents": int}}.
+    같은 답이 더 많은 사건에서 나오면 먼저 보여 준다(예: 여러 금융사에 공통으로 쓰인 기법)."""
+    total_docs = sum(m["n_documents"] for m in members.values())
+    result = {}
+    for slot, relations in consts.ANSWER_SLOTS.items():
+        groups = defaultdict(lambda: {"incidents": set(), "docs": set(), "statuses": set()})
+        for inc_id, m in members.items():
+            for t in m["triplets"]:
+                if t.get("relation") in relations:
+                    g = groups[(t["relation"], t["target_entity_instance"])]
+                    g["incidents"].add(inc_id)
+                    g["docs"].add((inc_id, t.get("doc_id")))
+                    g["statuses"].add(t.get("assertion_status", "inferred"))
+        if not groups:
+            result[slot] = {"state": "not_mentioned", "n_incidents": len(members), "items": [],
+                            "text": f"확인되지 않음: 소속 사건 {len(members)}개(문서 {total_docs}개) 모두에서 언급 없음"}
+            continue
+        items = [{"relation": r, "target": tg,
+                  "n_incidents": len(g["incidents"]), "incident_ids": sorted(g["incidents"]),
+                  "n_documents": len(g["docs"]),
+                  "best_status": min(g["statuses"], key=lambda s: consts.ASSERTION_RANK.get(s, 99)),
+                  "statuses": sorted(g["statuses"], key=lambda s: consts.ASSERTION_RANK.get(s, 99))}
+                 for (r, tg), g in groups.items()]
+        items.sort(key=lambda i: (-i["n_incidents"], consts.ASSERTION_RANK.get(i["best_status"], 99), -i["n_documents"], i["target"]))
+        answered = {inc for i in items for inc in i["incident_ids"]}
+        result[slot] = {"state": "found", "n_incidents": len(members), "n_incidents_with_answer": len(answered), "items": items}
+    return result
+
+
+def render_campaign(name: str, summary: dict) -> str:
+    lines = [f"[묶음: {name}]"]
+    for slot, s in summary.items():
+        if s["state"] == "not_mentioned":
+            lines.append(f"  {NAMES[slot]}: {s['text']}")
+            continue
+        lines.append(f"  {NAMES[slot]} (소속 사건 {s['n_incidents']}개 중 {s['n_incidents_with_answer']}개에서 답이 나옴):")
+        for i in s["items"]:
+            lines.append(f"    - {i['target']} [{i['best_status']}, 사건 {i['n_incidents']}개, 문서 {i['n_documents']}개]")
+    return "\n".join(lines)
+
+
 NAMES = {
     "a_vulnerability": "(a) 취약점", "b_weakness_or_failure": "(b) 약점·관리 실패", "c_technique": "(c) 기법",
     "actor_origin": "참고: 공격자 유형", "attribution": "참고: 배후 지목",
@@ -161,12 +204,29 @@ def self_test() -> None:
     assert all(e is None or e in consts.ACTOR_ORIGIN_SEED for _, e in consts.ACTOR_ORIGIN_BOUNDARY_EXAMPLES)
     assert consts.ACTOR_PAIRING == "incident_level"
 
-    print("자체 시험 10개 통과\n")
+    # 11) 묶음(D1): 소속 사건의 답을 합산하고, 더 많은 사건에 공통인 답을 먼저 보여 준다 (금융권 동시다발 유형)
+    camp = summarize_campaign({
+        "INC-신한은행-202510": {"triplets": [_t("USED_TECHNIQUE", "Valid Accounts", "confirmed", "d1"),
+                                             _t("USED_TECHNIQUE", "AI penetration tool", "claimed", "d1")], "n_documents": 2},
+        "INC-KB국민은행-202510": {"triplets": [_t("USED_TECHNIQUE", "Valid Accounts", "claimed", "d2")], "n_documents": 1},
+        "INC-하나은행-202510": {"triplets": [], "n_documents": 1},
+    })
+    tech = camp["c_technique"]
+    assert [i["target"] for i in tech["items"]] == ["Valid Accounts", "AI penetration tool"]
+    assert tech["items"][0]["n_incidents"] == 2 and tech["items"][0]["best_status"] == "confirmed"
+    assert tech["n_incidents_with_answer"] == 2 and tech["n_incidents"] == 3
+    # 12) 어느 소속 사건에서도 언급이 없으면 '없음'이 아니라 "소속 사건 n개 모두에서 언급 없음"
+    assert camp["a_vulnerability"]["state"] == "not_mentioned"
+    assert camp["a_vulnerability"]["text"] == "확인되지 않음: 소속 사건 3개(문서 4개) 모두에서 언급 없음"
+
+    print("자체 시험 12개 통과\n")
     print(render("SK텔레콤 유형", summarize_incident(skt, 3), summarize_context(skt, 3)))
     print()
     print(render("쿠팡 유형", summarize_incident(coupang_ctx, 4), summarize_context(coupang_ctx, 4)))
     print()
     print(render("값이 여러 개인 경우", summarize_incident([], 2), summarize_context(multi, 2)))
+    print()
+    print(render_campaign("금융권 동시다발 유형", camp))
 
 
 if __name__ == "__main__":

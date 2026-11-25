@@ -24,13 +24,19 @@ GEMINI_MIN_CACHE_TOKEN_LIMIT = 4096  # 원본과 같은 기술 설정값
 ENTITY_TYPE_DEFINITIONS = {
     # ── 문서가 채우는 종류 ──
     "Incident": (
-        "A specific security incident (breach, intrusion, data leak, tampering) that happened to a "
-        "specific organization at a specific time, identified by a short descriptive name "
-        "(e.g. the victim plus the year). Not a general attack category."
+        "A breach, intrusion, data leak or tampering of ONE organization's systems (the breached organization), "
+        "identified by a short descriptive name. One incident per breached organization: a coordinated attack on "
+        "several organizations is several Incidents grouped by a Campaign. Later waves of the same breach of the "
+        "same organization belong to the same Incident. Not a general attack category."
     ),
     "Organization": (
-        "A company, institution or agency that is a victim of, or investigates, an incident. "
-        "Not a product or a person."
+        "A company, institution or agency that is breached (BREACHED_ORGANIZATION), suffers downstream harm "
+        "(AFFECTED_ORGANIZATION), or investigates an incident. Not a product or a person."
+    ),
+    "Campaign": (
+        "A named group of two or more Incidents at different organizations that the sources present as connected "
+        "by a common cause, attacker or method (e.g. simultaneous attacks on several financial institutions). "
+        "Not a single incident and not an attacker group."
     ),
     "RootCause": (
         "An organizational or operational failure that made the incident possible, such as a missing patch, "
@@ -136,8 +142,9 @@ ID_PATTERNS = {                 # 형식은 일반적으로 알려진 것이며 
 
 # 문서에서 새 노드를 추가할 수 있는 종류(뼈대 목록에 없으면 새로 만든다)
 ENTITY_TYPES_TO_ADD_INSTANCES = [
-    "Incident",
-    "Organization",
+    "Incident",         # 이름 유사도로 합치지 않는다. 아래 INCIDENT_RESOLUTION 규칙으로 합친다(원본의 합치기 우회)
+    "Organization",     # 별칭 사전(ORG_ALIAS_SEED)으로 먼저 합친다
+    "Campaign",
     "RootCause",        # 시드에 없는 원인은 일단 추가하되 사람이 정리한다
     "MalwareFamily",    # 새 악성코드 계열이 계속 생김
     "ThreatActor",      # 새 행위자와 별칭이 계속 생김
@@ -153,7 +160,9 @@ ENTITY_TYPES_TO_ADD_INSTANCES = [
 
 # 문서에서 받을 관계. 질문 틀의 (a), (b), (c)에 해당한다.
 FILTERED_RELATIONSHIP_SOURCE_TO_TARGET = [
-    ("Incident", "Organization", "AFFECTED_ORGANIZATION"),   # 사건의 대상
+    ("Incident", "Organization", "BREACHED_ORGANIZATION"),   # 침해된 조직. 사건 식별(같은 사건 판단)의 기준
+    ("Incident", "Organization", "AFFECTED_ORGANIZATION"),   # 파급 피해 조직 (예: 플랫폼 침해로 피해를 입은 학교)
+    ("Incident", "Campaign", "PART_OF_CAMPAIGN"),            # 여러 조직에 걸친 묶음의 소속
     ("Incident", "Vulnerability", "EXPLOITED_VULNERABILITY"),  # (a) 취약점
     ("Incident", "Weakness", "EXPLOITED_WEAKNESS"),          # (b) 코드·설계 수준 약점 (CWE)
     ("Incident", "RootCause", "HAS_ROOT_CAUSE"),             # (b) 조직·운영의 관리 실패
@@ -258,6 +267,35 @@ SOURCE_TYPES = [
 
 
 # ──────────────────────────────────────────────────────────────────────────
+# 5-2. 사건 해소(같은 사건 합치기) [신규] — incident_resolution.py가 읽는다
+#      원본은 새 노드를 이름 의미 유사도 0.8 이상이면 합친다. 사건에는 날짜와 조직을 보지 않아 오류가 난다.
+#      결정: D1 조직 단위 Incident + 선택적 Campaign / D2 같은 조직 필수 + 공개 시점 기준 + 공유 신호 /
+#            D3 애매하면 합치지 않고 사람 확인(정밀도 우선) / D4 같은 조직·90일 이내 연속 파동은 하나의 사건.
+#      아래 숫자는 출발점이다. 다섯 사건으로는 보정할 수 없어 파일럿에서 조정한다.
+# ──────────────────────────────────────────────────────────────────────────
+INCIDENT_RESOLUTION = {
+    "anchor": "headline_date",        # 공격 기간이 아니라 문서가 제시하는 사건 시점을 기준으로 한다
+    "same_within_days": 90,           # 이 이내면 시간상 같은 사건 후보 (D4: 연속 파동 포함)
+    "different_after_days": 365,      # 이보다 멀면 다른 사건
+    "name_similarity_for_merge": 0.8, # 이름은 약한 신호다. 단독으로는 합치지 않고 시간이 가까울 때만 보조로 쓴다
+    "review_policy": "precision_first",  # 애매하면 합치지 않고 확인 대기열로 보낸다(D3)
+    "id_format": "INC-{org}-{yyyymm}",
+}
+
+# 조직 별칭 시드(초안). 같은 조직을 여러 이름으로 쓰는 문제는 한 단계 아래에도 있어서 사건 해소보다 먼저 합친다.
+# 여기 없는 이름은 다른 조직으로 취급되어 사건이 쪼개질 수 있다. 실제 문서를 보며 늘려야 한다.
+ORG_ALIAS_SEED = {
+    "SK텔레콤": ["SKT", "SK Telecom", "에스케이텔레콤"],
+    "쿠팡": ["Coupang", "쿠팡(주)"],
+    "레벨인피니트": ["Level Infinite"],
+    "Instructure": ["인스트럭처", "Instructure, Inc."],
+    "신한은행": ["Shinhan Bank"],
+    "KB국민은행": ["KB Kookmin Bank", "국민은행"],
+    "하나은행": ["Hana Bank"],
+}
+
+
+# ──────────────────────────────────────────────────────────────────────────
 # 6. 답의 집계 [신규] — '취약점 없음/미공개'를 다루는 최소안
 #    원칙: 부재를 추측하지 않는다. 트리플렛이 없으면 "없음"이 아니라 "언급 없음(처리한 문서 n개 중)"이다.
 #    새 개체 종류나 관계를 추가하지 않는다. aggregate.py가 이 설정으로 사건별 답을 만든다.
@@ -292,9 +330,19 @@ ASSERTION_RANK = {"confirmed": 0, "claimed": 1, "inferred": 2}
 
 # [신규] 문서 단위로 추가로 뽑아야 하는 필드. 사건당 처리한 문서 수와 시점을 세기 위해 필요하다.
 NEW_DOCUMENT_LEVEL_FIELDS = {
-    "incident_names": "이 문서가 다루는 사건의 이름 목록 (문서 수 집계의 기준)",
+    "incident_mentions": "이 문서가 다루는 사건의 목록. 항목 구조는 INCIDENT_MENTION_FIELDS (사건 해소와 문서 수 집계의 기준)",
     "document_date": "문서의 발행일 (확장안에서 '미공개'의 시점 비교에 필요)",
     "source_type": "SOURCE_TYPES 중 하나",
+}
+
+# 사건 언급 한 건의 구조. 날짜는 그래프의 트리플렛이 아니라 문서 단위 메타데이터로만 둔다(결정 D1~D4, 5번 문제의 날짜 결정).
+INCIDENT_MENTION_FIELDS = {
+    "name": "문서가 쓴 사건 이름 그대로",
+    "breached_org": "침해된 조직의 이름 그대로. 사건 식별의 필수 조건",
+    "headline_date": "문서가 그 사건의 시점으로 제시하는 날짜. 공개 시점이 있으면 그것, 없으면 문서가 사건 날짜로 쓴 것. "
+                     "형식 YYYY, YYYY-MM, YYYY-MM-DD 중 하나. 불확실하면 비워 둔다",
+    "attack_span": "문서에 명시된 공격(침입) 기간 {start, end}. 있을 때만. 서로 다른 시점을 쓴 문서를 잇는 데 쓴다",
+    "signals": "이 사건에 대해 문서가 말한 CVE, 악성코드, 행위자 이름 목록(트리플렛에서 뽑음). 같은 사건의 강한 증거",
 }
 
 
@@ -349,6 +397,18 @@ def validate() -> list[str]:
             problems.append(f"REVIEW_IF_MULTIPLE_VALUES: 정의되지 않은 참고 정보 {field}")
     if covered & {r for rels in CONTEXT_FIELDS.values() for r in rels}:
         problems.append("같은 관계가 ANSWER_SLOTS와 CONTEXT_FIELDS에 모두 있음")
+    r = INCIDENT_RESOLUTION
+    if not (0 < r["same_within_days"] < r["different_after_days"]):
+        problems.append("INCIDENT_RESOLUTION: same_within_days는 0보다 크고 different_after_days보다 작아야 함")
+    if r["review_policy"] not in ("precision_first", "recall_first"):
+        problems.append("INCIDENT_RESOLUTION: review_policy 값이 올바르지 않음")
+    seen = {}
+    for canon, aliases in ORG_ALIAS_SEED.items():
+        for name in [canon] + aliases:
+            key = name.casefold().replace(" ", "")
+            if key in seen and seen[key] != canon:
+                problems.append(f"ORG_ALIAS_SEED: '{name}'이 {seen[key]}와 {canon}에 모두 있음")
+            seen[key] = canon
     if set(ACTOR_ORIGIN_TO_VERIS) != set(ACTOR_ORIGIN_SEED):
         problems.append("ACTOR_ORIGIN_TO_VERIS의 키가 ACTOR_ORIGIN_SEED와 다름")
     for text, expected in ACTOR_ORIGIN_BOUNDARY_EXAMPLES:
