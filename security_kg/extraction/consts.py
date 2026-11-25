@@ -337,6 +337,38 @@ ORG_ALIAS_SEED = {
 
 
 # ──────────────────────────────────────────────────────────────────────────
+# 5-2. 수치(피해 규모, 금액) [신규] — measurements.py가 읽는다
+#      결정: D9 트리플렛이 아니라 별도 기록(단위·정확도·시점·출처가 붙는 필드 묶음) /
+#            D10 닫힌 소수 지표 + other(원문 표현 보존), 사람·건수·용량은 서로 다른 지표라 합치지 않음 /
+#            D11 출처 간 차이는 자동으로 조정하지 않고 나란히 보여 줌(같은 지표 안에서만 범위 계산) /
+#            D12 원문 수치 문자열과 근거 문장을 같이 기록하고, 정규화는 AI 없이 규칙 코드로 하며,
+#                단위가 안 읽히면 버리지 않고 unit_unknown으로 사람 확인.
+#      기록: {"incident", "metric", "raw", "evidence", "as_of", "doc_id", "source_type", "assertion_status"}
+#            (+ 정규화 결과 value, value_high, unit_kind, currency, qualifier, review)
+# ──────────────────────────────────────────────────────────────────────────
+MEASUREMENT_METRICS = {
+    "affected_people": {"unit_kind": "people", "description": "Number of people (individuals/customers/users) affected"},
+    "affected_records": {"unit_kind": "records", "description": "Number of records/items exposed (a person can have several)"},
+    "data_volume": {"unit_kind": "bytes", "description": "Volume of data exfiltrated or exposed"},
+    "fine": {"unit_kind": "money", "description": "Penalty or fine imposed by an authority"},
+    "loss_estimate": {"unit_kind": "money", "description": "Estimated financial loss, cost or damages (not a fine)"},
+    "other": {"unit_kind": None, "description": "Any number not covered above; keep the document's own wording in 'raw'"},
+}
+MEASUREMENT_QUALIFIERS = ["exact", "approx", "lower_bound", "upper_bound", "range"]
+# 같은 지표라도 단위 종류가 다르면(사람 vs 건수 등) 합치거나 비교하지 않는다
+MEASUREMENT_COMPARE_ACROSS_METRICS = False
+MEASUREMENT_CONVERT_CURRENCY = False             # 환율 시점 문제로 환산하지 않는다. 통화별로 따로 둔다
+MEASUREMENT_REVIEW_REASONS = {
+    "no_number": "숫자가 없는 표현(예: '수백만'). 값은 비워 두고 원문만 보존한다",
+    "unit_unknown": "단위를 읽지 못함. 버리지 않고 사람이 확인한다",
+    "unit_mismatch": "지표가 요구하는 단위 종류와 원문 단위가 다름(예: affected_people인데 '건')",
+    "raw_not_in_evidence": "원문 수치 문자열이 근거 문장에 없음(추출 오류 가능성)",
+    "unknown_metric": "정의되지 않은 지표 이름이라 other로 바꿈",
+}
+MEASUREMENT_NOT_MENTIONED_TEXT = "확인되지 않음: 처리한 문서 {n}개 중 수치 언급 없음"
+
+
+# ──────────────────────────────────────────────────────────────────────────
 # 6. 답의 집계 [신규] — '취약점 없음/미공개'를 다루는 최소안
 #    원칙: 부재를 추측하지 않는다. 트리플렛이 없으면 "없음"이 아니라 "언급 없음(처리한 문서 n개 중)"이다.
 #    새 개체 종류나 관계를 추가하지 않는다. aggregate.py가 이 설정으로 사건별 답을 만든다.
@@ -469,6 +501,15 @@ def validate() -> list[str]:
         problems.append("ACTOR_PAIRING은 incident_level 또는 actor_level이어야 함")
     if sorted(ACTOR_ORIGIN_SEED) != sorted(["INTERNAL", "FORMER_INSIDER", "PARTNER", "EXTERNAL"]):
         problems.append("ACTOR_ORIGIN_SEED가 정의 문구의 값과 다름")
+    if "other" not in MEASUREMENT_METRICS:
+        problems.append("MEASUREMENT_METRICS에 other가 없음")
+    for m, spec in MEASUREMENT_METRICS.items():
+        if spec["unit_kind"] not in (None, "people", "records", "bytes", "money"):
+            problems.append(f"MEASUREMENT_METRICS[{m}]: 알 수 없는 unit_kind")
+    if "range" not in MEASUREMENT_QUALIFIERS:
+        problems.append("MEASUREMENT_QUALIFIERS에 range가 없음")
+    if MEASUREMENT_COMPARE_ACROSS_METRICS or MEASUREMENT_CONVERT_CURRENCY:
+        problems.append("지표 간 비교와 통화 환산은 결정 D10/D12에서 하지 않기로 함")
     if set(ASSERTION_RANK) != set(ASSERTION_STATUSES):
         problems.append("ASSERTION_RANK와 ASSERTION_STATUSES의 키가 다름")
     return problems
