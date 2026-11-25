@@ -268,10 +268,31 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 | `Weakness` | CWE 5.0 XML | `data/cwe_catalog.json` | 완료(앞 절) |
 | `Technique`, `Tactic` | ATT&CK Enterprise 20.1 | `data/attack_catalog.json` (600KB) | 기법 706(하위 479 포함), 전술 15, **폐기 기법 161개의 대체 ID 포함** |
 | `MalwareFamily`, `ThreatActor` | ATT&CK 소프트웨어 842, 그룹 178 | 같은 파일 | 별칭, 쓰는 기법, 그룹이 쓰는 소프트웨어 포함 |
-| `Vulnerability`(주목받는 부분집합) | CISA KEV(GitHub 사본, 2026.11.24) | `data/kev.json` (545KB) | 1,795건. 악용 확인된 CVE와 CWE, 랜섬웨어 사용 여부 |
+| `Vulnerability`(주목받는 부분집합) | CISA KEV(GitHub 사본, 2026.11.24) | `data/kev.json` (1.1MB) | 1,795건. 악용 확인된 CVE와 CWE, 랜섬웨어 사용 여부 |
 | `ThreatActor` 별칭 보충 | MISP threat-actor 갤럭시 | `data/misp_threat_actors.json` (220KB) | 1,132개. **ATT&CK 그룹과 합치지 않고 따로 둠** |
 | `Vulnerability`(전체) | CVE 레코드 | `backbone.lookup_cve` | **전체 목록은 못 받음.** 번호로 한 건씩 조회해 존재 확인, CWE, 제품 이름을 가져옴 |
 | `Product` | NVD CPE 사전 | **없음** | NVD API가 이 환경에서 막혀 받지 못함. CVE 레코드의 vendor/product 이름만 가능 |
+
+### KEV의 CWE: 출처별로 보관 (`enrich-kev`)
+
+KEV의 `cwes`는 CISA가 붙인 값이고, 같은 CVE의 CVE 레코드에는 발급 기관(CNA)과 CISA의 보강 정보(ADP)가 따로 CWE를 붙인다. 셋은 다를 수 있어서 **합치지 않고 출처별로 담는다.**
+
+- `python backbone.py enrich-kev`가 KEV 1,795건을 CVE 레코드와 대조해 `kev.json`에 항목을 더한다(처음에 약 40초, 레코드는 `backbone/raw/cve/`에 캐시).
+- 항목: `cwe_by_source`(`kev`, `cna`, `adp`: 제공자별), `cwe_display`와 `cwe_display_source`(보여 줄 대표값과 그 출처), `cwe_conflict`(출처끼리 값이 다른가), `cve_record`(`found`, `missing`, `error`, `not_checked`).
+- **대표값 규칙은 `CNA → ADP → KEV` 순서의 기본값**이다(`CWE_DISPLAY_ORDER`). 보관은 출처별이라 규칙을 바꿔도 다시 받을 필요가 없다.
+- 약점 분류가 어디에도 없으면 `cwe_display_source`가 `none`이다. "아직 안 채움"이 아니라 "분류된 적 없음"이다. 부재를 추측하지 않는다.
+
+**2026-11-25 기준 결과**:
+
+| 항목 | 건수 |
+| --- | --- |
+| 레코드 조회 | 찾음 1,794, 없음 1 (CVE-2026-132165, 하루 전에 추가된 것으로 아직 CVE 목록에 없는 것으로 보임) |
+| 대표값 출처 | CNA 716, ADP 863, KEV만 107, **없음 109** |
+| **출처끼리 값이 다른 건** | **232 (12.9%)** |
+
+- 다른 232건 중 196건은 **ADP와 KEV의 차이**이고(둘 다 CISA 쪽 정보인데도), 31건은 CNA와 KEV, 5건은 셋 모두 있다. 232건 중 68건은 한쪽이 다른 쪽의 일부(예: KEV `CWE-456`, ADP `CWE-123, CWE-456`)이고 164건은 서로 겹치지 않는 값이 있다.
+- **어느 쪽이 맞는지는 판단하지 않았다.** 차이가 나는 이유(갱신 시점, 기준 차이 등)도 확인하지 못했다.
+- `python backbone.py export`의 `kev.csv`에 출처별 열이 들어간다.
 
 ### 확인용 CSV
 
@@ -349,7 +370,7 @@ python attack_mapping.py      # 기법 층 규칙 자체 시험(10개)
 python incident_resolution.py # 사건 해소 규칙 자체 시험(11개)
 python measurements.py        # 수치 층 규칙 자체 시험(9개)
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
-python backbone.py            # 뼈대 변환 규칙 자체 시험(13개, 네트워크 없이)
+python backbone.py            # 뼈대 변환 규칙 자체 시험(네트워크 없이)
 ```
 
 `consts.py` 검사는 관계의 개체 종류 정의 여부, FILTERED ⊂ ALL, 닫힌 목록 종류의 연결 방법, `ANSWER_SLOTS`가 문서에서 받는 관계만 쓰는지 등을 확인한다.

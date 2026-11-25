@@ -13,6 +13,7 @@
 원본(수십 MB)은 저장소에 올리지 않는다(`backbone/raw/`는 무시). 변환 결과만 data/에 둔다.
 사용:
   python backbone.py build [attack|kev|misp|all]   # 내려받아 data/에 저장하고 스냅샷 정보를 출력
+  python backbone.py enrich-kev                    # KEV의 CWE를 CVE 레코드(CNA, ADP)와 출처별로 합침(네트워크, 처음 몇 분)
   python backbone.py export [폴더]                  # 확인용 CSV 만들기(기본 backbone/export/, 저장소에 올리지 않음)
   python backbone.py cve CVE-2021-44228            # 한 건 조회
   python backbone.py                               # 자체 시험(네트워크 없이)
@@ -131,6 +132,48 @@ def build_kev(raw: dict) -> dict:
             "count": raw.get("count"), "vulnerabilities": vulns}
 
 
+# 대표 CWE를 고르는 기본 규칙. 보관은 출처별로 따로 하고, 이 규칙은 보여 줄 때만 쓴다(바꾸면 다시 계산하면 된다).
+CWE_DISPLAY_ORDER = ["cna", "adp", "kev"]
+
+
+def merge_cwe_sources(kev_cwes: list, cve: dict | None) -> dict:
+    """KEV와 CVE 레코드(CNA, ADP)의 CWE를 출처를 구분해서 합친다. 값을 섞거나 버리지 않는다.
+    cve가 None이면 레코드를 조회하지 못한 것이다(없는 것과 구분한다)."""
+    by = {"kev": sorted(kev_cwes or []),
+          "cna": sorted(cve["cwes_cna"]) if cve and cve.get("exists") else [],
+          "adp": {k: sorted(v) for k, v in cve["cwes_adp"].items()} if cve and cve.get("exists") else {}}
+    adp_all = sorted({c for v in by["adp"].values() for c in v})
+    pool = {"cna": by["cna"], "adp": adp_all, "kev": by["kev"]}
+    shown = next((src for src in CWE_DISPLAY_ORDER if pool[src]), None)
+    nonempty = [set(v) for v in pool.values() if v]
+    return {"cwe_by_source": by,
+            "cwe_display": pool[shown] if shown else [], "cwe_display_source": shown or "none",
+            "cwe_conflict": len(nonempty) > 1 and any(a != b for a in nonempty for b in nonempty),
+            "cve_record": "not_checked" if cve is None else ("found" if cve.get("exists") else "missing")}
+
+
+def enrich_kev_cwes(kev: dict, workers: int = 8, lookup=None) -> dict:
+    """KEV의 모든 CVE를 CVE 레코드와 대조해 CWE를 출처별로 담는다. 내려받은 레코드는 캐시한다(두 번째부터는 빠르다).
+    조회에 실패한 CVE는 cve_record="error"로 표시하고 나머지는 계속 진행한다."""
+    import concurrent.futures as cf
+    lookup = lookup or lookup_cve
+
+    def one(cve):
+        try:
+            return cve, lookup(cve), None
+        except Exception as e:   # 네트워크 오류 등. 없는 번호(404)는 lookup_cve가 exists=False로 돌려준다
+            return cve, None, str(e)[:80]
+    with cf.ThreadPoolExecutor(workers) as ex:
+        results = list(ex.map(one, list(kev["vulnerabilities"])))
+    for cve, rec, err in results:
+        v = kev["vulnerabilities"][cve]
+        base = v.get("cwes", [])
+        v.update(merge_cwe_sources(base, rec))
+        if err:
+            v["cve_record"] = "error"
+    return kev
+
+
 # ── MISP 위협 행위자 ───────────────────────────────────────────────────────
 def build_misp_actors(raw: dict) -> dict:
     """MISP 위협 행위자 → 이름, 별칭, 국가. ATT&CK 그룹과는 합치지 않고 따로 둔다(합치기 규칙은 미정)."""
@@ -211,7 +254,15 @@ def build(which: str = "all") -> dict:
 
 # ── 확인용 CSV ─────────────────────────────────────────────────────────────
 def _join(x) -> str:
-    return "; ".join(str(i) for i in x) if isinstance(x, (list, tuple, set)) else ("" if x is None else str(x))
+    """목록(제너레이터 포함)은 '; '로 잇고, None은 빈 칸, 나머지는 문자열로 바꾼다."""
+    if x is None:
+        return ""
+    if isinstance(x, (str, bytes)):
+        return str(x)
+    try:
+        return "; ".join(str(i) for i in x)
+    except TypeError:
+        return str(x)
 
 
 def _write_csv(path: Path, header: list, rows: list) -> str:
@@ -246,8 +297,13 @@ def export_csv(dest: Path | None = None, data_dir: Path | None = None) -> list:
                                [[k, v or ""] for k, v in sorted(atk["replaced_techniques"].items())]))
     kev = load("kev.json")
     if kev:
-        done.append(_write_csv(dest / "kev.csv", ["cve", "vendor", "product", "name", "date_added", "due_date", "ransomware", "cwes"],
-                               [[k, v["vendor"], v["product"], v["name"], v["date_added"], v["due_date"], v["ransomware"], _join(v["cwes"])]
+        done.append(_write_csv(dest / "kev.csv", ["cve", "vendor", "product", "name", "date_added", "due_date", "ransomware",
+                                                  "cwe_kev", "cwe_cna", "cwe_adp", "cwe_display", "display_source", "conflict", "cve_record"],
+                               [[k, v["vendor"], v["product"], v["name"], v["date_added"], v["due_date"], v["ransomware"],
+                                 _join(v["cwes"]), _join(v.get("cwe_by_source", {}).get("cna", [])),
+                                 _join(f"{p}: {_join(c)}" for p, c in v.get("cwe_by_source", {}).get("adp", {}).items()),
+                                 _join(v.get("cwe_display", v["cwes"])), v.get("cwe_display_source", ""),
+                                 "예" if v.get("cwe_conflict") else "", v.get("cve_record", "")]
                                 for k, v in sorted(kev["vulnerabilities"].items())]))
     misp = load("misp_threat_actors.json")
     if misp:
@@ -328,13 +384,54 @@ def self_test() -> None:
         (d / "misp_threat_actors.json").write_text(json.dumps(m), encoding="utf-8")
         out = export_csv(Path(td) / "out", d)
         assert len(out) == 7                                       # ATT&CK 5개 + KEV + MISP. CWE는 데이터가 없어 만들지 않음
+        fk = {"vulnerabilities": {"CVE-2099-1": {**k["vulnerabilities"]["CVE-2099-1234"], **merge_cwe_sources(
+            ["CWE-284"], {"exists": True, "cwes_cna": ["CWE-434"], "cwes_adp": {"CISA-ADP": ["CWE-20", "CWE-22"]}})}}}
+        fc = {"weaknesses": {"1": {"name": "W", "abstraction": "Base", "status": "Draft", "usage": "Discouraged",
+                                   "suggestions": [{"id": "2", "comment": "c"}, {"id": "3", "comment": "d"}], "parents": ["9"]}},
+              "groupings": {"7": {"name": "G", "status": "Obsolete", "members": ["1", "2"]}}}
+        (d / "kev.json").write_text(json.dumps(fk), encoding="utf-8")
+        (d / "cwe_catalog.json").write_text(json.dumps(fc), encoding="utf-8")
+        out = export_csv(Path(td) / "out", d)
+        assert len(out) == 9
+        for f in (Path(td) / "out").glob("*.csv"):                  # 제너레이터나 None 같은 파이썬 표기가 칸에 남으면 안 된다
+            txt = f.read_text("utf-8-sig")
+            assert "<generator" not in txt and "None" not in txt, f.name
+        kv = list(csv.reader((Path(td) / "out" / "kev.csv").read_text("utf-8-sig").splitlines()))
+        assert kv[1][8:13] == ["CWE-434", "CISA-ADP: CWE-20; CWE-22", "CWE-434", "cna", "예"]
+        cw = list(csv.reader((Path(td) / "out" / "cwe_weaknesses.csv").read_text("utf-8-sig").splitlines()))
+        assert cw[1][5:7] == ["CWE-2; CWE-3", "CWE-9"]
+        gp = list(csv.reader((Path(td) / "out" / "cwe_groupings.csv").read_text("utf-8-sig").splitlines()))
+        assert gp[1][3] == "CWE-1; CWE-2"
         raw = (Path(td) / "out" / "attack_software.csv").read_bytes()
         assert raw.startswith(b"\xef\xbb\xbf")                       # 엑셀용 BOM
         rows = list(csv.reader(raw.decode("utf-8-sig").splitlines()))
         assert rows[1][:3] == ["S9", "FakeMal", "malware"] and rows[1][3] == "FakeMal; FM" and rows[1][4] == "1"
         assert list(csv.reader((Path(td) / "out" / "attack_replaced_techniques.csv").read_text("utf-8-sig").splitlines()))[1:] == \
             [["T9002", "T9001"], ["T9003", ""]]
-    print("자체 시험 13개 통과")
+
+    # KEV와 CVE 레코드의 CWE를 출처별로 합친다
+    rec = {"exists": True, "cwes_cna": ["CWE-434"], "cwes_adp": {"CISA-ADP": ["CWE-20"]}}
+    mg = merge_cwe_sources(["CWE-284"], rec)
+    assert mg["cwe_by_source"] == {"kev": ["CWE-284"], "cna": ["CWE-434"], "adp": {"CISA-ADP": ["CWE-20"]}}
+    assert mg["cwe_display"] == ["CWE-434"] and mg["cwe_display_source"] == "cna" and mg["cwe_conflict"] is True
+    mg = merge_cwe_sources([], {"exists": True, "cwes_cna": [], "cwes_adp": {"CISA-ADP": ["CWE-20"]}})
+    assert (mg["cwe_display_source"], mg["cwe_display"], mg["cwe_conflict"]) == ("adp", ["CWE-20"], False)
+    mg = merge_cwe_sources([], {"exists": True, "cwes_cna": [], "cwes_adp": {}})
+    assert (mg["cwe_display_source"], mg["cwe_display"], mg["cve_record"]) == ("none", [], "found")   # 분류된 적 없음
+    mg = merge_cwe_sources(["CWE-1"], {"exists": True, "cwes_cna": ["CWE-1"], "cwes_adp": {}})
+    assert mg["cwe_conflict"] is False                                                                # 같으면 충돌 아님
+    assert merge_cwe_sources(["CWE-1"], None)["cve_record"] == "not_checked"                           # 조회 못 한 것과 구분
+    assert merge_cwe_sources(["CWE-1"], {"exists": False})["cve_record"] == "missing"
+    fake_kev = {"vulnerabilities": {"CVE-2099-1": {"cwes": ["CWE-1"]}, "CVE-2099-2": {"cwes": []}}}
+
+    def fake_lookup(c):
+        if c == "CVE-2099-2":
+            raise OSError("network down")
+        return {"exists": True, "cwes_cna": ["CWE-2"], "cwes_adp": {}}
+    out = enrich_kev_cwes(fake_kev, workers=2, lookup=fake_lookup)["vulnerabilities"]
+    assert out["CVE-2099-1"]["cwe_conflict"] is True and out["CVE-2099-1"]["cwe_display"] == ["CWE-2"]
+    assert out["CVE-2099-2"]["cve_record"] == "error"                                                 # 실패해도 계속하고 표시한다
+    print("자체 시험 통과")
 
 
 if __name__ == "__main__":
@@ -348,6 +445,15 @@ if __name__ == "__main__":
         self_test()
     elif a[0] == "build":
         print(json.dumps(build(a[1] if len(a) > 1 else "all"), ensure_ascii=False, indent=1))
+    elif a[0] == "enrich-kev":
+        kev = json.loads((DATA / "kev.json").read_text(encoding="utf-8"))
+        kev = enrich_kev_cwes(kev)
+        from collections import Counter
+        vs = kev["vulnerabilities"].values()
+        print("레코드 조회:", dict(Counter(v["cve_record"] for v in vs)))
+        print("대표 CWE 출처:", dict(Counter(v["cwe_display_source"] for v in vs)))
+        print("출처끼리 다른 건:", sum(1 for v in vs if v["cwe_conflict"]))
+        print("저장:", _save(kev, "kev.json"))
     elif a[0] == "export":
         for line in export_csv(a[1] if len(a) > 1 else None):
             print("저장:", line)
