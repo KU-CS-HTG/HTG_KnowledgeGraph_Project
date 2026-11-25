@@ -55,7 +55,14 @@ ENTITY_TYPE_DEFINITIONS = {
     ),
     "Technique": (
         "An attacker behaviour from MITRE ATT&CK (e.g. supply chain compromise, web shell, valid account abuse). "
-        "Not a malware name, not a tool, not a vulnerability."
+        "Use ONLY when the text itself names the ATT&CK technique (by name or ID). Plain descriptions of what the "
+        "attacker did are an AttackBehavior, not a Technique. Not a malware name, not a tool, not a vulnerability."
+    ),
+    "AttackBehavior": (
+        "What the attacker did, described in plain language close to the source text (e.g. 'forged login tokens "
+        "using a signing key that was never revoked', 'replaced CDN scripts so that the launcher downloaded a remote "
+        "access agent'). One action per entity. Not a malware name, not a CVE, not a vulnerability, and not an "
+        "attacker group. Do NOT force it into an ATT&CK technique; mapping is a separate step."
     ),
     "Tactic": (
         "The attacker's goal at one phase of an attack in MITRE ATT&CK (e.g. initial access, persistence, "
@@ -145,6 +152,7 @@ ENTITY_TYPES_TO_ADD_INSTANCES = [
     "Incident",         # 이름 유사도로 합치지 않는다. 아래 INCIDENT_RESOLUTION 규칙으로 합친다(원본의 합치기 우회)
     "Organization",     # 별칭 사전(ORG_ALIAS_SEED)으로 먼저 합친다
     "Campaign",
+    "AttackBehavior",   # 열린 서술형. 사건 안에서만 의미가 있고, 사건 간 비교는 매핑된 전술·기법으로 한다
     "RootCause",        # 시드에 없는 원인은 일단 추가하되 사람이 정리한다
     "MalwareFamily",    # 새 악성코드 계열이 계속 생김
     "ThreatActor",      # 새 행위자와 별칭이 계속 생김
@@ -166,7 +174,8 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET = [
     ("Incident", "Vulnerability", "EXPLOITED_VULNERABILITY"),  # (a) 취약점
     ("Incident", "Weakness", "EXPLOITED_WEAKNESS"),          # (b) 코드·설계 수준 약점 (CWE)
     ("Incident", "RootCause", "HAS_ROOT_CAUSE"),             # (b) 조직·운영의 관리 실패
-    ("Incident", "Technique", "USED_TECHNIQUE"),             # (c) 기법
+    ("Incident", "AttackBehavior", "USED_BEHAVIOR"),         # (c) 문서가 서술한 행동(평이한 말). 기법 매핑은 별도 단계
+    ("Incident", "Technique", "USED_TECHNIQUE"),             # (c) 문서가 ATT&CK 기법 이름·ID를 직접 쓴 경우만
     ("Incident", "MalwareFamily", "USED_MALWARE"),           # (c) 악성코드·도구
     ("Incident", "ThreatActor", "ATTRIBUTED_TO"),            # 배후 지목(주장인 경우가 많음)
     ("Incident", "ActorOrigin", "HAS_ACTOR_ORIGIN"),         # 공격자와 피해 조직의 관계(내부자, 외부자 등)
@@ -267,6 +276,38 @@ SOURCE_TYPES = [
 
 
 # ──────────────────────────────────────────────────────────────────────────
+# 5-1. 기법 층: 서술형 행동 → ATT&CK 매핑 → 뼈대 유도 [신규] — attack_mapping.py가 읽는다
+#      결정: D5 2층(서술형을 먼저 기록, ATT&CK 매핑은 별도 단계, 악성코드는 뼈대에서 기법 유도) /
+#            D6 AI가 후보를 제안하고 사람이 확인(파일럿) / D7 비교는 전술, 상세는 기법, 하위 기법은 문서가 구체적일 때만 /
+#            D8 뼈대에서 유도한 기법은 답에 포함하되 "문서의 주장이 아니라 뼈대 유도"로 구분.
+#      매핑 결과에는 신뢰도와 근거가 필요해서 트리플렛이 아니라 별도 기록으로 둔다:
+#        {"behavior": 서술형 행동, "candidates": [{"technique_id", "confidence", "evidence"}], "status": ...}
+# ──────────────────────────────────────────────────────────────────────────
+ATTACK_MAPPING_STATUSES = {
+    "documented": "문서가 ATT&CK 기법 이름·ID를 직접 씀 (USED_TECHNIQUE 트리플렛). 별도 매핑 불필요",
+    "ai_suggested": "AI가 후보를 제안했으나 사람이 아직 확인하지 않음. 확정으로 세지 않는다",
+    "human_confirmed": "사람이 후보를 확인함",
+    "human_rejected": "사람이 후보를 기각함. 답에서 제외한다",
+    "no_match": "ATT&CK에 맞는 기법이 없다고 판단함. 억지로 맞추지 않고 서술형으로 남긴다",
+}
+MAPPING_CONFIDENCE_LEVELS = ["high", "medium", "low"]
+MAPPING_REQUIRES_HUMAN_CONFIRMATION = True      # D6: 파일럿에서는 사람이 확인해야 확정으로 센다
+COMPARISON_LEVEL = "tactic"                      # D7: 사건 간 비교는 전술 수준
+ALLOW_SUBTECHNIQUE_ONLY_IF_SPECIFIC = True       # D7: 문서가 구체적일 때만 하위 기법, 아니면 상위 기법으로 올린다
+INCLUDE_BACKBONE_DERIVED_TECHNIQUES = True       # D8: 악성코드에서 유도한 기법을 답에 포함
+BACKBONE_DERIVED_LABEL = "backbone_derived"      #     포함하되 이 이름표로 구분한다
+
+# 매핑 단계의 프롬프트 규칙(영문). 후보는 반드시 내려받은 ATT&CK 목록 안의 것이어야 하고, 목록에 없는 ID는 버린다.
+ATTACK_MAPPING_RULES = [
+    "Map an AttackBehavior to an ATT&CK technique only when the evidence span supports it.",
+    "Prefer the technique level. Use a sub-technique only when the text is specific enough; otherwise use the parent.",
+    "If only the attacker's goal is clear, say so and give the tactic; do not guess a technique.",
+    "If ATT&CK has no matching technique, answer no_match. Never force a match.",
+    "Candidates must come from the provided ATT&CK catalogue. Never invent an ID or a name.",
+]
+
+
+# ──────────────────────────────────────────────────────────────────────────
 # 5-2. 사건 해소(같은 사건 합치기) [신규] — incident_resolution.py가 읽는다
 #      원본은 새 노드를 이름 의미 유사도 0.8 이상이면 합친다. 사건에는 날짜와 조직을 보지 않아 오류가 난다.
 #      결정: D1 조직 단위 Incident + 선택적 Campaign / D2 같은 조직 필수 + 공개 시점 기준 + 공유 신호 /
@@ -305,7 +346,7 @@ ORG_ALIAS_SEED = {
 ANSWER_SLOTS = {
     "a_vulnerability": ["EXPLOITED_VULNERABILITY"],
     "b_weakness_or_failure": ["EXPLOITED_WEAKNESS", "HAS_ROOT_CAUSE"],
-    "c_technique": ["USED_TECHNIQUE", "USED_MALWARE"],
+    "c_technique": ["USED_BEHAVIOR", "USED_TECHNIQUE", "USED_MALWARE"],
 }
 
 # 질문의 칸은 아니지만 답과 함께 보여 줄 참고 정보 → 그 정보의 답이 되는 관계. 상태 규칙은 칸과 같다.
@@ -409,6 +450,16 @@ def validate() -> list[str]:
             if key in seen and seen[key] != canon:
                 problems.append(f"ORG_ALIAS_SEED: '{name}'이 {seen[key]}와 {canon}에 모두 있음")
             seen[key] = canon
+    if "USED_BEHAVIOR" not in ANSWER_SLOTS["c_technique"]:
+        problems.append("칸 (c)에 USED_BEHAVIOR가 없음")
+    if "AttackBehavior" not in ENTITY_TYPES_TO_ADD_INSTANCES:
+        problems.append("AttackBehavior가 추가 가능 목록에 없음")
+    if "AttackBehavior" in EMBEDDING_MATCH_ENTITIES or "AttackBehavior" in EXACT_ID_ENTITIES:
+        problems.append("AttackBehavior는 열린 서술형이라 뼈대 연결 대상이 아님")
+    if COMPARISON_LEVEL not in ("tactic", "technique"):
+        problems.append("COMPARISON_LEVEL은 tactic 또는 technique이어야 함")
+    if set(MAPPING_CONFIDENCE_LEVELS) != {"high", "medium", "low"}:
+        problems.append("MAPPING_CONFIDENCE_LEVELS가 올바르지 않음")
     if set(ACTOR_ORIGIN_TO_VERIS) != set(ACTOR_ORIGIN_SEED):
         problems.append("ACTOR_ORIGIN_TO_VERIS의 키가 ACTOR_ORIGIN_SEED와 다름")
     for text, expected in ACTOR_ORIGIN_BOUNDARY_EXAMPLES:

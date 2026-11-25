@@ -117,7 +117,8 @@ NAMES = {
 }
 
 
-def render(incident: str, summary: dict, context: dict | None = None) -> str:
+def render(incident: str, summary: dict, context: dict | None = None, attack_layer: dict | None = None) -> str:
+    """attack_layer: attack_mapping.summarize_attack_layer의 결과. 주면 (c) 기법 층(매핑 상태, 뼈대 유도, 전술 집계)을 덧붙인다."""
     lines = [f"[{incident}]"]
     for part in (summary, context or {}):
         for slot, s in part.items():
@@ -130,6 +131,9 @@ def render(incident: str, summary: dict, context: dict | None = None) -> str:
                 mark = " (구분이 문서마다 다름: " + "/".join(i["statuses"]) + ")" if i["mixed_statuses"] else ""
                 veris = f" (VERIS: {i['veris']})" if i.get("veris") else ""
                 lines.append(f"    - {i['target']}{veris} [{i['best_status']}, 문서 {i['n_documents']}개]{mark}")
+    if attack_layer is not None:
+        import attack_mapping
+        lines.append(attack_mapping.render_attack_layer(attack_layer))
     return "\n".join(lines)
 
 
@@ -219,7 +223,16 @@ def self_test() -> None:
     assert camp["a_vulnerability"]["state"] == "not_mentioned"
     assert camp["a_vulnerability"]["text"] == "확인되지 않음: 소속 사건 3개(문서 4개) 모두에서 언급 없음"
 
-    print("자체 시험 12개 통과\n")
+    # 13) 기법 층을 붙여 출력한다: AI 제안은 "사람 확인 전", 뼈대 유도는 "문서의 주장이 아님"으로 표시된다
+    import attack_mapping as am
+    cat = am._test_catalog()
+    trip = [_t("USED_BEHAVIOR", "forged login tokens", "confirmed", "d1"), _t("USED_MALWARE", "ExampleBackdoor", "confirmed", "d2")]
+    layer = am.summarize_attack_layer(trip, {"forged login tokens": {"status": "ai_suggested", "candidates": [{"technique_id": "T9002", "confidence": "high"}]}},
+                                      {"examplebackdoor": ["T9003.002"]}, cat)
+    text = render("시험", summarize_incident(trip, 2), None, layer)
+    assert "(c) 기법 층" in text and "사람 확인 전" in text and "문서의 주장이 아님" in text
+
+    print("자체 시험 13개 통과\n")
     print(render("SK텔레콤 유형", summarize_incident(skt, 3), summarize_context(skt, 3)))
     print()
     print(render("쿠팡 유형", summarize_incident(coupang_ctx, 4), summarize_context(coupang_ctx, 4)))
