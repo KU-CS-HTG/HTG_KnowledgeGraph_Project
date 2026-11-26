@@ -336,9 +336,30 @@ MISP 1,132개 중 ATT&CK 그룹과 별칭이 겹치는 것은 정확히 한 그�
 
 - **별칭 사전이 작고 확인되지 않았다.** 한국어 표기가 얼마나 많은지는 실제 문서를 봐야 안다. 사전에 없는 한국어 이름은 모두 확인 대기 노드가 된다.
 - **정확 일치뿐이다.** 철자 변형, 오타, 다른 언어 표기, 줄임말은 사전에 있어야만 연결된다. 비슷한 이름을 자동으로 찾는 기능은 일부러 넣지 않았다.
-- 새 노드가 쌓이면 사람이 확인할 대기열이 커진다. 대기열을 처리하는 화면이나 절차는 아직 없다.
-- AI가 영문명을 뽑는 프롬프트와 호출은 이 저장소에 없다(`ai_english_name`을 받는 자리만 있음).
-- 확인이 끝난 새 노드를 ATT&CK 그룹이나 사전에 연결하는 갱신 절차, 스냅샷이 바뀌어 ATT&CK에 그룹이 새로 생겼을 때 기존 새 노드를 옮기는 절차는 아직 없다.
+- 새 노드가 쌓이면 사람이 확인할 대기열이 커진다. 처리 절차는 아래 "확인 대기열 처리"에 있으나 화면은 없고 CSV 시트로 한다.
+- **AI 프롬프트는 초안이고 실제 모델로 시험하지 않았다.** 이 저장소에는 AI 호출 코드가 없어, 응답이 형식대로 나오는지는 확인하지 못했다.
+
+### 확인 대기열 처리 (`actor_review.py`, 결정 저장소는 `data/actor_decisions.json`)
+
+`actors.consolidate_pending`이 만든 확인 대기 항목을 사람이 처리하는 절차다. 화면은 없고 CSV 시트로 한다.
+
+1. **시트 만들기**: `python actor_review.py sheet pending.json sheet.csv`. 이름, 나온 문서, 사유, 후보(ATT&CK, MISP, 소프트웨어), AI 제안이 나오고 `decision`과 `note` 칸이 비어 있다.
+2. **사람이 `decision` 칸을 채운다**: `link:G0094`(이 이름은 그 ATT&CK 그룹의 별칭), `new`(ATT&CK에 없는 새 행위자가 맞음), `reject`(행위자가 아님. `reject:malware`처럼 종류를 적으면 그 종류로 다시 보냄), 빈칸(미결정).
+3. **반영**: `python actor_review.py apply sheet.csv --by 이름`. 누가 확인했는지(`--by`)와 날짜를 기록한다. **잘못된 칸은 반영하지 않고 이유를 알려 준다**: 없는 그룹 ID, 이미 ATT&CK 이름·별칭과 일치, 이미 다른 그룹의 별칭, 읽을 수 없는 값. 다시 반영해도 중복되지 않는다.
+4. **효과**: 확정한 별칭은 별칭 사전에 더해져 다음부터 자동으로 연결되고(`plan_actor(decisions=...)`), `new`는 노드 상태가 `pending_review`에서 `confirmed_new`로 바뀌고, `reject`는 `rejected`로 새 노드를 만들지 않는다. 결정이 있어도 ATT&CK에 정확히 일치하면 연결이 우선한다.
+
+**스냅샷을 갱신했을 때 옮기기**: `backbone.py build`로 ATT&CK을 새로 받은 뒤 `python actor_review.py migrate [pending.json]`을 실행한다. 확인 대기와 확정 새 행위자 이름이 이제 ATT&CK에 정확히 일치하는지(`now_in_attack`), 모호해졌는지(`ambiguous_now`), 별칭 사전의 그룹이 새 스냅샷에서 사라졌거나 이름이 바뀌었는지(`group_missing_in_snapshot`, `group_renamed`)를 보고서로 보여 준다. **자동으로 옮기지 않는다.** `apply_migration`으로 사람이 승인한 이름만 `migrated`에 기록하고 `confirmed_new`에서 뺀다.
+
+**AI 영문명 프롬프트** (`consts.ACTOR_NAME_EXTRACTION_PROMPT`)와 응답 검증(`parse_ai_name_response`): 프롬프트는 원문 이름을 그대로 베끼게 하고, 확신이 없으면 영문명을 `null`로 두게 하며, 악성코드·도구 이름은 `threat_actor`가 아닌 종류로 표시하게 한다. 응답 검증은 형식, 종류(악성코드는 행위자가 아님), 원문에 이름이 있는지(문서 텍스트를 주면)를 점검하고, 영문명이 문자열이 아니면 버린다. 영문명은 `plan_actor`가 ATT&CK과 대조해 `ai_suggested` 후보로만 쓴다.
+
+**실제 데이터로 확인한 것**: `솔트 타이푼`(AI 제안 `Salt Typhoon → G1045`)을 `link:G1045`로, `APT45`를 `new`로, `BPFDoor`를 `reject:malware`로 결정해 반영하면 `plan_actor`가 각각 연결, `confirmed_new` 노드, 행위자 노드 없음으로 바꾼다. 미결정 항목은 `pending_review`로 남는다.
+
+### 한계 (확인 대기열 처리)
+
+- 화면이 없고 시트를 사람이 직접 편집한다. 결정 저장소는 JSON 파일이라 동시에 여러 사람이 편집하는 경우는 다루지 않는다.
+- 이 절의 모든 시험은 가짜 데이터와 소수의 실제 이름으로만 했다. 실제 문서에서 나온 대기열로 돌려 본 것이 아니다.
+- 그래프(Neo4j)에 노드를 넣거나 옮기는 코드는 이 저장소에 없다. 여기서 말하는 노드는 계획 기록이고, 옮김 기록(`migrated`)은 그래프에 반영하는 단계가 따로 있어야 의미가 있다.
+- `migrate`는 이름이 정확히 일치하는 경우만 찾는다. 이름이 바뀐 그룹이나 별칭이 다른 그룹으로 옮겨진 경우는 별칭 사전 점검(`group_renamed`)이 일부만 잡는다.
 
 ### 확인용 CSV
 
@@ -418,6 +439,7 @@ python measurements.py        # 수치 층 규칙 자체 시험(9개)
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 python backbone.py            # 뼈대 변환 규칙 자체 시험(네트워크 없이)
 python actors.py              # 행위자 이름 연결 자체 시험
+python actor_review.py        # 확인 대기열 처리 자체 시험
 ```
 
 `consts.py` 검사는 관계의 개체 종류 정의 여부, FILTERED ⊂ ALL, 닫힌 목록 종류의 연결 방법, `ANSWER_SLOTS`가 문서에서 받는 관계만 쓰는지 등을 확인한다.
