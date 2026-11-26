@@ -146,8 +146,8 @@ def compare(m1: dict, m2: dict, alias_index: dict, cfg: dict | None = None, sim_
 # ── 묶기 ──────────────────────────────────────────────────────────────────
 def effective_headlines(members: list[dict]) -> list[tuple[date, date]]:
     """묶음의 사건 시점 후보. 다른 언급의 공격 기간 안에 들어가면서 그 언급의 시점보다 이른 날짜는
-    공개 시점이 아니라 침입 단계의 날짜(오추출)로 보고 뺀다. 예: 공격 기간 2022-06~2025-04, 시점 2025-04인 문서가 있으면
-    시점을 2022-06으로 쓴 문서의 날짜는 제외한다."""
+    공개 시점이 아니라 침입 단계의 날짜(오추출)로 보고 뺀다. 예: 공격 기간 2021-08~2025-04, 시점 2025-04인 문서가 있으면
+    시점을 2021-08로 쓴 문서의 날짜는 제외한다."""
     heads = [(m, parse_interval(m.get("headline_date"))) for m in members]
     keep = []
     for m, h in heads:
@@ -270,9 +270,10 @@ def self_test() -> None:
     f2 = dict(f, signals=["signing-key-abuse"]); e2 = dict(e, signals=["Signing-Key-Abuse"])
     assert compare(e2, f2, idx)[0] == "merge"
 
-    # 5) 서로 다른 시점을 쓴 문서를 공격 기간으로 잇는다 (SK텔레콤: 한쪽은 유출 시점 2025-04, 다른 쪽은 설치 시점 2022-06)
-    s1 = _m("s1", "d7", "SK텔레콤 유심 정보 유출", "SK텔레콤", "2025-04", span={"start": "2022-06", "end": "2025-04"}, signals=["BPFDoor"])
-    s2 = _m("s2", "d8", "SKT 악성코드 설치", "SKT", "2022-06", signals=["bpfdoor"])
+    # 5) 서로 다른 시점을 쓴 문서를 공격 기간으로 잇는다. 날짜는 SK텔레콤 사건의 1차 자료(과기정통부 2025-07-04 보도자료)를 따랐다:
+    #    한쪽은 유출 시점 2025-04, 다른 쪽은 최초 침투 시점 2021-08(2021-08-06 CrossC2 설치). 문서 이름과 내용은 시험용 가상이다
+    s1 = _m("s1", "d7", "SK텔레콤 유심 정보 유출", "SK텔레콤", "2025-04", span={"start": "2021-08", "end": "2025-04"}, signals=["BPFDoor"])
+    s2 = _m("s2", "d8", "SKT 악성코드 설치", "SKT", "2021-08", signals=["bpfdoor"])
     assert gap_days(s1, s2) == (0, "attack_span_covers_headline") and compare(s1, s2, idx)[0] == "merge"
     s3 = dict(s2, attack_span=None)          # 공격 기간이 없으면 연결하지 못하고 다른 사건으로 판정한다(한계)
     assert compare(dict(s1, attack_span=None), s3, idx)[0] == "separate"
@@ -296,7 +297,7 @@ def self_test() -> None:
     assert set(canvas["mention_ids"]) == {"b", "c", "d"}      # 같은 행위자를 공유하는 2026년 언급이 모두 하나의 사건
     assert out["mention_to_incident"]["s1"] == out["mention_to_incident"]["s2"] != out["mention_to_incident"]["k"]
     skt = next(i for i in out["incidents"] if i["breached_org"] == "SK텔레콤")
-    assert skt["incident_id"] == "INC-SK텔레콤-202504" and not skt["needs_review"]   # 침입 단계 날짜(2022-06)는 ID 기준에서 제외
+    assert skt["incident_id"] == "INC-SK텔레콤-202504" and not skt["needs_review"]   # 침입 단계 날짜(2021-08)는 ID 기준에서 제외
     assert out["mention_to_incident"]["e"] != out["mention_to_incident"]["f"]          # 확인 대기열로 갔으므로 합치지 않음
     assert any({x["incident_a"], x["incident_b"]} == {"INC-쿠팡-202511", "INC-쿠팡-202511-2"} for x in out["review_queue"])
 
