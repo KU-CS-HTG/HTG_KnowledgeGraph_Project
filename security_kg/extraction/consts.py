@@ -408,6 +408,26 @@ ACTOR_NEW_NODE_POLICY = {
     "skip_if_software_name": True,         # 악성코드·도구 이름이면 행위자 노드를 만들지 않고 종류 확인으로 보낸다
 }
 
+# 행위자 이름 추출 프롬프트 초안(영문). 이 저장소에는 AI 호출 코드가 없고 이 프롬프트는 실제 모델로 시험하지 않았다.
+# 응답 형식은 actor_review.parse_ai_name_response가 검증한다. english_name은 후보일 뿐 확정으로 세지 않는다(ACTOR_NEW_NODE_POLICY).
+ACTOR_NAME_EXTRACTION_PROMPT = """You will read a security incident document and list every named attacker (threat actor) it mentions.
+
+Return JSON only, in this shape:
+{"names": [{"name_as_written": str, "english_name": str | null, "name_type": str, "confidence": str, "evidence": str}]}
+
+Rules:
+- name_as_written: copy the name exactly as it appears in the document, in the document's own language and spelling.
+- english_name: ONLY if you are confident the same attacker is commonly known by an English or vendor name (for example the name MITRE ATT&CK or a major
+  security vendor uses). If you are not sure, use null. Do NOT translate or transliterate by guessing, and do NOT invent a name.
+- name_type: one of "threat_actor", "malware", "tool", "campaign", "organization", "person", "other".
+  A malware or tool name (for example a backdoor name) is NOT a threat actor; label it "malware" or "tool".
+  Unnamed attackers ("hackers", "the attacker") must not be listed.
+- confidence: "high", "medium", or "low" for the english_name only.
+- evidence: the exact sentence from the document in which the name appears.
+- List each distinct name once. If the document names no attacker, return {"names": []}.
+"""
+ACTOR_NAME_TYPES = ["threat_actor", "malware", "tool", "campaign", "organization", "person", "other"]
+
 
 # ──────────────────────────────────────────────────────────────────────────
 # 5. 출처와 확정/주장/추정 구분 [신규]
@@ -710,6 +730,8 @@ def validate() -> list[str]:
     for gid, e in ACTOR_ALIAS_SEED.items():
         if not re.match(r"^G\d{4}$", gid) or not e.get("canonical") or not e.get("aliases"):
             problems.append(f"ACTOR_ALIAS_SEED[{gid}]: 형식이 올바르지 않음")
+    if "threat_actor" not in ACTOR_NAME_TYPES or "{" not in ACTOR_NAME_EXTRACTION_PROMPT:
+        problems.append("ACTOR_NAME_TYPES 또는 ACTOR_NAME_EXTRACTION_PROMPT가 올바르지 않음")
     if set(ASSERTION_RANK) != set(ASSERTION_STATUSES):
         problems.append("ASSERTION_RANK와 ASSERTION_STATUSES의 키가 다름")
     return problems

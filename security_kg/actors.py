@@ -51,6 +51,27 @@ def build_index(attack: dict, misp: dict) -> dict:
     return idx
 
 
+def empty_decisions() -> dict:
+    return {"confirmed_aliases": {}, "confirmed_new": [], "rejected": [], "migrated": {}}
+
+
+def effective_seed(seed: dict | None, decisions: dict | None) -> dict:
+    """코드의 별칭 사전(consts.ACTOR_ALIAS_SEED)에 사람이 확정한 별칭(decisions)을 더한다."""
+    out = {gid: {"canonical": e["canonical"], "aliases": list(e["aliases"])} for gid, e in (seed or {}).items()}
+    for gid, e in ((decisions or {}).get("confirmed_aliases") or {}).items():
+        slot = out.setdefault(gid, {"canonical": e["canonical"], "aliases": []})
+        for a in e["aliases"]:
+            name = a["alias"] if isinstance(a, dict) else a
+            if norm(name) not in {norm(x) for x in slot["aliases"]}:
+                slot["aliases"].append(name)
+    return out
+
+
+def _decided(decisions: dict | None, key: str) -> dict:
+    """결정 목록(confirmed_new, rejected)을 정규화한 이름 → 항목으로 돌려준다."""
+    return {norm(x["name"]): x for x in ((decisions or {}).get(key) or [])}
+
+
 def build_seed_index(seed: dict) -> dict:
     """별칭 사전 → 정규화한 별칭 → ATT&CK 그룹 ID 목록."""
     out = defaultdict(list)
@@ -130,17 +151,26 @@ def lookup_actor(name: str, idx: dict, attack: dict, seed: dict | None = None) -
 
 
 def plan_actor(name: str, idx: dict, attack: dict, seed: dict | None = None, ai_english_name: str | None = None,
-               doc_id: str | None = None) -> dict:
-    """문서가 쓴 행위자 이름 하나에 대한 처리 계획. 연결할지, 새 노드를 만들지, 사람 확인을 요청할지를 정한다."""
+               doc_id: str | None = None, decisions: dict | None = None) -> dict:
+    """문서가 쓴 행위자 이름 하나에 대한 처리 계획. 연결할지, 새 노드를 만들지, 사람 확인을 요청할지를 정한다.
+    decisions는 사람이 확정한 결과(별칭, 새 행위자 확정, 행위자가 아님)이며 actor_review.py가 만든다."""
     pol = consts.ACTOR_NEW_NODE_POLICY
+    seed = effective_seed(seed, decisions)
     r = lookup_actor(name, idx, attack, seed)
     plan = {"name": name, "doc_id": doc_id, "action": r["action"], "reason": r["reason"], "link_to": r["link_to"],
             "create_node": False, "node": None, "candidates": {"attack": r["attack"], "misp": r["misp"],
                                                                  "software": r["software"],
                                                                  "possible_attack_groups": r["possible_attack_groups"]}}
+    rejected = _decided(decisions, "rejected").get(norm(name))
+    if rejected and plan["link_to"] is None:                          # 사람이 '행위자가 아님'으로 확정한 이름
+        plan.update(action="rejected", reason="human_rejected", create_node=False)
+        plan["rejection"] = {"note": rejected.get("note", ""), "reroute": rejected.get("reroute")}
+        return plan
     if r["reason"] in ("misp_only_candidate", "not_found"):
         plan["create_node"] = True
-        plan["node"] = {"name": name, "type": "ThreatActor", "origin": pol["origin"], "status": pol["status"]}
+        confirmed = _decided(decisions, "confirmed_new").get(norm(name))
+        plan["node"] = {"name": name, "type": "ThreatActor", "origin": pol["origin"],
+                        "status": "confirmed_new" if confirmed else pol["status"]}
     if r["reason"] == "matches_software" and not pol["skip_if_software_name"]:
         plan["create_node"] = True
         plan["node"] = {"name": name, "type": "ThreatActor", "origin": pol["origin"], "status": pol["status"]}
