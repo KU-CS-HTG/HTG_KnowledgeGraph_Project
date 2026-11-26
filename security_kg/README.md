@@ -409,6 +409,8 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 
 ## 5개 사건으로 본 시험 (검색 요약 기준, 미검증)
 
+> 이 표의 사실을 1차 자료와 대조하는 확인표가 `fact_check/incident_facts.csv`에 있다(`fact_check/README.md` 참고). 확인하기 전에는 평가용 정답으로 쓰지 않는다.
+
 | 사건 | (a) 취약점 | (b) 약점·관리 실패 | (c) 기법 |
 | --- | --- | --- | --- |
 | 레벨인피니트 | 미공개 | 명시 없음 | CDN 스크립트 변조(공급망), 원격 제어 악성코드 |
@@ -440,6 +442,7 @@ python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 python backbone.py            # 뼈대 변환 규칙 자체 시험(네트워크 없이)
 python actors.py              # 행위자 이름 연결 자체 시험
 python actor_review.py        # 확인 대기열 처리 자체 시험
+python fact_check.py          # 사건 사실 확인표 점검과 진행 상황
 ```
 
 `consts.py` 검사는 관계의 개체 종류 정의 여부, FILTERED ⊂ ALL, 닫힌 목록 종류의 연결 방법, `ANSWER_SLOTS`가 문서에서 받는 관계만 쓰는지 등을 확인한다.
