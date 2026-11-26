@@ -269,7 +269,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 | `Technique`, `Tactic` | ATT&CK Enterprise 20.1 | `data/attack_catalog.json` (600KB) | 기법 706(하위 479 포함), 전술 15, **폐기 기법 161개의 대체 ID 포함** |
 | `MalwareFamily`, `ThreatActor` | ATT&CK 소프트웨어 842, 그룹 178 | 같은 파일 | 별칭, 쓰는 기법, 그룹이 쓰는 소프트웨어 포함 |
 | `Vulnerability`(주목받는 부분집합) | CISA KEV(GitHub 사본, 2026.11.24) | `data/kev.json` (1.1MB) | 1,795건. 악용 확인된 CVE와 CWE, 랜섬웨어 사용 여부 |
-| `ThreatActor` 별칭 보충 | MISP threat-actor 갤럭시 | `data/misp_threat_actors.json` (220KB) | 1,132개. **ATT&CK 그룹과 합치지 않고 따로 둠** |
+| `ThreatActor` 별칭 보충 | MISP threat-actor 갤럭시 | `data/misp_threat_actors.json` (220KB) | 1,132개. **ATT&CK 그룹과 합치지 않고 후보로만 제시** (`actors.py`) |
 | `Vulnerability`(전체) | CVE 레코드 | `backbone.lookup_cve` | **전체 목록은 못 받음.** 번호로 한 건씩 조회해 존재 확인, CWE, 제품 이름을 가져옴 |
 | `Product` | NVD CPE 사전 | **없음** | NVD API가 이 환경에서 막혀 받지 못함. CVE 레코드의 vendor/product 이름만 가능 |
 
@@ -294,6 +294,52 @@ KEV의 `cwes`는 CISA가 붙인 값이고, 같은 CVE의 CVE 레코드에는 발
 - **어느 쪽이 맞는지는 판단하지 않았다.** 차이가 나는 이유(갱신 시점, 기준 차이 등)도 확인하지 못했다.
 - `python backbone.py export`의 `kev.csv`에 출처별 열이 들어간다.
 
+### 행위자 이름 연결 (`actors.py`, 설정은 `consts.py`의 `ACTOR_NAME_LINKING`, `ACTOR_ALIAS_SEED`, `ACTOR_NEW_NODE_POLICY`)
+
+같은 행위자를 업체마다 다른 이름으로 부르고(Kimsuky, Velvet Chollima, Thallium, 김수키), 한 별칭이 서로 다른 행위자에 쓰이기도 한다. 이름 문자열만으로 합치면 사건 해소에서 본 것과 같은 **잘못된 합치기**가 생기므로 **정확히 일치할 때만 연결하고 나머지는 사람이 확인한다.** MISP는 연결에 쓰지 않고 후보로만 제시한다(옵션 A).
+
+**조회 순서** (`lookup_actor`, 대소문자와 공백만 무시한 정확한 일치. 부분 일치와 비슷한 이름은 쓰지 않음):
+
+| 순서 | 조건 | 판정 |
+| --- | --- | --- |
+| 1 | ATT&CK 그룹 한 곳의 이름이나 별칭과 일치 | `link` |
+| 2 | ATT&CK 그룹 둘 이상에 일치 | `review`(모호, 새 노드를 만들지 않음) |
+| 3 | **별칭 사전**(`ACTOR_ALIAS_SEED`)에 있음 | `link`(사람이 확인한 별칭만 들어 있음) |
+| 4 | ATT&CK 소프트웨어(악성코드, 도구)의 이름과 일치 | `review`(행위자가 아니라 종류 오류일 수 있음) |
+| 5 | MISP에만 일치 | `review`(후보 제시, 합치지 않음) |
+| 6 | 어디에도 없음 | `none` |
+
+**새 노드 계획** (`plan_actor`, 결정 5):
+
+- 연결되면 새 노드가 없다. 모호하거나 소프트웨어 이름이면 **노드를 만들지 않고** 사람 확인으로 보낸다.
+- 5, 6번(MISP에만 있거나 어디에도 없음)은 `ThreatActor` 노드를 만들되 **`origin: document_added`, `status: pending_review`** 로 표시해 표준(ATT&CK)에서 온 노드와 구분한다.
+- **이름 유사도로 자동 합치지 않는다**(원본의 합치기를 이 종류에는 쓰지 않음). 같은 철자(대소문자와 공백만 무시)로 여러 문서에서 나온 것만 한 대기 항목으로 묶는다(`consolidate_pending`). `Unknown Crew`와 `Unknown Crews`는 묶지 않는다.
+- AI가 영문명을 제안하면(`ai_english_name`) 같은 조회를 해서 `ai_suggestion`으로만 붙이고 **연결하지 않는다.** 상태는 `ai_suggested`(사람 확인 전)이다.
+- **별칭 사전**은 사람이 확인한 한국어 표기, 줄임말만 넣는다. 현재 3개 그룹(Kimsuky, Lazarus Group, Andariel)의 시드가 있으나 **제 일반 지식으로 만든 후보이고 이 세션에서 확인하지 않았다.** 사용 전에 사람이 확인해야 하고, 사람이 확정한 별칭을 계속 추가하는 방식으로 키운다. `validate_alias_seed`가 그룹 ID와 이름이 ATT&CK 목록과 맞는지 점검한다.
+- `python actors.py "김수키"`로 한 이름의 계획을 보고, `python actors.py review`로 MISP와 ATT&CK 별칭 겹침 CSV(`backbone/export/actor_alias_candidates.csv`)를 만든다.
+
+**실제 데이터로 확인한 것**:
+
+| 이름 | 결과 |
+| --- | --- |
+| `Kimsuky`, `Hidden Cobra` | ATT&CK 별칭으로 연결(G0094, G0032) |
+| `김수키`, `라자루스`, `Lazarus`, `안다리엘` | 별칭 사전으로 연결(G0094, G0032, G0032, G0138) |
+| `BPFDoor` | 악성코드 이름이라 새 행위자 노드를 만들지 않고 확인(`matches_software`) |
+| `APT45` | ATT&CK에는 없고 MISP에만 있어 후보를 제시하고 확인 대기 노드 |
+| `솔트 타이푼`(AI 영문명 `Salt Typhoon`) | 확인 대기 노드, ATT&CK G1045를 `ai_suggested`로만 제안 |
+| `솔트 타이푼`(AI 영문명 `Salt Typhon`, 철자 오류) | 확인 대기 노드, 제안 없음(정확 일치가 아니라서) |
+| `완전히 새로운 해커 조직` | 확인 대기 노드 |
+
+MISP 1,132개 중 ATT&CK 그룹과 별칭이 겹치는 것은 정확히 한 그룹이 173개, 둘 이상이 11개, 겹치지 않는 것이 948개이다. **이름 범위가 출처마다 다른 실제 사례**도 있다. `Andariel`은 ATT&CK에서 독립 그룹(G0138)이고 MISP에서는 Lazarus Group의 별칭이며, MISP의 Lazarus Group 항목은 ATT&CK 그룹 다섯 개와 별칭이 겹친다. 합치기로 정했다면 서로 다른 그룹이 섞였을 것이다.
+
+### 알려진 한계
+
+- **별칭 사전이 작고 확인되지 않았다.** 한국어 표기가 얼마나 많은지는 실제 문서를 봐야 안다. 사전에 없는 한국어 이름은 모두 확인 대기 노드가 된다.
+- **정확 일치뿐이다.** 철자 변형, 오타, 다른 언어 표기, 줄임말은 사전에 있어야만 연결된다. 비슷한 이름을 자동으로 찾는 기능은 일부러 넣지 않았다.
+- 새 노드가 쌓이면 사람이 확인할 대기열이 커진다. 대기열을 처리하는 화면이나 절차는 아직 없다.
+- AI가 영문명을 뽑는 프롬프트와 호출은 이 저장소에 없다(`ai_english_name`을 받는 자리만 있음).
+- 확인이 끝난 새 노드를 ATT&CK 그룹이나 사전에 연결하는 갱신 절차, 스냅샷이 바뀌어 ATT&CK에 그룹이 새로 생겼을 때 기존 새 노드를 옮기는 절차는 아직 없다.
+
 ### 확인용 CSV
 
 `data/*.json`은 들여쓰기로 저장한다(저장소에서 바로 읽히고, 갱신할 때 `git diff`가 바뀐 줄만 보여 준다). 훑어보고 정렬·검색하려면 CSV가 편하다.
@@ -317,7 +363,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 - **CVE 전체 목록이 없다.** 문서가 인용한 번호를 한 건씩 조회하는 방식이라 건당 네트워크 호출이 필요하고, 이 환경 밖에서 돌릴 때는 `cvelistV5` 전체를 받는 방식을 따로 정해야 한다.
 - **CVE→CWE는 CVE 레코드의 `problemTypes`(CNA와 ADP)로 대신했다.** NVD의 CPE 매핑과 CVSS는 받지 못했다. NVD가 매긴 CWE와 CNA가 매긴 CWE는 다를 수 있어 둘을 구분해 보관한다.
 - **KEV는 GitHub 사본**이다. 원본(`www.cisa.gov`)과 같은지는 확인하지 못했다.
-- **MISP 갤럭시는 `main`에서 받았고 커밋 해시를 기록하지 못했다.** 재현이 필요하면 특정 커밋으로 고정해야 한다. MISP 행위자와 ATT&CK 그룹을 같은 행위자로 합치는 규칙은 정하지 않았다(합치기 오류 위험은 사건 해소와 같다).
+- **MISP 갤럭시는 `main`에서 받았고 커밋 해시를 기록하지 못했다.** 재현이 필요하면 특정 커밋으로 고정해야 한다. MISP 행위자와 ATT&CK 그룹은 합치지 않는다(옵션 A, 아래 "행위자 이름 연결").
 - **ATT&CK은 Enterprise만 받았다.** ICS와 Mobile은 받지 않았다.
 - **Mapping 결과의 정확성은 평가하지 않았다.** 이 절은 목록이 만들어졌고 형식대로 읽힌다는 것까지만 확인한다.
 - 그래프에 넣는 코드(원본 `neo4j_v2.py`에 해당)와 임베딩 인덱스는 아직 없다.
@@ -371,6 +417,7 @@ python incident_resolution.py # 사건 해소 규칙 자체 시험(11개)
 python measurements.py        # 수치 층 규칙 자체 시험(9개)
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 python backbone.py            # 뼈대 변환 규칙 자체 시험(네트워크 없이)
+python actors.py              # 행위자 이름 연결 자체 시험
 ```
 
 `consts.py` 검사는 관계의 개체 종류 정의 여부, FILTERED ⊂ ALL, 닫힌 목록 종류의 연결 방법, `ANSWER_SLOTS`가 문서에서 받는 관계만 쓰는지 등을 확인한다.
