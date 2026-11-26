@@ -57,18 +57,9 @@
 - **F1**의 "정보 유출이 확인된 곳"과 "해킹 시도만 있었던 곳"을 구분해서 적는다(질문 7).
 - 10/14 이후의 변동(10/28 금투사 등)은 확인하지 못했다. 발표 날짜별로 수치를 구분한다.
 
-## 5. Canvas, Instructure (행 C1~C7)
+## 5. Canvas, Instructure
 
-| 자료 | 기관 | 찾는 법 | 대조할 행 | 기사로 알게 된 것(미검증) |
-| --- | --- | --- | --- | --- |
-| **사고 안내 허브와 상태 페이지** | Instructure | `instructure.com/incident_update`와 `status.instructure.com`(검색 결과 기사가 언급한 주소이며 직접 열어 보지 못함) | C1, C3, C4, C5 | 2026-04-29 탐지, 5/1 상태 페이지 공지, 5/6 "진정되었다", 비밀번호, 생년월일, 정부 식별자, 금융 정보가 연루된 증거는 없다고 설명, 유출 경로의 기술적 방법은 공개하지 않음 ([BleepingComputer](https://bleepingcomputer.com/news/security/instructure-confirms-data-breach-shinyhunters-claims-attack)) |
-| CISO 성명 | Instructure | 사고 안내 허브의 성명문 | C2, C6 | "범죄 위협 행위자"에 의한 사고, 외부 포렌식 업체 투입. 공격자 이름(ShinyHunters)은 **회사 성명이 아니라 집단의 주장**으로 보도됨 |
-| **공공기관 사고 요약** | 스페인 국가 사이버보안 기관 INCIBE | INCIBE-CERT의 사고 요약 페이지 | C1, C5 | ([INCIBE](https://www.incibe.es/en/incibe-cert/publications/cybersecurity-highlights/cybersecurity-incident-instructure-and-its-impact-canvas-platform), 내용은 읽지 못함. 외국 기관의 2차 요약으로 1차 자료는 아님) |
-| 2025년 9월 사고에 대한 회사 설명 | Instructure | 같은 허브나 과거 공지 | C7 | 같은 집단에 의한 두 번째 사고, 2025년 사고에는 Canvas 제품 데이터가 없었다는 설명이 1차 자료로 확인되지 않는다는 보도 |
-
-- **C6**: 집단은 약 9,000개 학교, 약 2.75억 명을 주장했다고 보도됨([TechRepublic](https://www.techrepublic.com/de/article/news-canvas-instructure-breach-275m-users/)). 회사가 확인한 범위를 1차 자료에서 찾아 표에 수치로 적는다. 지금 표에는 "더 작다"는 정성적 표현뿐이다.
-- **C5**(5/11 합의): 두 보도가 합의 시점은 같지만 조건은 확인되지 않았다고 한다. 회사 성명이 있는지 찾는다.
-- 검색에서 나온 대학의 사고 요약 PDF(캠퍼스 IT 부서 작성)는 **고객의 2차 자료**이므로 1차 자료로 쓰지 않는다.
+**범위에서 제외했다(2026-11-26, 사용자 결정).** Instructure의 공식 문서(사고 안내 허브, 상태 페이지 등)를 구할 수 없어 사실 확인표에서 행 C1~C7을 지웠다. 1차 자료를 구하게 되면 그때 다시 추가한다.
 
 ## 올려 주실 때
 
