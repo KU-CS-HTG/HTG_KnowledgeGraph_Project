@@ -1,6 +1,6 @@
 # 쿠팡 대조 초안 (Claude, 2026-11-26)
 
-**이 문서는 초안이다.** 결과는 `incident_facts.csv`의 K1~K18행에 반영했다(`checked_by`가 "Claude(초안, 사용자 확인 필요)"). 사람이 확인한 뒤 `checked_by`를 본인 이름으로 바꾸면 확정이다.
+결과는 `incident_facts.csv`의 K1~K18행에 반영했다. 이 문서는 Claude가 만든 대조 초안이고, 사용자(Taegyu)가 확인하고 결정한 내용은 아래 "사용자 확인과 결정" 절에 있다. K1~K18의 `checked_by`는 2026-11-26에 Taegyu로 바꿨다.
 
 ## 대조에 쓴 자료
 
