@@ -294,6 +294,9 @@ KEV의 `cwes`는 CISA가 붙인 값이고, 같은 CVE의 CVE 레코드에는 발
 - **어느 쪽이 맞는지는 판단하지 않았다.** 차이가 나는 이유(갱신 시점, 기준 차이 등)도 확인하지 못했다.
 - `python backbone.py export`의 `kev.csv`에 출처별 열이 들어간다.
 
+**충돌 검토용 표본 (`kev_conflict_sample.py`, 기본값-C1)**: 232건을 대표값과 다른 출처의 관계로 분류한다(`subset` 한쪽이 다른 쪽의 일부 68건, `hierarchy` 상하위 74건, `unrelated` 서로 무관 90건). 어느 쪽이 맞는지는 판단하지 않는다. 사람이 볼 표본 30건(무관 20, 상하위 5, 일부 5, seed 고정)을 `backbone/export/kev_conflict_sample.csv`에 만들고 `judge_correct`, `judge_note` 칸을 비워 둔다. 전체 분류는 `kev_conflicts_all.csv`. 대표값이 CNA인 경우는 36건, ADP인 경우는 196건이다.
+
+
 ### 행위자 이름 연결 (`actors.py`, 설정은 `consts.py`의 `ACTOR_NAME_LINKING`, `ACTOR_ALIAS_SEED`, `ACTOR_NEW_NODE_POLICY`)
 
 같은 행위자를 업체마다 다른 이름으로 부르고(Kimsuky, Velvet Chollima, Thallium, 김수키), 한 별칭이 서로 다른 행위자에 쓰이기도 한다. 이름 문자열만으로 합치면 사건 해소에서 본 것과 같은 **잘못된 합치기**가 생기므로 **정확히 일치할 때만 연결하고 나머지는 사람이 확인한다.** MISP는 연결에 쓰지 않고 후보로만 제시한다(옵션 A).
@@ -451,7 +454,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 | 확인-A1 | 사건의 핵심 사실을 1차 자료로 확인 | **완료(2026-11-26)**: `fact_check/incident_facts.csv` 75행을 Taegyu가 확인. 네 사건(레벨인피니트, SK텔레콤, 금융권, 쿠팡). **Canvas는 공식 문서가 없어 제외**. 미확인 항목은 각 행의 note에 있음 |
 | 확인-A2 | 별칭 사전(한국어 표기 3개 그룹, `ORG_ALIAS_SEED` 7개 조직)이 같은 대상을 가리키는지 | — |
 | 확인-A3 | VERIS 대응(`ACTOR_ORIGIN_TO_VERIS`)을 공식 스키마와 대조 | — |
-| 확인-A4 | 내려받은 데이터가 최신인지(CWE 버전 표기, KEV와 MISP의 출처 기록) | — |
+| 확인-A4 | 내려받은 데이터가 최신인지(CWE 버전 표기, KEV와 MISP의 출처 기록) | **CWE, KEV 확인 완료(2026-11-26), MISP 남음.** CWE: 사용자가 받은 공식 `cwec_v5.0.xml`(버전 5.0, 2026-10-28)을 우리 변환기로 변환한 결과가 `data/cwe_catalog.json`과 **완전히 같음**(약점 984, 분류 431, 내용 차이 0). KEV: 공식 CSV 1,805건 중 우리 사본 1,795건(2026-11-24)과 번호, 제조사, 제품, 이름, 추가일, 기한, 랜섬웨어, CWE가 **모두 같음**. 차이는 2026-11-25에 추가된 10건뿐(사본에만 있는 항목은 0). MISP는 `main`에서 받아 커밋 해시가 없음 |
 | 확인-A5 | 이 환경에서 받지 못한 것(CVE 전체 목록, NVD) | — |
 
 ### 전문가 (판단이 필요한 것)
@@ -466,13 +469,13 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 
 ### 기본값 (재검토)
 
-| 번호 | 기본값 |
-| --- | --- |
-| 기본값-C1 | CWE 대표값 규칙 `CNA → ADP → KEV` (KEV 1,795건 중 232건이 출처끼리 다름) |
-| 기본값-C2 | 사건 해소 숫자: 90일, 365일, 이름 유사도 0.8, 별칭 7개 (설계 결정 D2의 출발점 값) |
-| 기본값-C3 | 수치 지표 5개 + `other`, 한국어 수 표기 규칙 |
-| 기본값-C4 | ATT&CK 20.1의 전술 이름 변경(`stealth`, `defense-impairment`)과 전술 수준 비교 |
-| 기본값-C5 | MISP는 후보로만, 새 노드는 확인 대기 |
+| 번호 | 기본값 | 상태 |
+| --- | --- | --- |
+| 기본값-C1 | CWE 대표값 규칙 `CNA → ADP → KEV` (KEV 1,795건 중 232건이 출처끼리 다름) | **표본 준비 완료(2026-11-26), 판정 대기.** `backbone/export/kev_conflict_sample.csv` 30건의 `judge_correct` 칸을 사람이 채움 |
+| 기본값-C2 | 사건 해소 숫자: 90일, 365일, 이름 유사도 0.8, 별칭 7개 (설계 결정 D2의 출발점 값) | — |
+| 기본값-C3 | 수치 지표 5개 + `other`, 한국어 수 표기 규칙 | — |
+| 기본값-C4 | ATT&CK 20.1의 전술 이름 변경(`stealth`, `defense-impairment`)과 전술 수준 비교 | — |
+| 기본값-C5 | MISP는 후보로만, 새 노드는 확인 대기 | — |
 
 ### 운영 (팀 결정)
 
@@ -496,6 +499,7 @@ python incident_resolution.py # 사건 해소 규칙 자체 시험(11개)
 python measurements.py        # 수치 층 규칙 자체 시험(9개)
 python answer_key.py          # 정답표 초안 검사(근거 행과 표준 후보 ID의 존재)
 python answer_key.py --self-test
+python kev_conflict_sample.py --self-test   # KEV CWE 충돌 표본 분류 시험
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 python backbone.py            # 뼈대 변환 규칙 자체 시험(네트워크 없이)
 python actors.py              # 행위자 이름 연결 자체 시험
