@@ -472,10 +472,10 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 | 번호 | 기본값 | 상태 |
 | --- | --- | --- |
 | 기본값-C1 | CWE 대표값 규칙 `CNA → ADP → KEV` (KEV 1,795건 중 232건이 출처끼리 다름) | **표본 준비 완료(2026-11-26), 판정 대기.** `backbone/export/kev_conflict_sample.csv` 30건의 `judge_correct` 칸을 사람이 채움 |
-| 기본값-C2 | 사건 해소 숫자: 90일, 365일, 이름 유사도 0.8, 별칭 7개 (설계 결정 D2의 출발점 값) | | — |
-| 기본값-C3 | 수치 지표 5개 + `other`, 한국어 수 표기 규칙 | | — |
-| 기본값-C4 | ATT&CK 20.1의 전술 이름 변경(`stealth`, `defense-impairment`)과 전술 수준 비교 | | — |
-| 기본값-C5 | MISP는 후보로만, 새 노드는 확인 대기 | | — |
+| 기본값-C2 | 사건 해소 숫자: 90일, 365일, 이름 유사도 0.8, 별칭 7개 (설계 결정 D2의 출발점 값) | — |
+| 기본값-C3 | 수치 지표 5개 + `other`, 한국어 수 표기 규칙 | — |
+| 기본값-C4 | ATT&CK 20.1의 전술 이름 변경(`stealth`, `defense-impairment`)과 전술 수준 비교 | — |
+| 기본값-C5 | MISP는 후보로만, 새 노드는 확인 대기 | — |
 
 ### 운영 (팀 결정)
 
