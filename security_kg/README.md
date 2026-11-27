@@ -319,7 +319,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 | `MISCONFIGURATION` | CWE-1188 | PR.PS-01 | CM-2, CM-6, CM-7 | - |
 
 - **2026-11-27 Taegyu가 후보 55개를 검토해 확정했다**(`mapping_status: confirmed`, `reviewed_by`, `reviewed_at`). 결과는 적합 42, 부분 적합 4, 부적합 9이고, **적합은 위 표의 CSF, 800-53 열에, 부분 적합은 "부분 적합(참고)" 열(`nist_partial`)에 두고 부적합은 뺐다.** 부분 적합은 기본 매핑으로 쓰지 않는 참고 후보다. 번호가 공식 목록에 실제로 있는지는 `nist_catalog.py`가 확인한다(CSF 2.0과 SP 800-53 Rev. 5.2.0의 OSCAL 목록, 철회된 항목은 거른다). **번호가 있다는 것은 적합하다는 뜻이 아니고, 적합 판정은 사람의 검토 결과다.**
-- **부적합으로 뺀 9개**: CREDENTIAL의 PR.AA-03, PR.AA-05, AC-2, AC-6(WEAK_ACCESS_CONTROL에 더 가까움, 그쪽이 가짐), MISCONFIGURATION의 PR.IR-01(WEAK_ACCESS_CONTROL에 더 가까움)과 CM-3(UNPATCHED에 더 가까움, 그쪽이 가짐), OPERATIONS의 DE.CM-01, DE.CM-03, DE.CM-09("Monitoring에 더 가까움"). **미결정**: 마지막 셋을 상위 `INSUFFICIENT_MONITORING_DETECTION`의 후보로 옮길지는 정해지지 않았다(옮기려면 그 시드 기준으로 다시 판정해야 한다).
+- **부적합으로 뺀 9개**: CREDENTIAL의 PR.AA-03, PR.AA-05, AC-2, AC-6(WEAK_ACCESS_CONTROL에 더 가까움, 그쪽이 가짐), MISCONFIGURATION의 PR.IR-01(WEAK_ACCESS_CONTROL에 더 가까움)과 CM-3(UNPATCHED에 더 가까움, 그쪽이 가짐), OPERATIONS의 DE.CM-01, DE.CM-03, DE.CM-09("Monitoring에 더 가까움"). **결정(2026-11-27)**: 마지막 셋(DE.CM-01, 03, 09)을 상위 `INSUFFICIENT_MONITORING_DETECTION`의 후보로 **옮기지 않는다**. 상위 시드가 이미 `DE.CM` 카테고리 전체를 가지므로 세 항목을 포함하고, 세부 범주를 두면 이유를 말하지 않은 탐지 실패에 세부 원인을 암시하게 되기 때문이다. 부적합 판정은 기록으로 남긴다(같은 후보를 다시 붙이지 않도록). 사건 문서에서 세부 항목을 특정하는 원인이 반복해서 나오고 로깅이나 관제 운영이 아니면, 새 하위 시드를 만들면서 이 세 항목을 그 후보로 검토한다(파일럿에서 판단).
 - 부분 적합 4개: UNPATCHED의 ID.RA-01, ID.RA-05, RA-5(패치 내용을 구성하는 단계에 불과함), INCIDENT_RESPONSE의 IR-5(대응 관련 내용이 명시적으로 표현되어 있지 않음).
 - 전문가 후보의 범위 표기(`GV.SC-01~10`, `RS.MA-01~05`)는 구별하는 힘이 없어 카테고리 단위(`GV.SC`, `RS.MA`)만 두었다. 800-53은 패밀리(`AC`)가 아니라 개별 통제 ID만 허용한다.
 - SP 800-61 Rev. 3는 통제 목록이 아니라 지침 문서라 번호 검증 대상이 아니며, 제목과 버전은 미검증이다.
@@ -576,7 +576,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 | 번호 | 전문가 판단 | 반영 |
 | --- | --- | --- |
 | 전문가-B1 | 시드 8개 유지, 모니터링은 분리 권고, 상위 분류 재설계 | **수정 반영**: 모니터링은 대체하지 않고 상위 유지 + 하위 2개(정보 손실을 피하려고 전문가안에서 변경). 성격과 영역은 시드에서 파생. 새 원인은 파일럿 뒤 |
-| 전문가-B2 | CWE 유지 + NIST CSF 2.0, SP 800-53 추가 | **반영 완료**: `ROOT_CAUSE_STANDARD_MAP`, `nist_catalog.py`로 번호 존재 확인. **후보 55개를 Taegyu가 검토해 확정(2026-11-27: 적합 42, 부분 적합 4, 부적합 9)**, 부적합 9개는 뺐다. 상위 MONITORING으로 옮길지(DE.CM-01, 03, 09)는 미결정 |
+| 전문가-B2 | CWE 유지 + NIST CSF 2.0, SP 800-53 추가 | **반영 완료**: `ROOT_CAUSE_STANDARD_MAP`, `nist_catalog.py`로 번호 존재 확인. **후보 55개를 Taegyu가 검토해 확정(2026-11-27: 적합 42, 부분 적합 4, 부적합 9)**, 부적합 9개는 뺐다. 상위 MONITORING으로 옮기지 않기로 결정(DE.CM-01, 03, 09, 상위의 DE.CM 카테고리가 이미 포함) |
 | 전문가-B3 | 4값 유지, 공격자와 계정 소유자 분리, VERIS `Former employee` | **반영**: `ACCOUNT_OWNER_ORIGIN`, 사례 수정과 추가. VERIS 세부 대응은 공식 스키마로 확인함(확인-A3 완료) |
 | 전문가-B4 | (a)(b)(c) 유지, 상태 2개 추가 | **반영**: 질문 문장 보완, 상태 5가지 정의, 집계 어휘 대응. `Asset`과 `AFFECTED_ASSET` 추가 |
 | 전문가-B5 | D5~D8 유지, 매핑 검증 보완 | **반영**: `attack_mapping.py` 수정(위 "기법 층")과 시험 6개 추가 |
