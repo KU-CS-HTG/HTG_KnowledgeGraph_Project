@@ -18,10 +18,12 @@
   python backbone.py cve CVE-2021-44228            # 한 건 조회
   python backbone.py                               # 자체 시험(네트워크 없이)
 """
+import hashlib
 import json
 import os
 import re
 import ssl
+import subprocess
 import sys
 import urllib.request
 from collections import defaultdict
@@ -39,11 +41,57 @@ GH = "https://raw.githubusercontent.com"
 URLS = {
     "attack_index": f"{GH}/mitre-attack/attack-stix-data/master/index.json",
     "attack_bundle": GH + "/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack-{version}.json",
-    "kev": f"{GH}/cisagov/kev-data/main/known_exploited_vulnerabilities.json",
+    "kev": f"{GH}/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",     # 기본 브랜치가 develop이다(main은 별칭으로 같은 내용이 나옴)
     "misp_threat_actor": f"{GH}/MISP/misp-galaxy/main/clusters/threat-actor.json",
     "cve": GH + "/CVEProject/cvelistV5/main/cves/{year}/{bucket}/{cve}.json",
 }
 CVE_RE = re.compile(r"^CVE-(\d{4})-(\d{4,})$")
+
+
+# ── 출처 기록(재현용) ──────────────────────────────────────────────────
+REPOS = {   # 원문 파일이 있는 저장소와 브랜치. 커밋 해시를 확인하는 데 쓴다
+    "kev": ("https://github.com/cisagov/kev-data.git", "develop"),
+    "misp_threat_actor": ("https://github.com/MISP/misp-galaxy", "main"),
+}
+
+
+def parse_ls_remote(text: str, ref: str = "main"):
+    """`git ls-remote <저장소> refs/heads/<ref>`의 출력에서 커밋 해시를 뽑는다. 없으면 None."""
+    for line in text.splitlines():
+        parts = line.split()
+        if len(parts) == 2 and parts[1] == f"refs/heads/{ref}" and re.fullmatch(r"[0-9a-f]{40}", parts[0]):
+            return parts[0]
+    return None
+
+
+def git_head(repo_url: str, ref: str = "main", timeout: int = 40):
+    """브랜치 맨 앞 커밋 해시. 네트워크가 안 되면 None."""
+    try:
+        out = subprocess.run(["git", "ls-remote", repo_url, f"refs/heads/{ref}"], capture_output=True, text=True, timeout=timeout)
+        return parse_ls_remote(out.stdout, ref) if out.returncode == 0 else None
+    except Exception:
+        return None
+
+
+def provenance(url: str, body: bytes, repo: tuple | None = None, retrieved: str | None = None) -> dict:
+    """내려받은 파일의 출처 기록: 주소, 크기, sha256, 받은 날짜. 저장소를 주면 **지금 브랜치 맨 앞의 같은 파일과 내용이 같을 때만**
+    그 커밋 해시를 적는다(그 사이 브랜치가 바뀌었으면 커밋을 특정할 수 없어 None). 이 파일을 마지막으로 바꾼 커밋은 아니다."""
+    rec = {"url": url, "bytes": len(body), "sha256": hashlib.sha256(body).hexdigest(), "retrieved": retrieved}
+    if repo is not None:
+        head = git_head(*repo)
+        try:
+            same = head is not None and hashlib.sha256(fetch(url)).hexdigest() == rec["sha256"]
+        except Exception:
+            same = False
+        rec["commit_at_which_content_matches"] = head if same else None
+        if not same:
+            rec["commit_note"] = "브랜치가 그 사이 바뀌었거나 확인하지 못해 커밋을 특정하지 못함"
+    return rec
+
+
+def _retrieved(path: Path) -> str:
+    import datetime
+    return datetime.date.fromtimestamp(path.stat().st_mtime).isoformat()
 
 
 # ── 내려받기 ───────────────────────────────────────────────────────────────
@@ -238,16 +286,24 @@ def build(which: str = "all") -> dict:
         bundle = json.loads(fetch(URLS["attack_bundle"].format(version=ver["version"]),
                                   RAW / f"enterprise-attack-{ver['version']}.json", timeout=300))
         atk = build_attack(bundle)
+        _ap = RAW / f"enterprise-attack-{ver['version']}.json"
+        atk["source"] = provenance(URLS["attack_bundle"].format(version=ver["version"]), _ap.read_bytes(), retrieved=_retrieved(_ap))
         snap["attack"] = f"Enterprise {atk['version']} (modified {ver['modified'][:10]}), 기법 {len(atk['techniques'])}, " \
                          f"소프트웨어 {len(atk['software'])}, 그룹 {len(atk['groups'])}"
         print("저장:", _save(atk, "attack_catalog.json"))
     if which in ("kev", "all"):
-        kev = build_kev(json.loads(fetch(URLS["kev"], RAW / "kev.json")))
+        raw_kev = fetch(URLS["kev"], RAW / "kev.json")
+        kev = build_kev(json.loads(raw_kev))
+        kev["source"] = provenance(URLS["kev"], raw_kev, REPOS["kev"], _retrieved(RAW / "kev.json"))
         snap["kev"] = f"catalogVersion {kev['catalog_version']} ({kev['date_released'][:10]}), {kev['count']}건"
         print("저장:", _save(kev, "kev.json"))
     if which in ("misp", "all"):
-        mp = build_misp_actors(json.loads(fetch(URLS["misp_threat_actor"], RAW / "misp_threat_actor.json")))
-        snap["misp_galaxy"] = f"threat-actor 갤럭시 version {mp['galaxy_version']}, {mp['count']}개 (main 브랜치에서 받음)"
+        raw_misp = fetch(URLS["misp_threat_actor"], RAW / "misp_threat_actor.json")
+        mp = build_misp_actors(json.loads(raw_misp))
+        mp["source"] = provenance(URLS["misp_threat_actor"], raw_misp, REPOS["misp_threat_actor"], _retrieved(RAW / "misp_threat_actor.json"))
+        c = mp["source"].get("commit_at_which_content_matches")
+        snap["misp_galaxy"] = (f"threat-actor 갤럭시 version {mp['galaxy_version']}, {mp['count']}개, sha256 {mp['source']['sha256'][:12]}…, "
+                               + (f"main 커밋 {c[:12]}…에서 내용이 같음" if c else "커밋은 특정하지 못함"))
         print("저장:", _save(mp, "misp_threat_actors.json"))
     return snap
 
@@ -323,6 +379,13 @@ def export_csv(dest: Path | None = None, data_dir: Path | None = None) -> list:
 
 # ── 자체 시험(네트워크 없음, 가짜 번들) ────────────────────────────────────
 def self_test() -> None:
+    # 출처 기록: ls-remote 출력에서 커밋을 뽑고, 형식이 이상하면 None
+    h = "779b780a13f67288d9b1a031b064fb140cdacaae"
+    assert parse_ls_remote(f"{h}\trefs/heads/main\n") == h
+    assert parse_ls_remote("xyz\trefs/heads/main") is None and parse_ls_remote("") is None
+    assert parse_ls_remote(f"{h}\trefs/heads/dev") is None
+    p = provenance("http://x", b"abc", None, "2026-11-27")
+    assert p["sha256"] == hashlib.sha256(b"abc").hexdigest() and p["bytes"] == 3 and "commit_at_which_content_matches" not in p
     ref = lambda i: [{"source_name": "mitre-attack", "external_id": i}]   # noqa: E731
     bundle = {"objects": [
         {"id": "c", "type": "x-mitre-collection", "name": "Fake", "x_mitre_version": "9.9"},
