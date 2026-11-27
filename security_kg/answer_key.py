@@ -6,12 +6,16 @@
   2. fact_rows가 사실 확인표(incident_facts.csv)에 실제로 있는 행인가
   3. standard_candidates의 ID가 뼈대 데이터(backbone/export)에 실제로 있는가(ID의 존재만 확인하고,
      그 후보가 이 사실에 맞는지는 확인하지 않는다. 그것은 사람이 판단한다)
+  3-1. slot_state 5가지(answered, not_confirmed, not_mentioned_in_sources, not_applicable, not_assessed)의 정의는 consts.ANSWER_KEY_SLOT_STATES
   4. 모든 사건에 (a), (b), (c) 칸이 있는가. 칸이 비어 있어도 상태(slot_state)로 기록돼 있는가
 """
 import csv
 import re
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "extraction"))
+import consts  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 KEY = HERE / "fact_check" / "answer_key_draft.csv"
@@ -21,7 +25,7 @@ EXPORT = HERE / "backbone" / "export"
 COLUMNS = ["answer_id", "incident", "slot", "slot_state", "answer", "assertion_status",
            "basis_source_type", "fact_rows", "standard_candidates", "candidate_note"]
 SLOTS = {"a", "b", "c", "ref", "asset"}
-SLOT_STATES = {"answered", "not_confirmed", "not_mentioned_in_sources"}
+SLOT_STATES = set(consts.ANSWER_KEY_SLOT_STATES)   # 정의와 사용 조건은 consts.ANSWER_KEY_SLOT_STATES
 STATUSES = {"confirmed", "claimed", "inferred", "n/a"}
 REQUIRED_SLOTS = {"a", "b", "c"}
 
@@ -59,8 +63,8 @@ def check(key=KEY, facts=FACTS):
         for fid in filter(None, (x.strip() for x in r["fact_rows"].split(","))):
             if fid not in fact_ids:
                 problems.append(f"{i}: fact_rows '{fid}'가 사실 확인표에 없음")
-        if not r["fact_rows"].strip():
-            problems.append(f"{i}: fact_rows가 비어 있음(근거 없는 정답 금지)")
+        if not r["fact_rows"].strip() and r["slot_state"] != "not_assessed":
+            problems.append(f"{i}: fact_rows가 비어 있음(근거 없는 정답 금지. 아직 평가하지 않은 칸만 예외)")
         for c in filter(None, (x.strip() for x in r["standard_candidates"].split(";"))):
             ok = (c in cwe if c.startswith("CWE-") else c in tech if c.startswith("T")
                   else c in soft if re.fullmatch(r"S\d{4}", c)
@@ -94,7 +98,22 @@ def self_test():
             problems, _ = check(p)
         assert problems, f"{name}: 검사가 걸러내지 못함"
     assert not check()[0]
-    print(f"자체 시험 {len(cases) + 1}개 통과")
+
+    # 새 상태 두 가지: not_applicable은 근거 행이 있어야 하고, not_assessed는 근거 없이도 허용된다
+    import csv
+    import io
+    rows = list(csv.DictReader(io.StringIO(good)))
+    def with_row(**changes):
+        r = dict(rows[0]); r.update(changes)
+        o = io.StringIO(); w = csv.DictWriter(o, COLUMNS, lineterminator="\n"); w.writeheader(); w.writerows(rows[1:] + [r])
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "k.csv"; p.write_text(o.getvalue(), encoding="utf-8-sig")
+            return check(p)[0]
+    assert not with_row(slot_state="not_applicable", assertion_status="n/a")                     # 근거 행이 있으면 통과
+    assert with_row(slot_state="not_applicable", assertion_status="n/a", fact_rows="")           # 근거 없는 not_applicable은 걸러냄
+    assert not with_row(slot_state="not_assessed", assertion_status="n/a", fact_rows="")         # 평가 전 칸은 근거 없이 허용
+    assert with_row(slot_state="answered", assertion_status="n/a")                              # answered는 assertion_status가 있어야 함
+    print(f"자체 시험 {len(cases) + 5}개 통과")
 
 
 def main():

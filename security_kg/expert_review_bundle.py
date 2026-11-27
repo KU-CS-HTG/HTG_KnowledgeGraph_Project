@@ -113,7 +113,7 @@ def build_files() -> dict:
 
 **질문 B2**: {q['B2']}
 
-## 현재 시드 8개 (질문 틀의 (b) "약점·관리 실패"에 쓰는 목록)
+## 현재 시드 {len(consts.ROOT_CAUSE_SEED)}개 (질문 틀의 (b) "약점·관리 실패"에 쓰는 목록)
 
 {seed_table('ROOT_CAUSE_SEED', 'RootCause')}
 5개 사건의 검색 요약에서 나온 원인을 일반화한 것이라 **빠진 원인이 있을 수 있습니다**(피싱 교육, 백업, 물리 보안 등은 아직 없음).
@@ -121,9 +121,9 @@ def build_files() -> dict:
 {re.sub(r'^## .*', '## CWE 대응표와 경계 규칙', section(text, '## RootCause 시드 검토 자료'), count=1)}
 ## 경계 규칙 원문 (겹치는 항목 쌍)
 
-""" + "\n".join(f"- **{a} ↔ {b}**: {v}" for (a, b), v in consts.ROOT_CAUSE_BOUNDARY_RULES.items()) + """
+""" + "\n".join(f"- **{a} ↔ {b}**: {v}" for (a, b), v in consts.ROOT_CAUSE_BOUNDARY_RULES.items()) + f"""
 
-## 경계 사례 11개 (가상 문장, 기대하는 값)
+## 경계 사례 {len(consts.ROOT_CAUSE_BOUNDARY_EXAMPLES)}개 (가상 문장, 기대하는 값)
 
 기대 값이 비어 있으면 "어떤 값도 기록하지 않는다"는 뜻입니다.
 
@@ -147,7 +147,7 @@ def build_files() -> dict:
 | --- | --- |
 """ + "\n".join(f"| `{k}` | {v} |" for k, v in consts.ACTOR_ORIGIN_TO_VERIS.items()) + f"""
 
-## 경계 사례 6개 (기준: "공격(접근)이 일어난 시점의 고용 상태")
+## 경계 사례 {len(consts.ACTOR_ORIGIN_BOUNDARY_EXAMPLES)}개 (기준: "공격(접근)이 일어난 시점의 고용 상태")
 
 기대 값이 `없음`이면 값을 기록하지 않습니다(추측 금지).
 
@@ -200,7 +200,7 @@ def self_test():
     for k in consts.ROOT_CAUSE_SEED:
         assert k in files["B1_B2_RootCause_시드와_조직절차_실패.md"], k
     assert "FORMER_INSIDER" in files["B3_공격자유형_ActorOrigin_경계.md"]
-    assert "(b) 어떤 약점·관리 실패" in files["B4_질문틀과_설계_요약.md"]
+    assert "보안 약점 및 관리 실패" in files["B4_질문틀과_설계_요약.md"]
     assert "D6" in files["B5_ATTCK_매핑과_확인_절차.md"] or "사람이 확인" in files["B5_ATTCK_매핑과_확인_절차.md"]
     for i in range(1, 6):
         assert f"B{i}" in files["00_읽어주세요.md"]

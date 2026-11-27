@@ -4,7 +4,17 @@ ClimateKG 파이프라인을 보안 사고 분석에 적용하기 위한 `consts
 
 ## 질문 틀
 
-> 사건 X에서 공격자는 (a) 어떤 취약점 (b) 어떤 약점·관리 실패 (c) 어떤 기법을 이용했는가? 각 답에 출처와 확정/주장/추정 구분을 붙여라.
+> 사건 X에서 확인된 공격과 관련하여 다음을 분석한다.
+>
+> (a) **악용된 취약점**: 공격에 사용된 것으로 확인된 CVE 등 알려진 취약점은 무엇인가?
+>
+> (b) **보안 약점 및 관리 실패**: 공격을 가능하게 하거나 피해를 확대시킨 기술적 약점과 조직적 통제 실패는 무엇인가?
+>
+> (c) **공격 행동 및 기법**: 공격자가 실제로 수행한 행동은 무엇이며, MITRE ATT&CK의 어떤 기법에 해당하는가?
+>
+> 각 항목에 출처, 출처 유형, 확정·주장·추정 상태를 기록한다. 출처에 없는 사실은 추측하지 않는다.
+
+(2026-11-27 전문가 검토 의견으로 문장을 보완했다. 세 칸의 구조는 유지한다. 칸의 역할: (a) CVE, NVD, KEV (b) CWE와 조직 통제(NIST CSF, SP 800-53) (c) ATT&CK. 같은 원인을 두 칸에 중복 집계하지 않는다: 패치를 안 한 사건이면 (a)는 실제 악용된 CVE, (b)는 패치 관리 실패, (c)는 공격자가 한 행동이다.)
 
 대상 사건(초안): 레벨인피니트 CDN 해킹, SK텔레콤 유심 정보 유출, 2026 금융권 동시다발 해킹, 2026 Canvas 해킹(공식 문서를 구하지 못해 사실 확인표에서 제외, 미검증 예시), 2025 쿠팡 개인정보 유출.
 
@@ -20,7 +30,7 @@ ClimateKG 파이프라인을 보안 사고 분석에 적용하기 위한 `consts
 | (참고) 배후 | `ThreatActor` | `ATTRIBUTED_TO` | 뼈대 + 문서 추가 |
 | (참고) 공격자 유형 | `ActorOrigin` | `HAS_ACTOR_ORIGIN` | 닫힌 시드 4개(아래) |
 
-개체 종류 13개, 관계 17개(문서에서 받는 11개, 표준에서 오는 6개). 배후와 공격자 유형은 질문의 칸이 아니라 **참고 정보**다. 기후 버전은 개체 36종, 관계 75개였다.
+개체 종류 14개(`Asset` 추가), 관계 19개(문서에서 받는 13개, 표준에서 오는 6개). 배후, 공격자 유형, **도용된 계정 소유자 유형**, **침해된 시스템**은 질문의 칸이 아니라 **참고 정보**다. 기후 버전은 개체 36종, 관계 75개였다.
 표준 데이터가 이미 가진 관계(CVE→CWE, 기법→전술 등)는 문서에서 다시 받지 않는다. 기후에서 모델→변수 같은 관계를 받지 않는 것과 같은 논리로 보이나, 저자가 그렇게 설명한 것은 아니다.
 
 ## 확정/주장/추정 구분을 담는 방법
@@ -42,8 +52,23 @@ ClimateKG 파이프라인을 보안 사고 분석에 적용하기 위한 `consts
 
 - **"없음"이라고 쓰지 않는다.** 다른 칸에 답이 있다고 해서 이 칸을 "없음"으로 추론하지도 않는다(예: 쿠팡 유형은 (b)가 있어도 (a)는 "언급 없음").
 - **문서 수를 항상 함께 쓴다.** "언급 없음"의 무게가 문서 1개일 때와 20개일 때 다르기 때문이다.
-- 구현: `aggregate.py`(`summarize_incident`, `render`). 자체 시험 13개가 위 규칙을 확인한다(묶음 합산, 기법 층 출력 포함).
+- 구현: `aggregate.py`(`summarize_incident`, `render`). 자체 시험 14개가 위 규칙을 확인한다(묶음 합산, 기법 층 출력, 상태 이름 대응 포함).
 - 문서 수를 세려면 문서 단위로 `incident_mentions`(사건 해소 절 참고), `document_date`, `source_type`을 추가로 뽑아야 한다(`consts.NEW_DOCUMENT_LEVEL_FIELDS`). 원본에는 없다.
+
+### 칸 상태 5가지의 정의 (정답표 기준, 2026-11-27 전문가 검토 반영)
+
+정답표(`fact_check/answer_key_draft.csv`)의 `slot_state`가 쓰는 값이다. 집계(`aggregate.py`)의 `found`는 `answered`, `not_mentioned`는 `not_mentioned_in_sources`에 대응한다(`consts.SLOT_STATE_ALIASES`, `aggregate.canonical_state`).
+
+| 상태 | 의미와 사용 조건 |
+| --- | --- |
+| `answered` | 처리한 문서가 이 칸의 답을 제시함. assertion_status(confirmed, claimed, inferred)를 함께 붙인다 |
+| `not_confirmed` | 관련 정보가 있으나 출처가 '조사 중', '확인하지 못함'이라고 말해 확정되지 않음 |
+| `not_mentioned_in_sources` | 문서를 처리했으나 이 칸에 해당하는 언급이 없음. '없다'는 뜻이 아니다 |
+| `not_applicable` | 출처가 이 질문이 이 사건에 해당하지 않는다고 직접 말함. 출처의 직접 진술이 있을 때만 쓴다 |
+| `not_assessed` | 아직 이 칸을 평가하지 않았거나 문서를 처리하지 않음. 정답표를 만드는 도중의 상태 |
+
+- `not_mentioned_in_sources`와 `not_confirmed`를 혼동하지 않는다. 앞의 것은 문서가 말하지 않은 것, 뒤의 것은 문서가 "확인 중"이라고 말한 것이다.
+- `not_confirmed`는 집계 코드가 아직 표현하지 못해(아래 보류한 확장안의 `UNDISCLOSED`와 함께) 파일럿에서 도입한다. `not_applicable`과 `not_assessed`는 지금 정답표에 쓰인 행이 없다.
 
 ### 보류한 확장안: 명시적 부재 진술을 추출
 
@@ -69,14 +94,15 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET += [
 
 | 값(`ACTOR_ORIGIN_SEED`) | 뜻 |
 | --- | --- |
-| `INTERNAL` | 현직 직원·계약자 |
-| `FORMER_INSIDER` | 전직 직원·계약자. 퇴사 후에도 남은 접근 권한이나 지식을 이용. **VERIS에서는 `External`** (우리가 추가한 값) |
-| `PARTNER` | 협력사·공급사·서드파티 |
-| `EXTERNAL` | 피해 조직과 정당한 관계가 없는 외부 |
+| `INTERNAL` | 공격(접근) 시점에 피해 조직의 직원 또는 계약자 신분인 행위자 |
+| `FORMER_INSIDER` | 공격 시점에는 퇴직·계약 종료 상태이며 **과거 조직 관계에서 얻은 권한·정보·접근 수단을 공격에 이용**한 행위자. 전직자라는 사실만으로 주지 않는다. **VERIS에서는 `External`**(세부 유형 `Former employee`는 미검증) (우리가 추가한 값) |
+| `PARTNER` | 협력사·공급사 등 외부 조직과의 정당한 업무 관계를 통해 접근한 행위자 |
+| `EXTERNAL` | 피해 조직과 직접적인 정당한 업무 관계가 없는 행위자 |
 
 - **속성이 아니라 "닫힌 값 목록을 가리키는 관계"로 둔 이유**: 파이프라인은 (출발, 관계, 도착) 트리플렛만 뽑는다. 사건의 속성으로 두면 근거 문장과 기존 검사 단계(형식, 출처, AI 재검증)를 받을 방법이 없다. 관계로 두면 근거 문장이 붙고 검사를 그대로 통과한다.
 - **VERIS와의 관계(결정 1: 세분화를 유지하고 대응표를 둔다)**: `INTERNAL`/`EXTERNAL`/`PARTNER`는 VERIS의 최상위 행위자 구분(내부, 외부, 협력사)과 같은 이름 체계다. VERIS 위키의 행위자 설명은 **전직 직원을 외부(External) 위협의 예로 들고** 내부(Internal)는 현재 구성원으로 설명하므로, 우리가 추가한 `FORMER_INSIDER`는 VERIS에서 `External`에 해당한다. 그래서 `consts.ACTOR_ORIGIN_TO_VERIS`로 대응표를 두어 VERIS 데이터와 비교할 수 있게 했다. 세분화된 값은 상위 값으로 합칠 수 있지만 합친 값은 다시 쪼갤 수 없어서 손실이 없는 쪽을 택했다. 주의: VERIS 위키 사본 페이지로 확인한 것이므로 정확한 값 목록은 VERIS 스키마 저장소로 대조해야 한다.
 - **경계 규칙(결정 2)**: 유형은 **공격(접근)이 일어난 시점의 고용 상태**로 정한다(발견 시점이 아니다). 그 시점에 재직 중이었으면 `INTERNAL`(퇴사 직전의 오용 포함), 이미 퇴사했으면 `FORMER_INSIDER`. 문서에 시점이 없으면 추측하지 않고 `inferred`로 하거나 기록하지 않는다. 사례 6개는 `consts.ACTOR_ORIGIN_BOUNDARY_EXAMPLES`에 있고 프롬프트의 예시로 쓴다.
+- **공격자와 계정 소유자는 별개다**(2026-11-27 반영): 외부 공격자가 협력사 직원의 계정을 탈취해 썼다면 공격자는 `EXTERNAL`이고 계정 소유자는 `PARTNER`다. 소유자는 `ACCOUNT_OWNER_ORIGIN` 관계(참고 정보 `account_owner_origin`)로 따로 기록하며 공격자 유형에 섞지 않는다. 협력사 직원 본인이 공격했으면 `PARTNER`. 시험 사례는 `ACCOUNT_OWNER_EXAMPLES`. 경계 사례 `ACTOR_ORIGIN_BOUNDARY_EXAMPLES`는 6개에서 8개로 늘었다(도용된 계정 사례를 `EXTERNAL`로 고치고, 협력사 직원의 직접 공격과 과거 접근을 쓰지 않은 전직자를 추가).
 - **`UNKNOWN`은 값으로 두지 않는다.** 문서가 말하지 않은 것은 "언급 없음, 문서 n개"로 집계한다(부재를 추측하지 않는 원칙과 같다).
 - **추론 금지**: 공격자의 국적, 위치, 수법의 정교함으로 유형을 추론하지 않는다. 쿠팡 사건의 "중국 국적"은 유형과 무관하다. 관계가 암시만 될 때는 `assertion_status`를 `inferred`로 한다.
 - **이름 있는 행위자는 `ThreatActor`, 이름 없는 공격자는 `ActorOrigin`만 기록한다.** 둘은 같이 나올 수 있다(예: 이름 있는 외부 집단 = `ThreatActor` + `EXTERNAL`).
@@ -141,9 +167,24 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 - **서술형은 사라지지 않는다.** 매핑이 안 되거나(`unmapped`) 맞는 기법이 없어도(`no_match`) 서술형 행동으로 남는다.
 - **문서가 ATT&CK 기법 이름·ID를 직접 쓴 경우만** `USED_TECHNIQUE`로 받는다(`documented`). 목록에서 찾지 못한 이름은 조용히 받지 않고 "찾지 못함"으로 따로 알린다.
 - **AI가 낸 후보는 검증한다.** 내려받은 ATT&CK 목록에 없는 ID는 버린다(환각 방지). 후보에는 신뢰도(`high`/`medium`/`low`)와 근거가 붙는다.
-- **상태**: `documented`, `ai_suggested`(사람 확인 전), `human_confirmed`, `human_rejected`(답에서 제외), `no_match`(억지로 맞추지 않음).
+- **상태**: `documented`, `ai_suggested`(사람 확인 전), `human_confirmed`, `human_rejected`(답에서 제외), `no_match`(억지로 맞추지 않음). 유도된 기법은 `backbone_derived`로 따로 센다. `documented`(문서가 기법을 언급함)와 `human_confirmed`(사람이 매핑을 확인함)는 서로 다른 축이라 합치지 않는다.
 - **뼈대 유도**: ATT&CK 소프트웨어 정보에서 악성코드 → 기법을 가져온다. 모르는 악성코드는 추측하지 않는다. 예: BPFDoor는 ATT&CK 소프트웨어(S1161)이고 Socket Filters 기법(T1205.002) 등과 연결된다(검색으로 확인).
-- **전술 단위 집계**는 출처(문서가 쓴 것, 사람이 확인한 것, AI 제안, 뼈대 유도)별로 나눠서 센다. 서로 섞이지 않는다.
+- **전술 단위 집계**는 출처(문서가 쓴 것, 사람이 확인한 것, AI 제안, 뼈대 유도)별로 나눠서 센다. 서로 섞이지 않고, **같은 기법은 출처가 여럿이어도 가장 강한 하나만 센다**(`consts.TECHNIQUE_LABEL_PRIORITY`).
+
+**2026-11-27 수정 (전문가 검토와 코드 재현으로 확인한 문제)**
+
+| 문제 | 수정 |
+| --- | --- |
+| 문서가 쓴 기법(`documented`)을 출처의 확정 수준과 무관하게 확정으로 셈 | 출처의 `assertion_status`가 `confirmed`일 때만 확정. 아니면 `documented_unconfirmed`로 따로 셈 |
+| 같은 기법이 여러 문서에 나오면 첫 기록만 남음(입력 순서에 따라 결과가 달라짐) | 문서마다의 주장(`claims`)을 모두 보존하고 최고 수준, 문서 수를 계산 |
+| 사람이 확정한 하위 기법도 항상 상위로 올려짐(`specific`이 전달되지 않음) | 하위 기법은 근거(`specific_evidence`)가 있으면 유지, 없으면 상위로 올림 |
+| 같은 기법을 가리키는 행동이나 출처가 여럿이면 전술 집계가 부풀려짐 | 기법마다 가장 강한 출처 하나만 셈 |
+| 확정한 기법 ID가 ATT&CK 갱신으로 폐기되면 조용히 사라짐 | 대체 ID가 있으면 대체(`replaced_from_...`), 없으면 `stale` 항목으로 남기고 다시 확인하도록 표시 |
+| 악성코드 별칭(예: JustForFun)으로 유도 기법을 못 찾음 | `software_map_from_catalog`가 이름과 별칭을 모두 키로 둠 |
+
+- **근거 필드**: 후보와 기록에 `specific_evidence`(하위 기법을 고른 이유), `evidence_quote`(원문 근거), `evidence_strength`(`direct`, `implied`, `inferred`; AI `confidence`와 별개), 검토자(`reviewed_by`), 검토일(`reviewed_at`), `attack_version`을 둔다. 모르는 `evidence_strength`는 `inferred`로 낮춘다.
+- **하위 기법 지침(전문가)**: "출처에서 하위 기법을 구별하는 구체적인 공격 대상·수행 방식·접근 경로 중 해당 하위 기법의 정의에 부합하는 행동이 직접 확인될 때만 하위 기법을 선택하고, 구별 근거가 부족하면 상위 기법까지만 매핑한다." 하위 기법마다 모든 상황에 적용되는 필수 조건 목록이 있다고 가정하지 않는다.
+- **검토 역할(전문가 의견)**: 1차 분석가가 모든 후보를 검토하고, 중요하거나 논쟁적인 매핑은 2차 분석가가 교차 검토한다(초기 파일럿은 표본만). 운영 방식은 파일럿 뒤에 정한다.
 - `load_catalog_from_stix`, `load_software_map`이 ATT&CK STIX 번들에서 목록과 소프트웨어 대응을 만든다.
 - 매핑 결과는 신뢰도와 근거가 필요해서 트리플렛이 아니라 **별도 기록**이다: `{"behavior", "candidates": [{"technique_id", "confidence", "evidence"}], "status"}`.
 
@@ -188,7 +229,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 
 ## RootCause 시드 검토 자료: CWE 대응표와 경계 규칙
 
-열린 문제 6번(`RootCause` 시드 8개가 내 일반화일 뿐이라는 점)의 **준비 작업**이다. 전문가 검토를 대신하지 않는다. 설정은 `consts.py` 4-1절(`ROOT_CAUSE_CWE_MAP`, `ROOT_CAUSE_BOUNDARY_RULES`, `ROOT_CAUSE_BOUNDARY_EXAMPLES`)에 있다.
+열린 문제 6번(`RootCause` 시드가 내 일반화일 뿐이라는 점)의 **준비 작업**이다. 2026-11-27에 전문가 검토 의견을 반영해 시드가 8개에서 10개가 되었다(모니터링 시드에 하위 2개 추가). 전문가 검토를 대신하지 않는다. 설정은 `consts.py` 4-1절(`ROOT_CAUSE_CWE_MAP`, `ROOT_CAUSE_BOUNDARY_RULES`, `ROOT_CAUSE_BOUNDARY_EXAMPLES`)에 있다.
 
 ### CWE 대응표
 
@@ -198,7 +239,9 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 | `CREDENTIAL_OR_KEY_MISMANAGEMENT` | partial | CWE-798 (Allowed-with-Review), CWE-324 (Allowed) |
 | `INSUFFICIENT_ENCRYPTION` | close | CWE-311 (Discouraged), CWE-327 (Allowed-with-Review), CWE-326 (Allowed-with-Review) |
 | `WEAK_ACCESS_CONTROL` | close | CWE-284 (Discouraged), CWE-862 (Allowed-with-Review), CWE-863 (Allowed-with-Review), CWE-306 (Allowed) |
-| `INSUFFICIENT_MONITORING_DETECTION` | close | CWE-778 (Allowed) |
+| `INSUFFICIENT_MONITORING_DETECTION` | partial | CWE-778 (Allowed) |
+| `INSUFFICIENT_LOGGING_AUDIT` | close | CWE-778 (Allowed) |
+| `INSUFFICIENT_SECURITY_MONITORING_OPERATIONS` | none | - |
 | `INADEQUATE_INCIDENT_RESPONSE` | none | - |
 | `THIRD_PARTY_OR_SUPPLY_CHAIN_RISK` | partial | CWE-1395 (Allowed-with-Review), CWE-1357 (Allowed-with-Review) |
 | `MISCONFIGURATION` | partial | CWE-1188 (Allowed) |
@@ -213,26 +256,72 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 
 ### 대응표에서 보이는 것
 
-1. **RootCause는 두 수준을 섞고 있다.** `ENCRYPTION`, `ACCESS_CONTROL`, `MONITORING`은 제품의 기술 약점이라 CWE와 잘 맞는다. 반면 `INADEQUATE_INCIDENT_RESPONSE`는 대응이 아예 없고 `UNPATCHED`, `CREDENTIAL`, `THIRD_PARTY`, `MISCONFIGURATION`은 일부만 맞는다. CWE는 **제품의 약점**을 다루고 이 항목들은 **조직의 운영·절차 실패**이기 때문이다.
-2. 조직 수준 항목을 다른 표준에 대응시킬지는 열려 있다(예: 보안 관리 프레임워크). 확인하지 않았다.
+1. **RootCause는 두 수준을 섞고 있다.** `ENCRYPTION`, `ACCESS_CONTROL`, `LOGGING_AUDIT`은 제품의 기술 약점이라 CWE와 잘 맞는다(전문가 검토로 모니터링을 로깅과 관제 운영으로 나눈 뒤). 반면 `INADEQUATE_INCIDENT_RESPONSE`는 대응이 아예 없고 `UNPATCHED`, `CREDENTIAL`, `THIRD_PARTY`, `MISCONFIGURATION`은 일부만 맞는다. CWE는 **제품의 약점**을 다루고 이 항목들은 **조직의 운영·절차 실패**이기 때문이다.
+2. 조직 수준 항목은 CWE가 아니라 NIST CSF 2.0과 SP 800-53에 대응시키기로 했다(아래 "표준 매핑 후보"). 억지로 CWE에 연결하지 않는다.
 3. 질문 틀의 칸 (b)는 "약점·관리 실패"이므로 두 수준을 한 칸에 두는 것은 의도와 맞다. 다만 사건 간 비교에서 두 수준을 섞어 세지 않도록 표시를 달지는 정해야 한다(전문가에게 묻는 질문).
 
 ### 경계 규칙
 
-원칙은 **문서가 말한 "실패한 통제"로 고르고 결과(피해)로 고르지 않는다**이다. 서로 다른 실패가 둘이면 값도 둘이고, 한 실패에 값을 둘 붙이지 않는다. 겹치는 쌍 5개의 규칙은 `ROOT_CAUSE_BOUNDARY_RULES`에 있다.
+원칙은 **문서가 말한 "실패한 통제"로 고르고 결과(피해)로 고르지 않는다**이다. 서로 다른 실패가 둘이면 값도 둘이고, 한 실패에 값을 둘 붙이지 않는다. 겹치는 쌍 10개의 규칙은 `ROOT_CAUSE_BOUNDARY_RULES`에 있다. 공통 부여 규칙은 `ROOT_CAUSE_ASSIGNMENT_RULES`.
 
 - 키·자격 증명의 **수명주기** 실패 → `CREDENTIAL`, 권한의 범위·분리·인증 요구 부재 → `WEAK_ACCESS_CONTROL`
 - 자기 시스템의 공개 패치 미적용 → `UNPATCHED`, 외부 공급사·협력사 침해 → `THIRD_PARTY`
-- 침입을 못 알아챔 → `MONITORING`, 알고도 대응 안 함 → `INCIDENT_RESPONSE`
+- 침입을 못 알아챔 → `MONITORING` 계열, 알고도 대응 안 함 → `INCIDENT_RESPONSE`
+- 탐지 실패만 말하고 이유를 말하지 않음 → 상위 `MONITORING`, 로그가 생성·보존되지 않았다고 말함 → `LOGGING_AUDIT`, 관제 인력·절차가 없다고 말함 → `SECURITY_MONITORING_OPERATIONS`
+- 탐지 규칙이나 로그 설정이 잘못됨 → `MISCONFIGURATION`, 로그 기능 자체가 없음 → `LOGGING_AUDIT`
 - 잘못된 설정·기본값 → `MISCONFIGURATION`, 통제 자체가 없음 → `WEAK_ACCESS_CONTROL`
 - `ENCRYPTION`은 암호화가 없거나 약하다고 말할 때만
 
-경계 사례 11개(`ROOT_CAUSE_BOUNDARY_EXAMPLES`)는 시드 8개를 모두 한 번씩 보이고, 한 문장에 실패가 둘인 경우, 피해만 말한 경우, 원인을 밝히지 않은 경우(기록하지 않음)를 포함한다. **문장은 규칙을 시험하려고 만든 가상 문장이며 실제 사건의 사실이 아니다.**
+경계 사례 15개(`ROOT_CAUSE_BOUNDARY_EXAMPLES`)는 시드 10개를 모두 한 번씩 보이고, 한 문장에 실패가 둘인 경우, 피해만 말한 경우, 원인을 밝히지 않은 경우(기록하지 않음)를 포함한다. **문장은 규칙을 시험하려고 만든 가상 문장이며 실제 사건의 사실이 아니다.**
 
 ### 한계
 
 - 경계 규칙은 내가 만든 것이고 실제 문서로 AI가 일관되게 따르는지는 확인하지 못했다. 사례는 프롬프트 예시와 사람 검토용이다.
-- 시드에서 빠진 원인(피싱 교육, 백업, 물리 보안 등)은 이 작업으로 드러나지 않는다. 파일럿에서 `other`로 빠지는 값을 모아야 한다.
+- 시드에서 빠진 원인(피싱 교육, 백업, 물리 보안 등)은 이 작업으로 드러나지 않는다. 파일럿에서 `other`로 빠지는 값을 모아야 한다. 우리 정답표의 (b) 사실은 기존 시드로 설명되거나 "확정 전"이라 새 시드를 추가할 근거는 아직 없다(전문가도 파일럿 뒤에 추가하라고 했다).
+
+### 시드의 계층과 파생 속성 (2026-11-27 전문가 검토 반영)
+
+**모니터링 시드는 상위로 유지하고 하위 2개를 추가했다**(`ROOT_CAUSE_PARENT`). 전문가는 기존 시드를 지우고 둘로 바꾸라고 했지만, 결과만 적힌 사례는 어느 하위에도 배정할 수 없어 정보를 잃는다. 쿠팡 K13("이상 행위를 장기간 탐지하지 못했고 원인은 서술 없음")과 경계 예시 "침입자가 3년 동안 알려지지 않았다"가 그 예다. 상위 시드는 "탐지 실패는 확인되었으나 어느 통제의 실패인지 말하지 않음", 하위 시드는 출처가 직접 말할 때만 쓴다.
+
+| 시드 | 성격(`failure_nature`) | 영역(`control_domain`) | 표시용 묶음 |
+| --- | --- | --- | --- |
+| `UNPATCHED_KNOWN_VULNERABILITY` | ORGANIZATIONAL_PROCESS_FAILURE | VULNERABILITY_MANAGEMENT | 취약점 관리 실패 |
+| `CREDENTIAL_OR_KEY_MISMANAGEMENT` | ORGANIZATIONAL_PROCESS_FAILURE | IDENTITY_AND_ACCESS_MANAGEMENT | 자산·계정 관리 실패 |
+| `INSUFFICIENT_ENCRYPTION` | TECHNICAL_CONTROL_FAILURE | DATA_PROTECTION | 기술적 통제 실패 |
+| `WEAK_ACCESS_CONTROL` | TECHNICAL_CONTROL_FAILURE | IDENTITY_AND_ACCESS_MANAGEMENT | 기술적 통제 실패 |
+| `INSUFFICIENT_MONITORING_DETECTION` | 미정 | SECURITY_MONITORING | 보안 운영 실패 |
+| `INSUFFICIENT_LOGGING_AUDIT` | TECHNICAL_CONTROL_FAILURE | SECURITY_MONITORING | 기술적 통제 실패 |
+| `INSUFFICIENT_SECURITY_MONITORING_OPERATIONS` | ORGANIZATIONAL_PROCESS_FAILURE | SECURITY_MONITORING | 보안 운영 실패 |
+| `INADEQUATE_INCIDENT_RESPONSE` | ORGANIZATIONAL_PROCESS_FAILURE | INCIDENT_RESPONSE | 보안 운영 실패 |
+| `THIRD_PARTY_OR_SUPPLY_CHAIN_RISK` | ORGANIZATIONAL_PROCESS_FAILURE | SUPPLY_CHAIN_SECURITY | 외부 의존성 관리 실패 |
+| `MISCONFIGURATION` | TECHNICAL_CONTROL_FAILURE | CONFIGURATION_MANAGEMENT | 기술적 통제 실패 |
+
+- **성격과 영역은 시드에서 파생되는 속성**이다. 문서에서 따로 뽑지 않아 추출 스키마와 프롬프트는 바뀌지 않고, 사람이 근거와 함께 사건 단위로 덮어쓸 때만 다른 값을 둔다(`ROOT_CAUSE_ATTRIBUTES`). 독립 필드로 뽑으면 같은 사건에서 시드와 모순되는 값이 생기고 CSF 카테고리와 세 갈래로 중복된다.
+- **성격은 두 값**(기술 통제 실패, 조직 절차 실패)이다. 전문가가 제안한 `EXTERNAL_DEPENDENCY_FAILURE`는 실패의 성격이 아니라 실패가 일어난 위치라서 성격에 넣지 않았다(`THIRD_PARTY` 시드가 이미 그 위치를 나타낸다).
+- **`display_group`**(전문가의 5개 상위 분류)은 화면 표시용이고 사건 간 비교 기준이 아니다.
+- 성격이 미정(None)인 것은 하위가 있는 상위 시드뿐이다(추측하지 않는다).
+
+### 표준 매핑 후보 (CWE, NIST CSF 2.0, SP 800-53 Rev. 5)
+
+역할: **CWE는 기술적 약점, CSF는 조직의 위험관리 영역, SP 800-53은 구체적 통제, SP 800-61은 사고 대응 지침, ATT&CK는 공격자 행동**이다. 조직 절차 실패를 CWE에 억지로 연결하지 않는다.
+
+| RootCause | CWE | NIST CSF 2.0 | SP 800-53 통제 |
+| --- | --- | --- | --- |
+| `UNPATCHED_KNOWN_VULNERABILITY` | CWE-1395, CWE-1104 | ID.RA-01, ID.RA-05, PR.PS-02 | SI-2, RA-5, CM-3 |
+| `CREDENTIAL_OR_KEY_MISMANAGEMENT` | CWE-798, CWE-324 | PR.AA-01, PR.AA-03, PR.AA-05 | IA-5, AC-2, AC-6 |
+| `INSUFFICIENT_ENCRYPTION` | CWE-311, CWE-327, CWE-326 | PR.DS-01, PR.DS-02 | SC-8, SC-13, SC-28 |
+| `WEAK_ACCESS_CONTROL` | CWE-284, CWE-862, CWE-863, CWE-306 | PR.AA-03, PR.AA-05, PR.IR-01 | AC-2, AC-3, AC-6 |
+| `INSUFFICIENT_MONITORING_DETECTION` | CWE-778 | DE.CM, DE.AE | - |
+| `INSUFFICIENT_LOGGING_AUDIT` | CWE-778 | PR.PS-04 | AU-2, AU-3, AU-12 |
+| `INSUFFICIENT_SECURITY_MONITORING_OPERATIONS` | - | DE.CM-01, DE.CM-03, DE.CM-09, DE.AE-02, DE.AE-03 | SI-4, CA-7, AU-6 |
+| `INADEQUATE_INCIDENT_RESPONSE` | - | RS.MA, RS.MI-01, RS.MI-02 | IR-4, IR-5, IR-6, IR-8 |
+| `THIRD_PARTY_OR_SUPPLY_CHAIN_RISK` | CWE-1395, CWE-1357 | GV.SC | SR-3, SR-5, SR-6, SA-9 |
+| `MISCONFIGURATION` | CWE-1188 | PR.PS-01, PR.IR-01 | CM-2, CM-3, CM-6, CM-7 |
+
+- 모두 **후보**(`mapping_status: candidate`)다. 번호가 공식 목록에 실제로 있는지는 `nist_catalog.py`가 확인한다(CSF 2.0과 SP 800-53 Rev. 5.2.0의 OSCAL 목록, 철회된 항목은 거른다). **번호가 있다는 것은 적합하다는 뜻이 아니다.** 확정은 사람이 검토해 `confirmed`와 검토자를 기록해야 한다(`consts.py` 검사가 `confirmed`인데 검토자가 없으면 막는다).
+- 전문가 후보의 범위 표기(`GV.SC-01~10`, `RS.MA-01~05`)는 구별하는 힘이 없어 카테고리 단위(`GV.SC`, `RS.MA`)만 두었다. 800-53은 패밀리(`AC`)가 아니라 개별 통제 ID만 허용한다.
+- SP 800-61 Rev. 3는 통제 목록이 아니라 지침 문서라 번호 검증 대상이 아니며, 제목과 버전은 미검증이다.
+- 한 곳에서 보려면 `consts.root_cause_standard_view(시드)`.
 
 ## `Weakness` 닫힌 목록: CWE 목록 변환 (`cwe_catalog.py`)
 
@@ -443,7 +532,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 3. ~~**같은 사건을 여러 문서가 쓸 때 `Incident`를 합치는 규칙**이 없다.~~ **반영됨(D1~D4)**: 조직 단위 `Incident` + `Campaign`, 같은 조직 필수 + 공개 시점 + 공유 신호, 애매하면 사람 확인(위 "사건 해소"). 숫자는 파일럿에서 보정.
 4. ~~**기법 수준.**~~ **반영됨(D5~D8)**: 서술형 행동을 먼저 기록하고 ATT&CK 매핑은 별도 단계(AI 제안 + 사람 확인), 비교는 전술 수준, 유도된 기법은 구분해서 표시(위 "기법 층").
 5. ~~**날짜와 수치.**~~ **반영됨**: 날짜는 문서 단위 메타데이터(`headline_date`, `attack_span`, `document_date`)로 트리플렛 밖에 둔다. 수치는 별도 기록으로 정규화하고 출처별로 나란히 보여 준다(D9~D12, 위 "수치 층").
-6. `RootCause` 시드 8개는 5개 사건의 검색 요약에서 일반화한 것이라 **전문가 검토가 필요하다.** 준비 작업으로 CWE 대응표와 경계 규칙·사례를 만들었다(위 "RootCause 시드 검토 자료"). CWE 5.0 파일로 대응표를 확인하고 고쳤다(320, 16 제외, 863 추가 등). 대응이 없거나 일부인 항목(조직 절차 수준)을 어떻게 다룰지는 전문가에게 묻는 질문으로 남아 있다.
+6. `RootCause` 시드 8개는 5개 사건의 검색 요약에서 일반화한 것이라 **전문가 검토가 필요하다.** 준비 작업으로 CWE 대응표와 경계 규칙·사례를 만들었다(위 "RootCause 시드 검토 자료"). CWE 5.0 파일로 대응표를 확인하고 고쳤다(320, 16 제외, 863 추가 등). 대응이 없거나 일부인 항목(조직 절차 수준)을 어떻게 다룰지는 전문가에게 묻는 질문으로 남아 있다. **2026-11-27 전문가 검토 의견을 반영했다**(모니터링 시드의 계층화, 성격·영역 속성, 표준 매핑 후보, 공격자와 계정 소유자 분리, 상태값 5가지).
 
 ## 확인 체크리스트 (파일럿 전에 사람이 확인할 것)
 
@@ -473,11 +562,23 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 
 | 번호 | 물어볼 것 |
 | --- | --- |
-| 전문가-B1 | `RootCause` 시드 8개가 쓸 만한 분류인가, 빠진 원인은 없는가 |
+| 전문가-B1 | `RootCause` 시드(현재 10개, 처음 8개에서 모니터링 하위 2개 추가)가 쓸 만한 분류인가, 빠진 원인은 없는가 |
 | 전문가-B2 | 조직 절차 실패는 CWE에 대응이 없는데 어떤 표준에 대응시킬까 |
 | 전문가-B3 | `ActorOrigin` 경계(전직자 세분, "공격 시점의 고용 상태") |
 | 전문가-B4 | 질문 틀 (a)취약점 (b)약점·관리 실패 (c)기법이 분석 목적에 맞는가 |
 | 전문가-B5 | AI가 제안한 ATT&CK 매핑을 누가 확인하나(설계 결정 D6) |
+
+### 전문가 검토 결과 반영 (2026-11-27)
+
+| 번호 | 전문가 판단 | 반영 |
+| --- | --- | --- |
+| 전문가-B1 | 시드 8개 유지, 모니터링은 분리 권고, 상위 분류 재설계 | **수정 반영**: 모니터링은 대체하지 않고 상위 유지 + 하위 2개(정보 손실을 피하려고 전문가안에서 변경). 성격과 영역은 시드에서 파생. 새 원인은 파일럿 뒤 |
+| 전문가-B2 | CWE 유지 + NIST CSF 2.0, SP 800-53 추가 | **반영(후보)**: `ROOT_CAUSE_STANDARD_MAP`, `nist_catalog.py`로 번호 존재 확인(55개 모두 있음, 적합성은 미확인). 확정은 사람 검토 후 |
+| 전문가-B3 | 4값 유지, 공격자와 계정 소유자 분리, VERIS `Former employee` | **반영**: `ACCOUNT_OWNER_ORIGIN`, 사례 수정과 추가. VERIS 세부 대응은 미검증(확인-A3 남음) |
+| 전문가-B4 | (a)(b)(c) 유지, 상태 2개 추가 | **반영**: 질문 문장 보완, 상태 5가지 정의, 집계 어휘 대응. `Asset`과 `AFFECTED_ASSET` 추가 |
+| 전문가-B5 | D5~D8 유지, 매핑 검증 보완 | **반영**: `attack_mapping.py` 수정(위 "기법 층")과 시험 6개 추가 |
+
+전문가에게 되묻고 정리한 것: 모니터링 시드의 성격(기술 대 조직)과 상위 분류의 비교 기준. 후속 답변으로 시드를 나누라는 의견이 왔고, 우리는 상위를 유지하는 쪽을 택했다(결과만 적힌 사례의 정보 손실 방지). 이 선택을 전문가에게 다시 확인할 수 있다.
 
 ### 기본값 (재검토)
 
@@ -507,14 +608,16 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 
 ```bash
 python extraction/consts.py   # 설정의 일관성 검사
-python aggregate.py           # 집계 규칙 자체 시험(13개)
-python attack_mapping.py      # 기법 층 규칙 자체 시험(10개)
+python aggregate.py           # 집계 규칙 자체 시험(14개)
+python attack_mapping.py      # 기법 층 규칙 자체 시험(16개)
 python incident_resolution.py # 사건 해소 규칙 자체 시험(11개)
 python measurements.py        # 수치 층 규칙 자체 시험(9개)
 python answer_key.py          # 정답표 초안 검사(근거 행과 표준 후보 ID의 존재)
 python answer_key.py --self-test
 python kev_conflict_sample.py --self-test   # KEV CWE 충돌 표본 분류 시험
 python expert_review_bundle.py --self-test   # 전문가 검토 자료 묶음 시험
+python nist_catalog.py --self-test         # NIST 항목 번호 검사 시험
+python nist_catalog.py                     # 표준 매핑 후보 번호가 공식 목록에 있는지 검사
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 python backbone.py            # 뼈대 변환 규칙 자체 시험(네트워크 없이)
 python actors.py              # 행위자 이름 연결 자체 시험

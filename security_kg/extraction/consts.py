@@ -41,9 +41,16 @@ ENTITY_TYPE_DEFINITIONS = {
         "Not a single incident and not an attacker group."
     ),
     "RootCause": (
-        "An organizational or operational failure that made the incident possible, such as a missing patch, "
-        "unrevoked credential, missing encryption or late incident response. Not a software defect with a "
-        "CVE identifier (that is a Vulnerability) and not an attacker action (that is a Technique)."
+        "A technical control failure or an organizational/operational failure that made the incident possible or "
+        "widened its impact, such as a missing patch, unrevoked credential, missing encryption, missing security "
+        "logs, no staff monitoring alerts, or late incident response. Use ONLY a failure the text states; never "
+        "infer the cause from the size of the damage. Each value needs its own evidence sentence. Not a software "
+        "defect with a CVE identifier (that is a Vulnerability) and not an attacker action (that is a Technique)."
+    ),
+    "Asset": (
+        "A named system, service or data store of the breached organization that the attacker accessed or whose "
+        "data was affected (e.g. an employee mobile work-support system, a business-support system). Not the "
+        "organization itself and not a software product in general."
     ),
     # ── 표준(뼈대)에서 오는 종류 ──
     "Vulnerability": (
@@ -87,7 +94,11 @@ ENTITY_TYPE_DEFINITIONS = {
         "discovery: still employed then = INTERNAL (including misuse shortly before leaving); already left = "
         "FORMER_INSIDER. If the text does not say when, do not guess: mark the assertion as inferred or omit it. "
         "Use ONLY when the text states or clearly implies the relationship; when it is only implied, mark the "
-        "assertion as inferred. Never infer it from the attacker's nationality, location or skill."
+        "assertion as inferred. Never infer it from the attacker's nationality, location or skill. "
+        "FORMER_INSIDER also requires that access, credentials or knowledge obtained from the past relationship "
+        "were used in the attack; a former employee who attacked by unrelated means is EXTERNAL. "
+        "The attacker's origin is NOT the account owner's: if an outsider used a partner employee's stolen "
+        "account, the attacker is EXTERNAL and the account owner is recorded separately (ACCOUNT_OWNER_ORIGIN)."
     ),
     "Product": (
         "A named software product or operating system affected by a Vulnerability, as in a CPE name "
@@ -160,6 +171,7 @@ ENTITY_TYPES_TO_ADD_INSTANCES = [
     "MalwareFamily",    # 새 악성코드 계열이 계속 생김
     "ThreatActor",      # 새 행위자와 별칭이 계속 생김
     "Product",
+    "Asset",            # 침해된 시스템·서비스. 문서에서 이름 그대로 받는다
 ]
 # Vulnerability, Weakness, Technique, Tactic은 닫힌 목록이다. 목록에 없으면 연결 실패로 버린다.
 # (CVE 번호는 있지만 아직 목록에 반영되지 않은 신규 CVE는 뼈대를 다시 내려받아 해결한다.)
@@ -182,6 +194,8 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET = [
     ("Incident", "MalwareFamily", "USED_MALWARE"),           # (c) 악성코드·도구
     ("Incident", "ThreatActor", "ATTRIBUTED_TO"),            # 배후 지목(주장인 경우가 많음)
     ("Incident", "ActorOrigin", "HAS_ACTOR_ORIGIN"),         # 공격자와 피해 조직의 관계(내부자, 외부자 등)
+    ("Incident", "ActorOrigin", "ACCOUNT_OWNER_ORIGIN"),     # 도용·악용된 계정 소유자와 피해 조직의 관계(공격자와 별개)
+    ("Incident", "Asset", "AFFECTED_ASSET"),                 # 참고: 접근되었거나 영향을 받은 시스템. (a)(b)(c) 칸이 아니다
 ]
 
 # 표준 데이터가 이미 가진 관계. 문서에서 다시 받지 않고 뼈대로 만든다.
@@ -208,11 +222,104 @@ ROOT_CAUSE_SEED = [
     "CREDENTIAL_OR_KEY_MISMANAGEMENT",     # 자격 증명·키 관리 미흡 (예: 퇴사자 키 미폐기)
     "INSUFFICIENT_ENCRYPTION",             # 암호화 미흡
     "WEAK_ACCESS_CONTROL",                 # 접근 통제 미흡
-    "INSUFFICIENT_MONITORING_DETECTION",   # 모니터링·탐지 미흡 (장기 잠복)
+    "INSUFFICIENT_MONITORING_DETECTION",   # 모니터링·탐지 미흡 (상위). 탐지 실패는 확인되었으나 어느 통제의 실패인지 출처가 말하지 않을 때
+    "INSUFFICIENT_LOGGING_AUDIT",          # (하위) 필요한 보안 이벤트의 생성·수집·기록·보존·감사 기능 부재. 출처가 직접 말할 때만
+    "INSUFFICIENT_SECURITY_MONITORING_OPERATIONS",  # (하위) 관제 인력·모니터링 절차·경보 검토와 에스컬레이션 체계 부재. 출처가 직접 말할 때만
     "INADEQUATE_INCIDENT_RESPONSE",        # 과거 침해 대응 미흡
     "THIRD_PARTY_OR_SUPPLY_CHAIN_RISK",    # 서드파티·공급망 관리 미흡
     "MISCONFIGURATION",                    # 설정 오류
 ]
+
+
+# 시드의 계층: 상위 시드(모니터링)를 지우지 않고 하위 시드를 추가했다. 결과만 적힌 사례("장기간 탐지하지 못했다")를 받을 자리가
+# 있어야 하기 때문이다(결과만으로 하위 시드를 고르면 출처에 없는 원인을 만들어 낸다). 하위는 출처가 직접 말할 때만 쓴다.
+ROOT_CAUSE_PARENT = {
+    "INSUFFICIENT_LOGGING_AUDIT": "INSUFFICIENT_MONITORING_DETECTION",
+    "INSUFFICIENT_SECURITY_MONITORING_OPERATIONS": "INSUFFICIENT_MONITORING_DETECTION",
+}
+
+# 시드에서 파생되는 속성. 문서에서 따로 뽑지 않고 시드마다 정해 두며(추출 스키마를 바꾸지 않는다), 사람이 근거와 함께 사건 단위로
+# 덮어쓸 때만 다른 값을 둔다. 세 가지 분류(RootCause, 성격, 영역)가 서로 모순되는 값을 갖는 것을 막기 위해서다.
+#   failure_nature: 실패의 성격. 값이 None이면 "출처가 말하지 않아 미정"이다(추측하지 않는다).
+FAILURE_NATURES = {
+    "TECHNICAL_CONTROL_FAILURE": "기술적 보안 통제, 시스템 기능, 설정 또는 구현의 실패",
+    "ORGANIZATIONAL_PROCESS_FAILURE": "조직의 정책, 절차, 인력, 책임체계 또는 운영상의 실패",
+}
+#   control_domain: 실패한 보안 통제의 업무 영역. 프로젝트 내부의 분석·집계 기준이며 NIST CSF 카테고리와 같은 개념이 아니다.
+CONTROL_DOMAINS = [
+    "VULNERABILITY_MANAGEMENT", "IDENTITY_AND_ACCESS_MANAGEMENT", "DATA_PROTECTION", "SECURITY_MONITORING",
+    "INCIDENT_RESPONSE", "SUPPLY_CHAIN_SECURITY", "CONFIGURATION_MANAGEMENT",
+]
+#   display_group: 화면 표시용 묶음(전문가 검토 의견의 5개 상위 분류). 사건 간 비교 기준으로 쓰지 않는다.
+ROOT_CAUSE_ATTRIBUTES = {
+    "UNPATCHED_KNOWN_VULNERABILITY": {"failure_nature": "ORGANIZATIONAL_PROCESS_FAILURE", "control_domain": "VULNERABILITY_MANAGEMENT",
+                                      "display_group": "취약점 관리 실패"},
+    "CREDENTIAL_OR_KEY_MISMANAGEMENT": {"failure_nature": "ORGANIZATIONAL_PROCESS_FAILURE", "control_domain": "IDENTITY_AND_ACCESS_MANAGEMENT",
+                                        "display_group": "자산·계정 관리 실패",
+                                        "note": "기본값은 수명주기 관리(조직 절차). 하드코딩된 키처럼 기술적 결함이면 사람이 근거와 함께 사건 단위로 덮어쓴다"},
+    "INSUFFICIENT_ENCRYPTION": {"failure_nature": "TECHNICAL_CONTROL_FAILURE", "control_domain": "DATA_PROTECTION",
+                                "display_group": "기술적 통제 실패"},
+    "WEAK_ACCESS_CONTROL": {"failure_nature": "TECHNICAL_CONTROL_FAILURE", "control_domain": "IDENTITY_AND_ACCESS_MANAGEMENT",
+                            "display_group": "기술적 통제 실패"},
+    "INSUFFICIENT_MONITORING_DETECTION": {"failure_nature": None, "control_domain": "SECURITY_MONITORING",
+                                          "display_group": "보안 운영 실패",
+                                          "note": "탐지 실패는 확인되었으나 로깅 기능 부재인지 관제 미운영인지 출처가 말하지 않아 성격은 미정"},
+    "INSUFFICIENT_LOGGING_AUDIT": {"failure_nature": "TECHNICAL_CONTROL_FAILURE", "control_domain": "SECURITY_MONITORING",
+                                   "display_group": "기술적 통제 실패"},
+    "INSUFFICIENT_SECURITY_MONITORING_OPERATIONS": {"failure_nature": "ORGANIZATIONAL_PROCESS_FAILURE", "control_domain": "SECURITY_MONITORING",
+                                                    "display_group": "보안 운영 실패"},
+    "INADEQUATE_INCIDENT_RESPONSE": {"failure_nature": "ORGANIZATIONAL_PROCESS_FAILURE", "control_domain": "INCIDENT_RESPONSE",
+                                     "display_group": "보안 운영 실패"},
+    "THIRD_PARTY_OR_SUPPLY_CHAIN_RISK": {"failure_nature": "ORGANIZATIONAL_PROCESS_FAILURE", "control_domain": "SUPPLY_CHAIN_SECURITY",
+                                         "display_group": "외부 의존성 관리 실패",
+                                         "note": "공급자 쪽 실패라는 위치 정보는 시드 자체가 나타내므로 성격의 별도 값을 두지 않는다"},
+    "MISCONFIGURATION": {"failure_nature": "TECHNICAL_CONTROL_FAILURE", "control_domain": "CONFIGURATION_MANAGEMENT",
+                         "display_group": "기술적 통제 실패"},
+}
+
+# 시드를 값으로 부여할 때의 공통 규칙(경계 규칙과 함께 프롬프트와 사람 검토에 쓴다)
+ROOT_CAUSE_ASSIGNMENT_RULES = [
+    "문서가 말한 '실패한 통제'로 고르고 결과(피해 규모, 오래 탐지하지 못했다는 사실)로 고르지 않는다.",
+    "시드마다 자신의 근거 문장이 있어야 부여한다. 한 문장에서 두 시드를 자동으로 만들지 않는다(중복 집계 방지).",
+    "하위 시드(로깅, 관제 운영)는 출처가 그 원인을 직접 말할 때만 쓰고, 탐지 실패만 말하면 상위 시드를 쓴다.",
+    "원인을 밝히지 않았거나 조사 중이면 값을 기록하지 않는다.",
+]
+
+# 표준 매핑 후보(NIST CSF 2.0, SP 800-53 Rev. 5). CWE는 위 ROOT_CAUSE_CWE_MAP이 따로 가진다(`root_cause_standard_view`가 합쳐 보여 준다).
+# 전문가 검토 의견의 후보에서 범위 표기(GV.SC-01~10, RS.MA-01~05)는 구별하는 힘이 없어 카테고리 단위(GV.SC, RS.MA)만 두었다.
+# ID가 공식 파일에 있는지는 nist_catalog.py가 확인한다(2026-11-26: CSF 2.0과 800-53 Rev. 5.2.0 OSCAL 목록에서 모두 존재 확인).
+# **존재 확인은 적합성 확인이 아니다.** mapping_status는 후보(candidate) → 확정(confirmed) 또는 기각(rejected)이며, 확정은 사람이 검토해야 한다.
+ROOT_CAUSE_STANDARD_MAP = {
+    "UNPATCHED_KNOWN_VULNERABILITY": {"nist_csf": ["ID.RA-01", "ID.RA-05", "PR.PS-02"], "nist_800_53": ["SI-2", "RA-5", "CM-3"]},
+    "CREDENTIAL_OR_KEY_MISMANAGEMENT": {"nist_csf": ["PR.AA-01", "PR.AA-03", "PR.AA-05"], "nist_800_53": ["IA-5", "AC-2", "AC-6"]},
+    "INSUFFICIENT_ENCRYPTION": {"nist_csf": ["PR.DS-01", "PR.DS-02"], "nist_800_53": ["SC-8", "SC-13", "SC-28"]},
+    "WEAK_ACCESS_CONTROL": {"nist_csf": ["PR.AA-03", "PR.AA-05", "PR.IR-01"], "nist_800_53": ["AC-2", "AC-3", "AC-6"]},
+    "INSUFFICIENT_MONITORING_DETECTION": {"nist_csf": ["DE.CM", "DE.AE"], "nist_800_53": [],
+                                          "note": "상위 시드라 세부 범주를 두지 않고 카테고리만 둔다. 세부는 하위 시드가 가진다"},
+    "INSUFFICIENT_LOGGING_AUDIT": {"nist_csf": ["PR.PS-04"], "nist_800_53": ["AU-2", "AU-3", "AU-12"]},
+    "INSUFFICIENT_SECURITY_MONITORING_OPERATIONS": {"nist_csf": ["DE.CM-01", "DE.CM-03", "DE.CM-09", "DE.AE-02", "DE.AE-03"],
+                                                    "nist_800_53": ["SI-4", "CA-7", "AU-6"]},
+    "INADEQUATE_INCIDENT_RESPONSE": {"nist_csf": ["RS.MA", "RS.MI-01", "RS.MI-02"], "nist_800_53": ["IR-4", "IR-5", "IR-6", "IR-8"],
+                                     "note": "RS.MA는 카테고리 단위. 세부 범주(RS.MA-01~05)는 좁힌 뒤에 둔다"},
+    "THIRD_PARTY_OR_SUPPLY_CHAIN_RISK": {"nist_csf": ["GV.SC"], "nist_800_53": ["SR-3", "SR-5", "SR-6", "SA-9"],
+                                         "note": "GV.SC는 카테고리 단위. 세부 범주(GV.SC-01~10)는 좁힌 뒤에 둔다"},
+    "MISCONFIGURATION": {"nist_csf": ["PR.PS-01", "PR.IR-01"], "nist_800_53": ["CM-2", "CM-3", "CM-6", "CM-7"]},
+}
+for _v in ROOT_CAUSE_STANDARD_MAP.values():
+    _v.setdefault("mapping_status", "candidate")
+    _v.setdefault("reviewed_by", None)
+    _v.setdefault("reviewed_at", None)
+MAPPING_STATUSES_STANDARD = ["candidate", "confirmed", "rejected"]
+
+
+def root_cause_standard_view(seed: str) -> dict:
+    """시드 하나의 표준 대응을 한곳에서 본다: CWE(기술적 약점), NIST CSF, NIST 800-53, 성격과 영역."""
+    m = ROOT_CAUSE_STANDARD_MAP[seed]
+    c = ROOT_CAUSE_CWE_MAP[seed]
+    a = ROOT_CAUSE_ATTRIBUTES[seed]
+    return {"seed": seed, "cwe": c["cwe_verified"] + c["cwe_unverified"], "cwe_fit": c["fit"],
+            "nist_csf": list(m["nist_csf"]), "nist_800_53": list(m["nist_800_53"]), "mapping_status": m["mapping_status"],
+            "failure_nature": a["failure_nature"], "control_domain": a["control_domain"], "display_group": a["display_group"]}
 
 
 # ──────────────────────────────────────────────────────────────────────────
@@ -247,8 +354,17 @@ ROOT_CAUSE_CWE_MAP = {
                 "306(중요 기능의 인증 없음)을 쓴다.",
     },
     "INSUFFICIENT_MONITORING_DETECTION": {
+        "fit": "partial", "cwe_verified": ["CWE-778"], "cwe_unverified": [],
+        "note": "상위 시드. CWE-778은 보안상 중요한 사건을 기록하지 않는 약점이라 하위 시드(로깅)와만 맞는다. "
+                "'장기 잠복을 탐지하지 못함'은 기록 부재보다 넓은 개념이라 일부만 맞는다.",
+    },
+    "INSUFFICIENT_LOGGING_AUDIT": {
         "fit": "close", "cwe_verified": ["CWE-778"], "cwe_unverified": [],
-        "note": "CWE-778은 보안상 중요한 사건을 기록하지 않는 약점이다. '장기 잠복을 탐지하지 못함'은 기록 부재보다 넓은 개념이다.",
+        "note": "필요한 보안 이벤트를 기록하지 않는 약점(CWE-778)과 분명히 대응한다.",
+    },
+    "INSUFFICIENT_SECURITY_MONITORING_OPERATIONS": {
+        "fit": "none", "cwe_verified": [], "cwe_unverified": [],
+        "note": "관제 인력, 모니터링 절차, 경보 검토 체계는 제품의 약점이 아니라 조직의 운영 문제라서 CWE에 대응이 없다.",
     },
     "INADEQUATE_INCIDENT_RESPONSE": {
         "fit": "none", "cwe_verified": [], "cwe_unverified": [],
@@ -293,8 +409,18 @@ ROOT_CAUSE_BOUNDARY_RULES = {
         "피해 조직이 자기 시스템에서 공개된 패치를 적용하지 않았으면 UNPATCHED. "
         "외부 공급사·협력사·구성요소가 침해되었거나 그 신뢰가 악용되었으면 THIRD_PARTY.",
     ("INSUFFICIENT_MONITORING_DETECTION", "INADEQUATE_INCIDENT_RESPONSE"):
-        "침입 자체를 알아채지 못했으면(체류 기간이 길었으면) MONITORING. "
+        "침입 자체를 알아채지 못했으면(체류 기간이 길었으면) MONITORING 계열. "
         "경보나 과거 침해를 알고도 차단·정리·재발 방지를 하지 않았으면 INCIDENT_RESPONSE.",
+    ("INSUFFICIENT_MONITORING_DETECTION", "INSUFFICIENT_LOGGING_AUDIT"):
+        "탐지 실패만 말하고 이유를 말하지 않으면 상위(MONITORING). 필요한 로그가 생성·수집·보존되지 않았다고 말할 때만 LOGGING_AUDIT.",
+    ("INSUFFICIENT_MONITORING_DETECTION", "INSUFFICIENT_SECURITY_MONITORING_OPERATIONS"):
+        "탐지 실패만 말하고 이유를 말하지 않으면 상위(MONITORING). 관제 인력·절차·경보 검토 체계가 없다고 말할 때만 OPERATIONS.",
+    ("INSUFFICIENT_LOGGING_AUDIT", "INSUFFICIENT_SECURITY_MONITORING_OPERATIONS"):
+        "로그 자체가 없거나 보존되지 않았으면 LOGGING_AUDIT, 로그는 있으나 보는 사람·절차가 없으면 OPERATIONS. 둘 다 말하면 값도 둘이고 각각 근거 문장이 있어야 한다.",
+    ("INSUFFICIENT_SECURITY_MONITORING_OPERATIONS", "INADEQUATE_INCIDENT_RESPONSE"):
+        "경보를 검토할 인력·절차·체계가 없어 알아채지 못했으면 OPERATIONS. 경보를 인지하고도 차단·격리를 하지 않았으면 INCIDENT_RESPONSE.",
+    ("MISCONFIGURATION", "INSUFFICIENT_LOGGING_AUDIT"):
+        "탐지 규칙이나 로그 설정이 잘못되어 있었다고 말하면 MISCONFIGURATION. 로그 기능 자체가 없었다고 말하면 LOGGING_AUDIT.",
     ("MISCONFIGURATION", "WEAK_ACCESS_CONTROL"):
         "문서가 '잘못된 설정·기본값'을 원인으로 말하면 MISCONFIGURATION. "
         "통제 자체가 설계에 없었거나 약했다고 말하면 WEAK_ACCESS_CONTROL.",
@@ -329,6 +455,15 @@ ROOT_CAUSE_BOUNDARY_EXAMPLES = [
     ("The breach exposed millions of customer records.", []),
     # 원인을 말하지 않은 문장
     ("The investigation is ongoing and the cause has not been disclosed.", []),
+    # 모니터링: 하위 시드는 출처가 직접 말할 때만 쓴다
+    ("Security audit logs were never generated for the authentication service, so the intrusion left no record.",
+     ["INSUFFICIENT_LOGGING_AUDIT"]),
+    ("Logs were collected, but nobody was assigned to review the alerts outside business hours.",
+     ["INSUFFICIENT_SECURITY_MONITORING_OPERATIONS"]),
+    ("A detection rule had been configured with the wrong pattern, so it never matched the attack.",
+     ["MISCONFIGURATION"]),
+    ("The company had no 24-hour monitoring team and no security audit logs for the service.",
+     ["INSUFFICIENT_SECURITY_MONITORING_OPERATIONS", "INSUFFICIENT_LOGGING_AUDIT"]),
 ]
 
 
@@ -371,10 +506,25 @@ ACTOR_ORIGIN_BOUNDARY_EXAMPLES = [
     ("퇴사 후에 남아 있던 인증 서명키로 접근했다", "FORMER_INSIDER"),
     ("재직 중이던 개발자가 퇴사 직전에 데이터를 복사해 갔다", "INTERNAL"),
     ("퇴사 의사를 밝힌 직원이 아직 재직 중일 때 권한을 오용했다", "INTERNAL"),
-    ("협력사 직원의 계정이 도용되어 침입에 쓰였다", "PARTNER"),
+    ("외부 공격자가 협력사 직원의 계정을 탈취해 침입에 썼다", "EXTERNAL"),     # 공격자는 외부, 계정 소유자는 협력사(아래 ACCOUNT_OWNER_EXAMPLES)
+    ("협력사 직원이 자신의 업무 접근 권한을 악용해 데이터를 빼냈다", "PARTNER"),
+    ("퇴사한 직원이 과거 접근 권한이나 정보를 쓰지 않고 공개된 취약점을 외부에서 공격했다", "EXTERNAL"),   # 전직자라는 사실만으로 FORMER_INSIDER를 주지 않는다
     ("이름 있는 해킹 조직이 외부에서 침입했다", "EXTERNAL"),
     ("개발자가 가진 접근 권한으로 침해가 일어났다(고용 상태와 시점이 적혀 있지 않음)", None),
 ]
+
+# 결정 기록(2-1): 공격자 유형과 계정 소유자는 별개다(전문가 검토 의견). (사례, 공격자 유형, 계정 소유자 유형).
+# 값이 None이면 기록하지 않는다(추측 금지). 소유자는 ACCOUNT_OWNER_ORIGIN 관계로 따로 기록한다.
+ACCOUNT_OWNER_EXAMPLES = [
+    ("외부 공격자가 협력사 직원의 계정을 탈취해 침입에 썼다", "EXTERNAL", "PARTNER"),
+    ("협력사 직원이 자기 계정으로 직접 데이터를 빼냈다", "PARTNER", "PARTNER"),
+    ("퇴사자가 남아 있던 서명키로 인증 토큰을 위조했다", "FORMER_INSIDER", None),
+    ("누군가의 계정이 쓰였으나 누구의 것인지, 누가 썼는지는 밝혀지지 않았다", None, None),
+]
+
+# VERIS와의 세부 대응(전문가 검토 의견): VERIS는 전직 직원을 External 행위자의 한 종류('Former employee')로 둔다고 알려져 있다.
+# **미검증**: VERIS 공식 스키마 저장소와 대조하지 못했다(README 확인-A3). 확인되기 전에는 변환에 쓰지 않고 참고로만 둔다.
+ACTOR_ORIGIN_VERIS_VARIETY = {"FORMER_INSIDER": "Former employee"}
 
 # 결정 기록(3): 행위자가 둘 이상일 때 값과 이름의 짝 짓기는 파일럿에서 필요가 확인될 때까지 하지 않는다(옵션 i).
 # 지금은 사건 단위로만 기록하고 값이 여러 개면 aggregate.py가 "사람이 확인 필요"로 표시한다.
@@ -474,6 +624,10 @@ COMPARISON_LEVEL = "tactic"                      # D7: 사건 간 비교는 전�
 ALLOW_SUBTECHNIQUE_ONLY_IF_SPECIFIC = True       # D7: 문서가 구체적일 때만 하위 기법, 아니면 상위 기법으로 올린다
 INCLUDE_BACKBONE_DERIVED_TECHNIQUES = True       # D8: 악성코드에서 유도한 기법을 답에 포함
 BACKBONE_DERIVED_LABEL = "backbone_derived"      #     포함하되 이 이름표로 구분한다
+MAPPING_EVIDENCE_STRENGTH = ["direct", "implied", "inferred"]   # 근거의 직접성(AI confidence와 별개). 모르는 값은 inferred로 낮춘다
+# 같은 기법이 여러 출처에서 나올 때 전술 집계에는 가장 강한 하나만 센다(강한 순서). documented는 출처의 assertion_status가
+# confirmed일 때만 확정으로 세고, 아니면 documented_unconfirmed로 따로 센다.
+TECHNIQUE_LABEL_PRIORITY = ["confirmed", "documented", "documented_unconfirmed", "ai_suggested", BACKBONE_DERIVED_LABEL]
 
 # 매핑 단계의 프롬프트 규칙(영문). 후보는 반드시 내려받은 ATT&CK 목록 안의 것이어야 하고, 목록에 없는 ID는 버린다.
 ATTACK_MAPPING_RULES = [
@@ -562,17 +716,29 @@ ANSWER_SLOTS = {
 # 질문의 칸은 아니지만 답과 함께 보여 줄 참고 정보 → 그 정보의 답이 되는 관계. 상태 규칙은 칸과 같다.
 CONTEXT_FIELDS = {
     "actor_origin": ["HAS_ACTOR_ORIGIN"],
+    "account_owner_origin": ["ACCOUNT_OWNER_ORIGIN"],   # 공격자 유형과 섞지 않는다
     "attribution": ["ATTRIBUTED_TO"],
+    "affected_asset": ["AFFECTED_ASSET"],
 }
 # 값이 여러 개 나오면 사람이 확인하도록 표시할 참고 정보
 # (문서들이 서로 다른 값을 말했거나 사건에 행위자가 둘 이상일 수 있다)
-REVIEW_IF_MULTIPLE_VALUES = ["actor_origin"]
+REVIEW_IF_MULTIPLE_VALUES = ["actor_origin", "account_owner_origin"]
 
 # 칸의 상태. 최소안에서는 두 가지뿐이다. (구분이 필요해지면 확장안: README 참고)
 SLOT_STATES = {
     "found": "하나 이상의 문서가 답을 제시함",
     "not_mentioned": "처리한 문서 중 어느 것도 이 칸을 언급하지 않음(= '없음'이 아니라 '확인 안 됨')",
 }
+# 정답표(`fact_check/answer_key_draft.csv`)의 칸 상태(slot_state) 5가지의 정의와 사용 조건. 집계(aggregate.py)의 두 상태는
+# 아래 SLOT_STATE_ALIASES로 대응시킨다. not_confirmed는 집계 코드가 아직 표현하지 못한다(README의 보류한 확장안과 함께 파일럿에서 도입).
+ANSWER_KEY_SLOT_STATES = {
+    "answered": "처리한 문서가 이 칸의 답을 제시함. assertion_status(confirmed, claimed, inferred)를 함께 붙인다",
+    "not_confirmed": "관련 정보가 있으나 출처가 '조사 중', '확인하지 못함'이라고 말해 확정되지 않음",
+    "not_mentioned_in_sources": "문서를 처리했으나 이 칸에 해당하는 언급이 없음. '없다'는 뜻이 아니다",
+    "not_applicable": "출처가 이 질문이 이 사건에 해당하지 않는다고 직접 말함. 출처의 직접 진술이 있을 때만 쓴다",
+    "not_assessed": "아직 이 칸을 평가하지 않았거나 문서를 처리하지 않음. 정답표를 만드는 도중의 상태",
+}
+SLOT_STATE_ALIASES = {"found": "answered", "not_mentioned": "not_mentioned_in_sources"}
 NOT_MENTIONED_TEXT = "확인되지 않음: 처리한 문서 {n}개 중 언급 없음"
 NO_DOCUMENTS_TEXT = "확인되지 않음: 처리한 문서가 없음"
 
@@ -721,6 +887,54 @@ def validate() -> list[str]:
     for k in ROOT_CAUSE_SEED:
         if k not in covered_by_examples:
             problems.append(f"ROOT_CAUSE_BOUNDARY_EXAMPLES: 시드 {k}를 보여 주는 사례가 없음")
+    # RootCause 계층과 속성, 표준 매핑
+    seeds = set(ROOT_CAUSE_SEED)
+    if len(ROOT_CAUSE_SEED) != len(seeds):
+        problems.append("ROOT_CAUSE_SEED에 중복이 있음")
+    for child, parent in ROOT_CAUSE_PARENT.items():
+        if child not in seeds or parent not in seeds:
+            problems.append(f"ROOT_CAUSE_PARENT: 시드에 없는 값 {child} → {parent}")
+        elif ROOT_CAUSE_PARENT.get(parent):
+            problems.append(f"ROOT_CAUSE_PARENT: 하위의 하위는 두지 않음 {child}")
+        elif ROOT_CAUSE_ATTRIBUTES.get(child, {}).get("control_domain") != ROOT_CAUSE_ATTRIBUTES.get(parent, {}).get("control_domain"):
+            problems.append(f"ROOT_CAUSE_ATTRIBUTES: {child}와 상위 {parent}의 control_domain이 다름")
+    if set(ROOT_CAUSE_ATTRIBUTES) != seeds:
+        problems.append("ROOT_CAUSE_ATTRIBUTES의 키가 ROOT_CAUSE_SEED와 다름")
+    for k, a in ROOT_CAUSE_ATTRIBUTES.items():
+        if a["failure_nature"] is not None and a["failure_nature"] not in FAILURE_NATURES:
+            problems.append(f"ROOT_CAUSE_ATTRIBUTES[{k}]: failure_nature 값이 올바르지 않음")
+        if a["failure_nature"] is None and k not in set(ROOT_CAUSE_PARENT.values()):
+            problems.append(f"ROOT_CAUSE_ATTRIBUTES[{k}]: failure_nature가 미정(None)인 것은 하위가 있는 상위 시드뿐")
+        if a["control_domain"] not in CONTROL_DOMAINS:
+            problems.append(f"ROOT_CAUSE_ATTRIBUTES[{k}]: control_domain 값이 올바르지 않음")
+    for child in ROOT_CAUSE_PARENT:
+        if ROOT_CAUSE_ATTRIBUTES.get(child, {}).get("failure_nature") is None:
+            problems.append(f"ROOT_CAUSE_ATTRIBUTES[{child}]: 하위 시드는 성격이 정해져 있어야 함")
+    if set(ROOT_CAUSE_STANDARD_MAP) != seeds:
+        problems.append("ROOT_CAUSE_STANDARD_MAP의 키가 ROOT_CAUSE_SEED와 다름")
+    csf_re = re.compile(r"^(GV|ID|PR|DE|RS|RC)\.[A-Z]{2}(-\d{2})?$")
+    r5_re = re.compile(r"^[A-Z]{2}-\d{1,2}$")
+    for k, m in ROOT_CAUSE_STANDARD_MAP.items():
+        for i in m["nist_csf"]:
+            if not csf_re.match(i):
+                problems.append(f"ROOT_CAUSE_STANDARD_MAP[{k}]: CSF ID 형식이 올바르지 않음 {i} (범위 표기는 쓰지 않음)")
+        for i in m["nist_800_53"]:
+            if not r5_re.match(i):
+                problems.append(f"ROOT_CAUSE_STANDARD_MAP[{k}]: 800-53 통제 ID 형식이 올바르지 않음 {i} (패밀리가 아니라 개별 통제 ID)")
+        if m["mapping_status"] not in MAPPING_STATUSES_STANDARD:
+            problems.append(f"ROOT_CAUSE_STANDARD_MAP[{k}]: mapping_status 값이 올바르지 않음")
+        if (m["mapping_status"] == "confirmed") != bool(m["reviewed_by"]):
+            problems.append(f"ROOT_CAUSE_STANDARD_MAP[{k}]: 확정(confirmed)과 검토자(reviewed_by)가 일치하지 않음")
+    if not ROOT_CAUSE_ASSIGNMENT_RULES:
+        problems.append("ROOT_CAUSE_ASSIGNMENT_RULES가 비어 있음")
+    for text, attacker, owner in ACCOUNT_OWNER_EXAMPLES:
+        for x in (attacker, owner):
+            if x is not None and x not in ACTOR_ORIGIN_SEED:
+                problems.append(f"ACCOUNT_OWNER_EXAMPLES: 시드에 없는 값 {x}")
+    if set(ACTOR_ORIGIN_VERIS_VARIETY) - set(ACTOR_ORIGIN_SEED):
+        problems.append("ACTOR_ORIGIN_VERIS_VARIETY의 키가 ACTOR_ORIGIN_SEED에 없음")
+    if set(SLOT_STATE_ALIASES.values()) - set(ANSWER_KEY_SLOT_STATES):
+        problems.append("SLOT_STATE_ALIASES가 ANSWER_KEY_SLOT_STATES에 없는 값을 가리킴")
     if MISP_MERGE_WITH_ATTACK:
         problems.append("MISP와 ATT&CK 행위자는 합치지 않기로 함(결정 4)")
     if set(ACTOR_NAME_LINKING.values()) - {"link", "review", "none"}:

@@ -31,6 +31,12 @@ def _group(triplets: list[dict], relations: list[str]) -> dict:
     return groups
 
 
+def canonical_state(state: str) -> str:
+    """집계의 칸 상태(found, not_mentioned)를 정답표의 어휘(answered, not_mentioned_in_sources)로 바꾼다.
+    not_confirmed(조사 중)는 이 최소안이 표현하지 못한다(README의 보류한 확장안)."""
+    return consts.SLOT_STATE_ALIASES.get(state, state)
+
+
 def summarize_context(triplets: list[dict], n_documents: int) -> dict:
     """참고 정보(공격자 유형, 배후 지목 등). 칸과 같은 규칙이고, 값이 여러 개면 사람이 확인하도록 표시한다."""
     out = summarize_fields(triplets, n_documents, consts.CONTEXT_FIELDS)
@@ -114,6 +120,7 @@ def render_campaign(name: str, summary: dict) -> str:
 NAMES = {
     "a_vulnerability": "(a) 취약점", "b_weakness_or_failure": "(b) 약점·관리 실패", "c_technique": "(c) 기법",
     "actor_origin": "참고: 공격자 유형", "attribution": "참고: 배후 지목",
+    "account_owner_origin": "참고: 도용·악용된 계정 소유자 유형", "affected_asset": "참고: 침해된 시스템",
 }
 
 
@@ -232,7 +239,15 @@ def self_test() -> None:
     text = render("시험", summarize_incident(trip, 2), None, layer)
     assert "(c) 기법 층" in text and "사람 확인 전" in text and "문서의 주장이 아님" in text
 
-    print("자체 시험 13개 통과\n")
+    # 14) 집계의 상태 이름은 정답표의 이름으로 바꿀 수 있고, 참고 정보에 계정 소유자와 침해된 자산이 따로 나온다
+    assert canonical_state("found") == "answered" and canonical_state("not_mentioned") == "not_mentioned_in_sources"
+    assert canonical_state("answered") == "answered"
+    ctx = summarize_context([_t("HAS_ACTOR_ORIGIN", "EXTERNAL", "confirmed", "d1"),
+                             _t("ACCOUNT_OWNER_ORIGIN", "PARTNER", "confirmed", "d1"),
+                             _t("AFFECTED_ASSET", "business support system", "confirmed", "d1")], 1)
+    assert ctx["actor_origin"]["items"][0]["target"] == "EXTERNAL" and ctx["account_owner_origin"]["items"][0]["target"] == "PARTNER"
+    assert ctx["account_owner_origin"]["state"] == "found" and ctx["affected_asset"]["state"] == "found"   # 공격자 유형과 계정 소유자가 섞이지 않는다
+    print("자체 시험 14개 통과\n")
     print(render("SK텔레콤 유형", summarize_incident(skt, 3), summarize_context(skt, 3)))
     print()
     print(render("쿠팡 유형", summarize_incident(coupang_ctx, 4), summarize_context(coupang_ctx, 4)))
