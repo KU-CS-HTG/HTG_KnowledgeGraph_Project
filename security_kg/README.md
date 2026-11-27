@@ -305,24 +305,26 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 
 역할: **CWE는 기술적 약점, CSF는 조직의 위험관리 영역, SP 800-53은 구체적 통제, SP 800-61은 사고 대응 지침, ATT&CK는 공격자 행동**이다. 조직 절차 실패를 CWE에 억지로 연결하지 않는다.
 
-| RootCause | CWE | NIST CSF 2.0 | SP 800-53 통제 |
-| --- | --- | --- | --- |
-| `UNPATCHED_KNOWN_VULNERABILITY` | CWE-1395, CWE-1104 | ID.RA-01, ID.RA-05, PR.PS-02 | SI-2, RA-5, CM-3 |
-| `CREDENTIAL_OR_KEY_MISMANAGEMENT` | CWE-798, CWE-324 | PR.AA-01, PR.AA-03, PR.AA-05 | IA-5, AC-2, AC-6 |
-| `INSUFFICIENT_ENCRYPTION` | CWE-311, CWE-327, CWE-326 | PR.DS-01, PR.DS-02 | SC-8, SC-13, SC-28 |
-| `WEAK_ACCESS_CONTROL` | CWE-284, CWE-862, CWE-863, CWE-306 | PR.AA-03, PR.AA-05, PR.IR-01 | AC-2, AC-3, AC-6 |
-| `INSUFFICIENT_MONITORING_DETECTION` | CWE-778 | DE.CM, DE.AE | - |
-| `INSUFFICIENT_LOGGING_AUDIT` | CWE-778 | PR.PS-04 | AU-2, AU-3, AU-12 |
-| `INSUFFICIENT_SECURITY_MONITORING_OPERATIONS` | - | DE.CM-01, DE.CM-03, DE.CM-09, DE.AE-02, DE.AE-03 | SI-4, CA-7, AU-6 |
-| `INADEQUATE_INCIDENT_RESPONSE` | - | RS.MA, RS.MI-01, RS.MI-02 | IR-4, IR-5, IR-6, IR-8 |
-| `THIRD_PARTY_OR_SUPPLY_CHAIN_RISK` | CWE-1395, CWE-1357 | GV.SC | SR-3, SR-5, SR-6, SA-9 |
-| `MISCONFIGURATION` | CWE-1188 | PR.PS-01, PR.IR-01 | CM-2, CM-3, CM-6, CM-7 |
+| RootCause | CWE | NIST CSF 2.0 | SP 800-53 통제 | 부분 적합(참고) |
+| --- | --- | --- | --- | --- |
+| `UNPATCHED_KNOWN_VULNERABILITY` | CWE-1395, CWE-1104 | PR.PS-02 | SI-2, CM-3 | ID.RA-01, ID.RA-05, RA-5 |
+| `CREDENTIAL_OR_KEY_MISMANAGEMENT` | CWE-798, CWE-324 | PR.AA-01 | IA-5 | - |
+| `INSUFFICIENT_ENCRYPTION` | CWE-311, CWE-327, CWE-326 | PR.DS-01, PR.DS-02 | SC-8, SC-13, SC-28 | - |
+| `WEAK_ACCESS_CONTROL` | CWE-284, CWE-862, CWE-863, CWE-306 | PR.AA-03, PR.AA-05, PR.IR-01 | AC-2, AC-3, AC-6 | - |
+| `INSUFFICIENT_MONITORING_DETECTION` | CWE-778 | DE.CM, DE.AE | - | - |
+| `INSUFFICIENT_LOGGING_AUDIT` | CWE-778 | PR.PS-04 | AU-2, AU-3, AU-12 | - |
+| `INSUFFICIENT_SECURITY_MONITORING_OPERATIONS` | - | DE.AE-02, DE.AE-03 | SI-4, CA-7, AU-6 | - |
+| `INADEQUATE_INCIDENT_RESPONSE` | - | RS.MA, RS.MI-01, RS.MI-02 | IR-4, IR-6, IR-8 | IR-5 |
+| `THIRD_PARTY_OR_SUPPLY_CHAIN_RISK` | CWE-1395, CWE-1357 | GV.SC | SR-3, SR-5, SR-6, SA-9 | - |
+| `MISCONFIGURATION` | CWE-1188 | PR.PS-01 | CM-2, CM-6, CM-7 | - |
 
-- 모두 **후보**(`mapping_status: candidate`)다. 번호가 공식 목록에 실제로 있는지는 `nist_catalog.py`가 확인한다(CSF 2.0과 SP 800-53 Rev. 5.2.0의 OSCAL 목록, 철회된 항목은 거른다). **번호가 있다는 것은 적합하다는 뜻이 아니다.** 확정은 사람이 검토해 `confirmed`와 검토자를 기록해야 한다(`consts.py` 검사가 `confirmed`인데 검토자가 없으면 막는다).
+- **2026-11-27 Taegyu가 후보 55개를 검토해 확정했다**(`mapping_status: confirmed`, `reviewed_by`, `reviewed_at`). 결과는 적합 42, 부분 적합 4, 부적합 9이고, **적합은 위 표의 CSF, 800-53 열에, 부분 적합은 "부분 적합(참고)" 열(`nist_partial`)에 두고 부적합은 뺐다.** 부분 적합은 기본 매핑으로 쓰지 않는 참고 후보다. 번호가 공식 목록에 실제로 있는지는 `nist_catalog.py`가 확인한다(CSF 2.0과 SP 800-53 Rev. 5.2.0의 OSCAL 목록, 철회된 항목은 거른다). **번호가 있다는 것은 적합하다는 뜻이 아니고, 적합 판정은 사람의 검토 결과다.**
+- **부적합으로 뺀 9개**: CREDENTIAL의 PR.AA-03, PR.AA-05, AC-2, AC-6(WEAK_ACCESS_CONTROL에 더 가까움, 그쪽이 가짐), MISCONFIGURATION의 PR.IR-01(WEAK_ACCESS_CONTROL에 더 가까움)과 CM-3(UNPATCHED에 더 가까움, 그쪽이 가짐), OPERATIONS의 DE.CM-01, DE.CM-03, DE.CM-09("Monitoring에 더 가까움"). **결정(2026-11-27)**: 마지막 셋(DE.CM-01, 03, 09)을 상위 `INSUFFICIENT_MONITORING_DETECTION`의 후보로 **옮기지 않는다**. 상위 시드가 이미 `DE.CM` 카테고리 전체를 가지므로 세 항목을 포함하고, 세부 범주를 두면 이유를 말하지 않은 탐지 실패에 세부 원인을 암시하게 되기 때문이다. 부적합 판정은 기록으로 남긴다(같은 후보를 다시 붙이지 않도록). 사건 문서에서 세부 항목을 특정하는 원인이 반복해서 나오고 로깅이나 관제 운영이 아니면, 새 하위 시드를 만들면서 이 세 항목을 그 후보로 검토한다(파일럿에서 판단).
+- 부분 적합 4개: UNPATCHED의 ID.RA-01, ID.RA-05, RA-5(패치 내용을 구성하는 단계에 불과함), INCIDENT_RESPONSE의 IR-5(대응 관련 내용이 명시적으로 표현되어 있지 않음).
 - 전문가 후보의 범위 표기(`GV.SC-01~10`, `RS.MA-01~05`)는 구별하는 힘이 없어 카테고리 단위(`GV.SC`, `RS.MA`)만 두었다. 800-53은 패밀리(`AC`)가 아니라 개별 통제 ID만 허용한다.
 - SP 800-61 Rev. 3는 통제 목록이 아니라 지침 문서라 번호 검증 대상이 아니며, 제목과 버전은 미검증이다.
 - 한 곳에서 보려면 `consts.root_cause_standard_view(시드)`.
-- **적합성 검토표**: `data/nist_candidate_review.csv`(후보 55행)에 각 후보의 공식 제목과 설명문, 같은 번호를 쓰는 다른 RootCause가 있고 `judge_fit` 칸(`적합`, `부분 적합`, `부적합`, `판단 불가`)이 비어 있다. 행 번호(`행`)는 엑셀에서 보이는 행 번호와 같다. 사람이 채운 뒤 `python nist_catalog.py --tally-review data/nist_candidate_review.csv`로 집계한다. 판정은 사람의 결정이라 `data/`에 둔다(`backbone/export/`는 저장소에서 제외된 결과물 폴더).
+- **적합성 검토표**: `data/nist_candidate_review.csv`(후보 55행)는 각 후보의 공식 제목과 설명문, 같은 번호를 쓰는 다른 RootCause, 사람의 판정(`judge_fit`: `적합`, `부분 적합`, `부적합`)과 메모(`judge_note`)를 담은 **판정 기록**이다. 행 번호(`행`)는 엑셀 행 번호와 같다. 대응표와 이 기록이 어긋나지 않는지는 `python nist_catalog.py`가 검사한다. 집계는 `python nist_catalog.py --tally-review data/nist_candidate_review.csv`. **판정이 들어 있으면 `--review-sheet`는 덮어쓰지 않는다**(`--force`로만). 판정은 사람의 결정이라 `data/`에 둔다(`backbone/export/`는 저장소에서 제외된 결과물 폴더).
 
 ## `Weakness` 닫힌 목록: CWE 목록 변환 (`cwe_catalog.py`)
 
@@ -574,7 +576,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 | 번호 | 전문가 판단 | 반영 |
 | --- | --- | --- |
 | 전문가-B1 | 시드 8개 유지, 모니터링은 분리 권고, 상위 분류 재설계 | **수정 반영**: 모니터링은 대체하지 않고 상위 유지 + 하위 2개(정보 손실을 피하려고 전문가안에서 변경). 성격과 영역은 시드에서 파생. 새 원인은 파일럿 뒤 |
-| 전문가-B2 | CWE 유지 + NIST CSF 2.0, SP 800-53 추가 | **반영(후보)**: `ROOT_CAUSE_STANDARD_MAP`, `nist_catalog.py`로 번호 존재 확인(55개 모두 있음). **적합성 검토표 `data/nist_candidate_review.csv`(55행) 판정 대기.** 확정은 사람 검토 후 |
+| 전문가-B2 | CWE 유지 + NIST CSF 2.0, SP 800-53 추가 | **반영 완료**: `ROOT_CAUSE_STANDARD_MAP`, `nist_catalog.py`로 번호 존재 확인. **후보 55개를 Taegyu가 검토해 확정(2026-11-27: 적합 42, 부분 적합 4, 부적합 9)**, 부적합 9개는 뺐다. 상위 MONITORING으로 옮기지 않기로 결정(DE.CM-01, 03, 09, 상위의 DE.CM 카테고리가 이미 포함) |
 | 전문가-B3 | 4값 유지, 공격자와 계정 소유자 분리, VERIS `Former employee` | **반영**: `ACCOUNT_OWNER_ORIGIN`, 사례 수정과 추가. VERIS 세부 대응은 공식 스키마로 확인함(확인-A3 완료) |
 | 전문가-B4 | (a)(b)(c) 유지, 상태 2개 추가 | **반영**: 질문 문장 보완, 상태 5가지 정의, 집계 어휘 대응. `Asset`과 `AFFECTED_ASSET` 추가 |
 | 전문가-B5 | D5~D8 유지, 매핑 검증 보완 | **반영**: `attack_mapping.py` 수정(위 "기법 층")과 시험 6개 추가 |
@@ -618,7 +620,7 @@ python answer_key.py --self-test
 python kev_conflict_sample.py --self-test   # KEV CWE 충돌 표본 분류 시험
 python expert_review_bundle.py --self-test   # 전문가 검토 자료 묶음 시험
 python nist_catalog.py --self-test         # NIST 항목 번호 검사 시험
-python nist_catalog.py                     # 표준 매핑 후보 번호가 공식 목록에 있는지 검사
+python nist_catalog.py                     # 표준 매핑 번호가 공식 목록에 있고 검토표와 일치하는지 검사
 python veris_check.py --self-test          # VERIS 스키마 대조 시험
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 python backbone.py            # 뼈대 변환 규칙 자체 시험(네트워크 없이)

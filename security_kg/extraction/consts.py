@@ -304,27 +304,33 @@ ROOT_CAUSE_ASSIGNMENT_RULES = [
 # 표준 매핑 후보(NIST CSF 2.0, SP 800-53 Rev. 5). CWE는 위 ROOT_CAUSE_CWE_MAP이 따로 가진다(`root_cause_standard_view`가 합쳐 보여 준다).
 # 전문가 검토 의견의 후보에서 범위 표기(GV.SC-01~10, RS.MA-01~05)는 구별하는 힘이 없어 카테고리 단위(GV.SC, RS.MA)만 두었다.
 # ID가 공식 파일에 있는지는 nist_catalog.py가 확인한다(2026-11-26: CSF 2.0과 800-53 Rev. 5.2.0 OSCAL 목록에서 모두 존재 확인).
-# **존재 확인은 적합성 확인이 아니다.** mapping_status는 후보(candidate) → 확정(confirmed) 또는 기각(rejected)이며, 확정은 사람이 검토해야 한다.
+# **존재 확인은 적합성 확인이 아니다.** mapping_status는 후보(candidate) → 확정(confirmed) 또는 기각(rejected)이며, 확정은 사람이 검토해야 한다(검토자와 검토일 필수).
 ROOT_CAUSE_STANDARD_MAP = {
-    "UNPATCHED_KNOWN_VULNERABILITY": {"nist_csf": ["ID.RA-01", "ID.RA-05", "PR.PS-02"], "nist_800_53": ["SI-2", "RA-5", "CM-3"]},
-    "CREDENTIAL_OR_KEY_MISMANAGEMENT": {"nist_csf": ["PR.AA-01", "PR.AA-03", "PR.AA-05"], "nist_800_53": ["IA-5", "AC-2", "AC-6"]},
-    "INSUFFICIENT_ENCRYPTION": {"nist_csf": ["PR.DS-01", "PR.DS-02"], "nist_800_53": ["SC-8", "SC-13", "SC-28"]},
-    "WEAK_ACCESS_CONTROL": {"nist_csf": ["PR.AA-03", "PR.AA-05", "PR.IR-01"], "nist_800_53": ["AC-2", "AC-3", "AC-6"]},
-    "INSUFFICIENT_MONITORING_DETECTION": {"nist_csf": ["DE.CM", "DE.AE"], "nist_800_53": [],
-                                          "note": "상위 시드라 세부 범주를 두지 않고 카테고리만 둔다. 세부는 하위 시드가 가진다"},
-    "INSUFFICIENT_LOGGING_AUDIT": {"nist_csf": ["PR.PS-04"], "nist_800_53": ["AU-2", "AU-3", "AU-12"]},
-    "INSUFFICIENT_SECURITY_MONITORING_OPERATIONS": {"nist_csf": ["DE.CM-01", "DE.CM-03", "DE.CM-09", "DE.AE-02", "DE.AE-03"],
-                                                    "nist_800_53": ["SI-4", "CA-7", "AU-6"]},
-    "INADEQUATE_INCIDENT_RESPONSE": {"nist_csf": ["RS.MA", "RS.MI-01", "RS.MI-02"], "nist_800_53": ["IR-4", "IR-5", "IR-6", "IR-8"],
-                                     "note": "RS.MA는 카테고리 단위. 세부 범주(RS.MA-01~05)는 좁힌 뒤에 둔다"},
-    "THIRD_PARTY_OR_SUPPLY_CHAIN_RISK": {"nist_csf": ["GV.SC"], "nist_800_53": ["SR-3", "SR-5", "SR-6", "SA-9"],
-                                         "note": "GV.SC는 카테고리 단위. 세부 범주(GV.SC-01~10)는 좁힌 뒤에 둔다"},
-    "MISCONFIGURATION": {"nist_csf": ["PR.PS-01", "PR.IR-01"], "nist_800_53": ["CM-2", "CM-3", "CM-6", "CM-7"]},
+    "UNPATCHED_KNOWN_VULNERABILITY": {"nist_csf": ["PR.PS-02"], "nist_800_53": ["SI-2", "CM-3"],
+                                      "nist_partial": ["ID.RA-01", "ID.RA-05", "RA-5"],
+                                      "note": "부분 적합 셋(ID.RA-01, ID.RA-05, RA-5)은 취약점 식별·우선순위·스캔으로 패치 내용을 구성하는 단계에 불과하다는 검토 의견"},
+    "CREDENTIAL_OR_KEY_MISMANAGEMENT": {"nist_csf": ["PR.AA-01"], "nist_800_53": ["IA-5"], "nist_partial": [],
+                                        "note": "PR.AA-03, PR.AA-05, AC-2, AC-6은 부적합: WEAK_ACCESS_CONTROL에 더 가깝다는 검토 의견(그쪽이 가짐)"},
+    "INSUFFICIENT_ENCRYPTION": {"nist_csf": ["PR.DS-01", "PR.DS-02"], "nist_800_53": ["SC-8", "SC-13", "SC-28"], "nist_partial": []},
+    "WEAK_ACCESS_CONTROL": {"nist_csf": ["PR.AA-03", "PR.AA-05", "PR.IR-01"], "nist_800_53": ["AC-2", "AC-3", "AC-6"], "nist_partial": []},
+    "INSUFFICIENT_MONITORING_DETECTION": {"nist_csf": ["DE.CM", "DE.AE"], "nist_800_53": [], "nist_partial": [],
+                                          "note": "상위 시드라 카테고리만 둔다. 결정(2026-11-27): DE.CM-01, DE.CM-03, DE.CM-09는 상위 시드의 후보로 옮기지 않는다. OPERATIONS에서 부적합으로 판정되었고(메모: 'Monitoring에 더 가까움') 상위 시드는 이미 DE.CM 카테고리 전체를 가지므로 세 항목을 포함한다. 세부 범주를 두면 이유를 말하지 않은 탐지 실패에 세부 원인을 암시하게 된다"},
+    "INSUFFICIENT_LOGGING_AUDIT": {"nist_csf": ["PR.PS-04"], "nist_800_53": ["AU-2", "AU-3", "AU-12"], "nist_partial": []},
+    "INSUFFICIENT_SECURITY_MONITORING_OPERATIONS": {"nist_csf": ["DE.AE-02", "DE.AE-03"], "nist_800_53": ["SI-4", "CA-7", "AU-6"], "nist_partial": [],
+                                                    "note": "DE.CM-01, DE.CM-03, DE.CM-09는 부적합(Monitoring에 더 가까움). 상위 MONITORING 시드의 DE.CM 카테고리가 이미 포함하므로 옮기지 않기로 결정함(위 MONITORING 메모 참고)"},
+    "INADEQUATE_INCIDENT_RESPONSE": {"nist_csf": ["RS.MA", "RS.MI-01", "RS.MI-02"], "nist_800_53": ["IR-4", "IR-6", "IR-8"], "nist_partial": ["IR-5"],
+                                     "note": "RS.MA는 카테고리 단위(세부 범주는 좁힌 뒤에). IR-5는 부분 적합: 대응 관련 내용이 명시적으로 표현되어 있지 않다는 검토 의견"},
+    "THIRD_PARTY_OR_SUPPLY_CHAIN_RISK": {"nist_csf": ["GV.SC"], "nist_800_53": ["SR-3", "SR-5", "SR-6", "SA-9"], "nist_partial": [],
+                                         "note": "GV.SC는 카테고리 단위(세부 범주는 좁힌 뒤에)"},
+    "MISCONFIGURATION": {"nist_csf": ["PR.PS-01"], "nist_800_53": ["CM-2", "CM-6", "CM-7"], "nist_partial": [],
+                         "note": "PR.IR-01은 부적합(WEAK_ACCESS_CONTROL에 더 가까움), CM-3은 부적합(UNPATCHED_KNOWN_VULNERABILITY에 더 가까움)"},
 }
+# 2026-11-27 Taegyu가 후보 55개를 검토해 확정했다(`data/nist_candidate_review.csv`: 적합 42, 부분 적합 4, 부적합 9).
+# 적합은 nist_csf, nist_800_53에, 부분 적합은 nist_partial에 두고 부적합은 뺐다. 대응표와 검토표가 어긋나지 않는지는 nist_catalog.py가 검사한다.
 for _v in ROOT_CAUSE_STANDARD_MAP.values():
-    _v.setdefault("mapping_status", "candidate")
-    _v.setdefault("reviewed_by", None)
-    _v.setdefault("reviewed_at", None)
+    _v.setdefault("mapping_status", "confirmed")
+    _v.setdefault("reviewed_by", "Taegyu")
+    _v.setdefault("reviewed_at", "2026-11-27")
 MAPPING_STATUSES_STANDARD = ["candidate", "confirmed", "rejected"]
 
 
@@ -334,7 +340,8 @@ def root_cause_standard_view(seed: str) -> dict:
     c = ROOT_CAUSE_CWE_MAP[seed]
     a = ROOT_CAUSE_ATTRIBUTES[seed]
     return {"seed": seed, "cwe": c["cwe_verified"] + c["cwe_unverified"], "cwe_fit": c["fit"],
-            "nist_csf": list(m["nist_csf"]), "nist_800_53": list(m["nist_800_53"]), "mapping_status": m["mapping_status"],
+            "nist_csf": list(m["nist_csf"]), "nist_800_53": list(m["nist_800_53"]), "nist_partial": list(m["nist_partial"]),
+            "mapping_status": m["mapping_status"], "reviewed_by": m["reviewed_by"], "reviewed_at": m["reviewed_at"],
             "failure_nature": a["failure_nature"], "control_domain": a["control_domain"], "display_group": a["display_group"]}
 
 
@@ -941,6 +948,11 @@ def validate() -> list[str]:
         for i in m["nist_800_53"]:
             if not r5_re.match(i):
                 problems.append(f"ROOT_CAUSE_STANDARD_MAP[{k}]: 800-53 통제 ID 형식이 올바르지 않음 {i} (패밀리가 아니라 개별 통제 ID)")
+        for i in m["nist_partial"]:
+            if not (csf_re.match(i) or r5_re.match(i)):
+                problems.append(f"ROOT_CAUSE_STANDARD_MAP[{k}]: 부분 적합 ID 형식이 올바르지 않음 {i}")
+        if set(m["nist_partial"]) & (set(m["nist_csf"]) | set(m["nist_800_53"])):
+            problems.append(f"ROOT_CAUSE_STANDARD_MAP[{k}]: 적합과 부분 적합에 같은 ID가 있음")
         if m["mapping_status"] not in MAPPING_STATUSES_STANDARD:
             problems.append(f"ROOT_CAUSE_STANDARD_MAP[{k}]: mapping_status 값이 올바르지 않음")
         if (m["mapping_status"] == "confirmed") != bool(m["reviewed_by"]):

@@ -44,7 +44,7 @@ def _status(node):
     return None
 
 
-def _statement(node, limit=600):
+def _statement(node, limit=1500):
     """항목의 본문(statement 부분)만 모은다. 지침(guidance)과 구현 예시는 넣지 않는다. 항목이 여럿이면 이어 붙인다."""
     out = []
 
@@ -57,7 +57,9 @@ def _statement(node, limit=600):
     for p in node.get("parts", []):
         if p.get("name") == "statement":
             walk(p)
-    return " ".join(out)[:limit]
+    text = " ".join(out)
+    text = re.sub(r"\{\{ insert: param, [^}]*\}\}", "[조직이 정함]", text)   # OSCAL의 조직 정의 값 자리표시
+    return text[:limit]
 
 
 def _prose(node):
@@ -148,6 +150,12 @@ def check_standard_map(catalog: dict, standard_map: dict | None = None) -> list[
     problems = []
     csf, r5 = catalog["csf_2_0"]["ids"], catalog["sp800_53_rev5"]["ids"]
     for seed, m in standard_map.items():
+        for i in m.get("nist_partial", []):
+            pool = csf if "." in i else r5          # CSF 번호는 점이 있고 800-53은 없다
+            if i not in pool:
+                problems.append(f"{seed}: 부분 적합 번호 {i}가 공식 목록에 없음")
+            elif pool[i].get("status") == "withdrawn":
+                problems.append(f"{seed}: 부분 적합 번호 {i}가 철회된 항목")
         for i in m["nist_csf"]:
             if i not in csf:
                 problems.append(f"{seed}: CSF 2.0에 없는 번호 {i}")
@@ -197,7 +205,47 @@ def review_rows(catalog: dict, standard_map: dict | None = None, meanings: dict 
     return rows
 
 
-def write_review(rows, path=REVIEW_PATH):
+def has_judgments(path=REVIEW_PATH) -> bool:
+    import csv
+    p = Path(path)
+    if not p.exists():
+        return False
+    with open(p, encoding="utf-8-sig", newline="") as f:
+        return any((r.get("judge_fit") or "").strip() for r in csv.DictReader(f))
+
+
+def check_review_consistency(rows, standard_map=None) -> list[str]:
+    """사람이 판정한 검토표와 `ROOT_CAUSE_STANDARD_MAP`이 어긋나지 않는지 검사한다.
+    적합은 대응표의 nist_csf, nist_800_53에, 부분 적합은 nist_partial에 있어야 하고 부적합은 그 시드에 없어야 한다."""
+    standard_map = consts.ROOT_CAUSE_STANDARD_MAP if standard_map is None else standard_map
+    problems = []
+    for r in rows:
+        fit = (r.get("judge_fit") or "").strip()
+        m = standard_map.get(r["root_cause"])
+        if m is None or not fit:
+            continue
+        i = r["id"]
+        main = set(m["nist_csf"]) | set(m["nist_800_53"])
+        part = set(m.get("nist_partial", []))
+        where = f"행 {r['행']} {r['root_cause']} {i}"
+        if fit == "적합" and i not in main:
+            problems.append(f"{where}: 적합으로 판정되었는데 대응표의 적합 목록에 없음")
+        elif fit == "부분 적합" and i not in part:
+            problems.append(f"{where}: 부분 적합으로 판정되었는데 nist_partial에 없음")
+        elif fit == "부적합" and (i in main or i in part):
+            problems.append(f"{where}: 부적합으로 판정되었는데 대응표에 남아 있음")
+    judged = {(r["root_cause"], r["id"]) for r in rows if (r.get("judge_fit") or "").strip() in ("적합", "부분 적합")}
+    for seed, m in standard_map.items():
+        for i in list(m["nist_csf"]) + list(m["nist_800_53"]) + list(m.get("nist_partial", [])):
+            if rows and (seed, i) not in judged:
+                problems.append(f"{seed} {i}: 대응표에 있으나 검토표에서 적합 또는 부분 적합으로 판정되지 않음")
+    return problems
+
+
+def write_review(rows, path=REVIEW_PATH, force=False):
+    """검토표를 쓴다. 사람이 판정한 내용이 이미 있으면 덮어쓰지 않는다(force=True일 때만)."""
+    if not force and has_judgments(path):
+        raise FileExistsError(f"{path}에 사람이 판정한 내용이 있어 덮어쓰지 않았음(--force로만 덮어씀)")
     import csv
     with open(path, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, REVIEW_COLUMNS, lineterminator="\r\n")
@@ -208,14 +256,15 @@ def write_review(rows, path=REVIEW_PATH):
 def tally_review(rows) -> dict:
     """판정 집계. 비어 있거나 인식하지 못한 값은 따로 알린다."""
     from collections import Counter
-    empty = [r for r in rows if not r["judge_fit"].strip()]
-    unknown = [r for r in rows if r["judge_fit"].strip() and r["judge_fit"] not in JUDGE_VALUES]
-    judged = [r for r in rows if r["judge_fit"] in JUDGE_VALUES]
+    fit = lambda r: (r.get("judge_fit") or "").strip()
+    empty = [r for r in rows if not fit(r)]
+    unknown = [r for r in rows if fit(r) and fit(r) not in JUDGE_VALUES]
+    judged = [r for r in rows if fit(r) in JUDGE_VALUES]
     by_seed = {}
     for r in judged:
-        by_seed.setdefault(r["root_cause"], Counter())[r["judge_fit"]] += 1
-    return {"total": len(judged), "empty": empty, "unknown": unknown, "overall": Counter(r["judge_fit"] for r in judged),
-            "by_seed": by_seed, "rejected": [r for r in judged if r["judge_fit"] == "부적합"]}
+        by_seed.setdefault(r["root_cause"], Counter())[fit(r)] += 1
+    return {"total": len(judged), "empty": empty, "unknown": unknown, "overall": Counter(fit(r) for r in judged),
+            "by_seed": by_seed, "rejected": [r for r in judged if fit(r) == "부적합"]}
 
 
 def self_test():
@@ -227,6 +276,8 @@ def self_test():
                                                                "controls": [{"id": "ac-2.1", "title": "Automated"}]}]}]}}
     c, r = parse_csf(csf), parse_80053(r5)
     assert c["ids"]["GV"]["type"] == "function" and c["ids"]["GV.SC"]["type"] == "category"
+    assert "{{" not in _statement({"parts": [{"name": "statement", "prose": "Protect the {{ insert: param, x }} of data"}]}) \
+        and "[조직이 정함]" in _statement({"parts": [{"name": "statement", "prose": "Protect the {{ insert: param, x }} of data"}]})
     assert c["ids"]["GV.SC-01"] == {"type": "subcategory", "title": "A program is established", "status": None,
                                     "statement": "A program is established"}
     assert r["ids"]["AC"]["type"] == "family" and r["ids"]["AC-2"]["type"] == "control" and r["ids"]["AC-2(1)"]["type"] == "enhancement"
@@ -243,6 +294,29 @@ def self_test():
     rows[0]["judge_fit"], rows[1]["judge_fit"], rows[2]["judge_fit"] = "적합", "부적합", "맞음"
     t = tally_review(rows)
     assert t["total"] == 2 and len(t["unknown"]) == 1 and [r["id"] for r in t["rejected"]] == ["AC-2"]
+    # 판정한 검토표와 대응표의 일치 검사, 덮어쓰기 방지
+    sm2 = {"S1": {"nist_csf": ["GV.SC-01"], "nist_800_53": [], "nist_partial": ["AC-2"]}}
+    ok_rows = [{"행": 2, "root_cause": "S1", "id": "GV.SC-01", "judge_fit": "적합"},
+               {"행": 3, "root_cause": "S1", "id": "AC-2", "judge_fit": "부분 적합"},
+               {"행": 4, "root_cause": "S1", "id": "AC-9", "judge_fit": "부적합"}]
+    assert check_review_consistency(ok_rows, sm2) == []
+    assert check_review_consistency([{**ok_rows[2], "id": "AC-2", "judge_fit": "부적합"}], sm2)           # 부적합인데 남아 있음
+    assert check_review_consistency([{**ok_rows[0], "judge_fit": "부분 적합"}], sm2)                       # 판정과 위치가 다름
+    assert any("검토표에서" in x for x in check_review_consistency(ok_rows[:1], sm2))                      # 대응표에만 있는 번호
+    import tempfile as _tf
+    with _tf.TemporaryDirectory() as d:
+        pth = Path(d) / "r.csv"
+        write_review(review_rows(cat, {"A": {"nist_csf": ["GV.SC-01"], "nist_800_53": []}}, {"A": "x"}, {"A": {}}), pth)   # 빈 검토표는 쓸 수 있다
+        import csv as _csv
+        rows2 = list(_csv.DictReader(open(pth, encoding="utf-8-sig")))
+        rows2[0]["judge_fit"] = "적합"
+        write_review(rows2, pth, force=True)
+        raised = False
+        try:
+            write_review(rows2, pth)          # 판정이 들어 있으면 덮어쓰지 않는다
+        except FileExistsError:
+            raised = True
+        assert raised and has_judgments(pth)
     # 철회된 항목은 번호가 파일에 있어도 통과시키지 않는다
     wd = {"catalog": {"metadata": {"title": "T"}, "groups": [{"id": "pr", "title": "PROTECT", "groups": [
         {"id": "pr.ac", "title": "Old", "props": [{"name": "status", "value": "withdrawn"}]}]}]}}
@@ -282,13 +356,22 @@ def main():
     else:
         res = json.loads(OUT.read_text(encoding="utf-8"))
     if "--review-sheet" in sys.argv:
-        write_review(review_rows(res))
-        print(f"검토표를 만들었습니다: {REVIEW_PATH} ({len(review_rows(res))}행)")
+        try:
+            write_review(review_rows(res), force="--force" in sys.argv)
+            print(f"검토표를 만들었습니다: {REVIEW_PATH} ({len(review_rows(res))}행)")
+        except FileExistsError as e:
+            print("검토표를 만들지 않았습니다:", e)
     for k, v in res.items():
         print(f"{k}: {v['title']} (버전 {v['version']}, last-modified {v['last_modified']}), 번호 {len(v['ids'])}개, sha256 {v['source']['sha256'][:12]}…")
     problems = check_standard_map(res)
-    n = sum(len(m["nist_csf"]) + len(m["nist_800_53"]) for m in consts.ROOT_CAUSE_STANDARD_MAP.values())
-    print(f"후보 번호 {n}개 검사:", "모두 공식 목록에 있음(적합성은 확인하지 않음)" if not problems else "")
+    n = sum(len(m["nist_csf"]) + len(m["nist_800_53"]) + len(m.get("nist_partial", [])) for m in consts.ROOT_CAUSE_STANDARD_MAP.values())
+    print(f"대응표 번호 {n}개 검사:", "모두 공식 목록에 있음" if not problems else "")
+    if REVIEW_PATH.exists() and has_judgments():
+        import csv
+        with open(REVIEW_PATH, encoding="utf-8-sig", newline="") as f:
+            rp = check_review_consistency(list(csv.DictReader(f)))
+        print("검토표와 대응표 일치:", "일치함" if not rp else "")
+        problems += rp
     for p in problems:
         print(" -", p)
     if problems:
