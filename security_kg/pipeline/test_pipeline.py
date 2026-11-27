@@ -85,6 +85,20 @@ def main():
         with zipfile.ZipFile(z, "w") as zf:
             zf.writestr("Contents/section0.xml", "<hs:sec><hp:p><hp:run><hp:t>" + "한글 문단 " * 60 + "</hp:t></hp:run></hp:p></hs:sec>")
         assert "한글 문단" in extract_text(z)
+    # 5) 임베딩 시험의 순위와 요약 계산(가짜 모델: 글자 수를 벡터로)
+    import numpy as np
+    import embedding_eval as E
+
+    class Toy:
+        def encode(self, texts, **kw):
+            v = np.array([[len(t) % 5 == k for k in range(5)] for t in texts], dtype=float) + 0.01
+            return v / np.linalg.norm(v, axis=1, keepdims=True)
+    idx = {"Technique": [("abcde", "T1"), ("abcdefghij", "T1"), ("x", "T2")], "Tactic": [("ab", "persistence")]}
+    rows = E.evaluate(Toy(), [{"kind": "Technique", "query": "abcdefghij", "expected": "T1", "label_source": ""},
+                              {"kind": "NEGATIVE", "query": "zz", "expected": "", "label_source": ""}], idx)
+    assert rows[0]["hit_top1"] and rows[0]["rank_of_expected"] == 1 and rows[1]["hit_top1"] == ""
+    assert E.summarize(rows)["by_kind"]["Technique"] == {"n": 1, "top1": 1, "top3": 1}
+    assert len(E.build_index()["ThreatActor"]) > 178, "별칭이 색인에 들어가지 않음"
     print("파이프라인 자체 시험 통과")
 
 

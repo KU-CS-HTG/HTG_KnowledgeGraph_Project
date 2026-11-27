@@ -1,0 +1,41 @@
+﻿kind,query,expected,label_source,top1,top1_score,top3,rank_of_expected,hit_top1,hit_top3
+ThreatActor,김수키,G0094,별칭 검토표(Taegyu 판정 '같음'),G0094,0.545,G0094 0.545; G1001 0.454; G0039 0.446,1,True,True
+ThreatActor,라자루스,G0032,별칭 검토표(Taegyu 판정 '같음'),G0032,0.571,G0032 0.571; G1004 0.510; G0050 0.494,1,True,True
+ThreatActor,Lazarus,G0032,별칭 검토표(Taegyu 판정 '같음'),G0032,0.781,G0032 0.781; G1004 0.580; G1030 0.529,1,True,True
+ThreatActor,안다리엘,G0138,별칭 검토표(Taegyu 판정 '같음'),G0138,0.737,G0138 0.737; G0099 0.444; G0070 0.437,1,True,True
+Technique,웹쉘,T1505.003,Claude 작성(사람 확인 전),T1505.003,0.848,T1505.003 0.848; T1059.003 0.638; T1102 0.636,1,True,True
+Technique,웹 셸을 설치해 접근을 유지,T1505.003,Claude 작성(사람 확인 전),T1505.003,0.664,T1505.003 0.664; T1555.003 0.567; T1686.003 0.557,1,True,True
+Technique,자격 증명 위조,T1606|T1606.001|T1606.002,Claude 작성(사람 확인 전),T1649,0.697,T1649 0.697; T1036.001 0.647; T1564.010 0.594,0,False,False
+Technique,도메인 탈취,T1584.001,Claude 작성(사람 확인 전),T1531,0.699,T1531 0.699; T1087.002 0.657; T1136.002 0.657,0,False,False
+Technique,피싱 이메일,T1566,Claude 작성(사람 확인 전),T1667,0.769,T1667 0.769; T1684.002 0.749; T1566 0.702,3,False,True
+Technique,공급망 침해,T1195,Claude 작성(사람 확인 전),T1496.002,0.632,T1496.002 0.632; T1499.004 0.627; T1210 0.622,0,False,False
+Technique,무차별 대입 공격,T1110,Claude 작성(사람 확인 전),T1689,0.66,T1689 0.660; T1187 0.617; T1212 0.607,0,False,False
+Technique,데이터를 암호화하는 랜섬웨어,T1486,Claude 작성(사람 확인 전),T1001,0.692,T1001 0.692; T1027 0.668; T1496.001 0.667,0,False,False
+Technique,유효한 계정 사용,T1078,Claude 작성(사람 확인 전),T1078,0.724,T1078 0.724; T1585 0.657; T1212 0.649,1,True,True
+Technique,원격 접속 도구,T1219,Claude 작성(사람 확인 전),T1219,0.797,T1219 0.797; T1219.003 0.695; T1219.002 0.688,1,True,True
+Technique,자격 증명 덤핑,T1003,Claude 작성(사람 확인 전),T1110.004,0.641,T1110.004 0.641; T1003 0.580; T1588 0.560,2,False,True
+Technique,서명키를 훔쳐 인증 토큰을 위조,T1606|T1528|T1552,Claude 작성(사람 확인 전),T1649,0.758,T1649 0.758; T1134.001 0.725; T1528 0.690,3,False,True
+MalwareFamily,BPFDoor,S1161,Claude 작성(사람 확인 전),S1161,1.0,S1161 1.000; S0258 0.666; S0061 0.666,1,True,True
+MalwareFamily,비피에프도어,S1161,Claude 작성(사람 확인 전),S1161,0.688,S1161 0.688; S0689 0.572; S1115 0.566,1,True,True
+MalwareFamily,미미카츠,S0002,Claude 작성(사람 확인 전),S0002,0.724,S0002 0.724; S0179 0.634; S0051 0.631,1,True,True
+MalwareFamily,Cobalt Strike,S0154,Claude 작성(사람 확인 전),S0154,1.0,S0154 1.000; S0569 0.557; S0380 0.524,1,True,True
+Weakness,비밀번호 평문 저장,CWE-256,Claude 작성(사람 확인 전),CWE-256,0.675,CWE-256 0.675; CWE-260 0.647; CWE-257 0.641,1,True,True
+Weakness,민감 정보 평문 저장,CWE-312,Claude 작성(사람 확인 전),CWE-312,0.747,CWE-312 0.747; CWE-316 0.726; CWE-317 0.717,1,True,True
+Weakness,비밀번호 사용 기간 관리 없음,CWE-262,Claude 작성(사람 확인 전),CWE-262,0.695,CWE-262 0.695; CWE-258 0.692; CWE-671 0.675,1,True,True
+Weakness,SQL 삽입,CWE-89,Claude 작성(사람 확인 전),CWE-201,0.645,CWE-201 0.645; CWE-91 0.633; CWE-89 0.619,3,False,True
+Weakness,하드코딩된 비밀번호,CWE-798,Claude 작성(사람 확인 전),CWE-259,0.843,CWE-259 0.843; CWE-798 0.751; CWE-321 0.738,2,False,True
+Weakness,경쟁 상태,CWE-362,Claude 작성(사람 확인 전),CWE-364,0.642,CWE-364 0.642; CWE-368 0.621; CWE-366 0.607,0,False,False
+Weakness,인증 누락,CWE-306,Claude 작성(사람 확인 전),CWE-862,0.761,CWE-862 0.761; CWE-599 0.736; CWE-306 0.727,3,False,True
+Tactic,자격 증명 접근,credential-access,Claude 작성(사람 확인 전),credential-access,0.637,credential-access 0.637; initial-access 0.618; privilege-escalation 0.538,1,True,True
+Tactic,지속성 확보,persistence,Claude 작성(사람 확인 전),persistence,0.659,persistence 0.659; resource-development 0.524; initial-access 0.475,1,True,True
+Tactic,초기 침투,initial-access,Claude 작성(사람 확인 전),initial-access,0.628,initial-access 0.628; exfiltration 0.529; impact 0.500,1,True,True
+RootCause,패치를 적용하지 않음,UNPATCHED_KNOWN_VULNERABILITY,Claude 작성(사람 확인 전),UNPATCHED_KNOWN_VULNERABILITY,0.829,UNPATCHED_KNOWN_VULNERABILITY 0.829; INADEQUATE_INCIDENT_RESPONSE 0.596; INSUFFICIENT_SECURITY_MONITORING_OPERATIONS 0.567,1,True,True
+RootCause,서명키를 폐기하지 않음,CREDENTIAL_OR_KEY_MISMANAGEMENT,Claude 작성(사람 확인 전),UNPATCHED_KNOWN_VULNERABILITY,0.531,UNPATCHED_KNOWN_VULNERABILITY 0.531; CREDENTIAL_OR_KEY_MISMANAGEMENT 0.499; WEAK_ACCESS_CONTROL 0.499,2,False,True
+RootCause,접근권한을 과도하게 부여,WEAK_ACCESS_CONTROL,Claude 작성(사람 확인 전),WEAK_ACCESS_CONTROL,0.671,WEAK_ACCESS_CONTROL 0.671; CREDENTIAL_OR_KEY_MISMANAGEMENT 0.603; INSUFFICIENT_ENCRYPTION 0.602,1,True,True
+RootCause,침입을 오랫동안 탐지하지 못함,INSUFFICIENT_MONITORING_DETECTION|INSUFFICIENT_LOGGING_AUDIT|INSUFFICIENT_SECURITY_MONITORING_OPERATIONS,Claude 작성(사람 확인 전),WEAK_ACCESS_CONTROL,0.661,WEAK_ACCESS_CONTROL 0.661; INSUFFICIENT_MONITORING_DETECTION 0.623; INSUFFICIENT_SECURITY_MONITORING_OPERATIONS 0.619,2,False,True
+RootCause,암호화를 하지 않고 저장,INSUFFICIENT_ENCRYPTION,Claude 작성(사람 확인 전),INSUFFICIENT_ENCRYPTION,0.651,INSUFFICIENT_ENCRYPTION 0.651; UNPATCHED_KNOWN_VULNERABILITY 0.567; INSUFFICIENT_LOGGING_AUDIT 0.540,1,True,True
+NEGATIVE,개인정보보호위원회,,Claude 작성(사람 확인 전),T1218.002,0.652,T1218.002 0.652; T1679 0.613; T1590.005 0.600,,,
+NEGATIVE,쿠팡,,Claude 작성(사람 확인 전),S0492,0.568,S0492 0.568; T1218.002 0.564; S0369 0.564,,,
+NEGATIVE,보도자료 배포,,Claude 작성(사람 확인 전),T1092,0.609,T1092 0.609; T1071.005 0.609; CWE-548 0.561,,,
+NEGATIVE,고객 불편에 대해 사과드립니다,,Claude 작성(사람 확인 전),CWE-573,0.647,CWE-573 0.647; THIRD_PARTY_OR_SUPPLY_CHAIN_RISK 0.566; MISCONFIGURATION 0.566,,,
+NEGATIVE,서울특별시,,Claude 작성(사람 확인 전),S1015,0.558,S1015 0.558; G1041 0.517; S0144 0.515,,,
