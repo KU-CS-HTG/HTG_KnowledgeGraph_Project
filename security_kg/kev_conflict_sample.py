@@ -11,7 +11,11 @@ KEV 1,795건 중 232건은 KEV, CNA, ADP가 붙인 CWE가 서로 다르다(`data
   (대표값이 없는 경우 no_display)
 
 사용: python kev_conflict_sample.py            # 표본 30건과 전체 분류를 backbone/export/에 쓴다
+      python kev_conflict_sample.py --tally data/kev_conflict_judgement.csv   # 사람이 채운 판정을 집계한다
       python kev_conflict_sample.py --self-test
+
+주의: backbone/export/는 .gitignore에 들어 있어(스크립트가 만드는 결과물 폴더) 이 폴더의 파일은 저장소에 올라가지 않는다.
+사람이 내린 판정은 `data/kev_conflict_judgement.csv`에 둔다.
 """
 import csv
 import json
@@ -139,6 +143,56 @@ def write(rows, path, numbered=True):
             w.writerow({**r, "no": i if numbered else "", "judge_correct": "", "judge_note": ""})
 
 
+VALID_JUDGE = {"kev", "cna", "adp", "둘 다 맞음", "모두 틀림", "판단 불가"}
+
+
+def _provider(r):
+    import re
+    m = re.search(r"\[제공자: ([^\]]*)\]", r["cwe_adp"])
+    return m.group(1) if m else ""
+
+
+def group(r):
+    """A: ADP 값이 Red Hat(제3자), B: CNA가 대표값, C: CISA-ADP가 대표값."""
+    if _provider(r) == "redhat-SADP":
+        return "A Red Hat이 다름"
+    return "B CNA가 대표, KEV 다름" if r["display_source"] == "cna" else "C CISA-ADP가 대표, KEV 다름"
+
+
+def agrees(r):
+    """판정이 현재 규칙의 대표값과 맞는가(`둘 다 맞음`은 맞는 것으로 센다)."""
+    return r["judge_correct"] in (r["display_source"], "둘 다 맞음")
+
+
+def tally(rows):
+    """판정 집계. 반환: {"empty", "unknown", "agree", "total", "by": {분류: {키: (건수, 일치, Counter)}}, "disagree"}"""
+    empty = [r for r in rows if not r["judge_correct"].strip()]
+    unknown = [r for r in rows if r["judge_correct"].strip() and r["judge_correct"] not in VALID_JUDGE]
+    judged = [r for r in rows if r["judge_correct"] in VALID_JUDGE]
+    by = {}
+    for name, key in (("유형", group), ("관계", lambda r: r["relation"]), ("대표값 출처", lambda r: r["display_source"])):
+        d = {}
+        for r in judged:
+            d.setdefault(key(r), []).append(r)
+        by[name] = {k: (len(v), sum(agrees(r) for r in v), Counter(r["judge_correct"] for r in v)) for k, v in sorted(d.items())}
+    return {"empty": empty, "unknown": unknown, "total": len(judged), "agree": sum(agrees(r) for r in judged), "by": by,
+            "disagree": [r for r in judged if not agrees(r)]}
+
+
+def print_tally(rows):
+    t = tally(rows)
+    print(f"판정 {t['total']}건 중 규칙과 일치 {t['agree']}건 ({t['agree'] / max(t['total'], 1):.0%})")
+    if t["empty"] or t["unknown"]:
+        print(f"  비어 있음 {len(t['empty'])}건, 인식하지 못한 값 {len(t['unknown'])}건: {sorted({r['judge_correct'] for r in t['unknown']})}")
+    for name, d in t["by"].items():
+        print(f"[{name}]")
+        for k, (n, a, c) in d.items():
+            print(f"  {k}: {n}건, 규칙과 일치 {a}, {dict(c)}")
+    print("규칙과 다른 판정(엑셀 행 = no + 1):")
+    for r in t["disagree"]:
+        print(f"  엑셀 {int(r['no']) + 1}행 {r['cve']}: 대표값 출처 {r['display_source']} → 판정 {r['judge_correct']}")
+
+
 def self_test():
     weak = {"1": {"parents": ["2"]}, "2": {"parents": ["3"]}, "3": {"parents": []}, "9": {"parents": []}, "10": {"parents": []}}
     assert ancestors("1", weak) == {"2", "3"}
@@ -165,6 +219,10 @@ def self_test():
 def main():
     if "--self-test" in sys.argv:
         return self_test()
+    if "--tally" in sys.argv:
+        path = Path(sys.argv[sys.argv.index("--tally") + 1])
+        with open(path, encoding="utf-8-sig", newline="") as f:
+            return print_tally(list(csv.DictReader(f)))
     kev = json.load(open(KEV, encoding="utf-8"))["vulnerabilities"]
     cat = json.load(open(CWE, encoding="utf-8"))
     rows, chosen = build(kev, cat)

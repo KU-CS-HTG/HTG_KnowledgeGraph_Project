@@ -296,6 +296,18 @@ KEV의 `cwes`는 CISA가 붙인 값이고, 같은 CVE의 CVE 레코드에는 발
 
 **충돌 검토용 표본 (`kev_conflict_sample.py`, 기본값-C1)**: 232건을 대표값과 다른 출처의 관계로 분류한다(`subset` 한쪽이 다른 쪽의 일부 68건, `hierarchy` 상하위 74건, `unrelated` 서로 무관 90건). 어느 쪽이 맞는지는 판단하지 않는다. 사람이 볼 표본 30건(무관 20, 상하위 5, 일부 5, seed 고정)을 `backbone/export/kev_conflict_sample.csv`에 만들고 `judge_correct`, `judge_note` 칸을 비워 둔다. 전체 분류는 `kev_conflicts_all.csv`. 대표값이 CNA인 경우는 36건, ADP인 경우는 196건이다.
 
+**판정 결과 (표본 30건, 사람이 판정)**: `python kev_conflict_sample.py --tally data/kev_conflict_judgement.csv`로 집계한다. 판정은 `data/kev_conflict_judgement.csv`에 있다(`backbone/export/`는 `.gitignore`에 있어 결과물만 두는 폴더라 사람의 판정은 `data/`에 둔다).
+
+| 유형 | 건수 | 규칙과 일치 | 판정 |
+| --- | --- | --- | --- |
+| A Red Hat(제3자 ADP)만 다름 | 5 | 4 | cna 3, 판단 불가 1, 둘 다 맞음 1 |
+| B CNA가 대표, KEV 다름 | 5 | 3 | cna 3, kev 2 |
+| C CISA-ADP가 대표, KEV 다름 | 20 | 16 | adp 16, kev 2, 판단 불가 2 |
+
+- 규칙과 다른 7건(엑셀 행 5, 8, 12, 14, 19, 24, 25)은 모두 KEV가 맞다고 본 4건이거나 판단 불가 3건이다. CNA와 ADP 사이의 순서(CNA가 ADP보다 앞)를 뒤집는 판정은 없었다.
+- KEV가 맞다고 본 4건 중 12행과 25행은 CISA-ADP가 대표인 경우, 5행과 14행은 CNA가 대표인 경우다. 25행은 KEV가 CWE를 두 개(259 + 78) 달고 있어 대표값이 정보를 덜 담은 사례다.
+- **표본이 30건이라 규칙을 바꿀 근거로는 부족하다.** 일치 77%이고 KEV를 앞세우면 나아지는 방향의 증거가 없어 현재 순서를 유지하는 쪽을 권한다. 결정은 Taegyu가 한다.
+
 
 ### 행위자 이름 연결 (`actors.py`, 설정은 `consts.py`의 `ACTOR_NAME_LINKING`, `ACTOR_ALIAS_SEED`, `ACTOR_NEW_NODE_POLICY`)
 
@@ -471,7 +483,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 
 | 번호 | 기본값 | 상태 |
 | --- | --- | --- |
-| 기본값-C1 | CWE 대표값 규칙 `CNA → ADP → KEV` (KEV 1,795건 중 232건이 출처끼리 다름) | **표본 준비 완료(2026-11-26), 판정 대기.** `backbone/export/kev_conflict_sample.csv` 30건의 `judge_correct` 칸을 사람이 채움 |
+| 기본값-C1 | CWE 대표값 규칙 `CNA → ADP → KEV` (KEV 1,795건 중 232건이 출처끼리 다름) | **판정 완료(2026-11-26, Taegyu).** 표본 30건 중 현재 규칙과 일치 23건(77%): ADP가 대표인 20건 중 16건, CNA가 대표인 10건 중 7건. 규칙과 다른 7건은 `kev` 4건과 `판단 불가` 3건이고 `adp`나 `cna`가 규칙을 뒤집은 경우는 없음. 판정은 `security_kg/data/kev_conflict_judgement.csv`. **규칙 변경은 아직 하지 않음**(표본이 작아 유지 권고) |
 | 기본값-C2 | 사건 해소 숫자: 90일, 365일, 이름 유사도 0.8, 별칭 7개 (설계 결정 D2의 출발점 값) | — |
 | 기본값-C3 | 수치 지표 5개 + `other`, 한국어 수 표기 규칙 | — |
 | 기본값-C4 | ATT&CK 20.1의 전술 이름 변경(`stealth`, `defense-impairment`)과 전술 수준 비교 | — |
