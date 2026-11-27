@@ -556,7 +556,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 | 번호 | 확인할 것 | 상태 |
 | --- | --- | --- |
 | 확인-A1 | 사건의 핵심 사실을 1차 자료로 확인 | **완료(2026-11-26)**: `fact_check/incident_facts.csv` 75행을 Taegyu가 확인. 네 사건(레벨인피니트, SK텔레콤, 금융권, 쿠팡). **Canvas는 공식 문서가 없어 제외**. 미확인 항목은 각 행의 note에 있음 |
-| 확인-A2 | 별칭 사전(한국어 표기 3개 그룹, `ORG_ALIAS_SEED` 7개 조직)이 같은 대상을 가리키는지 | **검토표 준비 완료(2026-11-27), 판정 대기.** `data/alias_review.csv`(16행: 행위자 4, 조직 12)에 별칭마다 ATT&CK 그룹 별칭에 있는지, 다른 그룹도 쓰는지, MISP가 어떤 그룹을 묶는지, 사실 확인표에서 쓰인 횟수를 붙였고 `judge_same` 칸(`같음`, `일부만 같음`, `다름`, `판단 불가`)이 비어 있다. **한국어 표기는 표준에 없어 한국 기사나 보안 업체 보고서로 사람이 확인해야 한다.** 집계와 사전 일치 검사는 `python alias_review.py` |
+| 확인-A2 | 별칭 사전(한국어 표기 3개 그룹, `ORG_ALIAS_SEED` 7개 조직)이 같은 대상을 가리키는지 | **완료(2026-11-27, Taegyu).** `data/alias_review.csv` 16행(행위자 4, 조직 12)을 모두 `같음`으로 판정해 별칭 사전은 바뀌지 않았다. 판정 근거 메모는 없다. 참고: `Lazarus`(단독)는 ATT&CK 별칭과 MISP 동의어에 없고, MISP는 Lazarus Group 클러스터에 Andariel 등을 묶지만 ATT&CK는 따로 두는데, 사람이 같음으로 판정했다(검토표의 `misp_merges_other_groups` 열 참고). 검토표와 사전의 일치는 `python alias_review.py`가 검사하고, 판정이 들어 있으면 `--sheet`는 덮어쓰지 않는다 |
 | 확인-A3 | VERIS 대응(`ACTOR_ORIGIN_TO_VERIS`)을 공식 스키마와 대조 | **완료(2026-11-27)**: 공식 스키마의 행위자 최상위(`external`, `internal`, `partner`, `unknown`)와 `actor.external.variety`의 `Former employee`를 확인. `python veris_check.py`로 다시 확인 가능 |
 | 확인-A4 | 내려받은 데이터가 최신인지(CWE 버전 표기, KEV와 MISP의 출처 기록) | **완료(2026-11-27).** CWE: 사용자가 받은 공식 `cwec_v5.0.xml`(버전 5.0, 2026-10-28)을 변환한 결과가 `data/cwe_catalog.json`과 **완전히 같음**. KEV: 사본(2026-11-24, 1,795건)이 공식 CSV와 같았고 2026-11-25에 추가된 10건을 반영해 **1,805건(catalogVersion 2026.11.25)으로 갱신**, 공식 CSV와 번호와 CWE가 모두 같음. MISP: sha256과 커밋(`779b780a13f6…`에서 내용 같음)을 기록. KEV는 `cisagov/kev-data` develop의 `51e0a777743f…`에서 내용이 같음. 출처는 각 데이터 파일의 `source` 키와 `consts.BACKBONE_SNAPSHOTS`에 있다 |
 | 확인-A5 | 이 환경에서 받지 못한 것(CVE 전체 목록, NVD) | — |
@@ -599,7 +599,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 | --- | --- | --- |
 | 운영-D1 | 대화 기록 문서(`docs/20261125까지_대화기록.md`)를 `main`에 둘지(로컬 경로와 붙여 넣은 로그가 들어 있고 이미 병합됨) | — |
 | 운영-D2 | 원본 파일(CWE XML 18MB, ATT&CK 55MB) 보관 위치와 파일명 규칙 | — |
-| 운영-D3 | 문서 수집 범위와 양(사건별 건수, 출처 유형) | — |
+| 운영-D3 | 문서 수집 범위와 양(사건별 건수, 출처 유형) | **결정(2026-11-27): 합계 37건.** 사건별 SK텔레콤 7, 쿠팡 7, 레벨인피니트 8, 금융권 15. 출처 유형별 정부 6, 피해 조직 10, 보안 업체 6, 언론 12, 연구자 2, 3차 1. **1단계**는 이미 읽은 22건(언론 기사 없음)으로 먼저 돌리고 **2단계**에서 15건(언론 12, 회사 공지·입장문 2, 보안 업체 1)을 추가한다. 목록은 `fact_check/pilot_docs.csv`(메타데이터만, 문서 원본은 저장소에 올리지 않고 공유 폴더에 둠), 점검은 `python pilot_docs.py`. IT위키(3차)는 평가에서 제외하고 예외 사례로만 쓴다. 문서 원본 보관 위치는 운영-D2에서 정한다 |
 | 운영-D4 | 정답 데이터(사건별 취약점, 약점, 기법)를 누가 만드는지 | **초안 완료(2026-11-26, Taegyu 확인 전).** `fact_check/answer_key_draft.csv` 28행(네 사건), 설명은 `fact_check/drafts/정답표_초안_설명.md`. 시드 이름에 묶지 않고 "문서가 말한 사실 단위"로 작성. 작성자는 Claude 초안 + Taegyu 확인 |
 | 운영-D5 | 원본 코드 교체(2번) 시작 시점. 확인-A1은 소규모 실행(3번) 전에 끝나야 함 | 확인-A1은 충족(Canvas 제외) |
 
@@ -624,6 +624,8 @@ python nist_catalog.py                     # 표준 매핑 번호가 공식 목�
 python veris_check.py --self-test          # VERIS 스키마 대조 시험
 python alias_review.py --self-test         # 별칭 검토표 시험
 python alias_review.py                     # 별칭 검토표의 판정을 집계하고 별칭 사전과 일치하는지 검사
+python pilot_docs.py                       # 파일럿 문서 목록 점검과 현황(운영-D3)
+python pilot_docs.py --self-test
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 python backbone.py            # 뼈대 변환 규칙 자체 시험(네트워크 없이)
 python actors.py              # 행위자 이름 연결 자체 시험
