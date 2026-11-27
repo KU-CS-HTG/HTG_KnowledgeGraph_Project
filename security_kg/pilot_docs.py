@@ -70,6 +70,10 @@ def check(rows, header=None, targets=True) -> list[str]:
                 problems.append(f"{where}: 날짜 형식 '{r['published_date']}'(YYYY-MM-DD)")
             if not r["published_date"] and not r["note"].strip():
                 problems.append(f"{where}: 발행일이 없으면 note에 이유를 적어야 함")
+        if r["file_name"].strip() and not re.fullmatch(re.escape(r["doc_id"]) + r"\.[A-Za-z0-9]+", r["file_name"].strip()):
+            problems.append(f"{where}: file_name은 '<doc_id><확장자>' 형식이어야 함(운영-D2), 예: {r['doc_id']}.pdf")
+        if r["status"] == "planned" and r["file_name"].strip():
+            problems.append(f"{where}: 아직 수집 전(planned)인데 file_name이 있음")
         if r["phase"] == "1" and r["status"] == "planned":
             problems.append(f"{where}: 1단계 문서가 아직 수집 전(planned)임")
     if targets:
@@ -106,6 +110,8 @@ def self_test():
     assert bad(title="") and bad(collected_by="") and bad(published_date="2026/01/01")
     assert bad(published_date="") and not bad(published_date="", note="발행일을 알 수 없음")
     assert bad(status="planned", phase="1")
+    assert not bad(file_name="X-01.pdf") and bad(file_name="쿠팡 입장문.pdf") and bad(file_name="X-02.pdf")      # 파일 이름 규칙(운영-D2)
+    assert bad(status="planned", phase="2", file_name="X-01.pdf")                                                # 수집 전인데 파일이 있음
     assert check([ok, ok], COLUMNS, targets=False)                           # doc_id 중복
     assert check([ok], COLUMNS, targets=True)                                # 목표와 다르면 알려 준다
     assert check([ok], ["x"], targets=False)
