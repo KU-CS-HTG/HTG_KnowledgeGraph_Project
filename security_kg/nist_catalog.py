@@ -57,7 +57,9 @@ def _statement(node, limit=600):
     for p in node.get("parts", []):
         if p.get("name") == "statement":
             walk(p)
-    return " ".join(out)[:limit]
+    text = " ".join(out)
+    text = re.sub(r"\{\{ insert: param, [^}]*\}\}", "[조직이 정함]", text)   # OSCAL의 조직 정의 값 자리표시
+    return text[:limit]
 
 
 def _prose(node):
@@ -227,6 +229,8 @@ def self_test():
                                                                "controls": [{"id": "ac-2.1", "title": "Automated"}]}]}]}}
     c, r = parse_csf(csf), parse_80053(r5)
     assert c["ids"]["GV"]["type"] == "function" and c["ids"]["GV.SC"]["type"] == "category"
+    assert "{{" not in _statement({"parts": [{"name": "statement", "prose": "Protect the {{ insert: param, x }} of data"}]}) \
+        and "[조직이 정함]" in _statement({"parts": [{"name": "statement", "prose": "Protect the {{ insert: param, x }} of data"}]})
     assert c["ids"]["GV.SC-01"] == {"type": "subcategory", "title": "A program is established", "status": None,
                                     "statement": "A program is established"}
     assert r["ids"]["AC"]["type"] == "family" and r["ids"]["AC-2"]["type"] == "control" and r["ids"]["AC-2(1)"]["type"] == "enhancement"
