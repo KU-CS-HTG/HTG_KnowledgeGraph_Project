@@ -360,7 +360,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 | `Weakness` | CWE 5.0 XML | `data/cwe_catalog.json` | 완료(앞 절) |
 | `Technique`, `Tactic` | ATT&CK Enterprise 20.1 | `data/attack_catalog.json` (600KB) | 기법 706(하위 479 포함), 전술 15, **폐기 기법 161개의 대체 ID 포함** |
 | `MalwareFamily`, `ThreatActor` | ATT&CK 소프트웨어 842, 그룹 178 | 같은 파일 | 별칭, 쓰는 기법, 그룹이 쓰는 소프트웨어 포함 |
-| `Vulnerability`(주목받는 부분집합) | CISA KEV(GitHub 사본, 2026.11.24) | `data/kev.json` (1.1MB) | 1,795건. 악용 확인된 CVE와 CWE, 랜섬웨어 사용 여부 |
+| `Vulnerability`(주목받는 부분집합) | CISA KEV(GitHub 사본 `cisagov/kev-data`, 2026.11.25) | `data/kev.json` (1.1MB) | 1,805건(2026-11-27 갱신, 공식 CSV와 같음). 악용 확인된 CVE와 CWE, 랜섬웨어 사용 여부 |
 | `ThreatActor` 별칭 보충 | MISP threat-actor 갤럭시 | `data/misp_threat_actors.json` (220KB) | 1,132개. **ATT&CK 그룹과 합치지 않고 후보로만 제시** (`actors.py`) |
 | `Vulnerability`(전체) | CVE 레코드 | `backbone.lookup_cve` | **전체 목록은 못 받음.** 번호로 한 건씩 조회해 존재 확인, CWE, 제품 이름을 가져옴 |
 | `Product` | NVD CPE 사전 | **없음** | NVD API가 이 환경에서 막혀 받지 못함. CVE 레코드의 vendor/product 이름만 가능 |
@@ -369,7 +369,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 
 KEV의 `cwes`는 CISA가 붙인 값이고, 같은 CVE의 CVE 레코드에는 발급 기관(CNA)과 CISA의 보강 정보(ADP)가 따로 CWE를 붙인다. 셋은 다를 수 있어서 **합치지 않고 출처별로 담는다.**
 
-- `python backbone.py enrich-kev`가 KEV 1,795건을 CVE 레코드와 대조해 `kev.json`에 항목을 더한다(처음에 약 40초, 레코드는 `backbone/raw/cve/`에 캐시).
+- `python backbone.py enrich-kev`가 KEV 1,805건을 CVE 레코드와 대조해 `kev.json`에 항목을 더한다(처음에 약 40초, 레코드는 `backbone/raw/cve/`에 캐시).
 - 항목: `cwe_by_source`(`kev`, `cna`, `adp`: 제공자별), `cwe_display`와 `cwe_display_source`(보여 줄 대표값과 그 출처), `cwe_conflict`(출처끼리 값이 다른가), `cve_record`(`found`, `missing`, `error`, `not_checked`).
 - **대표값 규칙은 `CNA → ADP → KEV` 순서의 기본값**이다(`CWE_DISPLAY_ORDER`). 보관은 출처별이라 규칙을 바꿔도 다시 받을 필요가 없다.
 - 약점 분류가 어디에도 없으면 `cwe_display_source`가 `none`이다. "아직 안 채움"이 아니라 "분류된 적 없음"이다. 부재를 추측하지 않는다.
@@ -378,15 +378,15 @@ KEV의 `cwes`는 CISA가 붙인 값이고, 같은 CVE의 CVE 레코드에는 발
 
 | 항목 | 건수 |
 | --- | --- |
-| 레코드 조회 | 찾음 1,794, 없음 1 (CVE-2026-132165, 하루 전에 추가된 것으로 아직 CVE 목록에 없는 것으로 보임) |
-| 대표값 출처 | CNA 716, ADP 863, KEV만 107, **없음 109** |
-| **출처끼리 값이 다른 건** | **232 (12.9%)** |
+| 레코드 조회 | 찾음 1,805, 없음 0 (2026-11-25 기준으로는 1건이 없었는데 그 CVE-2026-132165의 레코드가 이후 올라와 2026-11-27 갱신에서 찾음) |
+| 대표값 출처 | CNA 727, ADP 863, KEV만 106, **없음 109** |
+| **출처끼리 값이 다른 건** | **233 (12.9%)** (2026-11-25 기준 232건에서 1건 늘었다: CVE-2026-132165의 레코드가 새로 조회되어 CNA와 KEV가 다름) |
 
-- 다른 232건 중 196건은 **ADP와 KEV의 차이**이고(둘 다 CISA 쪽 정보인데도), 31건은 CNA와 KEV, 5건은 셋 모두 있다. 232건 중 68건은 한쪽이 다른 쪽의 일부(예: KEV `CWE-456`, ADP `CWE-123, CWE-456`)이고 164건은 서로 겹치지 않는 값이 있다.
+- 다른 233건 중 196건은 **ADP와 KEV의 차이**이고(둘 다 CISA 쪽 정보인데도), 32건은 CNA와 KEV, 5건은 셋 모두 있다. 233건 중 68건은 한쪽이 다른 쪽의 일부(예: KEV `CWE-456`, ADP `CWE-123, CWE-456`)이고 165건은 서로 겹치지 않는 값이 있다.
 - **어느 쪽이 맞는지는 판단하지 않았다.** 차이가 나는 이유(갱신 시점, 기준 차이 등)도 확인하지 못했다.
 - `python backbone.py export`의 `kev.csv`에 출처별 열이 들어간다.
 
-**충돌 검토용 표본 (`kev_conflict_sample.py`, 기본값-C1)**: 232건을 대표값과 다른 출처의 관계로 분류한다(`subset` 한쪽이 다른 쪽의 일부 68건, `hierarchy` 상하위 74건, `unrelated` 서로 무관 90건). 어느 쪽이 맞는지는 판단하지 않는다. 사람이 볼 표본 30건(무관 20, 상하위 5, 일부 5, seed 고정)을 `backbone/export/kev_conflict_sample.csv`에 만들고 `judge_correct`, `judge_note` 칸을 비워 둔다. 전체 분류는 `kev_conflicts_all.csv`. 대표값이 CNA인 경우는 36건, ADP인 경우는 196건이다.
+**충돌 검토용 표본 (`kev_conflict_sample.py`, 기본값-C1)**: 충돌 233건을 대표값과 다른 출처의 관계로 분류한다(`subset` 한쪽이 다른 쪽의 일부 68건, `hierarchy` 상하위 74건, `unrelated` 서로 무관 91건; 사람이 판정한 표본은 2026-11-26의 232건에서 뽑았다). 어느 쪽이 맞는지는 판단하지 않는다. 사람이 볼 표본 30건(무관 20, 상하위 5, 일부 5, seed 고정)을 `backbone/export/kev_conflict_sample.csv`에 만들고 `judge_correct`, `judge_note` 칸을 비워 둔다. 전체 분류는 `kev_conflicts_all.csv`. 대표값이 CNA인 경우는 37건, ADP인 경우는 196건이다.
 
 **판정 결과 (표본 30건, 사람이 판정)**: `python kev_conflict_sample.py --tally data/kev_conflict_judgement.csv`로 집계한다. 판정은 `data/kev_conflict_judgement.csv`에 있다(`backbone/export/`는 `.gitignore`에 있어 결과물만 두는 폴더라 사람의 판정은 `data/`에 둔다).
 
@@ -491,7 +491,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 - **CVE 전체 목록이 없다.** 문서가 인용한 번호를 한 건씩 조회하는 방식이라 건당 네트워크 호출이 필요하고, 이 환경 밖에서 돌릴 때는 `cvelistV5` 전체를 받는 방식을 따로 정해야 한다.
 - **CVE→CWE는 CVE 레코드의 `problemTypes`(CNA와 ADP)로 대신했다.** NVD의 CPE 매핑과 CVSS는 받지 못했다. NVD가 매긴 CWE와 CNA가 매긴 CWE는 다를 수 있어 둘을 구분해 보관한다.
 - **KEV는 GitHub 사본**이다. 원본(`www.cisa.gov`)과 같은지는 확인하지 못했다.
-- **MISP 갤럭시는 `main`에서 받았고 커밋 해시를 기록하지 못했다.** 재현이 필요하면 특정 커밋으로 고정해야 한다. MISP 행위자와 ATT&CK 그룹은 합치지 않는다(옵션 A, 아래 "행위자 이름 연결").
+- **MISP 갤럭시 출처 기록(2026-11-27)**: 받은 파일의 sha256 `5bffee604295…`이 `MISP/misp-galaxy`의 `main`(커밋 `779b780a13f6…`)의 같은 파일과 **내용이 같음을 확인**해 `data/misp_threat_actors.json`의 `source`에 기록했다. 이 파일을 마지막으로 바꾼 커밋은 아니며, `main`이 바뀌어 같은 파일이 달라지면 이 커밋으로 고정해 재현한다. `python backbone.py build`는 이제 KEV, MISP, ATT&CK를 받을 때마다 주소, 크기, sha256, 받은 날짜와 (확인되면) 커밋을 `source`로 남긴다. MISP 행위자와 ATT&CK 그룹은 합치지 않는다(옵션 A, 아래 "행위자 이름 연결").
 - **ATT&CK은 Enterprise만 받았다.** ICS와 Mobile은 받지 않았다.
 - **Mapping 결과의 정확성은 평가하지 않았다.** 이 절은 목록이 만들어졌고 형식대로 읽힌다는 것까지만 확인한다.
 - 그래프에 넣는 코드(원본 `neo4j_v2.py`에 해당)와 임베딩 인덱스는 아직 없다.
@@ -558,7 +558,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 | 확인-A1 | 사건의 핵심 사실을 1차 자료로 확인 | **완료(2026-11-26)**: `fact_check/incident_facts.csv` 75행을 Taegyu가 확인. 네 사건(레벨인피니트, SK텔레콤, 금융권, 쿠팡). **Canvas는 공식 문서가 없어 제외**. 미확인 항목은 각 행의 note에 있음 |
 | 확인-A2 | 별칭 사전(한국어 표기 3개 그룹, `ORG_ALIAS_SEED` 7개 조직)이 같은 대상을 가리키는지 | — |
 | 확인-A3 | VERIS 대응(`ACTOR_ORIGIN_TO_VERIS`)을 공식 스키마와 대조 | **완료(2026-11-27)**: 공식 스키마의 행위자 최상위(`external`, `internal`, `partner`, `unknown`)와 `actor.external.variety`의 `Former employee`를 확인. `python veris_check.py`로 다시 확인 가능 |
-| 확인-A4 | 내려받은 데이터가 최신인지(CWE 버전 표기, KEV와 MISP의 출처 기록) | **CWE, KEV 확인 완료(2026-11-26), MISP 남음.** CWE: 사용자가 받은 공식 `cwec_v5.0.xml`(버전 5.0, 2026-10-28)을 우리 변환기로 변환한 결과가 `data/cwe_catalog.json`과 **완전히 같음**(약점 984, 분류 431, 내용 차이 0). KEV: 공식 CSV 1,805건 중 우리 사본 1,795건(2026-11-24)과 번호, 제조사, 제품, 이름, 추가일, 기한, 랜섬웨어, CWE가 **모두 같음**. 차이는 2026-11-25에 추가된 10건뿐(사본에만 있는 항목은 0). MISP는 `main`에서 받아 커밋 해시가 없음 |
+| 확인-A4 | 내려받은 데이터가 최신인지(CWE 버전 표기, KEV와 MISP의 출처 기록) | **완료(2026-11-27).** CWE: 사용자가 받은 공식 `cwec_v5.0.xml`(버전 5.0, 2026-10-28)을 변환한 결과가 `data/cwe_catalog.json`과 **완전히 같음**. KEV: 사본(2026-11-24, 1,795건)이 공식 CSV와 같았고 2026-11-25에 추가된 10건을 반영해 **1,805건(catalogVersion 2026.11.25)으로 갱신**, 공식 CSV와 번호와 CWE가 모두 같음. MISP: sha256과 커밋(`779b780a13f6…`에서 내용 같음)을 기록. KEV는 `cisagov/kev-data` develop의 `51e0a777743f…`에서 내용이 같음. 출처는 각 데이터 파일의 `source` 키와 `consts.BACKBONE_SNAPSHOTS`에 있다 |
 | 확인-A5 | 이 환경에서 받지 못한 것(CVE 전체 목록, NVD) | — |
 
 ### 전문가 (판단이 필요한 것)
@@ -587,7 +587,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 
 | 번호 | 기본값 | 상태 |
 | --- | --- | --- |
-| 기본값-C1 | CWE 대표값 규칙 `CNA → ADP → KEV` (KEV 1,795건 중 232건이 출처끼리 다름) | **판정 완료(2026-11-26, Taegyu).** 표본 30건 중 현재 규칙과 일치 23건(77%): ADP가 대표인 20건 중 16건, CNA가 대표인 10건 중 7건. 규칙과 다른 7건은 `kev` 4건과 `판단 불가` 3건이고 `adp`나 `cna`가 규칙을 뒤집은 경우는 없음. 판정은 `security_kg/data/kev_conflict_judgement.csv`. **규칙 변경은 아직 하지 않음**(표본이 작아 유지 권고) |
+| 기본값-C1 | CWE 대표값 규칙 `CNA → ADP → KEV` (2026-11-26 표본은 KEV 1,795건 중 232건이 출처끼리 다른 것에서 뽑음. 2026-11-27 갱신 후 1,805건 중 233건) | **판정 완료(2026-11-26, Taegyu).** 표본 30건 중 현재 규칙과 일치 23건(77%): ADP가 대표인 20건 중 16건, CNA가 대표인 10건 중 7건. 규칙과 다른 7건은 `kev` 4건과 `판단 불가` 3건이고 `adp`나 `cna`가 규칙을 뒤집은 경우는 없음. 판정은 `security_kg/data/kev_conflict_judgement.csv`. **규칙 변경은 아직 하지 않음**(표본이 작아 유지 권고) |
 | 기본값-C2 | 사건 해소 숫자: 90일, 365일, 이름 유사도 0.8, 별칭 7개 (설계 결정 D2의 출발점 값) | — |
 | 기본값-C3 | 수치 지표 5개 + `other`, 한국어 수 표기 규칙 | — |
 | 기본값-C4 | ATT&CK 20.1의 전술 이름 변경(`stealth`, `defense-impairment`)과 전술 수준 비교 | — |

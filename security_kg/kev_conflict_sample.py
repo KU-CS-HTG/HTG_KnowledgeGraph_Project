@@ -1,6 +1,6 @@
 """KEV의 CWE 출처 충돌(기본값-C1) 검토용 표본을 만든다.
 
-KEV 1,795건 중 232건은 KEV, CNA, ADP가 붙인 CWE가 서로 다르다(`data/kev.json`의 `cwe_conflict`).
+KEV 1,805건 중 233건(2026-11-27 기준)은 KEV, CNA, ADP가 붙인 CWE가 서로 다르다(`data/kev.json`의 `cwe_conflict`).
 어느 쪽이 맞는지는 이 스크립트가 판단하지 않는다. 사람이 CWE 정의를 읽고 판정할 수 있도록
 충돌을 관계별로 분류하고, 사람이 볼 표본을 고정된 방식(seed)으로 뽑아 판정 칸을 비워 둔다.
 

@@ -126,10 +126,10 @@ BACKBONE_SNAPSHOTS = {
     # 내려받은 날짜는 2026-11-25. backbone.py가 같은 값을 출력한다. 모두 raw.githubusercontent.com의 원문 파일이다.
     "cve": "전체 목록은 받지 못함(이 환경에서 cve.org와 저장소 전체 접근이 막힘). CVEProject/cvelistV5의 레코드를 번호로 하나씩 조회(backbone.lookup_cve)",
     "nvd": None,      # NVD API가 이 환경에서 막혀 받지 못함. CVE→CWE는 CVE 레코드의 problemTypes로, CPE 사전은 없음
-    "cwe": "5.0 (2026-10-28), cwec_v5.0.xml. 메인 페이지의 다른 버전 표기와 어긋나므로 최신 여부는 미확인",
-    "attack": "Enterprise 20.1 (modified 2026-11-05), 기법 706, 소프트웨어 842, 그룹 178. ICS와 Mobile은 받지 않음",
-    "kev": "cisagov/kev-data 사본, catalogVersion 2026.11.24, 1,795건 (www.cisa.gov 원본은 이 환경에서 막혀 사본을 씀)",
-    "misp_galaxy": "threat-actor 갤럭시 version 360, 1,132개. main 브랜치에서 받았고 커밋 해시는 기록하지 못함",
+    "cwe": "5.0 (2026-10-28), cwec_v5.0.xml. 사용자가 CWE 사이트에서 받은 공식 파일과 변환 결과가 같음을 2026-11-26에 확인(약점 984, 분류 431)",
+    "attack": "Enterprise 20.1 (modified 2026-11-05), 기법 706, 소프트웨어 842, 그룹 178. ICS와 Mobile은 받지 않음. 번들 enterprise-attack-20.1.json은 버전이 파일 이름에 있고 sha256 539a843a7b53…(data/attack_catalog.json의 source)",
+    "kev": "cisagov/kev-data develop 사본, catalogVersion 2026.11.25, 1,805건(2026-11-27 갱신), sha256 a76360009e4a…, develop 커밋 51e0a777743f…에서 내용이 같음. www.cisa.gov 원본은 이 환경에서 막혀 사본을 씀",
+    "misp_galaxy": "threat-actor 갤럭시 version 360, 1,132개, sha256 5bffee604295…. 2026-11-25에 main에서 받았고 2026-11-27에 main 커밋 779b780a13f6…의 같은 파일과 내용이 같음을 확인(이 파일을 마지막으로 바꾼 커밋은 아님)",
     "veris": "vz-risk/veris master의 verisc-merged.json(JSON 스키마), 2026-11-27 받음, 104,764바이트, sha256 e43fbc1c3c1d…. 스키마에 버전 표기가 없고 커밋 해시는 기록하지 못함",
     "nist": "CSF 2.0과 SP 800-53 Rev. 5.2.0의 OSCAL 목록(usnistgov/oscal-content main), 2026-11-27 받음. 번호와 제목은 data/nist_catalog.json, 파일의 sha256은 그 안에 있음",
 }
