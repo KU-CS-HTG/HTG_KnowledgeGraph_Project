@@ -203,7 +203,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 | `THIRD_PARTY_OR_SUPPLY_CHAIN_RISK` | partial | CWE-1395 (Allowed-with-Review), CWE-1357 (Allowed-with-Review) |
 | `MISCONFIGURATION` | partial | CWE-1188 (Allowed) |
 
-- **모든 CWE는 CWE 5.0 파일(2026-10-28, `cwec_v5.0.xml`)에서 이름, 상태, MITRE의 매핑 사용 구분을 확인했다.** 괄호 안이 그 구분이다: `Allowed`, `Allowed-with-Review`(검토 후 사용), `Discouraged`(포괄 항목이라 더 구체적인 하위 항목을 쓰라는 뜻). 이 파일의 버전 표기가 CWE 사이트 메인 페이지의 다른 표기와 어긋나서 최신 여부는 확인하지 못했다.
+- **모든 CWE는 CWE 5.0 파일(2026-10-28, `cwec_v5.0.xml`)에서 이름, 상태, MITRE의 매핑 사용 구분을 확인했다.** 괄호 안이 그 구분이다: `Allowed`, `Allowed-with-Review`(검토 후 사용), `Discouraged`(포괄 항목이라 더 구체적인 하위 항목을 쓰라는 뜻). 이 파일은 사용자가 CWE 사이트에서 받은 공식 파일이며, 우리 변환 결과와 완전히 같음을 2026-11-26에 확인했다(확인-A4).
 - **대응 정도**: `close`는 분명히 대응, `partial`은 일부만 맞음, `none`은 CWE에 대응이 없음이다.
 - **의도적으로 뺀 CWE** (`ROOT_CAUSE_CWE_EXCLUDED`):
   - **CWE-320 (Key Management Errors)**: 그룹이고 폐기(Obsolete)이며 파일의 매핑 주석이 `Prohibited`이다. 멤버 약점 322, 323, 324, 798을 쓴다.
@@ -499,6 +499,8 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 | 운영-D4 | 정답 데이터(사건별 취약점, 약점, 기법)를 누가 만드는지 | **초안 완료(2026-11-26, Taegyu 확인 전).** `fact_check/answer_key_draft.csv` 28행(네 사건), 설명은 `fact_check/drafts/정답표_초안_설명.md`. 시드 이름에 묶지 않고 "문서가 말한 사실 단위"로 작성. 작성자는 Claude 초안 + Taegyu 확인 |
 | 운영-D5 | 원본 코드 교체(2번) 시작 시점. 확인-A1은 소규모 실행(3번) 전에 끝나야 함 | 확인-A1은 충족(Canvas 제외) |
 
+**전문가 검토 자료 묶음**: `python expert_review_bundle.py`가 B1~B5에 필요한 자료를 한 개의 zip(`security_kg/expert_review/전문가검토자료.zip`)으로 만든다. 저장소에는 올리지 않는 결과물이며, README와 설정 파일에서 필요한 부분만 뽑아 전문가가 읽기 쉽게 다시 쓴다.
+
 권장 순서: ① 확인-A1과 운영-D4를 같이 시작 ② 확인-A4, A5와 기본값-C1 ③ 전문가를 만날 수 있을 때 전문가-B1~B5(B1, B2가 가장 중요) ④ 소규모 실행 뒤 기본값-C2~C5 조정.
 
 ## 자체 검사
@@ -512,6 +514,7 @@ python measurements.py        # 수치 층 규칙 자체 시험(9개)
 python answer_key.py          # 정답표 초안 검사(근거 행과 표준 후보 ID의 존재)
 python answer_key.py --self-test
 python kev_conflict_sample.py --self-test   # KEV CWE 충돌 표본 분류 시험
+python expert_review_bundle.py --self-test   # 전문가 검토 자료 묶음 시험
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 python backbone.py            # 뼈대 변환 규칙 자체 시험(네트워크 없이)
 python actors.py              # 행위자 이름 연결 자체 시험
