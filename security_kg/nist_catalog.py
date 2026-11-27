@@ -44,7 +44,7 @@ def _status(node):
     return None
 
 
-def _statement(node, limit=600):
+def _statement(node, limit=1500):
     """항목의 본문(statement 부분)만 모은다. 지침(guidance)과 구현 예시는 넣지 않는다. 항목이 여럿이면 이어 붙인다."""
     out = []
 
