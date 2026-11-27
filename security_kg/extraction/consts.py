@@ -130,6 +130,8 @@ BACKBONE_SNAPSHOTS = {
     "attack": "Enterprise 20.1 (modified 2026-11-05), 기법 706, 소프트웨어 842, 그룹 178. ICS와 Mobile은 받지 않음",
     "kev": "cisagov/kev-data 사본, catalogVersion 2026.11.24, 1,795건 (www.cisa.gov 원본은 이 환경에서 막혀 사본을 씀)",
     "misp_galaxy": "threat-actor 갤럭시 version 360, 1,132개. main 브랜치에서 받았고 커밋 해시는 기록하지 못함",
+    "veris": "vz-risk/veris master의 verisc-merged.json(JSON 스키마), 2026-11-27 받음, 104,764바이트, sha256 e43fbc1c3c1d…. 스키마에 버전 표기가 없고 커밋 해시는 기록하지 못함",
+    "nist": "CSF 2.0과 SP 800-53 Rev. 5.2.0의 OSCAL 목록(usnistgov/oscal-content main), 2026-11-27 받음. 번호와 제목은 data/nist_catalog.json, 파일의 sha256은 그 안에 있음",
 }
 
 
@@ -230,6 +232,20 @@ ROOT_CAUSE_SEED = [
     "MISCONFIGURATION",                    # 설정 오류
 ]
 
+
+# 시드의 뜻(사람이 읽는 설명). 검토표와 전문가 자료에 쓴다.
+ROOT_CAUSE_MEANING = {
+    "UNPATCHED_KNOWN_VULNERABILITY": "알려진 취약점의 패치를 적용하지 않음",
+    "CREDENTIAL_OR_KEY_MISMANAGEMENT": "자격 증명·키의 수명주기(발급, 보관, 교체, 폐기) 관리 실패. 예: 퇴사자 키 미폐기",
+    "INSUFFICIENT_ENCRYPTION": "저장·전송 데이터가 암호화되지 않았거나 약하게 암호화됨",
+    "WEAK_ACCESS_CONTROL": "권한의 범위·분리·인증 요구가 없거나 약함",
+    "INSUFFICIENT_MONITORING_DETECTION": "(상위) 탐지 실패는 확인되었으나 어느 통제의 실패인지 출처가 말하지 않음",
+    "INSUFFICIENT_LOGGING_AUDIT": "(하위) 필요한 보안 이벤트의 생성·수집·기록·보존·감사 기능이 없음",
+    "INSUFFICIENT_SECURITY_MONITORING_OPERATIONS": "(하위) 관제 인력, 모니터링 절차, 경보 검토와 에스컬레이션 체계가 없음",
+    "INADEQUATE_INCIDENT_RESPONSE": "경보나 과거 침해를 알고도 차단·정리·재발 방지를 하지 않음",
+    "THIRD_PARTY_OR_SUPPLY_CHAIN_RISK": "외부 공급사·협력사·구성요소가 침해되었거나 그 신뢰가 악용됨",
+    "MISCONFIGURATION": "잘못된 설정이나 기본값이 원인임",
+}
 
 # 시드의 계층: 상위 시드(모니터링)를 지우지 않고 하위 시드를 추가했다. 결과만 적힌 사례("장기간 탐지하지 못했다")를 받을 자리가
 # 있어야 하기 때문이다(결과만으로 하위 시드를 고르면 출처에 없는 원인을 만들어 낸다). 하위는 출처가 직접 말할 때만 쓴다.
@@ -492,7 +508,8 @@ ACTOR_ORIGIN_SEED = [
 # 결정 기록(1): 세분화를 유지하고 VERIS 값으로 합치는 대응표를 둔다(옵션 B).
 # 세분화된 값은 상위 값으로 합칠 수 있지만 합친 값은 다시 쪼갤 수 없으므로 손실이 없는 쪽을 택했다.
 # 근거: VERIS 위키의 행위자 설명은 전직 직원을 외부(External) 위협의 예로 들고, 내부(Internal)는 현재 구성원으로 설명한다.
-# 주의: VERIS 위키 사본 페이지로 확인한 것이며 정확한 값 목록은 VERIS 스키마 저장소로 대조해야 한다.
+# 확인(2026-11-27): VERIS 공식 스키마(vz-risk/veris의 verisc-merged.json)의 행위자 최상위가 external, internal, partner, unknown이고
+# 값 이름이 아래 대응과 맞는다. `python veris_check.py`가 같은 검사를 한다.
 ACTOR_ORIGIN_TO_VERIS = {
     "INTERNAL": "Internal",
     "FORMER_INSIDER": "External",
@@ -523,7 +540,8 @@ ACCOUNT_OWNER_EXAMPLES = [
 ]
 
 # VERIS와의 세부 대응(전문가 검토 의견): VERIS는 전직 직원을 External 행위자의 한 종류('Former employee')로 둔다고 알려져 있다.
-# **미검증**: VERIS 공식 스키마 저장소와 대조하지 못했다(README 확인-A3). 확인되기 전에는 변환에 쓰지 않고 참고로만 둔다.
+# **확인됨(2026-11-27)**: VERIS 공식 스키마의 actor.external.variety에 'Former employee'가 있다(README 확인-A3). `python veris_check.py`로 다시 확인할 수 있다.
+# 값을 VERIS로 내보낼 때 FORMER_INSIDER는 actor.external, variety 'Former employee'로 변환한다.
 ACTOR_ORIGIN_VERIS_VARIETY = {"FORMER_INSIDER": "Former employee"}
 
 # 결정 기록(3): 행위자가 둘 이상일 때 값과 이름의 짝 짓기는 파일럿에서 필요가 확인될 때까지 하지 않는다(옵션 i).
@@ -898,6 +916,8 @@ def validate() -> list[str]:
             problems.append(f"ROOT_CAUSE_PARENT: 하위의 하위는 두지 않음 {child}")
         elif ROOT_CAUSE_ATTRIBUTES.get(child, {}).get("control_domain") != ROOT_CAUSE_ATTRIBUTES.get(parent, {}).get("control_domain"):
             problems.append(f"ROOT_CAUSE_ATTRIBUTES: {child}와 상위 {parent}의 control_domain이 다름")
+    if set(ROOT_CAUSE_MEANING) != seeds:
+        problems.append("ROOT_CAUSE_MEANING의 키가 ROOT_CAUSE_SEED와 다름")
     if set(ROOT_CAUSE_ATTRIBUTES) != seeds:
         problems.append("ROOT_CAUSE_ATTRIBUTES의 키가 ROOT_CAUSE_SEED와 다름")
     for k, a in ROOT_CAUSE_ATTRIBUTES.items():

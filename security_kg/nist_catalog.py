@@ -7,6 +7,8 @@
 사용: python nist_catalog.py                       # data/nist_catalog.json으로 후보 번호가 있는지 검사한다
       python nist_catalog.py --build CSF.json R5.json   # 내려받은 두 OSCAL 파일로 data/nist_catalog.json을 만든다
       python nist_catalog.py --fetch                    # 두 파일을 내려받아(backbone/raw/nist/) 만든다
+      python nist_catalog.py --build CSF.json R5.json --review-sheet   # 만들면서 후보 검토표(data/nist_candidate_review.csv)도 만든다
+      python nist_catalog.py --tally-review data/nist_candidate_review.csv   # 사람이 채운 판정을 집계한다
       python nist_catalog.py --self-test
 
 내려받는 파일: NIST_CSF_v2.0_catalog.json, NIST_SP-800-53_rev5_catalog.json. GitHub의 main 브랜치 사본이라 커밋 해시는 없고
@@ -42,6 +44,22 @@ def _status(node):
     return None
 
 
+def _statement(node, limit=600):
+    """항목의 본문(statement 부분)만 모은다. 지침(guidance)과 구현 예시는 넣지 않는다. 항목이 여럿이면 이어 붙인다."""
+    out = []
+
+    def walk(part):
+        if part.get("prose"):
+            out.append(part["prose"].strip())
+        for q in part.get("parts", []):
+            walk(q)
+
+    for p in node.get("parts", []):
+        if p.get("name") == "statement":
+            walk(p)
+    return " ".join(out)[:limit]
+
+
 def _prose(node):
     return " ".join(p.get("prose", "") for p in node.get("parts", []) if p.get("prose")).strip()
 
@@ -61,8 +79,8 @@ def parse_csf(doc: dict) -> dict:
         i = c["id"].upper()
         kind = "function" if CSF_FN.match(i) else "category" if CSF_CAT.match(i) else "subcategory" if CSF_SUB.match(i) else None
         if kind:
-            title = c.get("title", "")
-            ids[i] = {"type": kind, "title": title if title and title.upper() != i else _prose(c)[:160], "status": _status(c)}
+            title, st = c.get("title", ""), _statement(c)
+            ids[i] = {"type": kind, "title": title if title and title.upper() != i else st[:160], "status": _status(c), "statement": st}
 
     _walk(cat, visit)
     return {"title": cat["metadata"]["title"], "version": cat["metadata"].get("version"),
@@ -84,7 +102,7 @@ def parse_80053(doc: dict) -> dict:
         if re.match(r"^[A-Z]{2}$", i):
             ids[i] = {"type": "family", "title": c.get("title", ""), "status": _status(c)}
         elif re.match(r"^[A-Z]{2}-\d{1,2}$", i):
-            ids[i] = {"type": "control", "title": c.get("title", ""), "status": _status(c)}
+            ids[i] = {"type": "control", "title": c.get("title", ""), "status": _status(c), "statement": _statement(c)}
         elif re.match(r"^[A-Z]{2}-\d{1,2}\(\d+\)$", i):
             ids[i] = {"type": "enhancement", "title": c.get("title", ""), "status": _status(c)}
 
@@ -145,6 +163,61 @@ def check_standard_map(catalog: dict, standard_map: dict | None = None) -> list[
     return problems
 
 
+# ── 후보 검토표: 사람이 각 후보가 그 RootCause에 맞는지 판정한다 ─────────────────────────────
+REVIEW_COLUMNS = ["행", "root_cause", "meaning", "failure_nature", "standard", "id", "kind", "official_title", "official_statement",
+                  "also_used_by", "judge_fit", "judge_note"]
+JUDGE_VALUES = ["적합", "부분 적합", "부적합", "판단 불가"]
+REVIEW_PATH = HERE / "data" / "nist_candidate_review.csv"
+STANDARD_NAMES = {"csf_2_0": "NIST CSF 2.0", "sp800_53_rev5": "SP 800-53 Rev. 5"}
+
+
+def review_rows(catalog: dict, standard_map: dict | None = None, meanings: dict | None = None, attributes: dict | None = None) -> list[dict]:
+    """후보 번호마다 한 줄. 공식 제목과 설명문을 붙이고, 같은 번호를 쓰는 다른 RootCause를 알려 준다.
+    `행`은 엑셀에서 보이는 행 번호(제목줄이 1행이라 2부터)와 같게 매긴다."""
+    standard_map = consts.ROOT_CAUSE_STANDARD_MAP if standard_map is None else standard_map
+    meanings = consts.ROOT_CAUSE_MEANING if meanings is None else meanings
+    attributes = consts.ROOT_CAUSE_ATTRIBUTES if attributes is None else attributes
+    used = {}
+    for seed, m in standard_map.items():
+        for key, field in (("csf_2_0", "nist_csf"), ("sp800_53_rev5", "nist_800_53")):
+            for i in m[field]:
+                used.setdefault((key, i), []).append(seed)
+    rows = []
+    for seed, m in standard_map.items():
+        for key, field in (("csf_2_0", "nist_csf"), ("sp800_53_rev5", "nist_800_53")):
+            for i in m[field]:
+                info = catalog[key]["ids"][i]
+                rows.append({
+                    "행": len(rows) + 2, "root_cause": seed, "meaning": meanings.get(seed, ""),
+                    "failure_nature": attributes.get(seed, {}).get("failure_nature") or "미정", "standard": STANDARD_NAMES[key],
+                    "id": i, "kind": info["type"], "official_title": info.get("title", ""),
+                    "official_statement": info.get("statement", ""),
+                    "also_used_by": "; ".join(x for x in used[(key, i)] if x != seed),
+                    "judge_fit": "", "judge_note": ""})
+    return rows
+
+
+def write_review(rows, path=REVIEW_PATH):
+    import csv
+    with open(path, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, REVIEW_COLUMNS, lineterminator="\r\n")
+        w.writeheader()
+        w.writerows(rows)
+
+
+def tally_review(rows) -> dict:
+    """판정 집계. 비어 있거나 인식하지 못한 값은 따로 알린다."""
+    from collections import Counter
+    empty = [r for r in rows if not r["judge_fit"].strip()]
+    unknown = [r for r in rows if r["judge_fit"].strip() and r["judge_fit"] not in JUDGE_VALUES]
+    judged = [r for r in rows if r["judge_fit"] in JUDGE_VALUES]
+    by_seed = {}
+    for r in judged:
+        by_seed.setdefault(r["root_cause"], Counter())[r["judge_fit"]] += 1
+    return {"total": len(judged), "empty": empty, "unknown": unknown, "overall": Counter(r["judge_fit"] for r in judged),
+            "by_seed": by_seed, "rejected": [r for r in judged if r["judge_fit"] == "부적합"]}
+
+
 def self_test():
     csf = {"catalog": {"metadata": {"title": "T", "version": "1", "last-modified": "d"}, "groups": [
         {"id": "gv", "title": "GOVERN", "groups": [{"id": "gv.sc", "title": "Supply Chain", "controls": [
@@ -154,13 +227,22 @@ def self_test():
                                                                "controls": [{"id": "ac-2.1", "title": "Automated"}]}]}]}}
     c, r = parse_csf(csf), parse_80053(r5)
     assert c["ids"]["GV"]["type"] == "function" and c["ids"]["GV.SC"]["type"] == "category"
-    assert c["ids"]["GV.SC-01"] == {"type": "subcategory", "title": "A program is established", "status": None}
+    assert c["ids"]["GV.SC-01"] == {"type": "subcategory", "title": "A program is established", "status": None,
+                                    "statement": "A program is established"}
     assert r["ids"]["AC"]["type"] == "family" and r["ids"]["AC-2"]["type"] == "control" and r["ids"]["AC-2(1)"]["type"] == "enhancement"
     cat = {"csf_2_0": c, "sp800_53_rev5": r}
     ok = {"A": {"nist_csf": ["GV.SC", "GV.SC-01"], "nist_800_53": ["AC-2"]}}
     assert check_standard_map(cat, ok) == []
     assert len(check_standard_map(cat, {"A": {"nist_csf": ["GV.SC-99"], "nist_800_53": ["AC-9"]}})) == 2   # 없는 번호
     assert check_standard_map(cat, {"A": {"nist_csf": [], "nist_800_53": ["AC"]}})                          # 패밀리는 개별 통제가 아님
+    # 검토표: 후보마다 한 줄, 같은 번호를 쓰는 다른 RootCause 표시, 행 번호는 엑셀 행과 같음
+    sm = {"S1": {"nist_csf": ["GV.SC-01"], "nist_800_53": ["AC-2"]}, "S2": {"nist_csf": ["GV.SC-01"], "nist_800_53": []}}
+    rows = review_rows(cat, sm, {"S1": "뜻1", "S2": "뜻2"}, {"S1": {"failure_nature": "X"}, "S2": {"failure_nature": None}})
+    assert [r["행"] for r in rows] == [2, 3, 4] and rows[0]["official_statement"] == "A program is established"
+    assert rows[0]["also_used_by"] == "S2" and rows[2]["also_used_by"] == "S1" and rows[2]["failure_nature"] == "미정"
+    rows[0]["judge_fit"], rows[1]["judge_fit"], rows[2]["judge_fit"] = "적합", "부적합", "맞음"
+    t = tally_review(rows)
+    assert t["total"] == 2 and len(t["unknown"]) == 1 and [r["id"] for r in t["rejected"]] == ["AC-2"]
     # 철회된 항목은 번호가 파일에 있어도 통과시키지 않는다
     wd = {"catalog": {"metadata": {"title": "T"}, "groups": [{"id": "pr", "title": "PROTECT", "groups": [
         {"id": "pr.ac", "title": "Old", "props": [{"name": "status", "value": "withdrawn"}]}]}]}}
@@ -179,6 +261,18 @@ def self_test():
 def main():
     if "--self-test" in sys.argv:
         return self_test()
+    if "--tally-review" in sys.argv:
+        import csv
+        path = Path(sys.argv[sys.argv.index("--tally-review") + 1])
+        with open(path, encoding="utf-8-sig", newline="") as f:
+            t = tally_review(list(csv.DictReader(f)))
+        print(f"판정 {t['total']}건: {dict(t['overall'])}")
+        if t["empty"] or t["unknown"]:
+            print(f"  비어 있음 {len(t['empty'])}건, 인식하지 못한 값 {len(t['unknown'])}건: {sorted({r['judge_fit'] for r in t['unknown']})}")
+        for seed, c in t["by_seed"].items():
+            print(f"  {seed}: {dict(c)}")
+        print("부적합으로 판정한 후보(엑셀 행):", [(r["행"], r["root_cause"], r["id"]) for r in t["rejected"]])
+        return
     if "--fetch" in sys.argv:
         paths = fetch()
         res = build(paths["csf_2_0"], paths["sp800_53_rev5"])
@@ -187,6 +281,9 @@ def main():
         res = build(sys.argv[i + 1], sys.argv[i + 2])
     else:
         res = json.loads(OUT.read_text(encoding="utf-8"))
+    if "--review-sheet" in sys.argv:
+        write_review(review_rows(res))
+        print(f"검토표를 만들었습니다: {REVIEW_PATH} ({len(review_rows(res))}행)")
     for k, v in res.items():
         print(f"{k}: {v['title']} (버전 {v['version']}, last-modified {v['last_modified']}), 번호 {len(v['ids'])}개, sha256 {v['source']['sha256'][:12]}…")
     problems = check_standard_map(res)

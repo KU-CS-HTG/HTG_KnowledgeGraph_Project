@@ -95,12 +95,12 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET += [
 | 값(`ACTOR_ORIGIN_SEED`) | 뜻 |
 | --- | --- |
 | `INTERNAL` | 공격(접근) 시점에 피해 조직의 직원 또는 계약자 신분인 행위자 |
-| `FORMER_INSIDER` | 공격 시점에는 퇴직·계약 종료 상태이며 **과거 조직 관계에서 얻은 권한·정보·접근 수단을 공격에 이용**한 행위자. 전직자라는 사실만으로 주지 않는다. **VERIS에서는 `External`**(세부 유형 `Former employee`는 미검증) (우리가 추가한 값) |
+| `FORMER_INSIDER` | 공격 시점에는 퇴직·계약 종료 상태이며 **과거 조직 관계에서 얻은 권한·정보·접근 수단을 공격에 이용**한 행위자. 전직자라는 사실만으로 주지 않는다. **VERIS에서는 `External`**(actor.external.variety의 `Former employee`, 공식 스키마로 확인함) (우리가 추가한 값) |
 | `PARTNER` | 협력사·공급사 등 외부 조직과의 정당한 업무 관계를 통해 접근한 행위자 |
 | `EXTERNAL` | 피해 조직과 직접적인 정당한 업무 관계가 없는 행위자 |
 
 - **속성이 아니라 "닫힌 값 목록을 가리키는 관계"로 둔 이유**: 파이프라인은 (출발, 관계, 도착) 트리플렛만 뽑는다. 사건의 속성으로 두면 근거 문장과 기존 검사 단계(형식, 출처, AI 재검증)를 받을 방법이 없다. 관계로 두면 근거 문장이 붙고 검사를 그대로 통과한다.
-- **VERIS와의 관계(결정 1: 세분화를 유지하고 대응표를 둔다)**: `INTERNAL`/`EXTERNAL`/`PARTNER`는 VERIS의 최상위 행위자 구분(내부, 외부, 협력사)과 같은 이름 체계다. VERIS 위키의 행위자 설명은 **전직 직원을 외부(External) 위협의 예로 들고** 내부(Internal)는 현재 구성원으로 설명하므로, 우리가 추가한 `FORMER_INSIDER`는 VERIS에서 `External`에 해당한다. 그래서 `consts.ACTOR_ORIGIN_TO_VERIS`로 대응표를 두어 VERIS 데이터와 비교할 수 있게 했다. 세분화된 값은 상위 값으로 합칠 수 있지만 합친 값은 다시 쪼갤 수 없어서 손실이 없는 쪽을 택했다. 주의: VERIS 위키 사본 페이지로 확인한 것이므로 정확한 값 목록은 VERIS 스키마 저장소로 대조해야 한다.
+- **VERIS와의 관계(결정 1: 세분화를 유지하고 대응표를 둔다)**: `INTERNAL`/`EXTERNAL`/`PARTNER`는 VERIS의 최상위 행위자 구분(내부, 외부, 협력사)과 같은 이름 체계다. VERIS 위키의 행위자 설명은 **전직 직원을 외부(External) 위협의 예로 들고** 내부(Internal)는 현재 구성원으로 설명하며, **2026-11-27에 VERIS 공식 스키마(`vz-risk/veris`의 `verisc-merged.json`)로 확인했다**: 행위자 최상위는 `external`, `internal`, `partner`, `unknown`이고 `actor.external.variety`에 `Former employee`가 있다. 그래서 우리가 추가한 `FORMER_INSIDER`는 VERIS의 `External / Former employee`에 해당한다(`consts.ACTOR_ORIGIN_VERIS_VARIETY`). `python veris_check.py`가 같은 검사를 한다. 스키마 파일에는 버전과 커밋 해시가 없어 받은 날짜, 크기, sha256을 기록했다(`BACKBONE_SNAPSHOTS["veris"]`). 그래서 `consts.ACTOR_ORIGIN_TO_VERIS`로 대응표를 두어 VERIS 데이터와 비교할 수 있게 했다. 세분화된 값은 상위 값으로 합칠 수 있지만 합친 값은 다시 쪼갤 수 없어서 손실이 없는 쪽을 택했다. 주의: VERIS 위키 사본 페이지로 확인한 것이므로 정확한 값 목록은 VERIS 스키마 저장소로 대조해야 한다.
 - **경계 규칙(결정 2)**: 유형은 **공격(접근)이 일어난 시점의 고용 상태**로 정한다(발견 시점이 아니다). 그 시점에 재직 중이었으면 `INTERNAL`(퇴사 직전의 오용 포함), 이미 퇴사했으면 `FORMER_INSIDER`. 문서에 시점이 없으면 추측하지 않고 `inferred`로 하거나 기록하지 않는다. 사례 6개는 `consts.ACTOR_ORIGIN_BOUNDARY_EXAMPLES`에 있고 프롬프트의 예시로 쓴다.
 - **공격자와 계정 소유자는 별개다**(2026-11-27 반영): 외부 공격자가 협력사 직원의 계정을 탈취해 썼다면 공격자는 `EXTERNAL`이고 계정 소유자는 `PARTNER`다. 소유자는 `ACCOUNT_OWNER_ORIGIN` 관계(참고 정보 `account_owner_origin`)로 따로 기록하며 공격자 유형에 섞지 않는다. 협력사 직원 본인이 공격했으면 `PARTNER`. 시험 사례는 `ACCOUNT_OWNER_EXAMPLES`. 경계 사례 `ACTOR_ORIGIN_BOUNDARY_EXAMPLES`는 6개에서 8개로 늘었다(도용된 계정 사례를 `EXTERNAL`로 고치고, 협력사 직원의 직접 공격과 과거 접근을 쓰지 않은 전직자를 추가).
 - **`UNKNOWN`은 값으로 두지 않는다.** 문서가 말하지 않은 것은 "언급 없음, 문서 n개"로 집계한다(부재를 추측하지 않는 원칙과 같다).
@@ -111,7 +111,7 @@ FILTERED_RELATIONSHIP_SOURCE_TO_TARGET += [
 
 **다중 행위자(결정 3: 사건 단위만 기록, 보류)**: 한 사건에 행위자가 둘 이상일 때 값과 행위자 이름을 짝짓는 일(`ACTOR_PAIRING = "incident_level"`)은 하지 않는다. 값이 여러 개면 `aggregate.py`가 "사람이 확인 필요"로 표시한다. 다섯 사건은 모두 공격자 서사가 하나로 보여서(검색 요약 기준, 미검증) 이 문제가 거의 생기지 않을 것으로 본다. **행위자별 질문("누가 무엇을 했나")이 실제로 필요하다고 확인될 때** 사건과 행위자 사이에 중간 개체를 두는 방식을 검토한다. 이 경우 같은 중간 개체를 여러 문서에서 합치는 문제(열린 설계 문제 3번)가 함께 생긴다.
 
-미해결: 실제 문서가 공격 시점의 고용 상태를 분명히 쓰는지(파일럿에서 확인), VERIS 스키마의 정확한 값 목록과의 대조.
+미해결: 실제 문서가 공격 시점의 고용 상태를 분명히 쓰는지(파일럿에서 확인). (VERIS 스키마와의 대조는 2026-11-27에 끝났다.)
 
 ## 사건 해소: 같은 사건 합치기
 
@@ -322,6 +322,7 @@ CISA의 매핑 지침은 모든 행동이 ATT&CK에 있는 것은 아니라고 �
 - 전문가 후보의 범위 표기(`GV.SC-01~10`, `RS.MA-01~05`)는 구별하는 힘이 없어 카테고리 단위(`GV.SC`, `RS.MA`)만 두었다. 800-53은 패밀리(`AC`)가 아니라 개별 통제 ID만 허용한다.
 - SP 800-61 Rev. 3는 통제 목록이 아니라 지침 문서라 번호 검증 대상이 아니며, 제목과 버전은 미검증이다.
 - 한 곳에서 보려면 `consts.root_cause_standard_view(시드)`.
+- **적합성 검토표**: `data/nist_candidate_review.csv`(후보 55행)에 각 후보의 공식 제목과 설명문, 같은 번호를 쓰는 다른 RootCause가 있고 `judge_fit` 칸(`적합`, `부분 적합`, `부적합`, `판단 불가`)이 비어 있다. 행 번호(`행`)는 엑셀에서 보이는 행 번호와 같다. 사람이 채운 뒤 `python nist_catalog.py --tally-review data/nist_candidate_review.csv`로 집계한다. 판정은 사람의 결정이라 `data/`에 둔다(`backbone/export/`는 저장소에서 제외된 결과물 폴더).
 
 ## `Weakness` 닫힌 목록: CWE 목록 변환 (`cwe_catalog.py`)
 
@@ -554,7 +555,7 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 | --- | --- | --- |
 | 확인-A1 | 사건의 핵심 사실을 1차 자료로 확인 | **완료(2026-11-26)**: `fact_check/incident_facts.csv` 75행을 Taegyu가 확인. 네 사건(레벨인피니트, SK텔레콤, 금융권, 쿠팡). **Canvas는 공식 문서가 없어 제외**. 미확인 항목은 각 행의 note에 있음 |
 | 확인-A2 | 별칭 사전(한국어 표기 3개 그룹, `ORG_ALIAS_SEED` 7개 조직)이 같은 대상을 가리키는지 | — |
-| 확인-A3 | VERIS 대응(`ACTOR_ORIGIN_TO_VERIS`)을 공식 스키마와 대조 | — |
+| 확인-A3 | VERIS 대응(`ACTOR_ORIGIN_TO_VERIS`)을 공식 스키마와 대조 | **완료(2026-11-27)**: 공식 스키마의 행위자 최상위(`external`, `internal`, `partner`, `unknown`)와 `actor.external.variety`의 `Former employee`를 확인. `python veris_check.py`로 다시 확인 가능 |
 | 확인-A4 | 내려받은 데이터가 최신인지(CWE 버전 표기, KEV와 MISP의 출처 기록) | **CWE, KEV 확인 완료(2026-11-26), MISP 남음.** CWE: 사용자가 받은 공식 `cwec_v5.0.xml`(버전 5.0, 2026-10-28)을 우리 변환기로 변환한 결과가 `data/cwe_catalog.json`과 **완전히 같음**(약점 984, 분류 431, 내용 차이 0). KEV: 공식 CSV 1,805건 중 우리 사본 1,795건(2026-11-24)과 번호, 제조사, 제품, 이름, 추가일, 기한, 랜섬웨어, CWE가 **모두 같음**. 차이는 2026-11-25에 추가된 10건뿐(사본에만 있는 항목은 0). MISP는 `main`에서 받아 커밋 해시가 없음 |
 | 확인-A5 | 이 환경에서 받지 못한 것(CVE 전체 목록, NVD) | — |
 
@@ -573,8 +574,8 @@ python backbone.py export    # security_kg/backbone/export/ 에 CSV 9개 (저장
 | 번호 | 전문가 판단 | 반영 |
 | --- | --- | --- |
 | 전문가-B1 | 시드 8개 유지, 모니터링은 분리 권고, 상위 분류 재설계 | **수정 반영**: 모니터링은 대체하지 않고 상위 유지 + 하위 2개(정보 손실을 피하려고 전문가안에서 변경). 성격과 영역은 시드에서 파생. 새 원인은 파일럿 뒤 |
-| 전문가-B2 | CWE 유지 + NIST CSF 2.0, SP 800-53 추가 | **반영(후보)**: `ROOT_CAUSE_STANDARD_MAP`, `nist_catalog.py`로 번호 존재 확인(55개 모두 있음, 적합성은 미확인). 확정은 사람 검토 후 |
-| 전문가-B3 | 4값 유지, 공격자와 계정 소유자 분리, VERIS `Former employee` | **반영**: `ACCOUNT_OWNER_ORIGIN`, 사례 수정과 추가. VERIS 세부 대응은 미검증(확인-A3 남음) |
+| 전문가-B2 | CWE 유지 + NIST CSF 2.0, SP 800-53 추가 | **반영(후보)**: `ROOT_CAUSE_STANDARD_MAP`, `nist_catalog.py`로 번호 존재 확인(55개 모두 있음). **적합성 검토표 `data/nist_candidate_review.csv`(55행) 판정 대기.** 확정은 사람 검토 후 |
+| 전문가-B3 | 4값 유지, 공격자와 계정 소유자 분리, VERIS `Former employee` | **반영**: `ACCOUNT_OWNER_ORIGIN`, 사례 수정과 추가. VERIS 세부 대응은 공식 스키마로 확인함(확인-A3 완료) |
 | 전문가-B4 | (a)(b)(c) 유지, 상태 2개 추가 | **반영**: 질문 문장 보완, 상태 5가지 정의, 집계 어휘 대응. `Asset`과 `AFFECTED_ASSET` 추가 |
 | 전문가-B5 | D5~D8 유지, 매핑 검증 보완 | **반영**: `attack_mapping.py` 수정(위 "기법 층")과 시험 6개 추가 |
 
@@ -618,6 +619,7 @@ python kev_conflict_sample.py --self-test   # KEV CWE 충돌 표본 분류 시�
 python expert_review_bundle.py --self-test   # 전문가 검토 자료 묶음 시험
 python nist_catalog.py --self-test         # NIST 항목 번호 검사 시험
 python nist_catalog.py                     # 표준 매핑 후보 번호가 공식 목록에 있는지 검사
+python veris_check.py --self-test          # VERIS 스키마 대조 시험
 python cwe_catalog.py         # CWE 목록 변환 규칙 자체 시험(9개)
 python backbone.py            # 뼈대 변환 규칙 자체 시험(네트워크 없이)
 python actors.py              # 행위자 이름 연결 자체 시험
