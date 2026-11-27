@@ -19,8 +19,9 @@ HERE = Path(__file__).resolve().parent
 KEY = HERE / "fact_check" / "answer_key_draft.csv"
 FACTS = HERE / "fact_check" / "incident_facts.csv"
 PATH = HERE / "fact_check" / "answer_key_review.csv"
+GLOSSARY = HERE / "fact_check" / "candidate_glossary.csv"
 COLUMNS = ["행", "answer_id", "incident", "slot", "slot_state", "assertion_status", "answer", "basis_source_type", "evidence",
-           "standard_candidates", "candidate_note", "judge_answer", "judge_candidates", "judge_note"]
+           "standard_candidates", "candidate_details", "candidate_en", "candidate_note", "judge_answer", "judge_candidates", "judge_note"]
 JUDGE_ANSWER = ["맞음", "수정 필요", "삭제", "판단 불가"]
 JUDGE_CANDIDATES = ["적절", "부적절", "판단 불가"]
 NEEDS_NOTE = ["수정 필요", "삭제", "판단 불가"]
@@ -45,7 +46,25 @@ def evidence_text(fact_ids: str, facts: dict) -> str:
     return " ‖ ".join(out)
 
 
-def build_rows(key_rows=None, facts_rows=None) -> list[dict]:
+def candidate_texts(cands: str, glossary: dict) -> tuple[str, str]:
+    """후보 번호마다 한국어 이름·정의(와 비고), 영어 원문을 만든다. 용어집에 없으면 그렇게 표시한다."""
+    ko, en = [], []
+    for c in [x.strip() for x in cands.split(";") if x.strip()]:
+        g = glossary.get(c)
+        if g is None:
+            ko.append(f"{c}: (용어집에 없음)")
+            en.append(f"{c}: (용어집에 없음)")
+            continue
+        extra = f" ※ {g['extra_ko']}" if g["extra_ko"] else ""
+        ko.append(f"{c} [{g['kind']}] {g['name_ko']} — {g['definition_ko']}{extra}")
+        en.append(f"{c} {g['name_en']}: {g['definition_en']}")
+    return " ‖ ".join(ko), " ‖ ".join(en)
+
+
+def build_rows(key_rows=None, facts_rows=None, glossary=None) -> list[dict]:
+    if glossary is None:
+        with open(GLOSSARY, encoding="utf-8-sig", newline="") as f:
+            glossary = {r["id"]: r for r in csv.DictReader(f)}
     if key_rows is None:
         with open(KEY, encoding="utf-8-sig", newline="") as f:
             key_rows = list(csv.DictReader(f))
@@ -55,10 +74,11 @@ def build_rows(key_rows=None, facts_rows=None) -> list[dict]:
     facts = {r["id"]: r for r in facts_rows}
     rows = []
     for k in key_rows:
+        det, en = candidate_texts(k["standard_candidates"], glossary)
         rows.append({"행": len(rows) + 2, "answer_id": k["answer_id"], "incident": k["incident"], "slot": k["slot"], "slot_state": k["slot_state"],
                      "assertion_status": k["assertion_status"], "answer": k["answer"], "basis_source_type": k["basis_source_type"],
                      "evidence": evidence_text(k["fact_rows"], facts), "standard_candidates": k["standard_candidates"],
-                     "candidate_note": k["candidate_note"], "judge_answer": "", "judge_candidates": "", "judge_note": ""})
+                     "candidate_details": det, "candidate_en": en, "candidate_note": k["candidate_note"], "judge_answer": "", "judge_candidates": "", "judge_note": ""})
     return rows
 
 
@@ -122,7 +142,10 @@ def self_test():
             "basis_source_type": "official_government", "fact_rows": "F1, F9", "standard_candidates": "CWE-1", "candidate_note": ""},
            {"answer_id": "A2", "incident": "x", "slot": "b", "slot_state": "not_confirmed", "assertion_status": "n/a", "answer": "문장2",
             "basis_source_type": "official_government", "fact_rows": "F1", "standard_candidates": "", "candidate_note": ""}]
-    rows = build_rows(key, facts)
+    gl = {"CWE-1": {"id": "CWE-1", "kind": "약점", "name_ko": "이름", "name_en": "Name", "definition_ko": "정의", "definition_en": "Def", "extra_ko": "비고"}}
+    rows = build_rows(key, facts, gl)
+    assert "CWE-1 [약점] 이름 — 정의 ※ 비고" in rows[0]["candidate_details"] and rows[0]["candidate_en"] == "CWE-1 Name: Def" and rows[1]["candidate_details"] == ""
+    assert "용어집에 없음" in candidate_texts("CWE-9", gl)[0]
     assert [r["행"] for r in rows] == [2, 3]
     assert "F1 주장 하나 [일치] 근거: 근거 3쪽" in rows[0]["evidence"] and "F9: (사실 확인표에 없음)" in rows[0]["evidence"]
     assert check_against_key(rows, key) == []
@@ -140,7 +163,7 @@ def self_test():
     import tempfile
     with tempfile.TemporaryDirectory() as d:
         p = Path(d) / "r.csv"
-        write(build_rows(key, facts), p)
+        write(build_rows(key, facts, gl), p)
         write(rows, p, force=True)
         try:
             write(rows, p)
